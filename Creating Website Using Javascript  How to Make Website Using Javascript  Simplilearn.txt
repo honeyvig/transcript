@@ -1,0 +1,3462 @@
+hello everyone and welcome to simply
+learns youtube channel today we will
+create a fully functional e-commerce
+website using javascript and some other
+technologies as well you guys will enjoy
+today's video because today we'll
+implement javascript to its actual use
+will create a fully functional ecommerce
+website so before we begin make sure
+that you have subscribed to our youtube
+channel and press that bell icon to
+never miss an update from simply learn
+so without any further delay let's get
+started
+so this is the website we are going to
+create in today's video here you can see
+we have an html web page with a
+navigation bar to take the user to
+different sections of a website
+i hope you already know that we have to
+create several web pages for a single
+website to make it a fully functional
+website
+we have to create these pages separately
+in different html documents and then we
+have to provide the links to this
+particular home page for directing the
+user to various locations of our website
+if you see here in the navigation bar
+we have several options starting with
+our company's logo so comfort learning
+is the company's logo here we have an
+icon of the book to let the user know
+that this website is for learning
+so we'll see further in this video how
+we can use these logos and all then we
+have links for several other web pages
+of our website that are not working
+because we haven't added these web pages
+till now
+the reason for this is
+we don't want to make this project a
+long one we want to finish it quickly
+and we want to give you guys a basic
+idea of how to use javascript and other
+technologies to create a fully
+functional website
+next up we have a cart button over here
+on clicking it opens the cart with items
+present inside it and the user can
+either clear the whole cart or proceed
+further to buy all the things they need
+right
+following this card button we have a
+background image over here with the card
+present over the image
+the card says find your favorite course
+here now you guys might have guessed
+that this website is for buying courses
+and the user can buy some courses here
+which they want to study
+this shop now button is completely
+working and if we click on it it will
+take us to the courses catalog
+where we have several courses present to
+choose from we have eight different
+courses present here you can add as many
+courses as you want or as many products
+as you want
+so we can add any of them to the cart on
+taking the mouse cursor over any image
+you can see it gives us an option to add
+that particular product to the cart
+right
+if we click on this add to cart button
+you can see it says in cart it means
+that we can't add any specific course to
+the cart more than once
+we can later change the number of items
+in the cart but we can add a course only
+once from here let's add some courses to
+the card and then we'll see if it's
+working or not
+so we'll add few courses we'll add this
+one so it says this course is already
+present in cart similarly this course is
+also present and we can add this course
+now we'll move to the cart we will click
+on this cart button and you can see we
+have all the courses present over here
+now if you notice here we have these
+small arrows present right we can click
+on these arrows to change the number of
+items we can either increase the number
+of items or we can decrease the number
+of items as well then we have a remove
+button over here and if we click on this
+remove button you can see the course is
+removed now we can remove any number of
+courses we want and we can also increase
+the number of products in our cart
+following it we have two options over
+here either we can clear the whole cart
+or we can proceed if we click on this
+clear card button there will be no codes
+present in the card and the total price
+will change to zero in that case fine
+so i hope you guys must have known the
+task by now it's clear and seems
+effortless right but these small things
+take a lot of precise coding and
+attention to work smoothly
+so let me show you guys one more thing
+before we move on to the coding part
+if we reduce the size of a web page or
+we can say if we remove the size of our
+browser you can see the size of website
+also changes if we make the browser
+similar to a phone you can see we have
+got a menu type of thing over here and
+if we click on this we are getting the
+options here we have home categories
+pricing and about us right so these were
+the options present in the navigation
+bar we can get them inside a particular
+menu using css we'll see how it actually
+works
+so a website is responsive right we'll
+do it with the help of css so let's move
+on to the programming part now
+so here we are in the vs code we have
+all the images already present inside
+the images folder in our system so if
+you want to see you can see here we have
+all the images present over here
+and we have four different files we have
+app.js we have
+index.html products.json to add products
+and we have style.css to style all the
+elements fine here we are in the html
+file some of you guys may think that
+html css and javascript were fine but
+what's up with the json thing we haven't
+heard of it in the previous videos
+so let me tell you guys json stands for
+javascript object notation just like we
+create objects in javascript json is
+also used to create objects like name
+value pairs and later we can use these
+objects to retrieve that data in a html
+file in simple words to add an item to a
+cart we need to store it somewhere to
+get the data related to the object
+and then we can add those items to our
+cart so json is used to transmit the
+data between a server and a web
+application
+we need to store a product somewhere so
+that we can use them when added to cart
+so you will get to know more about it
+while working on it basically so for now
+if you know enough about javascript
+objects then json will be easy for you
+guys because the syntax remains almost
+similar in both the cases that is in
+javascript and in json
+so let's start writing the code now here
+we are in a html file and we have
+already linked all the files over here
+you can see here we have used font
+awesome library for icons we'll use on
+our website
+you have seen that book icon we have
+used in our logo part and several other
+icons like the cart icon etc so we'll
+include those predefined icons in a html
+file using this particular library
+to include this specific library you
+don't have to do much of a task go to
+google search cdnjs.com
+libraries
+slash
+font awesome
+go to google and search for this and
+then select version
+4.7.0 under the version option copy the
+third url with min.css as extension and
+paste it into your html file as simple
+as that i'll let you know about the
+classes we'll use while working on the
+website now let's start with the
+programming part
+the first thing we have on our website
+is the navigation bar right let me show
+it to you again so here you can see we
+have a navigation bar we'll first work
+on this one only
+so let's start writing the code so this
+is
+the output of a current website so what
+we'll do is
+we'll minimize the browser and we'll
+start writing the code here only
+so what we'll do is we'll write here
+nav
+class is equals to nav bar
+then inside this we'll write div
+class is equals to
+burger
+and inside this we'll write
+three div tags fine we'll write here div
+class is equals to layer one
+we'll close this div
+we'll copy it from here and we'll paste
+it again three times
+fine
+well right here layer 2 and layer 3 is
+class then after this particular div tag
+we'll add another div tag
+with
+class as
+logo
+then inside this we'll use the span tag
+we'll write here span class
+is equals to logo
+logo text
+and then we'll
+write here
+i will use the i tag to make it a little
+bit italic so we'll use the class as
+far far book fine
+we'll write here
+style
+is equals to margin
+margin right we'll write your margin
+right as 0.1
+m then we'll write here
+similarly we can close this fine
+now we have added the book icon to our
+website
+then what we'll do is we'll write here
+again span will use the span tag within
+the suspend tag
+we'll write here
+style is equals to
+color
+and the color code is
+hash
+f095d1
+so these are the color codes for this
+particular website
+we'll use them
+we have written here f09 d51
+fine
+then what we'll do is we'll write here
+font size as
+1.1 m and what we'll do next is we'll
+write here
+before the span tag closes we'll write
+here
+learning
+fine
+so what we did wrong here is we forgot
+to mention comfort here
+now we are done with the logo part next
+up what we'll do is
+we'll write here
+div
+class is equals to
+menu bar we are working on the menu bar
+for the hamburger menu so what we'll do
+is we'll write here
+ul so ul stand for unordered list will
+write here class is
+list
+and inside this we'll use
+li tag so we'll write here
+class as let's say list items
+we'll
+write here
+a href is equals to hash
+and here what we'll do is we'll write
+here who
+fine
+we'll copy this piece of code
+we'll paste it again
+three or four times we have four
+different options we have home we have
+courses and then we have pricings
+and finally we have about us fine so we
+are done with menu as well next up what
+we'll do is we'll write the code for
+card now
+so we'll write here div
+class is equals to cart
+and inside this we'll write
+i
+class is equals to
+far far
+shopping cart for 1x so here we have
+used this special class to include the
+card icon to a web page
+now next up what we'll do is we'll write
+here
+div
+class is equals
+to number of
+items
+and then we'll write here
+span
+class is equal to let's say nui
+now what we'll do is we'll write here 0
+inside this fine i hope you guys
+understood what we did till now we are
+working on the navigation bar only we
+have created the navigation bar so this
+is the code firstly we have used a class
+navbar for this particular navigation
+bar then we have used the div tag for
+burger menu we have three different
+layers layer one layer two and layer
+three so this is actually the icon of
+burger menu you can see here if we
+reduce the size of our website so we
+have defined this burger menu and inside
+this we have four other options which we
+defined later here inside the menu bar
+and we have four options right we have
+home courses pricings and about us
+so we are doing totally right
+so till now we did some basic tasks here
+right we have added all the navigation
+bar elements and the next thing we have
+to do is to style our navigation bar
+according to the final website it's
+pretty simple let's do one thing let's
+save it once and check the output now
+let's see if it's working so it's
+totally working we have a book icon over
+here we have comfort learning written
+over here we have
+cart icon over here and we have zero
+written over here fine now we have to
+style those elements accordingly to make
+it look like this so we are making this
+navigation bar so what we'll do is we'll
+move to a css file and we'll start
+styling by doing some default style
+changes to the entire html document
+we'll write here
+star
+margin will be
+zero the default margin will be zero
+padding will be
+zero then we have
+box sizing we'll write here border box
+and font size will be
+20 pixels for default
+fine
+next up we'll write here
+html we'll now style html document we'll
+write here
+scroll behavior as smooth
+and we'll
+write here anchor tag we'll write here
+text decoration and we'll write a text
+decoration as none
+and then we'll
+style the unordered list we'll write a
+ul
+we'll write here
+list style as
+none
+fine
+basic styling is done let's do some more
+for the navigation bar as well what
+we'll do is we'll write here
+dot nav bar this is the first class we
+have used in a html page
+we'll write here display is
+flex
+then we'll write here
+justify content as
+space between
+align
+items
+as center
+height as 10 vh
+so 10vh refers to the viewport height it
+will take 10 of the total height of the
+screen
+then we have
+background color as
+hash
+e c e c e c so a little bit of gray
+grayish white we can say
+then next thing we'll do is we'll style
+a logo we'll write here logo and inside
+this will write
+padding so we will write here padding
+left and the padding left will be 2m
+next up we'll write here logo
+text so this is the next class we'll
+write here
+font size as 1.5
+m
+now the next class we have to use is
+the menu bar
+class so we'll write here
+width
+as
+45 percent
+and
+margin left as
+8.5 m fine
+i'll let you know what this m means
+in a moment so first we'll do this
+styling and all next up we'll write here
+dot list
+will access the list
+and we'll write here inside this
+display as
+flex
+and
+justify content as space between
+fine next up we have the list items so
+we'll write here list items
+and we'll of course write here a as well
+we'll write here color and the color
+will be let's say black
+next up what we'll do is we'll write
+here
+font family as
+sense serif font size as
+0.9 m
+so you must have noticed earlier that
+the default font size was 20 pixels so
+keep that in mind i'll let you know the
+use of m in a moment
+next up we'll write here
+transition
+is 0.4 seconds
+and we are good to go with it next up
+we'll
+write here list items
+and we'll write here
+hover fine
+then we'll write here
+color is
+black
+on hovering the color of the list items
+will change to black
+now the next thing we'll do is we'll
+write here cart
+padding right will be
+2m
+and position will be relative fine
+we are done with the card
+next up we will write here
+cart
+number
+of items fine
+we'll write here
+display is
+flex
+cursor is
+pointer we are using repeat we are
+styling two different classes here we
+are styling the element with classes
+cart and the element with classes number
+of items fine we'll write here justify
+content
+to center
+align items to center
+we'll write here color
+is
+white
+position will be
+absolute
+and then we'll write here left
+is 18 pixels
+and
+right as
+okay
+sorry will right here left as 18 pixels
+and top as
+minus 7 pixels
+next up we'll write
+background
+so the background color will be hash f
+0 9
+d 5
+1
+so this will be a the background color
+we'll define the height and width as
+well
+so height will be
+20 pixels and the width will also be
+20 pixels fine
+the last thing we have to write here is
+the border radius
+so keep one thing in mind guys while you
+are styling all these elements do check
+the website after every styling event
+because this will let you know what this
+particular event does or what this
+particular styling property does to that
+particular element so do it when you are
+writing this code
+next up
+we'll write here
+dot
+number of items space dot
+knowing so now it was the class we have
+already declared
+we will write here font size as
+0.7 m
+the next class we'll be styling is the
+shopping cart so we'll style this icon
+as well we'll write here
+font size is
+1.5 m the font size will be equal to
+around 30 pixels
+then we'll write here
+cursor is
+pointer
+then we'll write here
+burger will style the menu as well we'll
+write here
+height
+height will be 28 pixels
+width
+will be
+32 pixels
+and then we'll write here
+display is none then we'll
+style the layers as well we'll write
+here dot layer 1 dot layer two
+and dot layer
+three
+now inside this will write
+background as
+black
+height is 4 pixel
+margin top is
+4 pixels
+width as
+100
+and
+we'll write here border radius as 10
+pixels
+fine
+you have seen that hamburger menu you
+have seen that icon we were styling that
+till now
+now you might have noticed here that we
+have used m here in the css file so i'm
+talking about this particular m
+or we can say em as well
+until now we were using ram or pixel to
+define the size of anything while
+studying but today we are using m
+because m uses the font size for example
+if the font size is 30 for the parent
+class in this case the font size is 20
+the default font size is 20
+and the padding is defined as 2m then
+the padding will be 40 in that case it
+uses the font size to determine the size
+of the property
+that's why we are using m and if you try
+it yourself you will get to know better
+so just try using m and you can also use
+ram or pixel in this case but for now
+we'll use m so this might be a little
+bit new for you guys but try it and you
+will understand it much better
+now save the css file
+move back to the browser and you can see
+here that we have a navigation bar ready
+right it's looking fine
+although the icons are not visible the
+book icon and the cart icon is not
+visible so let's go back and see what's
+wrong in this
+css file
+what we'll do is
+we'll move to html file and we'll see if
+something is wrong here or not
+so nothing is wrong in this case the
+error is because we are not connected to
+internet so if this error continues just
+try to connect your laptop or your pc to
+the internet and the icons thing will
+work fine so you can see here we have
+icons over here we have the book icon we
+have the cart icon and what we have to
+do is we have to increase the size of
+this logo and text a little bit right so
+here you can see the comfort learning is
+a little bit small
+when compared to this particular website
+so what we'll do is we'll move to a css
+file
+and we'll write here instead of 1.5 ram
+we'll write here 2m
+fine
+save it
+and here you can see it's
+looking fine now
+actually it's equal
+the difference is because of this scroll
+bar we don't have this scroll bar in our
+website until now so this is why it
+looks a little bit different to you guys
+it's working totally fine other than
+that
+so let's move on to the next part
+and the next part of our website is the
+background image with the card present
+on it right so let's write the code for
+this section as well
+what we'll do is we'll move to our html
+file
+and
+right here we'll write
+section
+class is equals to section one
+so we are using the section tag to
+define a particular section in the web
+page
+now we'll write here div
+class is equals to
+banner and here we'll write inside h1
+tag
+find your
+favorite
+courses
+or course here
+then
+inside this what we'll do is we'll write
+here
+a
+href is equals
+to products so the products file will be
+using json for this so
+leave it for now we'll write here shop
+now so shop now is actually not a button
+what we'll do is we'll use a link and
+we'll define it later so let's
+save it
+and move to the browser
+open this website and you can see here
+it says find your favorite course here
+and it says shop now it's not inside the
+banner because we need to style this
+particular section to make it look like
+a website so let's do the styling part
+as well
+and then we'll talk about it
+so we'll move to the css file now
+and
+here what we'll do
+we'll write here dot
+section one
+height
+we'll use the calc function and we'll
+write here
+100
+vh
+minus
+10 vh so what we are doing is we are
+reducing the
+navigation bar's height we are reducing
+10 viewport height from 100 viewport
+height it means that from the whole
+screen area it will reduce 10 vh and
+give it to that particular image fine
+so next up we'll write here
+width as hundred percent we wanted to
+cover the whole home page so that's why
+we are using width as hundred percent
+background so we'll add the background
+image we'll write a url
+and inside this will give the path of
+our image
+we'll write his images
+back one dot png
+and we'll write here
+center
+center cover fine
+let's do some more things we'll write
+here top as 0
+left is
+0
+z index
+is
+-1 fine
+save it now move to the browser and see
+if it's working so here we are we have
+our image over here but this banner is
+not here till now we'll style it so you
+can see the images over here
+and one more thing guys we have two
+three images over here inside uh images
+folder i'll let you see all of them so
+here are the images
+and
+this is the third one
+okay so this is the third one so i was
+not sure which one to use but
+if you guys liked any of these images do
+let us know in the comments below and
+we'll use that particular image for now
+we'll use my personal favorite image
+we'll use background dot png save it now
+and this is the image we are going to
+use in this particular video
+so let me know if you have any other
+preference or if you know any other
+image we'll use that as well
+then we'll write here section
+1
+and we'll style the banner as well for
+that we'll write here banner
+height
+is going to be 170 pixels
+width
+is going to be
+600 pixels
+background
+is going to be a little bit grayish
+so we'll write here rgba
+205 comma two double five
+comma two double five comma zero point
+seven so this is the particular rgba
+value and next up
+we'll write here
+position as relative top is
+50
+left as
+50 of the image
+we want the banner to be present at the
+center of the image right so next up
+we'll write here
+transform
+translate
+and inside it will write
+minus 50 percent
+to minus 50
+next up we'll write here display is
+flex
+justify content as
+space around
+and
+flex direction is
+column
+text align
+is
+center
+and then we have align items as
+center
+font family is going to be
+sensorif again
+and
+we'll define the z index as well so this
+index is going to be
+8 in this case
+fine
+next up we'll inside the h1 tag inside
+the banner
+so we'll write here banner
+h1 and inside this
+we'll define the font size as
+2m
+now
+we need to define the
+link for shop now so for that we'll
+write here
+display is
+flex
+justify content is
+center
+padding is going to be
+1 m
+space
+2.5 m
+next up we'll write here
+font size as
+0.8 m
+so this is the font size for the shop
+now button which looks like a button but
+it is actually a link
+so
+what we'll do is
+we'll define the color of this button is
+white
+and here the background color is going
+to be
+h
+f 9
+0 d 5 1
+let's use this color
+and we'll write here transition all at
+0.3 second
+now save it once move to the browser
+and you can see it looks fine though the
+only thing that is different here in
+this website is the color of this link
+right or is the color of the shop now
+button so we can change the color here
+the color is
+sky blue
+so
+let's try to do it so here you can see
+the color seems a little bit different
+now i don't know the actual value of
+this color that's why i'm not sure about
+it so what we'll do is
+will make it a little
+more bright
+but
+save it now
+and you can see it looks same now so
+this was the color we found that
+now we have to change the color of this
+button on hovering over it so what we'll
+do is
+we'll write here
+dot banner a
+over
+so
+the background we are going to change
+we'll write here hash
+d4
+7 6 e
+1
+okay vani
+the color codes are pretty hard to
+remember so we are not using this
+particular color so we'll change
+it to a little bit
+blue
+save it now move to the browser and you
+can see it looks nice right
+and the actual website it's a little bit
+dull but in our website it looks nice
+right it's a little bit dark than the
+original color
+so that's fine you can change the color
+according to you
+so
+you have seen that this part is also
+done it looks nice right till now
+the task we did was quite easy
+the next thing we have to do is to add
+products to our website which are the
+courses will add those images to our
+website using json only so let's do the
+html part first let's finish up the html
+part and then we'll move on to the json
+part so
+we'll
+move to the html file again and inside
+this
+now what we'll do is we'll define the
+section for
+products
+so we'll write here
+section
+class is equals
+to
+section 2
+and id is equals to
+products fine we'll use both the class
+and id attribute for this particular
+section
+we'll write here div
+class is equals
+to title
+and here what we'll do is we'll write
+here h1
+and inside this we'll write courses we
+offer
+you will again add another div
+and inside this will write class is
+product
+close this div tag
+save it and there will be no difference
+on the web page you can see here we have
+some text present at the bottom which
+says courses we offer nothing else let's
+add those images now what we'll do is
+we'll move to the json file and we'll
+add those images with some properties
+and pictures so let's move on to the
+json file
+so here's a json file
+products dot json what we'll do is we'll
+create an object here so we'll write
+here
+items
+and then we'll use square brackets now
+one thing to notice while working on any
+json file is that json doesn't let us
+use single inverted commas or we have to
+use double inverted commas for json file
+so if we write here items like this
+it won't work see it says this is an
+error so in json file we have to use
+double inverted comma or double quotes
+not single quotes
+so now inside the items what we'll do is
+we'll create the object for first image
+so we'll write here's this
+and
+then we'll write here id
+so id will be
+one
+we have to use commas to separate the
+properties so now we'll write here
+fields
+colon and inside this we have to use
+title so the title for first course will
+be
+python programming
+master course fine
+now next thing we'll do is we'll write
+here
+the price
+the price will be let's say one two
+three point nine nine dollars
+and then we'll write here
+image
+so inside this will define
+several properties for the particular
+image we'll write
+fields
+and
+we'll use colon then again we'll use
+curly braces we'll write here
+file
+colon then again we'll use curly braces
+we'll write here
+url
+so you can see it just says there's an
+error so we have to remove this curly
+braces from here and we have to put it
+here now inside url what we'll do is
+we'll give
+the name of our file so our file is
+stored in images folder and the file
+name is and
+picture name is python.png
+fine
+so it is working fine now what we have
+to do is
+we have to put a comma here to again
+insert one more
+image property so we'll copy it from
+here
+we'll paste it
+for eight times
+then what we are going to do here now is
+we are going to change the id
+the title of the course
+so the second course is c plus
+master course
+and the price for this is let's say
+110.99
+we have to change the path as well this
+image is stored as
+c plus plus dot png
+for the third one we'll write here id as
+three
+the title is going to be web development
+for beginners
+the price is let's say
+99 because this is a course for
+beginners and the file name is
+instead of python we'll write here
+web1.png
+will do the same for all the elements
+so next up we'll use ids4
+and title as
+java programming
+master course fine
+the price for this course is going to be
+149.99
+and the file name is
+java.png
+fine next up we'll write here ids5
+the title is going to be digital
+marketing
+full course
+the price is going to be 109.99
+and
+the name of our image is
+digital.png
+and then we have ids 6 for another
+course this course is going to be
+advanced
+web development
+and the price is going to be
+comparatively high because this is an
+advanced course so instead of
+python we'll write here
+web 2 because this is the name of our
+image
+then we have ids 7
+and the file name is going to be data
+structures and
+algorithms
+full course
+prices you can decide by yourself so
+instead of 123 will use 99.99 here and
+inside
+this will write data.png this is a file
+name
+then we have the id as 8 for the last
+course
+the course name is
+data science full course
+the price is going to be 149.
+and image name is
+data2
+fine
+so here you can see it says there is an
+error remove this comma because we don't
+have any other
+image remaining so we are done with the
+json file all of this may sound a little
+bit tricky to you guys but it is what it
+is and we have to keep certain things in
+mind for that we can't see these
+products in the browser until we are
+done with the javascript part as well so
+let's do the rest of the html part first
+and then we'll see how this works in
+javascript save it once go to the
+browser
+and here you can see we are not able to
+see those products till now so what we
+are going to do next is we are going to
+move to a html file
+and inside this we are going to do the
+remaining of our html part
+so what we'll do is we'll write here div
+class is equal to cart
+sidebar
+now we are creating the structure for
+our card sidebar it means that when we
+use the hamburger menu or when we
+decrease the size of a web page or web
+browser the cart will open at the site
+so we are doing the coding for that
+we'll write inside this
+div
+class is equal to cart
+and inside here we'll write
+span
+class is equal to
+close
+card now inside this we'll add an icon
+we'll write a i
+class is equals
+far
+far times
+and we are done with it
+now next up what we are going to do is
+we are going to write the code inside of
+our cart we are going to write here h2
+it will say
+your cart
+and inside this will write div
+class is equal to
+card content
+next up we'll write here div
+class is equals
+to
+total
+sum
+and we are going to use dollars right so
+we'll write here
+h1
+we'll write here
+your total
+and
+we'll use the dollar sign here
+after this we'll write span
+class
+is equals
+to total
+amount let's say we are going to change
+the class name it will be total amount
+we'll close this here and inside this
+will write 0 because at this start there
+will be no element or no product present
+in the cart so the total price will be 0
+at the initial point so that's why we
+have written 0 here
+now we are going to write here div
+class is equals
+to clear cart
+and inside this we are going to create a
+button
+so the button class will be
+btn
+clearcard btn so this is going to be a
+class
+and here what we'll do is we'll write
+here
+clear cart fine
+we are going to do the same for proceed
+button as well so we'll write here div
+class is equals to
+clear cart we are going to use the same
+class for both the buttons because i'll
+let you know what why we are doing this
+at the end of this project
+now we'll write here
+button
+class is equals
+to button
+clear cart
+button
+fine we'll write here
+proceed
+we are done with the card function
+now what we are going to do is we are
+going to write some code for the
+menu bar side menu bar so we will write
+here
+div
+class is equals to let's say
+menu sidebar inside this will write div
+class is equals to close menu
+and we'll write here i
+class is equals
+too far for times
+and we'll
+close this i tag over here
+next up we'll write here after this
+class we'll write div
+class is equals
+to menu let's say this name is menu menu
+bar
+and inside this will write here
+an ordered list class will be
+menu list
+we'll write here
+li class is equals to
+menu list items and we'll write here a
+href
+is equals to hash we'll write your home
+and we are good to go fine we'll do the
+same for categories pricings and about
+us so
+we'll copy this
+statement
+we'll paste it for four times here we'll
+write instead of home categories
+pricings and about us fine so we are
+done with the whole html part now and we
+are left with css and javascript only
+let's do that as well let's move on to
+the css part first and
+do the rest of the styling except for
+the products we'll do it for products at
+the last so let's move on to the css
+file first and what we'll do is
+so that it will not create any confusion
+we'll write here
+menu bar because we have to write the
+code here between this banner style
+property and this menu bar for the
+products section so that's why we'll
+start writing the code from here and
+later we'll add our code here in between
+so we'll write here
+dot menu
+sidebar display will be none
+and then we'll write here dot
+cart
+sidebar
+background is going to be
+hash
+e c e c e c so a little bit grayish
+white we can say
+we'll write here position as
+fixed
+write as
+zero
+and
+top is
+0
+so these are the properties we are
+defining
+in a css part
+then we'll write your width as 450
+pixels
+and
+height is
+100 viewport height fine
+we'll define the z index as well we'll
+write here z index
+as 10
+transition
+is all
+at 0.3 seconds and the transition will
+be linear
+fine next up we'll write here
+transform
+and inside transform we'll write here
+translate x fine so inside here we'll
+write
+hundred percent
+it will go along with the x-axis that's
+why we have written it over here we'll
+write here overflow
+scroll
+we are done with it next up we'll
+write here dot cart
+sidebar and we'll
+write here dot cart as well so we'll
+define padding here we'll write here
+padding as 0 in both
+the cases
+next up we have
+dot cart and
+closed cart right so we'll write here
+for both of them we'll write here dot
+card space close cart the font size is
+going to be 1.3 m
+padding is going to be 1m
+and cursor is going to be
+0.2 fine
+we'll write here dot
+for
+times
+inside this will write
+margin top
+as 0.5 m
+and we'll write here cart
+h2
+text
+text align will be sent for the heading
+of a cart which is your cart
+so we'll write your width
+is
+100 percent
+margin bottom is going to be 1m
+and
+what else we have to do we have to
+include the font size as well so we'll
+write here
+font size is
+1.1 m
+slightly bigger than the default font
+size
+then we'll write here
+font family
+let's use only one
+fine
+let's use verdana only
+so we'll write your vardana
+and next up
+we'll
+write here dot
+card
+product space dot product
+image
+space img
+now we are going to write here something
+now we are going to write the code for
+all the images present inside the cart
+so that's why we are writing here width
+as 130 pixels
+of that particular image the width is
+going to be 130 pixels and the height is
+going to be
+90 pixel let's say
+fine
+we are done with this as well
+next up we'll write here
+dot cart
+product
+content fine
+now we'll write here display as flex
+flex direction is
+column
+and we have
+justify content as space around
+and align items at the center
+we'll write your margin
+left is 1m
+and
+height is
+80 pixels
+fine
+we are done with this as well we'll
+write here
+dot plus dash minus
+this is for increasing or decreasing the
+product number in our cards those arrows
+you must have remember which we have
+seen in the website let me show you
+again
+so these are the arrows i'm talking
+about let me add a product
+now go to cart and these are the arrows
+i'm talking about right now
+so we are going to style those arrows as
+well
+so we'll write here
+display is flex
+and
+transform
+we are going to rotate them so we are
+going to write here rotate
+at
+90 degree
+that will look cool
+so we'll write here
+color is
+again
+hash f 0 9 d 5 1 so this is the color
+code for a particular color
+we'll write here font size is 1.5 m
+and we'll write here
+cursor
+as pointer
+next up we are going to
+do the styling for total sum so we'll
+write here
+total sum
+align at the center
+and
+margin is
+going to be 1m
+0
+0 point
+m and
+0 again
+so it's for
+top bottom left and right everyone
+so we'll write here next
+clear cut
+text align at the center
+and we'll write here clear cut
+button
+now for the cleared car button we'll
+write here
+background
+so background color is going to be
+again
+that same one
+orange we can say or
+little bit of orange as well and don't
+know the exact name for that color but
+it doesn't matter right we can
+do anything
+we can use any color so
+the font color is going to be
+white
+the border is going to be one pixel
+solid
+and
+white in color for the button right if
+we go back to our website and
+you can see here this is our button
+so we are styling this particular button
+now
+let's go back here
+and we'll write here
+padding is
+0.5 m
+and
+1.7 fine
+cursor will be
+pointer
+and
+of course transition is going to be
+at 0.3 seconds and
+linear fine
+next up we'll write here
+clear cart
+dot button
+on hovering over it what we want is
+we'll write here over
+and we'll define the property now so
+we'll
+write here
+border
+okay
+we'll write here border murder is going
+to be one
+pixel thick solid in nature
+and of
+this color so we'll write here d4
+7 6 1 e
+fine
+on a ring the color will change
+obviously so we'll write here this
+and now what we are going to do is we
+are going to write here background is
+transparent
+and
+color is black
+fine
+are done with this as well next up we'll
+write here overlay for overlay the
+height is going to be
+100 viewport height
+the position is going to be
+fixed
+the
+top is going to be zero similarly the
+left
+will also be zero
+we will define the z index as well we'll
+write as z index as nine
+and width as
+hundred percent
+the background color
+is going to be
+hash
+f3
+eight
+five 1f
+fine
+so this is for overlay
+we'll write here
+opacity
+as 0.3
+and
+transition
+is all
+0.3 seconds and
+linear fine so what we are doing is we
+are writing the code for this if you
+open our cart you can see this
+particular area or this particular field
+is
+a little bit different from what it was
+it is a little bit different in color
+and opacity is also different the
+opacity is 0.3 here we can make it fully
+opaque as well so for now we'll use 0.3
+only
+next up what we are going to do is we
+are going to write the property
+phone none
+will write here none
+display is
+none fine
+now what we are going to do is we are
+going to write the css part for tablets
+and for mobile screen
+so
+if you remember
+that if we reduce the size of this
+chrome browser the size of our website
+also reduces and it
+becomes like this so to achieve this we
+have to write particular css code
+for tablet and for phone we have to
+define the max width
+and we have to do some more things in
+there so what we'll do is we'll write
+here
+at the rate
+media
+screen and
+max width is going to be
+768 pixels fine
+now inside this we'll write dot logo
+we'll change the logo
+as well
+we'll write here padding left
+as
+0
+and after this we are going to write
+here
+dot cart heading right is
+2m
+after cart we'll write here dot menu bar
+so we are going to change all the
+properties here almost all the
+properties which we will require so
+we'll write a display as none the menu
+bar will disappear
+we'll write here dot burger
+and inside this will write
+margin left the burger sign will come
+into existence now
+we'll write here
+2m for the margin left for display
+we'll write your block
+next up we have to do something for
+section 1 and for product section as
+well so we'll write here dot
+section one
+and we'll write here dot
+banner h1
+so we'll write here font size is
+1.5 m
+and we'll write here dot
+banner
+a
+we are going to change the size of
+shop now button so we'll write here
+font size is 0.6 m
+and padding is
+1m and
+2m
+fine
+we are done with this as well next up
+we'll write here
+dot section
+2
+note
+title and we'll write here h1
+inside this will write font
+size is
+1.5 m
+so we haven't defined the section two
+and title styling part yet we'll define
+it later but we'll write the code for
+that as well now next up we'll write
+here
+menu sidebar
+display is going to be block
+position is going to be
+fixed
+left is going to be 0 top is going to be
+0 so we'll write here left is going to
+be 0
+and top will also be 0
+then we have
+width as
+100 percent
+height is 100 report height
+and
+z index is
+11.
+background is going to be
+gray again so we'll write here ec ecec
+then we'll write here
+overflow is
+hidden
+and
+transform
+is
+translate so we'll write here minus
+hundred
+percent
+and
+transition is again same will write a
+0.3 s and
+linear fine
+next up we'll write here menu as menu
+bar
+and inside here we'll write
+display is flex height is 80 percent
+justify content at the center
+and we are done so next up we'll write
+here menu
+list will change the style of menu list
+as well
+so we'll write here
+height height is going to be
+100 percent
+then we'll write here display as flex we
+are rewriting the code again and again
+but each time we are doing it for
+different class we are doing it for
+different element
+so keep these things in mind
+and we'll write here flex
+direction
+is
+column
+align items at the center
+and just
+define content
+justify content is space around now it's
+time to do it for menu sidebar for menu
+sidebar
+and for close menu both will use the
+same styling properties
+we'll write your position
+as absolute
+right is going to be 30 pixels
+font size is going to be
+1.4 m
+and after this we'll write
+dot
+menu list
+items
+and we'll write here
+color
+is
+f 0 9 d 5 1 the default color we are
+using till now
+and lastly we'll write here
+dot
+menu dash list
+items space a on
+over will write here
+color is
+ash
+f5 7b
+09
+fine so here's a mistake we have
+placed colon here twice
+we'll remove it
+and now we are done with the tablet part
+so we have to change the style of almost
+all the elements we are done with the
+tablet part next up we have to
+write the same code for mobile part as
+well
+and we'll write here at the rate media
+screen
+so
+we'll write here and max width
+is going to be
+480 pixels
+now what we'll do is we'll write here a
+strict font size
+is going to be 16 pixel here we have
+changed the font size for the whole
+entire html document we have done it
+because we have used m in place of ram
+or pixels in this case or in this video
+so that's why we have changed the size
+here because we want the
+screen to be smaller in size right if we
+go back here you can see
+the font size is 16 by default and if we
+do it you can see the font size changes
+for each and every element right to
+achieve this we have to use m in place
+of pixel or ram we can say
+now the next thing we are going to do is
+we are going to write here dot
+section
+1
+dot
+banner
+and we'll write here
+width as
+280 pixels
+for both
+and we'll write your height
+as 100 pixels fine
+you can see here the height of this
+image is 100 pixel or we can say the
+height of this banner is 100 pixel and
+the width is 280 pixels so this is why
+we are changing the style of all these
+elements because we want all these
+elements to fit inside a smaller screen
+that's why we have to change the height
+or we have to change the width as well
+now what we'll do is
+we'll write here
+section
+one dot
+banner
+we'll write here h1
+inside this will write font size
+as
+1.2 m
+display is going to be
+now we don't have to use display here i
+guess let's
+leave it
+so we are done with this next up we'll
+write the code for burger we'll write a
+burger margin left is going to be 1 m
+for mobile
+for mobile the display is going to be
+block
+and the width is going to be
+30 pixel
+fine
+we'll do the same for card sidebar
+we'll write here
+width
+as 100 of the screen the card will take
+whole screen and we'll write here at the
+last for product
+so for product we'll write here
+margin is
+zero display is flex
+justify content at the center
+align items at the center
+and flex direction is going to be column
+so we have covered almost every html
+element in the css file we are done with
+the styling for everything except
+products will style them later let's
+move on to the javascript part now and
+see how we can fetch those products
+so we cannot witness every style change
+right now but we'll witness them while
+covering the javascript part
+so let's move on to the javascript part
+first and we'll start with the card
+section and the hamburger menu thing
+so save it and if you want to witness
+the changes we made you can go here and
+you can see the cart is not opening
+because we need to write the javascript
+part for that and everything else
+remains the same if we reduce the size
+of our browser you can see we have a
+menu over here we can increase the size
+and we have
+our image adjusting itself accordingly
+so we can use it and it's quite
+responsive as well
+let's move on to the javascript part now
+we'll open the javascript file
+and
+first of all we'll access all the html
+elements with the query selector method
+so we have several html elements right
+here you can see we have
+several elements present in our html
+file we are going to access few of these
+elements so what we are going to do is
+we are going to write here
+construct
+is equals
+to document
+dot query selector
+we are going to write here
+nav space dot cart
+then we are going to do the same
+for a long
+time so what we are going to do is we
+are going to copy paste this piece of
+code again and again
+for several times we are going to change
+the name of
+variables so we'll write here
+card sidebar
+and instead of this we'll write here
+dot cart sidebar
+the next one will write here
+dot
+close card and here the variable name
+will change to
+close card
+fine
+next up we'll take another variable as
+burger
+and here we'll change
+the query
+from nav dot card to
+dot burger fine
+next up we have menu sidebar
+so we'll write here menu sidebar and
+here what we'll do is we'll write here
+dot
+menu
+sidebar
+fine next up we have
+close menu
+and here we'll
+write
+close menu again
+after close menu we have cart items
+total
+so we'll write here cart
+items
+total and
+we will
+use noi
+then we have total amount as well so
+we'll write here total amount
+and here we'll write card price total
+we have to access a lot of elements
+so
+then we'll write here cart
+ui
+and
+for this we'll access
+cart sidebar and cart so we will write
+here dot cart
+sidebar space
+card
+fine
+then we have the total sum so we'll
+write here total sum
+we'll put a dot over here
+and here we'll write
+total diff
+then we have the clear button so we'll
+write here clear
+button and here we'll write
+clear card button
+then finally we have
+variable name card content
+to access everything present in the cart
+so we'll write here dot cart
+content
+here we'll write
+card content
+so these are our 12 variables and we
+have accessed almost every element
+present in a html file which we are
+going to need further so i hope you guys
+understood this we have used the query
+selector method to access all the html
+elements here in the javascript part
+now next up we'll take two empty arrays
+so we'll write here
+let
+cart
+is equals to an array
+and we'll write here let
+buttons dom
+and it's again going to be an array
+fine
+now we'll first create some events to
+open and close the cart for that we'll
+write here
+cart dot
+ad event listener
+will add a click event here
+and we'll write here function
+now inside this we'll write card dot
+we'll write cart
+sidebar
+dot style
+dot
+transform is equals
+to
+translate
+zero percent fine so this is we are
+changing the style of card sidebar
+next up we'll write here
+const body overlay will take a variable
+of named const body overlay
+will write here document
+dot
+create element
+and we'll write here
+div inside this fine
+next up what we'll do is
+we'll write here
+body overlay
+dot
+class list
+dot add
+and we'll write here
+overlay
+fine
+we'll use the settimeout method so we'll
+write here
+set timeout
+okay we have written here sst so we'll
+write a set timeout
+then we'll create an anonymous function
+and inside here what we'll do is we'll
+write
+document dot query selector
+and inside here we'll write body then
+we'll write here append and we'll append
+body overlay
+so we'll write here body overlay fine
+and the time will pass here is
+going to be 300 milliseconds
+we are done with this function we'll add
+another event so what we'll do is we'll
+write here close
+cart
+dot ad event listener
+now we are closing the card so we'll
+write here
+click
+then we'll
+create a function
+and we'll write here
+card sidebar
+dot
+style dot
+transform and again we'll translate it
+to 100
+previously we did for zero percent and
+now we'll translate it to 100 again so
+we'll write here translate and we'll
+pass 100 inside the
+brackets here
+next up we'll again use the body overlay
+variable so we'll copy this from here
+and we'll paste it here we'll of course
+change the create element value so
+instead of create element we'll write
+here
+document
+dot query selector
+and we'll write here
+dot
+overlay
+fine
+next up we'll write here document
+dot query selector
+and we'll write here body
+dot
+remove child will remove
+body overly from here so we'll write
+here
+body overlay fine
+we are good to go save it now
+and go to the browser
+so here you can see on clicking the cart
+a cart is working totally fine now we
+are in this particular program so we are
+in our website which we are creating
+right now
+this is the original website this is the
+final product so leave it and we are
+going to work on our website only so
+here you can see our cart is working
+totally fine
+now we can open or close our cart and we
+have two options over here one is for
+clearing the entire cart and the other
+one is for proceeding further
+next up we'll add some more events for
+the hamburger menu now how to open or
+close that menu in all so for that we'll
+move to a javascript file again and
+we'll write here
+burger dot
+add event listener
+and we'll add a click event we'll write
+here click
+we'll write here
+function and then we'll write here
+menu sidebar dot
+style dot
+transform and what we are going to do is
+we are going to translate
+again we are going to translate it to
+zero percent
+now the same thing we have to do for
+this as well we'll write here burger
+dot add event listener
+inside here we'll
+write click
+and then we'll write a function
+which will again do the same task it
+will translate to minus hundred percent
+we'll write here menu sidebar dot
+style dot
+transform and
+we are again going to translate it to
+minus hundred percent now
+fine
+save it
+and go to the browser
+now
+if we decrease the size of a web page or
+if we decrease the size of a browser you
+can see
+okay let me decrease it first so you can
+see the hamburger menu over here and on
+clicking it's not working right now so
+let's inspect those elements once
+and there's no error but
+let me check if there's any mistake okay
+so we have to write here
+close menu
+and now i guess it will work fine
+we'll save it again and we'll move to
+the browser
+reduce the size click on this hamburger
+menu
+and you can see it's working totally
+fine now
+right so this part is also done now what
+we have to do next is we have to create
+a class to get those products from the
+json file so keep your eyes open now
+guys we'll see how it actually works so
+what we are going to do is we are going
+to create a class named
+product
+so this is our class
+we will write here a sink i hope you are
+already aware of async and await
+so we'll write here get product
+and this is a function
+we'll write here const
+response is equals to await and
+while awaiting it will fetch
+products dot
+json
+fine
+then we'll create a variable we'll write
+here const
+data is equals to await
+response dot
+json
+fine
+next up we'll write
+products is equals to
+data dot items
+and we'll write
+products is equals
+to
+products
+dot map function we are going to use so
+we'll write here again item
+then we'll use arrow function we'll
+write the body of this function here
+we'll write here
+const inside this will pass
+title and price of the product
+and we'll write here item
+dot
+fields
+fine
+similarly we'll do the same for id as
+well inside curly braces we'll write id
+and we'll write here
+item dot cis
+then we'll write here
+const
+image now we are fetching the image so
+we'll write here
+item dot
+fields dot
+image
+dot
+fields
+we are actually giving the path right if
+you see here in the json file you can
+see inside items we have sys fields then
+inside fields we have title price image
+and then inside image we have fields
+file and url so we'll access each of
+them
+now we'll write here after fields
+dot file
+dot url
+and
+lastly we will write here return
+title
+price
+id and
+image fine
+finally we'll write here after this
+return
+products
+cool
+now what we are doing here is we are
+getting the details of all the products
+and storing them inside separate objects
+so we have all the objects present over
+here all those images were actually
+stored inside the local storage
+and now we can fetch them from that
+particular storage now we'll create
+another class for the user interface of
+the product so if you save it now and go
+to the browser
+you will see no difference over here
+because it's not working as of now if
+you go to inspect elements and console
+you can see it says
+length mismatch
+it's because of the live server so
+there's no pro error over here
+now we'll create another class for the
+user interface of the products we'll add
+those products to the cart and we can
+delete them from the cart we'll do
+everything inside one single class so
+let's do it
+what we are going to do is we are going
+to write here
+class let's say the class name is ui
+and we'll write here
+display products and we'll write here
+products
+then we'll
+right here inside this let result be a
+variable
+and
+we'll leave it empty over here
+next line we'll use the forage loop so
+we'll write here products
+dot
+for each
+and inside this will
+create an arrow function
+so we'll write here
+const
+product div
+let's say is a variable and then we'll
+write here
+document dot
+create element
+again we are going to create an element
+so we'll write here div
+and
+after this
+what we are going to do is we are going
+to write here product
+div dot
+inner html
+is equals to
+now the main part starts so inside this
+we'll write
+div
+class is equals
+to product card
+and
+then we'll write
+img
+we'll add the image so here we'll write
+mg src is equals to
+dollar
+product
+dot
+image we are going to fetch it
+and instead of alt
+in place of alt we'll write
+alt as
+product
+in the next line we'll use the span tag
+again we'll write here span class
+is equals to
+add to
+cart and we'll then write here
+data id is equals to
+product dot id
+will close this tag will close this span
+tag we can say in the next line we'll
+use the i tag we'll write a i class is
+equals to
+far far
+cart
+plus
+for one x
+now what we are doing is we are going to
+show the number of items present in our
+cart over the cart icon that's why we
+are doing all this so here what we'll do
+is we'll write style
+is equals to margin
+dash
+right
+margin right is going to be 0.1 m
+and
+font size is going to be
+1 m
+fine
+close this as well close the i tag as
+well
+and in the next line
+right here
+at to cart
+so this pen tag is finally we are going
+to close it
+now
+this is a single tag
+i have written it in such a way because
+i don't want it to create any sort of
+confusion for you guys so the span tag
+starts from here and goes still here
+now we are remaining with some more part
+of it so in the next line what we are
+going to do is we are going to write
+here div
+class is equals
+product name and here we'll write
+dollar
+product dot
+title and we are going to close this div
+tag
+in the next line we are going to write
+div again
+class is going to be product pricing
+and inside here we'll write
+product
+dot
+price
+and we are going to close this div tag
+here
+close
+the first div tag as well
+and
+omega 2 in the next line what we are
+going to do is we are going to write
+here
+const
+p is equals to
+document dot
+query selector
+and inside this will write
+dot
+product we are going to access the
+element with product as class
+or we are going to access the product
+query
+then we'll write here p dot
+append
+equal to
+product div what we are doing is any
+item we are adding to cart is we are
+going to append that item inside the
+card so that's what we are doing till
+now
+now the next thing we are going to do is
+we are going to write here a function
+get buttons
+basically a constructor we can say we
+will write here const
+buttons
+we'll write your cons buttons is equal
+to
+document
+dot
+query selector
+we have to write a query selector all
+and then we are going to write here
+inside this
+dot add to
+cart
+fine we have been through all these
+query selector methods previously so i
+don't think that this is going to create
+any sort of problem for you guys
+so let's move ahead and
+we'll write here array dot
+from
+we'll write here buttons
+then we'll write here buttons
+dom
+is equals to buttons we are going
+to pass the value of buttons to buttons
+norm then we'll write buttons dot
+for each
+and inside here we'll write
+button and we are going to create an
+arrow function over here
+here what we'll do is we'll write here
+let
+id is equals
+to
+button
+dot
+data set dot id in the next line we'll
+write let's
+in cart
+is equals
+card dot
+find and we are going to pass item
+to this function
+so we are going to
+write inside here
+item
+and again an arrow function
+will write here item dot id
+triple is equals
+to id
+fine
+we are going to check the condition here
+if we write here if
+in cart
+then we'll write here
+btn dot
+inner html
+is equals
+to in
+cart so what we are doing is if we have
+added the
+product to cart already then the button
+will change
+as we have seen earlier that on adding
+the product once to the card the button
+will change to in cart from add to cart
+so this is what we are doing here
+next up we'll write here
+button
+dot disabled
+is equals to true we are going to
+disable that button once the product is
+added to cart fine
+next up
+we'll write here
+button dot add event listener
+and we are going to create an event
+we'll write here click
+and
+let e here
+then we'll
+use the arrow function
+and we'll write it here e dot
+current target dot
+inner html is equals to
+in cart
+then we'll write it e dot
+current target dot in html okay we'll
+write here e dot current target dot
+style dot
+color
+is equals
+to white
+e dot
+current target dot
+style dot
+pointer events fills to none
+and
+we are done with it next up we are going
+to store the products in the cart so for
+that what we are going to do is
+we are going to write here let
+cart item is equals to
+so we are going to use a little bit of
+json now
+we'll write here
+dot
+storage dot
+get storage products
+will write a id
+comma
+amount
+and the amount is going to be one
+we'll write here
+card dot
+we are going to push the cart item to
+the cart
+so we will write here cart item
+and then we'll write here storage we are
+going to store it inside the cart so
+we'll write here storage dot safe cart
+and we'll pass
+cart over here
+fine now we have to calculate the total
+and we have to set the total items as
+well so for that we'll write here
+this
+dot
+set card values
+we'll write here
+cart
+and to display those cart item we have
+to write here this dot
+add card item and we have to add that
+card item so we'll write here
+this dot
+add cart items
+item
+and will
+pass
+cart item over here
+fine
+we are done with the working of cart as
+well next up what we are going to do is
+we are going to change the total value
+of cart we are going to change the value
+of cart on increasing or decreasing the
+card products
+so first of all we have to write here
+set cart values and we have to pass cart
+over here we have to write here
+let's say we have a variable
+temp total so this is going to be a
+temporary variable we'll write here time
+total is equals to 0
+and we'll take another variable
+for that we'll write here
+item total
+so item total is also going to be 0. now
+we'll map this card so for that we'll
+write here card dot map
+will write a item
+use
+arrow function so for that we'll write
+here
+temp total
+plus is equals to
+item dot
+price
+into
+item dot
+amount
+so this is how we are going to get the
+total amount and then we'll write here
+item basically we are swapping all of
+that so we will write here item total
+is equal to
+item
+dot
+amount we have to add these two values
+so we'll write here item total plus is
+equals to item dot amount
+fine
+now we'll
+write here
+parts float
+and we are going to change these values
+just like percent we have parse float as
+well so inside pass float we'll write
+tam total
+dot
+to fixed
+and we are going to fixed it until two
+decimal units fine
+next up we'll write here cart items
+total dot
+inner html
+is equals to
+items total
+and we'll write here cart
+price total
+dot inner html is equals to
+parse float
+we'll write here temp
+total
+dot
+two fixed and we'll fix it up to two
+decimal units fine
+next up we'll write here
+add
+cut item
+now we'll write here card item
+and inside this will write let
+cart item
+ui
+is equals
+to document dot
+create element
+we'll write here div
+we'll write here cart item
+ui
+dot
+inner html
+is equals to we are again going to do
+the same task
+so we are going to use the backtick for
+that so here we'll write
+div
+class
+is equals
+to card product
+and we'll write here
+div
+class is equals to product image
+write here img src
+is equal so we are going to fetch the
+image again so we'll write a dollar
+and inside this will write
+cart item dot
+image
+and alt will be
+product in this case as well
+top we are going to close this div tag
+and
+we are going to start another div tag
+here so we'll write here div
+class is equals
+to cart
+product item
+sorry card product content we can say
+and then
+we'll write here
+in the next line
+div
+class
+is equals
+to
+card product name
+we'll write here inside h3
+tag
+so inside h3 tag we'll write
+dollar
+cart item dot
+title
+and we are going to close this h1 tag
+over here h3 tag sorry
+h3 tag over here then we'll close this
+div tag as well
+we are again going to create another div
+tag this time we are going to write the
+class
+as
+card product
+price we are going to fetch the price
+now
+we'll write here
+again
+h3
+so our price is in dollars so we'll use
+dollars for now we can use rupees here
+as well so we can write here
+cart item dot
+price the price is going to be in
+dollars then we'll
+close this tag
+and we are also going to close the div
+tag here fine
+in the next line
+we are going to create the product
+remove card
+so we are going to create a div tag for
+that and the class is going to be cart
+product remove data
+id is going to be cart id so we'll write
+here cart
+item dot id
+and then we'll write here
+href is equals
+to hash
+and style is going to be
+color is going to be
+red
+and then we'll write here remove
+i'm going to close the
+anchor tag and then the
+div tag
+fine
+so we are done with this
+till now then we are going to again
+close this particular div tag we used
+previously
+now what we are going to do is we are
+going to change the number of products
+so we are going to use here class
+is equals to
+plus minus
+and here we'll write
+inside the itec
+class
+is equals to
+for for
+angle
+left
+add amount
+fine
+this is going to be the class
+and
+the data id is going to be
+cart item id so we are going to write
+here
+data id is equals to
+dollar
+and inside this will write
+cart item id
+dot id
+and then we are going to
+close this tag and we are going to close
+the
+i tag here
+fine
+next up we are going to use the span tag
+again we are going to write here
+span
+class is equals
+to
+number of items
+and we'll
+close this tag here we'll write
+dollar
+cart item
+dot
+amount
+we are
+going to close the span tag here so
+we'll write here slash span
+in the next line we are again going to
+use
+data id
+and here what we'll do is we'll write
+here
+dollar
+and we'll write here
+cart item dot
+id
+we are going to close the i tag again
+and in the next line we are going to
+close the div tag
+and one more div tag fine
+now we are done with it
+let me close this first and
+next up we'll append this card content
+to the cart item ui so we'll write here
+card
+content
+dot
+append
+and inside this will pass
+cart item
+ui
+fine
+so here you can see we are going to
+close
+close this so this is the closed one
+and inside here we'll write
+setup app
+again a
+constructor we are going to write here
+cart
+is equals
+to storage dot
+get card
+we'll write this
+dot
+set card values
+card here
+and then we'll write card dot map
+inside this will write item
+and inside the body we'll write
+this
+dot
+add cart item
+item
+fine i hope you guys are getting this
+next up we'll write the cart logic here
+we'll write a cart logic
+and we'll write here
+clear button
+dot add event listener
+we are going to
+create an event again we'll write here
+click
+comma a function
+inside this will write this dot
+clear cut we are going to call this
+function over here
+now we have
+to write the logic for
+remove button
+so
+we'll do it here
+we'll write here
+card content dot ad event listener
+click
+com event
+and we'll write here
+inside this
+if
+event dot
+target
+dot
+class list
+dot
+contains
+got
+product remove
+then
+we'll again create a variable let's say
+the variable is let
+okay we have made a mistake over here
+we have to close this bracket here
+and then we have to write here
+let id is equals
+to event dot
+target dot
+data set dot
+id
+in the next line we'll write
+this dot
+remove item and will pass id here fine
+in the next line we'll write here let
+div
+is equals to event
+dot target
+dot
+parent element
+and we are going to use parent element
+for quite some time now so we are going
+to write here dot
+parent element again
+for four times so we'll write here
+parent element dot
+parent element so we have written it
+four times here
+in the next line we'll write here
+div dot
+remove child
+and we'll write here event dot
+target
+dot
+will copy it from here
+and we'll paste it here fine
+now in the next line
+we are going to close this bracket
+and we are going to start writing here
+elsif
+event dot
+target
+dot
+class list
+dot
+contains
+add amount
+then what we are going to do is we are
+going to use the id variable again we
+are going to write here let id is equal
+to
+event dot target
+dot
+data set dot id
+let
+item
+is equals to
+card dot find
+will pass item here and
+we'll use the arrow function so we'll
+write here item dot
+id
+equals to id
+fine then we'll write here
+item dot
+amount
+plus plus so we are going to increase
+the amount
+of items then what we are going to do is
+we are going to write here storage dot
+safe cart
+and we are going to pass cart here
+we will write here this
+dot set card values
+card
+we'll write a event dot
+target
+dot
+next element sibling dot inner html
+is equals to item dot
+amount
+fine
+now we are going to
+use another elsevier so we'll write here
+elsif
+event
+dot
+target
+dot
+class list dot contains
+reduce amount
+so we are going to change the number of
+products in our cart
+so for that what we'll do is we'll write
+here
+let id is equals to
+event dot data set
+even dot
+target dot data set
+dot
+id
+fine
+and item will
+be let item is equals to
+card dot find
+item
+item dot id
+triple equals
+to id
+if
+we are again going to use an if
+statement so we'll write here item dot
+amount
+is
+greater than 1 if the number of items is
+greater than 1
+then
+item dot
+amount
+minus minus
+and store it
+inside the cart so we are going to write
+here
+storage dot safe cart
+and we'll pass card here
+then we'll write here this dot
+set card values
+and we'll again pass cart here
+in the next line we'll write here
+event dot
+target
+dot
+previous element sibling
+html
+is equals to item dot
+amount
+and finally
+write here else
+and inside the else what we'll do is
+we'll write here
+this dot
+remove item
+and we'll pass the id we'll write here
+let
+div is equals
+to event dot
+target we are basically targeting the
+events we are creating conditions for
+certain different events like when the
+user increases the number of products
+and the user decreases the number of
+products and if the user removes the
+product from the cart so we are writing
+the code for that so we'll write a event
+dot target dot
+parent element
+and we'll write here parent element
+again for
+four times
+fine
+we'll write here div dot
+remove child
+and inside this will write even dot
+target dot
+parent element for four times again
+it will check each parent element
+so
+here we are done with it
+next up
+we have to create two functions for add
+amount
+and for reduce amount so what we are
+going to do is
+we are going to
+write here
+add amount
+and we'll write here
+const
+add button is equals to
+document dot
+query selector
+all
+inside this will pass dot
+add amount
+fine
+we'll write here add button
+dot
+for each
+and we'll write here inside this
+return dot add event listener
+and we'll add an event over here we'll
+write a click
+comma event
+will pass event here
+and then we'll write here
+like this
+let
+id
+is equals to
+event dot
+current target dot
+data set
+dot id fine
+we'll write here
+card dot
+map
+and we'll pass item over here we'll
+write here again
+arrow function and inside this what we
+are going to do is we are going to write
+here
+item dot
+amount plus plus
+storage dot
+safe cart we are going to pass cart here
+we will write here this dot
+set card values
+we are again going to set the cart
+values and
+we'll again use
+amount ui
+a new variable and we'll
+write here event dot
+current target
+dot
+parent element
+dot
+children
+fine so we are targeting the parent
+element along with the children
+so we'll write here
+amount ui
+dot in html is equals to item dot
+amount
+so we have forgot to mention here
+if
+item dot id
+is equals
+to id
+then do it
+fine now we are going
+to do the same thing
+for reduce amount as well so we'll write
+here
+reduce amount
+and inside this we'll write
+const
+reduce button
+is equals
+to document
+dot
+query selector all
+and we are going to
+pass here dot
+reduce amount
+fine
+we'll write here reduce
+button dot
+for each
+then we'll pass button over here and
+we'll use the arrow function again
+finally we'll write here
+button dot add event listener
+click
+event
+let id
+is equals to
+event dot
+current
+current target
+dot
+data set
+dot id
+fine
+we'll write here card dot map will map
+it to cart
+and we'll write here item
+then again we'll write it if
+time item dot id
+triple equals to id
+then we'll
+write here item amount minus minus so
+we'll write here item dot amount minus
+minus
+and if
+item dot
+amount is greater than
+zero then what it will do
+it will
+store it inside the
+local storage so we'll write a storage
+dot safe cart
+and we'll write here
+cart
+then we'll write this
+dot
+set cart values
+cart
+construct
+amount ui
+is equals
+to event
+dot
+current target
+dot
+parent element
+dot children
+amount ui dot
+inner html is equals to item dot
+amount fine
+again we'll write here else
+else what will happen we'll write here
+event
+dot
+current target dot
+parent element so here instead of parent
+element we'll write
+remove child and we'll write here
+event
+dot current target
+dot
+parent element dot
+parent element fine
+in the next line we'll write this
+dot
+remove item and we'll pass id here
+we are done with this part as well next
+up we have to clear the card so for that
+we'll write here
+clear cart
+we'll again do something for that we'll
+write here let cart item is equal squat
+dot map inside this will write item
+implies item dot id
+card item dot
+we'll again use the for each loop here
+we'll write here this then we'll provide
+id here
+and we'll write here
+this dot
+remove item
+will pass the id over here
+then we'll write your const
+product will create
+a new variable here we'll write here
+document dot
+query selector all and we'll write here
+dot
+card product
+right here card product
+dot for each
+for each item what we are going to do is
+we are going to create
+an arrow function here and we are going
+to write if item is true if item is
+there
+then item dot parent element
+dot
+remove child
+will remove the item
+now we have to remove the item so for
+that we'll write here remove
+item and we'll pass id to that item
+we'll write here
+card will update the value of cart as
+card dot filter
+we'll write here item
+and then we'll write here item dot id
+not
+equals
+to id this
+dot
+set card values
+and will update the card then
+similarly we'll again write here storage
+dot
+safe cart
+and we'll pass
+cart here
+then we'll write here let
+button is equals to this
+dot
+get single button
+we'll write your id
+and we'll change the button style we'll
+write here button dot style dot
+pointer events
+is equals to
+unset
+then we'll write a button dot
+inner html
+is equals to
+backtick
+i
+class will be
+far far card plus
+we are going to close the i tag here
+and we'll write here
+add to
+cart
+fine
+next up we'll write here
+get single button we'll pass id over
+here
+and we'll write the code for here we'll
+write here let
+btn
+then we'll write here
+buttons dome dot
+for each
+for each button
+what it will do is
+we'll check if
+button dot
+data set dot id
+is equals to id
+then
+equals to
+button
+fine
+here we will return
+button
+now save it
+save this program go to browser
+and this is our website go to browser
+and you can see nothing is visible till
+now we have to write a little more code
+to make everything visible here now we
+have to store the data in local storage
+so that on refreshing the web page we
+don't lose the data so what we'll do is
+we'll go back to a javascript file and
+we'll write here
+class
+storage
+equals to
+save products
+will pass products here
+then we'll open curly braces and we'll
+write here local storage
+dot
+set item
+and inside this will write
+products dot
+comma
+json dot
+stringify
+products
+and we are parsing the products from our
+json file now
+next up we'll write here
+static
+get storage products
+we'll pass the id here
+and we'll write here let
+products is equals to
+json
+dot
+parts
+storage dot
+get item
+and we'll pass
+products
+fine in the next line we'll write
+return
+products dot
+find
+will write a item
+item dot id is equals to id
+fine
+next up will again write here static
+save card
+now we are saving the products
+in our cart so we'll write here
+local storage dot
+set item
+inside here will pass
+cart
+and here we'll write
+json
+dot
+stringify
+and we'll pass
+cart over here
+next up we'll write here static
+get card we are getting the items from
+the cart we'll write here return
+local storage dot
+get item
+cart
+here we'll write question mark we'll
+pass the json file here we'll write here
+json dot
+parse
+local storage dot
+get item
+from the
+cart
+fine
+here we have to
+put a square bracket a pair of square
+brackets
+and lastly we have to write a few lines
+of code so we'll write here document
+dot add event listener
+and we'll write here
+dom
+content
+loaded so we are adding
+one more event to our javascript file
+which is the dom content loaded so
+we have to write your dom content loaded
+and here we have to write
+inside the
+function const
+products
+is equals
+to new product
+and we'll write here
+const ui is equals to
+new ui
+now we have to show card from local
+storage so we'll write here
+ui dot
+setup app
+and
+we'll write here
+products dot
+get product
+dot
+then
+and inside this will write
+products
+equal
+implies this
+ui dot
+display
+display products will write here
+products
+storage
+dot
+save products and we'll pass
+products here as well
+fine
+we'll write here dot then
+we are using promises
+so
+here we'll write
+ui dot
+get buttons
+and ui dot
+cart logic
+fine
+now the javascript part is done we have
+used json here to make our web page more
+responsive towards several aspects apart
+from that we have used json for adding
+products to our website as well now we
+are left with one more task only
+let's do it and then we'll see the final
+outcome of this extended code
+so
+we'll move to the css file and we'll
+start starting the products part let's
+try if it's working or not let's save
+this piece of code and go to
+browser click on shop now
+and it's not working we can see
+okay
+it says it's failed to load the resource
+refresh it and you can see now it's
+working totally fine we have all our
+product images over here we have all of
+our products we can add them to cart and
+we can use the cart as well so the last
+thing we have to do is to use products
+now
+now we have to style those products so
+for that we'll move to a css file
+so here's our css file
+and inside this
+we have
+to write here
+so we have put a comment over there
+when we were not here so we have to
+style the products over here so for that
+we'll write here
+dot section two
+dot
+title
+and text align at the center
+then we'll write here section 2
+dot
+title
+h1
+and the font size is going to be
+1.8 m
+the margin is going to be
+1.3 m then we have to write the code for
+products here so we'll write your dot
+product
+and inside this will write
+margin as
+0.5 m
+we have to write here margin
+we'll write a 0.5 m and auto
+max width
+is going to be 1300 pixels
+display is going to be grid
+grid column
+is going to be so his is going to be
+grid column gap and it is going to be
+2m
+then we'll write here
+grid row gap
+and grid row gap is going to be 2m as
+well
+then we'll write here
+grid
+template
+columns and we'll write here repeat
+we are going to create a grid for our
+products right so we'll write here auto
+fit
+comma min max
+we'll write here 350 pixels
+and
+one draw
+fine next up we'll write here dot
+product
+card
+and now we are going
+to write here text align as center
+position as relative
+max width of the grid is going to be 350
+pixels
+and overflow is going to be
+hidden
+next up we'll write here
+product card image
+we'll write here height
+as
+300 pixels
+width
+as 300 pixels
+and
+transition is
+0.3 seconds linear
+fine
+similarly we'll do the same for product
+name and product pricing so we'll write
+here
+product
+name
+comma
+product
+pricing
+margin for them is going to be
+0.3 m
+we'll write here dot
+product
+pricing and the color of the product
+pricing is going to be
+the one we have been using till now so
+we'll write here f 0
+9 d 5 1
+then we have
+to write the code for add to cart button
+so we'll write here add
+to cart
+we'll write here
+align items to the center
+justify the content to the center
+and color is going to be white
+padding is going to be 0.2 m and
+1 m
+fine height is going to be
+30 pixels
+background
+is going to be
+the same
+f9
+d51
+position is going to be
+absolute
+right is going to be zero
+transform
+it's going to be
+translate
+along the x-axis to
+100 percent
+bottom is
+going to be
+80
+pixels
+you have to put a comma here
+bottom is going to be 80 pixels
+transition is going to be
+0.3 seconds again and linear
+cursor is going to be point
+fine
+then we have to write few more lines so
+we'll write a product card
+we'll write here hover
+and we'll add add to cart here
+so we'll write here transform
+translate x
+zero percent
+we'll write your
+product card
+on hovering over the image so we'll
+write here over
+img
+opacity will change to zero point
+seven
+let's try it and finally we'll write
+here
+dot add to cart
+over
+and here we'll write
+color as
+black
+fine we are done with it we have styled
+the products as well we are now done
+with the website
+save it
+move on to the browser and let's face
+the truth now
+so you can see it's not working as of
+now refresh the web page and
+the products looks really big now
+what we have to do is we have to move
+over here and we have to
+see what's wrong over here
+this was a mistake and it's done
+let me see what's wrong
+something is not right here everything
+seems fine but we have to search for the
+error
+so if we see here max width is fine the
+max width for product is fine
+let's try to do this thing we'll write
+here this
+save it now and i know that this is the
+error we did
+so such small errors sometime costs us
+way more
+go to the browser and you can see our
+website is fine now try adding the
+products to the cart
+you can see the products are in the cart
+we can increase the number of products
+the total is increasing with that
+and
+it's working totally fine click on the
+clear card button and it's not working
+click on the proceed button and it
+clears the card
+a simple solution for this
+go to the html file
+right clear cart over here and
+proceed over here save it
+move to the browser
+try adding products to the cart
+go to the cart
+increase the numbers everything is fine
+proceed it's not working clear cart and
+the cart is clear
+now that we have done so many things on
+the website here is a task for you guys
+we have left the proceed button inside
+the card with no functionality we did it
+with purpose i want you guys to do
+something creative with it you can take
+the user further to the login or sign up
+page and you can use regular expressions
+to validate the form upon successful
+validation you can further take the user
+to the payment page i want you guys to
+do that part and let us know in the
+comments below if you are facing any
+problems or if you have any doubts
+regarding that as we saw in today's
+video how easy it was to create a
+website for different courses using
+javascript on that note if you are
+looking for free course with
+certifications you can check out skillup
+by simplylearn a great resource of free
+courses on various technologies that
+will help you get ahead in your career
+check out the link in the description
+below to know more so if this video
+helped you anyhow do give it a thumbs up
+if you have any doubts do let us know in
+the comments below share it with your
+friends and don't forget to subscribe
+simply learn thank you
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

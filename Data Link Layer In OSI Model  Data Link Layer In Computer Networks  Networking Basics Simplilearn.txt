@@ -1,0 +1,183 @@
+foreign
+Network models before the data is ready
+for its transmission over the network
+channel it is important to process the
+data with a specified services to reach
+proper transmission standards and this
+task is handled by the data link layer
+of the OSI model hey everyone today we
+will be learning everything that you
+need to know about the data link layer
+in the OSI model but before we begin if
+you love watching similar Tech content
+then subscribe to Simply learn and hit
+the Bell so you are the first to get
+notified when we host now without
+further Ado let's begin with the plan
+for today's session
+first we will have a quick recap on the
+OSI model then we will dive deep into
+the core topic which is about the data
+link layer moving on we will have a
+detailed understanding of the major
+functions of the data link layer finally
+we will wrap up the session by
+discussing the sub layers of the data
+link in the OSI model let's get started
+with the first heading what is the OSI
+model
+foreign
+model stands for open system
+interconnection Model A specifically
+designed set of protocols and standards
+governing the data's modeling and
+conversion for proper transmission
+The OSI model is divided into seven
+layers which perform specific functions
+and apply protocols to maintain data
+quality without any error now let's move
+on to the main topic for today's session
+which is about what is the physical
+layer
+foreign
+layer is responsible for maintaining and
+terminating the established connection
+between the devices over the network it
+has two sub-layers the first one is the
+medium access control which uses the Mac
+addresses from the devices to transfer
+data between them the second layer is
+The Logical link layer which identifies
+checks flow control and performs the
+error check for the transmitted data
+advancing let's take a look at the
+functions provided by the data link
+layer
+but before we begin let's understand the
+data flow between the data link layer
+and other layers in the OSI model that
+is to begin with the network layer we'll
+share the data packets with the data
+link layer the data link layer handles
+these data packets by integrating them
+with frame structure where the frame
+acts as the header for the data packet
+the data packet will contain information
+about the destination address sender
+address and other related Services the
+final product of the data link layer is
+known as the data frame which is then
+transmitted to the physical layer of the
+OSI model now let's take a look at the
+list of functions provided by the data
+link layer first is framing framing acts
+as a header format for the data
+then we have addressing which handles
+the physical address of the data frame
+next is flow control which is
+responsible for maintaining proper data
+exchange between the sender and the
+receiver side continuing with access
+control which handles the communication
+link between multiple network devices
+the last function is error control as
+the name suggests ddl provides error
+control services to the data
+now let's take a closer look at all the
+data link layer functions the first one
+is framing the data packets received
+from the network layer are encapsulated
+in frames by the data link layer for bit
+to bit sharing over the channel it is
+also responsible for restructuring the
+framed data in the network model and
+each data frame is different from the
+others followed by that we have
+addressing the task of adding a physical
+address to the frame in the header
+format is known as addressing it acts as
+the identification service for
+transmitting the frames to multiple
+Network models over the channel
+the next one is the flow control during
+the data transmission the data flow of
+the sender or the receiver side may be
+different causing Network congestion in
+the channel the data link layer in such
+situations acts as a flow control for
+the sender side to prevent the Overflow
+at the receiver's side
+followed by that we have the access
+control in this network model when
+multiple devices share the same
+Communication channel this leads to data
+Collision in the model
+to prevent such data collisions the data
+link layer performs checks on the
+devices with the same network channel to
+avoid any data loss lastly we have error
+control
+during data transmission due to noise or
+signal loss errors might occur in the
+data being transmitted to minimize such
+data error rate the data link layer
+performs error detection and correction
+techniques on the transmitted data error
+detection is done by adding detection
+bits in the header of the transmitted
+data and the receiver site can check for
+any error in the received data now let's
+take a look at the sub layers of the
+data link layer
+in the OSI model the data link layer can
+be divided into two sub-layers which are
+logical link control this is the upper
+sub layer of the data length layer
+the second one is the media access
+control or Mac which is the lower sub
+layer of the data link layer but before
+we begin with the details regarding the
+two sub layers let's take up a quick
+quiz to consolidate what we have learned
+so far question
+which of the following tasks is not
+performed by the data links layer a
+addressing b i p Services C framing D
+Access Control you can give your answers
+in the comment section below
+now let's take a look at some points
+related to each layer of the sub layers
+the first one which is logical link
+control this sub layer is responsible
+for handling and maintaining the
+communication repeat
+this sub layer is responsible for
+handling and maintaining the
+communication between the other layers
+of the OSI model
+this layer also performs the task of
+overseeing the data flow rate of the
+channel lastly it is also responsible
+for handling error messages and
+reliability checks for the data
+next we have the media Access Control
+this sub layer manages framing of the
+data received from the upper layers
+this layer also handles the physical
+media for the model and interacts with
+the computer and IC it is also
+responsible for data encapsulation and
+media access control for the data
+received with this we have discussed all
+the important points and functions of
+the data link layer in the OSI model if
+you have any questions regarding the
+topics you can ask them in the comment
+section thank you for watching and until
+next time stay safe and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

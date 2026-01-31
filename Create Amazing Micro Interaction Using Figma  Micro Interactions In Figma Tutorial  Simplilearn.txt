@@ -1,0 +1,578 @@
+hello everyone welcome to this video on
+micro interactions in figma from Simply
+learn whether you are a designer with
+some experience or just starting in the
+world of uiux understanding interactions
+is key to making your designs more user
+friendly so imagine you using an app and
+you tap on a button to submit a form or
+you scroll down a page to see more
+content so these are examples of
+interactions basically the ways users
+engage with the element on a website or
+app so they are super important because
+they guide the user smoothly from one
+step to another now let's talk about
+micro interactions now these are small
+details that happen when users interact
+with your design for example have you
+ever noticed when you like a post on
+social media and the Heart icon gives a
+little bounce or when you drag a file to
+the trash bin it gives a quick animation
+of the trash closing these are micro
+interactions they may seem tiny but they
+help improve the overall user experience
+by providing feedback making your design
+feel alive and responsive and in figma
+you can easily create these small but
+powerful moments using its prototyping
+and animation tools and in this video
+we'll be covering some cool examples
+including a subscribe button that
+responds when clicked a toggle switch
+that smoothly switches between on and
+off States and a fq accordion that
+expands and collapses with a simple
+click and a page Bottom bar navigation
+that animates when switching tabs and
+also a sidebar menu that slides in and
+out for easy navigation and by the end
+of this video you'll know how to create
+all these micro interactions in figma
+and bring your designs to life so let's
+Dive Right In so let's start with the
+Subscribe button so basically I want the
+Subscribe button to be plain in color
+and once I press the Subscribe button I
+want it to zoom in a bit with red color
+fil so here I already have my main frame
+ready where we'll be trying it out so we
+will be placing our subscribe button
+over here basically so let's just start
+creating it so let's draw a rectangle
+first you can press r on your
+keyboard so first let me just check that
+if the size is
+fine think I have
+to yep I think this is perfect right
+let's just zoom in a bit now let's just
+round off these edges Corner these edges
+so just Corner the
+radius yes that's perfect and let's just
+write the Subscribe text inside the
+shape so initially I want this to be
+white in
+color yes let's just increase the font
+size a
+bit yes 15 is fine what you have to do
+is you have to frame the selection so
+select this shape press shift sh key
+select the text go to the bottom toolbar
+and frame
+selection so this is your first frame
+now let's just rename the frame as empty
+because we won't be having colored in it
+so basically we need more than one state
+for animation so let's create two more
+copies of
+this yes now let's just rename these
+frames as transition and and let's just
+rename it as red filled because finally
+I want my button to be red after
+subscribed and here let's just change
+this text to
+subscribed yeah so now we have to create
+a component set of these so for that
+select all and go to the button Toolbar
+to create a component set like
+this select everything go to the toolbar
+and create a component set
+let's rename the component set as
+subscribe button yeah next step is to
+fill the color inside each of the
+buttons so even though we need the
+button to be you know plain before the
+click it is important to fill the
+confidence with the same color like all
+the components with the same color for
+transition but then you can adjust the
+opacity of the color so I'll just show
+you so that you get an idea so basically
+you know after subscribe I want it to be
+read right like the but but
+color so let's just select this
+button let's give this red color so we
+have kept it test FF 00 I think we'll
+put the text color we'll keep the text
+color as black
+itself just a
+second just a second
+fill let's just keep it black for now
+we'll give this a stroke and let the
+opacity be 0%
+percentage yes now here this is a
+transition state so let the opacity be
+let the color be the same ff0000 0 then
+let the opacity be 75
+percentage yes and this is the Subscribe
+button where we need the opacity to be
+100
+percentage let's just
+yes cool now the thing is I want the
+Subscribe button to grow a bit and
+Shrink slightly during the transition
+it's kind of a popup so I will make the
+transition state frame a bit bigger so
+this is a transition state thing so I
+will just make it you know a bit bigger
+this just slightly I also align the
+text you know because I we need a just a
+small popup during the
+transition so now this is all done now
+it's time to add the animations so for
+that we have to go to the
+Prototype on your right
+side and now let's add the flows between
+the
+suggested plus signs so let's edit the
+first
+flow so here we want on click because
+we'll be clicking the Subscribe button
+and on click it will change change to
+the transition state we need smart
+animation now there are so many options
+here so select smart animate we need
+ease in and ease out of around I think
+200 millisecond is enough
+yes now let's draw the second floor now
+the second floor we don't want it on
+click because you know we'll click the
+Subscribe button only once so I just
+want it to be dark red after a delay so
+let's just give after
+delay the least we can give is 1
+millisecond so I think that would be
+fine and we need to change it to Red fi
+we'll give the same smart animate EAS in
+and E out and here we'll you know just
+reduce to around 100
+millisecond yes so now let's just copy
+so now this is a component so now let's
+just copy the first frame and paste it
+in the main frame copy this and pasted
+it over here yes
+see here as you can see the Subscribe
+button you know we have just blacked it
+out so let me just you know change the
+color of the
+text now here it's reflecting as right
+so now let's just play and see the
+outcome yes so as you can see the
+Subscribe button which had no color as I
+clicked it gave a subtle pop and went to
+red button as I had imagined so this is
+pretty cool so this is how you know you
+design a subscribe button or a like
+button for example or a save button Etc
+so now let's move on to create a toggle
+switch so basically I want to create the
+toggle switch for this particular alarm
+so as you can see my main frame is ready
+and we'll be adding the toggle switch
+over
+here so let's do
+it so first let's create a rectangle as
+before and just check if the size is
+fine yes
+perfect let's just zoom in a
+bit let's curve the
+edges yes now let me draw a circle
+inside for the circle the shortcut on
+your keyboard is the letter
+O so now you have to do a frame
+selection for these two elements so
+select the element hold shift key select
+the other
+element and do frame selection so this
+is basically your on state so I will
+rename this Frame as on
+state so in the on state I want the
+background to be yellow in
+color here
+yellow and I want my button to be black
+in
+color yes so as I told you for adding
+transitions or animations we need more
+than one
+state so let's just duplicate this
+Frame yes let's just rename this as off
+State yeah now in the off
+State my button would be
+here I think the placement is fine yeah
+I want the background to be light gray
+because that's
+usually the color for an off State give
+the button a dark gray
+shade
+think no yeah I think this is fine
+now let's create a component set of
+these two frames you just have to
+select just a
+second yeah you just have to select
+everything and create a component set
+you'll rename the component set as tole
+switch now let's add flows by going to
+prototype like how we did earlier for
+the Subscribe
+button so when I press this button I
+want it to go to the off State
+again this is on click we have to change
+to the off State it's smart
+animate we don't want it is easy and EAS
+out we actually you know there are more
+options I think custom spring so like
+you know it actually I wanted to you
+know be in a spring action so I'll just
+give custom spring so if you give custom
+spring this is how the animation would
+look like so now let's just give the
+same flow backwards with the same
+settings
+yes done so once it's done let's copy
+the first frame and let's paste it in
+the main frame so this is our first
+frame we pasted it in the main frame
+just a
+second so as you can see it works and it
+gives us smooth transition for toling
+switch so now before we move on to the
+next interaction Kickstart your design
+carrier with a calch ctme uiux boot camp
+an immersive gen power program designed
+to equip you with hands-on experience in
+Cutting Edge design tools and techniques
+this boot camp offers a prestigious
+certificate from Caltech CME along with
+up to 10 contining education units
+you'll build a professional design
+portfolio through Capstone projects get
+n2n mental support and master 21
+essential uu tools like PMA notion and
+new the program also includes master
+classes by CTIC instructor s and
+Industry experts with simply learns job
+assist gain visibility from Top hiring
+companies and take your first step
+towards becoming a uiux design expert
+enroll now to transform your career and
+showcase your expertise you can find the
+course Link in the description box and
+PR comments so now let's create an FAQ
+accordion so this is basically the FAQ
+model seen on Google so where we'll
+press the question and the answer comes
+in a drop- down menu so let's create
+that one so first let's create a
+rectangle and then let's you know write
+a question Inside the
+Box what is
+uyux
+design the text is not visible so let's
+just first change the text color just
+increase the size to 20 or I think 25
+would be
+fine let's just align it yes so now
+let's do frame selection for these two
+objects like for the rectangle and the
+text so as you might have seen the basic
+steps remain the same for creating micro
+interactions so let's
+just do frame
+selection and rename the frame as
+question now let's create the answer
+part just a second let's let me just uh
+so is fine now create another
+rectangle make sure it's of the same
+size
+now let's just copy
+paste
+expression okay bring to
+front
+yeah now we have to provide the answer
+so basically I have just you know I have
+the answer over here so let's just drag
+it and adjust it
+let's just frame select these
+two this question this stream let's
+rename it as answer now let's create a
+confidence set of these two by selecting
+everything let's rename the component as
+a PQ now let's add the animation go to
+prototype it will be given smart animate
+with Easy in and out
+same
+backwards
+yes now we'll select this particular
+frame copy it to the main
+frame let me just
+address adjust the frame size now let's
+just play and see how our fpq section
+looks
+like this is pretty cool so this
+basically looks how an FAQ section looks
+like Google search page isn't it see how
+easily we made this transition so now
+next let's see how to create the sidebar
+menu that we usually see in
+apps so I'll first show how I want it to
+be so that you'll get an
+idea
+so yeah basically I want my animation to
+look somewhat like this so first we'll
+be having the main page and when I click
+a button you know I just wanted to zoom
+out sorry zoom in in a bit and the next
+page should right up so let's see how
+this is
+created so here I've already selected
+two
+frames so first we have to create a
+frame so let me just check out the
+resolution of these
+screenshots okay it's
+46129 this height is 98.85%
+yes so we have created a frame of equal
+size and now we have to layer the two
+images one by one inside the first frame
+so make sure that you know the sequence
+of the frame that you layer is correct
+so the thing is basically I want
+this as my first frame like while I'm
+using the app I want this as my first
+frame and I want this to zoom in a bit
+while I click a certain button
+so the second page that I
+want we kept
+here the first page that I
+want will be layered above
+it
+yes so let me just you know rename this
+Frame as closed let me just duplicate
+this
+Frame
+yes now in the second frame is named as
+open so in this state I want the this
+particular
+image to look small just a
+second
+yes to be somewhat like this now this is
+not a perfect
+example you know I just want you to know
+how such an animation can be done that's
+all yep so now I have to create buttons
+so like for time being we'll just create
+some shapes
+so I will just give a small square as my
+first icon and here I would like to
+represent my close Button as a small
+circle for
+example let's keep that black in
+color yeah let's just zoom in a bit now
+we have to edit or you know like make
+animations for these particular shapes
+so let's just do that again create a
+component set of these two
+now let's just prototype
+it same we need on click smart animation
+e and
+out same goes for the other way
+around yes now I'll be placing this
+button over
+here maybe over
+here let's just consider this you know
+as the menu button or whatever and let's
+just take this circle and place it in
+this particular page where you'll be
+using this as a close
+button let's just place it over here now
+let's just prototype these
+two now let's just see the
+result this is amazing
+so this kind of looks like a complicated
+animation but see how easy it was to
+create so you know you can experiment
+more on this this is just a basic
+example you can experiment more on this
+now finally let's create the page Bottom
+bar navigation so basically the you know
+Bottom bar that you find on apps so I'll
+just show you the result first ex so
+that you know you'll get an idea of what
+I'm going to create so here we have the
+home the profile the search and the
+settings so basically basically when I
+you know press profile I want such an
+animation when I press search I want
+such an animation when I press home I
+want such an animation so this is what
+we are going to create now yes so here I
+have already got my icons ready I hope
+it's visible to you let's yeah so first
+let's create a
+frame and now let's draw four rectangles
+and curve them and then we have to place
+them in equal spacing
+yes let's just do it
+quickly yes so as you saw in the example
+first I have the home button let me just
+copy it here me just paste it here just
+a second there is some
+issue
+yes this is my home I can just bring it
+here like this
+this is my
+search this is my
+settings now I'll just duplicate these
+frame four
+times let me just bring it
+down it's going and getting pasted over
+here so let's just align them linearly
+so that it's easy to edit one
+more so right now we have four
+frames let's zoom in a bit so as you saw
+initially I want my home to be red in
+color and a text to and I want to place
+this over
+here
+okay now let me write the text over
+here and I want this to be red in color
+the color was
+ff0000
+% so as we have discussed during the
+Subscribe button also so while coming to
+the next one I actually don't want a
+color but I have to give the same color
+for the next frame also but you just
+have to adjust the opacity so I'll just
+give you an example for example while
+I'm in the home page I want this button
+to be red in color and I want it to be
+written as home right now this is
+basically for our profile page so here
+what I'll do is here also for the button
+I'll just give the same color but my the
+opacity will be 0
+percentage okay but so as you can see
+it's still there but the opacity is 0
+percentage likewise here I want it to be
+profile just change this
+first
+yeah this
+F here we give green
+color so here we'll give but here also
+we'll give the same color in the rest of
+the frames also we'll be giving the same
+green
+color what was this
+color just a second 3900 yeah so you
+have to give the exact
+color but the opacity will be 0
+percentage so you have to do likewise in
+everything so I will just quickly do it
+because it will take a lot of time so I
+just quickly do it and come back to
+you so once that's done we can now give
+the animations so let's go to prototype
+so when I on the profile section it must
+go to this it's smart animate ease in
+and ease out from here also we'll go to
+the second frame so all the profiles
+while click should go to the second
+frame now all the home for example while
+clicked should go to the first
+frame so follow this
+pattern and draw flows for each of the
+icons I hope you understood like for
+example the search button like whichever
+search button it is you have to go to
+the third frame so you can draw the flow
+from each of the
+frames to the third
+frame settings will go to the fourth
+frame so basically while hovering we
+want these shapes to expand so what you
+can do is like the home will come from
+from the
+left so we can actually the design yeah
+so we can actually you know move the
+shape toward the left because the home
+while playing will you know this
+particular Circle will come from the
+left side so we are giving it to the
+left
+similarly similarly the rest for example
+this settings they come from the right
+so you can give it to the right side so
+basically what you have to do is you
+have to align all these shapes shes like
+for example the shapes enclosed by the
+home icon you have to shift it towards
+the left and the shapes enclosed by the
+rest of the icons you have to shift it
+towards the right so now let's see the
+result
+yes this is pretty
+cool as you saw you know the home is
+coming from the left settings is come
+going to the right so this is why we
+adjusted the shapes at the end so yeah
+you have seen some cool instances where
+micro animations are used now before we
+wind up I have a quick question for you
+guys what is a primary purpose of using
+micro interactions in figma when
+designing user
+interfaces option A you have to add
+complex animations for visual appeal
+option b to guide users through tasks by
+providing
+feedback option C to enhance the layout
+structure of the design and option D to
+reduce the number of screens a design so
+you can give your answers in the comment
+section and we'll be checking your
+answers and addressing any queries so I
+hope you liked our tutorial I hope you
+got a basic idea of how to create micro
+interactions so it's pretty simple it
+might look complicated but then of
+course you just have to spend a bit of
+time and do it properly and then it's
+pretty simple so hope you like this
+tutorial and if you found this helpful
+please do like and share it with your
+fellow mates and see in the next video
+staying ahead in your career requires
+continuous learning and upscaling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+[Music]
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

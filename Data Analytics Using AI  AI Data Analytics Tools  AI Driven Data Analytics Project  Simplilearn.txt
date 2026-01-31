@@ -1,0 +1,526 @@
+hey everyone welcome to Simply learn
+today we will learn data analytics with
+AI that said if these are the type of
+videos you'd like to watch then hit that
+like And subscribe buttons and the bell
+icon to get notified craving a career
+upgrade subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+with whether you're making a switch or
+aiming higher simply learn has your
+back just for a quick info if you want
+to upskill yourself master data science
+and data analytics skills and land your
+dream job or grow in your career then
+you must explore simply learn SC of
+various data science and data analytics
+programs simply learn offers
+certifications and postgraduate programs
+in collaboration with some of the
+world's leading universities like
+Caltech Purdue I can and many more
+through our courses you will gain
+knowledge and work ready expertise in
+skills like Advanced Excel python
+machine learning data visualization
+generative Ai and over a dozen others
+that's not all you also get the
+opportunity to work with multiple
+projects and learn from industry experts
+working in top TI data and product
+companies and also academic from top
+universities after completing these
+courses thousands of Learners of
+transition into a data science or data
+analytics Ro as a fresher or moved onto
+a higher paying job profile if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the pin comment and
+description box below to find a data
+science and data analytics program that
+fits your experience and areas of
+Interest now without further delay let's
+get started with the main topic of
+today's session which is data analytics
+with AI so before proceeding with data
+analytics with AI let's understand what
+exactly is data analytics
+so data analytics is not just um a step
+where you just give your data to Ai and
+it'll be done right so it's a stage byst
+stage process let's understand all the
+stages one after the other firstly you
+might have different sources so uh
+before we go ahead with the sources
+let's understand the situation you might
+be dealing with your client you might be
+working with the company as a data
+analyst so before you begin with data an
+analysis you might have to have with
+your client or the company you might
+have to uh go through something called
+as requirement Gathering right so
+requirement Gathering will let you know
+from where exactly you're getting the
+data is it in the form of a PDF is it in
+the form of uh an Excel spreadsheet or
+is it going to be cloud or anything like
+that right so you'll be understanding
+what the source exactly is and follow
+Follow by that you will understand what
+is the request of your client what he is
+looking for what he wants you to give
+him right the insights of the data which
+part of the business he wants you to
+focus on and which part of the business
+he wants to improve right and followed
+by that you will come up with a time
+span within that time span you need to
+use that data build some insights and
+give it to the client or your business
+owner so that he comes up with the
+business decision right so that's the
+first requirement Gathering once you
+have the source you come up with the
+next step of the data analytics which is
+cleaning the data and transforming the
+data so it's really obvious for any
+beginner or an expert who the data
+analyst it is cleaning and
+transformation what makes or what adds
+value to your data once you clean your
+data and transer form so what exactly
+you mean by clean and transform so uh
+let's say you might have some blank
+entries or might be some wrong data type
+or there might be some places where you
+might have to split the data for example
+if there is a customer and customer ID
+mixed up together let's say customer ID
+1 3 4 5 hyphen the name of the customer
+right you wanted to split the customer
+ID and split the customer name then
+comes the data split option apart from
+that if you want to categorize the data
+into buckets let's say you might have a
+column for customer age there might be
+customers starting from 10 and and all
+the way end up to 80 right in those
+scenarios you might want to split the
+data into buckets let's say 10 to 20 are
+teenagers and above 20 to 30 are youth
+and above um yeah 30 to under 50 are or
+under 60 like let's say like 59 are
+adults and after that maybe senior
+citizens right then you have a smaller
+window so that you can C capture which
+category of the age group is bringing
+you the most of the revenue right so
+these are the parts of cleaning the data
+and transforming the data and once
+you're comfortable with it then you can
+choose a platform where you want to
+analyze your data which is which can be
+tab which can be powerbi click view or
+Excel or any of the tools that you might
+want to prefer in our scenario we want
+to go with AI right so AI can be
+anything you can go with the Microsoft
+co-pilot you can go with the open AI
+chat GPD you can go with Google's gemini
+or any of the AIS which can perform uh
+data analytics there are some AI tools
+out there which are dedicated for AI uh
+data analytics right and once you're
+done with it and the final stage is
+analyzing the outcomes and reporting
+that to your business owner or client so
+I hope I made myself clear with these
+stages of data analytics and Report now
+let's look at an example to explain this
+a little better so uh I have uh the data
+set in Excel now this is our source the
+first part of data analytics let's EXP
+on the columns so there you go uh I said
+something about data type so here you
+can see we have some different data type
+which we don't want which is in general
+so we will change this data type to
+short date to make a little more meaning
+out of it and after that here we have
+customer ID right so what we will do is
+use data spit
+here it text to columns D
+limited
+next so we have
+other so here's the preview so you will
+be receiving get in this form and if you
+want to format the data as you like you
+can go ahead so I leave it as general
+for now and finalize the data type after
+this plit is finished so what you can do
+is add a column new column here so that
+you can get an the uh column here to
+split the data go to text to columns
+once
+again select and Del limited select next
+and uh we have the input other next and
+finish there you go you have customer ID
+and you have customer name the
+respective customer name here
+it's so uh proceeding ahead we have U
+quantity the quantity of product ordered
+and we have traffics leads orders and
+revenue right cost to company and
+delivery status so in case if you wanted
+to uh kind of calculate uh profit what
+you can do is add a new column profit
+and here you can do a mathematical
+calculation equals to revenue
+Minus cost company and you can extend
+this particular column all the way to
+the end so that you have the uh profit
+numbers and here you can also change the
+data type to currency and
+uh go to home and here the data type
+from
+General to currency and there you go and
+if you want it in rupees you can go with
+rupees or if you want it in dollar you
+can also have dollars right so that's
+how you do it
+I would like to go with dollars so more
+and here go to currency and in currency
+symbol I'll go with
+the do then okay there you go you can
+quickly save
+it if you want to add some borders to
+the data you can also do that
+there you go so far so good so we are
+now connected now comes the next step
+which is loading the data and analyzing
+it right so currently we choose the
+platform as Excel so you can do this on
+Excel PP and chat GPT as well so let's
+go with the first uh one which just
+excel's AI so here you can see analyze
+data or also people call it uh the
+co-pilot of excel right now you can just
+click all the data and click on analyze
+basically what you can do is insert and
+go to the priv table option and here you
+can insert a pivot table and after that
+you can find out the requirements what
+you want the sales from the central
+region South Region and uh which
+category of the products have been sold
+the highest and what the highest
+Crossing product what are the number of
+leads and you can estimate the
+performance of traffic on a month on
+month basis right you can do that all
+but if you want to reduce the time
+basically I would like to tell you go to
+that particular part first understand
+manual process and after that go to the
+analyze data option which is the
+automated or AI generated report right
+it will now read your data and it will
+give you some insights from the data
+given right here you can see the cost to
+Company by order status and here you can
+see you can insert a priv table for that
+and here you can see you can insert some
+graphs and charts here part graph and
+here you have another one now you can
+see that it has all 24 results all the
+insights now if I can ask give me a pie
+chart pie chart of
+sales and
+category here you go here you have a so
+basically what copilot did is it created
+a pivot table of sales and category and
+out of that PIV table it extracted the
+pie chart and generated one for you in
+this way you can create uh multiple
+options let's say I want to create a
+line
+draft month on month
+month enter now here it again created a
+pivot table and here it generated a line
+graph on month bis and how many number
+of uh traffic or how many number of
+visitors your website have and in this
+way you can create a long list of all
+the required charts and graphs for your
+uh website and or the client and uh
+created dashboard of it which is
+completely interact now this was the
+excel's AI now if we go to another one
+which is powerbi so here you can see a
+completely uh prepared dashboard in
+powerbi and we can create this once
+again or you can at least understand how
+it was done right now let's get the
+data from Excel
+workbook so my workbook or my d
+is somewhere here sales data I would
+like to go with orders data only one
+file is enough for 2024 and your data
+will be shortly
+loaded select spreadsheet one and load
+the data since we already transformed it
+there is no need for transforming it
+once again so the data is been loaded
+successfully it's going to take some
+time 2,000 rows
+loaded sheet once so we are going to
+work with shet one now you can select
+the visualization you want like I want
+to create a line graph here repot like I
+want to create a line graph here select
+and for this particular line gra you
+will have Fields x-axis and y axis now
+what I'll do is I'll drag and drop x a
+sorry date to x-axis field and uh
+traffic to y access
+field now here in x-axis I would
+eliminate here I would eliminate quarter
+I would eliminate date I just want month
+on month right here you have a clear
+month- on Monon traffic line gra right
+now let's quickly delete it we don't
+want this
+now and remove it now what if I tell you
+there is an option where you can just
+double click and or right click and you
+will get a option
+here you can query right you can just
+write down query L
+gra type of graph you require
+traffic write spellings
+correctly month
+on and enter you will get the graph you
+are looking
+for there you go
+right so apart from this uh let's put
+the month on Monon cph here apart from
+this let's double click once again and
+uh category wise
+sales category
+sale by
+chart there you go and uh
+now region was double click once again
+region wise
+sales bar
+graph select the first one and there you
+go I think there is a small mistake in
+the selection spelling select the first
+one once again and we will have a Barra
+in region wi spaces
+or we can also go with the similarly we
+can also go with the map
+chart for
+States and
+revenue select the first
+option and you will have all the
+American states and their revenue
+details
+here right so in such way you can use
+the artificial intelligence of power pi
+and create a completely interactive gra
+just like this one so if I select the
+standard shipment mode what are the
+sales reports and if I select the entire
+shipment modes what are the reports and
+if I select the home category what are
+the sales reports and which part of the
+nation and which uh and what are the
+sales and order for month traffic and
+everything details here right and one go
+is completely interactive now let's move
+on to the next part of uh our session
+for today so we will be using U chat GPD
+for our data analytics so here you go
+now let's load the data before that
+let's write a
+PR
+some on sales
+sales
+reporter visualization and now load the
+data upload from
+computer and we have the sales data here
+the ERS data select the aers data file
+and
+open the data will be loaded shortly
+and since it's loaded can just push the
+command
+front it'll first review the contents
+and understand what exactly is present
+in your content and the data type along
+with the data type right it has 2,000
+entries 17 columns here's the brief
+overview of all the
+columns so it's asking you would you
+like uh an overall summary or a specific
+aspect so let's go with the specific
+speciic aspect instead of overall
+summary I want
+the region wise
+sales as a bar
+graph okay we didn't have a column as
+bar sales uh it's in turn taking Revenue
+yes there you go sales revenue by region
+as a Barra Now by
+chart for category
+Revenue okay so there is some uh limit
+for analysis okay that's not a problem
+we can uh change the account and try to
+do it once again or I should have chosen
+the overall summary right but if you go
+to the chat gbt plus uh Edition you can
+get that let's try the plus Edition once
+so we are in the plus Edition now
+so it generated some visualizations
+which is completely downloadable here
+you can go with that as well so the
+prompt is still running let's wait for a
+couple of more minutes and see what
+exactly Char is up
+to so here we have a profit by category
+which was our second uh request which
+did not get
+uh successfully authorized because we
+didn't have plus one so now we can see
+Revenue versus cost to company in top 10
+products so which are the top 10
+products which are giving the maximum
+revenue and here is a detailed report
+and if you would like to continue with a
+few more reports like we did before in
+pobi and Exel like
+traffic versus uh month on
+month is a land
+graph let's try
+that the there you go so we have a land
+graph of traffic on a month-on-month
+basis so that's how you can conduct some
+data analytics using different AIS on
+different platforms so there are many
+number of platforms TBL powerbi click
+view Excel SQL chat gbd Gemini and a few
+more dedicated artificial intelligence
+tools which are for AI data analytics
+and that brings us to the next part of
+data analytics with the AI so how does
+data analytics and AI work so first
+basically once you load the data AI will
+start preparing and processing your data
+right so the Transformations what you do
+are also can be possible in AI as well
+if you request AI to do the
+Transformations it can do itself but I
+would recommend you perform the
+Transformations because you know what
+are the exact requirements are once your
+data is completely trans transform you
+can load it and get the
+reports the next part of it is pattern
+recognition as you have already seen
+Char GPT recognizes each and every
+aspect of your data from the data type
+to the Manu details like currency and
+everything it understands the data first
+and then it will request you it will ask
+you if you want a complete summary or if
+you are looking for a particular aspect
+right machine learning algorithms can
+identify patterns Trends and
+relationships that may not be apparent
+to human analysts and there is a
+possibility that chat GP can even
+identify a few more insights that you
+never expected to have right and uh
+moving on to the next part Predictive
+Analytics AI can also perform some
+Predictive Analytics and give you the
+forecast of what exactly is going to
+happen in the upcoming future in your
+business that may or may not happen if
+you find something is about to go down
+you can prevent it by taking some
+predictive steps or measurable steps
+which can avoid that loss right and
+automated insights and rep you can also
+request Char GPD right in Excel there is
+something called as power query it acts
+like a macro or XL VBA where it stores
+each and every transformation step you
+apply in the similar way each and every
+transformation or step that you apply to
+modify or try to add value to your data
+and teach that to your AI so that it can
+also understand that particular
+automated the transformation steps and
+report to you on a month-on-month basis
+right so this will stop your
+month-on-month activity of cleaning your
+data transforming your data loading your
+data analyzing extracting some insights
+and then creating a strategy so all the
+steps will be eliminated because chat
+gbd or any other eii will take care of
+it and you can focus on implementing
+some business strategies and we have
+decision making so AI can also help you
+with some critical business strategies
+and also help you in decision making AI
+algorithms can optimize complex
+processes and decision making by
+evaluating multiple variables and
+multiple scenarios now last but not
+least continuous
+learning so AI is capable to adapt and
+learn new things in your business like
+how it processes how it functions and
+what's the data source and most of the
+aspects in which are involved in
+business and data analytics AI systems
+have the ability to continuously learn
+and adapt based on the new data and
+feedback and that brings us to the end
+of the session on data analytics with
+eii if you have any queries regarding
+any of the topics covered in this
+session or if you require any of the
+resources like ddss or the prompts that
+we have written in this session then
+please feel free to let us know in the
+comment section below and our team of
+experts we'll be happy to help you as
+soon as possible until next time thank
+you for watching and stay tuned for more
+from Simply staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,609 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn
+about data modeling in powerbi in this
+module you will understand the
+fundamentals of power pivot in powerbi
+data loading and data modeling in power
+Pi along with practical demonstration so
+that said if these are the type of
+videos you'd like to watch then hit that
+like And subscribe buttons and the bell
+icon to get notified craving a career
+upgrade subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back just for a quick info if you want
+to upscale yourself to master powerbi
+skills to landar your dream job or grow
+in your career then you must explore
+simply learns pl300 Microsoft powerbi
+certification training program simply
+learn offers EXT intensive PBI training
+this program enables you to solve
+business problems and improve operations
+this course helps you master the
+development of dashboards from published
+reports discover better insights from
+data and create practical recipes for
+various STS that you can do with PBI
+that's not all you also get 30 plus
+hours of Blended learning industry based
+projects for experimental learning
+dedicated live sessions by faculty of
+Industry experts industry recognized
+course completion certificate and many
+more after completing this course
+thousands of Learners have transitioned
+into a data analytics role as a fresher
+or moved onto a higher paying job
+profile if you are passionate about
+making your career in data analytics
+then make sure to check out the link in
+the pin comment and description box
+below to find more details about pl300
+Microsoft powerbi certification training
+now without further delay let's get
+started now what exactly is data
+modeling so most of the times your data
+might be from different sources let's
+say one of your team member prefers to
+use Microsoft Excel and another one
+prefers to use a relation database and
+sometimes you might have to take care
+about the realtime streaming data from
+your company's websites like maybe the
+traffic for today current traffic
+current number of leads current number
+of applications submitted Revenue cost
+Bel Etc right so this data comes from
+different s sources and you being a data
+analyst should be able to segregate all
+the data collect all the data filter it
+and create one single module to perform
+your analysis right so the process of
+collecting data from different sources
+segregating it and trying to relate them
+to one another is process called as data
+modeling in PBI now data modeling is
+done with the help of power pivot is
+also available in Microsoft Excel maybe
+since it at least more than decade right
+so the same powerp is also used in power
+pii now to understand more on that let's
+go ahead before we get into Power pivot
+and understand all the technicalities
+let's understand some theoretical
+answers now modeling can be done in two
+ways first one is the dimensional
+modeling which is currently used in most
+of the business intelligence tools and
+another one is the relationship model
+which we have seen since ages where we
+use an normal relational database where
+we create some foreign Keys some primary
+keys and try to relate one table to
+another based on the foreign key and
+primary now let's go ahead with the
+dimensional module first so what exactly
+is a dimensional table you ask so
+dimensional table is one of the set of
+companion tables to a fact table so
+let's say the center table which you
+have here sales is the fact table so
+sales data will basically have the
+product ID order ID profit gained price
+of the product quantity Etc right so
+this particular table which is in the
+central place which is called as a fact
+table is connected to the store which
+will have the details of the store
+region location and another table which
+has details about product another table
+which has the details about dates
+shipment date order date delivery date
+and another table customer so all these
+dimensional tables are connected to the
+fact table right so customer so the fat
+table is something which will not change
+over time let's say on today's date on
+current date you made a sale of $100 you
+sold five to six products right it will
+be the same even after you open the
+database after an a it is not going to
+change it is a fact it is a real data
+right and when it comes to product there
+might be changes in product ID there
+might be changes in you know minor
+changes not if not 100% change they
+might be negligible changes they might
+be negligible update something like that
+maybe you are collecting customer first
+name second name phone number and
+address maybe tomorrow you might also
+want to have an email ID added to it
+maybe tomor you want to add some
+specific you know customer IDs or custom
+something you know some additional
+things to your DL so that's the
+difference between the regular table and
+the fact table so this is how the
+dimensional modeling is done when it
+comes to the next type of modeling that
+is the relationship model right so you
+will be having one table and you will
+try to connect to a different table
+right both these tables are connected
+based on a primary key and a foreign key
+so the primary key in product table can
+be the product ID right and when you go
+into the next table which is product
+type there you will be having maybe
+category subcategory product name and
+the category or the subcategory can act
+as a primary key for product typ table
+additionally there will be another
+column on the name of product ID which
+will become the foreign key for product
+table and a primary key for product
+table and you can connect product table
+and product type table together using
+these primary key and foreign key so the
+SQL the people who know SQL might have a
+better IDE on this in case if you don't
+have IDE on that we have a dedicated set
+of tutorials in SQL and data loading so
+you can have a look at that in the same
+powerbi series now that we have a
+detailed understanding of the types of
+modeling in pobi or data modeling let's
+proceed with the relationships right
+cardinality or the types of
+relationships which you can establish
+using the previous model which we
+discussed which as this one dimension
+model right so the cardinality or the
+types of relationship what you can
+expect is one to many many to many one
+to one and many to one let's say we will
+deal with the same sales data and
+customer data right so in customer data
+let's say we have 10 customers and in
+the sales data we have the same 10
+customers but 100 entries right so
+customer number number one maybe let's
+say Harry Potter Harry Potter is your
+customer and Harry Potter bought 10 WS
+today and after a couple of weeks he
+came back again and he bought 10 more
+ones right so there is a multiple entry
+here so many entries are related to one
+entry which is in customer table right
+such relationship is called as many one
+to many and when it comes to many to
+many then you might have another table
+sales table and the product table right
+where you have the product the wants
+right so wants to customers that is many
+to many and there is a specific wand
+let's say Elder Wand and the user you
+guessed it right it can be the last one
+who holded the one so one to one that
+kind of a relationship is one to one so
+remember we are using some movie analogy
+so that it is easier for you to
+understand and the last time one is
+let's consider it add a slight
+assessments to you so you tell me in the
+comment section about what could be many
+to one so these are the types of data
+modeling and cardinalities which you can
+perform while data modeling now we will
+understand this in a much better way
+using a practical demonstration before
+we move ahead using this directly on
+powerbi let's understand Pap pivot how
+exactly it works in Excel then you can
+understand how it functions in power Pi
+remember so power pivot power query one
+and the same for both powerbi and
+Microsoft Excel so powerbi is an
+advanced version of Microsoft Excel
+which has you can consider this way okay
+which has some additional
+functionalities of creating some vibrant
+charts and ability to get connected to a
+bigger higher Advanced versions of data
+storage like Cloud Etc right so that's
+how you can simplify the difference
+between a Microsoft Excel spreadsheet
+and the Microsoft PBI product or the
+business intelligence tool okay pretty
+much so far so good now let's quickly
+switch to Microsoft Excel so this is my
+local storage and here we have some
+Excel files so remember Microsoft Excel
+or Microsoft power query or Microsoft
+powerbi can load data from an Excel
+worksheet a a separated file the same
+Excel file which is saved in form of CSV
+it can take data from a PDF it can take
+data from a website it can take data
+from cloud so we have also covered an
+exclusive tutorial on how to load data
+onto a powerbi from various sources the
+link can be found in the description box
+below or let us know and we will have it
+sent to you so we have the same tutorial
+in our PBI Series right so here we are
+dealing with with the Microsoft Excel
+files so as discussed before in the
+dimensional model we have the fact table
+which is the sales data and other all
+the dependent measures of data where we
+have customers di you know store
+locations product data region sales Etc
+so we will also have this uh data set or
+the file Linked In the description box
+below should you want to follow us in
+this demo you can download the data and
+follow us in the explanation process now
+let's go ahead let me open sales data
+and let me also open another data set
+which will have customers data maybe
+let's try to open a few more files so
+this is the customers data and here we
+have um sales here we have a
+product could be store locations
+so we have opened uh store location
+sales team product data customers data
+sales data and lastly the regions data
+right so we have about six files in it
+so we can you know load all these six
+files onto power VI and you know so here
+we have already created a data model
+over here so before we directly jump
+onto this we will understand how exactly
+the query and power pivot Works in Excel
+so that you can apply the same knowledge
+on powerbi for a better understanding
+right now let's close this we don't have
+anything to do with this right now let's
+understand deal with Microsoft ex right
+so we have the sales data right over
+here and uh the next let's say we go
+with right so here we have a different
+region South West North right so we
+don't have the region data in sales
+table but what we have is sales channels
+and uh audit dates shipment dates Etc
+customer ID correct now let's say I have
+a query I want to find out uh how many
+number of sales happened through this
+particular sales channel in all the
+regions let's say I have east west north
+south and I wanted to find out how many
+number of wholesale sales happened in
+east region how many number of in store
+sales happened in west region right so
+when you want to uh you know do this you
+might want to run some formulas or run
+some tools like building a privot table
+or maybe a vooka function which is a
+little complicated to understand right
+you might have to create an entirely new
+table you might want to pull pull the
+data from both the tables using the
+lookup key the range the exact match
+right the number column number and the
+exact match or you know approximate
+match it's a hectic time ask right but
+when you know how a power pivot or a
+pivot table power query works then it's
+just like a Bree so let's quickly uh
+maybe create a new workbook and here we
+have Papa pivot option should you have a
+doubt how to activate Papa pivot it's
+really simple so you just need to go to
+the file option over here just click on
+file and go to options
+enter and here you have an option called
+addin click on addin and here just go to
+excel addin com so you you need to
+select the second one com addin and go I
+have already included the option so I
+have it over here in case if it's not
+added just click on Microsoft power
+pivot for Excel and just okay you will
+find it in the riin right next to it
+right so here you have it now before we
+just directly dive into P pivot let's go
+to home and try to load data so go to
+data and get data from file so we are
+working on Excel workbook so we'll take
+Excel so we wanted to find out the
+region wise sales correct so go to
+downloads and here we have data modeling
+inbi data sets and expand this a little
+go to sales data and import now the
+power query will be firing in the
+background and it will show you the
+various uh tables it just had a look at
+and select the table you want and now
+instead of directly loading it go to the
+option called load to now it will give
+you a new option where you don't have to
+import the entire table but just create
+a connection only and add this to the
+data model check on that correct so
+these are the two steps only create
+connection and add this data to the data
+model press okay and so far so good the
+sales data is getting loaded now let's
+try to do that step once again and now
+we will import a different table which
+is Regions data import and there you go
+select state regions load to and the new
+box or new window where you will be
+selecting only create a connection and
+add this data to the data model okay now
+the magic starts go go to the power
+pivot and select manage and here you
+have some tables sales table and state
+regions correct now you are not using
+any V lookup X lookup hookup functions
+you're not using any pivot tables you
+are just clicking on the option called
+pivot table that's all and a new pivot
+table will be created right now you have
+sales and regions select uh maybe the
+region and go to to the first table
+where we had sales and maybe you can
+count the order numbers that will also
+help you or you can unit price unit so
+I'll go with the number of sale we
+initially we wanted to find the number
+of sales right so you can just uh add
+the order number okay remove this from
+here from the row we don't want and
+count so it has automatically taken the
+count over here so you have the count so
+you totally have
+okay Midwest so we have Midwest
+Northeast and southwest so you might
+have found that the previous uh number
+was a little same right so that's due to
+if you due to this if you try to detect
+the
+connection we can't detect any
+relationships on selected PIV data right
+so why did that happen if you go into
+the p p window so here you can see the
+data on all these things right and when
+you go to the state regions you don't
+find the state code which is com which
+should have been common in both these
+right so if you go to the diagram view
+so when you look at the both the tables
+you don't have a common key in between
+these two but when you go to another
+table in uh Excel we have something
+called state code these to so that we
+can establish a connection between sales
+state regions and store regions so let's
+do that let's go to data
+View and now go
+to one which we
+created we don't need
+the to
+home data and get data from
+stores store locations data
+locations load
+to create connection only add this data
+to the data
+model now everything is fine now we have
+three regions or sheets Regions
+locations and sales now create the pivot
+table you can actually add in the
+existing worksheet select the location
+here it is so now we have loaded all the
+three tables locations table and sales
+table which is right over here and also
+the state regions now let's go back to
+the power pivot which is right over here
+and go to diagram View and here we have
+it now we have the state code here drag
+it to attach it to the state code region
+over here correct that's one
+relationship and the store ID which is
+here hold and drag it to the store ID in
+sales region now we have established a
+connection between all these three
+tables you can just simply save it if
+you want and now okay let's cancel and
+now if you try to
+identify the region byse sales now you
+can do it
+let's add locations region to
+row drag it and add it
+here and from sales select order number
+and add it to values so it's
+automatically to count so we are
+counting the total number of sales
+happened in Midwest Northeast and South
+and in case if you wanted to add more
+about let's say store details you can
+also add that from
+state code or state so let's select
+state and Rag and drop to rows and now
+if you can expand our contract this so
+here you have a Consolidated table alog
+together with statewise and region wise
+sales and their numbers right so that's
+exactly how the power pivot works so you
+don't have to use any lookup formulas
+you don't have to add some mathematical
+calculations it is just creating a
+relationship which looks something like
+this you're creating a relationship and
+it is extracting the data and you know
+creating a Consolidated data table just
+like you wanted so this exact same
+method is implemented in PBI as well so
+let's quickly go to PBI window and start
+PBI and try to experiment the data
+modeling in PBI as well should take a
+little while so there you go you have
+the powerbi window close this and just
+get the Excel
+data so we added uh the first one there
+you go select the sales team load the
+data since it's already processed no
+need of data Transformations and data
+cleaning this data is already clean and
+neat right now let's also add the other
+data sets we have it'll take a little
+while but it's all right so the sales
+team has been successfully added now we
+will add region data select the state
+regions load it it takes a little time
+but it's all right now we have the state
+regions as
+well product data select the product
+data table preview is fine press
+okay so we have
+products and four down two more to go
+select locations
+data load
+data customer data five down and one
+last one to
+go sales data there you
+go select the sales
+data and now we have loaded all the six
+tables to powerbi now unlike Excel so if
+you remember
+this if you remember this so we have uh
+you know manually created the
+relationships between the tables but one
+good reason why we should prefer PBI is
+it can help you automatically uh you
+know establish relationship with other
+tables so if you go to manage
+relationships over here you have an
+option called autod detect so will
+automatically detect the relationships
+between the tables and it will create
+the relationships so you can find it in
+here in
+options options and settings go to
+options here so not that modeling one so
+it'll give a new window on the screen
+and here you have an option called Data
+load relationships so inut relationships
+from data sources on first load or to
+detect new relationships after data is
+loaded in case if this are not checked
+then you can just check and press okay
+and your data model will be ready for
+creation Now here let's create a table
+data Matrix data double click on this so
+that you have one here just like the one
+we created previously just load the
+locations so we had region in region
+yeah here we have it right just load
+region to
+rows and maybe you can also add state to
+rows and uh you can count the number of
+orders we received so it should be
+available in the sales data so number of
+store ID discount order quantity order
+date order number so every order is
+unique so I think order number should be
+fine you can add order numbers and
+values and it can be
+can count
+it and you have okay let me expand this
+if possible okay let me close all
+this Mo so this should help us so just
+like the pivot table what we created
+there we have the same pivot table here
+so that's how you can create the
+relationship between all the tables in
+your data set and and you can create a
+perfect data model to create the
+visualization of your choice so with
+that uh back to report and here you have
+the report view table View and model
+view so if you check the have tables you
+have customer table view location table
+view products table view so if you're
+attending an interview then there are
+chances where you might be tested about
+your skill set like if you really know P
+not so they might ask what stable what
+is model view what is report view so the
+view where we create the reports or
+visualizations is the report View and
+the view where you can just have a look
+at the data how it is is called as the
+table View and this is the model view
+where your data is loaded and powerbi
+has automatically established the
+relationships between all the tables
+remember in P pivot we manually created
+these relationships but here you can see
+in Excel power pivot we had to manually
+create the relationships but here in
+powerbi you can see powerbi has
+automatically created the relationships
+so here it has oneway relationship so if
+you double click it you can make it two
+way so it's not single way anymore you
+can make it both the ways and it has a
+onetoone cardinality relationship here
+right so it it has locations and state
+regions so you can find out what type of
+relationship is built and what type type
+of cardinality has been established
+between any two tables or any any any
+number of tables which are involved in
+this P bi data model right and that
+brings us to the end on this topic of
+data modeling in PBI so this was the
+previous model which we created and
+that's the new model which we just
+created right now and with that we have
+come to an under of this session if you
+have any queries regarding any of the
+topics covered in this session or if you
+require the resources like PPD DSS or
+the workbook in Excel or the workbook
+that we created in PBI desktop please
+feel free to let us know in the comment
+section below and our team of experts
+we'll be more than happy to resolve all
+your queries at the earliest until next
+time thank you for watching and stay
+tuned for more from Simply learn staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link
+Link in the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

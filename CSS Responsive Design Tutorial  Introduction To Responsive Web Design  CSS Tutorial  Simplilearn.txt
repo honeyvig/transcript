@@ -1,0 +1,169 @@
+hello everyone welcome to this tutorial
+on css responsive design by simply learn
+in this tutorial we are going to discuss
+what is this concept design and how we
+can achieve this using the css media
+queries
+so
+let's get started making a website with
+an adaptable layout is called a
+responsive web design and css media quiz
+are one of the most important part of
+responsive design
+in the past building a website was much
+simpler today a website layout should
+adapt itself not only to computers but
+also to tablet mobile devices and even
+tvs
+so
+let's see how we can create a responsive
+web layout using css media keys within
+help of an example so here we are
+sublime text writer we have us our
+standard wallet ready so let's create
+something
+so let's start by creating the four days
+here
+we'll give it a class name box
+with an id box one
+we'll name this windows
+just copy it four times
+let's rename this id to box to and here
+we'll type type macos
+for the box 3 will have
+linux and the box 4
+will have android
+let's add some styling over here
+so just open the style tag
+i will text align the text key we'll
+send the text align to center
+uh we'll set the background color
+let's select some color
+so we'll go to this left html color
+good color
+we'll set the text color to white
+and we'll set the font size to say
+something different
+and just save the file let's go back and
+refresh the page
+let's figure it out
+okay so first valid
+so now if you refresh you see we have
+our lives with windows mac os linux and
+android and with this background color
+so
+to design the responsive web pages use
+the media queries
+so what are media queries let's first
+discuss this
+so a media phrase are used when you want
+to customize the website's presentation
+according to the user's screen size with
+the help of the media queries you can
+display different markups based on the
+device's general type mobile desktop sub
+tablets you name it
+a media code is a logical operation
+whenever a media query becomes true then
+the related css is applied to the target
+element
+so
+to start the media query just type at
+the rate
+and media now here we will mention the
+max width
+to save 400 pixels
+and inside this media query we write the
+css code that should
+take an effect when this condition is
+satisfied
+so here
+we'll set the box 1
+to display block
+now
+if you go back to the page and you
+refresh
+you see nothing happens because we have
+not made this display to none so first
+go back to the css code
+and set hit display to none
+now you can see we don't have any
+display here so let's inspect the page
+first
+so you will see we have our contents
+here
+now you can see this is the
+layout we are currently using the
+current weight is 685 pixels into high
+255 pixels
+now we are setting the max bit to 400
+pixels this means if this bit decreases
+to less than 400 pixels how this css
+code will kick in so let's decrease the
+width here
+so as you decrease
+this width
+you see as soon as you get less than 400
+pixels our css kicks in so we have our
+windows displayed here which is
+the box id1 so this is how the media
+query works
+let's add some more media queries to
+understand it better so just copy this
+code down
+so now let's set this minimum width
+to
+401 pixels
+and maximum to say 600 pixels
+now when this condition is true let's
+say we want our box to
+to display block with color
+green
+so let's set the background color here
+to let's
+say green
+now
+we will add one more media query
+so just copy this code
+[Music]
+paste it here
+so when the bit is from 601 pixels to
+say
+800 pixels
+so we'll set the box 3 display
+to block and color
+to
+shipping
+so
+just save this and let's understand it
+on the page
+so
+let's
+change the width of the screen
+so see as soon as the width goes less
+than 400 pixels we have our windows on
+display
+now when we increase the width size and
+it goes more than 401 pixels we have the
+mac os display
+keep on increasing it
+now see the width is more than 600
+pixels and we have linux on display so
+this is how we create the responsive web
+design for the different devices so
+that's how you can easily include
+different media queries depending upon
+your requirement note that we have used
+the and operator to combine the two
+queries to be true you can also use
+other operators such as not only or
+comma so this is all for this tutorial i
+hope you have got the basic knowledge of
+media queries in css
+feel free to ask the queries in the
+query section thank you
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

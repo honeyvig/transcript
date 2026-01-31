@@ -1,0 +1,1170 @@
+Welcome to our video on top cyber
+security interview questions I
+have time Landing that coveted interview
+or even worse bombing interviews left
+and right it might be time to start
+prepping for those tough interview
+questions preparing for interview
+questions is an important part of the
+job search process and can greatly
+increase your chances of getting the job
+you want the cyber security field is
+constantly evolving which means that you
+need to have a strong understanding of
+the latest Technologies and techniques
+in the industry this makes cyber
+security interviews challenging as
+interviewers may ask many complex
+questions about various cyber threats
+security controls and vulnerabilities by
+spending time preparing for these
+questions you will have the knowledge
+and skills required to tackle them with
+ease and before we begin if you are
+someone who is interested in building a
+career in cyber security by graduating
+from the best universities or a
+professional who elicits to switch
+careers with cyber security by learning
+from the experts then try giving a show
+to Simply learns postgraduate program in
+cyber security with modules from MIT
+Schwartzman College of Engineering the
+course link is mentioned in the
+description box that will navigate you
+to the course page and you can find a
+complete overview of the program being
+offered and if these are the types of
+videos you would like to watch then hit
+the Subscribe button like and press the
+Bell icon to never miss any update from
+Simply learn so without any further Ado
+let's get started with the top most
+important cyber security interview
+questions so we'll start with the first
+question that is what is CRF or you can
+say the into us can you explain what
+csrf in the context of cyber security
+and we can answer that certainly csrf
+stands for Crow site request forgery it
+is a type victim is authenticated the
+attack takes advantage of the trust a
+website has in the authenticated users
+browser now we'll see how it works so
+security vulnerability that occurs when
+an attacker tricks a victim into
+performing an unwanted action on a
+website or web application in which the
+attacker creates a malicious website or
+injects malicious code into a legitimate
+website that the victim visits and when
+the victim is it's the attacker's
+website or the compromised legitimate
+website the malicious code can execute
+without the victim's knowledge a
+malicious code sends a request to the
+targeted website or application on
+behalf of the victim this request may
+include sensitive actions like changing
+the victim's password making Financial
+transactions or modifying personal
+information since the request originates
+from the victim's browser the targeted
+website or application considers it
+legitimate and processes the request the
+victim's account is compromised and the
+attacker gains unauthorized access or
+performs unwanted actions to protect
+against csrf attacks web developers can
+Implement several countermeasures
+including using ntcis RF tokens using
+anti-csrf tokens web applications can
+generate and include unique tokens in
+each form or request these tokens are
+verified by the server before processing
+the action and showing that the request
+originated from the same website the
+next is same side cookies and attribute
+web developers can set the same site
+attribute on cookies which prevents them
+from being sent with close site requests
+thus reducing the risk of csrf attacks
+verifying the origin header servers can
+check the origin header to ensure the
+request originate from the same domain
+the next is implementing strict Access
+Control web applications should enforce
+strict access controls and authorization
+mechanisms to ensure that only
+authorized actions can be performed and
+the next measure can be by implementing
+these countermeasures organizations can
+significantly reduce the risk of csrf
+attacks and protect their users
+sensitive information and accounts and
+the next question is that is the most
+important question which interviewer
+asks that is difference between xss and
+csrf so access that is xss Crow site
+scripting and csrf close site request
+Hosiery are both common web application
+vulnerabilities but they differ in their
+nature and the risk they pose so access
+is a vulnerability City that occurs when
+an attacker injects malicious scripts
+into a trusted website which is then
+executed by the user's browser this can
+happen when the website does not
+properly validate or sanitize user input
+the injected scripts can be used to
+steal sensitive information such as
+login credentials or session cookies and
+can also be used to modify the content
+of the website or redirect users to
+malicious websites csrf on the other
+hand is a type of attack where an
+attacker ticks a user's browser into
+making unattended or unauthorized
+request to a website this attack relies
+on the fact that many website use
+cookies or other mechanisms for session
+management and these cookies are
+automatically sent with every request
+made to the website by tricking a user
+into visiting a specially crafted
+website or clicking on a malicious link
+the attacker can perform actions on
+behalf of the user without their
+knowledge or consent potentially leading
+to unauthorized actions data
+manipulation or account compromise in
+summary exercise is concerned with
+injecting and executing malicious
+scripts within a website while csrf
+involves tricking users into performing
+unintended actions on a trusted website
+both vulnerabilities can have serious
+consequences and it is important for web
+developers to understand and mitigate
+these risk through proper input
+validation output encoding and security
+mechanisms such as csrf tokens and
+secure session management now moving to
+next question is xss client-side attack
+or server side attack so xss that is
+cross-site scripting attack can occur on
+the client side which means it targets
+vulnerabilities in the user's web
+browser or the client application this
+type of attack takes advantage of
+security weaknesses in the client-side
+code allowing an attacker to inject
+malicious scripts into a trusted website
+or web application once the script is
+executed by the user's browser it can
+lead to unauthorized actions data theft
+or other malicious activities and it's
+important to note that while accessor
+attacks primarily Target the client side
+they can have significant consequences
+on the server side as well the injected
+script May interact with the server or
+exploit vulnerabilities in the server
+side code to perform actions on behalf
+of the attacker therefore xss attacks
+can have an impact on both the client
+and server components of a web
+application security and the next
+question is what is ioc in cyber
+security iuc stands for indicators of
+compromise these are pieces of evidence
+or artifacts that suggest the presence
+of malicious activity or a security
+breach within a system or network iucs
+are used to identify detect and respond
+to potential security incidents there
+are several types of iocs that Security
+Professionals look for the most common
+types include file based iocs these
+include malicious files such as malware
+executables scripts or documents that
+have been identified as part of a Cyber
+attack file based iocs can be identified
+through file hashes filing names or
+specific file content the next is
+network based iucs these indicators
+relate to network traffic associated
+with malicious activities they can
+include suspicious IP addresses domain
+names URLs or patterns of network
+communications that indicate a potential
+security threat the next we have is
+behavioral ioses these indicators are
+based on abnormal behavior exhibited by
+users systems or applications for
+example a sudden increase in failed
+login attempts unusual file access
+patterns or unauthorized system
+modifications can serve as behavioral
+iocs the next is registry or system
+configuration iucs these indicators
+involve changes or additions to the
+Windows registry system configuration
+files for other system settings
+attackers May alter these configurations
+to gain persistence on a compromise
+system the next is threat intelligence
+iocs these iocs are derived from
+external sources such as cyber security
+vendors government agencies is or threat
+intelligence platforms they provide
+information about known malicious actors
+their tactics techniques and procedures
+and specific indicators associated with
+their activities when organizations
+collect and analyze iocs they can
+proactively detect and respond to
+security incidents by monitoring for
+these indicators security teams can
+identify potential threats investigate
+the scope of an attack and take
+appropriate measures to mitigate the
+risk it's worth noting that iucs are not
+static and continuously evolve as
+attackers develop new techniques
+therefore staying up to date with the
+latest threat intelligence and sharing
+information within the cyber security
+Community is crucial for Effective
+defense against cyber threats and now
+moving to another question that is fifth
+question and it is that can you explain
+the difference between antivirus and ADR
+in cyber security so antivirus and
+endpoint detection and response that is
+EDR are both important components in
+cyber security but they serve different
+purposes we'll see them that is first
+antivirus that is also known as
+anti-malware software it is designed to
+detect prevent and remove known types of
+malicious software such as viruses bombs
+Trojans and ransomware it relies on
+signature based detection where it
+compares the code patterns or files or
+programs against a database of known
+malware signatures when a match is found
+the antivirus software takes appropriate
+action to quarantine or delete the
+infected file on the other hand the EDR
+goes beyond traditional antivirus
+solutions by providing real-time
+monitoring detection and response
+capabilities at the endpoint level EDS
+Solutions are designed to detect and
+respond to sophisticated and advanced
+threads that may evade traditional
+antivirus software they use a
+combination of techniques including
+behavioral analysis machine learning and
+threat intelligence to identify
+malicious activities and potential
+threats ADR Solutions continuously
+Monitor and point such as workstations
+servers and mobile devices for any
+suspicious activities or anomalous
+Behavior they collect and analyze vast
+amounts of endpoint data including
+process executions network connections
+file changes and system configurations
+to identify potential security incidents
+if a threat is detected EDR Solutions
+provide detailed visibility into the
+incident allowing security teams to
+investigate contain and respond to the
+threat in real time while antivirus
+focuses on known threats and relies on
+signature based detection EDS Solutions
+are more proactive and capable of
+identifying previously unseen for zero
+day threads they offer enhanced threat
+hunting capabilities allowing security
+analysts to search for indicators of
+compromise that is iocs and identify
+potential vulnerabilities or security
+gaps in the environment in summary
+antivirus is an essential component in
+protecting against known malware while
+EDR provides Advanced threat detection
+real-time monitoring and incident
+response capabilities to Define against
+sophisticated and emerging threats
+combining both antivirus and EDS
+Solutions can significantly enhance an
+organization's overall cyber security
+posture now moving to another question
+that is IPS versus firewall that is can
+you explain the difference between IBS
+and a fireball in cyber security so an
+IPS that is intuition prevention system
+and a firewall are too distinct but
+complementary security mechanisms let's
+see the differences between them so
+firewall acts as a barrier between an
+internal Network and external network
+typically the internet it examines
+incoming and outgoing Network traffic
+based on predefined rules or policies
+its primary function is to enforce
+access controls and permit or deny
+Network traffic based on factors such as
+IP addresses ports protocols and
+application types firewalls work at the
+network layer layer 3 or the transport
+layer layer 4 of the network stack on
+the other hand an IPS is designed to
+detect and prevent network based attacks
+it goes beyond the basic Access Control
+functions of a firewall an IPS monitors
+Network traffic in real time searching
+for signs of non-attack patterns for
+suspicious Behavior it can detect and
+block unauthorized access attempts
+malware Network intrusions and other
+malicious activities IPS systems are
+typically placed in line with network
+traffic and can operate at the NATO
+clear that is layer 3 transport layer
+layer 4 or even the application layer
+that is layer 7 to summarize a firewall
+acts as a gatekeeper controlling the
+flow of traffic into and out of a
+network based on predefined rules it
+focuses on access control on the other
+hand nips is a more advanced security
+mechanism that actively inspects Network
+traffic identifies potential threats or
+attacks and take Section to prevent them
+it focuses on detecting and preventing
+intrusions in practice organizations
+often use both firewalls and IPS systems
+together to provide layered security
+firewalls protect against unauthorized
+access and filter out unwanted traffic
+while IPS systems add an additional
+layer of protection by actively
+monitoring and blocking malicious
+activities so this was all for firewall
+and IPS now moving to what is security
+misconfiguration so security Miss
+configuration refers to the improper or
+insecure configuration of systems
+software applications or network
+components that can lead to potential
+security vulnerabilities it occurs when
+security settings permissions or
+configurations are not appropriately
+defined or implemented leaving systems
+and data exposed to potential attacks or
+unauthorized access security
+misconfiguration can take various forms
+such as using default or weak passwords
+leaving unnecessary services or ports
+open not applying necessary security
+patches or updates misconfiguring access
+controls or falling to implement secure
+communication protocols these
+misconfigurations can provide attackers
+with entry points into a system allowing
+them to exploit vulnerabilities gain
+unauthorized access or carry out
+malicious activities organizations often
+face security misconfigurations due to
+human error lack of awareness or
+inadequate security practices it's
+crucial to regularly review and audit
+system configurations employ secure
+defaults disable unnecessary features
+Polo security best practices and stay
+updated with the latest patches and
+updates by addressing security
+misconfigurations organizations can
+significantly reduce their attack
+surface and enhance the oral security
+posture of their systems and networks so
+moving on to next question that is what
+is Waf and its types so WF stands for
+web application firewall it is a
+security measure used to protect web
+applications from various types of cyber
+attacks a Waf acts as a filter between
+the web application and the external
+network monitoring and analyzing
+incoming and outgoing web traffic there
+are primarily two types of wfs commonly
+used in cyber security that are network
+based WF this type of WF is implemented
+at the network parameter typically as a
+dedicated Hardware Appliance or a
+virtual Appliance it intercepts web
+traffic before it reaches the web
+application server and network based wfs
+examine packets at the network layer
+inspecting IP addresses ports and
+protocols to detect and prevent
+malicious activities they are effective
+in protecting multiple web applications
+hosted on the same network
+infrastructure and the next is host
+space WF this type of WF is is installed
+directly on the web application server
+or within the application itself it
+operates at the application layer and
+has a deep understanding of the
+application structure and logic host
+based wf's Monitor and analyze HTTP
+https traffic inspecting the content of
+requests and responses they are often
+integrated as a module or a plugin
+within the web server or the application
+framework host paste wafs provides
+granular control and coin protect
+specific applications or modules within
+a server both Network waste and host
+based wfs add their strength and can
+complement each other for enhanced
+security network based wfs are suitable
+for large-scale protection across
+multiple applications and servers while
+host based wfs offer more precise
+control and visibility into application
+specific vulnerabilities and attacks
+it's important to note that while wfs
+are valuable in safeguarding web
+applications they should be used in
+conjunction with other security measures
+like regular application batching secure
+coding practices and vulnerability
+assessments to ensure comprehensive
+protection against evolving cyber
+threats now we'll see another question
+that is could you please explain the
+difference between Bluetooth and red
+teaming so blue teaming and retiming are
+two distinct approaches used in cyber
+security to enhance the overall security
+posture of an organization and blue
+teaming primarily focuses on defense and
+proactive measures blue teams are
+responsible for protecting the
+organization's assets system and data
+from potential threats and attacks they
+typically include cyber Security
+Professionals within the organizations
+who work to identify vulnerabilities
+monitor networks and Implement security
+controls blue teams conduct risk
+assessments perform security Audits and
+develop incident response plans they
+also monitor security system analyze
+logs and use various tools to detect and
+mitigate threats essentially blue teams
+act as a Defenders ensuring that the
+organization's defenses are strong and
+resilient on the other hand red teaming
+takes an offensive approach that teams
+are independent groups or individuals
+who stimulate real world cyber attacks
+to evaluate the effectiveness of the
+organization's security controls and
+practices their goal is to identify
+weaknesses gaps and vulnerabilities in
+the system red teams use tactics similar
+to those of real attackers such as
+social engineering penetration testing
+and vulnerability assessments to Encore
+potential security Force by adopting the
+perspective of an attacker teams provide
+valuable insights into the
+organization's security vulnerabilities
+allowing The Blue Team to improve their
+defenses in summary blue teaming is
+focused on defense while red teaming is
+focused on offense blue teams work to
+prevent and mitigate cyber threats while
+red teams act as adversaries to identify
+weaknesses and improve the
+organization's security
+the collaboration between blue and red
+team is crucial in maintaining a strong
+security posture and effectively
+protecting sensitive information so this
+was all that is the difference between
+glutamine and vitamin now moving on to
+the 10th question that is what is false
+positive and false negative in case of
+ideas so in the context of intrusion
+detection system that is IDs false
+positive and false negative are two
+important terms used to describe the
+accuracy of the system in identifying
+and classifying security events a false
+positive occurs when an ID is
+incorrectly identifies a Banning
+activity or event as malicious on the
+other hand a false negative happens when
+an IDs fails to detect an actual
+malicious activity or event it occurs
+when an intrusion or attack goes
+unnoticed and is not flagged by the
+system this can be quite dangerous as it
+allows malicious activities to go
+undetected potentially causing harm to
+the system or network ideally an IDs
+should strive to minimize is both false
+positives and false negatives however
+there is often a trade-off between the
+two increasing the sensitive and IDs to
+reduce false negatives may result in
+more false positives and vice versa
+balancing the detection accuracy is
+crucial to ensure that genuine threats
+are identified while minimizing the
+number of false alarms so to improve the
+effectiveness of an IDs continuously
+monitoring fine tuning of detection
+rules and incorporating machine learning
+algorithms can be employed additionally
+it's important for security teams to
+carefully analyze and validate alerts to
+distinguish between false positive and
+true threads ensuring efficient incident
+response and mitigation now moving to
+another question that is what is TLD
+so TLD stands for top level domain in
+the field of cyber security in the
+context of the internet a top level
+domain refers to the last segment of a
+domain name located after the final load
+it is also commonly known as domain
+extension example of tlds
+include.com.org.net.gov.edu and Country
+specific tlds like dot UK dot FR or dot
+a U tlds play a significant role in
+cyber security as they help identify the
+purpose or category of a website cyber
+Security Professionals often analyze
+tlds to assess potential security risk
+or determine the legitimacy of a domain
+malicious actors May exploit certain
+tlds such as those associated with
+phishing malware distribution or floor
+land activities security measures like
+blacklisting or filtering can be
+implemented based on tlds to protect
+users from accessing potentially harmful
+websites overall understanding tlds is
+essential in the cyber security field as
+it aids in identity find and evaluating
+potential threats enhancing website
+security and safeguarding users online
+experiences so this was all about TLD so
+the next question is can you explain
+what name servers are in the context of
+cyber security so in the realm of cyber
+security name servers play a crucial
+role in functioning of the internet a
+name server also known as a DNS server
+domain name system is responsible for
+translating human readable domain names
+such as www.example.com into IP
+addresses such as numerical
+representations that computers use to
+communicate with each other in simple
+terms when a user types a domain name
+into a web browser the name server is
+responsible for resolving that domain
+name to the corresponding IP address of
+the server hosting the website this
+process is essential for establishing
+connections and enabling communication
+between devices on the internet from a
+cyber security perspective name servers
+are vital because they act as
+authorative sources for domain names
+solution however they can also be
+targeted by malicious actors in various
+attacks such as DNA spoofing or DNS
+hijacking which aims to manipulate the
+translation process so to mitigate this
+risk organizations employ various
+security measures such as implementing
+TN ssec domain name system security
+extensions will secure ensure the
+integrity and authenticity of DNS data
+DNS firewalls and intuition detection
+systems can also be utilized to detect
+and prevent malicious activities
+targeting name servers overall name
+servers serve as critical infrastructure
+component for the internet and
+safeguarding their integrity is
+essential in maintaining a secure online
+environment so the next question is what
+is canonical name in the context of
+cyber security so canonical name refers
+to a standardized and both creative
+named assigned to a network resource
+such as a domain host or IP address it
+is used to establish a consistent and
+unambiguous naming mentioned across
+different systems and networks the
+canonical name serves as a unique
+identifier for the resource ensuring
+that it can be accurately located and
+accessed within a network or across the
+internet the canonical name is commonly
+represented as a fully qualified domain
+name fqdn for a website which includes
+the domain name and OLED subdomains for
+example
+www.example.com is the canonical name
+for the website example.com by using the
+canonical name organizations can
+maintain a centralized and reliable
+reference point for accessing resources
+making it easier to manage and secure
+the network infrastructure in cyber
+security the concept of canonical name
+is particularly relevant when dealing
+with activities such as network
+monitoring access control and threat
+detection it allows security
+administrators to establish policies and
+rules based on the canonical names of
+resources ensuring consistent
+enforcement and effective security
+measures by leveraging canonical names
+organizations can Advance the cyber
+security posture by effectively managing
+and protecting their network resources
+facilitating accurate identification and
+control of assets and enabling efficient
+incident response and mitigation
+strategies so this was all about
+canonical name in cyber security Now
+moving on to another popular question
+that is what details you find when you
+search IP or domain for DNS lookup so
+when performing a DNS lookup for an IP
+domain in the field of cyber security
+there are several key details that can
+be obtained these details provide
+valuable information for assessing the
+cyber security posture and potential
+risk associated with the IP or domain in
+question here are some important details
+that can be found that is IP or domain
+ownership so the DNS lookup reveals the
+registered owner of the IP address or
+domain name this information helps
+identify the entity responsible for the
+IP or domain and can be useful in
+determining its legitimacy the next next
+is IPO domain reputation the DNS lookup
+May provide information about the
+reputation of the IPO domain this
+reputation score indicates whether the
+IPO domain has been involved in
+malicious activities in the past High
+reputation scores indicate a secure or
+lower risk level while low scores may
+suggest a higher risk of involvement in
+cyber threats the next we have is IP or
+domain geolocation the geolocation
+information obtained from the DNS lookup
+reveals the physical location associated
+with the ipodomy this can be useful in
+identifying potential jurisdictional
+issues and determining the origin of
+suspicious activities the next we have
+is IPO domain history the DNS lookup can
+incur historical data related to the IPO
+domain this includes information such as
+previous ownership changes in IP
+addresses or change in domain
+registration details examining the
+history can help identify any patterns
+or suspicious behavior for previous
+environment in cyber incidents the next
+is DNS records the DNS lookup provides
+information about the DNS reports
+associated with the IPO domain this
+includes details such as the IP
+addresses associated with the domain
+mail server information subdomains and
+other records like txt records used for
+various purposes such as SPF standard
+policy framework or DM Arc domain-based
+message authentication reporting and
+conformance configurations the next is
+IPO domain blacklisting a DNS lookup can
+reveal whether the IPO domain is listed
+on any known Blacklist blacklisting
+occurs when an IPO domain is identified
+as being associated with malicious
+activities spamming or other undesirable
+Behavior such listening can indicate a
+higher risk level so by analyzing these
+details obtained from a DNS lookup cyber
+Security Professionals can access the
+potential security risk associated with
+an IP or domain and take appropriate
+measures to protect systems and networks
+and now moving to next question that is
+what is DHCP that is can you explain
+what DHCP is and its role in cyber
+security so DHCP stands for dynamic host
+configuration protocol it is a network
+protocol commonly used in computer
+networks to automatically assign IP
+addresses and network configuration
+settings to devices within a network
+DHCP plays a crucial role in cyber
+security as it helps in managing and
+securing network resources effectively
+one of the primary functions of thcp is
+to introduce or provide IP addresses
+dynamically to devices when they join
+the network by assigning IP addresses
+dynamically DHCP prevents the need for
+manual configuration making it easier to
+manage a large number of devices in a
+network this automated process helps
+ensure that devices are correctly
+connected and can communicate with other
+devices and Network Services in the
+context of cyber security DHCP helps in
+enhancing Networks security by enabling
+features such as IP addresses management
+and network access control here's how
+that is IP address management DHCP
+allows Network administrators to
+centrally manage IP addresses by
+controlling IP address assignments
+administrators can prevent unauthorized
+devices from connecting to the network
+this help in mitigating the risk of
+unauthorized access and potential
+security breaches the second is network
+access control DHCP can be used to
+enforce network access control policies
+for example an organization can
+configure DHCP to assign different IP
+addresses that ranges or provide
+specific network settings based on user
+roles or device types this allows for
+granular control over network access
+ensuring that only authorized devices
+can connect to specific Network segments
+or Services additionally DHCP servers
+can be configured to provide additional
+information to Connected devices such as
+DNS server addresses default gateway
+settings and other configuration options
+by centrally managing these settings
+DHCP reduces the likelihood of
+misconfigurations that could introduce
+security vulnerabilities moving to next
+question that is what is CV which
+authority generate CV annual answer cve
+stands for common vulnerabilities and
+exposures it is a system used in the
+field of cyber security to identify and
+track known vulnerabilities in software
+and Hardware the purpose of CV is to
+provide a standardized way of
+referencing And discussing security
+vulnerabilities across different
+organizations vendors and researchers
+The Authority responsible for generating
+CVS is the mitr corporation that is
+Mitre is a non-profit organization that
+operates the cve program under contract
+with the national cyber security
+ffrdc that is federally funded research
+and development center they maintain the
+official CV list assign unique
+identifiers to an vulnerabilities and
+facilitate the sharing of vulnerability
+information among cyber Security
+Professionals and organizations by
+signing a CV identifier to a
+specifically vulnerability Mitre enables
+cyber security researchers vendors and
+organizations to refer to
+vulnerabilities consistently allowing
+for effective communication and
+collaboration in addressing and
+mitigating the identified security
+issues so this was the explanation so we
+can also think of providing an example
+of a CV identifier so let's take an
+example of CV 2021 34567 in this case CV
+2021 represents the year the
+vulnerability was assigned or discovered
+and 34567 is a unique numerical
+identifier by referring to this CV
+identifier Security Professionals can
+easily search for information related to
+the specific vulnerability and access
+details such as its description severity
+affected so software versions and
+recommended remediation steps now moving
+to another question that is what is a
+loopback address so a loopback address
+refers to a specific Network address
+that allows the device to send and
+receive data to itself it is commonly
+represented by the IP address that is
+127.0.0.1 in ipv4 or colon colon 1 in
+IPv6 the loopback address is often used
+for testing and troubleshooting purposes
+as it enables a device to simulate
+network communication without actually
+sending data or a physical Network when
+a device communicates with the loopback
+addresses the data packets and routed
+internally within the device's network
+stack by passing the physical network
+interface this allows the device to test
+its own network services or applications
+without relying on external lato
+connectivity by sending data to the
+loopback address a device can verify the
+functionality and integrity of its
+networking protocols software or
+security configurations
+from a cyber security perspective the
+loopback address can be valuable during
+the development and testing of security
+measures such as firewalls intrusion
+detection system or antivirus software
+it allows Security Professionals to
+assess the effectiveness of these
+measures by emulating attacks or
+monitoring the device's response or
+stimulate malicious activities all
+within the controlled environment of the
+loopback interface Additionally the
+loopback address is sometimes used by
+software developers to create a local
+development environment for by running
+services on the loopback address
+developers can test and debug their
+applications without exposing them to
+potential external threats or
+interfering with other network resources
+in summary the loopback addresses
+provide some means for a device to
+communicate with itself internally
+offering a convenient and secure method
+for testing troubleshooting and software
+development in the field of cyber
+security and moving to next question
+that is 18th question here we will
+explain the concepts of threats and
+processes so in the context of cyber
+security threats and processes are
+important Concepts that relate to the
+execution and management of software and
+how they can impact the security of a
+system so process can be understood as
+an instance of a computer program that
+is being executed it represents a set of
+resources such as memory files and
+System state allocated by the operating
+system to execute the program each
+process runs independently with its own
+memory space and resources and can
+perform various tasks processes can
+communicate with each other through
+their inter-process communication
+mechanism provided by the operating
+system on the other hand a thread is a
+unit of execution within a process a
+process can have multiple threads and
+each thread represents an independent
+flow of control within the process
+threats within a process share the same
+memory space allowing for efficient
+communication and data sharing by
+utilizing threats a program can execute
+multiple tasks concurrently improving
+performance and responsiveness from a
+cyber security perspective understanding
+threats and processes exclusion
+malicious actors can expert
+vulnerabilities in processes or threats
+to compromise security system for
+example a vulnerability in a process
+might allow an attacker to execute
+arbitrary code gain unauthorized access
+to sensitive data on manipulate system
+resources similarly if a thread is
+compromised it could be used to execute
+malicious code bypass security
+mechanisms or launch attacks on other
+threats or processes to enhance cyber
+security it is important to secure
+processes and threats by implementing
+various protective measures this
+includes regularly updating software to
+patch known vulnerabilities employing
+secure coding practices to prevent
+common programming errors implementing
+excess controls and permissions to limit
+process Privileges and utilizing robust
+monitoring and intuition detection
+system to detect and respond to
+potential threats in summary processes
+and threats are fundamental Concept in
+cyber security as they determine how
+software is executed and how resources
+are allocated understanding their
+implications and securing them
+effectively is essential in maintaining
+a secure Computing environment so moving
+to next question that is 19th question
+and it is what is cadburos so Kerberos
+is a widely used Network Authentication
+Protocol that plays a crucial role in
+ensuring secure Communication in
+computer network it was developed by
+mesochets Institute of Technology that
+is MIT and has become a fundamental
+mental component of many security
+infrastructures as its core Kerberos
+provides a framework for Mutual
+authentication between a client and a
+server allowing them to establish trust
+and securely communicate over an
+untrusted Network it relies on a
+centralized authentication server known
+as the key distribution center which act
+as a trusted third party when a client
+requests access to a Network's resource
+the Kerberos protocol enables the client
+to authenticate itself to the KDC using
+its credentials typically a username and
+password the KDC then verifies the
+client's identity and issues a Time
+limited ticket also known as ticket
+granting ticket which serves as proof of
+authentication once the client processes
+a valid TGT it can present it to the
+desired server to request a service
+ticket for a specific resource the
+server in turn contacts the KDC to
+verify the tgt's authenticity and grants
+the client access to the requested
+resource if the validation succeeds one
+of the significant advantage of Kerberos
+is that it uses symmetrically
+cryptography which ensures
+confidentiality and integrity of the
+communication between the client and the
+server the KDC shares a secret key with
+each client and this key is used to
+encrypt the communication tickets making
+it difficult for adversaries to forge
+and tamper with them moreover Kerberos
+incorporates the concept of single
+signal allowing users to authenticate
+months and obtain multiple tickets for
+different services without needing to
+re-enter their credentials this enhances
+usability and reduces the burden of
+remembering and managing numerous
+passwords overall Kerberos is a robust
+Authentication Protocol that addresses
+many security challenges in network
+environments its widespread adoption in
+various systems and its proven track
+record make it a valuable asset in
+safeguarding sensitive information and
+preventing unauthorized access now
+moving to the next question that is can
+you explain the significance of 0 18 and
+012 incurable so authentication so
+incredible authentication the value 0x18
+and 0x12 represents specific message
+types within the Kerberos protocol the
+Kerberos protocol is a widely used
+Authentication Protocol designed to
+provide secure authentication for
+Network Services in Kerberos each
+message exchanged between the client and
+the key distribution center as a special
+message for a specific message type
+associated with it these message types
+are represented by hexadecimal values so
+0x18 corresponds to the message type krb
+underscore as underscore req which
+stands for Kerberos authentication
+Service request this message is sent by
+the client to request a ticket granting
+ticket from the KDC the TGT is then used
+to request service tickets for specific
+Services 0x12 represents the message
+type that is krbt GSR EQ which stands
+for Kerberos ticket granting service
+request this message is sent by the
+client of the KDC to request a service
+ticket for a particular service the
+client includes strategy obtained from
+the kib underscore as underscore req
+message and specifies the desired
+service these message types are
+essential in the kerberus authentication
+process as they allow the client and the
+KDC to exchange the necessary
+information for authentication and
+authorization the Kerberos protocol uses
+the message types to ensure secure
+communication and prevent unauthorized
+access to Network Services overall the
+values 0x18 and 0x12 in Kerberos
+authentication represent specific
+message types within the Kerberos
+protocol enabling the secure exchange of
+authentication and authorization
+information between the client and the
+KDC and the next question we have is
+Define unicasting multicasting and
+broadcasting so unicast multicast and
+broadcast are the three methods by which
+will transmit data over a network so
+unicast it sends the information from a
+single user to a single receiver we use
+this for point-to-point communications
+and multicast here data is sent from one
+or more sources to multiple destinations
+then we have brought first that is known
+as one tool that is the communication is
+between a single user and several
+receivers and the next question is
+explain SSL encryption secure sockets
+layered SSL is the standard followed in
+the security knowledge industry to
+develop encrypted connections between
+the browser as well as the web server
+this standard ensures that data privacy
+is maintained and that online
+transactions are protected from external
+attacks the following steps have to be
+followed to established an SSL
+connection the browser will connect to
+the web server which is secured by SSL
+the browser will send a copy of the SSL
+certificate the browser verifies if the
+SSL certificate is trustworthy if
+trustworthy the browser will send a
+message to the server requesting to
+establish an encrypted connection the
+web server acknowledges and starts to
+build an SSL encrypted connection the
+encrypted SSL communication begins
+between the browser and the web server
+and now we have the 23rd question that
+is what steps will you take to secure a
+server so the secure socket layer SSL is
+a protocol where data encrypting and
+decrypting will protect it from being
+intercepted by authorized users the
+simple ways to secure the server are as
+follows ensure that the password for
+root and administrative users is secured
+new users can be included in the system
+now they will manage the system as per
+the policies established remote access
+is removed from default administrator
+accounts the following steps have to be
+followed to configure firewall routes
+for remote access now we have the 24th
+question that is what is data protection
+in transit versus data protection at
+rest so when data is protected in
+transit the data goes only from the
+server to the client the effectiveness
+of data protection repeat the
+effectiveness of data protection is
+critical for ensuring that there is no
+loss of data data protection at test it
+is when the database is on the hard
+drive the data at rest is sometimes less
+vulnerable than the data in transit so
+this was all about it and the next
+question is what is the difference
+between VPN and VLAN so VPN the group
+workstations are within the same
+locations and in the same road cost the
+main logically segregated networks and
+have no physical connection whereas VLAN
+this is related to remote access to the
+company Network the connection of two
+points within a secured and encrypted
+tunnel there is no encryption technique
+in bold and it slices The Logical
+Network into different sections to
+manage and secure different aspects and
+this was all for this tutorial or the
+interview questions hope you guys found
+it informative and helpful let's take a
+minute to hear from our Learners who
+have experienced massive success in
+their careers hi I'm Philip I'm 61 years
+old and last year I upskilled with
+simple learns postgraduate program in
+cyber security after working 30 years in
+the IIT sector in various different
+profiles I'm happy to tell you that I
+was able to clear and pass my cissp and
+ccsp certification exams on the first
+attempt after taking the course of
+course I must say was packed with
+practical examples it was led by highly
+skilled certified instructors with many
+companies before the security analysts
+and the architect on a contract basis
+but I needed some stability which I got
+with the job I just started with Infosys
+as a cyber security consultant happened
+on the first and if you like this
+session then like share and subscribe if
+you have any questions then you can drop
+them in the comment section below thanks
+for watching stay tuned for more from
+Simply loan staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

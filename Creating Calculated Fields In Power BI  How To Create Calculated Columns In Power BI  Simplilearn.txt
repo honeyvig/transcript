@@ -1,0 +1,435 @@
+foreign
+calculated columns now so far what we
+have done as per our last session is
+that we did data modeling on the
+different data sets which we had
+imported in power bi like products sales
+data returns fulfillment customer
+details uh and customer Master data
+calendar details Etc so in the last
+session we prepared a data model and
+established the relationships between
+these different data sets like one is to
+one one is to many many to one one is to
+one Etc and we saw the examples now once
+our relational model is prepared our
+data model is prepared now our next
+activity is to create certain additional
+columns which we want to derive basis
+the data which we have imported
+so for example I'll start with my
+product data set now in my product data
+set I want to introduce a column which
+basically
+categorizes that if any product which
+has a color uh you know red black or
+gray I am going to tag it as a colored
+product rest I'm gonna say not a colored
+product right so all these are like
+example of byte type product skus so for
+that now in order to introduce a new
+column you just need to do what you need
+to select the table in the data grid go
+to the table tools and say new column
+okay so column will get appended to the
+rightmost part and you will start seeing
+a uh formula section typical to like you
+get in your Excel now I'm gonna say that
+the name of my column is going to be
+byte type color okay and I'm just
+creating a if condition if
+product
+color
+is equal to
+black
+okay
+or
+or if it is equal to red
+or if it is equal to
+Gray
+then
+say yes it's a colored product I'll say
+no
+okay so now you can see this is the
+product color red and black they are
+saying bike type color Yes blue is no
+multi is no etc etc so this is a classic
+example of an if and else condition
+based conditional column
+okay so you can create such columns now
+second column custom column which I want
+to create is I'm going to call as
+discount
+now this is the pricing of my products I
+want to associate certain discounts
+which I am ready to give to my customers
+this is the product category like what
+is the pricing of the category again I'm
+going to use make use of if else but in
+a nested way so if I am saying if my
+product
+price is less than 100
+then I will give
+zero percent off
+uh zero percentage of discount so 0 into
+product price just to keep it consistent
+now I'm seeing
+else
+if less than 100 and 0 else I'll check
+again that
+if
+the price is
+less than
+500 then I'm ready ready to give one
+percent discount
+on the
+product price
+else
+I'll move further so like this
+I have created a formula
+so what I'm saying is if product price
+is less than 100 give zero percent if it
+is less than 500 then give one percent
+less than 2 000 then 1.5 percent less
+than three thousand then two percent and
+otherwise else less than three thousand
+if a two percent else three percent
+right now after this column is created
+now you can check right so this C the
+product price for this particular
+product it is less than 100 so that's
+why there is no discount it is
+uh between 100 to 200 then this has been
+given a one percent discount so like
+this all the discount column is now
+calculated now this column is available
+just like a regular column in my product
+table
+now after this I'll go to my sales table
+now in sales table I want to identify a
+create a column called as cost
+there is no product cost column over
+here so that will be derived
+so let's create a column
+called as cost
+and it is derived by order quantity
+into now the cost of the product
+is in the product table and I know I
+have already created a relationship
+between product and sales table
+so I just need to select the product
+cost column now only keyword which I
+have to use in power bi is the related
+keyword so this will pick up the
+relation
+and now for this particular sale order
+the cost has already been derived so
+this order number this is the cost for
+which uh the product has is the costing
+of the product for this particular order
+foreign
+now I'm gonna create another conditional
+column over here called as
+order status
+I'm saying if
+any order whose order quantity is
+greater than 2
+then for my organization it's an urgent
+order
+else it is a
+normal order
+so this is my
+order status column and I have my order
+quantity
+urgent or normal
+so any order which has order quantity
+one is normal any order which is having
+order quantity as greater than
+2 is
+urgent you can see this
+so there's a this whole power bi
+uh tabs and sheets allow you to also
+review the data what you're doing so
+it's very convenient
+now
+I have my sales data now what I want to
+bring within the sales is my discount
+column so here also I want to bring the
+discount which I have created
+so I'll say discount
+[Music]
+discount will be order quantity
+into
+related
+product discount right so the discount
+calculated column which I had created
+under products I'll bring over here
+now I am creating the order level
+discount so if you see for this
+particular order there's a 25 uh
+uh you know for 25 rupee discount at the
+cost is 100 000 rupees okay
+and what is the order price now so I
+have taken the order cost the discount
+now I have to create a column call as
+price order price so that will be
+again order quantity
+into related
+price which is per product
+price enter
+okay so now I have the cost the discount
+and the price right available with me
+now I want to
+calculate the total
+uh
+total revenue total profit and loss
+right
+per order how much
+thank you
+so first I'll calculate per order how
+much revenue I am generating so now I
+have to generate a column called as
+Revenue
+revenue is price
+minus discount
+so 1700 minus 25
+1700 minus 25 2071 minus 42 and if I
+want to calculate the profit per order
+then it is
+Revenue
+Minus cost
+okay so now you can see you know typical
+custom columns calculated columns which
+we have created are all playing around
+with the number numeric values numeric
+data primarily and trying to give
+inferences into per order cost discount
+per order price revenue and profit so
+typical calculation columns which I have
+prepared in front of you
+foreign
+now let's take a look at other different
+variations of custom columns I'll create
+certain columns for text based custom
+columns calculated columns using Text
+data so I'm now moving towards my
+customer table in which I have customer
+key prefix first name last name birth
+date marital status and gender
+now I want to create a new column in
+which I want to derive the age of each
+customer as of today right so I'll use
+another function a date function called
+as
+date div
+now date div so I want the difference
+between the birth date of the customer
+and as of today
+in years
+okay so this customer as of today 68
+year old one is 74 68 57 Etc so this is
+one derivation of uh calculated column
+of age
+let's take another example now this is a
+text based column where I want to
+derive the full name of the customer
+now here I will say first
+lowercase in lower case I'll concatenate
+the prefix
+then ampersand
+peace
+ampersand
+first name
+ampersand
+space
+ampersand
+last name
+and closing brackets
+Etc
+full name
+okay so this is an example of full name
+in low cases
+now another calculated column
+conditional column at the customer level
+I want to identify a flag which says who
+is my Target customer base is the
+demographics shared over here Target
+customer
+so I'll say
+if
+the marital status is equal to
+m
+and
+total children
+hurry
+and total children annual income
+so okay so let me change the logic a bit
+so marital status is M and age
+is
+less than
+50.
+these customers are my Target customers
+okay so I would say
+yes
+else no
+see this
+he's a marital status is married Logan
+Diaz and age is less than 50 else
+everyone so if I try to filter
+so these are the my Target customers
+69 out of 1178 so this is just a
+conditional column but a logical
+condition an example which I'm trying to
+highlight over here
+okay now
+let's look at certain calendar
+date oriented columns calculated columns
+very typical like now I have a simple
+date column now I'll keep adding certain
+columns which are you know which help
+you which will help you understand how
+we can uh
+you know do some calculations on the
+dates so like for example I want a date
+which is 12 days after the current date
+the date in the column so just simple 12
+Days After
+select the date and add 12.
+now if you see the date format you can
+go and change the format at the top
+and if whatever you feel like like this
+now see 12 days after first gen 2015 is
+13 Jan 2005. you can go and change the
+format and other details
+let me also show you if I go to my cost
+and other columns I can go and change
+the format this is like a currency cost
+is currency so I can go and
+select the
+change the currency type and
+you can even show the dollar value or
+whatever currency type it is
+so for numbers you can do currency or
+text or dates you can select the format
+so this is available at the column tools
+level
+now in customers
+like we had our
+column of full name so now what all
+things are available format as text okay
+data type text so very minimal options
+are there with date you have options of
+the date format
+now next
+I want a column which defines the expiry
+date okay so eight months prior
+to the
+expiry date with this which is coming up
+in eight months so I'll create a column
+called as eight months expiry
+and then there is a e date function I'll
+use that I'll use my
+date in the data set
+comma I'll say eight so now this date
+column will append eight months to my
+actual date and again I can go and
+change the format
+correct
+now another important column like I want
+to know the date name
+so I'll use a function called as
+format
+and I'll select my calendar date column
+and I'll say give me the DDD
+format of it
+so it will give me the day name the day
+the day name of on that particular date
+next
+years in between
+so I want the ears in between the
+today's date and the date of my calendar
+so equal to
+date diff
+the calendar date
+comma today
+comma year
+end
+seven years 2015 to 2022
+then last date of the month
+so if I want what is the last date of
+this particular calendar month
+I will use a function EO month which is
+there available in the
+power bi so I will say
+last date of the month
+equal to
+e o month
+then
+just select the calendar CSV date
+comma
+0 in months and enter
+change the format
+then similarly start of the month
+so I'll use a function called start of
+month
+so for for all January dates end of the
+month is 31st Jan and start of the month
+will remain 1st of Jan
+change the format
+next I want to know what is the week
+number of that particular date so now
+there is an inbuilt function called
+week number week num and just pass the
+date and you will get
+the weak number first week of the year
+second week of the year Etc
+now another very
+good example is whether the weak
+day is a weekday or a weekend right so
+what is it's a weak type okay
+so I'll check I'll put a if condition
+and there is a function called weekday
+and I'll pass the calendar
+if it is less than 6
+it means it's a weekday else it's a
+weekend
+so all Saturday
+and Sunday D names will come as weekends
+or else everything else will come as
+weekly
+so these are very different variations
+of different column types calculated
+columns which is a very important
+utility and uh and any Bravo bi project
+you will definitely be ending up
+creating n number of calculated columns
+to derive your numbers to prepare your
+reports but it's important to understand
+what all things we can do yes there are
+n number of functions available in power
+bi but what I have tried to Showcase
+over here is some important functions
+but basis your utility basis your
+problem statement you can look up for a
+relevant function in the power bi
+dictionary
+now with this
+introduction to calculated column this
+is the base for us to now get into our
+next session where we'll be talk we will
+be talking about creating Dax measures
+and Dax functions we will be using power
+bi Dax functions which is much more
+powerful than simple uh calculated
+columns where you can do more uh complex
+calculations uh you can calculate totals
+and then use them in the reports so for
+that we will look up into our next
+session so I hope you guys had a great
+learning session and I'll meet you in my
+next session thank you
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

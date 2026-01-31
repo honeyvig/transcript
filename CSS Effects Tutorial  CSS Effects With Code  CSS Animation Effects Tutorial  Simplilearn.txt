@@ -1,0 +1,249 @@
+hello everyone
+welcome to this another video on css by
+simply learn
+as you know css animations is a powerful
+concept that is used to make your
+webpage engaging and attracting visitors
+to your website
+they make the user experience smooth and
+entertaining
+so in this video
+we are going to learn how to create some
+cool css effects using just html and css
+so without
+further wasting any time let's jump to
+our sublime text editor so we are on our
+sublime text editor
+for our example purpose i have used one
+image from an unsplash.com and we have
+created a simple class div class
+container for it
+now let's go and style these images to
+get a 3d effect so first let's design
+the body part
+we'll set the margin and padding to zero
+pixels
+we set the width to 100
+and we'll set the height to 100 vertical
+heights
+we'll keep the display as flex
+and we'll align the items in the center
+and we'll justify the content in the
+center as well
+now we'll design our container class
+so for the container class we'll set the
+position to relative
+we'll set the width to 360 pixels
+and we'll keep the height to 640 pixels
+we'll set the margin top
+to 150 pixels
+and will keep the
+background to white
+we'll use the rgba format
+we'll use the transform property to
+apply a 2d or 3d transformation to an
+element
+so
+we'll use the transform and we'll
+use its properties we'll keep this two
+30
+degrees
+we'll set this q to
+say 25 degrees
+and we'll scale it to 0.8
+let's discuss more about these
+properties
+so
+the translate property defines a 2d or
+3d translation the scale defines the 2d
+or 3d scale transformation
+and this q property is used to skew
+transformation along the x or y axis
+now let's design the images
+we'll keep the position to absolute
+we'll set the width to 100
+and we'll keep the transition time
+to 0.5 seconds
+let's go back to our page and see how it
+looks up to this point
+so as you can see we have the images
+aligned as we want
+on a flat side
+now we'll create the 3d transformation
+when we hover over it
+so let's go back to our css file
+so for the 3d effect we are going to use
+the edge child property
+the n-style selector allows you to take
+a single argument that describes a
+pattern for the matching element indices
+in a list of siblings
+we'll design the eat image separately so
+for the fourth image
+we'll use the transform property and
+we'll translate it to 160 pixels and
+minus 160 pixels
+let's copy this code
+four times
+okay we have to set the opacity as well
+so we'll set the opacity here
+to 1.
+the opacity property sets the
+transparency of the element
+just change that number of the nth child
+elements so here we'll keep it to 120
+pixels
+minus 120 pixel will set the opacity
+to 0.8
+for the second element let's keep the
+translate to 80 pixels
+minus 80 pixels and we'll set the
+opacity
+to say 0.6
+and for the last image
+we'll translate it to 40 pixels
+and minus 40 pixels and we'll keep the
+opacity
+to say 0.4
+so now when you save the file and you
+will go back to the page
+let's see how it looks
+so if you refresh and hover over it
+now you can see the image has a 3d over
+effect over it
+there are four layers to the image and
+we have
+designed the opacity according to the
+image layer
+so this is a 3d image however
+the next property we are going to
+discuss is a 3d perspective image
+so for this let's use a new set of
+images
+so we'll go back to the unsplash.com
+again
+and let's select one image
+this one looks
+beautiful so let's copy the image
+address
+and mention it
+under the image tag
+just save
+[Music]
+now when you go back to the page
+you'll see you have your image here
+now let's add the 3d perspective image
+design over it
+so under css file let's first design all
+the elements
+let's keep the margin and padding to
+zero
+keep the
+width of the container elements 200
+pixels
+or say hundred percent
+let's keep the minimum height
+to save 100 vertical heights
+and we'll use a background color of hash
+333
+let's design the image as well before
+going back to the page
+so we'll set the perspective to save
+4000 pixels
+the perspective property is used to
+determine the distance between the z
+plane and the user in order to give a 3d
+positioned element some perspective
+let's keep the width of the image 70
+will keep the position to absolute
+keep the left margin to 50
+and drop to 50 as well
+we'll use the transform property
+and use the translate value of it to
+minus fifty percent and plus fifty
+percent
+we will use the transform style property
+and set the value to preserve 3d
+the preset 3d indicates that the
+children of the element should be
+positioned in the 3d space
+so just save the file and let's go back
+to the page to see how it looks up to
+this point
+so as you can see we have the required
+background image and we have the image
+in a required position
+now it's time to style our image
+so use the transform property
+and we'll rotate
+will use the rotate x property of it
+we'll keep it to 70 degrees
+you
+let's discuss this property translate 3d
+the translate 3d css function
+repositions an element in the 3d space
+it results in the transform function
+data type
+the transformation is characterized by
+three dimensional vector it coordinates
+how much the element moves in each
+direction
+let's set the box shadow
+to minus 80 pixels
+60 pixels
+15 pixels
+itself and rgba value 2
+0 0 0
+0.4 let's say
+let's set the transition to all point
+four seconds
+and we'll set the transform style to
+preserve 3d
+so just save the file let's go back to
+our page to see how it looks up to this
+point
+so as you can see the image is flat for
+and ready for 3d effect
+now let's design this 3d hover effect on
+it
+so for the 3d over effect
+we'll use the cover property image
+colon hover
+over the image
+we'll set the transform
+rotate x
+0 degrees
+rotate set
+to zero degrees
+and translate three zero
+zero pixels comma
+zero pixel comma zero pixels
+let's check this once again
+this is right
+now we'll set the box shadow to
+zero pixels zero pixels zero pixels
+zero pixels and rgba
+zero comma zero comma zero comma zero
+just save the file
+and refresh
+now when you hover over it you will see
+that the perspective of the image
+changes
+so this is a 3d perspective image
+now
+there are many css effects that you can
+design using these properties
+so with this we come to the end of this
+video
+i hope you liked this video and you have
+learnt something new about the css
+effects and some properties as well
+if you like this video please do not
+forget to subscribe to our channel
+thank you and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

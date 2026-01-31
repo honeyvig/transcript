@@ -1,0 +1,675 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn
+about the customer analytics dashboard
+in table that said if these are the type
+of videos you'd like to watch then hit
+that like And subscribe buttons and the
+bell icon to get notified just for a
+quick info if you want to up skill
+yourself master business analytics
+skills and land your dream job or grow
+your career then you must explore simply
+learns goad to various business
+analytics programs simply learn offers
+postgraduate program from Pur University
+in collaboration with Amazon Google and
+Microsoft through this program you will
+gain knowledge and work ready expertise
+in skills like prescriptive and
+Predictive Analytics regression
+classification and over a dozen others
+that's not all you also get the
+opportunity to work on multiple projects
+and learn from industry experts in Top
+Tire product companies and academic from
+Top un universities after completing
+these courses thousands of Learners have
+transitioned into a business analytics
+role as a fresher or moved onto a higher
+paying job profile if you are passionate
+about making your career in this field
+then make sure to check out the link in
+the pin comment and description box
+below to find out a business analytics
+program that fits your experience and
+areas of Interest now without further
+delay let's get started with the
+customer analytics dashboard using T now
+let us get back to the table dashboard
+so here we have started the table public
+and we will be creating a new workbook
+right so for creating a new workbook you
+might need the data right so we have a
+lot of options here Microsoft Excel text
+file Json Microsoft Access PDF spatial
+file statistical file Etc right so we
+will be working on a Microsoft Excel
+file today and the data source that we
+will be dealing with today is from
+Amazon sales report from the year 20 and
+21 so we have open kagle here and we
+have here Amazon sales physical year
+2020 and 2021 so we have order date
+order ID status item Etc so we will be
+having around 35 to 36 columns around in
+this particular data set and it will
+talk about multiple details about this
+data right and I presume this has about
+thousands of rows so seems like a good
+data set to begin with now let's
+download this particular data set and
+begin working on that so here I've
+already downloaded that particular data
+set which is Amazon fy2 to 21 and I've
+also extracted the same data set over
+here so this is the data set that we
+will be start ahead with that let's make
+a copy of this and paste it in the Downs
+folder and uh this is where we will be
+accessing it let's change the data type
+from CSV to a workbook and make some
+minor data changes since we have the old
+data
+2021 it might seem a little old you can
+just try to you know enhance The
+Learning Experience just by changing the
+dates so that you can have a feeling
+that you are working on the latest data
+sets right it can enhance your learning
+experience so let's try to do that now
+before we go ahead with that let's try
+to save it as Excel work work save it
+there you go and if you come back to
+your month here yeah we have 2020 it
+might take a little while because this
+is a really huge data set for X so we
+have 2020 copy so you can use find and
+select
+replace 2020 with 2022
+maybe and replace all this will take a
+little while you can see the cells being
+getting replaced over here this will not
+just only sell change the year value
+here if you go to the month here you can
+see that also is getting changed right
+so both data types are month and date so
+it might take a while and we will change
+the 2021 number with 2023 it could be
+you know give you an interesting feeling
+that you're working on the latest data
+set three lakh plus Replacements done so
+pretty much this is a huge and good data
+set to work with and now let's change
+the year 2021 with
+2023 replace all again it might take a
+little while for
+that so for being a data scientist you
+need to know some of the data cleaning
+operations to work with so for now I
+presume the data is been completely
+cleaned because I checked this
+particular data set so I've already
+worked on one of these data sets and uh
+already created uh minor short um charts
+and everything so I've checked this I've
+cleaned the data set and everything but
+if you are uh beginning with a new data
+set trust me you need to know some of
+the data cleaning activities where you
+might have to prare some table
+calculations you might have to write
+some parameters you might have to create
+some vins right so for example if you
+have status over here and if you wanted
+to perform some calculations on this
+particular data set so this particular
+status one will be into Dimensions but
+not measures this is not a number let's
+say you want you just have two values
+here received or order cancelled right
+you might want to create a new Tablo
+parameter here and change the values to
+one for received and zero for order
+cancel right you might have to do some
+calculations over there and then you can
+drag that particular newly created
+measure into the rows and columns and
+create a new chart so you might have to
+know some Tableau parameters Tableau
+calculated fields and data cleaning
+activities using some of the tools like
+Excel so I would recommend Excel is U as
+a good data cleaning tool which is Prett
+it might take a while there you go we
+have five L plus Replacements done
+successfully and now I think you can get
+started with the data you just quickly
+save it as Amazon's FY 2021 and
+2022 or we just made 2021
+2023 and 2022 yeah that's the one okay
+now everything is fine now you can just
+quickly close this particular Excel file
+because this might uh not be required in
+the background you can just quickly have
+a view of your data set on the table
+window itself okay let's quickly save it
+now and
+close this particular Excel file and
+don't worry for those who want to work
+on this data set we will be leaving the
+kagle link in the description box below
+or if you want the exact same data set
+that I am using right now after doing
+some data cleaning activities that will
+also be uploaded to our drive and we
+will leave the Drive Link in the
+description box below now let's go to a
+new tblo window so this is my new tblo
+window and uh let's quickly extract the
+data from Excel file and go to downloads
+I think it's here click on that
+particular file just click open now it
+might take a little while to load and
+open that particular file because it
+might have more than five lak rules as
+we just made sure during the data
+cleaning activity it might take a little
+while yeah there you go we have loaded
+the data
+successfully elapsed at Time 5 seconds
+for loading the preview that's given
+some time let it take its own time and
+work on
+that yeah there you go the data set got
+successfully loaded and here we have the
+fields right so what are the column
+headers we are having and what are the
+you know we have the entire details of
+that particular file over here which are
+the measures which are the you know
+Dimensions so where you can see an
+alphabetical thing that comes under uh
+dimensions and if you see a special
+symbol like this one like a a symbol
+that also comes in dimensions and if you
+see a globe kind of symbol right where
+you have this here country city state
+and zip code these are also dimensions
+and wherever you find a hash symbol that
+is a measure which means it deals with
+numbers and if you create a new
+calculated field and you can recognize
+that particular measure will be
+indicated with a value equals to and
+hashtag so you will have uh equal symbol
+and hashtag symbol together which means
+that that's a newly created calculated
+field or user defined measures field
+right and here you have some values in
+your D set right some of might be blank
+spaces like let's say you don't know the
+C data cleaning operations let's say you
+don't know Excel before we started off
+with this particular video we discussed
+about data cleaning let's say you don't
+know to Cle data cleaning you don't know
+the process of cleaning your data data
+and there are some empty cells or empty
+rows which you might want to get R but
+you don't know how don't worry you just
+load the data onto your tblo and the
+tblo will have an option update now or
+update automatically which will clear
+off all the empty values or null values
+or any of the invalid entries in your
+data set and it will clean the entire
+data for you so this is the data preview
+that you can you come back any time and
+look after and you can also have a good
+look on your data C and try to create
+your own storys right so here we have
+various columns so we can create our own
+stories or you can create your own ideas
+what you want to expect or what you want
+to create from this particular dat set
+and get on with building your worksheets
+and ultimately at the end we will
+complete this particular sheets and we
+will drag all those sheets onto one
+single interactive dashboard on T so
+that was the overview of this particular
+tutorial today let's get started with
+the first sheet here we have the first
+sheet and let's go to the worksheet have
+a very big data set right now here we
+have uh the dimensions and here we have
+the measures right we discussed about
+this dimensions and measures now let's
+get started so the first one we want to
+create is region wise revenues so in
+this particular data set we might have
+about four to five regions in the United
+States of America and we want to check
+the region wise revenue for that just
+drag regions to columns and here we have
+Revenue named as total you can drag this
+particular measure to row and you can
+automatically see I did not even land
+that particular field onto the rose it's
+automatically considered as some
+aggregation right it is calculating the
+sum of total sales happened in each of
+these regions and we have it here and if
+you hold the control key or command key
+and select that particular sum total and
+drag it onto labels you will get the
+labels what's the number of what's the
+number of dollars or rupees or any based
+on the area how much amount of Revenue
+did you collect in individual regions
+and if you drag this particular region
+by holding control and land it onto
+color you can see we will have
+individual colors for individual regions
+right there you go and you can name this
+particular sheet as region wise
+Revenue now we can create a new sheet
+and here you can check the payment
+methods done by various customers so you
+can try to identify which is the highly
+recommended or highly used payment
+method for all the users we can use the
+same sum tool and you can see a tableau
+is automatically predicting the type of
+chart you have a lot of charts available
+here it is recommending you the best one
+and in case if you are looking for any
+modifications you can also do that and
+now I would like to go with a pie chart
+and it's here ready and you can see we
+have a very small pie chart here that
+can be changed you can just click on the
+entire View and if you come back to uh
+the tab over here you can see uh we can
+add U the payment method onto the label
+so that we can identify which kind of
+payment has been done the most right and
+you can also add U some total right
+total value to label so that you can get
+the you know numbers over here for a
+better View view right you can also uh
+do some uh detailing to this particular
+chart right you can make some
+modifications if you want we can change
+the sheet name to
+payment methods and you can see 42,000
+it's 42 million 38 million 47 million so
+bank alafa so this payment method from
+bank alafa bank has been done the major
+payment right so these are the things
+you can uh make you know you can
+consider and the next time you're you
+know pushing some sale you can give an
+offer out if you're paying from Bank ala
+you can get some discount like say 5 10%
+or if you want to boost some of the bank
+payments let's say prounce settlements
+here so we have a very less amount of
+payments done you can also provide to
+them if you're paying from Finance
+settlement you can use some coupons
+right so this is the way you can
+identify and you can also provide some
+insights to your you know uh higher
+authorities now let's go on to the new
+sheet and try to create a new one now
+let's say we have a state here right you
+can push down state and identify which
+state has done the
+maximum uh Revenue push it over here and
+here you have it and if you want you can
+create a map
+click on the map and here you go and for
+some reason I'm unable to get this
+particular region over here maybe it is
+because of the paid version since
+Salesforce has taken over T I think uh
+we might have some issues over here but
+still this is how it works and uh I
+think you can also get an option over
+here to identify which particular state
+has done what you can push the state
+into the label option and you can get
+get these labels here statewise
+revenue and if you change it to this I
+think you are getting over
+here I think this should work for us we
+can also get to know which state has
+done what
+right and now let's try to create a new
+sheet now we can do another thing where
+we can find out the monthon Monon sales
+right you can just quickly drag this
+particular month to
+Rose and uh you can drag the total
+revenue to columns and uh if you quickly
+change these you can find out this
+particular linear map and if you click
+on plus you will get quarterly and if
+you click on plus again you get monthly
+sales so we don't want for you can just
+drag it around we don't want that and if
+you again to remove the year I think you
+have month- on Monon sales over here and
+if you want the data to be shown as
+month you can quickly you know pull the
+month to label here and it will give you
+months there you go and you can also
+change
+colors
+that's it and you can identify that uh
+in the month of December we have a lot
+of sales happening around USA so it's
+due to the Christmas Eve right so uh
+that's it and you can uh name it as
+month on Monon revenue and now let's try
+to create not a dashboard okay I think I
+pressed on that wrong button we need a
+new chart new worksheet and now we have
+found out payment methods and uh status
+right remember we had a lot of status
+over there that's order cancel or
+something like that let's see uh okay
+before that we have another parameter
+which was about category right we have
+it in uh the dimensions here let's see
+which category has highest sales or
+which category has provided the highest
+number of uh you know
+Revenue you can identify we have mobiles
+and tablets to provide the highest
+number of Revenue you can also sort it
+based on descending
+order category
+wise
+Revenue there you
+go and now let's try to
+identify what category has highest
+number of cancellations what category
+has has highest number of gos deliv
+right so let's quickly drag category
+again to columns and Status two columns
+and drag value and you can have a
+detailed observation here change the
+status based on cancellation and you can
+drag status to color
+there you go and try to arrange them in
+descending order so highest number of
+orders which were cancelled are from
+mobile
+applications completed are also from
+mobiles and applications and received is
+also from mobiles and applications good
+so there you go we have uh category wise
+status is
+uploaded you can uh you know let know
+the companies which are branding mobile
+phones and tablets you can let them know
+you can receive highest number of udit
+but also be ready for highest number of
+calculation cancellations from the
+receivers now let's also discuss about
+the discount percentage received from
+every state so which was the state that
+received the highest number of discount
+percentage or highest discount amount
+right you can uh take up anything maybe
+ZIP code or yeah let's take the ZIP
+code columns let's add all the numbers
+you can also filter out based on your
+requirement or if you don't want zip
+code if that's confusing to you you can
+just use city or state whichever you
+want we also have City so let's go with
+the state as
+usual and add it into columns and
+discount
+amount can find
+out
+the highest discount was from California
+Ca and if you want you can change the
+uh
+color and if you want to go with a new
+type of chart you can also do
+that
+just push state to different colors and
+there you have
+it
+right and if you just want to select one
+single state let's say keep only this
+can just directly get
+that and if you want to select anything
+else you can also do that state
+wise
+discounts that's it and let's also try
+to create some more stories out of it
+region wise discount value total or
+quantity of orders so you can also try
+to create a new
+sheet highest
+orders based on
+region region
+column quantity order to rows and you
+can also put down category over there or
+you can we have gender so we can
+identify which gender was uh you know
+keeping placing a lot of orders from
+what region you can quickly
+drag G and drop it to
+columns there you go so uh you can
+also drag the same gender onto color so
+that you have some differentiation
+between male and female and surprisingly
+we have the west region to be leading in
+the highest number of orders in the
+female gender and just all the regions
+have males ordering the highest number
+of uh Goods so you can also dra Dr some
+of quantity order to labels to know the
+actual numbers there you go and let's
+try to
+calculate or let's try to
+identify orders versus discounts so
+let's try to identify if the discounts
+are provided uh then does the amount of
+orders or number of orders increase or
+not right uh
+discount this is orders right so now
+we're taking the values from
+the measures both the values of from
+measures right in that situation you
+might end up with some chat like this so
+you might want to do some modifications
+to your chart ask table to consider this
+particular data set as a dimension and
+this particular data as a dimension
+again there you go you have some values
+over there and and uh discount
+percentage so it's considering from zero
+you can change it you can go to
+format R all
+that
+discrete go to filter and you can give
+minimum percentage as 10% press okay
+there you go and you can see whenever
+there is a discount has been provided
+you have a maximum ERS right so the
+minimum 10% discount has been ordered
+and one order was there and with the
+increasing number of discounts here we
+have 75% discount and the quantity Auto
+is 31 three not 31 it's 371 there you go
+so as the discount percentage got
+increased the number of orders increased
+that's good and uh let's let's try to
+create some more stories out of
+it so now let's try to calculate the you
+know net gross and validity in valid so
+uh you might want to know what is gross
+so it's like the total amount of Revenue
+spent or total amount of Revenue which
+you collected and again net is something
+which you get out after you know profits
+and everything so let's try to calculate
+that category wise so I will take the
+total Value Place it in rows now that
+particular data is available in the
+column with the name
+b standards and now let's pull
+category you go you can sort
+it push category to
+Colors so that you have to different
+colors or different categories right so
+you have the data for gross amount net
+amount inv valid you can even push some
+total to label so that you can have
+exact numbers over there that's pretty
+much right
+uh this is draw net and
+valet category
+wise there you go and now let's try to
+find out what age groups are placing the
+maximum number of
+orders right now let's take the order
+quantity to rows and I think we have age
+somewhere in the
+dimensions we have it in values
+okay now we have a problem right so it's
+taking as sum now you might want to
+add it a
+little if you go back to age here and
+try to create some bins create a group
+and uh the minimum bins let's give
+10 okay so we have a new uh Dimension
+created this was about the it right
+initially when I was you know telling
+you about the Ben and calculated Fields
+this is about it so if we have the
+measures and if you wanted to deal with
+measures and uh then in those scenarios
+you might want to make some
+modifications to measures and improve or
+create some calculated Fields bins
+Tableau parameters and Etc to create a
+new chart that you're looking for that's
+exactly what we did here so we created a
+age bracket and we created an AG B so
+the age between 10 to 20 20 to 30 right
+this is what we did and we have
+okay let's hold control and label some
+quantity order
+to
+colors you can also modify that if you
+want so intensity of color provides that
+highest number of orders made from that
+particular age group right so I presume
+the AGB 60 was making the highest number
+of orders right so maybe their
+grandparents who are trying to gift uh
+their grandchildren and between age of
+20 10 to 20 they purchasing the lease
+and from 20 to 30 maybe they are
+teenager you know youngsters which which
+or parents they want to give their
+children so that's what it is so we have
+so far age okay let's name the sheet is
+age wise so far we have uh few numbers
+over here that's good now we can uh we
+have some sh sheet over here we can
+proceed with a new dashboard and then
+now we can drag the sheets right and if
+you want to change the dimension you can
+also change the dimension let's go with
+uh
+maximum automatic
+max if you want to increase it you can
+also increase the you know
+width there you go we have a perfect
+canvas over here and you can push each
+and every sheet onto the
+you know dashboard and you can change
+the way it looks like let's push the
+payment and push it over here and then
+go to state wise can also okay let's
+push the region a little towards the end
+right so if you want so these are the
+filters right you if you want to look on
+the data from middle west and for from a
+particular payment method right you can
+also get that we have payment method
+statewise revenue regionwise
+revenue and uh so we have region wise
+payment and statewise now monthon Monon
+Revenue let's check the month- on Monon
+revenue and uh category
+wise we have the category
+wise or you can also if you want a
+better look you can expand this right
+you can do that
+let's not do that we have a few more
+sheets to add
+right
+uh state wise somewhere over
+here highest orders somewhere
+here discount versus uh orders place
+here first net and AG
+wise so that's how we created a new
+interactive dashboard and if you click
+on females and you get the only values
+you want from the femals and if you
+unselect that it happens and if you
+scroll up your uh you know uh the
+filters and if you want the numbers from
+South Region you get that and if you
+want to get the details of some Banker
+laa you get here and if you want the
+category wise sales let's say you want
+to go with beauty and grooming products
+you get the details over here
+and you know that's how you create a
+interactive customer analysis dashboard
+using TBL and with that we have come to
+an end of this session on the customer
+analysis dashboard using TBL and if you
+have any queries regarding any of the
+topics covered in this session or if you
+require any more uh insights from this
+data set or if you feel like you need
+some assistance or pbd data set that we
+used steps Etc please feel free to let
+us know in the comment section below and
+our team of experts will be more than
+happy to resolve them until next time
+thank you for watching and stay tuned
+for more from Simply learn staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simpl learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

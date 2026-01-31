@@ -1,0 +1,363 @@
+hey everyone and welcome to the exciting
+world of data analytics with powerbi
+have you ever heard the bus the demand
+for powerbi is skyrocketing in fact a
+recent study showed an impressive
+increase in job posting seeking powerbi
+skills why the sudden surge companies
+are drawing in data and they need a way
+to transform it into actionable insights
+powerbi steps in as a superhero allowing
+you to visualize and analyze complex
+information with stunning Clarity but
+the benefits extend far beyond cool
+charts and graphs mastering powerbi can
+unlock a treasure chest of career
+opportunities data analyst with powerbi
+expertise are highly sought after
+commanding Hefty salaries we are talking
+about figures that can truly transform
+your life the average salary of a data
+analyst in India is 10 lakhs perom and
+in America the average salary of a data
+analyst is around $100,000 per ANM think
+about it top companies from the
+prestigious mbb consultancies to the big
+four accounting Giants and also the mang
+are actively recruiting for the talent
+with power ba skills this is your chance
+to join the ranks of these industry
+leaders and make a real impact in this
+very tutorial we will be diving head
+first into the world of powerbi by
+building a powerful customers analytics
+dashboard get ready to unlock the
+secrets of your customer base identify
+Trends and make data driven decisions
+that drive real business results the
+best part this path to prosperity and
+stability is within your reach so buckle
+up and get ready to unleash the power of
+powerbi in this session we will unveil a
+live demonstration of the customer
+analytics dashboard in powerbi are you
+ready to unlock your potential let's
+dive in that said if these are the type
+of videos you would like watch then hit
+the like And subscribe buttons and the
+bell icon to get notified craving a
+career upgrade subscribe like and
+comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back just a quick info for you if you
+want to upskill yourself master data
+analytics skills land your dream job or
+grow your career then you must explore
+simply learn scort of various data
+analytics programs simply learn offers
+postgraduate program from P University
+in collaboration with IBM through this
+program you will gain knowledge and work
+ready expertise in skills like
+perspective and Predictive Analytics
+regression classification and over a
+dozen of others
+that's not all you also got the
+opportunity to work on multiple projects
+and learn from industry experts in Top
+Tire product companies and academian
+from top universities after completing
+these courses thousands of Learners have
+transitioned into a data analytics role
+as a fresher or moved on to a higher
+paying job and profile if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the pin comments and
+description box to find the data
+analytics program that fits your
+experience and areas of interest and now
+let's get started with customer
+analytics that dashboard using PBI so we
+will be using the Amazon sales statuses
+from 2023 and 2024 for this particular
+dashboard using powerp so let's quickly
+switch between the PowerPoint
+presentation and the data set that we
+are going to use today so this
+particular data set is available on
+kagle and it is actually the data set
+between 2020 and 2021 so we carried out
+a little bit of data clean process and
+we enhanced the data set like removing
+the blank spaces removing the blank
+cells and the blank rows basically so
+and after that changing the data type of
+dates so you might be wondering there
+might be a few discrepan in the way the
+data is formatted because there are many
+ways for example if I just select this
+column and go back to data type and if I
+go to the available dates there are many
+formats so you can see year month and
+date date month and year and there is an
+alphabetical representation of month
+right so there are many variations where
+you can represent the date so we are
+going to use one single format for the
+entire data set so that it can be easier
+for us to identify the week on week
+month- on month quar on quarter and
+yearly U analysis so that's the whole
+point of it first point just try to
+eliminate any kind of blank cells rows
+or columns in your data set so that the
+accuracy of the data that you are using
+to perform analysis is intact and good
+right so apart from that just check if
+you want to eliminate any of the decimal
+points just select this and here you can
+see the option to element leading
+decimal numbers right you can use this
+option over here so there are about 2
+lh86 393 rows in this particular data
+set so it might take a little while to
+uh reflect my actions on this particular
+data set and apart from that if you
+could just hover over through this part
+particular dat set you have a lot of
+things to deal with you have regions you
+have username discount percentage and uh
+you have first name last name of the
+user quantity order price value so why
+are we basically going through this
+particular dat set is it is when you
+understand it is when you can quantify
+what's happening with your dat set
+that's when you can plan out what kind
+of analysis you want to perform right
+let's say you did not get any kind of
+prerequisites from your manager you just
+have the DS head and you need to perform
+the exact uh you know analysis which
+could benefit your organization so they
+also want some insights that they can
+make out some decisions out of it right
+some business decisions so in that
+situation you just have to go through
+the data set once and do the data
+cleaning process and then understand
+what exactly has been mentioned in this
+particular data set and what kind of uh
+insights you can extract out of this
+data set and you can proceed with that
+so basically we have quantity ordered
+price value and uh total apart from that
+you have category you have uh different
+payment methods you have uh the year you
+have the dates and uh you so when you
+have dates you can also create some
+trend lines out of it and apart from
+that um let's say you have zip codes
+region right so you can find out region
+by sales and a few more things what you
+can basically do out of it right so
+having the data set understood let's go
+back to powerbi so this is our powerbi
+platform so basically just select this
+particular Excel work option and import
+the data I've done it basically here you
+have it so we have the age category City
+Country everything presented away here
+now let's quickly create
+the visualizations using this particular
+J so I would firstly go with u a bar
+graph okay let me choose this uh bar
+graph right over here and uh let me
+create gender byse sales let's let's
+have this
+gender
+here so we should be having something
+called as a price or a sale so we have
+price over here you can quickly draw and
+drag this and drop it on the
+x-axis okay we y axis and uh gender on
+the
+xaxis so we don't want this filter over
+here you can eliminate
+this so now you have um gender wise
+sales right now next let's use a pie
+chart now you can find out the region by
+sales quickly add the region
+into
+Legends
+here you have the region by sales so you
+have Midwest Northeast South and
+southwest regions so these are the sale
+of number uh line graph which can help
+us to to okay so just click on the
+canvas and then double click for your
+draft
+sheet now let's use the audit
+date and drop it onto
+xaxis and
+um r on to Y
+axis now if you could uh use the
+dropdown and use the date hierarchies
+you can use the year on year month on
+month so let's go with month on month or
+quarter okay let's go with quarter on
+quarter now you can see how are the
+sales running quarter on quarter in the
+for this particular data set so we have
+two years that is 2020 and I mean yeah
+2023 and 2024 the quarteron quarter
+comparison for year on-ear sales figures
+right now let's click on the canvas once
+again and now you can choose the over
+here and uh so since we
+have two genders and I think we also
+have a column for age it should be
+somewhere in the
+list so basically you can derive what
+age groups have made the maximum number
+of sales
+right yeah so here we have
+it and the sales so basically it'll
+create a bucket right uh age group from
+18 age group from 19 2021 and so on now
+just go through the orders or you can go
+with the price so just drag and drop it
+in values and you have it here and you
+created a donor chart of it and uh let's
+try to create a field map now uh you can
+understand which uh area or which region
+was the highest uh sales uh we received
+so just go through the data set over
+here so we have the country just drag
+and drop the country and then have the
+price or orders you can use anything
+okay let's go with the
+orders quantity
+order and add it in the
+values so here we have it so if you
+could expand you can find out which
+region was the one which give us the
+highest number of
+orders and there is another simple way
+to do it as well if you just double
+click on the
+[Music]
+canvas it will give you a prompt where
+you can write
+map country
+wise map okay map state so we have a
+state column here see or
+price and uh it will automatically
+understand your query and create
+a map which will show you the highest
+number of sales from the regions or the
+region or statewise sales brilliant now
+if we proceed into the final chart okay
+we have a waterfall chart so now you can
+create a waterfall chart so you just
+name it
+waterfall so we have have uh category
+somewhere yeah phall category wise just
+enter price or sale and we have a waterf
+chart over here based on the categories
+you can just drag or you can expand the
+canvas to have a clear
+picture and uh yeah so far we have dealt
+with okay we have a scatter plot we can
+do a scatter plot
+scatter plot for quantity of orders
+received against discount
+offered so we should be having quantity
+ordered
+25 against
+discounts or I think we can go with
+order rties so it will give us a unique
+uh
+representation there has been a small
+discrepancy order ID or you can also go
+with customer ID
+against discount
+offered so we have a huge data set 2
+lakh plus so it might take a little
+while to respond to the requests that's
+completely all right now what left out
+is the kpi so you can also create some
+kpis so just double tap and uh write a
+kpi for total sales write a
+kpi to L this
+$9,000 API for total
+discount
+kpi for discount
+percentage or we can use KP for gender
+which can tell us how many number of uh
+females or how many number of males did
+create an order we will be having a
+number
+here
+writing if you could just close these
+visualizations over here we can expand
+the canvas and you can also have okay we
+can also minimize this particular area
+and we can also have another
+chat or bar bar
+graph for types of payments payment
+types payment method right so we will be
+generating a bar graph with highest
+number of payment methods used that is
+cash and delivery online payment emis
+Etc so it will take a little time to
+reflect on this particular screen that's
+all right now if you can just go to view
+and here you will be having various
+options for representing your data set
+just click on the best way to represent
+your data set there you go so basically
+that's how you create okay let's try to
+to rearrange our charts a little bit so
+that the kpis and kras are clearly
+visible there you go so that's how you
+create a customer analytics dashboard
+using CBI and with that we have come to
+an end of this session on customer
+analytics dashboard using CBI should you
+have any queries regarding any of the
+topics covered in this session or if you
+require the leaders set that we used in
+the session which is completely cleaned
+and enhanced one please do let us know
+in the comment section below anding of
+experts we'll be happy to help you out
+as soon as possible until next time
+thank you for watching and stay tuned
+for more from simp staying ahead in your
+career requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

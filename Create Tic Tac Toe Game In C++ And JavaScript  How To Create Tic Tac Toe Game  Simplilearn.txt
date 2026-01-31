@@ -1,0 +1,2899 @@
+hey guys welcome back to another session
+by simply learn
+in this video we will discuss how to
+make a tic-tac-toe game both in c plus
+and in javascript
+this tic-tac-toe game is pretty famous
+and is often played by many in their
+childhood in this game two players one
+by one mark cross and zeros in a three
+cross three grid
+the objective of each player is to pair
+3 marks in a row column or in a diagonal
+manner before the other player
+the player who succeeds in doing so wins
+the game
+so let's create this tic-tac-toe game in
+c plus and then in javascript
+so first of all
+we have to make the structure of
+tic-tac-toe game
+and the structure of tic-tac-toe is like
+this
+these are the empty spaces and we have
+to mark these empty spaces with crosses
+and zeros
+and now these are
+column numbers and row numbers which
+will help us in adding alphabets to
+these empty spaces
+so first of all we have to create this
+structure so let's go ahead to our
+visual studio code
+so first of all let's name this
+game dot cpp
+we'll save it
+so now let's start with hash include
+iostream
+now we'll write using namespace standard
+now before making the structure we have
+to create an array a multi-dimensional
+array or we can say a two-dimension
+array
+so we'll write into main and inside int
+main first of all we'll declare that
+array and initialize
+some elements
+all right
+let's say the name of the array is space
+three rows and three columns we want
+okay so let's say the elements are
+zero zero
+zero one
+zero two
+okay now
+the second row the elements are
+1 0
+1 1
+1 2
+in the third row the elements are
+2 0
+to 1
+to 2
+so these are the elements i have added
+these elements because these are
+collectively the rows and column numbers
+of the spaces
+as you can see
+0 0 0 1 0 2 1 0 1 1 1 2 2 0 2 1 2 2 so
+these are those elements i have added
+these are actually the positions of the
+empty spaces
+now
+we will take the input of the number of
+players
+as their name
+for example enter the name of first
+player and enter the name of second
+player so for that we have to create a
+string first of all
+let's say string n1
+and string n2 because there are two
+players
+now we'll display a message that enter
+the name of the first player let's say
+enter the name
+we missed writing e
+okay enter the name
+of the
+first
+player
+okay
+let's add slash in
+all right
+now let's take the input we'll write
+get line
+c in comma
+and one
+which is the name of the
+string now we'll do same for the other
+one
+enter
+the name of the
+second
+player
+now again we'll write get line
+c in comma
+and two
+now just in order to make it look good
+will write
+n1 that is the name of the first string
+or the name of the first player
+is
+player 1
+so
+he
+or she
+will play first
+okay now we'll write slash n
+now we'll do same for the player two
+we'll simply copy this
+and paste it
+and now
+all right
+let's change this player 2 and
+we'll play second
+okay
+now we have to make the structure of the
+tic-tac-toe game
+that is this kind of a structure we have
+to make
+so let's go ahead and create this
+okay
+we have to create two straight lines so
+we can do like this
+and make sure to write slash n
+in the end
+now we can do same for the second line
+because the two lines are pretty long
+enough so we can copy and paste
+it will save our time and we can do
+again
+now we have to create a horizontal line
+as well
+for that let's say
+c out
+and
+we can create this horizontal line by
+using underscore
+we'll give it a shot
+and
+we can do it like this
+so that
+it matches with the upper line
+all right
+now
+we can
+write slash n
+and we can do
+copy these two
+and we can again paste
+and then this
+horizontal line
+you can copy basically we have to create
+a structure
+so
+it is good if you can do it in a fast
+way
+or an easy way
+all right but the
+18 and 19 line seems to be extra so yeah
+we can remove that
+so that
+let's make it more symmetrical
+let's add some more underscores
+here as well
+make it like this
+all right now it is looking pretty much
+symmetrical
+let's remove this line
+yeah it is looking good now
+now all we need to do is to add the
+elements of the multi-dimensional array
+that is space array
+to these empty spaces like we have to
+add element on each and every empty
+space
+so as you can see this is the zero zero
+that is zero throw and zero column this
+is zero throw and first column this is
+zero through and second column and
+similarly all of these
+so that is why we have created these
+kind of elements so yeah we can also
+change these elements let's create them
+one
+two let's make it simple
+seven
+eight
+and nine
+so yeah all we need to do is to add
+these elements to these empty spaces
+our main intent behind adding these
+elements to these empty spaces is
+whenever we click a particular element
+or digit like let's say 2 or 3 then the
+mark of 0 or x should be placed at that
+particular position
+so let's do it
+and for that we have to do it like this
+write c out
+and
+inside c out
+we'll write the name of the array
+with the position of it
+of a particular element
+so this is the position of the first
+element that is one
+and after that
+we'll do it like this
+okay so this is the vertical line
+and
+then again we have to
+right
+the position for the second element
+that is 0
+1
+this element is 2
+and once we have
+wrote this then
+we can enclose it
+in the bracket
+all right
+now
+the second vertical line
+and we'll do same for the third one
+right space
+0
+2 that is the third element that is 3
+now let's enclose it
+in double quotes
+all right
+yeah
+slash n
+semicolon
+now let's fix it
+now it's fine
+now we have to do the same for the
+second row and the third row
+so
+all we need to do is to copy this
+and we'll add
+over here
+and
+over here as well
+instead of writing this whole code we
+can simply copy paste and now all we
+need to do is to just change the row
+number and the column number so as you
+can see this is the first this is the
+second and this is the third element so
+we'll do same for the other elements so
+this is the fourth element
+so this position is
+1 0
+and this position is 1 1
+this position is 1
+2
+and this is a
+second zero position
+this is two 1 position
+and this is
+this is position 2 2
+that is the last position
+so this is the thing
+so we can check if it is looking good or
+not
+i'm pretty sure that is not fully ready
+yet but yeah we can check
+so we'll save it by pressing ctrl and s
+now we'll try to run this
+so as we can see enter the name of the
+first player so let's say the name of
+the first player is sam
+and this name of second player is
+mario
+and yeah so this is
+our output
+but it is not looking good as its
+alignment is not good
+which i was sure
+so we have to make some changes
+we have to adjust a bit
+this was the vertical line and this was
+the second vertical line
+so let's make some changes and
+let's see if it is looking good or not
+sam
+and mario again
+it is better than earlier but as you can
+see this
+one is not underneath this one
+that is the vertical line
+is not underneath the previous vertical
+line and same for the sixth same for the
+ninth
+so we'll have to adjust this
+and it's pretty easy we can do that
+yeah now let's save it again
+and let's hope it runs this time
+enter the first name we have to enter
+let's add mario first this time
+same the second time
+yeah it is looking good now as you can
+see
+it is symmetrical and
+positions are also filled one two three
+four five six seven eight nine these are
+those elements
+now all we need to do is to
+make this structure as if a person that
+is the player
+will click a particular digit that is
+one two three four five six or seven
+eight nine then that mark that is
+zero or cross will be added to that
+particular position
+and also we haven't noticed that this
+mario is player 1 mario's play 2 is
+wrong
+that is we have we have to write n2 over
+here so by mistake
+we have wrote n1 and
+and we can add one space over here as
+well
+so yeah the rest is good
+now all we need to do is to create some
+functions
+but before that
+let's make it right
+yeah
+now let's make this all code inside a
+function so let's say
+let's move this into main we'll do that
+later
+let's create this code inside a function
+let's say the name of the function is
+function1
+okay
+all right
+so this is our function and let's create
+all these variables outside the function
+so that it can be
+global variables
+and we also take this array
+we'll
+copy it
+and paste it over here
+all right
+and we can remove it from here
+yeah so we have declared it globally and
+we'll do the same for the variables that
+is row
+and another variable that is column
+because we know that
+in a two dimensional area there must be
+rows and columns
+so we'll write
+column
+all right so these are the global
+variables
+so now let's go ahead and create
+function two
+for that
+let's say we'll write void
+function
+2
+now inside this function
+we will check for any invalid value and
+we'll make sure that it is not there
+but before that we will
+create a variable digit
+so that we can take the input from the
+user
+so we'll write
+and digit this is the variable
+now after that
+we'll write
+so here we will write if the value of
+token that is the variable that we will
+now create is equal to x then we will
+take the input from the first player and
+then we'll take the input from the
+second player
+so
+before that we have to create a variable
+token
+we'll write here
+this variable is of corrected type
+character
+token
+let's
+initialize it with cross
+or x
+all right
+now
+here we will write
+if
+value of token
+equals equals
+cross
+then we'll
+write n1
+that is the variable name
+enter please enter we'll write please
+enter
+after that
+we'll take the input
+that is the variable digit
+now we will do same for player 2 that is
+n2
+so we can copy this
+and we can paste it
+all we need to change is
+we can make it
+zero
+and
+make it n2 so it will display
+and 2 that is player 2 please enter
+and then the player 2 will enter the
+digit
+now we have to check these digits for
+each and every column and rows one by
+one
+and also we have to make sure that there
+is not any invalid value
+so for that
+we'll write
+if
+digit value is
+one
+that is the number entered by the player
+is one
+that is the first place or the first
+space
+then
+it would be
+row
+equals 0
+and
+column
+equals 0
+that is the first place
+just to clarify here we are talking
+about this position that is zeroth row
+and zeroth column
+after that we'll do it for zero throw in
+first column then zero throw and second
+column and similarly we'll do for all of
+these positions
+okay now we have to repeat this code
+we have to just change this digit value
+to 2 3 4 5 6 up to 9 because there are 9
+spaces
+and we have to change the rows and
+columns value so instead of writing it
+again and again we can just copy and
+paste it
+we'll copy
+and
+i will paste
+and we'll do it for
+nine times three
+all right now all we need to do is to
+change these values
+if the value of the digit is 2 that is
+entered by the user for the player
+then
+the value will go to
+zero throw
+and first column
+with the values three
+then zero throw second column
+or third column because we are starting
+from zero so that is why we are talking
+like this
+now if the value of digit is four
+then zero throw
+and
+then first row sorry
+first row
+and
+0th column
+then
+if the value is five
+then first row
+and
+first column
+if the value is six
+first row
+and second column
+if the value is seven
+then
+second
+row
+zeroth column that is right
+the value of digit
+eight
+we'll write eight
+and
+the value would be
+row 0
+row 2
+and column 1
+here digit is 9.
+so row would be 2
+and column would be 2.
+after that in else we can write
+if the case is invalid
+we will print
+invalid
+all right
+we can write endl after that
+now this condition else means
+if the value entered by the player is
+any other value than the values at the
+empty spaces that is from 1 to 9 then
+that case would be an invalid case so
+that is why here we have written invalid
+now after that
+we have to write an if condition
+so first of all i'll write the if
+condition because it's pretty long and
+after that i'll explain it to you
+so we'll start with if
+the value of token
+is
+[Music]
+cross
+[Music]
+and
+space array
+that is row and here we'll write
+column
+not equal
+to x that means
+that means if x is not there at a
+particular position
+and
+similarly we'll write four
+the
+zero
+you will write
+column
+i will write row
+if i take particular position
+there is no zero as well
+so
+that means
+that is a unused place
+so inside this we'll write
+space
+row
+column
+x
+or cross
+token
+equals
+zero
+okay so we have wrote this and now i'll
+explain you this part
+so here we are checking if there is any
+unused space which is left in the
+structure to fill
+so what we are doing is if the value of
+token is x that means player 1 turn is
+there and at a particular place there is
+not x and not 0 as well so player 1's
+value x would be assigned there as we
+can see in line 96 after that player 2
+turn is there so we have assigned the
+value 0 to the token that is player 2's
+value
+after this we have to use
+else if statement and do the same for
+player 2 as well
+all right
+now we'll write else if
+and we'll do
+the same we can copy it and paste it
+over here
+we need to do minor changes
+we have to change it to zero
+and
+this one would be same this means if
+player 2 turn is there
+then if the value is not x at a
+particular place and neither it is 0 at
+a particular place then that particular
+place is empty or unused
+so
+we will assign zero at that place
+because now the turn is of player two
+okay we can copy paste it as well
+because the code is same
+here would be 0
+and the token would be x or cross
+after this we have to write the else
+block
+and inside that block we have to call
+the function again so that we can play
+it again
+so
+all we need to do is we will print
+there is no
+empty space
+all right
+we can use
+and l
+we have to call this function the name
+of the function is function2
+you write function2
+so now let's have a look at what we have
+done
+so first of all
+once the player enters the digit the
+value will go to the suitable if
+condition
+as you can see here the player will
+enter the digit then the value will go
+to this particular
+suitable if condition
+once the particular condition matches
+then it goes to the below if condition
+that is over here
+here it is checked whether the space is
+already filled or not if it is filled
+then we will get the message that there
+is no empty space
+but if it is empty then the player can
+fill the space with zero or cross
+depending on the player
+so now let's go ahead and create a
+function
+and we'll name this function
+as
+function 3 which is of boolean type
+all right
+here we have created this function of
+boolean type because we have to return
+true and false only in this function we
+will set the condition for players to
+win and check whether the game is still
+going on or it is a draw
+so let's start first of all we'll create
+a for loop which i trades from
+zero that is end i equals zero
+i less than
+three
+till three and i plus plus
+now
+inside the for loop we will set the
+conditions for a player to win the match
+so as we know that in the game of tic
+tac toe if the pair of three matches
+whether it is horizontal vertical or
+diagonal then that particular player
+wins the match
+so here we will set the conditions for
+horizontal and vertical pairs and after
+this we will set the condition for
+diagonal pairs
+so let's start
+so we'll write f
+at a space
+space
+i
+will making
+we are making
+row
+a variable
+i zero
+equals equals
+space
+i
+one
+space i1
+and
+space
+zero again
+equals to space
+i
+two
+there's a mistake again
+all right
+so this condition is for first row as we
+can see
+so in the condition we are checking if
+this element that means the element at
+this position is equal to this position
+and the element at this position is
+equal to this position
+then the particular player wins
+and that's what we are doing in the
+condition the loop starts from zero so
+first zero zero
+equal to zero one that is first and the
+second element then first and the third
+element
+so it is checking that whether these
+three elements are equal so if they are
+equal then it is true and otherwise it
+is false
+so here we have checked horizontally and
+now we have to check vertically so we'll
+write
+or
+and we'll write
+space
+zero i
+zero
+i
+equals
+space 1i
+and
+space
+zero i again
+equals to
+space
+to
+[Music]
+i
+here we are making
+rows fixed and column variable
+so if these conditions are true the
+player wins
+so we'll return
+true
+so now similarly we'll do for the
+diagonal elements
+for diagonal elements we have to check
+diagonally so we don't have to use the
+for loop we'll write space
+zero
+zero
+equals
+space
+one one
+and
+space
+1
+1
+equals space
+2 2
+now here are
+space
+0
+2
+equals space
+1 1
+and space
+space
+one one
+equals
+space
+2 0
+okay
+so if these diagonal conditions also met
+then
+it is true that is it's a win
+all right
+okay so after
+this so these were the conditions for
+winning the game so now we have to
+make the conditions to check whether the
+game is still going on or is it finished
+so we'll do that
+so we'll write 4
+and
+i equal 0 i less than 3 because it is a
+3 cross 3 matrix
+and i plus plus
+after that we'll write
+for
+end j or k whatsoever you want in j
+equals 0 j less than
+3
+j
+plus plus
+all right
+now inside this both of these for loop
+we will write the condition of if
+space
+i
+j
+not equal to
+[Music]
+the symbol that is
+cross
+and it is also not equal to
+this i
+j
+[Music]
+also not equal to the other symbol that
+is zero
+then
+we will return
+false
+so here what we are doing is in the if
+condition one by one every position is
+being checked we have written if the
+value at the position is not cross and
+is also not zero
+that means the game isn't finished yet
+or it is still going on because the game
+is played till every position is filled
+totally so if any position is not filled
+that means the game is still going on
+that is why we have returned false
+so we have used these conditions
+if the player wins the game
+these were the conditions to check
+whether the game is still going on now
+only condition left is to check if the
+game is draw
+so
+after this
+if this condition is not met and this
+condition is not met and this condition
+is also not met then there is only one
+possibility that the game is draw so
+after this for loop the control will go
+to outside the loop so we have to create
+a variable
+let's say tie
+and make it true
+so we also have to declare this variable
+and the data type of this variable must
+be boolean
+so we can
+write bool
+tie
+all right
+now let's come back now after
+it is tie we will return
+false
+all right
+now we have created these three
+functions that is function three
+function
+two
+and function one
+so now one by one we have to call each
+and every function
+starting from one two and three
+systematically we'll do it so
+write int main
+all right and main inside into main
+first of all we have to call these three
+functions one by one so how can we do it
+so we'll write
+while
+and inside the while loop we'll write
+the condition
+not
+function
+3
+here it means this loop
+will keep on iterating till this
+function
+will return false and this function that
+is function 3 will keep on returning
+false until
+any player that is player 1 or player 2
+wins the game
+so if the game is not won by any of the
+player then again these functions will
+execute one by one
+so this cycle will keep on repeating so
+we'll write function one first of all
+after that
+function
+two
+and then function three
+all right so after this while loop
+will write if condition
+if
+token
+equals symbol
+x
+tie
+is false
+i'll explain this part
+now we'll write n1
+that is the name of the player1
+and after that we'll write
+vince
+then we'll write endl
+similarly we'll do it for
+the player 2
+but we have to write in else f
+token equals
+symbol
+0
+and
+tie is not there that is the game is not
+tie
+[Music]
+then
+player 2 wins that is n2
+wins
+now in the last
+there is else block
+so this block else block will execute if
+the game is draw
+so
+it's
+a draw
+all right
+we we have done a mistake over here
+if the token value is x then
+n2 wins
+that is player 2
+if the token value is 0
+then n1 wins
+so yes here if the value of tie is false
+that is there is no tie between both the
+players and the value of token is x that
+means player 2 wins here the token equal
+to x that is cross means that the last
+turn was of player 2 and the game was
+not a tie and is ended so it means the
+game is won by player 2 and vice versa
+for the player 1
+and if both the conditions are not met
+then it is a tie
+so now let's try to run this let's save
+it first
+now let's try to run this
+hope it works
+there are some error
+let's have a look at them
+okay so we haven't used the brackets
+plus there are some more errors
+so let's fix them all
+function two and function three
+as you can see there are no brackets you
+forgot to
+mention the brackets
+here as well
+and for the strings
+we have to do
+like this
+all right
+there are some more errors
+so let's do some changes
+and we also forgot
+to make it a character array
+let's make all the elements as character
+and also we have to assign tie
+to something like let's say
+false
+we have to initialize it
+and
+let's see if there are some more errors
+there must be some more errors let's
+save and run it we forgot to save it
+now we'll run it
+okay
+there are some more errors
+we forgot
+to put bracket over here and call the
+function one
+and let's just copy and paste
+this whole enter the name thing into the
+main function that's where it will look
+nice and
+it will minimize the errors so we can
+copy this or we can cut this
+and
+we can paste it in the main function
+all right
+now
+now let's save this and let's try to run
+all right there are some more errors i
+think
+single quotes we have to make it double
+quotes
+all right plus i think
+now let's try again
+this is showing the error
+all right this is 112
+all right
+after this we have to make some changes
+in this
+if if and
+else statements
+so so let's change this so we'll write
+else if statement
+and
+write the condition
+that
+if digit is
+less than 1
+and
+or
+digit is
+greater than
+9
+then this message that is invalid should
+be displayed
+all right now let's try to run this
+save it
+and run this
+function1
+now our only error is function1 so
+function1
+spelling is wrong
+let's correct it save it
+and now let's try to run this
+okay
+enter the name of the first player let's
+say sam
+entered the name of the second player
+that's ron
+here it is so
+sam we forgot to
+mention the space so that is why it is
+coming along sam please enter
+so let's say sam wants to enter at third
+position
+so here we can see
+at third position
+this is the third position and here it
+is
+the cross now ron please enter
+we forgot to add the space so that is
+why it is
+looking weird but yeah
+now
+ron will enter let's say one
+as you can see
+zero is at place one
+now
+sam
+will enter
+six
+as you can see
+sam is going to make a pair on the other
+side ron will now click on five
+all right now
+sam again will click on 9 to make his
+pair
+as you can see sam has made his pair and
+sam wins
+so this is the game of tic tac toe and i
+know the code is pretty long but it is
+worth trying and if you want to do it in
+a better way then you must practice it
+for like two to three times
+so this is how you can create a game of
+tic-tac-toe in c plus if getting your
+learning started is half the battle what
+if you could do that for free visit
+scale up by simply learn click on the
+link in the description to know more
+now we are planning to develop tic tac
+toe in javascript so let's go and start
+developing our next game that is called
+tic tac toe
+so in this tech tractor i will start
+working with creating a folder called
+tic tac and inside this i'm going to
+create a new
+file name called
+index.html now here onwards the same
+thing
+i'll be creating this html tags
+and now here onwards
+we want our some classes for headers and
+footer
+but so we're going to create some div
+tag now
+so in this div tag
+i'll be creating some of the tags
+in which the css class will be applied
+so we just gonna create a classes
+i'm going to just use those classes but
+we'll create it later on so just go
+ahead and create those so we're saying
+do
+okay
+so now this point onwards is my first
+dev tag inside this i'll keep
+my h1 tag
+and under this h1 i will be offering
+some of the headings which will be
+useful
+to contain some necessary information
+with regards to this game so tip here we
+say h1
+and inside this h1 we give the message
+called class
+equal to header
+and here i'll give the name call
+is a tic-tac-toe game
+after this div class
+yeah here we will start working with our
+form tag
+within my form tag i will start my div
+after div tag i will use
+label
+so label for player one
+or else i can say player one and inside
+this let's give the name called
+player
+one label is closed
+and after this label we'll start working
+with our input tag
+input
+now in this input what are the details i
+need first i need call type equal to
+text number one second
+placeholder equal to enter name
+next name
+equal to player1
+next we want id
+equal to
+player 1
+and then
+any class if i want to apply
+anyways we're gonna close this this is
+my first text box
+and same thing i would like to create
+for my another one
+so the first dev type we have used let
+me go and create another tip tag
+in this div tag i'll use the same label
+copy the same
+paste it here and this is for player 2.
+so we have this
+two players with me and after this div
+tag
+i'll offer the submit button now
+input typically submit
+start game
+now the form tag is closed here
+dev tag is also closed
+so
+you want the div tag to be closed or
+before that it's up to you now
+so here we have a called div class
+whichever we have taken so if you want
+you can basically put it later or before
+whatever
+so we will basically form that with this
+so form tag is there later on you can
+just show some containers where the
+details will be visible to me
+so here after the form tag
+let me try to offer but first check with
+it is really working fine
+so here
+yeah we have this option called enter
+name internet after the stick tag tool
+so
+yeah so here the details we have taken
+input application text and input
+typically text
+okay so two values we are taking now and
+accordingly we will go ahead now finally
+after the form tag
+we would like to start with working with
+the tape tag again
+div
+and inside this div
+i says i haven't created any css classes
+so those we can use it little later on
+but let's have
+this div
+and inside this step i would like to use
+one more tip type
+okay and here we want to use one more
+div tag
+so inside this div we will be using one
+more div tag
+so
+in this div we can just give the value
+called data id equal to zero
+id equal to
+zero it's just the value
+we are passing it
+div
+data equal to 0 the div tag is getting
+closed
+fine so
+that's how we want it now
+so here the first div tag is closed like
+that we can create another data id so 0
+1 2 total number of 3 we want to create
+it so i want to create 0 1 2 3 4 5 like
+this
+so the way we have created here
+for this div let's go and create one
+more div tag
+id equal to
+one
+two
+three options we have it now
+okay like that i can keep on creating
+the others also
+too
+three
+four
+five so zero one two three four five dot
+number five we have created
+one more i would like to create it down
+here for six
+there'll be no difference because we
+haven't changed anything here
+okay
+so the div tag is getting closed here
+okay
+and
+that's it
+and if you want to create a some clear
+border button that you can basically
+offer it later on
+but here
+we can use one more tip
+and here we see
+dip classical to relative
+and within this step tag i can use
+any image tag if i want
+so i just leave it as it is
+and after this
+i can create one more tip tag
+and inside this another tip
+okay
+and
+under this i'm going to create
+a button
+okay and in this button
+we'll be having some value
+okay
+we can secure the volume called replay
+this button is created and now we can
+create a clear board
+spam
+and here is a clear board
+that's it
+okay so here
+it's just
+a small game i want to develop it
+better
+now there's no user interface has been
+used so this user interface will be
+using it later on by offering them a
+pure
+look and feel so that you know it gives
+me
+more better look when your application
+will start
+but most importantly i need to start
+working with a javascript part where the
+logic will get calculated here
+okay so
+we want to start with the javascript so
+let's get included the javascript with
+my code
+so here
+i can see here
+a script tag
+script
+equal to
+now the file i haven't created so let it
+be as it is
+that's it so this is my script tag and
+let me try to include my
+style cheat also so
+i just say
+link real quick style sheet
+into the name called
+css though i haven't created but i'm
+giving it
+okay
+that's it
+so we have taken
+this html into our
+consideration now we'll be creating this
+css as well as the javascript to make
+this example complete
+well we are ready with our html but it's
+time to basically go back and spend time
+on our javascript we're going to create
+a new file now with the name called
+app.js
+and inside this we will start writing
+the logic with our main application
+okay now the first thing is how we're
+going to start now
+yeah
+so
+first thing what we need to do is we
+need to attach window
+dot
+add event listener
+and when the window will load some logic
+should happen so i'm saying load
+second is the name of the function
+so the name of the function perhaps does
+not exist but i can give the name called
+app
+which i'm going to create it shortly
+now here first of all let me try to
+create a game board i'm saying let
+gameboard
+equal to now let me have some of the
+values because it is
+eight digit
+so we just make it
+like that
+and one more
+for making it nine
+okay
+so that's how
+we're going to create it now
+okay
+now this is all empty right now
+after that we're going to create let
+turn
+this new variable
+equal to
+zero
+what this is it keep tracking if x or
+zero player its turn
+like which player turns it to b so just
+it is trying to mention it i'm saying
+let
+winner equal to
+false
+okay now let's go and create the player
+so
+create
+player how are you going to create a
+player we say const
+now inside this we can say name equal to
+name
+next we say return
+name
+that's it
+okay after that i'm defining let
+here
+x equal to
+player
+with the empty value
+and again
+player
+y
+equal to
+there is an empty value now let's try to
+initialize the app
+okay
+initialize
+now inside this initialize the app we're
+going to create a new function
+function
+app
+and inside this we're going to create a
+variable likewise
+input feed
+equal to first of all
+document dot
+get element by id
+here
+we're gonna take
+the
+class name of this particular
+text field so we are saying input
+hyphen
+field
+okay
+dot
+focus
+okay now after this we have to say const
+add players
+equal to once again
+document
+dot
+get eleven by id let me just give the
+name called player form
+okay next we are saying
+add
+player
+okay dot
+add event listener we want to attach the
+event
+on which event
+submit event
+and what logic
+add
+players
+okay
+after that once the players are added we
+are saying
+let replay
+replay button equal to once again
+document
+sorry
+document part
+get element by id or rather i will say
+document.query selector
+document. query selector
+replay type
+btl
+okay
+just the name we are basically taking
+that and here we say
+sorry
+replay button
+dot
+add event listener
+which even i want to say
+click
+okay that is the first event second
+reset board
+reset
+board
+that we are basically passing that
+okay
+now
+this is the initial case which we have
+it
+now beyond that i will add
+this is the layers what we have added
+and right nut slides to add the players
+so this is how we have initialized after
+that let's
+add
+plates
+how to basically add the players here we
+have to just define the function
+add
+players
+okay it will take
+event as a parameter
+and say event
+dot
+prevent
+prevent default this present default
+will try to prevent
+the default
+uh you know
+behavior which is submitting to we get
+avoided and now here we say if
+this
+dot
+player one so we just define the
+property called player one
+if this dot player one dot what
+value
+okay
+is
+blank
+okay or
+just start
+play two
+sorry
+let's start
+player 2
+now i just want to find it out its value
+also
+value
+black
+then what i should do
+in this case i am saying alert
+you
+must
+enter
+name for
+each
+field
+the user has to add the values and after
+that
+return
+okay
+now the next thing is like we would like
+to select the players in this inside
+this by saying cost
+layer
+form
+container
+again
+const play from controller container
+equal to
+document
+dot
+query selector
+talk about a query selector here we will
+just pass
+the value call
+enter hyphen
+okay now we say cost
+boardman equal to
+document
+dot once again
+query selected
+dot
+class list
+dot class list dot
+add here we're given the name forward
+height container
+class list
+dot
+remove
+hide
+hyphen container
+okay so we basically taken that
+and after this what i will do i'll just
+say player
+x
+dot name
+equal to
+this dot
+player 1
+dot
+value
+ok this for player x copy this
+player y
+2
+and after that
+that's it so we have done it now
+so
+we'll be calling other functions one by
+one but that is the first thing which we
+have implemented
+well so
+add player function is added right now
+and
+after this add player we have to
+basically call
+one more that is called which returns
+the current player so i'm saying return
+current player
+and here what i will do is we'll just
+write function
+and here we say
+current
+player and in this current player what
+we will do is
+we will say return
+turn
+just variable
+okay percentile
+2 we're just adding it with this
+0. okay if it is
+then
+x
+turn i'm telling you
+okay or else
+so we're adding like the current player
+who says the current tail right now
+well
+after this adding the return current
+player we're gonna add another function
+that is known as call return the current
+player return current player is having
+this value and after that we need to say
+resize the square in event browser is
+resized
+once again if the browser is getting
+resized automatically the square size of
+your
+tic-tac-toe should also get increased so
+we just say
+resize
+squares
+and here we're gonna say this option
+equal window
+dot
+add
+event listener
+now we have a call option called resize
+here and the second parameter about your
+passing is called on
+resize
+okay on resize
+now let's try to add it
+after this we are writing this function
+called
+function
+on
+resize that is a functioning for me the
+one which we are passing into the second
+parameter
+we are saying let
+all cells
+equal
+to
+document
+dot
+query selector all
+in this we are passing
+board
+underscore
+cell
+okay and then we're using another option
+called what let
+cell height
+equal to
+all cells
+with the position
+okay dot
+of
+set width
+or
+set width
+after that we are saying all cells
+dot
+for each
+here we are passing
+cell
+[Music]
+and after that we are using cell
+dot
+style
+dot
+height
+equal to now he'll be using this
+backtick and use this
+dollar sign and say
+cell
+height
+and that to you know pixel
+so this will be taking the dynamic
+values
+okay that's it that's it over
+now we have to just launch our build
+board
+now
+billboard
+build
+board so how we gonna build our board
+now for this we are saying function
+build port
+and inside this billboard we will see
+this option call let
+reset
+container equal to
+document dot
+once again query selected
+and pass the value call dot reset
+okay and after that we are saying
+reset container dot
+class list
+dot remove
+and we are passing the value call
+reset hyphen
+hidden
+this value and after that
+we may call some other type of functions
+also
+okay so for those functions i can say
+first will be called on
+resize
+after that we are calling
+add self click listener
+but i do not have that function with me
+these functions we need to create it by
+our own
+okay so we will just leave those for a
+time being let's go back and create
+another functions now so we just want to
+write another event with self click
+event for play to attempt to make move
+so
+here we're trying to say
+cell
+click
+event
+for
+player 2
+attempt
+to make
+move
+now this function need to create it so
+we just say function now
+we just say function
+and give the name of the function
+to make move now
+function make
+move
+it takes
+give it as a parameter
+and here we are saying console.log
+and say enter
+now let's go back and try to check
+another condition that is called let
+current cell
+equal to
+percent because you have to read the
+value from there and here we are saying
+what
+event dot
+current target
+sorry
+even dot
+current target dot
+first element child
+okay dot
+data set
+dot
+id
+so we're reading these values
+after that we use another variety called
+it
+sell to
+add
+token
+now here we are typing document
+dot query selector
+and here
+you know using backtick
+i'm using this value called
+data hyphen id
+okay equal to
+here we are using
+once again in a single quotes
+dollar
+current cell
+okay
+so this value we are taking it like that
+after that we are using this situation
+called if
+cell
+to
+add token dot
+inner html
+extraordinary mark
+blank
+once again if cell to add
+token dot inner html
+equal to blank
+then what next
+so cell to add token
+dot inner html
+equal to blank then what you should do
+i'm saying console
+dot
+log
+and give the value the one which you
+want
+okay
+so
+in this console.log what value we can
+give it
+cell to add token
+we have it it is taking this value to
+the current set dot inner html
+console.log
+and inside my console.log we can set
+this
+cell
+is already
+taken
+so values are already taken for this and
+now we will be
+returning those values
+after that we will be using else
+condition
+and here we use once again if
+current player
+okay
+is x
+then we'll be using this option called
+cell
+see we have this property option
+available called send to active
+consuming cell to add token
+okay
+dot text content
+equal to
+current player
+okay and we say
+game board
+the one which you have created pass in
+this game mode
+this value call
+current cell
+and in this correct cell value will be
+equal to
+x
+okay
+else
+we can say
+send
+to add token dot
+text content equal to
+current player
+okay and say
+game board
+current cell
+equal to
+like this
+okay so here we are adding the values
+like that
+so it is closed after that we can just
+use the function name for
+is winner to check whether the user is
+winner or not so we are saying
+is
+winner
+okay and
+after that we are saying
+turn
+plus
+after that we are saying
+change
+we do not have the function name called
+change board header names okay so it's
+just like that we're giving it so as
+usual we can leave this function for a
+time being
+and we'll call this little later on so
+leave it as a time
+okay so your function is now ready
+so the next thing what we need to check
+whether
+it is tie or not
+okay so we are saying function
+check
+if
+we're just checking the function
+whether it is tie or not so here we say
+if
+the condition is turned
+greater than 7
+again
+okay we can say give over first we can
+say our time
+okay
+well after that we are saying winner
+function
+is winner
+now what we will check is we'll check
+const
+willing sequences
+winning sequences and here
+sorry
+here
+we are having this array and having the
+different conditions associated we say 0
+1
+2 probability we are checking it
+and then i just copied
+well using 0 1 2 and here is saying
+3
+4
+5
+6
+7
+8
+and 0 3 6 again
+0
+3
+6
+and once again 1 4 7
+4
+7
+and next we have a call two five eight
+eight
+then we are checking the value zero for
+it
+eight and one more last option we will
+put is called two four six
+six so these conditions we are adding it
+now
+after this array we can say
+varying sequences start
+for each
+and give the name call winning combos
+winning
+combos
+and inside this varying compound we are
+giving let
+cell 1 equal to
+varying combos position 0
+then
+that copy
+and paste three times
+cell two
+cell three
+and here we get the other call what
+[Music]
+we are checking the condition
+let's say
+if
+and here the conditions you are checking
+what exactly that will be for the game
+board using
+game board
+set
+one
+current player
+sorry
+current player
+ampersand time percent
+come down
+game board
+cell 2 and cell 3
+and
+cell 3
+and
+after that
+we're starting the position
+so after that
+we're starting the position call
+[Music]
+by cutting this condition called
+consense
+const
+sense
+and then equal to
+document dot
+get element by or sorry document or
+query selector
+query selector
+all
+and here let's select the position dot
+okay
+then after that we will be using
+cells
+dot
+for each
+cell
+and inside is what we are passing they
+are saying
+let
+cell id equal to
+cell dot
+first
+element child
+okay dot
+data set
+dot
+id
+so this is the value which you are
+basically adding it now and we're using
+one more if condition
+pressing if
+cell id
+now we're talking about call cell id
+triple equal to
+cell 1
+or
+cell id
+cell 2
+or
+salary equal to
+so three
+okay and in that case we can use
+cell dot
+class list
+dot
+add
+and get the name board
+just give the class name
+winner
+so here we'll be giving the winner and a
+part of that we can use the other
+conditions too
+okay so here it is
+adding the value and now let's say
+let
+current player equal to
+document dot
+get element by id
+so you can basically define it so
+current player you want so we can use
+the current player or whichever
+conditions you want so here we use what
+the cell winner
+now
+small change rather than using correct
+player we can use
+the current
+layer text
+the new variable we are creating it
+current player text document dot rather
+than saying getting event by id
+you can say
+query selector
+and in this query selector will be given
+the value
+by saying dot board
+player
+hyphen turn
+the value which we are giving it here
+and that
+query selector
+value whichever you given this let me
+try to put it in a
+parenthesis
+like this
+okay now here we just check
+if current player
+x
+then what
+then in this case we can say
+current player whatever the value we are
+using current text dot
+inner html
+equal to
+now we can define the value whichever
+you want to
+operate
+we just use a condition called div
+class equal to
+okay so we are saying congratulations
+okay and here you say
+congratulations
+along with
+this dollar sign
+and here we pass
+player
+dot
+name
+and here the tip tag is getting closed
+like this
+okay
+so that's the message we are basically
+printing it
+and after that
+we give this value
+and say this message called
+winner equal to
+true
+and after that
+if you want to apply
+remove
+that function we haven't written
+we'll be talking about a little later on
+and just say return proof
+so your function is ready now
+and later on we can just check the
+condition if filler
+if
+winner
+or we can say
+check
+if
+and
+return false
+that's it
+now in our continuation to this example
+we're gonna develop another function
+which
+the name is called change board header
+names so let's continue by defining the
+new function called function change
+change
+board header names
+so this change board header names will
+be the new function for us and here they
+would like to check whether the user is
+winner or not so here we say if
+not
+winner
+then what
+then in that case you have to say let
+current player text equal to
+document
+dot
+query selector in this we will be
+getting the details like dot
+or
+and here we gonna give the name called
+player
+and hyphen turn
+player hyphen turn
+now later on after this particular
+variable we have to just check the
+condition by saying if
+current player
+equal to x if the position is x sorry
+let me try to put it in capital letter
+here
+x
+then we will say
+current player
+dot
+inner html equal to
+now here we have to just use the same
+option called backticks because i want
+to go multilines
+that's the benefit of this backtick and
+here we say in our inner html span
+class
+equal to
+name
+hyphen hyphen
+style
+close this and here
+we want to use
+the statement
+now this
+value
+we want to write it with name attribute
+so it is getting close and here we are
+saying dollar
+with this player
+x
+dot
+name
+and then
+close the
+span tag
+and we say
+you are
+up
+like this
+and after that
+we say div
+class equal to
+which is gonna create a class which
+later on we can apply the css style on
+the top of that u hyphen r hyphen
+winner
+and here we say closing the div tag
+so dip tag is closed
+that's it and now after this line
+what next we have this called else
+condition
+else
+what else here we say
+current player
+text
+dot
+inner html
+inner html equal to
+after this
+we gonna write the span
+class equal to here we say
+name
+hyphen hyphen same option we're going to
+use it
+so in this condition so
+winner conditions so let me try to copy
+the same rather than copying it again
+and
+again i'll just copy the whole text
+expand class equal to
+name hyphen iphone style player rather
+than saying x you could use file
+you are up you are
+winner
+okay so here it's getting closed
+well after this what we need to do
+create another function called resupport
+function
+reset board
+now in this function reset board we just
+say console.log
+a small message
+resetting
+the resetting is added now afterwards we
+will be using
+the game board
+and the same game board what we have
+used it earlier
+i'll be using the same conditions
+on the top
+if you remember that was the game code
+for me so i'll be using the same
+keyboard
+they copy this
+yeah
+with the same condition
+okay gamepad this after that line we
+will say let
+sell to add token
+send to add token
+equal to
+document dot query selector all
+here
+in this i'll be using
+another class called
+letter
+now
+cell to add token
+whichever we've used dot
+for each
+square
+and within this square we would like to
+use square
+dot
+text content
+equal to
+black
+after that square
+dot
+parent element
+dot
+class list
+dot
+remove
+and here you would like to say board
+okay underscore underscore
+cell
+winner so these classes we had to create
+because these changes classes were just
+using this but we haven't created we'll
+be using it a little later on
+so that was the point
+now after that we are defining the turn
+value
+turn
+equal to zero because we are resetting
+it n
+winner equal to
+false
+after that winner equal to false we just
+define another variable called define
+let current player text
+current player text equal to
+document
+dot
+query selector all
+yeah document query select all
+so here
+we're gonna use the name called board
+define player hyphen hyphen turn
+after that current player
+current player
+text
+current player text dot
+inner html equal to
+once again we have to use the condition
+for
+up
+and winner point so let me try to copy
+this
+inner html equal to
+okay and in this we have to say player x
+dot name
+okay just everything is same
+no change at all
+okay now
+here after that we're gonna write one
+more function call function
+add
+cell
+click
+listener that means when i will be
+adding
+or clicking something to my cell
+what kind of event i would like to
+listen
+here
+we are saying const
+cells equal to
+document
+dot
+query selector all
+let's check
+the condition board
+board
+cell
+and here once again we say cell stock
+for each
+dot
+for each
+and here this is cell
+dot
+add
+event listener
+which event i want to listen
+click and the second parameter will be
+handler
+once called
+make move
+okay and this function which we have
+created called add cell clicks listener
+okay this i'll be calling it here
+perfect
+later on once it is done let's try to
+add one more function called function
+remove
+cell
+click
+listener
+remove cell click listener
+now here we say
+let
+all
+cells
+equal to
+document
+dot
+query selector all
+let's pass
+board
+cell
+and now we say
+all cells
+dot
+for each
+cell
+and here we say send dot
+remove
+event listener
+which event
+click
+and second parameter will be make
+that's it so friends now here
+most of our javascript code is written
+now
+so going forward we would like to use
+css
+and finally we'll be applying everything
+into our html file
+well after the javascript file is ready
+towards my application now it's time to
+go and create our html file now sorry
+the css
+so
+inside my tic tac i have got app.js and
+index.html ready now here i'm going to
+create another file here called
+app.css see you can basically put this
+app.css in either folder like in static
+folder but i have just kept it outside
+now from this point onwards i would like
+to start with my basic functionalities
+okay what those are let's start with the
+first feature called morning
+with my body
+some basic settings i would like to do
+like in background image background
+color so i just start with
+background color
+background color i can just use it as a
+white
+okay
+but i don't think so it's really needed
+it so if you want you can have it
+otherwise leave this background because
+it's by default going to be white only
+and now
+next would be called height
+height will be 800 pixels
+next background position
+background position i just say like
+center
+next background repeat in case if you do
+not want to repeat the image
+background repeat
+and here i say no repeat
+next background size
+they're using cover
+okay so it resize the background image
+to cover the entire container
+okay so that's what the body part
+now the next thing is we have to select
+the
+rest of the css classes so first select
+div
+dot relative
+inside this data alternative is first
+say call position
+position we are saying absolute
+next is stop
+from the top i'm just making 760 pixels
+next
+right
+right is saying 120 pixels
+next
+after this we are saying height
+container
+height
+dot
+container oh sorry hide hyphen container
+here in hyphen container we will display
+display
+colon
+none
+well after that we have to use the
+header point
+header
+inside the cell we will say color
+will be by default white but still we
+just say color
+and
+white
+next text line
+we just say center
+next margin
+margin will be 50 pixels
+next font family
+font family i'm selecting called
+permanent marker
+permanent
+permanent marker
+okay next class we are talking about
+call interplayer that's called dot
+enter
+hyphen
+players
+and enter hyphen players are the same
+color
+will once again
+we can use any other clear but we can
+just use white or any color you want or
+you can just use
+hash
+okay
+margin
+margin we are giving it's called zero
+auto width
+we're looking forward for 80
+next texture line
+center position
+relative
+now
+next we are going forward for input
+field
+in this input field we just say border
+border two pixels
+solid
+and black
+next outline
+outline none
+i do not want any outline to be there
+next padding
+i can take four pixels
+eight pixels
+four pixels eight pixels now margin
+we are saying zero
+0 10 pixels
+okay and finally
+for pixels
+after smashing you say font size
+18 pixels
+okay so that is your input field
+next we are talking about something
+called input field focus
+input
+field
+okay colon
+focus
+now here
+border
+two pixels
+solid
+right
+or any other color which you want to use
+it
+next
+how you want your submit button to be so
+i'm saying
+dot
+submit hyphen btn
+border
+2 pixels
+solid
+and black
+adding
+8 pixels
+and again 8 pixels
+font size
+80 pixels
+now with
+250 pixels
+followed by border radius
+5 pixels
+next your margin from top
+let's take 10 pixels
+after that background color
+let's take
+white only
+okay
+so this is the property
+now going forward you can associate
+with your submit button active and
+submit button focus so we are saying dot
+submit
+hyphen
+btn
+colon
+active
+and
+two options we are taking
+followed by condition outline
+outline
+[Music]
+next border
+we're talking about two pixels
+solid
+and the color
+red okay
+so that's the one
+and after that we like to use over
+dot
+submit hyphen button colon
+over what you want
+change the background color
+to what
+white
+you can use white smoke
+well
+here we like to use a
+dot
+board
+here we'd like to use player
+hyphen
+so these are the classes we were using
+in our javascript we remember
+and here we say color
+color we're using once again
+white or you can use this white smoke
+whichever you want
+so
+well later on
+text align
+center margin
+10 pixels
+0
+and 10 pixels
+height
+54 pixels
+okay
+so these are the properties initially we
+have taken
+okay so after this
+turn let's go and start another classes
+here i'm saying dot
+name hyphen hyphen
+style
+and here we are seeing color
+red
+and then font size
+22 pixels
+well
+now coming back to the another
+properties now we're talking about a
+next important called border container
+called board container dot
+board container here we define width
+which is 40 pixels we are taking
+or sorry 40 percent we can rather take
+after that background colors
+that we can say quadrat blue
+okay
+next margin
+we're taking is zero
+and
+auto
+after that font size
+font size we are taking zero
+next border
+bottle we are taking 2 pixels
+then solid
+and then black
+followed by
+box shadow
+you remember this worksheet is one of
+the very very season
+three popular property here we're
+defining three pixels
+three pixels
+three pixels
+zero pixels
+and
+rgb
+we can talk about call black
+okay so my
+border color will be shading color will
+be
+black
+after that we're offering this
+board cell
+dot
+now in this board cell we are defining
+width
+now in this width we are using
+calculation
+ca lc and in this calculation we are
+defining 100
+okay divided by three
+this calculation
+after this
+the next property will be display
+display will be inline block
+next font size
+we're taking 40 pixels
+well texture line
+center border
+we are taking
+two pixels
+solid
+and
+black
+adding 20 pixels
+vertical align
+top
+next font family
+this formula can use permanent
+permanent marker
+okay
+now
+next option
+a part of this
+we have a call
+your board circle
+board
+cell hyphen
+winner
+i would say rather hyphen
+now
+spelling wrong this has to be d
+yeah for cell winner
+let's make background color
+red
+okay
+and
+[Music]
+later on just use
+letter
+now in this letter we just give the
+color combination so color will be
+white
+next position
+relative
+top
+fifty percent
+next transform
+translate y
+to minus 50 percent
+after that font family
+we are making it once again permanent
+marker
+let me copy
+okay
+now
+here next option will be called winner
+container
+here we're giving
+winner
+with dot
+dot
+winner hyphen
+container okay so for this winner
+container what are the values we want to
+use it
+that's you want to basically do it so
+before there's been a container what i
+would rather suggest is you can use dot
+reset
+texture line
+center
+margin
+20 pixels are
+that is for reset and now reset hidden
+inside this reset heading we will set
+display none
+display
+none
+okay after this the replay button
+it's yeah i'm going to talk about replay
+button dot
+replay hyphen
+btn
+and here width
+we make it
+to
+25
+okay
+and followed by padding
+10 pixels we take it from here
+and 20 pixels
+border
+this bottle we are taking is called two
+pixels
+followed by solid
+okay and black color
+now later on
+border radius
+border radius we're taking 5 pixels
+later on
+outline
+i'm saying none
+after this outline we say letter spacing
+now this letter spacing would be again 0
+after that
+text transform
+this text track form value we are
+talking about
+uppercase
+next font size
+font size
+we are taking 16 pixels
+then margin top
+margin top would be 12 pixels
+then word
+spacing that you are taking three pixels
+followed by background color
+this you are taking white as usual
+so this is for your replay button
+okay
+now in a similar line we can also have
+call dot
+replay iphone btn
+colon hover
+followed by dot
+replay hyphen
+active
+now apply the common style outline
+we are making it null
+then color
+we are making this call white
+then background color
+will be black
+okay
+and
+when it comes to the congratulations
+so we'll be using this
+dot
+okay so this congratulations class will
+be using font size
+to what 24 pixels
+and after this we are using this call
+winner dot u
+hyphen r
+dot
+winner
+in this winner we will be taking
+font size
+okay that's 18 pixels
+after that height
+we are taking little pixels again
+then line height
+line height we are taking 18 pixels
+and then
+margin two
+pixels and then zero
+okay
+that's it so
+last but not least we would like to use
+this
+dot
+replay
+iphone btn
+this i'm saying with 50
+50
+percent
+so this is what my css file is all set
+i know it was pretty lengthy but it is
+required for this particular application
+okay everyone so we are all ready with
+our css also now it's time to go back to
+our index.html file
+and take care about the final finishing
+touch
+so we have this index.html file with us
+and now
+the css class which we were using it in
+our application that is known as call
+this
+permanent marker this class is not by
+default available so we have to include
+this
+using this external api so here where we
+have a call css with us
+before that
+we want
+link
+so within this link we want our
+variable name called href
+equal to now we have to give the proper
+location by saying
+https colon double forward slash fonts
+dot google apis
+okay dot com
+slash css
+question mark
+family
+equal to
+permanent plus
+marker
+okay so if you just copy this
+into your browser
+you will get to know
+where exactly it is using
+okay if i just copy and paste it
+so i just need to say https before
+yeah https
+fonts
+dot
+google apis
+dot com
+slash oh spelling wrong
+css family equal to permanent marker
+that is the main url from where i can
+take this kind of font so here
+css so that's what i was cross verifying
+it
+well it's there we have included our css
+also but in which class we need to use
+that is an important now
+js i also want to include it
+so here
+in my head tag only
+i would like to include
+script
+src equal to
+app.js
+so here my script is actually loaded now
+after that
+if i just go back and check
+the
+final outcome of my code
+which is index.html file
+well it pretty much look like in basic
+nothing else has started when we talk
+about call start game
+okay so it needs to start because there
+is no css class are attached so i need
+to attach those classes within my code
+so here onwards we have to start with
+offering those css classes so that at
+least i can apply
+those common behaviors to my application
+okay like here we have a call
+div
+we haven't attached any class to this
+after this body we have a call tip h1
+class equal to header tic tac toe then
+we have a call tab we have a call
+body
+uh
+under this we have a call another dev
+tag so
+just imagine how many type of classes
+are available one we have called tip
+class equal to header
+div class is closed again we have a call
+one more div tag so like that multiple
+css files are there where we have to
+apply the new css class
+to make it happen so now we have to just
+go back and change our html and to apply
+our main class
+so this is what my final html which
+looks like the same you can see we have
+added
+all those type of css classes which we
+had that is called interplay
+player form player container label
+placeholder
+and player container
+and if you see all different type of
+classes we have attached this to
+okay because
+here only my css class will get applied
+and the javascript will apply those kind
+of dynamic css based on certain
+conditions so these css classes are
+already there added inside your html
+page
+our app css is ready
+also ready now let's go back and try to
+reveal how it looks like him
+awesome so it looks like pretty nice
+tic-tac-toe is a game it is expecting
+and it says start game it says you must
+enter a name for each field validation
+is working
+let me try to add
+two names and say start game awesome so
+now you can see it is saying hey you are
+up
+now let me try to give the values
+awesome now you can see
+it's saying like hey you are a winner
+great so guys congratulations on this
+the first example of how the tac door
+game is
+used so it is a classical example of css
+javascript and html together
+all right guys with that we have come to
+the end of this video if you like this
+video please give it a thumbs up i hope
+it really helped you all thanks for
+watching stay safe and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

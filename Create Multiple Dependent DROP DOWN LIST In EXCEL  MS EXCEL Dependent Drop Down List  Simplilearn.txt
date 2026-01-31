@@ -1,0 +1,362 @@
+hey everyone welcome to Simply loar's
+YouTube channel today we will learn
+about creating a dependent drop- down
+list in Excel so what is a drop- down
+list you ask it is something which you
+do using a data validation operation in
+Excel so it'll give you multiple options
+and you can check and select one out of
+those so if you have a query about what
+exactly is uh data validation we have
+listed the tutorial in the description
+box below please find it out and uh that
+said if these are the type of videos
+you'd like to watch then hit that like
+And subscribe buttons and the bell icon
+to get notified just for a quick info if
+you want to upscale yourself to master
+business analytics skills and land your
+dream job or grow in your career then
+you must explore simply learn scad of
+various business analytics programs
+simply learn offers a postgraduate
+program in business analytics from P
+University in collaboration with Amazon
+Google and Microsoft
+through this program you will gain
+knowledge and work ready expertise and
+skills like prescriptive and Predictive
+Analytics regression classification and
+over a dozen others that's not all you
+also get the opportunity to work with
+multiple projects and learn from
+industry experts in Top Tire CR
+companies and academic from top
+universities after completing these
+courses thousands of Learners have
+transition into a business analytics
+role as a pressure or moved onto a
+higher paying job profile if you are
+passionate about making your career in
+this field then make sure to check at
+the link in the pin comment and
+description box below to find a business
+analytics program that fits your
+experience and areas of Interest now
+without further delay let's get started
+with demonstration for today's session
+which is based on creating a dependent
+drop down list in Excel so now we landed
+onto our Excel spreadsheet so what
+exactly are you trying to do you ask so
+I am trying to get this straight okay
+now we have Team employee name and count
+right let's say you wanted to add the
+team details in the First Column
+employee name in the second column right
+so I have three teams so te
+aam
+D and uh te
+Ops right so this is how beginners do
+right and uh if you want to automate
+this we can do this using data
+validation similarly let's say I am
+adding details of te developer and
+employee name is let's say
+IV okay uh so I want to add something
+like this into this particular data set
+or table so let's uh erase the column B
+let's try to figure out column a first
+so quickly go to yeah select the cell
+first quickly go to data validation go
+to the data options and here you can see
+data tools select this particular data
+validation option and here go to list
+and the source so select this particular
+Source this is a source of our list so
+press
+okay and there you go Excel has
+automatically fixed the data for us
+now the operation has been automated and
+I can directly select whatever the team
+I want and let's try to expand this to
+all the sets that we have in our table
+so whichever you select whichever the
+cell you select and you can have the
+options there just select
+now let's say I select team testing
+right and now here I want a similar data
+validation option which will give me the
+list of employees from the testing team
+right let's say you give me a solution
+which tells me to create a new data
+validation option uh that suggests me to
+take the list from this particular cell
+or column okay now let's say all of a
+sudden I change the cell let's say um
+Chris ctis let's say I add a Chris ctis
+to employee name here and he is not
+attending the team meeting now or let's
+say he got a better opportunity and he
+left the organization is with a
+different organization now I want to
+eliminate this particular cell and all
+of a sudden I get team developer in the
+first row now does ctis belong to this
+particular selection development right
+no he doesn't belong to team development
+he used to belong to testing right so
+similarly if I swap the rules if not
+eliminate an employee if I swap the
+rules then I should be getting this
+particular options not from testing So
+based on this particular cell my data
+validation which is present in the
+column B should change so that is
+exactly the meaning of dependent
+drop-down menu in Excel so that is what
+we're going to do here today now for
+that you might want to use something
+called as an offset so before you create
+a data validation formula for this let's
+go to the here so here you will be
+choosing list so instead of just giving
+a routine list we will give a formula
+over here which will select the list
+based on the offset or based on the cell
+which is present over here so we will be
+using the help of offset function over
+here so equals to offset
+so the reference this is the reference
+of the table of the end you know the
+entire data table which has the teams
+options the employee options right so
+this is the offset reference or the
+beginning cell which I will be giving to
+my offset formula let's fix that uh cell
+by using the function code function key
+f4 on the menu uh keyboard so we have
+fixed it now the rules now you want to
+extract cells from one Ru I mean you
+will be giving one option over here so
+give one and now the columns so so far
+so good we don't know from which column
+do we select the data right we have
+three columns over here so we don't know
+from which column do we have to select
+the data so for that you might remember
+the index match function which is one of
+our tutorials in the Excel playlist so
+you will be using the part of that index
+match function that is the match
+function to recognize which uh column we
+have to select so type in match and
+press T to select the function and now
+is your lookup value So based on this
+particular selection which is over the
+A2 right whichever uh data is present
+here whichever team is present here
+based on that lookup value you will be
+selecting the column from these sections
+right if I give Ops you should be
+selecting this column if I give testing
+should be selecting this particular
+column right now fix that um column and
+cell using the function key F4 you can
+fix the column but the row number might
+change let's say A2 A3 A4 So based on
+the uh position of the cell and the
+column you can change you know you can
+select it so look up values there now
+the lookup array so this is your lookup
+array let's fix it using function key F4
+comma you need the exact match it's done
+so before getting on to the columns and
+how and width Etc you need to understand
+offset takes things differently so index
+match and look up they will count the
+columns as s 1 2 3 but in case of offset
+function it will you know uh count num
+starting from zero so team devops or
+team Dev it counts as column number zero
+team Ops as column number one and team
+testing as column number three so you
+need to subtract one value from the
+number which match function gives you
+let's say the match function gives you 1
+then 1 - 1 0 so the offset function will
+understand I need to select the column
+zero which is team de right now the next
+part of the formula height and width so
+what do you mean by height
+basically uh F column 1 2 3 4 5 6 7 8 so
+here we are we have we are having 15
+number of employees in the developer
+team and uh 1 2 3 4 18 number of
+employees in Ops Team and 12 number of
+employes in testing team so basically
+the height of the uh column is nothing
+but the number of employees which are
+present in that particular column right
+so you can see we have um colored a few
+cells in orange color which means that
+those positions are vacant or that
+particular team is populated with only
+limited number of employees now let's
+say I give the height of 15 here in the
+formula then the employees from Ops Team
+Sean Susan and Mick are not going to be
+present when I select the Ops right so
+in those scenarios what you want to do
+is you might you know just add U the
+whole uh you know the height of the uh
+largest column the highest number of
+columns right so I have 19 as the
+highest right so I'll give 9 19 here and
+uh how many number of what's the width
+you want to select so I want to select
+one cell so my input for that particular
+cell will be one but now this creates a
+chaotic experience to us what is that
+let's see now before we enter the cell
+let's select all cut and we have the
+formula in our hand now go to select the
+cell first now go to data validation
+tools and here you will be selecting
+list and here you'll be pasting the
+formula and press okay now okay let's
+not drag the formula at once we have a
+few more modifications to do so now here
+we have developer team developer so we
+have the list from developers right we
+have Aaron LS etc etc and when you go to
+the last one we have Tob as the last one
+but wait a minute we have another
+selection an empty
+which is these we don't want this right
+so let's say you wanted to select Toby
+and by mistake you end up selecting the
+Mt cell and now you don't have data
+right that is not supposed to be
+happening so how do you change it now
+basically what you're trying to do is
+you want to count the number of uh
+employees present in that particular
+department and you want to give that
+particular exact count to the position
+where you have the column height so that
+your formula doesn't make a mistake
+right so that's exactly the thing what
+we want to do let's say we use count a
+function over
+here and select this and what you get is
+15 and let's say I use another count
+equals
+to count a and I count the Ops steam
+members and it will give me 18 and now
+another
+count and count the number of employees
+in testing that that will give me 12 so
+these are the numbers which I want to
+pass onto my offset function and that
+particular number should be present in
+the height so I can't uh you know do it
+every single time it's again a manual
+task I want to automate it so how do I
+do it simple integrate the count a
+function along with the offset function
+that we just created so the offset
+function will tell the count function
+which team am I pointing to and how many
+number of employees are there in that
+particular column will be counted by the
+count function so that's what we are
+basically trying to do now so uh let's
+go back to the data validation okay
+Escape let's go back to the data
+validation menu over here edit your data
+validation formula copy
+it
+equals
+to count a paste the formula you have
+now close the
+function remember copy the formula only
+until C don't copy equals to else you'll
+be finding an error Now erase it
+completely now go back to your data
+validation
+menu and here where where you have the
+19 which indicates the uh colum height
+paste that formula you just copyed and
+now it's
+okay right now when you uh when you are
+on uh data team developer and press on
+data validation option over here you can
+see the last Toby is the last one and
+you don't have any more blank cells so
+that's how you create cre uh dependent
+data validation or dependent drop down
+list in Excel now the main task is to
+copy so uh remember you just dragged the
+formula or data validation and there you
+have it right so U will the same thing
+apply for this particular formula no it
+will
+not okay it did but anyways uh let's say
+we don't have a team developer over here
+then how do you do do
+it so you can select the formula press
+copy and now select a new cell in the
+same colum
+B just expand that selection to all the
+cells now right click go to paste
+special and now here select the
+validation and press okay so you have
+that validation selected over here now I
+have the people from developer let's say
+I'll select Kelly Kelly here and in this
+particular option I'll select Ops now
+here in my drop-down I can see team
+members from Ops Thomas Mark Ivan right
+so all the employees
+from the Ops Team and here let's say I
+select testing team and uh I will have
+employees from the testing column Kathy
+Michael Tim Bobby Chris right so that's
+how you basically create the dependent
+drop- down menu in Excel and with that
+we have come to an end of this session
+on how to create dependent drop- down
+menu in Excel and if you have any
+queries regarding any of the topics
+covered in the session or if you require
+uh any of the resources like PPD D sets
+used and the formula list please do let
+us know in the comment section below and
+our team of experts we'll be more than
+happy to help you out as soon as
+possible until next time thank you for
+watching and stay tuned for more from
+Simply learn staying ahead in your
+career requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills
+or a working professional looking to
+advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

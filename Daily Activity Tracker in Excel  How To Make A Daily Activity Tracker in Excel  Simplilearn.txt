@@ -1,0 +1,354 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn how
+to create a daily activity tracker in
+msxl that said if these are the type of
+videos you'd like to watch then hit that
+like And subscribe buttons and the bell
+icon to get
+notified craving a career upgrade
+subscribe like and comment below
+dive into the link in the description to
+FastTrack your Ambitions whether you're
+making a switch or aiming higher simply
+learn has your
+back just for a quick info if you want
+to upskill master data science and data
+analytics and land your dream job or
+growing your career then you must
+explore simply and code of various data
+science and data analytics programs
+simply learn offers various
+certifications and postgraduate programs
+in collaboration with some of the
+world's leading universities like
+Caltech Purdue I conour and many more
+through these courses you will gain
+knowledge and work ready expertise in
+skills like Advanced Excel python
+machine learning data visualization
+generative Ai and over a dozen others
+that's not told you also get the
+opportunity to work on multiple projects
+and learn from industry experts working
+in Top Tire data companies and product
+companies and along with some academic
+from top universities after completing
+these courses thousands of Learners have
+transition into a data science or data
+analytics role as a pressure or moved
+onto a higher paying job profile if you
+are passionate about making your career
+in this field then make sure to check
+out the link in the print comment and
+description box below to find data
+science and data analytics program that
+fits your experience and areas of
+Interest now without further delay let's
+get get started now today we will try to
+build an activity tracker using
+Microsoft Excel so I have opened my
+Microsoft Excel here you can see I have
+some tests so we've all been through
+this right you might have n number of
+tasks for a day and you might get
+confused which to prioritize and which
+not to and which is the one which is
+having the highest priority and should
+be closed within a few hours right we
+all face that so for that one reason I
+have made this particular activity
+tracker for day in Microsoft T so you
+can have any number of jobs so I have
+added some jobs here so not a particular
+names I've just named as numbers number
+3 four five we have 15 jobs here and
+they respective priorities if it is high
+low or medium if it's high you can have
+a command like reporting your month- on
+Monon report to your manager or your
+client and if it's slow you can just
+your daily activity like you know uh
+regularizing your attendance or writing
+an marketing email to your client or
+something like that which has low
+priority or it's already done it could
+be something like that right so some of
+the tasks like uh taking an interview or
+scheduling an interview for your team
+member or something like that which is
+uh in progress and maybe yet to be done
+and has medium priority because let's
+say your interview is in the upcoming
+month or upcoming week so you still have
+some time to breathe right so it may
+have some medium priorities something
+like that so you can categorize your
+task based on the priority based on the
+time constraints and importance right so
+high medium or low and accordingly you
+can add your command to uh understand
+what exactly you need to do within what
+time period and what the status and
+everything right based on that you also
+have another column to uh notify the
+status of that particular task so you
+can U check if it's done or in progress
+and accordingly you can select that
+particular option and here you also have
+the data validation option where you can
+select high priority medium priority low
+priority right and here you have the
+options so how many done tasks are there
+how many in progress tasks are there and
+how many tasks are there that needs to
+be started yet and based on that if
+you're in the safe Zone which is done
+and uh some some of the which is in in
+progress can be blue so you're in safe
+zone right so based on that you can
+create a bar graph like this and you can
+understand how safe your you are so
+maybe it was showing done as orange so
+maybe okay so there is some color coding
+to be done here not a problem you can do
+that so basically that's how you can
+create at uh and daily activity tracker
+so this is already done and this
+particular workbook will be attached in
+the uh description box below if you want
+this template to use for your day-to-day
+task but now let's try to create an all
+new daily activity tracker in sheet
+number two from scratch so that you can
+understand how exactly I've created it
+right so without further delay let's get
+started I'll just quickly borrow the
+column headers from the previous sheet
+so we will be needing serial task
+priority commands and Status so we will
+quickly copy and paste them right over
+here so we have copied them and we have
+pasted them right here right so uh tasks
+you can have a pretty much good length
+for that so that you can name the task
+and now we're just writing them as uh
+job one job two so it's okay to have
+minimum L and for commments you can also
+have some space de bre where you can
+write down some important notes about
+your comments right so for now let's uh
+add uh maybe like 15 task just like we
+did in the previous one let's repli try
+to replicate that particular one right
+so you can use Flash Fill here so
+accordingly it will give you the number
+of uh jobs you need so we have uh 15 Tas
+which we're trying to replicate the same
+one and has you can also use Flash Fill
+here job one job two so now select both
+the uh cells and here you can have a
+Flash Fill logo highlighted so you can
+just click on the green box double click
+and you have it there and uh stat this
+and comments so you can also have
+comments here comment one and
+comment
+to again you can use make user Flash for
+that select both the cells and you will
+have individual commands for your
+individual jobs now what we left out
+with the priority and status now we are
+going to make use of some data
+validation so that we have a drop down
+option to select a particular priority
+for the task and select a particular
+status for the task if it's done in
+progress or maybe uh yet to start right
+so we're trying to replicate the same
+table that we had before so what you can
+do is simply select the first cell from
+the priority column go to the option of
+uh data and here you can see uh the data
+tools group and that you can see the
+data validation and click on data
+validation go to the first one settings
+and here you will choose list so you can
+either give a source or you can just
+write down simply uh
+high medium
+and low right and those are the options
+in case if you have multiple maybe 10 to
+15 uh priority things or something it
+can be right in case if you're one of
+them which has multiple priorities then
+you can create a new sheet and you can
+write down all your priorities and get
+the source range for now I am just
+having three so I'll just write them
+down here and you have a drop down menu
+now you can use the flashold option here
+as well just drag them to the bottom
+cell and you have them right so whenever
+you select an option you have the
+priority and similarly before we add the
+priority let's also add the status using
+the same technique of data validation so
+I'll go into Data validation I'll select
+rest and here I'll add done in progress
+and yet to be
+started right so these are my three
+options and again I can make use of
+flash F and draag them the L cell here
+there you go and you'll have the options
+now accordingly we'll have some random
+priorities uh I'll take high and
+alternatively we can have some high
+priority tasks like we will also have
+other options medium so we will copy
+some medium priority tasks and paste
+them and we'll also select some low
+priority task which can be considered
+as in progress or maybe having some time
+or maybe done right so we will have them
+here and done so we have our priorities
+sorted and Status so we will have some
+in progress for all the high and medium
+so wherever you find medium or high you
+can have progress or yet to be started
+so we will have some yet to be started
+uh high priority tasks medium priority
+as well and we will have some tasks
+which are already done right so that you
+have a Tracker so uh you can make use of
+data validation to have some options so
+if and whenever your task is done you
+can mark it as done and if and whenever
+your task is in progress you can mark it
+as in progress or yet to be started
+right so you can also uh do some
+customization to your table like adding
+some colors or something like that to
+make it look a little better so you can
+also have some cage if you want or you
+can just go to the view option and here
+you can design table something like that
+right so you can go to the format table
+thing now if you want to highlight your
+task like if say if it's in high Market
+as red if it's in medium Market is blue
+if it's in low Market is green that you
+can also do that through conditional
+repeat you can also do that through
+conditional formatting go to conditional
+formatting in home add a new rule SS
+that contain only select self value as
+specific text and uh type high and go to
+format and here you can select any shade
+of red and select this one and press
+okay and go to conditional formatting
+once again select a new rule
+and cell that contains and select cell
+value as specific text if it's
+medium you can go to the format option
+and here you can select a color for that
+maybe blue and uh press okay and again
+go to conditional formatting new tool
+and sell that contains select cell value
+for a specific text and for low you can
+keep it as maybe a shade of green that
+will make it look better so that you can
+feel that it's comfortable enough there
+you go and similarly you can have uh
+some colors for your status as well so
+you can go to new rule and uh format
+cells that have specific text if it's in
+progress format it as a shade of blue
+okay and press okay for that and go to
+condition formatting one again new rule
+and Here Sell value should be a specific
+text and if it's yet to start mark it as
+green sorry not green mark it as um
+maybe a shade of red and press okay
+there you go and again conditional
+formatting new rule go to format cells
+that contain cell value specific cell
+done mark it as green any shade of green
+right I'll select this particular one
+and that should be good enough okay
+right so far so good now what's
+remaining is the tracker for that you
+might need this one right so here we
+have the three options that we have
+place them somewhere over here and now
+we will have a ctif function here we
+will give a range so the range is this
+particular one comma criteria in
+progress which is this particular cell
+then it'll count the number
+you can drag the formula across all the
+cells and you'll have the number right
+you can add borders to it if you want
+there you go and now create a chart go
+to insert option and here we have power
+graphs and here go to 2D graphs 100%
+stack par graph right now right click
+this particular one select data and here
+you can switch the rows to columns and
+there you have it and you can also so
+change the positions right you can move
+up or down if you want I'll keep it as
+it is and press okay you can delete the
+chart title and you can delete the
+horizontal numbers 0% 20% but if you
+want you can keep them so you can also
+minimize the size as per your
+requests and place it somewhere which is
+clearly visible right and I'll move it
+to here is clearly visible to me so
+that's your activity tracker I can also
+remove the uh vertical columns don't
+want and that's how it's done and it can
+also change in real time if it's done it
+will be changing it's completely real
+time and if you want to extend this then
+also drag this particular cell across
+the column and you can change the make
+some modifications to the status make
+some modifications to your priority add
+a new serial number add a new job add a
+new comment right so that's how you
+create a daily activity tracker in
+Microsoft Excel and with that we have
+come to the end of this session on how
+to create a daily activity tracker in
+Microsoft Excel if you have any queries
+regarding any of the topics covered in
+this session or if you require the data
+template that we used in this session
+then please feel free to let us know in
+the comment section below and our team
+of experts we'll be happy to help you as
+soon as possible until next time thank
+you for watching and stay tuned for more
+from s staying ahead in your career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+Computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel Channel and click here to watch
+similar videos to ner up and get
+certified click here

@@ -1,0 +1,1082 @@
+foreign
+have you ever wondered how facial
+recognition works on social media or how
+object detection helps in building
+self-driving cars it is all possible
+thanks to convolutional neural network
+CNN hello everyone I am mayank and
+welcome to Simply learn today we will
+take you through our hands of lab demo
+of how we can use CNN model for image
+classification in machine learning for
+amazing videos like this subscribe to
+our YouTube channel and press that Bell
+icon to stay updated in today's session
+we will discuss what CNN model is and
+moving ahead we will discuss how does
+CNN recognize images after that we will
+see layers in CNN at the end we will do
+a hands of layer demo of image
+classification using CNN in fact its
+study says there will be more than 2.3
+million job openings in field of
+artificial intelligence and machine
+learning by 2023 but you can beat the
+curve with our professional certificate
+programming Ai and machine learning
+co-sponsored by Purdue University and
+IBM which is designed after simply learn
+intense bootcamp learning model Ai and
+ml certification code this course covers
+tools and techniques like python
+tensorflow Keras nltk and many more
+along with industry projects like social
+media by Twitter delivery service
+provider by zomato transportation
+service provided by Uber and many more
+Amazing projects choosing this course
+can you get hired by renowned companies
+like Google Amazon LinkedIn and Adobe
+and an average salary hike of 70 percent
+so what are you waiting for join the AI
+and Ms professional certificate program
+and actually your career in artificial
+intelligence and machine learning the
+link is in description box below before
+we move on to the programming part let's
+discuss what CNN is and proceed for the
+for the same what is CNN a convolutional
+neural network is a feed forward neural
+network that is generally used to
+analyze visual images by processing data
+with grid like topology it is also known
+as convenient a conventional neural
+network is used to detect and classify
+objects in an image so this is a neural
+network that identifies two types of
+flowers or jit and Rose in CNN every
+image is represented in the form of an
+array or pixel here you can see it is a
+real image of Digit 8 and it is
+represented in the form of an array and
+here 0 represent negative values and
+what represent positive values okay it's
+creating eight here so digit 8 represent
+in the form of pixels of zeros and ones
+so now let's understand the convolution
+you're operating using two matrices A
+and B of one dimension now let's
+understand the convolution operations
+using two matrices A and B of one
+dimension
+a equals to five three two five nine
+seven b equals to one two three so in
+convolutional operation the arrays are
+multiply element wise and the product is
+sum to the create a new array which
+represent a into B so here
+a into B five three two and one two
+three multiply the arrays element wise
+and this is the sum of the product so
+the first three element of the Matrix a
+are multiplied with the elements of
+Matrix B and the product is sum to the
+get the result so a into B is 17. the
+next three element from The Matrix a are
+multiplied by the element in the Matrix
+B and the product is summed up so here
+some of the product is 22 so a into B is
+17 and 22. this process continues until
+the convolution operation is complete so
+moving forward now let's discuss how
+does CNN recognize images so consider
+following these images the boxes that
+are color represent a pixel value of 1
+and 0 if not colored when you press
+backslash The below image get processed
+and when you press the forward slash the
+below images process here is another
+example to depict how CNN recognize an
+image
+so consider this is a real image
+now it is represented in the forms of
+black and white pixels and this image
+represents in the form of Matrix of
+number here you can see where here the
+black part and here is one value
+so it's creating the image image
+represented in the forms of Matrix of
+numbers so as you can see from this
+diagram only those values are lit that
+have value of 1 okay this is how the CNN
+recognize the images now moving forward
+let's see layers in convolution neural
+network CNN a convolution neural address
+has multiple hidden layers that help in
+extracting information from an image the
+four important layers in CNN are first
+is convolution layer second is cooling
+layer third is Prelude layer and fourth
+is fully connected layer so now let's
+start with convolution layer
+so this is the first step in the process
+of extracting valuable features from an
+image a conventional layer has several
+filters that perform the convolution
+operations every image is considered as
+a matrix of pixel value so consider this
+the following five into five image whose
+pixel values are either 0 or 1. there is
+also a filter Matrix with a dimension of
+three by three slider filter Matrix over
+the image and compute the dot product to
+get the convolved feature Matrix and the
+second is relu layer relu performs an
+element wise operation and sets all the
+negative pixel to zero it introduce
+non-linearity to the network and the
+generated output is an rectified feature
+map So Below is the graph of radio
+function so the original image is
+scanned with a multiple convolution and
+radio layers for locating the features
+like this relu layers create the feature
+Maps like this and after that
+input feature map creates
+the rectified feature map
+this is how black negative is the wide
+non-negative values
+or positive values you can see so it
+will create the rectified feature map
+really layers so now third layer comes
+into the action pooling layer so pooling
+layer pooling is a down sampling
+operation that reduces the
+dimensionality of the feature map the
+rectified feature map now goes through a
+pooling layer to generate a pool feature
+map so this is a rectified feature map
+so here are three four one two from this
+it will take the maximum value here here
+is 4 and from this it will take the
+maximum value 7. and from this it will
+take the 8 and 6 okay so max pooling
+with two by two filters and this is the
+stride two the Boolean layers uses
+various filter to identify different
+parts or images like edges corners body
+feathers eyes and Beak as you can see
+from the pictures so now let's see how
+the structure of CNN looks so far hence
+the diagram represents the structure of
+CNN so far so the next step is a process
+is called flattening this is called the
+flattening process so flattening is used
+to convert all the resultant two
+dimensional array from pole feature Maps
+into a single long continuous linear
+Vector so as you can see it is a pool
+feature map after flattening it converts
+into single long continuous linear
+vector the flattened Matrix is fed as
+input to the fully connected layer to
+classify the images so this is CNN here
+comes the relu then pooling then it is
+the input to the final layer after this
+so input image then convolutional layer
+then relu layers comes in then pooling
+layer then flattening now this is fully
+connected layer which is CNN this is how
+the CNN grade after connecting the three
+layers relu convolutional and pulling
+layers so this is how exactly does CNN
+recognize images okay the pixel from the
+image are fed to the convolutional layer
+that perform the convolution operations
+here then it results in a convolved map
+the control map is applied to relu
+function here the control map applied to
+relay function to generate a rectified
+feature map here it creates the Rectify
+feature map and the image is processed
+with multiple convolution and radio
+layers for locating the features then
+different pooling layers with various
+filter are used to identify specific
+parts of the image here the max pooling
+does so the pool features is flattened
+and fed to fully connected layers to get
+this is the
+flat end fat to pulley connected layers
+this is a fully connected layer and that
+is how it got the final output bird okay
+this is a feature extraction in multiple
+written layers classification the output
+layer so now moving forward let's start
+the programming part so here so this is
+the python kernel file
+so here first we will
+change the name CNN
+CNN
+the thickness
+okay
+okay
+yeah
+so first we will import some major
+libraries of python so I will write
+import
+numpy
+s m b
+then I run import
+and import
+matplotlib
+dot Pi plot
+as PLT
+import c bond
+as SNS
+then import
+Keras
+after that import
+tensorflow
+Dot Keras so number is a python Library
+used for working with arrays it also has
+a function for working in the domain of
+lineal algebra and matrices it is an
+open source project and you can use it
+freely then by stand for numerical
+Python and the second one is pandas
+pandas is a software Library written for
+the Python programming language for data
+manipulation and Analysis in particular
+it offers data structure and operations
+for manipulating numerical tables and
+Time series
+and the third one is matplotlib so for
+Python and its medical extension number
+lib
+is a cross-platform data visualization
+and graphical charting package as a
+result is represent a strong open source
+substitute for Matlab and the API
+application programming interfaces for
+matplotlib allows programmers to
+incorporate graphs into GI applications
+and the fourth one is C bone C bone is a
+python data visualization Library based
+on mat problem it provides a high level
+interface for drawing attractive and
+informative statical Graphics from brief
+introduction to ideas behind the library
+you can read the introductory notes for
+the people
+is an open source software library that
+provides a python interface for
+artificial neural network Keras actors
+interface for the tensorflow library up
+until version 2.3 KRS supported multiple
+backends include intensive flow
+Microsoft cognitive toolkit piano and
+plate ML and the fourth one is
+tensorflow tensorflow is a free and open
+source software library for machine
+learning and artificial intelligence it
+can be used across a range of tasks but
+has a particular focus on training and
+inference of deep lunar letter
+okay
+so here we are going to load data first
+let me write line
+extreme
+comma y train
+comma
+X test
+comma y test
+equals to klas Dot
+data sets
+dot fashion
+mnisd
+dot load
+data
+okay so there are 10 different classes
+of images funny like t-shirt or trouser
+pullover dress code sandal shirt sneaker
+back ankle boot and the image that I
+mentioned are 28 by 28. so in this we
+are splitting the data into training and
+testing set so what is mnisd
+so fashion mnisd consists of 60 000
+training images and 10 000 testing
+images it is mnst like fashion product
+database the developers believe mnst has
+been overused so they create this as a
+direct replacement for the data set
+each image is in grayscale and
+associated with the label from 10
+classes each image is 28 pixel in height
+and 28 pixel in weight for a total of
+784 pixels in total so each pixel has a
+single Pixel value associated with it
+indicating the lightning or darkness of
+that pixel with higher number meaning
+darker the pixel value is then integer
+between 0 and 255 so moving forward we
+will see that how much data we have in
+training and the resting so here I will
+write X train
+dot shape
+there is no need I guess
+or this
+comma
+y train
+or tape
+okay
+see we have 60 000
+rows and 28 columns for a particular
+data set
+okay
+now
+X
+test dot shape
+comma y
+test dot a
+error in the testing we have 10 000 rows
+and 28 columns I already told you before
+when I talked about the data set like we
+have 60 000 training images at that 10
+000 testing images
+okay
+so
+and if you want this full code I will
+provide you in the description box below
+just comment for the same that you want
+the full code okay so now let's train
+the data
+then X
+train
+the label y
+y
+and let's see this
+so what I will do with better visuals I
+will do like this so now let's see for
+the show images so here I will set the
+class labels
+class
+tables
+t-shirt
+t-shirt or it can be top
+okay then trousers
+and
+pull over
+dress
+then quote
+then standard
+but
+because
+then
+back
+Englewood
+let's see some images
+so what
+yeah
+I will write class
+um
+I will write BLT dot show
+X strain
+command C map
+let's show
+great
+you see it is a ankle boot let's look
+like an anchor board
+let's see one more
+ftlt dot I am sure
+strain
+emap
+equals to
+Grace
+okay it is a t-shirt
+we have 60 000 images in the trading set
+so we can check the any
+let's see one more PLT dot I am show
+strain
+15
+.
+just to Grace
+there's a shoe
+okay let's copy it
+the last we are checking
+for the 50.
+something dress
+okay
+so this is that for the training that is
+why we are writing here extreme
+right
+so
+now let's see the all the categories
+okay like sneaker ankle boot code and
+t-shirt okay
+sandal and all
+so for that I will write here PLT Dot
+figure
+size
+I will give 16 by 16.
+okay
+equals to 1
+for I
+n
+NP dot random
+Dot
+and
+0 comma
+ten thousand
+thirty thousand only twenty five
+elt dot subplot
+F comma five
+comma J
+Plus
+two one
+PLT dot I am sure
+X string
+I
+my cmapped
+equals to what Grace
+okay
+then PFD dot X is
+of
+and PLT dot title
+again calibrances
+but I will write here
+Dot format
+as
+well
+by train
+one
+y train
+okay so now let's see run it
+okay so there is an error
+object has no property cap okay
+it is cmap
+okay now you can see the sneaker bag
+pullover sandal dress
+so all the categories okay short code
+bag sticker this is for the training the
+trousers we are
+training all the images
+okay for the model
+so now what we will do we will reshape
+some
+training data
+okay the length and the testing data
+length
+so moving forward we will do that
+let's
+do
+reshaping and on
+so fashion
+um
+equals to
+KRS dot data sets
+dot passion
+right here
+X strain
+a y train
+comma
+X test
+was so
+fashion
+extreme
+this dimensions
+so here I will write X strain
+minus one
+okay or we can write X strain equals to
+Extended reshape length x strip
+okay
+uh here I will write X test
+equals to NP Dot expand
+dimensions
+X test
+comma minus one
+okay here I will let
+a one
+plus two
+NP dot add a
+D dot unique
+a train
+equals to
+and here I will write
+for
+uh
+hit one
+then EA index
+one
+dot append
+append to list
+y train
+Dot
+index
+I
+okay then print
+X
+one
+okay so cross check for I in index print
+white and I okay so here I will write
+PLT dot figure
+because size
+2
+24 comma twenty four
+okay four
+X comma y
+and
+enumerate
+index one
+this
+and I will add print
+extreme
+dot shape
+then PLT dot subplot
+2 comma five
+comma
+X plus one
+LT dot I am show
+tensorflow
+who is
+and X strain
+y
+equals to Grace
+PhD Dot title
+dot com format
+K1
+thanks
+okay X strain and P dot index
+would expand
+hips X strain minus one
+okay
+valid index
+what I wrote here let me check
+import numpy as NP
+the errors
+okay let me check the other
+working
+these are the 10 category
+okay
+these are the pixel size
+28 into 28
+okay
+so moving forward what we will do we
+will change the dimensions
+okay and then after that we will do the
+feature scaling
+okay for the changing dimension
+we'll do X string
+dot end
+S three dimension image this one is the
+three dimensional image
+then X strain dot shape
+is 60 000 then what I will do
+strain
+equals to NP
+Dot
+expand
+in
+comma minus 1.
+just
+for sure
+NP dot expand
+test comma
+minus one
+so four dimension image X
+strain
+m
+okay
+and dim
+this is a four dimension image okay the
+next
+chain
+or shape
+okay fine
+so now what we will do we will do the
+feature scaling
+so for the features killing I will write
+here x strain
+equals to
+X strain
+by 255.
+okay
+here I will write X test question
+X test
+bye
+so what is feature scaling feature
+scaling is the method used to normalize
+the range of independent variables or
+features of the data so in data
+processing it is also known as the data
+normalization
+and is generally performed during the
+data pre-processing steps
+okay
+so
+let's see the data is in 0 to 1 for that
+right here
+small small code X strain
+in
+to you
+so now what we will do we will split the
+data set for the validation set
+okay for that we will write here from
+SK learn
+dot model
+selection
+import
+then
+Trust
+it strain
+go
+X
+value
+comma y train
+y value
+let's do train
+test
+spirit
+and here I will write dentist split then
+okay
+split then I will write here
+X strain
+comma y train
+test
+over here now I will write X strain
+dot shape
+by train
+shape
+8000 okay then x value
+dot shape
+comma y value
+oh
+okay 12 000. see our total
+images in extreme were sixty thousand so
+now we'll do we did the train touch
+split okay so test size is 0.2 so we're
+split into like 80 and 20
+okay
+so that is why there are 48 000 images
+so now we'll make
+CNN model okay convolutional neural
+network so for the convolutional front
+end we can start with the like three
+conversion layer with a small filter
+size and modest number of filters okay
+followed by a Max pooling layer the
+filter Maps can be the flattened to
+provide features to the classifier okay
+so
+we know that we required an output layer
+with like 10 nodes in order to predict
+the probability distribution of an image
+belonging to each of the 10 classes this
+is also require use of sort Max
+activation function between the feature
+extractor and the output layer
+we can add a dense layer to interpret
+the feature in this case with the 128
+nodes
+okay so listen that like all layers will
+use the relu activation function and the
+weight initialization scheme like both
+best practices
+what we will do we will
+create
+model
+okay
+so
+so this is the code
+for the model
+okay so in this we use the layers these
+are the three layers layer one layer 2
+layer three okay
+so as I said to you we will start from
+the max pouring layer
+okay
+so
+here we used units equals to 128. and
+activation equals to relu
+okay
+and there is dance Dance Again the layer
+so
+Max pooling here is a term Max pulling
+2D so it is a pooling or Max pooling
+operation which calculates the largest
+or the maximum value in every patch and
+and in the every features
+okay
+so it is used in the pooling operation
+that calculates the maximum value for
+the patches
+and to create the pool feature map
+got it
+and here is a dance
+so dance is like in any neural network a
+dense layer is a layer that is deeply
+connected with the presenting preceding
+layer so which means the neurons of the
+layer are connected to every neuron of
+its preceding layer the layer is mostly
+commonly used in artificial neural
+network
+okay
+and there is
+dropouts like
+how much
+it will be drop out for every
+you know layers from every layers
+there is one more word
+Clayton so flattening is used to convert
+all the resultant two dimensional array
+from pool feature map into a single long
+continuous linear vector
+the flattened Matrix is fed as input to
+the fully connected layer to the
+classify image
+okay
+and this soft Max is a like equation
+or a function you used to activation
+function in the output layer of the
+neural network
+and
+that predictor multinomiality
+probability distribution that is soft
+Max is used as the activation function
+okay
+and relu is again
+you know a particular layer
+forward
+the visuals
+so now what we will do we will plot the
+neural network for the workflow
+okay
+Keras
+Dot
+else
+dot modern
+Dot
+PNG
+X
+happening
+sure
+oops
+question
+true
+yeah I will write so
+layer
+custom
+true
+there is an error
+okay
+model is not defined so what we have to
+do
+we have to install here Pi Dot
+okay pip install Pi Dot
+and install graph with
+okay so let me install and let I will
+come back to you so
+here what I will write we'll see the
+model dot summary
+this is the model summary
+okay
+and now what we will do we will compile
+and model fitting do the model fitting
+so here I will do the model Dot
+compile
+optimizer
+plus two
+atom
+plus two
+categorical
+cross
+trophy
+okay
+here I will add Matrix
+question
+curacy
+okay
+so now I will write model Dot fit
+right here
+let me delete this
+order Dot
+it
+extreme
+um
+train
+comma a box
+equals to
+20
+more batch
+size
+equals to Pi 1 2
+oh my wordpose
+plus two one
+comma
+validation
+data
+equals to X
+well
+comma y
+okay
+so it will take time it will run till 94
+okay the law is the accuracy will come
+so we have to wait for some more minutes
+till let it be complete
+it will
+be Hotel 20
+so I will get back to you when it will
+be complete
+almost 14 done 15 16 17 18 19 20 are
+left
+so we'll wait and we'll see
+so any POG is when all the training data
+is used at once and is defined as a
+total number of iteration of all the
+training data in one cycle for the
+training and machine learning model so
+another way to define a book is the
+number of passes a training data set
+takes around an algorithms
+okay
+will wait till 20
+more left
+yeah the laws accuracy and validation
+laws
+value loss
+if you want this full code you can
+comment and if you have been query
+related to python machine learning or
+anything
+okay you can comment down
+our team will
+reach you as soon as possible
+so
+two more 19 and 20.
+raise your model accuracy is good 93
+if you have any query you can comment
+down below
+okay 19 is done
+final 20 is going on epoch
+you can enroll in our
+course of AI and ml you can check the
+link in the description box below
+using course
+after this we will test the model then
+we will do evaluation
+then confusion messed tricks and then
+visualization of the output the final
+output
+okay
+yeah so it's done so now let's test the
+model testing of the model
+so now let's start the testing the model
+okay
+so here I will write
+model dot predict
+Dot
+expand
+okay
+X
+test
+at zero axis
+round is how many decimal points okay
+so now
+NP dot ARG Max
+and
+model
+dot predict
+NP dot expand
+times
+X test
+this will be zero
+[Music]
+this will be 0
+.
+dot round
+added two
+okay
+excess
+not okay
+so here I have to write x equals to zero
+okay
+so now cross check
+why test
+zero
+you see him
+okay
+then
+y
+prediction
+equals to model
+dot predict
+then
+accessed
+to
+prediction
+so now we will evaluate so model Dot
+evaluate
+dot evaluate
+test
+comma y
+test
+oh now let's do the model evaluation
+so accuracy given by train set is 0.94
+which is very good 94 and accuracy given
+by test set is 90 so thus we can say
+that our model is generalized so no
+overlifting or not underfitting okay so
+now confusion metrics
+so from SK learn
+Dot
+Matrix
+port
+confusion
+Matrix
+okay then PLT Dot
+figure
+then figure size
+let's do
+16 comma nine
+underscore prediction
+by prediction
+plus u n p Dot
+ARG Max
+label
+or
+label and
+y prediction
+then cm
+conversion Matrix equals to
+confusion
+tricks
+I test
+I
+prediction
+labels
+okay
+so
+now
+we will write
+my will create heat map SNS Dot
+heat map
+Vision metrics
+comma a naught
+was true true
+then fmt
+equals to
+d
+comma
+X stick
+labels
+so
+class
+dot labels
+then
+why tick
+level
+was so
+class levels
+okay
+there's another
+foreign
+dress coat and hair also
+okay
+so
+now
+we will visualize the output
+so PLT dot so it is like coming correct
+or not okay expected and predicted okay
+or you can say the actual and predicted
+so PLT dot figure
+bigger size
+plus two
+sixteen comma 30
+equals to 1
+or I
+and NP Dot
+random
+Dot
+pendant
+comma
+60.
+PLT dot subplot
+X
+comma
+okay
+then here I will write J plus 1
+equals to one
+and PLT Dot
+I am sure
+X
+test
+I
+e shape
+28
+it's 28 height and width
+and cmap equals to Grace
+PLT dot access
+of
+PLT dot title
+here
+right
+equals to
+okay
+slash n
+addicted
+pursue
+dot format
+Us labels
+my test
+all right
+Max
+bye
+dictate is I
+then will write NB Dot
+ARG Max
+I
+predicted
+I
+press enter
+loading
+so
+as you can see actually T-shirt shop
+t-shirt and top then predicted you also
+find
+okay some error then trousers are same
+sandals are same ankle boot also same
+so as you can see here
+some are right and some are wrong
+because the testing accuracy is 90 the
+predicted accuracies that the training
+accuracy is 94 that is why okay
+so this is
+the CNN of image classification how you
+can use
+and if you have any queries related any
+code or you want this full code you can
+ask me in the comment section okay I
+will provide you the full code so mostly
+the related and actual are coming till
+then everything is coming good so I hope
+you guys understand till here if you
+have any question or any query regarding
+any code a question just put us in
+comments our team will surely provide
+you the correct solution
+so I hope you guys have much understood
+the concept of CNN what is CNN what is
+how CNN recognized images
+and
+that thing so
+thank you so much for being here if you
+enjoyed this video please do subscribe
+to our YouTube channel and give a like
+to this video till then thank you and
+keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

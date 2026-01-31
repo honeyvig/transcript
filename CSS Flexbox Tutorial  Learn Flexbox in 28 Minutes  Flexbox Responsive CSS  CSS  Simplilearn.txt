@@ -1,0 +1,576 @@
+foreign
+and welcome back to another video by
+simply learn this is an Uber and in this
+video we are going to see how flexbox
+works and its property so let's begin
+but before that do you know according to
+Glassdoor the average salary of a full
+stack developer in the U.S is 70 000 US
+dollar per annum and it can go up to 125
+000 US dollar per annum in fact by 2024
+there will be 27 increase in the jobs
+for developers according to the U.S
+Bureau of Labor and statistics now is
+the best time to start picking up the
+knowledge needed to get started in this
+career full set developers are more
+likely to be in demand nowadays and in
+future with a major part of every
+business moving to the Internet so the
+more jobs are creating in the field of
+full stack development so let me tell
+you guys about this amazing program I
+simply learn if you want to become a
+software developer consider this Caltech
+postgraduate program in full stack web
+development by simply learn and Masters
+those necessary skills check out the
+link in the description for more details
+and you can also call on the numbers
+that are given below to know more about
+the program so do check it out now let's
+jump to our video
+so I have opened one folder I have
+created one folder and name it as
+flexbox so let me tell you about flexbox
+flexbox also known as flexible box
+layout it is a powerful CSS layout
+mechanism that allows you to create
+flexible and responsive layouts with
+ease with flexbox you can arrange
+elements in a single row or column
+distribute space among them and align
+them as you wish in this tutorial we
+will cover all the properties of flexbox
+and explain each of them in detail
+first let me create one file and let's
+name it as index.html
+okay and here I'll put the Boiler code
+by just pressing shift and one let me
+show you again shift and one and just
+enter so this is a basic HTML structure
+let's name this as
+Xbox
+yeah
+tutorial
+okay let's save it and inside this
+run inside this body I will create one
+container
+but before that I'll give you
+and server
+here you have to write live server
+if you are into web development or any
+field you must know about this live
+server
+and if not This Server helps you to
+live the our project on a local server
+so that we can just see what's the
+editing or what are the things that we
+are adding okay
+so in my system it's installed you also
+please install this extension it's a
+very cool instruction
+well by just pressing this here you'll
+find the option open with live server
+just click on it and you will it will
+redirect you to the
+this one so we just gave the name of
+this URL to flexbox tutorial that's why
+it's showing that okay so
+I'll tell you about the first thing
+about flixbox the flexbox container to
+use flexbox you need to define a
+container element and set it display
+property to flex this will turn the
+container into a flex container and all
+the its style element will become a flex
+items you can also write that like I'll
+show you in an example
+here then we'll
+I'll explain you everything I'm just
+telling you about it right now container
+and inside that will write
+display
+flicks this is how
+we write okay
+let's cut it and create our file
+and here
+is this Dev container I'm going to give
+it a class of
+container
+okay
+and here
+I'll write in H1
+I'll write
+this
+is my
+first or Android hello or something
+done
+to all the viewers
+okay
+yeah
+so let's save it and see
+how is it looking so this is how it's
+looking on the screen right
+now let's change our code because we
+don't need this H1
+so what we'll do is we'll give it as
+Flex
+container this class leave and inside
+this we'll create one div
+and in this there we'll give it a class
+name of
+items okay
+and here I'll just
+copy this part
+and then paste it few times
+okay
+so let's number it
+to
+three
+foreign
+so we created Five uh containers inside
+this class so let's save it as you can
+see it's coming downwards so this is
+because
+these are the log elements right that's
+why it's coming like that so we can
+change that don't worry about that so
+firstly I'll create one
+file here and name it as Styles or like
+style dot CSS okay and inside this
+Styles you can write CSS like that if
+you want to okay you can write any name
+in this class name like I have written
+Flex container you can write anything
+like if you want to
+fetch this you can also write ABC but
+remember this should be same as when you
+call this and right here the property of
+that right okay let's move forward
+yeah
+Flex container because it's very
+relevant here so just whenever whatever
+you write it should be relevant whenever
+when the developer developer that's
+called it's not like this 18 lines of
+code he or she writes 100 lines of code
+so the class name should be relevant to
+that thing okay okay let's move forward
+and let's do something here to
+check
+okay so first thing I'll do here is
+I'll remove this one and right here
+so how we can fetch it with the dot okay
+dot class name and in the curly brackets
+we'll give it a background color for now
+just to check as read okay
+after that we can fetch the item
+it was item
+items okay
+so we'll give you the background color
+again of
+blue
+and let's save this one and this one but
+still you will see it's not fetching the
+given classes that we have written here
+so this is because I'll show you
+so
+you have to link the CSS file here so
+for that we'll write a link tag and
+inside the rail we'll write spreadsheet
+or style sheet sorry
+style sheet and inside after that we
+will give the link of the CSS file so
+it's not inside any folder or something
+so we'll directly call the CSS file okay
+let's now save it and see whether it's
+working fine or not so as you can see
+it's working completely fine
+so but we also declare this container as
+red
+so why can't we see that
+right it's because
+here the items are covered with that
+container
+see here we created one Dev container of
+class Flex container right inside the
+container there are divs there is no
+margin in all inside
+inside this there is no marginal so we
+can't see that the one is taking this
+much of space so the red color is behind
+so if I
+delete or comment down this and save it
+now you will see the red color because
+red color was behind that right we'll
+see so many cool things here because I
+think flexbox is the most important
+thing in CSS
+if I want to create a website and I am
+getting difficulties creating that so I
+use I again sometimes read Flex
+Direction justify content and all uh
+align items and all
+because it's a very important and
+beautiful feature of CSS
+so let's commit it this down and let's
+move forward
+now let's give these items a margin so
+let's remove this color for now because
+it can so here we'll write border first
+will give border of 2 pixels
+okay after that we will declare the
+color which color that we are giving
+this border after that we'll give a
+margin of
+10 pixels would be fine yeah
+so as you can see it's now
+12 10 pixels of margin in every items
+right
+so
+if I'll give the pending
+I'll also show that to you guys
+so I'll give the padding nothing will be
+changed it will be as same as the just
+have a border if there will be no border
+it will be same as before right
+so this is how
+margin works you can fix it yeah
+so now as it's horizontal if you want to
+create a nav bar right so you don't want
+these you want it like in a row so for
+that we have to declare some other
+properties
+let's just simultaneously work on this
+so
+we will
+change this to here
+and the speech to here
+now let's make it as Flex
+till now we are just working with the
+plain CHS now we'll start doing the
+clicks so for that I'll write a property
+here display flex and whenever I'll save
+it it's coming like this right
+so what I will do is I'll increase the
+size of this obviously because it's
+coming very small
+so
+yeah
+so just like for that here I'll write
+border
+and let's give it a border of two pixels
+of color
+uh
+will give
+yeah
+so as you can see there is one
+container here right
+so now we'll see another property of
+start which is hide so we'll increase
+the size of these boxes at 45. as it's
+increasing horizontally
+let's see
+right and it can change the height
+because it's fixed so we'll change it
+now we'll give it a height and width of
+this boxes blue color items so we'll
+give it a height of 150 pixels
+and
+uh height and width
+of 50. 150 so it will become a square
+as you can see it's a little longer but
+we can reduce that
+for that we will do something as you can
+see here it's coming right
+now let's look at the properties that
+you can use to control the layout of a
+flex container and its Flex items the
+first one that I am going to tell you
+about is this Flex Direction
+okay Direction okay you can talk about
+it in a while as you can see there are
+column column reverse row row reverse
+and all so Flex direction is this
+property defines the main axis along
+with the flex item will be laid out you
+can set it to row for a house until a
+layout or column for a vertical layout
+you can also reverse the order of the
+items like this one reverse the order
+like one two three four that things will
+style right now it's starting from one
+to three after that it will start by
+from five four three to one you can also
+reverse that okay uh you can also
+reverse the order by using just uh this
+one row reverse and column reverse so
+how we can use it it's save like I'll
+show you just a way second
+I'll demonstrate everything but let me
+just
+open this in this page for good user
+experience
+I'll just zoom out this one
+and here
+okay just leave it I'll just write here
+column okay
+as you can see it's coming like in a
+column base right
+so
+if I'll write here row nothing will get
+changed because default is only
+so now I'll write row reverse and it
+will be reverse right it's coming one
+two three four five from that side
+right
+so these properties will help you when
+you are creating a website or something
+of your own where you want these things
+so flexbox is very important
+okay
+so
+great
+now I'll tell you about the next
+property so for that let's zoom in and
+minimize this one and it's a this Flex
+direction is very simple I think you are
+get an idea about this one so let's
+comment it down and let's move on to the
+new one so for that it's Justified
+content so the main problem with Flix
+direction is you can go to right or left
+row or column reverse okay but you can't
+do anything in Center if you want your
+item or your container to being in
+Center you can't use this the flex
+Direction so for that it's justify
+content this property defines the flex
+item will be aligned among the main axis
+you can set it to flex start to align
+them to the left or top you can also
+assign Flex end to align them to the
+right or bottom or Center to align them
+in the Middle with space between in to
+distribute the space evenly between them
+okay or space around to distribute the
+space evenly around them right so let's
+see each and every thing about on them
+so for that I'll just start with the
+center
+because it's the simple one okay so as
+you can see our items are inside the
+center of this container so this gray is
+our container and our items are inside
+this in Center okay
+so now let's talk about some other
+property and we can also write Flex
+thought which is the default of justify
+content so you will see nothing is
+changed here right so we can also write
+Flex end which will start obviously from
+that side
+yeah
+so now we can also write
+um
+you can also write align items but we'll
+talk about it later right so first this
+is what this is all about justify
+contain it's also an amazing feature so
+now let's talk about
+let's comment it down so we can
+talk about align items now so for a line
+items we'll use okay I'll tell you about
+it first then we'll talk about it so
+this probably defines how the flex item
+will be aligned among the cross axis
+which is the center one the axis
+perpendicular to the mean axis you can
+set to set it to the flex start to align
+them to top or left
+Flex in to align them to the bottom or
+right or Center to align them in the
+middle Baseline to align them based on
+their text baseline or stretch to
+stretch them
+to fill the container right we'll
+demonstrate it it's just a theory so
+we'll see by just doing practically
+right
+so
+I also get
+amazing feedbacks just learn while
+practicing you will learn more while
+practicing rather in the theory you have
+to read so very first but don't read
+Theory but just go on the Practical side
+okay let's realign the items in the
+Baseline so let's see in the container
+what happened
+so nothing has changed
+so we'll give it another
+property
+and let's name it as
+Flex Dot
+and it's a default again
+Flex end is
+again that side
+this side right so these all are doing a
+different work like we discussed and the
+justify content when we were doing
+flexed and these five were going that
+side and this side right in the right
+side of the container main container so
+now by using the Align items it's going
+on the downside of the container our
+mean container so these are the
+properties that I think it's very
+important when you are creating these
+little things will help you create a
+beautiful website uh okay so let's see
+one more of this Flex
+uh flick start to be done start and we
+are done with so let's see
+how to let's see wrap
+no not wrap right now we will straight
+check and see how this looks
+nothing is changed in this one but we
+can check it by just doing this
+okay
+yeah
+as you can see
+right it's stretching
+so now let's comment it down and move
+forward to our
+property
+let me give
+yeah
+so let's now
+have a talk on Flex wrap so this
+property defines whether the flex item
+could wrap to the next line or column if
+there is no enough space to fit them on
+one line you can set it to no wrap so
+the node app will not give any space to
+that container right so inside that you
+can also wrap the items with the next
+line or wrap reverse to wrap them in the
+previous line or column it's just very
+simple I'll show you don't worry about
+that so what we'll see is
+here I'll write legs wrap and here I'll
+give clap reverse first
+to check
+so as you can see it's wrapped but in
+not in a closed Wing so we can do that
+also
+see
+whenever the container is going shorter
+it's just moving upwards right
+so we can just write here as wrap
+so now you'll see it's on the upside of
+the container and it's again showing
+that properties
+okay so this is all about the wrap
+you can also add okay just let me show
+you
+and if you'll inspect here
+just let me give me a minute
+here
+let's go on this one and you will find
+here
+some of the elements
+yeah
+in this side this if I'll create okay
+let me just open that CSS file
+head in the flex container if I'll write
+some of the property that we have
+discussed like Flex Direction
+it will give us all the properties
+inside this flick Direction like column
+column reverse inherit initial reward
+row row reverse and unset
+so let's see initial and let's save it
+and as you can see
+and let's see
+as you can see it's initiated right
+okay so this is how you can use the
+properties in the console you can check
+whether it's how the this part is
+working and all and you can apply that
+afterwards right
+I saw now let's move on to the last one
+on our list today is align content
+so let's open the visual studio code
+here and
+will just commented for a while
+okay so now let's talk about a line
+items contained this one okay now first
+let's talk about this so this property
+defines how the flex line the line
+created when Flex items wrap will be
+aligned along with cross axis you can
+set it to flex start to align them to
+the top or left and you can also write
+Flex n to align them in to the bottom of
+that contain main container that we have
+created or you can also make that two as
+Center to align them in the middle and
+space between to distribute space
+between them you which will be evenly uh
+always or you can also give the property
+as space around to distribute the space
+evenly around them so let's see in this
+as space evenly first
+okay
+so let's save it and check
+so as you can see there are some spaces
+but it's like the old one but now if
+I'll squeeze it
+there will be all the time space between
+them
+and these space are even right
+and earlier when we were let me comment
+it down and show you guys and earlier
+when we were doing that it was not
+working that well
+okay let me show you
+by just
+okay
+now we'll see whether it's
+working as you can see some containers
+are going down because it's wrapped
+between them
+so with this the help of this
+line items are content we can give the
+space evenly between them when you don't
+want whenever your website is showing on
+the mobile phones and you don't want
+your things to be clumsy and all you can
+use this align item okay
+and let's see some other properties of
+this one
+uh let's check for another one and we
+can just say it to flexed n and let's
+see
+it's here
+and let's say it should be in the center
+as I've told you it'll be in the middle
+so for that let's see here
+see it's not going in the
+anywhere right
+down so this is the wrap for this video
+I hope this video was informative and if
+you have any questions or doubt about
+this please feel free to pin them down
+in the comment section below thanks for
+watching please like share and subscribe
+to our Channel and stay tuned for more
+from Simply learn thank you
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
+foreign

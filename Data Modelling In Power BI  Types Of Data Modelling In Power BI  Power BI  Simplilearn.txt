@@ -1,0 +1,490 @@
+foreign
+and welcome to this session on data
+modeling in power bi
+now today we will discuss how to create
+relationships and different kind of data
+models within power bi based on the
+structure of data you're importing
+okay so what topics we are going to
+cover today we are going to talk about
+different types of data modeling and the
+most important part
+and aspect of data modeling is the
+cardinality the cardinality which you
+basically decide after reviewing the
+nature of data and after we've imported
+it what kind of cardinality you have to
+basically highlight right and there are
+different type of cardinalities which
+you might have heard earlier also if you
+are from PL SQL background like one is
+to one one is too many Etc we will we
+will talk about that
+now what are the different types of data
+modeling now dimensional data modeling
+is one of the most popular and most uh
+you know widely used uh modeling in
+dimensional data modeling you have
+Master data uh like for example customer
+data date store data product data so
+these are like you know uh less
+frequently changing data sets so there
+is an organization right and you have
+set of customers their email ID phone
+numbers
+Etc that will change less frequently as
+compared to the sales transactions
+because transactions are happening every
+day every minute so sales is a more fast
+changing data set in dimensional
+modeling which is in the terminology of
+data is also called as a fact and
+customer store product which are like
+more of static data and less changeable
+data is sometimes called a diamond issue
+so this is a typical dimensional data
+model which is typically used uh
+sometimes right and then there is
+another model which is relational model
+this is a typical model which we have
+been using in database design like you
+know primary key foreign key
+relationships so for example you have a
+customer who has purchased a product so
+probably he might have the customer
+might have the details of the product
+which is processed and you will make a
+join between customer and product table
+and even you can make a join between
+product or product type or customer or
+product types customer table will also
+have a key to the product type so this
+is less conducive for reporting but it
+is more of a transactional relational
+model but of course this is also
+feasible but from the power bi
+perspective when we talk about reporting
+and visualization this is the most
+extensively used dimensional data model
+and this is what we are going to see in
+our example now so what I'm going to do
+is I'm going to show you certain data
+sets first we will prepare and create
+certain offer data sets and then we will
+Import in our sample power bi file and
+then slowly slowly we will create the
+relationships
+now one important thing which you need
+to understand that in power bi if you go
+to Power bi there is an option that that
+power bi Auto detect new relationships
+after data is loaded and import
+relations from the data source on first
+load so for example if you are importing
+the data from a database where you have
+already defined the primary keys and the
+foreign key relationships so uh that is
+the first option which power bi will
+Auto detect and secondly if suppose you
+are importing two different kind of data
+sets one is Excel one is CSV and if
+power bi detects a common column key
+columns it will auto detect a
+relationship which you can go and later
+change modify manage in your
+relationship
+menu manage relationship menu in power
+bi which I'm going to show you okay so
+if I open a power bi and this is where
+the option lies go to file
+go to options and setting options
+data load
+and these are the two options which are
+by default check you can uncheck it and
+auto and manually prepare relationships
+there's no limitation to that but if you
+keep it checked then power bi will do
+its job to detect the relationships okay
+now coming to the next important factor
+cardinality now before I start playing
+around with my data and start showing
+you certain relationships it's very
+important to understand these four types
+of cardinalities one is many to one
+right so basically
+many to one means that many orders
+contain data of One customer so per
+order one customer is there so from
+customer to order or product or delivery
+address it's a one-to-many relationship
+and from the other side from order to
+customer perspective it's a many-to-one
+relationship
+okay
+second other cardinality is one is to
+one one is to one relationship is only
+applicable when you are saying it's an
+extension of the current table so for
+example in one table you have employee
+details and you are extending the
+details of the employee in another table
+like employee address employee ID so
+that is like one is to one there is no
+multiple records of a single employee in
+the address table only one employee ID
+exists right
+now one is too many as I said is the
+reverse side of many is to one so in
+customer table only one customer record
+exists per customer and one customer can
+place many orders for multiple products
+and can also have multiple delivery
+addresses so that way this is a typical
+one is too many relationship we will be
+seeing this example also in our sample
+data set
+and last is the many-to-many
+relationship now many to many is a very
+typical example so which I am going to
+show you practice practically and in our
+case we will see that like for example
+you have placed an order for a
+particular product uh you know but there
+are multiple fulfillments which has
+happened so suppose you made order for
+10 products but at the back end when the
+company is fulfilling it is first
+fulfilling the first two products then
+the rest three so basically you the
+Fulfillment is happening in batches so
+one order ID might have a multiple
+fulfillments for the same order ID so
+there will be a multi many to many
+relationship which I'll show you
+practically so now with this background
+let's
+start importing our data now the first
+important thing which we need to import
+is the Master data so first I'll import
+all my master Dimensions which are which
+I'm going to you know use in my example
+so first is the customers table
+customers data
+so this is the customer details the
+customer key prefix first name last name
+birth date marital status and gender
+some redundant columns are also present
+but we'll remove it
+so my customer data is loaded now
+today's session is all about this
+section of modeling so we will keep our
+Focus over here
+okay now some columns probably some
+blank columns are there I can select
+them and say delete from model
+yes
+okay so now this is my customers data
+with the relevant columns and the key
+per customer customer key
+now there's no relationship in this
+model right now right because only
+single table is there and the associate
+data is only imported now let me also
+import my another important master table
+is the products
+select the product data product key
+product subcategory product SKU product
+name model name product description
+color size so just see all the relevant
+information only specific to the product
+is available so I'll import it
+okay now see there's no relationship
+between product and customers directly
+because until unless a customer makes an
+order places an order for a particular
+product there is no join right so now
+between these two tables the most
+important now another table which will
+now make sense is the sales order table
+sales table
+now I I'm assuming that power bi have
+Auto detected the relationship now you
+can see that because I've already uh
+take that check box now let's see what
+power bi what relations power bi has
+Auto detected let's first say check the
+relation between customer and sales I'll
+double click this
+uh join now what it has done is it has
+created a join of many to one
+between sales and customer so what does
+that mean is that one customer has can
+place many orders right and that is that
+it is detected by the quality of the
+data and the data sampling which power
+bi has done you can also reverse this
+relationship here I can select customers
+and I can select sales now it has become
+one too many so that you can also do
+manually so that is what I said whatever
+power bi is detected it is up to the
+discretion of power bi internal
+configuration and algorithm but you can
+go and change it so this is now you can
+this is by default active so we want to
+keep it active One customer many sales
+orders cross filter Direction means that
+only from customers to sales is the
+filter applicable not reverse I'll come
+to this with my another example but
+first let's
+change the relationship so one is to
+many means from One customer and many
+sales orders
+similarly let's see what has happened at
+the product side
+of the relationship
+similarly power bi many sales orders for
+one product you can for simplicity's
+sake you can say products
+sales
+product key is the join now just focus
+one more thing please also see the the
+column on which the join is is the grade
+column grade out column product key is
+also here and product key is also there
+and it is what we wanted so one is too
+many relationship from product to sales
+table and act
+now looks fine this is something which
+is looking logical and probably now we
+can
+proceed further to create a report
+now let me explain the cross filtering
+with an example
+now for example I want to check in a
+report
+that what is the count of products which
+uh which a particular customer has
+ordered
+okay so what I'll do is I'll select the
+product count of product name
+now if you see
+and for each customer in front of each
+customer name the count is coming as 293
+293 it is getting repetitive because
+because there is a one-way filter
+Direction filter between customers and
+sales and sales and products right so
+this join
+is single sided it means that from
+customer to product you can't find a
+relationship because it's a single side
+cross filter right what does this if I
+change it to both it means that it is
+equal to a join between product and
+sales and every product detail now is
+appended to the sales table so if I want
+to make you visualize this you need to
+go here
+I'll first open my sales table
+we can also open it here let's make
+click it says okay now if I click OK you
+can see the single arrow is changed to
+Double Arrow it means it's a it's a both
+side filter
+So when you say a both site filter it
+means that implicitly within power bi
+you can imagine that all the product
+columns now will get appended because of
+both ways filter you have applied and if
+you go to your report now see the change
+of the numbers now for T20 so the total
+count of products across all my
+customers come out to be 293 now the
+report looks uh correct if I change the
+relationship from back to single between
+product and sales then you can't make a
+join between customers and products
+basically you can't derive the product
+count from the product table see this
+if you have to live with it then you
+would have to go to the sales table get
+the product key and get the value of
+count of product key but that is not
+correct okay
+so if you want a report in which you
+want the count of product name
+and even if you want a count of distinct
+product name so this will not come
+correctly you would have to go and
+change the direction of the filter which
+is from single to both so this is a
+typical example there where you want to
+use a
+two directional filter
+now let's proceed further and import
+other data set in order to give show you
+another example
+now I want to show you an example of
+1 is to
+1.
+so I have another table which is called
+customer details so the key in this
+table is again customer key but only
+email address annual income total
+children education level Etc other
+details of the customer is there
+so I'm loading the customer details now
+you see it has Auto detected a one is to
+one relationship
+what is the meaning of one is to one
+means One customer key only has one
+entry in customer details there is no
+multiple entry so if you click this
+button
+it's a one is to one and the cross
+filter can be both or single doesn't
+matter because one customer will have
+only one value you can make this as
+active okay and if you go to the
+customer report table you can now easily
+associate a
+email address with the first name you
+will get one is to one
+record
+so now you can see that with one is to
+one relationship
+with the first name I have Associated
+the email ID and for each email ID
+there is a Associated first name method
+so this is an example of
+one is to one relationship so in this
+example what we have explained is that
+for each customer there is an Associated
+customer detail right uh so you have the
+first name email address education level
+homeowner occupation and total children
+count
+so in this report what we have done is
+uh if you click over here so the first
+name and the email address okay so
+there's a one is to one relationship
+and then
+and if you drag
+the customer key
+report takes time to render and even if
+you can
+so this is the reporting output you have
+the customer key first name associated
+email address and the count of product
+names uh which the customer has ordered
+now this is an example of 1 is to 1.
+now I want to show you an example of
+many too many now for that I'll import
+my fulfillment data set
+okay now in my fulfillment data set
+there is a column for
+order number so basically what I'll do
+is I'll drag order number from here to
+here
+okay so now what has
+um
+uh Power bi detected
+I'll do one thing I'll select sales over
+here
+fulfillment over here and order number
+to odd number
+okay so it's a many-to-many relationship
+so it means that per order I have
+created multiple batches to fulfill that
+particular order now
+many to many relationship is a
+definitely a candidate for
+both ways cross filter detection uh a
+Direction but you can you can check that
+but definitely uh Power bi shows a
+warning that this relationship has
+cardinality to many to many and this
+should only be used if it is expected
+that neither column contains unique
+values okay so we know that fact that's
+why we are accepting this relationship
+as many to many because we know there
+are multiple order numbers over here in
+the sales table which are mapped to the
+multiple order numbers in the
+Fulfillment table we'll click ok
+now you want to keep the uh
+uh direction as both ways or One
+Direction that is up to you the way you
+want to map the report so I can double
+click over here
+and you can even click so now you can
+select from which way single filter you
+want from fulfillment to sales or sales
+to fulfillment I'll prefer sales to
+fulfillment and click ok
+okay now we have our all our different
+kind of relationships over here uh which
+we have tried to shortlist one to many
+many to one one to one which is uh this
+example and many too many
+now if I show you further relationships
+which you can keep on adding like for
+example I have a uh the example of
+territories
+now in which particular territory the
+sales was done
+map it over here
+okay so now it's a typical one is too
+many relationship because territory is
+my master table uh where I have a static
+list of continent country region and it
+is mapped to the uh territories which
+are for in which my orders have been
+placed so it's a typical one is too many
+so that way you know you can keep on
+adding data then you have
+uh details of returns
+now this is another transactional table
+which is about the orders which have
+been returned rather than being you know
+returned by the customers so you have a
+product key
+uh so automatically power bi has
+detected a relationship between the
+product key and the product uh table
+right and even if you can join the
+territory key in which territory the
+return has happened
+right so mostly the most common
+relationship which you will observe is
+the one is too many because
+as I told earlier the most common
+relational model is the dimensional
+model uh the static data the slow
+changing Dimensions the scds are the
+master tables and the most frequent
+changing are the fact tables so if I
+talk about a typical dimensional model
+the Fulfillment table sales table and
+the territory stable sorry the
+Fulfillment table sales table and my
+returns table are the fact tables of my
+data model
+okay so with this I hope you had a fair
+understanding of how you create
+relational models uh dimensional models
+in power bi and how you can leverage
+those for your reporting needs with this
+I'll connect with you in my next session
+on power bi I know I hope you had a
+great learning session thank you
+foreign
+[Music]
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

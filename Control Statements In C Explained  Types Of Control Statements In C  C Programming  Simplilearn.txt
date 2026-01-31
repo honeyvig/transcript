@@ -1,0 +1,310 @@
+hey everyone
+welcome to yet another interesting and
+informative video by simply learn in
+this video we will understand the
+control statements in c programming
+before we get started make sure that you
+subscribe to our simply learn channel
+and hit the bell icon to never miss an
+update from us
+now let's get started with the agenda
+for today's session
+first let us start by understanding what
+are control statements in c and then the
+types of control statements
+now let's begin with what are control
+statements in c
+control statements and see help the
+computer execute a certain logical
+statements and decide whether to enable
+the control of the flow through a
+certain set of statements or not
+also it is used to direct the execution
+of statements under certain conditions
+let us consider an example of a
+stationary shop
+when a girl wants to buy a ball pin she
+says to the shopkeeper that she has the
+condition to purchase a pen of either of
+two colors which are black or blue so
+the shopkeeper first search for the
+black color pen keeping the condition in
+his mind
+if the black color pen is not available
+in the shop then the shopkeeper will
+search blue color pen
+and if the condition is satisfied the
+girl will buy the pen
+else she will not buy it
+similarly the computer executes these
+statements when the given condition is
+satisfied
+great now that we know what are control
+statements in c
+now let us understand the classification
+of control statements in sync
+first off we have decision making
+control statements
+then we have conditional statements and
+finally go to statements and loop
+control statements
+first let us understand all the decision
+making control statements in depth
+decision making control statements are
+simple if if file statements nested
+default statements and lc flatter
+let us go through them in detail
+now let's have a look at simple if
+statements
+when you look at the flowchart it is
+very clear that it first evaluates if
+condition and if the condition is true
+the statements under if will be executed
+else other statement outside the if will
+be executed
+and the syntax of simple if is if
+condition followed by statement inside
+the curly brackets
+now let's execute the simple program
+using if statements
+if getting your learning started is half
+the battle what if you could do that for
+free visit skill up by simply learn
+click on the link in the description to
+know more
+in this particular program based on
+simple if statement it asks user to
+enter value for e and b
+and it takes the condition a greater
+than b
+and if a is greater than b it prints
+this statement a is greater than b
+in case a is not greater than b it will
+not print anything now let's run it
+enter the numbers for a and b let's
+enter 10 and 5
+and the output is 10 is greater than 5.
+next if will statements
+in this it evaluates the condition and
+if the condition is true the statements
+under if will be executed otherwise
+these statements under else will be
+executed and followed by other
+statements
+syntax of if else statement is if
+condition statement one is statement two
+let's understand the if statement with
+the help of an example program
+this particular program is based on if
+statement as i discussed before it
+checks the if condition and if the
+condition is satisfied it will print the
+statement under if block
+otherwise it will print the statements
+under else block
+let's run it
+enter the numbers for e and b
+so as you all can see the output the
+value of a is not greater than b
+that's why this statement under else
+block is executed
+next we have nested if statement
+the nested if all statements consist of
+another if or else
+let us understand necessarily statements
+with the help of syntax
+this consists of another if else
+statement inside the outer if block and
+another if else inside the outer else
+block
+let's understand by an example
+this program is based on nested effects
+this is an order if block and it
+consists of another if and else
+it first checks the condition of order
+if and if the condition is not satisfied
+then it checks the inner if condition
+even if that condition is not satisfied
+it executes the statement under else
+block
+in case even that condition is not
+satisfied it comes outside the outer if
+block and execute the statements under
+order if else block
+let's run it
+enter the numbers for a and b
+then enter
+as you can see the value of a and b are
+same it has print statement under outer
+else block
+now let's enter different values for a
+and b and check the output
+so
+since a is not equal to b and a is
+greater than b the output is printed
+successfully
+next lc flatter
+lc flat statements contain multiple
+elsif when either of the condition is
+true the statements under that
+particular if will be executed otherwise
+these statements under the else block
+will be executed
+the syntax is
+if condition and followed by multiple
+else if
+so now let's execute the program using
+an lc flatter
+enter the number for year let's enter
+10.
+so
+it checks the condition a not equal to
+10. since the condition is not satisfied
+it checks the next if condition
+since a is not greater than 15 it checks
+another if condition and the condition a
+less than 20 is satisfied and the output
+is 10 is less than 20.
+now let's have a look at the control
+statements in c
+as per the value of switch expression
+the switch statement will allow
+multi-wave branching depending on the
+expression the control is transferred to
+that particular case label and execute
+the statements under it if none of the
+cases are matched with the switch
+expression then the default statement is
+executed
+syntax of switch statement is switch
+expression and inside the curly brackets
+multiple case labels and at the end
+default statement
+let's execute program based on switch
+statement
+so in this particular program if the
+expression of switch matches with any of
+the case label then it will execute the
+statements under it now let's run the
+program
+enter value of n
+let's enter 4
+and the output is value is invalid
+it's because since the value of n is not
+matched with any of the case label it
+has print the default statement
+now let's have a look at go to
+statements
+go to statements are used to transfer
+the flow of control in a program
+go to statement is also known as jump
+control statements because it is used to
+jump to the specified part of the
+program
+the syntax is go to label name and
+semicolon
+label in go to statement is a name used
+to direct the branch to a specified
+point in the program
+in the example
+label name is odd
+next we have loop control statements in
+c
+in loop control statements we have for
+loop while loop and while loop let us go
+through them in detail
+for loop is also known as pre-test loop
+from the following syntax expression 1
+is an initialization expression 2 is the
+conditional expression and expression 3
+is an updation the variables can be
+initialized in the for loop statement
+itself
+you might get a clear idea of using for
+loop when you look at the flowchart
+in the for loop expression 1 is used to
+initialize the variable expression 2 is
+evaluated and if the condition is true
+then the body of for loop will be
+executed
+and then the statements under expression
+3 will be executed
+this process is repeated as long as the
+follow condition is true once the
+condition is false control will return
+to the statements following the for loop
+and execute those statements
+let's see the example
+in the for loop the variable i is
+initialized to 0
+and expression 2 is the condition that
+is i less than n and then the updation
+let's run it
+as you can see the output the value of i
+is printed until the condition is false
+up next we have a while loop
+a while loop is also known as an entry
+loop
+because in a while loop the condition is
+tested first then the statements under
+body of the while loop will be executed
+if the while loop condition is false for
+the first time itself then the
+statements under the while loop will not
+be executed even once let's have a look
+at the syntax of while loop
+while condition and inside the curly
+brackets we have statements
+let's execute the program using while
+low
+so here it first checks the while
+condition and then prints the statement
+let's run it
+enter the number for a let's enter 5.
+so since the condition is satisfied it
+has executed statements under the while
+loop
+now let us try to enter different value
+for a
+let's enter 20.
+since the condition is not satisfied
+that is 20 is not less than or equal to
+10
+it has not executed statements even once
+next the two while loop
+dual is also known as an exit loop
+because in the do-while row the
+statements will be executed first and
+then the condition is checked if the
+condition of the while loop is true then
+the body of the loop will be executed
+again and again until the condition is
+false once the condition is false the
+control will transfer outside into while
+loop and execute statements followed
+soon after the dual loop
+the syntax is
+do and statement inside the curly
+brackets
+then while condition
+as you can see this particular example
+is based on a dual loop
+it prints the statement first and then
+checks the while condition
+so it prints the value of i until the
+condition is false as you all can see
+the output until the value of e is less
+than or equal to 5 the values are
+printed successfully
+so with this we have come to the end of
+the session on the control statements in
+c programming i hope this session was
+informative and interesting until next
+time thank you stay safe and keep
+learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

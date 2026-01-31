@@ -1,0 +1,1328 @@
+hello everyone and welcome to Simply
+learns YouTube channel today we'll be
+taking you through some interesting
+stuff in this tutorial we'll create a
+verle game from scratch using HTML CSS
+and JavaScript I believe you guys must
+have played this game somewhere but
+let's create one of our own today and
+we'll see how easy it is to create this
+whole game using HTML CSS and JavaScript
+before we begin make sure that you are
+subscribed to our YouTube channel and
+press that Bell icon to never miss any
+updates from Simply learn so without any
+further delay let's get started before
+we move on to the programming part let's
+discuss what a Wordle game is the verle
+is a popular felet word guessing game
+that has become popular in the last
+couple of months the game was actually
+designed by a software engineer as a
+gift for his partner but with time the
+game gained popularity and now everyone
+on social media is talking about this
+game on the rules for this game are
+simple the game tells you if the letters
+you picked are in the word and if they
+are in the right place as well if the
+letter is in the right spot it shows up
+green and a correct letter in the wrong
+spot shows up yellow a letter that isn't
+present in the word at all shows up
+green color so let's go through the game
+once and you guys will understand it
+much better here we are in the browser
+you can see we have blocks over here and
+a keyboard present beneath them we have
+six rows over here and each row contains
+five columns for each letter of the word
+the task is simple we have only one
+correct word if we write something on
+the first R the system will check for
+all the letters if a letter is present
+at the correct place then the color of
+that particular letter will change to
+GRE for example if we write here
+River and press enter key you can see
+all the words or all the letters of this
+word changed to GRE this means that none
+of these letters are present in the word
+so let's try another word we'll write
+here
+Apple press the enter key and you can
+see a is correct but present at the
+wrong spot let's try some more now we'll
+write here let's
+say toq fine click on enter and you can
+see o is also correct and the last word
+is O now we have two letters of the word
+we have a and o o is present at the last
+and a is present in the word so let's
+think of any word which is like this the
+word coming in my mind right now is
+let's try mango over here so we'll write
+here mango click on enter and you can
+see mango is the correct word for this
+Wordle game fine we can get any random
+word from the word list we have in a
+JavaScript part so we'll discuss about
+it later on so I hope you guys got what
+this game is so let's move again to the
+programming part now so here we are in
+the HTML
+part now the task is to create this
+whole game again from scratch so here we
+are in the VSS code and we'll start
+writing the code for the same now we'll
+create the layout of this web page using
+HTML first so let's say what we are
+doing here is we are writing here inside
+the body we are writing here H1 let's
+say the ID
+is ID is H1 title fine title is the ID
+for this and now what we'll do is we'll
+use an underline tag so we'll write
+something over here we'll write here
+verle
+using JavaScript fine save the program
+and this is a actual program save it now
+open it with live server once
+again and you can see we have this
+heading over here which says Wordle
+using JavaScript which is underlined as
+well now let's write the code again so
+what we are going to do here is we are
+going to use a Break Tag now the next
+thing we are going to do is we are going
+to take a div so this div is going to be
+for the board so we are going to create
+the board of this game later on in the
+CSS part we'll keep this div empty here
+now the next thing we have to do here is
+we have to use another Break Tag and
+then we have to print the answer as well
+right right so we'll write here
+BR now we'll write here H1 so inside H1
+the ID is going to be let's say answer
+and then inside this H1 we'll keep this
+empty fine we are done with the HTML
+part we'll manage the rest in the CSS in
+the JavaScript Parts as well so let's
+move on to the CSS part now but before
+that let's save this program and you can
+see nothing is changing over here in the
+browser so let's move on to the CSS part
+now here we are in the CSS file what
+we'll do is is we'll write here body now
+we'll first style the body tag of a
+whole web page so we'll write your font
+family so font family is going to
+be Gil sense and then we'll write
+here will sense Ms Mt sorry and then
+we'll write here
+calibra and then we
+have this over here so we'll write
+here trib
+Ms and then we have sensor over so here
+we are done with
+this and it's showing some error over
+here so what we have to do is we have to
+put this inside single inverted commas
+as well now let's zoom out the V is code
+and here you can see something is wrong
+over
+here so the wrong thing is we have to
+put this s siif inside single inverted
+commas and calibr like this so we are
+done with the font family next thing we
+are going to do here is we are going to
+write here text align at this
+Center then we have background color so
+what we are going to do is we are going
+to use the linear gradient over here so
+we'll write here linear gradient now
+inside this we have to pass the degree
+or the angle we can say so we'll write
+here degree as 120 then we have specific
+colors so we'll write here 3 B 7 c e
+fine so this is one of those colors then
+we'll write here 50% and then we have
+another color so we'll write here hash
+218 ed6 so we'll write here 218 ed6 and
+this is a second color we'll write here
+50%
+again now save the program move back to
+the browser and we'll see if this is
+working fine so this is working fine as
+of now we'll check back at it
+later now the next thing we have to do
+here is we
+have to style the HR tag as well so
+we'll right here width as 500 pixels for
+this HR te save the program move back to
+to the browser and you can see nothing
+has changed over
+here so the next thing we have to
+mention over here is the title tag so we
+have the IDS title for our title so
+we'll write your title now inside this
+we'll write the font size font size is
+going to be 36 pixel for the title then
+we have font weight so we'll write your
+font weight as bold then we have letter
+spacing so we'll write here letter
+spacing is 2 pixels for this save the
+program move back to the browser and you
+can see we have this heading over here
+which says verle using JavaScript
+and that's it so the next thing we are
+going to do here is we are going to
+write the code for board so we'll write
+here hash board and we'll write here
+width of this board is going to be 350
+pixels so we'll write here 350 then we
+have the height as well so we'll write
+here the height as 420 pixels
+and then we have margin so we'll write
+here margin margin is going to be zero
+and auto then we have margin top so
+we'll write here margin
+top okay so we have to write a margin
+top and margin top is going to be 3
+pixels so we'll write here three pixels
+then we have the display as
+flex and then and lastly we have the
+flex WP so we'll write your Flex WP as
+RP now save the program
+and here you can see some things are
+changed over here now let's style other
+things as well so the next thing we have
+to change here is the tile so tile is a
+class over
+here we'll go back to HTML and you can
+see we have no class named tile over
+here so we'll Define this class later on
+in the JavaScript part so we'll write
+here tile now inside here what we'll do
+is we'll style the Box first so we'll
+put a comment over here as box then
+we'll write here border border is going
+to be 2 pixels
+solid and the RGB value of the Border
+color
+is
+19 then for green we have 18 and for
+blue we
+have 180 fine so this is the Border
+color then we have width so width is
+going to be 60 pixels and then we have
+height as well so we'll write your
+height height is going to be 60 pixels
+again then we have margin so we'll write
+your margin margin is going to be 2.5
+pixels let's
+say now we'll style the text as well so
+we'll mention it over here we'll comment
+text over here now we'll
+Define the color so the color for text
+is going to be black then we have the
+font size font size is going to be 36
+pixels and after font size we have the
+font WID so we'll write here font weight
+font weight is going to
+be bold then we have display so we'll
+write here display as
+flex and then we have justify content at
+the center and finally we have align
+items at the center so we'll write here
+align items at
+Center so here we are done with the
+styling of the body title and board now
+we are left with the keyboard the colors
+for correct absent and present letters
+so we'll write the code for it later on
+for now let's move ahead to the
+JavaScript part but before that let's
+save this program once and we'll check
+so here you can see nothing is changed
+as of now so let let's refresh it once
+and we'll see if something is wrong or
+not so here you can see nothing is wrong
+everything is working totally fine let's
+go back to the JavaScript part and we'll
+go through the logic behind this whole
+game
+now so here we are in the JavaScript
+part we'll start writing the code over
+here so here you can see we have the
+keyboard already with us so this is
+going to be our keyboard now the next
+thing we are going to do here is we are
+going to take a variable
+as height so so the value of height is
+going to be six initially so this is
+basically the number of guesses we have
+in a program so basically we have six
+number of guesses that's why we are
+taking the variable height as six then
+we have the variable width so width of
+each word is going to be five letters so
+the width is going to be five then we
+have a variable as row and the initial
+value of row is going to be zero that's
+because of the current guesses or we can
+say the current attempt then we have a
+variable call so we'll use zero for this
+variable as well so this is the current
+letter for that
+attempt now we'll take another variable
+over here we'll take a
+variable game over and the initial value
+of this variable is going to be false
+fine the game over variable is for game
+over if the game is over then the value
+will change to True here we have taken
+the height variable as six and the words
+width is five letters the current row
+will be zero and the call variable is
+also set to zero the game over variable
+is initially set to false that's it
+right so let's move ahead and we'll
+create two lists now the first one is
+going to be a list of words and the
+second one will be a list of guest words
+so if the user enters a word then the
+guest word list will be checked if the
+word is present in the list or not if
+the entered word is not present in the
+list then the system will return that
+the word is not present it so what we'll
+do is we'll write here where word list
+so we'll write here where word list is
+equals to we are going to take a list of
+words so let's say we have some words
+over here we'll write here
+apple and then we
+have mango so there are basically a lot
+of words present inside this list maybe
+more than th000 2,000 or 3,000 words so
+for now it's just a prototype of this
+whole Wordle game so we are going to
+take four or five different types of
+words that's it the next word we have is
+River then we have hyped so we'll write
+here
+hyped and then we have Tokyo so we'll
+write here Tokyo let's
+say we'll take another word over here so
+let's say we have title over here and we
+have oua fine
+so we have to write here hyped with a
+small H and that's it this is our word
+list now we are going to create another
+list this time we are going to create
+the guest list which will contain all
+the words that can be guessed by the
+user so inside the guest list we'll
+write here
+apple and then
+mango then we have River hyped so we are
+basically going to take all these words
+and we we are going to paste them over
+here now let's use some more words so
+let's say we are using here carbo then
+we have let's say another word over here
+proxy fine so we have these words in the
+guest list as well now the next thing we
+have to do is the guest list will also
+contain the words from the word list
+right so what we'll do here is we'll
+write
+here guess list and guess list is going
+to be guestlist do concat so what we are
+doing here is we are basically
+performing concatenation so we'll write
+here word list inside this and that's it
+now it's time to pick up a random word
+from the word list we have for that
+we'll use traditional math. random
+method so for that what we'll do is
+we'll write
+here where word and we are going to take
+this variable and we'll write here word
+list
+then inside this what we are going to do
+is we are going to write here math.
+floor then we
+have math do random so this is a method
+basically meth. random so we have to put
+parenthesis over here then we'll write
+here asri word list
+dot length so we'll write here word
+list.
+length and finally what we are going to
+do is we going to change the word to
+uppercase so that's why we are adding
+here two uppercase over here so this is
+also a
+method now that's it let's print this
+word and what we'll do is we'll write a
+console.log we are going to print this
+word on a console
+fine so here we are done with the task
+of picking up a random word from the
+list of words now the next thing we have
+to do is to work upon the body of this
+game and then on the screen keyboard now
+the next thing we have to do is to work
+up the body of this game and the on
+screen keyboard we have on our web page
+but before that let's save this program
+mons move back to the browser open
+console and here you can see again on
+refreshing the web page the word is
+changing over here it's taking a random
+word from the word list you can see on
+refreshing we have River as of now I'm
+not sure if you guys are able to S so
+let me Zoom it out a bit now I refreshed
+this page and you can see the word is
+changing over here we have a list of
+words and a random word will be picked
+at once so here you can see
+it now it's working totally fine so
+let's move on and now we'll write the
+code for the body and the on screen
+keyboard so we'll write here
+window do onload so we'll write here
+window.onload
+and on loading we are going to create a
+function fine so we are going to
+initialize so we are going to write
+right here
+initialize and we are going to call this
+initialize function fine now the next
+thing we have to do is we have to create
+this function so we'll write here
+function
+initialize now what we have to do is we
+have to create the game board now so for
+that we are going to use the for Loop we
+are going to write here for
+let R is equals to 0 so the initial
+value of R is going to be zero R is less
+than height so this is the condition and
+we are going to write here
+r++
+fine now inside the body of this for
+Loop we have to take another for Loop we
+have to take the for Loop for column as
+well so we are going to write here for
+let's say we have a variable C and the
+initial value is set to zero and the
+condition is going to be C less than the
+width so we'll write here C less than
+width and then we'll write here
+C++
+fine now we have to write here again
+this curly braces because we are going
+to write inside this for Loop now so
+we'll write here
+let tile so tile is a
+class uh we have in a CSS file so we
+have use tile over here we'll write here
+document
+dot create element so we are going to
+use document. create element over here
+and then we are going to write here span
+fine now the next thing we have to write
+here is the tile ID so we'll write here
+tile do ID is equals to R do two
+string fine so we have to write here r.
+two string is a method so then we have
+to write here plus now inside double
+inverted commas we have to put a dash
+over here then we have to write here
+plus and we have to add the C value so
+first we'll convert the value of C to
+string and then we'll add it away so
+we'll write here plus C do2
+string so we'll write here C do2 string
+we are going to call this method again
+and that's it fine the next thing we
+have here is tile
+dot class list then what we'll do is
+we'll write over here add and and we are
+going to add the tile class over here so
+we are going to write here
+tile and the next thing we have to do is
+tile dot inner text so we have to write
+here inner
+text and we have to give the value as
+null over here fine the next thing we
+have to do is we have to write here
+document dot get element by ID then we
+have to get the element of basically we
+have to get the value of board so what
+we are going going to do is we are going
+to pass your board and we are going to
+pass append child over here so we'll
+write append child and we are going to
+append the values of board and TI so
+we'll write here TI fine that's it save
+the program move back to the browser and
+you can see we have this board over here
+so you can see the board over here we
+are able to see it so we have five
+columns you can see 1 2 3 4 5 and six
+rows away five so it is working totally
+fine till now now let's create the
+keyboard as well
+so we have to write here after this for
+Loop so what we are going to do is we
+are going to create a keyboard so let's
+write a comment over here we'll write
+here
+keyboard and we'll start writing the
+code over here so we are going to take
+uh variable over here so let's say the
+variable name is keybo board and now
+what we have to do is we have to write
+the values present inside the keyboard
+we already have those values over here
+so we'll copy these from here and we are
+going to paste them over here
+fine so let's do one thing let's write
+it this way so we have the keyboard over
+here we have all the keyo keys of the
+keyboard you can see we have q w e r t y
+u i o p then we have the next line and
+finally we have the enter key ZX cvbn M
+and backspace fine so this is a symbol
+for backspace basically you can download
+it from Google as well now the next
+thing we have to do is we have to Define
+here a for Loop we'll write here for we
+are going to take a keyword let I is
+equals to Z then we have I less
+than keyboard Dot
+length and then we have I ++ over here
+fine so now inside this for what we are
+going to do is we are going to take a
+variable so we'll write here
+where current row so we'll write here
+where current row is equals
+to keyboard and what we are going to do
+is we are going to pass your I inside
+this then we have
+let keyboard row
+is
+equals to then we'll write your document
+dot create element so we'll write your
+document. create element and we are
+going to create a div tag over here fine
+so we will write here div then we'll
+write here
+keyboard
+row
+dot class list do add we are going to
+add the keyboard R class over here so
+we'll Define this class later in the CSS
+F keep this thing in mind we'll write
+here
+keyboard row so we'll write here
+keyboard and then we'll write here
+hyphen fine so this is going to be a
+class we are going to Define it later in
+the CSS part I keep mentioning it again
+and again so that you guys will remember
+what we have to do later on so we'll
+take another follow Loop over here let's
+say we have a variable named as J we'll
+write here let J is equals to Zer J less
+than current
+row dot
+length and we'll pass g++ over fine now
+we'll write inside the body of this for
+loop again so we'll write here
+let key tile so we'll write here let key
+tile is another variable we have taken
+over here so we are going to write your
+document dot create cre element and then
+we'll create a div tag over here so
+we'll write here
+div and then we'll write here
+let key so key is another variable over
+here so we'll write here current row and
+we'll pass J inside
+it so we'll write here key
+tile dot inner text so we'll write here
+key ti do inner
+text is equals to and we are going to
+pass the value of key over fine then
+after this we'll use the IFL statement
+so we'll write here if
+key is equals to is equals to enter so
+what will happen is the key tile ID will
+change to enter so what we are going to
+do is we are going to write here inside
+this key tile. ID is equal
+ALS to
+enter and we have to use the lsf
+statement as well for other keys so
+we'll write here
+save key is equals to is
+equals to backspace so we have a symbol
+for backspace here so we'll copy it from
+here we'll paste the symbol over
+here and now inside the body of this lsf
+statement we'll write key tile
+do ID is equals
+to backspace fine so the ID is going to
+be backspace then we have another else
+if so we'll write here else
+if we'll write here a and we'll put less
+than equals to sign and we'll write here
+key we'll pass another condition so
+we'll write here key is
+less than equals
+to
+Z then what will happen
+is the key tile
+ID is going to
+be
+key plus key
+fine and that's it we are going to add
+an event list over here to process the
+key so after this what will happen is
+we'll put a semicolon over here first
+and after the body of this LF tag what
+we have to do is we have to write here
+key tile dot add event listen now so we
+have to add an event over here we'll WR
+here click
+comma process key fine so this is going
+to be the event
+and now we have to write some mode core
+over here so we'll write
+if and we'll write here key is equals to
+is equals to enter
+again then what will happen
+is key tile the key tile dot class list
+so we are going to add a class over here
+so we'll write here
+add and we are going to name the classes
+let's say Enter
+key typ fine so we'll create this class
+later on in the CSS part again then
+we'll write here
+else and we are going to write
+here key tile dot class list. add and
+let's say we have the class name
+is key tile
+fine that's it then after this we have
+to write here
+keyboard row do append
+child so we have to write a keyboard
+row. append child now we are going to
+append the key tile class over here so
+we'll write your key
+tile and after this we have to write
+here
+document dot body dot upend child and we
+have to write here keyboard
+fine so that's it
+now we'll do this letters entering task
+from the system keyboard as well that's
+basically the keyboard we have in our
+system so for that what we are going to
+do is we are going to write
+here document dot add event list now so
+we are going to add an event then we'll
+write here key
+up key up is going to be the event then
+we'll write here e inside this and we'll
+create an arrow function over here so
+this is going to be an anonymous Arrow
+function now inside the body of this
+function what we'll do is we'll write
+here
+process input and we are going to pass e
+over here fine so this is basically the
+keyboard part we have save the program
+move back to the browser and we'll see
+you can see the process key is not
+defined over here is the error so we'll
+Define the process key
+later now what we'll do is we'll write
+the CSS part for the keyboard and for
+that we'll move back to the CSS file so
+here we are in the CSS file and what
+we'll do is we'll Define the classes
+over here so the first class we have
+is the keyboard row class so we'll write
+here do keyboard row now we'll write
+over here width of the keyboard width is
+going to be 400 pixels then we have
+margin so we'll write here margin margin
+is going to be zero and Auto for this
+keyboard then we have the display as
+flex and finally we have the flex tab
+Flex W is going to be WP and that's it
+for the keyboard row class then we have
+the key tile class so we'll write here
+key
+tile and now inside this what we are
+going to do is we are going to mention
+the width again width of the key tile is
+going to be 36 pixel then the height we
+have of this key tile so we'll write
+here height height is going to be 40
+pixels let's say then we have margin so
+margin is going to be 1 pixel again for
+the key tile then we have the border
+border is going to be 1 pixel solid in
+nature and the RGB value
+is 12a 12a 12 which is black so then we
+have the Border radius border radius is
+going to be 5 pixels
+again and then we have to mention the
+font family for the text so the font
+family is going to
+be this one then we have Cambria coochin
+Georgia times Times New Roman and serif
+over here
+fine now the next thing we have to
+mention for the text is the font size so
+we are going to write your font size as
+20 pixels then we have font weight font
+weight is going to be bold then we have
+the display display is going to be flex
+and finally we have to justify content
+at the center
+fine then we have to align these items
+at the center as
+well and that's it now we have to write
+the code for the enter key time so we'll
+write here Dot
+Enter key tile and inside here we have
+to mention the width width is going to
+be 76 pixels for the enter key you have
+seen the enter key is bigger in size
+than other keys so we have to mention
+the height height is going to be the
+same as 40 pixels then we have margin
+margin is going to be 1 pixel again for
+this Enter key and we have the Border as
+well border is going to be 1
+pixel solid so we have to write your one
+pixel solid and the RGB value
+is going to be 0
+comma 0 comma 0 so we'll remove this
+blue and green from here and that's it
+the RGB value is black basically then
+we'll write here border radius border
+radius is again going to be 5 pixel for
+the enter key as well now we have to
+mention for the text as well so the font
+size is going to be 20 pixels then we
+have font weight so font weight is going
+to
+be bold and then we have display as
+Flex finally we have justify content at
+the center and we have to align items at
+the center as fine so we are done with
+the enter key tile as well now what
+we'll do next is we'll move back to the
+JavaScript part but before that let's
+save this program and we move back to
+the browser once again you can see it
+says process key is not defined we'll
+Define it later on so for now let's move
+back to the JavaScript part
+again now what we have to do is we have
+to create a function over here so we are
+going to create the function process
+input before we move on to the process
+input function what we'll do is we'll
+create the process key function because
+we are getting the error for this again
+and again so we'll write here function
+then we'll write your process
+key now inside the body of this function
+what we have to do is we have to write e
+is equals
+to code and then we'll write
+here this Dot ID fine so I guess it will
+work fine then what we have to do is we
+have to write here process input and we
+have to pass e fine we have to call the
+process input function for so save this
+program move back to the browser and you
+can see now we have the keyboard over
+here so you can see on clicking any key
+over here it says process input is not
+defined so let's define it as well first
+and then we'll see if the keyboard code
+is working totally fine or
+not so for the process input function we
+have to write
+here function then we'll write here
+process input we have to pass e as a
+parameter over here and we'll write
+inside the function
+if game over is true then return form
+here
+fine now we have to write the e do code
+over here so we'll write here
+if key
+a is less than equals to e do
+code and then e do code
+is less than equals
+to
+keyz then what will happen we'll write
+here inside the if block we'll write if
+column is less than
+width so we'll write here
+let current tile so we'll write here let
+current tile is equals
+to document dot get element by ID so
+we'll write here get element by ID and
+ID is going to be row
+dot to string
+plus then we'll put Dash over here or we
+can say a hyphen We'll add what we'll
+add is We'll add call do two string fine
+so we'll write here call do two string
+this is again a
+method so we have to write here this and
+we have to write here row. two string
+fine so I guess this will work totally
+fine
+now now after this what we'll do is
+we'll write here again
+if so we'll write here current
+tile do inner
+text is equals 2 is equals to
+nothing then inside the body of this if
+statement we'll
+write current
+tile dot inner
+code or we can say inner text over here
+so we have to write here current tile do
+inner text equals to e do code so we
+have to write here
+three then we have to change the value
+to column plus is equal to 1
+fine so we have to mention the else if
+statement as well so we'll write here
+after
+this if statement we'll write here else
+if e do code is equals to is equals to
+backspace now we'll
+delete the letter so we'll write here
+backspace and inside the body of this LS
+if we'll write
+if a 0 is less than call so we'll write
+here 0 less than
+call
+and call is less than equals to
+width then what will happen is call
+minus is equals to 1 so basically what
+we are doing is we are deleting the
+letter so we'll write here this and
+after this lsip what we have to do is we
+have to write
+here inside the lsf only we'll write
+let current tile so we have to write
+here current tile is equals to document
+dot get element by idid then we'll write
+here row dot two string so we'll write
+here row. two string this is a method
+then we'll write here the same thing
+again and we have to write here call Dot
+two string fine so this is a method
+again we are good with it and the next
+thing we are going to do is we are going
+to write here current tile do inner
+text is equals to null over here
+fine now the next thing we have to do is
+we have to write the code for Enter key
+as well so we'll write
+here after this we'll write here else
+if
+e do
+code is equals to is
+equals to
+enter and what we have to do is we have
+to call the update function
+fine so this is going to be a function
+we are going to create the update
+function after this function so don't
+worry about it now what we'll do is
+we'll write here
+if game is not over so we'll write here
+not game
+over and
+then row is equal 2 equal to
+height and what will happen inside the
+body of this if tag we have to write
+here game over is equals to
+true and we have to write here
+document dot get element by ID and we
+have to get the ID of the answer so
+we'll write your
+answer dot inner
+text is equals to word so we are going
+to print the word fine if the row is
+equals to height and the game is not
+over so basically if we have all the
+blocks filled we have all the rows
+filled and if the last row is also
+filled then what will happen is it will
+print the answer in word so it will
+print the word as the answer fine so
+save it now move back to the browser and
+we'll
+see so you can see as of now this thing
+is not working but we have no error over
+here so let's refresh it once and you
+can see there's no error still so I
+guess it will work fine after
+we'll do the update function as well so
+let's write over here what we are going
+to do is we are going to create the
+update function for rest of the things
+we'll check the input given by the user
+here only so what we'll do is we'll
+write your
+function
+update and what we have to do is we have
+to write here a variable so let's say
+let guess is equals
+to null for now we are going to take
+variable guess and then what we'll do is
+we'll write
+here
+document. get element by ID now what we
+are going to do is we are going to use
+the answer so we are going to write here
+answer dot inner
+text is equals to null for now now what
+we have to do is we have to string up
+the guesses into a word so basically
+what we have to do is we have to take
+all the letters from a particular row
+and we we have to pile them up in a word
+so what we'll do here is we'll write
+here four let's take a variable C is
+equals to Zer we'll write here C is less
+than width so let's write here C is less
+than width and
+C++ fine now what we'll do is we'll
+write here
+let current tile is
+equals to
+document. get element by
+ID and we have to write here again row
+dot to
+string
+plus then we have to put a hyphen over
+here then we have to put a plus and
+we'll write here call Dot two string
+fine now the next thing we have to do
+here is we have to take another variable
+so we'll write here let
+letter is equals
+to current tile dot inner
+text so we'll write here current tile do
+inner
+text and then what we have to do is we
+have to
+add this value to a gas variable so
+we'll write here gas plus is equals
+to letter
+fine so we are done with this for Loop
+now the next thing we have to do is we
+have to update the value of guess and we
+have to change the guess to lower case
+now so we'll write here
+guess
+dot to lower case fine so we have to
+write here to lower
+case this is again a method so we have
+to put parenthesis over here this is
+case sensitive basically then we'll put
+it on the console so we'll write here
+console. log and we'll write here guess
+fine now what we are going to do is we
+are going to check if the guest is
+present in the guest list or not fine so
+for that what we are going to do is we
+are going to write
+here so let's put some space over here
+we'll write here if
+not guess list dot
+includes what guess if the guess list
+does not not include the guest so what
+will happen
+is we'll write here document dot get
+element by ID and we are going to write
+here answer so instead of answer what
+will be there is dot in a text is equals
+to not in
+the word list or not in word list
+basically over here we'll write not in
+word list
+and that's it
+fine now what we have to do is we have
+to write here
+return we have to return this thing so
+that's it we are done
+with this guess part now the next thing
+we are going to do is we are going to
+start processing the guest we have so
+for that what we'll do is we'll take a
+variable correct the initial value of
+correct is going to be
+zero and let's say we have another
+variable letter
+count fine so we are going to
+take so basically what we are going to
+do is we are going to keep a track of
+letter frequency so that's why we are
+doing
+it now what we have to do here is we
+have to write
+here for we are going to use another for
+Loop so let's say we have a variable I
+with initial value as zero then we have
+I is less than
+word.
+length and we have i++ over here fine so
+basically we are done with the for Loop
+let's write inside the body of this for
+Loop what we'll do is we'll write
+letter is equals to word and then we
+have to check the word so we'll write
+here I then we'll use
+if letter count
+count of
+letter and we'll write here inside the
+body of this if
+statement letter
+count
+letter plus is equals to 1
+fine now what we'll do is we'll write
+after this else now inside the body of
+else what we'll do is we'll put the
+letter account to one so we'll write
+here letter count now inside this we'll
+write
+letter is equals to one
+fine so basically what we have to do is
+we have to write here after
+this console Dot loog and we have to put
+the print the let account
+fine so till now we are done with this
+now what we'll do is we'll check for the
+first iteration we'll check for all the
+correct ones first so what we'll do is
+we'll write here after this for we are
+going to use another for Loop for this
+so let's say we have a variable C the
+initial value of C is set to zero we'll
+check the width of C so we'll write here
+C is less than width then what will
+happen is c will increase so we'll write
+here C++ now inside the body we'll write
+let current tile is equals to document
+dot get element by ID now we are going
+to write here the same thing again row.
+two
+string we have a method as row. two
+string now we have to put a hyphen over
+here then we have to
+put call
+Dot two string over here
+fine now we have to take the letter
+variable so we'll write here letter is
+equals to current tile do inner text so
+basically it has the value of the
+current tile so we'll write here current
+tile do inner text so is it in the
+correct position now we are going to
+check it fine so we'll write here
+if word so what is the word c is equals
+to is
+equals to
+letter then what will happen
+is the current tile value so we'll write
+here currenti dot class list dot add so
+basically we are going to create a class
+for correct which will change the
+background color of that particular key
+and of that
+particular box or tile fine so we'll
+write here correct so we are going to
+create this class in the CSS part now
+after this what we have to do is we have
+to write here let key tile key tile is
+equals to document dot get element by ID
+so we have to write
+here key plus letter
+fine then we have key tile dot class
+list dot remove so we
+have to write here the present
+class and then we have to write here key
+tile dot class list do add the correct
+class so we'll write
+here correct fine so we are going to
+Define these two classes in the CSS
+part now the next thing we have to do is
+we have to increase the value of correct
+by one so we write here correct plus is
+equals to 1 fine then we have let
+account and we are going to decrease the
+value of let account by one so we'll
+write
+here minus is equals to 1 let's put some
+space over here as well so that it will
+look good to you guys now we are done
+with the let account as well so what
+we'll do next
+is we are going
+to write here after this particular if
+statement so right here we are going to
+write
+if correct is equals to is equals to
+width then what will happen is game over
+will change
+to True
+fine this is another condition we have
+now what we have to do next is we have
+to write
+here so basically what we are going to
+do is we are going to print the
+console or we can say we are going to
+print the letter account on the console
+so we'll write here let count inside
+console.log and now what we'll do is
+we'll go again and Mark which ones are
+present but in the wrong position that
+means the yellow color ones right so
+we'll write here after
+this console.log we'll write for we are
+going to use another for Loop so we'll
+write here let C is equal to 0 again C
+is less than the width so we'll write
+here C less than width then we'll
+increase the value of C by one so we'll
+write here C++ then we'll write here
+let current
+tile is
+equals to document dot get element by ID
+so we are going to write here row dot to
+string and then we have this hyphen over
+here and and we'll write here
+plus all do two string fine so we are
+going to take the values of these and
+then after this what we are going to do
+is we are going to set the value of
+letter variable so we'll write here let
+letter is equals
+to what's present inside the current
+tile so we'll write here current tile
+dot inner text
+and the next thing we are going to do is
+we are going to skip the letter if it
+has been marked correct so for that what
+we have to do is we have to use the if
+statement so we'll write here
+if not
+currenti DOT class list
+dot contains what it contains is the
+correct class so we'll write here
+correct if it contains correct what will
+happen
+is we'll check if it is present in the
+word we have to make sure that we don't
+double count right so what we'll do is
+we'll write here again inside this if
+statement we'll take another if
+statement and we'll write here word
+dot
+includes now we have to write
+here
+letter and we have to mention it over
+here after this we have to write here
+letter count count now what we have to
+do is we have to write here
+letter and we have to write here greater
+than Z fine now what will happen is
+we'll write here current tile current
+tile
+dot class list do add we have to add it
+to present class so we'll write here
+present
+fine now what we have to do is we have
+to write here let
+eile is equals
+to document do get element by ID what we
+have to do is we have to write here key
+plus letter
+fine okay so we have to write here after
+this what we have to do is we have to
+take another if fine so we'll write here
+if not
+key tile dot class list dot contains
+which class the correct class so we'll
+write here
+correct and we'll write here inside
+this keyti do classlist do add but we
+have to add over here is
+the present class fine now what we'll do
+is
+will deduct the value of let account by
+one so we'll write here let account and
+we have to pass letter inside here and
+we'll write here minus is equals to 1
+fine now what we have to do is we have
+to write the code for else as well so
+we'll write here
+else now what we'll write inside else is
+currenti do classlist do add which class
+we have to add now is the absent class
+fine so we'll write here absent we are
+going to describe this class or we are
+going to Define this class in the CSS
+part later on so for now we have to
+write here absent and we have to change
+the value of key tile so we'll write
+here key tile is equals
+to document dot get element by ID we
+have to write here again key
+plus letter fine let's put a space over
+here and that's
+it what we have to do is we have to
+change the key tile class as well so
+we'll write
+here key tile
+dot class list dot add which class we
+have to add again is the absent class
+fine we are almost done with the
+JavaScript part as well what we have to
+do is we have to start a new row for for
+a new word so we'll increase the value
+of row as row plus plus equals to one
+start a new row and we have to change
+the column value to zero again fine so
+basically we are done with it so before
+we move on to the final outcome let's do
+one thing let's go through the CSS part
+once again and we'll Define these three
+classes the correct present and absent
+class fine save the JavaScript part here
+save it now and let's move back over
+here and what we'll do
+is we'll write after this tile class
+what we'll do is we'll write over
+here do correct we are going to define
+the correct class first so the correct
+class the background color is going to
+be this one hash
+3fc and the value is
+031 so the green color basically the
+font color will change to White so we'll
+write here color as white and then we
+have border color so border color will
+also change to White fine then we have
+the present class as well so we'll write
+here present and inside the present
+class the background color will change
+and the value of background color is HH
+F 5 c e 23 fine so this is basically
+yellow color so
+the color and the background color will
+remain the same
+so okay so we have to write here border
+color not background color so we'll
+write here border color and again we are
+going to define the Border color here
+fine so we'll write border
+color so border color is going to be
+white in this case as well now we have
+to define the absent class as well so
+we'll write here absent
+for the absent class the background
+color will change to gray fine so we'll
+write here
+hash
+787
+C7 e fine so this is the gray color we
+have the color is going to be
+white and then we have the Border color
+fine so the Border color is again going
+to be
+white that's it we are done with
+everything now save the program save the
+JavaScript part and the HTML part once
+again move back to the browser and here
+you can see we have a program so if we
+click on the keyboard so it's not
+working as of now maybe we have some
+error over here so let's check it out
+once again we'll move to the JavaScript
+part
+and if we can see
+here key tile is fine so we have to
+write here key tile like
+this and let's check the other key tile
+as well so everything else is fine save
+the program now save the CSS part and
+the HTML part as well move back to the
+browser and I hope this will work now so
+you can see it's working as of now now
+we have written over qu you can see it
+says not in word list we have qu over
+here so the word we have is title let's
+write title over here and you can see
+the second line is not
+working so we have to get back
+to this and we
+have save it now move back to the
+browser
+okay it's working
+now and you can see so the word we have
+here is hyped so let's try to write okay
+we have to remove this first that's why
+it was not working so we have to write
+here another word let's say we have a
+word mango click on enter and you can
+see now it's working fine now the word
+we have here is hyped so we'll write
+here
+hyped click enter and you can see we
+have all greens over here you can see
+the word count as well we have h y p e d
+as
+11111 and we have all the words here in
+the console so you have seen here the
+program is working totally fine the task
+is done here and with that we come to
+the end of this Wordle game tutorial I
+want you guys to do something more
+interesting with this game you can do
+anything you want to so if you enjoyed
+watching the video do give it a thumbs
+up comment your doubts below and we'll
+answer them for you thank you so much
+for being here watch out for more videos
+from us until then keep learning and
+stay tuned to Simply
+learn hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn ner up and get certified
+click here

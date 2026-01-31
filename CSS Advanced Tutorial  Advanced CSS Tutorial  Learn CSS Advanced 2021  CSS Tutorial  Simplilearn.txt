@@ -1,0 +1,352 @@
+hello everyone
+welcome to this tutorial on css advanced
+functions by simply learn
+in this video we are going to learn some
+of the more advanced features that can
+be used to optimize your web page and
+add some extra features to it
+so let's get started so the first
+function we are going to discuss is css
+sudo class
+a css sudo class is a keyword added to a
+selector that specifies the special
+state of the selected elements
+sudo class lets you apply a style to an
+element not only in relation to the
+content of the documentary but also in
+relation to external factors like
+history of the navigator the status of
+its content or the position of the mouse
+like hover which lets you know if the
+mouse is over an element or not
+so
+the first sudo class we are going to
+discuss is css hover
+this sudo class is used to add a special
+effect to an element when our mouse
+pointer is over it
+let's work an example to understand how
+this works
+so we are on our sublime text editor and
+we have added a standard wallet to it
+so first i'll create a box element
+we get the div class box
+let's save this and see right now what
+is the status of our page
+so as you can see we have this
+simply learn tag and the heading that we
+have given and the color changes when
+you hover over me
+now add a style tag to define the
+styling of the box
+so
+we'll keep the background color of the
+box as
+pen
+keep the width to 300 pixels
+and height
+to 200 pixels
+we'll set the margin to auto
+let's keep the font size to 40 pixels so
+that we can see the text clearly
+and will align the text to the center
+just save and go back to the page
+now you can see
+we have this box with the tag the color
+changes when you hover over me
+now to add the hoover effect you just
+have to mention the class
+with semicolon and hover so we'll
+mention the class box
+with a semicolon and hover
+will mention the background color to
+which the box will change any over our
+mouse
+so we will keep the background color to
+say a cn color
+just save and go back to the page
+so if you refresh and when you hover
+over it you can see the color changes
+so
+this is how the pseudo hover class works
+the next photo class we are going to
+discuss is an active pseudo class
+the active sudo class represents an
+element that has been activated by the
+user either by pointing a device or by a
+touchscreen device
+let's work on an example to understand
+how to use the active class to change
+the color of active elements the
+possible values could be any color name
+in any valid format
+so we'll use the same example with some
+minor changes
+first
+let's change this text here
+we'll keep it to click here
+to see the effects
+we keep this part as same and instead of
+over here we will use the active pseudo
+class so
+we type active and we'll keep the
+background clear to sean
+let's text align this h1 to the center
+when you refresh and go back
+so
+you see here it is click here to see the
+effects now
+to see the difference now you can see
+when we are hovering over it the color
+does not change it instead of it when we
+click on it the color changes
+so
+this is how the active hover class works
+the next advanced property we are going
+to discuss is a css pseudo elements
+a css sudo element is a keyword added to
+a selector that lets you style a
+specific part of the selected element
+you can use one sudo class element in a
+selector
+it must appear after the simple
+selectors in the statement
+as a rule double column should be used
+instead of a single column this
+distributions the pseudo classes from
+the pseudo element so the first pseudo
+element we are going to discuss is the
+first letter sudo element this pseudo
+element applies tied to the first letter
+of the first line of the block level
+element
+let's work out an example to understand
+this better
+just delete everything
+so let's add some content to the body
+and we'll add an h1
+which says welcome
+to simply learn
+and we'll add an h2
+which says
+this is an example
+of first
+letter
+sudo element
+let's add a style tag
+we align the text in the body to the
+center so we'll use text align
+center
+let's just give proper spacing here
+now to this h1
+tag we'll add the first letter sudo so
+to add the first letter sudo element
+just use the double column and type
+first
+letter
+we'll keep the font family of the first
+letter assay lucida
+calligraphy
+there's a spelling mistake
+we will keep the font size to 3
+centimeters
+we'll keep the color to red
+and just add a text shadow
+for better animation
+so we'll keep the text shadow to 5
+pixels
+8 pixels
+and pixels and color cn
+now when you save and go back
+just refresh
+so this wc is a first letter pseudo
+element
+as you can see we have chained this
+first letter with the proper shadowing
+of a cn color and a different font size
+so this is how the first letters
+pseudo element works the next one we are
+going to discuss the before pseudo
+element
+the before sudo element can be used to
+insert some content before the content
+of an element
+let's work out an example
+so just add the standard waller plate
+inside the body
+let's add
+welcome to simply learn
+we'll add the text inside the queue tag
+the queue tag defines a short quotation
+so inside the queue tag
+we'll add welcome
+closed
+and again queue tag
+simply learn
+now that we have the text inside the
+body let's add the styling
+so we'll keep the font size to of all
+the
+text to 30 pixels
+this is the all selector we have used
+font size 30 pixels
+now before the text we are going to add
+some symbols so we will use double
+column q before
+we'll add the content with sun symbol
+like this
+will keep the color of this
+symbol to blue
+and we'll use the after sudo class to
+add the content
+like this
+we'll keep this color to red
+now that we have everything in place
+let's go back to see how it looks
+you can see the symbols before and after
+our text so this is how the before
+studio element works
+so the next function we are going to
+discuss is css loader
+the css loader is an animation that
+shows the wizard about the page when it
+is loading
+it is helpful when a page takes some
+seconds to load the page content it is
+similar to the buffer sign so let's see
+how to create a
+loader
+so i hope you remember the concept of
+the keyframes and animations
+if you want to revise the concepts you
+can watch the previous videos on the
+keyframes and animations from the
+playlist
+so
+let's create the loader
+we have the standard wall applied
+so inside the body tag
+just add the center tag and inside it
+will add one h1 which says
+welcome to simply learn
+we'll add
+five div tags with the class a1 a2 a3 a4
+and a5
+just copy paste it five times
+so this is a1 a2
+a3 a4
+and a5
+let's open our style tag
+inside our style tag we'll first add
+color to our h1
+so
+let's keep the color
+of our h1 to orange
+now comes the div tag
+so for the div tags
+we'll keep the display to block
+keep the position to absolute
+we set the width and height to 10 pixels
+each so width 10 pixels
+and height 10 pixels
+we'll use the cat function to determine
+the left margin so to use the calc
+function to add calc
+fifty percent
+and minus one em
+the calc function performs a calculation
+to be used as a property value
+will keep the border radius to say 1.3
+am
+em is related to the font size of the
+element
+1.3 em means 1.3 times the size of the
+current font
+we'll use the transform origin function
+with the value one point three em
+and two em
+the transfer margin property allows you
+to change the position of the
+transformed elements
+2d transformations can change the x and
+y axis
+keep the animation
+to rotate
+i will keep the animation iteration
+count
+infinite
+i will keep the animation duration to 2
+seconds
+let's save and go back to the page to
+see how it looks at this point
+so as you can see we have our heading
+and
+you cannot see it but we have a loader
+ready
+and we just have to add some keyframes
+and animations here
+so
+let's define
+keyframes
+with the name of the animation rotate
+so at zero percent
+we use a transform
+function to rotate it to
+zero degrees
+just copy copy this
+at hundred percent when it's complete
+it'll rotate to the complete 360 degrees
+so here we give the value 360 degrees
+now let's design each of the
+classes here that we have defined
+so
+dot a1
+the animation delay
+will be of 0.1 seconds
+so for each of the classes that we have
+here we have to define them with a
+different color
+so that when the loader appears we can
+see them clearly with the different
+colors so
+for this
+a1 let's keep the background color to
+say san
+just copy paste it
+so that we don't have to write down code
+again and again
+three
+four and five
+let's make changes here
+so for the a2
+we want it
+to appear after 0.2 seconds
+with the color pink
+let's keep this to 0.3 seconds
+the color purple
+0.4 seconds
+green
+0.5 seconds let's color black
+we kept the animation delay to so close
+like 0.1 seconds point two seconds point
+c seconds so that the
+loader appears in a complete sync with
+each other
+so just save the file and refresh and go
+back to the page
+now you can see this is the loader we
+have our heading and
+this is like a buffer
+and it will show when you have some
+content to load
+so with this we come to an end of this
+tutorial i hope you have learned
+something new subscribe to our channel
+to stay updated on more such content
+thank you and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

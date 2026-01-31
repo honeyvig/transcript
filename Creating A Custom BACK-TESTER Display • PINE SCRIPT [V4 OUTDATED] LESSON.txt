@@ -1,0 +1,1009 @@
+hey traders welcome back to another
+panscript video in today's video i'm
+going to be showing you how to add
+a visual back tester to your strategy
+scripts so this is a pretty cool feature
+it shows how many trades your script
+took what your win rate was and what
+your ending balance was uh shows your
+dollar return your pip return your max
+drawdown and return as a percentage
+and this is all based on
+a setting in the settings menu
+where you can input your starting
+balance your risk per trade and there's
+an option here to turn on or off this
+feature so if that sounds like something
+you'd be interested in adding to your
+own scripts stick around and i'll show
+you how
+so for today's lesson i'm going to be
+using a script that we use in a previous
+lesson just to save time today's lesson
+is not about the strategy script itself
+it's about adding this little back
+tester thing
+to your existing scripts or future
+scripts you make so for today's lesson
+we're going to be working with the
+hammers and stars strategy script that i
+showed you how to create in a previous
+lesson there'll be a link to that lesson
+in the video description if you haven't
+seen it and you're interested in how
+this script works
+but for today i'm going to maximize my
+screen
+open up the source code to the script
+i'm going to remove all of the back
+tester code
+and we'll start from scratch and i'll
+show you how i added this to the script
+line by line so here we are with just
+the standard
+strategy script if you open up the
+tester we have all our details here but
+one problem with the backtester system
+for me as a forex trader is i like to
+trade a position size that is equivalent
+to a percentage of my account balance so
+i usually trade one percent
+two percent maximum depending on
+the strategy and the tradingview
+backtester system doesn't allow you to
+reflect that information on the
+backtester system so what my code is
+going to do when we write it out is it's
+going to
+use the same strategy tester information
+but display that information as if we
+were back testing using a fixed position
+size percentage of our account balance
+so without further ado let's get into
+the lesson so i've written this code out
+in such a way that it should be copy and
+pastable into any script you write
+by the way if i get
+start looking sweaty in this lesson
+that's because it's coming in the summer
+here in australia and it's bloody hot
+today
+so the first thing i do here since this
+is like a module it's a copy and
+pasteable block of code
+i like to comment it into its like like
+comment the beginning and ending of this
+block of code so i just called this
+begin
+tester code
+i'll also add on the
+end tester code
+and now all of our tester code our
+custom tester code is going to fall
+between these
+comments and i'm going to add a bunch of
+white space on the bottom here so that
+my footer doesn't get in the way of the
+code all right so the first thing we
+need to do is declare our balance
+tracking variables and we have a bunch
+of those here we have
+um actually i'll just copy and paste
+these over to save time
+because it's not important that you
+watch me write these out
+we have a bunch of persistent variables
+here and if you've watched any of my
+previous lessons you know that
+persistent just means these variables do
+not reset on each bar that prints on our
+chart once they are declared they stay
+as this value until we overwrite the
+value later if we did not have var on
+the end of these then on every new bar
+that prints on our chart these
+variables would be reset and we don't
+want that these variables are supposed
+to track our strategy performance over
+the
+historical price action on our chart so
+we want these to be persistent so we use
+the var operator so we have our account
+balance this is our current balance we
+have a starting balance as well which
+we'll get to in a second but this is our
+balance that updates over the course of
+historical testing we have our current
+drawdown our max drawdown our maximum
+balance this is used for calculating our
+drawdown percent then we have our total
+pips uh long winds short winds i don't
+actually think i use these in this
+particular script let me just check
+yeah i don't use these particular
+variables in our script so we can get
+rid of these but if you wanted to
+you could add
+a tracker that tracks how many long
+trades won and how many short trades won
+for today i'm going to keep it as simple
+as possible i don't want to over i don't
+want to overload you guys with too much
+information so we're going to stick with
+total pips total wins total loss and
+this will the total wins and total loss
+will give us our overall win percentage
+um these are the only variables we're
+going to be tracking today but you can
+track all kinds of things so like if i
+add on the latest version of my ultimate
+pullback indicator that i'm working on
+if i hide the hammers and stars strategy
+once this loads it takes a little while
+because it's a very long script
+nearly a thousand lines of code now so
+it takes a while to compile there we go
+so let me go to a market that it
+performs quite well on
+so here we are on euro dollar one hour
+chart
+um
+also let me turn off
+my indicator values just temporarily so
+it doesn't draw over the top of this and
+i'll turn off our indicator arguments as
+well just because i have my screen
+resolution so high that this is going to
+draw over the top of our
+tester thing
+if i turn on my draw back test results
+and turn all of these on you can see
+that my ultimate pullback indicator is
+tracking my average risk reward
+my wins losses long wind percentage
+short win percentage break even rate
+this is just using a one-to-one
+fixed target at the moment but if i were
+to change
+my exit reason here to like say use a
+higher close lower close exit my average
+risk reward will update so now we have a
+1.18
+average risk reward with a 51 win rate
+and we had a 58 return with a 15 max
+drawdown let me turn this exit reason
+off um we also have our max adverse
+excursion and our max favorable
+excursion so this is how far price went
+against us
+before hitting our target is our max
+adverse excursion our max favorable
+excursion is how far price went
+towards our profit target before coming
+up and stopping us out and then i have
+my danger zone which is the minimum win
+percentage i need in order to turn a
+profit if the win rate falls below this
+then it's not profitable and so if we go
+out to a different time frame
+and try and find a time frame where it's
+not profitable here we go you can see my
+win rate turns red because 47 percent
+with a one-to-one risk reward profile is
+not profitable it's not above our 50
+danger zone and this danger zone updates
+based on our average risk reward so if i
+turn on
+this exit reason again you can see our
+danger zone has changed because we have
+a 1.14
+average reward
+so
+the whole reason i am showing you this
+is just to show you what's possible with
+displaying
+your custom back-tested data onto your
+chart it makes the back-testing process
+significantly more efficient and it
+makes it easier for you to identify
+markets that may be profitable to trade
+with your particular strategy anyway
+let's get back to
+our
+code so we have all of our persistent
+balance tracking or performance this
+should probably say performance tracking
+variables
+now let's
+check
+when a trade is closed for profit and we
+can
+track our performance metrics
+based on profitable trades and then we
+can track our losing trades as well so
+this is uh detect
+winning
+trades
+so if strategy.win trades
+is not equal to strategy.win trades on
+the previous bar this means that our
+winning trades has changed the strategy
+inbuilt strategy variable win trades has
+changed which means we've won a trade
+and so we can now update our
+performance tracking variables based on
+this if condition so the first thing
+we're going to do is increment our
+balance our trading balance actually
+before we do this i need to add in
+our start balance as a user input and
+our risk portrayed as user inputs so
+let's scroll all the way up to our user
+input settings here
+and i'm going to add my back tester
+settings above my pi connector and auto
+view settings section i'm going to paste
+that in there and i'll just explain what
+these are we have our start balance
+which is just our starting balance by
+default set to ten thousand dollars and
+then we have a risk per trade which by
+default is set to one so one percent of
+our ten thousand dollar starting balance
+it will be the risk we put on our first
+trade and this one percent risk will
+adjust based on our account balance so
+if we lose a few trades it'll decrease
+our risks
+our position size if we win a few trades
+it'll increase our position size then we
+have our draw back tester setting so
+this is just a little check box that
+turns on or off our back tester
+display
+so now that we have those added to the
+script we can
+finish our if statement here so if we
+just want to trade that means we need to
+increase our count balance by one
+percent or whatever our risk setting is
+so here we would say
+balance is
+to be set to or overwritten with
+this value which will be balance plus
+our risk per
+trade
+divided by 100
+to convert our whole number into a
+percentage so this is just to make it
+more intuitive for the user
+we could get rid of the divide by 100
+and just have this as 0.01 that would be
+one percent but i think it's more
+intuitive to work with whole numbers
+here
+so
+to convert one into one percent in
+mathematic mathematical terms we need to
+divide one by one hundred to get zero
+point zero one
+and then we need to multiply this value
+by our current balance so multiply by
+balance and then we need to multiply
+this risk
+amount so this will give us our risk per
+trade as a dollar amount or dollar
+figure now we need to multiply that
+dollar figure by our risk reward profile
+so here i can add on rrr
+which is our
+risk reward setting in the settings menu
+and so now when we win a trade our
+balance will be updated it will be set
+to our balance plus our risk dollars
+multiplied by
+our risk reward profile next up i track
+the total pips we've made so for this i
+just add total pips is set to total pips
+plus and then all we need to do here is
+use the abs function this is the
+absolute function so if this this will
+turn a negative number into a positive
+number and for this we can just simply
+minus our entry price
+from our target price so t entry and t
+target
+are the variables that
+track so this is a short trade if we
+have a valid short set up we set t
+target and t entry to the appropriate
+price values
+so by subtracting our t entry from our t
+target and converting that into an
+absolute number so a positive number
+doesn't matter whether this is a short
+trade or a long trade we will get how
+many pips
+we just made on this winning trade next
+up we need to increment our total wins
+tracker by total wins plus one so just
+add one to our
+win counter and then we need to check if
+our
+account balance is greater than our max
+account balance
+then we need to set max balance to
+our current account balance and this is
+used for tracking our drawdown so that
+we can see um how far off we are from
+our
+new equity high so that's it for
+tracking our winning trades next up we
+just need to track our losing trades so
+detect losing trades and for this we do
+the same thing if strategy dot loss
+trades
+is not equal to strategy dot loss trades
+on the previous bar then we've just had
+a change in our losing trade counter
+that means we just lost the trade
+and now we can we can pretty much copy
+this code here release this code here
+and paste it in here and now we need to
+change a few things here so we need to
+subtract
+our dollar risk multiplied by our risk
+reward
+actually we don't want to multiply this
+by our risk reward because our risk
+reward profile doesn't matter for our
+loss it will always be one risk one r so
+we will subtract our
+percentage of our account balance so if
+we just lost one percent of our account
+balance that would be one percent
+multiplied by our account balance would
+be subtracted
+from our account balance that makes
+sense next up we need to subtract our
+total pips but instead of t entry minus
+t target we want t entry minus t stop
+and then we need to increment our total
+loss not our total wins so now we're
+tracking our balance total pips total
+loss the final thing to do is to update
+our drawdown so to do that all we need
+to do is set our drawdown to our balance
+divided by our maximum account balance
+or our equity high
+and then subtract one from that value
+and that will give us our drawdown
+percentage our current drawdown
+percentage and finally we need to check
+if our current drawdown is lower than
+our max drawdown
+then we want to override our max
+drawdown with our current drawdown so
+this will track our maximum drawdown
+from our
+maximum account gain so
+every time we hit a new equity high as
+soon as we encounter a losing streak
+this will track our worst losing streak
+over historical price action or losing
+period it doesn't have to be a losing
+streak and then now that's it basically
+let me save the script to make sure we
+have no errors
+okay so everything is fine the last
+thing we need to do is display this
+information and to do that i use the new
+pan script feature of tables so we can
+use tables to display data onto our
+charts now and this is how we do it
+so
+we need to prepare our stats table first
+and to do that i use another persistent
+variable var table so we're declaring a
+new table and this table is just going
+to be called test table since this is a
+back testing display table
+and i'm going to set this to table dot
+new
+and then we need to give it a couple of
+arguments for this
+table.new function
+the first one is where we want to
+display the table so i'm going to put my
+table as
+position dot and then here are all your
+options so you could add a setting to
+the settings menu if you wanted to and
+the user could move this dis um this
+display table anywhere on their chart
+i'm just going to leave mine in the top
+right hand corner for now but i
+encourage you to play around with your
+positions
+especially if you prefer your
+table to be displayed somewhere else
+down on the bottom left is a good place
+for it as well because it's outside of
+price action
+but i'm happy with having in the top
+right so i'll leave it there for now the
+next thing we need to do is specify how
+many columns and rows we want in our
+table now it's important that you
+provide the correct
+quantity of columns and rows if you
+provide too few columns or rows and you
+try to add data to those columns or rows
+your script will not compile you'll get
+an error so
+you can have more columns than you use
+but not fewer so for today's lesson
+we're just going to go with five columns
+and two rows so we'll have one two three
+four five columns and two rows next up
+we need to specify we don't need to but
+we can specify our border width and i
+just set mine to 1. this is the distance
+between all of the cells in your table
+next up i'm going to declare a custom
+function this is going to be called f
+underscore fill cell and this custom
+function is going to take a handful of
+arguments the first one is our whoops
+table id that would be this variable
+name so when we use this function later
+we need to pass in our test table as our
+first parameter the next thing we need
+to do is specify which column we want to
+update or which
+column and row we want to fill the cell
+on
+the next one is our row
+the next parameter
+the next parameter is our title
+and then
+the value
+that we want to display
+then we have background color and text
+color
+and to declare or initialize a custom
+function we need to use the equal and
+then right arrow
+operator then we need to indent or tab
+below this function so that the pine
+script knows that all the code under
+this tab
+falls within the scope of this function
+and this function is going to be quite
+simple the first thing i do is just i
+declare my cell text
+and this just combines the title without
+value so this is going to say title
+plus and then
+a string here with a backslash and an n
+so this is an escape character and this
+means
+new line so we have our title and then
+on a new line we add our value and then
+finally to wrap up this function we need
+to use the table dot cell function to
+fill
+the given cell
+on the given column and row with this
+data so to do that we need to pass in
+our table id
+and then the column and the row we want
+to update and then we need to specify
+our
+the text of the cell so we're just going
+to pass cell text into there
+then we need to specify our background
+color that's going to be set to bg color
+and then our text color is going to be
+set to
+text color now that should be okay let's
+save the script make sure that that
+compiles okay and no issues there
+so now the final thing to do is to
+draw our stats table
+now the best practice for working with
+tables is to check if we are on the last
+bar
+on our chart
+so for this i use the
+bar state dot is last confirmed history
+so that would be this bar here
+this is the last confirmed historical
+bar in our chart on this bar our table
+will be drawn onto the chart we don't
+want the table drawing on every bar in
+our chart because we're only going to
+see
+the latest update of the table so you
+don't need to have this if statement in
+your script but it will make your script
+a little bit more efficient on the
+trading view servers when it compiles
+and when it runs
+so it won't be updating your table on
+every single bar on the chart
+it'll only update the table once
+on the final bar when it's
+drawn onto our chart so keep that in
+mind when working with tables
+tradingview have said that it's best
+practice to only update your table on
+the very last historical bar or real
+time bar now before we continue i do
+like to specify a default background
+color for my table
+and then i override this default
+background color if i need to
+so that'll make sense in a moment but
+for now i'm going to set my default
+background color to color dot new
+color dot black with a transparency of
+zero percent so next up we also need to
+check if the user has turned on or off
+the
+drawback tester setting in the settings
+menu so i'm going to indent that if
+statement there and i'm going to add
+another one here that says if draw
+tester
+so if we have the draw tester turned on
+and this is the last bar in our chart
+then we want to draw our table or update
+our table with
+our back tested data so update table
+before we start filling our data we need
+to calculate our dollar return
+so that's going to be set to
+our current balance minus our starting
+balance
+so this will tell us how much um
+how much of a dollar return we've made
+and now we need to use our custom fill
+cell function to fill all of the cells
+on our table that we created remember we
+have five columns two rows
+so to do this we need to call fill cell
+we need to pass in our test table id
+that's this guy here
+we need to specify a column and a row so
+the first cell on our table is going to
+be 0 0 and then 0 1 and then 1 0 1 1 etc
+you'll see in a moment how that works
+then we need to specify our title so the
+title for our first cell is going to be
+our total trades
+and then we need to specify a value
+so for this i'm going to use the
+tostring function so 2 string
+because remember we're adding
+this value parameter
+to
+a string
+so we need to convert any numbers we
+want to display
+in our table to a string using the
+inbuilt tostring function
+so for this i'm just going to say
+strategy dot closed trades
+this will get how many
+trades have been confirmed or like how
+many trades have won and lost
+over our historical price data
+then we need to specify our background
+color i'm going to just leave this as
+our default black
+background color
+and then we need to specify a text color
+and for
+most of our cells it's just going to be
+color.white
+so let's save this script and see what
+happens we should now be getting total
+trades drawn in the top right hand
+corner once the script compiles
+there we have it
+perfect so now all we need to do is fill
+out our table with all of this data here
+and so to do that i'm going to copy this
+line of code and paste it in a couple of
+times
+now i'll explain the row and column
+thing here so for this we're we're
+updating the zero or first column and
+the first row of our chart
+next up we want to
+update the first column but second row
+of our chart remember everything in
+programming starts from zero so zero is
+the first one is the second
+and then next up we want to update the
+second column
+and the sec first row and first
+first row and second column so this is
+just going to be 0 0 0 1 1 0 1 1 2 0 2 1
+etc
+until we've filled out our entire table
+so the next thing i display here is our
+win rate and to calculate that we just
+divide our strategy.win trades
+oops
+by our strategy
+dot
+closed trades and then we need to
+multiply this
+by 100 to convert this into a percentage
+and then i want to add
+the percentage sign to the end of this
+number
+and then we can leave our default
+background color and text color next up
+we have our
+starting account balance so for this i'm
+going to start with a dollar sign and
+then add on our
+start balance
+and then we have our
+ending balance and then same thing here
+dollar sign plus
+our
+balance
+so let's save the script and see if we
+get our new cells updated and there we
+go
+but you can see that we have a lot of
+decimal places here that is not ideal
+for displaying this information so we
+are going to use the truncate function
+that we created
+when i
+showed you how to create this hammers
+and star strategy script there should be
+a truncate function here
+which cuts
+the excess decimal places off any given
+number
+so first we have our win rate with too
+many decimals so here we'll just say
+truncate
+this number to two decimal places and
+then we also have our ending balance
+which needs to be changed so here we can
+just say truncate our balance
+to two decimal places now if i save the
+script these numbers should look a lot
+more readable not quite i need to put
+this
+comma two within these parentheses now
+that should work all right now that's
+fixed we have our decimal places being
+truncated to just two digits
+it looks a lot better much easier to
+read
+so we only have a few more things to add
+here
+that is our return as a dollar amount
+our total pips
+our return is a
+percentage
+and our max drawdown
+so i'm going to copy all four of these
+lines paste them in here and change this
+to two two three three
+and these can stay zero one zero one and
+now our next
+display variable is going to be returned
+the one after that is
+pips
+the one after that is
+return again
+and the one after that is max drawdown
+so our first return is going to be a
+dollar amount
+so for this we're just going to
+truncate
+our
+dollar
+return to two decimal places
+and then we're going to change the
+background color based on whether we
+made money or lost money
+so for that we just check dollar return
+greater than zero question mark if so
+set it to color.green
+otherwise set it to color.red
+next up we have our total pips so let me
+get rid of
+all of these so that's not confusing
+so our total pips
+um the first thing we're going to check
+is do we have a positive number here so
+is total pips greater than zero question
+mark if so then we want to add a plus
+sign in front of
+this value otherwise we just want to add
+nothing because if it's a negative
+number it will have a negative
+sign in front of it it will have the
+minus sign in front of it and i need to
+put this into parentheses
+and then i need to add on our total pips
+truncated to two decimal places so total
+pips my comma two and we're done there
+next up we have our return as a
+percentage so i'm going to do the same
+thing here as we just did for our total
+pips i'm going to say is dollar return
+greater than zero question mark then add
+a plus sign otherwise add nothing and
+now we need to do similar math to our
+win rate we need to divide our dollar
+return by our start balance and then we
+need to truncate that number to two
+decimal places so truncate
+our dollar return divided by our start
+balance
+multiply by 100 and truncated to two
+decimal places and then i'm also going
+to change the background color of this
+cell based on whether we made money or
+lost money so paste that code in there
+if we made money it'll be green if we
+lost money it will be red
+finally we have our max drawdown this
+one is easy again we need to truncate
+the number of those we'll get a million
+decimal places for whatever reason so
+truncate our max drawdown
+multiply by 100 and truncated to two
+decimal places and for our max drawdown
+we want to set the color to red so that
+it's always red
+i think that just makes it more
+intuitive to read
+this tester table
+so
+finally
+we should be done here if i save the
+script hopefully we don't get any errors
+and
+i spoke too soon
+i've got my parentheses all mixed up
+here so i need to add parentheses around
+this value here and then add another
+parenthesis on the end of that so if i
+say the script
+there we go now it's working fine we
+should have everything drawing in the
+top right hand corner here there we go
+perfect now there are a couple of things
+i messed up here we need to add a
+percentage sign on the end of our return
+here and we need to add one on the end
+of our max drawdown so let's get rid of
+that dollar sign there
+and add on a percentage sign and then
+same for our return we need to add on a
+percentage sign on the end there and
+also our total pips we need to convert
+to a whole number so i'm going to use
+the
+two-hole function that we created when i
+showed you how to
+create this script in the previous
+lesson again a link will be in the video
+description
+we're using this function to convert our
+pips into whole numbers
+so let's save this script and see if
+everything is working okay and there we
+go finally
+we have our back chester display drawing
+properly we have our total trades let me
+open up the strategy tester system here
+you can see that our win rate is the
+same as this
+our total trades is the same as this
+our starting balance was ten thousand
+dollars our ending balance was fourteen
+thousand dollars which is a return of
+four thousand dollars or forty percent
+we ended with eight thousand eight
+hundred pips
+this is a daily chart strategy so each
+trade that we win is usually over a
+hundred pips so that's not an unusual
+number to see even though it's quite
+high
+being a daily chart strategy
+these results
+are over several years of data so i
+believe from 2005
+until
+now no here we go 2005. so january 2005
+is when our script began taking trades
+because for whatever reason on orlando
+there are no wicks
+prior to 2005 and this being a hammers
+and stars strategy requires wicks in
+order to detect hammers and stars so it
+doesn't start trading until the 1st of
+january 2005
+and this was the theoretical result of
+this strategy over that time period now
+i say theoretical because obviously it
+doesn't take into account slippage
+missed trades trades that nearly won but
+then turn into losing
+trade because of spread and your profit
+target wasn't filled
+or
+price coming really close to your stop
+loss stopping you out by the spread and
+then continuing on to hit the profit
+target the trading view tester is not
+smart enough to
+understand or accommodate
+account for that information so this
+information should only be taken as a
+very rough guide the way i personally
+use it in my own trading is
+i will just cycle through
+these markets
+and check what its return and max
+drawdown was and its win rate
+and based on whatever risk reward
+profile i'm using if i see numbers here
+that look promising then i will go back
+and manually back test the data to
+confirm that there weren't too many
+trades that were questionable
+and by that i mean any trades that came
+very close to the stop-loss but didn't
+quite hit it and wasn't counted as a
+losing trade in the tester system i
+would manually count that as a losing
+trade and vice versa any trade that came
+down and touched my take profit but not
+i didn't exceed it by my average spread
+on this market i would exclude that as a
+losing trade if the price went on
+to reverse and hit my stop loss
+little things like that and i did do a
+video recently on the limitations of the
+trading view strategy tester system so
+if this is something that is new to you
+and you weren't aware that the strategy
+tester
+isn't as accurate as we might hope as
+traders make sure to go and watch that
+video because it is very important that
+you are
+informed about the limitations of the
+training view back tester system
+anyway with that said
+that pretty much wraps up this lesson
+just before we end let's play around
+with some of these settings so let's
+change our start balance to one hundred
+thousand dollars
+um it doesn't change anything other than
+our return dollar amount and our ending
+amount
+let's try changing our risk reward let's
+try let's try two percent risk that
+should double our max draw down and our
+return
+and so everything seems to be working
+fine so you should be able to
+copy and paste
+this entire block of code into any
+script any strategy script
+the only thing you'll need to track is
+your
+trade entry and trade target apart from
+that
+and you can do that using var variables
+and whenever your script enters a trade
+make sure to save your entry price and
+save your target price and your stock
+price and then this code should work
+just fine so long as you update the t
+entry t target and t stop to whatever
+you call it in your script
+and don't forget to add
+the
+backtester settings to your script as
+well the user input anyway that'll do it
+for today's lesson uh this went on a
+little longer than i anticipated i
+wanted to try and keep this lesson short
+but uh it's quite hard to do as i'm sure
+you've noticed if you've been following
+any of my lessons
+it's quite hard to explain these
+concepts in
+a really short quick and concise manner
+but i hope you found this interesting i
+hope you found this valuable in your
+trading
+um it's quite a cool feature i've been
+going back and adding this to all of my
+scripts you can also add this to
+indicator scripts like i showed you
+earlier with my ultimate pullback
+indicator
+this is a study script if i open up the
+source code here this is a study it is
+not a strategy script but it is still
+displaying the same information the only
+difference with this obviously is that i
+had to
+track
+um how many trades hit their profit
+target how many trades hit their stop
+loss
+and so on basically i had to recreate
+the tradingview backtester system
+in custom code to simulate the same
+thing that the backtester system does
+which if your experience with pinescript
+isn't too difficult you just need to use
+a lot of var variables and track
+when candles hit your stop loss or take
+profit
+and then you can create all kinds of
+cool things here like for example if i
+want to change my
+risk reward to two to one and my break
+even at one to one so when price hits a
+one-to-one
+target my stop-loss comes down to break
+even
+and you can see that my break-even rate
+is being tracked here by the script as
+well so there are a lot of cool things
+you can track with this code and display
+onto the chart for your self or for
+people who use your script
+and anyway i think that'll do it for
+today's lesson before i go make sure to
+check out panscriptmastery.com if you
+want to learn more detailed in-depth
+lessons and tutorials on how to use pine
+script to its fullest potential i also
+have my indicators course over there
+where you can get the source code to
+this script this ultimate pullback
+indicator
+and all of my other scripts every script
+i've ever written and there are dozens
+or over two dozen
+advanced scripts in that course where
+you get the source code and lessons
+explaining why i did what i did and how
+i did what i did
+if you're just a trader and you want to
+use the ultimate pullback indicator in
+your own trading which also by the way
+includes full automation capabilities
+using pine connector
+and autoview then you can sign up for a
+free trial to this indicator over on
+that same website
+pinescriptmastery.com
+um check out the artoftrading.com for
+all of my other
+social media and extra resources lessons
+my blog all of that stuff and with all
+that said i'll leave it there thanks for
+watching see in the next video take care

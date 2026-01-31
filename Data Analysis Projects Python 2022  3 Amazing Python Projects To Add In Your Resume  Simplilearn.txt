@@ -1,0 +1,2811 @@
+hello everyone and welcome to this
+interesting video on ipl data analysis
+by simply alone
+indian premier league that is ipl is one
+of the most popular and exciting events
+in world cricket
+ipl 2022 will begin on 26th of march so
+it's the best time for us and our
+viewers to learn about how to perform
+exploratory data analysis using the
+recently held ipl auction data set
+so in this video all the results and
+insights that you will see are totally
+based on the data we have collected from
+kegel we will leave a link to the data
+set in the description of the video you
+can go ahead and download it
+for this demo we'll be using python and
+jupyter notebook to answer special
+questions
+so let's get started we'll move over to
+our jupyter notebook
+okay so i'm on my jupyter notebook
+and this is the file that we are going
+to use
+so here you can see i have
+some of the cells already filled in
+so this will save us some time and we
+can
+explore this data set in depth so this
+is the file that i'll be using or the
+ipython notebook
+cool
+so first let's go ahead and import all
+the crucial libraries that will be
+needed for our analysis so here you can
+see i'm importing the pandas library the
+numpy library these are for data
+manipulation and numerical computation
+then we have c bond and matplotlib for
+data visualization
+then
+i have imported this warnings
+module
+so that we do not get any warnings while
+running the code
+cool
+so let me just hit shift enter to run
+the first cell
+so here we will import
+all the libraries okay it's done
+now the next step is i'm going to create
+a data frame in the name of ipl
+and here i'm importing the data set
+using the read underscore csb function
+which is part of the pandas library so
+pd here has been imported as pandas i am
+giving the
+data set location followed by the name
+of the data set so here the name is ipl
+underscore 2022 underscore data set dot
+csv is the extension of the file
+so let me go ahead and run this as well
+all right so now we have
+successfully imported or loaded our data
+set
+now the next step let's go ahead and
+explore our
+data set so i'll use the head function
+for this
+ipl dot head
+okay so here you can see the different
+columns we have
+an unnamed column which is actually
+unnecessary for our analysis so we will
+see how to drop this column apart from
+that we have the name of the players the
+base price at which the
+player was sold or whether the player
+was a draft pick so here rashid khan
+from afghanistan pandya then we have
+subman gill these are all
+draft pick and then we have the
+price at which
+the players were listed in the ipl
+auction then we have the
+type of player whether the player is a
+bowler an all-rounder a batsman
+or
+a wicketkeeper
+then we have the cost in rupees this is
+in crores so basically this column tells
+us the
+price at which the player was sold in
+the auction
+then we have the price or the cost in
+dollars
+after that we have
+2021 squad basically
+this means
+in last year's ipl where was the player
+so here you can see rasit khan was
+playing
+for srh the sunrises hyderabad in 2021
+but this year in 2022 he'll be playing
+for gujarat titans similarly hardik
+pandya was playing for mumbai indians
+for past few seasons including 2021 but
+this season is going to play for gujarat
+titans
+so on and so forth
+now
+let's see the total number of players
+that are present in the data set and the
+total columns that are there for this
+i'm going to use
+the shape attribute so i'll write
+ipl.shape
+you can see here there are total 633
+players that were part of the auction
+and this includes the players who were
+draft pick also
+and there are total
+eight columns in my data frame ipl
+next
+let's use the info function to check the
+columns the data types and the total
+non-null objects so i'll say
+ipl dot info which is a function so i
+have to use
+brackets
+there you go so here you can see it
+saves total 633 entries from 0 to 632
+data columns we have total 8 columns and
+then these are the
+different
+column names and
+here you can see the total
+non-null objects
+present in the column
+and here you can see the data types
+and at the bottom you can see the
+memory usage as well
+cool
+now
+the dot columns attribute will return
+the name of the columns in the
+data set so if i say ipl dot columns and
+run it it will give me
+all the different column names that are
+present in the data frame
+now as i said
+the first column which is unnamed
+colon 0 is
+actually unnecessary so we are going to
+drop it for that
+we are going to use the
+dot drop function and then i have passed
+in my
+column name followed by the axis on
+which access is it there and then i say
+in place equal to true which means it
+will
+replace
+and permanently remove
+they are named column from the data
+frame so let's run it and now we'll
+again check
+the head of the data frame you can see
+before we had the
+unnamed column which was the first
+column in the data frame and now we have
+successfully removed it so player
+becomes the first column in the data
+frame
+all right
+now moving ahead
+let's see the total number of null
+values that are present in each column
+of the data set so i'll say
+ipl
+dot i'm going to use the is null
+function
+followed by this sum function
+if i run this you can see here
+the player column doesn't have any null
+values similarly base price and type
+column also don't have any null values
+but you can see cost and rupees and
+cost in dollars have
+nearly 396
+missing or null values the reason being
+those players were not
+picked in the
+ipl auction and hence there was no price
+associated
+and then you can see there were a few
+players who were not part of the ipl
+squad in 2021
+so
+those are being reflected as null as
+well
+now we'll check the
+rows that have
+cost in dollar as null or nan so here i
+have
+used ipl and after that i am passing in
+the column name which is cost in dollars
+and then i have used the is null
+function
+if i run this
+you can
+notice the
+cost in
+dollars column all these values are any
+n or
+null
+and even the same
+rows have
+any n for cost in rupees as well
+cool
+now the
+next task is to
+fill these
+null values or nan values with
+zeros so for that i'm going to use the
+fill
+any function and here i have passed in 0
+so all the null values in the data set
+will be replaced with 0
+for
+cost in
+rupees column and
+cost in dollars column
+let me just run it
+all right
+okay
+now
+we will see the players who were unsold
+in the 2021 auction which means
+we will check the rows that have null
+values for the 2021 squad column
+so what i'll do is i'll say
+ipl
+within
+square brackets i'll say ipl and then
+i'll pass in my
+column name which is 2021 squad
+and then after this i'll say dot
+is null
+so
+this
+cell
+will give us
+the unsold players in the 2021 auction
+if i run this
+you see here
+you mark the 2021 squad column all these
+players were unsold or did not
+participate so hence it has any n values
+all right
+now what we are going to do is we will
+replace all the null values
+that are present in the
+2021 score column with
+not participated
+like how we did in the previous example
+we replaced all the null values with 0
+here we'll replace with
+a text value called not participated so
+i'll say ipl
+i'll pass in my column name which is
+2021 squad
+equal to
+i'll say
+ipl
+2021
+squad
+dot
+fill
+any
+which is the function and here i'll pass
+in a
+text or a string saying not
+participated
+all right
+let's run it
+before that let me just scroll it down
+now i'll run it cool
+now that we have treated the null value
+successfully let's verify it again so
+i'll just say ipl
+dot
+is null
+and then i'm going to use this sum
+function
+if i run this
+okay this is also a function cool now if
+you see we have successfully removed all
+the null values and replaced with either
+zeros or not participated and hence now
+you can see none of the columns in the
+ipl data frame have null value so it
+shows zero
+great
+now moving ahead
+now we are going to add another column
+called
+status
+which will hold two values
+sold and unsold
+but before that
+we are going to
+slice
+our data frame so here i'm looking for
+all the rows where
+cost and rupees
+is greater than
+zero
+and those should be unique and
+i'm storing the value in a variable
+called teams so here you can see we have
+the different teams where the
+cost in rupees is greater than zero
+now
+i am going to create
+another
+column called status so i have written
+ipl
+within square brackets i am passing in
+the column name which is status and
+that will be equal to
+the team
+replaced by
+sold value let me just run it and show
+you the result there you go
+so here you can see we have added a new
+column called status and it has values
+sold
+and unsold
+if i just say ipl
+at the bottom you can see
+the unsold values as well
+cool
+now in the next cell
+we are going to check for duplicated
+players
+so there are duplicate rows in the data
+frame but here the names of the players
+are same but in reality the players are
+different
+so
+it is quite understood that
+different players can have the same name
+so
+to get those names i am using the
+duplicated function and i'll say keep
+equal to false which means i don't want
+to keep those players
+now let's run it
+there you go so here you can see
+lalitha we have
+two entries so lalithyadev here is an
+all-rounder
+whose base price was 20 lakh
+for 2022 ipl
+and
+last year
+he was playing for the delhi capitals
+and this year also
+he is
+sold
+to delhi capitals
+next we have
+lalitha
+who happens to be a bowler so this is
+again different
+so last year
+he was unsold and even this year he
+remains unsold
+similarly we have amit mishra
+who earlier used to play with the delhi
+capitals but this time he remains unsold
+so on and so forth so you can see two
+entries for subham shringa as well and
+shivam mishra
+all right
+now
+let's answer a very basic question
+we are going to find out how many
+players
+participated
+in the 2022 ipl auction
+for that we have already seen
+the total number of rows that were
+present but again i am going to use the
+shape function and within
+square brackets i'm going to say 0 which
+means it will give me the total number
+of rows
+and you can see 633 players were part of
+the auction this is as per our data that
+we have collected from kegel
+up next we are going to find
+how many types of players have
+participated
+so i'm going to say
+types equal to
+say ipl
+i'll use the column name which is type
+and i'm going to find the
+count of
+each type of players that are present in
+the data frame
+i'm going to use the values underscore
+counts function
+and then i'll say type
+dot
+reset underscore index
+if i run it
+okay there is an error here let me debug
+the error
+okay so this should be value underscore
+counts and
+the variable name is types are not type
+so let's run it
+you can see here
+we have the different
+types of players so all rounders there
+are total 242 all rounders are part of
+the auction then we have 215 bowlers 112
+batsmen's and 64 wicket keepers
+now using the above table that we just
+created
+i'm going to
+plot my first
+pie chart
+so for that i'm going to use the
+matplotlib pi function so plt.pi
+i'm using
+dot values since i want
+only the values from this table
+and then
+i'm saying labels equal to types dot
+index
+i've used a label distance of 1.2 to
+maintain some space
+and then this is my format in which i
+want to
+print or show or display the percentage
+of
+distribution i am going to use shadow so
+it says shadow equal to true which is
+another parameter
+or an argument and then i am going to
+start my angle at 60 degrees
+and here i have used a title called rule
+of players participated
+that will have a font size of 15 and
+finally i'm saying plt dot plot
+so let me just run it
+there you go so here we have a nice
+pie chart or a pie plot so you can see
+the different pies here
+we have all-rounder wicket keeper
+batter and bowler
+so majorly
+there are all-rounders in the auction
+followed by bowlers then we have 17.69
+percent batters and 10.11 percent wicket
+keepers which is the lowest
+cool
+now
+we are going to create another bar plot
+or a bar graph that will tell us how
+many players were sold and unsold
+so for this i am going to use a count
+plot so we'll create two bars one for
+sold and the other one for unsold and
+each of the bars will have different
+colors
+one will have orange the other one will
+have pink and i am using
+labels so to label the x-axis and y-axis
+i have sold or unsold by label will have
+number of players the title of my bar
+graph would be sold versus unsold i am
+given a font size of 15 and i am saying
+plt.plot
+now the function that you see here at
+the bottom
+will display the data labels for each of
+the bars
+let me just run it and show you the
+result there you go
+so i have used a figure size of 10 comma
+5
+all right now you can see we have a
+really good
+bar plot which says there were total 237
+players sold and 396 players were unsold
+as per the data we have
+cool
+now
+you can also
+print
+the total sold and unsold values let me
+show you how to do it
+i'll say ipl
+dot we can use the group by function
+and i want to group it by
+status column
+and
+the value that i want to measure is
+the player's
+count
+so i'll say players
+rather player and then i'm going to use
+the
+count function if i run this you can see
+here
+i've successfully grouped the unsold and
+sold players the values are matching
+with
+the bar plot that we just created so
+sold where 237 players are unsold are
+396.
+cool
+now
+we are going to see the total number of
+players bought by each team again this
+is going to be a count plot so basically
+a bar plot
+so here the condition i'm passing is
+in the teams column the value shouldn't
+be unsold
+so
+players bought mints the value should be
+sold so here i am using this condition
+and the rest of the things remains the
+same
+one improvement i have done here is i am
+using x6
+rotation equal to 70 degrees this
+basically means the x labels would be
+tilted by 70 degrees
+now let's see
+the bar plot there you go so here you
+can see i have the title players bought
+by each team on the y-axis we have the
+number of players
+and on the x-axis you can see the values
+have been tilted by
+70 degrees let me just zoom in so that
+you can see better
+and this is the bar plot
+so the maximum a team can purchase is 25
+players some of the teams have also
+purchased 24 22 and 23 players let me
+just
+show you so
+gujarat titans have totally purchased 22
+players
+then
+delhi capitals have total 24 players in
+their squad
+again
+lucknow supergiants have 22 players
+if i scroll and see again bangalore
+loyal challengers or rcb they're all
+challenges bangalore have
+22 players in the team
+and rajasthan royals and sunrises
+hyderabad have
+24 and 23 players respectively in their
+teams
+all right
+now
+we will create three more columns
+called
+retention
+base price
+and base price unit for that
+first of all i am creating a new column
+called retention which is equal to
+ipl base price let me just run it
+and then
+i am going to replace
+these values that are present in the
+list 2 crore 40 lakh 20 lakh 1 crore 30
+lakh 1.5 crore
+with
+from auction
+and i'm saying in place equal to true
+let me just run it
+then we are going to
+treat the base price
+so here
+in the base price
+column i'm going to replace draft pick
+value as 0 so let's run that as well
+and now
+i'm going to split
+the base price
+value into two separate values called
+bree spice unit and base price so
+basically i'm splitting
+on the space
+that i have let me show you how it is
+going to split
+so this is let's see our
+base price column
+what i did was i
+replaced the draft pick values to zero
+and then the rest of the values will be
+split into two columns called base price
+unit so basically it will have the
+unit
+of the base price let's say crores or
+lakhs
+and the base underscore price column
+will have the value which is 2 here 40
+20 20 so on so forth
+let me just scroll down
+and
+run that particular cell
+now to create
+these two columns the base price unit
+column and the base underscore price
+column i have used the lambda function
+and i'm splitting based on the space
+let's just run it
+now i have replaced
+retained with zero
+and
+let me show you the
+final data frame that i have
+so here you can see we have replaced
+the draft pick values in the base price
+column to zero
+and on the right side you can see the
+three different columns that i wanted to
+create
+so one is called retention
+so zeros refer to draft pick
+any other value will say
+the player was picked from the auction
+then you have the base price
+unit so here
+you can see crores
+lacks
+and the value base prices 2
+40 so on and so forth
+cool
+choose from over 300 in-demand skills
+and get access to 1 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more
+now
+let's check how many players were
+retained and bought from the auction
+by each of the teams
+so i'll say
+ipl let me just scroll down
+dot
+i'm going to use the
+group by function
+then i'll
+say team
+comma
+retention
+then i am going to
+use the value
+as
+retention because i want to find the
+count of
+retained players
+then i'll say colon
+minus 1. let me run it
+you can see here
+the different team names because i have
+grouped by team and then retention so i
+have chinese super kings
+from the auction they had picked
+21 players and they had retained
+four players
+coming to delhi capitals delhi capitals
+in the 2022
+ipl auction they picked total 20 players
+and they have retained four similarly if
+i scroll down let me talk about let's
+say punjab kings they have
+pegged 23 players from the auction and
+retained two players from
+the team last year
+talking about
+rcb or all challenges bangalore they
+have picked 19 players from the auction
+and they have retained
+three players
+all right
+now in the next cell of code
+we are going to display the players in
+each team
+based on the different types of players
+so let me just run it and show you the
+result
+so here i am using the same condition
+the value shouldn't be equal to
+unsold
+and i'm going to use another parameter
+called hue for the different colors so
+here i have used hue
+as type because i want to
+show the players in each team based on
+the different
+types
+again i have given my
+title to the bar plot
+and then i have the x label the y label
+and my rotation is 50 degrees now
+if i scroll down you can see the
+different
+types of players here is the legend so
+blue is for buller
+orange or yellow
+it's for all rounder green is for batter
+and red
+which also looks like maroon is for
+wicket keepers
+and on the
+x-axis you can see the different team
+names
+all right
+now let's answer another
+couple of questions so here i have
+what is the highest amount spent on a
+single player by each team
+so to solve this question i'll say
+my data frame name that is ipl
+then i'm going to
+say retention
+equal to equal to
+this should be from auction because you
+want to see the highest amount spent and
+not
+from the retained players
+then i'm going to
+group
+by
+i'll say
+team
+and then
+i'll say
+cost
+in
+let me just copy it from here
+cost in rupees that is in crores
+and
+i'll say
+max
+colon
+-1
+dot
+sort underscore
+values
+i'll say ascending
+equal to false which means i want the
+sorted
+result in descending order
+okay
+let me just
+bring this to the left side and we'll
+run it
+there seems to be some error let me
+check the error it sees
+there's a spelling mistake this should
+be
+team
+let me run it again there you go
+so you can see
+mumbai indians
+have spent
+15.25 crores
+for one of the players and
+this player happens to be shan kissin
+then
+chennai super kings have spent the
+highest amount for
+a player who happens to be a bowler the
+name is deepak chahar they have bought
+him for 14 crores kolkata knight riders
+bought
+shreya's air for 12.25 crores
+and so on and so forth
+so these are the highest amounts spent
+on a single player by each of the teams
+let me scroll down
+now we are going to see the player
+retained at
+maximum value or maximum price
+now if you follow ipl
+the maximum
+price
+at which a player was retained happens
+to be ravindra jadeja
+so let's see at what price was he
+retained
+i'll say
+retention
+equal to equal to
+i'll say
+retained
+then i'll say
+sort underscore
+values
+by equal to
+i'll use the
+same column
+cost in
+rupees
+that's in crores
+i'll say
+ascending equal to
+false
+dot
+head
+and i want to find the top player
+again there's some error
+let's see
+where is the error
+she's ascending equal to false
+dot head
+okay this should be
+sort underscore
+values
+within bracket i should say
+buy
+i think this should be
+fine now let's run it
+there you go
+so you can see here our result is player
+name ravindra jadeja who was retained
+for 16 crores by chennai super kings
+cool
+now the next cell of code will
+display or print the top five bowlers
+who have been picked in this year's ipl
+based on
+their cost in inr
+let me just run it and show you the
+result
+you can see here deepak chahar went for
+14 crores then we have shradler who was
+bought by
+delhi capitals earlier he was part of
+csk
+for 10.75 crores then we have prasada
+krishna who has been bought by rajasthan
+royals this time
+last year he was with keker and he has
+been bought for 10 crore similarly
+lockheed ferguson has been bought by
+gujarat titans
+and he played for kkr last season he has
+been bought for 10 crores while his base
+price was too close then we have avish
+khan
+you can see avishkhan's base price was
+just 20 lakhs and he has been bought for
+10 crores by lucknow super giants again
+and last year he was part of the daily
+capitals
+now you can replace
+this value
+suppose let's say you want to find the
+top five batsman's picked or batters
+picked with the highest amount you can
+just see
+batter instead of bowler and if i run
+this
+you can see here
+sirius ayer was bought by
+kolkata nitriders for 12.25 crores last
+year he was part of delhi capitals
+then you have
+shrimran hitmayo who's from
+west indies he has been
+picked by the rajasthan royals for
+five crores then we have rahul tripati
+shikha dhaban and
+particle
+now if you wanted to check for
+let's say all rounders
+you can replace batter with all rounder
+if i run this
+you can see
+lamb living stone has been bought by
+punjab kings this season
+for
+11.5 crores his beast price was just one
+crore and last year he was part of the
+rajasthan royals
+then we have a player from sri lanka
+asaranga then we have hershal patel
+shahrukh khan and rahul devatia who have
+been
+the top five all-rounders picked at
+highest amount
+cool
+now finally
+we want to
+see the players who were part of the ipl
+last season but were not picked for this
+year's ipl
+so for that what i'm doing is first i'm
+renaming my
+2021 squad column
+this column i want to
+rename it as previous team
+let's run it
+then
+i am going to find out the unsold
+players so here i am saying previous
+team not equal to
+not participated
+and then
+i am using another condition team should
+be equal to equal to unsold and i'm
+going to find out only the player and
+the previous team
+so let's run it and see the result
+so here you can see
+these players were part of the ipl last
+season but
+they haven't been picked this season and
+last season they had played for let's
+say suresh shrine i played for csk steve
+smith was part of the delhi capitals
+sakib hussain was part of kkr if i
+scroll down you have david milan who
+played for punjab kings in 2021
+in morgan
+who played for kkr he also captained kkr
+but unfortunately he was
+not picked this season chris lane from
+australia also
+remained unsold this season
+and to thai we have been cutting aditya
+there are other players as well
+we have kane richardson dhawal kulkarni
+cool so these were the players who are
+part of the ipl season 2021 but
+unfortunately were not picked and
+remained unsold for 2022 season
+cool
+and that brings us to our
+end of this demo session on
+ipl data analysis 2022 so we learned
+how to
+use the different functions
+and attributes that are part of
+the
+python libraries and we manipulated the
+data we visualized the data and
+answered some specific questions
+formula one also known as f1 is a
+motorsport defined by open wheeled
+single seat race cars
+it features the best drivers in the most
+powerful and technically advanced cars
+the sport is governed by the fia that is
+international automobile federation here
+10 teams comprising of two drivers each
+compete in a series of races over a
+period of one year to find out the
+ultimate driver and a constructor
+champion
+in our demonstration we'll be using four
+data sets let me show them one by one
+these are all csv files
+now this is the first data set that
+we'll be using in our demo so if you
+notice the data set does not have
+columns
+names in fact none of the data sets have
+column names so while importing the data
+set we will assign the column names
+using the names parameter
+i'll show that in a
+while
+now this is the results data set
+the results data set has information
+about
+result id
+then we have the race id driver id
+we have
+the constructor id
+grid position
+then we also have information about the
+fastest
+lap then we also have information about
+rank
+the fastest lap speed
+and the status id
+now moving on to the second data set
+which is about
+races
+now this is the second data set which is
+about races so
+it has information about the race id
+the year in which the race was held then
+we have
+the round number circuit id
+then the name of the grand prix so you
+can see here australia and malaysia and
+chinese spanish monaco turkish british
+german
+and others
+then we have the
+date on which the gp was held or the
+gone pre was
+held
+we have the time
+and a url which basically leads to the
+wikipedia page of that particular
+grand prix for that year
+now moving on to our third data set so
+this is our third data set which is
+about
+drivers
+now it has the driver id the name of the
+driver you can see here hamilton rosberg
+alonso
+ryken
+then we have sato
+masa
+button weber and all
+after that we have the
+number code
+then we have the
+phone name of the driver the surname of
+the driver
+and then we have the date of birth of
+that particular driver we have the
+nationality as well
+we have the wikipedia page
+for the
+driver
+now moving on to the last data set which
+is about
+constructors
+so this is the fourth and the final data
+set that we'll be using in our data
+analysis project
+so here we have the constructor id
+then the constructor reference
+in formula one
+and this is the actual name of the
+constructor so we have mclaren
+we have
+bmw sauber williams then we have ferrari
+toyota red bull force india
+we also have jordan jaguar and all
+next we have the
+nationality and the url
+that is the wikipedia page of
+that particular constructor
+now let's head over to our jupyter
+notebook and we'll start with our
+analysis
+here is my jupyter notebook that i'll be
+using for this demo you can see some of
+the cells are already filled this is
+just to make sure we
+save some time
+so using these data sets that we just
+saw and our libraries such as numpy
+pandas matplotlib and c
+we'll answer specific questions such as
+the drivers and constructors who have
+been the most successful throughout the
+history of f1 sport
+then we'll explore the impact of
+starting and finishing positions and if
+the speed of the cars has changed over
+the years
+so let's begin with our analysis
+first and foremost we are going to
+import all the necessary libraries so
+here i am importing numpy pandas
+matplotlib and cbon
+and after that i am writing percentage
+matplotlib inline
+that is to ensure that
+all the plots are embedded in line i'll
+hit shift enter to run it
+take some time there you go so we have
+successfully imported all the libraries
+now the next step is to
+load the data and assign
+column names
+so
+i'll load my
+first data which is results i'll say pd
+dot
+read underscore
+csv
+i'll give my
+file name which is results dot
+csv
+and then using the
+names parameter
+i'll pass in the
+column names so actually i have written
+the column names in a notepad let me
+open that
+so i have this f1
+notepad created which has the column
+names i will just start copying
+the column names
+within the names parameter i'll paste it
+if i scroll to the right you can see the
+different column names that
+have been assigned
+and
+that
+i'm going to say
+comma
+and i'll write
+header equal to none
+i'll close the bracket
+cool
+similarly let's
+import the second data set which is
+about
+races i'll say
+pd dot
+read underscore csv
+i'll give my
+file name which is racist.csv
+and then
+i'll give the
+names parameter this is actually names
+and not name
+okay
+i'm going to
+copy the
+second line
+and i'll paste it here
+and again
+i'll say
+header
+equal to
+none
+next
+we'll import our third data set which is
+about
+drivers
+so i'll say pd dot read underscore csv
+i'll say
+drivos.csv
+then
+again use the
+names parameter
+and i'll copy the
+third line now which has the column
+names
+for the
+drivers data set
+here
+i
+need to give
+another parameter which is
+header
+equal to
+none
+finally we are going to import
+our constructors data set
+it's a constructors equal to pd dot
+read underscore csv which is the
+function present in the pandas library
+i'll say
+constructors dot csv which is my
+file name
+and then again i'll use the
+names
+parameter
+i'll go to my notepad and this time i'll
+copy the
+fourth line which has the column names
+for the constructors data set
+i'll paste it
+and
+here i'll give my
+final parameter that is header equal to
+none
+all right
+now
+let me hit shift enter to
+run it
+okay we see some error here let's debug
+the error it says no such file or
+directory drivers dot csv
+let's see
+where was the issue
+this should be
+driver.csv
+cool now we have successfully loaded the
+data and assigned the
+columns to the various datasets
+now the
+next
+analysis
+is to merge all the data set
+so here i'll create a data frame called
+df and i'll use
+pd dot
+merge function
+first i'll use the
+results data frame that we just
+imported above
+this one
+and
+i'm going to merge it with
+races data frame
+and from the resist data frame i am
+going to take
+specific columns like the
+race id
+then
+i need the
+year
+after that i need
+name
+next
+i'm going to take
+the round column as well
+and
+i'm going to use
+on parameter so
+on parameter
+is actually
+the column that is common to both the
+data frames that is results and recess
+so here my common column
+is going to be the race id because it is
+present in both the data sets
+and i would like to merge
+so for that i'm going to use how so i am
+going to use a left join
+so
+if you know sql you will be aware of
+left join it takes all the rows from the
+left table and only the matching rows
+from the right table
+again going to use the merge function so
+i'll write
+df equal to pd dot
+merge
+i'll say df comma and now i'm going to
+merge the
+ivor's data set
+and
+i'm going to select specific columns so
+i'll say
+driver id
+make sure there are no spelling mistakes
+in the
+column names
+then i'll say
+driver
+ref which is the name of the driver or
+reference
+comma
+and then i want the
+nationality of the
+driver
+all right
+we'll give a comma i'll say on
+which column i want to merge so here the
+common column
+is going to be the driver id
+again
+how is going to be a left join
+into the final
+merge part i'll say again df equal to pd
+dot merge
+i'll pass in my data frame and my final
+data set which i have is about
+constructors
+from constructors we are going to choose
+specific columns so i'll take the
+constructor
+id
+then
+i'll take
+the name column
+and again the
+nationality column of the
+manufacturer
+okay
+here i'll say
+on
+equal to
+the common column i'll use
+constructor id
+give a comma and say how
+equal to
+left again
+cool
+make sure
+you're merging it with the
+right column names so let's run this
+cell to merge
+all the four data sets
+i'll hit
+click enter
+oops there is some error let's see it
+says constructor
+id index
+okay there's a spelling mistake this
+should be
+constructor id cool
+let's run it
+there you go
+now
+the next thing we want to do is to drop
+the unnecessary columns
+so i'll say df dot
+drop
+within the drop function
+we are going to pass in the
+column names i'll say
+number
+then we also don't want the
+position column
+next we have
+position underscore
+text
+after that we have
+labs
+next we are going to drop
+fastest
+lap
+then we will also drop the
+status id
+comma
+we'll drop the
+result underscore id column
+then
+going to drop the race underscore id
+column
+we'll also drop
+driver underscore id column
+and finally we are going to drop
+the
+constructor underscore id column
+and
+i'll say access equal to
+1
+and in place i'll c equal to true
+because i want to remove it from my
+original data frame that is df
+there you go
+now the next
+thing i want to do is i want to rename
+some of the columns so i'll say df dot
+rename
+i'll say
+columns equal to
+now we are going to pass in a dictionary
+i'm going to change the
+rank
+to
+test
+underscore lab underscore rank
+let me give a comma
+now i'll say
+name underscore x
+equal to
+i'll say
+the
+grand prix name so i'll say gp
+underscore name
+next column i'm going to focus is
+the nationality column so i'll say
+nationality underscore
+x
+i'll give a colon the value i'm going to
+pass in is
+driver nationality
+all right
+up next
+we have one column called
+underscore
+y
+and that i am going to change it to
+constructor name
+another comma
+i want to say
+nationality
+underscore
+y
+colon
+change it to
+constructor nationality
+underscore nationality
+finally we have
+driver
+underscore ref column
+and that i am going to replace with
+just
+driver
+finally i'll say
+in place
+equal to
+true
+well
+just verify if all the column names are
+correct
+let's run it
+all right so now we have
+successfully renamed
+the columns
+after that
+in the next cell i am going to rearrange
+the columns so here i am
+using the same data frame and we have
+just renamed the columns so starting
+with your
+grand prix name round driver
+nationality
+and others
+let's run this
+up next
+we're going to drop the
+2019 season data because
+it is incomplete
+so i'll say df equal to
+df
+then i'll say
+here
+not
+equal to
+2090
+let's see how to
+sort the values so i'll say df equal to
+df dot sort underscore values which is
+the function name
+i am going to sort it by
+here
+followed by
+round
+followed by
+the
+position
+underscore
+order comma i'll say
+ascending
+equal to
+first let's say is false
+next i have true
+and then
+i'll have true
+all right
+moving ahead
+now we are going to see how to replace
+the
+put slash
+n values in
+the time column with
+something called nan because the time
+column was not registered when a driver
+did not finish a race or was lagged by
+another driver
+so to do this i am going to say
+df dot
+time
+dot i'm going to use the replace
+function
+and here i'll say
+forward slash
+or backward slash
+n
+and i'm going to replace with
+numpies nan
+i'll say
+in place equal to true
+let me just copy this because we are
+going to use the same
+emitters
+next i'm going to replace the
+milliseconds value
+milliseconds dot
+replace i'll paste it here
+then i'll say df dot
+fastest
+underscore lab underscore
+rank dot
+replace
+paste it
+next i have
+df.fastest.lab
+dot
+time
+theory please
+to that i have
+the next column which is
+speed so i'll say fastest
+underscore
+lap underscore
+speed dot
+replace
+and paste it
+so here
+i'm going to replace
+this particular value
+the
+backward slash
+n with
+nan
+let me run it
+cool
+step i'm going to
+change the data types for
+fastest underscore lab underscore speed
+to float then fastest underscore lab
+underscore rank to float again
+now
+problem here is we cannot convert it
+into an integer because there are
+missing values so we are going to change
+it to float
+again for milliseconds also we are
+changing it to float values
+let me run it
+now
+i'll reset the index
+let me show you how to reset the index
+i'll say df dot
+reset
+underscore
+index
+i'll say
+drop
+equal to
+true
+give a comma and say
+in place equal to true
+all right
+that we have
+done our initial
+processing step of the data set
+now we'll check the shape of the data
+set then we see all the data sets the
+total number of non-null values the
+memory usage and we'll
+check the head of the data set
+now to see the total number of
+rows and columns i'll say print df dot
+shape
+you can see here there are total 24
+197 rows in my data set and there are
+total of 15 columns
+now let's use df dot
+info function
+so it gives me the
+year the grand prix name
+the round number
+driver constructor name grid
+position order total number of points
+time
+then time in milliseconds the fastest
+lap rank
+the fastest lap speed
+the nationality of the driver the
+nationality of the constructor then here
+we have the
+total number of non-null objects
+and then you also have the memory usage
+at the bottom
+finally let's see the
+head of the data frame so i'll see df
+dot
+head let's say i want to check the first
+10 rows
+the yuko
+if i scroll down you can see here we
+have the top 10 rows printed
+and you have the year the grand prix
+name round driver constructor name and
+other columns now let me just
+brief you about what these column names
+stand for
+so the year column that you see here is
+this season that the grand prix took
+place and then we have the
+name of the grand prix
+now the round column is the number of
+the race in each season for example one
+means it was the first race of the
+season and then two means it was the
+second race of the season so so on and
+so forth
+then we have the name of the driver
+that we have the
+name of the car constructor so you can
+see ferrari mercedes red bull renault
+then we have the grid that is the
+starting position before the race
+actually this depends on the
+qualifications which occur one day
+before the race
+then we have the position underscore
+order column this means the final
+position at the end of the race
+then we have the points column that is
+the total number of points scored in the
+race
+next we have the time that is the amount
+of time that took to finish the race
+only the winners time is displayed and
+drivers behind the winner are shown how
+far behind the winner they are
+then we have the milliseconds column
+that is the amount of time that took to
+finish the race in milliseconds
+if i just scroll down
+i'll just move to the
+right
+go to the top
+then we have the fastest underscore lab
+underscore rank that is the order of the
+fastest lab during a race next we have
+fastest lap time that is the shortest
+amount of time that took to complete a
+lap in the release
+then we have the lap speed that is the
+average speed of the
+fastest lap then we have the
+country to which the driver belongs to
+and then we have the
+constructor nationality that is the
+country where the car constructor is
+based out of
+okay
+now here i'm going to
+set my figure size to 10 comma 6 this is
+going to be for all the
+plots that we are going to create
+afterwards
+cool
+we'll create a data frame that will have
+all the grand prix winners
+so here i'm going to say
+driver
+underscore
+winner equal to
+use my data frame
+df dot i'll say loc
+then i'll say
+df
+i want
+the position underscore
+order
+and that should be equal to 1 so which
+means
+the driver
+1 degrees
+and then
+i'm going to use the
+group by function
+i'm going to group it by
+driver
+and
+for values i'll say
+position underscore
+order
+use the
+count function
+followed by
+sort underscore
+values i'll say
+ascending equal to
+false
+change it to
+to underscore
+frame
+dot
+reset
+underscore
+index
+what essentially i am doing here is i am
+finding out
+all the drivers that have participated
+and
+won a grand prix
+next
+i am going to create a
+bar plot so this is going to be the
+first visualization of our analysis
+so i'll say
+sb
+which we have taken in our
+analysis ideally it should be sns but sb
+also will work
+so i'll say sb
+dot
+bar plot
+i'm going to say data equal to
+driver underscore
+winner
+the y-axis i'll have
+driver
+in the x-axis i'll
+have position
+underscore
+order
+then i have
+color equal to
+green
+that i'll set my
+alpha value
+to
+0.5
+or let's say
+0.8
+then
+we are going to
+give a title to our plot so i'll say plt
+dot
+title
+let's say most
+grand prix
+winners in f1
+then we are going to label our access so
+for y label i will have
+driver
+name
+we have
+the x label
+that will have
+number of
+grand prix wins
+and i'll say plt dot
+y
+text
+cool
+let's run it
+and you can see we have our first
+bar plot here now the bar plot
+shows that there are
+a large distribution of
+grand prix events
+only a few drivers in history
+of f1 have won over 20 grand prairie in
+their careers and there are some drivers
+who completely dominated the f1 racing
+and have won over
+50 grand priest in their careers so we
+are going to focus on those
+top five or top 10
+drivers
+in the next section so what i'm doing
+here is
+from the
+above
+result that we just got i'm going to
+filter out only the
+top 10 so i'm going to use the head
+function
+and inside that i passed in 10 if i
+print it
+you can see here
+as per the data that we have
+we have michael schumacher who
+is the
+position order leader with 91 gp events
+then we have hamilton vettel prost sena
+alonso
+then we have stevert clerk and lauda
+the data that we have is
+not the most recent one so if you check
+the actual stats hamilton has actually
+overtaken michael schumacher and has
+won over
+103 close to 103 reeses as of now
+and next we have michael somacker so
+this is not the most recent data
+cool
+now using this data we'll create another
+bar plot for the top 10
+drivers so i'll say sb dot
+bar plot
+i'll say data equal to
+the
+name that we have used that is top 10
+drivers so i'll say top 10
+drivers
+in the y axis we'll have
+the
+driver name
+in the x axis we'll have
+position
+underscore
+order
+for the bars i'm going to use a color
+equal to
+let's say blue this time
+i'll set my alpha value
+to be
+0.8
+and
+i'll say let's say
+line
+width
+equal to
+0.8
+and i'll also give
+an edge color of let's say
+black
+follow the same drill i'm going to give
+a title to my plot so i'll say plt dot
+title
+most
+gp
+winners in a phone
+will give a y label
+that says
+driver
+name
+and then i'll have
+x label which will have
+number of
+on pre
+bins
+cool let me see if everything is fine
+and then we'll
+run this there you go
+you can see we have a very nice
+horizontal
+bar plot that shows the
+top drivers in f1 so as per our data
+that we have we have michael schumacher
+who has won over 91 or close to
+91
+races then we have hamilton vettel
+alonso clark and others
+all right
+in the same way we are going to create
+bar plot for the top constructors that
+have participated in f1
+so here i'm finding out
+all the
+constructor winners so here
+i'm using my position underscore order
+equal to equal to 1 and then i'm using
+the group by
+based on the constructor name
+and then i'm finding the count of
+position order and sorting the values
+in
+descending order and i'm changing it to
+frame or to a data frame
+and to create my bar plot i'm using the
+bar plot function the data which is
+constructor underscore winner
+in the y-axis i'll have the constructor
+name on the axis i'll have the position
+order
+so you can see here i've used color as
+pink and i've given a title x label by
+label
+and white text
+let's run it
+there you go so here you can see again
+the data is
+widely
+spread
+so we have a lot of constructor names
+now
+our next task is to
+check the
+top 10 gpa constructor windows so here
+i'm using the head function and finding
+out the top 10 if i run it
+you can see here
+the manufacturing companies or the
+constructors who have won the most
+number of races
+are ferrari
+mclaren williams then we have mercedes
+red bull tim lotus renault
+and others
+okay
+now we'll convert this data into a
+horizontal
+bar graph or a bar chart
+so that will show the bar plot for the
+top 10
+constructors
+now let me show you how to do it
+so i'll say
+sb which is for c bond dot
+bar plot
+i'm going to say data equal to
+top 10 let me just confirm
+the name we have top 10 constructors
+scroll down i'll say constructors
+y-axis i'll have
+constructor
+on the x axis i'll have
+position underscore order
+then
+i'll say
+color
+equal to let's say we'll use the
+red color for the bars
+then i'll set my
+alpha to
+0.8
+i'll say
+line width equal to
+0.8
+and my
+edge
+color i'll say
+black
+that i'll say plt dot
+title
+say
+top 10
+most
+gp
+wins
+lt dot
+by label would be
+constructor
+name
+and i'll have plt dot
+x label
+as
+number of
+gp
+wins
+cool
+let's run it
+there you go so here you can see we have
+ferrari at the top then we have mclaren
+williams more cities i'm pretty certain
+by
+the end of 2021 season mercedes would
+have gained a lot of wins
+since hamilton
+has been on the top
+for mercedes for quite some time now
+all right
+now
+finally we are going to
+create a
+regression plot that will
+show how
+two variables that is the starting
+position and finishing position
+vary
+so to do that i am going to exclude the
+data points with grid 0 because it skews
+the data so 0 means that the driver
+started from the
+bit lane
+so i'm using this function called reg
+plot
+to plot my
+regression line
+let me run it and show you the result
+there you go
+so if you see here
+we can easily see there's a linear
+relationship between the
+starting and
+finishing position so on the x-axis we
+have the starting position on the y-axis
+we have the
+finishing or the finish place so which
+is what is actually expected right
+now we can also see that
+most races had up to
+25 drivers you can see the density of
+the points here
+but some of the recess also had over 30
+drivers you can see the
+light color blue dots
+next
+we are going to
+check whether the speed of the cars
+changed over the years since this data
+is only available from 2004 onwards so
+we have
+we have taken
+years that start from 2004 onwards
+now let me show you the result
+of this data
+so essentially we are plotting the
+average speed among
+all teams during the fastest lap at
+individual grand prix
+and here on the
+y axis you have the average fastest
+speed in kilometer per hour and then you
+have the different
+gps
+and you can see here the year values
+now
+in general what we see is there's a
+decrease in the average fastest lap from
+2004
+till around
+2015
+for almost all the circuits
+and again from 2015 onward the speed
+started
+to increase
+you can see here there's an increase
+after 2015 there's an increase there's
+an increase here as well
+you can also notice that
+the speed is very different on each
+track for instance if you check the
+italian grand prix which is here
+italian gp has the
+fastest race in the calendar with
+average speed exceeding over
+240 kilometers per hour on the other
+hand if you
+talk about the
+monaco grand prix let me show you if you
+see here
+the monaco gp is the slowest race with
+average speed below
+160 kilometer per hour now this is
+actually expected because the monaco
+grand prix
+has very narrow streets and
+hence the drivers cannot
+drive fast in this circuit
+all right
+so
+so now we are going to look at
+healthcare market forecast
+so as for
+markets and markets.com
+the healthcare analytics market is
+projected to reach 75.1 billion us
+dollars by 2026 from 21.1 billion us
+dollars in 2021.
+now talking about
+india
+statista.com
+india's healthcare sector was about 160
+billion u.s dollars in 2017
+it was estimated to reach up to 372
+billion us dollars by 2022.
+as per rbc capital markets approximately
+30 percent of the world's data is
+generated by the healthcare industry
+by 2025 the compound annual growth rate
+of data in healthcare will reach 36
+percent now that is six percent faster
+than manufacturing ten percent faster
+than financial services and eleven
+percent faster than media and
+entertainment
+now let's see the various applications
+and issues that analytics can solve in
+healthcare
+we will look at drug discovery staffing
+and operation
+and see how analytics can help predict
+diseases
+so talking about
+drug discovery
+now the drug discovery is a very long
+process sometimes it takes about 12
+years and costs way too much about 2.6
+billion us dollars
+now data analytics can increase the drug
+delivery process rate in medical science
+helping to gain faster approval from the
+food and drug administration
+it can help optimize and improve the
+efficiency of clinical trials
+another key development that has
+happened in a number of pharmaceutical
+companies like astrazeneca bayer
+cleansing
+and jensen research and development has
+recently announced a data sharing
+initiative called project data sphere
+these companies have agreed to share
+historical cancer research data to help
+researchers in the fight against the
+disease today
+the database will be available online
+globally and the analytics technology
+would be provided by software vendor sas
+now moving on
+we have
+staffing and operation
+now this is another crucial problem that
+every staff manager in hospital faces
+that is the problem of staff allocations
+at a given period
+understanding how many people a manager
+should put on a staff at any given time
+period can be very challenging
+if you put too many workers the risk of
+having unnecessary labor costs go up
+too few workers you can have poor
+customer service outcomes
+which can be fatal for patients
+so business analysts can use data to
+forecast patient admission trends at
+specific times of the day and provide
+insights to the staff managers to assign
+the right number of staff during peak
+and slow periods
+next we'll talk about
+predicting diseases
+so business analytics can also predict
+trends in the spread of illness allowing
+doctors hospitals medical staff and
+individuals to adequately prepare
+themselves
+for example in the case of coronavirus
+analyzing data to predict future spikes
+in cases can help hospitals ensure the
+staff have enough protective equipment
+and patient beds
+using medical imaging and algorithms
+physicians can detect diabetic
+retinopathy which is a condition that
+damages the eye due to diabetes and
+algorithms can also help detect cancer
+cells in a patient
+detecting cancer at an early stage has
+been a focus area in healthcare for
+quite some time now
+the cancer moonshot initiative by former
+u.s president barack obama initiated in
+his second term relies on advanced
+analytical techniques to pace up the
+discovery of cancer cures by identifying
+the trends and treatments used worldwide
+that have the highest success rate
+now
+let's look at the hand washing case
+study in
+detail so to give you some context
+before the
+mid 19th century
+the science of bacteria was not
+discovered yet
+nobody knew that microorganisms could
+spread diseases back then even hospital
+staff did not follow basic hygiene
+practices
+not even doctors cared to wash their
+hands
+now to be honest we all realized the
+importance of hand washing after the
+world was hit by coronavirus pandemic
+now meet
+dr
+ignaz simelweis
+he was a hungarian-born doctor and
+practiced at the vienna general
+hospital's maternity clinic between 1846
+and 1849
+dr simelweis is regarded as the father
+of infection control for discovering the
+medical benefits of hand washing
+dr simelweis was very disturbed by the
+increasing fatality rate of mothers from
+childbed fever at vienna hospital so
+child bed fever is also known as
+pure plural fever
+it happens due to infections in the
+female reproductive tract following
+child birth
+this child fever was an issue of concern
+throughout europe with some hospitals
+having over 40 percent mortality rate so
+out of every 100 mothers who used to
+give birth at least 40 mothers would die
+in a week or two weeks time
+so the demo case study i am going to
+present now concerns the work of dr
+ignac symbol wise in reducing the risk
+of childbirth fever during childbirth in
+vienna hospital during the mid 19th
+century so he collected and analyzed
+historical data on debts in his clinic
+and established a theory
+of what was contributing to increasing
+deaths of mothers
+now to solve a problem business analysts
+would often need to collect data from
+multiple sources for this demo we'll be
+using three data sets that are publicly
+accessible on kegel and github let me
+go ahead and show you the three data
+sets first
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit scale up by simply learn click on
+the link in the description to know more
+okay so this is the first data set that
+i have which is called the yearly fever
+mortality data set so here you can see
+the first column is about year it starts
+from
+1784
+and it goes till
+1846
+the next column we have is about the
+total number of births that took place
+at the vienna general hospital maternity
+clinic and then we have the total number
+of deaths reported from child bed fever
+next
+then we have the
+fever mortality per clinic so
+in the vienna hospital
+there were two separate clinics that
+operated between
+1833 and 1846
+birth one
+column represents the total number of
+births that took place
+in clinic one
+similarly
+that's one column represents the total
+number of deaths that took place in
+clinic 1 of the
+maternity clinic at vienna general
+hospital births 2 and that's 2
+has the information about the births and
+deaths that happened in clinic 2.
+then we have the
+final data set
+this data set is about
+monthly debts which starts from
+january
+1841
+till
+march 1849
+we have the total number of births and
+the total number of deaths and this
+monthly underscored deaths is only for
+clinic one
+we'll learn in detail about clinic one
+and clinic 2 at the maternity hospital
+and what they represent in detail
+all right
+ok
+so
+this is my jupyter notebook which has
+the
+lines of code already written i am going
+to
+explain you each cell of code and will
+explore
+the hand washing case study by looking
+at the outputs for each of the cells
+let's start with the first cell so here
+i'm going to import my first data set
+which is the
+yearly fever
+mortality
+this is a csv data set
+and to
+load the data set i'm using the pandas
+library and the read underscore csp
+function
+i am using
+parse underscore
+dates equal to
+year so this
+parse underscore dates will format the
+year column in the form of a date value
+next
+i have
+set
+my index to be the year column you can
+see here set underscore index equal to
+year and i am mentioning that in place
+equal to true which means that the
+original data is now modified and
+updated in place
+and i'm importing the data
+and storing it in a variable called
+yearly underscore that's
+next i'm going to print my
+data set
+let me just
+hit shift enter
+we can see the result
+there is an error here it says
+okay this should be yearly underscore
+deaths
+let me run it again
+there you go
+so here you can see we have set the year
+column as our index
+you can see the year column is our index
+then we have the
+other two columns the total number of
+births and the total number of deaths
+starting from
+1784
+till 1846
+all right
+now
+you can see
+the values for year total births and the
+total number of deaths from 1784 till
+1846 in the maternity clinic of vienna
+hospital where similvoice used to
+practice
+coming to the
+next cell of code
+here
+we are going to calculate the
+mortality rate or the mortality
+percentage
+for that i'm going to create
+a new column called as
+mortality
+so here i'm mentioning my data frame
+which is yearly underscore deaths that
+we created above and then within square
+brackets i am passing in
+my new column name which is mortality
+and the
+formula to calculate mortality is
+total
+deaths
+divided by
+the total number of births into hundred
+now let's print the result
+you can see here we have added a new
+column called mortality and it has given
+us the
+mortality rate
+for each of the years starting from 1784
+till 1846
+now next
+we are
+going to find out some descriptive
+statistics using the describe function
+so i have used yearly underscore deaths
+dot describe
+if i run it you can see the
+count that is the total number of rows
+that are there in our
+data set
+then we have the
+mean birth so the
+average birth
+that has taken place in all these years
+per year is around 2268.
+the total debts reported in each of the
+years that is the average number of
+deaths is around 93 and the mortality is
+around three percent or 3.3 percent we
+have the standard deviation
+we have the
+minimum value that is the
+least births that took place in one of
+the years was
+284 and the maximum is 4010
+then we have the 25th percentile the
+50th percentile and the 75th percentile
+we are going to create our first plot
+that is
+taught about yearly mortality rate each
+year between
+1784 till 1846
+now here we are going to create a line
+plot and for that
+i'm going to import my matplotlib dot pi
+plot as plt
+i'm setting my figure size to be 14
+comma 5
+and using the plot function i am going
+to create my line plot
+i have given my
+data value as mortality rate
+i am going to use
+color as green and marker as
+o so o will represent as dots and after
+that i am going to give a title as
+mortality from child bed fever during
+child birth i have given a x label as
+year and y label as mortality rate
+let's run and see the output
+there you go
+if i scroll down
+you can see here we have a nice
+line chart
+now we can notice that the modality rate
+started increasing somewhere around
+1823 from here you can see a spike
+and gradually the
+mortality rate or fatality rate from
+childbed fever started increasing from
+around 1820
+the reason was you can see here there
+was a sharp increase after
+1823
+so the reason
+was
+around 1823
+cimilweis clinic started giving lessons
+on
+pathological anatomy
+so
+pathology i guess you would know is the
+branch of medicine that deals with the
+study of
+causes and effects of diseases
+so doctors would take classes on the
+corpses organs and tissues to learn the
+reasons for the cause of the death
+so after the post mortems then they
+might deliver a baby or examine a
+patient
+possibly with pieces of contaminated
+flesh remaining in their hands
+so similar wise suspected that this
+could be the reason for childbed fever
+he continued with his analysis and
+looked for further evidence to support
+his hypothesis
+not till
+1832 there was only one maternity clinic
+at the vienna hospital
+now that had become very overcrowded so
+an extension was built and two clinics
+were created in
+1833 you can see it here
+now until
+1840 both clinics were used for teaching
+and training medical students and
+midwives
+so midwives are people who help mothers
+deliver babies and take care of newborns
+after childbirth
+so after 1840 the physicians
+that included doctors and medical
+students used to operate in clinic one
+and only midwives used to operate in
+clinic two after eighteen forty
+so similwise spotted that in clinic one
+the fatality rate for mothers from
+childbed fever was three times more than
+those who delivered in clinic two
+so you can see here in clinic one which
+was the doctor's word
+and for people
+who
+were given trainings the mortality rate
+was ten percent while in clinic two
+where only the midwives operated the
+mortality rate was three percent
+so he again believed that in clinic one
+where doctors and physicians operated
+they also used to handle corpses during
+autopsies before operating on pregnant
+women
+and they never used to wash their hands
+between the two jobs
+but midwives in clinic 2 never went to
+the autopsy room so similar spotted that
+there were links between the lack of
+hygiene of the doctors and the mortality
+rate of the mothers
+so let's analyze that data now
+cool
+so i am going to import my second data
+set which has the information about
+births and deaths in clinic one and
+clinic two so here i'm importing my csv
+data set and i'm storing it
+in a data frame name called clinics
+again i've used
+parse underscore dates as year to format
+the
+date values i've given my
+file location followed by the
+file name
+and dot the extension of the file which
+is csv file
+again i have set my index to be the year
+column
+and i'm printing the head of the data
+frame now let me hit shift enter
+okay so here you can see
+1833 onwards
+birth one death one that is for clinic
+one then we have births two that's two
+for clinic two
+next
+we are going to calculate the mortality
+for both the clinics that is clinic one
+and clinic two so what i'm doing here is
+i'm creating
+two columns mortality one and mortality
+two so mortality one is for clinic one
+then mortality two is for clinic two
+again the formula is the same deaths
+divided by births into 100 is the
+mortality rate
+let me run it
+and now we are going to see the
+first 10 rows from our newly created
+data frame you can see here we have
+added
+two more columns mortality one and
+mortality two
+and these are the results
+now if you notice
+see the mortality rate
+for the clinic one where
+dr semelweis used to practice
+or the physicians who also operated on
+the
+dead bodies
+used to practice so the mortality rate
+is high there
+now let's
+compare
+and visualize the mortality rate
+at both the clinics so here i'm again
+setting my figure size to be 14 comma 5
+i've used
+clinics
+dot index mortality one i've given a
+label as clinic one
+color i'm using as steel marker is
+o
+so this o will make sure for each of the
+years we have a
+dot or
+a round shape
+similarly for clinic 2 we have mortality
+2 i'm using
+blue color again marker as o
+then i'm giving a legend
+a title called mortality from childbed
+fever during childbirth i also have a
+while label called mortality rate
+let's run it
+now if i scroll down you can see
+the mortality rate
+from
+1833 onwards till 1846 for both the
+clinics
+the teal color represents clinic one and
+the blue color represents clinic two
+so from this graph we can see that the
+death rate at clinic 1 was significantly
+higher after
+1840 you can see there has
+a huge spike
+compared to clinic 2 where only the
+midwives practiced and they never
+operated on the dead bodies in the
+autopsy room
+so now doctor simul vice had strong
+evidence to believe that the doctors
+were transmitting infectious flesh or
+you can say material substances from
+previous operations to mothers through
+their hands and this was leading to
+childbirth fever
+so far
+we have seen in our analysis till
+eighteen hundred and forty six
+and dr semelweis in mid
+1847 asked his colleagues and fellow
+physicians at maternity clinic one to
+wash their hands with chlorinated lyme
+solution before attending pregnant
+mothers and the results were significant
+so let's see the final analysis of
+clinic one where doctor symbol wise
+practiced and how he was able to reduce
+the mortality rate
+now i am going to load the monthly
+deaths data set that has information
+from january 1841 till march 1849
+and after 1849 his contract was
+terminated and he was asked to leave the
+vienna hospital i'll tell you why he was
+asked to leave
+a little later
+let's load the final data set now
+okay so
+i'm going to import my final data set
+which is the monthly underscore debts
+dot csv i'm storing it
+in a variable called monthly underscore
+data let me run it
+so here you can see
+the
+data for
+all the months starting from
+january 1841 till march 1849
+next
+i'm going to find the monthly
+mortality at clinic one
+so
+i'm going to divide the
+deaths divided by birds into 100
+so here you can see we have created new
+column called proportional underscore
+deaths
+that has the
+death rate for each of the months
+now the doctors in clinic one started
+washing their hands in june
+1847 before carrying out delivery
+operations
+so
+we have
+divided original data into two data
+frames called
+before washing and
+then we have after washing
+we will set the start of hand washing
+date to
+1st of june 1847
+you can see here i have said
+start of hand washing pandas dot 2 data
+frame i am giving my
+hand washing start date that is 1st of
+june 1847.
+or washing data frame will have all the
+values that lie prior to june
+1847 so here i have subset my data i'm
+saying
+date should be less than
+a date which is 1st of june
+1847 and after washing should be
+greater than equal to 1st of june 1847.
+we run this
+i'll print my before
+washing data frame you can see
+it has taken all the values till
+may 1847
+and for after washing we have all the
+values starting from june 1847 till we
+have
+march 1849
+so we have split
+months data into before and after hand
+washing start date
+now let's
+plot our final
+graph that shows the difference in the
+modality rate of mothers
+before and after hand washing
+so here
+i am setting ax which is the axis
+before washing
+dot plot will create a line plot i am
+saying x to be date y to be proportional
+deaths i'm giving my label to be
+beforehand washing i'm using color
+as c which is for c n
+then here b represents blue
+this is for after hand washing again x
+should be date y should be proportional
+underscore deaths
+here i'm using a line style to be dotted
+lines to just
+you know compare the plots
+i've set my while label to be proportion
+that's let's run it
+and you can see the
+result
+let me scroll down
+there you go on the x-axis we have the
+date on the y-axis we have the
+proportion depth
+the
+cyan color represents before hand
+washing that is the solid line and we
+have the dotted lines for
+after hand washing
+now you can see how
+starting from the summer of
+1847
+the proportion of deaths got reduced
+significantly less than five percent you
+can see here
+so this was when civil wise made hand
+washing
+mandatory
+now
+we'll calculate the difference in
+average monthly percentage debts before
+and after hand washing so what i'm doing
+is i'm creating
+two variables before proportion and
+after proportion
+then we are going to subtract
+before proportion mean minus the after
+proportion mean if you see the
+difference you can see here it is eight
+point three percent so from
+ten percent we just
+reduced it to less than three percent
+so this was all about the
+hand washing case study that simulwise
+had conducted using different data sets
+so we perform this explorative data
+analysis using three data sets
+and you explored how using pandas and
+matplotlib you can create
+different charts and analyze data
+yearly data
+or time series data
+the sad part is that with all this
+exploratory analysis and the findings dr
+simelweis made his superiors at vena
+hospital refused to
+accept his theory and he was met with a
+lot of criticism
+medical community rejected his discovery
+in march 1849 and he was forced to leave
+the vienna general hospital
+one reason we can argue as business
+analyst is that
+statistical analysis and data
+visualization were very uncommon those
+days in the field of medical science
+simulwise only published his data as
+long tables of raw data but he couldn't
+show any graphs or confidence intervals
+to support his hypothesis
+his ideas were considered as offense to
+the medical community he hurt them
+since similar wise meant that doctors
+were the cause of increased deaths he
+believed in another theory called
+meismus which basically means some bad
+component in the air was the cause of
+childbed fever deaths
+after
+two decades
+when
+joseph lister and luis pasture produced
+more evidence of the germ theory and
+antiseptic techniques only then the
+value of hand washing was appreciated
+but nevertheless his work was based on
+evidence supported by numbers showing
+that simple hand washing by health care
+workers could save millions of lives
+later he did get some recognition
+the budapest university where doctor
+ignace simelweis used to teach
+after getting terminated from vienna
+general hospital is now named as
+simulvice university
+in january 2019
+the statue of dr
+semelweis was unveiled at the world
+health organization by the current
+director general mr trados you can see
+on the right on the left we have the
+state secretary of the ministry of
+foreign affairs and trade
+from hungary
+on the 100th anniversary of his death
+the government of austria issued a
+postage stamp in his honor
+and in march 2020 after the world was
+hit by coronavirus google also
+recognized wise
+hand washing findings and gave him a
+will doodle
+that brings us to the end of our
+interesting video tutorial on dr
+simulvi's hand washing case study using
+python i hope it was useful and
+informative if you have any queries
+please feel free to put them in the
+comment section of the video thank you
+for watching stay safe and keep learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,189 @@
+hello everyone
+welcome back to simply learn
+in today's video we will discuss
+everything you need to know about css
+positioning by the time this video is
+over you will be able to position the
+elements in css like a pro
+so let's get started
+first let's cover the theoretical part
+here we will discuss what is the ss
+position property and its different
+types
+after that we will jump to practical
+example to learn how to work with these
+properties
+so let's get started
+so what is css position property
+the css position property allows you to
+define the position of an element on a
+web page
+the top right bottom and the left css
+position properties
+are used to determine the final location
+of the element
+are four values that you can use to set
+the position of an element on a webpage
+they are static fixed relative and
+absolute
+using one of the four values above you
+can specify how an element should be
+positioned
+you can also use the top bottom left and
+right properties to further define the
+element's position on a page so let's
+discuss each of the properties
+individually
+css static position
+this is a by default position for html
+elements
+it always positions an element according
+to the normal flow of the page
+it is not affected by the top bottom
+left and right properties
+it is important to note that having a
+static position is the same as not
+setting the position property at all
+the next is css fixed position
+the fixed positioning property helps to
+put the text fixed on the browser
+the fixed test is positioned relative to
+the browser's window and does not move
+even when you scroll the window
+the next is css relative position
+the relative position property is used
+to set the element relative to its
+normal position
+the relatively positioned element
+behaves the same way as a static element
+except that it is now subject to the
+values of the four other css properties
+we will discuss each of them with more
+detail in examples
+now there is css absolute position
+the absolute positioning is used to
+position an element related to the first
+parent element
+that has a position other than static
+if no such element is found the
+containing block is html
+with absolute positioning you can place
+an element anywhere on the page
+now let's move on to the example to
+understand each of the properties better
+to demonstrate the properties i have the
+simple example set up
+currently we have three elements with
+just basic coloring style
+we have not applied any position style
+to them
+now let's click on this
+element too and inspect it
+just go to the computed
+and type here position to see the
+position of this element
+so you can see that currently a position
+is static
+static is a default value of all the
+elements of the page in starting
+the next position we'll see is the
+relative position
+it works almost in a similar manner to
+static
+if you go here and change the position
+to relative
+you can see nothing changes
+relative act is the same as static with
+the only difference is that the relative
+allows you to change the top left right
+and bottom of this element let me show
+an example
+now if we change here to
+left
+20 pixel
+and refresh
+you will notice the elements move itself
+to 20 pixels from the left
+let's set the top to 10 pixel as well
+you can see the element has moved 10
+pixel from the top and even overflows
+the element below
+this is because relative position when
+applied with the top right left and
+bottom actually takes that element out
+of the document flow
+so let's just reset it
+next property we are going to discuss is
+absolute position and this property gets
+well along with the top right left and
+bottom
+so let's make this position to absolute
+and you can see the changes made due to
+this by just
+saving
+the absolute value completely removes
+the element from the document flow
+this is useful when you want a
+particular element to be a specific
+position but you don't want to disturb
+the other elements positioning
+absolute position positions the element
+inside the some parent container that it
+can reference
+now just
+let's shift the top to 10 pixels
+you can see the movement of this element
+[Music]
+the absolute position always position
+the element inside some parent container
+that it can reference to
+now if you change the here body position
+to relative now the
+this nav bar will position the element
+according to this body so if you go here
+and refresh this you can see that this 2
+is in relation to with this container
+and this is where relative is very
+useful
+next is fixed positioning which is very
+similar to absolute positioning with
+some differences
+so let's change this to fixed
+and just save this
+now you can see it completely ignores
+this relative positioning and goes
+entirely at the top
+this is because fixed position elements
+are always fixed based on the entire
+html element it has nothing to do with
+the parent elements
+one unique feature of the fixed element
+is they stay in the same place when you
+scroll
+let's make the height here
+to 200 vertical height
+now if you scroll down you will see that
+the element two will stay on the same
+position
+see
+the two elements is stick to the same
+position
+but actually it does not work that way
+when you change this here to absolute
+you can see it does not stay
+at the top now
+this is one major difference between
+absolute and fixed
+so that's it you can see that working
+with the css position super easy the
+good amount of practice you can position
+the elements like a pro
+i hope you like this video do leave a
+like and post your doubts in the
+comments section thank you and keep
+learning
+[Music]
+there if you like this video subscribe
+to the simply learn youtube channel and
+click here to watch similar videos turn
+it up and get certified click here

@@ -1,0 +1,1600 @@
+foreign
+welcome back to another video by simply
+learn this is an Uber and in this video
+we are going to create a next year's
+blog project using Nexus and Tailwind
+CSS but before we begin if you haven't
+subscribed to our Channel already make
+sure to hit the Subscribe button and
+press the Bell icon so you will get all
+the updates from Simply learn
+so for today's video we are going to
+create a blog post with the help of
+markdown files or text files these
+markdown files will then convert into
+static HTML CSS files
+and then we are going to use nex.js to
+transform this block into statically
+generated HTML file and then we are
+going to style those pages with Tailwind
+CSS
+nexjs has changed so many features like
+how files are routed and how data is
+fetched I have covered all these
+features and changes in my next.js
+tutorial video you can check that video
+out to learn more about next.js I'll put
+the link in the description box and by
+the end of this video you will have the
+blog project using next year's that you
+can showcase on your resume
+so let's jump into it but before that do
+you know according to Glassdoor the
+average salary of a full stack developer
+in the U.S is 70 000 US dollar per annum
+and it can go up to 125 000 per annum in
+fact by 2024 there will be 27 percent
+increase in jobs for developers
+according to the U.S Bureau of Labor and
+statistics
+now is the best time to start picking up
+the knowledge needed to get started in
+this career and if you want to become a
+software developer consider the course
+on full stack developer mean stack by
+simplylearn and master those necessary
+skills check out the link in the
+description box for more details so I
+would like to ask you guys one question
+who created nex.js
+is it react JS or is it versal or is it
+front-end technology
+pause this video for a moment and
+comment the right answer in the comment
+section below now let's start
+there are so many code editors available
+but my personal favorite and
+recommendation is Visual Studio code
+let's open Visual Studio code now open
+your terminal by just pressing Ctrl
+press backtech
+and the thumbnail will be
+open
+okay let's create a next JS project now
+for that write a command
+npx
+create
+iPhone next
+app
+at latest
+okay now this will create a next JS
+project for us
+let's write a project name as next
+Js in Block
+okay we need
+ice cream
+we don't need a slide
+you
+and you know okay
+let's wait a couple of minutes
+so our next year is a successfully
+installed okay
+let's open this folder now
+this is installed in my
+Drive users
+and yeah
+let's open it
+and this is how the structure of my
+folder looks like okay
+let's move ahead
+let's open the terminal again
+exchange block folder okay make sure
+that you are in the same folder okay
+okay let's write here a command
+npm
+run
+tests
+so let's wait a couple of minutes to
+get over server ready
+we're getting a locals over here
+okay let's wait a couple of minutes
+until let's get started let's go to the
+link for some time and see
+okay it's running fine
+so this is how the next pair
+okay let's minimize this and
+it just our page here
+okay so we can get
+all the updates
+yeah
+this is fine
+yeah
+now
+let's move ahead
+now let's delete this page here because
+we are not going to use this
+yes
+okay
+foreign
+okay that module
+is deleted now now let's create another
+folder not in the public
+let's give it a name as tab
+and inside this app I'm going to create
+another file called page
+dot TSX
+release
+press enter and inside this I'm going to
+create another
+constant homepage I'm going to create an
+adjustable
+over around pages so I'm just gonna
+write
+this just follow along with me
+export
+now let's save this file and check
+whether it is running on the server or
+not
+so once I have that I should be able to
+run this on the
+page and let's see the page directory
+here
+that's right
+uh
+load page
+let's change the name
+physically not showing let's see compile
+so successfully
+yeah
+server is compiled
+okay let's see
+okay let's find out the issue here let's
+close this terminal and I'm going to
+show you why this is coming let's write
+a command in Kingdom there this time it
+will not work it will show us an error
+see
+yeah
+the server was ready but the error is
+this app directory is experimental okay
+to enable add app directory true to your
+next config.ds
+so let's copy this here
+okay
+okay just not copy it let's just close
+this terminal for now and open next dot
+config Dot
+here I am going to write
+experimental
+and say that
+I'm going to break up
+let's do it in the next Lane
+uh yeah indirect
+like this
+now let's save this file
+and now again
+let's delete this one and check whether
+it is working or not
+open the terminal
+again we are going to write the command
+npm run Dev
+and this time it shows us some errors
+but I'm sure it will work
+fine
+okay the best thing about this one let
+me just show you
+is that your page r dot page.txt that we
+just now has created did not have a root
+layout so next is I have created the
+app.layout.txt and head.txt for you so
+this is a very cool feature of nexjs so
+let me show you
+so next.js has created
+this file for US head.txt you can change
+it after some time and layout okay
+and as you can see
+the file that we have created ph.dxt is
+working fine on the Local Host
+okay
+so let's move ahead
+okay
+till now we have discussed how to May
+create a page and Route on the server so
+suppose if you want to create another
+page for example another route on the
+server for that we need to create
+another page
+for that
+we can create another folder in that way
+app directory only and another page.txt
+DSX and then
+we can do the route so let's see how it
+is that works okay
+let's create another folder and name it
+as
+block
+okay block inside this block I'm going
+to create another file
+name it as pH dot TSX
+okay
+right
+now let's copy this content from here
+and paste it
+here and let's name it as
+talk
+explode
+okay and here I'm going to print this
+welcome
+to my blog
+let's save this file and let's see if
+it's working or not
+okay
+okay so compilation works let me close
+it then we started
+okay let's wait a couple of seconds
+it's compiled successfully let's refresh
+this page and now let's add
+the extension
+good thing welcome to my blog
+So This Is How We Do the routes
+now I don't want this blog folder
+because I don't want this page you are
+creating a static page so I'm gonna
+delete this one
+yeah right
+so this is how relates come back to the
+Google host program this is the layout
+for the page
+right and the header so let's add few
+things in this part will be
+create as
+the front page
+now let's change the name of this
+localhost this doesn't look very good
+right
+okay for that I'm going to go to my
+head.txt file and in the title I'm going
+to write
+simply learns
+now let's save it
+and see
+if it's working fine or not
+right
+save this also
+it's not showing let's see why
+we only need to refresh this right
+okay let's refresh this
+and this is simple lens block right
+now let's work on this layout component
+and let's write
+footer and
+the header
+let's create
+a header
+inside this we will write this is the
+header
+and let's copy this line on copy let's
+create another one
+put the
+USB is a footer
+so let's save this one
+okay
+let's save this one now and as you can
+see it is showing this is a footer this
+is a this is a header and this is a
+photo this is all working with because
+of this children component that we have
+created and this is fetching the
+page.txs so this is how next.js works
+because in basically in any web
+development if you want to create a page
+we just use a
+template in that template first comes
+the header then the content and then the
+footer so next.js helps us make it very
+easy
+so let's work on this one I'll create
+another component for header and footer
+yeah and you can still see the content
+here
+okay so this is wrapped inside the body
+now
+let's create another component for
+everything
+perfect
+so
+after the returns let's create a header
+header inside this I'm going to create a
+disk and inside that div I'm going to
+declare the H1 tag that comes like a
+title and then the like one line will
+come to Simply learn and all that comes
+into that and after I'll create the
+footer
+so let's write
+this is how we have created this header
+now let's just copy this one
+and paste it
+here
+inside this put the I don't need this H1
+let's change it and give it a specific
+but
+now let's save this
+and as you can see simply learns blog
+welcome to Simply log
+created by a number
+let's just
+right
+now we'll go back to this page
+and delete this hello from Simply and
+goes here
+I am going to write my blog
+so for that I have to create another
+folder
+to insert my
+files for
+which is
+markdown files okay so for that I am
+going to create another
+folder called posts
+okay
+so inside this post
+okay it's coming inside the
+public folder
+inside the publing so let's delete this
+one
+and created publicly
+not inside there
+yes didn't want to write both okay
+inside this post
+I'm gonna add my markdown files
+okay so I have created few markdown
+files let me show you in one minute
+I'll be back with the mountain files
+now I have added few of the Articles
+here like this
+so
+this is a few of them you will get this
+in the description box I'll add all the
+code
+so don't ever worry about the code so
+let's just cut these codes
+okay yeah
+now
+I want to create a function that
+actually reads all these posts okay
+these all the Meltdown files I want some
+function
+so we'll get copied from the directory
+so for that I'm going to create one
+function
+so for that I'm going to create one
+function let's
+let's name it at this get post metadata
+okay
+so let's do that
+first let's import
+let's import FS
+which is a small
+file
+as
+I'll tell you what this list is in a
+while
+in just a second let's create
+function now
+const
+get
+post meta
+data
+so this is the function that I am
+creating
+to fetch all the files this MD files
+from the directory
+okay let's save this
+so this is
+I use this file system and I imported
+this also in the
+now let's make sure that the files that
+we are getting from here are only marked
+on files none other than that okay
+let's add metadata also
+to clean only fetch the MD files so for
+that I am going to create one function
+foreign
+file that ends with
+ends with okay
+depends with
+m dot MD
+okay
+so
+let's close this one
+and create this for your
+root now we'll create the another
+function of slug so slug is basically a
+part of the name without dot MD file
+okay which is not a markdown file that
+is slot okay let's write
+constant
+slugs
+right
+Mark downpost Dot
+mapping
+videos
+again file which doesn't have
+nothing in this Arrow function says
+files dot replace
+with
+dot MD
+comma and
+okay
+let's save it
+now let's add the metadata function and
+post function inside this home page
+so for that
+I'm going
+in here which is okay let's write first
+launch
+ghost
+thank you
+data
+it
+post metadata
+this will fetch all the files which ends
+with
+dot MD okay
+preview that we want to see on the
+screen it is post previews
+first but not be updated one sub
+function
+focused
+ready now
+dot map
+inside this slugs
+when you slug
+also but we're not returning here
+so it's redone
+so it can finish easily
+so we'll add on Twitter function there
+again
+and second brackets I'm going to declare
+one
+in the container
+and inside this div container I'm going
+to write these
+in H2 file what is it slugs
+turn the name of the
+these files
+accordingly bits okay
+don't worry about the code I am going to
+provide all the code to you guys
+so
+okay
+so let me first check again what is the
+okay yeah
+so let's just
+leave this H2 it runs and give it a tab
+container
+and inside this the container I'm going
+to add this
+post metadata
+for post
+reviews
+then save it and as you can see it is
+showing Java kotlin versus flutter
+mongodb react versus node versus
+react.js react.js so we can also change
+these files names as
+it's not coming very good
+so let's change the name as
+Java okay
+and this name as
+versus
+okay mongodb is fine node.js
+okay
+yeah these are good
+and
+yeah
+now everything's looks
+right this is just this structure we'll
+do the styling in a while but these are
+the just the structures and the
+functions that I'm telling you guys
+right now
+right
+okay let's move forward
+so what I want now is
+I want to make these things clickable
+so there is one future in next.js that
+you don't have to do like uh anchor tag
+to leave these as a directing page but
+what we can do is we can just link it
+so for that I'm going to write one
+function here
+inside this div which is link
+and
+inside this I'm going to give it a path
+backtech
+post
+back then delete all the sign
+and inside this I'm going to select
+so it will now
+here thank you
+this one
+okay
+yeah great
+so now
+we have to cut this and paste it under
+the
+Edge to done and let's save it
+and now it's showing unhandled runtime
+error call stack
+okay let's just see what's the error
+nor used
+let me use and then an okay thing let's
+see
+okay probably let's move this
+bye
+just adding here
+import
+link from
+next
+slash
+link
+close this
+save save this file and you will see all
+the links so if I'll open any of the
+link this will show me this page can't
+cannot be could not be found this is
+because let me first see the
+okay so the URL is fine
+whether it's going inside the ghost and
+then it's taking the right URL it can't
+fetch the
+right Pages m dot MD files so for that
+I am going to create another folder here
+let's name that folder
+relative
+posts only
+will it say
+I have created one folder post here so I
+want to create a folder dynamically in
+this post okay so for that in next yes
+they have introduced one function
+where I can just write in the closed
+brackets
+so I'll write slug
+and then I'll close the bracket
+and it will be a dynamic folder
+so inside this I'll create a file dot
+pages
+dot TSX
+right
+so this is how we can fetch the data
+dynamically
+so inside this post page I am going to
+declare a function
+let's name it as post
+page and let's give it a
+better function okay
+say this I'm going to return
+foreign
+this is a
+C
+P loans
+okay
+so let's close this one this one export
+the file
+so it can be
+rendered
+page and let's save it
+and let's refresh the speed first
+and then if you'll click any of the link
+it will show this is a simply lens post
+but earlier it was giving us an error so
+let's open any of this
+it is again
+now here what I'm doing is I'm accessing
+the information from slug
+so Props
+so this is what
+we when we actually want to fetch a data
+we use this function and we can fetch it
+right
+so here we are calling the slug function
+that we just declared
+so now let's check it first let's just
+refresh it
+let's refresh the file and let's open
+kotlin versus flutter
+so this is showing simple and block
+welcome to Simply learn this is simply
+learns post kotlin versus flutter right
+isn't it awesome
+right okay fine
+let's move ahead
+now what I want is I want the content of
+these oh md5 markdown files as a post
+and content
+and show it on the screen
+so for that I am going to create another
+one
+let's create another function
+constant
+and I'm going to create one function as
+get post content and I'm going to take a
+slug as a parameter okay
+so let me write that function
+okay let's now import the file FS
+to read the content of the file
+from
+foreign
+I'm going to add one
+paragraph for the content
+here I'm going to declare that
+content
+and let's just
+save it
+okay it's fine
+it's not showing me the content let me
+see what's the issue here okay
+we have added the content slug line but
+we haven't added the line to fetch the
+function of content so I'm gonna write
+it now
+it's faded here
+get post content
+and then again inside that inside the
+function
+I'm going to write slug
+now let's save it and see the magic of
+next yes
+so the pose that we have clicked on was
+kotlin versus flutter and this is the
+article
+which is coming this is not in
+structural format guys let me tell you
+first that this is not in structural
+format so let's open react.js now
+so this is the title of this props in
+react yes subtitle all you need to know
+about react JS and the date it has been
+modified and on this is all about
+reactive it is not in an
+um
+organized manner but don't worry about
+it we'll do everything here okay
+right now
+what we can do is so
+we can add one in game okay let's just
+open the terminal now
+let's see this one okay
+so for now we this as you know this is
+not in a readable manner so for that we
+need to convert this markdown file into
+jsx file
+so for that I'm going to install one
+fantastic dependency which is mark down
+to
+jsx
+so let's install this one and let's see
+now so it is installed in our system
+now we'll import this
+on our
+post.jsx
+okay which is marked down
+now
+what we can do is okay I got it now what
+we can do is
+we have to
+wrap this content in the markdown so
+it can be fetched
+now let's save it and see the magic
+let's run this again
+just two minute
+okay
+let's just let's compile now let's save
+it okay let me just go back a little
+okay now we are going to open the Java
+so now as you can see it is in a
+readable manner right
+earlier it was not in a readable manner
+but now we can read this is simply lens
+blog welcome and this is a simple learn
+post Java title of this is this uh
+overriding we can see the heading the
+example one output of this explanation
+and everything is in
+is formatted manner okay
+let's open this one this is also in a
+formatted manner
+now let's move ahead
+okay
+now
+as you can see
+this is a metadata right this one is a
+metadata but we can't see I don't want
+to see this as
+like this I want to say it here so for
+that I have to delete this one and make
+it as first but firstly let's make it as
+a link so we can go back by just
+clicking on this simply unblock
+so for that let's click on the
+layout.tx DSX file and here
+let's add here
+and simply learns blog link
+Dot
+address Dot
+slash
+and inside this H1
+Let It Be singular only
+and let's just cut this and paste it
+there
+okay let's save it
+and showing me an error
+let me read we have to import import
+this also
+so not get the better
+right
+so let's go here
+import
+link
+from
+next
+slash link
+save it
+and
+this book yeah let's again save it and
+we can just click on simply learn blog
+and click on any of the link and it
+should be open like you can see here
+right
+now
+my main concern is this metadata
+now how can we change that
+now let's change this one
+each problem have a solution so I to
+have a solution for you guys for this
+I have to install a library
+which is an external Library so
+I'm going to use the library called gray
+matters
+and let us pass the front matter string
+from the file okay first just install
+this
+it lets me open my terminal again and
+let's write NVM
+install
+save
+Gray
+so the command is let me show you guys
+here yeah
+so press enter and let this Library
+fully installed in our system
+so now let's import this file
+let's open the DSX file and import this
+one
+and here I'm going to import
+matter from Gray matter
+so
+okay so what we can do is
+thank you
+you can delete these two lines and add
+mark down so we can just read all these
+files from that only
+so let's add a function
+right
+so let me just add it here
+so
+this is a markdown file
+okay so what we will do is here is
+we are reading the file sync operation
+with the file system so it will open the
+file and read the file the content of
+the file okay and then we'll returning
+the title did a subtitle and the slug
+and the slug will replace the file name
+again and again whenever we click on the
+other file it will again go to the
+another file and read this same data
+again okay
+all right
+let's move ahead
+so this is showing us an error that this
+map is not collecting the slug operation
+so what we can do is we have created an
+object and we will get back from calling
+it as a get post metadata so now we'll
+actually create and Define this in
+interface as well so let's create a
+component here
+so I'm gonna response that I am
+returning to this so that this
+array will get
+close
+so I'm gonna create here a
+note here
+okay let's create here a component
+folder
+components folder
+and inside this component folder I'm
+going to create a file called
+first
+metadata
+dot TS okay
+and inside this file I'm going to write
+export interface
+post
+um
+instrumental data
+not this
+meta data
+and inside this I am going to write the
+operation which I am doing it
+here
+this one that it is returning this
+but I don't want to return it here so I
+can just return created a file called
+post metadata and inside this I am going
+to declare these things okay like the
+title of this string
+and the date is also
+string
+subtitle
+string
+and slug
+which we Define is also string right
+okay fine
+let's move ahead and let's save this
+file
+now
+instead of returning this Anonymous
+object as a post metadata we can just
+return here
+that okay let's close let me close this
+one and inside here after this
+I'm gonna declare that I am using post
+measure data file
+you can fetch the data from there only
+right
+now
+I am going to return the post
+now this post method metadata is already
+imported by vs code
+so this is what I like about vs code
+let's save it and see it is calling
+stack okay runtime and the runtime error
+it's fine we can just remove this one
+okay so this is giving us showing us an
+error because we have changed the data
+model
+and we haven't updated here in the home
+page yet so we can do that
+so
+it's not returning now slug it's
+returning post
+so let's change the
+file names
+post
+dot slug right yeah here also we have to
+change
+post
+dot slug yeah now let's save it and see
+if it's working fine let's open mongodb
+and it's working fine
+Logan no
+we got this mongodb but we have to still
+work on this part
+okay it's fine
+let's move ahead
+now what we can do is we can just
+remove this Slug and write here title
+let's save it now and see
+it got vanished let me check again
+let's check here what's happening
+slug
+now what I did here is I added two links
+of the post subtitle and post it by
+which we can see the type subtitle that
+we have added on this markdown file
+subtitle and the date of each and every
+article that we have pasted here these
+metadata files okay now let's open one
+of them like Java but still we are we
+can see this metadata file
+so what we can do to change this one is
+let's open this page.txx which is comes
+under slug post slug open this file and
+add here
+matter that we installed
+import
+matter
+from
+Gray
+matter okay
+let's use it here as
+okay
+let's create one const
+matter
+result
+okay
+matter
+and then content
+so what we are doing here is we are just
+adding the content we are not adding
+this part that we have added in the
+markdown file I just want to see the
+content from the starting overriding
+example output an example and all I
+don't want to see this part okay so for
+that we are adding one function here
+so let's return the
+meta
+enter
+result
+Dot
+content
+okay
+so let's see if we want to add anything
+or remove
+okay this looks fine everything's looks
+fine
+organ
+let's just save this file
+and see it is removed from every post
+like let's open mongodb and here also
+you just see this is a simply learns
+post mongodb then all about mongodb like
+what is a mongodb
+okay let's just go to mongodb and I'll
+show you how to change these things
+so let's make this as a heading so for
+that I am going to write here to hash
+and let's just save this file
+and let's refresh
+as you can see it's coming
+like this
+right isn't it awesome okay let's move
+ahead now
+let's go back and style the UI of this
+page
+okay
+let's close this one
+now as you can see this page is like a
+little we have written here this
+function get post method so what I'm
+gonna do is I'm going to go inside this
+component folder and I'm going to create
+one file let's name it as get
+post
+metadata
+data okay meta dot dot
+and I'm gonna go to this file
+[Music]
+copy this
+question
+okay and post it inside this
+get post metadata okay
+now what I'm gonna do is I'm gonna
+export
+let's write
+I'm gonna export this function as a
+default function
+again post metadata
+okay now also I have to
+go to this
+now I'll go to the page.dxx and I have
+to import all the
+Imports and copy these
+so I can
+import it
+inside this get post
+metadata file
+also one more I need here
+adjust this one
+okay fine now everything looks fine
+let's save this
+now I don't have to import these file
+inside this page so let's
+make it little
+clean
+so we don't need get post metadata here
+now
+so let's import
+get post metadata inside this also
+foreign
+okay
+that I have created in my components
+let's sleep save that
+and now inside my post log page
+I'm gonna use the at here as well
+so for that
+I'm gonna write here
+or will it just let me delete first and
+then I'll added here okay after the
+props spams
+I'm going to write
+it was mirrored as content okay
+generally
+okay let's create a stat Tech One
+yeah right
+everything looks good
+content we don't need content now
+so we can just
+return
+my data here and then
+we have to close this one
+and then let's create an export for this
+return content and export const
+ant generate tactic
+Rams
+30 grams
+sync
+function
+and vertical function
+inside this
+I'm gonna write const
+post
+and here I'm gonna write get post
+metadata
+connection
+here
+let's close this one too
+and here we have generated static path
+for the get post metadata right here we
+have to change the
+markdown as not count let's write here
+as post dot count
+Young
+it's not working it's okay fine let's
+not
+and here this one
+and beside this let's create another one
+and write post dot data
+dot title so that we can
+see the title when we
+go
+let's save this one
+there are errors also but
+okay
+let's see
+not post message it's post dot data
+dot title
+okay the post is not being fetched here
+so let's see and this is not
+the content we don't need because we
+have
+added post here so let's
+write post here and now everything is
+working
+fine
+let's refresh this page
+and it's working
+fine
+read now let's move forward
+and let's first just return the mapping
+here
+and here right
+return the path here
+return
+[Music]
+posts whenever we return a post it will
+show the map and inside that map
+will show me
+[Music]
+post
+and arrow function
+and here I'm going to write
+slug
+okay the slug I'm going to show it as
+post
+dot slug
+let's write comma here and
+this is fine
+let's save it
+and see
+now
+we'll stop the terminal here by just
+pressing Ctrl C and yes and here I'm
+gonna write NVM
+run build
+so we can see with function is working
+on which is static or on the server
+which function is running
+so it will show us
+it is creating an optimized production
+build
+so let's wait a couple of minutes to see
+foreign
+so as you can see it is a static page
+earlier it was not static that's why we
+added and created this page called get
+post metadata so with this automatically
+rendered array static HTML uses no
+initial props okay
+so
+this is
+a static page now
+[Music]
+now let's run the dev website again
+yeah everything's looks fine now
+yes
+everything is working fine
+okay
+now what I want here
+is I can think this also
+but it's fine but uh okay let's create
+one more file
+inside this component only for preview
+post
+preview
+Dot
+PS
+X
+I am
+I'm going to create a post preview
+function and Export it as default so let
+me write it
+so this is also a default function that
+I'm creating
+post
+review
+let's save it
+so I'll go here and copy this entire div
+from here and post it inside
+this
+lip
+now
+I'm gonna return this div here
+so this will need some input also
+okay
+so so
+what we can do is
+we can just go back
+return only
+we are going to use get boost metadata
+here
+so for that I'm going to do is
+inside this I'm going to write prompts
+okay
+post only post
+done
+data okay
+now we have to import this file also
+and the top so I'll import this import
+metadata from post metadata let's save
+it
+and it's not working fine
+so we need to replace this post
+from from
+posts from
+not props
+so I changed all the post from drops now
+I'll change missing links so we'll
+import this one and it'll be good to go
+now
+coming back to
+this
+okay let's just create another
+component here
+so I'll look more clean so for that I'm
+going to create one
+here and the link we don't need here
+right now but it's fine if we do
+okay
+now what we'll do here is we are going
+to create delete this first we don't
+need it
+actually so
+here right post preview that we just now
+created inside this we have written all
+these things so we don't need this
+where I'm going to write post dot slug
+Slug and let's just close this with the
+spread of operation
+uh sorry spread operator
+okay let me show you that
+this dot dot dot notation is called the
+spread operator
+so I'm gonna write post
+and let's close this one
+right let's save it
+and let's just
+refresh this one also
+let's show you an error okay let's just
+see because I guess I refresh this page
+earlier
+okay let's just close this and again
+press this run
+so this is working fine now okay so let
+me tell you about this dot dot notation
+okay so this will take all the
+operations and make them the input
+parameter for this component okay
+so let's
+um move forward
+now I think our okay let's just remove
+this one from our paid let's save it
+again
+and I think
+everything is fine now
+let's close the terminal and run it
+again
+and see everything looks fine or not
+it'll work
+let's wait a couple of seconds more
+it's successfully compiled okay
+let's again go back here and refresh
+this page
+okay let's open this few of them welcome
+to assembly learn overriding go back
+mongodb what is mongodb and all
+going back to Simply unplug
+now everything is looking completely
+fine now our next step is to create this
+blog static blog page into a beautiful
+looking web page so I'm gonna use
+tailwind.css for creating the styling of
+this page so if you don't know what is
+Tailwind
+so if you don't know that what is
+tailwind and all it lets you write CSS
+basically as classic
+and utility classes
+so we can rapidly build modern website
+without ever leaving your HTML right
+and also you can compose these uh
+components or files directly in your jsx
+or your TSX files right so this is what
+I love about tailwind.jss and
+let's see more
+and we can just change the looks of the
+file
+so this is all about Tailwind TSS okay
+so
+this is a very easy to start
+now here I'm gonna write
+next JS to install how to install
+tailwind and in CSS in your
+system so for that it's saying npx
+create
+a project and all but we have a project
+and all but okay
+so
+so let's
+let's right here
+Tailwind CSS now I'm gonna stop my com
+terminal
+let's open end and let's write yeah
+here I have written the how to install
+Tailwind in your system let's write in
+big steel when CSS in it P
+foreign
+dot config.js so we'll open this file as
+tailwinder is installed in our system so
+we'll go to this content part
+and add
+Dot
+pages
+slash
+star star
+names okay let me add it
+okay
+after doing this content Pages now what
+we are going to do is we're going to add
+this three properties of Tailwind inside
+the CSS file okay so let's open
+global.tss that must be here only
+let's see
+inside the styles
+I'll find one first one which is
+the style
+okay
+let's copy
+and replace everything
+okay
+now we let's save this file and now we
+actually need to import these file into
+our
+app so let's open this layout.txt and
+let's write
+and write
+import
+don't don't
+styles
+and inside the slides there's a file
+name globals
+it is globals.css
+okay let's close this one and let's save
+it let's
+and let's see
+let's see okay let's just let me just
+copy this in a bit from here
+and we'll put it inside the
+header link here
+yeah let's save it and see
+as now the Tailwind is successfully
+working and as you can see all the links
+are disappeared but we can do what is we
+are going to go to this page let's
+delete these files
+as you don't need it right now so let's
+open the layout.txt and let's work on
+this blog simply learns blog and make
+the header mode beautiful and
+make it in Center okay
+so let's just
+make it
+so it look more big and
+okay let's close this one and right here
+here inside the class name as we have
+written this lines
+let's read it in here as
+Center
+okay let's save it save it
+single as blob is in center now
+and let's try it give it a color also
+be displayed
+in 100
+p
+eight
+and D
+7
+let's save it and it's a little black
+here we have to do it in white
+so what we can do is
+let's create another
+link here
+okay
+welcome to simple learn
+and this and that
+this one and
+okay let's just give it
+now let's just create here after the
+header
+inside this div class name
+and let's give it a class name as text
+Center
+and inside this text Center I'm going to
+use these
+[Music]
+let's call this and paste it
+here right and we need rounded also
+save it
+welcome to assembly and is also coming
+in the center simply on the clock okay
+now what we have to do is we need to cut
+this and make it as three
+exhale
+and we need the color of the text
+White
+okay
+let's save it
+easy text wide
+yes so simple lunch blob is coming in
+the
+white color so
+let's add here
+inside this also
+welcome to Simply learn let's give it a
+class name
+morning
+let's give it text
+sleep
+and it'll come also a faded white right
+so this is how we have created our
+this is also working
+so
+I also need a margin here for like
+well it's just very close inside it is
+everything
+so what we can do is we can just
+p8 and let's give it six
+or four is also good
+yeah 4 is also fine
+[Music]
+no I don't need it this much it is fine
+okay
+now let's work on the footer part
+I also need to create this created by
+another like
+a little funky so what we can do is
+let's create inside this div
+ided a class name
+and give it a border
+so let's
+make it a little darker
+okay
+so let's give it a wedding here
+I'm gonna
+let's this looks fine
+and we need to make it this text Center
+so for that I'm gonna write text
+Center
+grade after that
+text lead
+400
+or
+yeah this looks fine
+and we need this
+little bold
+oh text white and let's write it as here
+is
+font
+bold
+yep
+looks fine and
+and said this
+let's make it
+on y bold let's see if it's look good if
+it doesn't look that good
+so
+this is fine
+let's get some padding because it's
+looking very close
+Dennis fine
+[Music]
+this looks fine
+[Music]
+trees
+[Music]
+that right okay fine
+now what we'll do is we'll work on the
+content which is inside this for that
+I'm going to open this file post
+preview.tsx
+and inside this file I'm going to create
+one class
+inside this Dev
+let's give it a class name
+as
+order
+and inside this border I'm going to
+write border
+Slade
+200
+slash
+4 so I'm I have to make this look
+similar to the header so let's give it a
+shot now but we can change it afterwards
+around it
+dot medium
+and let's add some Shadow here
+so
+MD let's save it
+and this looks fine
+right
+now let's make it a
+DG
+White
+save it yeah looks fine
+above one two three four five six and
+this looks more clumsy but we can change
+that for sure
+okay let's and this is done
+it's right here
+seven
+or more spacing
+now we can change that no issues
+okay inside this I have to create one
+and this close now inside this link I'm
+gonna write inside this give it a class
+name
+and
+font bold
+text of the Java kotlin versus
+flutter we need to make it more violent
+so I'm gonna use the color
+uh I'm gonna use the color red
+to look more dark
+great
+so let's give it not so dark
+little light
+yeah this looks more good
+yeah
+and whenever we hover on this I won't
+over effect also so I'm going to write
+hover
+handle
+okay let's save it and see yeah this
+looks fine yes
+and uh
+now
+class names
+text
+small
+text
+sleep
+400
+and this looks fine let's copy it from
+here only
+and paste it
+let's not make it small
+and not as simple as this let me get a
+little dark
+this looks fine but it's
+a very small text so
+this looks more good on the screen Let's
+uh
+looks very light here so
+yeah this looks fine
+right okay
+and let's make this light
+let's
+looks good
+now
+let's create boxes like this this also
+looks good
+but let's make it
+more clean let's open this file
+and
+let's add here a class and add
+a grade
+grid I'm gonna grid one column in a grid
+and the Gap should be of 4 pixels
+here one pixel is fine
+and let's move ahead and
+right this looks
+fine
+and let's see if the screen is big then
+red
+girls
+is two
+okay
+let's save it now
+and if the screen size is big
+so if the screen size is medium I will
+be like this and if the screen size is
+like this
+right it's looking good
+now let's open the layout again
+and inside this layout
+I'm gonna give this header
+called children and footer
+class
+let's write class name
+Max Auto
+unmasked with
+2XL
+Excel should be six
+six small good
+all right this is looking beautiful guys
+right
+this looks beautiful
+right
+so
+okay let's open anything here
+you'll see
+so
+this looks more beautiful now and it's
+working completely fine
+so let's open anything and let's open it
+like this as you can see as we open
+kotlin versus flutter we'll see the
+article on simply lens blog
+yeah
+you loved
+okay let's see
+yeah
+so this looks
+node.js and this is the Boost
+credit back a number
+yeah this is working fine now
+yeah
+right this is working fine now we just
+had to refresh this page
+right
+so with this we have read the end of
+this video on what is next day is blog
+page that we created with the help of
+Tailwind CSS and next js13 for more
+videos like this please subscribe to
+Simply learn thanks for watching this
+video until next time stay safe and keep
+learning thank you
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

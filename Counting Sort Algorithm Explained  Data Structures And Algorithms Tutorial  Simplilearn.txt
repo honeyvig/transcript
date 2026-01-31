@@ -1,0 +1,194 @@
+hey everyone i am peppa khandelwal and i
+welcome you all to simply learns youtube
+channel
+in this session we will discuss the
+counting sort algorithm
+we shall begin our session by
+introducing counting sort
+then we will discuss counting sort
+algorithm
+after that we will implement the
+counting sort algorithm in the co-data
+finally we will sum up what we have
+learned from this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply learn's
+youtube channel
+so without any further ado let's get
+started with an introduction to counting
+sort
+a counting sort is a sorting algorithm
+that sorts the elements of an array by
+counting the number of occurrence of
+each unique element in the array the
+count is stored in an auxiliary array
+and the sorting is done by mapping the
+count as an index of that auxiliary
+array
+now let's discuss the counting sort
+algorithm
+let's say we have an array
+first we will find the largest element
+in this array to evaluate the range of
+the elements
+then we will create a count array to
+store the count of element from the
+array
+then we will update the count arrays
+element with a cumulative count
+at last we will output each element from
+the array followed by decreasing its
+count by 1.
+we have now introduced the counting sort
+and its algorithm
+now let's try to implement this
+algorithm in the code editor
+let's start by creating account sort
+function
+void
+count sort
+its argument as int arr
+comma and
+n
+we will declare an array
+output
+size 10
+and an array count
+again with the size 10
+and an integer variable max
+is equals to
+arr at 0.
+now we will write a for loop to find the
+largest element of this array
+so for
+end i is equals to 1
+i less than n
+i plus plus
+if
+a r
+at i
+is greater than max
+then max
+will be equals to
+arr at i
+now we will initialize the count array
+with all zeros
+so for
+and i is equals to 0
+to i less than equals to max
+plus plus i
+count
+at i
+is equals to zero
+now we will store the count of each
+element in this array so for loop
+and
+i is equals to zero
+i less than n
+i plus plus
+count
+at arr bracket i
+is plus plus
+now we will write a for loop to store
+the cumulative count of each array so 4
+and
+i is equals to
+1
+where i is less than equals to max
+at i plus plus
+count
+at i
+is equals to
+plus equals to
+count
+at i
+minus 1
+now we will find the index of each
+element of the original array in count
+error and place the elements in the
+output array
+so for
+end
+i is equals to n
+minus 1
+i
+greater than equals to 0
+i minus minus
+so output
+account
+at arr
+i
+minus
+one
+is equals to
+arr
+at i
+and
+then we will decrease count
+arr
+i
+by one
+now let's write a function to print this
+array so void
+print array
+so end
+arr bracket
+comma end
+n
+so for loop
+i is equals to 0
+i less than n
+i plus plus
+c out
+arr
+at i
+handle
+now
+let's write the main block
+and
+arr
+is equals to
+we will write the element
+now let's find out the size of this
+array so end n is equals to
+size of
+array
+divided by
+size of
+that is first element
+now we will call the count sort function
+arr comma and
+now we will print this array so print
+array
+arr comma n
+now let's try and execute this
+as you can see we have successfully
+sorted this array using counting sort
+let's get back to our slides
+at last let's sum up what we have
+learned from this session
+first up counting sort is not an
+comparison based sorting algorithm next
+up it is frequently used as subroutine
+in other sorting algorithms such as
+radix sort
+next up counting sort can be performed
+only on positive integers
+finally counting sort utilizes a partial
+hashing to calculate the data item
+occurrence in big o of one
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

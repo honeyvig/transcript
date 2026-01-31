@@ -1,0 +1,1228 @@
+foreign
+welcome to data analytics with r from
+Simply learn
+so are you excited to begin with today's
+session
+yes you are okay great I'm excited as
+well to be a part of this session what
+are we going to cover in today's session
+we will cover couple of topics we will
+begin with understanding the basics we
+will focus on why data analytics and the
+importance of data analytics and then
+what is data analytics we will also
+focus on understanding the life cycle of
+data analytics and I'll also try to give
+you some real-time examples so that we
+can relate these concepts with the real
+time examples or scenarios and then we
+will understand the types of analytics
+and what do they mean we will also focus
+on the benefits of using R for this
+session we will be using our studio tool
+hence we have to understand why we use R
+for data analysis and finally we will
+perform some Hands-On exercise in
+today's session we will only focus on
+how to import the data how to structure
+the data and also how to create some
+beautiful visualizations by using our
+studio all right
+Python and R are top programming
+languages that are in demand in data
+science Community both have their own
+pros and cons therefore it is vital that
+you understand the crucial differences
+between the two programming languages
+and decide which one is the best fit for
+you after watching this video you will
+understand which language is better for
+you in terms of different parameters
+before unwrapping today's topic I
+request you to subscribe to our Channel
+and press the Bell icon to never miss
+any updates from simpler
+and also get notified every time you get
+a similar video
+now let us look at what are we covering
+today
+we are covering introduction to iron
+python parameters in RN python best
+tools and libraries offered by Python
+and R and conclusion to the topic
+introduction to R and python let me ask
+few queries regarding Python and r
+our language is super superficially
+related to
+python
+C
+C plus plus
+Java please leave your answer in the
+comment section below and stay tuned to
+get the answer
+and another question is which one of the
+following is a python file extension
+dot p
+dot python
+Dot py
+and Dot P by T
+please leave your answer in the comment
+section below
+coming to introduction to Python and r
+R is a statistical programming language
+and environment that integrates
+statistical Computing and Graphics R is
+powerful and stable software
+python python can also be called as a
+general purpose programming language for
+data analysis and scientific Computing
+python can be considered as the best
+player in machine learning python is an
+expressive language with many built-in
+function
+both are open source software and
+platform independent
+and they are platform neutral and also
+compatible with all major operating
+systems including Unix Windows and Mac
+next we will be covering different
+parameters
+we will be covering learning
+preferability mathematical fundamentals
+speed of both languages
+visualization and graphics
+data handling capacity
+demand
+community and customer support
+employment possibility in both the
+languages
+let us cover it one by one first one is
+learning preferability or ease of
+learning
+python is renowned for its ease of use
+Python's notebooks offer excellent tools
+for sharing and documentation despite
+the fact that there are currently no
+guis for them programmers find are as
+difficult language as a beginner
+this implies that the programmers must
+devote a significant amount of time to
+learn and comprehending our coding
+coming to mathematical fundamentals
+required
+coming to python understanding
+descriptive analysis is very important
+in layman's terms descriptive statistics
+often refers to the process of
+explaining using certain representative
+techniques such as charts tables Excel
+files Etc
+python statistics is a built-in library
+for descriptive statistics
+if your data sets are not too big or if
+you can't rely on importing other
+libraries you can use python
+on the other hand R requires basic
+statistics from basic status statistics
+what I mean is mean mode and median are
+the terms used most frequently in basic
+statistics it is referred to as measures
+of central tendency
+probability statistics plays an
+important role in handling various types
+of probability distribution it includes
+binomial and normal distribution
+next parameter is speed
+python is an interpreted language with
+Dynamic typing python always executes
+slowly because the code is executed line
+by line
+compared to Matlab and Python rsr
+language is significantly slower
+our packages are substantially slower
+than those for other languages
+now that we have covered speed
+coming to data visualization and data
+collection in Python
+When selecting data analysis tools with
+visualization are crucial and python has
+some incredible visualization tool
+in Python to large and varied skater
+plots using regression lines we can use
+GG plot 2 and ggplot tools
+compared to draw values visualized data
+is easier to comprehend therefore R has
+many packages that offers sophisticated
+graphic features
+in R we can use
+in R we can use tools like matplotlib c
+bond Etc
+data handling capability in both Python
+and r
+the new releases in Python have resolved
+the issue with the python packages for
+data analysis R is useful for analysis
+because of the abundance of packages
+accessibility of the test and benefit of
+employing formulas however simple data
+analysis can also be done using it the
+need to install many packages
+crucial part of parameter that is tools
+and libraries in Python and r
+as a python developer one needs to be
+well versed in the best libraries
+because python has a lot of libraries
+that have many different uses
+libraries like tensorflow scikit-learn
+numpy plays an important role in solving
+many python related problems
+libraries perform a wide variety of
+tasks in art that are very beneficial
+for data science operations example for
+that is deployer bioconductor ETC
+community and customer support a support
+index offered by Python and r
+compared to our python has a larger
+community
+for assistance we can contact
+www.python.org
+for any queries regarding Python and
+help you can support uh you I repeat you
+can visit support.realpython.com
+for any help and queries are offers you
+with rstudio Community R provides
+assistance through its official website
+for queries and Community related issues
+we can contact
+www.r hyphenproject.org
+next is job opportunities in Python and
+r
+a recent survey from indeed.com predicts
+that at least 55 000 python jobs in the
+USA with exponential pay rates are
+available with the companies like Google
+Amazon Twitter Facebook requires python
+developer to handle massive amount of
+data
+position provided for a python developer
+is software engineer data analyst data
+scientist and many more
+career in R is an excellent job
+opportunity for you as a beginner
+big tech companies like Google Twitter
+Facebook are using are
+position provided by companies as a r
+developer is
+data scientist data analyst data
+visualization analyst Etc
+moving on let us wrap up an important
+topic which language to be used between
+R and python there is no right or wrong
+way to study both python or R both are
+in demand skills that will enable you to
+complete almost any data analytics work
+you come across It ultimately depends on
+your background interest and career
+objectives that which one is better for
+you but compared to R python is easy to
+learn let's compare its strength and
+weaknesses
+it is used to handle large amount of
+data python performs non-statistical
+functions and it is best suitable for
+programming however python is better
+when it comes to coding
+whereas R is used in data visualization
+graphics
+R is a widespread language in the
+statistical community
+it is used to accomplish many
+mathematical tasks
+so before concluding the topic let me
+answer the query that I have asked
+regarding R and python do you guys
+remember the question
+the query was
+our language is superficially related to
+which language
+so the answer for the question is C
+language
+next question was which one of the
+following is a python file extension it
+was an easy question
+answer for that question is dot py so
+firstly let us understand why data
+analytics can somebody here tell me why
+data analytics and why is it used in
+organizations
+so let us understand why data analytics
+and what is the use of data analytics
+as we all know the data is growing
+exponentially year over year
+it is collected and it is also available
+everywhere
+data is no more just available in
+structured format but it is also
+available in semi-structured and
+unstructured format
+I'm sure you would have come across this
+term called as sentiment analysis pretty
+often right what does that mean can we
+perform that in data analytics yes right
+we use some natural language processing
+models try to identify what are the good
+reviews what are the bad reviews spoken
+by the customer
+correct so we try to classify the text
+based on the good bad and the neutral so
+that is what sentiment analysis about
+so for that to perform that activity we
+have to also do some data analytics
+now that companies have realized the
+importance of these informations
+not just structured but also
+unstructured data format
+companies have started utilizing these
+data to take some crucial business
+decisions which can boost their business
+and also which can increase the
+efficiency of the business
+so now that the raw data is accessible
+to the organizations
+it becomes very important that the data
+is also stored well
+I'm sure you all have pretty much heard
+about data warehouse in the last few
+decades the trend was mostly on the data
+warehouses the business intelligence
+tools
+so the data warehouse used to collect
+these data pre-process the data and also
+filter the data and make it available in
+a structured format for further analysis
+however now that is not the scenario
+a term coined as data leak is available
+and many firms are utilizing data Lake
+because it is a central Repository
+which stores the raw data in form of
+structured and unstructured data
+and now let us take a scenario let us
+choose one of the participants here
+mock so Mark has recently joined an
+organization as a data analyst or in
+essence a data scientist
+the business connects with him and says
+that Mark we have a business problem for
+you and we expect you to provide us a
+data analytics solution
+so Mark sits with the stakeholders and
+he listens very carefully to the
+business question so the business
+question says that
+we have couple of products which are
+performing really well in the market and
+we see higher sales and some of the
+products are just not catching up in the
+market and we experience lower sales can
+you help us identify what are the
+factors driving this higher sales and
+the lower sales
+now Mark has to think with the data
+scientist mindset and be prepared to ask
+them write questions
+some questions such as do you have the
+price of all these products available in
+the database
+and can I also know what is the duration
+of data availability
+and also Mark can ask some question such
+as do you also have some features of
+this individual products already
+captured in your data base
+so these are some of the interesting
+questions that makes sense to the
+business and the conversation continues
+which also means that
+data is not only information
+data analysis is about unlocking
+insightful informations from this raw
+data
+and hence data analysis plays an
+important role in discovering insightful
+information
+asking questions or answering the right
+questions
+and also predicting the future are the
+unknowns
+and to perform all these activities we
+use data analytics
+so are you all with me so far
+are we on the same page
+yes great
+now the question is what is data
+analytics so can somebody tell me what
+is data analytics
+so let us see what is data analytics
+we understood why data analytics and the
+importance of it
+but perform any activities there has to
+be a process right so data analytics is
+a process to extract meaningful insights
+from data
+now let us continue with the scenario of
+Mark
+so Mark now understands the business
+problem
+and he has also started asking some
+relevant questions to the stakeholders
+and he has also got the answers in
+return
+he may start thinking about what could
+be the suitable solution for this
+he may have to perform some exploratory
+data analysis to unlock some hidden
+patterns to identify some correlation
+between the variables and to also know
+which are the key variables in the data
+set and he may also have to view the
+market Trend which means he may have to
+see that how the sales has been
+performing across the years or across
+the months
+there might be some insightful
+information there
+he may see that the sales has been
+growing exponentially for some of the
+products
+and some may be volatile some may have
+some seasonality pattern or a cyclical
+pattern Etc and also he may have to
+focus on the customer preferences via
+the customer reviews and do some
+sentiment analysis
+so now let us understand what are those
+life cycles of data analytics
+we will begin with the discovery phase
+this is the first phase
+now that Mark has understood the
+business problem
+he will also start focusing on
+identifying the resources that is the
+data resources
+some may be internal data resources that
+is available within the firm could be
+some transactional data
+and some external data sources may be
+via web scrapping identifying and
+capturing some competitor price on the
+products
+after Gathering all of these right data
+Mark will focus on data preparation
+which is the next phase
+now Mark either individually or along
+with the team will start focusing on the
+data preparation which includes data
+wrangling which means cleansing the data
+imputing the records
+if there are any missing values or you
+know he may also go ahead by removing
+those records if they are not required
+and also doing some exploratory data
+analysis which can include some
+statistical analysis like looking at the
+data distributions understanding the
+summary of this data distribution at
+individual variable level doing some
+bivariate analysis and also trying to
+you know figure out which are the
+important variables that might be
+required for the model building phase
+after performing all of these Eda
+activities
+which also includes some visualization
+Mark will now sit with his team and try
+to identify the suitable models
+the suitable models could be simple
+statistical techniques or it can also be
+some machine learning models so let's
+say that Mark and and his team has
+identified some five models
+that can provide the required result
+and out of these five models they will
+filter down and they will prioritize
+only three models
+now there are only three models that
+Mark and his team have finalized
+after this they start focusing on model
+building activity
+now for model building activity
+they have a data set already in place
+so this data set will be split into
+training data set and test data set
+it's not only training and test we can
+also do some validation in between
+training and test but here let's focus
+on training and test data set
+he will separate 75 percent of the data
+as training and 25 percent of the data
+as test
+now if your question is that why perform
+this activity of splitting the training
+data set and test can't we just go with
+the one single data set
+what happens if you just utilize one
+single data set
+let us say that you have used the
+original data set
+and also executed this data in one of
+the selected model
+and you will also observe the accuracy
+let's say the accuracy return is about
+98 percent
+98 percent is a very good accuracy
+percentage
+and you may also be overconfident
+because of this that may be a case due
+to overfitting
+now what will happen when you add some
+new records into this data set and you
+re-run it
+the executed model may not return you
+the same accuracy what you had seen the
+accuracy might be 72 percentage now
+that's not fair right
+to avoid these overfitting issues
+we ensure that some new records are
+tested separately so hence we locate 25
+percent of the data to the test data set
+and then we predict this records the
+unknown records which is located in the
+test data set we predict them and then
+we test the accuracy of training data
+set and the test data set and we make a
+comparison
+now let us say the accuracy result of
+training is 98 percent and the test is
+97 percent
+in this case we can say that the model
+is performing really well however while
+executing the model there are certain
+things that has to be considered for
+example inclusion of the parameters
+tuning the parameter which also will
+execute the optimal results so this is
+very important
+now let's say after performing this
+model building
+the time comes to analyze the results
+that is the next phase
+now the team will sit and analyze the
+result
+and they will notice that out of the
+three filtered models only two models
+are returning excellent accuracies
+they will sit with the business team and
+they will also explain them the result
+and what are the activities that they
+have performed to obtain this result
+some of the stakeholders may be
+technically Savvy some of them may be
+non-technical people so it has to be
+very important that you also communicate
+these results accordingly
+all right now that you have the results
+you will also gauge them based on the
+business objective
+which was developed in phase one
+looking at the results of the two models
+now the business might select one of the
+model and say that okay this particular
+model seems to be returning some right
+information and it also appears valid to
+us let's go ahead with this one model
+so finally the result and the model
+needs to be operationalized
+and that is where the team will start
+documenting the business problems the
+steps that were taken for executing the
+models and they will include all the
+codes and the findings and finally they
+will implement this model so that the
+business can view the results and also
+utilize them for strategic decision
+making at your firm
+so I'll be good so far with the
+understanding of the life cycle
+all right great now let us focus on the
+types of analytics what are the types of
+analytics can somebody tell me which are
+the types of analytics you are aware of
+okay Predictive Analytics great
+descriptive analytics good
+all right good enough
+now let us focus on this example of
+Google Maps
+so as we look at this particular Google
+Map we understand that the blue color
+root is nothing but the root direction
+from Sacramento to fluorine and also we
+see a display of the
+duration estimated as well the distance
+to travel from Sacramento to fluorine as
+well as we see another root here that is
+gray colored
+this is a substitute root or the
+connecting root just to avoid the
+traffic which is in Orange within the
+blue color root so the Gray colored root
+as well shows us the estimated duration
+to travel as well the distance
+now let us understand what is
+descriptive Analytics
+and why do we focus on this particular
+map example
+as we understand the root map the
+estimated duration as well the distance
+to travel via the blue color root as
+well the gray color root
+this is one way of understanding
+descriptive analytics as in what is
+happening
+but there is another way of
+understanding descriptive analytics that
+is by focusing on summarized past data
+and this is a descriptive analytics we
+see that what had happened
+in the previous year now let us focus on
+Predictive Analytics
+what is Predictive Analytics
+this type of analytics looks into the
+historical and present data to make
+predictions of the future
+what does this mean
+so Google has already suggested the best
+route
+which is the blue color route to travel
+from Sacramento to Florin and the
+duration is 18 minutes
+and distance is 9.7 miles
+let's assume that Google map has already
+collected historical data
+of this particular root
+and based on the available data their
+model has predicted the best route
+and also the duration that will be taken
+to travel from Sacramento to fluorine
+now let us focus on prescriptive
+Analytics
+prescriptive analytics describes the
+solution to a particular problem
+what was the problem in this case on the
+predicted best route
+some predictions on the traffic
+congestions and that's when Google Map
+recommends The Substitute Roots correct
+now these substitute roots are also
+prescribed by Google Map as a
+recommendation
+so prescriptive analytics is nothing but
+a solution and a recommendation provided
+for a problem
+so in this case we have the best route
+and we also have other substitute troops
+so let's quickly summarize descriptive
+analytics is about summarizing the past
+data or to see what is happening for
+example in the Google Maps scenario
+Predictive Analytics is about what would
+happen
+and prescriptive analytics is about
+prescribing the solution the best
+solution and the recommended Solutions
+now let us refer back to Mark's earlier
+scenario
+Mark along with his team identified the
+best model they also did some testing
+and they got identified the best results
+and they also finalized on one
+particular model
+based on that particular model now the
+results have to be provided in such a
+way
+that they are the best results and also
+the recommendations
+correct so it may not be just one single
+solution it may be a solution with
+couple of other recommendations as well
+so that is exactly what happens in the
+entire process of data analytics
+I hope this has been clear so far
+yes okay
+and now let us focus on benefits of
+using R why do companies extensively use
+R for data analysis and why is it chosen
+firstly R is an open source programming
+language which means that there is no
+license required to work with r
+and R does not require you to have a
+coding experience which means that a
+non-technical person in your team can
+also learn R very easily and start
+coding or building models in few lines
+of codes
+R can also be used with other
+programming languages such as Java C
+plus plus and pythons and integration of
+r with other programming tools or bi
+tools is very simple and easy
+and various statistical models are
+readily available in R which also means
+that there are plenty of in-bit
+libraries and packages already available
+and Reporting the results of an analysis
+becomes easier by using this inbuilt
+packages and for creation of these
+models in just simple few lines code
+with this understanding of the benefits
+of using R let us quickly hop on to our
+studio and start performing the Hands-On
+exercise for data analysis
+for this exercise we will use a data set
+named as demographics which is in a DOT
+CSV file tab firstly let us load the
+data set to rstudio and we will locate
+this in an variable named as demo we
+also refer to this as a data frame
+and now you will notice that a variable
+is created in an environment section
+which is in the bottom right hand side
+of the rstudio window
+and this particular variable comprises
+of 510 observations or records with 8
+variables
+let us simply expand this particular
+data frame and have a quick check on the
+data structure and understand the data
+types
+this particular data frame includes
+variables such as h
+maraito income the unit of income is
+dollar per day
+education levels the car price car
+category with several levels gender and
+retired status
+now let us view the top six records of
+this particular data set
+for this let's simply type head of demo
+and the result is now visible in the
+console section
+if you're interested to view all the
+records then simply type view of demo
+and this new window will show you every
+single record that is being loaded to
+our studio
+you may also simply apply the filters
+and the filters section here on
+individual categorical variables
+now that we have loaded the data set and
+also viewed individual records let us
+focus on creating subsets of Records by
+applying filters on individual variables
+or multiple variables
+so firstly let us apply filter on gender
+we will only retrieve the records with
+gender is equal to female and we will
+locate these records in a variable named
+as demo 2.
+as you notice now in the environment
+section the second variable is also
+created that is demo and this now is
+comprising of 250 observation which
+means the records are filtered down to
+only gender female
+next let us see how to apply a filter on
+income variable let us only retrieve the
+records where income is greater than
+100.
+let's view the result
+as we see here all the records include
+income greater than 100.
+now let us modify this query
+and we will ensure that the retrieved
+records includes income greater than 100
+and also specific variables are returned
+let's say we only want to have
+the first variable third variable and
+the seventh variable returned as the
+result
+let's have a quick check
+so we only have the first third and the
+seventh variable returned
+how about we only exclude
+the variable six to eight
+for this we include a prefix of minus
+sign
+and now let us see what is the result we
+have the variables from first to the
+fifth variable however we don't have 6 7
+and 8 variable
+I hope it's clear so far
+yes all right now let us see how can we
+apply condition by including both the
+variables that is gender and income and
+then we will filter the record and
+create a subset of data
+thank you
+again
+now let's view the result
+income is greater than 100
+and the gender is only female
+this is one way of creating subsets
+however now let us see how to use the
+subset command and create the subset
+let's create a subset of Records by
+applying filter on marital status and
+age
+we'll only retrieve records where
+marital status is equal to married
+and age is greater than 35.
+let's now view the result
+so here we have the age greater than 35
+and marital status is married
+let's use the same code and this term we
+will retrieve selected variables let's
+say variables ranging from 1 to 3.
+let's have a quick check so there are
+three variables age is greater than 35
+and marital status is married
+now let us see how to structure the data
+by sorting the data frame in ascending
+and in descending order
+we will apply this order function on the
+variable income
+firstly let us see how to order income
+variable in ascending order
+let's do a quick check
+and here we have income in ascending
+order
+now let's see how to
+modify the same code
+and view the records
+with income in descending order
+so we have now the income in descending
+order
+how about include two variables and sort
+the variables accordingly
+firstly we will sort the records
+by ordering income and age in ascending
+order
+let's quickly view the result we have
+income in ascending and age as well in
+ascending
+let's now modify this code
+this time we will order income and
+descending
+and age in ascending
+let us view the result so the income
+isn't descending and age is in ascending
+order
+so hope this is clear on how to solve
+the data frame by ascending and
+descending order per variable or by
+using multiple variables with this we
+will focus on learning statistical
+analysis
+how to perform statistical analysis on
+individual variable or multiple variable
+let's start by understanding the data
+distribution of variable income
+so that we identify what is the minimum
+value of income what is a maximum what
+is the range what is median what is the
+mean and we will also focus on the
+quantile distribution
+which is also analyzed in a box plot
+what is the minimum value in the
+variable income
+it's 9
+and what is the maximum
+so we have the maximum value
+now let us see what's the range
+so the range shows you the result with
+minimum and the maximum value
+how about the difference of Maximum and
+the minimum now let us focus on other
+summaries of data distribution for this
+variable income let's identify what is
+the mean value of income
+the mean is 78.
+let's also understand what is the
+standard deviation
+all right so the standard deviation is
+one one two dollar
+let us see what is the variance the
+variance should be larger than the
+standard deviation
+now let's say what is the median
+absolute deviation
+as you notice here the median absolute
+deviation value is lower than standard
+deviation why do we make this comparison
+from this it is evident that median
+absolute deviation is robust outliers
+and standard deviation is
+sensitive to outliers and also to the
+change in the mean value
+now let us understand the quantile
+distribution this is the same analysis
+that is visualized in a box plot ranging
+from zero percent to hundred percent
+identifying the individual data points
+and we can also refer and compare this
+to the Min the Max and the median values
+let us quickly see what is the median
+value of income
+as you notice here the median is 45 as
+well the 50th percent of quantile is 45
+which means zero percent is minimum and
+hundred percent is the maximum value
+now if your question is what is 25 and
+75 percent this is again used for
+identifying the range of interquartile
+the interquartile range is nothing but
+the difference of 75 percent minus the
+25 percent
+let's quickly see what is the IQR of
+income
+the iqrf income is 58. let us do a quick
+check
+75 percent of quantile is 86 and 25
+percent of quantile is 28.
+and the value is 58 which is equal to
+the IQR result
+foreign
+now that we have focused on the
+statistical analysis of the individual
+variables data distribution let us focus
+on the data visualization
+in this we will have a pictorial
+representation of analysis to identify
+the outliers to see what is the minimum
+and where do we see the data densely
+populated and how is it scattered Etc
+we will begin with creating a histogram
+now histogram can be used for univariate
+analysis which means in this scenario we
+will consider income variable and we
+will see how the count of income ranges
+gets distributed in a histogram
+for this we will have to install a
+package called as jgplot2 and also call
+this Library ggplot
+let us install the package
+and now let us call the library
+all right and we are ready now to begin
+with visualization
+for this we will use the geometric
+object histogram
+on the data demo data frame
+let me expand this window so that the
+code is visible
+and also use an aesthetic mapping
+for variable income this will be helpful
+for filling colors or filtrations Etc
+and only include 30 bins
+with individual bin size width
+of 100 which means there will be 100
+incomes in individual bins
+let's quickly look at the distribution
+of this histogram
+as you notice there are couple of
+outliers
+the counts of these income range are
+very limited
+however we see the densely populated
+income ranges with higher counts
+between 0 to 200. dollars per day
+this is also a way to identify and
+segment the customers based on their
+income ranges
+now let us see how to change the color
+of this histogram and also the border of
+the histogram
+for this we will include some additional
+options
+such as fill
+filled with blue color
+and the Border color is black
+now as you notice here the executed code
+provides us the histogram with blue
+color bars and black color Border Lines
+now we will focus on creating a faceted
+braid facing grid is also an aesthetic
+mapping object
+we will see how to enable the multiple
+histograms across the marital status and
+the genders so that we identify how the
+income is distributed for individual
+maratha status as well the genders
+let's Zoom this View and have a look at
+it
+as you notice here there are some
+interesting outliers here in the data
+distribution
+female unmarried drawing higher income
+and male unmarried and married also
+drawing higher income as compared to the
+females
+whereas if you notice that the female
+unmarried is drawing much higher income
+than the male
+this may also be very much related to
+the age
+now let us see how to create a stacked
+histogram when I say a stacked histogram
+I mean instead of feeling the color we
+will feel the gender
+so that there is a stack within the
+histogram
+so as you notice here I have made couple
+of changes I have included fill equal to
+gender within the aesthetic mapping now
+let us look at this histogram as you see
+here the gender is fair in the histogram
+hence we have stacked distribution of
+female and the male
+now let us focus on creating a bar chart
+with education versus income where we
+can identify the education levels and
+the income ranges for these education
+levels
+as you notice here we are going to
+create a visualization where we have the
+aggregation in form of mean and the
+geometric object used here is bar plot
+now let's Zoom this View and understand
+which education level
+have higher average income
+so as we see here the blue color bar is
+the post undergraduate degree which
+means this education level draws higher
+average income as compared to other
+education levels
+now let's create a histogram where we
+will see car price and the number of
+cars for individual category
+let's look at this visualization
+this visualization provides with some
+interesting Insight just by looking at
+the distribution of the car prices and
+the counts of the cars at the car
+category economy and even the luxury
+luxury car category or car prize is
+pretty much distributed whereas Economy
+Car category is densed which means that
+we could also look back into the income
+and age variables and try to figure out
+further more insights and then segment
+the customers for further targeting of
+these customers
+now what happens if we simply change
+this bin width to 30.
+As You observe here changing the bin
+width or increasing the bin width will
+also reduce the number of bins
+now we only have four bins here
+and the car category is filled that is
+what we have enabled within the
+aesthetic mapping
+and we see some more interesting insight
+as you look at the standard and the
+luxury car category
+the car prices are pretty much
+overlapping
+for the car category luxury and standard
+this could be the starting car price of
+the luxury brands
+now let us create
+a clustered bar chart
+look
+foreign
+let's look at this visualization
+in this visualization As You observe
+though we have enabled fill equal to
+gender in the aesthetic mapping we do
+not have the view in stack form but we
+have the bars one besides the other
+it is also because we have enabled a
+position called as position equal to
+Dodge in the code
+now what is the inside that we can draw
+from this visualization as you see post
+graduate degree with female gender is
+drawing higher average income as
+compared to any other education level
+now let us see how to create a box plot
+for variable income across the genders
+so the box plot can be enabled if there
+is a bivariate analysis to be performed
+on a continuous variable and a
+categorical variable or multiple
+categorical variables with a continuous
+variable
+foreign
+what does this say
+we have data distribution of income
+for individual genders that is for
+female and the male and we also notice
+outliers here
+anything about this whisker is
+considered to be outliers
+it might make more sense if we also
+include some coloring for these outliers
+maybe also enable shape
+now we have colored the outliers and
+it's colored Orange
+let's see if we can also enable the
+shapes
+and now we have here the outlier color
+as well the shape enabled
+now let us see how to enable a violin
+plot
+what is the utility of violin plot with
+the box plot we understand the analysis
+and the distribution of the data points
+is to identify the outliers to know what
+is the minimum value what is the max
+what is the median and what are the
+outliers
+but what is the purpose of a violin plot
+let us have a quick check
+As You observe there is some
+concentration of data points in the
+bottom of every car category
+however the concentration is higher for
+standard car category as compared to
+economy and the luxury
+now this is an interesting Insight that
+you wouldn't have come across in box
+plot the box plot is a very good
+representation for identifying outliers
+however while in plot will help you
+focus on the nuances which is not
+captured by the box plot
+we can also simply combine the box plot
+and the violin plot together
+simply include this jaw object
+foreign
+let's Zoom this and now you have a
+representation of box plot and the
+violin plot both combined in a single
+visualization
+interestingly you notice the outliers as
+well the concentration in the bottom of
+this violin plot so this could be some
+interesting insights that you draw and
+focus on these data points and
+understand what exactly is happening
+there
+now let's focus on the density plot that
+is density estimate of the histograms
+rather than just viewing the frequencies
+foreign
+distributions
+how about enabling the probability as
+true
+so that we enable the density instead of
+the frequency
+so now we have the density in the y-axis
+and in the x-axis we still have the
+income distribution
+this is the way of also adding a line
+plot which is a density plot on the
+histogram now as You observe here the
+density plot is not in the same level as
+the bar so let us adjust this line
+for this we will include
+adjust
+let's say equal to 3 and now let us see
+how the visualization appears now the
+density plot is on the same level as the
+bar
+now let us see how to create a cross
+table
+for car category
+and gender
+for this let us call the library d e s c
+r
+now let us create the visualization
+enabling cross table for car category
+and
+gender
+let's look at the result in console as
+you see here now we see the counts of
+the gender for Individual Car category
+the values over here represents that
+they're of 67 females
+falling within the card category economy
+and 80 males within the card category
+economy
+and for luxury we see that the count of
+female is higher than the male
+as well the proportions now how do you
+understand what proportions are
+presented here
+we may simply turn off some of the
+proportions like the t-test the
+chi-square Etc let us see how to enable
+that
+now let's look at the result this looks
+better
+now that we have the counts the female
+counts and the male counts across
+Individual Car category we also see the
+percentages rather than just looking at
+the absolute value so there are
+45.6 percentage of female within the car
+category economy and 54.4 percentage of
+mail within the car category economy
+similarly across rest of the car
+categories this kind of cross table or a
+contingency table is also helpful when
+you want to analyze the different
+categorical variables and identify the
+counts or the proportions now let us see
+how to use a scatter plot of age versus
+income
+scatter plot is a visualization used for
+bivariate analysis when you want to
+perform some analysis between two
+continuous variable at a data point
+level rather than performing the
+analysis at an aggregated level such as
+sum or mean
+and now we have a scatter plot of age
+versus the income age in the x-axis and
+income in the y-axis
+though we did not see any kind of a
+positive correlation or a negative
+correlation but we still see some
+interesting insights over here
+some of the data points are pretty much
+scattered and much away from densely
+populated data points
+I hope the learning has been informative
+and interesting so far we have covered
+the concepts of data analytics as well
+we have performed some Hands-On doing
+some statistical analysis and also
+creating interesting visualization
+to learn more and further on data
+analysis with r please watch the video
+about
+thanks for watching this video
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,230 @@
+hey everyone welcome to simply learns
+youtube channel
+in our previous two sessions we
+discussed what is correlation
+correlation coefficient and types of
+correlation
+in this session
+we'll continue the discussion and try to
+understand the difference between
+correlation and regression
+and discuss it with the help of an
+example
+so let's discuss the agenda for today's
+session
+we'll start this tutorial by discussing
+what is correlation then we'll move on
+to understand types of correlation and
+we'll discuss one major type that is
+positive and negative correlation
+after that we'll move on to what is
+regression lines of regression and then
+we'll discuss a simple regression model
+with its equation
+finally we'll move on to excel to
+discuss how we can calculate the
+regression using an example
+so let's begin what is correlation a
+correlation is a statistical
+relationship between two entities
+it measures the extent to which the two
+variables are linearly related
+in simple words
+it is a measurement of strength of
+association between the two variables
+for example an increase in the price of
+commodity is always accompanied by
+decrease in demand
+the value of the correlation always lies
+between minus one to plus one
+types of correlation
+there are mainly three categories of
+correlation
+the first one is positive and negative
+correlation
+the second one is linear correlation and
+non-linear correlation and the third one
+is simple multiple and partial
+correlation
+let's discuss positive and negative
+correlation
+a positive correlation means that a
+linear relationship is positive
+and the two variables increases or
+decreases in the same direction as you
+can see from the graph
+an example can be as the number of trees
+cut down increases the probability of
+soil erosion also increases
+in the same manner a negative
+correlation is just the opposite
+the relationship line has a negative
+slope as you can see from the graph
+and the variables changes in the
+opposite direction that is one variable
+decreases while the other increases to
+understand this an example can be if a
+car decreases the speed the time taken
+to reach the destination increases
+to know more about the types of
+correlation you can refer to our
+previous videos and you can find the
+link in our description now what is
+regression
+regression analysis like most
+multivariate statistics allows you to
+infer that there is a relationship
+between two or more variables
+these relationships are seldom exact
+because there is a variation caused by
+many variables not just the variables
+being studied
+in regression analysis there are two
+types of variable one is dependent
+variable and other is the independent
+variable
+let's discuss what the both variable
+represents a dependent variable is a
+variable whose value is influenced or to
+be predicted
+the dependent variable is often denoted
+by y and is also known as a predicted
+variable
+whereas independent variable which is
+denoted by x is a variable which
+influences the value or is used for
+prediction
+the independent variable is also known
+as a predictor variable
+the line of regression the regression
+line is a line which is used to describe
+the behavior of a set of data
+in other words it gives the best trend
+of the given data regression lines are
+useful in forecasting procedures its
+purpose is to describe the
+interrelationship between the dependent
+variable and independent variable
+the regression equation of y and x
+describes the change in the value of y
+for given changes in the value of x and
+vice versa
+in the regression line equation x and y
+are the variables of interest in our
+data with y the unknown or dependent
+variable and x the known or the
+independent variable
+let's discuss the two key terms in this
+graph the first one is slope
+slope is the ratio of the vertical and
+horizontal distances between the two
+points on a line
+and you can see y-intercept which is the
+coordinate of the point at which the
+curve intersects an axis there are some
+assumptions we take to create the
+regression model the first one is the
+dependent variable is assumed to be
+normally distributed
+the values of the dependent variable are
+statistically independent
+this means that when we select the
+sample of a particular x it does not
+depend on any other value of y
+and that third one is error values of
+statistically independent
+now let's discuss a simple regression
+model
+a simple regression model is used to
+depict a relationship between variables
+which are proportional to each other
+meaning the dependent variable increases
+decreases with the independent variable
+the equation of a simple regression
+model is y is equal to b naught plus b 1
+x plus e
+where y is dependent variable x is
+independent variable b naught and b 1
+represents y intercept and the slope of
+the line respectively and e is the error
+variable
+now let's move on to excel to calculate
+the regression coefficient of a given
+data we are on our excel workbook
+in front of us we have the data of
+temperature of the day and sales of the
+ice cream on that day
+let's try to understand the regression
+analysis and summary output using this
+data
+so the first step is to
+go to the data tab and select data
+analysis
+then select regression and click ok
+we'll get this table
+select the y range as ice cream sales
+this y range is predictable variable
+also called as dependent variable
+for the input x range
+select the temperature in degree celsius
+this is the explanatory variable also
+called as independent variable
+one thing you should keep in mind
+is that both the x and y column must be
+adjacent to each other
+we have the label so we'll check the
+label
+and we'll select the output range
+from g5
+check the residuals and click ok
+excel produces the following output
+let's analyze some key data
+we got the ask value to be 0.9676
+which is very good
+this shows that 96 percent of the
+variation in ice cream sales is
+explained by the temperature of the day
+closer to the one the better the
+regression line fits the data
+now let's move little more and analyze
+this coefficient
+if you look at the coefficient you will
+get the equation of the regression line
+in our case
+it is minus
+176.33 plus 27.68 into temperature of
+the day
+substituting the temperature of the day
+for any given day we can find the sales
+of the ice cream
+with our discussion we can conclude that
+there is a big difference between the
+correlation and regression although
+these are studied together
+correlation is used to study whether the
+variables under study are correlated
+whereas
+regression is used to establish the
+functional relationship between the two
+variables
+the equation of the regression line is a
+form
+y is equal to f x plus
+c correlation is used to establish the
+strength of the association between the
+two variables that are being studied
+whereas regression is used to make the
+future projections on the any given
+event
+so with this we have come to an end to
+this tutorial
+thank you all for watching this session
+we hope you enjoyed it
+if you have any questions feel free to
+put them in the comment section of this
+video thank you again and happy learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

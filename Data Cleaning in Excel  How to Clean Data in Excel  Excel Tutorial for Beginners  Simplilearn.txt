@@ -1,0 +1,540 @@
+Welcome to our data cleaning in Excel
+tutorial this video will explore
+essential techniques to transform messy
+data into accurate and meaningful
+insights from removing duplicates and
+handling missing values to formatting
+inconsistencies and error detection we
+will guide you step by step throughout
+the process learn how to efficiently
+clean organize and standardize your data
+using excel's powerful tools and
+functions mastering data cleaning will
+enhance your analysis and save you
+valuable time let's dive in and unlock
+the true potential of your data with
+excel's data cleaning capabilities
+before you get started if these are the
+types of videos you would like to watch
+then hit that subscribe button and the
+bell icon to never miss any update from
+Simply learn also if you are one of the
+inspiring business analysts looking for
+online training and graduating from the
+best universities or a professional who
+elicits to switch careers with business
+analytics by learning from the experts
+then try giving a short to Simply learn
+postgraduate program in business
+analysis that is from Purdue University
+and in collaboration with IBM the course
+link is mentioned in the description box
+and you should navigate to the course
+page where you can find a complete audio
+of the program being offered without
+further Ado over to our training experts
+hey everyone so let's get started with
+data cleaning in Excel
+so without further Ado let's get
+connected to excel where we have the
+data set that we need to use to perform
+the data cleaning process so right now
+on my screen you can see a simple data
+set which has details of students so we
+have name gender data joining race or
+authenticity parental level of Education
+country project and their scores and
+everything right so we might have to
+perform some data analysis operations
+and if you directly ingest this data
+onto data visualization tools or any of
+the analytical tools you might have some
+discrepancies on the data which might
+end up creating some discrepancies or
+abnormalities on your data report right
+so for example if you can see this
+particular name section here we have
+duplications and names so we have Jane
+Smith entered for twice and in the
+seventh row you can see there are some
+blank spaces in the front of the image
+in front of the name and you can also
+see there is no gender specified in this
+particular section right and if you also
+pay some attention to detail in the okay
+let's expand the columns perfectly first
+yeah into the column where we have
+country and city there are countries and
+cities to every row but in a few places
+we can see Planck cells again and again
+here in the section of project completed
+or not you also have some blank spaces
+once again right and if you clearly
+check at the dates column you have
+different kind of dates right I don't
+mean to say different data types I mean
+to say we have one single data type that
+is date but the way the dates are
+written or represented as different if
+you closely observe we have 0 4 0 4 2020
+separate by hyphen in the next row you
+have you can see that the date has been
+separated by the you know dots and again
+so so slowly somewhere we might have
+backslash right so there are different
+ways of representing the date so there
+are some anomalies in the data which you
+might have to clear and again if you
+want to add some formula let's say you
+have this students course and you wanted
+to calculate the average score right
+let's say average
+and if you won't also wanted to decide
+the uh you know class at which they have
+achieved their uh degree right so that
+can also be added here so it won't do
+that and right so these are the few uh
+problems that currently we have with our
+data which need to be sorted so we will
+be performing the data cleaning
+operations one after the other right
+let's quickly uh create a copy of this
+data set so that uh as a bonus point we
+will also do the same data cleaning
+process in power query which can be a
+lot more easier so right so let's
+quickly uh create a copy of this
+so before we get started with the power
+query let's hear it from our Learners
+about their success story after
+graduating from the post graduation
+program in business analytics from
+Purdue University
+I have always been passionate about
+learning new things and improving my
+teaching skills about five years ago I
+realized that I have a gap in my
+knowledge and to fill the Gap I need to
+skill myself I chose imprilateral my
+upskilling partner because of all it's
+comprehensive curriculum and it's
+connection with Urdu University hi my
+name is Carlos vinares
+I live in Lexington University of
+Kentucky in the United States I am an
+assistant professor at Midway University
+and I hold a PhD in management human
+resources and Leadership I decided to
+opt for the post graduation program in
+business analysis from Silver which has
+helped me a lot to my professional and
+personal life
+I have been teaching having before I
+moved to the United States years ago
+I try to use Excel while teaching
+research classes
+but
+since I only had the basic knowledge
+about it and other business intelligence
+tools it was very difficult for me at
+the beginning but after completing this
+class and learning how to use tools like
+Excel Tableau power bi power query
+problem I feel like it has been a total
+game changer for me now I apply these
+skills everywhere
+which has also helped me a lot in my
+yearly reviews I submitted all my
+certificates to my university and based
+on that my University plans to develop a
+class focus on business analysis
+starting in Fall 2023
+and I am really excited
+when I finally decide to go for an
+online program I research a lot
+and finally I chose simply learner and I
+must say it has been a wonderful
+experience
+if you see how the business world is
+changing now when you're Skilling
+yourself is quite essential to keep up
+with the change everything works on
+numbers now data is more valuable and
+important than ever so
+I encourage you to keep learning
+and keep growing now let's continue with
+our query so why are we using power
+query again so uh whatever the data
+cleaning process that we are going to
+perform is good upgrade extender because
+uh if you are dealing with some
+real-time data and if you are dealing
+with some data which almost changes
+every now and then then the data
+cleaning process that which we are about
+to do will be stagnated let's say for an
+example we have the First Column as name
+column as a requirement you might have
+to let's say insert a new column here
+and another new column here let's say we
+have a requirement where your manager
+says that he wants first name and last
+name as separate right
+first name and lastly
+so let's begin with uh the first stage
+right so that you have a better
+understanding of what's the problem that
+we have with this routine way of
+cleaning our data right so firstly uh
+let us
+make our data look aesthetically correct
+let's add some boundaries and all the
+things that make it a little more better
+looking right so the first one let's try
+to split the first name and last name
+right so here you can see the first name
+is John Doe right so I'll be writing j o
+h n
+there you go and g-a-n-e right so when I
+was about to type the first name you can
+see something got highlighted right j o
+h n
+and again if I write Jane once again
+and Michael right so it is able to
+predict that something is about to be
+coming out right Excel is able to
+predict that uh there is something in
+user's mind so maybe if it's that what I
+think right you can see it automatically
+has suggested me so it is trying to
+understand what you want to do so that
+particular feature of excel is called as
+Flash Fill right right now you have
+entered this first name and second name
+right
+uh you have entered first names and here
+Gene once again
+and let's try Michael and see you can if
+I minimize the screen you can see uh it
+is showing the entire data set right it
+is splitting the first name of column A
+from the entire data set just press
+enter and you can see it has entered all
+the first names until the last row right
+just within one single press of an
+entity so that particular feature of
+excel is known as Flash Fill in Excel
+now let us try the Flash Fill once again
+by adding the second names of each and
+every uh
+student in the data set press enter
+there you go now what was the problem
+right Flash Fill works if the data is
+stagnant it is a very fast and quickest
+way to split data and you can also okay
+let's try another different way as well
+to split the data I am going to insert
+two more columns with same names first
+name and last name right now let's click
+on the column select the column and go
+to data and here we will have an option
+called as
+text to columns yes so here our data is
+delimited with a comma so go to next we
+have selected the delimited option over
+here fixed width and delimited let's
+also check the fixed worth one first
+let's go with the limited one right so
+here let's select comma because we have
+comma and click on
+okay
+so it is splitting in the same row
+itself it is also okay not a big problem
+so it has split the first name and last
+name automatically right so let's have
+it over here
+here and since we don't need this
+particular column we can delete it
+right so here you can see we have first
+name and last name okay if I undo all
+the process
+right okay what I can do is
+[Music]
+Copic cells Here and Now split uh this
+particular thing into column so that I
+do have the original column as it is
+right
+I have it over here
+so I'll delete this column now we have
+both ways first is The Flash Fill one
+this particular one is let me name it as
+Flash
+and this one as flash as well
+right so that we have two different
+methods where data got split from uh
+first name to last name right so
+what's the catch now let me change the
+name in the original cell let me name it
+as Tony
+Stark
+now you can see we used a split text to
+columns in the first place that is this
+particular one and Flash Fill in the
+next option but when the data got
+changed here
+it is not representing in the same way
+right it's not that catching the new
+entry into the cell or original cell so
+that is the problem with this particular
+one will also solve it through Power
+query so first step of cleaning uh text
+is the split the columns that we did
+okay and let's also check on a few more
+anomalies which we had that is blank
+spaces formulas Etc we'll also check
+that one so so far we've finished with
+the
+text to columns and Flash Fill
+now let's minimize the cell size again
+back to normal
+right and now let's try to
+let's say remove these or okay let's try
+to insert a new column here and since we
+found that a few of the cells had Extra
+Spaces over here let's try to remove
+those Spaces by using the formula let's
+say trend
+equals to
+trim function
+and cell address
+enter
+so you can
+extend the same formula throughout all
+the rows and now you can see all the
+extra blank spaces are being removed out
+right and you can see uh previously when
+we used the Flash Fill right so it is
+having Extra Spaces
+right you can see it retains the Extra
+Spaces which we didn't need it so if I
+expand the
+sheet you can see
+the extra blank space is what we had in
+the original cell got retained in the
+resultant cell as well right let's try
+to avoid that so let's try to minimize
+the cells back to the original size and
+now you can conduct the same operation
+where you can you know kind of eliminate
+all the unnecessary cells
+now we have the first name
+and the last name
+foreign
+now comes it now let's try to eliminate
+the duplicate records in our data set so
+select all the data that you have on
+your data and then data set go to data
+and here you should be having an option
+called remove duplicates you know you
+it's very small and you just have to
+check for the data tools group and in
+the data tools group
+select this particular icon which says
+remote duplicates now at the last queue
+based on what parameter
+so let's give it one single parameter so
+let's uncheck all the select all the
+options give it to one single primary
+key kind of thing so here we have name
+so click on that or you can also give it
+as the first name anything which is
+which is unique for that particular
+instance and since we don't have a
+unique primary key I believe we have
+each unique students here so I give you
+the option called first name and based
+on first name keep holding the unique
+identities press on OK OK
+so so far we are good with the data and
+now we have the blank spaces right and
+let's try to replace the gender column
+first so wherever we have blank spaces
+then there you can eliminate the
+uh you know you can keep the space
+filled with as others okay let's try to
+do it
+let's go to the original sheet before we
+perform any of the operations
+and here
+select the entire range go to data Tab
+and click on the option
+from table range
+so it has automatically selected the
+range and click on my table has header
+so that your power query window knows
+that the first row is the headers right
+click on OK and now we are on the pop-up
+power query editor
+so here you have the option to split the
+column into first name and the second
+name by delimiter and our delimiter is
+comma
+so let's say you have multiple
+delimiters right so your name can be
+John Doe and another name which is
+separated by two commas here right so we
+don't want that to be happening so if we
+have three instances or more than two
+instances of comma it will say create
+two to three uh you know columns so we
+don't want that so let's provide left to
+most delimiter so once if it has
+occurred then it's enough
+right now we have the first name and
+second name successfully registered and
+on the right side you can see we have
+query settings tab and applied steps tab
+right here you can see each and every
+action what we are doing is being
+registered so that if you want to create
+or if you want to run the same operation
+once again you can just click on that
+and it will apply it now here we have
+different different dates right so let's
+try to format the dates as well
+into one single date format right click
+and here you can see change type option
+so here you can click on date so that
+all the formats run into one single type
+of format right and uh here
+we have some null elements registered so
+let's okay let's go back to gender
+column and here let's try to replace all
+the null values with others
+so click on the replace values and here
+type in small case or lowercase and
+replace with others
+now press ok so wherever it finds null
+entry it will replace it as others now
+coming back to the project column and
+yeah the country and the city column
+right so here as well so you can see all
+the entries are of the students are from
+different cities so it should be like
+they are taking the course in remote now
+that is the online course now wherever
+you find null that should be the
+students from the University as well
+right so again press as null in
+smaller case University student
+or yeah
+you can write it as daily scholar
+means this particular student is going
+to college every single day and the
+remaining ones are taking up the course
+through online
+there you go
+so we have daily Scholars wherever we
+have null
+right so that's it and now coming to
+project so here in a few places we have
+completed and in a few places we have
+none and in a few places we have null so
+wherever we have null it is an
+indication that the project is still in
+progress and in places where we have
+none it means that that particular
+student does not have to any projects or
+projects are not related to that
+particular course it can be anything
+right so let's try to replace the values
+once again wherever we have none let's
+try to add it as in progress
+okay
+and
+let's say we also want to split the
+groups
+so we can do that by split column by
+number of characters
+g r o u p five characters right so press
+OK and now we have eliminated the first
+five characters and separated the group
+right so these are the groups which we
+needed
+and so far so good the data is clean so
+we have our first name and second name
+splitted the gender column sorted the
+date data type has been sorted so we
+have one single data type for all the
+page and group has been separated and
+some college so
+yeah again this particular column if you
+want to change something let's say
+if you wanted to replace the values of
+some college
+to
+you know
+uneducated or something
+something relevant which makes more
+sense you can do that so it's done as
+well and the fee structure is also
+standard and Country City are also done
+so wherever we had no data it's been
+recorded as a daily scholar and progress
+about the project is set and the marks
+achieved in AIM LDL everything is sorted
+now that we have the cleaner data all
+you can do is just click on the home
+button and you can choose the option
+close and load
+right now you have the data loaded onto
+your Excel spreadsheet
+what's this and
+adjust the column width
+now you can calculate the average
+all the three rows
+and return
+apply to all the rows
+and again your if condition
+if
+this value is greater than
+35
+then student is
+written here
+has passed the test
+else
+it's okay
+now you can apply the same to all the
+rows and done now your data is clean so
+that's how you can do data cleaning in
+Excel so if you have any queries
+regarding any of the topics covered in
+the session or if you require the
+resources that we used in this session
+then do let us know in the comment
+section below and our team of experts
+will be more than happy to resolve all
+the queries at the earliest
+staying ahead in your career requires
+continuous learning and of Skilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+foreign
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

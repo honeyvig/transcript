@@ -1,0 +1,413 @@
+foreign
+YouTube channel today we are going to
+create a telegram board using Python and
+chat GPD and before proceeding I have an
+insight for you guys but I want to tell
+you like how we will create telegram
+board using chat jbt so just give the
+commands to the chat jbt and he will
+guide us or you provide the code and
+we'll just copy paste it and that is
+called scripting this is the new in
+demand job or what we say in demand
+skill like how you can just ask an AI to
+get your things done
+so that's the new job in demand these
+days and the Insight I was telling you
+about is if you are aiming to get
+certified as an AI and I'm an engineer
+and want to build a career in AI in that
+case you can check the professional
+certificate program in Ai and machine
+learning that is in collaboration with
+IBM and Purdue University by simply
+learn that will open the doors for the
+best career opportunities and find the
+details of this professional certificate
+program that is in machine learning and
+AI you can check the link in the
+description box below and maybe we'll
+pin the comment in the pinned comment
+so just check it out guys and now I have
+a quiz question for you guys
+and your question is Dash is a string
+literally denoted by triple quotes for
+providing the specifications of certain
+program elements
+and your options are interface
+modularity client or dog string
+so please answer in the comment section
+below and we'll update the correct
+answer in the pin comment you can pause
+the video give it a thought and answer
+in the comment section
+and moving on we will start with our
+project
+and for that first we'll create a folder
+in Python projects
+and name it as
+Telegram
+Port using shared gbd
+okay and inside this we'll open the
+command prompt
+and open our
+ID that is I would be using the video
+Studio code and you can use any ID that
+you have Hands-On
+and now
+we will go back to our chat GPT
+and we'll start here but before that
+let's talk about telegram board so a
+telegram Port is a program that
+interacts with users via the telegram
+messaging app
+uh the paid requisite is you should have
+a telegram account and Boards can be
+used for a wide range of purposes such
+as customer support news delivery and
+even games
+and chat Jeopardy so chat Jeopardy is a
+large language model trained by open AI
+that is based on gbd 3.5 architecture
+and geography is capable of generating
+human-like response through text based
+inputs making it a great tool for
+building chat boards
+now if we talk about prerequisites you
+should have a telegram account python
+installed on your system and we need a
+python telegram board library that I
+will show you where to install and that
+chargedy will tell us equal to
+install
+so we'll just ask chat Jeopardy
+to create
+telegram port
+using
+python
+okay so it says error we'll just refresh
+the page
+and ask again create telegram board
+using python okay
+so we'll see what
+any states so greater telegram board you
+need a telegram
+mode token to the board father yeah we
+have to go to the board folder I will
+show you guys how to do that
+install the required libraries next we
+need to install
+okay and write this code
+okay
+so in this script
+they have started with the start
+function so
+it will just says hello
+when it will be started
+okay
+so we will add some more functionalities
+and
+we will ask where to find the your API
+token here so I know like we have to go
+to the
+code further but we will ask charity
+video also
+where can we find
+the
+repeat open
+so it states that to get to telegram
+about API token you need to create a new
+bot by talking to the bot further on
+Telegram
+open telegram and search for board
+father okay and send the board further
+message that is Slash new mode and the
+board father will ask you for the name
+of the board and
+it will ask you about the username and
+the fifth is the word father will then
+generate a token for your board this
+token is a string of characters that
+uniquely identifies your board on
+Telegram so keep this token secure and I
+will also blur it so you guys won't be
+able to see it okay
+so moving to a telegram
+we'll just search board further here
+and you can see this is the board father
+and we'll just click on start
+and they asked the HTTP asked us to
+write Slash new mode we'll just click on
+this and we'll get
+so we'll write a new mode how are we
+going to call it please choose our name
+for the board
+so right
+simply learn
+underscore new
+import okay
+let's choose an username
+so simply
+learn
+one one underscore port
+and it states that that your username
+should end in both
+so we have landed with board
+and you could see the token here and
+here you can just access your board
+so
+we'll get back to our ID
+and create a new file and I will name it
+as new DOT py only
+or you can name it as board.viewer
+anything you want
+we'll get back to our
+chat Jeopardy but before that first we
+need to install the library
+for that you can go to the command
+prompt or you could use the terminal of
+your ID
+that is
+in Visual Studio code you could you
+could use the terminal to install the
+libraries you could see that the
+requirement is already satisfied as this
+library is already installed on the
+system
+so moving back library is installed and
+now we'll copy this code
+and paste it here
+and we will just change the token
+we'll go back to board further
+we'll copy this token
+come back
+and paste it here
+okay
+now we will
+run this and see whether our border is
+working or not
+so it has successfully executed
+I will get back to our board father and
+just click on simply 111 board
+so
+we click on start
+and see it says hello I'm your board so
+it's working fine
+so if we write hello
+it won't respond as there are no
+functionalities so we will ask jgpd to
+add functionalities
+please
+and
+some more
+functionalities
+and this once
+to the port
+let's see
+so sure here's an example of how you can
+add some more reality
+so they used what have data and
+dispatcher okay
+when you find the help command Handler
+okay
+so
+chair GPT has defined three functions
+that is Eco and what does equal to it
+will just give you the same thing but
+you give to the board or what you write
+to the board
+caps that
+he has also declared a help function and
+in which you can see like what
+functionalities does the board have and
+the Caps will do it will convert the
+message to all caps
+Eco Echo the message back to you it will
+give you the same message
+slash start it will start the board and
+slash help to get help
+and now
+unknown uh if there is something you ask
+out of these things it will just say
+sorry
+okay
+I will
+let you guys understand this code also
+but first we'll see whether it's working
+or not
+with that we have pasted it here
+we will paste our API token again
+so I pasted it here now first we will
+close this terminal and
+get a new terminal and then run the
+program
+I will get back to the
+mode further and this is our port
+so we'll just write slash
+start
+and it says hello I am your board
+now
+we will say
+hi to the bot
+so okay it's not responding
+okay we just close the terminal and we
+have pasted the
+Keys also
+okay
+done it again
+now we'll see whether it's working or
+not
+art
+right
+oh the code is not working
+and just see the code again
+okay uh
+here we don't have
+any response to Irlo
+so what we'll do
+we'll use the help and to call the help
+but we have slash help so these are the
+commands for what it will respond
+so we'll use slash
+help
+okay now you can see
+let's start to start the board that we
+have done help and eco
+you put the message back to you so we'll
+write
+I won't write back so we will write
+slash Eco hi
+then he has given us the output that is
+high
+so we can write slash eco
+how are you
+so it has given you back and same we
+have slash caps so let's slash caps
+anyone write something in small caps
+that would be
+greatly built
+okay now you can see it has returned in
+caps
+so you can add some more functionality
+to it and before that I will
+get you guys understood the code
+so now we'll see what does this code do
+so first we have imported the necessary
+modules that is the classes from the
+python telegram board Library
+that will need to create our board so
+telegram contains the main board class
+while updater command Handler message
+handle and filters or classes that we
+use to handle incoming updates and
+messages from Telegram
+okay
+now these are like we have created an
+instance of the board task that is using
+our telegram boot API token as well as
+an updater instance that will
+continuously fetch new updates from
+Telegram and pass them to the
+appropriate handlers
+and we have used context equal to true
+that tells the updater to use the new
+context based API introduced in version
+12 of the Python telegram board Library
+and we introduced a dispatcher object
+that will handle incoming updates
+after that we have created a start
+function and passed update and context
+so we have defined a function that will
+handle the start command
+and the update parameter contains
+information about the incoming update
+from telegram while the context
+parameter contains some useful methods
+and objects that we can use to interact
+with the telegram API
+in this case we have used
+contacts.port.send dot standards
+underscore message to send a message to
+the chat with the ID specified by
+update.effective underscore chat dot ID
+and after that we have created a help
+function
+so we use a multi-line string to define
+the help message which contains a list
+of available commands
+and then we have used the context dot
+board dots and underscore message to
+send the help message to the chat
+and after that we have the
+Eco function
+so we use context dot arguments to get
+the message sent by the user after the
+slash Eco command so to use this we have
+to use the slash Eco and after that we
+have to write the message and then use
+join to join the message back together
+to a single string we then we have used
+the context.board DOT send underscore
+message to send the message back to the
+chat then we have caps so this function
+defines that will handle the Caps
+command and we have again used the
+context stored arguments to get the
+message sent by the user after the slash
+caps command
+and then the we have used the upper
+function to convert the message to all
+caps and then we have used the
+context.bot dot send underscore message
+to send the message back to the chat
+then we have unknown function
+that is this function defines that will
+handle any command that the board
+doesn't recognize so we have used
+context.port.send
+so it will just say sorry
+okay so these are the start Handler help
+Handler Eco Handler and caps Handler
+so these are the commands
+and we have the
+we have added the add analog and to
+start the bot we have used update dot
+start underscore polling
+so this is how we have created the port
+with the help of python and charge ubd
+so
+we are done with the project you can add
+more functionalities also
+to the board you can just ask chat jbt
+to get more functionalities to play
+music in the telegram board
+or you could just ask him how to send
+messages to a particular user by the
+port only
+and you could also
+send media files ask the media files
+from the board
+and you can train a fully board by the
+help of charge APD and this is called
+chat GPT scripting so with the help of
+chat Jeopardy you can just ask him and
+he will guide you with all the code and
+processes you just have to
+like make them in a sequence and use
+them too full of your use
+so with that we have come to the end of
+this session
+and I hope that was interesting and
+informative if you liked it please let
+us know in the comment section below and
+also if you have any query please pin
+down in the comment section and our
+experts would be happy to help you out
+and till then stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+thank you

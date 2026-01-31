@@ -1,0 +1,735 @@
+website security principles have had a
+thorough overhaul over the past few
+years this is primarily due to the ease
+of access to malicious tools
+starting from ddos attacks to remote
+code execution
+a full-fledged web application security
+platform will need to check the major
+culprits like cross-site scripting
+one of the riskiest attacks to perform
+with similar level of rewards when
+conducted properly
+while the attacks from the client side
+on most occasion they can be configured
+to work remotely against most secured
+platforms as well
+let us go through some of the topics to
+be covered in today's video on
+cross-site scripting
+we start by learning the basics of
+cross-site scripting and the formative
+arguments that go into play when
+conducting this attack
+next we take a look at ways a cross-site
+scripting attack starts and how the
+hacker leverages vulnerable web
+applications and systems to infect users
+and servers alike
+moving on we read about the three
+distinct categories of attacks when it
+comes to cross-site scripting
+we then go through some of the industry
+recommended measures to prevent systems
+from falling prey to cross-site
+scripting attacks
+and finally we complete a set of
+cross-scripting challenges highlighting
+the ways hackers think and how a simple
+line of code can open up vulnerabilities
+if not configured correctly
+let's start by learning about cross-site
+scripting from a layman's perspective
+cross-site scripting also known as xss
+is a type of code injection attack that
+occurs on the client side
+the attacker intends to run harmful
+scripts in the victim's web browser by
+embedding malicious code in a genuine
+web page or online application the real
+attack takes place when the victim hits
+the malicious code infected web page or
+online application
+the web page or application serves as a
+vehicle for the malicious script to be
+sent to the user's browser
+forum's message boards and online pages
+that enable comments are vulnerable
+vehicles that are frequently utilized
+for cross-scripting assaults
+a web page or web application is
+vulnerable to xss if the output it
+creates contains unsanitized user input
+the victim's browser must then parse
+this user input
+in vbscript activex flash and even css
+cross-site scripting attacks are
+conceivable
+they are nevertheless most ubiquitous in
+javascript going to the fact that
+javascript is most important to most
+browser experiences nowadays
+the main purpose of this attack is to
+steal the other user's identity be it
+via cookies
+session tokens and other information
+in most of the cases this attack is
+being used to steal the other person's
+cookies
+as we know cookies help us to log in
+automatically
+therefore with the stolen cookies we can
+log in with other identities and this is
+one of the reasons why this attack is
+considered as one of the riskiest
+attacks
+it can be performed with different
+client-side programming languages as
+well
+cross-site scripting is often compared
+with similar client-set attacks as
+client-side languages are mostly being
+used during this
+however an xss attack is considered
+riskier because of its ability to damage
+even less vulnerable technologies
+most often this attack is performed with
+javascript and html javascript is a
+programming language that runs on web
+pages inside your browser
+the client-side code adds functionality
+and interactivity to the web page and is
+used extensively on all major
+applications and cms platforms unlike
+server-side languages such as php
+javascript code runs inside your browser
+and cannot impact the website for other
+visitors it is sandboxed to your own
+navigator and can only perform actions
+within your own browser window
+while javascript is client-side and does
+not run on the server it can be used to
+interact with the server by performing
+background requests
+attackers can then use these background
+requests to add unwanted spam content to
+a web page without refreshing it
+they can then gather analytics about the
+client's browser or perform actions
+asynchronously
+the manner of attack can range in a
+variety of ways it can be a single link
+which the user must click on to initiate
+a javascript piece of code it can be
+used to show any piece of images that
+can be later used as a front-end for
+malicious code being installed as
+malware
+but the majority of internet users
+unaware of how metadata works are the
+ways in which web requests are called
+the chances of victims clicking on a
+redirecting links is far too high
+cross-site scripting can occur on the
+malicious script executed at the client
+side using a fake page or even a form
+that is displayed to the user
+on websites with displayed
+advertisements malicious emails can also
+be sent to the victim
+these attacks occur when the malicious
+user finds the vulnerable parts of the
+website and sends it as appropriate
+malicious input
+now that we understand the basics of
+cross-site scripting
+let us learn more about how this kind of
+attack works
+the first place we have the website or
+the web browser which is used to show
+content to the victim or which is the
+user in our case
+whenever the user wants to grab some
+content from the website the website
+asks the data from the server the server
+provides this information to the website
+and the web browser which ultimately
+releases the
+victim how the hacker comes into play
+here
+it passes on certain arguments to the
+web browser which is can be then
+forwarded back to the server or to the
+user at hand the entire cross-site
+scripting attack vector means sending
+and injecting malicious code or script
+this attack can be performed in
+different ways
+depending on the type of attack the
+malicious script may be reflected on the
+victim's browser or stored in the
+database and executed every time when
+the user calls the appropriate function
+the main reason for this attack is
+inappropriate users input validation
+where the malicious input can get into
+the output
+a malicious user can enter a script
+which will be injected onto the
+website's code then the browser is not
+able to know if the executed code is
+malicious or not
+therefore this malicious script is being
+executed on the victim's browser or any
+faked form if that is being displayed
+for the users
+there are many ways to trigger an xss
+attack
+for example the execution could be
+triggered automatically when the page
+loads or when a user hovers over
+specific elements of the page like
+hyperlinks
+potential consequences of cross
+cross-site scripting attacks include
+capturing keystrokes of a user
+redirecting a user to malicious websites
+running web browser-based exploits
+obtaining cookie information of a user
+who is logged into a website and many
+more
+in some cases cross-site scripting
+attack leads to complete compromise of
+the victim's account attackers can trick
+users into entering credentials on a
+fake form which can then provide all
+information to the attacker
+with the basic working of a cross-site
+scripting attack out of the way let us
+go over the different ways hackers can
+leverage vulnerable web applications to
+gather information and eventually breach
+those systems
+the prime purpose of performing xss
+attack is to steal the other person's
+identity
+as mentioned it may be cookies session
+tokens etc
+xss may also be used to display fake
+pages or forms for the victim however
+this can be performed in several ways
+we have a reflected attack this attack
+occurs when a malicious script is not
+being saved on the web server but is
+reflected in the website results
+reflected xss code is not being saved
+permanently
+in this case the malicious code is being
+reflected in any website result
+the attack code can be included in the
+faked url or in the http parameters
+it can affect the victim in different
+ways by displaying fake malicious speech
+or by sending a malicious email
+in a reflected cross-site scripting
+example the input of a search form is
+reflected on the page to show what the
+search key was an attacker may craft a
+url that contains malicious code and
+then spread the same url via email or
+social media
+a user who clicks on this link opens the
+valid web application which then runs
+the malicious code in the browser
+this script is not stored in the web
+application and malicious code is shown
+only to one user the user that opens the
+link executes the script and the attack
+is not necessarily visible on the server
+side or to the app owner itself
+the next variant is a stored cross site
+scripting attacks
+this occurs when a malicious script is
+being saved on the web server
+permanently
+this can be considered a riskier attack
+since it has leverage for more damage
+in this type of attack the malicious
+code or script is being saved on the
+server for example in the database of
+the website it is executed every time
+the users call the appropriate
+functionality
+this way stored xss attack can affect
+many users
+also as the script is being stored on
+the web server it will affect the
+website for a longer time
+in order to perform stored xss attack
+the malicious scripts should be sent
+through the vulnerable input form for
+example can be a comment field or review
+field
+this way the appropriate script will be
+saved in the database and evaluated on
+the page load or appropriate function
+calling
+in a stored xss example the script might
+have been submitted by an input field to
+the web server which did not perform a
+sufficient validation and stores the
+script permanently in the database
+the consequence of this might be that
+the script is now being delivered to all
+users visiting the web application and
+if for example able to gain access to
+the user session cookies
+in this attack the script is permanently
+stored in the web app the users visiting
+the app after the information retrieved
+the script
+the malicious code then exploits the
+flaws in the web application and the
+script and the attack is visible on the
+server side or to the app owner as well
+the third variant is dom-based
+cross-site scripting attacks
+this type of attack occurs when the dom
+environment is being changed but the
+client side code does not change
+when the dom environment is being
+modified in the victim's browser the
+client-side code executes differently
+in order to get a better understanding
+of how xss dom attack is being performed
+let us analyze the following example
+if there is a website called texting.com
+we know default is a parameter
+therefore in order to perform axis's dom
+attack we should send a script as
+parameters
+a dom-based xss attack may be
+successfully executed even when the
+server does not embed any malicious code
+into the web page by using a flaw in the
+javascript executed in the browser for
+example if the client-side javascript
+modifies the dom tree of the web page
+it can be based on an input field or the
+get parameter without validating the
+input this allows the malicious code to
+be executed
+the malicious code the exploits flaws in
+the browser on the user side and the
+script and the attack is not necessarily
+visible on the server side or to the app
+owner
+by now it is clear that cross-site
+scripting attacks are difficult to
+detect and even tougher to fight against
+there are however plenty of ways one can
+safeguard against such attacks
+let's go through some of these
+preventive measures
+like mentioned earlier
+excesses attacks are sometimes difficult
+to detect
+however this can be changed if you get
+some external help
+a way to prevent excess attacks is using
+automated testing tools like crash test
+security suit or acunetix security suit
+still manual testing is highly time
+consuming and costly and therefore not
+possible to be done for every iteration
+of your web application
+consequently your code shouldn't be
+untested before any release
+using automated security you can scan
+your web application for cross-site
+scripting and other critical
+vulnerabilities before every release
+this way you can ensure that your web
+applications live version is still
+secured whenever you alter or add a
+feature
+input fields are the most common point
+of entry for xss attack script
+therefore you should always screen and
+validate any information input into data
+fields
+this is particularly important if the
+data will be included as html output
+this can be used to protect against
+reflected xss attacks
+validation should occur on both the
+client side and server side as an added
+precaution
+this helps validating the data before
+it's being sent to the servers and can
+also protect against persistent xss
+scripts
+this can be accomplished using
+javascript
+xss attacks only appear if any user
+input is being displayed on the web page
+therefore try to avoid displaying any
+untrusted user input if possible
+if you need to display user data
+restrict the places where the user input
+might appear
+any input displayed inside a javascript
+tag or a url shown on the site is much
+more likely to be exploited than the
+input that appears inside a division or
+a span element inside the html body
+protecting against excess
+vulnerabilities typically requires
+properly escaping user provided data
+that is placed on the page
+rather than trying to determine if the
+data is user provided and could be
+compromised we should always play it
+safe and escape data whether it is user
+provided or not
+unfortunately because there are many
+different rules for escaping you still
+must choose the proper type of escaping
+before settling on a final code
+encoding should be applied directly
+before user controllable data is written
+to a page because the context you are
+writing into determines what kind of
+encoding you need to use
+for example values inside a javascript
+string require a different type of
+escaping to those in an html context
+sometimes you'll need to apply multiple
+layers of encoding in the correct order
+for example to safely embed user input
+inside an event handler you need to deal
+with both javascript context and the
+html context so you need to first
+unicode escape the input and then html
+encoded
+content security policy or csp is a
+computer security standard introduced to
+prevent cross-site scripting click
+checking and other code injection
+attacks resulting from the execution of
+malicious content in the trusted web
+page context
+it is a candidate recommendations of the
+w3c working group on web application
+security
+it's widely supported by modern web
+browsers and provides a standard method
+for website owners to declare approved
+origins of content that browser should
+be allowed to load on that website
+http only is an additional flag included
+in a set cookie http response header
+using the http only flag when generating
+a cookie helps mitigate the risk of
+client-side script accessing the
+protected cookie that is if the browser
+supports it if the http only flag is
+included in the http response header the
+cookie cannot be accessed through the
+client side script again this is if the
+browser supports the slack
+as a result even if a cross site
+scripting flaw exists and a user
+accidentally accesses a link that
+exploits this flaw the browser will not
+reveal the cookie to a third party
+if a browser does not support http only
+and a website attempts to set an http
+only cookie the http only flag will be
+ignored browser browser thus creating a
+traditional script accessible cookie as
+a result the cookie becomes vulnerable
+to theft of modification by any
+malicious script
+next on our docket is a live
+demonstration where we solve a set of
+cross site scripting problems starting
+from the basic level to the top most
+level sex
+we are going to start at level 1.
+in this verb application it demonstrates
+the common cause of cross-slide
+scripting where user input is directly
+included in the page without proper
+escaping
+if we interact with a vulnerable
+application window here and find a way
+to make it execute javascript of our
+choosing
+we can take actions inside the
+vulnerable window or directly edit its
+url bar
+this task needs only basic knowledge
+let's see why the most primitive
+injections work here right away
+let's do a simple query and inspect the
+resulting html page
+i'm going to use this
+phrase
+with a single quote as a special
+character
+we can now inspect the html page
+we can see here in this line
+the special character single quote
+appears in the result over here
+the provided query text is placed
+directly in a b tag as in a body element
+we need to perform a reflected xss into
+the web application because they are
+non-persistent xss attacks and the
+payload should be included in the url to
+perform successful exploitation
+we can use any payload but we're going
+to use the simple one to perform an
+alert in this web application it's
+simple and can be shown easily
+i'm just going to write the script over
+here
+and we're going to press search
+as you can see we have successfully
+launched our first cross site scripting
+attack
+we can see an alert box pop-up with the
+necessary message and a similar process
+can be used to steal browser cookies and
+passwords albeit with different commands
+now we have the option to move to level
+2.
+in this web application it shows that
+how easily xss bugs can be introduced in
+complex chat applications
+chat app conversations are stored in a
+database and retrieved when a user wants
+to see the conversation therefore if a
+malicious user injects some javascript
+code all visitors will be infected
+this kind of cross-site scripting attack
+is more powerful
+and it is more riskier than reflected
+cross-site scripting attacks and that's
+why is known as stored xss
+i posted my query
+with a special character of a single
+quote
+and this is what i
+get whatever i typed in simply appeared
+on the page right after i click on share
+status
+let's see the source
+you can see here the text i posted seems
+directly put inside a block code tag so
+even a simple script tag we used in
+level 1 should work here
+but it will not
+let us examine the code to understand
+why
+we're going to toggle the code of a here
+and check the index.html file
+important part
+is line 32.
+the generated html fragment which is the
+html variable in the code is added to
+the mail html using the inner html
+method so in the browser passing this
+html fragment it will not execute any
+script tag defined within that html
+fragment
+html parser will not execute a script
+tag when it passes htmls via this method
+this is why the script tag like we used
+in level 1 is not going to work here our
+solution is to use events
+events will execute the defined
+javascripts
+we're going to use an image over here
+and when we press on share status
+above injection we are loading an image
+that doesn't exist which causes to
+trigger an on error event
+in on error event
+the it will execute our alert method
+with that we are able to beat level 2
+and we can now move up to the next level
+in our challenge
+as you can see
+clicking on any tab causes the tab
+number to be displayed in the url
+fragment
+this hints that the value after the
+hashtag controls the behavior of the
+page that is it is an input variable
+to confirm let's analyze the code
+as you can see in line 43 inside the
+event handling
+the value provided after the hash in the
+url
+is directly passed on to the chew tab
+method no input validation is being
+performed
+the value passed to the choose tab
+method is directly injected into the img
+tag in line 17.
+this is an unsafe assignment and it is
+the vulnerable part of the code
+now all we have to do now is to craft a
+payload that would adjust the img tag to
+execute our javascript remember the
+script tag from level 1 would not work
+here since the variable html is used to
+add the dom dynamically hence the events
+are asus here once again
+i will choose to use the existing img
+tag and change the source to something
+that doesn't exist
+hence forcing it to fall in to execute
+an on error even which i will pass the
+url
+once we visit that url we can see that
+our java popup has opened up here with
+the same message of xss level 3 has been
+completed
+with this we can now move on to level 4
+which is going to present a different
+kind of attack
+in this web application there is a timer
+on the page that means whatever numbers
+we put in the box a countdown starts
+and then when it finishes the
+application alerts
+that the countdown is finished
+and we can see the time is up up
+appearing over here and this resets the
+timer again
+now it is obvious that the value entered
+in the text box is transferred to the
+server over the timer parameter in the
+url
+let us examine the code to see how the
+timer parameter is being handled
+we're going to visit timer.html over
+here
+and we're going to check over here
+in line 21
+the start timer method is being called
+in the onload event
+however the timer parameter is being
+directly passed to the start timer
+method
+we need to perform a pop-up alert in the
+web application which escapes the
+content of the function start timer
+without breaking the javascript code
+the parameter value is directly added
+the start timer method without any
+filtering
+what we can try to do here is to inject
+an alert function to be executed inside
+the online event along with the start
+timer method
+we're going to remove this argument
+and put a script over here
+now i may press on create timer
+and we have a pop-up with xss level 4
+completed
+we can now move on to level 5.
+in this web application this application
+xss is different because this challenge
+description says cross-site scripting
+isn't just about correctly escaping data
+sometimes attackers can do bad things
+even without injecting new elements into
+the dom it's kind of open redirect
+because the attack payload is executed
+as a result of modifying the dom
+environment in the victim's browser
+this environment is used by the original
+client-side script so that the
+client-side code runs in an unexpected
+manner
+the vulnerability can be easily detected
+if the next link in the signup page
+is inspected
+the href attribute value of next link is
+confirm which is exactly the value of
+the next url query parameter
+as you can see over here
+this means using the next query
+parameter can be used to inject a
+javascript code to the href attribute of
+the next link
+the following is the best way to do it
+as soon as the user clicks on the link
+the script will be triggered
+we're going to press anything random
+and now that we click next we can see
+the xss level 5 that we had provided in
+the url as a parameter to the next
+variable
+since the value of next provided appears
+on a pop-up we can consider the attack
+as success and move on to the final
+level 6.
+in this web application it shows some of
+the external javascript is received
+if you analyze the url
+you can see that the script is loaded
+already
+the vulnerability lies within how the
+code handles the value after the hashtag
+if you check on line 45 the value right
+after the hashtag
+is taken as the gadget name
+and then in line 48
+the value is directly passed on to the
+include gadget method another include
+gadget method that we can see over here
+you can see in line 18
+a script tag is created and the url
+gadget name parameter value is directly
+used as the source attribute of the
+script tag in line 28.
+this means we can completely control the
+source attribute of the script tag that
+is being created
+that is with this vulnerability we can
+inject our own javascript file into the
+code
+we can inject a url of our own hosted
+javascript into the web applications url
+after the hashtag and the url should not
+be using https but anything like that to
+bypass the regular expression for
+security checking
+going to remove
+the pre-stored url
+and we're going to load our own
+javascript file
+finally we have reached the end of our
+challenge
+completed six different varieties of
+cross scripting attacks and use
+different solutions for all of the six
+questions
+hope you learned something new today if
+you have any questions regarding the
+topic feel free to ask us in the
+comments below and we will get back to
+you as soon as possible
+subscribe to our channel for more
+informative videos and thank you for
+watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
