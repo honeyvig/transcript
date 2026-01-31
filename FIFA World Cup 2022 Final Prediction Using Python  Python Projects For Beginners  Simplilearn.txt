@@ -1,0 +1,1820 @@
+foreign
+today we will take you through a hands
+of lab demo of the winner prediction of
+the FIFA World Cup Qatar 2022 using
+machine learning so we already did the
+prediction where we took all the
+countries which are playing in the FIFA
+World Cup but this time we will predict
+from the fourth semi-finalists which are
+Argentina Croatia France or Morocco
+okay so before we start I hope this
+screen is clearly visible and the audio
+is fine if yes please type in yes if
+there are any issues do let us know in
+the chat section so that we can resolve
+them
+let's wait for some more minutes to let
+us the people join until then let me
+tell you guys that we have regular
+updates on multiple Technologies if you
+are a tech geek in a continuous hunt for
+the latest technological Trends then
+consider getting subscribed to our
+YouTube channel and press that Bell icon
+to never miss any update from Simply
+learn
+I'm repeating again let me tell you guys
+that we have regular updates on multiple
+Technologies if you are a tech geek in a
+continuous hunt for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply run
+great I think we can get started so in
+today's session we will go through
+some different questions regarding
+football and solve them using different
+function and libraries of python and
+ultimately we will predict the winner of
+FIFA World Cup 2022 from our fourth
+semi-finalist okay so there is one
+question for you guys which team do you
+want to win the FIFA World Cup 2022 okay
+Argentina Croatia France and Morocco
+so comment down your favorite team in
+FIFA World Cup so let's move to the
+programming part
+so first we will open up command prompt
+to write a command to open Jupiter
+notebook so here we will write Jupiter
+notebook
+okay press enter
+so this is the landing page of Jupiter
+notebook okay and here you have to
+select new python file
+so this is the word kernel look likes
+okay so here I will first change the
+name
+FIFA
+you know
+prediction
+okay
+give one space here okay
+name it
+so before that I want to
+tell you guys that we have already read
+the prediction
+before that
+okay
+it's loading so this was the prediction
+before we did
+so you can check the
+video in the YouTube on our channel so
+this was the
+prediction we did in which
+we have predicted the
+like top 10 goalskeeper score and
+like top 10 is stronger defense
+and the thing like top 10 attack score
+so now what we will do we will do
+with the only four teams which are four
+semi-finalists okay that is Argentina
+Croatia Morocco and plants so we have to
+decide which team will we win okay we
+have to predict so this is the top 15
+teams with the highest win percentage
+okay there is Argentina Croatia is there
+Morocco is there you can see the France
+is there
+so from the previous prediction so the
+winner was
+Brazil okay as per the previous
+prediction
+but
+this is just a prediction using machine
+learning or the previous data okay
+so now what we will do we will predict
+from the only 14. okay we will just drop
+all the data from our data set and we we
+will create a new data
+so yeah so we will remove all the teams
+except
+Argentina
+Croatia Morocco and
+France okay except that
+so let's move
+so this is our previous prediction you
+can see the home TV advantage of like
+Qatar and there are many
+questions
+like what is the winning percentage you
+can check this link
+okay you can check this video's link on
+the description box below
+and like do teams which is stronger
+offensive players score more goals and
+do teams with stronger goalkeeper like
+this
+and now we will cover this
+question
+okay for the
+poor team
+top 10 steam ratio considered calls
+versus goalkeeper score this type of
+question top 10 teams with longest win
+streak
+like better team win percentage
+okay away team home team okay what is
+the total so this type of question we
+will
+cover
+so anyways this is just a prediction
+okay
+this is just a prediction so now we we
+have four five same finalists now we
+will predict
+who will win the
+FIFA World Cup Qatar 2022 using machine
+learning okay
+so we will take like logistic regression
+here
+okay so now let's import some major
+libraries of python
+for the analysis
+so here we will report
+date time
+okay import
+numpy
+as NP
+and B
+so we will import
+pandas as PD
+and Airport matplotlib
+dot Pi plot
+TLD
+graphics and all so here I will put C
+bone
+as SNS
+and here I will import burning
+okay then warnings
+dot filter warnings
+that is ignore
+so let me run it yeah
+so it's loading
+so numpy is a python Library used for
+working with arrays it also has a
+function for working within the domain
+of lineal algebra
+and matrices
+it is a open source project and you can
+use it freely okay so number stand for
+numerical python and pandas panda is a
+software Library written for the Python
+programming languages for the data
+manipulation
+and the analysis in particular it offers
+data structure
+and operation for manipulating numerical
+data set and the tables
+okay then there is one more c bond
+so c bond is a open source python
+Library based on matplotlib it's called
+C1 okay it is utilized for data
+exploration and data visualization
+with data frames and the pandas Library
+c bond function with like ease
+okay there is one more like matte
+product lip so matte product lip for
+Python and its numerical extension numpy
+matte proclib is a cross platform data
+visualization and like graphical
+charting package
+okay as a result it represents a strong
+open source substitute for Matlab the
+api's application programming interfaces
+format product allow programmers to
+incorporate graphs into GUI applications
+okay date time one of the most often
+used modules to modify data and the time
+object data is known as the date time
+okay you can read and convert date
+strings at rate across the range of
+dates and many more things okay so
+moving forward let's import
+the data set so you can download this
+data set from the description box below
+okay so I'm writing here DF equals to PD
+dot read
+underscore CSV
+then data set name like new
+international
+underscore
+matches
+Dot
+CSV
+okay
+then so then enter then I will do it
+yes sorry my bad so DF
+yeah so this is our data set you can see
+here we have only Argentina Morocco and
+Croatia France
+okay
+so what we will do now we will see how
+many rows and columns are present so DF
+shape I will write press enter
+so as you can see let me do like this so
+as you can see we have 758
+a rows and 25 columns present in the
+data set okay so then we will see some
+information about the data set so for
+that we have to add DF dot info
+let's press enter
+so as you can see you can see here home
+team date away team home team continent
+content City Country neutral location
+shootout
+these all are present in our data set
+okay
+foreign
+okay so now let's see some static as
+stats value so for that we have to write
+DF Dot describe
+okay
+then here you can see some
+count values are mean of the particular
+column
+then standard deviation then what is the
+25 percent of this
+you can say column like this we have
+maximum value
+we have things like this okay for all
+the columns
+okay so moving forward what we what we
+will do we will change the date to
+format date okay for that there's a
+simple way to do it
+was to PD Dot
+to
+date time
+PF
+date
+okay press enter
+so let's see the date
+DF
+so as you can see here date so before
+that
+yeah
+so date is not a pro in a proper format
+I guess yeah you can see it is not in
+proper format so now you can see the
+date in proper format okay
+so moving forward
+what we will do we will list all the
+columns which contains
+like none values and N values okay for
+that I have to write columns
+contains
+okay that is column or call
+ndf dot columns
+if
+like DF
+column
+dot is null
+and
+Dot
+any
+so what we will do we will print
+columns contain
+ER
+okay like values
+for the next line
+so here I will write columns
+contains
+null
+okay
+so
+so these are some columns contain null
+values
+okay
+so what we will do we will import
+team
+okay which are the same final list
+that is
+Argentina
+okay
+then France
+then
+go
+so spelling is wrong Morocco
+then
+there's one more Croatia
+okay
+uh
+teams loaded we can write here like same
+final steam
+but it is okay like it's your wish to
+what to write here okay so we'll make
+one function
+write a for Loop
+30X in World Cup 2022
+then for y in
+columns
+contain
+against null
+that is d f y
+dot fill
+Ane
+that is DF
+y
+0 ratio nine
+is equal to X
+then why
+dot mean
+in place
+equals to true
+okay
+so
+it is done
+so everything is done so we will do some
+now Eda exploratory data analysis with
+some charts and some values
+so like I will take first question is
+which team has the most win
+so we will select the required columns I
+need to and create a new data frame for
+that okay so I will write home team
+equals to
+DF
+date
+comma
+home team
+comma
+home team
+score
+comma
+away
+team score
+okay we have we will create these new
+four data frames
+then right here home
+underscore team Dot
+Dot
+okay
+so we have created new home team home
+team score
+another team is scored and did okay
+so like moving forward I will check for
+all the home team that won their games
+okay
+whether it is Argentina whether it is
+Morocco whether Croatia and France okay
+so I will write here home
+team
+home team score
+if you want this full code just comment
+down below I will provide you like our
+team will provide you
+just come in for the same
+way
+team score
+look at that
+home wins
+equals to
+oh
+team Dot
+lock
+then
+let's go team
+then
+home
+team score
+then
+home
+underscore team
+that will be away
+team score
+okay then we'll set home
+which
+okay let's see
+so these are some team which
+one
+like the home team that won their games
+okay
+like somewhere at Utah in a home team
+when he won from some team okay then
+Morocco are about that crochets there
+France is there for particular all the
+rows okay
+like they lose also because they have
+only 483 Rose we have 700 something rows
+okay they lose also that data is not
+present here
+so now I will check for all the away
+teams that won their games not they've
+won okay
+or you can say like when they were will
+be the away team okay
+so I will check here home
+team
+score
+home team
+it's not here
+foreign
+sorry we are checking for the away team
+away team
+okay then home
+those
+who
+home team
+Dot
+talk
+home team
+that is home
+team
+score
+that is home
+team
+away
+team score
+okay so let's see the home loss home
+loss for the four team
+so as you can see the home team is
+Argentina and the score is zero and our
+team score is five
+that is you can see France and these are
+the the teams these four teams which
+losses the game
+okay the international matches
+as a home team
+they are only one zero five rows
+Okay so
+that mean two for the better visuals
+so now what I will do I will merge the
+both the tables okay so I will write
+home team
+pins
+issue
+four wins
+it
+comma
+home team
+comma
+home team score
+that comma
+away team
+score
+okay
+then
+I will write here
+I will write here uh
+dot rename
+columns
+because you
+oh
+yeah so I will add a home team
+that is
+colon
+okay A Team
+comma home team
+cool
+hold on
+you know it's good
+obtain
+and
+okay then comma
+set off away
+team
+or
+have to write
+away
+team win
+okay
+so click next
+so
+it will go for the same awaiti means so
+what I will do I will copy paste
+all the things and paste it here
+okay done
+yeah
+so now I will write here
+team
+Jake
+because you
+home team wins
+but append
+like way
+team
+wins
+okay then
+team
+streak
+why there is
+team win
+away team win
+is there is one problem
+string
+let me run it now yeah
+so as you can see we have four column
+like team home team win private team win
+okay
+two times Argentina wins and await names
+one being
+like this okay so now we will check the
+T mistake
+which found the maximum time okay so
+team
+streak
+team
+dot value
+counts
+Dot and largest
+one
+okay now let's see the dream see as you
+can see here the France is the team
+which one like
+which has a long history in team Street
+okay 172.
+so now we will see what is the winning
+percentage comparing when the highest
+ranked team is against the lowest ranked
+team okay suppose if Argentina has the
+highest ranked team and it is playing
+against Morocco or some other team okay
+lowest ranked team so what will be the
+winning percentage
+of the highest ranking to win the match
+okay so then I will write
+d f
+victory
+team one
+comma team two
+comma
+team one
+team one
+let's go to rank comma
+team two underscore rank
+comma
+team one underscore score
+comma
+team to underscore score
+okay
+and if
+listen carefully if team one
+score is greater than
+team
+to
+score
+okay then what will will happen winner
+equals to T1
+it's so simple
+then as if
+team one score
+equals to equals to
+team
+two scores
+okay
+then winners
+equals to
+then winner equals to
+okay Winner's spelling is wrong
+is equal to drawn
+yeah
+then
+else
+winner
+equals to
+inner equals to team 2. got it
+so it's a easy one
+return
+winner
+okay
+so let's imply some data frame JF
+winners
+go to DF Dot
+apply
+Lambda
+X
+victory
+okay then
+home team
+way team
+more X
+form team
+FIFA
+rank
+and
+comma
+we have to write X
+away
+team
+FIFA
+rank
+comma X
+home
+team
+score
+X
+away
+team
+score
+okay then I will add access
+equals to 1. X is equals to 1 means with
+it will happen in column and X is equal
+to 0 means row wise
+okay
+so then I have to write here I have to
+create one function DF rank
+ohm away
+rank home
+rank away
+if rank
+ohm
+Bank away
+and
+go to the rank of it then
+return
+boom
+okay
+else
+return
+away
+okay
+and after I did d d f
+like for better rank so
+better
+let's go rank
+request you
+have dot apply
+Lambda
+X
+rank
+right here like
+X
+then like for the home team
+underscore team
+then for the X
+for the equity
+the team
+and for the X
+team
+FIFA
+rank
+X
+V
+team
+and FIFA then rank
+okay the axis will be same
+comma axis
+equals to column column means one
+okay so then I have to write
+DF
+result
+Bank
+and
+winner
+I want pattern
+rank
+okay
+then if Venus equals equals to
+drawn
+what will happen then
+here equals to equal to drawn
+then we'll Apple return
+winner
+okay
+if winner
+equals J equals to
+better rank
+what will happen return
+there will be one column name highest
+okay you will see in the graph
+then else there is one option my red
+return
+policed
+got it
+so why do we need this
+yeah
+so
+this
+will write here DF then
+result rank
+equals to DF
+Dot apply
+Lambda
+X
+these are
+tank
+X
+winner
+comma
+x for
+better rank
+comma
+axis equals to 1.
+okay
+then I will run it then let's see the
+graph
+so PLT dot trigger
+then figure size
+should be
+n comma 5
+okay
+total
+was to float
+end of DF okay
+then ax equals to SNS Dot
+count plots
+x equals to
+result rank
+result rank
+comma DF
+like data equals to DF
+okay
+so I will run here for low for p in
+a x dot
+patches
+percentage
+equals to
+1 f
+okay until percentage
+got it dot format
+will you multiply by 100
+into
+P dot get
+height
+okay not here
+I have to write more so I will
+then I will run with
+so
+e dot get
+bit
+then hide
+because you P Dot
+get
+height
+and
+X comma y
+equals to P dot get
+that X5
+okay
+so
+ax ax Dot
+a note
+annotate
+train
+so percentage
+comma like X
+plus width will be divided by 2
+and then
+y Plus
+height
+is multiplied by
+zero
+okay
+and h a equals to
+Center
+and pld in Dot sure
+present
+okay
+dot it is not sound plot
+so here you can see there will be high
+chance of winning 63.1 percent
+and there's a small chance of
+losing okay drawn chances are 22.4
+percent
+okay
+so now
+the next question is like we will
+predict what is the winning percentage
+comparing when the highest attack rank
+plays the lowest attack ranks okay in
+previous we did the what is the winning
+percentage of comparing when the highest
+rank team plays against the lowest rank
+team team okay so now we will predict
+what is the winning percentage comparing
+when the highest attack okay got it
+attack rank plays the lowest attack rack
+okay
+so for that
+Okay so
+we'll delete this
+so I will write here DF rank
+back what's your
+DF and DF again
+home team
+mean
+and see if
+score
+dot not null
+okay
+then DF
+rank
+okay there is one problem home team
+offensive score
+offensive score it is
+EF
+rank
+attack equals to DF
+DF
+away team
+mean
+fans
+score
+Dot
+normal
+okay
+then
+f
+tank attack
+so here I will write
+to have
+Bank
+attack
+on home comma away comma
+drank home
+come on okay
+okay
+then if
+then come
+back away
+and
+boom
+okay
+else
+return
+away
+got it
+so I will write here
+so it's a long one let me copy the same
+this better rank one
+let's copy the same
+hit here
+okay
+offense is good
+so let me run it
+delete input okay okay got it
+score
+so now it's working
+okay let me copy this one
+yeah and copy it from here
+yeah so just just all change here
+rank attack
+result attack
+let's show DF
+rank attack
+dot apply Lambda
+Mr winner
+on the battery X is equal to one okay
+perfect
+so now we will write a code
+for the graph dot figure
+then figure size should be
+assume
+10 comma 5
+okay then total
+is to float
+then
+and
+of TF rank
+attack
+then x equals to
+SNS Dot
+count plot
+then
+x equals to
+result
+attack
+comma
+data so DF
+tank attack
+then for p in ax Dot
+patches
+and percentage
+pursue
+one
+f
+Dot
+format
+then
+it
+into p
+dot get
+height
+right
+time divided by total
+okay
+so width
+equals to P dot get
+width
+then
+that equals to
+P Dot
+get
+height
+then X comma
+y equals to P Dot get
+x y
+then ax Dot
+notate
+page
+comma
+X
+Plus
+width
+divided by 2
+comma y
+Plus
+right it is height multiply by 1.02
+comma h a equals to
+Center
+let's just go to this okay
+then finally PLT Dot
+show
+okay this is
+it's
+it's okay
+63 14.5 it should be
+different
+air tank rack
+check from the starting
+okay it should be different
+so TFT home team means offense score
+.net
+D mean offensive score okay okay it's
+correct then rank attack
+oh my way rank away that is okay
+that is fine completely
+guess
+this
+yeah
+so as you can see
+the winning percentage comparing when
+the highest attack rank plays the lowest
+attack rank is just for the highest
+highest is 36 and the lowest is 40. okay
+and the drawn will be 22.4
+okay
+so
+what we will do
+now
+uh we will see the offense score
+of the particular team
+fans
+score
+and for X in
+World Cup 2022
+like which are the teams remaining for
+of means offense okay
+offense score
+equals to NP Dot
+round
+e f d f
+then oh
+team
+that's equals to X
+then
+home
+team
+fans
+score
+mean
+that's DF
+and DF again
+that should be
+team
+and offense
+of course
+request to PD dot data frames
+he should be Capital data
+frame
+and
+team
+World Cup 2022
+comma
+offensive score
+then
+offense
+score
+Dot
+sort
+values
+yes
+it's just code
+okay
+then
+ends
+scores
+Dot
+index
+plus equals to one
+okay then offense
+scores
+so let's see the offensive score for the
+four team Argentina France Morocco and
+Croatia who has the like maximum
+so like team
+Argentina has the maximum offensive
+score and then France with 87 then
+Morocco 82.99 and Croatia
+okay
+so now we will see
+the team who scored goal how many goals
+they scored in home the away the total
+goal scored like considered goal in home
+and conceded goals away
+and the total considered goals okay and
+the ratio
+so this is a like long quote so I will
+get back to you
+so let's see so as you can see the
+France has 447
+scored goals at home and this score
+goals away in 14 okay then the gold
+ratio is 2.86 something
+okay
+and the Argentina is like the 379 and
+Croatia and Morocco okay so the next we
+will discuss offensive strength versus
+goal scored okay what are the offensive
+strengths of the particular team versus
+gold score
+so now we will do offense stance versus
+gold score okay for that I will write
+offense
+players
+versus goal
+good
+okay
+so for that I have learned of fans
+course
+dot merge
+and goals
+on
+team
+I will write
+team
+comma
+like
+Francisco
+come on
+total
+or
+goals
+and I will copy something
+yeah
+so now I will write offense
+players
+versus
+goals
+scored
+dot index
+plus equals to 1.
+okay
+then I have to write here of fans
+players
+versus
+goals
+code
+okay
+yeah so you can see
+the offensive score of France
+and the total goal scored 461 and the
+total score goes versus goalkeeper score
+okay goal scored so this is 5.27 and
+5203 and this is Argentina Morocco and
+Croatia okay
+so this is based on total goal scored
+the ranking 461 387 350 and 309. okay so
+we will see the graph for the same
+so then I will write PLT dot figure
+then
+bigger size
+should be
+11 comma seven
+API
+equals to 90.
+okay then ax equals to SNS Dot
+bar plot
+then data
+equals to
+offense
+pairs
+versus
+goals
+scored
+comma x equals to
+team
+y equals to
+Tal
+score
+total scored uh
+I will write a total score goals
+slash GK Square
+okay
+so I will write here ax dot bar
+table
+ax Dot
+container
+zero
+then PLT Dot X label
+team
+then PLT
+dot y label
+ratio
+then
+PLT dot title
+okay
+then teams
+best
+CSU
+calls slash
+bands
+score
+okay
+so as soon as per plot there is one
+error
+Network
+okay
+telescope
+goals
+slash okay gk's capital
+is small
+you can see here
+okay
+yeah
+so you can see the France Argentina
+Morocco and the Croatia team's best
+ratio goes versus offense ratio
+okay
+now we will see the goalkeeper score
+okay so the code is same so I will copy
+and
+paste it here
+okay this is the goalkeeper's code like
+France has the best goalkeeper
+okay as per the data okay Argentina has
+like 81
+and Croatia 80 and Morocco is 77.
+so
+we will see the goalkeeper
+like versus goals considered how many he
+gold considered okay
+so for that you can see like
+total considered goal like Morocco as a
+total consider goal and uh gold ratio
+1.5
+then Argentina France and Croatia
+okay
+so let's have a like graph
+so I will copy it like same mostly same
+so I will paste it here
+yeah so you can see Team best ratio
+considered gold versus gks score so
+crochet is a good one and the France
+so after that
+what we will do we will uh see the
+team's longest win history okay this
+team has the longest win streak okay
+so
+for that
+or that
+I have created one data frame and for t
+mean each World Cup 2022
+so there is home team which is Steam and
+there is away team okay and in respect
+of winds
+we are declaring this streak okay
+if a home team result equals to equals
+to win so it will be one streak okay
+like that we are calculating this tree
+okay so press enter
+like Morocco has this streak of 11
+France 10 Argentina nine and five
+Croatia okay so let's create the graph
+for the same
+regard size equals to
+11 comma seven
+comma DPI equals to 90.
+okay then ax equals to
+SNS Dot
+bar plot
+then data
+pursue
+streaks
+then like 10
+x equals to
+team okay
+comma y equals to streak
+okay
+so ax dot bar
+like level
+then ax Dot
+containers
+then
+zero
+PLT Dot
+X label
+team
+and PLT dot y label
+streak
+okay then PLT dot title teams
+longest
+win streak
+okay
+so let's see
+so as you can see in the graph Morocco
+first France second Argentina third and
+Croatia 5. okay at the fourth location
+so we will see like
+win or lose of a way better team Rank
+and like home better team rank what is
+the kind of you know the results
+okay win percentage we will see
+like
+if you will play in home how much the
+win percentages
+okay then we will see the waving
+percentage
+okay so we are seeing the better team
+win percentage
+so let's see
+what can I do
+so this is the home tea better rank
+okay
+so
+this is the win percentage if you will
+be in home
+so it will be 70 chance or 71 chance you
+will win
+okay
+if you are not playing in Hope
+so it is just 37 percent
+chances to win
+okay then let's make the figure
+size equals to
+11.
+comma 7
+okay go on DPI equals to 90.
+okay ax equals to
+SNS dot bar plot
+okay
+data
+let's do better
+team
+win
+percentage
+okay uh you can see
+percent
+comma X
+equals to better
+team
+when
+percent
+Dot
+index
+comma y equals to
+one percent
+then ax dot bar
+level
+x dot
+containers
+elt dot X label
+is
+t
+better
+okay then PLT dot y label
+is
+one percent
+PLT Dot
+title
+should be
+team win
+percentage
+okay
+so this is the graph we will
+in home like 70 chance and Away 37 and
+the total is 61. okay
+quickly what we gonna do is we will see
+the rank of the team
+okay these four teams rank
+and not in FIFA World Cup like in
+current
+with all the in the current world okay
+you can say and we will see the rate of
+defense for the particular teams and we
+will see rate of attack for the
+particular teams Midfield strength and
+uh like okay at the end what we will do
+we will see the
+winning percentage of the particular
+team who can win after that we will
+create a model and we will predict who
+can we win
+okay
+so
+okay so let's quickly do let's see the
+rank of the teams and so on so on
+okay
+so
+we'll do
+so we'll do here for the rank of the
+team
+okay
+we'll see like in current scenario like
+France is in third not in World Cup
+Qatar 2022 okay in World Cup they are
+like at the same stage okay this is all
+about the world
+okay ranking throughout the world
+okay
+let's see the goalkeeper score
+so
+France is having the best goalkeeper
+score of 54 percent then Argentina
+Croatia and Morocco means like France
+has the higher chances to win but this
+is a game so it's not sure who will win
+and who will not okay it is a sport
+anyways we'll see the goalkeeper score
+of graph
+why I'm showing you like in a fast way
+because it is so easy we did it already
+okay
+this is the goalkeeper score graph
+and we'll see the rate of Defense whose
+defense is good
+France defense is good so there is
+another point
+like France can win
+okay
+so let's have a
+figure
+so this is the strongest defense having
+France is having strongest defend
+Argentina than Croatia
+okay
+then we'll see the rate of attack
+team attack strength Argentina is having
+the best rate of attack than France then
+Morocco then Croatia
+okay
+let's see
+so this is the attack score okay like
+France is like Argentina is having the
+best attack score
+for a while in these four teams okay
+let's see the Miss Midfield this time
+Midfield strength so for that
+see the France is having still you can
+see France is
+having the best Midfield score and take
+a following by Argentina
+let's see the graph
+for the same
+yeah so France
+okay
+so now we have seen all the offenses to
+attack score best attack score best
+goalkeeper best defense best Midfield
+so
+okay so let's see
+who has the higher chances to win
+okay the team's highest chances to win
+okay but again this is just a prediction
+because it is a machine
+okay after that we will create a model
+and we'll do so so
+let's see the winning percentage
+for the particular team it will be like
+based on
+like home wins home draws home losses
+and so on with the things okay so
+so this is
+like it is based on home win like how
+much time the team wins or team draw
+team lose okay home lose home draw it is
+based on this then we will calculate the
+aveen okay
+so using a wave in home losses away
+losses away draws home draws and using
+this thing
+we are getting the
+chances of
+so like Vince Vince is not defined
+okay it's fins but don't know like fins
+okay
+when that is Vince those letters loses
+okay
+this is not defined okay
+so let me check
+so issue has been resolved so you can
+see the home win 130 145 124 and 92 and
+this is the winning percentage okay so
+based on these so we will see the graph
+so I will write PLT dot figure
+yeah then figure size should be
+yes I should be
+the same
+11 comma seven
+okay
+comma DPI
+equals to 90.
+okay then ax
+equals to SNS
+Dot
+bar plot
+data
+equals to when
+let's go draw
+underscore lost
+10
+comma x equals to
+question
+team
+comma y
+question
+okay
+then PLT Dot X level
+equals to
+aim
+PLT dot y label equals to
+our
+PLT
+dot title
+themes with
+highest winning
+percentage
+okay
+so let's see the the team with highest
+winning percentage so as you can see it
+is Argentina then France then Morocco
+then Croatia okay so why
+the percentage is not coming up
+here here
+let's see
+score
+winning which is not taking that
+I don't know it is y naught is taking
+winning percent
+no
+something is like there okay no issues
+so Argentina chances is 68 and then
+France is 65 and this Morocco and
+Croatia okay then through Croatia
+so now what we will do now we will
+create our model linear model okay then
+we will uh some do some simulations then
+we will do some train test split
+function
+we will see the ROC curve we will see
+Roc AUC curve and
+we will see the pipeline we will see
+polynomial feature so many things to go
+okay
+so
+let's start then
+so I will write here from sqlarn
+near
+model okay
+then I will add from SK learn
+Escalon
+import
+and symbol
+from sqln
+dot model selection
+okay
+phone
+test
+split
+from
+sqln Dot
+Matrix
+import
+confusion Matrix
+Roc curve
+and Roc AUC
+curve
+okay
+issu score
+okay then from sqlan
+dot pipeline
+for
+pipeline
+okay so then last from Escalon
+Dot pre-processing
+port
+polynomial
+features
+okay
+but everything is imported that we will
+write
+like we will do some tree entice split
+like training we have to uh like
+split the training and data and testing
+design okay
+so
+there's a huge
+code behind that
+so as you can see we have declared the
+XY for retaining and testing average
+difference Point difference
+and who is one okay so there is Extreme
+X test whiten and Y test equal to
+interest split so test size should be
+0.2 0.2 means 20 okay 80 is training 20
+is for testing
+so here we will using logistic
+regression okay for the linear model
+logistic regression okay
+so feature at the for the features we
+using polynomial features okay degree
+equals to two
+and the model the pipeline you say you
+can see the polynomial feature is equal
+to features and the logistic regression
+okay so this is the figures
+these for the figures so
+now you will see AOC score is this so
+now you will see the graph
+so the graph is like this much okay
+so
+so the idea is to separate the
+performance of each team as home or away
+okay so I will write a word
+cup
+rankings
+home
+assume
+for
+work up
+rankings
+home
+Dot
+Group by
+home team
+or mean
+World Cup
+Kings
+away
+pursue
+World Cup
+rankings
+away
+Dot
+Group by
+way
+team
+so we will import
+some to show taskbar and all
+ROM
+tqdm
+import
+tqdm
+okay
+and simulation
+of winners
+because you there is a list
+okay
+then what we'll do simulations
+the results
+of nurse
+virtual list
+stimulation
+results
+semi-final
+because we are checking for the same
+final and the final okay because we'll
+list
+emulation
+of EF of semi-final
+it was a list
+okay
+so
+okay
+average rank equals to home rank Plus
+opposition rank
+okay
+remove this
+okay
+so there is one error let me fix it and
+get back to you
+yeah so now it is working so these are
+the thousand you know simulations
+so here we have given the number of
+simulations to thousand
+so till then what we will do we will
+write
+the code for the graph
+okay so here I will write from
+collections
+okay import
+ant
+okay then from matplotlib
+or
+bigger
+the last result
+equals to
+simulation
+results
+then semi-final
+s comma
+simulation
+winners
+for I
+and last
+results
+equals to counter
+of I
+Dot
+common
+okay
+so
+comma y
+equals to zip
+results
+okay
+then
+bigger
+ax
+equals to
+PLT
+Dot subplots
+then figure size should be
+15 comma 8.
+okay
+and ax dot per h
+then X comma y
+okay then ax dot set
+y label
+y label
+and
+team
+if I equals to equals to simulation
+results
+semi-final
+okay
+then ax dot set
+title
+my final
+results
+if a World Cup
+two zero two two
+okay
+if I
+question simulation
+results simulation winners
+okay
+peanuts
+then
+I'll copy from here itself
+okay it is the
+final
+result FIFA World Cup 2022
+okay
+then PLT dot show
+I don't think so it will run because
+it's like three percent
+but our simulations is going on
+okay let's see it is running or not
+it is not running
+so let's say fire spinner
+okay
+yeah
+so as you can see like from Morocco and
+France France is winning
+Russia Argentina
+uh crochet is winning
+and at the final
+the France is winning
+from Croatia and for the third is
+Argentina Morocco and Morocco is winning
+okay
+so these are from the this simulation we
+have done
+okay there there are number of
+simulation is still coming so maybe the
+result will change
+okay let me write code for the graph
+and we will run it again import
+X till then simulation is working
+SNS
+then sns.set
+theme
+Style
+equals to White grid
+okay
+Stan
+sns.set
+RC equals to
+figure
+dot figure size
+should be
+like
+14
+comma 10
+I will draw a nested bar plot okay by T
+for the same final and the final okay so
+g equals to
+SNS dot bar plot
+then data equals to DF
+underscore results
+then X
+question
+team
+comma y equals to the probability
+of winning
+then here equals to
+tap
+ER
+equals to sum
+comma p
+l a t t e palette equals to
+dark
+then Alpha
+equals to 0.6
+okay let me run it
+okay
+so the prop
+e should be capital
+yeah
+so as you can see the France is winning
+the World Cup
+of the 2022 and France is a good team
+though
+Argentina is coming third and Morocco
+fourth
+see the simulation changes and the
+result changes so again I will run this
+so as you can see
+the Morocco and the crochet the France
+is winning
+okay
+yes so France first Croatia second
+Argentina third and Morocco fourth as
+per the
+this prediction okay our prediction
+like there is number of like 1000
+simulation which is done
+for the prediction I am not saying okay
+France will win at any cost
+but
+there might be chance
+like they will win they can win from the
+pre from the previous data okay
+so
+let's come to the realistic perspective
+okay so now from a realistic perspective
+it is much harder to find a team to bet
+on okay even though historical and the
+team data points to France as a clear
+favorite This World Cup has been like
+nothing short of a roller coaster of the
+emotions Croatia has been absolutely
+Relentless thanks for their
+Stellar Midfield
+and ability to grind out the games with
+the rigid defense
+Morocco is a defense judgment yet to
+concede a goal from an opponent in the
+tournament France is poised to come out
+on the top with the most stacked Squad
+in the competition and
+with Argentina reading on Messi's form
+to the semi-finals with the most people
+inching toward mbappe taking the cup
+once again do not be a surprise if
+Argentina find its way to the top
+considering the form they have been
+through
+for the past years but if there is
+anything the World Cup has shown it is a
+degree of arsenity that each provides so
+the best we can hope for the last few
+matches to be as good as if not better
+than the preceding games
+which have been delivering on all the
+fronts after four years of the waiting
+since the last World Cup
+okay guys so I hope you guys must have
+have understood how you can predict the
+World Cup winner as per the data if you
+have any queries you can ask in the
+comment section below our team will
+respond to you as soon as possible don't
+forget to check the course link from the
+description box below or the data set
+link and if you wanted this full code
+so you can comment for the same thank
+you so much for being here if you
+enjoyed this video please give like to
+this video please subscribe to our
+YouTube channel and till then thank you
+and keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

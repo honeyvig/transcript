@@ -1,0 +1,658 @@
+ethical hacking has become a lucrative
+industry for cyber security
+professionals and enthusiasts
+with the major tasks of an ethical
+hacker running on command line tools
+learning a scripting language like
+python is highly essential
+python has grown in popularity thanks to
+various applications in multiple sectors
+while being a relatively easy to learn
+language
+discovering the benefits of pythons and
+ethical hacking helps beginners write
+their own customized scripts at the time
+of penetration testing
+hey everyone welcome to this video on
+ethical hacking using python
+let's take a look at the topics we are
+covering today
+we start by learning about ethical
+hacking and how useful they are for
+organizations looking to secure the
+systems against malicious hackers
+we cover the basics of the python
+programming language as well
+next we take a look at the distinct
+advantages of python over other
+programming languages when it comes to
+user friendliness
+finally we write two programs from
+scratch which help ethical hackers in
+cracking passwords
+let's start by learning about ethical
+hacking in general
+when we talk about penetration testing
+or ethical hacking we mean hacking that
+is based on ethical or moral principles
+and has no harmful intent ethical
+hacking is defined as any type of
+hacking that has been allowed by the
+owner of the target system
+it might also refer to the practice of
+putting in place active security
+measures to safeguard system from
+malicious hackers
+it is the process of subverting or
+cracking a system security in order to
+find vulnerabilities data breaches and
+potential threats
+it is only regarded as ethical if
+regional or organizational cyber laws
+are followed
+this is known as penetration testing in
+the technical world
+the strategy as the name indicates
+comprises seeking to enter the system
+and documenting the purposes necessary
+the purpose of ethical hacking is to
+improve the security of the network or
+systems by fixing the vulnerabilities
+found during testing
+ethical hackers may use the same methods
+and tools used by the malicious hackers
+but with the permission of the
+authorized person for the purpose of
+improving the security and defending the
+systems from attacks by malicious users
+ethical hackers are expected to report
+all the vulnerabilities and weaknesses
+found during the process to the
+management
+ethical hacking has proven itself to be
+quite a productive career option for
+many ambitious individuals the demand
+for its courses today is at an all-time
+high and rightfully so
+it provides you with an engaging job
+that never gets tedious
+some certifications like the comptia
+plus ceh and cisco ccna are highly
+acclaimed and will teach a learner all
+there is to know before dipping their
+toes in the industry
+to summarize an ethical hacker acquires
+access to a target system before any
+criminal hacker
+this allows the organization security
+personnel to deliver a security patch to
+the system thereby closing a gap for an
+attacker to enter the system or perform
+a hack
+now that we understand the basis of
+ethical hackers let's go over how python
+came into existence and its features
+python is a computer programming
+language often used to build websites
+and software
+it can also be used to automate tasks
+and conduct data analysis
+python is a general purpose language
+meaning it can be used to create a
+variety of different programs and isn't
+specialized for any specific problem
+this versatility along with its beginner
+friendliness has made it one of the most
+used programming languages today
+a survey conducted by industry analyst
+firm brad monk found that it was the
+most popular programming languages among
+developers in 2020.
+python is commonly used for developing
+websites and software task automation
+data analysis and data visualization
+since it's relatively easy to learn
+python has been adopted by many
+non-programmers such as accountants and
+scientists for a variety of everyday
+tasks like organizing finances
+it has become a staple in data science
+allowing data analysts and other
+professionals to use the language to
+conduct complex statistical calculations
+creating data visualizations build
+machine learning algorithms manipulate
+and analyze data and complete other data
+related tasks
+python however is mostly used to create
+scripts rather than full scale programs
+a python script the file containing the
+commands is structured to be executed
+like a program
+these files are designed to contain
+various functions and import various
+modules
+python interactive shell or the
+respective command line is used to
+execute the script to perform a specific
+task a script is structured by defining
+the set of function definitions and then
+stating the main program used to call
+the functions
+a program consists of numerous tasks
+these tasks can be executed with the
+help of scripts
+unlike libraries scripts can be used
+without importing and are less code
+intensive
+python variable assignment is different
+from some of the popular languages there
+is no declaration of a variable just an
+assignment statement when we declare a
+variable in c or c plus plus or any
+other alike languages this sets aside an
+area of memory for holding values
+allotted by the data type of the
+variable the memory allocated will be
+interpreted as the data type suggests
+at compile time initial value will be
+checked so we cannot mix the data types
+in between but python is a dynamically
+typed language it doesn't know about the
+type of the variable until the code is
+run so the declaration is of no use what
+it does is it stores that value at some
+memory location and then binds the
+variable name to that memory container
+this makes the contents of the container
+accessible through that variable name so
+the data type does not matter
+it will get to know the type of the
+value during runtime
+python also offers multiple options for
+developing gui or graphical user
+interface out of all the gui methods
+tkinter is the most commonly used method
+it is a standard python interface to the
+tkg ui toolkit shipped with python
+python with deckinter is the fastest and
+easiest way to create gui applications
+python programming languages is widely
+used by companies around the world to
+build web apps analyze data automate
+operations via devops and create
+reliable scalable enterprise
+applications
+many companies do not even realize they
+are using python across the
+organizations for example if a company
+is a java only company but they use ibm
+fsphere as a web application server then
+they have to use python to script the
+server's configuration
+python has a habit of getting in
+everywhere regardless of whether the
+usage is intentional
+big names like microsoft netflix google
+uber and dropbox regularly use python in
+the software framework development
+now that we understand python's basic
+functionality let's cover some of its
+advantages when compared to industry
+counterparts
+when it comes to third party modules the
+python package index also known as pypi
+contains several third-party modules
+that allow python to communicate with
+the majority of other languages and
+system
+it has functions that are separate to
+the python code base and has many extra
+capabilities that can be activated later
+on
+python also contains a vast standard
+library that covers topics such as
+string operations internet protocols web
+services tools and osi interfaces
+many join programming tasks have already
+been coded into the standard library
+considerably reducing the amount of code
+that a new developer must write
+python is open source due to a lack of
+official technical support which has
+driven the establishment of communities
+that increase the resource bank for the
+language's continuing growth and
+acceptance its source code development
+is partnered with multiple coders and
+receives community feedback well
+features are often shared with the
+community to garner feedback before
+pushing them onto the main branch
+python includes built-in data structures
+such as lists and dictionaries that may
+be used to create quick runtime data
+structures
+furthermore python has added benefit of
+dynamic high level data typing
+decreasing the support code length
+required
+data structures are the set of data
+elements that produced a well organized
+way of storing and organizing the data
+in the computer so that it can be useful
+for example the data structures like
+stack queue link list etc are mostly
+used in the field of computer science
+artificial intelligence and graphics etc
+we have now covered all the features
+python offers and the basic
+functionalities
+let's write some real-time python code
+that can crack passwords using python's
+libraries
+in this demo we will write two blocks of
+code both of which offer a unique way to
+break passwords the first one is a brute
+force attack the other is a dictionary
+attack
+the difference with brute force attack
+is that in brute force a large number of
+possible key permutations are checked
+whereas in the dictionary attack only
+the words with the most possibilities of
+success are checked and are less time
+consuming than brute force
+so let's jump into the code editor now
+the code editor we are using today is
+pycharm
+pycharm serves as an ide for running
+python program specifically and can be
+downloaded for free as a community
+edition
+now the first thing we're going to start
+is by importing some libraries
+the first one would be
+the
+random library
+this one would be necessary to generate
+the random choices from which the
+password will be guessed
+next we're going to import another
+library
+known as p y
+auto gui
+this is necessary to generate a
+graphical user interface but the user
+will be asked to enter the password to
+be cracked
+next we're going to create a variable
+called as
+cash
+this will hold the number of characters
+it will store all the characters which
+can be used in our password
+so we're going to start with
+all the alphabets
+and just to be safe we're going to add
+all the digits as well from 0 to 9. now
+this can be expanded further to include
+special characters but we're going to
+skip that for this
+example next we're going to turn this
+variable into a list this is necessary
+so that we can traverse the list
+accordingly
+so we're going to create a new variable
+all care
+and
+convert this into
+a list
+and there we go
+regarding the user they are asked to
+enter a password that needs to be
+cracked
+the password will be entered into a
+graphical user interface and can be
+stored in a variable
+let's take it as pwd
+we're going to use the py auto gui
+function to generate the gui
+the type of input will be a password
+input so that the values entered are not
+visible
+we're going to write a message such as
+enter a password
+and that's it
+let's keep the semicolon over here
+the user will see this message on the
+graphical user interface and can then
+enter a password
+now the passwords that are being guest
+need to be stored somewhere so we're
+going to create a sample
+pwd password
+and just enter
+a null value to go with
+now we're going to start generating
+random values that need to be checked
+for that we're going to use a while loop
+and the condition that we're going to
+run is
+sample password which will be our guest
+password
+should not be equal to pwd which is the
+original password now this loop will run
+as long as the values are not same the
+moment the sample password which is the
+password guest and generated randomly
+becomes equal to the original password
+this loop will be closed and the program
+will be over
+so we're going to start generating by
+assigning the value sample pwd is equal
+to going to use the random dot choices
+function
+and the arguments we're going to pass as
+all cap which is the list of all the
+values that need to be checked or more
+like all the characters that can be used
+to generate random choices
+and for the length we're going to assign
+a value of k
+which will be the length
+of
+the original password
+the original password which is entered
+we're going to check the length using
+the len function and make sure that the
+random choices function generates
+passwords of that lens specifically
+now we can skip this so that it checks
+for all the possible variations and all
+the different lengths but that will take
+time so we're going to stick with
+something small for this
+example next we're going to print out a
+message where we can see the number of
+values that are being checked
+we can put up a simple message
+such as this
+we're going to check the string value
+of
+sample pwd
+and we're going to close the message
+that's it
+now this is the one that generates the
+random choices we also have to check the
+choices with the original password
+so we're going to set up an if condition
+over here
+and we're going to write if sample pwd
+is the same
+as pwd or we have to use the list
+version
+of pwd since sample pwd in itself will
+be a list
+if it is true
+we're going to print
+the password
+is
+going to put up a space
+and we're going to join
+the new one
+this will display the guest password
+we can break over here so that we run
+out of the if condition and the loop
+now
+let's run this code once
+to run main
+okay as you can see we have missed a
+colon sign over here in the
+while function
+so we're going to run it now
+as you can see we have the gui that is
+asking the password for us
+now we can give a small password so that
+we can see if it's working or not
+we're going to write
+pc2 and since we have given the data
+being input as dot password it's not
+going to show what is being entered over
+here
+i have entered the password of a b c one
+so press ok and you can see it's going
+to check the combinations of four digit
+passwords now this doesn't follow a
+specific order
+so this works on generating random
+choices we can create programs that goes
+a specific order as a single permutation
+like we're going to start from zero zero
+zero and move on to zero zero zero one
+that's typically how normally brute
+force password crackers work but this is
+easier to examine and we can see how the
+program is being worked on using this
+now if we going to stop it for now
+and give it another try
+going to run main
+i'm going to try something else
+and you can see it keeps running up the
+same program and this time i end
+entered the password of abc2 and you can
+see in one of those random choices it
+did find out my password like i said we
+can do this using a systematic method
+where it goes from the first option to
+the very last one but this is more
+easier to explain and more easier to
+visualize as a first program
+now regarding our next program which is
+going to be a dictionary attack a
+dictionary attack uses
+a word list a wordless will consider
+will have a list of passwords that can
+be used or a list of possible outcomes
+we're going to start
+by importing some libraries on its own
+here we need to use only import hashlimp
+because
+the password that we are going to enter
+will be a hashed version we are not
+going to give the plain text password in
+an input like we did in the previous
+program so to work on those hash and the
+functions that are necessary to work on
+those hashes we are going to use this
+library
+we also want to set up a counter
+of pass found
+this is necessary to know if the
+password has been found or not when we
+do find the right password we can change
+the value of this counter and the
+program and the interpreter will know
+that our program has been completed
+the password that the user will enter
+needs to be in a hash format so we're
+going to keep it in a variable known as
+let's say i hash
+we're going to ask the user for the
+input
+enter the
+hashed password
+and there we go
+next
+we're going to use the word list over
+here to use the word list we need to
+open it how can we do that let's take up
+a variable known as
+p doc
+we're going to ask the user for an input
+going to move on to the next line using
+the backslash n command
+and write
+enter
+password
+file name
+including path
+so what we are asking over here is we
+are going to ask the user for a
+particular path in this local system
+where the file has been opened up
+once the user gives the file name path
+we can open it and store it in a file
+let's say p file
+and we're going to use the file option
+functionalities
+of python okay
+functionalities of python
+we're going to use the path stored in
+pdoc
+and open in read mode only
+next we're going to set up our loop
+which is going to check every single
+password with the hashed password we're
+going to use a for loop
+we're going to carry out every word
+in
+the open file over here
+next as we know we have received a
+hashed value of the password we need to
+convert it into standard terms before we
+can start comparing
+first what we have to do is we have to
+encode the hashed password
+into a common
+variable known as the utf-8 standard now
+there's a good chance that it is by
+default in utf-8 encoding but
+running this line helps us in being sure
+that the next few lines work correctly
+we're going to store another variable
+known as hash
+word
+this is after the encoding
+where we're going to use another hash
+lib function which is the
+md5 so that we can convert the value
+found in enc word
+and keep it in a hashed format now that
+we have made it clear that we now the
+hash can be read and run by the computer
+we're going to get the final hash digest
+of it now to strip the hash digest we're
+going to store it in a value let's say
+of name digest we use the value
+generated above in hash word
+and
+write
+hex digest
+this will generate the hash digest of
+the password and crea store it in this
+digest variable
+now
+we have the digest so we can start
+comparing it to the password file that
+we have found we're going to write a
+loop such as if digest is equal to
+the input hash which is the hashed
+password that the user input
+then
+we can just print
+password
+found
+which we can then
+show
+using whatever value has been extracted
+right now from the password file or the
+word list
+we're also going to change the variable
+of the pass found counter
+to 1
+and we're going to break
+now
+let's say that we did not find a
+password
+we have to
+inform the user that the password is not
+found in the particular word list so
+we're going to write another loop let's
+say
+if not
+pass found
+now think of it from a
+systematic way the default value of pass
+found is zero
+let's say we do find a password in the
+word list the value is getting changed
+to one so at this point of time the
+value of password should be one if the
+password has been found
+if not 1 which basically implies if 0
+since 1 is considered as true and 0 is
+considered as false
+if it is 1 this part of the if condition
+will not be executed this part will only
+be executed if no password is found and
+by default the value of pass found is 0
+so if not 0 will turn into f1 which is
+supposed to be true and the following
+lens will be executed
+so the next few lines we're going to
+print that the password was not found
+and we can start running the program
+now to generate a hashed password we're
+going to use an online tool known as the
+md5hashgenerator.com
+now let's say our user password is the
+same as the one we used in the last
+program which is abc2
+we're going to generate the hash
+we're going to copy the md5 ash over
+here we press on copy
+and we're going to paste control v and
+press enter now this password file name
+is asking for the location of the word
+list
+now i have stored the word list in my d
+drive with the name of p1.txt
+this file has a list of passwords which
+also include the word abc2 in there
+so we're going to press enter
+as you can see it has found the password
+abc2 after doing the hash
+functionalities over here
+now if we were to remove it
+let's say we're going to use a wrong
+password for example
+we're going to create a new value such
+as of abc 5
+and take this new hash value
+we're going to rerun this program
+and we're going to use a new hash value
+which is not present in the current word
+list
+as you can see we are now getting the
+expected password not functionality
+so this way the password has been
+cracked open with two different types of
+attacks using a brute force and a
+dictionary attack since this type of
+methodology works on a word list this is
+known as a dictionary attack as it has a
+source of passwords where it can check
+the possible outcomes from
+hope you learned something new today if
+you have any questions please feel free
+to ask us in the comments section and we
+will get back to you as soon as possible
+subscribe to our channel for more
+informative videos like this and thank
+you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

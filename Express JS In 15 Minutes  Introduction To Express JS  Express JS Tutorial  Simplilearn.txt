@@ -1,0 +1,310 @@
+hello everyone and welcome to simply
+learns youtube channel today we will be
+taking you through express.js
+we will go through certain express js
+http methods features of express js and
+this will increase your enhanced
+knowledge of express js
+the best way to master a language is by
+programming in it
+so by the end of this tutorial you will
+be able to implement express js in
+different ways
+before we begin
+let me tell you that we have regular
+updates on multiple technological videos
+so if you are a tech geek in a
+continuous hand for the latest
+technological trends then consider
+getting subscribed to our youtube
+channel so without further ado let's get
+started and see what's in it for you
+first
+we will see introduction to express.js
+after that we will see what is expressjs
+moving ahead we will see features of
+express js
+after that we will see http request
+types
+moving ahead we will see what is rest
+api and and then some hands-on
+demonstration
+node.js is a fast javascript runtime
+environment but it does not support
+request handling function http methods
+or serving files so expressjs comes into
+the picture
+express makes the node.js code easier as
+express is written in javascript it is
+very easy to understand for the
+developers who know javascript and till
+now express is the most popular
+framework of node.js
+js is a lightweight framework which
+gives functionality to it and makes
+nodejs easy for developers
+let's see what express js is
+express.js is a node.js framework
+designed to build apis web applications
+and cross-platform mobile apps
+it is very high performance fast
+lightweight and unopinionated that is
+there is no structural way to write a
+code
+express.js is used as a server-side
+scripting language
+now
+we will discuss features of express.js
+first
+fast server side development
+with the features of node.js express
+saves a lot of time
+middleware
+middleware is a request handler that has
+access to the application request
+response cycle
+routing
+this refers to how an application's
+endpoint urls respond to client request
+templating it provides templating
+engines to build dynamic content on the
+web pages by creating html templates on
+the server
+debugging
+express makes it easier as it identifies
+the exact part where the bugs are
+now we will see the http request types
+first one is get
+it is used to request data from the
+server but mainly this method is used to
+read data
+second one is patch
+it is used to update the data or to
+change or replace it
+third one is post
+this method is used to create new or to
+edit already existing data
+last one is delete
+this method is used to delete the data
+completely from the server
+now
+we will see the complete architecture of
+http request types
+in this
+client sends a request in the form of
+json file and with the help of http
+request
+which are get post delete and patch
+then
+it will go to the server then server
+sends back the response to the client in
+the form of message to tell what
+happened to your request
+now we will see what is rest api
+rest means representational state
+transfer
+rest is a popular architecture which is
+used to create web services
+and api is a application programming
+interface which is a code that allows
+two software programs to communicate
+with each other
+rest api is a software that allow two
+applications to communicate with each
+other with the help of internet and
+various devices it is a standard way to
+send and receive data for web services
+rest api is very flexible and can handle
+multiple types of calls
+restful api is a very popular and very
+commonly used to create apis for
+evaluations
+now we have hands-on demonstration on
+some basics of express js
+so let's get started in this tutorial i
+am using vs code but before that let's
+create a folder
+for that you have to go to your c drive
+or wherever you want to create that
+folder
+let's create new folder
+i'm gonna name it as express
+js 15
+save this file
+now
+open your visual studio code
+open that folder
+here as you can see expressjs15
+select folder
+expressjs15
+is opened here let's cut this
+now go to the terminal new terminal
+and write npm command
+npm
+turn it
+y
+this will create a json file for us
+as you can see here
+now
+let's cut this
+now
+we will install express js for that
+we will again go to the terminal
+and write
+npm
+install
+express
+press enter this will take couple of
+seconds to install here we go
+our express is installed
+now
+we'll cut this
+all the modules are installed in this
+as you can see
+let's cut this and create a file here
+let's name it as
+index.js enter
+let's just
+close this folder
+so
+the
+index.js has been created
+elsewhere
+you have to delete it
+created
+outside this module
+so we'll create it
+here
+not here again
+yes
+let's write
+bonds
+app
+which requires
+express
+let's
+function
+port
+the port which we are going to use
+let's name it as 4000
+let's make it
+dot lesson
+and the function again
+name
+to where it will listen to our code
+function that we have created error
+function
+and console.log
+running on board
+all the same to get the data
+port
+okay
+let's close this
+yeah so our
+basic
+program is completed
+now
+what i have done here is i have created
+a basic express app
+now i will write the gate method
+so let's get started
+app dot get
+okay
+request
+request response
+now we'll send the response
+sponson
+let's
+let's write it as
+hello
+this is
+it
+this is gate method
+close this
+save this
+now
+we will go to the terminal
+and
+run this file to see whether it is
+working or not
+so we'll write node dot
+to run this file
+here we go
+server is running on port 4000
+now
+we'll go to the chrome extension
+and we'll write here as
+localhost
+4000 here we go
+it says can't get this is because get
+method needs a url which we have
+declared here also
+so we'll copy this
+get request from here and paste it to
+this url
+press enter
+this shows us hello this is gate method
+now
+we'll go to the post
+method let's close this terminal and
+write
+post method
+dot
+post
+then post
+request
+request
+response
+fat arrow function
+and here we'll write the response
+hello this is
+post
+method
+yes
+this so let's save this
+now we'll go to the terminal new
+terminal and run this file
+node
+dot
+server is running at
+on 4000
+now we'll go to chrome extension
+here we'll write localhost 4000
+but it can't get
+so we'll write the request
+post
+request
+and then enter as you can see
+post request can't get host request
+this is because post method is secure
+and the data is passed in the request
+body so it can't be fetched in the url
+for that we need to open our
+postman application
+here we'll write
+our
+extension url
+copy this
+so
+host method can only be faced on the
+body part
+so we'll paste it here
+and send
+hello this is post method
+so
+as you can see here in the postman
+application you can see get post
+put patch delete copy and all other
+methods of express
+so do check it out and with this we have
+reached the end of this video make sure
+to hit the like and share button and
+press the bell icon so you will never
+miss any update from simply learn thank
+you for watching and stay tuned for more
+from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

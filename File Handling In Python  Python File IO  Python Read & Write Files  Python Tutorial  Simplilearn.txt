@@ -1,0 +1,316 @@
+hello and welcome to this session on
+file handling in python today we are
+going to discuss the concepts of how to
+handle files in python though this
+concept is not new and is
+pretty common in languages like java and
+c plus plus but we are going to see the
+same taxes which are being used in file
+handling in python now let's see what's
+in it for us today
+we will understand what is file handling
+we will go through certain file handling
+operations
+then we will understand how to open a
+file in python using various modes which
+are pretty important
+and then we will discuss the file
+handling process
+the different types of files which we
+can create and advantages of using files
+now what is file handling
+a file contains a collection of data and
+information it is just like a data
+storage
+so the data can be updated and shared
+through files with multiple stakeholders
+now file handling in python performs
+functions such as creating reading
+updating and deleting
+so you can perform the basic crud
+operations using the file handling
+functions and operators
+now in python file operation takes place
+in the following order
+in order to work on a file you have to
+first open a file that is the first and
+foremost step
+and then you can perform any read or
+write operation and then you have to
+close the file
+so these three primary
+steps are involved in order to do any
+operation on a file
+now in python we can work with files
+using the open function and it takes two
+parameters
+the file name and the mode
+so here you can see the syntax
+if you do not give the mode parameter
+then it takes the default values which
+we're gonna see in our next slide
+but at least you need to give the name
+of the file with the extension now what
+are the various modes
+in which you can perform operations on a
+file let's go through them one by one
+you can open a file first of all in the
+read mode which is the default mode
+and it opens a file for reading
+but if the file does not exist it throws
+an error
+right
+second is append a it opens a file for
+appending creates the file if it does
+not exist so in this mode if the file
+does not exit exists it gets created
+similarly in the write operation it
+opens a file for writing and creates the
+file if it does not exist so a and w
+will create the file x
+it creates specified file
+returns an error if the file exists so
+you cannot create an already existing
+file you need to give a different name
+then the next mode is the t mode the
+text mode which is the default value so
+so by default when you open a file in
+python you are basically opening it in
+default read text mode
+and the next mode is the binary mode if
+you specify b it means that you are
+trying to open an image or any binary
+mode related file
+which cannot be opened in a text mode so
+we will see certain examples of these
+modes in our jupyter notebook when we
+will run certain examples on a sample
+file
+now what is the file handling process
+right
+so in in a plain vanilla process first
+of course you will create a file and
+then you will open a file update and
+close the file so the first thing which
+you can do but in the from the function
+standpoint like we saw in our previous
+slide
+even if you have to create a file you
+have to call the uh function open then
+you have to read it you write in it and
+then you close it first thing which you
+have to do in order to
+interact with the file is always make a
+call to the open function
+and then
+you pass the file name and the mode as a
+parameter
+now as we discussed there are two modes
+there are two types of files in python
+text file and binary file
+so
+in text file the data is stored in
+characters and string and in binary file
+this data is stored in the form of bytes
+but the bytes file which you store you
+can store in a different extension
+and it can be read by other utilities or
+tools or softwares which are meant for
+reading the binary files but you can
+interact or you can
+perform certain functions using the
+python operators and the open functions
+which are available
+text file
+is a simple
+uh
+concept you open the file you can write
+append update the data and you can open
+the file in your operating system and
+see your changes
+so we are going to perform our examples
+on a text file where we will show you
+how you can view your changes by opening
+a file real time now there are some
+preliminary advantages basic advantages
+of using files
+your this data is stored
+and is permanent basically it resides in
+the file and then it is up to you how do
+you save the data in the file in the
+operating system or you purchase the
+data
+in some
+secure area and that is up to you
+and the stored data can be shared
+definitely you can mail the data you can
+share it in your hard drive you can
+share a network drive etc and you can
+update the data in the file so you can
+append
+you can override
+you can remove you can delete the file
+all those operations all those
+possibilities are there
+so now
+let's
+create our
+jupiter notebook
+with certain examples
+so what i have done here is
+i have already created certain sample
+files
+where i have some predefined context
+there
+so i have a
+simplylearn.txt file in which i have
+written today's thursday in one line
+tomorrow is friday
+and i am waiting for weekend
+now i'm gonna
+read this file
+so i'll import the package
+in order to read the file
+i'll create the file object
+now in this i have given the path where
+my
+file is reciting today.txt
+the same content is there
+and i am going to be opening it in the
+read mode
+so it's the default mode but i am
+calling it out explicitly for a better
+understanding
+now
+this is the read command
+file dot read
+this operator this will read the entire
+file
+so if you see in my file
+all the contents are printed
+now
+if i want to read
+the first seven characters
+of my file
+so what will this do it will read
+the first seven characters
+of the first line of my file
+so in the first command
+my file dot read printed all the
+contents
+but here i have passed a parameter to
+the read function to print only the
+first character seven characters
+so that's what it has done
+now
+i will
+ask
+my function
+to read
+line by line
+so now what is the difference between
+this and this the difference is that the
+file dot read
+read the entire file in one go but here
+it is allowing me to read only one line
+at a time
+okay
+so this function of read line will only
+go
+and
+read the
+line
+now
+if i have to
+read all lines one by one right
+now
+here i have printed one line now i want
+to print all lines one by one
+then there is a different
+function
+which is
+file dot
+read lines
+and it will print an array
+and of course you can see there's a
+slash an operator because it's a
+different line so it will print my diff
+three different lines in an array
+today's thursday tomorrow is friday and
+i am waiting for weekend
+now like i gave this example of
+file.read seven characters
+in the similar fashion
+i can also provide how many characters
+to read
+from the line
+correct so from the first line it has
+given me the first three characters
+and here
+in the file dot read it was starting to
+reading starting to read the entire file
+but i only limited to the seven
+characters
+now let's take a look
+at the
+write function
+write method
+so now in my today.txt file i now pass
+the mode w
+and
+i'll
+override it
+with my new content which is the sunday
+and monday
+and say file.close
+and run it
+now i can go
+and check it's been overrated
+now
+i'm gonna create a new file
+let me
+create a new file and
+add contents to that
+i'll create separate
+dot txt
+and run
+and a new file has got created with the
+content sunshine
+so here i have passed the mode as x
+now
+i want to delete a file
+i will just simply pass
+os dot remove
+there is no open function to be called
+and just give the name of the file
+and
+my today.txt file is gone
+even i can put a check
+before removing a file whether the file
+exists or not
+if it exists then remove
+else
+print
+that the file does not exist
+there is no file
+now if i want to print line by line i'll
+show you one another example
+if i want to print line by line
+then the example is
+import
+and
+file daughter in the loop and
+you print the output
+so basically you can if you want to
+print the lines in a loop
+then you need to
+put the for command for loop and put the
+read lines call in the loop i hope you
+guys had a great learning session and
+i'll meet you in my next session thank
+you
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

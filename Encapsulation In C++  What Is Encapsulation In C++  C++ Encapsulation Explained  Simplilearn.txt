@@ -1,0 +1,383 @@
+hey everyone welcome back to another
+video by simply learn in this session we
+will learn about encapsulation in c plus
+plus
+so let's go ahead and have a look at
+what we'll be covering today
+so we'll start by understanding what is
+encapsulation in c plus plus why do we
+need encapsulation in c plus plus then
+we will learn about access modifiers
+after that we will understand the
+benefits of encapsulation and also the
+difference between encapsulation and
+abstraction so let's start with
+encapsulation in c plus
+encapsulation is a very important
+concept of object oriented programming
+it can be defined as wrapping up of data
+and functions together into a single
+unit
+just like a capsule the data members and
+functions are wrapped together
+wrapping them into a single unit helps
+in keeping them secure from the outside
+access
+for example inside a class the variables
+and functions are declared and then bind
+together with the help of class
+which also implements encapsulation
+next is
+why do we need encapsulation
+hiding the details or attributes is also
+an important thing that one should focus
+on
+encapsulation helps with that part
+it keeps the details of the object
+hidden or saved from the users by
+securing them from the outside access
+there are many implementation details
+that the users are not supposed to see
+so these details like the details of the
+object are kept secure from the direct
+access from outside the class with the
+help of encapsulation
+the data hiding is done with the help of
+access modifiers
+so let's understand these access
+modifiers
+the access modifiers helps in data
+hiding part
+the access modifiers provides or grant
+the access to the members of the class
+or it prevents them from the direct
+access to the class members from outside
+the class
+so there are generally three types of
+access modifiers that is public private
+and protected
+so let's understand them
+in public access modifier other classes
+and function can access the data members
+and member functions of the public class
+for example park is a public property
+anybody can go to the park or access the
+park because it's a public
+nobody has to take the alliance of
+anybody to go to the park
+now coming to the private
+in private access modifiers only the
+member functions inside the class have
+the access to the class members
+functions outside the class cannot
+access them
+for example a house is a private
+property
+any member outside the family
+cannot access the house without
+permission
+only members inside the family can
+access it because it's a private
+property
+now let's understand protected
+in protected access modifier
+similar to private scope it cannot be
+accessed from the outside class
+but it can be accessed from the derived
+class
+the derived class is also called the
+child class
+also the protected member of a class can
+be accessed from the friend function
+so as we have understood about these
+axis modifiers
+now let's understand the benefits of
+encapsulation
+encapsulation helps in reducing the
+complexity of code by hiding the
+irrelevant data or information and by
+doing so it reduces the complexity
+second is encapsulation helps in hiding
+and protecting the data by wrapping the
+data and functions together which are
+generally complex and by doing so
+provides a simpler view to the user
+with the help of encapsulation the
+variables of the class can be hidden
+from other classes
+third is encapsulated classes can easily
+be altered using the access modifiers
+that is we don't need to change the
+entire program all we need to do is to
+change the access scope of the variables
+that can be private protected or public
+so these were some benefits of
+encapsulation now let's go ahead and
+understand the difference between
+encapsulation and abstraction
+both of these concepts are similar in
+some ways but now we will discuss their
+differences
+so let's start with encapsulation
+encapsulation helps in combining the
+data and functions together in a single
+unit whereas in abstraction the unwanted
+information is kept hidden
+encapsulation helps in hiding the data
+and helps in providing an easier view
+abstraction helps in hiding the
+implementation details
+encapsulation can be implemented using
+an access modifiers
+whereas abstraction can be implemented
+using abstract class and interfaces
+in encapsulation
+problems are solved at implementation
+level
+and in abstraction
+problems are solved at design level
+so these were some differences between
+encapsulation and abstraction
+let's go ahead and do some practical
+examples on this topic
+if getting your learning started is half
+the battle what if you could do that for
+free visit scale up by simply learn
+click on the link in the description to
+know more
+so this is our code editor that is
+visual studio code and now let's create
+a new file
+and let's name it
+encapsulation
+dot cpp
+so first of all we know in encapsulation
+we can make variables inaccessible by
+making their scope as private
+so in this example we will do that
+we'll make the salary of an employee as
+private and then using the saturngather
+methods we will set the value of salary
+and return it as well
+the setter getter methods are generally
+used in these kind of situations where
+the variable we want to access is
+private
+so now let's start
+first of all we will create the main
+function but before that let's add the
+header files
+now using namespace standard
+now we'll start with the main function
+and inside the main function first of
+all we'll create an object by declaring
+the
+class name let's say the class name is
+company
+the object name is obj
+now
+using this object we will call the set
+function
+or we can say the setter function
+we will name it as set
+salary let's say
+and we will pass
+two values
+thirty thousand and six thousand
+one would be the full time salary and
+one would be the overtime
+all right now after that we can display
+those
+and we can write total salary
+and and
+after that we can call the get function
+to return the salary
+as the getter function is used to return
+the output and set function is used to
+set the values so we'll write obj.get
+salary
+so the salary we will display over here
+and after that we can write the return 0
+now the main function is done now let's
+start
+with company class company
+class
+company and inside this class first of
+all inside the private scope
+this is the private scope
+and this is the
+variable salary
+now this variable salary is private so
+no member outside the class can access
+it
+but using the setter and getter methods
+we will access this variable and we will
+set the
+salary and then we will return it
+all right
+now
+public scope inside the public scope
+we will
+write the setter methods void
+set
+salary
+and
+end full time
+and
+over time
+so these are two variables
+this 30 000 that we are passing is a
+full-time salary and this 6000 is an
+overtime salary
+so we need to add both of these salaries
+in this part
+so we'll write salary equals
+full time
+plus
+over time
+so this would be the total salary
+and
+let's just do this
+all right so this set
+salary function is done this is the
+setup function
+now we have to return
+using the getter function so we'll write
+the data type int
+get
+salary
+now inside this function
+we will simply return the variable
+salary
+as we can see
+and
+once the class
+will use this semicolon
+all right pretty much everything is done
+and now we can save it
+and let's try
+as you can see total salary is 36 000 as
+30 000 plus 6000
+so it is working fine so this is how we
+can access these private variables using
+these saturn getter methods
+now let's do another example
+this example of encapsulation will also
+be pretty much the same
+we'll do the setter getter methods in
+this one as well but in this example
+we'll find the area of circle
+all right let's start then first of all
+we'll include the header files that is
+hash include iostream
+and the name space standard
+we also forgot to save this
+let's name this one as
+first of all the location is work
+now let's name it as
+an encapsulation
+two dot cpp
+all right
+now the header files that i did now will
+start with the main function first of
+all
+now inside this main function we'll
+create an object first of all we'll
+write the name of the class
+that is ball
+now the name of the object is obj now
+using this obj object we will call the
+setter function
+that is the set area function and we
+will pass the radius
+all right
+obj
+dot
+set area this is the setup function
+now we will pass the
+radius
+now now we can display the area by
+calling that getter function but before
+that we will display a message
+all right
+area of
+ball is
+all right
+now
+we will call that getter function
+get area
+all right the main function is done now
+we need to create the class
+class bowl inside this class
+private scope
+inside the private scope we'll
+create that variable
+area and let's make its data type as
+float because we know that there are
+chances that the answer could be
+in decimal form because we have to use
+pi in that because the area of circle is
+pi r square so 3.14 is the value so that
+is why we are using float as the data
+type
+all right now
+in the public scope
+we'll
+set the radius inside this function
+set area and
+in radius this is the radius that is
+6 that we are passing this is the r this
+is the parameter
+and
+inside this function area equals we know
+that pi r square is the formula so we
+will write 3.14 that is the value of pi
+into
+radius
+again into radius
+r square
+all right so this is the
+area of
+circle or ball we can say
+after that
+float is the data type now we have to
+return the area using the getter
+function
+float getter
+its
+name is get area
+get area
+and will simply return the
+area variable
+all right after that we can use
+semicolon in the end
+and pretty much everything is done
+so let's save it
+and let's check it
+if it is running fine or not
+as you can see area of ball is 113.04
+so if we multiply 3.14 that is the value
+of pi
+with
+36 that is 6 into 6 it will give you
+113.04
+so this is the right answer and this is
+how we can find the area of ball or
+something like that
+and as you can see here the area is
+private and using this set area and get
+area methods that is the saturn getter
+methods we are accessing this private
+variable that is area so these were two
+examples of encapsulation you can try
+these examples as well all right guys
+with that we have come to the end of
+this session if you like this session
+please give it a thumbs up i hope it
+really helped you all thanks for
+watching stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

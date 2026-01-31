@@ -1,0 +1,214 @@
+hey everyone
+welcome back to another video by simply
+learn this is anubhav and in this video
+we will be learning about rest api but
+before we begin if you haven't
+subscribed to our channel already make
+sure to hit the subscribe button and
+press the bell icon so you will never
+miss any update from simply learn
+so without further ado let's begin and
+see what's in it for you
+first we'll see the introduction to rest
+api
+after that
+we will see what is express js
+moving ahead we'll see what is rest api
+and then we will see http request types
+and in last we will create a simple
+restful api from scratch
+rest api are the standard way to send
+and receive data for web services
+client sends a request which goes to the
+rest api
+then to the database
+to get or put the data
+after that it will come back to the rest
+api and then to the client
+using an api is just like using a
+website in a browser but instead
+clicking on the buttons we write code to
+request data from the server
+it is very flexible and can handle
+multiple types of requests
+restful api is very popular and very
+commonly used to create apis for
+web-based applications
+what is express.js
+expressjs is a node.js framework
+designed to build apis web applications
+and cross-platform mobile applications
+it is used as a server-side scripting
+language
+express js is high-performance fast
+lightweight and unopenated
+we'll see what is rest api but before
+that what is rest and what is api
+rest means
+representational state transfer
+rest is a popular architecture which is
+used to create web services
+now
+api is an application programming
+interface it is a code that allows two
+software programs to communicate with
+each other
+rest api is a software that allows two
+applications to communicate with each
+other with the help of internet and
+various devices
+now
+we will see the http request types
+first one is get it is used to request
+data from the server but mainly this
+method is used to read data
+next one is pac
+it is used to update the data or to
+change or replace it
+next is
+post
+post method is used to create new or to
+edit already existing data
+after that
+it is delete
+delete method is used to delete the data
+completely from the server
+now we will see the complete
+architecture of http request type
+in this
+client sends a request in the form of
+json file
+and with the help of http request
+which are get patch post and delete it
+will go to the server
+and then
+sends back the response to the client in
+the form of message
+to tell what happened to the request
+and now we will create a simple restful
+api from scratch
+choose from over 300 in-demand skills
+and get access to 1000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more
+first you need to open your editor for
+this i am using vs code
+for this
+you need to open your
+folder
+created one folder in the
+c drive
+express js
+for this
+you need to have node.js installed
+first
+open your terminal by clicking on
+terminal new terminal
+first
+we'll write npm
+in it
+hyphen y
+press enter
+this will create a json file
+for us
+now let's
+install express.js
+for that
+we'll write npm
+install
+express
+press enter
+installing express js
+this will add
+all the dependencies
+for now we have only one express
+installed we need a file here
+to write our code
+so we'll create a file called index
+dot js
+enter
+in this file we will write all our code
+open index.jsjs
+first we'll write
+cons
+app
+file
+express
+in this line we have imported the
+express package
+which itself is a function
+so we'll write parentheses here
+to initialize it
+now
+we'll get the port number i'm writing
+4000 here
+this will call a variable
+which is 4000
+till now
+our api hasn't defined any endpoints
+this app.listen tells the server to
+listen on specific port
+which we have defined already as a
+variable
+4000.
+now
+in app.listen
+we will write a second argument as
+callback to tell us the api is working
+or not
+then we'll write
+port
+comma
+we'll write the callback function here
+function
+console
+dot
+log
+backtick
+it's
+running
+on
+http
+closed
+which will come under curly braces
+now we can run this app by writing the
+command on a terminal
+first save this file
+terminal
+now we'll write a command
+to run this file
+index
+node
+file name
+index.js
+so it's successfully showing us it's
+running on http port
+4000
+options your
+chrome or anything
+i'm using chrome here i'll write
+localhost
+4000
+enter
+closed enter
+can't get
+now
+if you open this url you will see
+this message
+can't get
+this is because we don't have any api
+endpoints as of now
+but express js is still responsing with
+error message
+you can add an api and call it
+and with this we have reached the end of
+this video make sure to like and share
+it thank you for watching and stay tuned
+for more from simtila
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,398 @@
+hello everyone welcome back to another
+video by simply learn
+in this session we will discuss an
+interesting topic that is exception
+handling in c plus
+so let's go ahead and have a look at
+what we will be covering today
+so we will start with what are
+exceptions
+then why do we need exception handling
+in c plus
+and what
+exception handling is
+then we will understand exception
+handling keywords that is try catch and
+throw
+and we will understand each keyword in
+detail
+first we will start with what are
+exceptions
+exceptions are the unexpected events or
+the situations that arise during the
+smooth execution of the program
+so there are times during the run time
+when some errors or situations arises
+which create issues in the program
+these issues are called exceptions
+for example let us suppose we want to
+divide two numbers one is seven and
+other one is 0.
+now if we divide 7 with 0 it will show
+an error because we cannot divide any
+number by 0 because it is undefined
+so exception handling provides a way to
+take care of problems like these
+so now let's learn about exception
+handling but before that we must
+understand why we need exception
+handling
+so why do we need exception handling in
+c plus
+one of its reason includes handling the
+exceptions that arise during the
+execution of the program
+along with that exception handling
+provides a mechanism through which we
+can handle the error generating part
+separately from the rest of the code
+exception handling provides information
+to the user about the problem so that he
+or she can detect the mistake and
+correct it
+now let's go ahead and understand what
+exception handling is
+as we have discussed exception handling
+helps in dealing or handling the
+exceptions that disrupts the flow of
+execution of a program
+so how does it deal with the exception
+so when an exception is encountered it
+transfers the control from one part of
+the program to the other known as
+handlers
+and makes the code more readable and
+maintainable
+and takes care of the exception by
+providing certain code
+these exceptions are handled with the
+help of exception handling keywords
+now let's understand these exceptional
+handling keywords
+so there are three exception handling
+keywords named try catch and throw
+as we can see in the example first there
+is try block then followed by three
+catch blocks
+and each catch block contains the name
+of the exception
+the try block can have more than one
+catch block
+inside the try block those statements
+are enclosed which may cause the
+exception
+or we can say in this block that
+particular code is kept which will throw
+the exception
+each try block is followed by one or
+more than one catch block
+the try block throws an exception which
+is caught by the catch block
+taking care or handling the exception is
+the actual job of catch block
+this block catches the exception thrown
+from the try block
+inside the catch block a message or some
+code is written to handle the exception
+it can be a message for the user or a
+default code for a particular condition
+both the try block and catch block work
+together and every try block has at
+least one catch block for it
+now next is throw keyword
+whenever an exception is encountered it
+helps in throwing the exception
+it is used to throw an exception and its
+value to the consecutive exception
+handler
+so as we have discussed this topic
+theoretically now let's go ahead and do
+its practical implementation in our code
+editor that is vs code
+so this is our code editor here we will
+do an example in which
+we will make sure a person who is less
+than 24 years of age
+is not allowed to drink in the club
+so we will create an exception that part
+and with the help of try catch and throw
+blocks we will handle those exceptions
+all right so first of all we'll create a
+new file
+and let's name it
+as
+exception
+one dot cpp
+all right now we'll start with the
+header files that is hash include
+iostream
+now the namespace standard
+now we'll start with the main function
+and inside the main function first of
+all we will declare
+a variable named h so
+write int age
+equals to let's assign it as 20
+so this person is 20 years of age and
+now we will create the try block
+so inside this try block
+we will write an if condition that is if
+the age of the person
+is greater than equal to 24
+then only he is allowed to drink
+so inside this we will
+print a message saying that
+you have
+the excess to drink the alcohol
+all right
+so after this
+inside the else block
+all we need to do is to throw
+and the exception that is if the age of
+the person is not greater than 24 that
+is age is less than 24
+so in that condition
+or in that situation we will throw the
+exception
+that is will throw age
+to the catch block
+and for that we have to create the catch
+block
+the catch block
+will
+catch the exception that is age as you
+can see
+now
+inside this catch block
+first of all we will write a message
+we'll write
+you'll write you don't have the access
+to drink alcohol
+you don't have
+because your age
+is less than 24
+all right
+so after this after this message
+we will print the age of the person
+so we'll write
+your age is
+so and so
+and then the variable h
+now after that we will write return zero
+so in this example as you can see the
+percentage is 20 as we have assigned and
+inside the try block we have set a
+condition that if the age of person is
+greater than 24
+greater than equal to 24
+then
+he or she have the access to drink the
+alcohol
+and if not
+if his or her age is not
+greater than 24
+then will throw the exception
+and
+the cash block with cashed exception and
+will print this message that you don't
+have the access to drink alcohol because
+your rage is less than 24
+and then
+his age will be printed
+so now let's try to run this i hope it
+works
+as you can see you don't have the access
+to drink alcohol because your age is
+less than 24 and your age is 20
+and now let's try to if we assign
+let's say
+25
+the program is working fine but we want
+to check the other condition as well
+okay so it is happening because we
+forgot to save this 25
+as we have now saved it now let's try to
+run this
+as you can see you have the access to
+drink alcohol because now our age is 25
+so this is how
+exception handling works this try block
+inside this drive lock we kept those
+code or statements which will throw the
+exception
+and then
+it is thrown with the help of this throw
+keyword and then the catch block solves
+or prints a message
+in with respect to that exception
+so now let's do another example
+so let's create a new file
+and name it let's say
+exception
+2 dot cpp
+all right so here we will do an example
+in which we will try to divide a number
+by zero
+and as we know that we cannot divide a
+number by zero
+so it will throw an exception
+so let's do this example
+so first of all
+our hash include iostream the header
+file
+then the name space standard
+now inside the main function
+you will create three variables
+mean
+so inside the main function we will
+create three variables
+one is for the numerator then
+denominator and then in which we will
+store the output that is the output
+variable so let's name numerator as num
+and denominator as d num
+because it is sounding familiar then
+we will store the output in the output
+variable
+all right
+so we have created three variables num
+denum and output
+now
+first of all here we will display a
+message to enter the numerator and
+denominators
+so we'll write
+please enter
+the numbers
+to do the division
+all right
+after that end l
+now we'll take the input
+c in num and
+c in
+d num
+so the numerator and denominator we have
+taken the input from the user
+now after that we'll make the try block
+so inside this try block
+we will create an if condition
+and we'll write if dnum that is the
+denominator
+is equal to 0 if it is equal to 0
+then
+we will throw the exception
+and
+the exception would be denom
+because denominator cannot be zero
+and
+if the dname is not zero then in else
+condition we will simply
+divide
+output equals to
+num
+divided by
+d num
+all right
+so now after this we have to create the
+catch block also
+because we have thrown the exception now
+we want the catch to catch the exception
+so
+we can write
+d for dinum here
+now
+we'll print a message saying that you
+cannot enter 0 in the denominator
+so we'll write
+you cannot
+enter
+0
+in denominator
+while
+doing
+the division
+operation
+all right now after that we'll use ndl
+so this is our catch block
+after this catch block we will again
+write a message
+that
+the output of the division is that is
+if
+the denominator is not 0 then we have to
+print that result so for that we will
+do
+this
+the output
+after the division is
+and here we will
+write the variable output
+so this
+will print the result of
+this one where the denominator is not
+zero
+so
+after that we can write return zero
+so there is one extra bracket as you can
+see
+of try block
+all right now it's done we can save this
+one and let's try to run this
+but before running this one let's go
+through this code
+that first of all we have declared these
+three variables then we ask the user to
+enter the
+numerator and denominator
+so then we have used this try block and
+inside the tri block we have set the
+condition that if denominator is 0 then
+we will throw the exception
+and if it is not then we'll simply
+divide both of the numerator and
+denominator
+so the
+denominator which is thrown is called by
+this catch block
+this and it will display a message that
+you cannot enter 0 in the denominator
+while doing the division operation
+because it is undefined
+and if the denominator is not 0 then it
+will simply print the message
+and the output
+so now let's try to run this
+so as you can see please enter the
+numbers to do the division
+so let's say the first number is eight
+and second number is
+zero that is denominator is zero
+then you cannot enter zero in the
+denominator while doing the division
+operation the output after division is 0
+so it will show this output only and
+our output is correct now let's try to
+run this and do the simple division
+operation in which the denominator is
+not zero
+so let's say now again we'll write 8 and
+the denominator would be 2
+then as we can see the output after the
+division is 4
+so
+our
+code is correct and our output is also
+correct so this is how
+we can do the exception handling and
+handle the exceptions using this try
+catch and throw blocks
+alright guys with that we have come to
+the end of this video if you like this
+video please give it a thumbs up i hope
+it really helped you all thanks for
+watching stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

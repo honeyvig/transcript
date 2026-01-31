@@ -1,0 +1,253 @@
+hey everyone welcome back to another
+video by simplyner this is anubhav and
+in this video we will be learning about
+error handling in express js but before
+we begin if you haven't subscribed to
+our channel already make sure to hit
+subscribe button and press the bell icon
+so you will never miss any update from
+simply learn so without further ado
+let's begin and see what's in it for you
+first
+we'll see what is error handling
+after that we'll see how does error
+handling works in express js and then we
+will be setting up error handling in
+express js
+so
+what is error handling
+array handling is a process in which
+express catches and processes the error
+that occurs synchronously and
+asynchronously
+express comes with its own default error
+handlers
+simply
+in error handling the tasks are to
+identify errors report them to the users
+and then develop some recovery
+strategies and implement them to handle
+the errors
+this whole process should not slow the
+overall processing time of the program
+now
+how does error handling works in
+express.js
+expressjs comes in with a built-in error
+handler this default error handling
+middleware function is added at the end
+of the middleware function stack
+it automatically catches all errors in
+router handlers and allow developers to
+extend router handling functionalities
+by middleware function
+error handling in express is done using
+middleware
+this middleware is defined in the same
+way as other middleware functions the
+error handling functions have four
+arguments error request response and
+next
+we have next function method
+that matches us to the next middleware
+handler in middleware
+in error handling we have the next error
+method this function skips all
+middleware and matches us to the next
+error handler for the router
+now let's set up our error handling with
+express
+open your visual studio code
+choose from over 300 in demand skills
+and get access to 1000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more
+first we will create a new directory
+for that
+open your terminal
+new terminal
+let's write
+make directory
+now i will enter the directory name
+i will write
+simply learn
+or i can also write
+error press enter
+you can see
+the
+link directory has been created
+it's empty
+let's go inside that
+cd
+see the error handling
+now we are in the headline folder
+now let's create a new project here
+we'll write npm
+y
+so
+as you can see
+the json file has been created in the
+error handling folder
+now
+we will install couple of packages here
+okay
+first we will install express
+write npm
+install
+express
+now we will also
+install morgan
+which locks the request
+after that we'll also install http
+errors
+errors this package makes it very easy
+to check the status code
+and then last
+we will install node dot
+enb
+press enter
+this will take couple of seconds
+now in the dependencies
+you can see dot env express http errors
+and morgan
+now i will create a file in this error
+handling folder
+write
+app.js
+enter
+now
+let's install nodebond which helps us
+not to reset our file again and again
+for that we'll write in the npm
+install
+minus sign save
+node mod
+enter
+this will also take couple of seconds
+now
+here you can see
+the node one has been successfully
+installed
+now
+open your package.json file
+here
+in packet.json file
+you can see here
+this line
+i will rewrite this
+you can also remove it let's write
+script
+and in this
+i will write
+nodemon
+tab
+dot js
+yes
+save this file by pressing ctrl s
+yes
+now
+open the file
+app.js
+here
+we will be importing some packages
+in node.js
+we use require function right
+so
+we'll write const
+express
+required
+and
+express
+here we need express packages
+now we will be needing morgan
+we will write const
+login
+required
+then
+now
+like this we will need http packages
+const
+error
+create
+error
+require
+http
+errors we also need dot env packages to
+import our environment variables
+for that we will simply write required
+required
+and fake
+for this command we need a env file we
+will create a file
+dot
+emb
+printer
+and here we have our env file where we
+can have our environment variables
+first we want a port for this
+application so we will write the port
+code
+3000
+save this file
+now
+again go back to the app.js file
+here
+first we will be initializing our app
+we'll write const
+app
+express function
+now we will start the application for
+this we will write
+const port
+to which it will be called
+process
+dot emb
+dot
+port
+3000
+now we will make our application listen
+to port 3000 we will write
+dot lesson
+port number
+port
+it will call the port number
+and
+here we will call the callback function
+header function
+and here we will
+make our log statement
+for this we'll write console
+dot log
+back tag
+server
+[Music]
+and
+both
+now let me start the application before
+that we'll save this file
+now to start the application we'll write
+npm
+start
+enter
+here
+it is showing error let's find out
+okay
+here
+here i have wrote script
+here we need to write start
+save this file
+and now clear this screen
+enter npm
+start
+so as you can see it is successfully
+running in the port 3000
+and with this we have read the end of
+this video make sure to like and share
+it thank you for watching and stay tuned
+for more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

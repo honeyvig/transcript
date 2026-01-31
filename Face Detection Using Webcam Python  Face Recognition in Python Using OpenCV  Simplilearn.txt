@@ -1,0 +1,575 @@
+foreign
+I am mayank and welcome to Simply learn
+today we will take you through the hands
+of lab demo of how you can create face
+detection using opencv python before we
+start I hope the screen is clearly
+visible and the audio is fine if yes
+please type in yes if there are any
+issues do let us know in the chat
+section so that we can resolve them
+I am repeating again before we start I
+hope this screen is clearly visible and
+the audio is fine if yes please type in
+yes if there are any issues do let us
+know in the chat section so that we can
+resolve them
+if I forgot to reply someone's comment
+sorry for that
+let's wait for some more minutes to let
+other people join until then let me tell
+you guys that we have regular updates on
+multiple Technologies if you are a tech
+geek on a continuous hunt for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply learn
+it I think we can get started so in
+today's session we will see what opencv
+is moving forward we will see what is
+space detection and at the end we will
+go through the hands of live demo of how
+we can create phase detection using
+opencv python we will perform different
+function and use different python
+libraries to create face detection
+before we move on to the programming
+part let's discuss what opencv is and
+proceed further for the same
+what is opencv
+a collection of python bindings called
+opencv python was created to address
+issue with the computer vision
+python is general purpose programming
+language created by Judo Von Rasam that
+quickly gained popularity largely due to
+its ease of use and readable code the
+programmer can express Concept in less
+code without sacrificing readability
+numpy a highly efficient library for
+numerical operation with a Matlab like
+syntax is used by opencv python numpy
+arrays are translated into and out of
+all opencv array forms additionally this
+make it simpler to interact with other
+numpy using libraries like scipy and
+matplotlib after understanding what is
+opencv let's move forward and see what
+phase detection is so what is Phase
+detection
+phase detection also known as facial
+detection is a computer technology that
+uses artificial intelligence to find and
+recognize human faces in digital
+photographs
+Fair detection technology can be enabled
+real-time surveillance and tracking of
+people in various Industries such as
+security Biometrics law enforcement
+entertainment and personal safety
+from basic computer vision method to
+developments in machine learning to
+increasingly use complex artificial
+neural network and related Technologies
+phase detection has advanced leading or
+to ongoing performance increases
+it now serves as the foundation from
+some crucial applications such as face
+tracking phase analysis face recognition
+the application ability to perform
+sequential tasks subsequently impacts
+the phase Direction
+so dear learner if you want to upskill
+your AI and machine learning skills so
+give a chance to Simply learn
+professional certificate program in Ai
+and machine learning which comes with
+completion certificate and in-depth
+knowledge of AI and machine learning
+check this course detail from the
+description box below
+so here is one question for you guys I
+will give you exactly one minute for
+this you can comment or give your answer
+in the chat section so I can see if the
+answer is given by you are right or
+wrong
+so the question is
+which of the following function is a
+built-in function in Python
+factorial
+print
+seed
+sqrt
+so I am starting the timer of one minute
+just type your answer in the comment
+section or in the chat section please do
+let me know your answers
+so I'm starting the timer of one minute
+each of the following function is a
+built-in function in Python factorial
+print seed sqrt let us know your answer
+in the comment section below
+I kindly ask that everyone take part in
+this session
+which of the following function is a
+built-in function in Python
+30 seconds more
+factorial print seed sqrt
+please let me know your answer in the
+comment section below
+20 seconds remaining
+each of the following function is a
+built-in function in Python
+10 seconds more
+please let us know your answer in the
+comment section below
+so after the allotted time has passed
+Those Who provided the current response
+will receive a response and those Who
+provided the incorrect response will
+receive one
+so now let's move to our programming
+part to create phase detection using
+opencv python
+so first we will open command prompt to
+write a command to open jupyter notebook
+so here we will write Jupiter
+notebook
+press enter
+so this is the landing page of Jupiter
+notebook and here you have to select new
+python file
+so this is how the Jupiter notebook UI
+looks like so at first we will import
+some major libraries of python which
+will help us in creating a phase
+detection system
+so first let me rename this
+paste
+Direction
+first we will import import
+CV2
+press enter then import another Library
+import numpy
+as NP
+and the third one is Major One Import
+face
+recognition
+as
+fr
+then press enter
+so CV means capturing video
+the CV2 function is opencv can read
+video video capture by using pass 0
+function parameter we can access our
+webcam we may pass as rtsp URL in the
+function parameter to capture the CCTV
+footage
+which is quite helpful for video
+analysis
+and another one is numpy numpy is a
+python Library used for working with
+arrays it also has function for working
+in the domain of linear algebra and
+matrices it is an open source project
+you can use it freely numpy stands for
+numerical python
+and the third one is Phase recognition
+phase recognition and manipulation using
+python or the command line the easiest
+facial recognition library in the world
+built using Cutting Edge face
+recognition technology from dlib
+developed using deep learning
+so moving forwards let's import our
+video capture device so for that we have
+to write Here video
+underscore capture this is our variable
+name
+equals to
+CV2 Dot
+video
+capture
+and we have to pass here zero
+then press enter
+okay here V
+should be capital
+so the video capture function from
+opencv is used to interact with the
+cameras what we can do is video can be
+shown and saved display the image that
+the camera captured
+so moving forward let me import my image
+for the further detection process okay
+so
+image equals to
+FR dot load
+underscore image
+underscore file
+then
+image name or image path boy
+dot jpg
+press enter
+using load image file we can import
+image file to our detection system so
+moving forward let's set encoding for
+the image okay so I will write here
+image underscore phase underscore
+encoding
+equals to
+FR Dot
+face
+encodings
+and image
+than zero
+press enter
+yeah so face encoding basically uses 128
+computer generated measures to represent
+the phase similar encoding would be
+present in two images of the same person
+while being completely different in two
+images of two distinct people
+so moving forward let's do let me write
+first
+I will write here known
+encodings
+equals to
+image
+phase
+coding
+okay
+then press enter
+then known
+phase
+names
+equals to
+then here I have to put my name so I
+will write
+Bank
+okay then press enter
+so what I did is I assigned known phase
+encodings to my image face encoding so
+what will happen if image matches to my
+face then it will print my name and for
+the rest we will add name unknown
+okay so let me add the function now for
+face detection system
+so let me write the full code for it
+first then I will explain you line wise
+okay
+so just stay tuned with me
+I will write here
+so I will add while
+okay true
+okay so r e t comma frame I will explain
+you line wise line don't worry equals to
+then video
+capture
+dot read
+and RGB
+underscore frame
+was to
+frame
+then colon
+comma then again colon comma then two
+colon
+then minus 1.
+okay
+yeah
+so here I will write FC underscore
+locations
+equals to FR dot face
+underscore locations
+RGB
+underscore frame
+right here FC FC is for basically face
+encodings
+plus two fr
+dot face
+underscore encodings
+and RGB
+underscore frame
+comma FC underscore
+locations
+okay
+so for
+top
+comma right comma
+bottom
+left
+okay then I have to write your face
+the score encoding
+comma face underscore encoding this is
+that was encodings this is encoding
+okay so before that I will write here
+Okay so
+I have to write here encoding
+in zip
+okay then here I have to write
+FC underscore
+locations locations
+okay
+then
+comma then face encodings
+colon
+then press enter
+so here I have to write matches
+yeah
+matches equals to FR dot compare
+and faces
+then known
+the score phase
+let's score encodings
+comma
+face underscore encoding
+okay
+so
+it so what if
+the image will not match so I have to
+give the name equals so
+unknown
+then we will write face distances
+plus 2
+FR dot phase
+underscore distances
+core phase
+underscore encodings
+comma paste
+School
+encoding
+then I will write match underscore index
+equals to NP Dot
+AR
+G min
+okay then I will write here FC
+underscore distances
+yeah
+then moving forward
+I have lied if
+matches
+then match underscore
+index
+okay then colon
+then name
+equals to
+known underscore phase
+underscore names
+then
+match underscore index
+and I have to write here CV2
+Dot rectangle
+and frame
+comma
+comma top
+comma right
+I have to give another bracket here
+Oma
+bottom
+that comma
+0 comma 0 comma 255
+again comma then 2 for the Border
+so then CV2 dot rectangle
+yeah
+comma then again
+left comma
+bottom
+then minus
+35.
+okay
+so then I will write
+write
+comma bottom
+comma
+then again
+0 comma 0 comma 255
+then CV2 dot f i l l e d field
+okay
+F should be capital
+yeah
+so then we will set font equals to
+CV2
+Dot
+font
+okay
+font
+the score
+underscore
+simplex
+okay
+so then I have to write here
+CV2
+dot put
+text
+aim
+comma name
+comma
+left
+six
+comma bottom
+minus six
+okay then comma point
+comma
+1.0 then
+again one comma then we have to set
+location like 255
+comma 255
+comma 255
+then comma
+1.
+okay
+and here I have to write CV2
+dot image show I am show
+then like
+simply learn
+is detection
+comma frame
+foreign
+CV2 Dot
+weight key
+is 1
+and
+like 0 x
+f
+the capital f f equals to equals to
+ORD then
+quit
+and here I will write break
+I will write video
+underscore capture
+dot release
+dv2
+dot destroy
+all
+windows
+okay yeah
+so let me explain you
+so in general rad is a Boolean value
+that indicates whether or not there was
+a even a return each frame that is
+written is at this same frame if there
+is no frame you will receive none rather
+than an error
+in opencv reading and writing videos and
+reading and writing images are quite
+similar a video is nothing more than a
+collection of pictures often known as
+frames
+so to draw a rectangle around the face
+that was discovered we utilize the
+opencv rectangle the rectangle function
+we can draw the rectangle by using the
+points or Corners position that the
+phase location
+and
+is encoding this a face encoding this
+one
+so a face encoding basically uses 128
+computer generated measures to represent
+the phase similar encoding what we
+present in two images of the same person
+while being completely different in two
+images of two distinct people
+so this there is a use compare phase
+so compare phase is used to compare my
+face to uploaded image one okay if it
+matches it will print my name otherwise
+we have given a known here
+so the numpy ARG arm
+this one
+where it went this numpy ARG min
+so the number ARG main method delivers
+the indexes of the arrays minimum
+element along each axis return an array
+of array indices with the same shape of
+the array
+so this font where is yeah
+font Hershey simplex
+is normal size of sans serif font okay
+so put text put text is used to put the
+text on the frame like my name or
+unknown
+so in order to display an image in a
+window we use the IM show this one
+the Samsung function
+okay so the window adjust itself to the
+size of image parameters window name a
+string that identifies the window in
+which the displayed image will appear
+okay
+so until a key is pressed wait key zero
+this one okay so until a key is pressed
+wait key 0 will will keep the window
+open it is suitable for image display
+and wait key one
+I write here wait key one
+so wait key one will show a frame for
+one Ms before closing the display on its
+own
+so after the script has ended users can
+close or remove all the windows use the
+python
+like using destroy all function function
+okay you would use the function if you
+wanted to close a window while it was
+open in numerous windows at once
+so let's see our phase detection system
+is working or not so let me close this
+person on your screen first okay so let
+me close this first
+let me run this
+now so here you can see this pop-up and
+I will open so here you can see my name
+is correctly printing
+okay
+so
+like I have uploaded my image it's
+detecting correctly okay
+so like what if I show uh one more image
+so here you can see this is my card
+so it is
+detecting properly
+yeah
+so what if I will show like another guy
+image so from my mobile
+so here you can see
+it is spring unknown in
+Messi's photo
+yeah
+so what if if I will write here like uh
+one of the
+other image this random.jpg then it
+should print unknown for me also okay
+then I will run it again
+okay it's working
+has come
+so here you can see it is now printing
+unknown because like I have uploaded
+that another random image here so it is
+importing
+okay so it is printing unknown here
+so here you can see like it's spinning
+unknown for me also so I hope you guys
+understand till here if you have any
+question or any query regarding any code
+or question just put us in comments our
+team will shortly provide you the
+correct solution I hope you guys must
+have understood how you can create phase
+detection system using open Siri python
+if you have any queries you can ask in
+the comment section below our team will
+respond you as soon as possible and if
+you want this full code just comment for
+the same
+thank you so much for being here if you
+enjoyed this video please do subscribe
+to our YouTube channel and give a like
+to this video thank you and keep
+learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

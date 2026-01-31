@@ -1,0 +1,747 @@
+in a world where email is crucial spam
+messages play your inboxes disrupting
+our digital lives but fear note a hero
+emerges the email spam classifier this
+intelligent system learns from past
+encounters uncovering the tricks
+employed by spammers deceitful subject
+lines promising glitches unreasonable
+low prices it's sports signs like
+excessive capital letters misspellings
+and suspicious URLs yet the better
+designed end here spammers constantly
+evolve their tactics but the email spam
+classifier doesn't Flint it adapts
+refining its knowledge and staying up to
+date with the latest tricks every new
+spam email it encounters it provides
+insights enhancing its accuracy and
+ensuring our protection thanks to
+Dedicated minds and Ai and ml power the
+fight against email spam continues the
+email spam classifier stands as a
+faithful Guardian a symbol of
+Technologies victory over digital
+adversaries it reclaims inboxes and
+restores ordered to our virtual world
+according to recent studies Ai and
+machine learning related job postings
+have increased by a staggering 344
+percent in the past five years companies
+across the global actively seeking
+professionals who can harness the power
+of data and build intelligent systems
+the average salary is 150 000 in the US
+and 15 lakhs per annum in India
+accelerate your career in Ai and machine
+learning with a comprehensive
+postgraduate program in Ai and machine
+learning gain expertise in machine
+learning deep learning NLP computer
+vision and reinforcement learning you
+will receive a prestigious certificate
+exclusive alumni membership and
+hackathons and ask me anything sessions
+by IBM with three capstones and 25 plus
+industry projects using real data sets
+from Twitter Uber and more you will gain
+practical experience master classes by
+Purdue faculty and IBM experts and show
+top-notch education simple less job
+assist help you notice by Leading
+companies life session Zone AI trends
+like chat GPT generative Ai and
+explainable AI this program course
+statistics python supervised and
+unsupervised learning NLP neural
+networks computer vision gns kras
+tensorflow and many more skills enroll
+now and unlock exciting Ai and ml
+opportunities the link is mentioned in
+the description box below let's take a
+minute to hear from our Learners who
+have experienced massive success in
+their careers
+you need to keep updating your skills on
+a regular basis no matter what level
+you're at I recently completed the
+professional certificate program in Ai
+and machine learning from Simply learn
+in partnership with Purdue University
+the course material was comprehensive
+and the faculty was extremely
+experienced The Faculty was able to
+adjust their teaching style in order to
+cater to the overall skill set of the
+class in the rapidly evolving world of
+technology it's important to keep up
+Skilling for every working professional
+stay relevant continue with that having
+said hey everyone welcome to Simply
+learns YouTube channel but before we
+dive into that don't forget to like
+subscribe and share and now over to our
+training experts
+so hello and welcome to this new video
+by simply learn email spam classifier
+okay so first we will change his name
+to email
+fam
+okay
+so first what we gonna do
+so first what we're gonna do we will
+import some libraries then the main main
+library is like num pipe and other scale
+on and logistic regression algorithm and
+then we will move on to this
+importing of data set of spam mail and
+ham mail ham is known as like which is
+not a Spam okay so we will do some
+categorization of spam email and ham
+email
+then we will split into the training
+test and the testing of the data set
+okay then we will transform the text
+data to feature vectors that can be used
+as input to the logistic regression and
+then we will convert the Y train and the
+white test values as integers and then
+moving forward we will see the features
+the model extractions and then we will
+train the model using logistic
+regression
+and after that we will predict the
+accuracy how much the training data is
+giving how much the testing data is
+giving and at the end we will build a
+predictive system which will
+tell whether a particular email is Spam
+or not spam Okay cool so let's move on
+to the
+coding part then okay so first I will
+import some major libraries like import
+numpy
+as any B
+okay
+then
+numpy so number is a powerful python
+library for numerical computing so it
+stands for numerical Python and provides
+support for efficient array operations
+and mathematical function linear algebra
+random number generation and more with
+numpy you can work with the
+multi-dimensional array known as ND
+arrays and these arrays are highly
+optimized for performance and allow you
+to perform mathematical and logical
+operations on large data set efficiently
+so numpy provides a wide range of
+function and methods to manipulate and
+analyze these arrays
+and the second one is
+import
+us
+as PD
+okay
+PDN and
+we don't want to write again and again
+pandas and numpy
+so what is pandas
+so pandas is a powerful python Library
+used for data manipulation
+and Analysis it provides easy to use
+data structure and data analysis tool
+making it essential tool for working
+with structured data
+so the third third one is psychic
+learning
+okay so I will add here from
+from
+the scale on dot model
+selection
+port
+train
+test
+okay
+so what is SQL and model selection and
+the trend test split
+so Escalon or scikit-learn is a popular
+python library for machine learning it
+provides a wide range of tools and
+algorithms for various machine learning
+tasks including classification
+regression
+and that clustering dimensional
+reduction and the model evaluation okay
+and this strain test split this one
+so the train times split function is a
+utility in scikit-learn that helps in
+splitting the data set into training and
+the testing subset later we will split
+the data into training and adjusting so
+this function is commonly used in
+machine learning tasks to assess the
+performance of a model on unseen data
+okay so move on
+to the next algorithm
+we will write from
+right here
+from
+Escalon
+Dot
+feature
+extraction
+Dot
+text import
+t f ID
+vectorizer
+okay so what is tfid vectorizer
+so TF ID vectorizer is nothing is a
+feature of extraction technique commonly
+used in natural language processing NLP
+and text mining tasks so it is a part of
+scikit-learn library in Python so TF ID
+vectorizer transform a collection of
+text documents into a numerical
+representation that machine learning
+algorithm can work with
+okay
+so move on to we will
+import from
+Escalon
+dot linear
+model
+both
+logistic
+regression
+okay
+so what is logistic regression
+so logistic regression is a popular
+classification algorithm used in machine
+learning it is a part of the
+scikit-learn library in Python logistic
+learn
+and the regression is suitable for
+binary classification problems where the
+target variable has the two classes okay
+and the last we will import accuracy
+score
+okay
+so here I will write from
+dot matrix
+import
+accuracy
+support
+okay so let me tell you first what is
+that curation score the accuracy score
+function is a performance metric
+provided by the circuit learn library in
+Python it is commonly used to evaluate
+the performance of a classification
+model by measuring the accuracy of the
+predictions okay so let me run it
+okay
+okay there is some error
+maybe the spelling mistake
+okay what I will do
+I will write it again
+running it again
+yeah it's working
+so now what I will do I will import the
+data set
+so I I will add here DF because to data
+frame because PD dot read
+underscore CSV
+mean let's go data dot CSV
+you can find this data set link in the
+description box below okay I've done it
+yeah
+so let's see
+the data frame
+what's in it for us so as you can see
+here is category then message so these
+are the you know the males ham means not
+spam and spam is a spam okay
+those males which are not spam known as
+ham
+so there are two columns five five seven
+two rows
+so moving forward what I will do I will
+convert this mail data okay to normal so
+I will write here
+data
+equals to Raw
+data equals to
+DF dot where
+PD dot not none
+not null
+is
+DF
+okay then
+okay let me give you some spaces for the
+better visual yeah
+so now I will print data dot that
+so what is the meaning of header head
+means if you want to print the top five
+lines of the particular data set it is
+you can use the head and if you want to
+print the last
+five rows of the data set so you can use
+the tail instead if you will write here
+10
+instead of giving it blank then run it
+so it will give you the top 10 rows of
+the particular data set okay so these
+are the spam mail this hand mails so
+later on what we will do we will
+train this data set using this
+particular
+data set
+okay
+so let's move on to
+and see the info
+okay so data dot info
+so info you can see there are columns
+this null null count this data type so
+there are two columns like category and
+the message and the particular rows are
+the 5572 on the both and the data type
+is object
+okay see the memory uses and you can see
+everything
+and there is one more you can see that
+it shape
+is 5572 comma two this these are the
+rows and these are the columns two
+columns and 5570 rows
+okay so now what I will do I will assign
+the category to spam
+M and ham mail okay so what I will do
+here
+I will write here data Dot
+Loc
+then
+data
+versus category
+equals equals to
+Pam
+comma
+category
+okay comma
+question 0.
+so if the 0 will show it is known as the
+spam and if one will show it is known as
+the handmade okay I will write here did
+dot dot
+OC location and data
+category
+equals equals to
+have
+than
+category
+will be
+one
+okay then let me run it okay it's
+running smoothly so I will write here x
+equals to data
+[Music]
+message
+and the Y value will be
+then category
+okay then let me
+run it
+so now what I will do first
+so now what I will do I will write a
+print
+these are only the is
+category
+print
+y
+so now as you can see 1 1 0 1 1 0 so
+here 0 means
+what is the zero means zero means spam
+and the one means it's ham Mill okay
+so moving forward what I will do I will
+split this data set into testing and the
+training okay so I will write here x
+strain
+this is the most important part
+and the X test
+okay
+then y train
+then y test
+okay because your train
+test
+split
+X comma y
+comma
+that size
+equals to
+0.2
+then
+random
+okay random state
+equals to
+three
+okay
+I will write it
+so this is X
+train for the training set and X test is
+the testing okay then the same way you
+know the what is the X and Y here
+and here we are splitting using train
+test split then xoma y test size is
+equal to 0.2
+okay 0.2 means
+it will be 80 and 20 and 80 will be
+raining and the testing will be 20 okay
+we will train data 80 of data using this
+data set will be trained
+and for the test the 20 will tell
+okay the random State equals to three
+and the random state is a hyper
+parameters used to control any such
+Randomness involved in machine learning
+model to get consistent result okay when
+splitting a data set splitting a node in
+a decision tree or a you know logistic
+regression analyzing centroid is
+clustering takes place so that is why
+we use random straight okay so let me
+run it
+it's working fine
+so now I will show print
+x dot shape
+okay then print
+X
+underscore train
+dot ship
+I will show you about the I'm talking
+about the test size the print
+X underscore test dot shape
+now see carefully
+so as you can see
+total rows are five five seven two
+total row of 80 percent is four four
+five seven or else you can calculate and
+the twenty percent is for the testing is
+the one triple one five
+same goes for the Y
+so moving forward okay let me show you
+for the Y also so I will copy paste it
+here
+so it's
+y
+y
+same goes for the Y also
+okay
+so now what I will do here I will
+transform the text data to feature
+vectors that can be used as input to the
+logistic regression
+so
+feature
+extraction
+question
+t 5D
+vectorizer
+where the minimum
+towards
+okay stop words
+equals to
+English
+and
+lowercase
+okay here I am transforming the test
+data to the feature vector
+and
+so here
+so this is a feature extraction we are
+using TF for D vectorizer okay we have
+import here as you can see for the
+feature extraction of the text
+and this is the minimum difference equal
+to 1 and then what is the stop word the
+stop words are the English words which
+does not add much meaning to the
+sentence they can safely be ignored
+without sacrificing the meaning of the
+center
+okay like for example you can see the
+words like the he have such words
+already computerized and the capture
+this is a corpus name and the chords
+okay and this lowercase equals to two
+true
+so here I will write X strain
+just
+question
+feature
+protection
+Dot
+fit
+transform
+absence
+X underscore test
+features
+extraction
+dot transform
+to the X test
+okay
+yeah so moving forward I will convert y
+train and Y test values as an integer
+because they are 0 1 0 and 0. train
+equals to y
+train
+dot as type
+in
+okay then why test
+it
+so okay
+so that is the spelling mistake
+we'll copy from here
+paste it here
+okay
+download it
+why test it is
+yeah it's sunny
+so now what I will do I will print
+extreme
+train
+as you can see
+the X strain
+so these are the messages
+if I will print
+X strain
+features
+see extend features
+but then you can see
+so these are the features
+accuracy okay this is zero zero zero
+means spam one one means M okay
+so moving forward what I will do I will
+now the Train the model OKAY logistic
+relation so I will write a model equals
+to
+okay logistic
+regression
+so now we will you know train the model
+so here I will write
+model
+equals to
+logistic
+regression
+okay so we don't want to write again and
+again again and again logistic reaction
+so I am here assigning model to it
+so let me run it
+so here I will train the logistic
+regression model with the training data
+so here I will write model dot fit
+extreme
+features
+White
+okay here we are training the logistic
+regression model with the training data
+let me run it
+and it's running
+so moving forward we will uh do the
+evaluating of the training model train
+model and the prediction of the training
+data so for that I will already have
+prediction
+on
+training
+data model Dot
+predict
+okay next string
+features
+okay
+then I will write here accuracy
+training data equals to
+accuracy
+over
+y train
+comma prediction okay I will write from
+here
+foreign
+so now we will see the prediction so
+I'll write here prediction
+or simply I will like print
+accuracy on training
+data
+comma
+okay I will copy it leave it accuracy
+come on
+training
+data okay let me run this so as you can
+see accuracy on training data is 0.96
+means almost 97 percent which is not bad
+very very good okay we will see print
+okay now we have to do for the testing
+data this is for the training data and
+let's see the accuracy for the testing
+data so for that
+I would like same prediction
+test
+equals to model dot predict
+X test
+features
+on
+test data
+equals to accuracy
+score
+then why test
+ification
+on
+test data
+okay
+accuracy score
+so here I will write print
+the accuracy on test data
+radical accuracy
+or
+test data
+okay
+so as you can see the
+accuracy on test data is almost same as
+the training data okay almost 95 percent
+97 sorry
+so now what we will do we will break a
+predictive system now Okay so
+I will write here
+like
+input
+okay you have to input the mail here
+that
+okay we will input later and we will now
+write the line for the convert text to
+feature Vector so for that I will write
+here input
+data
+features pursue
+feature
+instruction
+dot transform
+okay
+okay this is a function so I will write
+here input
+your
+three
+no
+okay
+so here we will make the prediction
+okay I will write the prediction
+model Dot
+dot predict
+input
+data
+features
+okay
+so I have some spam mails
+with myself
+so I will try to copy them
+and let's see
+okay
+I have some mail so I will copy it
+okay
+and I will paste it here
+okay this is the second time we have
+tried to contact you you have won this
+this these type of mail service spam
+actually
+like you also know
+so
+I will try to run it
+let me run it
+okay forward to right brain
+print
+predictions
+so zero so here as you can see
+already 0 means spam
+okay so this is a spam Mill actually
+this is a spammal so okay wait let me
+write here if
+prediction
+showing zero
+equals equals to true
+then
+print
+printed to
+have milk
+and
+as
+print
+spam
+spam
+okay
+the prediction will be zero
+is not equals to 1. okay so it will show
+the ham male or else the spam mail very
+simple pretty simple
+see Zero spam mail okay I will try to
+put it put here
+one hand mail
+okay
+let me copy it paste it here
+let me delete this quickly
+okay let me run this
+so it is showing ham Mill means not spam
+so quickly let me run one more spam mail
+okay
+okay
+copy this
+and paste it here
+you can try with your own like own email
+to God
+okay so let me run this so it is a spam
+mail okay see you can see you have been
+selected to stay the marketing okay see
+in so these type of mails are like you
+know these and
+the vouchers this type of mails are
+known as the spam mail see holiday value
+this dial this and this
+okay so here we are we have done with
+our email spam classifier
+as you can see if you want this code
+so you can
+comment down below
+so with this we have come to end of this
+video I hope you found this video
+informative and interesting if you like
+this video give some a thumbs up and
+share it with your friends also if you
+have any question about this video
+please feel free to ask in the comment
+section or you want this code you can
+comment down the phone same our team
+will get back to you as soon as possible
+and the course is covered in this video
+will be provided in the description box
+do check them out too okay so till then
+thank you and keep learning
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

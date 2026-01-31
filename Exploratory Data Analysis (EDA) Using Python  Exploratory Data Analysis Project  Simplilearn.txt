@@ -1,0 +1,670 @@
+hello everyone I am M and Welcome to our
+video on explorat data analysis or Eda
+in this session we will dive into the
+essential techniques for understanding
+and visualizing your data so Ed is the
+first step in data analysis helping you
+uncover patterns SP anomalies test
+hypothesis and check assumption so we
+will explore key tools like summary stat
+data visualization and correlation
+analysis feature engineering okay like
+this by end of this video we will equip
+with you the skills to transform your
+raw data into actionable Insite setting
+a solid foundation for further data
+modeling and decision making craving a
+career upgrade subscribe like and
+comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your back
+but before we begin if you are planning
+to start career in data science check
+out the ctech postgraduate program in
+data science from Simply ranked as a top
+PG data science program by a in
+collaboration with celtech ctme and IBM
+this programs equip with the essential
+skills and tools including python
+machine learning table Genera Char and
+many more so learn from industry expert
+through master classes taught by ctech
+instructure and IBM expert join our a
+comprehensive program to gain hands-on
+experience and Advance your career with
+Cutting Edge knowledge and expertise you
+can find this course link from the
+description box below and the pin
+comment so without any further Ado let's
+get started so hello guys welcome to
+this demo part of this video so here
+what I will do I will go to new then
+Python 3
+file then
+here I will give it the name called
+exploratory
+data analysis basically we will so we
+have one data set file of roller coaster
+basically so we will be using that and
+you can download that file from the
+description box below from the below
+link dve Ling okay so we will be doing
+some small basic function using using
+Python and later on we will uh make some
+good charts okay we will remove
+duplicates and all we will do all
+that thing we'll do data preparation
+we'll do feature engineering okay and uh
+we'll remove the duplicates we'll check
+for the duplicates we'll make charts
+like histogram KD blogs box blog and
+like many more similar to that like heat
+map will make scatter L Group by
+comparison okay we all do that right so
+just stick with me and you can right
+side along with me your this good okay
+okay so let's start with
+importing pandas
+first I guess everyone know what is
+pandas and
+numai
+fine as NP then I will import
+numpy as NP why this is NP and PD sorry
+my bad PD is here because I don't want
+to write again and again this pandas
+this numai so basically I can write this
+is small version okay yeah so if you
+guys don't know what is Panda so panda
+is very popular library for working with
+data okay it's goal is to be the most
+powerful and flexible open source 2
+okay so it has these that go so data
+frames are the center of pandas and what
+is data frame a data frame is is
+structured like a table or a spreadsheet
+okay the rows and the columns okay
+whereas nump numai is an open source
+python Library again that facilitates uh
+you know efficient numerical operation
+on large quantities of data okay so
+there are many functions in numpy as
+well those we can use in the Pand data
+frame got it so we'll import one
+more do
+pyplot do PAB okay as PLT okay there is
+one more Library M plot lip for plotting
+the graph and and there is one more
+import
+cbon as SNS so what is cbon cbon is
+again the Pyon data visualization
+Library based on M BL Li okay it
+provides a high level interface for
+drawing attractive and informative
+statical unog graphs okay then I will
+write here PLT do
+style do
+use we'll write
+ggplot got it
+ggplot
+fine so yeah let me run it so what is
+ggplot so ggplot is an again this is an
+open source data visualization package
+for a statical programming okay so yeah
+uh you can say or a general scheme for
+data visualization which breaks up graph
+into know semantic components such as
+scales and layers okay mlo Le
+by get
+SP B okay yeah so
+now we will import our data set DF DF
+means data frame you can write any word
+of your choice then PD again pandas
+doore CSV used for readings CSV file
+okay Excel files got it then here I will
+write
+my this
+coaster. CSV okay I'm not writing any
+path because my this uh data set is here
+itself coaster coaster C Co this is
+coaster. CSV okay if you have your data
+set in another location as in like in C
+drive D drive or whatever okay you can
+give that
+path okay let me run it yeah so now we
+will do some data understanding okay
+we'll see data frame shape head and tail
+data drives UND describe like small
+small function we will use DF do
+shape done it so we have 1087 rows and
+56 columns in our data
+set okay then we will see DF do head
+5 so DF do head means it will give me
+top five rows of my data set okay you
+can see 1 2 3 4 five okay five rows and
+56 columns here 56 column but we have
+1087 rows okay so we have cost name
+length speed location status opening
+date type this this this this okay we
+will
+do uh you know we'll make some graphs
+using this these columns okay and there
+is one more DF do
+tail again last five rows so DF do tail
+gives you the last last five rows see
+1086 1085 okay and if you want to
+see full data it is here okay 0 to one8
+fine yeah so we have one more DF do
+columns to
+check all the
+columns see coaster name L speed
+location stat as opening date type and
+these all are my columns names fine so
+we have one more data types actually we
+have like many data types but let me
+show you some important ones or you can
+say some the basics ones okay so DF dot
+d types D types means data types Co name
+is object type length object and
+inversion is float okay we'll check
+[Music]
+inversion where's the inv verion yeah
+Flo type okay
+then everything is object and er
+introduces in numeric one and let it do
+float okay so basically we have three
+types float int and
+object okay then what do we do let's
+just quickly check this
+describe okay so what is the count of
+this inversion 932
+okay it won't include any you know what
+is it empty cells okay it won't count
+empty cells right mean of this
+particular table then standard deviation
+then mean minimum value 25% 70% 75% and
+Max it will describe you all this okay
+and there is one more DF doino to get
+the info see coaster name 1087 value non
+n object
+then length 953 non n okay like
+this yeah so now moving forward what we
+will do we will do data preparation okay
+what comes in data preparation like
+dropping irrelevant columns and rows
+which we don't want okay then second
+thing is identifying duplicates columns
+then third is raming
+columns then we'll do some feature
+Creations
+right so if you want to drop a column
+okay how you can
+drop so you have to write just DF do
+drop first I will give here has
+data
+rep okay yeah so how you can drop a
+column okay DF do
+drop then here I will
+write
+opening
+date Comm XIs equals to
+one
+okay opening okay spelling
+strong instead of
+this maybe what is the opening date okay
+o is capital
+here instead of this you can use double
+to okay AIS is not defined
+my bad so what you have to do you have
+to give this here and you have to
+yeah again ACC is not
+defined yeah fine okay so as you can see
+here first I will show you this question
+name length speed location status and
+opening date is here
+fine so if you will go here question
+name length speed location status
+nothing opening date is there right so
+this is how you can drop a table fine
+for a while I'm making this as a comment
+maybe in
+future upcoming you know making graph I
+need this okay so yeah so I will write
+here DF equals
+to
+DF coaster name
+comma
+location then
+comma
+status then here I will write
+manufacturer fine then again
+comma then I will give
+here
+ear
+introduced
+then comma
+latitude wait I will tell you why I'm
+doing this then
+longitude let itude
+longitude then I will give
+you type
+M okay
+then
+opening
+date clean
+fine then speed
+into R is Right
+speed comma what
+else
+then
+height
+foot
+inversion clean
+Comm
+gForce clean dot copy
+yeah so here I will write
+okay type
+in okay one more mistake is
+here
+fine so now what I will
+do I will write here open
+date clean equals to
+pd2 do date
+Tye
+DF
+opening
+date clean
+fine what happen
+so what this does this PD do2 dat time
+do okay so it converts argument to data
+time date time okay so this function you
+know you can see converts a scalar array
+like or series or data frame dictionary
+like to a panda's datetime object
+okay so now let's rename the
+columns okay
+then to you know for better things
+DF equals to DF dot
+rename columns equ
+to
+coaster name
+then
+poster
+name
+comma here
+introduced
+then
+here
+introduced
+okay opening date clean
+to
+open
+date okay then I will write
+speed in
+R
+then caps
+speed got it
+then height into
+foot I will write it
+as
+C so why I'm writing this because this
+is a very good practice as a
+professional way know as a data analyst
+or as a business analyst whatever you
+are working on machine learning projects
+or whatever the this is a good
+practice okay so
+inversions
+inions
+clean then it should be
+like
+verions then
+gForce clean to
+gForce
+fine let me done
+it okay now let's check the
+column yeah so now you can say our
+column name is
+changed
+fine so I will write this
+and Dot
+sum so what does this is an a do sum do
+so is an a function returns a Boolean
+value of you know true if the value is n
+n and the false otherwise and the sum
+function return the sum of the two
+values which equals to the number of NN
+values in the column so here we have
+zero NN here same this stat is
+23 here 217
+5 height for is 916 okay so now what we
+will do we will write here DF dot
+location DF dot
+duplicate I told you in
+starting
+will duplicate it
+okay question name location status okay
+let duplicate it now okay
+so now what we will do I will check
+duplicates for the cooster name so you
+can write DF doco L LC then
+DF DF
+dot
+duplicated and subset equs
+to
+poster name then dot
+head okay head of five now everyone know
+right what do
+what this head
+does okay yeah so here you can see so
+these are
+duplicate okay of the question name
+right why because you can just check the
+type
+in and all fine so now checking with an
+example duplicate let's check DF do
+query
+Co
+name equals
+to
+Crystal you know now you will get
+Beach Cyclone okay I took this Crystal
+Beach Cyclone
+fine then run it so now you can see 39
+and 43 are the
+same okay everything is same so this one
+is duplicate so now what I will do I
+will write here just let me give some
+space yeah DF do
+columns then I will write here
+DF
+DF
+loation then DF
+do
+duplicated
+subset
+question question name
+then
+location
+then
+opening
+date
+okay
+dot
+deset
+index then drop
+that okay
+so now what we will do we will do some
+feature understanding
+okay so now we will do some feature
+understanding okay so in this we will
+plot some feature distribution like
+histogram KD box plot okay for that I
+will write here
+DF ER introduced
+okay then I will write
+value
+counts so now what I will do let's
+create bar chart okay axal to
+D introduced
+dot
+value comes
+okay then
+dot head 10 Max I
+need then Dot Plot kind equals to I need
+bar then title is
+stopped I like what what what what
+should we give top
+10
+years coaster
+introduce okay
+then I will write here a x do
+set X
+label then I will write here
+here
+introduced okay then I will write it ax
+do set y Lael
+then count okay let me run it okay
+unexpected corrector after line
+continuation
+okay we can remove
+this unexpected
+intended now let me run it yeah so this
+is our bar blot okay so this is how you
+can create bar bar plot using your data
+okay
+so a barplot is you know one of the most
+common types of Graphics in this data
+visualization or Ed it shows the
+relationship between a numerical and the
+categorical variable okay so each entity
+of this category variable is represented
+as a
+bar got it so now let's do some more so
+what uh
+let's make a class okay
+histogram so for that I
+write ax =
+DF
+speed R then
+plot kind equals
+to
+St then comma I'll write B pin here okay
+pins equals to
+20
+then
+title
+coaster
+speed okay me R then
+ax dot
+set X
+lbel
+spe okay forward to give
+this okay yeah so histogram displays
+numerical data by grouping data into bin
+of equal width so here each bin is
+plotted as a bar whose height correspond
+to how many data points are in that bin
+so bins you can say are also sometimes
+called the intervals or classes or
+buckets
+basically it's the
+same so here for this this much is the
+bin for this this much is the bin this
+is like that
+okay so now let's create KD plot so for
+that it's very simple axal
+DF then I can write as speed in R then
+plot
+kindal to KD
+comma title
+I can write anything
+coaster
+speed then ax.
+set X
+level
+speed
+okay yeah so KD what does KD means a
+kernel density estimate this plot is a
+method of you know visualizing the
+distribution of observation in a data
+set analoges to a histogram so KD
+represent the data using a continuous
+probability density curve in one or more
+Dimension okay in one or more Dimension
+that curve fine so now let's do some
+feature relationship so in this we will
+make scatter plot heat map correlation
+and pair plot okay or we can also do
+some group by comparison fine so now
+let's first make
+scatter plot okay so DF do
+plot kind equals
+to
+scatter
+comma X =
+to
+speed m
+r comma y =
+to height
+inut
+fine then comma let's get the title
+equals to coaster
+speed
+versus
+height fine then PLT do
+show okay some error is there speed me R
+okay okay s should be capital and it
+should be
+Capital
+yeah so this is scatter plot speed
+versus height this is a speed versus
+height okay if the I can see here height
+is directly proportional to speed
+somewhat because if you can see the 350
+is speed is than 120 km per hour no it's
+not like that okay
+fine so scatter plot identifies the
+possible relationship between change
+observed in two different sets of
+variable here the variables are height
+and the speed okay it provides a visual
+and the statical you know means to test
+the strength of relationship between two
+varable fine now
+let's okay now let's make one more to
+give you better idea okay with
+Legend now I will show you wait SNS do
+scatter plot then xals
+to speed
+R comma y =
+to height into
+fo feet whatever you can say then H will
+be there then
+here
+introduced okay then data equals to DF
+then axal to set
+title set title then
+coaster speed
+versus
+height then PLT do
+show yeah so now you can
+see so this color you know the light
+color I will let me Zoom it okay okay so
+this color we have some here which are
+introduced in '90s okay and this color
+which are introduced in 1925 and these
+colors which are introduced in 2000 okay
+so you can see like this as
+well so now let's make pair blot okay
+it's look
+amazing so let me write SNS
+dot dot pair PL do then DF
+comma variable equals to I need ER
+introduce then
+speed meter
+R comma that should be Capital height
+for just remember the spelling okay case
+sensitive in
+inversion inversions
+comma inversions comma
+gForce okay comma here I will put what
+what what what okay I put
+type
+mean find that
+PL okay let run it okay some is
+there here
+introduced
+byab and save here so that's why I'm
+saying just remember the proper spelling
+again
+some sorry my bad
+inversions is
+[Music]
+inversions now let me run
+it okay again some
+okay
+versions okay let me check here while
+renaming inversions
+only okay
+fine in
+versions let me paste nothing changes
+let me check
+again okay some error is there
+wait so yeah you can see it's running
+fine so after this what I will
+do so what is the pair plot so pair plot
+function allows the user to create you
+know then an AIS grid why which each
+numerical variable is stored in the data
+is shared across the X and the Y okay in
+the structured
+column so this is how see you know type
+in v other and steel this red one is
+wood other are the blue one and the
+purple are the steel one okay the
+different different format okay now
+let's create the last graph which is
+heat map okay so let me write
+DF for relation to
+DF
+here introduced
+comma
+speed
+R
+comma
+height into
+foot again
+it
+comma comma
+gForce then
+drop P then
+coration okay
+dfed I
+cap cap
+yeah so this is correlation values of
+all the things right so now let's write
+SNS
+do heat
+map heat map then TF let
+go comma and not will be
+true
+okay now let me run yeah so to create
+heat map in Python so you can use this
+okay see Bor library for this heat map
+so this function takes a data frame you
+know as an input and generates a heat
+map type of things as the output okay so
+this is how you can perform Eda using
+any data set or you can show your data
+or Insight with a beautiful
+representation using graphs and all like
+this fine so with this we have come to
+end of this video if you have any
+question or doubt please reach out to us
+using comment section below our team of
+expert will help you as soon as possible
+thank you and keep learning this simply
+staying ahead in your career requires
+continuous learning and upscaling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

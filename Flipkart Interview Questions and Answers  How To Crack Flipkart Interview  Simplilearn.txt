@@ -1,0 +1,407 @@
+hi everyone welcome to simply learns
+youtube channel
+to crack any interview good preparation
+is needed so we at simply learn
+continuously try to groom you for the
+best
+we have come up with flipkart interview
+questions and answers in this session
+by the end of this video you will be
+prepared to crack interviews at flipkart
+but before we begin if you love watching
+tech content subscribe to our channel
+and hit the bell icon to never miss an
+update
+interested in working with one of the
+leading e-commerce marketplaces
+prepare for the most anticipated flip
+card interview questions to get
+lucrative offers for promising software
+engineer positions including data
+analyst front-end developer data
+scientist test engineer and other
+related fields
+engineers at flipkart work on a range of
+projects including design development
+testing implementation and support of
+flipkart's application and related
+integrations
+to develop distinct concepts candidate
+must work on both practical and
+theoretical concepts
+candidates often find flipkart coding
+questions the most challenging part of
+the interview
+interviewers select a handful of tricky
+questions to assess the candidates
+problem solving approach and expertise
+in coding a clear understanding of
+software paradigms is a prerequisite and
+the following flipkart interview
+questions will help you in the process
+about flipkart flipkart is an e-commerce
+company founded 15 years ago
+headquartered in bengaluru the company
+has several subsidiaries today including
+mantra ecard and fong pay
+the journey of flipkart starts with
+online book sales and expanding into
+other product categories like consumer
+electronics home essentials fashion
+apparel groceries and lifestyle products
+the company offers a work culture that
+fosters belonging and helps employees
+advance their skill set
+they believe in collaborating to
+innovate as a team
+interview process for sde intern
+positions
+round one
+online coding round that comprises two
+coding interview questions to be
+completed within 60 minutes
+flipkart interview experience holders
+state that both questions are based on
+basic data structures and algorithms
+round two and three
+online coding ground these interview
+rounds assess a candidate's proficiency
+in problem solving data structures and
+algorithms including coding problems on
+arrays less graphs trees dynamic
+programming recursion linked lists
+queues trees maps etc
+candidates can put up questions to clear
+doubts
+talking to the interviewer while coding
+and conveying your approach is
+recommended to earn extra points
+round four hiring manager round an
+engineering manager of the team you are
+interviewing four will use several
+behavioral resume based and scenario
+based questions to evaluate soft and
+technical skills
+the hr round focuses on understanding
+how well a candidate can fit into the
+flipkart culture
+interview process for full-time sde
+positions
+round 1 phone screening
+it lasts about 60 minutes and centers
+around past work inside and some
+critical thinking questions related to
+the job position you're being
+interviewed for it is conducted over the
+telephone or google map
+round two machine coding
+the candidates will be given a problem
+and they will have to come up with a
+complete working code including error
+handling mechanisms within 90 minutes of
+duration
+there will also be a detailed discussion
+on the candidate's approach to solving
+the question so the total time devoted
+to this session will be two hours
+approximately
+round three problem solving and data
+structures candidates should be prepared
+for flip card coding questions on
+various data structures
+the most commonly asked concepts include
+string manipulation bit manipulation two
+pointers searching sorting backtracking
+and dynamic programming
+round four
+system design round
+this round is only for senior software
+development engineer positions it lasts
+about 60 minutes and includes two types
+of design interviews system design and
+object-oriented design
+round five
+manageable round team and culture
+fitment
+this round aims at assessing candidates
+group fitment based on their experience
+interests and skills exhibited in
+different rounds
+it lasts for about 60 minutes it is a
+summary round as the interviewer
+concludes a candidate's co-competencies
+displayed in previous rounds
+candidates must get well acquainted with
+flipkart's values and stay candid while
+answering the questions
+topics to brush up before the interview
+a software developer should be well
+versed with following crucial concepts
+programming or coding practicing writing
+the code in an object oriented language
+that has good libraries for parallelism
+and concurrency
+level design
+practice coming up with a logical view
+and a process view
+next data structures and algorithms
+list linked lists arrays graphs trees
+queues dynamic programming hash map heap
+and others
+followed by that we have design patterns
+and principles and lastly system
+architecture and its components
+now you will come across some famous
+flip card coding interview questions
+number one gas station
+given integer arrays a and b each of
+size n
+there are n gas stations present along a
+circular route
+the amount of gas at station i is a of i
+suppose your car has unlimited gas tank
+given the cost of gas to travel from
+station i to the next station i plus 1
+as b of i
+if you begin the journey from one of the
+gas stations with an empty tank then
+return the minimum starting index of the
+gas station when you can travel around
+the circuit once else return one
+starting at i and ending up at the same
+completes the circuit
+assume that you can only travel in one
+direction that is i to i plus 1 i plus 2
+and so on n minus 1 0
+1
+2
+input format the first argument given is
+the integer array a the second argument
+given is the integer array b
+output format return the minimum
+starting index of the gas station when
+you can travel around the circuit once
+else return minus 1.
+second distribute candy
+given n children are standing in a line
+and each is assigned a rating value
+you are supposed to distribute candies
+to these children as follows
+each child must get at least one candy
+children who are assigned a higher
+rating get more candies than their
+neighbors determine the minimum candies
+to be given
+input format
+the first and the only argument contains
+n integers in an array a
+output format
+return an integer that represents the
+minimum candies to be given
+now the third problem
+minimum sum path in matrix for a given
+2d integer array a of size m cross n
+find a path from the top left to the top
+bottom that minimizes the sum of all
+numbers note you are only allowed to
+move either down or right at any time
+input format
+the first and only argument is a 2d
+integer array a of size m cross n
+output format return a single integer
+that denotes the minimum sum of a path
+from the cell 1 comma 1 to cell m comma
+n
+fourth problem
+merge k sorted lists
+merge the given k sorted linked list
+return the sorted list as one sorted
+list
+for example the list are
+1
+to 10
+to 20 4 to 11 to 13
+3 to 8 to 9
+they will result in the following list
+1 3
+4
+8
+9
+10
+11
+13 and lastly 20.
+now the fifth question
+design a twitter-like system
+the system design round is open-ended
+and the candidate can explore various
+options
+there is no fixed or standard answer
+however candidates must ask the
+interviewers questions to discover the
+subparts of the question and their
+expectations
+now the sixth question
+first non-repeating character in a
+stream of characters
+for a given string a that denotes a
+stream of lowercase alphabets make a new
+string b to find the first non-repeating
+character every time a character is
+inserted into a stream and append it at
+the end to b
+if no non-repeating character is
+discovered append hash at the end of b
+problem constraints
+1 should be
+less than or equal to the length of the
+string which is less than or equal to
+1 lakh
+input format the only argument given is
+a string a
+output format return a string b on
+processing the string of lowercase
+alphabets a
+now we have seventh question meeting
+rooms for a given two dimensional
+integer array a of size n cross 2 that
+denotes time intervals of different
+meetings find the minimum number of
+conference rooms needed for all meetings
+where a of i
+0 equals to starting time of ith meeting
+a of i
+1
+equals to end time of ith meeting
+problem constraints 1 should be less
+than or equal to n which is in turn less
+than or equal to 10
+0 should be less than or equal to a of i
+0
+which is less than a of i comma 1 which
+is in turn less than or equal to 2 into
+1 not 9.
+now the input format
+the only argument given is the matrix a
+output format return the minimum number
+of conference rooms needed for all the
+meetings
+now the eighth question
+pair with given difference a is the
+given one-dimensional unsorted array
+containing n integers
+also given an integer b
+find whether the given array has a pair
+of elements voice difference is b
+if there is any such pair present return
+1 else return 0
+input format
+the first argument is an integer array a
+of size n
+the second argument is an integer b
+output format return 1 if any such pair
+is present in the array
+else return 0.
+now you will see most ask interview
+questions at flipkart or the phone
+screening round questions
+first one is
+what addition can you make to promote
+e-commerce
+here you can make points to promote
+e-commerce such as capture more email
+subscribers partner with complementary
+brands participate in online events and
+discussions optimize your site for seo
+now the second question
+what factors would you consider while
+setting up an online grocery store you
+can walk through the way as you own have
+to set up an online grocery store
+starting with deciding the delivery
+region choosing an e-commerce platform
+with a user-friendly ui
+maintain the inventory find a delivery
+system good marketing use multiple
+gateways and payment options
+now the next question
+how would you reduce shipping cost to
+remote pin codes
+using indian postal services the indian
+postal service has an unbeatable network
+this network uses about 25 000 pin codes
+which are quite large
+multiple career partners with
+competitive prices
+now we have our next question
+who are the main competitors of flipkart
+and what makes flipkart different from
+them
+offline stores
+in online market amazon paytm mall
+snapdeal and jio market
+flipkart's policy to keep customers
+first providing after sales support
+fast and reliable delivery flipkart plus
+program provides edge over competitors
+now let's switch to some most frequently
+asked flipkart interview questions for
+hr rounds
+these answers may vary from person to
+person however we have tried to put the
+most possible answers
+first is
+why do you want to join flipkart
+you can include the following points in
+your answer starting with the company's
+accomplishment
+as india's leading e-commerce
+marketplace flipkart has transformed how
+millions of indians shop today
+now how you can contribute it's the
+opportunity to use your technical skills
+and learn in a different
+capacity great workplace culture
+the inclusion of entrepreneurial spirit
+among employees
+now what are your strengths and
+weaknesses you can include following
+points in your answer
+strength self-motivated hard work and i
+believe in myself and i learn things
+early for weaknesses one answer could be
+i believe people easily and i do not
+feel comfortable until i finish my work
+again this may differ from person to
+person some may have weaknesses such as
+not asking questions at the right moment
+or fight to talk or anything else
+now how will you contribute to flipkart
+start with how your skills fit with the
+company showcase your projects your
+experience in the current field support
+your answers with data
+followed by that
+what challenges did you come across your
+previous job here you can use examples
+of real challenges talk about the
+situation what tasks you were assigned
+what actions you took what was the
+result
+followed by that the last question
+flipkart expects its employees to abide
+by the following five core values
+audacity
+bias for action customer first integrity
+inclusion
+with that we have come to the end of
+this session i hope it was interesting
+and informative if you have liked it
+please let us know in the comment
+section also subscribe to our channel
+and stay tuned for more from simply
+learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

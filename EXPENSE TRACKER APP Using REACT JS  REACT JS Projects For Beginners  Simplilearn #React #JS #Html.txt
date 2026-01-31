@@ -1,0 +1,1471 @@
+hello young Economist and pocket money
+planners Welcome to our Cozy Corner of
+the internet where your change counts
+and your dollars make a difference today
+we are embarking on a whimsicle journey
+to build your own expans tracker it's
+like crafting a treasure map that leads
+to the golden land of smart savings
+weave goodbye to those sneaky expenses
+that slip through the cracks because we
+are about to build a trusty tool that
+will make every coin count with a
+Sprinkle of creativity and a dash of
+code will turn this digital canvas into
+Masterpiece that watches all your wallet
+I'm here to take you on an exciting
+Journey Through the digital landscape of
+your very own expense tracker imagine if
+you had a superpow that allowed you to
+see exactly where your money goes down
+the last time well guess what you don't
+need to imagine anymore in today's video
+we're going to unravel the magic behind
+creating an expense tracker that's not
+only fun to use but also keeps your
+budget on track so whether you are
+saving up for that dream skateboard or
+just trying to manage your weekly
+allowance I've got your back we'll
+explore every line of codee together
+turning numbers and notes into
+Masterpiece of money management stay
+tuned click that like button hit
+subscribe and let's jump right into the
+world of smart spending with a do-
+it-yourself expense tracker and just a
+quick info for you guys if you are a
+professional who wants to switch careers
+with software engineering by learning
+from the experts then try giving a short
+to Simply learns postgraduate program in
+fullstack web development accelerate
+your career as a software developer
+through this postgraduate program in
+full Tech web development course in
+collaboration with kch CDMA in just a
+few months you will learn more coding
+techniques with boot camp level
+intensity and gain all you need to be a
+full stack technologist the course link
+is mentioned in the description box
+below and pin comment so without any
+further Ado let's get started so guys
+let's start with the expense tracker so
+first we'll see the output exactly what
+we are going to make so for that we'll
+open the
+projects that is expense Tracker
+2
+so this is our project
+and let's make it live so this is our
+expense
+tracker and has some balance in it so
+these are the
+tractions transactions sorry uh now it's
+free and you can enter anything that
+would be the transaction subject
+as
+transport and in this I like paid the
+amount so I will write in the amount
+deducted and that would be around
+30 and it has set the current balance
+Asus
+$30 and in the amount deducted $30 and
+you could see the transactions that is
+in expense and we have made it in the
+red
+section so so if you want to say like
+you have credit your salary and that
+would be
+$330,000 okay so you want to add the
+transaction it has added and the income
+has added and now the current balance is
+$29,990 so this is our expense tracker
+so let's start making
+this and close
+this
+so first let's create a folder for
+this and we'll create a
+folder we name it
+okay so inside we will create one more
+folder and name it as expense
+tracker and and don't worry guys I will
+copy paste the codee for you in the
+description box so you could easily
+access
+it until
+then our folder is ready now we'll open
+the command
+prompt and open the visual studio
+code so you could use
+any that is ID I will be using the
+visual studio code and as I have been
+using it since a great
+time so you can use anyone that you have
+Anson so let's start guys so you have
+seen the output and now we will start
+creating the index file that would be
+index.html
+file so you could also like integrate
+the extensions here that would be the go
+live server and you would only click
+here and it will
+automatically open the page in the
+browser else you can just save it and
+open it in any
+browser so here we'll start the
+HTML and starting
+with so do type HTML and this tells the
+web browser that we are using HTML 5 so
+the latest standard for
+HTML and after
+that we'll write
+HTML to
+en okay and here we begin our HTML
+document and specify that we'll be using
+English so for that we have written this
+syntax and now moving to
+head we'll open the head
+tag and here we'll set the meta
+character set that would be to ensure
+our page uses the Universal Character
+set which includes most characters from
+all known
+languages so for
+that write Meta Care
+set
+and that would be UTF
+8
+okay and after that we'll set the meta
+name equal to viewport and we'll set the
+content and device width also and we'll
+set the initial scale so this will help
+our page look good on all devices
+whether it's a phone tablet or computer
+so for that we'll write here that would
+be
+meta name equal to
+viewport and after
+that content equal
+to
+so the content would be width equal to
+so I'll just increase the size of this
+also so you guys could
+easily see okay so I think now the size
+is
+fine okay so now moving on what we are
+doing we are setting the width so width
+would be equal to the device
+width so it will be compatible with any
+device
+and after that we'll set the initial
+scale and that would be equal to
+1.4
+okay and we'll close
+this
+now moving on we'll set the meta HTTP
+equivalent so this is for older Internet
+Explorer browsers to render the page
+using the highest mode
+available so we'll set this so if
+someone is opening in the older internet
+browser so he could also access this
+page so for that we'll write
+meta HTTP equivalent equal
+to minus UA
+compatible
+and
+content equal
+to I = to
+H and now we'll set the style sheet that
+would be we will link a CSS file and
+we'll name it at style. CSS which is
+like the clothing for a page so it will
+make everything look nice so for that
+first we'll create the file and name it
+that style. CSS okay and in the
+index.html here we will just paste the
+link for it that would be for the Styles
+sheet so for that we'll
+write
+okay not
+CSS okay and now moving
+on we'll set the
+title
+and we'll set the title as expense
+tracker
+only so if you want all in caps you
+could do that or else you could use the
+running
+one so here we'll close the head and
+we'll start with the
+body so if you guys want you could use
+use the go live
+option and see the
+progress
+simultaneously so we have just written
+the head that is expense tracker so it's
+here now moving back we start with the
+body
+and
+here in the center tag we will add the
+heading and we'll use the h2 tag for the
+expense
+tracker
+okay
+no
+so you could see the progress
+simultaneously and expense tracker is
+here now moving back we will start a div
+here so I put the title and expense
+tracker in the center of the page so
+everyone knows what this page is about
+now we'll create a
+diff and we'll name the class as
+container only think of this as a big
+box that holds all the parts of our
+expense d
+so we are creating this div for the
+purpose now moving back we'll create the
+div class and name it as
+container
+okay and
+inside we'll use the H4
+tag
+for the current
+balance
+as you have seen the output so we'll
+make the same output only and here it
+would be the current balance we could
+just make it in the same line only it
+need not to be in this
+indentation it could work on that also
+and in this also now we'll use the H1
+tag and give it an ID that would be
+balance so it would be the current
+balance
+okay and currently we'll set it as
+dollar
+0.0
+okay so now in this div only as this is
+the main container we will create
+another
+div so for the current balance the H4
+heading so this is a smaller title that
+tells us next number is our current
+balance and then we used the H1 tag this
+is where we see how much money we have
+starting and we will start it at
+$0.0 then we see two sections we'll
+create the two sections side by side
+inside div only and name the
+class we'll see like what we'll name it
+and so in the first div we will make the
+amount
+credited
+so where we will see how much money we
+got and in the second if we will make
+the money minus or to show how much
+money we
+spent so let's create
+that so we'll create another
+div and name the
+class
+is
+that will be
+inrease exponential
+container or you could name
+anything I would be naming
+this and inside we'll create one more
+Dev
+and inside we'll use the H4
+heading and that would be for amount
+credited
+okay and inside this only we'll have a
+paragraph
+tag and we'll give it an
+ID that would be money
+plus
+okay and we'll have a class
+here and make it as money plus
+only so what it will do it will add it
+so we
+will make
+that okay here we have closed the
+paragraph tag then the div tag and
+another div tag so so this is one of the
+div for the amount credited and
+similarly we'll create another div for
+amount
+deducted so let's create another div and
+this would be for the amount
+deducted so we'll create an H4
+tag and here write amount
+deducted okay simultaneously I will show
+you guys what we are making so you could
+see the current balance and that we have
+set it to do 0.0 and we have set amount
+credited that we have made and now we
+are making amount
+deducted okay
+similarly so okay amount deducted and in
+this we'll also use the paragraph tag
+and give it an
+ID and we'll name the ID as money
+minus
+okay and we'll name the class
+here that would be money
+minus and set it as minus dollar 0.0
+okay so it's done and this Dev is
+closed
+now so let's
+see what we have to create so this is
+our expense
+tracker that we'll be
+creating and this is what we have made
+till now so you could see that we have
+set the current balance amount credited
+amount deducted and now we'll set add
+new transaction so we are creating the
+HTML file here we'll just structure it
+we'll add all the fields here and after
+that using the CSS we will modify it and
+make the color blue and have these boxes
+or the cards and using the JavaScript we
+will add the
+functionality so let's first complete
+the HTML file so we have closed the div
+here and
+now let's
+see we'll start with the add new new
+transaction okay we'll create this now
+so moving back we'll use H3 tag heading
+three and write add new
+transaction okay that tag is closed now
+we'll uh open a form here and give an
+ID and we'll give the ID form only now
+now inside we'll create a
+div
+and to the class we'll name it as form
+control and inside this div we will add
+a
+label that would be label
+4 and that would be text only
+we set that transaction subject so what
+transaction you want so you could add in
+the transaction
+subject so you could see here that we
+have added the add new transaction and
+then the transaction
+subject okay moving
+back we have created this label and for
+this label add the in
+type
+okay so for this input type would be
+text and we'll give the
+ID that would
+be
+text and we'll have a
+placeholder so Place Holder will work
+that would be we'll just write enter
+text and it would be showing the persons
+that you have to enter text here
+sorry so enter text or we could just
+write enter the transaction
+subject
+okay
+and
+we'll close this
+tag and now we'll go and see once you
+could see that here is the
+label that is transaction subject and
+here is its input type similarly we will
+create amount credited and amount
+deducted so going back here the divis
+closed and we'll create another div and
+this would be in the form only so we'll
+create another div that would be for the
+amount
+credited so inside this
+div we will give it a
+class and name as form control
+only and create a label
+here so level
+four WR income
+test
+okay and inside we'll write amount
+credited and here the label is
+closed
+and then we'll have the input type here
+and for the form of number as this is
+the amount credited and we'll give a ID
+here and we'll name the ID
+as uh income text only
+okay you could give
+any and then
+we'll have a
+placeholder and here we can write enter
+the amount
+credited
+okay and here we will close this
+stag so you would see that the div is
+closed here and this is this div
+okay so let's see here what we have
+created we have created the amount
+credited and similarly we will create
+for amount debited so we'll copy paste
+it and here in this we we have created
+another div and then class we have named
+it form control
+only and instead of income text we'll
+write here expense text and amount
+deducted
+and now coming to the input
+type so it would be number only and
+we'll change the
+ID that would be expense text and for
+the
+placeholder we'll write and enter
+expense amount or enter deducted amount
+or enter amount
+deducted so it's done
+let's see so you could see that it has
+added the three labels and the three
+input
+types so now moving
+back what we'll create here now is
+transactions so it will be the
+transactions history and then we'll
+create the add transaction
+button so let's get back to our
+ID so this will also be in this form
+only and after this
+div we will
+have H3 tag
+and in that will write
+transactions and in the we'll create a
+unordered list
+here
+okay so we'll create an unordered list
+and we'll give it an
+ID and give this ID name that would be
+list and a
+class and name the class also as
+list so this H3 tag in these
+transactions so this will be a list of
+all the transactions we have credited or
+debited now we are creating the
+unordered list
+so it would be like the treasure chest
+where we'll keep all the transactions
+recorded So so class equal to
+list we have closed the another list but
+before that to create the treasure chest
+we'll add some functionality to it so
+for
+this we'll
+have and inside we'll have a light and
+we'll have a class
+here and name it as minus so if you want
+to stract any transactions or if you
+want to cancel any transactions so you
+can do
+it from here and for that we are adding
+the
+functionality and create a span
+here so write minus
+400 and close the
+span and now we'll create a
+button and have a
+class name it as delete
+button
+okay close
+this
+and place
+the that would be the X symbol on which
+we'll click and the transactions will be
+deducted from there that will be removed
+from there and now we create close the
+button so we have closed the button
+tag and now we'll close the all
+tag
+and the unordered list tag is closed
+here now going back and you could see
+the transactions here as you add the
+transactions it would be displayed here
+and if you want to cancel the
+transactions you would just click on the
+X that would be if you over it you will
+go the x button if you click on that
+that transactions will be
+gone so now we'll add the button that
+will be the add
+transactions so let's get back to the
+ID so after unordered list we will add a
+button
+so
+we have a class and name it as
+button and for the
+button so button will be displayed with
+ADD
+transaction so we created the button for
+the functionality we'll add the
+functionality in the Javascript file so
+we will create like close the form oh we
+have
+so here we'll close the
+form okay and then we have the div tag
+that is the main container tag that has
+been
+closed and
+now the body is closed and the HTML is
+closed so now we'll move to the CSS file
+and here we'll create a Javascript file
+also now only
+script.js okay and we'll add this file
+in HTML also so like after the div tag
+we can add
+it and for that we could write script
+SRC that is script
+Source equal
+to
+script.js and we have close the script
+tag okay so this is our HTML file now we
+will Design
+This so let's move and create the CSS
+file so let's create the CSS file and
+first we'll import two fonts that would
+be let to an open sense from Google
+fonts it's like choosing two different
+styles of handwriting for a web page so
+for that we'll write at theate import
+URL and inside this we'll paste the URL
+for that and I have that URL let's
+see where it is so you could use any URL
+so I have the link
+here so I paste it so this is the URL
+for the
+fonts
+now now we'll create a root so this
+would be like setting up a box of
+crayons with specific colors that you
+can use throughout your coloring book or
+the web page so let's create a root
+here okay okay so to close
+it coming
+back here's a
+root and inside this
+root we will create the variable name
+and then the color for them so that will
+Define a color that you can use later by
+just mentioning its name so I'll show
+you guys how I will do that so that
+would be minus
+minus
+so for a box
+Shadow write z
+and that would be 1 pixel and 3
+pixel
+and B
+GBA
+inside right comma Z
+comma
+okay 0 1
+pixel 2
+pixel and
+rgba that would
+be 0
+0a 0.24 so these are the
+coding num so you could just have them
+or search on the web and you could
+Define it for your like Shadows colors
+and for what you want to
+use so now we'll set the primary color
+for our expense
+tracker okay so the primary color we
+will set it as blue okay
+coming blue so here we will write
+the code for
+the blue color that is
+349 as I already remember the color
+codes you could just see on the web and
+use them now for the secondary
+color so second color that would be
+subtle
+gray so for that we'll write the
+code E7 E7 E7
+okay and then we add the asent
+color so asent color will Define as
+red so for that we'll write
+E7 4
+c3c
+and then we have H
+Color if someone
+HS that would
+be
+hash
+2980
+B9 so that would be the hor state color
+and then for
+the background of
+income we'll Define a green background
+for
+it okay so for that we'll write the code
+that would be D FF 0
+d8 and then we'll have the expense
+background
+and for that we'll write the
+code then
+F2 d
+d so this is the light red background
+for expenses and then we'll have the
+section
+background so for that we'll Define the
+color that would be the light background
+for
+sections so for that we have F9 F9
+F9 okay and we have to close all
+these
+okay okay so we have defined the root
+here and now moving on we will have the
+box sizing so here we will tell every
+element in our web page to include the
+padding and Border in the elements total
+width and height making it easier to
+size things so for that we'll write the
+syntax
+star and here we'll write the Box
+sizing and we'll set the Border
+box
+okay and after that we
+will and now we set the entire color for
+the like we'll set the background color
+for our entire page and we'll choose the
+open science font for all the text so
+it's like a picking a paper color and
+deciding what pen to use for writing so
+for
+that in the
+[Music]
+body first we'll set the background
+color and that will set as white only so
+for that we'll write the
+code uh hasht F4 F4
+F4
+so
+and now we'll set the font
+family so set the font family for the
+whole
+body uh for that we'll
+write font
+family and inside we'll write open
+sense
+and and we can
+write use this
+font okay and we'll set the
+color great
+okay and now we go for the
+container so this will style a box or D
+on a page to have a maximum width of
+we'll set the maximum width of 600
+pixels that would be centered with the
+margin and padding around it so it's
+like drawing a rectangle in the middle
+of a paper for main picture Okay so for
+that we'll have the
+Styles the
+container first we'll set the max width
+and that would be 600
+pixels and we set the
+margin that would be 20 pixels and that
+would be Auto for
+it and then we'll have the
+padding that would be 20
+pixels
+okay so after setting the
+container we will set
+the color
+and margin for the headings that would
+be we have used heading tags
+so we have used H1 H2 H3 H4 or any tags
+so for
+that we'll write H1 H2 H3
+H4 and for
+these we'll set the
+margin as 10
+pixels and font weight we'll set as bold
+only
+okay so now we'll set the transaction
+card styling so the list we have created
+Li so for that we'll write the
+CSS so do list
+Li so first we'll set the background
+color so this part will style each item
+in your list Al and they look like cards
+with rounded Corners that will make a
+Shadow to make them pop off of the page
+and there will be a special left border
+that changes color depending on the type
+of
+transactions so for that we'll write the
+CSS so first we'll set the background
+color
+so we'll set the variable background
+color for that
+and we'll set the
+section background okay and then we'll
+set the Border
+radius and that would be 8
+pixels and and then we'll set the Box
+Shadow and set the
+variable box
+Shadow and then we'll set the left
+border there would be five
+pixels and solid
+variable and we'll set it as primary
+color here we'll use these that we have
+set in the
+starting so we'll set the margin from
+bottom and we'll set it as 10
+pixels okay and now I'll set the
+padding and padding also 10
+pixels and now we'll have the list style
+type and the
+transition so no we won't add it so none
+for it and then we have the
+transition so transition will set
+transform and that would be 0.3
+seconds and that would be at e is
+okay so they have set it for
+list
+and now we'll set for list li+ Li minus
+so these lines give different background
+colors to the list items that is cards
+depending on whether they are adding or
+subtracting
+so for them uh if it's
+adding so list
+Li not
+plus we'll set the background
+color and that would
+be
+ausense background
+okay and
+now no no uh for li+ we'll set as income
+background
+okay and for the
+minus we'll set the background color
+that will be expense
+background but we have set
+earlier
+and you set the Border left corner also
+minus minus uh we have set the asent
+color
+okay and now we'll set the for also that
+would be this will make each list item
+slightly bigger when you hold your mouse
+over it so giving it a neat interactive
+effect I hold
+and for this we have transform and we'll
+set the
+scale as 1.0 uh3 only okay it would be
+sufficient for that and now we'll add
+the CSS for button and interactive
+elements so these styles are for the
+buttons on your page and they get a nice
+background color rounded corners and
+we'll change color when you overload
+them so for
+that we'll
+write note
+button and delete
+button so first we'll set the background
+color and we'll set
+as table and primary
+color
+okay for the button we'll set the color
+as white
+only and then we'll set the Border
+padding so border would be
+none so for
+padding let's set the padding as 10
+pixels and Border radius so those would
+be
+rounded we set the Border radius as 5
+pixels and then we'll set the cursor and
+set the cursor as
+poter okay and then we have the
+transition and set it
+as background
+color and set the transation at
+0.3 e
+okay so these we have set it for buttons
+and
+now we can set it for button hovers also
+so now we'll add the CSS for button H
+and delete button H so that would be for
+the h
+only so for that we write
+button
+h
+delete button over and inside we'll set
+the background
+color and we'll set it as variable H
+Color that we have already defined
+above and after that we
+will add the CSS for input
+types so now we'll add the CSS for input
+types and this will change the Border
+color of input fields to the primary
+color when you click on them or tab into
+them making it clear when you are typing
+so we have have the placeholders for the
+input
+types but we'll change the CSS then
+you'll click on that or just tab on that
+so they will just have a clear input box
+so for that we'll add the CSS
+that would
+be
+input and the type would
+be
+text and then we have
+input and the
+type is equal
+to
+number and for these we'll set the
+Border as 1 pixel
+and
+solid and the color
+is
+variable secondary
+color and after that we'll set the
+padding for
+this and that would be 10
+pixels and then the Border
+radius
+so we'll set the Border radius as 5
+pixels and then the margin
+bottom and set as 10
+pixels and then the
+transition that is
+bolor would be 0.3
+and
+E so you
+could see
+this let's refresh
+it so let's complete our CSS file and
+after these input type
+focus and for the text also We'll add
+one more CSS that would be
+we will just copy from here
+only add the
+focus and inside we'll set the Border
+color variable and
+inside primary uh not the primary color
+or you could just set the primary color
+only
+okay
+and after this we'll set the section
+background and
+padding
+so for that so we'll add the styles for
+several sections of our page giving them
+a light background color padding and
+rounded corners for a software more
+organized
+look so for that we'll add that so just
+see what will
+do
+so the classes we have defined in the
+HTML file we will use
+them and the form control also for that
+also we'll add the CSS so it would have
+a nice crisp
+View and the list
+items so for that first we'll set the
+background color and we'll set as
+section background but we have set
+earlier
+okay so section
+background and after that we'll add the
+padding and padding is 15
+pixels and after that we'll add the
+Border radius and margin
+bottom and we'll add the Border radius
+as 8
+pixels and then the margin bottom
+as 15
+pixels and now we'll add for the
+typographic
+enhancement so this will make the
+smaller headings and labels Stand Out by
+coloring them and making them
+bold so let's add the CSS for
+this so for H4 and label that would be
+the small heading and the label
+we'll add the
+color and that would be the primary
+color
+only and after that we'll add the font
+we that would be
+bold okay and after this for the media
+screen this will be a responsive design
+feature it makes sure that your
+container box
+adjust its size for smaller screens like
+phone so the container we have created
+for that we'll do the
+CSS
+and for that we'll set the media
+screen and the max
+width and we'll set it as 768
+pixels okay
+and he'll call the
+container the whole
+container and inside we'll set the
+width as
+90% and padding as 10
+pixels okay
+so this is a CSS
+file and
+let's dispose the previous server and
+make it live again so we have added the
+CSS and now let's
+see first we'll add the JavaScript and
+then we'll see what changes we have
+quote on
+this so so let's start with our
+JavaScript file and here we'll add the
+functionality so first we'll access all
+the HTML
+elements so for that we will create the
+constants to get the HTML elements where
+we show the current balance so to show
+the current
+balance we have the constant balance
+variable and here we will use document
+get element by
+ID and that would be balance
+only
+so similarly we will add for the other
+constants and now we will add for the
+money
+plus so that would
+be what amount we are adding so money
+plus and then we'll add for the money
+minus
+and then for the
+list
+and after that for
+form and then
+text
+and then for
+amount after that we'll add it for in
+income text and expense
+text expense
+text
+so we have called all the constants or
+we have accessed all the HTML
+elements so we have grabbed the place
+where we will show the total income that
+is money plus and then we have for the
+sport where we will display the total
+expenses so the first one is for the
+current balance then we'll show the
+total income money plus and then we'll
+display the total expenses that would be
+minus money minus and then where all the
+transactions will be shown that would be
+the list and then we have the form
+element where we enter new transactions
+and then we have the
+text and the text input in the form that
+is not used in this snippet and then we
+have money sorry uh
+amount so it is the amount input in the
+form that is know also not used in the
+snippet and then we have income text
+that grabs the input field for entering
+income and then we have expense text
+that is used for the input field where
+you enter expenses and now we will work
+with the local storage so we have to
+retrieve any safe transactions from the
+browser's local storage and converts
+them from a Json string back into an
+array of transaction objects so for that
+we'll use the Json door pass and use the
+local storage to get items so for that
+we'll write
+and create
+const local storage
+transactions that would be equal to
+json.
+pass and
+inside we'll
+use local
+storage Lo get item
+and inside we'll pass
+transactions so this we use the local
+storage and now and now we'll create uh
+transactions so if there are any safe
+transactions in local storage or if they
+are so we can use them otherwise or it
+starts with an empty list so for that
+will create
+let and
+transactions equal
+to local
+storage get
+item and inside we'll pass
+transactions and that is not equal to
+null
+and local storage
+transactions so this is what we have
+done that will check if there are any
+safe transactions in local storage if
+there are it uses them otherwise it
+starts with an empty list okay so now
+we'll add the transaction
+functions so the first function We'll
+add would be add transaction only so
+this function will run when a new
+transaction is submitted so we'll create
+the function
+here so
+function add
+transaction e do and we'll use the
+prevent default
+okay
+and after that
+we'll like we'll use the F stoop for
+handling income
+input that would be so we have used e do
+PR default that stops the form from
+submitting in the default way which
+would reload the page and then we have
+the function then checks if the income
+and expense fields are not empty and
+creates transaction objects with an ID
+description and amount so if the amount
+is an income it's added as a positive
+number if it's an expense it's added as
+a negative number so for that we will
+create
+that inside this function only we'll use
+the handling income input so for that
+we'll write if income. text. val. trim
+and that is not equal to n null
+sorry
+so
+so inside we will declare a variable
+constant income
+transaction
+and that would be equal
+to inside we'll give it an
+ID generator
+ID or generate
+ID and the
+text is
+income and then
+amount that would be
+plus
+income text do valum it will add it to
+that and we will close it here and then
+we'll push the
+transactions so transactions.
+push and inside we'll pass the income
+transaction that we have got the trans
+transaction and then we'll add the
+transaction
+Dome and inside we'll pass the income
+transaction okay so we have done it for
+the income input and and similarly we'll
+do it for the expense input
+and for that we'll just copy
+it and use it similarly for the expense
+input
+so now we'll do it for the expense
+input so expense. text value. trim and
+then we have expense
+transaction and we have generate ID and
+and instead of income we'll write the
+expense and here we are adding plus
+income text we
+will minus
+expense text to value and here will
+transaction don't push expense
+transaction and similarly in the add
+transaction Dome we will
+pass the expense
+transaction so here now we'll update the
+values and update the local storage
+every
+time so trans repeat so transactions.
+push it adds the new transaction to the
+list of transactions and at transaction
+Dome it updates the web page to show the
+new
+transaction and then we have update
+values that we'll do so it will
+recalculate the balance total income and
+total
+expenses for
+that just write update
+values and then we'll update the local
+storage so that will save the updated
+list of transactions to the local
+storage so we'll write update
+local
+storage and it will update it for
+that okay and we have not CL the if so
+we'll close it
+here and then we'll clear the input
+Fields also after adding one transaction
+will clear the input Fields so finally
+it will clear the input Fields so they
+are ready for the the next transaction
+entry so for that we'll
+write income
+text do
+value and that would be set it to null
+after the
+transaction and similarly for the
+expense text
+value that two would be set as null
+after the
+transaction and then we'll get the
+document do get element by
+ID
+and the
+text do
+value so the text that is the
+transaction subject for that value also
+that would be restore to
+default okay now we'll generate a random
+ID so this function will create a random
+number to use as an ID for each
+transaction ensuring each one is unique
+so for the transaction
+ID we'll generate
+it so we'll write a function for that so
+we'll create a
+function and name it as generate ID
+so for that will generate a random
+transaction ID we'll use the
+math
+and
+Flo and to generate a random number
+we'll use the random
+function so now we will create another
+function that would be add transaction
+do so this function adds a new
+transaction to the web
+page so we'll create the function for
+that and let's start with
+it so
+function and we'll name it as at
+transaction Dome and inside we'll pass
+the
+transaction
+okay and
+inside first we'll create a constant
+sign and we'll determine whether to show
+a minus 4 expense or a plus 4 income so
+for that we'll write declare a
+constant or a variable named as
+sign
+so transaction do
+amount if it's less than
+zero then
+minus
+[Music]
+else
+plus okay so we have defined for the
+sign and now we'll create element that
+will create a new list item for the
+transactions so for
+that we will declare a
+variable
+item
+and use document do create element
+okay we'll use the create
+element and and inside we'll pass the
+list
+and here we will add a class to the item
+for styling depending on whether it's
+income or
+expense so for
+that we'll use item do class
+list note add and
+here transaction amount
+that will be transaction do
+amount and if it's less than
+zero then
+minus else Plus
+and here we will set the HTML inside the
+list item showing the transaction text
+amount and a delete button so for that
+we'll use the item do inner
+HTML that would be equal
+to that we'll write
+dollar transaction.
+text
+and we span
+here so first we'll write The
+Sign
+then L then we
+have math do absolute function
+and inside we'll pass the transaction
+amount so transaction do
+amount and here the span
+closes and now we'll move to the button
+class so what show transaction do
+text okay span
+started
+okay okay for HTML we have used the back
+link or back
+comma and
+here we will create the button class
+CL use the delete
+button and we'll set the functioning on
+click that is to remove the
+transaction
+and inside we'll
+pass the transaction note
+ID and
+here the crow symbol or the X symbol it
+will be used
+to remove the
+transaction and now close the
+button now we will append the child
+or for
+list and pass the item through
+it so we have added the new list item to
+the transaction list on the
+page with the list out append child so
+now we will create another function that
+will update the balance income and
+expenses so we'll create a function and
+name it as update
+values so let's progress with that we'll
+create a function and name it as update
+values and we will create a variable and
+name it as amounts
+and what it will do
+is it will create an array of all
+transaction
+amounts so with that we have created a
+variable amounts and inside
+we'll write transactions do
+map and
+inside pass
+transaction
+transaction do
+amount and then we will create another
+variable that will be
+constant
+total so that would be equal to amounts.
+reduce so
+inside
+pass
+item not to fixed and inside we will
+pass
+two so we have created an arrow of all
+transaction amounts and then we have
+created a variable
+total and that would be calculate the
+total
+balance and now we will create a
+variable income and calculate the total
+expenses so the three lines will update
+the web page to show the calculated
+total income and expenses so let's
+create the variable
+income and that would be equal to
+amounts do
+filter inside we'll pass
+item so if item is greater than
+zero
+4315 and now we'll use to
+ruce and inside we pass count and
+item and that would
+be plus equal to
+item and then we'll use the two fixed
+and pass it as
+two and now we'll update the balance do
+in a
+text and that would be equal
+to dollar
+dollar and
+inside
+total
+and then money uncore
+plus
+do inner
+text equal
+to l dollar dollar
+income and then we have money minus do
+in
+text
+and that to equal
+to dollar
+dollar
+expense
+so these three lines will update the web
+page to show the calculat total and
+income and
+expenses and now we'll create another
+function that would be the remove
+transaction and inside we'll pass the ID
+for that so let's create a
+function
+so function and we'll name it as remove
+transaction and inside we'll pass the
+ID so inside
+this
+so
+transactions equal to transaction
+filter note ID and that is not equal
+to and after that we'll update the local
+store
+storage and use the inet
+function
+okay and now we'll create the function
+to update the local storage so in this
+what we have done is we have removed the
+transaction with the given ID from the
+list and we'll save the updated list to
+the local storage and reinitialize the
+app to update the
+UI now we'll create a update local
+storage function so this function saves
+the current state of transactions to
+local
+storage so for this we'll create a
+function update local
+storage and inside we'll use local
+storage set
+item and inside we'll pass
+transactions and Json note sting
+IFI and inside we'll pass the
+transactions
+and after updating we will initialize
+the app that will reconsider it so we
+have converted the transactions array to
+a Json string and Sav it to the
+browser's local storage now we create
+the init function so this will
+initialize the app when it loads or
+needs to be updated so for that we'll
+create a function function
+init and inside
+this we will use list do inner
+HTML and then we'll use
+transactions for
+each and pass the add transaction
+Dome and then we'll update the
+values
+and here we will call the init
+function and now we'll ensure the doome
+is fully
+loaded so the first that is list out in
+our HTML it will clear the transaction
+list on the web page and then this
+transaction for each it will add each
+transaction to the web page and this
+will update the displayed totals and now
+we'll add the event listeners
+so first We'll
+add
+document
+dot at event L
+now and inside we'll
+pass do content
+loaded comma
+function
+so inside this we'll add another that
+would be form. add event now and in
+inside we will pass
+submit comma
+function and inside will prevent
+default
+and now we'll call the transaction
+function that would be add
+transaction and then we'll clear the
+input fields that would
+be income text do
+value that would be equal
+to and X P to text
+value we'll close
+this
+and
+this
+so the first one that is document add
+event listener it waits for the web page
+to load before adding the submit event
+listener to the form
+and this form. add event listener it
+adds an event listener to handle form
+submissions and E do prevent default it
+prevents the default form submission
+action and the add transaction function
+it calls the function to add a new
+transaction and this will clear the
+input fields for income and expense and
+now we'll add another event listner that
+would be form dot add event listener and
+inside we'll pass
+submit and add
+transaction so this will add an event
+listener to the form for the submit
+event calling add transaction when the
+form is submitted so here our project is
+complete and it's showing so you could
+see that
+our
+project is ready and you could add any
+transaction subject that could
+be
+movie and the amount deducted for movie
+was
+$60 and I pressed the enter or you could
+just add transaction and it will
+automatically move
+there and you could add any subject that
+could be salary
+credited man amount credited could be
+$4,000 so this is our expense trackers
+sorry
+$40,000 so with that we have come to the
+end of this session for the project of
+making of expense tracker if you like
+this session please like share and
+subscribe if you have any questions
+comment them in the comment section
+below and our experts will be happy to
+help you as soon as possible till then
+stay safe and keep learning staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corpor operations
+and delivered by industry experts choose
+any of our programs and set yourself on
+the path to Career Success click the
+link in the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

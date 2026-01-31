@@ -1,0 +1,300 @@
+g'day Traders welcome back to another
+video in this video we're going to be
+answering another student question from
+the Mastery course this student wants to
+draw labels above closed trades in the
+strategy tester that display information
+about the trade such as the profit and
+loss on the trade the opening price and
+time the closing price and time
+Etc so this information should be
+valuable for all of you guys out there
+who are making strategy scripts and want
+to debug your script or just get more
+information out of the strategy tester
+on a trade by trade basis so stick
+around for that but before we do that I
+want to give a shout out to a student of
+the Mastery course and a Trader who has
+become a friend in pen pal of mine his
+name is Mark and his online Alias is
+deep wave Trading
+one second I think my cat is having a
+little bit of a nervous breakdown and
+Mark has gone through the Mastery course
+and has now gone on to make his own
+YouTube channel and now I can't take
+credit for his uh success as a Trader
+obviously that is all him all the work
+he has put in but I'm really honored and
+proud to have had a student come through
+the Mastery course and now go out on
+their own and start making their own
+educational content on the subject of
+system development and back testing
+which is a subject that if you haven't
+realized by now is very dear to my heart
+and very important to me because that's
+what makes me my speculation profits if
+it wasn't for back testing I wouldn't be
+a profitable Trader and back testing is
+only one part of the equation system
+development is a whole world of its own
+so system development and back testing
+processes and techniques and tips is
+valuable and important to you then I
+definitely recommend you go and check
+out his channel it's brand new obviously
+he doesn't have many subscribers yet
+which is why I'm giving him this shout
+out he only started this channel two
+weeks ago but he does deserve your
+attention if you're interested in the
+subject he is a phenomenal presentator I
+think that's what word he's great at
+presenting this information which is
+quite complex and advanced he has a
+great way of explaining this information
+in a way where he can break down these
+complex subjects into easy to understand
+information that even the most Layman of
+Traders can understand and Implement
+into their own trading there'll be a
+link below in the pinned comment and in
+the video description to Mark's Channel
+please go and check it out go and
+support him he's a great guy and a
+phenomenal Trader now with that said
+let's jump into the pine editor and
+answer another question
+the student is trying to add a label to
+their strategy script that displays the
+entry price the exit price the open time
+and the close time timestamp and the
+profit of each trade that the script
+takes but they're running into an issue
+here's a screenshot of their issue so
+you can see the open price is according
+to the student accurate and so is the
+open time but the closing price the
+closing time
+obviously this is not possible that the
+closing time would be before the opening
+time when I look at the code here
+there's a couple of issues that are
+causing the problems here and so let me
+show you guys how to add open times
+close times open prices close prices
+based on the inbuilt strategy variables
+this is obviously quite a useful tool
+for debugging and back testing so yeah
+let's jump into the charts so here I am
+with a really simple moving average
+crossover script strategy added to my
+chart the strategy is not important so
+we're not going to address that today
+what we are going to address is all of
+this code here so this is the code that
+I've adapted to more accurately display
+our open price closing price open time
+close time and now profit so you can see
+our profit here was negative 1700 if I
+open the strategy tester and go to list
+of Trades
+um you can see here
+same number so
+what did I do differently in my code
+compared to the original code well the
+original code references two different
+data sources from the inbuilt strategy
+functions so the first one the
+Enterprise references open trades and
+the exit price references closed trades
+now this is these are two separate lists
+open trades obviously contains all the
+currently open trade data closed trades
+contains all closed trade data now if
+you want to monitor an open position
+then you will need to reference this
+list of Trades and the open this is kind
+of like an array and so each time you
+open a new trade the old trade was
+obviously closed and so unless you have
+multiple trades open zero is always
+going to reference the currently open
+trade if you have more than one trade
+open zero would be the first trade that
+was opened to uh one would be the sorry
+zero would be the first trade that was
+open one would be the second trade that
+was open two would be the third trade
+that would open Etc
+but with closed trades this holds all of
+the previously closed trades this is
+what you want to reference if you are
+trying to draw trade result data so the
+results of your trades so what I've done
+is I've just changed all of the open
+trades to close trades so we're
+referencing the closed trades list
+instead of the open trades list that
+keeps everything consistent so that when
+a trade closes we are referencing the
+opening price server hover over this bar
+the opening price is 2086 same as that
+the date is Wednesday 26th of October
+26th of the 10th 22.
+the close time is this bar here and that
+is Wednesday the 9th of November 9th
+November 22 and the profit I already
+showed you that so this is accurately
+displaying the closed trade data just to
+quickly replicate this student's code I
+added a truncate function that does
+nothing it just Returns the number you
+pass into it go and check out my library
+lesson if you want to see how to
+truncate numbers down to a certain
+amount of decimal places in this case
+they are trying to truncate this number
+to four decimal places my script doesn't
+do that just to save time I didn't
+bother adding that in but if you wanted
+to add that in go and check out my
+library lesson Zen Library lesson that
+contains the code on how to truncate a
+number but the important thing here to
+mention or to to draw your attention to
+is our Enterprise is set to
+strategy.closed trades we're referencing
+the closed trades list and we're
+referencing the entry price and then we
+need to pass in an array index remember
+in Pine script and most programming
+languages if not all arrays start
+counting from zero so the first element
+in a in an array is the zero element the
+final element in an array the ID the
+index of that element is equivalent to
+the total size of the array so in this
+case we're referencing the closed trades
+number this is how many
+um
+trades were closed by The Script
+then we need to subtract one from this
+if we don't do that then we're
+referencing an array index that doesn't
+exist and our price here will be n a as
+you can see there Nan not a number so we
+need to reference the total size of the
+array minus one if you wanted to
+reference the very very first trade that
+your script ever took you'd put zero in
+here so if I save that these numbers
+will show the opening and closing price
+of the very first trade on my chart so
+if I jump to that right now
+the first opening trade here the opening
+price is two four five three four
+two four five three four let me undo
+that and then there's a bunch of code
+here that's specific to the student
+script the only other thing I'll draw
+your attention to is the label code here
+so I'm declaring a new persistent label
+a VAR label when my position size on the
+current bar is not equal to the position
+size on the previous bar that means we
+closed a trade by definition or we
+opened a new trade what I should
+probably do here is change this to
+strategy.close trades not equal
+strategy.closed trades on the previous
+bar since we're dealing with closed
+trade data that would make more sense so
+that's still working fine so when the
+current bars closed trades number is not
+equal to the previous bars closed trades
+number that means we just exited a trade
+and we display a new label and this
+label is drawing on the current bar
+index on the bars low and the text of
+the label is set here so we have the
+Enterprise and the exit price open time
+close time now to get the open time and
+close time we are formatting the text
+with this time stamp format and we are
+referencing the strategy.closed trades
+list again same as here
+but instead of the entry and exit price
+we are referencing the entry and exit
+time
+and we still need to pass in the same
+index of that trade we want to reference
+in this case it's the final trade in our
+list that gives us our final entry time
+Final Exit time final entry price Final
+Exit price of the final trade the script
+took and then finally we have our profit
+which is again
+strategy.closedtrades.profit and we pass
+in the trade index the final trade in
+the list and that's it
+um down here I this should be changed as
+well to close to trades
+uh
+save that and now that will show the
+appropriate tooltip
+for the position size of that closed
+trade in this case that was 1.08
+Bitcoin if you wanted to reference open
+trades on currently open bars you need
+to change all of these to say open
+trades
+and this as well obviously
+but it makes more sense to me that you
+would want to track closed trades data
+in your strategy script so I'll leave
+this as it is and I'll leave the source
+code to this part of the script below
+and you can pretty much copy and paste
+this into any script one thing I will
+mention is that if you want to draw the
+label on every single
+closed trade on your chart there is a
+limit to how many labels you can have on
+your chart at any given time that's why
+I delete all the previous ones and only
+show the latest one but if you wanted to
+display a label on every closed trade
+this is how you would do it so you want
+to declare a new label every time you
+create one if I save that code we should
+get more labels drawing here there we go
+you see what I mean it's pretty pretty
+cluttered
+so oh that's interesting it used to be
+that panscript would display x amount of
+labels in the beginning and then they
+would just stop drawing and so on your
+latest
+price action there'd be no labels
+because you used up your maximum label
+count early on it looks like they've
+changed that so it deletes the old
+labels first and leaves the latest
+labels on your chart so you don't
+necessarily need to delete them if you
+don't want to assuming you're
+comfortable with all this clutter
+um obviously you can format the labels
+to be smaller the text to be smaller the
+color to be blend in better whatever you
+want to do but anyway that's it for this
+lesson I'll leave the video here so that
+you can see the changes I made to
+display the label on every single trade
+if you want to adapt the source code
+below the video and I'll speak with you
+in the next lesson take care and good
+luck with your training

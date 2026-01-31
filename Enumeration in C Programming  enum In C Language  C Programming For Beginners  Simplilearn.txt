@@ -1,0 +1,118 @@
+hey guys welcome back to another video
+by simply learn in today's video we're
+gonna be learning all about enumeration
+in c but before we begin if you haven't
+subscribed to our channel already make
+sure to hit the subscribe button and the
+bell icon to never miss an update
+so now without any further delay let's
+begin
+this session will help you to understand
+what enumeration in c is and next what
+is enum used for
+then let's understand the inum
+declaration in c and finally let's
+execute a simple program using enum
+so now let's get started with what
+enumeration in c is
+enum is a user-defined data type
+consisting of an integral constant in
+short enum is a keyword that allows a
+user-defined data type consisting set of
+integral constants
+the syntax is
+inum enum name and list of constants
+separated with the help of comma
+operator
+now let's see what is inum used for
+so basically enum is used to allocate a
+name to the integral constant
+in the given below example we have enum
+as a keyword
+fruit as a user-defined data type
+followed by enumerated constants mango
+apple grapes and banana inside the curly
+brackets
+since this list of enumeration constants
+comes under the category of fruits we
+have fruits as a user-defined data type
+which is possible with the help of the
+keyword enum
+all right
+in c programming the compiler assigns
+integer values to all the enumeration
+constants by default
+and that begins from
+0
+1 2
+okay
+so let us move on to the inum variable
+declaration
+here let us consider another example
+where we have month as a user defined
+data type and january february march
+april may and june as constant
+as discussed before by default the
+compiler will assign values to the
+constant it is even possible for the
+user to assign new integer values to the
+list of constants for example
+the value 5 is given to the constant
+match and the value 9 is assigned to the
+constant zoom
+then the compiler will automatically
+assign values to the rest of the
+constants that are starting from jan is
+equal to 0 then fab is equal to 1 april
+to 6 because it considers the previous
+constant value plus 1 so that is 6 then
+may as 7 again last value that is 6 plus
+1 is equal to 7
+and then comes the variable declaration
+so as given below the variable m is
+declared of the type month and this
+variable can have only one value from
+the listed enumeration constant
+that is multiple values for a single
+variable are not allowed
+but we can also declare various variable
+declaration for listed constants for
+example
+m1 comma m2 comma m3 and so on
+next we can assign enumeration constant
+to the variables like m1 is equal to
+match and m2 is equal to april and etc
+so now
+m1 and m2 will hold an integer value 5
+and 6 respectively
+i hope you got a clear understanding of
+the use of enum in c programming all
+right
+now let's execute a simple program using
+enum
+choose from over 300 in demand skills
+and get access to 1 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more
+so in this particular example we are
+trying to print the integer value of
+variable m and m1 we have already
+assigned value 9 to the constant april
+so now let's see the output
+as you can see the output the value of m
+is 2 so it's a default value assigned by
+the compiler and the value of m1 is 9
+assigned by the user
+so with this we have come to the end of
+this session on the enumeration in c
+programming i hope this session was
+informative and interesting until next
+time thank you stay safe and keep
+learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,121 @@
+hey everyone i'm harsanya from simply
+learn sting and i welcome you all to
+this interesting session on the first c
+program
+but before we begin if you haven't
+subscribed to our channel already make
+sure to hit the subscribe button and
+press the bell icon so you'll never miss
+any update from simply learn
+without further ado let's get started
+with the agenda for today's session
+as a part of the first c program let us
+execute a simple hello world program and
+a program to perform arithmetic
+operations such as addition subtraction
+multiplication and division
+so with this let's get started
+to run the programs we will use vs code
+editor
+first let's name the file with dot c
+extension
+go to file click on save as
+and name the file with dot c extension
+and to execute 4c program hello world
+let's include the header file
+hash include
+hddio.head
+in c programming hash include is used to
+direct the compiler to load the header
+file in the program
+hddio.h is a header file that stands for
+standard input output various functions
+such as printf scanf are defined in
+standard input output header files
+next void main
+main is a function from which every c
+program execution begins and void
+specifies that a function does not
+return a value
+curly braces indicates the body of the
+main function that is the start and end
+of the statement
+inside the main function let us print
+hello world
+so for that printf function is used to
+print the output
+printf
+hello
+and semicolon at the end of the
+statement indicates that the current
+statement is terminated
+now let's save the program ctrl s
+and let's run it
+as you can see here hello world is
+printed successfully
+let's try to execute one more program
+using arithmetic operators in c to get
+hands on with it
+so for that let us declare and
+initialize variables inside the main
+function
+that is int
+a is equal to 10
+comma
+b is equal to 10
+comma c
+you can name the variables and assign
+values as per units
+now let's perform the addition
+operations on variable c and b and store
+the result in c
+c is equal to a plus b
+using printf function let's display the
+value for addition operation
+printf
+a plus p
+is equal to percentage d
+comma c
+whatever is inside the double quotes
+will be displayed as an output
+and percentage d is the format specifier
+used to display the integer value of
+variable type int
+and backslash n is called an escape
+sequence which denotes the newline
+character
+now let's perform the other arithmetic
+operations one by one on the same
+variables a and b
+c is equal to a minus b
+and print a function to print the result
+of subtraction
+next let's multiply using multiplication
+operator
+c is equal to a into b
+print a function to display the result
+of multiplication
+and then division
+c is equal to a divided by b
+let's save the program ctrl s
+and run it
+the results for automatic operations are
+printed successfully
+as you can see here a plus b that is 10
+plus 10 is equal to 20 next a minus b
+that is 10 minus 10 is equal to 0 and
+then 10 into 10 is equal to 100 and a
+divided by b that is 10 divided by 10 is
+equal to 1.
+so with this we have come to the end of
+this session on the first c program i
+hope this session was informative and
+interesting until next time this is
+sania from simply learn stream signing
+off thank you stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

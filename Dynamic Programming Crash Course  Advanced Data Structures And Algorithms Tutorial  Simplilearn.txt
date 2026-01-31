@@ -1,0 +1,3351 @@
+hey everyone welcome to simply learn's
+youtube channel in today's live session
+we will talk about the most important
+topic of software development which is
+none other than dynamic programming
+but before we begin let me tell you guys
+that we have daily updates on multiple
+technologies if you're a tech geek in a
+continuous hunt for latest technological
+trends then consider getting subscribed
+to our youtube channel and don't forget
+to hit that bell icon to never miss an
+update from simply learn now without
+further ado let's get started with the
+agenda for today's discussion
+first we will start off by understanding
+what is dynamic programming and its
+fundamentals then we will dive deep into
+the various problem statements based on
+dynamic programming starting with the
+longest common subsequence then longest
+increasing subsequence later the subset
+sum problem followed by that we have the
+longest common substring next we will
+learn the matrix chain multiplication
+moving ahead we will learn minimum edit
+distance
+now we will get into some popular
+dynamic programming problems which are
+the knapsack problem the coin change
+problem floyd warshall algorithm bellman
+ford algorithm and finally we will
+conclude by discussing the tower of
+hanoi i hope i made myself clear with
+the agenda so let's get started over to
+our training experts
+meet rachel
+she enjoys tackling puzzles because they
+allow her to develop new emerging skills
+in a fun way
+that is why she buys puzzle books from
+time to time
+one day while reading through one of her
+puzzle books she came across a
+two-player tic-tac-toe game
+she discovered one weird fact while
+reading the rules of this tic-tac-toe
+game
+there are 2 lakh 55
+168 weights to make a single move in
+this puzzle game
+this fact captivated her interest
+encouraging her to begin playing this
+tic-tac-toe puzzle game
+rachel began playing this game with her
+friend alex who already knew how to play
+this game
+as a result of her repeated failures
+rachel became frustrated and started to
+question how she could go on a winning
+streak
+after a few games rachel started
+remembering the outcomes of each of her
+moves which contributed to her failure
+in previous games
+by using those memories of her previous
+games she started getting hold of the
+logic behind object placement in
+tic-tac-to-puzzle
+rachel's ability to memorize things
+helped her decide where to place an
+object on the tic-tac-toe board as a
+result of her hard work and commitment
+to learn from her experiences she went
+on a winning streak against alex
+to solve complicated permutation issues
+the dynamic programming paradigm employs
+a similar concept of memorization
+furthermore this dynamic programming
+paradigm is completely based on the
+philosophical idea that people who do
+not remember the past are condemned to
+repeat it
+the dynamic programming principle states
+that if we can solve smaller sub
+problems then their learnings can be
+memorized to solve the larger problems
+this fundamental notion is acknowledged
+as a foundation of dynamic programming
+moving ahead let's look at the broader
+picture of what is dynamic programming
+dynamic programming is defined as
+algorithmic paradigm that solves a given
+complex problem by breaking it into
+several sub problems and storing the
+result of those sub problems to avoid
+the computation of same sub problem over
+and over again
+the divide and conquer strategy is quite
+similar to the dynamic programming
+approach we solve problems in each of
+these paradigms by combining the
+solutions of smaller sub problems
+however in divide and conquer the
+subproblems do not repeat themselves
+whereas in dynamic programming the
+condition is entirely opposite
+well that means dynamic programming has
+different properties than the divide and
+conquer approach and the problems which
+abide by those properties can only be
+solved using dynamic programming
+technique
+so moving forward let's discover the
+properties of dynamic programming
+the first property that we have is
+optimal substructure
+if we can establish a recurrence
+relation for a given problem then it is
+said to have an optimal substructure
+to understand this property let's have a
+look at an example
+the example that we are going to discuss
+is called the coin change problem which
+is one of the most famous dp problems in
+this problem we have to construct a coin
+combination with the least potential
+number of coins resulting in the desired
+final amount
+let's say we have a limitless supply of
+dollar fifty dollar twenty dollar ten
+and dollar five coins and the amount for
+which we need the least possible number
+of coins is eighty five dollars
+so to formulate the solution we'll have
+to traverse through all possible
+permutations of coins
+the most logical solution to this
+problem is to add the coin of largest
+value at each iteration which does not
+take us past the expected amount that is
+dollar 85
+that means we break this problem into
+several iterations by choosing the coin
+of highest value at each iteration
+this conversion of larger problem into
+smaller sub problems is known as optimal
+substructure
+the next problem we have is an
+overlapping subproblem
+if the subproblems recur while
+implementing a solution to the broader
+problem then that problem is said to
+have an overlapping sub problems
+formulating recurring relation is the
+sole technique to determine if a given
+problem has an optimal sub problem or
+not
+to understand this better we'll have a
+look at an example of a fibonacci series
+program
+before we get into details of that we
+would like to ask you what dynamic
+programming or competitive programming
+topic would you like us to address next
+you can mention the topics which you
+have doubts about in the comments
+section below and will surely create an
+exciting video about it in the next few
+days so guys make sure you post a
+comment with the dp or competitive
+programming topics you'd like us to
+cover in upcoming videos
+now coming back to dynamic programming
+we will cover the mathematical
+interpretation of fibonacci series
+program if getting your learning started
+is half the battle what if you could do
+that for free
+visit skill up by simply learn click on
+the link in the description to know more
+the fibonacci sequence is a group of
+numbers that frequently appears in
+nature
+each number in the series is the sum of
+two previous number that come before it
+the sequence goes like 0 1 1 2 3
+5 8 13 and so on
+let's say the n is iterator element to
+calculate consecutive fibonacci numbers
+and for the first two iterations that
+are 0 and 1 the resultant fibonacci
+values will be simultaneously 0 and 1.
+otherwise the fibonacci values will be
+the sum of previous two fibonacci
+numbers in the sequence
+that means when the value of an iterator
+element becomes 2 the consecutive
+fibonacci number for it will be the sum
+of previous two numbers in the sequence
+that is 0 and 1 so the resulting
+fibonacci number will be 1.
+now when the iterator element n becomes
+equal to 3 the consecutive fibonacci
+numbers for 8 will become 2.
+for the next iteration n is equal to 4.
+the fibonacci values will be the sum of
+1 and 2 that is 3.
+when n becomes equal to 5 the resultant
+fibonacci numbers will be 5 and
+similarly the further numbers in
+sequence can be calculated
+and now if you observe the fibonacci
+problem closely you'll see that the
+breakdown of bigger problem is done into
+smaller sub problems in previous slide
+this means the fibonacci sequence
+problem has an optimal substructure
+and the program for the fibonacci
+sequence also represents the same
+these highlighted statements are
+representing the recurrence relation in
+our fibonacci program
+now what about the overlapping sub
+problems
+well a problem is said to have an
+overlapping sub problems if any sub
+problem repeats while implementing the
+solution to the broader or larger
+problem
+let's say we want to calculate a
+fibonacci number for n is equal to 5
+the first activation record that will
+enter the memory stack will be fib of 5
+and to calculate the fibonacci value for
+number 5 our recursive program will call
+function fib four and fifth three
+further to calculate fifth four the idea
+will invoke fib three and fifth two
+next it will calculate the sum of fifth
+two and fib one to calculate the value
+of fifth three and further it will
+invoke fib one and fifth zero to
+contemplate the value of fifth two now
+we have generated the right side of our
+call stack tree hierarchy similarly the
+other missing pieces will get calculated
+by the compiler with the help of
+recursive calls
+now if you observe this activation
+hierarchy you'll get that few sub
+problems are repeated in this problem
+the fifth three has been calculated
+twice
+and the fifth two has been calculated
+three times in our program
+this repetition of the same sub problem
+while solving more significant problem
+is called as overlapping subproblem
+property
+due to the multiple calls the
+computational complexity of recursive
+programs almost increases exponentially
+and those calculations are entirely
+unnecessary but before we understand how
+to avoid all unnecessary computation
+let's try to figure out the time
+complexity of our fifth function
+look at the time complexity relation
+written over here
+this says that the time taken to
+calculate five n will be equal to the
+time taken to calculate fever n minus 1
+plus time taken to calculate five of n
+minus 2 plus the time taken to add these
+numbers together
+clearly for n is less than or equal to 1
+the fib of n is going to be big o of 1
+as we are not going to make any
+recursive calls for them also
+intuitively we can say that t of n will
+take big o of 2 to the power n
+we can contemplate this from the
+recursion tree drawn on the left side
+for n is equal to 5 we get a binary tree
+of depth 5
+for n is equal to 4 we get the binary
+tree of def 4 and so on
+this implies that the time complexity of
+our algorithm grows at an exponential
+rate and crop shown on your screens
+depicts that
+moving ahead we'll try to understand how
+we can reduce this computational
+complexity using dynamic programming
+the computational complexity can be
+removed by memorizing the result of sub
+problems
+in terms of computer science we can
+refrain from doing unnecessary
+computations by utilizing the memory to
+store the results of sub problems in
+dynamic programming we calculate the
+result for sub problems and store it in
+memory allocated by an operating system
+when that same sub problems get
+activated in our call stack we access
+the memory in order to return the result
+that we have calculated previously
+now you must be thinking about how we
+can store the result in memory
+well we can store the results in two
+ways the first one is memorization and
+the second one is tabulation
+in the case of memorization we store the
+result in memory whenever we solve a
+particular sub problem for the first
+time
+whereas in the case of tabulation we per
+compute the solution in a linear fashion
+and store them in a tabular format
+memorization is also known as top-down
+approach whereas tabulation is known as
+the bottom-up approach in general these
+names are assigned to these methods
+based on how they approach problem
+solving the first one saves result in
+memory based on call stack occurrences
+the second one on other hand solves the
+sub problem in sequential manner
+for the top down approach we maintain a
+lookup table when we compute any sub
+problem we store results in lookup table
+and when the recurrence of this sub
+problem happen we directly fetch its
+value from our lookup table whereas in
+the case of bottom down approach the
+solution is built from the bottom most
+case
+in addition the memorization process is
+recursive however the tabulation process
+becomes iterative
+if we implement the fibonacci series
+program using top down approach then the
+code for function 5 will look something
+like this
+and this one additional step 5n is equal
+to res will do the memorization job for
+us
+if we develop a fibonacci sequence
+program using bottom-up approach our
+program will look something like this
+this highlighted for loop part
+calculates solution to all sub problems
+from the base case
+i hope you guys are clear with both
+methods of dynamic programming now
+moving ahead we'll discuss when to
+implement dynamic programming solution
+for any given problem
+remember guys you can solve any problem
+using dynamic programming which abides
+by the properties of dynamic programming
+most frequently you will come across the
+minimization and maximization problems
+which are readily recursive in nature
+if you need exhaustive solution for
+these problems then you can solve them
+using the dynamic programming paradigm
+the permutation combination problems can
+also be solved using dynamic programming
+the problem statement beginning with
+find the number of weights are the
+famous permutation problems that can be
+solved using dynamic programming
+approach
+the term longest common subsequence
+clearly directs us towards some sort of
+relation between two sequences
+a sequence is nothing but a series of
+element that occurs in same order but
+are not necessarily contiguous from this
+definition we can say that the longest
+common subsequence will be the term that
+both given strings will contain
+to understand it more clearly let's have
+a look at an example
+in this example i have taken two strings
+there is nothing like substring here
+right if you have studied the kmp
+algorithm you will remember the problem
+as string and substring in that problem
+we had to find the substring inside a
+given string but this scenario is
+totally different from that
+we'll be dealing with two different
+strings here
+here you can clearly see that string 1
+is larger and string 2 is relatively
+smaller
+now for these two strings possible
+common subsequences are as shown on the
+screen and from this you can clearly say
+that the longest common subsequence will
+be cde
+moving forward let's dive further into
+this lcs problem to understand the logic
+behind it
+the problem statement for the lcs states
+that given two strings find the length
+of common subsequences present in both
+the strings
+that means in this problem we'll be
+given two different strings with length
+m and n respectively and from these two
+strings we'll have to find the longest
+common subsequence with length k
+let's consider these two strings present
+on our screens
+we'll try to find out the lcs for both
+of these strings here
+we'll try to map patterns present in
+string 2 to string 1. now let's pick the
+first character in string 2 that is z
+now we will match this character to the
+character present in string 1 and the
+first character is x so we'll map it
+with x but z and x do not match hence
+we'll move towards the next character
+next character is y and z and y also
+does not match hence will move to the
+third character that is it here we have
+found the match
+so what we'll do is we'll include z into
+our longest common subsequence
+the next character in our sequence is a
+and we have a in string 1 as well hence
+we'll include a in our longest common
+subsequence
+the next character in string 2 is d
+and we have found match for d in string
+1 as well hence will include it in our
+longest common subsequence
+the final character in string 2 is f
+and we have found f in string 1 as well
+hence we'll also include it in our
+longest common subsequence finally the
+longest common subsequence for string 1
+and string 2 will be z a d f
+moving forward let's discuss one more
+problem to understand lcs clearly here
+you can see that z is present in both
+the strings thus will include it in our
+lca string
+the next character is y it is also
+present in string 1 but the rule of lcs
+says that the sequence of character
+should not be changed and here the
+mapping line of z and y are intersecting
+so we'll discard character y here and
+we'll pick the next character in string2
+that character is d
+and d is not intersecting with any other
+character hence we'll add it to our lca
+string
+now the next character b is also there
+in string 1 but we cannot insert it in
+our lca string as it intersects with the
+mapping line of character d
+thus will discard this character
+the next character f can be added to our
+lca string as it does not intersect with
+any other mapping line
+so the first lcs sequence will be z d f
+and due to multiple intersections there
+is possibility of having another
+sequence that can be larger in length
+than the previous sequence for this
+sequence we'll begin from the second
+character of string 2 that is y
+and y is present in string 1 thus we can
+add it to the lcs
+next we can add d to our lcs sequence
+after this we have b but b cannot be
+inserted into lcs as it is intersecting
+with d
+hence we'll discard it and finally we'll
+include f into our lcs sequence
+in this problem both the sequences have
+the same length hence both of these
+sequences will be considered as longish
+common subsequences
+i hope that you guys have understood the
+logic behind finding the longest common
+subsequence cause we have a challenge
+for you guys to assess your
+understanding of the lcs
+for these given sequences you are
+supposed to find out the longest common
+subsequence
+the options for this problem are babc
+bace and bce
+you all can drop your answers in the
+comment box below let's see how many of
+us can get this right
+now moving forward we'll build a
+solution for lcs using recursion
+so let's visit the code editor and
+develop the c program for longest common
+subsequence
+the two strings for which we are going
+to find lcs are x y and x p y q
+let's create a function to get started
+with lcs implementation i am going to
+name this function as int
+lcs
+and inside this function will pass the
+references of two character arrays the
+first will be care
+star
+a
+comma care
+star
+b
+the next arguments will be the lengths
+of these character arrays in x and end
+y
+now
+we'll move to the function body of lcs
+the first condition will evaluate is if
+the character array are empty or not
+because if character arrays are empty
+then definitely there won't be any
+sequence to find out so when we reach x
+equal to 0 and y is equal to 0 will
+return 0 for that we'll write the
+condition if
+x equal to equal to 0
+or
+y
+equal to equal to zero
+then
+return
+zero
+now
+the next condition when both x and y
+won't be 0 we'll check if the last
+character of both character arrays match
+or not for that we'll write another if
+condition
+if a
+x minus 1
+equal to equal to
+b
+x minus 1
+then we will return
+1 plus
+lcs
+a comma b
+comma
+x minus 1 comma y minus 1
+once this condition gets fulfilled we'll
+return 1 plus recursive call to lcs
+function with inputs decrease in size by
+1 that is x minus 1 and y minus 1. now
+if both the previous conditions fail
+then what we'll do is we'll go into this
+else part
+and inside this else part
+we will return
+max of
+lcs
+a comma b
+comma
+x comma y minus 1
+or
+lcs
+a comma
+b
+comma
+x minus 1
+comma y
+we are missing semicolon here
+okay and dot here
+so
+we'll change it
+now
+this statement will get executed when
+there is no character match
+if characters don't match will move
+either way one character in first string
+a or one character in second string b
+and check whichever gives maximum and
+will take that into consideration most
+of the time this condition will get
+satisfied
+to find out the maximum will have to
+create a manual maximum function so for
+that we'll create a new function that is
+int
+max
+and will pass arguments in m comma in
+n
+now inside this function we'll write the
+ternary condition that is return
+m greater than n
+question mark
+m
+colon and
+semicolon
+so this will return the maximum value
+between m or n
+with this we have successfully completed
+the lcs function so moving forward let's
+work on our driver function
+in driver function
+what we'll do is we'll create two
+character arrays at first
+so for that
+let's enter into this main function
+and we'll create character array a
+and inside a will pass
+x and y
+inside character array b will pass
+x
+b
+y cube
+okay
+and will store the lengths of these
+character arrays into x and y for and x
+is equal to strlen
+a
+and for int
+[Music]
+y strlin
+b
+we'll add semicolons here
+and finally we will make call to our lcs
+function using the printf statement
+different type statement that will write
+its length
+of
+lcs
+is
+modulus
+d
+comma lc
+s
+a comma b
+comma
+x comma
+y
+semicolon
+and finally we'll add return
+0
+i hope our code is bug free now so let's
+run it and check if it is bug free
+that's fine
+here we are getting error but it is not
+exactly an error we have implicitly
+declared function max here
+so that's why we are getting this flag
+problem but we are actually getting
+output as well so the output that we are
+getting is 2 here
+and if you check
+both the strings
+then you can find out that
+character array a it's implemented
+inside character array b and the length
+of common sequence is 2 here
+so with this we can say that our
+recursive implementation of lcs is
+successful
+now moving forward we'll visit
+powerpoint to understand why recursion
+is not an ideal approach to solve this
+problem
+to understand the complexities
+associated with longest common
+subsequence problem implementation using
+recursion will formulate a recursive
+tree by going through the steps of a
+program that we have created previously
+so let's do that here
+as you can see in this lcs function the
+first step we perform is checking if
+both the strings are empty
+if they are not empty then we check if
+the last character of both strings
+matches or not
+thus the first call to the lcs function
+will check for the match of last two
+characters if characters don't match
+which is true in this scenario we move
+either one character in string a or in
+second string b
+and we'll choose whichever produces
+maximum value
+so if we reduce b by 1 and keep the a
+same then we have a character y in both
+the strings
+whereas if we keep b the same and reduce
+a by 1 then we have x and q which don't
+match with each other
+first we'll evaluate the left side of
+our recursion tree and here we have a
+character match thus will enter if
+condition where characters do match that
+is this condition
+and it says that return 1 plus both the
+character arrives with size reduced by 1
+and by doing that we get 2 different
+characters x and p here
+now as these characters do not match
+we'll move position by 1 in both the
+strings by doing that we get these
+results and here if we observe the left
+child has a character match thus will
+add 1 and reduce the size of both
+character arrays by 1.
+and with this step we reach the end of
+our strings
+now let's work on the right side of our
+recursion tree
+in this case we have distinct characters
+thus will move by 1 in both the
+character arrays and the resultant child
+nodes don't have characters that match
+furthermore the right shell reaches the
+null index hence now we will just expand
+the left child
+in addition to that we can move
+positions only in character array b as
+we have reached the end of character
+array a
+for this move we do not have any match
+so we'll reduce the position of b by 1
+again
+and here we get a match and also reach
+the end of both character arrays
+now the next step will be for evaluating
+lcs link by backtracking our recursive
+tree
+first we'll consider the left side so
+let's begin from the bottom of left side
+at the bottommost child we have some
+value equal to zero
+for the next step we'll have some value
+1 as we'll add 1 here
+for the next step as well we'll have to
+add 1 to our sum value thus the sum
+value will become 2
+here and the overall sum for the left
+side of recursive tray will result into
+2
+whereas for right side the sum will
+become 1 as there is only one match
+now
+this side which has maximum some value
+will be returned as a result of the
+celsius program which will be 2 in this
+case
+the complexity for this recursive lcs
+program will be 2 to the power n
+now for these two strings which have
+small length you can see that the
+complexity will be equal to 2 to the
+power n where n belongs to the depth of
+binary tree that is huge complexity if
+you look at the complexity graph you'll
+get that you'll get parabolic graph
+which will increase continuously or
+exponentially
+however this problem can be resolved by
+using dynamic programming paradigm
+moving further we'll try to analyze how
+dynamic programming can reduce the
+computational complexity of lcs problem
+here we'll try to solve lcs problem
+using the tabulation method in order to
+understand how tabulation can reduce
+space complexity by making fewer
+computations
+the lcs function for tabulation will be
+iterative
+hence we'll understand the computation
+with the help of tabular representation
+the columns will represent character
+array b and rows will represent
+character array
+furthermore we have added the null
+values to the table
+hence initially we'll set the field
+values for null row and columns as 0.
+now here we'll move through the row of
+character x
+for the first iteration we hit the match
+hence we'll add 1 to the diagonal
+element
+so 0 plus 1 will become 1
+for the next iteration
+we get x and p which do not match hence
+we'll continue with one
+next we have x and y which also do not
+match hence we'll continue with one
+remember guys the highest value between
+these two fills will be picked every
+time
+for the next move the value 1 will
+continue
+now moving forward will move towards the
+y row
+here for both x and p the values will
+remain 1 as we don't have the character
+match but for the next field we'll have
+a match hence we'll add 1 to the
+diagonal field the value for this
+particular fill will become 2 now
+for the last field the value 2 will get
+continued as it is the highest field
+than the another comparative field
+and you can see that we have found the
+accurate result here which is 2.
+i hope this tabulation logic is clear to
+all of you because moving forward we'll
+develop a c program for the same
+now in order to get started with this
+tabulation function we have created int
+lcs function with few arguments these
+arguments are similar to the recursion
+in this tabulation lcs function we'll
+first create the 2d matrix for
+performing the computation the statement
+that will help to do that is
+end
+l
+x plus one
+x plus one
+and
+y plus one
+so this will create a 2d matrix of size
+x and y
+will also initialize few variables for
+using them inside looping process
+so i'll create two variables in i and j
+next we'll create a nested loops for
+traversing through both arrays at the
+same time and updating the computational
+table
+for that we'll create for loop and
+inside this for loop we'll begin from i
+is equal to 0
+to
+i
+is greater than equal to x
+and will increment the
+i and insert this four will create
+another for loop
+and we'll begin this with j is equal to
+0
+to
+j
+less than or equal to
+y and
+j plus plus
+after that we'll write the first
+condition to set null values for the
+null row and column fields so
+the statement that will write is if i is
+equal to equal to 0 or or j is equal to
+equal to 0.
+then
+set
+l
+i
+j
+equal to
+zero
+if this condition fails then we'll check
+if the last character match with one
+another if they match then we will
+return 1 plus both array fields reduced
+by position 1.
+for that we'll write condition else f
+a
+i minus 1
+equal to equal to b
+j minus 1
+and instead this l shape condition
+we will set l
+i
+j
+is equal to
+l
+i minus 1
+j minus 1
+plus
+1
+and if this condition fails
+then
+we'll enter into else loop
+and
+we'll pick
+l i j
+as
+maximum of
+l
+i minus
+large l
+and here as well
+it should be large l
+l
+i minus 1
+j
+comma
+l
+i j minus 1
+and we'll get out of these
+for loops
+and will return
+the output that is l
+x
+and
+y
+i hope this should be fine now
+so let's run our code and check if there
+is
+something wrong
+we'll save this as
+lcs
+underscore
+dp
+okay so we are getting three problems
+here
+okay so i have inserted o here instead
+of zero
+and there is one more mistake
+so i have called function max
+as max here and have named it as maximum
+here so we'll have to change this
+to maximum
+i think this should be fine now
+so let's run our code again
+okay we'll have to save this
+so we'll paste ctrl s
+and we'll rerun it
+yeah so we are getting our output here
+the length of longest common subsequence
+is 2.
+so if you observe here
+the output that we have got using
+dynamic programming is in
+5.58 second
+and the time that was taken for lcs
+recursion was around 8 seconds so you
+can see that the complexity has been
+reduced the time complexity and space
+complexity as well
+so
+that is why the dynamic programming is
+better approach than recursive
+programming paradigm
+i hope the longest common subsequence
+problem implementation using dynamic
+programming is clear to all of you out
+there
+in this problem we have to find the
+length of the longest subsequence of a
+given sequence such that all elements of
+the subsequence are sorted in the
+increasing order for example as you can
+see in the picture the length of the
+longest increasing subsequence for the
+set is 5 and the longest increasing
+subsequence is 10 12 30 35 and 60.
+now let's discuss the algorithmic
+solution to the longest increasing
+subsequence
+first we will create another array of
+the same size as the original array with
+element as one
+then we will discuss the nested loop and
+compare the value of array elements
+if value comes out to be increasing
+order then we will increment the
+corresponding new array elements value
+now we will repeat this for the every
+possible set until every set is
+exhausted
+now the maximum element in the new array
+will be considered as the length of the
+longest increasing subsequence
+we have now discussed the problem
+statement and the algorithmic solution
+to the longest increasing subsequence
+problem
+now let's implement the solution in the
+code editor we will start with a
+function that will return the length of
+the longest increasing subsequence in
+the array arr of size n
+so int
+list
+its argument will be
+end
+array arr
+comma end
+n
+we will declare end
+less
+and
+now list
+at 0
+will be equals to
+1
+now we will compute the optimized less
+values in the bottom-up manner so for
+and i is equals to zero
+i
+less than n
+i
+plus plus
+now we will give less
+at every ith position is equals to
+1.
+now we will insert another for loop
+inside as a nested manner
+so for loop
+and
+i
+j is equals to
+zero
+j less than i
+j plus plus
+now if
+arr
+at i
+is greater than arr
+at j
+and
+less
+at i
+is less than
+less
+at j
+plus 1
+then we will update this value
+at i
+is equals to
+less
+value
+at j
+plus
+one
+after that we will return the maximum
+value of less
+so return
+star
+max
+underscore
+elements
+less
+comma
+less
+plus one
+plus n
+now we will write the main block
+we will declare end
+the array
+its elements as
+10
+comma 7
+comma 12
+comma 30
+comma
+22
+comma 35
+comma 60
+comma 9
+then we will find the size of this array
+so in
+n is equals to
+size of
+arr
+divided by size of
+at arr
+at zeroth location
+now we will print
+c out
+length
+of
+liz
+is
+handle
+see out
+this
+arr
+comma
+n
+let's execute this
+as you can see we are getting the length
+as 5
+just like we have discussed during the
+algorithmic solution
+let's get started with the problem
+statement
+we will be given a set of non-negative
+integers and a value of variable sum
+and we must determine if there is a
+subset of given set with a sum equal to
+a given sum
+now let's discuss the algorithmic
+solution to the subset sum problem
+first we will create a 2d array of size
+arr size plus 1 multiplied by target
+plus 1 for the type boolean
+next the state dp i j
+will be true if there is a there exists
+a subset of elements from a from 0 to i
+with a some value equals to j
+let's look at the pseudo code
+here if the current element has a value
+greater than the current sum value we
+will copy the answer
+for previous cases
+and suppose the current sum value is
+greater than the ith element
+in that case we will see if any of the
+previous states have already experienced
+the sum equals to j
+or any previous states experience the
+value j minus a
+a at the i value
+which solves our purpose
+we have now discussed problem statement
+and algorithmic solution to subset some
+problem
+now let's implement this solution in the
+code editor
+we'll start with the boolean function is
+substruction which will return true if
+there is a subset of set with the sum
+equal to the given sum
+so
+will
+is
+subset
+sum
+and
+arr
+comma
+end
+and
+comma
+and
+sum
+now the value of the subset subset i j
+will be true if
+there is a subset of set from 0 to j
+minus 1 with sum equal to i
+so
+boy
+upset
+and plus one
+to
+sum
+plus one
+now if sum is equals to zero then the
+answer will be true so 4
+and i equals to 0
+i less than equals to n
+i plus plus
+subset
+at i z i comma 0
+is equals to true
+now if sub is not 0 and set is empty
+then we will answer false
+so 4
+and
+i equals to 1
+i
+less than equals to sum
+i plus plus
+now in this case we will check at subset
+0
+comma 1
+my
+equals to false
+now we will fill the subset table in
+bottom up manner
+so for
+end
+i equals to 1.
+i
+less than equals to n
+and i plus plus
+we will add another for loop
+and
+j is equals to
+1
+j
+less than equals to
+sum
+a plus plus
+now if
+j
+is less than
+a r
+i
+minus one
+then
+subset
+i
+comma j
+will be equals to
+subset
+i minus 1
+and j
+now if
+j is greater than equals to
+error
+at i minus 1
+then
+subset
+at i comma j
+will be equals to
+subset
+i minus 1
+to j
+or
+subset
+i
+minus 1
+to
+j minus
+i minus one
+now we will return
+subset
+at n comma
+sum
+now let's write the main block
+so we will create and
+set
+which will be equals to
+values like 3 comma 34
+comma 4
+comma 12
+comma 5
+comma 2
+and so on
+and we will have to
+find a subset with the sum equals to
+sum equals to
+9
+now let's find the size of this set so
+int
+n equals to
+size of
+set
+divided by
+size of
+set at 0th position
+now if
+is subserved
+some
+with
+with arguments as set
+comma n
+comma sum
+is equals to
+true
+then
+see out
+found
+a subset
+with
+even
+some
+else
+see out
+no
+subset
+with
+given
+some
+is
+found
+basically if this is subset sum gives
+true then we will print the found a
+subset with given sum
+otherwise we will print no subset with
+given sum is found
+now let's try to execute this
+as you can see we are getting a found a
+subset with given sum which means we
+have found a set with the sum as 9 which
+is 4 comma 5.
+let's get started with the problem
+statement
+the longest common substring problem
+involves finding the length of the
+longest string that is the substring of
+two or more strings there might be a
+number of solution to a situation now
+let's discuss the algorithmic solution
+to find the longest common substring
+first we must determine the length of
+the longest common suffix for each
+substring
+of both strings and save it in the
+database
+now
+if the last characters in the longest
+common suffix match their length will be
+reduced by one or
+if the last characters in the longest
+common suffix do not match then the
+result will be zero
+now we will look at the suffix of
+distinct substrings that ends at
+different indices finally we will
+conclude that longest common substring
+is the longest common suffix with the
+maximum length
+we have now discussed the problem
+statement and the algorithmic solution
+to find the longest common substring
+now let's implement this solution in the
+code editor we will start with a
+function that will return the length of
+the longest common substring
+of a string x and y
+and
+lc
+sub
+str
+its argument as
+star care
+x
+comma
+character pointer
+why
+comma
+and
+the size of the first string x
+comma
+end
+and
+this will be the size of the
+another string wire
+now we will create a table to store the
+length of longest common suffixes of
+string
+now we will create a array lc stuff
+to store the length of the longest
+common surface
+so
+end
+lc serve
+at m
+plus 1
+and n
+plus 1.
+and another variable
+result
+equals to zero
+this will be used to store the length of
+the longest common substring
+now
+we will follow the steps to build the lc
+suffix in the bottom of fashion
+so for
+and i equals to 0
+i less than
+equals to m
+i plus plus
+nested loop 4
+and
+j is equals to 0
+j less than equals to
+and
+j plus plus
+now the first row in the first column
+entries will have no logical meaning
+they will be used only for the
+simplicity of the program
+so if
+i is equals to
+or
+j
+is equals to
+0
+then lcs
+at i comma j
+will be equals to zero
+else
+is
+x
+at i minus 1
+is equals to
+y
+at j minus 1.
+then
+lc surf
+at i
+comma j
+will be equals to
+lc surf
+at i minus 1
+and j minus 1
+plus
+1.
+and
+the result
+will be equals to
+the maximum
+of result
+comma
+lc surf
+at i
+comma j
+else
+lc surf
+at i comma j
+will be equals to zero
+and we will return
+result
+now let's write the main block
+so we will have
+string
+care
+x
+is equals to
+calm
+down
+and
+another
+string car
+y
+is equals to
+keep
+calm
+now we will store the length
+n
+m equals
+to str alien
+of x
+and into n will have
+hdln
+of y
+now
+we will print
+the length
+of
+longest
+common
+substring
+lcs
+str
+at x comma y
+comma m comma n
+now let's try and execute this
+as you can see we are getting the length
+of the longest common substring s4 which
+was khan
+let's get started with the problem
+statement
+we will be given a sequence of matrix
+we have to find the most efficient way
+to multiply these matrices together
+the problem is not actually to perform
+the multiplication but merely to decide
+in which order to perform the
+multiplication to get the minimum
+operations on a multiplication
+now
+let's discuss the algorithmic solution
+to the matrix chain multiplication
+first we will take matrix sequence and
+divide it into two subsequence
+then we will calculate the minimum cost
+of
+multiplying out each subsequence
+then we will add these costs together
+and in the price of multiplication
+the two result matrices
+finally we will repeat these steps for
+every possible sequence of matrices
+that can be split and take a minimum
+over all of them
+we have now discussed the problem
+statement and the algorithmic solution
+to matrix chain multiplication
+now let's implement this solution in the
+code editor
+first we will define max 10.
+so
+hashtag define
+max
+done
+now we will look up tables to store the
+solution to already computed sub
+problems
+so
+and
+look up
+with dimension
+is max max
+now we will write a function to find the
+most efficient way to multiply a given
+sequence of matrices
+and
+mcm
+and
+sims
+now we will write our base case that is
+one matrix
+so if
+j
+is less than equals to
+i plus one
+then we will return 0.
+now what if it stores the minimum number
+of scalar multiplication that is caused
+needed to compute matrix
+m i plus 1
+to m j
+which is equals to m i to j
+so in
+men
+should be equals to
+and underscore max
+now if the subproblem is seen for the
+first time then we will solve it and
+store its result in the lookup table
+so if
+lookup
+at i
+comma j
+is equals to zero
+then we will take the minimum over each
+possible position at which the sequence
+of matrices can be split
+so four
+and
+k
+is equals to
+i
+plus 1
+k
+less than
+equals to
+j minus 1
+and k plus plus
+now we will recur for m from i plus 1 to
+m k to get an i x k matrix
+and
+first
+will be equals to
+mcm
+dems
+comma i comma
+k
+now we will recover for m k plus 1 to m
+j to get an k x j matrix
+so
+cost
+plus equals to
+mcm
+dems
+comma
+k comma j
+then we will write the cost to multiply
+to i x k and k x j matrix
+so
+cost
+plus equals to
+terms
+at i
+multiplied by
+dems
+a
+multiplied by dems
+at j
+now if
+first
+is less than men
+then
+min
+will be equals to
+cost
+now we will store
+men at lookup at i comma j
+now we will return the minimum cost to
+multiply m j plus 1 to m j
+so we will return
+lookup
+at i
+comma j
+now let's define a matrix
+and
+dems
+equals to
+10 comma 30 comma
+5
+comma 60
+now we will find the size of this dems
+array
+so end
+n equals to
+size of
+temps
+divided by size of
+0
+now
+see out
+the
+minimum
+cost
+is
+mcm
+at dims
+comma 0 comma
+n minus one
+now let's execute this
+as you can see we are getting the
+minimum cost as 10
+so our function is working flawlessly
+what is minimum edit distance so the
+answer for this question is the number
+of editing operations required to
+convert one string into another is
+defined as minimum edit distance between
+two strings
+the number of editing operations
+required to achieve this shortest
+distance is called as minimum edit
+distance the insert operation is used
+first in the minimum edit distance
+followed by the remove operation and
+finally the replace operation
+now let us look into a small example to
+understand minimum edit distance in a
+much better way
+assume that we need to convert
+string 1 that is glass into string 2
+that is grass
+to convert glass into grass apply the
+replace operation to the character r in
+the string 2.
+in this example we only need to use one
+operation that is the replace operation
+to convert the string 1 into string 2.
+next we will look into another important
+example to see how minimum edit distance
+works in practice
+in this example we must convert string
+one that is u v w x y z into string two
+that is u a w y x
+so first we will look into the first
+character of the string one that is u
+and the first character of string 2 that
+is also
+u
+no changes are required because u
+character in the string 1 is same as the
+u character in the sim 2.
+next we will compare the second
+characters of string 1 that is v with
+the string 2 that is a
+we must use the replace operation
+because
+v character in string 1 is not same as a
+character in string 2.
+we are now comparing string one's third
+character with string two's
+third character that is w for the same
+no changes are required because w
+character of string one is equal to the
+w character of string two
+now we will look into the next character
+of string 1 that is x because x
+character in string 1 is unnecessary so
+we will remove the x character using the
+remove operation
+the next character in string1 is y
+we will compare it to the next character
+of string2 that is also y so no
+practical changes are required here
+since both the characters are equal to
+each other
+finally we have the comparison of z
+character from string 1 and we will
+compare that to the last character of
+string 2 that happens to be x
+now we will have to use the replace
+operation because z character of string
+1 is not equal to the x character of
+string 2.
+now to convert string 1 into string 2 we
+required 3 operations that is 2 replace
+operations and 1 delete operation
+so the final topic in this session is
+minimum edit distance using dynamic
+programming
+using the same example as before
+we will continue with the minimum edit
+distance using dynamic programming
+so in this example we have a string
+that is u v w x y z on the row side and
+another string that is u a w y x on the
+column side
+we will use dynamic programming to
+convert one string to another to find
+the minimum number of operations
+required to perform this conversion
+so our first row contains the first
+string that is u v w x y z and our first
+column contains the second string that
+is u a w y x
+we then have an extra column and row
+stating that string one will require six
+edits to convert string two and string
+two will need five operations to convert
+to string one
+let's get started on filling out the
+rest of the matrix
+so since the first character of string
+one is u and second character of string2
+is also u so converting the u will not
+require any operations so we have zero
+now
+string one has two characters of u and v
+and string two's first character issue
+so it will take only one operation to
+convert from this to that
+next we have u v and w in string one and
+u in another string converting them will
+require two operations
+u v w
+and x in string one and in string two
+it would take three operations to
+convert if we have u v w x and y
+characters in string one and u
+characters in string 2 we will need to
+convert them using 4 operations
+next we will have 6 characters u v w x y
+and z and u character in string 2. it
+will take 5 operations to convert them
+let's fill up the second row with u
+characters in string 1 and u and a in
+another string to convert u to u plus a
+in one operation
+next we have u plus v
+in string one and u plus a in another
+string so converting them will take one
+operation
+because we have u v and w in string one
+and u and a in string two converting
+these characters would require two
+operations
+next we have u v w and x
+in
+row side and u and a on the column side
+these will be requiring three operations
+to convert
+next we have u v w x and y in string one
+and we need to convert it to u and a
+character of string two this conversion
+will take four operations
+and now we have all six characters in
+string one u v w x y and z and we need
+to convert it to u and a character from
+string two this conversion will take 5
+comparisons
+if you found it challenging to compute
+the number of operations using this
+method we devised a new formula that
+states that if the character of string 1
+is the same as the character of string 2
+we get the diagonal value as the number
+of operations but if the characters of
+both strings differ we have minimum of
+let top and diagonal values plus 1.
+so using this formula
+we filled all the matrix values to
+convert string 1 that is uvw xyz to
+string 2 that is u a w
+y x
+so the last value of the matrix which is
+our answer
+both string one and string to require
+three operations to perform the
+conversion
+let's get started with the topic what is
+snapsec problem
+the knapsack problem is used to explain
+both the problem and the solution
+it derives its name from the fact that
+the limited number of things that may be
+carried in a fixed size knapsack
+given a set of items with varying
+weights and values the goal is to pack
+as much as value as possible into the
+knapsack while staying within the weight
+limit
+now let's discuss zero one knapsack
+problem
+first we will be given weights and
+values of n items in this case 6 items
+on the left
+we will put these items in a knapsack of
+capacity w or in this case 10 kgs to get
+the maximum total value in the knapsack
+then we will have to fill this snapsack
+but we can't break the item so we must
+either pick the entire item or not pick
+at all
+due to this sometimes it may even lead
+to a knapsack with some spare space left
+with it
+now let's try to implement this in the
+correlator
+we will start with the utility function
+that will return the maximum of two
+integer
+int
+max
+a comma entry
+we will return
+if a is greater than b
+then a
+else
+b
+we will now write a function to return
+the maximum value that can be put in a
+knapsack of capacity w
+print
+knapsack
+and
+capital w
+comma
+and
+wt for the weight
+and
+value
+comma
+and
+n
+we will declare end i
+comma w
+we will create a vector
+inside a vector
+a
+n plus one
+comma
+vector
+and
+capital w plus one
+now we will build the table k in bottom
+up manner
+so for
+i equals to 0
+i less than equals to n
+i plus plus
+we will have another for loop inside it
+for low
+with small w equals to zero
+the small w will be less than equals to
+capital w
+with small w plus plus
+now if
+i
+is equals to zero
+or
+w is equals to zero
+then we will have k
+at i
+comma w
+is equals to zero
+else
+if
+it at i minus 1
+is less than equals to w
+then
+k
+at i
+comma w
+will be equals to
+max of
+value
+at i minus 1
+plus
+k at i minus 1
+comma
+w minus
+wt
+where wt is at
+i minus one
+comma
+k
+at i minus 1
+comma w
+else
+we will have k at i
+comma w
+is equals to
+k
+at i minus 1
+comma w
+now we will return
+a
+at
+n comma w
+now we will write the main block
+we will start with and
+value array
+which will have
+elements as
+100 comma 120
+and
+weight will be equals to
+10 comma 20 comma 30.
+and the maximum capacity the capital w
+will be equals to 50.
+now let's find the size of the value
+array so end
+n is equals to size of
+well
+divided by
+size of
+well at zeroth location
+now we will print
+see out
+knapsack
+at capital w comma wt
+comma
+where
+comma n
+and return it as zero
+let's compile it
+as you can see we are getting the value
+as 220
+which means we are getting it because we
+are taking the elements with weight
+equals to 20 and 30 which comes out to
+be as 50.
+let's get back to our slides
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit skill up by simply learn click on
+the link in the description to know more
+we have now discussed 0 1 knapsack
+problem
+now
+let's discuss the fractional knapsack
+problem
+similar to the 0 1 knapsack problem
+we will be given the weights and the
+value of n items
+in this case six items on the left we
+will also be getting a knapsack with
+capacity w or in our case 10 kgs to the
+right
+now we have to get the maximum total
+value in the knapsack
+then we will have to keep filling this
+knapsack but unlike zero one knapsack
+we can break an item to get a maximum
+value of knapsack
+here we will break this 3kg item into a
+2kg
+and 1 kg item to fill the knapsack
+now let's try to implement this in the
+code editor
+we will start with a structure for an
+item which stores weight and
+corresponding value of item
+so
+struct
+item
+and
+value
+comma
+weight
+we will write the constructor as item
+the argument as end var
+comma
+end
+w t weight
+where this
+value
+will be equals to well
+and
+this
+weight will be equals to weight
+now we will write a comparison function
+to sort items according to value by
+weight ratio
+so
+boolean function
+cmp
+with
+argument as struct
+item
+a
+comma
+struct
+item
+now
+double
+r1
+is equals to
+double
+a dot value
+divided by
+purple
+a dot
+wait
+similarly we will write it
+double
+r2
+which will be equals to
+double
+p dot
+value
+divided by
+double
+e dot
+wait
+now we will return
+r1
+greater than r2
+which means it will return true if r1 is
+greater than r2
+now we will write the main function to
+solve the problem
+so
+double
+f knapsack
+with argument as and
+capital w
+comma
+struct
+item
+comma and
+n
+we will first sort the item on the basis
+of ratio
+so sort
+arr
+comma
+arr
+plus n
+comma cmp
+now
+and
+current
+weight is equals to
+zero
+and double
+final
+value
+is equals to
+0.0
+this will be result value in knapsack
+so for
+and
+i is equals to zero
+where i is less than n
+and i plus plus
+now if adding the item won't overflow
+then we will add it completely so if
+current weight
+plus
+air
+err
+dot weight
+is less than
+equals to capital
+w then
+current weight
+plus equals to
+arr
+dot weight
+and
+final
+value
+will be plus equals to
+arr
+at i
+dot
+value
+now if we can't add a current item then
+we will add fractional part of it so
+else
+and
+remain
+is equals to w
+minus
+current weight
+then
+final value
+will be plus equals to
+multiplied by
+double
+remain
+divided by
+double
+arr
+dot
+weight
+now we will break
+then we will return
+final value
+now let's write our main block
+we will start with defining and
+w equals to 50
+this will be a weight of the knapsack
+and
+item
+arr
+equals to
+element as 60 comma 10
+comma
+100 comma 20
+comma
+120
+comma 30
+we will find the size of
+n
+and
+n equals to
+size of
+arr
+divided by size of
+arr
+at zeroth location
+now we will make that function call so c
+out
+maximum
+value
+and obtain
+first two
+w comma error
+comma n
+let's execute this
+as you can see we are getting the
+maximum value as 240. that means our
+function is working flawlessly
+the coin change problem is defined as
+the total number of ways you can change
+the given amount of money using the
+coins
+and we are provided with different types
+of coins or coins of varying
+denominations and a specific amount that
+is w
+let's look into an example
+the denominations of the coins are 1 2
+and 3 and 5 is the weight
+so how can we achieve a weight 5 with
+three coins there are number of ways to
+do this first we will need five one
+rupee coins
+the second way to make five is to use
+three one rupee coins and one two rupee
+coin
+the third way of doing it is using two
+one rupee coins and one three rupee
+coins
+the fourth way is to use one two rupee
+coin and one three rupee coin
+and the last way is using
+one two rupee coin and one three rupee
+coin there is no other way to make the
+number five using one two and three
+rupee coins so in total we have five
+ways to make weight equal to five using
+these coins
+now we will see how dynamic programming
+can be used to solve the coin change
+problem
+let us suppose we have a different
+demonstration of coin as 2 3 and 5 and
+we have to make the total sum weight as
+8 with the same condition that we can
+use an infinite number of coin supplies
+we must generate a table in the coin
+change problem using dynamic programming
+because we will store the results and
+use them later
+so in this table the column side will
+have coin values of 2 3 and 5 and the
+row will have to store the weight by
+dividing it into smaller weights because
+in dynamic programming we will divide
+problems into sub problems that are 0 1
+2 three four until eight
+here are three simple steps of solving
+the coin change problem with dynamic
+programming
+the first step is to exclude the coin
+the second step is to include the coin
+and the final step is to add the first
+and second steps
+let's start with the coin of
+demonstration
+2 and the sum is 0 so there's only one
+way to go
+because if we don't choose the coin
+value 2 we'll obviously make sum or
+weight as 0 and the same goes for coin 3
+and 5 so we'll write 1
+1 and 1 below the sum of 0.
+now that the sum is 1
+we can make it 1 using a coin value of
+2. the answer is no
+we can't make it 1 using a coin value of
+2 so we will fill 0 in here
+next we must make the sum 2 using 2
+rupee coin and there is only one way to
+do so use one 2 rupee coin
+next we can make a sum of 3 using a coin
+of denomination two the answer is no so
+we'll mark this entry as zero
+we can now make a sum of four by using a
+coin with a value of two rupee coins in
+only one way so we'll update one as the
+location changes
+in the same way we will update the
+entire row of coin denominations 2.
+now that we have a new coin with a
+denomination of 3
+we will have 1 trick if the coin value
+is greater than the sum
+simply copy the first values above
+for example if the coin value is 3 and
+the sum is 1 we will simply copy the
+value which is above which is 0.
+again the coin value is 3 and the sum is
+0 which is less than the current value
+so we will simply copy the value above
+which is 1.
+next
+we have sum of 3 and current value of 3
+that is not greater than 3 we will now
+proceed with those simple three steps
+if we exclude coin value 3 we simply
+copy the value above which is 0 and if
+we exclude coin value 3 we subtract that
+same row weight that 3 bitcoin value
+that is also 3
+which gives us 0 and what we
+have below weight 0 in the same row is 1
+so we will add both values that 0 and 1
+which gives us 1.
+next
+for sum 4 we exclude coin value 3 we
+must simply copy the value which is
+above which is one and by including
+three we must subtract the sum value
+which is four from the coin value which
+is three which gives on
+and what we have below some one in the
+same row is zero so we add zero and one
+which is one
+so in the same manner we will fill out
+all the entries for some five six seven
+and eight of three coin denominations
+now that we have coin value 5
+we use the same trick if coin value 5 is
+greater than the sum of 1 which is true
+we simply copy the values which are
+lying above the row so we have done for
+the first row that is 0 so by excluding
+coin value 5 and we are left with 2 and
+3 and what we have of coin 2 and 3 in
+the same row is 0 and 1 and the sum of 0
+and 1 which gives 1 and by including
+coin value 5 we have to subtract sum to
+coin value 5 which gives 0 and what we
+have below the sum of 0 of the same row
+which is 1 so 1 plus 1 gives 2 so we
+update the same
+the sum is now 6 and the coin value is
+also 5 so if we exclude coin the value 5
+we are left with 2 and 3 and
+what we have of coin 2 and 3 is the same
+row is 1 and 2
+and the sum of 1 and 2 which gives 3 and
+we include coin value 5.
+we have to subtract sum of
+6 with coin value 5
+which gives us 1 and what we have below
+the sum 1 of the same row which is 0 so
+sum of 3 plus 0 gives us 3 we will
+update the same
+so in the same manner we will fill out
+all the entries of sums of 7 and 8 of 5
+coin denominations
+so in the end we got 3 which is our
+answer indicating that we have a minimum
+of 3 ways to make the sum of eight using
+denomination coin value which is two
+three and five now in this video we will
+go over all the steps that we went to
+solving the coin change problem with
+dynamic programming first we had a 2d
+array named coin change which has i as
+the number of rows and j as the number
+of columns now in this algorithm we will
+have two for loops one for i and another
+for checking the values of columns
+within i that is true
+so the first loop runs from 0 to the
+maximum length of the coin
+which is the coin dot length and the
+second loop runs for the first column to
+the weight
+if coins of i are greater than j we
+simply copy coin change of i of j is
+equal to the coin change if i minus 1 of
+j otherwise we must apply the three step
+formula coin change of i of j is equal
+to coin change of i minus 1 of j plus
+coin change of i of j minus coin of i
+lastly we will see the practical
+implementation
+so on my screen you can see a program
+example for coin change problem
+first we finished all the necessary
+header files standard library standard
+library strings which all the strings
+are defined and the console input output
+library so first we have a function
+called collect which has an array called
+sum and two variables called m and n for
+number of coins and and number of weight
+so this is our first function
+so m is number of coins and n is the
+weight then in this function we declared
+four variables
+two counter variables and
+in variable for including the coin value
+and x variable for excluding the coin
+value then we declared our 2d array
+which is a coin change array in which we
+need n plus 1 rules because the coin
+change is built from the bottom up using
+base case 0.
+next we have two for loops one for row
+that will run until the coin length is
+reached and another for column that will
+run until the sum or weight is reached
+in this follow
+we will first include the coin value j
+we get the value after subtracting the j
+value from the coin value i
+if the coin value i is greater than 0 we
+simply assign the coin change of i minus
+the coin change of the same column
+if we exclude the coin value from this
+we have the condition that if jth value
+is greater than 1 we assign coin change
+of i of j minus one otherwise we assign
+zero alternatively simply return the
+coin change from m of m minus one
+next we have the main function in which
+we declare the array of coin values and
+assign the coin values of 2 3 and 5 then
+we have the same
+m variable in which we divide the coin
+and then we have variable n in which we
+have sum as 8 and finally we print the
+total number of coin combinations that
+sums up now
+let's quickly execute this program and
+see the output
+so there you go the program got
+successfully executed and we have the
+output over here
+and this example we considered is the
+same which one we have discussed before
+and the final value is 3 that you can
+see over here
+and you can see the answer as the total
+number of combinations of coins that sum
+up to value 8 is 3.
+let's get started with the topic what is
+floyd warshall algorithm the floyd
+washer algorithm is for solving the all
+pair shorted path problem
+the problem is to find the shortest
+distance between every pair of vertices
+in the given edge weighted directive
+graph
+now let's discuss the algorithmic
+solution to the all pairs shortest path
+problem
+first we will initialize the solution
+matrix the same as the input graph
+matrix
+then the solution matrix is then updated
+by treating all vertices as intermediate
+vertices
+our main goal is to pick all vertices
+one by one and update all shortest paths
+that involves the picked vertice as
+intermediate vertex
+we have now discussed the fluid partial
+algorithm and the algorithmic solution
+to all pair shortest path problem
+now let's implement the solution in the
+code editor choose from over 300
+in-demand skills and get access to 1000
+plus hours of video content for free
+visit scale up by simply learn click on
+the link in the description to know more
+we will start by defining vertices we
+will have four vertices so
+hashtag define inf which will be equal
+to 9999 now let's write a function to
+print the solution matrix
+so void
+print
+solution
+with the argument as
+int
+a two dimensional array
+test
+with its y as v
+we will come back to its definition
+later on
+now we will write a function to solve
+all pairs shortest path problem using
+floyd virtual algorithm so void
+floyd warshall
+and graph
+this will also be the 2d array
+which has y as v
+now we will define dist 2d array
+it will be the output matrix that will
+finally have the shortest distances
+between every pair of vertices
+so end
+test
+its x and y will be
+v
+comma i comma j comma k
+now we will initialize the solution
+matrix same as input graph matrix
+or we can say that the initial value of
+shortest distance are based on shortest
+paths considering no intermediate vertex
+so for
+i is equal to zero
+i less than capital v
+i
+plus plus
+another nested loop
+for
+j is equals to zero
+j less than v
+j plus plus
+so distance
+at i comma j
+will be equals to
+graph
+at i
+comma j now we will add all vertices one
+by one to the set of intermediate
+vertices so before start of an iteration
+we will have the shortest distances
+between all pairs of vertices such that
+the shortest distance considering all
+the vertices is set from 0 to k minus 1
+as intermediate vertices
+and after the end of an iteration vertex
+number
+k is added to the set of intermediate
+vertices
+and the set becomes from 0 to k
+so for loop
+k is equals to
+zero
+k less than v
+k plus plus
+now we will pick all vertices as source
+per one by one
+i is equals to zero
+i less than v
+i plus plus
+now we will pick all vertices as a
+destination for the above picture source
+so for
+j is equals to zero
+j less than capital v j
+plus plus
+now if vertex k is on the shortest path
+from i to j then we will update the
+value of distance i comma j
+so if
+distance
+at i
+comma j
+is greater than
+distance
+at i
+comma k
+plus
+distance at
+k
+comma j
+and
+distance
+at k
+comma j
+is not
+equals to inf
+and
+distance
+at
+i
+comma k
+is also not equals to
+inf
+then
+distance
+at i
+comma j
+will be equals to
+distance
+at
+i
+comma k
+plus
+distance
+at
+k
+comma j
+now we will call the print solution
+function
+for test
+now let's write the utility function to
+print solution so void print solution
+and
+test we will start with c out the
+following matrix will show
+the
+shortest distance
+between
+every
+pairs
+of vertices for loop and i is equals to
+zero i less than capital v
+i plus plus for loop
+and
+j is equal to zero
+j less than v
+j plus plus
+f
+distance
+at i
+comma j
+is equals to inf
+then we will see out
+inf
+else
+we will see out the distance at i
+comma j
+now we will see out
+and l
+this will change the row for the matrix
+now let's write the main block so we
+will define the matrix as int
+graph
+v comma v
+which will be equals to
+zero comma five
+comma
+i n f
+comma 10
+next row
+inf
+comma
+0 comma 3
+comma inf
+next row inf comma inf comma zero
+comma one
+last row inf
+comma inf
+comma
+inf comma zero
+now we will call the floyd virtual
+function so floyd
+warshall for argument graph let's
+execute this as you can see we are
+getting an updated matrix which shows
+the shortest distance between every pair
+of vertices
+so
+bellman ford algorithm solves the single
+shortest path problem when the edge
+weight can be negative without a
+negative cycle
+when some of the edges of the dedicated
+graph have negative weight the algorithm
+works correctly when some of the edges
+of the directed graph have negative
+weight this algorithm works correctly
+when there are no negative weight cycles
+we can determine the shortest path
+between source and destination
+the bellman ford algorithm detects and
+reports the presence of negative edge
+weight cycles in a graph based on the
+principle of relaxation more accurate
+values gradually recovered an
+approximation to the proper distance
+until finally reached the optimum
+solution after understanding what
+exactly is bellman ford algorithm
+we will now look into some of the steps
+followed by the bellman ford algorithm
+but let us look at one scenario given a
+weighted directed graph g
+is equals to v comma e that is vertices
+and edges and a weight function w the
+bellman ford algorithm returns a boolean
+value indicating whether a negative
+weight cycle can be obtained from the
+source or not
+if such a cycle exists the algorithm
+computes the shortest paths and their
+weights
+the algorithm returns true if a graph
+has no negative weight cycles that can
+be reached from the source
+let us start with the bellman ford steps
+for the algorithm and see how it works
+set the distance values of nodes to
+infinity except the source node in the
+first we must repeat the relaxation step
+v minus 1 times where v is the number of
+vertices
+so if we have an edge from u to v where
+u is the source node and v is the
+destination node then v will be updated
+with a new distance value of the
+distance of u plus the cost of the edge
+u v is less than the distance of v node
+otherwise we will not update it and we
+will skip it
+all vertices should be relaxed once more
+we have a negative edge weight cycle if
+we find a new shortest distance value
+otherwise we do not have a negative edge
+weight cycle and can return to the
+answer in the last step
+we have heard that the bellman force
+algorithm is used to detect a negative
+edge weight cycle in the graph for a
+long time
+let us see how the bellman ford
+algorithm detects a negative edge weight
+cycle in the graph
+let us assume that we have a graph with
+three vertices with initial value as
+infinity as the weight of the graph
+because this graph has three vertices we
+will relax at v minus one times that is
+two times
+in the first time of relaxation the
+weight from 0 to 1 is 2
+so the cost of
+0 to 1 will be 0 plus 2 which is equal
+to 2
+so because 2 is less than infinity we
+will replace infinity by 2
+now from 1 to 2 the cost will be 2 plus
+1 which is 3 which is less than infinity
+so that we will replace by infinity by 3
+after that we have got 2 to 0 the cost
+will be 3 plus minus 4 which is equals
+to -1 and as we know that minus 1 is
+less than 0 we will replace it 2.
+in the second time of relaxation the
+weight from 0 to 1 is 2
+so the cost from 0 to 1 will be -1 plus
+2 which is equals to 1 and 1 is less
+than 2 so we will replace 2 by 1. now
+from 0 to 1 we have the weight as 1 the
+cost will be 1 plus 1 which will be
+equals to 2 and we know that it is less
+than 3 so we will replace 3 by 2 finally
+from 2 to 0 we have weight as minus 4 so
+the cost will be 2 plus minus 4 which is
+equals to minus 2 and minus 2 is less
+than minus 1 so we will replace minus 1
+by minus 2.
+we have finished the first two types of
+relaxation so let us try the third time
+in the third time of relaxation we have
+the weight from 0 to 1 as 2 and the cost
+will be -2 plus 2 which is equals to 0
+and 0 is less than 1 so we will replace
+one by zero so after performing the
+third time we have minimum distance as
+zero which should not happen because we
+only had to relax it twice
+we must relax twice but after the third
+time we should find the shortest path
+but after the third time
+we have the smallest cost as 0 which
+should not happen indicating that there
+is a negative weight edge cycle present
+in the graph next we will see how the
+bellman ford algorithm works on an
+undirected graph
+let's learn this through an example
+here we have a graph of two vertices
+zero and 1. so
+when we go from undirected edge 0 to 1
+the cost will be calculated as 0 plus
+minus 1 which is equals to -1
+now from h 1 to 0.
+the edge will be minus 1 plus minus 1
+which is equivalent to minus 2. now
+again if we want to calculate the
+minimum cost it will be minus 2 plus
+minus 1 that is minus 3 and this will be
+turned as an infinite loop
+so here we come with the two points
+the bellman ford algorithm works only if
+all the edges are undirected graph are
+positive
+if an undirected graph has any negative
+edges the bellman ford algorithms fail
+to find a path for better understanding
+let's look at an example for bellman
+ford algorithm
+assume that we have a graph with 5
+vertices
+so we must perform relaxation v minus 1
+times that is
+5 minus 1 times that is 4. following
+that is a table in which we will update
+the minimum cost of the edges of this
+graph where the column is for vertices
+and edges is for the number of edges
+traversed next we have a list of edges
+that are 1 to 2 1 to 3
+2 to 4
+3 to 2
+3 to 4 3 to 5 and finally 4 to 5. from 1
+to 2 edge the cost will be 0 plus 5
+which is equal to 5 which is less than
+infinity so that we will replace it with
+5. from 1 to 3 edge the cost will be 0
+plus minus 1 which is also less than
+infinity so that will be replaced by -1
+now from 2 to 4 h
+we have the weight as -3 so the cost
+will be 5 plus minus 3 which is equals
+to 2 and 2 is less than infinity so we
+will replace it with 2 from 3 to 2 we
+have the weight of minus 2 so the cost
+will be minus 1 plus minus 2 which is
+calculated as -3 and -3 is less than 5
+so we will replace with minus 3.
+now
+from 3 to 4 we have weight as 6. so the
+cost will be
+minus 1 plus 6 which will be calculated
+as 5 but 5 is greater than 2 so we will
+not replace it
+now we have an edge of 3 to 5 where the
+weight is 3 and the cost is calculated
+as minus 1 plus 3 which is 2 and 2 is
+less than infinity finally we have an
+edge of 4 to 5 where the weight is 2 and
+the cost is calculated as 2 plus 2 which
+is 4 but
+4 is greater than 2 so we are not going
+to replace it
+so in the table of the first relaxation
+we will now update all the vertices with
+minimum cost now let us move into second
+relaxation from 1 to 2 edge the cost is
+0 plus 5 which is equals to 5 greater
+than minus 3 so we will not replace it
+from 1 to 3 h the cost is 0
+plus minus 1 which is equals to minus 1
+but we already have minus 1 as vertex
+number 3
+so we will not update it now we weigh
+minus 3 from the 2 to 4 edge so the cost
+is minus 3 plus minus 3 which is equals
+to -6 and minus 6 is less than 2 so we
+will replace it by
+minus 6
+from 3 to 2 we have the weight of minus
+2 so the cost will be
+minus 1 plus minus 2 which is equals to
+minus 3 and minus -3 is already there
+so we won't update it
+now that we weigh 6 from 3 to 4 the cost
+will be -1 plus 6 which is calculated as
+5 but 5 is greater than minus 6 so we
+will not be replacing it
+now we have 3 to 5 edge where the weight
+is 3 and the cost is calculated as -1
+plus 3 which is equals to 2
+and 2 is already there so we won't
+update it finally we have a 4 to 5 edge
+where the weight is 2 and the cos is
+calculated as -6 plus 2 which is equals
+to -4 and minus 4 is less than 2
+so
+we will replace minus 4 by 2. so in the
+table of second relaxation
+we will update all the vertices with
+minimum cost now let us move to third
+relaxation stage from
+edge 1 to 2 the cost is 0 plus 5 which
+equals 5 which is greater than minus 3
+so we will not replace it
+from the edge 1 to 3 the weight is -1
+and the cost is estimated as 0 plus
+minus 1 which equals minus 1 but we
+already have minus 1 as vertex number 3
+so we will not update it
+now we have weight -3 from the edge 2 to
+4 so the cost is minus 3 plus minus 3
+which equals to minus 6 and minus 6 is
+already there so we will not update it
+from 3 to 2 we have the weight as -2 so
+the cost will be minus 1 plus minus 2
+which equals to minus 3 and minus 3 is
+already there so we won't update it
+now that we weigh 6 from 3 to 4 h the
+cost will be minus 1 plus 6 which is
+calculated as 5 but the value of 5 is
+greater than minus 6 so we will not
+replace it now we have the edge 3 to 5
+with the weight as three and the cost is
+calculated as minus one plus three which
+is equals to two and two is already
+there so we won't update it
+finally we have a
+four two five edge where the weight is 2
+and the cost is calculated as minus 6
+plus 2 and it is -4 and minus 4 is
+already there so we will not do anything
+so in the table of third relaxation we
+will now update all the vertices with
+minimum cost
+as we can see we got the exact minimum
+cost for the third relaxation as we did
+for the second which means we will get
+the actual minimum cost for the fourth
+time of relaxation
+and now we have calculated the minimum
+cost of all the edges
+following that we will examine the
+complexity of bellman ford's algorithm
+the bellman ford algorithm finds the
+shortest path in a weighted diagraph
+from one source vertex to all the
+vertices
+bellman ford is more straightforward
+than the dystra's algorithm used to find
+the shortest path between two nodes in a
+graph and works well in distributed
+systems
+however the time complexity of bellman
+ford algorithm is o of v into e which is
+greater than that of the distrust
+algorithm because we are relaxing the
+edges e number by v minus 1 times where
+b is the number of vertices now these
+were the complexities of bellman ford
+algorithm now let us get into practical
+mode where we will be executing an
+example based on bellman ford algorithm
+now on my screen you can see an example
+based on bellman ford algorithm
+first we finished all the necessary
+header files standard input output
+standard library string and all the
+console input output libraries then
+using the struct keyword we created an
+edge this structure is equivalent to an
+edge there are two endpoints to an edge
+because these are directed graphs they
+include the src as the source and desd
+as destination and some wt as weight
+where three components of the structure
+are as follows
+next we use the struct keyword to create
+a graph with two variables v and e where
+v is the number of vertices and e is the
+number of edges we also made an edge and
+this structure contains another
+structure edge which we had previously
+created
+now we have created a function called
+design graph which contains v and e
+using the malloc function we created a
+graph in this function
+we assign v and e values to the
+structure elements obtained from the
+user in this graph then we make an edge
+and return the graph now we have created
+a solution which is a function and this
+function prints the final solution too
+we print the distance from source vertex
+for this we make a loop from 0 to
+variable n and print the distance
+then we created the bellman ford
+algorithm function with graph and source
+variables as parameters and we assign
+the vertices and edges to the graph
+again finally we make an array called
+save distance with size as a vertex
+after that we declare two counter
+variables i and g
+after that we run a loop from 0 to the
+number of vertices and in this loop we
+set all distances to infinity except the
+source which is set to 0.
+now we run a loop from 1 to v minus 1
+times followed by another loop for the
+edges and we've declared three variables
+u where we assign the graph source
+v where we assign the graphs destination
+and wt where we assign the graphs weight
+now we have a condition that if the
+distance of the source node and the
+weight of the uv edge is less than the
+distance of the destination node we
+update the destination node to be the
+distance the source node plus the weight
+of the uv edge
+now we run a loop from 0 to the graphs
+edge uv and assign all source
+destination and weight of the graph and
+we have the condition f the distance of
+vertex plus the edge of uv is less than
+the distance of destination vertex then
+we print a graph obtaining a negative
+edge cycle and call the solution
+function and return it finally we have
+the main function in which we have
+defined three variables as v e and s
+where v is the number of vertices e is
+the number of edges and s is the source
+vertex and we ask the user to print the
+number of vertices edges and source
+vertex after which we call the design
+graph function which prints the source
+destination and weight respectively and
+finally we call the bellman ford
+algorithm function to implement the
+bellman ford algorithm
+now i hope i made myself clear with the
+code let's try to run this code quickly
+and see the output
+so to run this code we might want to
+press on the execute button now let's
+press the compile and run option
+now you can see that the code got
+successfully executed and now it is
+asking for input now we will consider
+the same example that we have seen in
+the ppt which is this particular example
+with five vertices and seven edges and
+all the weights which are present in
+this particular image now let's get back
+to the output window and try to provide
+the inputs
+so
+enter the number of vertices in graph so
+we have 5 vertices in this particular
+graph as you can see we have 5 vertices
+and enter the number of edges in the
+graph so let's count the edges so 1 2
+3
+4
+5
+6 and 7. so we have 7 edges in the graph
+now enter the source vertex number
+so the source vertex number is one so
+let us provide one
+now enter the edge
+one properties
+so we have to enter the source of the
+edge one its destination and its weight
+respectively so here we have the first
+uh
+edge that is one to two so the source is
+one and the destination is 2 and the
+weight is 5. so we have to enter 1 2 and
+5 and so on
+so the source is 1
+destination is 2 and weight is 5.
+now it will ask for the next edge that
+is edge 2 let us finish all the edges
+from vertex 1 so again
+we will provide the source as 1
+and destination as
+3
+so the weight is -1 now
+enter the edge 3 properties now let us
+go to the vertex 2. so from vertex 2 we
+have just one edge which is going
+towards 4 let us enter the data source
+is 2
+destination is 4 and weight is -3 so let
+us go to the next vertex that is 3 so
+from 3 we have 3 edges so let us enter
+the data 3
+and
+the first destination is 2 with weight
+minus 2 now the source will be 3 again
+this time it is going towards 4 with
+weight 6. another last edge that is from
+source 3 to destination 5 with weight
+three
+now the seventh edge
+that is four to five so the
+source is four destination is five and
+the weight is two
+so let's enter and we will have our
+answer so the vertex distance from the
+source vertex is
+here you can see the answers so from 1
+we have 0
+and from 2 we have minus 3
+that is here
+and from
+3 we have minus 1 which is over here and
+from 4 we have minus 6 which is over
+here
+and this is how you get the result for
+bellman ford's algorithm and this is how
+you implement it
+the tower of hanoi is a mathematical
+puzzle made up of three towers and
+multiple rings arranged in ascending
+order of their diameters the number of
+rods or tower is fixed whereas the
+number of rings can be changed by the
+player
+the setup of this game looks something
+like this there are three towers in this
+diagram and one of the tower is decked
+with several number of discs or rings
+such that the largest disc is at the
+bottom and the smallest desk is at the
+top
+a player's goal is to move these discs
+one at a time to a particular
+destination tower in the same specific
+configuration at the start that means
+the order of disk should not be changed
+after being transferred to the
+destination tower
+before you get ahead of yourself and
+deem this problem to be trivial there is
+one crucial aspect to consider
+in this problem you are not allowed to
+transfer a larger disk on the top of a
+smaller disk at any stage
+this rule makes solving this problem
+substantially difficult however this
+problem can be solved using the
+auxiliary tower or helper tower by
+altering the position of disk using
+three towers we can take all the disks
+present at source forward to the
+destination tower this is quite
+confusing right
+so to make this understandable to all of
+you let me give you a rough example in
+this tower of another problem we have
+three rings at the source tower now to
+attain the same sequence at the
+destination tower will move the top two
+rings to the helper tower
+after that we can move a ring with
+highest diameter to the destination
+tower
+now if we just move the two rings
+present at the helper tower to the
+destination tower will solve our problem
+but let me tell you guys that this
+explanation was just to make you
+visualize this problem more
+straightforward manner in reality this
+problem becomes more complex when the
+rules for the movement of rings are
+applied
+so moving forward let's look at those
+rules for ring movement in the tower of
+ana problem
+the first rule that we have is that any
+instance only one disk can be moved from
+the tower that means we cannot move more
+than one disk at a time
+the next rule on our list conveys that a
+disk can only be moved if it is the
+uppermost disk of the stack
+the last and essential rule is no disk
+should be placed on the top of another
+disk that is smaller in size
+so let's look at another tower of ni
+problem to build solution using these
+setup rules
+in this problem we have four disks to
+increase our problems complexity whereas
+the number of towers remain the same
+in order to formulate the solution we
+are allowed to move these rings into
+different towers so the first move we
+are supposed to do is moving the orange
+disk to the helper tower
+next we can move green disk to the
+destination tower and after that we can
+move the orange disc to the destination
+tower
+we'll place this orange disc over the
+green disk
+now our helper tower is empty so let's
+take out our yellow ring from the source
+tower to the helper tower
+now we'll move the orange ring to the
+source tower
+further we'll move green ring to the
+helper tower
+this movement will make our destination
+tower empty so that we can bring this
+larger disk to it
+next we'll move orange ring to the
+helper tower this move will make room
+for the transfer of largest disk to the
+destination top
+now
+we have brought our largest disk to the
+destination tower however we still need
+to bring three more discs to our
+destination tower in order to solve this
+toh problem
+and to do that here we'll move orange
+ring to the destination tower and the
+green ring to the source tower
+after that we'll move orange ring to the
+source tower in order to bring the
+second largest
+ring to our destination door here we
+have successfully placed two rings at
+the destination tower now we only left
+with arrangement of two more rings to
+attain that here we'll move orange ring
+to the helper tower
+and green ring to the destination tower
+finally we'll move orange ring to the
+destination tower
+and this is how we land that accurate
+solution to our tower of hana problem if
+you observe this process you'll get that
+the process of ring movement is of
+recursive nature and we can develop a
+solution to this problem using recursive
+programming paradigm
+so moving ahead we'll develop a program
+to implement a solution to the store of
+hana problem
+the language that we are going to use
+for this implementation is c programming
+language
+so without wasting any time let's move
+to the code editor
+here to begin with our tour of our
+implementation
+let's first create an utility function
+named toh
+so we'll do that void
+toh
+and inside this function will pass few
+arguments the first argument will pass
+to this function will be the number of
+rings in our toh problem so let's call
+that variable n
+and the subsequent arguments will be the
+source tower destination tower and
+helper tool all these three arguments
+will be of character data type as we
+want to pass the names of towers here so
+we'll create
+care
+source
+next
+care
+destination
+and care
+helper
+next now inside this function body will
+make recursive call to the same function
+in order to move the disk
+inside this recursive call will tell our
+ide to move n minus 1 disk from source
+tower to the helper tower
+and to do that the statement that we'll
+write is
+toh
+mo n minus 1 disk
+that is this
+n
+next will be the source
+then helper
+underscore t which will act as
+destination here
+and
+destination power will act as an
+helper tower
+so basically this call is nothing but
+these arguments over here
+this recursive call will allow n minus 1
+rings to move from source tower to the
+helper tower by taking the help of
+destination tower so by using this
+statement we have moved n minus 1 rings
+from source to the helper tower
+next what we'll do is we want to print
+all these movements covered by this
+function
+hence let's create a format for printing
+the disk movement using printf function
+the format that we'll use is
+printf
+we'll add slash n
+next
+move
+disk
+modulus d
+from
+tower
+modulus c
+to
+our
+modulus
+c
+and after this by taking comma we'll
+pass arguments
+the first will be modulus d that is
+number of tower
+next will be the source
+and after that it will be destination
+so by moving n minus one disk to the
+helper tower we have made space for
+moving the largest disk to the
+destination top and next we'll have to
+move this n minus one rings to the
+destination tower from the helper tower
+by using the source node
+so
+for that we'll write another recursive
+call toh
+n minus one
+comma helper underscore t will act as
+source now
+and destination
+will act as destination
+whereas source
+will act as
+helper toggle
+now what will be the base case for this
+recursive function well it's pretty easy
+the recursive call we are making is
+actually decreasing the disk number that
+is n minus 1 and thus after few
+iteration the value of n will become 0
+and when it reaches 0 we want to stop
+our recursion so our base condition will
+be
+f
+n
+becomes equal to 0
+we will
+return the control to the next function
+so with this we have successfully
+created our tor of enable function next
+we'll move to our driver method that is
+main method in order to contemplate the
+toh function
+so what we'll do is we'll pass
+arguments to toh function
+the number of rings that we are going to
+use for this problem will be 4
+and let's call our towers as
+a
+then b
+and
+c
+and return 0
+now let's check if our code works fine
+or not
+okay so we are getting one error over
+here semicolon missing
+okay so let's add that semicolon and
+re-run our code
+okay so we have received output here
+the output is 15 steps that we have
+discussed earlier for the four ring stoh
+problem
+and that output is what we have received
+here that means our program works
+accurately you can verify this output by
+matching these movements with the
+previous solution that we have discussed
+earlier
+the only thing to note here is that the
+tower b is acting as destination tower a
+is acting as source and tower c is
+acting as helper tower
+i hope you guys are clear with tour of
+henry implementation now
+this is all about tower of hana
+implementation using c programming
+language
+with that we have come to an end of this
+session on dynamic programming i hope
+the session was informative and
+interesting if you have any queries
+regarding any of the topics covered in
+this session or if you need the quotes
+executed in this session then please
+feel free to let us know in the comment
+section below and our team of experts
+will be happy to resolve all your
+queries at the earliest until next time
+thank you stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

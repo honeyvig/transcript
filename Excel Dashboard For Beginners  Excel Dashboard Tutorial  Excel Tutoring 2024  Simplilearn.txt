@@ -1,0 +1,418 @@
+everyone welcome to Simply learns
+YouTube channel today we will learn
+about building an interactive dashboard
+in Excel that said if these are the type
+of videos you'd like to watch then hit
+that like And subscribe buttons and the
+bell icon to get notified just for a
+quick info if you want to upscale
+yourself master data analytics and land
+your dream job or grow in your career
+then you must explore simply learn SC of
+various data analytics programs simply
+learn offers postgraduate programs from
+P University in collaboration with IBM
+through this program you will gain
+knowledge and work ready expertise in
+skills like prescriptive and Predictive
+Analytics regression classification and
+over a dozen others that's not all you
+also get the opportunity to work on
+multiple projects and learn from
+industry experts in Top Tire product
+companies and academic from top
+universities after completing these
+courses thousands of Learners have
+transitioned into a data analytics role
+as a fresher or moved onto a higher pay
+job profile if you are passionate about
+making your career in this field make
+sure to check out the link in the pin
+comment and description box to find a
+data analytics program that feds your
+experience and areas of Interest now
+without further delay let's get started
+with building an interactive dashboard
+in Excel so window here we have some
+data set so we have uh row ID order ID
+order date Shi date Etc so these are the
+rows over here
+let's quickly select the entire dat set
+and remove any filters that we have so
+the filters is gone and uh at the last
+you can see country region product
+category subcategory and extending
+further we have sales data quantity
+ordered discount and profit so now let's
+proceed and try to build one single
+dashboard okay now imagine yourself in a
+situation where you're working for this
+particular you know uh
+store or a company which sells products
+and you have a team meeting with
+leadership and you are supposed to be
+hunting for simplicities in complexities
+and you need to present an interactive
+dashboard which gives a visual
+representation of what exactly is
+happening with the company the sales the
+quantity order profit Etc right and if
+you show this particular data set as it
+is in the form of named rows and columns
+your leadership might not be able to
+understand it or they might not be able
+to justify what exactly needs to be done
+in the future to keep the numberers same
+or improve the sales right so in that
+scenario an interactive dashboard could
+be beneficial so in today's session
+we're going to create the scene and
+creating a chart that is an interactive
+chart or a dashboard which is
+interactive everything lies on one
+single point that is the pivot tables
+and pivot chart charts if you're good
+with pivot tables and pivot charts you
+can create interactive charts you can
+create interactive dashboards and much
+more so the process is simple but in
+case if you need a quick overview of how
+exactly a pivot table is created or
+performed then you can check out the
+link in the description box below which
+will give you a complete detailed
+description and to understand how to
+create a pivot table and a pivot chart
+in real time and move further right now
+we will continue with this particular
+topic for today which is creating a
+dashboard now click anywhere in the cell
+select the entire data set using contr a
+and go to insert option over here and
+choose pivot table right from the table
+range should be the option here you can
+see the table range has been selected
+and uh you also have two more options
+which will help you understand where
+exactly to create your paper table so we
+will be creating that in a new worksheet
+so click on a new worksheet and press
+okay there you go you have the puiv you
+know table here and let's say we want a
+few charts so here we have region wise
+sales country wise sales and shipment
+majorly used
+subcategory uh category segment and
+let's say we also want quantity wise
+country and quantity
+right or let's say Okay country and
+quantity so how many number of orders
+basically you receive from each country
+right so let's say we want all these
+charts now how many number of charts do
+we have one 2 3 4 5 6 and 7 remember
+creating a chart which is interactive
+relies on pivot table now so far we have
+created one pivot table or one pivot
+chart or one p pivot sheet but we want
+seven pivot charts how to do that it's
+really simple just hold control and drag
+that sheet and you have a new pivot
+chart right you can do that few more
+times seven so we have seven pivot
+tables as we required there you go and
+now let's get back to the first sheet
+and let's see the first option we are
+looking for so we want region wise sales
+right we have a five different regions
+north south east west and Central and we
+want region ycs in a pictorial way for
+that let's go to the options over here
+we have the row uh names or the metadata
+you can drag region into either columns
+or rows wherever you want I'll Cho just
+drag and drop it in the columns and now
+go back to sales and you can drag sales
+to rows values sorry sales and each
+region right now you can go back to this
+particular pivot table go to home
+eliminate any and go to pivot table
+analyze and here you can see pivot chart
+click on that and now you have uh all
+charts window on your uh desktop I mean
+screen you can choose the one which you
+uh feel is good right so I'll prefer a
+bar chart column chart here click on
+okay and there you go now you can edit
+this particular data set and chart and
+you can also remove any of the things
+you don't want so for for example I
+don't want Legends so I'll remove
+Legends and uh this is what I have here
+you can also edit from a few more things
+right now I can simply copy this
+particular chart and go to the dashboard
+so let's create a new sheet and name it
+as dashboard
+mergin Center can add a
+color now here you can paste the first
+chart now you can rename
+this chart title so you can rename this
+as region
+wise sales so therefore you have the
+first chart we here you can also so
+increase or decrease the size of the
+chart by just dragging the corner points
+and uh let's go to the second pivot
+table we have the second pivot table
+right here what was our second
+request the second request was country
+wise right now close this use the
+country and drag it to columns or rows
+let's go with rows this time and sales
+so go to pivot table analyze pivot table
+chart and here you can choose a py chart
+since you're going with the country wise
+and click
+okay now you have
+the by chart over here you can rename
+that as country
+wise you can copy
+this and paste it onto the
+dashboard in case you want to you know
+uh keep the size of the pie chart and
+the column chart in the same uh you know
+width and height you can do that just go
+to uh format here you can 5.6 and it can
+be 9.9 and similarly you can go with
+5.6 this can be
+9.9 just so that you can accommodate a
+few more chats in the uh dashboard you
+can align them there you go right now
+our next request is subcategory shipment
+sorry so go to shipment so this is the
+fifth uh sheet so we need to go to the
+third spreadsheet where where is where
+we have the pivot table so close the
+format shape and we have shipment here
+ship mode so select the ship mode drag
+it to rows or columns sales to here and
+we have uh or you can count it right you
+can change it to count okay so you have
+standard class with the highest number
+of um you know sales happening so many
+sales which are happening in your store
+choose the standard class of shipment
+right so very least people choose first
+class where or same day shipment which
+is highly expensive and standard ship
+equ M will take minimum pricing and most
+of the customers have chosen that now
+you can choose the same data here go to
+pivot table analyze and here we have
+pivot charts and of this you can select
+anyone let's say if you want to go with
+the tree map or if you want to go with
+the bar or anyone you can go with
+that so let's go with the bar graph
+press okay and here you're create
+now rename this particular chart as ship
+mode now you can copy the same chart and
+press a paste it onto the
+dashboard can close that if you go to
+format you can do the same
+setting 5.9 and
+9.9 4.6 and 9.9 there you go you have
+everything lined up and this this space
+that we have over here we can add a few
+more things which will come under
+slicers and filters so we'll have to
+wait for that until we can finish the
+rest of the charts now we will go to the
+fourth
+sheet so what was the fourth request
+let's check our list here so subcategory
+wise sales now we can check the
+categories subcategories over here yeah
+we have the sub category select that and
+track to rows or columns and sales to
+values okay and there you go and if you
+want to sort you can also sort by right
+clicking and uh sort it to minimum
+smallest lar largest to smallest there
+you go so the highest number of sales
+are happening through mobile phones next
+comes the book cases next come copers
+etc etc now select this and go to viiv
+table Analyze This deliv chart and you
+can choose any one of those we can go
+bar chart or the column chart and you
+can also rename this as subcategory
+wise you can copy
+it paste it on the dashboard and you can
+also make few Arrangements if you want
+you can resize
+it 5.6 and this will be
+9.9 the next request is the category
+wise sales and
+segment so we have the category here
+drag it to rows and sales here you can
+keep it the way it is or you can go to
+Pivot analyze and here go to
+charts choose the one you want and
+proceed copy it and go to dashboard we
+can paste it over
+here there you
+go country wise and segment
+quantity so now you have country over
+here like a country to rows and sales to
+columns or you can yeah let's go with
+sales since this is a sales dashboard
+this should be beneficial now we have uh
+we can also sort it again sort to
+largest to smallest and we have from CH
+with the highest number of sales I can
+copy that or go to pivot table analyze
+and here pivot chart you can go
+with by
+chart you can rename it as country
+wise there you go and copy this paste it
+on the
+dashboard I think we already did a
+country wise sales so I think we can
+proceed with the next next type of uh
+chart which is segment
+wise let's go to the same sheet have we
+created the country wise sales and close
+the format delete the chart instead of
+country we can select segment so which
+segment has the highest number of
+sales past it over here format to adjust
+the size of the
+chart there you
+go so we have region wise sales
+country-wise sales ship mode subcategory
+wise category wise and segment wise
+sales now we have a dashboard but to
+make it a little more interactive we
+might require a few filter like options
+which are also called as slices so when
+you add slices onto the sheet or the
+dashboard what you can do was you can
+select the options you want let's say I
+want the region wise sales in Belgium
+and you can identify that let's say you
+want Australia's or Austria's shipment
+modes what kind of shipment mode is most
+used in Austria you can you can find out
+it and let's say you want to find out
+the Finland segment wise sales then you
+can find out this is only possible when
+you try to include a slicer into the
+dashboard now let's go ahead with it now
+if you select any of the charts let's
+say I want to go with the first one now
+go into insert and here you can see
+filter options right so here you want to
+insert slices now here you have a slices
+right now okay so you can select the
+slicer you want so I want the slicer for
+region I want the slicer for Country I
+want the slicer for ship mode which is
+right here and I want subcategory wise
+slicer I want country or category wise
+slicer so category and segment wise
+which is here so I want six slices there
+you go I've got the six slices created
+let's minimize to make it look a little
+more better there you go and uh we will
+paste the slice is right here you can
+also you know modify the size of the
+slices let's try to make them fit here
+and uh the next one should be right
+here there you
+go now let's drag this
+here the last Slicer in the last
+section there you go now we have one
+dashboard but is it interactive I guess
+not so how to make it completely
+interactive so you might have a doubt
+let's say I want to click on machines
+now only one out of the six charts is
+you know uh reacting let's say I want to
+click on papers it is giving me the data
+for phones and Etc and if I click for
+Belgium you can see only one chart is
+being interactive right now what should
+I do so that every chart which is on the
+dashboard gets completely interactive
+and shows all the data in real time that
+can be done all you have to do is select
+any of the uh slices right click and go
+to the option which says report
+connections so select all the pivot
+tables pivot table which are present in
+your uh chart right now sheet one sheet
+two sheet three sheet four sheet Five
+sheet six and Sheet 7 press okay now all
+the charts are interconnected with each
+other and now if you click on any one of
+the options let's say I want the data
+for Austria country and every data
+changes
+correct report connections you need to
+do that with all the
+slices press okay there you go now if
+you select
+Finland Denmark Austria you can see the
+charts are changing right every chart is
+now interactive so that's exactly how
+you create an interactive dashboard now
+you might be having a doubt okay it's
+working for the existing data but what
+if I add some new data so here we have
+data until 2022 and this is the new data
+until 202 3 now if I add this particular
+data to the end of this particular data
+set WR here and remove the row
+heads and go back to dashboard go to PIV
+chart yeah on data dashboard we need to
+go to data and here click on refresh all
+then you will get the updated data set
+and now you have the updated results as
+well and with that we have come to an
+end of the session on sales dashboard in
+Excel or realtime interactive dashboard
+using Excel and if you have any queries
+regarding any of the topics covered in
+this session or if you require the data
+set or the resources that we used in the
+session then please do let us know in
+the comment section below and RT of
+experts we'll be happy to resolve all
+your queries at the earliest until next
+time thank you for watching and stay
+tuned for more from Simply learn
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in collabor
+oration with leading universities and
+top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

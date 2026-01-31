@@ -1,0 +1,91 @@
+hey traders let me show you everything
+you need to know about for loops in pine
+script in two minutes and 45 seconds for
+loop structure looks like this you first
+need to use the four keyword operator
+obviously and then we need to declare a
+counter variable you can call this
+anything and it's only accessible within
+the scope of this for loop the next
+thing to do is assign this counter an
+initial value so we'll start with zero
+then we need to tell panscript what to
+count up to so for this example let's
+just put in 10. this could also be a
+negative number to count backwards so
+for example we could count from 10
+to zero and now this for loop would
+count backwards but i'll leave it as
+that for now the next optional feature
+of a for loop is that we can tell pine
+what increment to loop by so for example
+if i put two in there this for loop
+would now skip every odd number but i'll
+leave that out for now and we'll just
+count by increments of one now for this
+example let's count how many green bars
+were plotted over this look back period
+to do that we can use our counter as our
+historical operator so if the close of
+the current loop is greater than the
+open of the current loop we have a
+bullish bar we can create a new variable
+here called green candles equals zero
+and increment that variable
+by one whenever this condition is met
+now if i paste this into our plot save
+my script we should be counting how many
+green bars there were across the past 11
+bars we could also turn these numbers
+into user inputs so i could say look
+back equals input dot integer
+10 paste that in there and this will do
+exactly the same thing so that is a for
+loop in a nutshell let me show you two
+other features we have to work with when
+using for loops one way we could achieve
+this same outcome is by using a continue
+clause and now we'll be counting red
+candles because every time a bullish
+candle is detected in our for loop the
+for loop will skip this loop and move on
+to the next loop so if this condition is
+not met and we do not continue then we
+will increment our red candles counter
+by one so if i save our script we should
+be getting a different counter up here
+now there we go now one last operator
+keyword operator we have to work with is
+the break operator and what this does is
+break out of our for loop whenever this
+condition is meant so essentially what
+this will now do if i save my script is
+it will count how many red bars plotted
+onto my chart in a row and then whenever
+a green bar is detected our loop will
+exit so now when i save my code we are
+now counting how many consecutive red
+bars plotted onto our chart in a row
+until a green bar is detected now one
+last thing i want to bring to your
+attention is that we can also use a for
+loop to return a value much like a
+custom function so if i change this to
+say loop count is assigned our for loop
+and i get rid of all this code and i
+just put in our counter variable here if
+we plot this loop count variable onto
+the chart we should be getting 10
+because our for loop is counting up to
+10 and then returning that counter
+variable and then we're assigning this
+variable to whatever this for loop
+outputs so now when i save my code we
+should be getting 10 drawing there we go
+and that is one of the way we can use a
+for loop to return a value and that's
+about all you need to know about for
+loops good luck with your trading and
+coding if you want to learn more check
+out my website the link is in the video
+description take care

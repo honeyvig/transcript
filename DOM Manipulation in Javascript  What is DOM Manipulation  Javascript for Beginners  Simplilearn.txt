@@ -1,0 +1,504 @@
+foreign
+and welcome back to another video by
+simply learn this is anubhub and in this
+video on Dom manipulation we will cover
+how to use JavaScript to manipulate the
+document object model of an HTML page so
+let's begin but before that if you want
+to become a software developer consider
+this Kel-Tec postgraduate program in
+full stack web development by simply
+learn and master those necessity skills
+check out the link in the description
+for more details you can also call on
+the numbers that are given below to know
+more about the program so do check it
+out now let's jump to our video
+let's start this with a quick overview
+of what the Dom is so the Dom is a tree
+like structure that represents the
+elements on a HTML page each element on
+the page is represented as a node in a
+Dom tree I'll explain it to you in a
+while we'll giving an example also by
+manipulating the node in the Dom tree we
+can dynamically change the content and
+layout of a HTML page to get started
+with dom manipulation we first need to
+access the Dom tree okay we can do this
+by using JavaScript document object
+and the document object represents the
+entire HTML document and we can use it
+to access and manipulate any an event on
+the page
+now as you know Dom is like a tree for
+example it's like one document which is
+an HTML then that HTML page is divided
+into two parts head and body now inside
+the head element there is meta tag then
+there is title then comes links and all
+okay in the head part then in the next
+node if you imagine one tree I'll
+explain you just a second
+I'll write down and inside here I'll
+find any image yeah
+so I want to make this image big
+okay
+so as you can see here there is one
+document which is a page in HTML there
+is head body and in head there is meta
+tag title links we add in that head part
+and in body we add H1 H2 which is
+heading tags and we also add paragraph
+tags and so many other tags okay
+now we'll work on the
+document object model and we'll start
+with adding element to the page
+okay
+so let's cut this and start working
+on
+now let's create a boiler code for that
+I'll press Ctrl and one shift N1 sorry
+and then one Boiler code is
+created for us here I'll write Dom
+manipulation
+okay
+and here I'll add one script Dot
+okay
+inside that script tag I'll give a
+source
+and I'll give this source as script dot
+JS that we just created for us
+okay this file
+and here I'll write
+differ
+because it can differ Also let's close
+this one and
+inside the body
+I'll write some text for now to check
+whether it's working or not
+hello from Simply love
+let's save it and have installed this
+awesome
+live server extension you can also
+install it on your system it's very easy
+just press here and install and we'll
+get installing your system
+so after that you can just right click
+here and here you will find one option
+open with live server just click on that
+and one
+page will get opened with the title that
+we have added and here is
+hello from Simply learn so page is
+working completely fine
+so there are two different functions to
+add the elements to our page
+so let's open the script page add page
+and here we'll write
+const
+ant body
+and here we'll write document
+after that
+will append it so I'll tell you about
+this too so there is one append
+and as you can see there are two methods
+append and append check I'll tell you
+about both of them so first we'll see
+about
+pen first
+here I'll write hello from
+simply learn
+so this append only takes up the string
+elements okay
+so and a pen child doesn't take the
+string it takes the node well I'll
+explain it to you in a while let's save
+it and as you can see it's showing hello
+from Simply learn but now I'll write
+here append child function
+and whenever I'll click save there is
+nothing here it's because
+I'll inspect and tell you more about it
+me
+open my console first as you can see
+it's showing an error that it failed to
+execute a pentylon node parameter one is
+not the type node so as I have already
+told you it doesn't take the app engine
+these both append and open child Works
+similar very similar but I always use a
+pen more Whenever there is a need of a
+pen child I'll use that whenever it's a
+node and all but
+you can also work on append so this is
+about how to add the element
+okay
+now we'll see how to create a element
+okay as we got to know how to add that
+now we'll see how to create a element
+for that we'll write document dot create
+element
+it will pass the type of element that
+you want to
+add so there are all the type of HTML
+tags that we can add okay
+so let's add developer
+and we'll write here
+we'll save it nothing is going to happen
+right
+we can't find any element because we
+have created our element but we haven't
+added
+it inside our main page
+okay
+so
+so creating anything in JavaScript is
+very different
+[Music]
+in creating a page right
+so let's move forward and append the
+depth
+okay
+now you will see the dev in the body
+part okay
+and as you can see there
+you will find the let's
+maximize this page so we can get the
+now inside the body
+you will find the div but it's empty
+right now because we haven't added
+anything inside the dev we can add that
+surely
+so we'll do that
+div dot entity text
+hello from
+simply them
+or we can also write
+[Music]
+subscribe to Simply learn okay you know
+I'll save it as you can see there you
+will find
+there is no
+nothing working it's an error not
+thinking an issue we'll find that div
+because you will
+you will find that
+div inside this right this is a
+Mainframe inside this there is an ID and
+all right
+so let's now print something on the
+screen right
+so for that I'm gonna
+add
+or change this inner text
+or we can also write the line and we can
+comment this
+and we will write Dev Dot
+text content
+and I will write
+like
+is
+reading
+and we'll save it and you will see
+this okay this is not working
+okay we can start this over again
+there is one error here let me check
+okay
+here we go yeah
+so let's just open this one go live
+yeah as you can see it's
+showing like this video
+now
+we'll see how to modify the
+element
+so we can modify the text from by using
+so many other functions also we can add
+here it like using text content and all
+by using this
+we can add and modify the text right
+as of now we are seeing modify element
+text for let's see
+I'll open my HTML page and inside the
+body I'll take
+span
+and like a ride
+like
+another
+YouTube
+right right it's just a dummy text
+so as you can see it's showing
+like simply learn YouTube like this
+video because of that
+this script tag so let's comment it down
+for now
+okay
+and
+let's see
+it's like simple on YouTube
+okay
+or you can write hello for making sense
+okay
+now if I want to give okay we'll
+change this from
+give some styling to this simple
+to modify element text we are seeing it
+right
+so here we'll write Style
+and inside the style I'm going to write
+display
+and inside the display I'm going to
+write
+none
+and
+now let's save this file
+and go to script
+dot JS and here we'll create one const
+div again and give it a document
+dot query selector
+inside the query selector will give that
+a tip okay
+now here we'll see two different things
+now okay
+so let's see the text content and inner
+text what the difference in this
+modifying element text okay
+so we'll write log
+and here we will write Dev Dot
+text content
+the text content is all the text that
+present in my body
+and
+console
+DOT log
+and here I will give it as inner
+text
+so let's save it and see what's the
+difference it is showing only hello from
+which is this one it's not showing me
+this one because I have style it to
+display none I have told it specifically
+to make this simply learn invisible in
+our screen so that's why it's doing this
+so let's check what's the issue
+or what's the difference okay so here
+I'll open my console
+and it's my console you can see can't
+read properties of null
+okay
+so this is because as we have written
+here that we want
+spam say hello from that it is showing
+on our console page but it's not showing
+this simply learn because we have
+specifically given the property that we
+don't want this to be displayed on the
+screen so in that these the difference
+between these two inner text and text
+content the text content will print all
+the text that present here hello from
+Simply learn but
+this inner text will only print the
+hello from
+as that you can see on the screen so
+this is the main difference between the
+text okay
+now we will see how to modify HTML
+elements or how to add the HTML inside
+the script so for that we will remove
+and
+go back to the basic from where we
+started so we'll delete this one also
+and we'll
+recommend this out okay
+so here as let me just read once okay
+so as here we are using inner text
+we will first give it a strong
+to make this one bold
+read
+and here we will close this strong data
+and will
+write this
+remove this
+from inner desktop
+okay
+let's save it and delete the console and
+refresh the speech as you can see
+there's nothing
+we'll go back here and check
+okay and we can do
+append the body here
+as you can see here let me just
+go back to heavier as you can see it's
+just showing us all the tags of HTML
+that we don't want to see as it is
+thinking it's a string so we can modify
+this HTML element by using
+we we cannot firstly I will tell you we
+cannot use the inner content or anything
+we'll write here in our HTML and save it
+and you will see subscribe to Simply
+Learners then now I think you got an
+idea how to modify HTML elements so we
+can use append in everything like we can
+use it in the header part body part
+anywhere we can append the elements okay
+so now let's move forward and see how to
+remove an element
+so let me just delete this part here and
+go to the HTML and here we'll go back to
+that spam
+and
+first
+all right
+hello
+okay and I'll take another one
+and here I'll write
+our
+okay we'll close this one and I'll give
+it ID
+so for ID I'll give it ID of
+of
+small IDs so I'll give it one ABC
+and it's
+so this is not recommendable to write
+IDs like ABC and all because ID is is
+very specific so
+um I'll tell you about that
+example by giving an example so ID is
+what if we are using ID we cannot use it
+after some time like I cannot change
+this ID after going back to some other
+place and if I want to write this spam
+hello and want to change the ID of that
+you cannot do that but in classes we can
+do that it's a strictly not changeable
+IDs for example in your class you are
+assigned with a specific registration
+number or a roll number or something we
+cannot change it and nobody has the same
+number of registration number as you so
+this is like like an ID you have a
+specific ID and in class if you are in
+pursuing Masters in your class there are
+50 60 students
+so many students say all of the students
+have the same class are in the same
+class right so data is an example of
+class
+so here I'll write
+x y z okay
+we can call we'll call these exam okay
+see
+we'll open this one
+and here I'll create one const Dev and
+here I'll write
+document
+query selector
+value selector I'll write the div that
+we are creating here
+okay
+I'll just copy paste this
+two times and here I'll write
+and
+get
+and here I'll write
+span
+XYZ x y
+tried XYZ and I'll write ABC because we
+have given them different so to call the
+ID we're gonna use the method hash and
+here I'll write
+is a b c
+and we'll write here also a hash x y z
+until now modify the content and let's
+save this one
+and we'll use C hello how are you it's
+printed on the page
+now
+now if you want to remove this how are
+you from this
+so what we can do is
+we can remove this element by just
+writing span remove and you will see
+it will go out and if you inspect it you
+will still not find that x y z
+right this is the
+how this is how you can remove the
+element
+so we can also remove the element
+from the Dom by using remove child
+method so for that we'll hear write I
+will show you
+div Dot
+remove child
+and here we'll write
+okay
+that was
+XYZ
+file coming this down you'll see it's
+showing that but let's write here spam
+ABC
+it's not
+working let me check
+this remove child is not working but
+I'll tell you about this method so this
+method will only remove the child
+element from that class from this only
+the method that we have called will get
+removed I'll always use this method only
+but you can also use that
+this one the remove child or append or
+any method that you want you can also
+check out the documentation about this
+document object model it's very cool
+okay so the now the last thing I want to
+talk about is
+how to modify elements in the styles
+now we'll see how to directly modify any
+property of an element right
+so
+so property Wise It's like style
+properties are very essential or two way
+to access any CSS right
+so we can just remove this room this one
+and here I'll write span abc
+dot Style
+and here I'll write
+color
+okay style Dot color
+and let's give it a color as
+red
+and if we will see the color of hello
+which is X Y ABC is now red
+we can also give the background color
+and
+you can also make this color
+and change it to
+background color
+and save it you will see the background
+color of this text
+is turn greater
+and if you want to add any style
+property to the Dom you can just write
+style dot the property that you want to
+add
+so that's it for this tutorial on Dom
+manipulation by using the document
+object and various methods and
+properties we can dynamically change the
+content and layout of an HTML page I
+hope this video was informative and if
+you have any questions or doubt about
+this please feel free to pin them down
+in the comment section below thanks for
+watching please like share and subscribe
+to our Channel and stay tuned for more
+from Simply
+thank you
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

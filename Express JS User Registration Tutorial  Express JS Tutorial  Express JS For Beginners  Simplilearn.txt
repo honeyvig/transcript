@@ -1,0 +1,327 @@
+hey everyone welcome back to another
+video by simply learn and in this video
+we will be creating a user registration
+form but before we begin if you haven't
+subscribed to our Channel already make
+sure to hit the Subscribe button and
+press the Bell icon so you will never
+miss any update from Simply learn so
+without further Ado let's begin for this
+tutorial we are using visual studio
+code the first thing you need is
+nodejs let's see I have created one for
+me you can create it by just entering a
+command make directory in the
+terminal and entering your folder name
+it can be a b c or something you need
+and like this it will be created but I
+don't need it so I'm going to delete
+it in
+this I will open the terminal
+again I'll write a
+command
+npm in it
+what this will create a Json file for us
+like as you can see here the Jon file
+has been created
+here let's clear this
+screen now we will install expressjs in
+this folder for that write a command
+npm install
+Express and press enter this will
+install Express JS for us you can also
+see here in the
+dependencies express has been
+successfully
+installed and all other modules are
+here so let's clear this screen
+now now we will create a server file
+here let's name it app
+JS here we'll write all our code so
+let's create a simple Express
+folder write
+const
+Express
+require
+keyword
+all modules will be
+here
+enter in this we are requiring Express
+JS now we will also be meting
+P
+processes
+Dov do number that we going to write
+here using Cod number 3,000 you can
+write
+anything this will be a code number
+now create an
+app an
+app
+app Express function
+we have created an instance for Express
+now we'll
+create make it listen to our
+Port let's write app do
+listen p number it will read by its
+own AR
+function console
+but we are going to see back
+so started at
+HTTP Local
+Host host dollar sign to get the data of
+the port and we'll write the port it
+will fetch the number of the
+port here it
+goes now we have created a front end of
+this I repeat now we will create a front
+end of this registration form so let's
+create it
+first
+here get a
+folder
+public in this
+folder let's create two files
+index.
+HTML
+and uh
+second one we'll name as style.
+CSS now in the index folder we'll write
+all our font code so open index.html
+page write dog and
+enter this will create a HTML template
+for you in the
+title here will
+write
+registration
+home now in the body part we'll write
+heading for
+this H1
+right heading which
+just here the action will be
+class this will be heading so we can
+style it afterwards
+good now we'll create a
+form
+fraction class will be form
+now we'll create an input types first
+we'll create input type will
+be
+text
+name will be WR first name
+this name this
+folder this username will become inside
+the text box this first
+name
+name now we'll create few more like this
+for password last name age
+number let's copy this
+input first one will be first name
+second one will be
+last
+name so will write the email
+put
+this this look
+good we write
+email email will write password
+placeholder we'll
+write will be empty so no one will see
+our password this will be an
+empty let's this
+here and we'll
+write the placeholder
+password let's go to another
+one and let's create first name last
+name email password and let's create one
+more and that will be
+a
+page for this we have to write
+here
+number name don't need name I guess
+let's write it here
+page holder what you see inside the box
+in the front end here let's create a
+submit
+button type of the button will be submit
+so we
+can
+[Music]
+styling so our form is
+ready uh yeah we'll write require here
+so one will be left
+empty this will help us
+to to require every field because
+everything is important we cannot make
+it empty so we are writing require
+so our HTML page is
+ready here let's see how it looks open
+this HTML
+page here our registration form look
+like
+this let me show you what require is
+doing
+as you can see please fill out this
+field this is what required function
+do
+Summit
+is now coming back to vs code we'll
+write some CSS code for
+styling here we'll
+write ping for the page
+will be
+zero you don't have to write
+percent
+margin we'll also write zero for the
+overall
+page now we'll go to
+the body
+part so the height will be 100
+3edge width will
+be 100
+V this place I will
+be
+Flex direction of the flex will
+be bottom
+right justy content will be in
+Center
+alignment item
+Center this is how we
+will WR a body part
+to
+the form of this
+page
+form right everything will be a same we
+copy
+this let's paste it here don't want the
+height of the form this
+much it will be
+let's create it
+40
+40% width will be 100
+only this place legs will be here
+direction of this will be column only
+justify
+contents let's see in the
+to our
+code make it not
+Center let's make it
+as
+space space let's make it space
+between you can style it as your own as
+you
+want heading
+display will be in Line
+blog this will make our page
+registration Page look more
+clean perform
+here andp
+put the output it will be
+none needed heading we can
+do 10% from this side and
+20 inut is okay now we'll go
+to let's do something with the
+button but
+[Music]
+it will
+be pading will
+be 10% from
+this and 25 from the other side
+radi
+this color for this
+will look like
+this it's not an
+issueing the summit
+button
+uhing the
+Border
+box this will look
+cool BR
+color of this Summit button will be
+black and the text which is inside it
+will
+be white so it looks clean as
+a registration
+form it's done
+can
+[Music]
+also first save this file go to the file
+a registration form look like this isn't
+it cool uh let's make this a little
+up the heading part
+will a bing for 40%
+the c f go to the form and see yeah it
+looks cool
+now let's see everything is working
+fine
+yeah coming back to our vs
+code
+now so our front part is ready if there
+will be any changes we'll do it later
+now coming back to our backend part
+of this registration form we'll make our
+first API
+routes
+here WR app do
+get on
+request
+response dat
+function let's write here the response
+that the form will
+send WR the directory
+name of this HTML file
+prename
+public F do
+HTML save it
+going
+back create post method also here
+bom
+post and
+response function here
+request
+body here in this part it will face the
+data in the body of the HTML
+page now let's create an API
+middleware for that
+use express.
+Json here we are accepting the data in
+Json
+format after this we'll use it
+again and got
+use
+express URL
+encoded function
+this is basically to decode the data
+sent through HTML
+form view
+again this will
+Express dot will write
+static static function will will be
+public folder
+public this will use the public folder
+for
+us now we'll save this file first open
+your HTML
+file and write in the form parts
+here we'll declare the file name
+app.js
+form class
+form and we'll write method which will
+be post
+here everything looks good we forgot to
+write inverted commas
+here save this
+file now open the terminal and write
+node
+app.js press
+enter so our code is running fine let's
+open
+it
+yeah everything looks
+fine and with this we have reached the
+end of this video make sure to like and
+share it thank you for watching and stay
+tuned for more from Simply
+learn hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn ner up and get certified
+click here

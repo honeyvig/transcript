@@ -1,0 +1,193 @@
+hey everyone welcome to simply launch
+youtube channel in this session we will
+be learning about excel budget template
+but before we begin let me tell you guys
+that we have daily updates on multiple
+technologies so if you're a tech geek in
+a continuous hunt for latest
+technological trends then consider
+getting subscribed to our youtube
+channel and don't forget to hit that
+bell icon to never miss an update from
+simply learn
+now without further ado let's get
+started with our one point agenda that
+is how to create an excel budget
+template
+for that let's get back to practical
+mode where we have to start our
+microsoft excel and see how to implement
+excel budget template
+so on my screen you can see an example
+excel budget template theme
+so on my screen you can see a column
+where you have the debit amount
+so in the i column we have all the
+amount what we are spending for a month
+and on the right column will be the
+balance amount or the running balance of
+that for example you can see that there
+is a row number five where the debit
+amount is eight thousand for a change
+levis and it is done through upi payment
+now if i change this value of 8000 to
+4000 something
+then you can see that these running
+balance will automatically change you
+can see that currently the running
+balance is 73 000 and if i change this
+value from 8000 to 4000 then all the
+running balances will change
+let's do that so for that let's press
+enter
+there you go you can see that the number
+has been changed successfully and all
+the values from the running balance are
+also changed until the last day which is
+the march 30th
+now how is this working and not just
+that you can see that we have also
+included what is the total debit amount
+in january and what is the running
+balance that is the total available
+balance
+after one lakh has been debited into the
+account in the month of february as
+february income
+now the current available balance is 1
+lakh 13 200 and the total expense in
+february is 1 lakh 4 500 right how am i
+doing all this looks so much interesting
+right now let's do this practically
+so for that i have already created a new
+sheet and i have included all the data
+that we have used previously
+the income of that particular month and
+all the expenses of that particular
+month
+now without further ado let's begin to
+implement the excel budget template now
+our first step happens to be converting
+all the data into a natural table so you
+know that in excel all the data values
+are stored in the form of a database by
+default so it happens to be our duty to
+convert the database type table into the
+pure table type table so for that select
+all your data and press ctrl t and there
+you have an option to convert this data
+into a table
+and remember to check this particular
+checkbox
+and tell your excel that your table has
+headers
+so we do have headers here so now press
+ok
+and your table will be converted into a
+natural table
+now let's type in the formulas
+so now let's select the cell j2
+and type in the formula
+so what are we doing here is we are
+trying to
+add the sum of j2 plus h3
+so which is this particular cell and
+removing i3 that is this particular
+debit amount so this formula is used for
+checking the running balance
+let's press enter and there you go
+so it means that you received
+one lakh rupees in the month of january
+and out of that one lakh you spend
+fifteen thousand rupees for something
+maybe your educational or something and
+then the remaining running balance out
+of one lakh rupees is 85 000 rupees now
+let's copy the same formula to all these
+cells
+and there you go
+now the running balance has been
+calculated for all the cells here
+now remember the monthly income
+available balance and debit for january
+and final balance now let's try to
+calculate that for all the three months
+so here we have three months that is
+january february and march
+now let's do a simple calculation to
+find out the available balance of that
+month and the total debit made by that
+person in that particular month
+the formula is really simple all you
+have to do is use a sum function and
+calculate the sum of all these values
+and done right
+there you go so the total expense of the
+month january is 93 800 rupees
+now let's calculate the total debit of
+february month same formula that is
+calculating the sum of
+all the expenses made in the month of
+february
+day
+now let's also calculate the
+sum of all the expenses in the month of
+march
+done
+so we have the final values of all the
+total expenses made in those particular
+months
+now
+let's calculate the final balance
+now i think i forgot one important thing
+so before we calculate the final balance
+we need to find out the available values
+that is the available balance after
+one lakh rupees is created into our
+account and along with the savings that
+you have from your previous month right
+so that we have a simple formula
+now which all we are doing is just
+adding the
+income
+sell with the balance cell that's all
+so there you go
+now after crediting one lakh rupees and
+adding up the
+balance of that particular month that is
+we have 13 200 remaining from the month
+of january and the month of february we
+have income of one lakh so the total
+amount is 11 300 and
+no no it is
+1 lakh 13 200. yeah
+now we have the final balance that is
+the difference between the available
+balance and
+the debit made in that particular month
+so in the month of february we had a
+total balance of one lakh thirteen
+thousand two hundred and the total debit
+of one lakh four thousand five hundred
+so the final remaining values as eight
+thousand seven hundred
+similarly the same formula has been
+applied for the month of march and the
+final balance we have is 37 300 so
+that's how you implement budget template
+in excel all simple formulas and you
+have all the numbers at your fingertips
+so with that we have come to an end of
+this tutorial on excel budget template
+if you have any queries regarding any of
+the topics covered in this session then
+please feel free to let us know in the
+comment section below and our team of
+experts will be happy to resolve all
+your queries until next time thank you
+stacey and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

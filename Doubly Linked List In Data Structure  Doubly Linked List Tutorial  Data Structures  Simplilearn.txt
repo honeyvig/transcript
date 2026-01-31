@@ -1,0 +1,574 @@
+hey everyone i am pepper khandelwal and
+i welcome you all to simplylands youtube
+channel in this session we will talk
+about linked list
+we shall begin our session by
+introducing doubly linked list
+then we will try to implement it in the
+code editor after that we will try
+various operations on them like
+insertion and deletion
+finally we will sum up what we have
+learned from this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon so you never
+miss an update from simply learn
+so without any further ado let's get
+started with an introduction to double a
+link list
+a w link list is a linear data structure
+made up of nodes
+this linked list is a bi-directional
+linked list that is we can traverse it
+in both direction
+these nodes consist of three parts first
+up data
+reference to the next node
+and reference to the previous node
+now let's try to implement the wa link
+list in the code editor
+as you know a linked list is made up of
+nodes so we will start by creating a
+node to create a node we need a class
+node
+its members should be defined as public
+data
+node pointer
+next
+and note pointer
+rev
+now we will write a function to insert a
+node at the beginning of the doubly
+linked list
+void
+push
+argument will be a node pointer to
+pointer
+add
+and end q data
+now let's allocate a node
+node star
+new node
+pulse
+new
+node
+now let's put in the data into a new
+node
+since we are adding at the beginning its
+previous is always null
+now we will link the old list of the
+nuno
+now we will change the previous of the
+head node to the new node
+we will check if head is not null
+then heads previous
+is equals to
+new node
+now let's move the head to the point to
+the new node
+now let's write a function to print the
+given way link list
+its argument will be a node
+we will iterate it until the node is not
+null
+layout
+node data
+and
+and
+node
+equals to
+node next
+now let's write a code for the main
+block
+we will start with the empty list
+now we will use a push function to push
+values in the function
+another push function
+add
+comma
+3
+push function
+ampersand
+head
+comma
+5
+push function
+add
+comma 7
+now
+layout
+doubly
+interesting
+then we will call the print list
+function
+in the double linked list
+let's execute this program
+as you can see we have successfully
+created our first doubly linked list
+let's get back to our slides
+we have now introduced doubly linked
+list
+now let's discuss some of the operations
+we can perform on a doubly linked list
+we can perform three operations on a
+doubly linked list
+first traversal
+insertion
+and deletion
+we can perform a traversal in two ways a
+normal traversal and reverse traversal
+and we can perform insertion and
+deletion in three different situations
+at the beginning at the last and at a
+specific position after a node
+let's discuss these in detail
+first of normal traversal
+we can traverse a doubly linked list
+using a next pointer starting from head
+to all the way up to tail node
+reverse traversal similar to the normal
+traversal we will use previous pointer
+we will start from the tail node to go
+all the way up to head node
+now let's try to traverse the doubly
+linked list in the code editor
+let's start by creating a class node
+we will define its members as public
+print data
+node pointer
+next
+and node pointer
+prep
+now we will write a function to insert a
+node at the beginning of the doubly
+linked list
+right push
+its argument will be a note pointer to
+pointer head
+and integer new data
+now we will allocate a node
+new node
+new
+node paranthesis
+now we will put in the data
+since we are adding at the beginning so
+its pref is always null
+now we will link the old node to the new
+node
+now we will change the previous of the
+head node to the new node
+now we will move the head to the point
+to the new node
+now we will write a function to traverse
+the linked list normally
+voip
+traverse
+node pointer
+while loop
+node
+is not null
+therefore
+t out
+node
+data
+node
+equals to node next
+now we will write a function to reverse
+traverse it
+its argument will be a node pointer to
+pointer
+head
+we will create a note tail
+equals to head
+while
+next
+is not null
+this loop is enabling us to reach to the
+tail node so that we can traverse it
+from back side
+now
+while loop
+until tail
+is not equals to
+head
+c out
+tail
+here
+data
+handle
+this last c out statement is only
+because we are not traversing till the
+head pointer
+now let's go to the main block
+let's start with an empty list
+note star
+add
+equals to
+null
+now let us create a linked list to test
+the function
+so we will use push function
+another push function
+ampersand head
+comma three
+comma
+7
+since we are inserting at the beginning
+so the actual linked list looks like
+7
+5.
+3
+now we will print the original linked
+list first
+see how
+original
+traverse
+and
+reverse traversal
+first traverse
+linked list
+now let's try and execute this program
+as you can see we have traversed it in
+the
+normal way as well as the reversed way
+let's get back to our slides
+next up in session at the beginning
+we will create a node with the previous
+pointer pointing to a null and the next
+pointer pointing to the head node then
+we will change the head node's previous
+pointer to the new node and we will
+change the new node to the head node
+next up insertion at the end
+we have to give the new nodes address to
+the last node's next pointer and change
+the new node's previous pointer to the
+last node
+next up insertion at a specific position
+we will change the previous node's next
+pointer to the new node and the new
+node's previous pointer to the previous
+node and the next pointer to the next
+node and vice versa
+now let's try these operations in a code
+editor
+we will start by creating a class
+node
+public
+pointer
+now we will write a function push
+insert a note at the beginning of the
+list
+its argument is node pointer to pointer
+head
+into new data
+we will first allocate a new node
+node star
+new node
+equals new
+node paranthesis
+now we will put in the data
+node
+arrow
+data
+is equals to new data
+now we will make the next of the new
+node as head
+and previous as null
+and new node
+previous
+is equals to null
+now we will change the previous of the
+head node to the new node
+first we will check if the head node is
+null
+and
+star head
+previous
+is equals to
+new node
+now i will move the head to the point to
+the new node
+now let's write another function to
+insert a node after a specific position
+void
+insert after
+argument will be
+node pointer
+rev
+rev node
+and
+if we first check if the given previous
+node is null
+yes then we will give it c out
+given node
+b
+and we will return to the function
+or else we will allocate a new node
+let's do new
+now we will put in the data
+now we will make the next of the new
+node as the next of the previous node
+equals to
+ref
+node
+now i will make the next of the prep
+node as new node
+and make the prep node as the previous
+of the new node
+now i will change the previous of the
+new nodes next node
+if
+new node
+next
+is not null
+then
+new node
+next
+rev
+is equals to newnode
+now let's write another function
+insert a node at the end of the list
+void
+append
+its argument will be
+a node pointer to pointer
+and
+new data
+first we will allocate a new node
+equals to
+new
+parenthesis
+now we will create another nodes last
+equals to head
+now
+we will put in the data
+node
+data
+new data
+now since this new node will be the last
+node so its next will be null
+is
+equals to new node
+return
+or else we will traverse till the last
+node
+i'll
+last
+next
+is not null
+last
+equals to
+last next
+now we will make the last node as the
+previous of the new node
+return
+now we will write a print list function
+to print this list
+the argument is
+a node pointer node
+while
+load
+is not null
+out
+load data
+4 is equals to node
+next
+now
+let's write the main block
+we will start with an empty list
+we will start by inserting 6 so the
+linked list becomes 6 null
+and
+ampersand head
+comma 6
+now we will insert 7 at the beginning
+push
+percent head
+comma seven
+now we will insert one at the beginning
+also
+now we will insert four at the end
+till now the linked list looks like
+one
+seven
+six
+4
+now we will insert 8 after 7
+so insert
+after
+head
+next
+comma
+8
+now
+let's print
+this linked list
+let's try and execute this
+as you can see we have created our
+linked list in the correct order
+let's get back to our slide
+next up deletion
+first up deletion at the beginning
+we have to change the first nodes next
+to null and second nodes previous to
+null
+next up deletion at the end
+we have to change the second last node's
+next pointer to null and delete the
+previous node to free up the space
+next up deletion at a specific position
+we will change the previous node's next
+pointer to the next node
+and next node's previous pointer to the
+previous node
+now let's try these operations in a code
+editor
+we will start by creating a class node
+public print data
+node pointer
+next
+note pointer
+f
+now we will write a function to delete a
+node in a doubly linked list
+void
+delete
+node
+its argument as pointer the head
+repeat its argument as pointer to the
+head node pointer
+and pointer the node to be deleted
+now we will check the base case
+condition
+that is if
+add
+is
+or
+note to be deleted is null
+and return
+now
+if
+the node to be deleted is a head node
+then
+is equals to
+now
+if
+next node of the dell
+is not null
+that is
+if
+the node to be deleted is not the last
+node
+then
+else next
+previous
+equals to
+that's
+previous
+now we will change prev only if not to
+be related is not the first node
+so if
+the
+not equals to
+null
+then
+delve
+next
+equals to
+del's next
+finally
+we will free the memory occupied by the
+dell
+free
+now let's write a function to insert a
+node at the beginning of the doubly
+linked list
+void
+pointer to the head node pointer
+and enter new data
+we will allocate the node
+now we will put in the data
+since we are adding at the beginning so
+prev is always null
+now we will link the old list of the new
+node
+now we will change the preview of the
+head node to the new node
+now we will move the head to the point
+to the new node
+now let's write print list function
+note pointer node
+while
+node
+is not equals to null
+layout
+node
+data
+node
+equals to node
+next
+now let's get started with the main
+block
+we will start with the empty list
+now we will create new nodes
+push
+push
+ampersand
+add
+comma four
+push
+ampersand
+head
+comma 6
+push
+now let's print this list
+see out
+original list
+original list
+now we will call the print list function
+add
+now we will delete the node from the w
+link list
+here we are deleting the first node
+next let's delete the last node
+now the modified list
+should look like
+4
+8
+let's try and print this
+see out
+modified
+list
+add
+let's try and execute this
+as you can see we have deleted all the
+nodes except for 6 and 4.
+let's get back to our slides
+at last let's sum up what we have learnt
+in this session
+first up we have recognized doubly
+linked list as dynamic data structures
+next the doubly linked list offers
+faster insertion and deletion operation
+next up doubly linked lists are
+bi-directional link list
+that is we can traverse it in both
+direction
+finally a doubly linked list is faster
+at reverse traversal
+and this was all for today's session
+hope you guys found it informative and
+helpful
+if you liked this session then like
+share and subscribe
+if you have any questions then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

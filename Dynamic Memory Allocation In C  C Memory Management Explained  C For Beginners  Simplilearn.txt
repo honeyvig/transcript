@@ -1,0 +1,168 @@
+hey guys welcome to yet another
+interesting and informative video by
+simply learn in today's video we're
+gonna be learning all about memory
+management insane but before we begin if
+you haven't subscribed to our channel
+already make sure to hit the subscribe
+button and the bell icon to never miss
+an update so now without any further
+delay let's begin
+this session will help you to understand
+what is memory management in c
+later we will discuss dynamic memory
+allocation and function used to allocate
+memory dynamically with the help of
+syntax and examples
+so now let's begin with what memory
+management in c is
+as we all know in c programming the
+memory is automatically allocated to all
+the program variables during compile
+time
+so sometimes to reallocate the memory or
+to change the size of an array we must
+allocate memory during runtime and we
+have two ways to locate memory
+and they are static memory allocation
+and dynamic memory allocation
+in static memory allocation the memories
+are located during compile time and the
+fixed size of memory will be assigned to
+the variables
+moreover there won't be any change in
+the memory size and location and in the
+case of dynamic memory allocation the
+memories are located during runtime
+so now let us try to understand more
+about dynamic memory allocation
+to manage the memory more efficiently we
+use dynamic memory allocation
+unlike static allocation the memories
+are located during run time in dynamic
+memory allocation
+and the allocated memory is not constant
+or fixed we can allocate the memory
+blocks from the hip whenever required
+when the memory block is no longer in
+use we can also return the block of
+memory to the hip for reuse by another
+program
+and in addition to this we can also
+reallocate the block of memory space
+when required to allocate memory
+dynamically c provides a set of
+functions and they are emblock clock
+reallock and free functions that are
+defined in the stdlib dot hedge that is
+standard library header file
+let's look at the syntax and examples of
+this function
+first when we use the mlog function the
+continuous block of memory will be
+allocated and the point of variable will
+hold the address of the first element
+now let's look at the below given syntax
+the mlog function take one argument
+memory size for example
+if we require 10 bytes of memory size we
+can mention 10 or we can mention the
+size of int
+the mlog function will first checks
+whether the continuous memory is
+available on the hip and if free memory
+is unavailable the function will return
+a 0 or a null value
+else it will allocate the memory as per
+the requested size if memory is
+available
+and the pointer will point to the
+address of the first element in the
+block
+next we have clock function
+the syntax is pointer variable is equal
+to c log of number element comma memory
+size for example we have 10 as a number
+element and the element size is the size
+of int
+clr function is similar to the mlog
+function but in case of clr function
+multiple blocks of memory of the same
+size will be allocated which holds 0
+value by default and it takes 2
+arguments that is number element and
+element size
+up next we have reallock function
+first let us look at the syntax
+pointer variable is equal to reallock
+pointer variable comma memory size
+in real lock function we pass point of
+variable as an argument and the memory
+size for example
+real lock pointer variable ptr comma the
+size of it
+so sometimes it becomes very difficult
+to change the array size when we have to
+store new values into the array or to
+copy into the larger size array so in
+that case we use real log functions to
+change the array size without losing the
+data in short the real of function will
+change the size of the previously
+allocated block of memory
+i hope you got a good understanding of
+why we use real log function
+moving ahead we have free function
+syntax is simple we pass pointer in free
+function like for example free ptr the
+free function is used to deallocate the
+memory space occupied by the previously
+allocated by mlog c a lock or rear lock
+functions
+in order to use the memory more
+efficiently and to return back the
+memory to the hip once done we use free
+function
+once we free the memory other programs
+can use that block of memory if required
+now let's run simple program using this
+function
+so in this particular example we have
+included the standard library header
+file
+that is stdlib.h and then mlog function
+and using if condition we're gonna check
+whether memory is available or not and
+if memory is available it gonna locate
+the memory and print the value of 10.
+and finally we have used free function
+to deallocate the memory so now let's
+run it
+as you all can see the value 10 is
+printed successfully
+now using same program let's use clock
+function so instead of mlog let's give
+cllo
+and since we have passed only one
+argument that is sizeof end let's
+execute the program and see what would
+be the
+error as you can see the error
+it says that too few arguments to
+function see alok
+it means that the clock function will
+take two arguments so let's give the
+number element
+so save the program
+and
+run it
+and here we got the output
+so with this we have come to the end of
+this session on c memory management i
+hope this session was informative and
+interesting until next time thank you
+stay safe and keep learning
+there if you like this video subscribe
+to the simply learn youtube channel and
+click here to watch similar videos to
+nerd up and get certified click here

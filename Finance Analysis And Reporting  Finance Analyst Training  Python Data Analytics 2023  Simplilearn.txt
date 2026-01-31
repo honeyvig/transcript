@@ -1,0 +1,917 @@
+foreign
+python is one of the emerging
+programming languages according to the
+most recent figures python is the most
+used coding language for about 80
+percent of developers the syntax of this
+high level programming language is
+simple to understand pythons large
+Library System makes it a best choice
+for data science machine learning and
+artificial intelligence projects so
+hello Learners welcome to Simply learns
+YouTube channel and today we will be
+doing financial analysis using python
+but before we begin if you love watching
+Tech videos subscribe to our Channel
+like the tutorial and hit the Bell icon
+to now miss an update and let us have a
+simple quiz question to brush upon our
+knowledge and your question is which
+keyword is used for function in Python
+language and your options are
+your first option is function and second
+option is
+DF
+third is f u n or fourth is defined you
+can pause the video give it a thought
+and answer in the comment section below
+and we will update the correct answer in
+the print command and there's an
+insightful for you guys if you are
+focused on building strong foundational
+skills for career growth in that case
+you can check out a free course to Learn
+Python Basics with the completion
+certificate from scale up by simply
+learn you can also check the python
+Basics free scale up course Link in the
+description below and with this we'll
+start our tutorial first we'll create a
+folder to do the financial analysis
+first we'll go to our python projects
+and this is our data on which we would
+be doing the financial analysis
+and I will provide you the link in the
+description box for this sheet also so
+this sheet indicates that the genders
+male and female how they invest and what
+stage their investment in mutual funds
+Equity Market debentures government
+bonds and fixed deposits
+and at how much duration and how they
+invest daily monthly weekly so we would
+be doing financial analysis on this
+sheet so starting with
+first we'll create a folder
+and name it as financial
+analysis financial analysis yeah I was
+going to make a spelling mistake but I
+didn't
+so here we would open up Jupiter
+notebook in which we're going to proceed
+with our financial analysis you could
+use any idle you want to use I would be
+using the Jupiter notebook for that I
+will open the command prompt and write
+the command
+Jupiter notebook
+and we'll get our Jupiter notebook open
+in the browser
+till then it's loading
+we would
+move a CSV file
+into a folder only
+financial analysis
+so it would be easy for us to do
+some tasks like
+we can easily provide the link for the
+CSV file
+now moving to a Jupiter notebook we have
+Finance underscore data.csv in a folder
+now we'll create a new file
+and Name It We Will name it as
+binance analysis
+now starting with
+the first thing we should do is import
+our libraries or import our modules and
+first module we would be using would be
+numpy
+and we would be importing that and to
+install that you could just simply
+go on the folder
+call the command prompt and write pip
+install
+numpy
+you can easily find these
+commands to install any module on the
+web or you can just see like what I
+would be installing and you could see
+that the requirement is already
+satisfied as I have already installed
+the numpy and all other module that
+would be using in in this tutorial
+so you could just go to the command
+prompt and write the command and the
+module would be installed for you
+now
+we would move back to our Jupiter
+notebook and start importing our
+packages
+and the first package we have seen the
+command to install it and now we will
+import it that would be numpy an import
+numpy and use the Lis as NP and the
+second package would be importing would
+be pandas for that we'll write the
+command import pandas
+and we will also use the Allies here and
+use SPD and you can install the pandas
+Library by using the command pip install
+pandas or you could just simply search
+on the web you would get the commands
+there also so I'll run this command uh
+it's showing the abstract mark That's
+clear that our commands have been run
+successfully so moving on now you would
+see uh how many files are present in a
+folder in which we are making this
+python notebook
+so for that we will first import the OS
+module and you can simply install it by
+using the command that would be pip
+install Os or for OS it would be pip
+install sys uh hyphen OS so you could
+simply search on the web
+or I would show you
+I would open an incognito window for you
+and
+pip install
+OS
+python
+so you could see this is the official
+website for
+OS module you could simply visit on that
+and you could simply copy the command
+that is OS
+iPhone sys and just open the command and
+paste on your command prompt it would be
+installing your command easily or you
+could also paste that command into a
+Jupiter notebook it would do the same
+task for you now we want all the files
+that are present in our folder so for
+that we'll write
+four
+directory name
+comma
+underscore comma
+file names
+in
+OS dot work
+and inside the curly braces
+we would write the path
+for our folder
+and we could simply copy the path of the
+folder from here
+it's showing cmd.exe right so I will go
+back
+and now I'll copy the path
+and we'll paste it here and after the
+curly braces I will just place a colon
+and after that
+I'll write
+I will run a loop
+it would be four
+file name
+in file names
+we would be printing
+OS dot path dot join
+and inside the brackets we will pass the
+directory name and the file name
+okay
+and now we'll just click on run you
+could see that it's showing three files
+that is finance underscore data.csv and
+the IP ynb file that has been created by
+us that is financial analysis and the
+checkpoints that the jupyter notebook
+creates
+and moving on we would be installing
+some other modules and
+first
+I will tell you about numpy that it's an
+open source and general purpose array
+processing package it offers a
+multi-dimensional array object with
+outstanding speed as well as tools for
+interacting with these arrays and about
+pandas so pandas is an open source
+Library designed primarily for working
+quickly and intuitively with relational
+or labeled data it offers a range of
+data structures and procedures for
+working with time series and numerical
+data and this library is built on top of
+the numpy library and it's quick and
+offers its users exceptional performance
+and productivity
+and now we would be installing the matte
+blue lip I've already installed so I
+would be importing it matte plot lib
+library and the seabun library
+so for that I would write the command
+and before importing I want to walk
+through with this so OS dot work
+function it generates the file names in
+a directory Tree by working the tree
+either top down or bottom up for each
+directory in the two in the tree rooted
+at the directory top it yields a three
+double that is the actor path directory
+name and the file name
+so moving on now we'll install our
+modules and that would be
+C bone and matte blood lip
+so
+for C bone you could easily write the
+command or you can search on the web how
+to install it so for that the command
+would be a pip install c-bone
+so we would be
+importing it
+import C bone
+and we'll be using the Allies here
+as SNS
+and now we would be using the pi plot
+Library uh pipelout class of the
+matplotlib library so for that you would
+write the command
+met.lib
+and we'll be using the pipe load
+and analyze for this as PLT
+so we would be using these two libraries
+also and we have run the command and it
+has been executed successfully at it has
+turned the number to three
+now
+if I tell you about C bone so C bone is
+a library for making statistical
+Graphics in Python and it builds on top
+of matplotlib and integrates closely
+with pandas data structures and C bone
+helps you explore an entrance it helps
+you understand your data its plotting
+functions operate on data frames and
+arrays containing whole data sets and
+internally perform the necessary
+semantic mapping and statistical
+aggregation to produce information Proto
+its data set oriented declarative API
+lets you focus on what the different
+elements of your plots mean rather than
+on the details of how to draw them you
+could easily draw them so you don't have
+to think like how to draw them you could
+just simply import this library and
+start a functioning
+now moving on we have Simone Library
+also so it's a python data visualization
+library that is based on matplotlip it
+provides a high level interface for
+drawing attractive and informative
+statistical graphics
+as now we have imported all the
+libraries we can start with our project
+and first thing we would be doing is we
+would set the default style that is
+would set the style function
+that would be used for plot styling and
+for that we would be using the allies of
+C bone
+and use the function set underscore
+Style
+and
+will Mark as dark grid
+we'll run this so it has been executed
+successfully as you can see that the
+number has turned out to before
+so now
+we would read the file that is a CSV
+file and to read that we would declare a
+variable and name it as DF and we'll use
+the pandas library to read that and
+write the command PD dot read
+underscore CSV and inside the so I've
+grown basis we would
+write the path for the file
+so we'll copy the path and in the
+inverted commas we will paste the path
+and at last we could just write the file
+name
+and the file name was Finance underscore
+data
+dot CSV
+so here spelling is
+Finance I have written the wrong
+spelling for the file but it's okay
+we'll use the same
+fine and underscore data dot CSV
+so now
+we'll just run this
+and you could see that our file has been
+loaded so
+as you can see our file is already
+loaded and the reads underscore CSV
+function it takes a path to a CSV file
+and reads the data into a pandas data
+frame object now we would be using the
+DF dot add function
+and run it
+so what does this function do so it is
+used to get the first n rows that is
+this function Returns the first n rows
+for the object based on position it is
+useful for quickly testing if your
+object has the right type of data in it
+so it has
+shown us that is the five
+rows and mostly all the columns and it's
+showing you that five rows cross 24
+columns there are 24 columns here and it
+has shown you all the columns now I will
+drop some columns from the sheet and to
+drop them we will write a command that
+would be TF in which we have stored the
+sheet
+the DF variable
+and inside that we will write
+command that is drop and inside the
+circular braces we would write the
+columns we want to drop
+and the name would be we will drop
+columns that would be mutual funds
+Equity Market
+debentures government bonds fixed
+deposits ppf gold
+so we'll drop these columns
+and to drop them we will write the name
+of the columns in the Square braces
+so first we'll write the name of the
+mutual funds
+let's Capital mutual funds Mutual
+underscore funds sorry
+which are underscore funds
+and
+then next we want to drop is equity
+Market
+for that we will write Equity Market
+that is in inverted commas and Ms
+capital for Equity Market
+no debentures
+and that to an inverted commas
+uh
+the next was government bonds fixed
+deposits ppf and gold
+okay so in inverted commas you write
+comment bonds
+and then it was ppf
+and there was fixed deposits and there
+was gold also
+foreign
+now we have listed all the columns that
+we want to drop and now
+we would set the axis equal to 1 that is
+from the same axis x equal x is equal to
+1 these all the columns would be
+identified and they would be dropped and
+they would be strong stored in the DF
+variable
+so for that all right
+let me set the access
+and access would be equal to
+1 and we'll set in place
+that would be equal to
+true
+okay so now
+run this command
+okay mean equal to equal to
+okay so we will use
+equal to zero
+just find out
+we will just restart it
+now after restarting we will try to run
+it
+okay so there is
+equal to cells
+[Music]
+too bad
+X is equal to 1 and
+place is equal to okay uh
+circular bracket would be closed here
+yeah
+our Command has been executed
+successfully as you can see in the
+Square braces we have a number eight
+that means the command has been
+successfully executed and we have
+dropped these columns and now moving on
+we'll use the replace function that
+would be the pandas replace function and
+we will replace all the empty columns
+with NN that is node a number value and
+for that we'll write a command DF that
+is TF equal to DF dot replace
+and inside
+we will write command
+let's run dolo
+and
+this would be enclosed in the inverted
+commas
+and a comb afterwards
+and NP Dot N A N what we want and then
+set regex that is equal to
+true
+and now if we run this it has been
+executed successfully and the replace
+function it replaces all the occurrence
+of matched pattern in the string and a
+regular expression that is rejects we
+have used here that is equal to true
+it's a sequence of characters that
+Define a search pattern and filter rows
+is pandas like to filter rows in pandas
+by regex we can use the string dot match
+method
+now moving on
+here we would start with the floating
+and we'll use the C bone
+and
+we will draw our first plot that would
+be the bar plot only
+and for that would
+we will use count dot function
+count plot
+and we'll set the x parameter
+as gender
+you could see in the shield agenda where
+we are setting it as X
+and the next thing we would set would be
+data that is we would take the data from
+the variable DF in which we have stored
+the file
+that is the CSV file and line width
+for the plot and we will set it as
+three
+and then we'll set the palette
+and that would be equal to
+set to
+and then we'll set the edge color
+and that would be black
+and after that we would use the function
+that would be PLT dot show
+and we'll run the command
+as you can see that we have set the x
+parameter as gender and count so it's
+showing how many males and females are
+investing at
+Nick what are the numbers in this sheet
+how many males are investing and how
+many females are investing
+so moving on
+and first if we see
+in here so we have used the count plot
+function that is the method used to show
+the counts of observation in each
+categorial bin using bars and we have
+set the x that is the parameter that
+takes names of variables in data or
+vector data or optional or optional
+inputs that is used for plotting long
+form data and we have used palette that
+takes the value of the palette and it is
+mostly used to show the Hue variable and
+what is U here U is the parameter that
+specifies the column name
+and we have set the data is equal to DF
+that is the parameter that defines the
+data frame that we would like to take
+for the representation for instance data
+can be an array and moving on
+we will draw another plot
+using the C bone only and the count plot
+function
+so sns.count plot and inside we will
+pass X parameter equal to H
+and then we'll pass the data that would
+be equal to DF and set the palette
+that would be equal to
+set 3
+and then we'll set line width
+that is equal to 2 and then we'll set
+the edge color
+of the
+plot that is the bar graph
+we will set the edge color
+that would be black
+and now we will run this
+you could see
+that it has X level s h and y level as
+count
+that is at how many age men and women
+both combine are investing at the age of
+21
+to women or men like two people we would
+say we won't
+make it consideration as gender here so
+we are just counting how many people are
+investing at which age
+so
+moving on
+now we'll move to another plot and
+draw something related to age only
+and you could also use plt.show to
+just get your
+output
+if you're right here plt.show
+it will give you the same output and
+here now it's not showing the x-axis and
+y-axis you could easily see here
+but it's defining
+now moving on
+now we'll draw a figure and using the
+matplotlip and here we will be using two
+plots
+and I would like you would understand
+with
+this only first we will draw it and then
+I will explain what I want to show you
+so first we will use the Metro clip
+allies that would be PLT dot figure and
+inside we are passing fig size that
+would be equal to
+18 comma six
+and after that I would be using the
+subplot that is
+we would be drawing two plots here and
+for one subplot
+LT dot subplot inside we would pass the
+parameters for this upload
+the first we have defined the figure
+size the whole figure and inside there
+would be two plots and inside those
+plots what would be the size for one
+plot so that would be defined by PLT dot
+subplot
+and now
+sns.count plot
+we would
+draw count plot here and inside we will
+pass the X parameter
+that is equal to DF and inside we will
+pass the column that would be gender
+and
+here we will set the view
+that is equal to DF
+and inside the bracket that is a square
+bracket
+you would write the
+investment Avenues
+that
+who will are investing
+and with their underscore yeah they will
+underscore investment underscore
+Avenues
+and now we have set the view here
+and now we'll set the palette
+to set the palette
+we would set the palette as summer
+and after setting the palette we'll set
+the line width
+for the upload that is the bar and would
+say test three and after that we'll set
+the edge color
+and Edge color would be equal to
+White
+and now we'll give the title to this
+upload only this upload and for that we
+would write a command PLT dot title
+and inside this title
+you would write
+investment
+venue
+and after that
+we will draw another subplot that would
+be PLT Dot
+subplot and
+for that we will Define the parameters
+that would mean comma 2 comma 1
+2
+and we'll use
+sns.count plot
+and inside let's set the x parameter
+that would be DF and inside the square
+brackets we define gender
+and set the Hue that would be equal to
+DF
+then inside
+you would
+write for the stock market
+foreign
+stock market
+and
+now we'll set the palette
+and we'll set the palette as
+hot only
+now after setting the palette we would
+set the line width
+then went through the plot that would be
+equal to 3 and after line width we would
+set Edge color
+that would be equal to White
+and after that we would set the title
+for it
+PLT Dot
+title
+and site title we would set it as
+stock market
+and use the function PLT Dot
+show
+to show both the graphs now we'll run
+this command
+Market
+[Music]
+so we'll check
+okay americ
+so we have the column name here MLK
+so use the same
+and run it
+so you could see there are two subplots
+and they are inside the figure that is
+of the value 18 comma 6 and here we have
+gender and count that is investment
+Revenue
+who all are investing
+and here we have who all are investing
+in the stock market and according to the
+gender
+like in females how many are
+investing in stock market they are
+indicated by red color and those who are
+not investing they are indicated by
+yellow color and same with the men
+and if you see we have used a big size
+here that is a tuple of the width and
+height of the figure in inches
+and we have set the inches here and
+subplot that means groups of axes that
+can exist in a single matplotlip figure
+and subcloud function is the mat that is
+stored in the matplotlib library and
+helps in creating multiple layouts of
+sub loads and it provides control over
+all the individual plots that are
+created
+and we have created that
+now moving on we will create another
+account plot using the C bone and for
+that we'll write the command sns.count
+plot
+and inside will pass the X parameter
+that would be equal to DF and
+inside would pass Factor
+check with
+a sheet
+that is the factor so we will pass this
+and set the palette for it and line
+width and Edge color and we'll draw the
+account plot so the factor is
+how the people are
+investing like they are looking for
+returns or they are investing for
+locking period so that their investment
+could be stored for a longer period of
+time or they're risking their investment
+to have some more interests or more
+returns
+so for that would be drawing the account
+plot and we have set x equal to factor
+and now we'll set the pallet
+so we'll set the palette equal to cool
+home
+and now we will set line width
+that would be equal to 2
+and now we'll set the edge color
+that would be equal to
+black
+and we'll use the function PLT dot show
+so just run this command and you could
+see that we have a subploter node
+subplot but a plot and that is a bar
+plot
+and you could see how many people are
+just for returns that is 25 and we have
+login period and who are risking their
+investment
+you could see the counter using this
+count plot and now moving on
+we will use matplotlib and
+have another figure
+and
+here we will be having our plot that is
+for purpose like which purpose
+which purpose the people are investing
+if you could see the purpose here that
+is for wealth savings
+for which purpose they are investing
+wealth creation or just savings for
+future
+or returns
+so we'll create a plot here and for that
+we'll use
+matplotlip
+and we will write the command PLT dot
+figure
+and inside we would set the figure size
+that would be equal to 16 comma 8
+and after that
+you would set sns.
+Point plot
+and that is we would be pointing the
+plots and set the x parameter as purpose
+and Y parameter that would be equal to H
+and now we'll set the data
+that is equal to DF
+and now we will
+have the line style as you'll see this
+would be a different plot here
+and we'll set the line Style with this
+style and now we'll set cap size that
+would be equal to 3
+node 3 that would be 0.3
+and after setting the cap size we'll set
+the color
+and we'll set the color as blue
+now we'll write the command PLT Dot
+show
+and run the command for you guys
+so we got an error that is figure size
+and that would be equal to node equal to
+equal to
+now we'll run this again
+and we got Point plot quote and line
+Style
+okay we have
+line style and that would be line styles
+yeah we got our output
+that is you can see this graph this is
+for just having the purpose and seeing
+the IH what would be the median age for
+what purpose like who are investing for
+wealth creation what is the median age
+you can see here for saying for future
+purpose you can see the median age and
+for returns purpose you can have the
+median age
+we have used the line Styles here that
+is line style is used for each of the
+Hue levels that is for each of the
+column levels and we've set the cap size
+that is the width of the caps on error
+bars and that we have set as 0.3
+now moving on
+we will
+create another plot and that would be
+our last plot only
+so for that we would
+be having
+the Metro clip Library only and would
+set
+figure and here we would be having two
+subplots
+so first we will Define the figure size
+that would be fixed size
+and that is equal to 18 comma 6
+and now
+we would use the subplot function
+PLT dots subplot
+and we would Define the parameters for
+subplot
+and now we'll use C bone sns.
+use the count plot function
+to have upload and here we will pass you
+that would be setting as
+gender
+and now we'll set the x parameter
+that will set us
+duration forward duration people are
+no but we will have the gender here
+so
+forward duration gender is
+each gender is investing
+now we'll set the palette
+and duration that would mean inverted
+commas
+now inside the palette
+that is pellet equal to
+where it is you could see the design of
+the plot that it would be where it is
+and after that would set the line width
+and that would be equal to
+after setting the line width we would
+set the edge color
+that would be equal to Black
+and after that you would set the
+title of this subplot
+and would set the title as duration
+and now you would have another subplot
+for that
+subplot
+you would write the command PLT dot
+subplot and inside will pass the
+parameters for this subplot that is 1
+comma 2 comma 2
+and now we would use the count plot
+and inside the count plot will pass you
+and that is equal to
+DF
+and inside would pass
+gender
+and that would pass the X parameter that
+is
+investment monitor
+we could see in the
+sheet
+that is investment monitor
+oh sorry like how these genders are
+investing they are investing monthly
+weekly or daily
+so I would see that in
+this upload
+and
+we are passing the investment monitor as
+the X parameter
+so
+we'll pass it investment
+underscore monitor
+and after the X variable we'll set the
+palette
+and the palette would set as seismic
+you could see what seismic is when you
+will see the plot
+and you could use after if you liked
+else you could use another palette and
+now we will set the line width
+and that would be equal to 2
+and after that we would set the edge
+color
+that would be black for this
+and now we'll give the title to this
+upload and
+we will give the title
+by using the command PLT dot title and
+in the inverted commas you will write
+investment monitoring
+and after that we'll write the command
+PLT dot show
+and run the command
+and we put an error that is investment
+monitor so we'll see invest underscore
+monitor it's not investment monitor
+so title is okay yeah
+investment
+and run it
+and you can see uh both the subplots
+have been displayed here the first is
+duration and it's against the counter
+and you could see the genders that is
+female and male that is how males and
+females are investing the investment for
+what time period that is one two three
+duration for more than five years for
+three to five years and for less than
+one year and if you see investment
+monitoring that how genders are
+investing the amount that is how they
+are investing monthly what numbers
+like you can see that the blue colors
+indicate female invest monthly and that
+would be in the range
+10.0 to 12.5 that is around 11 and if
+you see men they are above 17.5 and same
+as weekly and daily
+and with that we have come to the end of
+this session
+and I have insightful for you guys
+if you are aiming to get certified in
+Python Programming and want to build a
+python software development career in
+that case you can check this python
+certification course by simcleaner which
+will open the doors for your career
+growth and to find the details you can
+check in the description box below I
+will provide the link for this and link
+for the CSV file and link for the ipy NB
+file that is the Jupiter notebook file
+and I hope this session holds
+interesting and informative if you liked
+it please let us know in the comment
+section below and also do subscribe for
+more from Simply learn thank you
+foreign
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

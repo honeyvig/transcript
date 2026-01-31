@@ -1,0 +1,270 @@
+hey there welcome back to Simply learn
+today we are diving into the world of
+cyber security to explore two
+fundamental concepts hashing and
+encryption have you ever wondered how
+your passwords are stored securely or
+how data is kept confidential during
+transmission well today's video is for
+you we will be comparing hashing and
+encryption breaking down the differences
+and discussing their respective use
+cases but before we dive in if you are
+new here don't forget to subscribe and
+hit the Bell icon to stay updated and
+just a quick info for you if you want to
+upscale yourself master cyber security
+skills and learn your dream job or grow
+in your career then you must explore
+simply learns cohort of various cyber
+Security Programs simply learn offers
+various certification and postgraduate
+programs in collaboration with some of
+the world's leading universities like
+MIT I khur EC Council and many mo
+through our courses you will gain
+knowledge and work expertise in skills
+like Advanced hacking Concepts Network
+packet analysis ethical hacking network
+security and over a dozen others and
+that's not all you also get the
+opportunity to work on multiple projects
+and learn from industry experts working
+in Top Tire product and security
+companies and acadm misss from top
+universities after completing these
+courses thousands of Learners have
+transitioned into a cyber security role
+as a fresher or move on to a higher
+paying job and profile if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the pin command and
+description box to find a cyber security
+program that fits your experience and
+areas of
+interest and now moving to our topic and
+first we'll start with what is
+hashing so first up let's talk about
+hashing and hashing is a process that
+takes input data and produces a fix size
+string of characters which is typically
+a hash value this process is one way
+meaning you can't reverse it to obtain
+the original data the key here is the
+same input will always produce the same
+hash but even a small change in the
+input will result in a completely
+different hash so this is hashing and
+now we'll see the use cases for hashing
+hashing is commonly used for password
+storage when you create an account on a
+website your password isn't stored in
+plain text instead it's hashed adding a
+layer of security this way even if a
+database is compromised
+hackers won't have direct access to your
+passwords hashing is also used to check
+data Integrity for example file check
+sumps use hashing to verify that a file
+hasn't been corrupted so these are the
+use cases for hashing now moving
+on hashing as a general practice adheres
+to certain principles that Define its
+characteristics number one is
+deterministic output a consistent input
+should always yield a predictable output
+ensuring reliability in hash generation
+next is irreversibility once hashed it
+should be computationally infeasible to
+reverse the process and retrieve the
+original input enhancing security and
+then comes uniqueness distinct inputs
+must result in distinct hash values
+preventing collisions with different
+inputs produce the same hash and then
+comes sensitivity to input changes even
+a minor modification in the input should
+lead to a subst potential change in the
+hash maintaining the Integrity of the
+hashing process and now a hash algorithm
+serving as the mechanism for hashing
+functions to transform data of varing
+sizes into fixed size data it yields
+hash values hash cods or hash sums as
+outcome and various hashing algorithms
+have been utilized in Computing with
+some becoming obsolute over time some
+examples are md4 that is created by Ron
+dve West in 1990 md4 has a 128bit length
+but faces security criticisms including
+concerns tased by its own Creator and
+then comes sh algorithm that is
+developed by the National Security
+Agency sh has a 160 bit length due to
+security vulnerabilities organizations
+now prefer to robust sh2 that is 256bit
+algorithm for cryptographic
+purposes and then comes RP EMD that is
+designed by H dotin with a 160 bit
+length repm was created within the
+framework of the EU project ripe and
+then comes wpo
+algorithm that is convinced by Vincent
+ran and Paul Barto and this
+202056 bit algorithm produces a 512 bit
+message digest and then we have tiger
+algorithm that is recognized for its
+speed and efficiency tiger hashes or 132
+million bits per second surpassing other
+discussed algorithm it stands out for
+its unrestricted usage devoid of any
+patents so this was about hashing and
+now we'll move to
+encryption so unlike hashing encryption
+is a two-way process it uses algorithms
+to transform data into a format that is
+unreadable without the appropriate
+decryption key the main goal of
+encryption is to protect the
+confidentiality of data ensuring that
+unauthorized parties can't access or
+understand
+it and now we'll see the use cases of
+encryption encryption is used in various
+scenarios when you send sensitive
+information over the Internet like
+credit card details or personal messages
+encryption ensures that even if
+intercepted the data is meaningless
+without the proper decryption key it's
+also widely used in securing
+Communications such as https for secure
+browsing additionally encrypt storage
+protects data on your devices from
+unauthorized access and there are a
+number of encryption systems where an
+asymmetric encryption is also known as
+public key encryption symmetric
+encryption and hybrid encryption are the
+most common so symmetric encryption it
+uses the same secret key to encrypt and
+decrypt the message the secret key can
+be of word a number or a string of
+random letters both the sender and the
+receiver should have the key it is the
+oldest technique of encryption and then
+comes asymmetric encryption it deploys
+two keys a public key known by everyone
+and a private key known only by the
+receiver the public key is used to
+encrypt the message and a private key is
+used to decrypt it a symmetric
+encryption is little slower than
+symmetric encryption and consumes more
+processing power when encrypting data
+and then comes hybrid encryption it is a
+process of encryption that blends both
+symmetric and and a symmetric encryption
+it takes advantage of the strengths of
+the two encryptions and minimizes their
+weaknesses and now we'll see the purpose
+of encryption the main idea of
+encryption is to protect data from an
+unauthorized person who wants to read or
+get information from a message that was
+not intended for them encryption
+enhances security when sending messages
+through the internet or through any
+given Network the following are the key
+elements of security that encryption has
+to
+enhance number one is
+confidentiality encrypted message cannot
+be read or Changed by another person
+encrypt it transforms data in such a way
+that only specific individuals can
+transform the message granular Access
+Control users are limited to what they
+can see and do it makes auditing for
+accountability easy in the case of
+message leaked it is easy to trace who
+did that and when the security Bridges
+can be sorted out effectively
+then authentication the origin of the
+message received can be traced thus
+facilitating authentication and some of
+the most popular encryption algorithms
+are AES and pgp AES is a symmetric
+encryption algorithm while pgp is an
+example of an asymmetric encryption
+algorithm used today and now coming to
+difference between encryption and
+hashing encryption and quotes data to
+maintain confidentiality and security
+requiring a private key for reversible
+decryption and hashing ensures content
+Integrity by detecting modifications and
+altering the hash output encryption
+involves a two-way process encryption
+and decryption while hashing is a
+one-way process producing an
+irreversible unique digest both hashing
+and encryption plays vital roles in
+handling data messages and information
+in Computing systems they transform data
+into different formats but encryption is
+reversible whereas hashing is is note
+and now talking about the length output
+so encryption has variable length and
+hashing has fixed length and about the
+types so encryption has a symmetric
+symmetric and hybrid types and hashing
+as hashing
+types and now talking about the common
+algorithms so encryption has AES rc4
+Dees RSA ecdsa and hashing as sh1 sh2
+md5 crc32 and bput
+so this was about the difference between
+encryption and hashing and now
+continuous advancements are crucial to
+adapt to evolving attack strategies
+emphasizing the need for upto-date
+hashing and encryption methods and
+staying current with the latest
+techniques is imperative to enhance
+Security in modern Computing systems and
+adopting contemporary methods ensures
+resilience against everchanging threats
+and maintains robust data prot action so
+this was all for this tutorial hope you
+guys found it informative and helpful if
+you like this session then like share
+and subscribe and if you have any
+questions then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+Simply learn staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

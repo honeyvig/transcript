@@ -1,0 +1,1070 @@
+hey everyone welcome to Simply Learn
+Today We Will Learn Python exploratory
+data analytics in this tutorial we will
+be going through the fundamentals of
+data analysis with python that covers
+the data analysis libraries data
+visualizations and much more for better
+understanding let's go through a simple
+use case on analyzing student
+performance so that we can come up with
+a report to assist improvisation in
+their academic performance so here's the
+context let's imagine our client from
+the educational institute who runs a
+couple of schools in the city he and his
+school administration identified a
+growing concern about the overall
+development of their students realizing
+that academic Focus alone was not
+yielding in the desired results to
+address this issue they hired a data
+analyst to investigate key factors
+influencing Student Success the anal
+list highlighted critical parameters
+like physical fitness parental education
+rest and recovery and access to
+resources as contributors to students
+Performance Based on these findings the
+school recognized that a holistic
+approach is needed they decided to
+invest in programs that promote overall
+development by focusing on key areas
+targeted by the analyst the school now
+successfully enhances both academic
+firmance and overall development of
+their students the key to this success
+was by Python's exploratory data
+analysis using which the analyst Deep
+dive into data about critical aspects of
+a student's day-to-day schedule now
+let's go through a similar approach
+through our demonstration on Python's
+exploratory data analysis but before
+that if these are the type of videos
+you'd like to watch and hit that like
+And subscribe buttons and the bell icon
+to get notified just for Quick Info if
+you want to upskill yourself master data
+science and data analytics skills and
+land your dream job or growing your
+career then you must explore simply
+learns C of various data science and
+data analytics programs simply learn
+offers various certifications and
+postgraduate programs in collaboration
+with some of the world's leading
+universities like Caltech Purdue IIT
+conour and many more through our courses
+you will gain knowledge and work ready
+expertise in skills like SQL Advanced
+Excel python machine learning data
+visualization generative Ai and over a
+dozen others that's not all you also get
+the opportunity to work on multiple prod
+projects and learn from industry experts
+working on Top Tire data and product
+companies and also the academic from top
+universities after completing these
+courses thousands of Learners have
+transitioned into a data science or data
+analytics role as a fresher or moved
+onto a higher paying job and profile if
+you are passionate about making your
+career in this field then make sure to
+check out the link in the pin comment
+and description box below to find a data
+science and data analytics program that
+fits your experience and areas of
+Interest now without further delay let's
+get started with our python exploratory
+data analysis but before getting started
+with the demonstration let's have a
+brief understanding of exactly what is
+exploratory analysis is this anything
+different from regular data analysis
+yeah that's exactly what we're going to
+discuss now types of data analysis so
+basically there are two different types
+of data analysis initial data analysis
+and exploratory data analysis now what
+is initial data analysis and what is
+exploratory data analysis let's
+understand a little briefing about these
+both first let's get started with
+initial data analysis so what exactly do
+you mean by initial data analysis so
+data can be in any form it can be an
+Excel file it can be a SQL file it can
+be a PDF it can be an XML it can be even
+a website whatever it is it is Data if
+you have some information in this which
+can be used to extract some valuable
+information then it is Data so initi
+data analysis is a process of inspecting
+the data and screening the data that
+takes place after data collection and
+before statistical analysis so before
+you conduct any statistical formulas and
+analysis on the data and squeeze the
+data to extract some valuable insights
+the process which you perform is called
+as initial data analysis like taking the
+data from The Source cleaning the data
+transforming the data into a readable
+format and using that readable data to
+build some basic charts what exactly is
+happening with this particular company
+brand or anything let's say I give you
+some data from the company then you get
+some insights of it how many number of
+traffic you receive how many number of
+orders you received what's the sale that
+you made in a specific month specific
+quarter or specific year and what was
+the profit so basic information which
+you convert from the data and create a
+dashboard right that is called as
+initial data analysis so a step Beyond
+initial data analysis is known as the
+exploratory data analysis this is where
+you perform some statistics and
+probability and predict the future right
+so let's dive deep and learn what
+exactly is exploratory data analysis so
+a simple definition for exploratory data
+analysis is as follows exploratory data
+analysis is a key step in data analysis
+process that helps you identify patterns
+outliners and relationships between V
+variables before making assumptions it
+is not like you just create a dashboard
+out of the initial data analysis and you
+can predict the future no it's not like
+that you might have to last you might
+have to go through some permutations and
+combinations you might have to check the
+seasons you might have to check the
+possibilities right during some
+particular seasons in the year let's say
+it's Christmas then you can expect some
+good sales let's say it's some Festival
+it's some special occasion you can
+expect some good sales on the product
+right and maybe a part of the year maybe
+a part of 10 years a decade right in a
+certain period of time there might be
+some reason due to which the sales of a
+certain product were high so to make
+sure that your assumptions to make sure
+that your projection of the sales is
+100% accurate or at least 90 to 95%
+accurate then you might have to go
+through the exploratory data analysis
+where you make use of statistics in your
+data analysis now there are certain
+steps that you might have to follow
+while going through exploratory data
+analysis so following are the steps so a
+first few steps might be slightly
+relevant to initial data analysis like
+connecting data cleaning it transforming
+it and loading it after that you will
+import certain libraries from Python and
+after that you read the data what
+exactly you have in your data the number
+of columns the number of rows and if
+there are any null values if there are
+any uh entries which are invalid you
+might have to check that read that and
+you might have to check for duplicate
+entries it is possible that one entry
+might have been entered by two different
+people right there might be a
+duplication so you might have to
+eliminate those duplications you might
+have to check for some missing values
+you might have to calculate the total
+number of missing values from the data
+set and try to eliminate them from the
+calculation during your explorat data
+analysis followed by that that you have
+to do some model engineering followed by
+that you might have to do some feature
+engineering creating features and then
+you will get started with explorat data
+analysis and the at the end you will
+generate a projection or a prediction or
+give you an assumption that this might
+happen in the future and you might have
+to take action to avoid it or you might
+have to take action to improvise it
+right so this is how the steps in
+explorat data analysis take part now
+let's proceed and start with our demo on
+Python's exploratory data analysis and
+in this session we will be using the use
+case that we discussed before which
+happens to be the students performance
+data set so in this particular data set
+we will be having some columns based on
+physical activity the distance from home
+parental education the subjects the
+marks they have scored in the previous
+exam the marks that they have scored in
+the previous exam and if they have any
+disabilities if there are having any
+resources that they require to write the
+exams right so a few parameters the
+important parameters that we will be
+discussing in this session and followed
+by that we will project the future that
+how they will you know improve in their
+exams and if there is a problem and if
+there is a solution to that then we can
+Implement that solution and help
+students to gain better marks in their
+exam so that's the overall use case for
+this demonstration now let's get started
+with our Jupiter notebook now we are on
+Jupiter notebook now let's get started
+so I would like to have a title for my
+notebook so I'll write an HTML code for
+that so HTML code
+uh and I have uh three
+apostrophes and here I would like to
+write something in H1 so I want my title
+to be in H1
+[Music]
+so style will be
+background
+color color name will be dark
+blue so we Let's uh proceed with the
+simply L background which will be dark
+blue
+usually and the
+color of text will be
+orange and I also want to have the font
+let's Let me give the font size as
+30 and in the next line I'd like to have
+border radius I can give the Border
+radius as 20
+pixels and padding to be 16 pixels
+text alignment I'd like to keep it
+Center there you go let's code the let's
+close the H1 and now let's code the uh
+background color or border color
+so b
+style so what we can do is we can
+basically have this uh code here and
+what we will do is we will reuse this
+particular code segment because we will
+be having multiple HTML codes in this
+particular uh workbook which will
+explain the results of the analysis that
+we are doing so the way we just run the
+code and after that we will be getting
+some visualizations and I will be
+writing some textual content in HT in an
+HTML page so that it will be easier for
+for the people to understand what's what
+exactly is happening here right so the
+color will be light blue and now comes
+the text we will close this and here we
+will write the text
+as
+python
+exploratory data
+analysis and we
+will break
+here for student performance
+and here we will close the
+H1 and lastly we will display this in
+HTML code so basically we miss this
+Library so we will be importing from
+IPython display import HTML to display
+this particular code so without this
+particular Library we cannot display any
+HTML codes in our notebook so we will
+quickly run that and we have a title
+over here now let's proceed with the
+next part now we will uh use some
+libraries like CAD boost and light bgm
+so for that we might have to install the
+these libraries so we will be using pip
+install here pip install cat
+boost and controll enter to run this
+particular code segment or you can also
+use run and it's installed and after
+that we will also in
+install Light
+bgm G sorry not
+bgm so it's already installed now we
+will start importing the libraries that
+we need so we will be needing numai
+Panda seon Matt blood Li and we will
+also import another special Library
+which is for ignoring warnings so we
+will import warnings and after that from
+we will be importing that warnings from
+I python display import clear output and
+after that we will uh tell the Jupiter
+notebook to import if there are any
+warnings so that code will be warning.
+filter warnings and in the uh brackets
+we will write ignore so uh the basic
+libraries which we will be needing are
+as follows
+import
+numai as V Let's quickly copy this and
+proceed enter and now we will be needing
+pandas as
+PD enter and now we will be needing
+[Music]
+cbon
+SNS and we will also use mat plot
+lip. py plot
+as
+PLT and after that we will import
+warnings
+from I
+python.
+display
+import
+clear
+output
+warnings do filter warnings
+ignore now we'll just quickly run this
+query run and now we will proceed with
+feature
+engineering so you can use a hashtag to
+ignore that particular line from
+execution for jupyter
+Notebook and here we will be importing
+import
+re from
+sklearn do impute
+input simple
+imputer from SK learn do
+model
+selection import kfold there you go now
+let's quickly run this
+query there you go now we will proceed
+with modeling and model evaluation once
+we are done with this then we will
+Direct import the data into our notebook
+so for modeling the data we will again
+use a hash code so that this particular
+line will not
+execute and import some libraries Li GT
+GBM as
+LGB from light GBM
+Library import
+lgbm
+regressor from CAD boost
+import add poost regressor there you go
+let's quickly run this
+command there you go now lastly we have
+one more task before importing the data
+that is model evaluation once that is
+done we can proceed with importing the
+data there you go let's quickly run it
+and now so far so good we have uh done
+the basic Library Imports and feature
+engineering is done modeling is done and
+model evaluation is also done now we can
+begin with importing the data so we
+let's also add U the HTML code where we
+have done this importing so here I will
+try to add another segment and I will
+import the HTML code here which displays
+a similar HTML format which explains
+what exactly is happening here just a
+moment I have the code ready I'll just
+paste it here there you go let's quickly
+run this so that we have a HTML code
+here page here which explains what
+exactly is happening here so we're
+importing libraries and also student
+data now let's import the student data
+so that let's write the query so we are
+importing the data as data frame and
+after that we will write pandas read CSV
+right and here we will add the location
+of the file right so the file is located
+in my downloads section so let's quickly
+copy that location and paste it here so
+this is the location of my file let's
+quickly run it so there might be some
+error it's okay we can resolve it so in
+such scenarios you don't have to worry
+either you can add an R but even if that
+doesn't work you might have to change uh
+in this case it worked but in case if it
+doesn't work what you can do is uh you
+can eliminate uh the r and you can just
+change this from uh forward slash to
+back slash this will also help so this
+could be worth it so this can also work
+so these are the situations where you
+can use this now let's proceed with some
+more uh interesting facts let's try to
+understand what's going on with our uh
+data set right so what you can do is now
+the data is stored in DF variable as a
+data frame so what you can do is read
+this particular data DF do shape so that
+you can understand what's the uh what's
+happening with this data right so it can
+tell you that there are uh 6 sorry
+6,67 rows and 20 columns now let's add
+another query part and here you can uh
+try to see the head right right what
+head means basically head means uh the
+column headers so what you can do is
+just write DF do
+head and run now you have the column
+headers and couple of sample columns
+right sorry couple of sample rowes now
+let's proceed with uh checking the
+duplicates and identifying the total
+number of duplicate entries in this
+particular data set so you can write
+down DF dot U
+duplicated
+dot sum and you will get the number of
+duplicates present in this particular
+file so we have zero duplicate entries
+now let's see if there are any null uh
+elements in this particular data frame
+so DF do is
+null dot
+sum so these are all functions control
+enter there you go so in the column
+teacher quality
+there are 78 null entries and in
+Parental educational level there are 90
+null entries and distance from home
+there are 67 null entries now what we
+can do is uh from the okay so from DF
+shape we can add a new cell here and we
+can write a HTML code so that the viewer
+can understand that we trying to
+understand our data so let's write a
+quick code for that so let's not waste
+much time in just writing the HT HML
+code so I've got that HTML code written
+in a notepad already so I'll just past
+it over here and let's quickly run it so
+that we have a HTML visibility here so
+this was supposed to be the result so we
+will add it here so what we will do is
+quickly edit this particular content
+we'll just quickly copy this code and
+paste it over
+here change the content from importing
+libraries to
+reading student data and we will cut
+this code from here and we will paste it
+in
+here so that it give give us some
+information let's also run this
+particular code
+segment so that we have trading student
+data there you go now the next part of
+this session will be about creating a
+Target variable so overall Target of
+this particular data analysis is about
+exam score right so we can name our
+Target variable as exam score and let's
+understand the distribution of this
+particular exam score with uh the
+variables we have now let's write down
+plot.
+figure figure size should be around 15
+comma
+9 equals ALS to let's add a bracket here
+15 comma 9 or let's keep it as six 9
+would be a little bigger now enter now
+we'll use cabon Library here SNS dot
+count
+plot X is equals to data frame cleaned
+Target okay uh before cleaned Target we
+might have to run a few more okay we did
+not perform data cleaning so far right
+so let's proceed with data cleaning so
+far so we found some empty entries right
+null entries and we also found some so
+here we have 299 rows which have missing
+values so we will have to remove that
+for that uh we might have to create a
+new column which has to be named as not
+um assigned right DF data frame not
+assigned which is equals to DF do drop
+na so we will be dropping the null
+values here it's a function function and
+here let's print the values print DF do
+DF hore na do shape so how many number
+of rows and columns we have right and
+after that let's also try to eliminate
+the null values as well do a is null so
+we don't have basically we don't have
+null values but we have U some illegal
+entries maybe some there you go now
+let's quick run this query so there you
+go so the new data is about
+678a
+20 so there is some okay we did uh some
+mistake here so we supposed to add it as
+null Nu NL n Now quickly run this so we
+should not get any errors this
+time there you go no errors so far so
+good now let's describe the new data set
+DF na dot describe so these are the new
+columns and rows that we have and we
+have uh mean standard variation standard
+deviation minimum maximum so the scores
+are split into 25% 50% and 75% which
+could be based on hours studied which
+could be based on attendance sleep hours
+previous course tutoring sessions
+everything so uh minimum sleep hours
+maximum sleep hours 25% of that 50% of
+that 75% % of that so that is supposed
+to be the um describe now what we will
+do is we have a Target variable which is
+exam score right now we will do some
+changes to it we already know in an exam
+there will be a threshold value it can
+be 25 marks per exam it can be 50 marks
+per exam and it can be 100 marks per
+exam right in our situation let's
+consider the threshold value is 100
+marks right if there is a situation
+situation where marks is entered in a
+wrong way right it can if they add if
+they wanted to add 11 but by mistake if
+they added uh another one right triple
+one it's not a right entry right so we
+will try to eliminate those kind of
+data so we will create a new uh data
+frame here which is the data frame
+cleaned is equals to data frame
+underscore not null so we have
+eliminated the null values
+dfdore na now we will add our Target
+variable which is exam
+score should be so let's come out of
+this and here we will add it as should
+be less than or equal to 100 but not
+more than 100 let's use square
+brackets here we also the format is
+square brackets actually actually now
+enter
+and we will describe this
+particular data set instead of D FNA we
+will copy paste this here now let's run
+this okay exam score is not identified
+let's quickly check the error and
+resolve it yeah so we missed out to add
+U colons here it's okay not a problem so
+this was supposed to be how it is now
+let's run this and we will have the
+answer over here so we have the output
+now let's check the
+head of this particular clean data set
+so we can make use of the same code here
+and paste it right here and instead of
+describe let's write head so that we
+have the header of uh this particular
+data set so we have our study and
+everything normal and we will categorize
+the data right so we will make use of
+three columns our study attendance and
+previous course and uh after that we
+will also make use of other columns in
+this particular data set which happens
+to be the parental involvement access to
+resources sleep hour storing sessions
+Etc and now our Target will be the exam
+score that we created over here right
+this exam score will be our Target and
+using this particular exam score Target
+we will categorize the data okay we will
+categorize the data in terms of uh let's
+say uh first class uh second class and
+uh pass or something like that right so
+if if a student is uh scoring below 64
+and uh that is a separate category if
+the student is scoring equals to or
+above 65 that is a different category
+and if the student is scoring Beyond 70
+that's a different category and uh
+before we proceed with that let's try to
+add a HTML code before this particular
+data set so that we have um an
+understanding of what exactly happened
+here so I let's I'll just quickly copy
+paste this particular code here so we
+will run it and now next we will
+describe check the data type column
+separate and everything and we will you
+know create data type category
+variables right now so far so good now
+we will create the categories so num
+call equals
+to ours
+studied comma
+attendance so let's quickly add the
+data previous exam
+scores just a minute let's quickly add
+the columns let me take a while there
+you go I've added the columns so we are
+considering three different columns uh
+our stance and previous course for Num
+call and Cat call we are considering the
+other columns apart from the first three
+and our Target value is exams score
+let's quickly run this there you go and
+now we will try to build some
+visualizations and before that let's try
+to uh add some data uh from in HTML
+let's try to create a okay what we can
+do is simply copy this particular HTML
+file here we can take
+this and add it here so that we will
+understand what exactly is happening
+next and in place of reading student
+data we will write data visualization
+for student
+data and we will keep the color same
+dark blue background and uh the color
+for data visualization will be light
+blue and student data will be Orange
+Let's quickly run and there we have it
+now our Target variable is exam score
+right now we will compare this
+particular Target variable with three
+other parameters so our parameters will
+be the following uh as we discussed uh
+creating the segregation in data set
+right so first will be distribution of
+Target variable with other parameters so
+we will create another HTML file for
+that right here just a minute while I
+paste the code for HTML quickly run this
+there you go so distribution of Target
+variable exam score against some
+parameters now we will write the plot
+for
+that plot. figure so we are going to
+consider the size equals to 15 comma
+6 Pig
+size is equals to 15 comma 6 the same
+one that we considered before and we
+will be using cbon SNS dot count
+plot Open Bracket this a function x
+equals to
+DF cleaned okay uh what we can do is
+just quickly take the
+colum name so that we don't create any
+mistakes here and we will paste it over
+here in srip TF there you go of
+Target so our Target is exam score comma
+and we will use the pet as
+green and the plot title will be
+distribution of Target variable exam
+scod we can copy this okay just a minute
+before that PLT do
+title should be let's use double codes
+now copy this and paste it
+here I think semicolon went off okay not
+a
+problem it's right here let's add a DOT
+as a full stop and the next line if you
+need you can add the full stop if not
+you can ignore PLT do grid
+true which equals to
+major
+comma AIS is equals to
+Y comma line style equals
+to so I want lines to be hyen hyon in
+this way I want the lines and comma line
+width U let's say 0.5 or 0.7 let's go
+with
+0.7 line width equals to 0.9 m
+there you go now let's quickly run this
+query there you go done and we have the
+first visualization so here you can see
+there are some students which are
+scoring 58 59 and you can see maximum
+number of students are already scoring
+good marks which is under 65 and uh
+sorry which is under 70 and above 65 and
+there is a good number of students uh
+which are also scoring uh above 65 as
+well right so sorry 70 70 as well so we
+have it less than or equal to 70 71 and
+highest scorer in some situations there
+is also 100 if you can see there is
+slight growth here there are a few
+students toop us maybe which have
+already scored at 100 as well now we
+have the list here now we what we need
+to do is we need to segregate that is
+part one which is less than or equal to
+64 which falls under 65 and another
+category which falls in between 65 to 70
+and above 70 so we need to categorize
+these three uh datas and segregate them
+as bottom 65 top which is above 70 and
+mid between 70 to 65 right now before
+that if you want to add an HTML document
+uh sorry segment here which explains
+about the distribution of Target you can
+also do that it's already added here now
+let's continue but in case if you want
+to uh add uh some data which explains
+that we're trying to segregate you can
+also do that uh I would like to do do
+that let's quickly add that HTML code
+here so what this particular code will
+do is it will tell the percentage of
+students which are scoring less than 65
+number of St uh percentage of students
+uh scoring in between 65 and 70 and the
+percent of students which are scoring
+Beyond 70 right let's run this and here
+we have the result bottom 2.81% scores
+under 64 while 24% scores over 70 and
+50% are in between 65 to 69 right now
+let's uh continue with the segregation
+part of the data so for segregation we
+will create three different variables a
+b c so first a is equals to length of DF
+cleaned so let's copy the column name
+sorry data frame name length of DF
+cleaned inside the square bracket we'll
+again add DF cleaned of Target variable
+which is exam score
+let's also add uh single quotes
+here who are scoring in between or less
+than let's start with less than or equal
+to 64 we'll not consider 65 we'll
+consider 64 divided by Len of DF cleaned
+Target variable exam score single codes
+into
+100 which will give us the percentage
+now similarly let's just copy and paste
+this three more times for B and C so
+here instead of minus supposed to add
+equals to and another one so here equals
+to and instead of a I will write B and
+the last one is C and instead of 64 we
+will add 70 here for top and here we
+will make some changes it should be
+greater than or equal to
+65 so this is the third category a b c
+and then we will proceed with printing
+the files so
+print the
+bottom for the first one which is f of
+a is to do
+2f and we will add the percentage symbol
+over here uh
+under
+64 now we can copy paste the same here
+and we can change the
+variables so here we will be adding
+under over
+70 lastly in between the ones in
+between 65 and
+70 there you go here we will change the
+values from A to B and here a to c there
+you go and we can quickly run this query
+so it's not 70 it was supposed to be
+69 there you go so we forgot to mention
+this particular one now let's run
+this there you go so we have
+21% of people who are scoring under 64
+24% over 70 and 53% are in between
+average so I think the school is
+focusing on improving this particular
+percentage reducing this particular
+percentage and increasing this
+particular percentage and try to
+eliminate if possible this particular
+one which are under 64 so that is the
+overall Moto I guess now so far so good
+let's now try to remove infinite values
+from HTML right so before that let's add
+this particular HTML code here so which
+explains what we are trying to do so we
+will first implement the code that
+prevents warning abouts in finite values
+during data visualization and now let's
+add the code which will try to eliminate
+the uh infinite values let's copy this
+particular data frame cleaned uh data
+frame name here now DF cleaned do
+replace square brackets NP dot
+info comma minus NP
+do info out of the square brackets do
+NP do
+na non any values we're trying to
+eliminate any values in place of those
+values you can write true and after that
+we will try to element the null so if it
+is
+null do some give me the total number of
+null values after this right so let's
+try to execute that there you go so all
+the null entries have been removed here
+now let's see the distribution of
+numerical values here so before that
+let's add the HTML code for that so
+let's quickly run this so distribution
+of numerical values so we will be
+considering these three parameters so if
+you go back here you can see our studied
+attendance and previous course so we
+will be considering these three values
+or these three columns and check the
+distribution of these variables against
+the exam scope so uh is it making any um
+you know kind of variation if the uh
+attendance is high if if the attendance
+is high is the exam score high and uh
+apart from that we have if our studies
+is high is the uh Mark score is high and
+if the previous scores are high is there
+a chance to get better scores in this
+particular exam so what we are trying to
+do is we are trying to see if there is
+any direct involvement of number of
+study hours and number of days attended
+and number of uh or the number of marks
+they received in the previous course and
+we'll try to build a visualization on
+that
+front so let's go and build that so
+we'll try the try to write the code here
+figure
+access equals to
+PLT
+Dot sub plots so we will be having three
+different plots here since we're
+considering three different uh
+categories and the fixed size should be
+equal to 12a 4 there you go
+now
+access is equals to access do
+reel for
+idx comma call
+in
+enumerate and we will try to import the
+cbone library here we will try to create
+histop plots here histograms
+here histop plot
+so line style we will be selecting this
+one and
+comma line width will be
+0.7 there you go next will be access
+ITX do
+set title so for this we will be uh
+setting the title as distribution of
+columns so the columns will be the three
+uh ones attendance I was studied and uh
+what was the third one that we
+considered previous course right so
+instead of mentioning them specifically
+what we can do is we can just write
+columns here C and close
+there you go and
+lastly PLT
+doti and show the plot there you go
+let's quickly run this query run and now
+we will be having the visualizations
+here so you can directly see the
+involvement of these three parameters
+here if they are trying to help if the
+number of hours are increased then you
+can see if there is a better Improvement
+in scores if the attendance is increased
+if there is a betterment in scores or if
+the previous uh scores are helping then
+you can find it out how it is there you
+go now we can write a result here in the
+form of HTML page and if we run this it
+will give you the result the breaks or
+gaps in the our studed variable may be
+due to the respondents answering
+appropriately the variables attendance
+and previous course which exhibit a
+uniform distribution have a normal
+impact on exam scores variable which is
+a target variable now let's proceed with
+another part of this session which will
+be about the relationship between the
+numerical values and the target
+variables now we will copy paste the
+same code and make some menu changes to
+it so the only change that we did to it
+is we're trying toh build a scatter plot
+so we will be getting a scatter plot
+here but before that let's try to add
+another column here and try to add an
+HTML code which explains why we are
+doing
+it there you go SC plot so basically
+these two are one and the same here we
+use some column graphs so here we did
+the same using the scatter plot which
+will help for a better understanding now
+we will try to build some
+correlations so basically a list is
+called correlation is created containing
+the names of the columns for which you
+want to calculate the correlation so
+here in our situation it is the DF docr
+which is a data frame and it is created
+by selecting only these columns for DF
+clean data frame effect effectively
+created a new data frame containing only
+the specified columns now the second one
+which is the co which is a calculate
+correlation so this method computes the
+correlation Matrix for selected columns
+which is in DFC RR the one indicates
+perfect positive correlation minus one
+indicates the perfect negative
+correlation and zero indicates no
+correlation and lastly the setup of plot
+this line sets up the figure size of the
+plot in this particular situation we are
+choosing five and four right now let's
+quickly try to execute this query and
+see the answer and we will also add the
+HTML code for this so that we have a
+better understanding for
+this so we will be adding that
+HTML uh box here which will explain what
+exactly happened here so this is our
+plot and this is the
+correlation now let's try to add that
+HTML code right here the result of this
+particular data visualization will be
+maintained here so the our study and
+attendance shows a positive
+correlationship with the target variable
+which is exam SWA however previous
+course appears to have no or little
+relationship with the target variable
+right now let's continue with our next
+uh part of the session so now we will
+try to identify the relationship between
+studies hours and attendance and
+extracurricular scores right so we have
+other uh columns to consider which is
+extracurricular activities so there is a
+belief that extracurricular activities
+will also help students to study better
+so we will find if there is a relation
+between the target variable and these
+extra activities attendance and study
+hours now let's quickly add the code
+here now let's quickly execute the code
+now we have the visualization which
+explains the relationship between the
+number of our studied extracurricular
+activities Etc so here it is and now
+let's add an HTML code which explains
+about this
+result think this particular code was
+supposed to be added
+here so this uh is the resultant column
+here now here it explains about the
+influences that it performs so the extra
+collect activities parental income and
+extra things that influence the scores
+and there you
+go now let us also consider other
+columns right the other parameters like
+resources are available or not parental
+education and other things which also
+might have influenced the exam scores of
+students so for that let's add an HTML
+code so that we have an HTML page here
+which explains what is the next
+procedure that we are following right
+now let's add the query here so here we
+are considering the other parameters
+like family income peer influence
+motivation level gender parental
+involvement parental educational level
+and extracurricular AC activities and we
+are considering them against the target
+variable which is exam score and now
+let's execute this
+query there you go now we have generated
+a graph which explains about this
+particular parameters against the target
+variable and now let's add the HTML page
+here which explains about these
+results let's quickly run it and there
+you go so when certain factors affect q1
+and Q2 but not Q2 it can be understood
+that individual has has overcome
+challenges through personal effort right
+so if Government policies and corporate
+social contributors are focused on
+addressing these aspect it seems that we
+could create Dynamic country with
+greater social mobility and open
+opportunities for all all right so if
+extracurricular activities can outweigh
+the influence of other variables in
+academic performance then we should
+foster that kind of environment right so
+this is how uh you can get extract some
+statistical analysis on this particular
+data set now let's quickly rename this
+uh
+python
+Eda
+students
+performance and you can quickly renam
+and save it and that brings us to the
+end of the session on python exploratory
+data analysis if you have any queries
+regarding any of the topics covered in
+this session and if you require any of
+the resources used in the session like
+PPT code document or data set then
+please feel free to let us know in the
+comment section below and our team of
+experts will we'll be happy to assist
+you as soon as possible until next time
+thank you for watching and stay tuned
+for more from simp Lea staying ahead in
+your career requires continuous learning
+and upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch watch
+similar videos to ner up and get
+certified click here

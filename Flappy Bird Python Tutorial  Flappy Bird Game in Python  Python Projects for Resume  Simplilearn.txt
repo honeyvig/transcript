@@ -1,0 +1,1851 @@
+foreign
+YouTube channel today's session will be
+a guide for you to create your own
+preppy Bird game but before we begin if
+you love watching Tech videos subscribe
+to our Channel like the tutorial and hit
+the Bell icon to never miss an update
+and before starting let us have a simple
+quiz question to pressure upon our
+knowledge and your question is which Pi
+game function is used to set the size of
+the window
+and your options are first option is
+pygame dot display dot set underscore
+mode function and your second option is
+pygame.display.set underscore size
+function and your third option is by
+game dot display dot set underscore
+screen function and a fourth option is
+none of this
+please answer in the comment section
+below and we'll update the correct
+answer in the pin comment you can pause
+the video give it a thought and answer
+in the comment section
+and I have an insightful for you guys
+if you are focused on building strong
+Foundation skills for career growth in
+that case you can check out a free
+course to Learn Python Basics with the
+completion certification from scale up
+by simply alone you can check the scores
+with the link in the description box
+below
+now moving to our project
+first we will create a folder
+and you guys have already played the
+Flappy Bird game
+I will show you the demo but we'll
+create first
+and here we have
+created the folder Flappy Bird
+and inside we'll open the command prompt
+okay
+input an error
+yeah
+we'll just open the command prompt
+and now to open our ideally that is
+Visual Studio code we will write the
+command code space period and press
+enter
+it will open the visual studio code for
+us
+now here we will create the file
+and name it as bird Dot py
+and here we will start with the code
+and to code we need some images and
+sounds and this is our
+project that we're going to make that is
+a fairy Bird game so we'll just
+run it for you guys and show you how it
+works
+so this is our Flappy Bird window
+and when we just press space as we have
+set the functioning
+for it
+which space yeah I just got five points
+so this is the demo what we're gonna
+make
+so let's start with it we'll close this
+and start with our project
+and for starting
+first we need is installing and
+importing the packages and what you need
+to
+install and import this first is the
+random Library
+and for that
+I will write import random and if you
+want to
+install it you could just write the
+Command Web install random or you can
+search on the browser
+random Library
+installation python you will get the
+command though that would be the PIP
+command and after that we will import
+the sys Library
+system library and for that the command
+is PIP install OS hyphen SOS or you can
+just search for that you could run these
+commands in your command prompt or in
+your terminal of your ideally
+after that we will import
+Pi game
+and
+after that we will import
+buy a game dot locals
+and import all the files from there
+okay
+and it's showing us error just see
+import buy game dot locals
+port
+okay oh sorry
+from pie game
+yeah
+and the SOS Library
+will use this just to exit the game
+window that would be system.exist SOS
+dot exit
+okay
+and now moving on we will start with the
+global variables for a game
+and we'll start with FPS what should be
+the FPS over game and we'll set it as
+32.
+and the screen width that would be the
+global variable screen width and we'll
+set it as 289 after that we have screen
+height
+and we will set it as 5 1 1. after that
+we will call the screen
+that is first we'll create the variable
+screen and inside
+will go buy game dot display
+Dot
+set underscore mode and if you guys
+remember the quiz question
+you would get the idea from here
+and inside will pass screen width and
+Screen height
+screen
+width and
+screen height
+now moving on
+we will create a variable ground y
+that is
+for the reference of the ground in
+y-axis and that would be
+screen height
+multiplied by
+0.8 these calculations I have done with
+probability I have
+like inserted 1.6 and then I have
+inserted 1.2 and then I've set it at 0.8
+with the accordance of our screen width
+and height I have set this round y equal
+to screen height into 0.8
+and now
+game sprites now I will show you
+what pictures or what Sprites we gonna
+use in this game
+for that we'll just
+create
+and for game sounds
+we'll also create that and now moving on
+to
+Flappy Bird this is a Flappy Bird and we
+have the gallery here these are Sprites
+that we'll use we'll use these numbers 0
+1 2 3 4 5 6 7 8 9 to calculate the score
+and it would be displayed on the
+background this is the background image
+that we'll use this is the base image
+and this would be our bird that with the
+Flappy Bird but I have used Angry Bird
+image here and this would be a welcome
+screen this is a base pipes that we
+gonna avoid while flapping
+and I have downloaded some audios
+that would be the swoosh sound hit sound
+and the point sound to calculate the
+points and these are the free sounds
+that I have downloaded from the YouTube
+dashboard these are free music
+so anyone can use that
+so to use them
+I will paste this folder Gallery folder
+in the same folder of Flappy Bird
+so that we don't have to write the whole
+path to use them okay
+now we'll create a variable
+for our Angry Bird Player okay
+and we will import the image that is in
+the gallery folder
+and then we have Sprites and the name is
+bird dot PNG
+now for the background
+we will create the global variable that
+would background and inside we will call
+the image
+and that is stored in gallery
+slash
+and inside the Sprites
+and inside
+that is
+background dot PNG
+okay
+now
+we'll create one more variable that
+would be pipe and that would be using in
+the whole game so we'll create its
+Global variable
+and here
+we will write its path that is Gallery
+Splash Sprites
+splash the name of the image that is
+pipe.png
+you could write the whole path if you
+have your images stored in another
+folder okay
+so we know that we will use the assist
+module to exit the game and the command
+would be tested exit and after importing
+we have declared all the global
+variables and set the frames
+and now moving on
+we have set the ground y
+now we will create the main function and
+the program will be executed but we'll
+write in this main function control will
+start from here
+so to execute this function over to
+Define this function
+will create if name equal to equal to
+and inside we have Main
+and this will be the main point from
+where our game will start and will
+initialize the pi game here that is pi
+game Dot
+initialize init and after that
+we will
+control the FPS lock
+FPS clock
+we will create the variable FPS oh sorry
+FPS clock
+and inside
+we will use Pi game function that is Spy
+game dot time Dot
+clock
+okay
+now we'll set the captions for the
+display the window it should be
+displaying the Flappy Bird on the top of
+that for that we'll write the command Pi
+game dot display
+dot set underscore
+caption
+and inside we'll write
+Lappy bird
+and now we'll set the game sprites
+numbers
+but before that
+uh not before that first will do here
+only
+so
+game spreads
+we will
+take its variable and inside
+you will write the numbers
+that is the counting numbers we will use
+for
+counting our points and
+to get them initialized we will
+use the pi game Dot image.load and for
+that
+what we'll do
+we'll write and use the function Pi game
+dot image Dot load and inside this we
+will import the image that is stored in
+gallery Splash Sprites
+slash
+0 Dot PNG
+okay
+and now we'll convert
+use the convert Alpha function
+okay and connection to server we will
+just update it
+as it's showing our connection go
+disposed
+we will just
+open the command prompt again
+that is CMD and first we'll save this
+I don't know why
+but
+it stopped
+uh CMD
+and inside all right
+code space period
+you know I think the connection is
+initialized now
+terminal
+so you have this connection is good too
+now moving on
+what we were using convert underscore
+Alpha
+and it is used to set the FPS of the
+image
+we have initialized the pi game module
+and then set the FPS glow now we have
+set the caption and now we are creating
+a game spreads Tuple and total convert
+Alpha will optimize the image for game
+that is pixels and the FPS and will pass
+all the images now we'll create
+phone message and pipes but first we'll
+create all for the numbers
+okay so we'll just do that that is 0.
+PNG and we are using convert underscore
+Alpha
+function
+okay and then comma as we are
+doing for all the numbers
+so we'll just copy paste them
+we have done four zero dot PNG
+and we have used the convert dot Alpha
+we'll copy this
+paste this
+and use one dot PNG
+and then 2. PNG
+a DOT PNG
+oh
+five
+six
+seven
+eight
+and then nine
+four five
+we should write the code as fast as we
+can
+so we can use these the cut copy paste
+wherever required
+okay now we are set with these images
+that is the counting images and we have
+started with convert underscore Alpha
+function okay now moving on now we'll
+come to
+pipes
+and base
+so we'll create a message for them
+okay now starting with them
+we will
+use the convert function for them
+and for message
+we'll create the Tuple again that would
+be
+game
+underscore
+Sprites
+and
+inside will pass
+message this time
+and that would be equal to
+Pi game and we'll use the image.load
+to load
+in the images
+and then we will set the path of the
+images that is
+gallery
+slash
+rights
+splash
+message dot PNG I'll show you
+what is the message.png
+that is the welcome window so we are
+setting for it okay
+and for that also we'll use convert
+Alpha function okay
+that is dot convert underscore
+Alpha
+okay
+now
+moving on now we'll set the base and for
+that we'll write game underscore Sprites
+and now
+we will do for the base image
+I will show you the base image this is
+the base image that would be the base
+for the game
+now with the base image
+will load the base image and for that
+we'll write pygame dot image
+dot load
+and after that we will pass the
+will copy the hole and just paste it
+now we'll pass the location
+and the name of the image is paste.png
+okay and use the convert underscore
+Alpha
+function
+for its FPS
+and now
+we'll use the same for pipe
+so we'll just copy this
+and use it
+for pipe now here we'll pass the pipe
+and that is spygame dot load and the
+image name is
+pipe
+okay
+but in have a catcher what we have to do
+is to rotate the pipes
+so we don't have to use only the
+image.load we have to use the rotate
+function also that is present in the pi
+game so we have set the Tuple that is
+game spreads
+pipe
+okay
+yeah
+okay we are going good
+and now to rotate that we'll use the pi
+game function and for that
+we'll start with the
+round brackets and inside we'll call
+pygame Dot
+transform
+Dot
+rotate
+and here
+will store Pi game dot image dot load
+but image we want to rotate
+and inside
+we'll just pass the image
+as we have created a global variable for
+that and we have stored the
+path of the image there
+so we don't have to write the path here
+just a second
+we'll just write the name of the global
+variable that was pipe
+so here
+we will just
+pass pipe
+okay
+and here
+we have this okay
+and here we are using dot convert Alpha
+and give the rotation as 180 degree
+and we'll close that
+okay on the brexit loss now we'll
+provide a comma to that and now
+will load the pipe and convert Alpha use
+the convert Alpha
+that is pi game
+dot image
+dot load
+and inside will pass
+pipe
+and use
+Dot
+convert underscore
+Alpha function
+okay and here we'll close the bracket
+that is we have started one bracket here
+okay
+and close it here
+not Alpha we have
+and we have a comma here and here
+just a second
+okay okay we don't
+close it
+okay we went 110 degree
+[Music]
+okay now yeah it's good to go
+now for the game sounds what we need to
+do
+we will
+we have created a global variable there
+we will use that that is game sounds
+and inside will
+make a tuple and use the die sound first
+that is when the Flappy Bird dies
+foreign
+we'll just use the mixer class
+and
+make it sound in a game
+so for that we'll use Pi game
+Dot
+mixer
+dot sound
+and inside will pass
+gallery
+slash
+and in the audio folder we have die Dot
+wav okay
+now we'll just copy it and use it for
+other sounds
+now we'll use it for
+head sound
+and for that we have head dot wav
+if
+gets hit with a pipe and after that hit
+some we have the point Zone the points
+when the points increase
+the point sound should be played
+and
+then we have the smooth sound
+that is when the bird is flapping
+and the bird flapping but yeah so sound
+I will show you where it will be used
+then we have the wing sound
+and
+that sound is stored in bing dot wav
+now we are done with the game sounds
+now we are left with background image
+player image
+and how
+should we
+use them or load them
+so for that we'll use the game
+underscores rights
+and
+inside
+the Tuple
+we will
+pass background
+and that would be
+Pi game Dot
+image dot load okay to load the image
+image we'll use spygame dot image dot
+load and inside we will pass the
+background
+that would be the variable that we have
+created above that is the global
+variable and in which we have stored the
+path of the image and now we'll just use
+the convert note convert underscore
+Alpha we'll just use the convert here
+for background because it would be
+fixed for whole game
+it will just monitor its FPS
+no
+we will
+use games Sprites
+variable
+and in the Tuple here we'll pass
+the player
+and for player
+will use
+Pi game dot image dot load
+and inside
+will pass the
+name of the global variable which has
+the
+make path for the image and here we will
+use the convert underscore Alpha
+function
+okay
+now
+and we'll write
+Main
+game and we will create this function
+and we will also create the welcome
+screen function
+so for that
+we have a while loop in the pi game I
+will tell you about that
+holds the game again and again we will
+create the welcome screen function
+and the main game function
+okay
+so welcome screen function with show
+welcome screen to the user until he
+presses a button and Main game this is
+the main game function
+okay and we have
+created the pipe and put one pipe
+downwards we have make the rotation as
+180 degree now
+we have added the game sounds and we
+have downloaded it free from the YouTube
+dashboard and we've used the pi game dot
+mixer dot sound object and we will use
+all the sounds
+now we'll use background and player
+blading
+how they will blade like for when we'll
+play the game they would be blitting at
+any particular FPS
+so for that we have used
+the convert and convert underscore Alpha
+function
+no
+now we will make welcome screen function
+and the main game function we will
+define those
+but
+now we have just declared them
+there is a welcome free screen and it
+will show the welcome screen to the user
+until user presses the button and Main
+game function that will return When the
+game will get over and it will call
+welcome screen and the game will start
+again
+now we will
+start with the
+welcome screen function
+okay and inside
+so this function would use to show the
+welcome images on the screen and we'll
+start with
+getting a variable and naming it player
+X
+and
+we will create this coordinate as
+integer
+and we'll set it as
+screen
+width
+divided by
+5.
+I will
+explain you how I have
+arrived with this calculation and with
+this coordinates and I am
+setting the player y coordinate that is
+the bird coordinate
+where it should be present on the
+welcome screen
+and its height should be
+screen height
+minus
+game sprites
+that would be the
+itself right that would be the player
+side
+minus player
+and
+do it
+get height divided by 2 means it should
+be in the middle and its height should
+be
+deducted from that
+okay
+now note get height
+function
+that is get height
+and
+we will divide it by 2.
+okay
+we'll divide the
+right by 2 then
+that is the screen height minus game
+sprites player that is we have created
+the variable game sprites
+and the player height the
+height of the image of the player
+okay and we use the tot get height
+function to get its height and we'll
+minus that from the screen height and
+then we will divide it by 2 okay
+I will show you
+what I want to
+tell you when but I am setting here
+so this is the welcome screen and this
+is the x coordinate
+that is what we have set screen width
+divided by 5.
+we have set the screen width in the
+starting that is the close variable
+divided by 5 this is the x coordinate
+and for the y coordinate we have minus
+that is screen height minus the player
+height divided by 2.
+okay
+now
+moving on
+now we will set the height of the
+message
+okay for the x coordinate
+we will write int and inside
+all right
+screen width
+and we'll minus the game sprites message
+height or the message wait sorry okay
+minus
+game sprites
+message okay and to get its width we
+will use the function dot get underscore
+with
+and then we will divide the whole width
+by 2. okay
+now
+we will declare a variable message y
+and set its height in the y direction
+first we'll create it for integer and
+then use the global variable that is
+screen height
+and we will multiply it by
+0.13
+I have taken all the assumptions and all
+the probability with these numbers
+that's why I've came to this decision of
+taking it at 0.13 with this screen width
+and Screen height so it suits best for
+me if you change the screen width and
+screen right then you should probably
+change with the multiple of 0.13 or you
+could just
+apply the probability
+just change the numbers and see what
+would be best suiting it okay
+into 0.13 and the base
+if you see the base image
+I will take back
+to our Sprites so this is our base image
+so for that we'll set base X and that
+would be at zero
+and now
+we will run the while loop while true
+and we run the while loop for events so
+for event in pi game
+okay
+we'll use the event Dot
+get function
+okay and inside this function
+I will show you what we're going to use
+like if user clicks on the cross button
+then we'll just close the game for that
+we'll use the if statement that is if
+event Dot
+type
+that is
+equal to equal to
+quit
+or
+or we'll also set some other keys to
+quit the game if the player that is
+playing the user
+click these events so the game just
+shuts down or quit okay that would be
+even though type
+equal to equal to key down
+that is and we'll also use the key up to
+start the game okay key down
+and we will also write another that
+would be K underscore Escape okay
+and event dot key
+equal to equal to
+K underscore
+Escape
+ok
+and for this event
+what should we do
+now we will set the command that would
+be Pi game Dot
+quit
+okay
+and after that system dot exit
+so the game would be closed
+now if the user presses space or up key
+then we'll start the game for them
+for that
+we'll just write the alif statement
+and inside this alif statement we will
+set the events
+that is alif event Dot
+type
+that is
+would be the space or key up
+now
+in window type that is equal to equal to
+first we'll set key up and after that
+we will also set
+event
+Dot key
+that is equal to equal to K
+underscore space key
+okay if the user presses the space key
+then also
+the event would start
+or event
+key
+that is equal to equal to
+K underscore
+up okay we have set the up key here
+so what we will do we'll set the key
+down here
+that is these events should be true and
+if we just press the key down then the
+game should restart okay we should
+return to the main game
+foreign
+for that we'll write the command here
+we have set the alif statement and we'll
+just write return
+okay
+and now we will return to the main game
+and the main game starts now
+we will write the else condition
+and that would be for the blading that
+would be screen would be bleeding
+for the background and where we should
+set it
+okay
+now
+put that
+I will use the
+screen variable and use the plate
+function
+and inside
+and use background
+that would be
+we have stored in game sprites we have
+loaded the background image
+okay and where it should be bleeding we
+will set it here that would be comma
+and in the brackets we will
+make the code in its zero comma zero
+okay
+now here we will BLT it again
+note again but the player will bleed the
+player on the welcome window
+for that we'll use screen dot blade
+and we have game underscore
+Sprites and inside
+values
+player
+and
+here we would pass the coordinates for
+the player that we have signed
+that is player X comma
+player y okay
+now we will let the message
+screen
+oh sorry
+we'll just copy it
+and paste it here
+now for the message
+um
+we'll use message pass the message
+and use the x and y coordinate of
+message
+that is message X
+and message y
+okay
+now
+moving on
+we will set the updating of the base
+and the welcome screen
+now for base
+so base has the basics and we have set
+the ground y the global variable for
+that
+if you remember
+or just go at the top or when I will
+share the code with you uh with a GitHub
+profile you can just download it there
+download it from there and see
+where I have
+set the ground by global variable I will
+show you
+so here is a ground wire that is screen
+height into 0.8 and I have calculated
+this with the probability that what
+suits my screen width and Screen height
+okay
+now moving on we have set the plating of
+the base
+now
+we'll use the display dot update
+function to update these bleedings
+that would be
+buy game
+dot display
+Dot
+update
+function
+and now
+we'll use the FPS
+cloak that we have set in the main
+function
+and Dot tick function and pass the FPS
+that we have set it at 32. so we update
+all the images on the welcome scheme and
+now we have to run this update function
+to show the images and we'll control our
+FPS with the FPS clock.tick
+now the welcome screen is done
+and moving on
+now we will Define the
+main game function okay
+so starting with main game we will
+define it
+main game
+and inside first we'll set a variable
+and set its score equal to zero
+now we have set the score equal to zero
+now we'll set the x coordinate of the
+player X
+that is
+layer X
+first we have set the player X and pair
+Y for the welcome screen now we are
+setting it for the game from where it
+should start
+so that would be the same only when the
+game starts
+and the player would be at that position
+and from there only it should start that
+is screen width divided by 5. and the
+player y position
+we will set it as
+Queen height
+divided by
+2.
+and we'll set the base X and that should
+be set and that is equal to zero we'll
+plate the base now we will create
+another function that would be the
+random pipes to show the pipes okay
+now
+well
+create a function get random pipe
+so we get the random pipe with random
+height
+okay so this will generate the positions
+of two pipes that is one bottom State
+and the one top rotated for bleeding on
+the screen so first we'll create a
+variable that would be the pipe height
+foreign
+for that we will call the
+Global variable game sprites and create
+Tuple
+or pipe
+and
+sets the zeroth position
+to get its height
+okay
+now we will set the offset
+and that should be equal to
+screen height divided by 3.
+and Y2
+that should be equal to
+offset
+Plus
+random
+Dot it would
+take any random range number and it
+would add to the offset okay
+rent range
+and inside the range we will pass
+0 to that is
+what height will pass that would be the
+Green height
+minus the base height
+it could
+set any height
+minus
+game underscore
+just Sprites
+the piece
+and we should get the height of that for
+that we'll use the get underscore
+height function
+okay
+now
+what we need to do is minus 1.2
+into
+offset
+and here we close it so this is the Y2
+and moving on so these are the numbers
+that I have seen and drawn with the
+probability and how it fixes my screen
+width and skin height it suits my screen
+with transcending now the pipe X version
+that would be the screen width
+plus 10 it should be
+10 size here that is
+right side
+okay now
+we will see the y1 height
+that is
+pipe height but we will get
+okay and minus by 2
+plus offset
+and now
+intake pipe that's
+inside
+we will create
+and for x
+huh
+set the pipex
+and
+y
+s minus y1
+okay
+no
+this bracket would be closed and this is
+for the upper pipe
+okay
+now we'll set for the lower pipe
+and for the lower pipe the coordinates
+would be
+that is
+pipe X
+and the Y
+coordinates
+they would be Y2
+okay
+and now we will
+return the pipe
+so we get the
+height of the pipes
+now we'll create two pipes for blitting
+on the screen and that will create in
+the main game
+now in the main game we'll create two
+pipes that would be new
+pipe
+one and that would be
+get random Pi function
+yeah and then we'll create
+new pipe to
+and that
+is
+get random
+pipe
+okay now my list of upper pipes
+I will
+create for them
+that would be first
+I will
+create a tuple for that upper pipes
+that is equal to
+inside
+will set its X
+and that is screen width
+plus 200
+plus screen width divided by 2.
+okay
+that is
+screen width
+divided by 2.
+and 4 by
+what we'll set as new
+pipe
+to
+and
+the coordinates
+that is 0 comma
+y
+okay
+that is set here
+and comma Now
+four lower pipes will set
+so for lower pipe
+okay so we have note return
+the whole coordinates so upper pipe
+okay so we'll write that would be screen
+height plus 200
+and set it
+double pipe coordinates
+so that is
+the X would be screen width Plus 200.
+okay and the Y
+y would be equal to
+is
+new pipe
+one
+and
+sign that is the zeroth and the Y we
+have declared
+okay
+comma
+and
+just close this
+Oma
+and
+for this
+will set
+screen width plus 200 plus screen width
+divided by 2 and Y would be new pipe two
+zero and Y okay now we'll set the list
+of lower pipes
+okay moving on
+and create some space and from here
+now what we'll do we'll start for
+lower pipes
+and for lower pipes first we'll create
+that double
+and inside this
+will start with x
+and the x coordinate it would be
+screen weight sorry
+uh yeah for the lower pipes will set the
+screen width plus 200 only that would be
+on the same the open and the lower
+screen width
+Plus
+200 and now we'll set the Y
+as
+new pipe
+I ate then
+never mind
+new Piper and
+for this
+we will set
+that is the first one
+and the Y
+now
+moving on
+we'll set the second coordinates
+it is starting with x
+and that would be screen width plus 200
+move forward to right n above
+okay yeah
+screen width Plus
+200
+Plus
+screen width
+divided by 2.
+and now
+we'll set y
+that is new pipe two
+inside your pass one and the Y
+okay
+now
+we will close this
+now we'll set the velocity of the pipe
+so pipe velocity would be in the
+opposite direction it would be coming
+from right to left
+so we'll set the pipe velocity
+that is
+we will create a variable pipelocity X
+that is equal to minus 4.
+and the player velocity
+for that we have created the variable
+player
+in length Y and that would be equal to
+minus 9 it would be going that side
+and the player max velocity y that is
+in the y direction in height like if you
+do not flap then it would go
+with the speed of 9.
+and if we flap then we'll set the
+player max velocity okay
+so for that we have created the variable
+player max velocity and that would in
+the y direction
+okay
+and create these
+variables speak now
+and we'll set it as 10. so if it comes
+minus 9 and if we flap then it would go
+up like one
+point up
+and the minimum velocity for player
+that should be minus 8.
+in y direction
+player
+minimum
+below setting in y direction that would
+be equal to minus eight
+and now player acceleration
+so if player accelerates so how much it
+accelerates that is the final velocity
+minus initial velocity
+okay and that is equal to 1
+now
+players flap acceleration will also
+set
+flap
+acceleration and we will set it as minus
+eight so we'll set the velocity while
+flapping
+that is done and now we'll set player
+flapped equal to false that it is true
+only when the bird is flapping so when
+the bird is flapping it would be change
+it to true
+clear
+left
+and we'll set it as
+poles okay
+now we'll run a loop
+while loop
+and inside will set the events that is
+poor event in
+Pi game
+Dot
+event
+dot get
+and inside this event what will set if
+now if
+event Dot type
+that is equal to equal to wait
+or
+event
+DOT type
+that is
+equal to equal to
+key down
+and
+event
+dot key
+equal to equal to K underscore Escape
+so for this
+we will quit the game
+and
+write the command as system.exit
+first we'll do buy game dot bit will
+quit the pi game
+that we have initialized
+and after that
+we'll exit the system
+just close the
+so takes it now
+if
+even DOT type
+foreign
+key down
+and
+event Dot
+type
+here we will
+write about the key if we press the key
+that is equal to space k underscore
+space
+or
+event dot key
+that is equal to equal to K
+underscore up
+then
+the velocity of player
+like if condition if pair of velocity
+in y direction
+is greater than zero
+then we'll set the
+player below City in y direction
+that is equal to player flap
+acceleration
+player clap acceleration okay and we'll
+set the player flap equal to True here
+this is
+small
+so
+uh what will it set as now
+yeah player flipped
+that is equal to
+true
+okay now here we will play The Sounds
+also
+so for that
+came underscore
+sounds and inside will pass wing
+dot play
+and now
+we have set the events and set the while
+loop here
+now
+we want
+a function for collide we'll set its
+functionality that is
+if the bud collides with the pipe
+so what would be the functionality for
+that
+so for that
+we will declare a function
+and name it as s collide
+and
+inside
+we will pass
+player X
+player y
+the positions
+but where is the position of the player
+at particular time and the upper pipes
+position
+and the lower pipes position
+now if
+player y
+that is speed
+uh sorry the position of the player Y is
+greater than ground y minus 25
+let us show you
+ground way
+minus
+25
+or
+player y velocity
+sorry player y coordinate
+is less than 0.
+then we'll play the sound
+that would be the hit sound
+it has hit the ground
+yes game underscore sounds
+and inside will pass hit sound
+and we'll play it
+and here we will return
+true
+okay
+no
+we're going to run a for Loop there will
+be four pipe
+in Upper pipe
+that is
+set the pipe height
+and that is
+inside the game sprites
+pipe
+and the zeroth coordinate
+and we'll get its height with the
+function
+get height
+and now
+if
+clear away
+is less than
+pipe height
+Plus
+pipe
+y
+and
+absolute of
+player x minus pipe x coordinate
+that is
+player X
+minus
+pipe
+X
+okay
+and if it's
+less than the
+game sprites
+and inside will pass pipe
+and the zeroth coordinate
+and will get the width of it
+and if it's less than this
+then we'll play the hit sound
+that is game underscore sounds
+and
+and then
+hit
+dot play
+and after that we will return
+true
+okay
+now
+four pipe in
+lower
+pipes
+if
+y
+Plus
+game sprites
+and
+that is of player
+that is we'll get its height
+and if its height is greater than
+the pipe y coordinate
+and
+the absolute of
+that is
+player X
+minus
+pipe X
+and it is
+less than
+game sprites
+that is
+pipe
+and first 0 to connect and node get
+width
+then what would play would play the hit
+song
+that is
+game underscore
+sounds
+and inside
+we will play hit
+dot play
+and we'll return true
+and
+if these conditions do not happen
+then we will return poles
+now
+coming back to our
+new main function
+main game function sorry
+and we have
+run a while loop here
+now
+we have created the Escalade function
+now what we will do is
+crash test
+will create a variable
+that is
+crash test
+equal to we'll call the Escalade
+function
+and inside will pass the positions that
+is clear X comma
+player y comma
+upper pipes
+comma
+lower pipes
+and this function will return true if
+the player is crashed we have declared
+this function
+and
+if the player is
+crashed
+inside this
+right if
+crash
+test
+then
+return
+and now
+we'll check for the scores
+but that will create
+a
+variable
+and see the player mid position
+that is equal to
+player X
+Plus
+height of
+player divided by two
+that is indicated by
+came underscore Sprites
+said pass
+player
+don't get to it
+divided by 2.
+no
+we'll run a for Loop that is
+for
+pipe in Upper pipes
+so for piping upper pipes well find the
+pipe mid position
+and that is equal to
+pipe
+X
+Plus
+game underscore
+price
+and inside pass
+pipe
+and the zeroth
+vote and we'll get the width
+of this
+let's get to it slash two
+and now
+inside this
+if
+pipe mid position
+and that is pipe mid
+position is less than equal to
+player mid position
+and
+that is
+less than
+less than
+pipe mid position
+Plus 4.
+okay
+now after that the score
+will be
+plus equal to 1 if it passes and we will
+print also
+will print and use the
+F string that is
+your score
+is
+and inside
+will pass
+score
+and it will print that score
+and we will play the game sound
+the point sound
+the game variable
+Dot
+play
+now
+if
+player velocity y
+that is player
+velocity in y direction
+is less than player max velocity in y
+direction
+velocity in y direction
+and
+his node flapping
+and note
+player
+left
+then
+player below City Y
+that would be equal to
+player acceleration y
+and
+if I'm sorry
+player
+left
+then
+layer
+left
+equal to
+poles
+then
+player height
+that is equal to
+game underscore Sprites
+and
+pass player
+dot get underscore
+right
+now
+player y position
+that is equal to
+player y
+Plus
+minimum of
+clear velocity y
+comma
+ground y
+minus
+player y
+minus player height
+now
+we'll move the pipes to the left
+so for that we'll run a for Loop
+now
+4
+upper pipe command lower pipe
+that is we are taking
+two variables
+it is upper pipe command lower pipe and
+using the zip function
+and inside we are passing upper pipes
+and the lower pipes
+um
+for my lower pipes
+and inside
+pass upper pipe
+X position
+plus equal to
+pipe velocity X
+and then we have
+lower pipe
+x velocity
+that is plus equal to
+5 velocity X
+now we'll add a new pipe when the first
+is about to close the leftmost part of
+the screen
+so for that
+we will
+know if statement
+that is if
+0 is less than upper pipes
+is zero
+and
+X
+less than five
+then
+new pipe
+is equal to get random pipe you'll get
+the new random pipe
+and upper pipes dot append
+that is
+root
+append
+and that would be
+new pipe
+and a zero
+and after that we have lower
+pipes
+Dot append
+that is
+new pipe
+one
+now
+if the pipe is out of the screen we will
+remove it
+and for that also we will
+run a if statement that is the
+conditional statement that is if
+upper pipes
+0 and the X
+is less than
+minus
+game
+Sprites
+inside the pipe
+and zero
+that is we will get the width of that
+now
+then we'll pop the upper pipes
+so for that we'll write upper pipes dot
+Pope
+and that is the sea root
+and then we will pop the load pipes
+stood Pope
+and zeroth now we will BLT our Sprites
+now
+now for blitting
+we'll use
+the global variable screen
+and use the plate function
+and inside will pass game sprites
+and that is the background we want to
+play it here
+and
+inside
+we will pass the position that is 0 0
+and now
+now
+we will run a for Loop
+that is
+4
+upper pipe
+comma
+lower
+pipe
+in zip
+and inside will pass
+upper pipes
+comma
+lower
+pipes
+and
+p is capital for both of them
+so for them
+will Blade the screen
+that is
+screen node blade
+and inside we will pass game sprites
+that is pipe
+and this will come here
+you know setting for the
+pipes so it would come under the for
+Loop
+game sprites
+and for pipe
+and
+see your position
+now
+we'll take
+upward
+pipe
+X
+and
+oh per pipe
+away
+close both of them
+now well
+it
+the lower pipe
+in node plate and inside will pass game
+underscore
+rights
+and inside will pass the pipe
+and the position for the lower pipe that
+is one
+and
+lower
+pipe
+it has X
+and
+lower
+pipe
+y
+and we'll close this
+okay
+for lower pipe we have started one and
+we have
+close that
+okay
+and for the game sprites we have started
+okay
+this
+done
+now we will let the base
+and that would not be in the for Loop
+for that
+for the plating of the base we'll write
+screen dot blade
+and inside will pass
+game sprites
+and inside
+will pass the base
+and the position of the base that is
+base X
+coma
+ground way
+and now
+we will
+blit
+screen load plate
+and inside we'll pass
+games Sprites
+and this would be for players
+comma
+player X
+comma
+player y
+now
+now to set for the score
+will create a variable
+and name it as my digits
+and inside
+we will do
+in text
+or
+X in
+list
+of
+string
+that is score
+so we'll set
+width equal to
+zero
+and
+4 we will run another for Loop that is
+four digit
+in my digits
+that is what we have stored in that
+that is
+width
+for the points or the digits that would
+be equal to
+game underscore
+Sprites
+and we'll pass the numbers that
+we have loaded in the main function
+it's the numbers
+and
+digit
+and get its width
+now
+we'll set the X offset
+that is
+equal to screen width minus width
+divided by 2.
+and now
+now we'll run another for Loop four
+digit
+that is four digit in my digits
+inside
+will use
+screen dot blade
+and inside will pass game underscore
+Sprites
+and inside
+pass
+numbers
+and
+digit
+and now
+we'll pass the X offset
+and
+screen height
+into 0.12
+and now
+insert the
+X offset
+that is
+plus equal to
+game underscore
+writes
+inside pass
+numbers
+and digit
+note
+get with
+and after that
+we'll do pygame Dot
+display dot update
+now
+will set
+FPS clock
+dot Tech
+and pass the FPS in that
+and with that
+we are done with our code and now
+we will run our code
+and run the code
+oh we are waiting if there is some error
+note
+on it again okay first I'll stop the
+term okay
+the file had appeared there
+and you guys can see
+the game is ready Flappy Bird get ready
+press spacebar to start and you can use
+these images that we have used that is
+message
+and put PNG and that is here in Sprites
+uh this image I have created
+using the PowerPoint you can create in
+the PowerPoint or you can use Photoshop
+and this I have downloaded the
+background image the base image and the
+bird image and the pipe image I have
+created and these zero one two three
+five six seven eight nine you can
+download from the browser like you can
+use
+uh you can type background images for
+games
+and free background images for games so
+you would see all the images you can
+download
+anyone
+and you can use the base also you can
+download it
+and use it so
+we are done with the game so before
+ending we'll play it once again
+we can hear the sounds
+and you can see the score is being
+printed in the terminal
+So currently we are at
+9 11 12 13
+and that's it
+we lost at 15 and we have closed the
+window that is we use the
+system module and use the system.exit
+function
+now
+with that
+we have come to the end of this session
+and I have an insightful for you guys
+that is if you are aiming to get
+certified in Python Programming and want
+to build a python software development
+career in that case you can check the
+python certification course by simply
+run which will open the doors for the
+best career opportunities
+find the details of the Python
+certification course just check the link
+in the description box below and I hope
+that session was interesting and
+informative
+if you liked it please let us know in
+the comment section below and also do
+subscribe to our Channel and stay tuned
+for more from Simply alone
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

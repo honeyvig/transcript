@@ -1,0 +1,405 @@
+hello and welcome to this session of
+exception handling in python
+today we are going to discuss how
+exception handling is done in python
+this concept is not new
+in any programming language it is pretty
+prevalent in java and other programming
+languages and it's on the same lines how
+we can do exception handling in python
+so let's take a look what are the
+nuances and what are the syntaxes for
+exception handling in python
+so what are we going to discuss today we
+are going to start with discussion of
+need of exception handling what is
+exception handling the types of errors
+you can handle in exception handling and
+how exception handling works and
+in the end certain points to be
+remembered
+and also we will support our slides with
+the python jupiter notebook examples
+now what is the need for exception
+handling any programming language or any
+program you write there is definitely a
+need in order to have a clean
+execution of the program even if the
+program throws errors
+so you need exception handling for
+cleanly
+logging the exceptions or throwing
+meaningful errors to the users
+so
+when does exception occurs right
+whenever the program gets terminated
+right the program terminates whenever an
+error occurs right so it could happen
+that an error could be a fatal error and
+the program gets terminated in between
+or there could be a certain termination
+which can corrupt the program right so
+you need to handle exceptions
+or there may be there might be a data
+loss because of those exceptions and you
+need to take care that that doesn't
+occur or the data loss does not happen
+or even if data loss happens then you
+pass on a meaningful message or you
+capture a meaningful message in the logs
+at the right point
+now what is exception handling
+an exception is a runtime error that
+terminates the execution of a program so
+basically whenever an exception occurs
+the program gets terminated you are
+thrown out of the running program
+exception handling means you generate a
+message in correspondence to the
+occurrence of the error
+and take the right step to handle it so
+now an exception has occurred but you
+need to handle it
+now by handing we mean that you need to
+throw a meaningful message as i said
+earlier
+and then you might need to navigate the
+program into the right direction or take
+some certain corrective actions
+in order to handle the error so all that
+it comes under the exception handling
+criteria
+now in general there are three types of
+errors compile time errors logical
+errors and runtime errors
+now compile time errors are the errors
+which any programming compiler or python
+compiler
+will show you while you are compiling
+your program so
+it could be because of the syntax
+spacing
+indentation
+or you would you you are using wrong
+keywords all those will get captured at
+the compile time
+logical errors you know you have not
+used the correct syntax around logical
+operators like and or or your if else
+conditions are incorrect and you are
+expecting an output
+but it is not coming as per your
+expectations so those are logical errors
+and the most
+difficult ones to capture and track
+and handle are the runtime errors so
+imagine your program is compiled and as
+per your expectation
+you are expecting an output you have you
+know written a logic but at the runtime
+it does not get executed it does not run
+as per your expectation and the program
+gets terminated unexpectedly so the the
+runtime errors are the most critical and
+important
+in order to handle them and if you talk
+about
+uh runtime errors handling in production
+scenarios then it becomes very critical
+that you have handled the exceptions
+correctly and captured the logs
+correctly so that the support to team
+can point out
+where the error has exactly happened
+now how exception handling works
+there are certain
+syntaxes
+in python which you need to follow
+now
+you generally put
+the
+exception handling code the code for
+which you you want to handle the
+exception under a try block so you run
+that piece of code
+under a try
+block and then you put an accept keyword
+where you basically throw an error
+message
+and then
+if there is no exception right then also
+you can handle the code okay if there is
+no exception in my code then
+how the code will behave yeah right so
+it could be possible that there is a
+runtime error but if there is no then
+you might want to do some logical
+calculations or you want to put
+something over there you can put in the
+else block
+and then finally now finally
+is a
+code block which will always get
+executed irrespective of you had an
+exception in your code or not
+so basically generally uh if you go by
+the legacy programming
+if you have opened a database connection
+uh or if you have opened a file and you
+it is essential to close
+those connections uh from your program
+then those closed connection
+code are written generally in the
+finally block irrespective of the except
+exception coming you need to close those
+connections otherwise you will run out
+of your connection pools
+now it's a pretty straightforward
+flowchart of an exception and handling
+you start with the try block and then
+if an exception occurs in your code then
+it will go to the accept block otherwise
+it will go in the else section and then
+finally you have the finally block where
+the code will finally get executed and
+stop
+so as i said you put
+that piece of code in the finally block
+which is mandatory
+and generally the block the code which
+is essential to release the resources
+which the program has consumed uh the
+cpu resources the memory resources
+hardware resources which the program is
+using you have to release that in the
+finale block
+accept block
+you have to use for capturing the error
+and throw a meaningful message or
+do any other logical operation and else
+block if you want to continue your
+program as is
+now what are the points to remember
+these are very important uh points which
+you should consider
+you can write a try block without any
+except block so it's not essential that
+you put an except block always
+or
+you can write several except blocks for
+a single try you might be expecting a
+null pointer exception or a divide by
+zero exception
+or incorrect variable naming exception
+so you can start off with one try but
+you can have different accept blocks to
+capture these different kind of
+exceptions and throw a relevant
+meaningful error per accept block
+also you can write multiple accept
+blocks to handle multiple exceptions
+it's almost the same thing
+and you can write exception as an object
+you can also
+print or capture an exception as an
+object
+or you can write multiple exceptions
+within a tuple you can capture the
+multiple exceptions add it to a tuple
+and
+throw it away okay so now let's take a
+look at
+certain examples which we want to run
+in order for better understanding of
+exception handling
+now throughout my exercise i am gonna
+focus on divide by zero error which we
+are
+easily able to simulate
+so i am gonna mostly show you how we can
+capture a divide by zero error
+okay so i have declared a variable a
+and i have declared a variable b z uh
+as10 bs0 now i'm trying to divide
+a by b now i'm trying to divide a number
+with 0
+so ideally yes this is not a
+correct mathematical operation divided
+by number 0
+is not allowed
+so i should get a zero division error
+now
+this is
+an unhandled exception
+my program has not handled it properly
+so that's why you're getting this error
+on the
+trace
+of the python trace but
+if i handle it properly
+then i can very cleanly
+throw this error
+and capture this error
+okay so
+i am going to take input in b enter a
+and b
+and
+i'm just going to print a generic except
+block
+so 10
+0
+and i have got an exception and i have
+printed it now there is no stack trace
+there is no trace but at least i am able
+to cleanly throw an error a meaningful
+error
+now
+again i'm differently going to handle
+the exception
+i'm going to
+create the same exception but gonna
+handle it differently
+now there's a try block
+now i am
+[Music]
+writing an accept block to capture
+the specific exception zero division
+error exception
+in the earlier code block i had just
+written except so any exception would
+have come to this block but in this
+except block only zero division error
+will be captured
+so as you can see
+uh
+i cleanly
+handled the exception of course i gave
+the name accept zero division error and
+then my
+code
+got executed
+later on
+now in another example
+what i'm gonna do is
+i'm gonna show you that if my code runs
+cleanly
+then it's not necessary my accept block
+will get executed definitely because if
+there is no error then the accept block
+will remain redundant
+now here you see what i have done is i
+have taken genuine two numbers
+divided them printed a new line and then
+completed so
+as there was no exception
+the
+exception block did not got executed
+so the point to be highlighted over here
+is that it is not essential
+that you know exception block will get
+executed always it will only come into
+picture when there is a relevant
+exception getting
+getting generated
+now let's take an example of
+how
+we can print an exception object
+so i'm going to take my previous code
+and here
+i am
+capturing the exception
+but also printing the exception object
+so what has happened is
+i have printed the exception of a
+message a custom message plus i have
+printed the
+exception
+object okay
+now i'm gonna take the same example
+but i'm not gonna generate an exception
+so my exception block did not got
+executed and i was able to simply print
+simply learn
+now
+let's take another example
+where i am
+capturing my exception in an in a
+variable
+so do not divide number by zero
+and
+in this x i have captured my exception
+division by zero
+so in the exception the python generated
+exception name is this and i have
+printed over here
+so division by zero is the python
+generated
+exception which i have appended in my
+print command
+now i'm going to take another example
+where i'm saying is
+that i will print exception
+as a
+plus i'm gonna also capture another
+exception so it's like one try and two
+exceptions
+so one exception is do not divide number
+by zero and second exception is name z
+is not defined right
+so i'm so as i said earlier you can have
+one try but to accept blocks which is
+permissible
+now one thing is that you know you this
+exception print a by z
+came uh went through both the except
+blocks except this exception and this
+exception
+though this exception is not divided by
+zero error so therefore therefore
+in this a variable nothing came in
+but in the b variable
+the name error was definitely captured
+because it's a name undefined
+name z is not defined error and that's
+why you can see
+that do not divide number by zero up
+after that we do not have any relevant
+meaningful message
+okay
+now let's take another example where
+we are gonna have
+two accept blocks
+and out of these two
+only
+one will get executed
+okay so there is no type error exception
+so that except block did not got
+executed but only zero division error is
+there so only that got printed
+now you can explicitly also raise an
+exception it's not like you just have to
+wait for a runtime exception
+you can also raise your x raise an
+exception from your code and execute it
+so if you see this
+what we have done is just
+created a variable with a negative value
+and just checking that if the value is
+less than zero then raise an exception
+so that's what we have done
+similarly you can also throw raise an
+assertion error
+it is called assert
+and you can run
+this
+message you can throw this message
+compatible with linux only
+so i hope you guys had a great learning
+session and i look forward to connecting
+with you in my next session thank you
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

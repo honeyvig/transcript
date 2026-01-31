@@ -1,0 +1,388 @@
+hey guys welcome to yet another
+interesting and informative video by
+simply learn
+in today's video we're gonna be learning
+all about doubly link listen c but
+before we begin if you haven't
+subscribed to our channel already make
+sure to hit the subscribe button and the
+bell icon to never miss an update so now
+without any further delay let's begin
+this session will help you understand
+what a doubly linked list is in c
+moving ahead let's understand the memory
+representation of a doubly linked list
+later let's look at the syntax and
+finally operations performed on a doubly
+linked list
+now let's begin by understanding what a
+doubly linked list is in safe
+a doubly linked list is complex as
+compared to a singly linked list
+in the doubly linked list the traversal
+happens in two ways forward and backward
+direction and each node consists of data
+and address of the previous and next
+node
+as it is clear from the above diagram
+that the first node's previous is
+pointing to null which means no more
+nodes before it
+and its next part is holding the address
+of its next node that is the address of
+second node
+similarly second node previous is
+holding the address of the first node
+and next is holding the address of the
+third node followed by that the third
+node's next is pointing to the null
+because no other node after it and its
+previous is holding the address of the
+second node
+this will continue as many nodes are in
+the doubly linked list
+and the elements are located at some
+random location in the memory for
+example as you can see if the first
+element is inserted at the location 2000
+then the next element would be located
+at 2016 and then at the next free
+location and so on
+moving ahead let's have a look at the
+doubly linked list memory data
+presentation
+let's consider one example and
+understand the representation of a
+doubly linked list so consider three
+elements to be inserted into the list
+where each node consists of data part
+and address part of previous and next
+node and it is stored at some address
+2000 2016 and 2022.
+the address of the first node is stored
+in the special node called head node
+as i discussed before
+the first nodes previous is pointing to
+null because there are no nodes before
+it and the last node next is pointing to
+the null because there are no nodes
+after it
+every node in a linked list is connected
+in two ways from forward and backward
+direction with the other through the
+pointers called previous and next
+that points to the address of its
+previous and next node
+it is represented by the arrows in this
+diagram
+for example
+so let our elements to be inserted be 10
+20 and 30.
+and the address of the first node is
+stored in the head node
+and the next part of the first node that
+is this
+is holding the address of the next node
+that is 2016
+and its previous is pointing to the null
+similarly the second node is holding the
+address of the third node
+that is 2022
+and its previous is holding the address
+of its first node that is 2 000.
+whereas the third node the previous is
+holding the address of its previous node
+that is 2016
+and its next is pointing to the null
+and in this way they are linked together
+up next we have the syntax of a doubly
+linked list
+a doubly linked list consists of an
+extra pointer compared to a singly
+linked list
+so
+the syntax start with a struct keyword
+followed by structure name called note
+then we have the variable stick line
+that is data and struct node asterisk
+next and previous a point of variables
+pointing to an element of a structure
+node
+so with this let's try to execute a
+simple wlinkplace program to understand
+in a better way
+so from this program
+we are going to create four nodes and
+insert the elements into it
+so we have previously discussed this
+syntax of a doubly linked list so here
+we have a previous and next pointer
+variable
+so
+moving ahead we'll see that we have a
+head node and we are creating first
+second and third and fourth note so
+initially
+those are null so they are initialized
+to null
+and
+for creating we need to allocate the
+memory for it right to create a node we
+need to create memory for it for that we
+have we are using analog function
+to allocate memory for the
+node first second third and fourth
+and once we create memory we are going
+to assign the values to it so here the
+values are 10 20 30 and 40. so these
+values are assigned in the first data
+path and the second data part third data
+part and the fourth data part of every
+node
+and once after assigning we need to link
+these nodes together so for that we have
+the first next part is assigned to the
+second that means it holds of the second
+element
+and its previous is assigned to null
+because there are no node before it
+and the second nodes next part is
+assigned to third and its previous is
+assigned to first
+similarly the third next is assigned to
+fourth and its previous is assigned to
+the second node
+and the last node that is fourth nodes
+next is none because there are no node
+after it and its previous is assigned to
+thought that means it holds the address
+of a third
+element
+and now
+the first is assigned to head that means
+the address of first node is
+holding in the head node
+and finally displays the first so this
+display function we have to display all
+the element in a doubly linked list
+so this will
+so as you can see here we got the output
+the doubly linked list elements are 10
+20 30 and 40.
+okay so now let us move on to the
+operations on a doubly linked list
+first we have insertion operation
+next deletion operation and finally
+traversal operation so let's understand
+them in detail
+under insertion operation we have
+insertion at beginning so basically we
+insert the element at the beginning of
+the element list
+next
+insertion at end that means it inserts
+the element at the end of the element
+list and lastly insertion of the
+specified node that means it inserts the
+element after some specified node
+so now let's run the program and
+understand these operations practically
+so using insertion operation we are
+going to execute a simple program
+so we have previously discussed that
+we have two
+pointer variables that is previous and
+next that is pointing to its previous
+and the next node
+and first let's discuss the insertion at
+beginning operation so basically we are
+going to insert a node at the beginning
+of a linked list
+so for that we are creating a new node
+and allocating memory for it using mlog
+function once creating the memory
+the new data part the new nodes data
+part is holding the new data
+and the next is pointing to the head
+and its previous is pointing to the null
+because there are no nodes after it
+so if head is not equal to null that
+means the head's previous is equal to
+new and now mu is assigned to the head
+so it's simple
+now
+the head is holding the address of a new
+node next coming to the insertion at end
+so here again
+we we are creating a new node allocating
+memory for it
+and on that new data is holding the new
+data and it's next is pointing to null
+because there are no more nodes after it
+and we are creating a temporary variable
+where
+to hold the address of a head
+so now if the head is equal equal to
+null that means new previous is pointing
+to the null
+and new is assigned to the head and
+return while
+the temp next if it is not equal to null
+then
+the temp next is assigned to the temp
+variable and the new now the new is
+assigned to the temp next and temp is
+assigned to the new previous
+so now the last node is inserted
+now coming to the insertion after node
+that means
+inserting in between of two nodes so if
+previous node is equal equal to null
+that means the given previous note
+cannot be none
+for that we are creating again a new
+node and allocating memory for it using
+analog function and its new data is
+holding the
+a new
+nodes data part is holding the new data
+and the new node next part is
+is assigned to the previous nodes next
+and we're just changing the addresses so
+now here previous node next is pointing
+to the new
+and the previous node is now assigned to
+the new previous
+so if
+new next is not equal to null that means
+new next previous is equal to new
+so coming to the display
+here
+while node is not equal to null it will
+print all the node data till the till it
+finds the null
+and here
+in the main function
+we have we are creating a head which is
+initialized to null
+initially and when it comes the control
+comes to the insertion at end
+it will print a value 4
+and next when it encounters the
+insertion at beginning function
+that means it will insert 2 in front of
+the element 4
+and again insertion at beginning so it
+insert the element 1 in front of element
+2
+and similarly insertion at end that
+means it will print element 5 after the
+element 4
+and insertion of the node head next
+that means it will insert the element
+after the element 2.
+so now let's try to execute and run the
+program
+so as you can see the elements are
+listed
+in a proper way that means we have the
+elements 1 2 3 4 and 5.
+followed by that we have deletion
+operation to delete from the beginning
+delete from the end and delete after
+specific node so now let's run a program
+so now we are going to perform the
+deletion operation so for that we have a
+function called deletion node so
+basically we are going to delete a node
+from a list
+so first
+it checks the condition if head is equal
+equal to null or
+no delete is equal equal to null that
+means a node to be deleted is also equal
+or equal equal to null then it will
+return that means the deletion is not
+possible
+next it checks the next condition if
+head is equal equal to node delete
+that means
+if a node to be deleted is our first
+node
+then
+head is equal to
+head nodes next that means the head node
+next is assigned to the head
+next condition if node delete next is
+not equal to null that means if it is
+not the last node
+that means point the previous next node
+to the node delete previous
+and finally if not delete previous is
+not equal to null that means if the node
+to be deleted is not the first node
+then
+point the next previous to the delete
+node node delete next and finally we are
+going to free up the
+memory space for that
+node and coming to the
+main function where we have print
+function after deleting an element it
+gonna delete the node
+so here after the head next
+one two three four
+so after the fourth node it gonna delete
+the fifth element that is it will delete
+the last element five
+so let's check the output
+so as you can see
+after deleting an element
+so our previously inserted elements were
+1 2 3 4 and 5 and after deleting now the
+element fifth is deleted
+finally we have traversal operation
+in this operation we visit each and
+every node at least once maybe to
+display all the data elements or to
+perform operations on it so let's
+understand it practically
+so here we are going to perform a
+traversal operation that means
+it actually visit each and every node at
+least once and display them
+so here using a display function we are
+going to display all the elements that
+are present in a
+linked list
+so now let's try to execute and run it
+so as you can see first the inserted
+elements were 1 2 3 4 and 5 and after
+deleting an element now the elements are
+1 2 3 and 4 that means the fifth element
+got deleted and now the final list of
+elements are 1 2 3 and 4.
+i hope you got a clear understanding of
+how to perform insertion deletion and
+traversal operations in doubly linked
+list
+so with this we have come to the end of
+this session on a doubly linked list in
+c
+i hope this session was informative and
+interesting
+if you have any queries regarding any of
+the topics covered in this session or if
+you require the resources like ppt core
+documents or anything then please feel
+free to let us know in the comment
+section below and our team of experts
+will be happier to resolve all your
+queries at the earliest
+until next time thank you stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

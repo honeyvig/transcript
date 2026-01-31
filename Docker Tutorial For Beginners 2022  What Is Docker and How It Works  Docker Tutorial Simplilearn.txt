@@ -1,0 +1,2557 @@
+hello this is matthew from simply learn
+and today we're going to dig through
+what docker is and how you could be
+using it within your own devops
+environment so let's get started in this
+presentation we're going to go through a
+number of key things we're going to
+compare docker versus traditional
+virtual machines and what are the
+differences and why you want to choose
+docker over a virtual environment we'll
+go through the advantages of working
+with docker and the structure and how
+you would build out a docker environment
+and during that structure we'll dig
+through the components and the advanced
+components within docker at the end of
+the presentation we'll go through some
+basic commands and then show you how
+those basic commands can be used in a
+live demo so with all that said let's
+get started so let's first of all
+compare docker with a traditional
+virtual machine so here we have the
+architecture on the left and right of a
+traditional virtual machine versus a
+darker environment and there are some
+things that you'll probably see
+immediately that are big differences one
+is that the virtual environment has
+hypervisor layer whereas the docker
+environment has a docker engine layer
+and then in addition to that there are
+additional layers within the virtual
+machine each of these really start
+compounding and creating very
+significant differences between a docker
+environment and a virtual machine
+environment so with a virtual machine
+the actual memory usage is very high
+whereas with the docker environment the
+memory usage is very low if we look at
+performance virtual machines when you
+start building out particularly more
+than one virtual machine on a server the
+performance starts degrading and starts
+getting poorer whereas with docker the
+performance always stays really good
+this is largely due to the lightweight
+architecture used to construct the
+docker containers themselves if we look
+at portability virtual machines just are
+terrible for portability they're still
+dependent on the host operating system
+and there's just a lot of problems that
+happen when you are using virtual
+machines for portability in contrast
+docker was designed for portability so
+you can actually build solutions in a
+docker container environment and have
+the guarantee that the solution will
+work as you have built it no matter
+where it's hosted finally boot up time
+now the bit up time for a virtual
+machine is fairly slow in comparison to
+the boot up time for a docker
+environment which is almost
+instantaneous so we look at these in a
+little bit more detail one of the other
+challenges that you have with a virtual
+machine is that if you have unused
+memory within the environment you cannot
+reallocate that memory so if you set up
+an environment that has nine gigs of
+memory that's being used but you have
+six gigs that are free you can't do
+anything with it though that whole nine
+gig has been allocated to that virtual
+machine in contrast with docker if you
+have nine gigs and six gigs becomes free
+that free memory can then be reallocated
+and reused across other containers used
+within that docker environment another
+challenge is running multiple virtual
+machines in a single environment can
+lead to instability and performance
+issues whereas docker is designed to run
+multiple containers
+in the same environment and actually
+gets better the more containers you run
+in that hosted single docker engine
+portability issues with a virtual
+machine is the software can work on one
+machine but then when you move that vm
+to another machine suddenly some of the
+software won't work because there are
+some dependencies that haven't been
+inherited correctly whereas docker
+itself is designed specifically to be
+able to run across multiple environments
+and to be deployed very easily across
+the systems and again the actual boot up
+time for a vm it just takes a long time
+you're talking about minutes in contrast
+to the milliseconds that it takes for a
+docker environment to boot up so let's
+dig into what docker actually is so
+docker itself is an os virtualized
+software platform and it allows it
+organizations to really easily create
+deploy and run applications as what are
+called docker containers that have all
+the dependencies within that container
+very easily and the container itself is
+really just a very lightweight package
+that has all the instructions and
+dependencies such as frameworks
+libraries bins etc all within that
+container and that container itself can
+then be moved from environment to
+environment very easily if we to look in
+our dev ops life cycle the place where
+docker really shines is in deployment
+because when you're actually at the
+point of deploying your solution you
+want to be able to guarantee that the
+code that has been tested will actually
+work in the production environment but
+in addition to that what we often find
+is that when you're actually building
+the code and you're actually testing the
+code having a container running the
+solution at those stages is also a
+really good plus because what happens is
+that the people building the code and
+testing the code are able to validate
+their work in the same environment that
+would be used for the production
+environment so really uh you can use
+docker in multiple stages within your
+devops cycle but it becomes really
+valuable in the deployment stage so
+let's look at some of the key advantages
+that you have with docker some things
+that we've already covered is that you
+can do rapid deployment and you can do
+it really fast the environment itself is
+highly portable and was designed for
+that in mind the efficiencies that
+you'll see will allow you to run
+multiple docker containers in a single
+environment as compared to more
+traditional vm environments the
+configuration itself can be scripted
+through a language called yaml which
+allows you to be able to write out and
+describe the docker environment that you
+want to create this in turn allows you
+to be able to scale your environment
+very very quickly but with all of these
+advantages probably the one that is most
+critical to the type of work that we're
+doing today is security you have to
+ensure that the environment you are
+running is a highly secure but highly
+scalable environment and i'm very
+pleased to say that docker takes
+security very seriously so you'll see it
+as one of the key talents for the actual
+architecture of the system that you're
+implementing so let's look at how docker
+actually works within your environment
+so docker works there is a what's called
+a docker engine the docker engine is
+really comprised of two key elements so
+you have a server and a client and the
+communication via the two is via a rest
+api the server as you can imagine has
+the instructions that are communicated
+out to the client and instructs the
+client on what to do the connection
+between the client and the server the
+communication is via a rest api
+on older systems you can take advantage
+of the docker toolbox which allows you
+to go ahead and control the docker
+engine the docker machine
+docker compose and kitematic so let's
+now go into what the actual root
+components though of docker are so let's
+have a look at those key components
+there are four components that we're
+going to go through we have the docker
+clients and server we have docker images
+we have the docker registry and the
+docker container we're going to step
+through each of these one by one so
+let's look at the docker clients and
+server first so the docker client and
+server is a command line instructed
+solution where you would use terminal on
+your mac or command line on your pc or
+linux system to be able to issue
+commands from the docker daemon the
+communication between the docker client
+and the docker host and is via a rest
+api
+so you can do some communication such as
+a docker pull command which would send
+an instruction to the daemon which would
+then form the interaction of pulling in
+the correct components such as an image
+or container or registry to the docker
+client the docker daemon itself is
+actually a service which actually
+performs all sorts of operating and
+performance services and as you'd
+imagine the docker daemon is constantly
+listening across the rest api to see if
+it needs to perform any specific
+requests if you want to trigger and
+start the whole process you what you
+want to do is use the command dockered
+within your docker daemon and that will
+start all of your performances and then
+you have a docker host which actually
+runs the docker daemon and registry
+itself so now let's look into the actual
+structure of a docker image so a docker
+image itself is a template which
+contains instructions for the docket
+container and that template is written
+with a language called yaml and yaml
+stands for yet another markup language
+it's very easy to learn the docker image
+itself is built within that yaml file
+and then host it as a file in the docket
+registry the image is really comprised
+of several key layers and you start with
+your base layer which will typically
+have your base image and this instance
+is your base operating system such as
+ubuntu and then you would then have
+layer of dependencies above that
+this would then comprise the
+instructions in a read-only file that
+would become your docker file
+so let's let you go through and look at
+what one of those in sets of
+instructions would look like so here we
+have four layers of instructions we have
+a from pull run and then command so what
+does that actually look like in our
+layers so to break this down the from
+creates a layer which is based on ubuntu
+and then what we're doing is we're
+adding in files from the docker
+repository onto that base command that
+base layer and then what we want to be
+able to do is then say okay what are the
+wrong commands so we can actually then
+build the container within the
+environment and then we want to be able
+to then have a command line that
+actually executes something within that
+container and in this instance the
+command is to run python so one of
+things that we will see is that as we
+set up multiple containers each new
+container is a new layer with new images
+within the docker environment each
+container is completely separate from
+the other containers within your darker
+environment so you're able to create
+your own separate read write
+instructions within each layer what's
+interesting is that if you delete a
+layer then the layer above it will also
+get deleted so what happens when you
+pull in a layer but something has
+changed in the decor image what's
+interesting then is that the actual main
+image of itself cannot be modified once
+you've copied the image you can then
+modify it locally but you can never
+modify the actual base image itself so
+here are some callouts for the
+components within a docket image so the
+base layer are in read-only format the
+layers can be combined in a union file
+system to create a single image the
+union file system saves memory space by
+avoiding duplication of files and this
+allows a file system to appear as a
+writable but without modifying the file
+which is known as a copy on right so to
+be able to get around this structure
+within a docker container the docker's
+environment itself uses what's known as
+a copy and write strategy within the
+images and the containers themselves and
+so what this allows you to do is you can
+actually copy the files for better
+efficiency across your entire container
+environment the copy and write strategy
+does make docker super efficient and
+what you're able to do all the time is
+keep reducing the amount of disk space
+you're using and the amount of
+performance that you're taking from the
+server and that's really again a key
+element for docker is just this constant
+ability to be able to keep improving the
+efficiency within the actual system
+itself all right so let's go on to item
+number three which is the docker
+registry so the docker registry itself
+is the place where you would host and
+distribute the different types of images
+that you have created or you want to be
+used within your environment the actual
+repository itself is just a collection
+of docker images and those docker images
+are built on instructions that you would
+write with yaml and are very easily
+stored and shared and what you can
+actually do is you can actually
+associate specific name tags to the
+actual docket images themselves so it's
+easy for people to be able to find and
+share that image within the docker
+registry itself one of the things you
+actually see is we go through the demos
+you actually see us actually using the
+the tag name and you'll see how it is an
+alphanumeric identifier and how we
+actually use it to actually create the
+actual container itself one of the
+things you can do to as start off how
+you would manage a registry is you can
+actually use the publicly accessible
+docker hub registry which is available
+to anybody but you can also create your
+own registry for your own use internally
+the actual registry that you create
+internally can have both public and
+private images that you create and this
+may be for various reasons of how you
+structure your environment the actual
+commands you use to actually connect to
+the registry are both push and pull push
+is to actually push a new container
+environment that you've created from
+your local manager node to the remote
+registry and a pool allows you to pull a
+new client that has been created and is
+being shared so again full command and
+it pulls and retrieves a docket image
+from the docker registry and makes it
+very easy for people to share different
+images consistently across teams and a
+push command allows you to take a new
+command that you've created a new
+container that you created and push it
+to the registry whether it's docker hub
+or whether it's your own private
+registry and allow it to be shared
+across your teams some key did you know
+in docker registry deleting a repository
+is not a reversible action so if you
+delete a repository it's gone so let's
+go into the final stage here which is
+the actual docker container itself so
+the docker container itself um is an
+executable package of applications and
+its dependencies bundled together so it
+gives all the instructions that you
+would have for the solution that you're
+looking to run it's actually really
+lightweight and again this is because of
+the redundancy that's built into how you
+structure the container and the
+container itself is then inherently also
+extremely portable what's really good
+about running a container though is that
+it does run completely in isolation so
+you're able to share it
+very easily from grouped group and you
+are guaranteed that even if you are
+running a container it's not going to be
+impacted by any host os peculiarities or
+unique setups as you would have in a vm
+or a non-containerized environment the
+actual memory that you have on a docker
+environment they can be shared across
+multiple containers which is really
+useful typically when you have a vm you
+would have a defined amount of memory
+for each vm environment the challenge
+you start running into though is that
+you can't share that memory whereas with
+docker you can easily share the memory
+for a single environment across multiple
+containers
+the actual container is built using
+docket images and the command to
+actually run those images is a run
+command so this guy should go through a
+basic structure of how you would run a
+docket image so you go into terminal
+window and you would write a docker run
+redis and then it would run a container
+called redis so we're going to go in and
+if you don't have the redis image
+locally installed it will then pull it
+from the registry then the new docker
+container redis will be then available
+within your environment so you can
+actually start using it so let's look at
+why containers are so lightweight
+they're so lightweight because they
+really have been able to get away from
+some of the additional layers that you
+have in virtualization within vms and
+the biggest one is the hypervisor and
+the need to run on a host operating
+system those are two big big elements so
+if you get rid of those then you're
+doing great so let's look at some of the
+more advanced concepts within the docker
+environment and we're going to look at
+two advanced components one is docker
+compose and the second is docker swamp
+so let's look at docker compose docker
+compose is really designed for
+running multiple containers as a single
+service and it does this by running each
+container in isolation but allowing the
+containers to interact with each other
+as was stated earlier on you would
+actually write the compose environment
+using yaml as the language in the files
+that you would create so where would you
+use something like docker compose so an
+example would be if you are running an
+apache server with my sql database and
+you need to create additional containers
+to run additional services without the
+need to start each one separately and
+this is where you would write a set of
+files using docker compose to be able to
+help balance out that demand
+so let's now look at docker swarm so
+docker swarm is a service that allows
+you to be able to control multiple
+docker environments within a single
+platform
+so what you actually are looking at
+doing is within your docker swamp is
+we're treating each node as a docker
+daemon and we're actually having an api
+that's interacting with each of those
+nodes there are two types of node that
+you're going to be getting comfortable
+working with one is the manager node and
+the second is the worker node and as
+you'd expect the manager node is the one
+sending out the instructions to all of
+the worker nodes but there is a two-way
+communication that is happening the
+communication allows for the imagine
+node to be able to manage the
+instructions and then listen to receive
+updates from the working node so if
+anything happens within this environment
+the maginot can react and adjust the
+architecture of the worker node so it's
+always in sync it was really great for
+large scaled environments so finally
+let's go through what are some of the
+basic commands you would use within
+docker and once we've gone through all
+these basic commands we'll actually show
+you a demo of how you'd actually use
+them as well so if we're going to go in
+probably the first command is to install
+docker and so if you have yam installed
+you just do yum install docker and
+you'll install docker onto your computer
+to start the docker daemon as you want
+to do system ctl start docker the
+command to remove a docker image is
+docker rmi and then the image id itself
+and that's not the image name that's the
+actual alphanumeric id number that you
+want to uh grab the command line to
+download a new image is docker pull and
+then the name of the image you'd want to
+pull and by default you're going to be
+pulling from the docker default registry
+that will then connect to your docker
+daemon and download the images from that
+registry client the command line to run
+an image is docker run and then the
+image id
+and then we have the if we wanted to
+pull specifically from docker hub then
+we would have a docker pull and then the
+image name and colon its tag
+to pull build an image from a docker
+file you would do docker build dash t
+and then the image name and colon tag to
+shut down the container you do docker
+stop container id the access for running
+a container is docker exec it container
+id bash so we've gone through all the
+different commands but let's actually
+see how they would actually look and
+we're going to go ahead and do a demo so
+welcome to this demo where we're going
+to go ahead and put together all of the
+different commands that we have outlined
+in the presentation for docker
+first is just to list all of the docker
+images that we have so we do
+sudo docker images and we enter in our
+password
+and this will now list out the images
+that we've created already and we have
+three images there
+so let's go ahead and pull a docker
+image so to do that we'll we'll go ahead
+and type sudo
+docker
+and actually we don't want to do image
+we want to select pull
+and then the name of the image that we
+want to pull which is going to be my
+sequel
+and by default this is actually going to
+go ahead and use the latest my sequel
+command mysql image that we have so it's
+now go ahead and pull this image it's
+going to take a few minutes depending on
+your internet connection speed it's kind
+of a large file that has to be
+downloaded so we'll just wait for that
+to download
+you can see the others have completed
+just waiting for this last file to
+download
+almost there
+once that's done what we're going to go
+ahead and do is we'll actually
+run the docking container and create a
+new container using the image that we
+just downloaded but we have to wait for
+this to download first
+all right so the image has been pulled
+from docker hub
+and let's go ahead and create the new
+docker container so we're going to do
+sudo docker
+run
+dash
+d
+dash
+p
+0.0.0.0
+[Music]
+colon
+80
+colon 80
+and then put in my sql
+colon
+later so we have the latest version
+and we have our new toku
+and that shows our new docker container
+has been created
+now let's go ahead and see if the
+container is running
+and we'll do
+sudo docker
+ps
+to list all the running containers and
+what we see is that the container's not
+listed there which means it's probably
+not running so let's go ahead and list
+out all of the images that we have
+within docker so we can see whether it's
+actually listed there so we'll do ps
+dash a
+and yes there we are we can see that we
+do have our new container my sql latest
+and it was created 36 seconds ago but
+it's in the exit mode so what we have to
+do is we have to change that status so
+it's actually running
+so let's change that to running state
+we'll do
+sudo docker
+run
+dash
+i t
+dash dash
+name
+and we can name it
+sl
+sql
+my sql
+slash spin
+slash
+dash
+and that's now gonna be in the route and
+we'll exit out of that and now if we
+list out the docking containers we
+should see it is now
+an active container
+sudo docker
+start
+and then we'll start the
+scene
+and then
+and we should now see it
+there we are it's now in the running
+state excellent
+and we can see that it was updated six
+seconds ago
+we're gonna go ahead and we're gonna
+clear the screen
+okay now what we want to do is remove
+the docker container
+so we're gonna do is check list of
+images that we have
+and so pseudo docker images
+here are the images that we have and we
+have my sql is listed
+and what we want to do is delete my sql
+and to do that we're going to type in
+sudo docker rm-f
+image
+mysql
+run that command and what we'll find is
+the image there's no such image oh okay
+so what we actually have to do is we
+have to go and see that the image is
+now gone it's been removed excellent
+it's exactly what we wanted to see
+and we can also delete an image by its
+image id as well
+however if an image is running and
+active we have to kill that image first
+so we go ahead and we're going to select
+the image id we'll copy that
+and it's going to
+replace that it won't be able to
+actually run correctly because the image
+is active so what we have to do now is
+stop the image and then we can kill it
+so it's in the running state
+so we have to do
+so we do sudo darker kill
+and kill sl and that will kill the
+container
+and now
+we'll see that the container has gone
+and now we can delete the image
+and that's going to be the image going
+with image id boom
+easy peasy
+okay let's go ahead on to the next
+exercise which is to
+so here we are we've listed all of the
+uh
+containers and they're all gone so let's
+go into the next exercise final exercise
+which is to actually
+create a batch image
+and we're gonna do a batch http image so
+let's go ahead and write that out so
+it's gonna be docker
+run
+dash
+did
+dash dash
+name
+white is that's going to be the name of
+this http service dash p
+8080 colon 80
+v
+open quotes
+dollar sign pwd
+close quotes
+colon
+slash usr
+slash local
+slash
+apache2
+slash htdocs
+slash
+httpd
+semicolon 2.4
+we run that
+put in our password again
+so what we see is the port is already
+being used so let's go ahead and see
+which ports let's go see if we can
+change the port or see what ports are
+running so let's do
+sudo images and see which ports are
+being used because it's either the the
+port or the name
+hasn't been put in correctly so sudo
+docker images
+ps
+sudo docker
+ps dash a
+and
+yep
+let's port 80 there
+so we'll clear the screen
+so we're going to change the container
+name because i think we actually have
+the wrong container name here so let's
+go and change that and we'll paste that
+in and voila there we go
+now working and we'll just double check
+to make sure everything's working
+correctly so to do that we'll go into
+our web browser
+and we'll type in
+as soon as firefox opens up
+type in localhost
+colon 8080
+which was the the port that we created
+and there we are it's a list of all the
+files which shows that the server is up
+and running now let's talk about what
+exactly is in docker file here now uh
+docker file is a concept which is being
+used as in build script so it's being
+used so that we can have a build a
+script there
+so this will definitely helps uh to see
+that how we can go for a build of a
+docker image a custom docker image
+now when we are using the docker file uh
+concept so it really helps to uh prepare
+a kind of docker image
+so dock image is the end result when you
+are going for the mechanism when you're
+going for the docker file build up oh
+yeah so docker file is a build script
+which is available for preparing the
+custom docker containers because not
+every docker image is available on
+docker hub so some containers you have
+to use some images you have to use to
+work on that part
+now docker file is a very simple
+straightforward text file which is
+available there and it's basically used
+to build up custom docker images so
+docker file is basically used to prepare
+a once so when you're running the docker
+build so it's actually going to build up
+a particular custom docker image and
+that will be given to you
+so docker uh image is the whole build
+process which is being done
+so it's a custom
+process which is available and being
+done over here in this case
+so you got a docker file you run the
+docker build command and that's how you
+will be able to get a docker image so
+whatever the steps you are having in the
+docker file that will be processed one
+by one and as a end result you will be
+able to get a full flesh docker image
+over here in this case
+right now let's talk about the syntax of
+the docker file so docker file is equal
+to commands commands and the arguments
+so whatever the things you want to put
+up so in the docker file you can do that
+and as a part of the execution so you
+will be able to get a particular end
+result
+now it's a kind of a mechanism where we
+feel that how the execution and the
+modifications can be done so uh the uh
+comments which we are trying to do over
+here is that you know we can put up the
+whatever the comments we want to put in
+the case of docker files we can do that
+comments is a standard process in uh
+preparing any particular file or any
+kind of code because it helps us to
+understand that for what reason we are
+preparing that particular line then uh
+we have the uh particular run statements
+the commands are there so you can see
+that we are running a particular command
+called eco so using the run attribute we
+are basically going ahead and running a
+particular command into our system as
+part of our docker file over here
+now how to build up the docker images
+using the docker file so um you know
+docker file is uh just a template which
+is available there where we are putting
+up that what are the different steps we
+want to follow and these steps when we
+follow one by one step by step so that's
+where we will be able to get a
+particular final docker container over
+here so docker image is getting
+converted as a docker container and we
+are getting a docker container as an end
+result
+now um docker file is being built up and
+uh stored in the version control system
+and
+this particular docker files when we are
+processing so it prepares a respective a
+specific
+image layer over here and this image
+layer is something which is
+benefiting us that how the executions
+can be done and how we can manage on
+that part
+so
+that really helps us to see that how the
+executions and the things can be managed
+and that can help us to see that how the
+management of the things can be
+performed as such
+so uh docker file is a very good concept
+which is there using which you can
+prepare any kind of custom docker image
+and it can be very easily handle also
+and it's in fully automated mechanism
+you can use it inside the cicd pipelines
+for automating the docker images
+right now it's a docker image is a layer
+by layer mechanism which is there in
+which we have multiple layers each and
+every layer we are doing some specific
+entries some specific tasks or some you
+know changes we are trying to deploy in
+part of our these layers right so uh
+you can use the uh particular docker
+build command to perform the executions
+and you will be able to get any
+particular response an output will be
+given back to you so docker file is
+basically helping you to see that how
+the executions can be done and you will
+be able to get an end result over here
+so the docker image is the final result
+which we are getting when we are talking
+about the docker file here
+right so these are all read only formats
+which are available you cannot modify
+these directly but yes with the help of
+docker file you can do whatever the
+changes you want to deploy on these
+docker images
+right so uh this is a small example
+where we are using a base image as an 1
+to 18.04 so we are using the from
+attribute to specify that yes we are
+going to use the ubuntu 18.04 here then
+we are pulling our
+the file into the uh directory we are
+transferring a particular file inside
+the docker container and then we are
+running our make command and then cmd
+attribute is there using which we can
+run the command on the runtime on the
+docker container so these are a very a
+basic example but eventually when we are
+done with this darker image we will be
+able to get a four layer uh docker image
+over here because there are four steps
+and then hence it will be providing you
+a particular four
+layers in your final docker image over
+here so layer by layer these changes
+will be done during the build process
+and in fact using the docker history
+command you can see the layers these
+layers information also
+right so layer 1 is ubuntu 18.04 layer 2
+is pull and the third layer is there
+where we can run the uh make command to
+you know run this file which we have
+pulled on and then the finally the last
+one is there where we are running like
+using the cmd parent so the difference
+between run and cmd is that cmd will run
+only when you run a docker container so
+run attribute will be executed during
+the docker build part so this is a
+pretty much is a way that how we can go
+for the execution of a docker file and
+how you know we can go for the uh build
+up of a custom docker image over here so
+these are the for some couple of
+attributes which we are using in the
+docker file here
+right now let's talk about the entry
+point over here now entry point allows
+you to specify a command along with the
+parameters right so uh let's say that
+you want to run a particular command uh
+over here in the docker container so
+entry point is something which you can
+use to refer to that so application is
+the command which you're trying to run
+and then you can give some arguments to
+that and argument one is what you're
+trying to run over here so entry point
+is very important because that
+eventually helps to see that how the
+executions can be done and the
+implementations uh will be done over
+here in this case
+right so you can see like you can run a
+command called eco and then you can use
+the parameters also it's not like only
+the commands can be used but you can in
+fact use the arguments also now add is
+an attribute which is available in the
+docker file which is primarily used to
+see to uh transfer the files from the
+host machine inside the docker image
+now let's see that you are trying to
+prepare your own custom docker image
+apart from the dependencies you need the
+source code also right so the source
+code needs to be transferred inside the
+docker image and for that reason we can
+use the add attribute so add attribute
+requires a source and destination
+source will always be the path on which
+on the testing on the host machine the
+files are present so we can give that
+and destination is the folder which is
+available inside the
+particular docker container where we
+want to store the files so you can use
+the example over here just like this you
+can use and you can give two entries one
+is the source one is the destination and
+once that is done so you will be able to
+see your files being stored up in the
+destination directory once the final
+docker image is prepared
+then we have enb attribute now enb is
+something which is used to set up some
+environment variables which is required
+of course for the docker image for the
+application which is running inside the
+docker image now environment variables
+are something which you can hardcore
+during the docker build one but using
+the when you are running like when
+you're creating the docker container at
+that time also you can overwrite the
+these environment variables so
+environment variables are very important
+because first during the build process
+you can hard code some values but if you
+really want to change them during the
+runtime that also is being supported by
+the environment variables
+so
+most of the times we use it as an kind
+of a keep value pair just like in in
+linux we use uh we used to set up a
+particular environment variable so the
+key value pair is being used in case of
+enb attribute
+maintainer is there where we can
+describe that what is the details about
+the author these are the fields which is
+available in the top so where we can
+give the the author name and the author
+you know details like email id and all
+so that we know that who is the person
+who is maintaining this particular file
+and we can reach out to them in case any
+issues are there for the docker files am
+right so that is what we have here in
+this one so now we are going to see that
+how we can go for a small demo and
+docker file and we can go for the
+implementation of this uh particular
+docker file and prepare a custom docker
+image so let's just wait on that part
+so let's see some demo here now in this
+one we have got two examples one is the
+python one is the notice one so first of
+all what we need to do is that we need
+to process the python one here so this
+is the sample docker file which we have
+got here for the python now all this one
+requires a python file which is already
+present on the server and we are going
+to transfer we are going to copy this
+content over here that this is the
+specific docker file contained which is
+available to us and all we need to do is
+that we need to put this content across
+the server so that we will be able to
+build our custom docker image so let's
+go back to the server so here we have
+already got the python file which is
+present so we have to create a docker
+file here which will have the steps
+related to the docker image preparation
+over here so we will be including some
+steps over here that these are the
+different steps we want to configure we
+want to set up over here in this one so
+python 3.6.4 is the version of the
+python which we want to configure and
+then we are going to transfer some files
+into slash app we are also setting up
+the working directory as slash app and
+ultimately we are running a command
+called pip install flask to do the
+installation of flash package and then
+we are starting the uh specific
+applications on that part so i'm going
+to save this file and uh once i save
+this file so all we need to do is that
+we need to create a custom docker image
+right so right now there is no image
+which is available over here and it's in
+complete md instance so i'm going to run
+a command called docker
+build
+hyphen t
+python hyphen m dot so docker build is
+the typical command but hyphen t is for
+the tag that what kind of docker image
+you want to build and then we are giving
+a image name and then we are specifying
+dot over there now once we are done with
+that so it will pick up all the things
+one by one the basic docker image is
+being pulled down then some sequence of
+steps is being executed so it's a
+step-by-step process which is happening
+over here in this case and we are then
+transferring some files in the slash app
+and then ultimately we are going for the
+pip install flask so it's installing
+those packages and at the end the final
+docker image will be prepared and will
+be given back to us so we will be able
+to get this uh docker images over here
+when we run that command we will be able
+to find out that we got our custom
+docker image also available and as you
+can see that the base of darker image is
+also available in this one but yes we
+have added up like around 10 mb of work
+we have added on top of this python uh
+base docker image here so that's how we
+are able to do the processing over here
+in this case in this setup so that's
+what we uh can do to prepare a custom
+environment of python with the help of
+the docker file here now let's see that
+we will be uh proceeding on with the
+node.js to see that if the node.js kind
+of setup also can be done now for
+node.js again of course we got uh the uh
+specific docker file which is present so
+we can process that but let's create a
+new folder over there so i'm going to
+create for a new node.js folder so that
+we can create the work all together in
+this one so i'm going to run a command
+called npm minute which is the command
+to initialize any empty project in case
+of node now you can typically bring down
+some real code also or you can say that
+i want to process
+an empty a project so you can give the
+configurations you can give the custom
+names but uh i want to process with
+these as default name itself so
+ultimately it's going to create an
+entries like uh you will be able to see
+like all these uh values which we are
+not providing these standards value will
+be picked up for the uh specific code
+and at the end you will be able to get a
+package.json file created over here in
+this one now you can actually bring down
+the steps that how you can perform or
+you can build up a custom node.js based
+docker image now these docker files is
+giving you the capability that you can
+convert a full-fledged application which
+is deployable on the virtual machine you
+can actually convert them in the format
+of the docker containers over here in
+this one so that's what we are going to
+get over here with this particular setup
+are these mechanisms
+so let's go back to the document and see
+that what exactly we can copy the docker
+file
+so we have got this docker file over
+here so all we can do is that we can
+copy this one so once we copy this uh
+specific file here so all we can do is
+that we can transfer uh these files into
+the onto the server we can convert it
+into the docker file there so that we
+will be able to set up the
+configurations and we can perform the
+setup around that so docker file is
+again we want to create and we want to
+set up on that here so let's go back to
+the server
+so here we want to create a docker file
+and we want to set up the files inside
+that these are the different files which
+is being available which is being
+configured over here in this one so we
+are running like node server.js which is
+a master file so we are doing an expose
+of 8080 then of course we have a copy
+commands which is there then npm install
+command is there and then package.json
+file is also there now what you need to
+really do is that you need to go for a
+server.js file which is available in
+which you can configure that how the
+setup needs to be done and how the
+configurations should be performed there
+because that's a command that's a script
+which is going to be executed within the
+container so let's copy the content now
+i'm going to copy this content over here
+which is like a sample node.js code
+which is available so i'm just copy this
+one and transfer it to the server so
+server.js file we have to create here
+just like we did in case of the python
+because this is the source we want to
+transfer inside the docker container
+so this is what we have got now i'm
+going to uh transfer like uh i want to
+change this port value from 5000 to 8080
+because that's what it's configured in
+the docker file of course you can
+configure 5000 also depending on your
+requirement you can do that
+configurations
+now you have got uh these two files over
+here in this one so all you need to do
+is that you need to run like docker
+build
+hyphen t node.js hyphen app and dot so
+it will automatically pick up like what
+exactly it will uh you know go for the
+node.js basic docker image over here so
+that will be processed over here in this
+one so step by step it will be able to
+do the configurations
+so first of all it will download the
+basic docker image which is um quite uh
+more incisor here in this one once it's
+downloaded onto your system then it will
+proceed further with the build activity
+on
+processing the docker file performing
+the execution so all that stuff will be
+performed with this help of this docker
+build process over here so it's going to
+process it one by one in this one
+and it's going to the next step where
+it's transferring some of the files like
+creating some working directory
+transferring the files uh putting up
+there and running the npm install
+command
+and uh then ultimately it will expose
+the port and then it will have the
+cmd attribute configured over there so
+this is basically typically trying to
+portrait it how a particular docker
+image can be built up and of course once
+the build is successful you can validate
+it with the help of docker images here
+so this is the app docker image which
+has been prepared of 911 mb and uh we
+have got it like a final package where
+the runtime is also there and the code
+base is also available now you can
+pretty much
+experience it like with other actual
+source codes like you can generate the
+download some pre configured node.js
+websites or the source codes here and
+you can try to run them onto the docker
+container so that you can get the full
+uh the complete idea about that how it
+goes on but right now the uh these are
+the basic docker image which you can
+prepare and you can build up over here
+in this one so that's how it really
+works on for you now let's begin with
+what exactly is in docker because we are
+trying to explore that what are the
+different docker commands we can
+eventually run to interact with the
+docker because uh you have the command
+line interface which is available there
+using which you can run some couple of
+docker commands and internally you know
+you will be able to have some particular
+processing which is done at the docker
+end now docker is in configuration
+management tool it's being used as a
+configuration management tool just like
+the other configuration management tools
+in the industry in the market now it's
+pretty much used by the developers to
+make sure that they
+wrap or they package an application with
+all its dependency
+now normally in a virtual machine what
+we do is that we host or we install the
+dependencies separately and then on top
+of that we host our web applications or
+whatever the application we have we host
+it on that particular framework or
+platform
+but here in this scenario we are talking
+about like how we can wrap an
+application all together with its
+dependencies all the dependencies are
+getting wrapped are getting uh packaged
+up into a single entity
+and you know that's what we call it as a
+docker container so docker is in
+configuration management tool and the
+containerization tool which is there
+which helps us to wrap or package both
+the dependencies and the source code
+within a single unit called docker
+container and this is the docker
+container which the developers use to do
+the deployment across multiple
+environments
+so um as part of the process um when you
+are working on the
+hosting of your application onto your
+docker so ultimately you are looking
+forward for an entity called docker
+container so if you see if you go
+through the diagram over here so in this
+one
+this is in kind of a basic way uh
+architecture that how the docker is
+being uh architect
+and is getting uh deployed
+so initially you have an infrastructure
+like a physical infrastructure is there
+you have the uh particular cores memory
+infrastructure all those things are
+available there now on top of this
+infrastructure you are hosting up a host
+operating system
+this host operating system is
+responsible for taking up all the
+requests and interacting uh providing a
+particular interface between the uh
+particular docker and the infrastructure
+the core hardware so it acts like a
+medium over here
+so after the host on operating system on
+top of that you are going to install the
+docker engine docker software it just
+like you got a virtual machine on linux
+and on top of that you are installing
+the docker software
+once the docker engine is installed then
+docker engine will take care of
+management of the docker containers you
+don't really have to do a lot of work
+docker engine is going to take all the
+internal work
+the communication between the operating
+system and the
+infrastructure so that needs to be done
+by the docker engine so docker engine
+make sure that the current different
+container gets uh up and running and you
+can see that in this scenario in this
+diagram we have container one container
+two and container three and all these
+containers are actually having its own
+applications and the dependencies binded
+up together so that's a reason why we
+are saying that with the docker we are
+getting a complete package end-to-end
+package has been given to us in which we
+have both the uh particular source code
+and the binaries and the executables
+embedded inside that so it's a complete
+package which is getting created in the
+form of docker container and the
+developer is responsible for preparing
+this docker container so that these
+containers can be deployed on the docker
+host and you can get your application up
+and running so this is what we have
+docker into our particular and the
+architecture of the docker here now
+let's see that what are the different
+commands we have for the docker here now
+the very first one is that what are the
+different images related to commands
+which is available there the very first
+one is the
+command which we typically use to
+prepare a custom docker image now i can
+uh easily go to the docker hub and i can
+pull down a docker image which is
+available there but let's assume that
+you are working on application source
+code so you want to prepare a docker
+container for that now that docker
+container you will not be able to have
+it on the docker hub you have to prepare
+on your own
+right so in order to prepare your own
+docker image all you have to do is that
+you have to run docker build command now
+in this case we
+have to prepare a docker file which will
+act like a docker a kind of a docker
+build script just like in case of maven
+we have power xml file and in case of
+and we have built.xml file so here we
+have the docker file which is available
+there and this docker file make sure
+that whatever the steps are mentioned in
+this docker file in the build script
+it's going to perform a series of steps
+and the build will be done so docker
+build is the command hyphen t is the tag
+that what exactly name uh you know
+whatever the image you are building so
+what exactly tag name you're trying to
+provide over here so here we are using a
+tag name called my image and then after
+the column we are providing that what
+version we want to go here 1.0 2.0 5.0
+so whatever the version you feel that
+you want to uh you know refer you can do
+that
+now this is the exact way that how in
+the actual world the docker images are
+getting built up by the respective
+vendors let's say that jenkins is born
+and jenkins wants to prepare a docker
+image so they will be preparing the
+docker file in the same manner and
+prepare these docker images and publish
+it to the docker hub so all the docker
+images are built up the custom docker
+images are built up with the help of
+docker files so docker build is the
+command which will process the docker
+file and give you a particular docker
+image in the end
+now how to list down all the docker
+images so docker list uh ls is something
+which is there so this will eventually
+help you to list down all the docker
+images which is listed on or which is
+available into your system so that will
+be listed out over there for you
+if you feel that you want to remove a
+particular image in that case you can go
+for docker image rm command and uh
+whatever the image you want to remove
+you can give the respective image name
+and the tag name there so docker image
+rm command is there using which you can
+actually see that how the image can be
+deleted from the host over here in this
+one right so whatever the ways whatever
+the you know mechanism is there so we
+are making sure that how the image can
+be built up and how we can go for the
+built up and a particular image can be
+deployed over here in this case so in
+order to delete it in docker image so
+you can go for docker image rm command
+to remove a docker image completely from
+the docker host
+so these are some couple of commands
+which is available there using which you
+can actually interact or manage the
+docker image because in order to prepare
+in order to run a docker container we
+require a source and that source we are
+going to get it from the docker image so
+now we are going to see that how we can
+execute these commands though first of
+all what we need to do is that we need
+to see that how docker build works for
+that we require a docker file so i am
+going to have a simple docker file over
+here in which we are going to have a
+basic uh docker image selected as an
+ubuntu after that we are going to go for
+the one attribute where we are going to
+do the installation of a specific
+package like let's say git and
+accordingly you can whatever software
+you want to prepare you want to set up
+you can do that and put up the commands
+over here in this docker file so i'm
+going to save this file and after that
+what i need to do is that i need to run
+like docker images to find out that how
+many images are there there is no images
+present so i'm going to build a docker
+image over here with the name of
+simplylan or whatever the uh name you
+want to give you can uh give it over
+here in this case it's not any kind of
+restricted word so you can give the
+actual locker image name also that what
+for what purpose you are preparing this
+image and with that what will happen
+that it will take up the uh
+values whatever attributes you have put
+up into the docker file so that will be
+processed and that will be picked up and
+once that uh docker file has been
+processed has been you know prepared you
+will be able to see that yes a final
+product or a final docker image is
+finalized and prepared over here in this
+one so we just have to wait for the
+whole process to complete and once my
+docker image is prepared i will be able
+to have a particular setup done or
+achieved over here so that's what we
+require over here in this one to be
+performed
+now once the installation is done so you
+will be able to see like the final
+docker image is being prepared over here
+so it says successfully built which
+means that the docker image is prepared
+now if you run like docker images you
+will be able to find out that this image
+is available over here in this one now
+you are seeing like two images because
+one is like the basic image which is
+being pulled down because we are using a
+docker file to do that to process that
+one there
+now in case you want to remove it so all
+you need to do is that you need to run
+like docker
+image
+rm and simply learn
+so if you do that what will happen that
+your docker image which is related to
+simplyland will be wiped off from your
+system and in case you want to do like
+removal of the ubuntu also so that also
+you can do over here with the help of
+docker images
+ubuntu and that will be removed from
+your system so your docker images will
+be removed from your system using the uh
+particular command called docker
+image and then rm command to remove the
+docker image from your system from your
+host here so that's how you deal with
+the different docker images uh commands
+over here in this one now let's go back
+to the document now the next section
+over here is the docker container
+commands over here so all the commands
+related to docker containers is what we
+are going to talk about over here now
+the very first one is the uh particular
+container so
+in order to create a container so you
+can run the command called docker create
+and the image because for a container
+you require a docker image that's a
+pre-request so once the docker image is
+prepared you can just simply run docker
+create command and that will help you to
+create a container onto your system now
+if you want to run a particular um you
+want to create a container and you want
+to run it also at the same time so in
+that situation you can go for a docker
+run command the main difference between
+the docker create and docker and command
+is that the docker run command is going
+to uh run a container and uh it's going
+to give you a response from the command
+but
+the docker create command is going to
+create only the container so once the
+container is up and running so that's
+only being done by the docker create
+command but the docker run command is
+going to actually do the
+uh preparation of the container also and
+at the same time you are being given as
+in particular
+response also like you know what a
+command you want to run so that response
+also you will be able to get here and if
+you feel that you want to rename an
+existing container so for that you can
+go for the docker rename command so
+existing container you can rename it
+with the new container and that's how
+the particular rename of an existing
+container will be done with on to the
+docker host here so docker rename is the
+command using which you can rename an
+existing container and you can get a new
+container over here in this case
+so these are some of the options some of
+the ways that how you can interact with
+the containers how you can manage them
+onto your docker host over here so you
+can run it you can create it and you can
+rename the containers also so now what
+we're going to do is that we're going to
+see that how we can work on this
+particular container commands here so
+first of all i'm going to quickly pull
+down uh jenkins image so that i can
+create a container out of that so it's
+in kind of a 600 around mv docker image
+which is available there now you can
+also have a custom docker image prepared
+using the dockerfile or you can have a
+ready-made docker image pull down from
+the docker hub also so this is going to
+pull the latest version of the jenkins
+from the docker hub so that we will be
+able to proceed further on that and we
+will be able to continue with the
+hosting so we will be converting or
+running this uh specific docker images
+in the form of docker containers so that
+we will be able to have uh instance of
+docker container over here running in
+this one so that's what we are trying to
+do here
+so we just wait for this pull activity
+to complete because it's an uh heavy
+docker image so it may take some time to
+download and once it's download you will
+be able to see that
+docker images is showing a specific
+docker image of jenkins here now you're
+going to create a container out of that
+so you're going to run a command called
+docker
+create and jenkins over here
+so that will help us to do uh the
+creation of a docker container and once
+that is done so you will be able to see
+like using docker ps command that if any
+container is up and running and if you
+go for docker psyphony you will be able
+to see that yes a particular docker
+container is in
+created mode now this is not in running
+mode because you see that when i ran the
+docker ps command it was not showing it
+in the running mode because i just
+created a docker container here and the
+created status also shows that yes the
+docker container is created but it did
+not run over here
+so if
+you want to run it so definitely you can
+say like docker start
+and
+you can give the container name and that
+will help me to uh start my container
+over here but of course you if you feel
+that you want to directly
+create a container and uh you know you
+don't want to create the container only
+you want to start it also so in that
+case you can go for the docker run
+command so docker run command is
+something which can be used instead of
+uh doing the execution so you can say
+like docker
+run
+jenkins and what it will do it will
+definitely help you to get the
+container created onto of the jenkins
+over here in this case it's not like
+only creating a container but in fact
+it's actually starting the container
+also so you can see that it started over
+here into your screen itself that whole
+jenkins gets initialized over here in
+this one so this is the way that how you
+can initialize or you can create a
+container now i can just do a control c
+over here because it says that and
+jenkins is up and running so you can
+start using this one according to your
+requirement over here right so i'm just
+doing ctrl c so that it can be stopped
+over there
+right now
+so this is the way that how uh typically
+we can create the containers now we've
+got like two containers over here and uh
+one is up and running and one is
+something which i just closed just now
+over here
+now if you feel that you want to rename
+a container let's say like this is a
+container which is available but it's
+not having a meaningful name now i want
+to convert into a meaningful name like
+dev underscore jenkins so that you can
+easily do with the help of docker rename
+command because that will rename the
+docker container name so that you will
+be able to connect on to that and you
+can go for the processing so that's what
+we can get over here in this one so this
+is how you can do the
+various management of the resources over
+here so let's go back to the main
+content
+now if you feel that you want to remove
+all these top containers because what
+happens that sometimes we simply stop
+the container but we do not remove it
+from the
+docker hose because um we are not going
+for the cleanup now clean cleanup is
+very required because these containers
+are actually taking up the disk space
+also so we need to make sure that we
+should be using we should be having like
+minimum amount of disk space utilization
+so for that what we need really need to
+do is that we need to run docker
+container prune command so this will
+basically help you to uh prune or do the
+cleanup uh purge of all the containers
+which is running on the host machine
+here
+and that will definitely help us to
+remove all the
+containers which is in stop status so
+that will be simply removed over here in
+this one so uh this really completely
+removes all the stock containers onto
+the docker host over here in this
+scenario now second one is that it
+creates a new image from a containers
+file changes now the
+way what happens that normally what we
+follow is that we use the docker build
+command to do the build process right so
+docker build command is being used in
+that particular way now if you really
+want to go for a preparation of a new
+you know image so all you need to do is
+that you need to create a new image from
+a container file
+so you can run the command called docker
+container commit command and you know
+whatever container is there so that will
+be saved or preserved as a docker image
+because sometimes we also do some ad hoc
+changes or modifications on the fly
+inside the docker container by going
+inside the docker container and doing
+the
+steps so we really need to preserve
+those steps and that is the reason why
+we are converting a docker container in
+the form of a docker image here so
+that's what we are trying to perform
+here so docker container is something
+which is uh being uh done over here in
+such a way that whatever the steps
+whatever the changes we are trying to do
+so that needs to be performed over here
+in this case so docker container uh
+commit command is being used so that we
+can get a particular you know final
+image as part of the container so the
+container will be converted in the form
+of a docker image over here
+and the last one is that how we can
+remove an existing container so we can
+go for the docker rm command which is
+available there using which you will be
+able to go ahead and you can get a
+particular container removed from your
+existing system so docker arm command is
+pretty much there using which we can see
+that how we can remove an existing
+container from your system as such what
+exactly now we are going to see that how
+we can perform the various commands on
+the containers here
+so the very first command which we want
+to do here is that uh you know in order
+to see that how we can actually remove
+all these top containers but for this
+one what we really need to do is that we
+need to first of all run some couple of
+containers so i'm going to quickly run a
+container called docker
+run hyphen d httpd
+so i'm going to run a particular web
+server over here and
+it should be able to give me a proper
+container up and running so i can just
+double check or validate it as with the
+help of the
+docker ps command
+so docker ps command should give me the
+proper confirmation that whether the
+container is in up and running over here
+or not so you can see that it's up and
+running from last 11 seconds here now we
+got a command where you know for example
+we have got some stopped containers but
+again you have to manually remove them
+one by one now if you don't want to do
+that stuff if you feel that whatever the
+stock containers which is available that
+should be automatically removed from
+your system then we have a command
+called docker container prompt now for
+this what we really need to do is that
+we need to actually stop this container
+because again it will be only picked up
+like whatever the containers which is
+available in these stops it is only
+those will be picked up
+so i have copied the container name here
+in this case and i need to stop it so
+that i will be able to
+remove it with the prone command over
+here in this one and then i can run like
+docker
+container front command which will
+basically remove all the containers
+which is in these top status and once
+that is done you will be able to see
+like that is something which is
+completely gone from your system so this
+is a way that how it can not only take
+care of these top containers but it's
+actually being done so that you can
+remove the multiple containers with the
+single command itself over here so this
+is not something which will be
+executed one by one on a different
+container but yes it will definitely
+take care of doing the uh changes and
+performing the activities
+now another thing is that how we can
+actually do the uh commit of a
+particular docker image let's say that
+we got a docker container which is uh
+running and there are some changes like
+some dynamic changes which is available
+there so you want to save this uh
+particular container as a docker image
+so that whatever the changes temporary
+changes are there so that will be also
+saved as a docker image so all you can
+do is that let's say that again
+run a particular container
+of httpd here
+so this will help me to get a particular
+container from the http perspective
+available of to us so docker ps command
+will give me the option
+now here i have got a container in which
+it's running now if i want to save this
+container let's say that i went inside
+it did some modification did some
+temporary changes i want to refer it i
+want to use it so how you can do that so
+for that what you really need to do is
+you need to run like docker
+commit that's a command uh or you can
+say docker
+because you're going to do a docker
+container commit over here so the
+comment of the container is what we are
+going to do so docker container commit
+and then we are going to see like what
+is the container so for container we
+will be
+yes again copying
+that particular container id and we'll
+say like custom
+image colon version one so we will be
+giving a custom name or a name of a
+docker image and a tag over here in this
+one so this will basically save my
+docker container which is available in
+this one in the format of a particular
+docker image in a format of a darker
+image over here in this case so as you
+can see that almost both of them are
+having the same change but
+the container which we got uh over here
+in this one so this whatever the changes
+uh you want to wish you want to do you
+can do that and you can then put up into
+the uh form of a docker image a final
+docker image and at large if you want to
+remove it so docker rm and container id
+now this again docker arm will come
+remove only those containers which is in
+stop status so if you want to forcefully
+remove it so you will be able to use it
+with the help of hyphen f which is the
+force will remove which will remove the
+container completely from your system
+and once it's removed from your system
+you will be able to see like there is no
+container running up and running over
+here in this one so docker ps hyphen a
+is not something which is up and running
+over here in this one so they completely
+completely got uh wiped out from your
+system so that's how you basically work
+on these commands on this uh particular
+container related commands here so let's
+go back to the main content
+right so these are the commands where we
+can actually do the management like how
+to stop the containers how to remove the
+containers and how to get a new you know
+docker image out of the container here
+now let's see that how we can list down
+all the running containers if you feel
+that you want to list down all the
+running containers then you can go for
+the docker containers ls command and
+that will eventually help you to list
+down all the containers which is
+available there which is uh being there
+into your system
+then docker stock command is there to
+stop a container
+so whatever container which is there in
+the running setter so that will be
+stored with the help of the docker stop
+command and then the restart command is
+there using which you can do a restart
+of a container into your system
+right so once the container is restart
+so whatever the application running
+inside the container so that will also
+be restarted over here in this one so
+these are the different options which is
+available using which we can explore
+over here in this one somewhat more
+commands about the container so again i
+am going to run
+a container over here of http here so
+that i can show you some couple of more
+commands over here now we can run like
+docker ps or you can say like docker
+container less will which list down on
+all the containers which is available to
+you which is being uh you know present
+in this case now if you want to do any
+kind of operations like let's say if i
+want to stop it
+now the moment you do the stop over here
+so you will be able to uh stop the
+container which is up and running for
+you and
+you can come uh you know whatever the
+application is being deployed that will
+also not be available to you because
+that's simply uh completely gone for you
+now you can see that docker internet
+list is not able to show you that
+particular option that whether it's uh
+being shown or not because it's in stop
+status so in fact you can do a you know
+start or you can do a restart so both
+the operations you can pretty much do
+over here so that you will be able to
+have a complete activity implemented so
+restart is also something which is
+available which can definitely help you
+to see that how the things really work
+and how you can go for the container uh
+you know the management over here in
+this case so you can do a container
+container ls command to list down what
+are the containers which is available
+then you can do a restart you can do a
+stop also infect start is also there
+which can help you to see that how the
+containers is are really available so
+this is the way that how you can manage
+like you know even the restarts and all
+because this really helps you to even do
+the restart bounces to the application
+which is present inside this container
+so that also you will be able to see
+with this particular component here
+so that let's go back to the main
+content
+and then um you know killing a running
+container so if you really want to kill
+a container so for that we can go for
+the docker kill because docker stop is
+also going to stop the container but if
+you want to forcefully kill it so in
+that case you can go for the docker kill
+command to do that particular
+kill on the containers and then if you
+really want to go inside the container
+and you want to attach your terminal so
+for that you can go for the docker
+attach command and with this what will
+happen that you can go inside the
+container you can do whatever the
+changes you want to perform you can do
+that and you can again come back outside
+that also so normally typically we use
+it so that we can see some errors of uh
+in the logs which is coming up in the
+containers and if any kind of issues are
+coming up for the applications we should
+be able to know that part
+now the last one is the particular
+weight docker weight is there so that
+will block a container and it will go in
+the wait status so docker weight and the
+container id or the container name you
+can give so with that the particular
+container will go into the block status
+let's see somewhat more commands over
+here so we can run like docker container
+ls again to find out like what container
+is available so you can see that this
+particular container is available over
+here in this one now if you see like if
+i want to get uh attached to this
+container if i want to attach my input
+and output stream with this container so
+you can run like docker
+attach and the container id so your
+terminal will be stuck over here because
+it's taking up whatever the progress
+which is going to be done in the
+container that will be in you know a
+kind of attached to your terminal over
+here and you will be getting the output
+but the moment you come out of this like
+you say control c so you will see that
+you know it's basically sending the
+request to the container that is getting
+stopped so you will be able to see like
+the docker container list it's not going
+to show you because the container is in
+stop status so again you have to do the
+restart of the container to make sure
+that the container is up and running
+right so the attach one will help you to
+go uh and attach your standard input and
+output with your container with a
+running container but when the moment
+you comes out you will be able to uh
+disconnect or shut down the container
+and again i had to restart that
+container over here in this one then
+again of course we have like docker
+weight
+then container is there so this will
+basically put the uh container into a
+block status because all the requests
+and all will be not sent to the
+container and it will be blocked and
+if you really want to like uh consume or
+if you want to make use of the container
+you will not be able to do that so
+docker weight command will us kind of
+block the container and you know if you
+again uh try to come out of that so
+again the request to the container will
+be
+resumed and they will be able to use on
+that part so docker read command is
+being used to block the container and
+then we have docker attached to attach
+to the container the standard input and
+output and lastly is the docker kill
+which is going to kill the container
+and you will be able to uh see that the
+container is in simply killed status so
+it's uh you know it's not like a stopped
+over here if it's gracefully stopped
+then the exit code definitely will be
+zero but in this case since it's being
+killed the particular status is 137 over
+here in this one so that's a non-zero
+status code so that's how where you will
+be able to manage the containers on
+different aspects let's go back to the
+main container so these were some of the
+commands which was there from the docker
+containers perspective let's talk about
+some of the commands from the share
+command perspective so how we can share
+the docker images so we have a typical
+pull push mechanism which is there using
+which we can actually interact with the
+docker hub or a docker registry so uh if
+you really want to pull a docker image
+so in that case you can go for the
+docker pull command
+if you want to push an image to the
+registry so you can use for the docker
+push command if you want to execute a
+command inside a particular running
+container or you want to uh execute a
+command or a script or something like
+that so you can go for the docker is a
+command and with that the execution will
+be done and you will be able to get a
+response so that will make sure that yes
+whatever the execution you are trying to
+do so that will be done over here in
+this mechanism now let's see that how we
+can do a pull and push activity to a
+docker image so first of all the pull
+command is pretty simple all you need to
+do is that you need to say that okay i
+want to pull a docker image uh if let's
+say that our docker image is already
+present then it's just going to say that
+it's already up to date it's already
+available there but if uh in some cases
+you feel that the docker image is not
+available and you want to pull it so all
+you can do is that you can give that a
+docker image name and that you can give
+the tag also but in this case we are
+using the tag as in latest
+so that's the reason why even if you
+provide or you don't provide it doesn't
+really matter so i'm going to give like
+a docker pull a mysql over here and the
+moment i hit on this one what will
+happen that it says this a particular
+docker image is not available into my
+system it's going to download it and
+once it's going to be downloaded you
+will be able to see that into your local
+system so docker images is something
+which is going to help you with the
+commands and it will give you the
+particular ways that how the docker
+image is available so i can run like
+docker images over here to see that what
+are the different docker images
+which is available in this manner
+now if you really want to move any of
+the docker image then of course you have
+to do a docker login
+and you will be doing the
+uh you know the connectivity to the
+docker hub and then establish the uh
+connectivity and all so what you need to
+do is that you can run the docker login
+command we will also see this command in
+the next particular slide but right now
+we are just doing it because we want to
+showcase that how the push really works
+so you can actually give your
+username that what username you are
+holding up
+so the password does not shows any
+activity but yes still it will let you
+know that whether the login is
+successful or not so in this case it
+says login is successful so all you need
+to do is let's say like i got this
+custom image and i want to push it to
+the docker home so
+you need to rename or you need to do a
+tag over here because the same if you
+run
+docker push
+custom
+image
+colon version one so if you do that it
+will not be pushed into these
+particular docker hub so it's going to
+throw a error over here that access is
+denied so all you need to do is that you
+need to do a tag here
+so you have to rename it in such a way
+that you should be able to
+use uh add your username over there
+because dockerhub will identify that if
+it's there with your username then only
+it will be pushed otherwise it will be
+simply rejected over there so that's
+what you need to do you need to rename
+your docker image uh the same docker
+image which you have you have to append
+your username of the docker hub and once
+that is done so all you need to do is
+that you need to just run like docker
+then push is there
+then this image name and then version
+one
+so the moment you do this what will
+happen that it will start transferring
+those docker image to the docker hub you
+see this uh specifies that yes this is
+going to the docker hub docker dot io
+where my username is there and this is
+the custom image which is available
+there so if i refresh my page on the
+docker hub i will be able to see like
+this public repo which is available
+there but again this one just requires a
+credentials and the login which we did
+in just a last command where we ran the
+docker login command to do the login to
+the portal and after that only we are
+able to do the setup and the
+modifications over here so that's how
+you do the login and you are able to
+connect on that now these are some of
+the pull and push operations but let's
+say that if you got a container which is
+up and running like this is uh
+right now we are not getting any
+container which is available over here
+so you can say like docker run
+hyphen d httpd like i'm just running a
+dummy container over here so that i will
+be able to show you this command now if
+you for some reason want to go inside
+the container and want to see some
+processing and want to see some content
+so you can run the command called docker
+asic
+iphone id and there you can give the
+container id this is nothing but the
+full format of the container id which is
+given to you so you can use this one
+also or you can use the shortened also
+shortened value also you can use and in
+the last we can say like bash
+the moment you do this you will be going
+you will be going inside the container
+you see that this is the host name which
+is being shown as the container id you
+can do a like psiphon ef command and it
+will
+throw an error that the ps command is
+not available because you are running
+this command into the docker into the
+docker container so using these kind of
+commands which is not available in
+container will help you to identify that
+yes you are not on the host machine you
+are in fact into the docker container so
+that's the reason why you can do it
+because for you the parts and all
+everything is same the terminal is also
+same so you may not be able to
+differentiate in that part so that's the
+reason why it's preferred that we use
+that uh commands which is going to fail
+but that's okay it will give you that
+okay this command is failing because i
+am into the docker container right now
+so that's what we are performing over
+here
+right and you can come out of that but
+still the docker container is going to
+be still up and running over here in
+this case so the container is not going
+to
+be down over here in this one so that's
+how we
+manage the container we can go inside
+and we can check some informations and
+get some files there
+so these are some of the commands where
+we can interact now in order to log into
+the docker hub because before doing the
+docker push you have to log in you have
+to get a credentials and the
+connectivity with docker hub so you can
+run the docker login command where you
+can see that how the execution can be
+done now using the docker login command
+you can interact with the particular
+docker hub you can set up the
+credentials once the credentials is
+being set up so what you can do is that
+you can go ahead and say that okay the
+configurations is done and we can go
+ahead and we can perform the execution
+so docker login is the command where you
+can give the credentials docker info is
+the command using which you can get the
+uh information about the docker tool so
+whatever the docker info is available
+there so those things you can actually
+get it over here in the case of the
+docker info so docker info is going to
+give you complete information that what
+exactly you have the information
+available over here on this one
+and then we have the docker history so
+using the docker history you can see
+history of the docker image that what
+exactly are the mechanisms or what are
+the different image ids are available
+there so this is basically giving you
+the complete history on how the
+docker image is prepared all the
+commands is available there and that
+will help you to eventually go and
+understand that how the images can be
+going on and you can manage on that part
+so these are some of the couple of
+options which is available there where
+we can see that how the executions can
+be done and we can go ahead on that
+particular part so docker history is the
+command again which will help you to see
+that how you can go for the uh
+particular mechanism and you can listen
+on on the things over there so docker
+login was already done previously when
+we try to push the image but again if
+you try to run docker login you will be
+able to do that now docker info is
+something which will give some
+additional information about the docker
+and all the informations about the
+docker will be given back to you over
+here in this one so the complete clarity
+uh then let's say that you got a docker
+image called uh
+http now you want to check the history
+of this image that how this image is
+prepared what are the different layers
+which is available how many layers are
+there how much size is being modified in
+each and every layer so you can see that
+we got a layer where we have a
+particular changes of 7.838 mb but
+pretty much the
+compa from the complete size of this
+httpd the major portion is actually of
+the uh this one the basic operating
+system which is being implemented and
+then of course there are some packages
+which got deployed due to which this
+60 mb and 7mp size is coming up there so
+this actually gives you the complete
+layer wise mechanism that what are the
+informations which is available and how
+the modifications actually got modified
+and got
+changed over here in this one so this is
+the additional uh help which you can get
+from the docker to
+manage the containers here
+so these are the ways where you can
+interact with the docker hub if you
+really want to create a volumes for the
+container so you can go for the docker
+volume create command so docker volume
+create command is there using which you
+can create the docker volumes and you
+can pretty much do that setup so docker
+volume create is the command which is
+available there for that particular part
+it will create a volume for you now
+let's see that how we can actually work
+with the volume so you can run the
+command called docker volume ls to find
+out at what are the different volumes
+which is available there now if you
+really want to create a volume over here
+in this one so you can say like docker
+volume create
+and you can go for the
+volume name here
+now the moment you do that what will
+happen that a volume will be created and
+you can validate it with the help of
+docker volume ls command that whether
+the volume is being created or not over
+here so this is the way that how you can
+manage the volumes onto the docker host
+now let's talk about some of the docker
+swamp commands here now docker spam
+commands is there to set up a particular
+mechanism where you can see that how you
+can perform a setup you can actually go
+ahead and see that how the setup and
+modifications can be done
+so docker swamp is there where we can
+see that how the execution needs to be
+done so
+you can go for the command called docker
+spam init command this will actually go
+for an initialization of our docker
+swamp cluster and once the docker spam
+cluster is initialized then you can
+pretty much go there and perform
+whatever the executions you want to
+perform you can do that and you can
+execute as such over there so docker
+swap in it is a command using which you
+can actually see that how the execution
+needs to be done
+and how we can perform the uh you know
+mechanism and the changes over here so
+docker sam init
+hyphen fn advice uh adr address is there
+which helps you to see that how the
+executions can be done
+now joins you have the docker swamp join
+command which is available there now if
+you go for docker spam join command so
+uh you can have a particular host so
+dockers swam join command is there which
+you can run on the node machine
+and in that case what will happen that
+node will be a part of the docker spam
+cluster
+and then if you want to leave uh from
+the swamp cluster then you can go for
+docker swamp leave command and it will
+be simply removed from the docker swamp
+cluster there some of the couple of
+commands which using which we can
+initialize or we can uh remove from the
+docker spam cluster here so docker
+spam is already being initialized or
+it's been created when the moment you do
+the installation of docker so docker
+spam init is the command using which you
+can in the last uh analyze the docker
+container now once you analyze over here
+so initial after the initialization you
+got a command you which you want to add
+it like you want to run it on to the
+docker spam
+cluster
+it will act like a worker node so that
+you will be able to deploy the
+containers on top of that also if you
+want to join it as a manager so you can
+also get the join token again so it will
+give you the proper command
+now if you run like docker
+node ls so you will be able to see like
+what are the different nodes which is
+available there and for any reason if
+you're not comfortable with that and you
+want to reinitialize your docker spam
+cluster so all you can do is that you
+can say like docker
+swamp
+leave iphone f and you will be left out
+of the docker spam and now if you want
+to run like knock docker node ls you
+will not be able to get that output
+because it's saying that there is no uh
+particular swamp manager which is
+available so you can run docker spam we
+need or you can run the join command to
+connect to that specific node but we
+have already left it and nothing is
+available over here so that's a way that
+how you can manage like what are the
+different docker swamp commands we can
+typically run to manage the docker spam
+cluster now let's talk about the docker
+compose commands now docker compose
+commands is actually they're using which
+we can create multiple containers it's
+not only one container which can we can
+create we can create go for multiple
+creations of the containers with the
+help of docker compose file so docker
+compose hyphen version is the u command
+which we can give you the version of
+docker compose which is being used so
+here we use a particular vml format file
+which will help us to create the
+multiple containers we defined the
+services that what are the different
+containers we want to create here
+and then with the help of a docker
+hyphen compose.vml file we can create or
+we can have that particular docker
+compose file setup over here in this
+case so docker hyphen compose.vml file
+is used to do the setup and the
+modification so that you will be able to
+have the
+modifications done and you will be able
+to find out a particular
+multiple containers gets created all
+together so docker compose is there is
+the way that how you can do the setup
+how you are going to run the docker
+compose file so in that case you're
+going to run the docker hyphen compose
+up command which will help you to set up
+like how the compose can be done and
+once you are done with the docker hyphen
+compose up command so using this the
+compose will be done and the containers
+will be up and running so these are the
+commands using which we can manage
+multiple containers using the docker
+compose one so let's try to run some
+commands related to docker compose so
+docker hyphen compose iphone version
+will let you know that what exactly
+version of docker compose is installed
+into your system so you can run typical
+app command to do the installation so
+docker hyphen composes the package name
+which you can install so that the
+executables and the package can be
+installed into your system onto the
+server
+now
+all we need to do is that we need to
+create a docker compose file so what we
+need to do is that we need to create a
+docker hyphen compose dot yml file is
+the default name of the vyml file which
+we want to create here that's a standard
+name so once you create this all you
+need to do is like you need to put some
+values attributes the very first one is
+the version value that what version of
+this particular
+attribute you want to create it let's
+say that i want to create a version too
+so i will configure here that yes the
+version 2 is what i require i want to
+set up over here in this one
+now again if i want to configure that
+what are the different services we want
+to run because services is the main
+thing which we will be running on this
+machine on the server here so that's
+what we require so then we need to put
+for a particular service called web so
+web servers we want to search and we
+want to run and then again we need to
+take care about the spacing because
+that's a very important part
+and we need to provide the values of the
+image
+and
+all these configurations here so that
+you should be able to set up like how
+the images and how the docker images can
+be built up over here so uh web is the
+service which you want to deploy and
+then of course the image is the
+attribute which is there for the web
+that yes engine is the one which we are
+trying to build up now you can give the
+ports configuration also so you can say
+like ports
+and inside that you can say like what
+port mapping you want to perform so you
+can say like
+um 8080 so or sorry 80
+is what you can dash for the nginx
+because it runs on 80 port but now i
+have to run like 80 port i want to
+attach that port over here in this one
+so i can specify that 80 port should be
+available in this one so i'm going to
+save this one here and i'm going to run
+a command called docker iphone compose
+up now this will run the containers in
+the interactive mode but if you feel
+that i want to run in the detach mode so
+you can say like hyphen d also which
+will of course run these ones into the
+detach mode and it will be executed so
+it will process your docker compose file
+and since you have used a standard name
+called hyphen docker hyphen compose dot
+primal so it will automatically pick
+that darker uh details and start
+creating the container so that's it for
+this uh particular one in which we
+talked about that how exactly we can
+work on on all these different docker
+commands and how we can make use of
+these couple of commas here so that's it
+for this one thanks everyone
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
