@@ -1,0 +1,554 @@
+foreign
+today we'll make a language translator
+application using Python and for amazing
+videos like this subscribe to our
+YouTube channel and press that Bell icon
+to stay updated
+and if you want to learn about more
+amazing projects like this trans
+language translator then we have a
+course curated for the base on these
+project to know more about it stay tuned
+to the video so this is Jupiter notebook
+okay so here first we will rename
+language
+translator
+using python
+okay
+so let's rename this yeah so first we
+will import some major libraries like
+Tinker like Google strands
+so here I will write from
+tinker
+import
+All Star means all
+okay
+so Tinker is the standard GUI library
+for python graphical user interface so
+python when combined with Tinker
+provides a fast and easy way to create
+GUI applications
+so Tinker provides a powerful
+object-oriented interface to the TK GUI
+toolkit so creating a GUI application
+using Tinker is an easy task
+okay so the next one is I will write
+here from
+tinker
+import
+TDK
+so ttk dtk is a module that is used to
+style the Tinker widgets just like CSS
+is used to style an HTML element we use
+tinker
+so we use tinker.ttk to style Tinker
+widgets okay like box making box okay
+coloring background color that
+font style
+okay the title the size of a particular
+you know the frame
+okay so like the major difference
+between Tinker widget and tinker.ttk is
+Tinker widgets are used to add buttons
+label text score ball and
+moreover however Tinker is used to
+style the particular frame
+okay and the third one is I will write
+here
+from
+Google
+trans
+import
+translator
+comma
+languages
+okay so what is Google trans
+so Google trans is a free and unlimited
+python library that implemented Google
+translate API this uses the Google
+translate Ajax API to make calls to such
+methods as detects and Translate
+and this translator is used to convert a
+particular language to the different
+language and the why the language is so
+languages is a like many languages
+German French Spanish and the languages
+we will use to convert okay so this is
+the course which I was talking about so
+the demand for machine learning and AI
+is growing faster than that of the other
+profession in fact according to
+statistics there will be more than 2.3
+million job openings in the field of
+artificial intelligence and machine
+learning by 2023 but you can beat the
+curve without professional certificate
+program in Ai and machine learning
+co-sponsored by party University and IBM
+this course covers tools and techniques
+like numpy pandas Python and sci-fi
+along with industry projects like social
+media by Twitter delivery service
+provider by zomato and transportation
+service provided by Uber and many more
+Amazing projects choosing this course
+can you get hired in renowned companies
+like Netflix Amazon Facebook and Adobe
+with an average salary high cost 70
+percent so what are you waiting for join
+the professional certificate program in
+Ai and machine learning and Excel your
+career into machine learning the link is
+in the description box below so okay let
+me run it
+no spelling mistakes and
+so here I will like root
+equals to
+TK
+okay tinker
+then I will write here root
+dot geometry
+one one zero
+zero
+by
+320.
+okay
+then
+I will write here root dot resign
+okay resizable
+0 comma 0.
+then root
+Dot
+icon
+bitmap
+then there is one icon you can just
+select as per your choice so I will
+write here my icon name is logo
+simply
+dot Ico
+okay then root
+BG
+equals to
+I will give the background color sky
+blue
+okay or I will write down my schedule is
+fine I guess we'll change
+as per our choice so let me run it
+okay
+yeah I'll write X
+okay first what I will do I will add the
+title
+here itself so I will add root Dot
+title
+language
+translator
+by
+simply learn
+okay
+then label
+root comma
+text equals to
+language
+translator
+and I will put font here
+as
+period
+20 volt
+okay dot back
+let me run it now
+Okay so
+what I will do
+okay
+so what I will do I will add a root dot
+Main
+[Music]
+okay and I will okay I have to just
+start it from the starting
+so now this has come
+till here what we will do root dot TK
+if we imported Tinker as root dot
+geometry 110 by 320 so 1 1 0 is X and
+320 is
+or height
+okay 320 is y and 1 1 0 is X root Dot
+resizes
+resizable equals to zero zero so what is
+this we can't resize this box see there
+is no resize we can't resize this box
+okay
+so root dot icon bitmap logosimply.com
+logo simply dot ICU so this is my logo
+you can add as spell your choice the
+icon okay this is the simply learn icon
+so root dot title language translator by
+simpler so it is written here language
+translator by simpler okay this is the
+title and label root root is the main
+frame you can say Okay root is the
+Mainframe and the BG equals sky blue as
+you can see the BG equals to Sky Blue
+the root one and the label root text
+equals root language translator as you
+can see there on the screen language
+translator and font is aerial 20 bold as
+you can see it's bold okay and Dot pack
+so now
+what I will do
+so let's create one enter text box okay
+so for that I will write here
+label
+root comma text question
+enter
+text
+okay then I will write font equals to
+ADL
+13.
+bold
+comma BG question
+White
+smoke
+okay dot place
+x equals to
+165 comma y equals to
+90.
+okay
+then I will make one input X so first
+let me run it so again I have to remove
+root main loop from here and I have to
+copy paste here
+okay then let me run it
+okay
+so let's cut it
+okay
+so as you can see the enter text came
+okay and attack serial this is the place
+where we want to place like x equals to
+165 and 90.
+okay
+so now what we will do
+let me close it okay
+so here what I will do I will
+put one input text what we want to you
+know convert into different languages so
+I will add here input
+tax question
+entry
+fit equals to
+get 60.
+okay
+then input
+input
+text
+dot please
+then x equals to
+30
+and
+y equals to
+130.
+okay
+and then I will add input
+tax dot get
+and here I will write root dot main load
+okay so let me cut from here
+and restart it again
+so as you can see the taxes came here I
+can write anything okay I can write hi
+my name is
+Maya
+so what I will do I will create one here
+box choose language and one here the
+output will come here one box here and
+the button will hear the translate
+button so it will convert in the
+you know
+what the language we choose okay
+so yeah
+okay the error will come I guess
+so what we will do
+we will create the output box so I will
+write a label
+label root command text equals to
+output
+okay the font equal to again area 134
+and the BG will be same
+white smoke
+dot place
+x equals to
+okay 780
+and Y equals
+90.
+okay then output
+text
+equals to text
+root comma font
+equals to
+Ariel then
+and
+aerial 10 comma
+height
+equals to
+11 comma wrap
+equals to word
+comma padding X
+equals to 5
+and padding
+y equals to
+five
+then width
+equals to I will put
+50
+okay
+then output
+dot text Dot place
+x equals to
+500
+comma y
+equals to 100.
+okay
+so let's run this
+root Dot
+main Loop
+okay let me cut this
+okay now let me restart the kernel
+the output is not defined
+which output
+please
+okay
+okay it's not DOT
+output
+underscore
+underscore text okay
+something wrong punch
+so as you can see it is overlapping
+okay so let me fix this first
+okay
+so I will write X
+100 by 100.
+okay so we have to increase the Y
+to
+180 I guess it will be fine
+it's to run it again and again
+so why is
+very below
+Okay so
+I will shift it here
+okay
+so what I will do
+I will do y equals to 130 only
+and the X would be
+700
+okay
+now it's quite better
+let's
+reduce the size of this box
+so for that I have to
+height is 11 so I have to put the height
+5 is fine I guess
+okay now let's see how it's looking
+yeah so it's looking quite good no it
+should be here so output will be at the
+middle
+okay
+so I have to reduce X
+chess 600
+yeah so now it's looking fine you can
+you know place at anywhere as you want
+to
+so what I will do I will write from here
+all also so I will write here language
+list
+languages
+Dot
+values
+okay
+then here I will add destination of
+language
+question ttk
+Dot
+combo box
+root comma values
+equals to language
+comma width
+which will be 22 okay the width of the
+particular combo box
+so here I will add destination language
+dot place
+x equals to
+foreign
+[Music]
+and why
+equals to 160
+just a random value I'm writing right
+now so destination
+language
+dot set
+choose
+language
+okay I will tell you what is the meaning
+of set
+so let's run this and see the output
+so as you can see here I will enter my
+text and here I will choose the language
+particularly and you see Africa and
+Albanian Arabic there are too many
+languages okay Zulu and this Punjabi
+Portuguese
+and many every language I guess Hindi
+you know
+I have every language present in Google
+Translator
+okay so it's
+perfect I guess
+okay we can increase
+so now what I will do I will write a
+function
+for that DF
+Translate
+so translator
+equals to
+translator
+translated
+equals to trans
+translator
+Dot
+Translate
+text
+equals to
+input
+text
+dot get
+comma to the destination of destination
+language
+which I have selected
+dot get
+the function will get the all the you
+know the text whatever will input and
+the destination language which I will
+choose
+okay so here I will output
+text
+dot delete
+1.0
+and
+okay then here output
+output
+text
+dot insert
+and
+comma translated
+Dot
+text
+okay so here at the output it will
+insert the translated text
+okay
+and then
+I will set here the translate button
+so trans button equals to button
+in the root the Mainframe common text
+will be
+translate on that
+and then font
+equals to
+aerial
+12 volt
+okay red y equals to five
+and command command
+without command it won't work okay
+the command would be Translate
+why translate as you can see we have
+here the function name translate
+okay
+command equals to translate comma PG
+equals to
+Orange
+okay and then comma
+active
+background
+because so
+okay
+so here now
+I will write trans
+okay
+I will write here trans
+button
+dot place
+x equals to 445 comma y equals to 180.
+so let's run this and see
+the error will come or not
+okay no error
+so here our language translator is
+you know set to go
+translate okay so let me write here my
+name is
+mayak
+okay and I want to choose language
+okay
+German and let me Translate
+so here you can see my name is printed
+so how to confirm this so let me open
+let me open here so Google
+Translate
+okay
+so
+let's
+detect language okay English
+here I will write German
+if I will write here my name is
+mayank
+so see the output is same
+so the output is same
+so language translator is here
+as you can see okay let's try the
+different language
+my name is mayank okay I will write here
+how are you
+how are you in
+okay how are you in Hindi so let's
+Translate
+see it's written here and now let me
+select
+here if I will see
+I will select Hindi here
+okay then
+I will write
+okay sorry my bad
+how are you
+you
+see the transition is coming right
+okay
+okay
+so let me check one more what is your
+name
+what is your name and
+French
+Translate
+okay this thing is game
+and now I will write here
+French selected
+and I will do it here what is your
+name
+so as you can see
+the right answer is coming so our Google
+Translator
+is you know we can say the same similar
+to our language translator by simply
+learn so like this you can make a good
+GUI
+of language translator using Python and
+you can convert any language to any okay
+okay
+Serbian
+so I hope you like this video If you
+enjoyed this video please do subscribe
+to our YouTube channel and press that
+Bell icon to never miss any update from
+Simply learn
+till then stay safe and keep learning
+and don't forget to check the course
+link from the description box below
+thank you
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

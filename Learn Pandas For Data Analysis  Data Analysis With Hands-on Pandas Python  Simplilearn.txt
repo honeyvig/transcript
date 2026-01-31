@@ -1,0 +1,806 @@
+hello everyone I am bank and Welcome to
+our simply L YouTube channel today we
+are diving into one of the most powerful
+tool in data analytics pandas whether
+you are a seasoned data scientist or
+just starting out understanding pandas
+is crucial for Effective data
+manipulation and Analysis so in this
+video we will explore the essential of
+pandas showing you how to leverage its
+capabilities to streamline your data
+workflow and uncover valuable insights
+so pandas a python library has changed
+the way we handle data its intuitive
+data structure such as series and data
+frames make it incredibly easy to clean
+transform and analyze large data set we
+will start by setting up pandas in your
+python environment ensuring you you have
+all the necessary tools to follow along
+from there we will dive into the basics
+of data manipulation covering key
+functions for loading inspecting and
+cleaning your data next we will explore
+Advanced Techniques such as filtering
+grouping and aggregating data you will
+learn how to handle missing values merge
+data sets and create PIV tables
+empowering you to tackle complex data
+challenges with confidence so we will
+also demonstrate how to visualize your
+data using pandas making it easier to
+communicate your findings effectively so
+by the end of this video you will have
+the solid understanding of pandas and
+how it can enhance your data analytics
+projects whether you are working with
+financial data customer insights or any
+other data set panda will become goto
+tool for efficient and Powerful data
+analysis so grab your notebook open your
+python ID and let's get started with
+pandas for data analytics and don't
+forget to like share and subscribe to
+our channel for more tutorials on the
+data science analytics so let's unlock
+the power of pandas together craving a
+career upgrade subscribe like and
+comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we begin if you are
+planning to start a career in data
+science check out the keltech
+postgraduate program in data science
+from Simply learn ranked as the top
+postgraduate data science program by aim
+in collaboration with calch ctme and IBM
+this program equips you with essential
+skills and tools including python
+machine learning table generative AI
+chat gity and many more learn from
+industry leaders through master classes
+taught by ctech instructure and IBM
+experts join this comprehensive program
+to gain hands-on experience and Advance
+your career with cutting as knowledge
+and expertise you can find the course
+link from the description box below and
+the pin command so without any further
+Ado let's get started so as you can see
+I'm using jupyter notebook for the
+python okay so here what I will do I
+will new go to new and the Python 3 okay
+so here first I will rename it to
+to
+pandas for
+data
+analysis okay then rename it okay so H
+already everyone know pandas is a python
+library that provides extensive means
+for data analysis right data scientists
+often work with data sorted in the table
+formats like CSV tsv or XX okay so
+pandas makes it very convenient to load
+process and analyze such tabular data
+using SQL like queries okay so in
+conjunction with M plot Li and cbor
+pandas provide a wide range of
+opportunities for the visual analysis
+okay for the you can make charts and all
+all right so the main data structure in
+pandas are implemented with series and
+data frame classes so now let me
+import number by first okay as NP then I
+will write
+import
+pandas as PD why I'm writing as NP and
+as PD because I don't want to write
+pandas andai again and again and again
+so I gave the short form you can see
+okay so
+here I will write just PD do
+set underscore
+option this
+display do
+Precision okay then I will write comma 2
+okay run it okay fine so we have
+imported pandas and this nump Library so
+now what I will do I will demonstrate
+the main method in like you know action
+by analyzing a data set on the CH rate
+of Telecom
+operator I have like one data set name
+Telecom CH okay operator clients data
+set so now let's first import it okay so
+I will write here DF equals to DF means
+data frame you can give any name okay DF
+PD PD as you can see here PD means
+pandas
+pandas dot read uncore
+CSV
+then
+Telecom
+Chan do
+CSV so you can find this data set from
+the description box okay in the
+description box below right then I will
+write here DF do
+head what does this do DF doad it will
+show you you know the first five lines
+using the head method of the data set it
+will show you first five lines of the
+DAT data set head and if you will use
+tail instead of head
+you can see the last five rows of data
+set okay if I will write here DF do
+tail you can see the last five rows of
+the data set
+fine yeah so on our data set we have
+state account length area code
+international plan voicemail this this
+this this this this okay and the churn
+rate is false fine so we now what I will
+do I will recall that each row
+correspond to one client and instance
+and the columns are the features of the
+instance so now let's have a look at the
+data dimensionally features names and
+the feature types okay so how many
+columns and rows we have fine so I will
+write here
+print DF do
+shape okay
+so now we have
+3,333 rows and 20 columns in our table
+in our data set okay so now let's uh try
+printing on the column names using
+columns okay so for that what I will do
+I will write here print so these are all
+the functions using pandas okay then DF
+dot columns
+okay so now you can see here we have 20
+columns right here 20 columns okay so
+here state is one column account and
+three four these are the all columns
+name these columns name
+fine so now let's use another function
+called info which will give you some you
+know it will give you some general
+information about the data frame okay so
+here I will write print
+DF do
+info
+okay so yes so now you can see class is
+Panda score Frame data frame then this
+much entries okay 0 to this 332
+3,332 okay column name and the non Nel
+values Nal count is okay zero and the
+data types you can see this is object
+this is in 64 64 object floating type
+okay so there are four five type of data
+set here okay bu is there float is there
+okay in is there and the memory usage
+you can see 49
+4981 plus KB okay and then Bo is one
+float 64 type is eight columns then in
+648 columns and objected right so uh
+here this bull in 64 FL 64 and object
+are the data types of features already I
+told you so we can see that one feature
+is logical okay that that Bool one is
+logical where is Bo yes this one CH rate
+is logical okay logical means two Falls
+two FS okay and the three features are
+of the object type um you can see this
+state these are the object and the 16
+feature are numeric okay float is also
+numeric plus variable right so with this
+same method we can easily see if there
+are the missing values so here are you
+know none because each columns contain
+3,333 observation
+see every column is same and you can see
+no null count is non non null okay so
+here you can see we don't need any
+cleaning and that type of thing okay so
+we can change the column type with the
+as type method there is one more method
+so let's apply this method to the churn
+feature to convert into
+N64 got it so for that what I will do I
+will write
+DF then I will write
+Chan please note that no spelling
+mistake while writing the column names
+okay plus to
+DF ch
+Okay C is
+capital
+dot as
+Type n
+64 fine so now uh you know we have
+convert this uh Lo bu to in 64 now okay
+so now what I will do I will use one
+more method okay let me run it first
+okay it's
+no issues now what I will do I will
+write here DF do
+describe
+yeah so now so the describe method shows
+basic statical characteristics of each
+numeric feature in 64 and Flo 64 okay
+count is there for the particular column
+then mean standard deviation minimum
+value 25 % 50% this is the max value
+okay okay now you can see the CH zero
+and one one okay so and the number of
+non-missing values mean standard
+deviation range medium everything is
+here using describe you can just find it
+okay for the for every column it will
+give you okay count how much count and
+mean of this particular account length
+and the area code like this
+so now so in order to see the stat of
+non-numeric feature so you know one has
+to explicitly indicate data types of
+interest in the include parameter okay I
+will use the include parameter so first
+I will write DF do
+describe
+include equals
+to
+object comma bull
+okay so now you can see count is
+333 and unique values are the 51 and the
+top is this and the frequency is this
+okay so I'm here
+seeing the stat of non-numeric features
+okay like State international plan the
+voice plan like this fine so for cic
+categorical data like type object and
+the Boolean type feature we can use the
+value counts method so now let's have a
+look for that also so I will write
+DF
+ch ch dot
+value
+counts okay so this is some
+data right so now what I will do so
+there are
+okay
+fine so now what I will do here I will
+normalize
+it
+CH dot
+value
+counts normalize
+equals to
+True
+okay
+so so we have 2850 users out of 333 are
+loyal their churn value is
+zero
+okay
+and to calculate fractions pass normaliz
+equal to two we have I have did that
+with the value count function okay so
+here you can see Zero and the one
+value
+counts right so now let's go for the
+Sorting data so what is sorting so a
+data frame can be sorted by the values
+of you know one of the variables like
+columns so for example we can sort it
+this table by total day charges using
+ascending or in descending right so now
+I will do here DF okay first I will let
+me write here
+sorting okay DF do
+sort
+values by equals
+to total
+B
+charge ascending equals to
+false do head do head means means I want
+to see the top five rows
+okay so now what I did you know total
+day charge okay total day charge I have
+sorted in this ascending equals to false
+means I have sorted into the descending
+order okay and the top five rows are
+this okay 59 is the maximum 59. 64
+fine so now like we can also solve by
+multiple tables
+in one go okay so let me do it DF do
+sort same thing I have to write
+values by equals
+to
+CH
+this yeah CH comma then again total
+day
+charge comma
+ascending equals
+to True
+comma
+false then I want to see okay let me
+write the same dot
+at okay first I will show you this 11111
+okay then let me change
+it see it's
+sorted now
+fine so these are the top
+five as per these two columns JN and the
+total data charge
+column okay so now will we will do we
+will perform some indexing and reving
+data so a data frame can be indexed in a
+few different ways like to get a single
+column you can use data frame name okay
+and so now let's use this to answer a
+question about the column alone so let's
+take one question like what is the
+proportion of churned users in our data
+frame okay proportion okay DF dot we
+will do simply we have to find the
+mean I will WR
+Chan do mean
+that's it okay so 40 14.5% is you know
+actually a quite bad for a company such
+as a churn rate can make the company go
+bankrupt right so Boolean indexing with
+one column is also very convenient so
+the syntax is I will write here I will
+write here
+DF then again
+DF ch
+equals to
+one then dot
+mean okay so here what I'm finding is
+what are the average values of numerical
+features for churn user
+okay see account length
+one just ignore this warning okay so
+account length is 10 2.66 area code is
+this this this this this right so now
+what I will do I will find one more
+thing so like we will find how much time
+like in average do CH user is spent on
+the phone during
+daytime okay
+D then
+chalal to
+1 then
+total day in minutes we have this column
+right I hope so we have this colum total
+day minutes okay
+fine yeah dot
+me
+okay so how much time and average churn
+user spend on the phone during day time
+is
+206
+okay almost 207
+okay so now let's take one more question
+like what is the maximum length of
+international calls among loyal users
+okay loyal user means where
+CH is zero like who do not have the
+international
+plan so here for that I will write
+DF and
+DF ch
+equals to equals
+to0 here I will
+write
+and
+DF
+okay I
+will okay international
+plan International
+planal equals to
+no because there is see you can see the
+inter no yes no yes no okay
+no
+then then
+total
+International
+minutes
+okay this
+okay for the confirmation let me copy it
+and
+paste okay no
+issues dot maximum
+value yeah so
+18.9 okay so 18.9 is the maximum length
+of international CA among loyal user
+where is Chan is zero who do not have
+the international plan
+okay so index data frame can be indexed
+by column name I told you already or the
+row name or by the serial number you can
+say of a row so there is one method looc
+okay method is used for the indexing by
+name while iog is another method for
+indexing by the number okay first I will
+show you DF dot here I will write
+deing DF do log
+comma
+State
+then area
+code
+okay so in this first case uh you know
+we can say I gave the values of the rows
+with the index from 0 to 5 like
+inclusive and the column label from the
+state to area code inclosing okay so so
+this is how you can perform
+indexing okay using by name okay if you
+want indexing by the numbers you have to
+use iog instead of this Lo
+iog means
+location okay don't get
+confused 5 comma 0 to
+3 okay
+see you got the same
+almost
+right yeah this is 0 to 5 okay and this
+is 0 to 3 you know 0 to 5 mean 1 2 3 4 5
+and 0 to 3 1 2 3
+fine
+yeah so what if we need the first or the
+last line of the data frame so we can
+also do that so so here simply you have
+to write Simple Thing DF minus
+one okay that's it see this is the last
+line minus one last
+line fine so if you want to you know
+apply something to all the columns so
+there is one more function which is
+apply so how to do is DF
+dot apply
+NP do
+Max
+okay right it gave me all the maximum
+values of the particular
+table sorry particular column not table
+okay so this is how you can do this so
+This apply method can also be used to
+apply a function to each row I already
+told you so to do this you have to just
+specify the A's or the Lambda function
+are the very convenient in such scenario
+like for example let me give you one
+example DF then DF State let's use the
+state okay then dot
+apply apply
+Lambda
+State and
+state
+zero equals equals to W which is
+starting from W okay then dot I need
+only five rows do it
+okay so the state is starting from W
+here it is okay top
+five right so
+yes so there is one more function map
+method which is used to replace the you
+know values in a column by passing
+aition of the form right so
+math
+function b equals
+to
+no okay it is
+false
+then
+yes is
+strong right then
+DF
+international
+plan to
+DF
+international plan
+do
+map D okay DF do
+head
+fine
+okay there's some international plan
+okay B is a small that is why I was
+saying please write it carefully
+yeah okay so this is this is the map
+function okay so wherever there is no or
+yes okay so I have mapped it to the true
+true
+false right okay see here you can see
+international plan yes no yes no yes no
+I have
+marked yes to false and okay why
+different because you know the series is
+different okay here I have performed
+different thing the numbers just check
+the number
+okay 0 1 2 3 4 right DF do let me write
+this so now let's compare
+okay okay why it's coming because I have
+already performed that thing so we'll go
+to here see no no no no yes
+yes now you can see here false false
+false true true so for No I gave false
+and for the true for the yes I give true
+fine this is the mapping this is how you
+can do the mapping
+okay so now let's do DF equals to same
+thing can be done using replace as well
+there's one more function okay let me
+give you the name #
+replace dot
+replace
+then voicemail
+plan oh sorry my
+bad
+Plan
+D
+okay fine
+now
+dot okay so what I took vo mail plan
+right same see true true false false
+because here if you will see I have
+write d d equals to this again you have
+to write no to false and yes to True
+same I used here D no need to write
+again and
+again fine so now let's see how to do
+grouping okay so first the group by
+Method divides the grouping columns by
+their values okay first let me write
+this
+grouping
+okay so here I will write
+columns to
+show
+to
+Total
+day
+minutes
+right
+comma
+total if
+minutes
+comma
+total
+night
+minutes okay then DF dot
+Group
+by then here I will write
+Chan
+then here I will write
+columns to
+show dot
+describe you know
+percentile fine where is it's empty
+fine okay there is
+error d. go by
+by caname describe go an unexpected
+keyword argument
+percentile okay okay okay fine fine fine
+it will be percenti
+yeah so this is how you can do the group
+by with a churn okay so what I did so
+let me explain the you know steps so
+first the group by Method divides the
+grouping columns by their
+value okay then they become a new index
+in the resulting data
+then column of Interest are selected
+column to show this column to
+show okay so if column to show is not
+included all the non-rp by classes will
+be included finally one on several
+function are applied to obtain the
+groups for selected columns so here what
+I did we group the data according to
+their values of the churn variable and
+display that of three columns in each
+group right these three columns in each
+group same count means standardization
+minimum 50% Max count mean this this is
+this this okay so this is how you can do
+grouping fine so if you want to
+summarize the table okay suppose we want
+to see how observation in our sample are
+distributed in the context or two
+variable churn and international B so to
+do so we can build the you know
+contingency table using the cross tab
+method I will show you okay so here I
+will write summary
+table PD
+do cross
+tab then I will write here data frame
+DF
+Chan comma
+DF International
+plan
+okay so this is the true false no
+summary okay we have this much true
+false Zero from the intentional plan and
+the 41 are this much okay for one the
+346 and 137 true right so this is how
+you can perform the summary table right
+you can do for the more also so now
+let's create the P table okay
+so let's make the tables #
+P
+tables okay we tables fine so I will
+addite DF
+do
+pivot
+table okay then
+I will write
+here sorry yes so here I will write
+total day
+calls comma I will take three column
+total if
+calls comma
+then
+Total light
+calls
+comma
+then area
+code okay comma then aggregate
+function equals to
+mean okay I'm using
+mean fine
+so this is Pivot you got the area code
+and the mean of particular
+this right so data frame transformation
+so let me explain you first this uh
+pivot table okay before moving forward
+so this
+P so now we can see the most of the
+users are loyal and do not additional
+Services okay international plan of the
+voicemail so this will resembl P table
+to those familiar with Excel and non of
+course okay so here the values are the
+list of variables to calculate stat for
+and the index okay a list of variables
+to group data by okay area code okay and
+the aggregate function is what stat we
+need to calculate for the groups like we
+can use sum mean minimum maximum okay
+something else okay so here I have used
+the mean
+right so now let's uh predict the
+Telecom churn okay so now let's see how
+the churn rate is related to the
+international plan feature so we will do
+this using you know cross tab
+contingency already saw and also through
+Visual analysis with cbone I've already
+told you with mat blly and the cbone IT
+pandas is crazy okay so
+here I will write predicting
+Telecom Chan okay so here I write PD do
+cross
+tab
+DF Chan Okay C is
+capital
+CH comma
+DF International
+international
+plan comma
+margin equals to
+True
+okay okay sorry my bad it's margins yeah
+okay we got the pivot table here using
+costep
+so I will import
+here ort M plot Li for the you know
+charts M plot
+lip.
+pyplot as
+PLT then I will import cbon Bo just
+remember to install all these libraries
+okay you can use pip install cbon and
+pip install num install
+pandas before using
+it
+C1 as
+SNS then for the graphic routina I will
+use
+config in line
+back dot
+figure
+format
+to
+retina
+okay then here I will write
+SNS dot count
+plot
+where x equals to xais I'm giving okay
+international
+plan comma let's set the
+Hue equals
+to
+Chan then comma data will be F
+okay
+see we have the counting of using
+international plan and the H is CH okay
+zero and one F so we can see that the
+international plan the CH rate is you
+know much higher which is an interesting
+observation you know perhaps the large
+and the poorly controlled expenses with
+you know international calls are very
+conflict okay so now let's uh take a
+look to another important feature which
+is customer service call let's also use
+to you know to make the summary table
+first so for that I will do here
+PD dot cross
+tab
+DF
+[Music]
+Chan comma DF
+customer
+service
+calls comma margins equal to
+True
+okay yes so
+again I have made the summary table for
+the uh you know customer service calls
+so now what I will I will create SNS do
+count plot
+x equals
+to
+customer
+service
+calls where
+H is
+CH then data equals to
+DF
+yes okay so this is how you can you know
+create the charts using pandas and the
+keep
+on fine so therefore predicting that the
+customer is not loal churn equal to one
+in the case of when the number of calls
+to the service center is greater than
+three and the international plan is
+added okay so this is how you can you
+know do data analysis using pandas okay
+so with this we have come to end of this
+video if you have any question or doubt
+please ask in the comment section below
+our team of experts will help you as
+soon as possible so thank you for
+watching stay safe and keep learning
+with simply learn
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration ation with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
+h

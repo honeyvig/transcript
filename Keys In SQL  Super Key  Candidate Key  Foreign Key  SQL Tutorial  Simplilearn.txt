@@ -1,0 +1,307 @@
+hey everyone welcome to Simply learn
+today we will learn the SQL keys in this
+comprehensive tutorial we will unravel
+the intricacies of essential Concepts
+that are the backbone of relational
+databases so that said if these are the
+type of videos you'd like to watch then
+hit that subscribe button and the bell
+icon to get notified just for your quick
+info if you want to upscale Master data
+science and data analytics skills and
+land your dream job or grow in your
+career then you must explore simply
+learn SC of various data science and
+data analytics programs simply learn
+offers various certification and
+postgraduate programs in collaboration
+with some of the world's leading
+universities like Caltech IIT conour and
+many more through our courses you will
+gain in-depth knowledge and expertise in
+skills like Advanced Excel python
+machine learning data visualization
+generative Ai and over a dozen others
+that's not all you also get the
+opportunity to work on multiple projects
+and learn from industry experts working
+in Top Tire data and product companies
+and academic from top universities after
+completing these courses thousands of
+Learners have transition into a data
+science or data analytics role as a
+fresh op or moved onto a higher paying
+job profile if you are passionate about
+making your career in this field then
+make sure to check out the link in the
+pin comment and description box to find
+the data science and data analytics
+program that fits your expertise and
+areas of
+Interest so having said that without any
+further delay let's get started with our
+SQL Keys starting with the primary key
+so the primary key uniquely identifies
+each record in a table ensuring data
+integrity and acting as a reference for
+relationships with other tables for
+example if you have a employee database
+then each and every employee will be
+having their own employee ID and that
+particular employee ID will act as a
+bridge between two or more tables when
+you're creating a join so let's also
+take care of a few points to remember
+when it comes to primary Keys primary
+key is how you designate a column as a
+primary key during a table creation so
+whenever you create a primary or let's
+say you're creating a new table then
+let's say you know which key has to be
+assigned as a primary key in our case if
+you're creating an employee data table
+then you know that employee ID will be
+your primary key but SQL will not know
+it so to let the SQL know you have to
+dedicate or you have to designate in
+terms of primary key right you have to
+specifically mention the primary key
+keyword in order to designate that
+particular column or that particular
+value as a primary key and only then the
+SQL will understand it next is enforcing
+uniqueness understand how a primary key
+prevents duplicate records maintaining
+data accuracy so primary key is the one
+key which ensures that the duplication
+is not done and every entry or every tle
+is a unique entry next relationships
+explore how many primary Kee establish
+relationships between tables for
+efficient data retrieval now let's
+consider the example so here you can see
+the employee data table and the first
+one which is the highlighted column is
+the primary key which happens to be the
+employee ID now the second key which is
+foreign key the definition for a foreign
+key the foreign key establishes
+relationships between Tables by linking
+a column in one table to the primary key
+in another maintaining referential
+Integrity now a few points to remember
+first one creating foreign key
+relationships understand the syntax for
+defining foreign key constraints second
+one is Cascade actions learn about own
+delete and and on update actions to
+ensure consistency across link tables
+third one importance of foreign Keys
+explore real world scenarios where
+foreign keys are crucial for a database
+Integrity now what is a foreign key so
+foreign key let's say you want to uh
+link two tables right when you link two
+tables based on a primary key and the
+dependent columns or the dependent
+values on the primary keys that you want
+to operate on are called as forign keys
+and remember the actions on delete and
+on update so sometimes when you update
+something on a table then that
+particular table will be only uh
+actively having the updated values or
+deleted values will be removed from that
+table but what if the table which is
+relied on the first table also needs to
+have that update right in such scenarios
+that action will not be happening so
+unless you use the word Cascade or the
+keyword Cascade Cascade on delete right
+in that scenario both the tables will be
+eliminated from the value which you want
+to delete from both the tables so this
+is some importance now let's look at an
+example on foreign key so in this
+particular example the foreign keys are
+Department IDs which are related on the
+primary key which is ID right so now
+let's move on to the next type of key in
+SQL which happens to be unique key the
+definition for The Unique key unique
+Keys ensure that values in a column or a
+combination of columns are distinct
+across the table preventing data
+duplication you can also consider unique
+key as a primary key in few scenarios
+now let's take care of a few points to
+remember creating unique constraints
+Implement unique keys to maintain data
+Integrity use cases and understand
+scenarios where unique Keys play a
+pivotal role in database design and
+lastly performance considerations
+explore the impactfulness of unique keys
+on query performance now uh remember I
+said you can also consider unique key as
+a primary key because let's say we
+consider the same example of employee
+datp here we will be having multiple
+employees one primary key is the
+employee ID anyways but what Etc or what
+else is unique for each and every
+employee their email ID but it's not a
+primary key but it is unique right it is
+unique and every employee will have
+their unique email ID nobody will share
+one single email ID right it is unique
+but it's not a primary key it can also
+be considered as a primary key but it is
+not officially considered as a primary
+key in a database you cannot declare two
+primary Keys you will be having one
+primary key and you can have multiple
+unique Keys now let's move on to the
+next type which is about composite key
+definition composite key is form by
+combining two or more columns to
+uniquely identify records in a table
+let's say you have a table okay we will
+look into this in an example but before
+that let's look at the points t remember
+creating composite Keys learn the Syntax
+for defining composite Keys next one is
+benefits explore the advantages of using
+composite keys in complex relationships
+third one is best practices understand
+when to use composite keys and potential
+pitfalls to avoid now the table now
+let's say we have a table of product and
+you have all the values but none of it
+them none of them are unique for example
+you have the transaction ID and product
+ID which were supposed to be unique
+right and customer ID which was supposed
+to be unique but they are not unique One
+customer can have multiple products One
+customer can uh order the same product
+multiple times right in such scenarios
+we don't have a unique key so to create
+one unique key we are trying to combine
+two or more colums in this particular
+instance we are combining transaction ID
+and product ID as one value which will
+become one composite key and which will
+become a unique value right that's what
+a composite key is now moving further we
+will discuss surre key now let's learn
+about the surrogate Keys surrogate keys
+are system generated identifiers while
+natural keys are inherent attributes
+that serve as unique identifiers now
+let's look at some of the points to
+remember choosing between surrogate key
+and natural Keys dwell into the
+considerations for making informed
+decisions pros and cons we the
+advantages and disadvantages of each
+approach real word examples explor
+scenarios where one type of key may be
+more suitable than the other now let's
+learn the examples of surrogate keys so
+it's a little similar to the unique key
+so surrogate key is identified as a
+unique identifier some sort of record or
+object in a table for example here we
+discussed about the email ID right so
+this is a little unique to each and
+every employee and you can identify a
+certain record if you want to uh
+identify let's say fifth cord Ric you
+can access it through the surrogate key
+which is the email ID of uh rek now with
+that let's move on to the next uh
+important keys in our SQL Keys which
+happens to be the candidate key
+candidate keys are columns or a
+combination of columns that could
+potentially serve as the primary key now
+let's look at the points to remember
+identifying a candidate Keys learn how
+to identify and evaluate potential
+candidate Keys normalization understand
+the role of candidate keys in
+normalization process selecting the
+primary key discover the strategies for
+choosing the most suitable candidate key
+as a primary key now let's look at the
+example so here we have uh the columns
+ID name gender City email Etc so a
+combination of keys can be considered as
+the candidate key so in this example
+both ID and email can act as a candidate
+for the tables as they contain unique
+values and nonnull values now let's
+proceed further and discuss the last
+type of keys for the session which
+happens to be the Super Key a Super Key
+is a set of columns that uniquely
+identifies a record possibly including
+more columns than necessary to form a
+primary key now let's look at some of
+the points to remember understanding
+super Keys explore how super Keys
+Encompass various key combinations
+database design implications learn how
+super Keys influence the overall
+structure of database optimizing super
+Keys disc discover techniques for
+optimizing super keys for better
+performance now let's look at the
+example Super Key can contain multiple
+attributes that might not be able to
+identify Tes in a table independently
+for example the table has the following
+schema ID name gender City email ID and
+Department ID consider that the ID
+attribute here corresponds to the
+employee ID it is unique to every
+employee at the table in that case we
+can say that the ID attribute can
+uniquely identify as stubbles of this
+table so I is a Super Key of this
+particular table and with that we have
+come to an end of this session you have
+mastered the essential keys that are
+fundamental for building robust and
+efficient relational databases and in
+case if you need any assistance
+regarding PPT and other resources used
+in the session please do let us know in
+the comment section below and our team
+of experts we'll be happy to help you as
+soon as possible until next time thank
+you for watching and stay tuned for more
+from Simply La staying ahead in your
+career requires continuous learning and
+up Skilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

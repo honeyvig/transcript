@@ -1,0 +1,1294 @@
+hello everyone welcome to simply learns
+youtube channel today we will be
+discussing about kruskal's algorithm in
+data structure in today's video we have
+a challenging activity for you guys so
+stay tuned and do participate in
+formulating answer to the question that
+is going to pop up on your screens in
+next few minutes but before we begin let
+me tell you guys that we have daily
+updates on multiple technologies so if
+you are a tech geek in a continuous hunt
+for latest technological advancements
+then consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simplylearn
+now without any further audio let's get
+started with the agenda for today's
+discussion
+we will start this discussion with
+introduction to kruskal's algorithm
+followed by that we'll understand how we
+can create a minimum spanning tree for a
+given graph using kruskal's algorithm
+and finally we will cover the coding
+implementation of crystal's algorithm
+using disjoint sets
+i hope i made myself clear with the
+agenda now let's get started with our
+first topic introduction to kruskal's
+algorithm
+the kryskals algorithm is used to find
+the minimum spanning tree for a given
+graph but what exactly is a minimum
+spanning tree or mst
+well a minimum spanning tree is a subset
+of graph g having the same number of
+vertices as of graph g and edges
+equivalent to number of voltaices minus
+1.
+along with these properties it also has
+a minimum cost for the summation of all
+age weights included in a minimum
+spanning tree
+if you want to learn more about spanning
+trees then please consider watching our
+video which you can find in the i button
+section right away
+now coming back to the kriskal's
+algorithm the kruskal's algorithm sorts
+all ages in increasing order of their
+age weights and keeps adding nodes to
+the tree only if the given age does not
+form a cycle also it picks the age with
+minimum cost at first and the age with
+maximum cost at last
+hence we can say that the kruskal's
+algorithm makes a locally optimal choice
+intending to find global optimal
+solution
+that is why it is also considered as
+greedy algorithm the data structure that
+we are going to use for implementing
+this kruskal's algorithm is union fine
+but now you must be thinking what
+exactly is this union find data
+structure and how it works
+well union find is a data structure that
+keeps tracks of elements that are split
+into one or more than one disjoint sets
+where a disjoint set is collection of
+two distinct groups or clusters that do
+not have single common element the union
+find features two important operations
+named as find and union
+the operation find returns the set or
+group to which provided element belongs
+basically it constructs a bisection
+between the object provided and its set
+whereas the union function joins two
+distinct disjoint sets to create a
+single subset let's understand how this
+data structure works with the help of
+real life example
+let's say we have some singing magnets
+placed on table with a higher magnetic
+affinity towards each other all the
+singing magnets present on the table are
+color coded with sky blue color now due
+to the high magnetic attraction the
+magnets a to e will form a strong
+magnetic field which will cause the
+bonding or connection of all these
+magnets as a result all these magnets
+will be grouped together we will now
+color code this set with red color along
+with that we'll also call this set as
+red
+after that the magnet f2i are also
+closer to each other thus they will also
+form a connection we'll call this set as
+green finally this last set of magnets
+will also formulate a connection with
+each element inside a group we will call
+this group as set purple
+all these distinct magnets got
+distributed into three different
+disjoint sets
+but as the magnetic attraction between
+these groups increases significantly
+hence all these clusters of magnets will
+end up connecting with each other this
+scenario can be related to the union
+function union function merges different
+sets into a single subset where the find
+operation helps in extracting the group
+of element to which the particular
+element belongs
+similarly in this scenario a particular
+magnet can be traced back to its group
+with the help of color code that we have
+maintained alongside the magnets
+the use of union find in kruskal's
+algorithm can be related to this example
+while implementing kruskal's algorithm
+we are going to maintain three distinct
+disjoint sets the first set will store
+edge weight values for all ages in a
+graph whereas the second set will store
+tree hierarchy for a different nodes the
+last set will store the ranks for all
+nodes included in an msd by using the
+union find structure and its operation
+we can justify the entry of each edge
+into the spanning tree which we will
+explain in the implementation of this
+algorithm
+but let's understand the functioning of
+this algorithm primarily
+the crystals algorithm begins with
+sorting all edges into increasing order
+of their age weights this sorting is
+done to include edges with the least
+edge weight primarily into the tree
+structure after that we'll pick the
+first smallest edge and we'll check if
+it generate any cycle in the tree
+structure or not
+if it does not form any cycle then we
+will include that edge into our spanning
+tree otherwise we will discard it
+we will keep repeating this process
+until mod of v minus 1 edges are
+included into our msd where v is number
+of vertices
+now moving ahead let's discuss how we
+can create a minimum spanning tree using
+kruskal's algorithm
+this given graph gve contains 12 edges
+and six vertices and we are supposed to
+find out g dash such that the number of
+vertices is equal to 6 and the number of
+edges is equal to v minus 1 that is 6
+minus 1 which is equal to 5.
+the one more condition that the
+formulated structure must abide by is
+that the summation of all included edge
+weights must be the minimum possibility
+for this spanning tree going forward
+we'll discuss how we are going to create
+msd for this graph using kruskal's
+algorithm
+the first step that we need to perform
+is removing all the loops or parallel
+edges from our graph hence primarily
+we'll remove these two present loops
+the next step that we are going to
+perform is arranging all the edges in
+increasing order of their weights
+the reason behind maintaining the sorted
+list is to make sure that the first edge
+for insertion is of a minimum cost here
+i have maintained the sorted list for
+all the edges that are part of our graph
+so according to this sorted list the
+first age that we are going to insert in
+our mst is hef as it has minimum weight
+cost that is 2.
+the next stage that we have in our
+sorted list is h f d it also has an edge
+weight equal to 2 hence we'll include it
+in our spanning tree
+the third edge in our sorted list is hbc
+with weight 3 the inclusion of this edge
+does not formulate any circle in our
+tree structure hence we'll add it to our
+msd
+the next stage is hcf having the age
+weight 3 so we'll include it in our msd
+structure
+the fifth edge that we are going to pick
+is hcd having weight 4 but the inclusion
+of this edge inside our spanning tree
+will create a loop and the structure
+that contains a loop can never be
+considered as tree hence we have to
+exclude this edge
+the next age is hbf and the inclusion of
+this edge will also generate a cycle in
+our spanning tree structure
+so we will exclude this age as well
+the next age
+is hbd
+this edge has weight value 6. the
+inclusion of this edge can also create a
+loop in our structure so we'll have to
+discard this edge as well
+the next stop is h a b with a weight
+value 7.
+even though this edge has higher weight
+value than previous ages but it does not
+formulate any cycle in our msd so we'll
+include it in our tree structure
+by doing that we have generated v minus
+1 edges for our spanning tree thus we
+won't iterate further in our sorted list
+this generated mst has minimum possible
+cost for our graph gve which is 70. i
+hope that you guys have understood the
+mst implementation process using
+kruskal's algorithm cause in the next
+slide i have a problem for all of you
+guys to assess your understanding of
+kruskal's algorithm
+the graph shown on your screen contains
+10 vertices and 18 edges
+and for this graph you are supposed to
+generate a minimum spanning tree such
+that it contains 10 vertices 9 ages and
+minimum construction cost
+in order to do that you can take out
+your pen and paper to draw the spanning
+tree structures based on the state that
+we have discussed till the time i am
+aware that this graph is quite strangely
+structured however if you can solve this
+problem you will undoubtedly be able to
+solve other difficult problems out there
+and of course if you are confused about
+any step then you can reiterate through
+the session but here i am going to give
+you guys a little moment to figure out
+your answers
+well now that you guys must be ready
+with your solution so let's check if it
+is true
+the highlighted part of this graph is
+possible structure for spanning tree
+with minimal cost
+by removing all the edges the mst will
+look something like this i hope you guys
+have got the right answer on that note
+let's dive further and discuss the
+implementation strategy for kruskal's
+algorithm
+implementing the kruskal's algorithm
+primarily we'll generate a c structure
+for keeping track of the source and
+destination node along with its weight
+after that we'll sort all that edges of
+a graph in increasing order of the age
+weights
+moving ahead we'll create three distinct
+sets to maintain notes of a graph their
+hierarchy in tree and corresponding
+ranks for every node
+for each insertion of an age in mst we
+will update the rank and parent of each
+node
+if the two nodes have the same parent
+node then we will not insert the 8
+joining them as it will generate the
+cycle in tree structure
+let's understand all these steps with
+the help of an example
+this is the graph structure for which
+we'll try to generate a minimum spanning
+tree using c programming language
+as discussed earlier primarily will
+create a sorted list of all ages in
+increasing order of their age weights
+the list will contain the source node
+destination node and corresponding age
+weight for that particular age along
+with that we are going to maintain
+disjoint sets to carry out union
+operation those disjoint sets apparent
+and rank and they will include rank
+value and parent value for every node in
+our graph initially all the nodes are in
+their own different sets
+hence we'll set their parent values to
+minus 1 also the ranks for these nodes
+will be initialized to 0 at the
+beginning because we haven't included
+them in our minimum spanning tree
+having said that let's include the nodes
+of our graph in our msd
+in upcoming slides we'll traverse
+through our list of edges to include
+them in our minimum spanning tree
+now the first edge that we are going to
+check its age dc which have minimum age
+cost that is one
+in order to insert this edge in our mst
+we'll need to find the absolute parent
+of node d and c as well so let's check
+out the parent set to determine the
+absolute parent value of node d and c
+the parent value of node d is -1 and
+parent value of node c is also -1
+both of them are having same ranks which
+means either we can make node d point to
+c or node c point to d
+here i'll assume that node d points to
+node c
+so if node d is pointing to node c then
+the parent of node d will become node c
+and as
+c becomes the parent of node d the rank
+of node c will change
+remember whenever two disjoint tree
+structures are joined together
+then the rank of 1 being pointed 2 will
+increase by 1
+hence the rank of node c will become 1
+now
+once the disjoint sets are updated the
+union operation will generate the link
+between node d and c
+now we'll process the second edge in our
+list that is
+age cb having weight 2. primarily we
+will check the parent values of both
+these nodes node b and node c have
+parent values minus 1 and minus 1
+which indicates that these nodes are
+absolute parent of their own sets
+since they have different absolute
+parents we can join both of them
+however the rank of node c is higher
+than node b thus the connection should
+point from node b to node c
+as node b
+if pointing towards node c thus node c
+will become the parent of node b as well
+hence will update the corresponding
+absolute parent values for them
+next up is hba with the weight value 2.
+now the parent value for node a is minus
+1 and the parent value for node b is c
+so both of them have distinct parent
+value which implies that we can
+establish a connection between them
+for that purpose we'll have to update
+the rank field
+and as the parent of node b is node c
+the rank of c will definitely increase
+by 1.
+once the fields are updated the edge
+will get included in our mst
+on that note we have generated our
+minimum spanning tree but you must be
+thinking about how our algorithm will
+discard the other ages
+so to understand that we'll traverse
+further in our list of edges
+the next age is h ac and the parent of
+node a is node c itself hence we'll
+discard this node as well
+now the final age in our list its h80
+and again both these nodes have the same
+parent node thus we'll discard this node
+as well
+now you must be thinking about how we
+can limit iteration of the whole list if
+we formulate mst using the few topmost
+edges only well the answer to that is
+pretty straightforward we can avoid the
+complete traversal of the list by using
+looping condition from e is equal to 0
+to e is equal to mod of v minus 1
+when we use this condition the looping
+will stop when v minus edges get
+included in our msd
+now the next up is the time complexity
+analysis of kruskal's algorithm the time
+complexity of kruskal's algorithm will
+be big o of e log e plus e log v
+the e log e for sorting all edges and e
+log v for finding the h from maintain
+three sets
+the average time complexity graph for
+this implementation will be something
+like this it will be a parabolic nature
+i hope that you all have understood the
+strategy for implementing push calls
+algorithm
+so without wasting any time further
+let's visit the code editor to develop a
+program in c programming language for
+kruskal's algorithm
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit scale up by simply learn click on
+the link in the description to know more
+now to begin with coding implementation
+the first thing that we'll do is we'll
+create a storing system to represent a
+weighted age
+for that purpose we'll use structure in
+the c programming language so
+let's get started with that
+struct
+edge
+and inside this structure
+will create and
+source
+destination
+and
+weight
+now what we'll do is we'll utilize this
+structure to store the edges of the
+graph moving ahead we'll also initialize
+the structure for storing the complete
+graph
+so let's create one more structure
+and we'll name the structure as graph
+and inside this graph structure will
+create
+node
+will also create variable e
+to represent number of
+edges in our
+graph
+we'll also call the reference of
+structure h to this graph by doing this
+we'll be able to include all the edges
+into our graph structure as well so
+let's create that reference
+struct
+h
+star
+h
+now we have successfully created the
+structure for graph
+now moving forward what we'll do is
+we'll assign dynamic memory to the
+reference of graph structure for that
+what we'll do is we'll write code struct
+graph
+star
+generate
+graph
+and inside this function will pass
+end
+node
+and
+the number of
+edges
+that is e variable
+now we'll write
+body
+for this function
+and inside body first thing what we'll
+do is will create
+the space
+that is dynamic memory space for this
+graph structure
+equal to struct
+graph
+star
+malloc
+size of
+struct
+graph
+next
+graph
+dot
+node
+will be equal to node
+and
+graph
+dot number of
+edges
+will be equal to
+e itself
+next what we'll do is
+we'll allocate a memory
+to each edge
+okay
+underscore here
+for that what we'll do is we'll use
+struct
+h star
+malloc
+size of
+struct
+age
+and finally
+will return
+the
+graph
+now we have successfully allocated
+memory space to our graph and individual
+edges as well
+so moving forward what we'll do is we'll
+initialize one more structure to store
+the parent array and rank array
+basically these are the disjoint sets
+whose usage will allow us to generate a
+spanning tree using union find algorithm
+so let's get started with that we'll
+create another structure
+and we'll name this structure as
+tree underscore
+underscore set
+and
+inside this structure
+will create
+parent array
+and
+rank array
+now we have created the tree maintenance
+set structure so let's generate an union
+find algorithm for maintaining msd
+structure
+in order to do that let's create a
+function named find disjoint set first
+so
+this find disjoint set function
+will be of end data type
+find
+underscore
+disjoint
+set
+and inside this will pass struck
+tree
+underscore
+maintenance
+underscore set
+and it's object
+subsets
+and
+a variable int i
+inside this function will use if case to
+find root and make it as a parent of
+argument i
+also if it is minus 1 then we'll need to
+update it for that we'll keep recurring
+through this a block by calling the
+function find disjoint set inside f
+block
+so let's do that if
+subsets
+i
+dot
+parent
+it's not equal to
+i
+then what we'll do is
+will
+get inside this f block and will execute
+subsets
+i
+dot parent
+is equal to
+find
+underscore
+disjoint
+set and will again pass same argument
+subsets
+comma
+subsets
+i
+dot
+parent
+and finally
+we'll get out of this pip block
+and
+will return
+subsets
+i
+dot
+parent
+now we'll create a function for union
+operation let's name this function
+as
+void
+union
+underscore
+disjoint
+set
+and inside this will pass
+struct
+tree
+underscore
+maintain
+underscore set
+and its object
+subsets
+and will pass
+argument x
+and argument
+y
+now inside this function will create two
+variables named x root and y root
+and the x root variable will store the
+return data from find disjoint set when
+the x has been passed to the function
+and similarly the y root will store the
+return value for find this joint set
+given y as an argument so
+let's write command for that and
+x root
+will be equal to
+find
+disjoint
+set and objects will be subsets
+comma
+x
+similarly
+and
+y root
+will be equal to
+find
+this joint set
+and object subsets
+and
+variable y
+now in order to build connection between
+these nodes
+as discussed previously the node with
+lowest rank value should always be
+pointing to the node with highest rank
+value and vice versa so we'll have to
+use this a block in order to put this
+condition in the connection building
+block of our program so we'll write
+condition for that here now
+if
+subsets
+exude
+dot rank
+it's greater
+less than
+subsets
+y root
+dot rank
+then what we'll do is
+will set
+subsets
+x root
+dot parent
+to y root
+that means
+oh okay
+so what we are doing here is we are
+checking the rank value of x root
+if the rank value of x root is smaller
+than y root then what we'll do is we'll
+simply set the y root as parent of x
+root
+i hope you guys are clear with this now
+moving forward we'll write lc part of
+this condition
+else f
+subset
+x root
+dot rank
+sorry
+i'll have to add s here
+and
+f subsets x root dot rank is greater
+than
+subsets
+y root
+dot rank
+then what we'll do is
+we will
+set subsets
+y root
+dot parent
+is equal to
+x root
+otherwise
+if both above mentioned condition fail
+then what we'll do is we'll add one more
+condition
+we'll set subset
+y
+root dot parent
+to
+x root
+and then
+we
+set subset
+x root
+dot
+rank
+to incrementation
+there is one mistake over here
+subsets okay
+so
+now we have implemented the union find
+algorithm
+for this crystal's implementation
+next we'll create a function to sort the
+list of edges in our graph according to
+increasing order of their 8 weights
+so let's create new function for that
+we'll name this function ads
+and my
+comparator
+and inside it will pass
+const
+void
+star
+a
+and
+const
+void
+star
+b
+and
+we'll create function body
+but before we get started with coding
+implementation of this my comparator
+function i want to talk about arguments
+of this function
+so basically a and b are constant
+quantifiers
+the significance of this quantifier is
+to tell the user that you cannot modify
+this pointer and the location it is
+pointing to throughout the program
+so let's
+get started with
+the coding part of this my comparator
+function
+what we'll do is
+we'll create
+struct
+h
+star
+a one
+is equal to
+struct
+h
+star
+a
+semicolon
+and similarly
+struct
+h
+star
+b1
+will be equal to
+struct
+h star
+b
+next
+we'll return the output
+a
+1
+dot weight
+it's greater than
+b1
+dot
+weight
+so basically what this statement will do
+is if the weight value of a1 is greater
+than b1 then it will return a1 as output
+and if the weight value of b1 is greater
+than a1 then it will return b1
+i hope you guys are clear with this my
+comparator
+function
+so moving forward will finally create a
+crystal mst function
+the return type of this function will be
+void
+and we'll name this as crystal mst
+and inside it will pass argument
+struct
+graph
+star
+graph
+and will create function body
+now the first thing that we'll do here
+is we'll assess the value of number of
+nodes in a graph and after that we'll
+generate a new reference of structure
+age for storing our msd so
+the first thing we'll
+get
+the node
+to
+graph
+dot
+node
+and
+struct
+h
+result
+node
+along with it will also initialize
+variable e
+and variable i equal to zero so and
+e
+is equal to zero
+and end
+i
+it's equal to
+0
+we need to break the indentation here
+and here as well
+and semicolon so basically these
+variables will store index values for
+result and index variable for the sorted
+list simultaneously
+now moving forward
+we'll sort all the edges of a graph
+if we are not allowed to change the
+given graph then we can create a copy of
+the given graph
+the function named q sort allows us to
+do that so let's create that q sort
+function here
+q sort
+graph
+edge
+comma
+graph
+e
+comma size of
+graph
+h
+zero
+so this q sort is nothing but c standard
+library function that implements a
+polymorphic sorting algorithm for arrays
+of arbitrary objects
+according to a user provided comparison
+function
+and that comparison function is nothing
+but this my comparison function
+and i guess
+you guys must be clear with this q sort
+term
+so let's add
+comma here
+and we'll give call
+to a
+my comparator function
+now moving forward
+we'll break the indentation
+and
+we'll call
+the object of tree maintenance set
+underscore
+maintenance
+[Music]
+set
+star
+subsets
+equal to
+start
+tree underscore
+maintenance
+underscore
+set
+star
+malloc
+node
+star
+sites of
+struct
+tree underscore
+maintenance underscore
+set
+and we'll add
+semicolon here
+so next we'll create subsets equal to
+number of nodes and after that we'll
+make sure that all the elements have the
+rank value equal to zero
+and to do that we'll initialize new for
+loop
+so
+let's
+create for loop here will begin it from
+v is equal to zero
+to
+v
+is less than
+node
+and
+we will set this way
+to incrementation
+after that
+make body for this for loop and inside
+it will set
+subsets
+v
+dot parent
+is equal to
+v
+and
+subsets
+v
+dot
+rank
+is equal to
+zero
+now moving further
+will traverse through all the edges in
+the graph
+but we want to limit our traversal to
+the number of vertices minus one and to
+achieve that we'll create while loop
+here
+while
+e
+is less than node
+capital node
+then
+node minus 1
+and and
+i
+it's
+smaller than
+graph
+a
+then
+create struct
+h
+next underscore h
+equal to
+graph
+dot
+h
+i plus plus
+and here
+will create x and y nodes
+so
+let's do that and x
+will be equal to
+find
+underscore
+disjoint set
+and will pass subsets
+comma
+next h
+dot source
+and
+for y
+will pass
+find underscore distance sets
+subsets
+comma
+next underscore h
+dot
+destination
+now if including the h between x and y
+does not create the cycle in our graph
+only then we can include that h in rmst
+for that what we can do is we'll set if
+x
+it's not
+equal to
+y
+then
+we'll set
+result
+e
+plus plus
+equal to
+next
+underscore edge
+and
+we'll find unions
+disjoint set
+for
+subset
+and will pass x and y as well
+with this we have successfully created
+our kruskal semestre function
+now what we'll do is we'll also print
+the structure of our minimum spanning
+tree for that we'll need to create
+pattern using printf function so let's
+do that
+the first statement that will print on
+screen is edges
+created
+in
+mst
+are
+ads below
+and we'll add backslash n so that our
+output gets to the next line
+we'll add semicolon
+and
+to that
+will add end
+minimum
+cost
+variable
+and will initialize it to zero
+so
+okay
+so
+what we'll do is
+we'll create for loop here
+and we'll initialize it with iterator
+element
+beginning from 0
+till
+i
+less than equal to e
+and when
+create this i element
+and
+what will do it
+will create pattern
+for printing the edges the pattern will
+go like modulus d
+dash dash
+modulus d
+equal to equal to
+modulus
+d
+slash ends
+and
+the parameters that will get printed
+will be
+result
+i
+dot
+source
+comma
+result
+i
+dot
+destination
+and result
+i
+dot
+weight
+okay
+so we haven't added
+comma here
+now this error will get resolved
+now after this
+what we'll do is
+we'll increment this minimum cost
+variable by adding the values of edges
+to it
+so we'll take this minimum cost variable
+and
+we'll add
+result i
+dot
+wait to it
+now we'll get outside this for loop
+and
+will printf one more statement
+the cost
+for
+creating
+mst
+is
+modulus
+d
+and
+will print
+minimum
+cost
+okay we have now
+successfully
+implemented kruskal's algorithm function
+and we have created code for printing it
+on console as well
+so now moving forward we'll work on our
+driver method
+and for that let's
+get into its function body
+here
+first we'll
+define the number of nodes that we are
+going to use for our graph
+those number of nodes
+are
+four
+uh the graph structure that we are going
+to pass to this crystal's algorithm
+program is the same that we have
+discussed implementation strategy for
+it had four edges
+and it also had
+six
+edges as well
+so
+we'll add six edges here
+now what we'll do is
+we'll set
+struct
+graph
+star
+graph
+equal to
+generate
+generate
+crop
+and we'll pass node
+comma
+e
+and we'll add
+semicolon
+now next
+we'll create graph structure by
+implementing the edges
+so the for
+first h
+we'll call graph
+dot
+h
+zero
+dot source
+will be equal to zero
+that means
+the
+first age will begin from 0
+and
+it will
+end at
+destination
+node
+and that will be
+one
+and the weight
+for this
+age will be
+equal to
+two
+now we'll copy this
+pattern
+and
+we'll paste it below
+okay
+and now
+the h
+will be one
+and for this
+h1
+the source will be 0 and destination
+will be 2
+and the weight value will be 4.
+now
+let's copy this again
+paste it
+and we'll set
+age number to 2.
+we'll change source
+and destination now source will remain
+same and destination will be changed
+we'll make it 3
+and the weight value will also remain
+the same
+that means
+h between 0 to 2 and h between 0 to 3
+have same
+age weight
+now
+for next
+control v
+will remove this indentation
+and now
+we'll change the node number age number
+here
+the source will be 1
+and destination will be
+3
+and the age weight value
+will be 3
+after this
+we'll add new
+h
+the h number will be 4 now
+the source will be
+2
+and destination will be
+three
+and
+age weight would be one
+and
+the last age
+will be
+h
+five and
+the source
+will be
+1 here
+and
+destination will be 2
+the age weight will be
+2.
+now after this what we'll do is
+we'll give call to a crystal msd
+function
+in order to generate minimum spanning
+tree and we'll pass this graph structure
+to it
+and we'll add return zero statement
+with this we have successfully completed
+a programming implementation for
+kruskal's algorithm
+so let's run it and check if our code is
+working fine or not
+okay so we are getting three problems
+here
+the first one
+is expected token
+oh
+so
+end mode will be equal to
+and this node should also be capital
+here
+okay
+so what
+next error is there
+yeah
+so now our code is bug free
+oh
+but
+some exception is happening here
+we'll jump this exception will try to
+jump it
+okay but we are not having any errors
+into our system so
+i think that's the compatibility issue
+with our vs code so let's copy this code
+and paste it into
+the virtual coding environment and we'll
+check it if this code is working fine or
+not
+so
+we'll copy the code and we'll go back to
+the google chrome
+we'll
+go to the online compiler tool
+and here
+we'll paste our code
+and we'll run it
+okay so here we are getting our output
+so there will be only three edges that
+will get form in our minimum spanning
+tree and the cost for all those ages
+will be 5.
+i hope this coding implementation is
+clear to all of you out there
+if you are concerned about this code
+then don't be as we can send it over to
+you if you drop your email id in the
+comment section below so drop your email
+ids in the comments section below in
+order to receive this code so with this
+we came to the end of this video i hope
+this video on krista's algorithm was
+informative if you have any queries
+regarding this topic then let us know
+about them in comment section below and
+we'll surely get back to you thank you
+so much for being here and do watch out
+for more videos from us until then keep
+learning and stay tuned to simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,792 @@
+hey everyone i am bhabha khandelwal and
+i welcome you all to our simply learns
+youtube channel today we will talk about
+asp.net sql connection but first let me
+remind you that we have our daily
+updates on numerous technologies so if
+you are a tech key looking for the
+latest technological innovation then try
+subscribing to our simply learns youtube
+channel
+don't forget to hit the bell icon so you
+never miss an update on simpler
+so now without any further ado let's get
+started with the agenda for today's
+session
+we will begin a session with the
+discussion on what sql connection is
+then we will look at the prerequisite
+required to demonstrate sql connection
+finally we will try to create an sql
+connection to a database and try some
+crude operation on it
+so let's get started with what is sql
+connection
+a sql connection object represents a
+single sql server data source session
+it is analogous to a network connection
+to the server in a client server
+database system
+connection string which gets or sets the
+string used to open sql server database
+which is utilized by an sql connection
+object
+connection dot open and connection dot
+close is used to open and close a sql
+connection
+now that we have some insight into sql
+connection then let's look at some
+prerequisites we need on our system
+first up we will need an sql server
+application installed on the server you
+can download it from microsoft's
+official website
+i will leave a link in the description
+below
+then
+we would require a visual studio with an
+extension to support sql let me show you
+guys
+here let me show you
+we are in our visual studio installer
+let me modify
+here you will need data storage and
+processing extension as well as an
+nsp.net and web development
+now
+let me show you
+our
+sql server as well
+and here you can go on to microsoft.com
+and sql server server download
+you can either get
+the special version or you can download
+free specialized version
+whether you want your requirement is a
+developer or just an easy sql server
+for the for basic stuff
+i use express
+you can also download according to your
+system
+requirement
+let's get back to our slides
+next
+we have
+dotnet framework
+we will also need a latest version.net
+framework or minimum of five
+dot net file
+next
+let's get started with the demo
+so let's create a new project
+we will be using asp.net core web app
+so click next
+we will name this
+simply learn
+employee
+data
+let's make it simply employ data to make
+our lives easier
+then we will click next
+make sure you are using framework in
+latest framework installed unit system
+i'm using dotnet 5.0
+you can uncheck the configure for https
+and then click create
+so let's start with our server explorer
+if it's not here you can go to view and
+click on server explorer to open it
+first we will
+go ahead and connect to database
+if you are already now selected with
+microsoft sql server then you can go
+ahead and select it here and then click
+ok
+for the server name
+we will give it
+i will use
+local db
+slash
+mf sql
+local
+tv
+it could be different for all of
+everyone
+i use this
+you
+you can go ahead
+and check
+your might be
+a local host
+backward slash
+and then
+sql
+express
+but
+i am using
+local db
+then
+we will need to give an database name so
+for database name i will give
+simply learn
+data
+and i'll click ok
+we'll wait for it to load up
+it says the simply end data does not
+exist or you do not have permission to
+see it would you like to attempt to
+create it we will click yes
+and our server is open
+now let's go ahead and open it
+we'll open the table and there is no
+table yet
+so let's make a table
+we'll right click on table
+and create a new query
+let me paste a simple code
+and here is some
+code
+so we will create a table named
+employees
+we will give it a not null primary key
+identity which will be named as id then
+we have a full name
+which has a wired app and it's also not
+null
+email where they're not null and it
+should be unique for each and every
+entry
+then phone number and null then we have
+address and null and then we have
+created it which will be default speaker
+selected using a timestamp
+then we will insert into employees
+we will only insert full name email
+phone and address
+because the id
+and created ad will be taken on its own
+let's see our employees so we have ben
+parker
+wikileaks events peter pan and david
+dark
+then we have their email ids
+their phone numbers
+their addresses
+let's go ahead
+and run it
+as you can see six rows have been
+affected
+let's refresh it
+and here if you see now table has
+employees
+let's right click on employees and show
+table data
+and this shows our table
+now
+let's run it so we can either use simply
+employee data server or you can use iss
+i'm going to use simply employee data
+let's run it
+this will open a browser window and it
+will open a basic razer app
+now what we want is you can see there
+are two tabs home in privacy what we
+want is a third tab which will show us
+the employee data
+so let's close this
+press any key to close that
+let's make our own page so we will go to
+this page folder
+we will right click on it and add a
+folder
+we will name it
+employee
+but before that
+let's make sure we need
+we install a new get package
+so we will go to a new ad
+we will go to browse
+and we will search system
+dot data dot
+sql client
+you can
+take the latest table version because it
+supports our.net framework 5 and 6 as
+well
+let's install it
+you can click ok then i accept
+and it's installed
+you can close this now you can close
+this
+you can even close this
+it only even need to save it
+now let's click this
+and add another page in the employee
+we'll need a user page empty
+then we'll add
+there is a page empty and we will name
+it index.cs html
+and we will add
+let me paste a code
+so let's start
+we have
+at the red page which signifies it is a
+page
+then we have a model and then we have at
+the red this
+this part will always contain a c sharp
+pole
+then
+what we have is a break line then we
+will have a heading called list of
+employees
+then we have a
+class button
+that says new employee
+this new employee will lead to a create
+which is not it's not created yet this
+file we have created and later in this
+video
+then we created a table
+for the table headers we have id
+full name email
+phone address created and then action
+these will be the columns column names
+then b
+and this row
+and this header then we have the body
+for the body which will list all the
+employees
+details like id full name email phone
+address data
+there then at the last we have two
+buttons
+one will be an edit and one will be a
+delete button
+these will be
+these both of these files will be
+created later in this video
+now let's write the c sharp code for
+this
+so we will go to index dot cl dot cs
+html file
+let me go ahead and place some code
+here we have a code
+let's start from the basics
+first thing first we will need to change
+this connection string
+so for that we will go to this
+page
+we will select the server
+then we will go to this connection
+string
+we will copy it ctrl c
+then we will go ahead
+replace this
+and
+we will resolve this
+problem by this including a
+system.data.square client
+and here it is
+included now
+now let's get into this
+we also need to add an extra backward
+slash as the last error
+to resolve
+then we open a connection
+then we we store a string in the sql
+which says select star from employee
+if you remember your sql
+this
+is supposed to
+print every entry in an employees table
+then we will use the using command
+to
+use the sql command
+we'll use sql data reader to execute
+this command
+then for the reader
+will then
+one by one print out each and every
+system and it will list all the
+employees
+info
+we also have an exception written as
+well
+which will print out any exception
+if it occurs
+we also at last have
+employee info class which will contain
+all the id full name
+email phone address created
+let's save it
+you also want to save this site
+one last thing you need to go to the
+share
+and go to layout
+at the last if you look closely this nav
+item
+this has privacy and home so if you
+remember correctly we have
+two tabs called home and
+privacy so let's copy one of them
+make a slide
+and paste it
+then we will go here
+let's
+name this tab as
+employee
+data
+and as for this
+we want to give it employee then index
+so
+employee
+slash
+index
+let's save it
+now
+let's run it
+here
+here is our chrome window
+and we have a new tab called employee
+data let's click it
+and as you can see it is showing us each
+and every entry of it we also have a new
+button which is new employee
+this will be responsible for
+using create file
+we have an edit button and a delete
+button these will be responsible for
+using edit file and
+delete files let's get back to our
+visual studio
+and make
+each and every file
+let's close it
+press any key
+now let's create
+another user file so add
+laser page
+database empty
+select
+then
+we will name this one as create
+all right
+let me add code
+let's start
+here we have our
+another page data
+this signifies that we are
+writing for a page
+then we have a model create model for
+simply simply employee data dot pages
+for the first line we have new employee
+as heading
+then we have a model error message
+as
+simple alert
+then we have a button
+which signifies
+which is also for the alert then we have
+form
+whose main method is to post that is
+create
+so for the
+class we have row and mb is equal to 3
+and plus 3 which basically is used for
+grid
+then for the first row we have full name
+then we have an import tag that is it
+will create
+and text box
+then for the next row we have email
+then we have in input text box for the
+email
+similarly we will have it for phone and
+address
+then
+we have this success message
+which will be called
+if
+our creation is successful
+then we have two more buttons as submit
+and cancel
+if we click submit
+it will simply submit the data
+now
+let's go
+ahead and check the coding behind all
+this
+so you can go to this i have already
+copied the data
+so first we are creating
+an object to employ info
+we also have two strings as error
+message and success message if you
+remember in our pages we have two errors
+one is here
+and another is success message
+so
+if an error occurs
+then the error message will run so
+successful opens instruction message
+will run
+then we have onget method
+if you remember
+for our index we used onget for
+everything
+because here we want only wanted to
+display the data
+now in the create sense we want to
+create data so we will create an onpost
+method
+then in there we have called full name
+from using employee input
+data
+and then
+we are requesting form to ask the full
+name
+similarly we did it for email phone and
+address
+now we also added another condition
+that each of these things can not be
+zero
+that is
+their length cannot be zero so
+suppose if you leave one of the entry
+empty like address
+it will give you an error message call
+all the fields are required
+then we have a try block
+in this drive log we have connection
+string make sure you always
+check your connections is right from
+here
+you can click on the server and then go
+here properties
+now get back to here
+we also have an error
+so to control period
+and we need to just include this
+sql client file
+do make sure in the connection string
+you have
+two back backslashes because when you
+copy it from here it does not have to it
+just has one
+then we have
+some sql commands
+it will basically
+run
+it will basically add the value which
+will be
+retrieved from our employee info
+from the form
+and it will add the value against these
+parameters
+then at last it will execute all these
+queries
+in case of an exception it will simply
+display the message exception message
+then at last
+we have
+employee info full name
+and we will get
+a success message that new employees are
+added currently
+let's comment this line first
+let's save it
+we also go ahead and save this page
+and run it
+we'll go to employee data
+let's do one thing
+and leave the address for now
+and click submit
+if you see it is giving us all fields
+are required
+now let's add india
+and again submitter
+which if you can see it is giving us
+new employee added correctly if we go to
+employee data
+this has
+this new entry
+now
+let's go to
+our code
+let's close it
+press any key
+and
+let's uncomment that line
+this line is responsible to
+automatically redirect us to the
+employee slash index
+let's save it
+and run it again
+data
+add new employee
+let's give it
+log her
+then drag her
+anything
+dot com
+then
+you can give it any phone number
+[Music]
+any address it doesn't matter
+it's just for example
+a summit and
+here we have this
+now
+let's create an edit delete function
+so we will close this
+we'll close this
+let's go to employee and right click
+and add
+another user page
+laser empty
+add
+and we'll name this one as
+edit
+let me add the code
+let's start
+here we have
+our first line as edit class this will
+be our heading
+then we have an error message whose
+length is always greater than 0
+then it will print this message it will
+also have an
+button
+as alert
+then we have post
+this will be a form again
+since we are editing so it will also
+require a form similar to our create
+form
+so this will basically ask us the same
+thing about full name email phone
+address
+we also have the same message as success
+message
+then we have the same button as submit
+and cancel
+now this is the same thing
+as the create
+page
+let's go for the code
+as for the code
+we are again
+creating an object employee info we also
+have error message and success message
+but this time we also have that some
+code for the get message
+this will be responsible
+for showcasing the display
+after the edit
+so
+first we have try block
+let's we will use the using command to
+make a connection
+then we'll open this connection
+then we will store string select star
+from employee where id is at the red id
+now
+why we are calling this
+it's because when we will click an edit
+function it will be against
+a
+particular entry so when we will click
+this it will open a form which will be
+similar to the create form but it will
+be already filled
+with the data for this particular id
+as you can see it is reading all these
+data from this id
+in case of an exception it will display
+the message of the exception
+then we go to our post method
+this will basically request the data
+which will put now
+after editing
+the details
+in the form data
+it will again ask us the same
+request that each and every entry
+should not be less
+equal to zero basically it should not be
+empty if it does then it will display
+another message all fields are required
+we also have another try block
+we need to
+we need to change
+its connection string so
+we will go here
+and we will go
+and copy it
+you will
+select this
+again it was already seen but
+i'm still doing this
+to tell you that if you
+i somehow use this code then make sure
+you select the right code
+then we have sql connect
+then
+it will open the connection and it will
+update the employee
+it will use
+the full name required that from the
+form
+for the email phone address
+and where
+for which id decides
+then it will use ad with value to update
+all this and execute non-query to
+execute all these queries
+at last we have response dot redirect it
+will redirect us to our employee slash
+index file
+let's save this and let's save the page
+as you can see we don't have any errors
+yes
+so let's run it
+let's go to employee data
+and let's edit the last so we'll click
+on edit and here you as you can see it
+is already giving us some entries
+let's give it a quick time
+for the some change
+let's change this as well
+let's give it raghav
+simplylearn.com
+let's give this address as
+india
+and let's submit and now
+as you can see it has all been changed
+now
+let's go ahead and make our delete
+function
+so
+we will close this
+with
+entry
+so we will go right
+we will go to add and we will select
+twitter page
+this is empty
+all right
+but this time we'll only use razor view
+and it's because we basically don't need
+an extra page for the delete function it
+is simply a delete function it will
+basically delete that entry
+we don't need another page because we
+don't need to show any data
+so we will only need razer view so we
+will add
+this will open
+special page
+so we will delete this part
+and we will
+add at the rate page
+to signify to signify this is a page
+now let me add some code
+now here is our code
+if you look closely here
+e create has its own code file add it
+has it on its
+code file index head and code file but
+index one does not
+let's delete this file because i need a
+delete name file
+so i will just delete this one
+and it's only because i have already
+used everywhere the delete font name
+so i will just give it this
+and i will just recreate it add razor
+page
+add
+then i will select the view
+for the name
+i forgot to change it here so we will
+select here delete
+then we will
+call it head
+then
+as usual we will just
+add as the page
+and then we will have code
+also need
+to use
+using
+system
+dot
+data
+dot sql client
+now let's go over this code
+save it
+first we have a try block
+in this we have a string id
+which is basically requesting us an id
+now this will be given to
+this query automatically because each
+and every delete button will be up
+against a
+unique id
+then we have connection string
+always make sure to change this
+just because
+maybe you have taken a code from
+somewhere else they might have a
+different connection string than you
+so
+always copy here
+basically what have what changes for
+different person is this catalog which
+will be our
+database name
+and
+this data source these are the two main
+things that changes
+always remember to add two slashes here
+everything else is same
+then big
+request an sql connection and then we
+will open this connection
+then we have a sql string
+it says delete from employees where id
+is at the rate id so basically this is
+the same id which is requested here
+it will basically delete from the
+employees
+then we will use
+sql command to execute this query
+then we have and catch exception if you
+want to add any error messages and all
+that then we have response redirect to
+this site so
+let's run this let's save it and then
+run it
+let's go to employee data
+and here if we see quietly
+we can delete let's say grab a gupta
+isolated that's really rag
+later we can also delete
+ben parker
+and so on
+let's
+go back to our slide
+and this was all for today's session
+hope you guys found it informative and
+helpful if you like this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

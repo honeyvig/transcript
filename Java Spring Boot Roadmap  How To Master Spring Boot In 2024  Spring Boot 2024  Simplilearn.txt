@@ -1,0 +1,409 @@
+Hello friends welcome to yet another
+tutorial on Spring boot developers road
+map at simply learn doar know friends
+that springboard Engineers working in
+United States typically earn around
+$135,200 per year in this road map
+tutorial we will guide you through a
+comprehensive step-by-step journey to
+mastering a spring boot so whether you
+are a beginner looking to dive into the
+world of spring boot or an experienced
+developer aiming to refine your skills
+this road map will provide you with a
+structured part becoming a proficient
+springboard
+developer craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we move on just a quick
+info guys simply learn has got Java full
+stack course in collaboration with IBM
+you can accelerate your career and
+develop essential skills such as react
+spring boot hibernate jsps and also
+mastering MVC and web services to craft
+highly scalable web application so with
+that said guys let us start so guys let
+us start with understanding first what
+is spring board so guys springboot is an
+open-source Java based framework which
+is used to create Standalone production
+grade spring based applications with
+Minal effort it is a part of a larger
+spring framework ecosystem which
+provides a streamline approach to
+building application by reducing the
+amount of boiler plate code and also
+configuration needed now let us discuss
+some of the key features of spring board
+the first one that comes to my mind is
+called
+autoconfiguration so guys spring boot
+automatically configures your
+application based on the dependencies
+you have added to the project this means
+you don't have to manually configure
+settings for the majority of the common
+use cases second one we have the
+Standalone applications springboard
+applications can run independently
+without requiring an external web server
+it includes embeded servers like Tomcat
+JY or under which allows you to run your
+application as a simple Java application
+the third one that we have all over here
+is called Spring boot starters starters
+are a set of convenient dependency
+descriptors you can include in your
+application they can simplify Marvin or
+gradal configuration by providing a
+single dependency for common use case
+example we have spring boot stter web
+for web
+applications next we get is the
+production ready features springbot
+includes several features to help you
+build production ready applications this
+includes heal checks metrics and
+application monitoring through
+springboard actuators now fifth one we
+have the microservices if I talk about
+microservices guys then spring boot is
+particularly well suited for
+microservices architecture it integrates
+well with spring Cloud providing tools
+for service Discovery configuration
+management and resence and finally we
+have the command line features spring
+boot CLI is a command line tool that can
+be used to quickly prototype with spring
+it allows you to run groovy scripts to
+perform spring boot operations so Guys
+these were some of the features of the
+spring boot boot now let me show you a
+snippet like how exactly spring boot
+works so I'll be using an eclipse ID to
+demonstrate the same so guys as you can
+see all over here this is a basic spring
+application so I'm using spring board
+for the same and you can see the folder
+structure all over here that we have the
+rest folder this is our project folder
+inside which which we have the main
+folder and here you can see there's a
+rest folder this is our package two
+classes we have created this is a main
+class so so here you can see I have
+annotated with spring boot application
+which is telling the spring that hey
+Spring this is a main class or an
+application class okay with the main
+function all over here okay next one we
+created a controller all over here so
+you can see the controller so if I'm
+going to the Local Host saying 8080 with
+uh the given URL then I'm going to see
+the hello world all over here so this is
+a basic controller and for the same I'm
+using The annotation rest controller
+which is telling spring that hey Spring
+this is a controller's class okay so
+this is how basically our framework
+understands like what is there with the
+help of annotations so it is a basic
+thing and here when you run this your
+spring application will start and here
+you are going to see an spring
+annotation something like this so you
+can see the version we are using is V3
+1.10 so let us go to the Local Host 880
+and see what is the output
+so guys as you can see all over here we
+are directed to the Local Host 880 and
+the URL is /hello okay which we have
+mentioned in our rest controller and it
+is printing hello world so this is how
+basically a spring application works now
+let us move on and try to understand
+what is the exact road map that we have
+to follow in order to master the spring
+board so guys as you can see in this
+image the first step is the prerequisite
+which I would say so Larn J before
+diving into springboard it is very
+essential to have a strong foundation in
+Java and make sure you understand Java's
+Core Concepts such as objectoriented
+programming data structures and
+algorithms familiarize yourself with
+Java syntax libraries and framework once
+you are comfortable with Java Basics and
+advanced topics like congruency streams
+and Lambda Expressions you can move on
+to the next step that is spring core and
+the spring core is a foundation for the
+spring framework it provides provides
+the essential features needed for
+dependency injection and aspect oriented
+programming configuration start by
+learning how to set up and configure
+spring applications using XML and Java
+based
+configuration understand the use of
+annotations such as configuration at the
+rate atate Bean annotations for defining
+beans and their dependencies learn about
+the principle called dependency
+injection study how spring manages
+object dependencies using dependency
+injection explore different types of
+dependency injections such as
+Constructor based setup based and field
+based learn the ioc principle which
+transfers the control of object creation
+and the management to the spring
+container understand the role of
+application context and bean factory
+spring aspect oriented programming is
+very very important so try to understand
+its aop Concepts and how they separate
+cross cutting concerns like login
+transaction management security also
+Implement aspect oriented programming
+using Springs at the rate aspect J
+annotation then explore the MBC
+architecture and also how spring
+implements it learn to create
+controllers using at theate controller
+annotation also like request mapping
+annotation Define models render views
+using JSP or timelink also if we talk
+about annotations guys get familiar with
+the annotations so it is mentioned at
+this section all over here so learn
+about important annotations such as at
+theate component atate service atate
+repository atate Auto and many more
+these annotations are going to simplify
+the configuration and development
+process the next is we have it the
+spring Bean scope learn about different
+Bean Scopes like single turn prototype
+request session Global session Etc
+understand the use of cases and life
+cycle of each scope after mastering
+spring core you are ready to proceed for
+the next step that is Spring Security if
+it talk about Spring Security Guys in
+this you have to learn a comprehensive
+Security Services for Java application
+including authentication authorization
+and protection against common attacks
+authentication study about various
+authentication mechanism such as form
+based HTTP basic and ldap authentication
+Implement authentication using Spring
+Security such as at the enable web
+security annotation and configure at web
+security configur adapter
+authorization learn about also managing
+user roles and permissions Implement
+method level security using
+pre-authorized and secured annotations
+secure web requests with URL patterns
+and roles if we talk about o 2 also
+understand the O2 for securing apis and
+implementing the O2 authorization server
+and resource server using Spring
+Security
+O2 also learn about handling token
+generation validation and scopes
+learn about JWT authentication explore
+about Json web tokens for stateless
+authentication you can also Implement
+JWT in a spring boot application to
+secure the restful apis once you are
+comfortable with the Spring Security you
+can advance to The Next Step that is
+spring boot introduction now spring boot
+is going to simplify the development of
+production ready applications by
+providing an opiated framework so get an
+overview of spring Boot and its
+advantages
+understand its role in simplifying
+application setup and
+development okay familiarize yourself
+with the key terms like starters Auto
+configuration actuators and many more
+learn how these components streamline
+the development process also understand
+the architecture okay of the spring boot
+applications learn about the main
+application class which is annotated
+with the adorate springbot application
+which I have shown you before also learn
+about how you can structure your project
+okay study why you have to choose spring
+the benefits of using spring including
+the dependency injection a of testing
+and it's a rich ecosystem in the next
+step learn about the spring boot
+starters which are preconfigured set of
+dependencies for various functionalities
+use starters like spring boot starter
+web for web applications and spring boot
+starter data jpa for jpa applications
+after understanding starters move on to
+the next step that is auto
+configurations explore spring boots AO
+Auto configuration feature which
+automatically configures your
+application based on dependencies in the
+class path so you're going to learn
+about at theate conditional on class
+annotation at theate conditional on
+missing beam annotation and many more
+like this once you are comfortable with
+autoc configuration proceed to The Next
+Step by understanding the actuators
+Implement spring boot actuators to
+Monitor and manage your application
+understand various endpoints provided
+for heal checks metrix and environment
+info
+next on move on understanding about the
+embeded server use embeded servers like
+Tomcat Jetty or undertoe bundled with
+spring boot configure and customize
+server settings in application.
+properties file or even in application.
+yml file after mastering embeded servers
+advance to The Next Step that is
+hibernate integrate hibernate with
+spring boot for object relational
+mapping configure hibernate create
+entity classes manage database operation
+understand the caching mechanism with
+session management with hibernate
+knowledge in hand proceed to The Next
+Step that is spring Cloud so guys spring
+cloud is going to provide tools for
+building distributed systems and
+microservices learn about spring Cloud
+Gateway learn to use spring Cloud for
+routing and filtering request for
+microservices configure routes apply
+filters and manage configuration spring
+Cloud config implements centralized
+configuration management using spread
+cloud config store configurations in a
+good repository and access them across
+multiple microservices so guys after
+understanding spring Cloud Gateway move
+on to Spring Cloud config store
+configurations in a gate repository and
+access them across multiple
+microservices then move ahead on
+understanding this spring Cloud circuit
+breaker use circuit breaker for fall
+tolerance in microservices Implement
+circuit breaker patterns using residence
+4J or
+hisy then move on to Spring Cloud open
+fine implement the declarative rest
+clients using open fine create fine
+clients config load balancing and handle
+errors study about historics okay for
+latency and fall tolerance also you can
+understand about sluth and urea for the
+same so guys sluth is going to implement
+distributed tracing and also you can
+trace request across microservices
+generate Trace IDs and visualize traces
+using tools like jkin if I talk about
+urea guys you can use urea for service
+Discovery and
+registration next one let us move on to
+the next phase once you are comfortable
+with the spring Cloud move on the next
+step that is learning microservices
+learn to develop and deploy
+microservices using spring boot
+understand microservices architecture
+and design patterns so guys after
+mastering microservices move on to the
+next step that is mastering spring data
+GP
+so if I talk about spring data jpa guys
+you can Implement jpa for database
+operations after mastering this you can
+also learn about spring data mongodb and
+spring data jdbc moving ahead after
+learning all these things after applying
+the crud based operation learning all
+about the manipulation like configuring
+data sources creating repositories and
+executing SQL queries move on to the
+next step that is learning about spring
+MVC
+where you have to learn about serlet JSP
+files architectures and its
+component moving ahead after you have
+completed all these things okay then
+move on to the testing part so guys
+testing is very very crucial for
+ensuring the quality and reliability of
+your
+application with the help of jpa you can
+write test for jpa repositories set up
+an in-memory database for testing
+creating test cases and verify
+repository methods so you have mock MVC
+Test spring MVC controllers you can use
+it using mock MVC you can set up mock
+MVC right unit test for controllers and
+also you can verify request and response
+Behavior then you can use The annotation
+such as spring boot test annotation with
+for integration testing you can load the
+application context configure test
+properties and write comprehensive test
+then you have at the rate Moog Bean
+annotation so generally Mo beans in test
+use at the rate Mo Bean
+replace real beans with Mock
+implementations and verify interactions
+in unit test so in this way I have laid
+out the entire road map for you to
+become an spring boot Master this was
+all for today's video guys I hope so you
+would have enjoyed our today's video on
+Spring boot road map at simply learn
+till then keep learning and stay updated
+staying ahead in your career requires
+continuous learning and upscaling
+whether you're a student aiming to learn
+today top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

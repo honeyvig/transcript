@@ -1,0 +1,599 @@
+ever wondered how computers make sense
+of massive amounts of data today we're
+going to peek behind the curtain and
+explore a secret weapon used by data
+scientists and ml Engineers linear
+algebra so in this video we'll explore
+the fundamental concepts of linear
+algebra that are essential for
+understanding and solving problems in
+statistics we'll start by discussing
+what linear algebra is and why it's
+important in data science next we'll
+delve into solving linear systems of
+equations which are equations involving
+multiple variables you'll see how we can
+find solutions to these systems using
+simple methods then we'll move on to
+matrices you'll learn what a matrix is
+the different forms it can take and how
+we can perform various operations on
+matrices such as addition subtraction
+and multiplication these operations are
+crucial for many statistical
+computations finally we'll talk about
+vectors vector are like lists of numbers
+and they have specific properties that
+make them useful in many areas of data
+science by the end of this video you'll
+have a solid grasp of the key Concepts
+in linear algebra and be ready to apply
+them to your data science
+projects craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to Fast Track Your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back also if you are interested in
+becoming a machine learning engineer
+then try simply learns postgraduate
+program in Ai and machine learning from
+Purdue University in collaboration with
+IBM this course teaches in demand skills
+such as machine learning deep learning
+NLP computer vision reinforcement
+learning generative AI prompt
+engineering chat GPT and many more so
+don't forget to check out the course
+link from the description box and Pin C
+all right so let's start with the first
+[Music]
+topic learning objectives welcome to
+math refresher linear
+algebra in this lesson we are going to
+explain the concepts of linear algebra
+solve a linear system of equations
+describe Matrix forms of Matrix and
+Matrix operations and Define vectors and
+list down its properties introduction to
+linear
+algebra linear algebra linear algebra
+refers to study of linear combinations
+for linear transformations to be carried
+out a study of vector spaces lines and
+planes as well as some mappings as
+necessary it contains linear functions
+vectors and matrices it is an
+examination of character characteristic
+of linear set
+Transformations linear equations linear
+algebra's major goal is to establish
+systematic techniques for solving
+systems of linear
+equations a linear equation with n
+variables can be represented as A1 X1
+plus A2 X2 plus A3 X3 and so on till a n
+xn equals to B where X1 X2 X3 and so on
+till xn are the unknown quantities that
+are to be found while A1 A2 A3 and so on
+until a in are the
+coefficients B here is a constant term a
+linear equation with two variables X and
+Y is a linear connection between X and Y
+the value of one variable often Y is
+determined by the value of the other
+that is X the independent variable in
+this situation is X while the term
+dependent variable refers to Y since it
+depends on X let's consider some
+examples for linear
+equations linear equations in one
+variable can be written as 3x + 5 = 0 or
+3x 2 of x + 7 = to 0 or 98x = to
+49 linear equations in two variables
+examples can include y + 7 x = 3 or 3 a
++ 2 B = 5 6 x + 9 y - 12 = to 0 linear
+equations can also be written with three
+variables as x + y + z = to 0 a - 3 B =
+to C 3x + 12 y = to half of Zed
+identifying linear and nonlinear
+equations
+linear equations present themselves as a
+straight line on a graph however
+nonlinear equations represent themselves
+as a non-straight line on the
+graph here equations like y = 8x -
+9 or y + 3x -1 = to 0 are examples of
+linear
+equations however y = 2x^2 - 7 is a
+nonlinear equation because X is raised
+to the^
+2 hence denoting a nonlinear
+relationship or a non-straight line
+relationship between X and
+Y similarly Square < TK of y + x = 2 6
+or Y raised to the^ 2 - x = to 9 are
+examples of nonlinear equations as Y is
+raised to the power half and two
+respectively forms of linear equation
+linear equations can be represented in
+three forms a standard form a slope
+intercept form or a point slope
+form linear equation in standard form a
+linear equation in standard form for a
+single variable can be represented as a
+x + b equals to Zer where A and B are
+real integers and X is the variable
+while a linear equation in standard form
+for two variable can be represented as
+ax + b y = 2 C where a B and C are real
+integers while X and Y are the
+variables to summarize a linear equation
+for variables can be written as ax + b y
+equal to C where X and Y are the
+variables C is the constant and a and b
+are the coefficients of X and Y
+respectively linear equation in the
+slope intercept form a linear equation
+slope can be calculated to see how one
+variable varies in response to a unit
+change in another variable it is
+represented as y = to mx + b where m is
+the slope B is The Intercept on the Y
+AIS and X and Y are the line's distance
+from the X and the Y AIS
+respectively consider this example
+example the lines point x y represents
+the distance from the X and the Y AIS
+respectively while the line intercept on
+the Y AIS is at 0 comma
+B linear equation slope the slope
+indicates how steep a line is with
+respect to Y AIS when seen from left to
+right it indicates whether the line goes
+up or down
+the slope describes how independent
+variable has been changed while the
+dependent variable is
+changing types of slope there are four
+types of slopes based on the
+relationship between the two variables X
+and Y the first is the positive slope
+here as X
+increases Y is also increasing in a
+negative slope as X increases y
+decreases if a line is parallel to xais
+it is a zero
+slope on the other hand if the line is
+parallel to Y AIS then the slope is
+undefined linear equation in point slope
+form a straight line is represented in
+point slope form by its slope and a
+point on the
+line it is represented as y - y1 = to M
+of x - X1
+where X1 and y1 are the coordinates of
+the
+point linear equation forms some
+examples consider solving the linear
+equation given as 2x - 10 / 2 = 2 3x
+-1 first we will clear the
+fraction in this example we can see only
+left hand side we have 2x - 10 / 2
+if from the numerator we take two as
+common we will be left with 2 * x - 5 /
+2 hence x - 5 on the left hand side on
+the right hand side we still have 3 * x
+- one now as a part of next step we
+simplify both sides of the equation that
+has open up the brackets when we do that
+on the right side we end up getting 3x -
+3 by multiplying 3 3 to x
+-1 solving further we can write as X =
+3x + 2 finally we try to clear the
+fraction to solve for x we can rearrange
+the equation as x - 3x = to
+2 solving it further we get - 2x = to
+2 and then we solve for x as
+minus1 system of linear equation a
+system of linear equations is a finite
+collection of linear equations usually
+involving the same variables it can be
+represented as a11 X1 plus A1 2x2 and so
+on equals to B1 a21 X1 + A2 2x2 so on
+equals to B2 and so on here this example
+is for n
+variables a system of M
+equations a linear system can have
+unlimited number of solutions one
+solution or no solution at all in case
+of a single linear equation a consistent
+linear system has a solution while an
+inconsistent linear system has no
+solution solving a linear
+equation solving linear system of
+equations various methods can be used to
+solve linear system of equations which
+include graphic method substitution
+method linear combination or elimination
+method or a matrix
+method graphing method let's try and
+solve these two linear equations using
+the graphic method the first equation is
+defined as y =
+0.5x + 2 and the second equation is y =
+to -2X - 3 the two equations as we can
+see are in the slope intercept form the
+first line has a slope of 0.5 and a y
+intercept of pos2 while the second line
+has a slope of -2 and a y intercept of
+-3 let's have a look at these lines
+through a
+plot here the blue line is the first
+line represented by y = 2.5 x +
+2 and the red line is repres resented by
+y = to -2X
+-3 these two lines intersect at a point
+at -2 comma
+1 hence we can say that x equal to -2
+and Y equals to
+1 solving systems of linear equation
+using
+substitution for substitution we start
+by putting one of the equations in the
+form a variable equals
+2 we then substitute that variable in
+the other equation in its place take the
+other equation to
+solve if there are more than two
+variables involved we repeat the process
+from steps 1 through
+3 Let's consider an
+example let's consider the equation 3x +
+2 y = 19 and x + y = 8 we could begin
+with any equation and variable in this
+case let's look at the second equation
+with variable
+y we start with subtracting X from both
+sides of x + y = to
+8 and we end up getting y = to 8 -
+x the first equation still retains its
+form now we take the value of y that is
+8 - x and substitute in the first
+equation in place of
+Y we end up getting the equation 3x + 2
+* 8 - x = to
+19 we further simplify and solve this
+equation using algebra method to get 3x
++ 16 - 2x =
+290 we solve this equation further and
+we end up getting x + 16 = to 19 and
+finally X = to 3
+now we take the value of x and
+substitute in the new reformed second
+equation as y equal to 8 -
+x that gives us y = to 8 - 3 hence y =
+to 5 The Final Answer remains X = to 3
+and Y = 5 solving systems of linear
+equation using elimination in this case
+we start by multiplying an equation by a
+constant anything other than
+zero we then add or subtract an equation
+onto the other
+equation let's consider the same example
+of 3x + 2 y = to 19 and x + yal
+8 we first start by multiplying the
+second equation by two and we get 2x + 2
+y =
+216 now we subtract the second equation
+from the first
+equation that is 3x -
+2x 2 y - 2 Y and 19 -
+60 on solving this we end up getting X =
+to
+3 Now using these steps of substitution
+we put the value of x in the original
+second equation that is X+ y = to
+8 and achieve a value of y = to 5
+hence the answer remains x = 3 and Y =
+5 we can verify the solution by using
+the
+graph here again the Blue Line
+represents the point at which 3x + 2 y =
+to 19 is true while the red line
+represents the point where X+ y = to 8
+is
+true the solution is found at the point
+where X = to
+3 and Y = to
+5 this is the point where both lines
+intersect introduction to
+matrices
+Matrix a matrix is rectangular array or
+table with rows and Columns of numbers
+symbols Expressions used to represent a
+mathematical object or an
+attribute for example here a a is a
+matrix of two rows and three columns as
+2 1 3 minus 1 2 and 4 well B is a
+squared Matrix with two rows and two
+columns given as 2 1 3 4 Matrix size The
+Matrix size is expressed as M cross n
+where m is the number of rows and N is
+the number of columns a matrix with two
+rows and three columns can be referred
+to as 2x3 Matrix or a 2 cross3 Matrix or
+a matrix of Dimension 2
+cross3 notation of a matrix a matrix
+with M rows and N columns can be
+presented as
+this here each element will be
+identified by its row number and column
+number for example the element over here
+is in the third row and the First
+Column hence it is ident identified as a
+31 forms of Matrix The Matrix is termed
+as a squared Matrix if n equals to M
+that is the number of rows and number of
+columns are
+equal an element's entry in The Matrix
+of from a i i is located on the
+diagonal hey is called a diagonal matrix
+if hey I equals to
+Z when I is not equals to
+J that is in a square
+Matrix apart from diagonal at all places
+we have zero as a value Matrix
+operations addition addition of two
+matrices is adding their corresponding
+elements as in a11 + b11 a12 + B12 a 21
++ B2 2 1 a22 plus B22 and so on consider
+the example over here we have a matrix a
+as 22 32 11 16 and Matrix b as 13 8 13
+and 16 Matrix a is of the order 2 cross
+2 and Matrix B is also of the same order
+2 cross 2 hence the corresponding
+elements can be quickly added as 22 +
+13 32 + 8 11 + 13 and 16 + 16 giving us
+the result in Matrix of 35 40 24 and
+32 addition rules only matrices with the
+same size can be
+added that is the two matrices should
+have same number of rows and same number
+of columns Matrix addition follows
+commutative property that Means A + B is
+equals to B +
+a
+subtraction Matrix subtraction is same
+as Matrix
+addition it is subtracting the
+corresponding
+values let's consider the same example
+of Matrix A and B the result of a minus
+B can be given as 22
+-3 that is a11 -
+b11 32 - A 8 that is a12 - B12 11 - 13 a
+21 - B21 and 16 - 16 that is a22 -
+B22 giving us result as 9 24 -2 and
+0 subtraction rules only matrices with
+the same number of rows and columns can
+be
+subtracted Matrix subtraction does not
+follow commutative
+property that means a minus B is not
+equals to B minus
+a
+multiplication matrix multiplication
+results in what is called as a product
+Matrix in matrix
+multiplication each row of the first
+Matrix is Multiplied to each column of
+the second
+Matrix to compute each of these element
+in the matx matx the values are then
+added for example consider the Matrix A
+and
+B to get the first element we will
+multiply the first row of Matrix a to
+the First Column of Matrix
+B and then add the individual elements
+that is 22 multiply to 13 and 32
+multiply to 13 and then add them up to
+get this particular
+element for the second element we
+multiply the first row of a to the
+second column of B hence getting 22
+multiplied to 8 + 32 multiplied to
+16 similarly we compute all the
+remaining elements that is the second
+row multiplied to the First Column and
+added 11 multiplied to 13 + 16 * to 13
+and the second row now multiplied to the
+second column that is 11 * to 8 + 16
+multiplied to
+16 this gives us the resulting Matrix as
+702
+688
+351 and
+344 multiplication
+rules let us say C equals to
+AB here C is our product Matrix
+which can be computed as summation over
+a i j.
+bjk for a matrix of size i j Matrix B of
+size
+JK to calculate the value of each
+member in the I cross K Matrix of
+C the matrix product AB is defined only
+when the number of columns in a equals
+to the number of rows in
+B the the matrix product of ba is
+defined only when the number of columns
+in B is equals to the number of rows in
+a a do B is not always equals to b.
+a
+transpose a transpose is a matrix form
+by turning all the rows of a given
+Matrix into the columns and vice
+versa the transpose of a matrix a is
+denoted as a T for example
+if the Matrix a is 22 32 11 and 16 the
+transpose of a would be 22 11 32 and
+16 here we can see the row has been
+converted to
+column inverse if it is a non- singular
+Square
+Matrix there exists n cross n Matrix a
+minus one known as A's
+inverse that satisfi a. a inverse equals
+to A inverse. A equals to
+I where I is the identity
+Matrix and identity Matrix is
+characterized as a diagonals one and all
+other elements are
+zero also AB equals to b.
+a equals to I in where I in denotes the
+N cross n identity Matrix
+special Matrix types symmetric Matrix a
+matrix a is set to be symmetri if a is
+equals to transpose of a diagonal matrix
+a matrix D is diagonal only if D J
+equals to zero for all I not equals to J
+identity
+Matrix identity Matrix is denoted as I
+in where Ain equals to i. AAL 2
+a tensors tensors are arrays with more
+than two
+axes a tensor can have in dimensions a i
+j k is the value in the tensor a at
+coordinates J and K the principal
+component analysis
+PCA which is a statistical technique
+used to reduce the number of dimensions
+in a given data set while we preserve
+its
+variability so there are different use
+cases of PCA in realtime scenarios one
+of the major use case is in the healthc
+care domain so a technically known as
+the spike triggered covariance analysis
+it uses the principle of PCA in
+Neuroscience to identify the specific
+properties of a stimulus that increase a
+neuron's probability of generating an
+action
+potential so it is using reduction
+techniques which is going to be really
+helpful in detecting the coordinated
+activities of large neuronal
+ensembles so it is basically used for
+identifying a neuron from the shape of
+its action potential then in terms of
+quantitative Finance so PCA help us in
+reducing the dimensionality of a complex
+problem let's say a fund manager has 200
+stocks in his portfolio now to analyze
+these stocks quantitatively a stock
+manager manager will require a
+correlational metric of a size 200x 200
+which makes the problem very
+complex however if he has to extract 10
+principal components which best
+represents the variance in the stock
+price this will reduce the complexity of
+the problem while still explaining the
+movement of all 200 stocks so we use it
+for analyzing the shape of the yield
+curve in terms of forecasting the
+portfolio returns de developing the
+asset allocation algorithms and so on
+and it is also widely used in image
+compression so PCA is also used for
+image compression so if we go ahead and
+use any of the py charm IDE so here we
+can work with Matt plot lib image Pi
+plot and the numpy as NP and here we can
+also import from sklearn and we can
+import the PCA so basically we are
+trying to print the shape of the image
+by reading the image this is a sample
+logo.png which has been placed in the
+same directory we are trying to print
+the image so if we run this particular
+code then we will be able to see the
+shape of the image return to us first
+the current shape based on the image
+which has been deducted which is
+156 94 and three so what does this mean
+this means image is in the form of 15 56
+rows and each row containing 194 pixels
+and then having three channels which is
+red green and blue so we had to resize
+the image so that it is in a format
+required for PCA input which is 196x 3
+which is going to be
+582 so here we can see we have performed
+a simple operation as image R where we
+are using the numpy library for
+reshaping the image
+and then we are printing the shape of
+the image again so here we can see
+156 and
+582 has been returned as a response now
+running the PCA with 32 principal
+components we can use this fit for the
+image that has been reshaped and then we
+are trying to train the transform image
+so with these 32 components we are able
+to express
+98.7% of the variance so inverse
+transform the PC output and reshaping
+the visualization can also be done
+forward and that's how PCA is widely
+used as a part of the medical and the
+other Sciences for example is used for
+object detection model for the
+healthcare domain for the transportation
+Aviation and location based Services
+introduction to
+vectors objects with both magnitude and
+direction are called as vectors the
+magnitude of the vector determines its
+size it is represented as a line with an
+arrow where the length of the line
+indicates the vector's magnitude and the
+arrow points in the desired Direction
+other names for it include ukian Vector
+geometric Vector spatial vector or
+simply
+Vector its length is indicated by the
+symol double bar vble bar and it begins
+at the original 0 comma 0 notation of a
+Vector a vector can be represented in a
+standard form as a equal to a I cap plus
+b j cap plus CK cap where a B and C are
+numeric values the unit vectors along
+the XY Z axis are i j and kcap
+respectively staying ahead in your
+career requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our Pro programs and set yourself on
+the path to Career Success click the
+link in the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,340 @@
+professionals in security testing
+penetration testing and ethical hacking
+utilize linux as their preferred
+operating system
+provides several configurable
+distributions that you may configure
+based on your end use
+kali linux and parrot os are two popular
+penetration testing distributions
+while these operating systems each have
+unique offerings the overall choice can
+differ between personnel thanks to the
+various tools and hardware
+specifications
+today we will look at both these
+distributions and settle on the perfect
+choice for each type of user
+let's go to the agenda for this video
+we will learn about kali linux and
+pirate security os from scratch while
+understanding their primary selling
+points as a linux distribution catered
+towards penetration testers
+next we know about some features of
+these operating systems that stand out
+of their package
+finally we directly compare kal linux
+and pirate security os thereby making a
+clear-cut conclusion on which os is
+perfect on a per requirement basis
+so let's start by learning about kali
+linux from a ground level
+kali linux which is formerly known as
+backtrack linux is an open source linux
+distribution aimed at advanced
+penetration testing and security
+auditing
+it contains several hundred tools
+targeted towards various information
+security tasks such as penetration
+testing security research computer
+forensics and reverse engineering
+kali linux is a multi-platform solution
+accessible and freely available to
+information security professionals and
+hobbyists
+among all the linux distributions kali
+linux takes its roots from the debian
+operating system
+debian has been a highly dependable and
+a stable distribution for many years
+providing a similarly strong foundation
+to the kali linux desktop
+while the operating system can
+practically modify every single part of
+our installation the networking
+components of kali linux come disabled
+by default this is done to prevent any
+external factors from affecting the
+installation procedure which may pose a
+risk in critical environments
+apart from boosting security it allows a
+more profound element of security
+control to the most enthusiastic of
+users
+now let's take a look at pirate security
+operating system
+parent security os is a debian based
+linux distribution with an emphasis on
+security privacy and development
+it is built on the demian's testing
+branch and uses a custom hardened linux
+kernel
+parrot security contains several hundred
+tools targeted towards tasks such as
+penetration testing computer forensics
+reverse engineering and security
+research it is seen as a generally
+lightweight distribution that can work
+under rigorous hardware and software
+specifications
+it features a distinct forensics mode
+that does not mount any of the system's
+hard disks or partitions and has no
+influence on the host system making it
+much more stealthy than its regular
+occurrence
+this mode is used on the host system to
+execute forensic procedures
+a rolling release is a paradigm in which
+software upgrades are rolled out
+constantly rather than in batches of
+versions and software development
+this ensures that the software is
+constantly up to date a rolling release
+distribution such as pirate security os
+follows the same concept
+it provides the most recent linux kernel
+and software versions as soon as they
+become available
+with the basic introduction to the
+operating systems out of the way let us
+take a look at the unique features of
+both kali linux and pirate security os
+the latest version of kali linux comes
+with more than 600 penetration tools
+pre-installed
+after reviewing every tool included in
+backtrack developers have eliminated a
+significant number of tools that either
+simply did not work or duplicated other
+tools that provided the same and similar
+functionality
+the kali linux team comprises a small
+group of individuals who are the only
+ones trusted to commit packages and
+interact with the repositories all of
+which is done using multiple secure
+protocols
+restricting access of critical code
+bases to external assets dramatically
+reduces the risk of source contamination
+which can cause kali linux users
+worldwide a great deal of damage as a
+direct victim of cyber crime
+although penetration tools tend to be
+written in english the developers have
+ensured that kali includes proper
+multilingual support allowing more users
+to operate in the native language and
+locate the tools they need for the job
+the more comfortable a user feels with
+the intricacies of the operating system
+the easier it is to maintain a strong
+hold over the configuration and the
+device in general
+since arm-based single board systems
+like the raspberry pi are becoming more
+prevalent and inexpensive the
+development team knew that kali's arm
+support would need to be as robust as
+they could manage with fully working
+installations
+kali linux is available on a wide range
+of arm devices and has erm repositories
+integrated with the main line
+distribution so the tools for arm are
+updated in conjunction with the rest of
+the distribution
+let's take a look at some of the
+features of parrot security operating
+system now
+along with a giant catalog of scripts
+parrot security os has its own hardened
+linux kernel modified explicitly to
+provide as much security and resistance
+to hackers as possible in the first line
+of defense
+the configurations in the operating
+system act as the second gateway taking
+care of malicious requests and dropping
+them off
+this is particularly beneficial since
+should there be a scenario where the
+latex linux kernel is causing some
+particular issue the parrot os
+development team will most likely iron
+it out first before passing it on as an
+update
+if the custom hardness kernel wasn't
+reason enough parrot security developers
+managed to install more hacking tools
+and scripts to ensure a smooth
+transition for the kali linux users
+all the tools you find in kali are
+present in parent tools and a few extra
+ones for good measure
+and this has been achieved while keeping
+roughly the same operating system size
+between both of them
+however it's not all productivity points
+for pirate os
+they provide a choice between two
+different desktop environments mate
+which comes pre-installed by default and
+kde for those unfamiliar with linux
+terminology you can think of desktop
+environments as the main ui for a
+distribution
+being highly modular in nature one can
+use parent security os while adding
+another desktop environment that they
+find appealing
+while kal linux has only a single option
+pirate security has provided two
+optimized builds with made desktop and
+kde desktop
+one of the primary advantages of parrot
+os over kali linux is that it's
+relatively lightweight this implies that
+it takes significantly less disk space
+and computing power to function
+correctly with as little as 320 mb of
+ram required
+in reality paretos is designed to
+operate successfully of a usb stick but
+kali linux does not work well from a usb
+drive and is generally installed in a
+virtual machine
+parrot os is more of a niche
+distribution if you are searching for
+something lighter than kali linux
+features are great but what about
+performance
+real world metrics
+let us compare both these operating
+systems directly with respect to their
+hardware specifications and usability
+in the end we can decide on what
+distribution is fit for each type of
+user
+for a first point of comparison let's
+take a look at the ramp required
+for optimum performance of the operating
+system which is highly essential when
+trying to crack hashes or something of
+similar nature ram usage is a very
+important facet while kali linux demands
+at least 1 gb of ram pirate security can
+operate optimally with a minimum of 320
+mb of ram
+for correctly displaying graphical
+elements kali linux requires gpu based
+acceleration while this is not the case
+with parrot security os which doesn't
+require any graphical acceleration
+needed from the user side
+once these operating systems are
+installed on vmware using their live
+boot isos
+they take up a minimum amount of hard
+disk storage
+both of these operating systems have a
+recommended disk storage of minimum of
+20 gb in kali linux and a minimum of 15
+gb in parrot security so they can
+install all the tools necessary in the
+iso file
+when it comes to the category and the
+selection of tools kali linux has always
+been the first in securing every single
+tool available for hackers in the
+penetration testing industry
+parrot security on the other hand has
+managed to take it up a notch
+while specializing in wireless pen
+testing parent security makes it a point
+that all the tools that kali linux
+provides has been included in the iso
+while simultaneously adding some extra
+tools that many users will have to
+install from third party sources in kali
+linux
+being a decade-old penetration testing
+distribution kali linux has formed up a
+very big community with strong support
+signature parrot security on the other
+hand is still growing and it is
+garnering much more interest among
+veteran penetration testers and ethical
+hackers
+a primary drawback of kali linux is the
+extensive hardware requirement
+to perform optimally it requires higher
+memory than parallel security it also
+needs graphical acceleration while
+demanding more virtual hard disk storage
+pirate security on the other hand was
+initially designed to run off a usb
+drive directly thereby requiring very
+minimal requirements from a hardware
+perspective like just 320 mb of ram and
+no graphical acceleration needed this
+means pirate security is much more
+feasible for people who are not able to
+devote massive resources to either their
+virtual machine or on their laptop hard
+disk directly
+with the comparison done between both of
+these operating systems
+let's take a look at the type of users
+both of these are catered to
+one can go with kali linux if they want
+the extensive community support offered
+by its users
+if they want to go with a trusted
+development team that have been working
+on this distribution since many years
+if they have a powerful system which can
+run kali linux optimally without having
+to bottleneck performance
+and if they are comfortable with a
+semi-professional environment which may
+or may not be very useful for new
+beginners
+one can decide to go with parrot
+security if they want to go with a very
+lightweight and lean distribution that
+can run pretty much on all systems
+it also has a lot of tools pre-installed
+and some of them are not even present on
+kali linux
+it is much more suitable for
+underpowered rigs where users do not
+have a lot of hardware resources to
+provide to the operating system and
+thereby it is much more feasible for
+people with underpowered laptops or no
+graphical acceleration
+compared to kali linux parrot security's
+desktop environment is also relatively
+easier to use for new beginners
+for people who are just getting into
+ethical hacking pallet security does a
+relatively better job
+of introducing them to the operating
+system and to the various tools without
+having to dump them into the entire
+intricacies
+hope you learned something new today
+if you have any questions regarding the
+topic feel free to let us know your
+questions in the comment section below
+and we will get back to you as soon as
+possible thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

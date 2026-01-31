@@ -1,0 +1,580 @@
+all machine learning Engineers aspire to
+attain precise predictions through their
+algorithms these learning algorithms can
+be broadly categorized into supervised
+and unsupervised K means clustering
+falls into the unsupervised category
+wherein the input data lacks labeled
+responses so hello everyone my name is
+mang and welcome to this fantastic video
+on K means clustering algorithm in this
+video we will delve into K means
+clustering algorithm topics like what is
+K means type of clustering in machine
+learning advantages and disadvantages of
+K means clustering and application of K
+means algorithm at the end of this video
+we will Implement handson using the K
+means algorithm so just a quick info for
+you K means is after all an algorithm
+that is based on AI and machine learning
+a professional who wants to switch
+careers with AIML by learning from the
+experts then try giving simply lar
+postgraduate program in Ai and machine
+learning from PD University in
+collaboration with IB
+this AIML course was delivered in
+collaboration with P universities and
+IBM learn in demand skills such as
+machine learning deep learning NLP
+computer vision reinforcement learning
+generative AI prompt engineering chat
+gbt and many more so hurry up androll
+now the link is in the pin comment and
+the description box below so without any
+further Ado let's get started so what is
+a means clustering algorithm so K means
+clustering is stand out as a
+unsupervised learning algorithm devoid
+of labeled data
+unlike its supervised counterparts its
+primary function involves partitioning
+objects into cluster that exhibit
+similarities within but differ from
+object in other cluster the variable K
+in the K means denotes a numerical value
+indicating desired number of cluster to
+be formed for instance setting K cler to
+impl the creation of two distinct
+cluster determining the optimal value
+for K in a given data set is a crucial
+task so to illustrate the concept of K
+means consider consider a cricket
+scenario imagine having data on a
+numerous cricket players worldwide
+detailing their runs and wickets in the
+last 10 matches the object is to
+categorize the players into two clusters
+batsmen and Bowers exemplifying the
+application of K means in a grouping
+similar data so moving forward let's
+discuss types of clusters so clustering
+is a type of unsupervised learning
+wherein data points are grouped into
+different sets based on their degree of
+similarity so the various types of
+clustering are hierarchical clustering
+ing partitioning clustering soical
+clustering is further divided into
+agglomerative clustering divisive
+clustering so partitioning clustering is
+further subdivided into K means
+clustering and fuzzy c means clustering
+so moving forward let's discuss some
+advantages of K means cluster so number
+one is simple and easy to implement so
+the K means algorithm is easy to
+understand and Implement making it a
+popular choice of clustering for the
+task the second one is fast and
+efficient K means is computationally
+efficient and can handle large data set
+with high
+dimensionality the third one is
+scalability K means can handle large
+data set with a large number of data
+points and can be easily scaled to
+handle even larger data sets the fourth
+one is flexibility K means can be easily
+adapted to different application and can
+be used with different distance metrics
+and initialization methods so now moving
+forward let's discuss some disadvantage
+of key means the number one is
+sensitivity to initial centroids K means
+are sensitive to the initial selection
+of centroids and can converge to a
+suboptimal solution the second one is
+requires specifying number of clusters
+the number of clusters K needs to be
+specified before running the algorithm
+which can be challenging in some
+application the third one is sensitive
+to outliers K means is a sensitive to
+outliers which can have a significant
+impact on the resulting cluster moving
+forward let's discuss some application
+of K means clustering K means clustering
+is used used in a variety of examples of
+business cases in real life like
+academic Performance Based on this
+course students are categorized into
+grades like a b or c grade the second
+one is diagnostic system the medical
+profession uses K means in creating
+smarter medical decision support system
+especially in the treatment of lever
+alignment the third one is search
+engines clustering forms a backbone of
+search engine when a search is performed
+the search result need to be grouped and
+the search engines very often uses
+clustering to do this so the number
+fourth is wireless sensor networks the
+clustering algorithm plays the role of
+finding the cluster heads which collect
+all the data in their respective cluster
+so now let's move on to the demo part so
+hello guys welcome to this demo part of
+K means clustering algorithm so this is
+our jupyter kernel so first I will
+rename it so we will do some Iris flower
+classification using and we will make
+some clusters okay using K means
+clustering algorithm so here I will
+write K
+means
+cluster okay
+yes so first we will import some major
+libraries right okay first we will
+import some major libraries
+like
+import pandas as PD then
+import
+numi as
+NP then import M plot
+lip do p
+plot as PLT I hope everyone knows
+because these are some basic libraries
+of machine learning or you can say
+python okay this mat plot is used for
+the plotting of
+graphs then we will import
+cbor as
+SNS then from
+eSalon dot
+cluster
+import
+import K
+means then from
+esar do
+Matrix
+import s
+house okay
+score then
+from SK Lear dot
+preprocessing import min max
+scale okay let me run it okay everything
+is working fine or still loading right
+so these are some major like okay there
+is one okay there is an spelling
+mistake yeah so now we will read the
+data set so you can find the data set
+link from the description box
+below Iris equals to PD do read
+CSV
+then iris. CS
+right then
+x equals to Iris do
+iog and colum
+comma 0 comma 1 comma 2 comma 3 dot
+values dot
+values
+okay so moving forward we will see some
+basic function of python like info or
+shape like describe so I will write
+iris. info why Iris because I gave here
+my data frame name is Iris
+right okay and I need Iris
+of 0 to 10 range okay so as you can see
+this is my data set this is ID SE land
+that se width petal length petal width
+and
+species
+okay so moving forward we will what we
+will do we will set the frequency
+distribution of the particular
+species so first let me give some spaces
+for better
+visual so here I will write
+Iris underscore
+outcome equals to PD dot cross
+tab
+then index equals to
+Iris and
+species
+comma columns equals
+to
+count right here I will write Iris
+uncore
+outcome okay so here we will making the
+make the cross step and we are naming
+the count column
+okay so as you can see the spaces Iris
+SATA is 50 and iris versy color is 50
+and Iris vgin is 50 okay so these are
+some count of particular species okay
+this
+species
+right so moving forward we will set the
+distribution so I will write
+Iris
+SATA equals to
+Iris DOT
+log
+and
+species equals
+to I
+set
+right okay here I will write I
+right okay so we will do this for Iris
+virgin color and iris versy color and
+virginic also right so what I will do I
+will just copy
+it and paste it here for two times then
+I will change here
+this wory
+color and virgin
+right and here I will
+change the
+name Mery color
+and
+virgin
+right okay
+cool everything seems good
+I is color and R is spelling is
+right
+okay so moving forward we will plot some
+graph
+right and we will see the particular
+density of the padal length and padal
+width okay so what I will write here I
+will write here this SNS
+dot
+facet
+GD
+Iris comma Q equals to
+species okay comma size =
+3 comma do
+map then
+SNS dot distinct
+plot
+comma I need first
+P okay what I can do I can copy here
+from ble
+length and P it there why I'm doing
+because of some spelling mistakes
+okay then dot
+addore
+Lor
+Legend right so this we will do for the
+padal width and the saple
+length so what I can
+[Music]
+do I can just copy it okay so I can just
+copy
+it and paste it here for the two times
+then pedal width I
+need
+change
+here and then I need saple
+length
+Okay Okay
+some error is
+there
+right okay what did is say saying name
+of index battle WID SL
+the
+call
+width
+spes yeah you can ignore this warnings
+right so this is the density of petal
+length and the particular three species
+uh setosa Versa vinica because we have
+only three species in particular you
+know data set right this is the sample
+length of the density got it so moving
+forward what we will do we will make a
+box plot of the patter length so I will
+write SNS
+dot box
+plot xals to
+species comma
+y equals
+to P length
+okay CM this is the right name comma
+data equals to
+Iris then PLT do
+show okay box plot it is PL T yeah so as
+you can see the pattern length of the
+particular species this is uh Iris SATA
+is between 1 and two then versic is is
+between 3.5 to somewhere 5.3 or 5.2 as
+you can see
+right so moving forward we will make uh
+you know different kind of plot which is
+known as the violent plot v i o l i n
+violent plot
+so here I type SNS do violin
+F
+plot
+then xals to
+species comma y
+to
+pattern length
+CM okay comma data equals to
+Iris right then PLT do
+show
+okay some error is
+there met length spelling is
+wrong yeah so this is some
+viin plot as you can see here the shape
+are of viin right
+okay so moving forward uh we will do one
+major plot we will make some major plot
+known as the scatter plot right so for
+that I will write here SNS do
+set
+style wi
+grid right and SNS
+dot pairplot
+Iris comma h
+species comma size
+three and PLT do
+show you can ignore always you can
+ignore These
+Warnings okay see as you can see here
+the particular scatter plot for the
+saple length in this you know this blue
+color resembles the setosa and this
+orange color is VY color and this green
+color is Irish
+vgin right this is for all the full
+graph this saple length saple width
+petal L and petal
+right
+okay so moving forward what we will
+do so
+here K means so K means is a centroid
+based algorithm or a distance based
+algorithm where we can calculate the
+distance to assign a point to a cluster
+right so in K means each cluster is
+associated with a centroid okay so how
+to implement K means clustering right so
+first choose the number of clusters K
+you know small small clusters or select
+the K random points from the data as
+centroids and assign all the points to
+the closest cluster of the croid right
+and then recompute the Androids of newly
+formed clusters then you can repeat the
+steps three and four okay so here what
+we will do first we will find the
+optimum number of clusters for K means
+classification first we will do
+that okay so here I will write from
+Escalon do cluster
+import
+K and W CSS just giving as blank
+are okay for I in
+range 1 to
+11 right so K
+means equals
+to gam means then n
+clusters equals to I
+comma in it
+equals
+to K
+means right then Max iteration would
+be
+300 comma n
+nyren 10 and
+random
+State Z
+got it then K
+means do
+fit
+X right and
+wcss do
+append ging
+dot
+inertia gameing is
+not okay
+it's small
+K and it should be either K means is
+random
+for
+it what I will
+do
+yes so now moving forward but uh using
+the elbow method so you what is elbow
+method right it's a base graph okay
+elbow graph elbow shape graph you can
+say so using the elbow method uh to
+determine the optimal number of cluster
+for the K means clustering so we will
+create here so we will create here one
+albow method graph right so for that I
+will add PLT do
+plot
+range one comma
+11 comma
+wcss and PLT do
+title
+the
+elbow
+method PLT do X
+LEL
+number of
+clusters then I will
+write PLT do y
+label
+CSS
+vt. I think you guys are confused what
+is wcss right so wcss means within
+clusters sum of squares okay I run it
+so as you can see this is the elbow
+shape graph right so these are the
+number of clusters okay this is uh
+within cluster sum of squares this is
+right
+5,000 this this this this
+okay so moving forward what we will do
+we will implement the K meain clustering
+right now okay so I will give some
+space yeah so I will write K means
+equals to K
+means
+ncore
+clusters = to 3 comma init =
+to K
+means right okay I can copy it
+from
+got
+it then
+ycore K
+means to K means dot
+fit and
+predict
+X
+okay so here what we will do we will
+visualize the cluster so I will write
+PLT do
+scatter
+X Yore K
+means
+2+
+0aa
+X
+Yore k
+mean
+to 0a
+1 then and I will
+give
+s equals to se to 100 then
+C equals to it should be
+purple right and
+label I is
+sat
+okay so I will copy this for the other
+virgin and ver color
+right and I will change here to
+orange
+and
+green then here I will write
+Vira then here I'll write
+veric okay
+okay so what I will do I will change
+here then 2 comma
+1
+okay and here one here
+two right yes so as you can see we have
+scattered particular cluster of between
+the species right the iris satsa is this
+purple okay this purple one is Iris
+satsa and this versy color is the orange
+okay and the uh this vinica is a green
+right so how we did we use
+this right this sample length sample
+width and patter l p width and according
+to that we just made the cluster of
+using K's cluster so now what we will do
+we we will uh plot the cids of the
+cluster okay and I will write here
+only PLT do
+scatter K means dot
+cluster
+centers g
+means
+cluster centers
+right column
+one comma
+1 comma s = to 100 and
+Cal
+R what will happen we will find the
+centroids okay particular Cent so I will
+write here r
+then
+label equals to
+centroid
+centroid Okay C let's
+put then PLT dot
+Legend So as you can see these are some
+centroids of the particular
+graph
+okay right so moving forward we will
+make our last scatter plot of 3D scatter
+plot okay for the Androids to check the
+Androids
+figure PLT
+dot
+figure it's same like above so what I
+will do I will copy
+it and paste it here
+okay so now we will do for the
+centroids it's
+same and I will copy it here I copy it
+two
+times so as you can see this is our 3D
+plot for to check or to find the
+centroids right so these red colors are
+the
+centroids okay see I have set the red
+color
+centroid particular centroid
+okay so yes so this is how you can do or
+implement the K means clustering to find
+the centroid okay so with this said we
+have come to end of this video if you
+have any query regarding any of the
+topic in this video please do let us
+know in the comment section below our
+team of expert will help you as soon as
+possible do like share and subscribe do
+like share and subscribe to stay updated
+from Simply learn Channel thank you and
+keep learning with simply staying ahead
+in your career requires continuous
+learning and upscaling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domain
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

@@ -1,0 +1,398 @@
+hey everyone i am bravo khandalwal and i
+welcome you all to simply learns youtube
+channel in this session we will discuss
+fractional or 0 1 knapsack problem
+we shall begin our session by discussing
+what is knapsack problem
+then we will go into the details and
+discuss the zero and knapsack problem
+after that we will look into its
+implementation in the code editor
+then we will discuss the fractional
+knapsack problem
+finally we will dive into its
+implementation in the code editor
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply learns
+youtube channel
+so without any further ado let's get
+started with the topic what is knapsack
+problem
+the knapsack problem is used to explain
+both the problem and the solution
+it derives its name from the fact that
+the limited number of things that may be
+carried in a fixed size knapsack
+given a set of items with varying
+weights and values the goal is to pack
+as much as value as possible into the
+knapsack while staying within the weight
+limit
+now let's discuss zero one knapsack
+problem
+first we will be given weights and
+values of n items in this case six items
+on the left
+we will put these items in a knapsack of
+capacity w or in this case 10 kgs to get
+the maximum total value in the knapsack
+then we will have to fill this snapsack
+but we can't break the item so we must
+either pick the entire item or not pick
+at all
+due to this sometimes it may even lead
+to a knapsack with some spare space left
+with it
+now let's try to implement this in the
+correlator
+we will start with the utility function
+that will return the maximum of two
+integer
+int
+max
+we will return
+if a is greater than b
+then
+a else
+p
+we will now write a function to return
+the maximum value that can be put in a
+knapsack of capacity w
+and
+and
+capital w
+comma and
+wt for the weight
+comma
+and
+value
+comma
+and
+we will declare end i
+comma w
+we will create a vector
+inside a vector
+okay
+n plus 1
+comma
+vector
+and
+capital w plus one
+now we will build a table k
+in bottom up manner
+so for
+i equals to 0
+i less than equals to n
+i plus plus
+we will have another for loop inside it
+follow
+with small w equals to zero
+the small w will be less than equals to
+capital w
+with small w plus plus
+now if
+i is equals to zero
+or
+w is equals to zero
+then we will have k
+at i
+comma w
+is equals to zero
+else
+if
+weight at i minus 1
+is less than equals to w
+then
+k
+at i
+comma w
+will be equals to
+max of
+value
+at i minus 1.
+plus
+k at i minus 1
+comma
+w minus
+wt
+where wt is at
+i minus one
+comma
+k
+at i minus 1
+comma w
+else
+we will have k
+at i
+comma w
+is equals to
+k
+at i minus 1
+comma w
+now we will
+return a
+at n
+comma w
+now we will write the main block
+we will start with and
+value array
+which will have
+elements as
+60 100 comma 120
+and
+weight will be equals to
+10 comma 20 comma 30.
+and the maximum capacity the capital w
+will be equals to 50
+now let's find the size of the value
+array so end
+n is equals to
+size of
+val
+divided by
+size of
+well
+at zeroth location
+now we will print
+see out
+knapsack
+at capital w comma wt
+comma
+where
+comma n
+and return it as zero
+let's compile it
+as you can see we are getting the value
+as 220
+which means we are getting it because we
+are taking the elements with weight
+equals to 20 and 30 which comes out to
+be as 50.
+let's get back to our slides
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit skill up by simply learn click on
+the link in the description to know more
+we have now discussed zero one knapsack
+problem
+now
+let's discuss the fractional knapsack
+problem
+similar to the zero one knapsack problem
+we will be given the weights and the
+value of n items
+in this case six items on the left we
+will also be getting a knapsack with
+capacity w or in our case 10 kgs to the
+right
+now we have to get the maximum total
+value in the knapsack
+then we will have to keep filling this
+knapsack but unlike zero one knapsack
+we can break an item to get a maximum
+value of knapsack
+here we will break this 3kg item into a
+2kg
+and 1 kg item to fill the knapsack
+now let's try to implement this in the
+code editor
+we will start with the structure for an
+item which stores weight and
+corresponding value of item
+so
+struct
+item
+and
+value
+comma
+weight
+we will write the constructor as item
+the argument as end where
+comma
+and
+wt wait
+where this
+value
+will be equals to well
+and this
+weight
+will be equals to fit
+now we will write a comparison function
+to sort items according to value by
+weight ratio
+so
+boolean function
+cmp
+with
+argument as struct
+item
+a
+comma
+struct
+item
+now
+level
+r1
+is equals to
+double
+a dot value
+divided by
+purple
+a dot
+weight
+similarly we will write it
+double
+r2
+which will be equals to
+double
+p dot
+value
+divided by
+double
+dot
+wait
+now we will return
+r1
+greater than r2
+which means it will return true if r1 is
+greater than r2
+now we will write the main function to
+solve the problem
+so
+double
+f knapsack
+with argument as and
+capital w
+comma
+struct
+item
+error
+comma and
+and
+we will first sort the item on the basis
+of ratio
+so sort
+error
+comma
+arr
+plus n
+comma cmp
+now
+and
+current weight
+is equals to
+zero
+and double
+final
+value
+is equals to
+zero point zero
+this will be result value in knapsack
+so for
+and
+i is equals to zero
+where i is less than n
+and i plus plus
+now if adding the item won't overflow
+then we will add it completely so if
+current weight
+plus
+air
+arr
+die
+dot weight
+is less than
+equals to capital w
+then
+current weight
+plus equals to
+arr
+dot wait
+and
+final
+value
+will be plus equals to
+arr
+at i
+dot
+value
+now if we can't add a current item then
+we will add fractional part of it so
+else
+and
+remain
+is equals to
+w minus
+current weight
+then
+final value
+will be plus equals to
+arr
+at i
+dot
+multiplied by
+double
+remain
+divided by
+double
+arr
+dot
+weight
+now we will break
+then we will return
+final value
+now let's write our main block
+we will start with defining and
+w equals to 50
+this will be a weight of the knapsack
+and
+item
+arr
+equals to
+element as 60 comma 10
+comma
+100 comma 20
+comma
+120
+comma 30.
+we will find the size of
+n
+and
+n equals to
+size of
+arr
+divided by size of
+arr
+at zeroth location
+now we will make the function call so c
+out
+maximum
+value
+and obtain
+first two
+f
+knapsack
+w
+comma error
+comma n
+execute this
+as you can see we are getting the
+maximum value as 240
+that means our function is working
+flawlessly let's get back to our slides
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from semplara
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

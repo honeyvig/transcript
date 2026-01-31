@@ -1,0 +1,378 @@
+hey everyone welcome back to another
+video tutorial by simply learn
+in this session we will be learning
+about kotlin functions a function helps
+in reducing the duplicacy of the code
+and also used for information hiding
+the kotlin function is a very important
+topic of kotlin language and in this
+tutorial we will cover all the important
+points or concepts of kotlin functions
+so let's go ahead and have a look at
+what we will be covering today
+so we'll start with kotlin functions
+then we'll understand
+function parameters function returning
+values
+then
+cortland functions with no return type
+after that the higher order functions
+and lambda function
+and at last we will study
+higher order function with lambda
+functions
+so without further ado
+let's get started
+so our first topic is kotlin functions
+functions in kotlin is very much similar
+to functions in java
+there are some minor differences in
+between them
+so let's have a look at them
+a kotlin function can be defined as a
+block of code which is used to hold the
+data
+this block of code has a name and is
+defined with fun keyword
+for example as we can see fun is the
+keyword here and info here is the name
+of the function
+a cortland function divides the program
+into small modules
+these functions can easily be invoked by
+making a call
+and to make a call we use the name of
+the function with parenthesis
+as we can see in the example the
+function info is getting invoked from
+the main function
+that is from the main function we are
+making a call to the info function by
+using the name of the function with
+parentheses
+now
+let's understand function parameters
+vectors can be defined as the
+information that are passed to the
+function
+so basically functions can accept the
+data or information passed to them
+these informations and data are passed
+in the form of parameters
+after receiving the data or information
+function can easily use this data to
+calculate or display as per the function
+definition
+the parameters are specified after the
+name of the function
+and is mentioned inside parentheses
+separated by commas and we can easily
+pass as much parameters as we want
+for example as you can see function calc
+is accepting three parameters a b and c
+of integer type
+these three arguments or values are
+passed from the main function where the
+function call is made
+so a b and c three arguments are passed
+to the calc function and the function is
+providing the average of these three
+values
+also the values that are passed to the
+functions are called arguments and the
+parameters are the values that are
+defined in the function
+definition so now let's understand the
+next topic which is function returning
+values
+just like printing the values functions
+can also return values
+to return a value or values a return
+keyword is used
+also
+while returning a value the return type
+of the function is also specified as you
+can see in the example
+int is the return type of the function
+and return keyword is used to return
+values to the main function where they
+are getting printed
+so now moving on to the functions with
+no return types
+bottling function with no return type
+in kotlin language if the function is
+not turning anything then we don't need
+to specify any return type
+but if we want to mention the return
+type then we can add unit as the return
+type
+so basically unit type in kotlin is like
+void type in java
+that means it is used with function that
+doesn't return anything
+next is
+higher order functions
+the higher order function in kotlin is a
+function that can accept the functions
+as a parameter and can also return a
+function
+we have heard that function accept
+variables but we haven't heard about
+function accepting other functions
+in higher order function we can easily
+do that
+so as we can see in the example of
+higher order function
+the name of the function is high order
+and is accepting two integer values that
+is num1 and num2 and a function whose
+name is fname
+now this function fname is accepting two
+integer values and its return type is
+int
+inside the function body we are calling
+fname function and printing it
+let's understand it with the help of an
+example
+so this is our kotlin playground
+here we will do an example of higher
+order function
+we will do a basic example of higher
+order functions so let's start first of
+all we'll create the main function
+function main
+and inside this main function
+let's name the higher order function as
+high order
+you can name it as per your choice i
+have named it high order
+and now let's pass the variables let's
+say 50
+80 and let's say 40.
+now
+we have to pass the function to this
+higher order function
+so we can do that with the help of these
+two column operators and then
+the name of the function
+let's say the name of the function is my
+function
+so here we are passing three variables
+and a function to the higher order
+function
+now
+we'll create the higher order function
+we'll write fun keyword
+then
+high
+order
+and now inside the paranthesis we'll
+write num1
+in the parameters that is 5080 40 we
+have to
+write the parameters
+similarly num3
+now after that
+here we will
+here we are accepting a function as well
+so we'll write the name
+let's say if name of the function is
+func name
+and
+here
+int and and the type of
+the values that this function will be
+accepting
+here also we have to mention the types
+of the function that this function will
+be accepting and the return type of the
+function as well
+so int is the return type of this
+function
+we'll have to mention that as well
+[Music]
+by mistake we have done this we have to
+use arrow operator for that
+and yeah
+now
+we'll write the print basically will
+call the function
+in which
+we will define the
+definition of this function
+so let's say the yeah the function name
+was funct name
+and these three are the parameters num1
+num2
+and num3 we are passing these
+arguments
+now
+let's create this
+function definition
+so we'll create fun
+keyword
+my function
+function is accepting num1
+of integer type
+num2 of integer type
+and
+num3 of integer type
+now after that
+the return type of the function is int
+all right
+now let's say we want to do the average
+of these three numbers
+so what we'll do is we'll write return
+num1
+plus num2 plus num 3
+divided by 3
+all right so
+all we need to do is just enclose it
+within the brackets
+yeah now let's try to run this
+as you can see 50 plus 40 90
+90 and 80 is equals to 170
+170 on
+divided by when it is divided by 3 it
+will give you
+56.3 something and as we have used in tj
+value so it is showing 56 only
+so
+what we are doing here is first of all
+we are calling the high order function
+so basically this is a higher order
+function and we have named it high order
+and we are passing three integer values
+and one function
+so these three integer values are
+passing over here and these are the
+parameters and this is how we accept
+function as a parameter
+this is the syntax of it
+after that we are here calling the
+definition of this function
+so this is the definition we are calling
+this function and this is the definition
+of this function the value is calculated
+over here and then is returned here and
+then here it is getting printed
+so the answer or the output of this
+program is
+56
+as you can see so this is a higher order
+function
+now
+let's understand lambda function
+lambda function
+lambda is an abbreviated form of
+function writing
+the lambda function is written without a
+name and is enclosed in curly brackets
+the lambda function has the basic syntax
+arguments or variables are mentioned on
+the left hand side of the operator and
+the body of the function is present on
+the right hand side of their operator
+in the example
+avg is the lambda variable
+n1 n2 and n3 on the left side of the
+arrow operator are the parameters and on
+the right side is the function body
+that is the average of three parameters
+so as we have understood the lambda
+functions and the higher order function
+as well now let's understand how to use
+higher order function with lambda
+function
+so lambda function allows us to
+eliminate the code and write the code
+more compactly
+as we can see in this example
+we have used the lambda function instead
+of the normal function which has
+decreased the lines of code
+now
+let's understand this with the help of
+an example
+so this is our example of higher order
+function that we have done previously
+now we will do this example or edit this
+example
+with lambda function
+so now we will understand how to use
+higher order function and lambda
+function together
+and it will make our code shorter and
+more compact
+so as we can see this was the here we
+have used two column operators with the
+name of the function
+now all we need to do
+is to create a lambda function over here
+and for that as we know that there is no
+name for a lambda function
+the
+lambda function is enclosed into
+brackets
+now let's say num1
+and this is the parameters or the
+variables
+that is on the left hand side of the
+arrow operator
+then num2
+m3
+after that
+here we can see here we have used the
+arrow operator now we have moved to the
+right hand side of that operator which
+is the function body
+now we'll use the parentheses
+num1 plus num2 plus num3 so basically
+this is the function body or the
+function definition we can say
+so now here we have
+we are doing the average of these c
+numbers as we have done previously
+in the higher order function
+now here we don't have to use this
+function
+we can just
+eliminate this one
+now as we can see our function is almost
+done and let's try to run this program
+as you can see the output is 56
+so here we have used the lambda function
+so this part which is the left hand side
+part
+of the arrow operator this is the
+variables or the values
+and this part
+on the right hand side is the function
+body
+so the lambda function is enclosed in
+the
+in two brackets as we can see
+here we have positive three variables
+and this is the lambda function
+also we have eliminated the my function
+function because in that particular
+function we are just defining or doing
+the
+calculation
+and that we have already done in this
+part so we no longer need that function
+so
+as you can see this is
+here we are using higher order function
+with lambda function
+and with that we have come to the end of
+this tutorial if you like this video on
+cotline function please give it a thumbs
+up i hope it really helped you all
+thanks for watching stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

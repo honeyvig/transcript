@@ -1,0 +1,1743 @@
+hello everyone and welcome to simply
+learns youtube channel caution this side
+and i hope you guys are doing well today
+we are going to discuss widgets in
+jquery ui
+we'll start this video with an
+introduction to widgets and then we'll
+cover certain widgets like the date
+picker widget the accordion widget and
+many more so before we begin let me tell
+you guys that we have regular updates on
+multiple technology videos so if you are
+a tech geek in a continuous hunt for the
+latest technological trends then
+consider getting subscribed to a youtube
+channel and press that bell icon to
+never miss any updates from simply learn
+so without any further delay let's get
+started
+before we move on to the date picker
+widget in jquery let's discuss what a
+widget is
+in simple terms a widget is an
+application or a component of an
+interface that enables a user to perform
+a function or access a service
+suppose you use any android or ios
+device then you must have noticed the
+feature of widget that allows the user
+to do certain things without opening the
+actual app
+for example mobile phones have widgets
+that help us play music or know about
+the weather outside or maybe some
+particular apps sometimes have the
+option to use them with the help of
+widgets only
+similarly jquery ui has some predefined
+widgets that allows us to do specific
+tasks with less amount of code needed
+the date picker widget helps us in
+picking the date from the calendar
+an example of this date picker widget is
+when we try to make any travel booking
+and it asks the user to pick a date
+within which they want to travel
+then on clicking the tab we get the
+calendar to pick up a date
+that calendar refers to the date picker
+widget
+let me take you through the widget from
+the official website of jquery ui and
+you guys will understand it much better
+here you can see we are on the website
+and if you can see here we have
+different interactions and widgets over
+here
+if we click on the date picker widget
+from here so this is the date picker
+widget if we click on it
+you can see we have an input box over
+here and the date is written here right
+you can see date written over here
+now on clicking the input box here we
+have a calendar to pick a date from it
+pick up any date from it and we have the
+date as input in the text box right so
+we'll create this text box and use this
+widget in today's video you can also
+check the source code from the website
+if you want to but let's create the
+whole thing again here
+fine
+so we'll move back to a
+vs code and we'll open this document for
+now
+now we'll create a container box for
+this first and then we'll put an input
+box inside it the task is easy so we'll
+move to html file and we'll write here
+div
+id is equals to let's say div one
+and here we have a container now let's
+style this tag a bit so that it can be
+visible properly so what we'll do is
+we'll move to a head section
+and we'll style this div tag over here
+only we'll use the style tag
+we are not going to create any external
+css file for this so inside this we'll
+write
+hash
+div one so this is the id of a container
+then inside here we'll write height
+height is going to be let's say
+500 pixels fine then we'll write here
+width
+and width is again going to be 500
+pixels
+then we'll give the border as well so
+we'll write here border and border is
+going to be three pixels
+black in color and let's say solid fine
+so we are going to write here solid and
+then we'll define the border radius as
+well to make it look more attractive so
+border radius is going to be let's say
+25 pixels
+and then we'll write here position
+and position is going to be relative
+then the last thing we are going to
+write here is the margin margin is going
+to be auto
+save it
+and we have a box over here at the
+center of our web page if you
+open the browser completely you can see
+over here we have a box so for now what
+we'll do is we'll reduce the size from
+here so instead of 500 pixels
+let's say we have a box of size 200
+pixels fine we'll define the width as
+well so save it now you can see we have
+a box over here the box looks a bit
+smaller we can say so we'll again change
+the height and width we'll write here
+300 for height and 300 for width save it
+now and it looks fine now
+so let's move on and we'll add an input
+box inside this container now for that
+what we'll do is we'll write here inside
+the div tag we'll use the paragraph tag
+and then we'll put date inside it then
+after date we'll put the input tag
+inside the paragraph tag and input type
+is going to be
+text
+and let's give the id as well so let's
+say the id is date for this input tag
+and we'll write here placeholder as well
+so let's say inside here we'll write
+enter
+date fine we have to close this input
+tag and we are good to go save it now
+and you can see we have an input box
+over here inside the container
+fine
+so let's make some style changes to make
+it look more appealing so what we'll do
+is we'll style this paragraph tag we'll
+style the whole paragraph text so
+we'll write here p and then inside it
+will write text align is
+center we want
+the text to be present at the center of
+the box
+margin top is going to be let's say 150
+pixels we want the text box in the
+center of this container so margin top
+is 150 for that
+then we'll write here let's say font to
+it fine we'll write here bolder
+save it now and you can see we have the
+input box at the center of this
+container
+so what we can do here is we can put a
+space between this and save it now you
+can see it looks fine now
+now we are done with the html and css
+part we are doing all this so that you
+can stay in touch with html and css and
+it will also make the learning part
+easier for you guys so let's move on to
+the jquery ui part now and we'll add the
+date picker widget to this input box
+over there only
+so we'll move to a javascript file and
+what we'll do here is we'll add the date
+picker widget to our input box so for
+that we'll write here
+dollar we are again going to access this
+particular input box so for that we have
+the id as
+date
+we'll write here dot
+then we'll write here
+date picker
+fine
+we are done with it can you guys believe
+that we don't even have to write so much
+code to add this widget
+one line and we are done
+save the program and click on the input
+box now you can see we have a calendar
+over here we can select any date from
+here and the date will appear inside the
+box you can see we have 12 1 20 21
+fine
+the date format here will be month day
+and year which is mmdd and yy
+fine and the date will appear inside the
+text box only the good thing about this
+date picker widget is that we can
+control it for example you can see here
+that the month of december starts from 1
+fine
+and there are no values present before
+that month so what we want is we wanted
+to show the dates from the previous
+months as well for that what we can do
+is we can write here inside this we have
+to put curly braces over here and then
+inside these curly braces we'll write
+here
+show other months so we'll write here
+show other
+months so this is case sensitive guys so
+keep this syntax in mind we have to
+write here show with small s and then
+other with capital o and months with
+capital m we'll write here true
+and save it now click on the input box
+and you can see we have the dates over
+here as 28 29 and 30. fine
+however we can't select these dates
+right now
+for making them available for selection
+what we have to do is we have to write
+here after a comma we have to write here
+select
+other months
+fine
+now pass this as true
+save the program click on the input box
+try to select 29 from here and you can
+see it says 11 29 20 21
+fine
+we can also show the button bar over
+here beneath the calendar
+so for that what we have to do is we
+have to write here
+after a comma show
+button
+panel and we have to pass this boolean
+as true
+save it now
+click on the input box and you can see
+we have two buttons over here one is
+today and the other one is done
+fine
+one of the button will take us to the
+current date for example if we are in
+the month of march if we click on this
+today button you can see we are here
+back in december and if you are done
+selecting the date
+then you can click on this done button
+over here this widget has some more
+functionalities like we can also show
+the menu for changing the months and
+years as you can see here for now we
+have to go to other months with the help
+of these arrow buttons only what we can
+do is we can pass the boolean options
+and the value will be set to true for
+change months and change you
+so let's do it here what we'll do is
+we'll write here after comma change
+month
+and we are going to pass it
+true
+and we are going to write here change
+here as well fine
+value is going to be true again
+save it now click on the input box and
+you can see here we have the menus for
+months and years here
+we can choose any month from this list
+let's click on july and here we are in
+the month of july 2021. similarly we can
+choose years as well
+we have years till 2031 from 2011. fine
+now widget functionalities makes it
+easier for the user to choose any date
+from the given dates we can also
+restrict the years according to our
+needs
+so if we want to restrict the ears
+according to our need we have to write
+here
+mind date and we have to pass the date
+here we'll write here
+new and then we'll write here date
+then we'll write here the year so let's
+say we are writing here 2016
+1 comma 5
+and then we'll write here
+max date fine
+we'll use the same syntax we'll write
+here new date and let's say we are
+writing here 2023
+then we'll write here comma 1 comma 6.
+fine so we have an error over here we'll
+remove it and we are good to go
+fine the format will remain the same for
+year month and day numbers in the
+programming start from zero so january
+will be zero a calendar will allow us to
+choose between february 5 2016 and
+february 6 2024
+all the other dates will either be
+removed or not available for selection
+so save it now
+click on the input box and if you try to
+click here in 2021 you can see we have
+2016 as the first option we'll click on
+2016 and you can see we don't have the
+month of january in the year 2016
+because the numbers start from zero
+and we have written here one so the
+calendar will start from february 2016.
+inside here we can't choose these dates
+we can start from fifth february 2016
+only fine
+we can show more than one month at a
+time as well so what we can do here is
+we can write here comma
+number of months so we'll write here
+number of
+months and we'll pass here let's say
+2. fine
+now we can select any date from two
+months so click on the button over here
+and let's
+increase the size of this chrome browser
+save this program now
+click on the input box and you can see
+we have two months over here we have
+december 2021 and january 2022
+fine so these are the functionalities
+the date picker widget can perform the
+list is quite long and we can't discuss
+all of these functionalities so you guys
+can check them by going through the
+official jquery ui website i want you
+guys to go through them and let us know
+if there is any crucial functionality we
+left out
+a tooltip is basically a message which
+appears when a cursor is positioned over
+an icon image hyperlink or other
+elements in a web page
+so let's go through the jquery website
+once and we'll see what this widget
+actually does
+here is the website of jquery ui we have
+seen the usage of the datepicker widget
+from this website and we are well aware
+of this website by now
+so let's quickly go through the tooltip
+widget and then we'll start using the
+widget in our own program
+what we'll do is we'll go to widgets and
+will look for the tool tip widget here
+you can see here at the bottom this tool
+tip widget click on it and it will take
+us to another web page
+now here we have a text box and on
+hovering over the text box you can see a
+box with some text present inside it
+which says we ask for your h only for
+statistical purposes
+this is known as the tool tip widget in
+jquery ui
+where we can use this widget any idea
+guys
+now imagine we are working on an
+e-commerce website where we have certain
+different types of products and what we
+can do is
+we can use this tool tip over our
+products it will look nice right it will
+give the user a bit of information about
+the product and the website will look
+more interactive
+this was just an example of where we can
+use this widget so let's use this widget
+in our program now
+what we'll do is we'll use the same code
+from the previous video with an input
+box present inside a container
+so let's make some changes over here in
+the html part first
+we'll add an attribute over here we'll
+add the title attribute so let's write
+the code again we'll write this code
+again
+what we'll write here is
+we'll again use the p tag because we
+have styled the p tag already we'll
+write here name
+then we'll put some space and after this
+we'll write here input
+type is equals to text
+and then we'll write here id is equals
+to let's say
+tool
+and finally we'll write here title let's
+say title is
+enter your name here fine
+the next thing we are going to do is we
+are going to use a placeholder and
+inside this will write enter name
+and will close this input tag now
+fine
+the same task but we change the name and
+edit the title attribute here this title
+attribute is a default html attribute so
+if you save this program for now and you
+can see here on taking the mouse cursor
+over the input box a small message
+appears on the screen so this tool tip
+is actually very basic this is the
+default html tool tip
+now the next thing we'll do is to use
+the tooltip widget we'll use the jquery
+ui tooltip widget we'll move to a
+javascript file and we'll try to access
+this input box with the id first so here
+is a javascript file and what we'll do
+here is we'll try to access this input
+box over here so for that we'll write
+here dollar and then we'll use the id so
+the id is
+tool and then we'll write here dot
+tool tip
+fine
+this is a method we'll
+use brackets over here so that's it the
+tooltip widget will take care of the
+rest save the program move to the
+browser and you can see here if we take
+our cursor to this input box we have a
+message over here so this tooltip is a
+bit different from the html one right
+the tooltip is larger in size and it's a
+bit different as well
+so what we can do is we can also make
+customizations to this widget we can
+control the effects and animation of
+this widget by giving several boolean
+parameters and by setting their values
+for example we can track the mouse
+cursor here and the tooltip will move
+along with the mouse cursor just a
+single property we have to give and we
+are good to go so let's do it here and
+you guys will understand it much better
+what we'll do is we'll use curly braces
+over here and then inside here we'll
+write
+track and we'll pass the value as true
+fine
+save the program move to the browser and
+you can see it on the browser that the
+tool tip tracks the mouse cursor and the
+box is moving along with the cursor
+right you can see the box moving
+it moves to either of the sites along
+with the cursor of a mouse now if you
+see here carefully the animation here is
+the fade in and fade out by default you
+guys can see the tooltip fading in and
+out on taking the mouse cursor over the
+input box and on taking it away from
+here
+now the next thing we can do with this
+widget is we can control the animation
+of this widget
+so we have two parameters to control the
+animation which are the show and the
+height property
+both the properties can take multiple
+parameters like the timestamp
+delay and the type of effect we want so
+let's say if we write here
+after a comma
+so let's say we write here
+show
+and then we have to use curly braces
+because we have to pass multiple
+parameters over here inside here what
+we'll do is we'll write here effect
+and the effect is going to be let's say
+slide down fine this is a predefined
+effect present in jquery ui already
+and we don't have to do anything else we
+just have to write the name of the
+effect and jquery ui will take care of
+the rest
+now here we'll write
+duration
+and the duration is going to be let's
+say 2000 fine then we'll also write here
+delay as well so
+we'll write here delay and delay is
+going to be let's say 250
+fine slide down here is the effect and
+the duration defines the time this
+effect will take place for delay here is
+the time taken before the effect starts
+taking place if you want to check the
+output save the program go to the
+browser and will move a cursor inside
+the input box you can see the change in
+the animation the
+tooltip is sliding down on taking the
+mouse cursor to this input box and if we
+take it away from here the tooltip fades
+out right so you can see the animation
+it takes certain time to appear and then
+it
+suddenly goes out if we take the mouse
+cursor away from the input box fine
+now we can change the effects as well we
+have several effects present like we
+have highlight we have pulsate and we
+have bounce as well so let's use some
+more effects here what we'll do is we'll
+change the slide down to
+let's say highlight
+fine
+now the tooltip will get highlighted for
+some time save the program
+and move to the browser you can see here
+on taking the mouse cursor to the input
+box we have the tooltip highlighted for
+some time
+right another tooltip effect we have in
+jquery ui we have the pulsating effect
+as well what we can do is we can write
+here pulsate in place of highlight so
+this is another effect we have in jquery
+ui save the program and now the tooltip
+animation will change you can see on
+taking the mouse cursor the tooltip is
+pulsating right
+so let's move ahead and we'll now see
+the height feature as well
+we want some animation in the end as
+well so when we take the mouse cursor
+away basically
+for that what we can do is we can define
+another property over here we can write
+here
+height and
+the syntax will remain the same for hide
+as well because we have to pass several
+parameters that's why we are using
+curly braces over here effect we will
+write here as
+let's say
+explode fine
+then we'll write here duration as well
+duration is going to be
+let's say two 2000 fine let's remove the
+delay from here as well because we don't
+want any delay in a tooltip animation
+save the program now take your mouse
+cursor over this input box and you can
+see the pulsating effect here now take
+it out and you can see the explode
+effect is not working so we have to
+remove this l from here save it now
+now try to do it you can see the
+pulsating effect here and on taking the
+mouse cursor away you can see the
+tooltip exploding into pieces here
+now one more thing we can do here is we
+don't actually need the whole title
+attribute to use the tool tip what we
+can do is we can use this tool tip
+without the attribute value as well what
+we can do is we can remove the value
+from here
+and let's say we are removing this value
+from here so this is the value of our
+tooltip basically now save the program
+what we can do instead of it is we can
+write here
+content and let's write here something
+so let's say we are writing here this is
+the
+place
+for
+name
+fine we'll write here comma save it now
+what actually happens is jquery ui
+dynamically takes this value from
+content and puts it inside this
+title attribute
+now this will work totally fine save the
+program move to the browser and take
+your cursor over this and you can see we
+have the tooltip widget as this is the
+place for name
+and when we take the cursor away from
+this input box you can see the tooltip
+exploding into pieces
+so these are the customizations we can
+make in the tooltip widget in the jquery
+ui the list of features is quite long so
+you guys can check them by going through
+the website the task for you guys now is
+you have to put this tool tip over an
+image and see the result let us know if
+you face any sort of problem and will be
+more than happy to help you guys
+the accordion widget is mainly used for
+descriptions or we can say it is a
+jquery based expandable and collapsible
+content holder that is broken into
+sections and probably looks like tabs
+only
+so we have been through the syntax of
+the previous two widgets we discussed
+there's not too much of a difference so
+let's quickly go through the
+introduction of this widget from the
+jquery ui website and then we'll use it
+in our program so here we are on the
+official website we'll quickly go
+through the accordion widget so here is
+the widget you can see the first widget
+present is the accordion widget click on
+it
+and we can see we have some sections
+over here right we have section one we
+have section two three and four if we
+click on any of the sections here like
+if we click on section two you can see
+this section expands and we can go
+through the description of that
+particular section
+so let's try to achieve this thing by
+ourself and then we'll see the
+customizations allowed in the accordion
+widget so we'll move to the vs code and
+first of all what we'll do is we'll add
+some sections over here along with the
+description only
+so
+here is the output of this particular
+document for now what we'll do is we'll
+add some particular sections over here
+so we'll write here
+div let's say the id for this div tag is
+div one fine so here is our div tag now
+inside this what we'll do is we'll add
+some headings and the description part
+right so we'll write here let's say h2
+and inside this we are writing let's say
+html
+now what we'll do is we'll create
+another div tag and then inside this div
+tag we'll write p and now we'll write
+something about the html fine so we'll
+write here let's say html
+stands for hyper text markup language
+and then we'll write here let's say it
+is used
+to structure
+a web page fine
+so let's write something more here and
+we'll write here and it's
+content fine
+save the program you can see it over
+here we have a heading as html and then
+we have a paragraph which is html stands
+for hyper text markup language and it is
+used to structure a web page and its
+content fine i hope you guys got this
+so now what we'll do is we'll copy this
+piece of code from here and we'll paste
+it again
+fine we have pasted it four times we'll
+change the headings and the paragraphs
+as well so let's say we are writing here
+css then we'll
+write here let's say we are writing here
+css stands for
+cascading style sheet
+and right here it is used
+to
+style a web
+page in different phase fine
+save it and you can see here we have
+some headings and some text below them
+you can see it over here it says css
+stands for cascading style sheet it is
+used to style a web page in different
+ways similarly we'll change these two as
+well so
+let's do it first we'll write here
+javascript and then we'll write here
+let's say
+javascript
+crypt was introduced
+in the year 2 1995
+and then we'll write here
+it is used to add functionality fine
+i hope you guys must know all of this by
+now so we have been through all this
+already now the last thing we are going
+to do is we are going to write here
+jquery fine
+then we'll
+write here inside this paragraph tag
+we'll write here jquery was
+jquery was introduced in 2006 so we'll
+write here jquery was introduced in 2006
+and let's say we are writing here jquery
+is in
+open source
+fast
+tiny and
+rich
+feature
+library fine
+and
+that's it we are not writing anything
+more because this is just for
+illustration purposes so we'll save this
+and here you can see we have all the
+four headings we have html css
+javascript and jquery
+so this is the html part we are done
+with it now let's use the accordion
+widget to make this ok looking web page
+a bit attractive so we'll use the widget
+only we'll move to a javascript file
+here we are in the javascript file and
+we'll write here inside this
+let's say
+now we want to access the whole division
+right so we want to access this
+particular division with id as d1 so
+we'll write here dollar and then inside
+double inverted commas we'll write
+div one this is the id then we'll write
+here dot
+accordion fine
+this is a method so we'll use brackets
+over here
+that's it guys we are done with it save
+the program and you can see how nice
+this thing looks now we don't have to
+put any effort into adding functionality
+to this web page a single line of code
+can do this task for us so this is the
+actual use of jquery ui it allows us to
+do certain tasks with a single line of
+code
+now the first section always remains
+open like this
+and if you want to make it collapsible
+like you can see we can click on any of
+these sections now and that particular
+section will expand but if you refresh
+this page and you can see it over here
+the first section always remains open
+now what if we want to make it
+collapsible we don't have to do so much
+of a task what we have to do is we have
+to pass some properties and jquery ui
+will take care of the rest
+now what we'll do is we'll write here
+inside the brackets we'll use curly
+braces over here and now we'll write
+here
+collapsible and we'll pass it as
+true fine
+now save the program and you can see if
+we click on this html again you can see
+it collapses on clicking it so this
+property is working totally fine and it
+allows us to
+make a section collapsible or expandable
+fine
+jquery ui helps us do such tasks without
+any problem so what else we can do here
+is we can change the icons as well here
+you can see that we have these arrow
+shaped icons over here
+in the header part if you guys remember
+jquery ui has some predefined css
+properties or we can say it has some
+predefined css libraries as well through
+which we can also change the style so
+let me show you the icons we have in
+jquery ui and for that we'll go back to
+the website here are the icons we can
+use any of the buttons from here you can
+see the names we don't have to do so
+much of a task you can see the icon type
+you can see it over here it's written
+that ui icon arrow 1n so these are the
+names for these particular icons we can
+use any of these icons we don't have to
+do much of a task we have to copy the
+names from here and we have to paste
+them into a javascript file so let's
+move back to a jquery file once and
+first of all we'll write the property
+over here we'll write here
+icons and this is a little bit tricky we
+can say we have to use curly braces over
+here
+and inside this we have to write header
+we are going to use different icons for
+header and for
+active header so we'll write here header
+and we'll take one icon from here fine
+will let's say we are taking this ui
+icon caret one so we'll copy the name
+from here we'll paste it in a jquery
+file
+then we'll write here comma we'll again
+do the same thing for active header as
+well so we'll write here active
+header
+and then we'll take one more icon so
+let's say we are taking this icon from
+here
+copy it from here paste it here and we
+are good to go fine
+so this is how we can change the icons
+using jquery ui now let's go through the
+output once
+save this program and you can see the
+icons are changed now we have these
+icons over here so let me comment this
+property for once save it now you can
+see these were the icons we had before
+we are using the icons property now
+after using this property save it and
+here you can see the icons are changed
+fine
+so this is how we can change the icons
+using jquery ui
+so some more customizations we can make
+in this widget are
+we can also change the time for the
+animation to take place using the
+animate property
+now we don't have to do so much of a
+task for that we'll
+use a comma here and we'll write here
+animate will pass the time in
+milliseconds so let's say we are writing
+here 2000 save it and now the animation
+will take two seconds to complete you
+can see the change in the speed here it
+takes two seconds to expand and two
+seconds to collapse fine
+we can also change the event from click
+to mouse over as well so
+for that we have to write here
+after a comma we have to write here
+event and then we can write here let's
+say
+mouse over i hope this will work so the
+default event is the click event and we
+can change the event using this event
+property only
+so
+let's save this program and if we take
+our mouse cursor over any of these
+sections you can see that particular
+section expanding and collapsing
+with the mouse cursor right you can see
+the mouse over event working over here
+so these are some basic customizations
+we can make in the accordion widget in
+jquery ui the list is so long and we
+can't discuss all the properties
+so you guys can go through them from the
+official jquery ui website and let us
+know if we missed out on anything
+important now that we are aware of what
+widgets are and we know a lot about them
+from the previous few widgets we have
+been through till now
+we know quite a bit about them and their
+usage right so widgets make it easier
+for us to do certain things without
+writing much of a code
+now the message box we are talking about
+here is a message kind of thing that
+appears on the screen and it looks more
+attractive than the traditional alert
+method
+we can also customize the box with some
+properties and make a webpage look more
+interactive to the user the actual
+widget name is dialog it's not message
+box actually the widget name is dialog
+and the work of this widget is to put a
+message on the screen inside a
+particular message box
+so let's go through the jquery ui
+website quickly and will then use this
+widget in a program
+here we are at the official website of
+jquery ui and we'll quickly move to the
+dialog widget to know more about it so
+here you can see this is the dialog
+widget click on it and you can see it
+over here we have a dialog box with some
+message on it right so this is the
+dialog box over here it has a heading
+which says basic dialog and inside this
+we have some content over here
+right
+now if we take the mouse cursor over the
+title you can see the cursor changes and
+we are now able to drag this widget
+across the screen fine
+or we can also change the size of this
+widget with the help of our mouse you
+can see the size changing if we try to
+change it if we try to increase the size
+or if we try to reduce the size we can
+do it with the help of this widget
+now you can also go through the
+customizations allowed in the dialog box
+from the website only but let's use this
+widget in our program and we'll see some
+customizations there only here we are in
+the vs code now there are two simple
+steps to get the jquery dialog box
+we can either place the content inside
+the div element and then we can access
+the content from there or we can just
+use the dialog function in our
+javascript file as well for now we'll be
+using the first method in which we'll
+create a division and add some content
+inside it so let's do it here
+what we'll do is we'll write here inside
+this body tag we'll write here div and
+we have to provide an id so let's say
+the id for the div is dialog
+we'll close this and here we are
+now we'll write something inside this
+div tag so let's say we are writing here
+this is a customizable
+dialog box fine so this is our text save
+the program and you can see it over here
+we have the text as this is a
+customizable dialog box on the browser
+now what we want to do is we want the
+content of this div element inside the
+dialog box for that
+we'll move to a javascript file so this
+is a javascript file and we'll write
+here
+dolo we'll try to access this div tag so
+we have the ids dialog we'll write a
+hash
+dialog then we'll write here dot
+so the widget name is dialog so we'll
+write here dialog and that's it
+now the dialog widget will take the
+content from the div element dynamically
+and put it inside as a message
+save the program and you can see here we
+have a message box with the same message
+as the content from the div element you
+can see this message box over here has
+no title as of now although we can
+drag this message box in a web browser
+or we can also resize it you can see it
+over here now to add the title we have
+two ways first we can either use the
+title attribute in the html development
+or we can use the title property here
+inside the dialog function only
+so let's give it a try what we'll do is
+we'll move to html file and we'll use
+the title attribute over here so we'll
+write here title and let's say the title
+is
+title using attribute
+fine
+save it and you can see we have the
+title over here as title using attribute
+now we can also use the title property
+as well so for this we'll move to a
+jquery file or javascript file we can
+say and then we'll write here inside
+this dialog function we'll use curly
+braces and we'll write here title
+then we'll pass the title here so let's
+say the title is
+title using
+property fine
+for now we have the title as title using
+attribute because we are using an html
+attribute for the title so
+save this program now and you can see
+the title changes to title using
+property fine
+i didn't remove the title attribute from
+the html file to let you guys know that
+the title property here will overwrite
+the title attribute if it ever gets into
+a situation where we have used both of
+them
+so i hope you guys got this now the next
+customization we can do is we can change
+the dragging of this message box right
+now we are able to move this message box
+within the browser you can see it over
+here we are free to move it so to stop
+the user from doing this we have to set
+the draggable property to false
+so what we can do is we can write here
+after a comma
+draggable
+and we have to set this property to
+false all the properties here are by
+default set to true mostly so we have to
+set it to false save the program and now
+try to move this box you can see we are
+not able to move this box now
+so this is how the draggable property
+works
+although the size can still be changed
+with the help of mouse cursor only we
+can change the size of this
+dialog box so to stop this from
+happening what we have to do is we have
+to write here
+resizable
+and we have to pass this property as
+false fine save it now and
+you will notice that we are not able to
+resize this dialog box now so these are
+some of the basic properties of this
+dialog widget now we'll further move on
+and we'll see some more properties over
+here
+now the following property is close on
+escape
+so if you press the escape key from the
+keyboard you can see the message box
+closes if we set the close on property
+to false then it will not allow us to
+close the dialog box by pressing the
+escape button this is one more property
+of the dialog widget so what we have to
+do is
+we have to write here after a comma
+close on
+escape fine we have to set this to false
+and we are good to go save it now and
+press the escape key from the keyboard
+and you can see we are not able to close
+this dialog box by using the escape key
+anymore
+for the next property let's add an input
+box first we'll see why in a moment so
+let's add it first we'll move to html
+file and we'll write here before the div
+tag so let's say we are writing here
+first
+name and we'll use an input tag so we'll
+write here input
+type is equals to text
+and that's it
+fine
+save the program you can see we have the
+input box on the browser you can see we
+have it over here
+the reason behind adding it is to show
+you guys that if we try to interact with
+an element while the dialog box is there
+on the screen jquery will not stop us
+until we use the model property so if we
+try to write here any name so you can
+see we are able to do that and we have
+the message over here as well
+now to make this dialog box a model
+dialog box what we have to do is we have
+to pass the model property to true here
+fine we have to make the
+dialog box as a model dialog box so we
+have to write your model and we have to
+pass here true save the program and now
+you can see we cannot access the input
+box anymore if we try to click over here
+you can see we are not able to do
+anything with this input box
+so what we have to do is we have to
+close this dialog box first so let's
+close it and now we'll try to write
+something inside this input box you can
+see we are able to write anything over
+here
+right now you guys might wonder that
+this dialog box is opening every time
+right
+what if we want to open it on a button
+click for that what we have to do is we
+have to set the auto open property to
+false first and we have to add a button
+as well so let's start by adding a
+button and then we'll set the auto open
+property to false
+we'll add a button over here so what
+we'll do is we'll write here after this
+input element
+we'll write here button we have to pass
+an id over here so let's say the id is
+btn1
+and the name of this button is let's say
+dialog box fine save it now and you can
+see we have a button over here named as
+dialog box now the next thing we are
+going to do is we are going to set the
+auto open property to false so for that
+we'll move to a javascript file and
+we'll write here
+auto
+open
+fine and we'll set this property to
+false
+save the program and you can see the
+message box is not opening by default
+anymore now to open the dialog box on
+the button click we have to access the
+button first and then we have to use the
+open method seems a bit confusing right
+so let's try to do it and you guys will
+understand it much better i guess
+so what we'll do is
+we'll write here before this
+dialog box so we'll access the button
+first so we'll write here dollar the
+button id is
+btn1 then we'll write here dot click we
+are using the click event we will create
+a function over here
+and now inside the body of this function
+what we have to do is we have to open
+the dialog box for that we'll write here
+dollar
+we'll again write here
+dialog because we want the content from
+the div element for the dialog box then
+we'll write here dot
+dialog fine now we'll right here inside
+this open
+and that's it
+we have to pass the open method here as
+a string because we want to open the
+dialog box on a button click now save
+the program
+and
+you guys can see here we have to click
+on the button over here to open the
+dialog box click on the button you can
+see on clicking the button the dialog
+box is opening and we are not able to
+write anything still here right we are
+not able to write any name over here for
+that we have to close this and then we
+will be able to write here anything
+and for the dialog box to appear we have
+to click on this dialog box button
+so guys these are some of the
+customizations we can make in this
+particular widget i hope you guys got
+this you can go through some more
+customizations from the official jquery
+website
+one of the most accessible and widely
+used widgets in jquery ui is the
+autocomplete widget it helps the users
+complete the text they are writing in an
+input box or somewhere by giving
+suggestions
+so let's go through the jquery ui
+website quickly and then we'll see the
+syntax and all for this particular
+widget so here we are on the website
+we'll look for the autocomplete widget
+and here is the autocomplete widget
+click on it
+now you can see we have a text box over
+here so before we do something let's go
+through the description given over here
+for this autocomplete widget it says the
+autocomplete widgets provides
+suggestions while you type into the
+field here the suggestions are the tags
+from programming languages so if we
+write here let's say ja
+you can see we have two different
+options we have java and javascript
+right so this is what the autocomplete
+widget is now let's use this widget in
+our program
+so here we are in the vs code what we'll
+do now is we'll create an input box
+first and then we'll use this particular
+widget so for creating an input box what
+we'll do is we'll write here let's say
+we are writing here
+favorite
+language
+fine
+now we have to create an input box for
+this so we'll write here input
+type is equals to text
+and let's provide the id as well so
+we'll write here id so let's say the id
+is
+input for this text box
+now let's add a button over here as well
+to make it look nicer a bit so what
+we'll do is we'll add a button over here
+we'll write here button
+so let's say we'll give the id as ptn1
+we don't need this but let's do it here
+so let's say the button name is submit
+now save the program and you can see it
+on the browser we have an input box
+where we have to mention our favorite
+language and a submit button as well
+so let's move on to the jquery part now
+and we'll use the autocomplete widget
+here we are in the javascript file now
+the syntax is the same so we have to use
+this widget with the id of a html
+element what we'll do is we'll write
+here
+dollar so the id for input box is input
+so we'll write here hash input then
+we'll write here dot auto
+complete fine
+that's it right the syntax for all the
+widgets we have been through is similar
+to this one but there is a slight
+difference in this particular widget
+what this widget does is it provides us
+with suggestions so we have to give
+those suggestions by ourselves to the
+system to let jquery ui go through them
+and then only it can provide us with
+certain recommendations
+the suggestions will be the name of some
+languages in this particular case so
+let's create an array over here of all
+the languages we want what we'll do is
+we'll write here before this
+document.ready method or event we can
+say
+we'll create a variable over here so
+let's say the variable name is language
+then we'll create an array so
+let's say we have certain
+names of particular languages stored
+inside this array right so we'll write
+here html
+then we have
+css
+we have javascript as well so we'll
+mention all the languages we know we'll
+write a javascript then we have
+php and
+we have java
+so then we'll write here
+python and
+then we'll write here
+let's say
+c
+we have c plus plus as well so we'll
+mention that as well so we'll write here
+c plus plus then we have
+c sharp so we'll write here c sharp and
+we have pearl so we'll write here pearl
+will write here
+so we have to put this inside double
+inverted commas
+then we'll write here let's say ruby
+and we have
+scala so we'll write scala
+then we have cobol as well
+so these all are languages
+then we have basic
+so we'll write a basic and
+let's mention some more so let's say we
+are writing here
+fortran so we'll write here fortran
+and then we have
+lisp
+and finally let's add here typescript
+fine so we'll write here typescript
+i guess these are enough for now
+so the next task we have to do is to let
+the autocomplete widget know about this
+particular array for that we have to
+pass this array as a parameter to this
+autocomplete widget over here fine
+now the thing to keep in mind here is
+that we have to pass two parameters in
+this widget
+one is for the source of the array we
+can say and the other one is for the
+customizations so we have to pass them
+inside curly braces this means that we
+have to use two pairs of curly braces
+right so we'll use two curly braces over
+here we'll separate them with a comma so
+the first one is for the source and the
+second one is for the customizations
+fine
+now the next thing we have to do is to
+pass the source to this autocomplete
+widget
+the source is the array right for that
+what we have to do is we have to write
+here inside this first curly braces we
+have to write here source
+and we have to give the name of a array
+over here so we'll write here language
+and that's it
+fine
+we are done with the autocomplete widget
+so let's check the output now
+save the program and move on to the
+browser here we have an input box now
+try to write something over here what
+we'll do is we'll write here let's say
+c you can see we have the names of all
+the languages which have the letter c
+present in their names
+this is the basic working of this
+autocomplete widget it suggests all the
+related names to the user and lets them
+choose from any of them so if we click
+on c plus plus you can see we have the
+input sc plus plus over here and if we
+write here
+java we have two options we have
+javascript and java we can click on any
+of them and that will be present as the
+text inside the input box
+now we can also use the array inside the
+auto complete widget as well we don't
+have to create any variables or anything
+just copy the array from here
+and what we have to do is we have to
+paste it here inside the
+autocomplete widget fine will comment
+this piece of code will comment it out
+save it now and you can see on writing
+here c we have all the options with c
+present in their names fine so this is
+working totally fine i guess
+now talking about the customizations we
+have in this widget we'll be going
+through three different types of
+customizations
+what we'll do is we'll write here first
+so we have this pair of curly braces
+over here for the customization so we'll
+write inside it let's say
+delay
+and let's
+pass the value as 500 over here fine
+delay is 500 means the suggestions will
+be shown to the user after 500
+milliseconds if we write here 2000
+instead of 500
+and save the program
+now try to write something over here and
+it will take two seconds to complete for
+example let's say we are writing here
+java now wait for two seconds and then
+the options will appear on the screen
+fine so this is a property of the
+autocomplete widget now the second
+property is the min length property this
+property defines the minimum length
+required for the suggestions
+so for example if we write
+here min length
+and if we pass the value as let's say 3
+save it now if we write here c
+fine we have the min length as 3 and c
+is of single letter will not get any
+suggestions because the minimum length
+is 3 instead of c if we write here
+j a we are still not getting any
+suggestions because the minimum length
+is 3 right here v and you can see after
+two seconds we have two suggestions over
+here as java and javascript
+let's change the delay to
+500 over here again and now what we'll
+do is we'll try to search for another
+language let's say we are searching for
+python now we have four
+letters over here and you can see we
+have the suggestion as python so this is
+how the min length property of this
+autocomplete widget works
+now the last property is the autofocus
+property let's go through the example
+directly we'll write here after a comma
+or to
+focus fine we'll pass this as
+true because this is a boolean property
+save it now
+now go to the browser and write here
+something let's say we are writing here
+kobul and you can see
+we have the first option in focus
+because of this particular property now
+try to write here java
+and you can see we have two options the
+first one is in focus and if we pass
+this property as
+false
+save this program right here java again
+and you can see none of the two options
+are in focus now
+so these are some of the customizations
+we have in the autocomplete widget now
+the task for you guys is to dig a bit
+deeper into this topic from the official
+jquery website and let us know if we
+missed out on anything
+a widget is an application or a
+component of an interface that enables a
+user to perform a function or access a
+service
+this was the definition of widgets and
+we know how to use certain widgets like
+the date picker widget accordion widget
+tool tip widget and many more such
+widgets right so let's suppose a
+scenario now wherein we are already
+using a widget in our program and we
+have customized the widget according to
+our needs
+now what we want is we want to change
+the property of a widget by clicking on
+a button
+how we can achieve this thing we can't
+write the whole thing again right
+here comes the concept of widget
+modification in jquery ui
+what we need to do is we need to modify
+a particular property of a specific
+widget
+is it possible in jquery to do so the
+answer to this question is yes it is
+possible to modify any widget property
+in jquery with the help of specific
+methods
+let's go through the programming part
+directly and you guys will understand it
+much better
+we'll use the dialog box widget and then
+we'll try to modify a particular
+property of that widget so let's write
+the code again so that you guys can get
+a fair idea of what's coming
+what we'll do is we'll write here inside
+the body tag we'll create a division so
+for that we'll use the div tag the id is
+going to be let's say
+dialog for the dialog box
+and we'll define the title here as well
+so let's say the title of our dialog box
+is going to be
+title 1
+we'll close the div tag now inside there
+we'll write this is a customizable
+dialog box fine
+save the program
+and you can see we have the text over
+here which says this is a customizable
+dialog box now we have to add the dialog
+box for that we are going to use the
+jquery ui widget but before that let's
+add some buttons over here as well we'll
+add two buttons because we have two
+different properties so we'll write here
+button and the id is going to be
+btn1 for button one and the name is
+let's say
+get fine
+we'll add another button for that we'll
+write here button id is going to be btn2
+and the name of this button is going to
+be set
+save this program and you can see we
+have two buttons over here we have the
+get button and the set button
+now this is going to be a basic dialog
+box the next thing we'll do is we'll
+move to the jquery part and we'll write
+some code there
+so here we are in the javascript file
+and what we'll do is we'll write here
+dollar will access this whole division
+so for that we'll write here hash
+and id is dialog for the division then
+we'll write here dot dialog
+this is a method so we have to use
+parentheses over here and then we'll use
+curly braces to define all the
+properties of this dialog box widget
+now inside here we'll write properties
+so let's say we are writing here
+draggable
+and we are passing this property as
+true for now
+then we'll write here
+resizable and the property value is
+going to be true again then we'll write
+here
+close on escape
+we'll write here
+true for this one as well
+now the next property we are going to
+use is the model property we'll write
+here false for model
+and then we'll use the auto open
+property fine will write your auto open
+and then we'll write here
+true
+and that's it
+so what we are doing here is we are
+defining the customizations allowed in
+this particular widget i hope you guys
+already have an idea of what we are
+doing because we have discussed it in
+the dialog box widget video
+now save the program and you can see we
+have a dialog box with title as title 1
+and inside it we have a message which is
+this is a customizable dialog box if you
+try to drag this dialog box you can see
+we are able to do that because we have
+defined the draggable property to true
+and we can also resize this because the
+resizable property is also set to true
+now what we want is we want to change a
+particular property on a button click
+right for that we have to use the click
+event with the buttons so we'll use the
+click event with buttons first and then
+we'll use methods fine
+so first of all we'll write here
+dollar
+the id for button one is btn1
+which is
+the get button then we'll write here dot
+click
+and we'll create a function over here
+fine
+and we have the body of this function
+now inside this will write alert and
+let's see if this button is working or
+not we'll print a message so
+we'll write here get is working
+save the program click on the get button
+you can see we have a message with get
+is working as output now copy this piece
+of code and we'll do the same thing for
+set button as well we'll change the
+button id to btn2
+and instead of get will write here set
+save the program click on set over here
+you can see this button is also working
+fine
+so basically we were checking if these
+buttons are working or not we'll comment
+this piece of code for now
+now the idea is to get the value of any
+particular property and then change it
+right for that we have two methods in
+jquery ui the getter method and the
+setter method
+the getter method is used to get the
+value of any particular property and the
+setter method is used to change that
+particular value
+you can also go through the
+documentation present on the jquery ui
+official website but let me just tell
+you about these methods the syntax for
+the getter method goes like this
+what we have to do is we have to take a
+variable that will store the value so
+for that we'll write here where model
+let's say
+then we'll access this dialog box we
+have the ids dialog for that then we'll
+write here dot
+dialog and inside brackets we have to
+pass two parameters one is the option
+and
+second one is going to be the name of
+that particular property
+so we'll write here option option refers
+to these properties so basically we are
+telling the computer that we want to
+access these particular properties the
+option parameter will remain the same
+for all jquery widgets the second
+parameter is going to be the name of a
+particular property so let's say we are
+writing here model
+and on saving the program if we click on
+the get button the output will get is
+false because the model property is
+initially set to false click on the get
+button but before that we have to write
+here some more things so what we'll do
+is
+we'll print the model variable inside
+the alert method so we'll write here
+alert model save this program click on
+the get button you can see we have the
+output as false because this is the
+initial value of this model property now
+let's move ahead and we'll try to change
+this property to true now
+for that we have the setup method in
+jquery ui the syntax for setup method is
+almost the same we'll copy this piece of
+code from here
+we'll paste it here inside this
+and now what we'll do is we'll pass one
+more parameter over here the third
+parameter is going to be the change so
+till now the value of this model
+property is false but what we want is we
+want to change it to true so we'll write
+here true
+save it now click on the get button you
+can see the output is false click on ok
+now click on the set button you can see
+there is no change in the browser but
+click on the get button again and you
+can see the output is changed to true
+this means that the model property is
+now set to true fine
+we can change any property by using
+these methods so let's try this thing
+with some other properties as well what
+we'll do is we'll write here instead of
+model let's say we are writing here
+draggable fine
+so the initial value of draggable was
+true
+what we'll do is we'll write here
+draggable again and we'll change this to
+false now
+fine
+save the program click on get you can
+see the output is true because the
+initial value of draggable property was
+true
+now click on set and you can see we are
+not able to drag this dialog box anymore
+right
+this is because the draggable property
+is now set to false when we clicked on
+this set button click on get again and
+you can see the property is false
+so this is how the widget modification
+in jquery actually works we can also
+change the height and width of this
+dialog box for that we have to define
+the height and width over here let's
+define them we'll write a height height
+is going to be let's say
+250 and we'll define the width as well
+so the width is going to be let's say
+250 again fine
+so here we have the dialog box the
+height and the width are 250 pixels we
+can resize it obviously because the
+recessible property is true now what we
+want is we want the height so inside
+this getter method will
+right here height
+and click on the get button after saving
+this click on get you can see we have
+the height as 250 pixels
+now what we want is we want to change
+the height right we'll write here height
+again
+now the new height is going to be let's
+say 300 on clicking the set button
+save the program click on get the
+initial height is 250 fine click on set
+you can see the change in the height
+click on get again you can see the
+height is changed to 300 pixels now
+fine
+so this is how we can make modifications
+in the widgets afterward and this thing
+remains the same for all the widgets in
+jquery ui the name of the widget is the
+only thing that will change rest
+everything will remain the same
+now the task for you guys is to use
+these method with other widgets as well
+and let us know if you find any
+exceptions
+and with that we come to the end of this
+widgets in jquery tutorial if you
+enjoyed watching the video do give it a
+thumbs up comment your doubts below and
+our experts will answer them for you
+thank you so much for being here watch
+out for more videos from us until then
+keep learning and stay tuned to simply
+learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,2827 @@
+hello everyone and welcome to this
+amazing video on kuber NS you're
+watching your very own simply learn
+YouTube channel so make sure to
+subscribe to a YouTube channel and like
+this video in this comprehensive
+kubernets tutorial we will discuss the
+entire process of how kubernets
+automates operational task of container
+management we will understand containers
+right from scratch and move on to more
+advanced topics covering each and every
+step with detailed Hands-On
+demonstration this tutorial will ensure
+that you get an exhaustive understanding
+of kubernets its architecture and how to
+use youber needs for container
+management with that being said make
+sure to comment your opinion on this
+video And subscribe to us to never miss
+any other the amazing Tech content we
+bring just for you let's get started
+just a quick info for you if you want to
+upskill yourself master devop skills and
+land your dream job or grow in your
+career then you must explore simply
+learns cohort of various devops programs
+simply learn offers various
+certification and post-graduate programs
+in collaboration with some of the
+world's leading universities like
+Caltech and Google Cloud through our
+courses you will gain knowledge and work
+ready expertise in skills like devops
+methodology deployment automation cicd
+Pipeline and over a dozen others that's
+not all you'll also get the opportunity
+to work on multiple projects and learn
+from industry experts working in Top
+Tire product companies and academian
+from top universities after completing
+these courses thousands of Learners have
+transitioned into devops role as a
+fresher or move on to a higher paying
+job role and profile so if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the pin comments and
+description box to find devops program
+that fits your expertise and areas of
+Interest hello and welcome to Simply
+learn in this session we're going to
+cover what kubernetes is and why you
+would want to be using it within your
+devops team but before we get started
+remember to hit the like button if you
+like this video and the Subscribe button
+if you want to get notified about more
+of these videos as they come out and as
+always if you have any comments about
+the content that we're covering or
+questions that you have on the subject
+please post them in the comments below
+so let's get started we're going to
+break up this presentation into four key
+areas we're going to talk about life
+before kubernetes which some of you are
+probably experiencing right now what is
+kubernetes the benefits of kubernetes
+brings to you particularly if you are
+using containers in a Dev Ops
+environment and then finally we're going
+to break down the architecture and
+working infrastructure for kubernetes so
+you understand what's happening and why
+the actions are happening the way way
+that they are so let's jump into our
+first section of life before kubernetes
+so the way that you have done work in
+the past or you may be doing work right
+now is really building out and deploying
+Solutions into two distinct areas one is
+a traditional deployment where you're
+pushing out code to physical servers in
+a Data Center and you're managing the
+operating system and the code that's
+actually running on each of those
+servers another environment that you may
+potentially be using is deploying code
+out out to Virtual machines so let's go
+through and look at the two different
+types of deployment that you may be
+experiencing when you have applications
+running on multiple machines you run
+into the potential risk that the setup
+and configuration of each of those
+machines isn't going to be consistent
+and your code isn't going to work
+effectively and there may be issues with
+uptime and errors within the
+infrastructure of your entire
+environment there's going to be problems
+with resource allocation and and you're
+going to have issues where applications
+may be running effectively and not not
+effectively and not load balance um
+effectively across the environment the
+problem that you have with this kind of
+infrastructure is that it gets very
+expensive uh you can only install one
+piece of software one service on one
+piece of Hardware so your Hardware is
+being massively underutilized this is
+where virtual machines have become
+really popular with a virtual machine
+you're able to have better resource
+utilization and scalability at much less
+cost and this allows you to be able to
+run multiple virtual machines on a
+single piece of Hardware the problem is
+is that VMS or for virtual machines are
+not perfect either some of the
+challenges you run with VMS is that the
+actual hardware and software need needed
+to manage the VM environment can be
+expensive there are security risks with
+virtual with VMS there are security
+risks with VM there have been data
+breaches recorded about solutions that
+run in virtualized environments you also
+run into an issue of availability and
+this is largely because you can only
+have a finite number of virtual machines
+running on a piece of hardware and this
+results in limitations and restrictions
+in the types of environment you want to
+be running and then finally setting up
+and managing a virtualized environment
+is time consuming uh it can take a lot
+of time and it can also get very
+expensive so how about kubernetes well
+kubernetes is a tool that allows you to
+manage containerized deployment of
+solutions and inherently kubernetes is a
+tool that is really a Next Level
+maturity of deployment so if you can
+think of your maturity curve as
+deploying code in directly to Hardware
+in a Data Center and then deploying your
+solutions to Virtual machines the next
+evolution of that deployment is to use
+containers and kubernetes so let's kind
+of go through and look at the
+differences between a virtual machine
+and kubernetes and we've got a few here
+that we want to highlight and you'll get
+an understanding of what the differences
+are between the two so first of all with
+virtual machines there is inherently
+security risks and what you'll find as
+we get dig through the architecture
+later in the presentation is that
+kubernetes is inherently secure um and
+this is largely because of the leg
+Legacy code uh the legacy of kubernetes
+and where it came from we will talk
+about that in just a moment but
+kubernetes is inherently secure uh
+virtual machines are not easily portable
+now with that said they they are
+technically portable they're just not
+very easily portable whereas with
+kubernetes it's working with Docker
+container Solutions it is extremely
+portable that means that you can
+actually spin up and spin down and
+manage your infrastructure exactly the
+way that you want it to be managed and
+scale it on the demands of the customers
+as they're coming in to use the solution
+from a timec consuming point of view
+kubernetes is much less time consuming
+than with a virtual machine a few other
+areas that we want to kind of um
+highlight differences virtual machines
+use much less isolation when than
+building out the encapsulated
+environment than kubernetes does uh for
+instance with a virtual machine you have
+to run hypervisor on top of the OS and
+hard hardware and then inside of the
+virtual machine you also have to have
+the operating system as well whereas in
+contrast on a kubernetes environment
+because it's leveraging a darker
+container and or container like
+Technologies it only has to have the OS
+and the hardware and then inside of each
+container it doesn't need to have that
+additional OS layer it's able to inherit
+what it needs to be able to run the
+application this makes the whole
+solution much more flexible and allows
+you to run many more containers on a
+piece of Hardware then versus running
+virtual machines on a single piece of
+Hardware so as we highlighted here VMS
+are not as portable as kubernetes and
+kubernetes is portable directly related
+to the use of containerization and
+because kubernetes is built on top of
+containers it is much less time
+consuming because you can actually
+script and automatically allocate
+resource to nodes within your kubernetes
+environment this allows the
+infrastructure to run much more
+effectively and much more efficiently so
+this is why if we look at our evolution
+of the land of time before kubernetes
+while we are running into a solution
+where kubernetes had to come about
+because the demand for having more
+highly scalable solutions that are more
+efficient was just really a natural
+evolution of this software deployment
+model that started with pushing out code
+to physical hardware and then pushing
+code out to Virtual machines and then
+needing to have a solution much more
+sophisticated kubernetes would have come
+about at some point in time I'm just
+really glad it came about when it did so
+what is kubernetes let's this dig into
+the history of kubernetes and how it
+came about so in essence kubernetes is
+an open-source platform that allows you
+to manage and deploy and maintain groups
+of containers and a container is
+something like Docker and if you're
+developing code you're probably already
+using doer today consider kubernetes as
+the tool that manages multiple docker
+envir environment together now we talk a
+lot about darker and as a container
+solution with kubernetes the reality is
+is that kubernetes can actually use
+other container tools out there but
+Docker just simply is the most popular
+container out there both of these tools
+are open source that's why they're so
+popular and they just allow you to be
+able to have flexibility in being able
+to scale up your Solutions and they were
+designed for the postd digital world
+that we live and exist in today so a
+little bit of background a little bit of
+trivia around kubernetes uh so
+kubernetes was originally a successor to
+a project at Google and the original
+project was Google Bor um Google Bor it
+does exactly what kubernetes done does
+today but kubernetes was Rewritten from
+the ground up and then released as an
+open-source project in 2014 so that
+people outside of Google could take
+advantage of the power of kubernetes
+containerization management tools and
+today it is managed by the cloud native
+Computing foundation and there are many
+many companies that support and manage
+kubernetes so for instance if you're
+signing up for Microsoft Azure AWS
+Google Cloud all of them will leverage
+kubernetes and it's just become the the
+de facto tool for managing large groups
+of containers so let's kind of Step
+through some of the key benefits that
+you'd experience from kubernetes and so
+we have nine key benefits and the first
+it is highly portable at is 100%
+open-source code and this means that you
+can actually go ahead and contribute to
+this code project if you want to through
+GitHub uh the ability to scale up the
+solution is incredible um what's um the
+the history of kubernetes being part of
+a Google project for managing the Google
+network and infrastructure uh kind of
+really sets the groundwork for having a
+solution that is highly scalable the out
+of the high scalability also comes the
+need for high availability and this is
+the desire to be able to have a highly
+efficient and highly energized
+environment that also you can really
+rely on so if you're building out a
+kubernetes management um environment you
+know that it's going to be um available
+for the solutions that you're
+maintaining and it's really designed for
+deployment so you can script out the
+environment and actually have it as part
+of your devops model so you can scale up
+and meet the demands of your customer
+then what you'll find find is that the
+um load balancing is extremely efficient
+and it allows you to distribute the load
+efficiently across your entire network
+so your network remains stable and then
+also the tool um allows you to U manage
+the orchestration of your storage so you
+can have local storage such as an SSD on
+the hardware that the kubernetes is M
+maintaining or if the kubernetes
+environment is pulling storage from a
+public Cloud such as Azure or AWS you
+can actually go go ahead and make that
+available to your entire system and you
+can inherit the security that goes back
+and forth between the cloud environments
+and one of things you'll find consistent
+with kubernetes is that it is designed
+for a cloud first environment um
+kubernetes as well is that it's it's
+really a self-healing environment so if
+something happens or something fails uh
+kubernetes will detect that failure and
+then either restart the process kill the
+process or replace it and then because
+of that you also have automated roll
+outs and roll backs uh in case you need
+to be able to manage the state of the
+environment and then finally uh you have
+automatic bin packaging so you can
+actually specify the compute power
+that's being used from CPU and RAM for
+each container so let's dig into the
+final area which is the actual
+kubernetes architecture and we're going
+to cover this at a high level there's
+actually another video uh that you can
+that simply learn has developed which
+digs deeper into the kubernetes
+architecture and so the kubernetes
+architecture is a cluster based
+architecture and it's really about two
+key areas you have the kubernetes master
+which actually controls um and all of
+the activities within your entire
+kubernetes infrastructure and then you
+have nodes um that actually are running
+on Linux machines um out that are
+controlled by the master so let's kind
+of go through some of these um areas so
+if we look at the kubernetes master uh
+to begin with um then we'll start with
+with uh Etc this is a tool that allows
+for the configuration of information and
+the management of nodes within your
+clust and one of the key features that
+you'll find with all of the tools that
+are managed within either a the master
+environment or within a node is that
+they are all accessible via the API
+server um and what's interesting about
+the API server is that it's a restful
+based infrastructure which means that
+you can actually secure each connection
+with s L um and other um security models
+to ensure that your entire
+infrastructure and the communication
+going back and forth across your
+infrastructure is tightly secured
+scheduler goes ahead and actually as
+you'd expect actually um manages the
+schedule of activities within the actual
+cluster and then you have the controller
+and the controller is a Damon server
+that actually manages and pushes out the
+instructions to all of your noes so uh
+the other tools really are the uh the
+infrastructure and and you can consider
+them the administration site of the
+master whereas controller is the
+management it actually pushes out all of
+the controls via the API server so
+that's actually dig into um one of the
+actual nodes themselves and there are
+three key areas of the nodes one is the
+do environment which actually helps and
+manage and maintain the container that's
+actually inside um of the node and then
+you have the kuet which is responsible
+for information that goes back and forth
+and it's going to do most of the
+conversation with the API server on the
+actual health of that node and then you
+have the actual kubernetes proxy which
+actually runs the surfaces actually
+inside of the node so as you see all of
+these infrastructures are extremely
+lightweight and designed to be very
+efficient and very available for your
+infrastructure and so here's a quick
+recap of the different tools that are
+available and it really breaks down into
+two key areas you have your kubernetes
+master and the kubernetes node now the
+kubernetes master has the instructions
+of what is going to happen within your
+kubernetes infrastructure and then it's
+going to push out those infrastructure
+to an indefinite number of nodes that
+will allow you to be able to scale up
+and scale down your solution in a
+dynamic way hi guys in today's video I
+going to show you how to install Ubuntu
+on kubernetes kubernetes is an open-
+Source platform used for deployment and
+management of containers so let's get
+started now the first step is to install
+the necessary dependencies using two of
+the commands first is PSE sudo app get
+update which gets all the
+updates and then you have to enter
+password so this will take a few
+seconds that's done the next step is to
+install app transport https this is
+basically used to make repositories via
+https so let's go ahead with that
+sudu okay that's done going ahead the
+next thing we have to do is to install
+the docker dependency using the command
+sudo app install docker.io
+you have to choose
+why and this will take a few
+minutes okay that's done so after
+installing the docker we have to start
+and enable the docker using the command
+sudo system CTL start Docker and sudo
+system CTL enable
+Docker so now the docker is enabled so
+now we done with the first step of
+installation the next step is we have to
+install the necessary components for
+kuties before that we have to install
+the curl command because curl command is
+used to send data using a URL syntax
+let's install the Cur command using the
+command sudo app get install code
+[Music]
+so you have to select Y and this will
+take few
+minutes so moving on the next step we
+have to do is download and add key for
+kubernetes installation from a URL so
+let's go ahead with that pseudo
+curl so this is where we get the key and
+then we have to add it using pseudo AP
+key ad and it's done so the next step is
+we have to add a repository in a certain
+location so before doing that we have to
+change the permission of that file so we
+do that using C or sudo CH mode
+command Okay so the permission is
+changed now let's go ahead and save this
+file in that location first we have to
+enter this command into the file this is
+a
+URL save
+as so we have have to save it in this
+location let's rename this to
+kubernetes do
+list now let's
+see okay so here it is now moving
+forward now we have to check for any
+updates
+available in the next command we are
+going to install the kubernetes
+components that is cubet Cube ADM cubec
+and kuet cni so let's go ahead with
+that
+so this is going to take a few
+minutes now that's done so the next step
+we have to initialize the master node
+and to do this we have to first use a
+swap off command to disable the swapping
+on other devices so let's do that sud
+sudo swap off hyper now let's go ahead
+with the initialization
+sudo cube adum in it this is going to
+take a few
+minutes okay so before going to the next
+step to start the cluster we have to use
+these three commands let's just copy
+paste
+it okay that's done so moving forward
+the next step is to deploy pods using
+the following
+[Music]
+command now the pods have been deployed
+to our Network to see all the pods you
+have to use the command sudu cubic get
+pods there you can see the p that been
+de hello and in this video we're going
+to cover a common conversation which is
+kubernetes versus darker but before we
+jump into that I want you to hit the
+Subscribe button so you get notified
+about new content as it gets made
+available and If you hit the
+notification button that notification
+will then pop up on your desktop as a
+video is published from Simply learn in
+addition if you have any questions on
+the topic please post them in the
+comments below we read them and we do
+reply to them as often as we can so with
+that said let's jump jump into
+kubernetes versus Docker so let's go
+through a couple of scenarios let's do
+one for kubernetes and then one for
+Docker and we can actually go through
+and understand what the problem specific
+companies have actually had and how
+they're able to use the two different
+tools to solve them so our first one is
+with Bose and Bose um had a large
+catalog of products that kept growing
+and their infrastructure had to change
+so the way that they looked at that was
+actually establishing two primary goals
+uh to be able to allow their product
+groups to be able to easier more easily
+catch up to the scale of their business
+so after going through um a number of
+solutions they ended up coming up with a
+solution of having kubernetes running
+their iot platform as a service inside
+of Amazon's AWS cloud service and what
+you'll see with both these products is
+they're very Cloud friendly but here we
+have um Bose and kubernetes working
+together with AWS to be able to scale up
+and meet the demands of their product
+catalog and so the result is that we
+were able to increase the number of
+nonpr production deployments
+significantly by taking the number of
+services from being large bulky Services
+down to small micr Services being able
+to handle as many as
+1250 plus deployments every year an
+incredible amount of time and value has
+been opened through the use of
+kubernetes now let's have a look at
+Docker and see what similar problem that
+people would have so uh the problem is
+with PayPal and PayPal processes
+something in the region of over 200
+payments per second across all of their
+products and PayPal doesn't just have
+PayPal they have brain Tre and venmo so
+the challenge um that uh PayPal was uh
+really being given is that they had
+different architectures which resulted
+in different maintenance cycles and
+different deployment times and an
+overall complexity for from having a
+decades old architecture with PayPal
+through to a modern architecture with
+venmo through the use of docka PayPal
+was able to unify the application
+delivery and be able to centralize the
+management of all of the containers uh
+with one existing group the net net
+result is that PayPal was able to
+migrate over 700 applications into
+Docker Enterprise which consists of over
+200,000 containers this ultimately
+opened up a
+50% increase in availability for being
+able to add in additional time for
+building testing and deploying of
+applications just a huge win for PayPal
+now let's dig into kubernetes and Docker
+so kubernetes is an opensource platform
+and it's designed for being able to
+maintain a large number of containers
+and what you're going to find is that
+your argument for kubernetes versus
+Docker isn't a real argument it's
+kubernetes and Docker working together
+so kubernetes is able to manage the
+infrastructure of a containerized
+environment and Docker is the number one
+container management solution and so
+with Docker you're able to automate the
+deployment of your applications being
+able to keep them in a very lightweight
+environment and being able to uh create
+a nice consistent experience so that
+your developers are working in the same
+containers that are then also pushed out
+to production so with doer you're able
+to manage multiple containers running on
+the same Hardware much more efficiently
+than you are with a VM environment the
+productivity around Docker is extremely
+high you're able to keep your
+applications very isolated uh the
+configuration for Docker is really quick
+and easy you can be up and running in
+minutes with Docker once you have it
+installed and running on your
+development machine or inside of your
+devops environment so we look at the
+deployment between the two um and the
+differences kubernetes is really
+designed for a combination of PODS and
+services in its deployment whereas with
+Docker it's around about deploying
+services in containers uh so the the
+difference um here is that kubernetes is
+going to manage the entire environment
+and then and that environment consisting
+of PODS and inside of a pod you're going
+to have all of your containers that
+you're working on and those containers
+that can control the services that
+actually power the applications that are
+being deployed kubernetes is by default
+an autoscaling solution it has it turned
+on and is always available whereas
+Docker does not and and that's not
+surprising because Docker is a tool for
+building out Solutions whereas
+kubernetes is about managing your
+infrastructure kubernetes is going to um
+run health checks on the liveness and
+Readiness of your entire environment so
+not just one container but tens of
+thousands of containers whereas Docker
+is going to limit the health check to
+the services that it's managing within
+its own containers now I'm not going to
+kid you kubernetes is quite hard to set
+up it's it's if of the tools that you're
+going to be using in your devop
+environment it's it's not an easy setup
+for you to use um and for this reason
+you want to really take advantage of the
+surfaces within Azure and other similar
+Cloud environments where they actually
+will do the setup for you Docker in
+contrast is really easy to set up you as
+I mentioned earlier you can be up and
+running in a few minutes as you would
+expect the fault tolerance within
+kubernetes is very high and this is by
+Design because the architecture of
+kubernetes is built on the same
+architecture that Google uses for
+managing its entire Cloud infrastructure
+in contrast Docker has lower fault
+tolerance but that's because it's just
+managing the the services within its own
+containers what you'll find is that most
+public Cloud providers will provide
+support for both both kubernetes and
+Docker here we've highlighted Microsoft
+Azure because they were very quick uh to
+jump on and support kubernetes uh but
+the realities is that today Google
+Amazon and many other providers are
+having first level support for
+kubernetes it's just become extremely
+popular in a very very short time frame
+the company's using both kubernetes and
+Docker is vast and every single day
+there are more and more companies using
+it and you should be able to look and
+see whether or not you can add your own
+company to this list hello and welcome
+to Simply learn today we're going to be
+giving you a kubernetes tutorial we will
+provide the overview of how and why you
+should be using kubernetes but before we
+get started don't forget to hit the
+Subscribe button and the like button if
+you want to get notified about
+additional content from Simply learn and
+as always if you have any comments about
+the material that you're about to see
+and you have any questions please post
+them in the comments below we do read
+them and we do reply to them so with
+that said let's jump in so we're going
+to go through a bunch of things today
+around kubernetes we're going to cover
+what kubernetes is and why you should be
+using it along with the features of
+kubernetes we're also going to take a
+little bit of a look at kubernetes
+versus Docker swarm as the two
+technologies do tend to get referred to
+quite frequently and then we're going to
+do a deep dive into the actual
+kubernetes architecture itself and how
+uh kubernetes runs and operates within
+your network and then finally we're
+going to look at some kubernetes use
+cases of how you can actually apply um
+best learnings that other companies have
+used with kubernetes we'll finish
+everything off with a demo where we
+actually step through and use some of
+the actual codes that you can actually
+use to run uh from your terminal window
+to actually activate kubernetes itself
+so with that said let's jump in so why
+kubernetes well kubernetes is really
+being built from allowing you to be able
+to have a more reliable infrastructure
+uh the tool itself is designed to manage
+the containers you have within your
+network it's very modular in
+architecture which allows it to be very
+easy to be able to maintain and to be
+able to scale and meet the demands that
+your current customers are offering you
+today the actual ability for you to be
+able to deploy an update software at
+scale is really at the heart and center
+of kubernetes it's really the one of the
+reasons why kubernetes was created was
+to be able to scale up the deployment of
+software to tens of thousands of
+networks and servers uh within a Data
+Center and then finally uh when you
+start working with kubernetes really
+what you doing is laying the foundation
+for building Cloud native applications
+and part of this comes from the
+architecture and history of kubernetes
+which we get to in a little bit but it's
+good to know that as you're using
+kubernetes and containerized solutions
+that you're really building out an
+infrastructure that's designed for cloud
+Centric solution delivery so let's dig
+into why what kubernetes is so the
+history of kubernetes is that it was
+originally developed by Google Google
+actually H used the precursor to
+kubernetes to manage and maintain the
+data structure and data infrastructure
+that they had within their Network they
+really liked it and one of the big
+benefits that kuber that Google provided
+is that they uh converted their code
+into an open source program that they
+released as kubernetes in 2014 and made
+an open source this means that anyy can
+use kubernetes there's no charge for it
+all you have to do is know how to use
+the command lines to actually get up and
+running the benefit of kubernetes being
+open source is that most Cloud providers
+now support kubernetes so whether you're
+using Microsoft Azure you're using
+Google cloud or AWS you'll find that you
+can actually use kubernetes and
+kubernetes and at it core really helped
+eliminate manual processes so it allows
+for deploying and scaling your container
+based Solutions much more more
+effortless within a cloud environment so
+let's jump into the features of
+kubernetes and why you'd want to be
+using it and we have a number of
+features that we want to kind of Step
+through again the first thing that
+kubernetes is a strong benefit of is
+that it eliminates those manual
+processes and allows you to automate
+them the benefit you have from this is
+that you can then scale up your
+automation across your entire network so
+whether you are managing 10 nodes um
+within your network or whether you're
+managing 10,000 uh doesn't matter you
+have the ability to scale that something
+you simply didn't have before kuet is
+also will manage the actual containers
+themselves um including the security the
+storage and the networking within those
+containers the great uh benefit of
+working with kubernetes is that not only
+is it a cloud Centric solution but it
+was really built from a core need of a
+secure solution so security is at the
+heart and center of all the work you're
+doing
+which really helps benefit any teams
+scaling out containers your kubernetes
+environment will be constantly monitored
+so that when you have nodes that have
+your containers the health of those
+nodes is being constantly communicated
+back to C the um kubernetes environment
+so that the entire environment is always
+being managed and checked so if you have
+any um additional hosting and launching
+that needs to be done uh kubernetes will
+U help you automate those manual
+processes if something does go wrong you
+can actually set up your kubernetes
+environment to do an automatic roll back
+again this is just allowing you to have
+that confidence that when you're
+deploying a solution that everything is
+going to work within that environment
+and then finally kubernetes will allow
+you to mount and add the storage needed
+to run your apps so whether you have
+storage such as a local SSD storage
+device uh physically on the hardware or
+if you're um connecting to storage fire
+the cloud kubernetes will allow you to
+access the storage you need how you're
+accessing it so let's look a little bit
+into uh the differences between
+kubernetes and Docker swarm so if we
+just step back a little bit uh
+kubernetes and Docker often get
+connected with each other uh largely
+because kubernetes manages containers
+and Docker is really famous for creating
+the most popular uh container management
+solution which is called Docker um if
+you're a developer you're probably
+already using Docker today so one of the
+things that kubernetes is really really
+good at is that it manages containers at
+scale just massive volume of containers
+Docker swarm is docker's alternative to
+kubernetes it's a tool that allows you
+to also manage large number large
+numbers of containers um there are
+differences between the two of them and
+right now without doubt the most popular
+um open source solution out there is Ku
+kubernetes from Google uh it just has a
+massive Community behind it and uh the
+community uh really have embrac um
+kubernetes um yes the original product
+was by developed by Google but Google
+has been great stewards and they've
+allowed the community to drive the
+future evolution of the product uh
+Docker swarm is actually managed and
+developed by Docker um there is a
+smaller Community but it is also a very
+passionate community and the reason
+being is that both products are actually
+pretty good and you just really kind of
+have to choose which one you want to go
+with without doubt there is more
+customization and extensions built for
+kubernetes simply because the community
+is just so much bigger than the docker
+swarm community and but with that said
+Docker swarm is really easy to set up so
+if you are used to working within the
+docker environment you'll be able to set
+up Docker swarm very very quickly
+whereas kubernetes does require some
+heavy lifting to get up and running now
+with that said if you are using
+Microsoft Azure or Google Cloud very
+often those environments will actually
+set up kubernetes for you so you don't
+have to do it and you can actually then
+focus on writing the instructions to
+maintain your kubernetes environment uh
+kubernetes um has extremely um High
+fault tolerance again um it's because
+kubernetes is has been R tested the
+foundation for kubernetes is based on
+managing sites such as Gmail
+google.com YouTube I mean just
+incredibly robust environment compared
+to dock swarm which has lower fault
+tolerance um and this really kind of
+leads into um the final areas where
+kubernetes um does guarantee um strong
+clusters management just a really
+reliable environment Dr swarm however is
+able to uh take containers deploy them
+into large custers very very quickly two
+interesting different differences is
+that with kubernetes the load balancing
+is still manual and be interesting to
+watch how kubernetes matures that skill
+set uh in contrast load balancing is
+automatic within Docker swarm so let's
+dig into the kubernetes architecture and
+just kind of expose some of those key
+elements um if you're interested in
+actually having a very deep dive into
+kubernetes architecture we have already
+got another video and we should have a
+link in the comments that you can select
+that will take you to that video as well
+and but this will provide you an
+overview as well um so the way that
+kubernetes runs is that it uses nodes to
+actually manage all the individual
+Hardware within a specific unit and so a
+node is really a physical machine uh in
+a data center uh or a virtual machine
+and when you're setting up an
+environment on a cloud environment such
+as Microsoft Azure or Google cloud or
+AWS kubernetes will be managing the
+containers within that node so it's
+important to know that kubernetes itself
+doesn't work with the individual node
+but actually works with the cluster as a
+whole and and why that's important is
+that it's a tool to manage your entire
+environment it's not going to come down
+and manage the individual node itself
+it's going to manage the entire
+environment the actual control of data
+within a cluster um is very very
+flexible within kubernetes you can have
+local storage such as an SSD uh card or
+a traditional local storage or you can
+actually connect to the cloud and use
+cloud-based storage and the benefit that
+cloud-based storage offers you is that
+you are increasingly Moving Your
+solution into more of a hardwarefree
+environment cloudbased architecture
+where you're not riant on a physical
+piece of Hardware within your data
+center and why that's important is that
+it gives you the opportunity to scale up
+your Solutions much more effectively so
+if you need to increase the hard drive
+space you can do that very easily from
+the cloud Wares local hardware is a
+little bit harder to match great news
+kubernetes gives you both options to be
+able to choose from and so the the next
+layer down is the actual management of
+the application and that's within a
+container and as mentioned earlier
+Docker is the most popular container
+solution out there and again if you're a
+developer you're probably already using
+Docker as it was a natural maturity from
+using a virtual machine but kubernetes
+itself will actually manage the
+containers that you have within your
+nodes and so you have a collection of
+containers working together and then you
+pull those together into what's called a
+pod and what's great is kubernetes will
+actually manage the health of that pod
+so if a container or a pod fails
+kubernetes will automatically deploy out
+a replica so your entire environment can
+stay running and being efficient and so
+the pots themselves U will actually be
+managed by kubernetes and you really
+want to uh let kubernetes um do this
+because it's allowing you to step away
+from the manual management of Parts your
+environment is just going to be
+healthier relying on kubernetes to do
+the actual management of all the pods
+you have out there so you are able to
+allow access to from Services outside of
+your kubernetes and this is done through
+a process called Ingress and going back
+earlier we talked about how security is
+a key part of all the work that goes
+into kubernetes and this is a great
+example of where you can use an external
+service but still have that layer of
+security that is vital for your solution
+because to be able to provide the
+Ingress connection uh kubernetes
+requires an SSL connection which um
+automatically allows for a secure data
+transfer absolutely fantastic so here we
+have an overview of the actual
+architecture on the right hand side we
+have our nodes and the pods within our
+nodes and within those pods are the
+containers on the left hand side we have
+the master architecture and the master
+architecture is the actual brains behind
+the work that you're doing it's actually
+managing the schedules the controllers
+uh for all of the nodes and then at the
+bottom left hand side we have commands
+which are written on a local workstation
+and those commands are pushed up to the
+master so let's kind of dig a little bit
+further into the architecture of the
+master um so the master itself is uh
+comprised of a number of key components
+um again this is the tool that's going
+to manage your uh entire kubernetes
+infrastructure the key components that
+you have are the uh etcd control manager
+scheduler uh API server and the key four
+components are etcd uh or the cluster
+store the controller manager the
+scheduler and the API server the cluster
+store is the tool where uh all the
+detail of the work that you're doing is
+stored it's going to manage the rules
+it's going to manage all the
+instructions and this is where you're
+going to post that information the
+controller is actually going to then
+perform the tasks that are stored um in
+the uh cluster store and as you'd expect
+the schedule is the tool that actually
+controls when instructions and tasks are
+pushed out to um all the pods and nodes
+within your network and then finally you
+have an API server which allows you to
+be able to control all the operations
+the actual operations themselves are all
+instructions written um as rest
+instructions um which allows you to take
+advantage of the security that has been
+built into rest and so you end up with a
+worker slave architecture and slaves are
+all the different nodes and pods within
+your network and so a pod itself will
+have multiple one or more multiple
+containers and then each container and
+then each pod will have a Docker contain
+container uh a kubet and a kubernetes
+proxy and the these are tools to allow
+you to communicate back up to the master
+layer so the docker is the actual
+container itself and this is going to
+actually run your application and uh the
+instructions here are to pull down the
+correct container from the docker images
+that you have within your library the
+cubet is going to manage your containers
+and your container instructions that
+will be deployed to the cube lit are
+going to be written either yam y or Json
+format yaml is just great if you haven't
+had a chance to start working with yaml
+I certainly encourage you to do so it's
+very easy to pick up if you know any XML
+uh you'll pick up yaml very quickly and
+finally the kubernetes proxy is the tool
+that interacts with the master
+environment within the kubernetes
+network and allows all the instructions
+from that are pushed to the kuet and to
+Docker to be able to perform effectively
+so let's have a look at some of the
+companies using kubernetes there are a
+lot and if you're doing any work today
+in the cloud and even if you're just
+starting off and doing some um simple
+work in the cloud there's a really good
+chance that you are using kubernetes but
+some of the companies that you would are
+probably not surprised are using
+kubernetes are uh Spotify sap eBay um
+and of course uh some of the uh the big
+companies out there Google with their
+entire network of solutions and
+Microsoft with office and their tools so
+let's take a a step into a you now let's
+have a look at a kubernetes use case and
+in this example we're going to look at
+the New York Times and how they use
+kubernetes to solve a problem that their
+it Department was struggling with so
+when New York Times started working
+after their data centers there their
+actual deployments were small and the
+applications were managed across VMS but
+the problem is is that as the New York
+Times became more of a digital company
+they started building more digital
+Solutions and at some point they really
+realized that what they needed to do was
+to embrace the cloud and move all their
+solutions to the cloud however their
+first step of using the cloud and this
+is I think typical for a lot of
+companies is that they treated a the
+cloud hosted provider in the same way as
+they would with a Data Center and they
+at some point they realized they had to
+take a change and this is where the
+development team came in and they said
+look how about we stop thinking of our
+Solutions as a data center even though
+they're being run in Amazon and start
+thinking of them as Cloud first
+Solutions and so what they proposed and
+what they ended up doing was using GL
+Google Cloud platform with kubernetes as
+service um to provide greater efficiency
+and so by using kubernetes they had the
+following advantages they're able to
+deliver Solutions at a much fastest
+speed and in the world of digital
+content speed is everything they were
+able to reduce the time for deployment
+from minutes to seconds and by doing
+this they were able to increase the
+amount of time that that up time for the
+actual uh infrastructure um updates
+began to be deployed independently and
+when required so you didn't have to
+schedule an event when you do the
+deployment it just happened and there
+was more unified approach to deployment
+from the engineering staff which just
+made the whole solution more portable so
+the fundamental endline for the New York
+Times is that by leveraging kubernetes
+they were able to automatically manage
+their deployments and scheduling of
+solutions instead of having to do
+Solutions through a more traditional
+ticket based system it just really speed
+up the efficiency of the New York Times
+website so let's finally kind of look
+into some of the important terminologies
+before we take our time to do a demo so
+we have six terms that we're going to
+look through um and uh we'll let you uh
+read through these but uh uh we have a
+cluster which is a set of machines
+physical vertical in which applications
+are managed and run we have a node that
+are the working machines that run
+container applications and other
+workloads there is the pod which is
+within a node and is a group of
+containers that are deployed together on
+the same host we have replication
+controllers and a replication controller
+is used to define a pods life cycle
+rather than to create the pods directly
+we have a selector which is an
+expression matched label to filter
+specific resources uh labels are key
+value pads that are attached to objects
+such as parts and the key value pair or
+the label can be filter organize and
+perform operation on resources
+replication SS Define how many replicas
+of each pod will be running and managed
+when you w want to either replace a pod
+when it dies annotation is a label with
+much larger data capacity a name is a
+resource as it is identified volume is
+the directory which data is accessible
+to a container name spaces provide
+additional qualification to a resources
+name and then finally service is an
+abstraction of the top tier pods which
+provide a single IP address address and
+DNS Name by which the pods can be
+accessed so at this time what we want to
+do is take you through kubernetes demo
+and actually runs through some of these
+basic controls so we're going to take
+you through a video of how to actually
+install kubernetes um and to use some of
+the basic instructions so kubernetes is
+the most wildly used platform for
+container management the first step is
+to actually install the necessary
+dependencies so let's see if there's any
+updates first so the first first so to
+check if there's any updates we're going
+to use the command Pudo app- getet
+update we're going enter in our password
+and this looks like it's going to take a
+few minutes because we've got a few
+updates that need to be running all
+right we're done all right next we're
+going to write PSE sudo app get install
+Dy apt-transport-https
+and this will install all the
+dependencies we need to actually start
+installing the solutions needed for
+kubernetes all right that was quick now
+we're going to to put in the docker
+dependency and the way we do that is
+write the command sudo app install
+docker.io got a typo correct that
+quickly and put in y so fors and we
+continue and that's going to take a
+while because we're going to download
+and install Docker off the internet and
+it's quite a large installation now it
+be a good time to go get a cup of coffee
+CU it'll take us about a minute to get
+this all done once we actually have
+Docker installed we'll actually go ahead
+and we'll start Docker and enable Docker
+using our pseudo
+commands all right so that's all done so
+let's start an enable Docker we're going
+using so we're going to use pseudo
+system CTL start Docker and pseudo
+system CTL enable Docker this will be
+quite quick so the next step is to
+install all the components for
+kubernetes and we're going to uh install
+the Cur command and then cubet Cube C
+and then Cube ADM and we're going to to
+install all the necessary tools we do
+the co command cubet cubic C2 and Cube
+ADM and so let's go ahead and put in the
+pseudo ap- get install Cur we're going
+to get a prompt we can say yes for that
+and then after this we'll go ahead and
+install kubernetes so the first what
+we're going to do is we're going to
+actually put in the kubernetes key so
+that's going to be pseudo
+c-s and then we have a long URL which is
+htps and packages. Cloud goole.com a do
+ap- key. gpg pseudo apt-key there we go
+cck my typo there okay now we have to go
+ahead and change permissions of a folder
+so we do that with pseudo
+chmod
+777
+etap sources.list DOD all right we're
+good okay now you want to go ahead and
+open up your text editor and we're going
+to make um an actual edit um we're going
+create a simple file and so what we're
+going to type in is um the F command DB
+htbt a-. kubernetes doio kubernetes dzal
+Main and we're going to save this file
+in the ETC folder and then look for and
+then a AP which is going to be down a
+little bit and there we have it and
+we're going to save it in the
+apt-get updates and we're going to name
+this file as kubernetes do list and
+we'll save that and then we can close
+out the notepad and go back to the
+terminal window and let's look and see
+if there are any updates again so we're
+going to go ahead and run apt-get update
+and it's going to run any updates from
+what we've created and we want to check
+what's in the folder and so we can do
+cat ET Etc apt sources. this . dcnet es.
+list and there we are it shows what we
+have in that text file and so we're
+going to go ahead and we're going to uh
+install uh cubet cubic cubic 2 and C ADM
+but first we're going to have to
+initialize the master I'm going to show
+you what an error you would get if you
+were to install cuet um and the other
+files too quickly you get the following
+error all right so so we have installed
+cubet QB ADM cual and kubernetes cni and
+so we're going to go ahead and use
+pseudo swap
+up-- a and now we're going to initialize
+the M node and we're going to do that
+with pseudo Cube ADM in it and this will
+take a few minutes for it to
+initialize all right so that's all done
+all right so we're going to deploy the
+Pod to a network and we have two
+commands that we're going to use we use
+pseudo cubu Cube CTL apply and then we
+have a a long path we have to type out
+which is-f htbs raw github's content.com
+coros flannel Master documentation Cube
+flannel do
+yml what we we have to do is we have to
+actually go ahead and deploy the nodes
+first so we're going to do that by
+creating um mkdr DP and then we have p
+dollar sign home- Dobe we'll create that
+new directory and pseudo
+cp-i and then the path will be uh Etc
+dcnet admin. NF and then dollar sign
+home.be doc
+config and then final one will
+be pseudo CH WN doll sign open PR
+id- close PR colon on dollar sign open
+PR ID DG close PR doll sign
+home.be SL config all right now we're
+going to go ahead and uh deploy and uh
+let's see oh I think I have a typo in my
+command here yep oh yeah I did have a
+typo and so um I've got that incorrect
+now so documentation is actually spelled
+with a t not an S and then we're going
+to go ahead and we're going to put in
+the next line which is
+cubic Cube CTL apply do- F and then
+we're just going to change a little bit
+of the um actual link here and that runs
+great and now we want to be able to see
+all of the uh pods that we have in our
+Network and so we're going to do that by
+writing the command pseudo cuc TCL uh
+get pods Das all do- name spaces and it
+should list all of our pods we only have
+one
+there we are there's all of our content
+now we're going do so there's only one
+node so let's see what we have here so
+we're going to use command sudo qxl get
+nodes there we are just one node so our
+final step is to actually go ahead and
+deploy a service and so what we're going
+to go ahead is deploy the ngx service
+and we're going to do that with the
+command pseudo cuex CTL run D- image
+equals ngx and we're going to put this
+into port 80 so it's going to be ngx D
+app-- Port equal 80 D- environment EMV
+equals uh open col open quotes domain
+equals cluster close
+quotes and we're going to write one more
+command which is Pudo Cube CTL expose
+deployment nx- app-- portal 80 D- name
+equals ngx D HTTP and once we've done
+this we'll be able to then run the
+command to actually see us services and
+there'll be quite a few of
+them and our final command is pseudo
+Docker ps-
+a we are quite a lot of list quite a lot
+of services listed so there you are
+that's the instructions on how to get
+Docker up and running and uh with some
+basic commands um it is worth going
+through a few times to um get right um
+but uh once you actually have um the
+kubernetes environment up and running
+and managing your do environment
+containers it's extremely powerful if
+getting your learning started is half
+the battle what if you could do that for
+free visit scale up by simply learn
+click on the link in the description to
+know more welcome to kubernetes
+architecture from Simply learn we're
+going to take a deep dive into the
+kubernetes architecture if you're new to
+kubernetes we already have an
+introduction that goes and provides an
+overview of kubernetes and we have the
+link below so you can go straight to
+that if you want to have a refresher
+otherwise hang around and and join us in
+this presentation and if you want to see
+more of these videos hit the Subscribe
+button and if you want to get notified
+hit the notification Bell and every time
+we post up a new video you'll get the
+notification right onto your phone or on
+your desktop that the new video has been
+uploaded and as always if you have any
+questions please post them in the
+comments below we do read the questions
+and we try to respond to all of them as
+quickly as we can with that said let's
+jump into kubernetes architecture so
+we're going to break out the
+presentation to the following areas
+we're going to cover what is and why you
+want to be using it we're going to
+introduce the actual architecture and
+provide an overview of how it contains
+the containers and the other components
+that you'd have within the architecture
+will also compare cetes with Docker
+swarm and one of the things that you
+hear with kubernetes is almost in the
+same um breath as Docker and we have to
+be careful not to confuse Docker from a
+container point of view and Docker swarm
+which is a container management tool and
+kubernetes is also a container
+management tool so we compare the two of
+those and then we'll look at the
+hardware and software components and
+then finally do a deep dive into the
+architecture of kubernetes and provide a
+case study of where kubernetes has been
+used successfully in the past so let's
+jump into this so what actually is
+kubernetes so kubernetes is a tool that
+was designed to actually help manage and
+contain large groups of containers it
+was developed originally uh by Google
+out of the Google Bor um solution and
+then Open Source by Google the actual
+environment allows you to and manage
+large groups of containers so if you're
+a developer in devops and you're working
+with Docker then you're used to the
+concept of a container and uh you'll
+also know that containers and Cloud
+Technologies tend to be almost breathed
+in the same breath so the work that
+you're doing with kubernetes is to be
+able to manage large groups of
+containers inside of the cloud the thing
+that's great about working with
+kubernetes is that it is incredibly
+flexible and allows you to have
+incredibly complex application run
+efficient efficiently so let's step into
+why you'd want to use kubernetes so a
+couple of key points kubernetes itself
+is an open- Source solution originally
+developed by Google but it is available
+on most Cloud platforms today so AWS
+Google Cloud Microsoft Azure all of them
+support kubernetes and what you'll find
+is as you're setting up your
+infrastructure particularly if you're
+using containers you'll see that the
+support for kubernetes is floated up
+very very efficiently and effectively by
+all three vendors it's extremely um
+useful for being able to manage large
+modular environments and that's really
+kind of the I think one of the big
+benefits of kubernetes is its modularity
+is that it really breaks down uh
+containers into their smaller parts and
+once you do that it becomes much more
+efficient uh for you as an administrator
+to be able to manage that en entire
+environment the reproductibility of
+kubernetes is extremely high uh you can
+build out infrastructures very quickly
+and um have them being able to Manch and
+um have containers coming on and off um
+killed and created to be able to help
+load balance your entire environment and
+so again you we keep talking about
+containers but that's really what
+kubernetes is all about it's being able
+to manage your applications that are
+managed through containers and being
+able to do that in a virtualized
+infrastructure and the thing that's also
+really good with kubernetes is it's
+really easy to too Solutions you just
+have to use a simple Co call and you can
+actually push out your C kubernetes
+infrastructure so let's have an overview
+of the kubernetes architecture so
+kubernetes is really broken up into
+three key areas so you have your
+workstation where you develop your
+commands and you push out those commands
+to your master and the master is
+comprised of um four key areas um which
+essentially control all of your nodes
+and and the node contains multiple pods
+and each pod has your Docker container
+built into it so consider that you could
+have a really almost an infinite number
+of PODS sorry infinite number number of
+nodes being managed um by the master
+environment so you have your cluster
+which is a collection of servers that
+maintain the Ava availability and the
+compute power such as RAM CPU and disk
+utilization um you have the master which
+is really component that control and
+schedule uh the activities of your
+network and then you have the node which
+actually hosts the actual Docker virtual
+machine itself um and be able to
+actually control and communicate back to
+the master the health of of that part
+and we'll get into more detail on the
+architecture later in the presentation
+so you know you keep hearing me talk
+about um containers but they really are
+the center of the work that you're doing
+with kubernetes and the concept around
+kubernetes and containers is really just
+a natural evolution of where we've been
+with internet and digital Technologies
+over the last uh 10 15 years so before
+kubernetes um you had tools where where
+you're either running virtual machines
+or you're running uh data centers that
+had to maintain and and manage and
+notify of any interruptions in your
+network kubernetes is the tool that
+actually comes in and helps address
+those interruptions and manages them for
+you so the solution to this is the use
+of containers so uh you can think of
+containers as that Natural Evolution
+from you know uh 15 20 years ago you
+would have written your code and posted
+it to a data center uh more recently you
+probably posted your code to a virtual
+machine and then move the virtual
+machine and now you actually just work
+directly into a container and everything
+is self-contained and can be pushed out
+to your um environment and the thing
+that's great about containers they're
+they're isolated environments very easy
+for developers to work in them but it's
+also really easy for uh operations teams
+to be able to move a container into
+production so let's kind of step and
+back and look at a competing product to
+kubernetes which is Docker swarm now one
+of the things that we have to um
+remember is that Docker um containers
+which are extremely popular um built by
+the company Docker and made open source
+and Docker actually has other products
+one of those other products uh is Docker
+swarm and Docker swarm is a tool that
+allows you to be able to manage multiple
+containers uh so if we look at some of
+the uh the benefits of using Docker
+swarm versus kubernetes and one of the
+things that you'll find is that both
+tools have strength and weakness es but
+it's really good that they're both out
+there because it helps keep it really
+kind of justifies uh the importance of
+having these kind of tools so kubernetes
+was designed originally from the ground
+up to be autoscaling whereas Ducker
+swarm isn't the load balancing is
+automatic on Docker Swan whereas with
+kubernetes you have to manually
+configure load balancing across your
+nodes the installation for dock swarm is
+really fast and easy I mean you can be
+up and running within minutes I could
+kubernetes takes a little bit more time
+is a little bit more complicated
+eventually you'll get there um I mean
+it's not like it's going to take you
+days and weeks but it's it is a tool
+that's a when you compare the two dror
+swarm's much easier to get up and
+running now what's interesting is that
+kubernetes is incredibly scalable and
+it's you know that's its real strength
+is its ability to have strong clusters
+whereas with Docker swarm it's cluster
+strength isn't um as strong when
+compared to kubernetes now you compare
+it to anything else on the market it's
+really good um so this is kind of a
+splitting hairs kind of comparison um
+but kubernetes really does have the
+advantage here if you're looking at the
+two compared to each other for
+scalability I mean kubernetes was
+designed for by Google to scale up and
+support uh Google Cloud Network
+infrastructure they uh both allow you to
+be able to share um storage volumes with
+do you can actually do it um with um any
+container U with u that is managed by
+the docker swamp whereas with kubernetes
+it manages is the storage with the pods
+and a pod can have multiple containers
+within it but you can't take it down to
+the level of the container interestingly
+uh kubernetes does have a graphical user
+interface um for being able to control
+and manage uh the environment the
+reality however is that you're likely to
+be using terminal uh to actually make
+the controls and Commands to control
+your um either Docker swarm or
+kubernetes environment um it's great
+that it has a a gooey and to get you
+started but once you're up and running
+you're going to be using terminal window
+for those fast quick administrative
+controls that you need to make so let's
+look at the hardware components for
+kubernetes so um what's interesting is
+that kubernetes is extremely light of
+all the systems that we're looking at
+it's extremely lightweight um it's
+allows you to have if you compare it to
+like a virtual machine which is very
+heavy you know um cumes is extremely
+lightweight and hardly uses any
+resources at all interesting enough
+though is that if you are looking at the
+usage of CPU it's it's better to
+actually take it for um uh the cluster
+as a whole rather than individual nodes
+uh because uh the nodes will actually
+combine together to give you that whole
+compute power again this is why
+kubernetes works really well in the
+cloud where you can do that kind of
+activity rather than if you're running
+in your own data center um so you can
+have persistent volumes um such as a
+local SSD um or you can actually attach
+to a cloud data storage again kubernetes
+is really designed for the cloud I would
+encourage you to use cloud storage
+wherever possible rather than relying on
+physical storage uh the reason being is
+that if you connect to cloud storage and
+you need to flex your your storage the
+cloud will do that for you I mean that's
+just an inherent part of why you would
+have cloud storage whereas if you're
+connecting to physical storage you're
+always restricted to the limitations of
+the physical Hardware so let's um kind
+of pivot and look at the software
+components as compared to to the
+hardware components so the main part of
+the components is the actual container
+and all of the software running in the
+container runs on Linux so if you um
+have Docker installed as a developer on
+your machine it's actually running
+inside of Linux um that's what makes it
+so lightweight and really one of the
+things that you'll find is that most
+data centers and Cloud providers now are
+running predominantly on Linux inside of
+the um the the container itself is then
+managed inside of a p and a part is
+really just a group of containers
+bundled together and um the kubernetes
+scheduler and proxy Ser then actually
+manage what um how the pods are actually
+pushed out uh into your kubernetes
+environment the the pods themselves can
+actually then share resources both
+networking and storage so pods aren't um
+pushed out manually they're actually um
+managed through a layer of abstraction
+and part of their deployment and and
+this is the strength of kubernetes you
+you use um def find your um
+infrastructure and then kubernetes will
+then manage it for you and there isn't
+that problem of um manual management of
+PODS uh if you have to manage the
+deployment of them and you that's simply
+taken away and it's completely automated
+and the the final area of software
+Services is on Ingress and this is
+really the secure way of being able to
+have communication from outside of the
+cluster and passing of information into
+that cluster um and again this is done
+securely through SSL layers and allows
+you to ensure that security is at the
+center of the work that you have within
+your kubernetes environment so let's
+dive now into the actual architecture
+before we start looking at a use case of
+how kubernetes is being employed so
+kubernetes again is um we looked at this
+uh diagram at the beginning of the
+presentation and there are really three
+key areas there's the workstation where
+you develop your commands and then you
+have your master environment which uh
+controls the uh scheduling the commun
+communication um and the actual um
+commands that you have created and
+pushes those out and manages the health
+of your entire node Network and each
+node has uh various pods so we like
+break this down uh so the master node is
+the most vital component um with the
+master uh you have four key controls you
+have Etc controller manager schedule and
+API server the cluster store Etc this
+actually manes the details and vales
+that you've developed on your local
+workstation um and then we'll work with
+the out the control schedule on API
+server to communicate that out those
+instructions of how your infrastructure
+should look like to your entire network
+uh the control manager is really an API
+server and again um this is all about
+security so we use restful fpis um which
+can be packaged in SSL to communicate
+back and forth um across your uh pods
+and the master and indeed the services
+within each of them as well so um at
+every single layer of extraction uh the
+communication is secure uh the schedule
+as the name would imply really schedules
+um when tasks get sent out to the actual
+nodes themselves the nodes themselves
+are are dumb nodes they just have uh the
+applications um running on them the
+master and the um is really doing all of
+the work uh to make sure that your
+entire network is running um efficiently
+and then you have the API server which
+has your res commands and the
+communication um back of forth across
+your network that is secure and
+efficient so your node environment is
+where all the work that you do with your
+containers gets pushed out too so um a a
+work is really a it's a combination of
+containers and each container will then
+logically run together on that node so
+you'd have a collection of containers uh
+on a node that all make logical sense to
+have together uh within each node um you
+have a Docker and this is your isolated
+environment for running your container
+uh you have your cubet which is a
+service for conveying information back
+and forth um to the service about the
+actual health of the kubernetes node
+itself and then finally you have the
+proxy server and the proxy server is
+able to manage the nodes the volumes the
+the creation of new containers um and
+actually helps pass the communic the the
+health of the container back up to the
+master to see whether or not the
+container should be either killed stop
+started or um updated so finally let's
+look at see where uh kubernetes is being
+used by other companies so you know
+kubernetes is being used by a lot of
+companies and they're really using it to
+help manage complex existing systems so
+that they can have uh greater
+performance and with the end goal of
+being able to Delight the customer and
+increase value to the customer and hence
+increase value and revenue into the
+organization so an example of this is a
+company called Black Rock uh where they
+actually went through the process of
+implementing kubernetes uh so they so
+Black Rock had a chance where they
+needed to be able to have much more
+Dynamic access to their resources uh
+they were running complex installations
+on people's desktops and it was just
+really really difficult to be able to
+manage their entire infrastructure and
+so they actually went um pivoted to
+using cetes and this allowed them to be
+able to be much more scalable and
+expansive in the management of their uh
+infrastructure and as you can imagine
+kubernetes was then hooked into their
+entire existing system system and has
+really become a key part of the success
+that Black Rock is now experiencing of a
+very stable infrastructure um and the
+bottom line is that U Black Rock is now
+able to have confidence in their
+infrastructure and be able to give that
+confidence um as back to their customers
+through the implementation and more
+rapid deployment of additional features
+and services kubernetes specific to AWS
+Cloud platform so what's a part of this
+tutorial and demo what's in store for
+you at of offset I would I would like to
+cover the basics of orchestration tools
+as most of you would know kubernetes is
+one of the most popular orchestration
+tools in recent times specifically for
+applications which are Cloud native and
+deployed on some or the other types of
+containers but what are these
+orchestration tools why would one need
+to use orchestration tools what are the
+facilities or features provided by these
+orchestration tools that's the first
+thing that I'm going to cover after that
+I will pick two orchestration tools
+specific to container man management do
+swarm versus kubes I'm going to compare
+them with regard to the features that
+they provide the use cases that they
+cover what facilities that they provide
+and when to use what after that I will
+get into a little bit details of the
+kuet architecture what exactly is
+required for setting up a kues cluster
+what runs in a control plane or a master
+node what runs as a part of the worker
+node after that I will end the tutorial
+by running you through a demo by setting
+up a three node kubernetes cluster on
+AWS platform I will use something called
+as cops which is one of the admin tools
+for setting a production grade KUB disc
+cluster so I will use this to set up a
+three note cluster on AWS all right now
+that we set the context right let me get
+started so what are orchestration tools
+the application development and the life
+cycle management from the time the
+application is developed connecting the
+source code to your continuous
+integration to testing them all along
+your development process and eventually
+moving it down to production managing
+your production servers the dependencies
+that your software has the requirement
+that it has in terms of the hardware the
+features of fa tolerance self-healing
+capabilities Auto scaling all this has
+complicated over the last few years as a
+part of devops one thing that everyone
+is interested in is managing all this
+application dependency or life cycle
+management using some or the other kind
+of a tool so that's where these
+orchestration tools have become very
+very popular so what kind of features
+that they provide is you'll have to just
+let them know what are the kinds of tool
+sets that is required what are the fall
+tolerance mechanisms that it has to be
+adopted to what kind of a selfhealing
+capabilities that application will have
+to need and if at all there is any
+autoscaling features that is required if
+at all you can bake in all these
+specific parameters into your tool your
+orch ation tool becomes a One-Stop shop
+for all your deployment and
+configuration management needs that's
+where this orchestration tools have
+become very very popular and relevant
+specifically these days when people are
+more and more uh interested in adopting
+devops practices all right so having
+said that about orchestration tools
+let's concentrate on two of these
+orchestration tools specifically for
+container management Docker swarm and
+kubernetes many of the application s
+that are written for these kind of
+containers are called or kind of fall
+into a category of cloud native where
+the application need not know much about
+the underlying infrastructure or the
+platform where these applications are
+running so these two along with Apache
+misos there are many other container
+Management systems but I'm going to pick
+Docker swarm and kubernetes for
+comparing the features that is provided
+by these two Frameworks for the sake of
+comparison I picked up Doos swarm and
+kues just because of the reason that
+both of them operate in the space of
+container management they do something
+very very similar to Containers that's
+the similarity that exists between these
+two orchestration tools however there's
+a big difference that exist when it
+comes to the types of containers that
+both of them cater to and also the
+capacity of workloads they can be used
+for Docker swarm is a cluster management
+solution that is provided by Docker
+container docker is one of the very very
+popular containers of recent times and
+in case you have your applications that
+is totally powered by only Docker
+containers if you have a need where you
+want to run a cluster of servers which
+are running only Docker containers
+Docker swarm should be your choice for
+your orchestration tool kubernetes on
+the other hand can cater to any other
+types of containers other than Docker
+and including Docker as well so in case
+you have your applications which have
+got Docker in them which have got rkt in
+them which they have got LX in them or
+any other type of container kubis should
+be your choice of orchestration too a
+Docker swarm can manage up to 40 50 or
+60 Max uh nodes so in case your
+application is totally written in Docker
+containers and the load or the expected
+cluster size is around 50 60 notes
+Docker swamp should be your choice of
+orchestration tool on the other hand
+kubernetes is something that was open
+sourced by Google and the kind of the
+scale of operations that kubernetes can
+cater to is Google scale so if in case
+your applications are more than a
+thousand nodes that is where kubernetes
+comes into play that's the big
+difference that exists between doas
+swarm and kubernetes putting those
+differences aside let me compare Doos
+swarm and kubernetes based upon other
+features which are similar in nature the
+first and important feature that
+kubernetes provides is something called
+as autoscaling if at all the load on
+your cluster is too high and your
+application is experiencing more load so
+kubernetes can add new nodes to your
+cluster of course you'll have to
+configure kubernetes in order to have
+those capabilities where it can spin up
+new VMS or new nodes if at all you do
+that configuration correctly kubernetes
+has got the capacity or it has got the
+feature where it can bring up a new node
+and add it to the cluster on the Fly
+based upon the load that exist at that
+moment on similar lines if at all the
+load is not too high it can identify few
+of those nodes which have got less
+number of uh replicas or less number of
+application containers running on it it
+can move them to some other node and
+also scal down by deleting few nodes
+from your cluster so that is the
+powerfulness of autoscaling which is
+provided by Ces and this unfortunately
+does not exist in Docker swamp the other
+feature of load balance
+specifically application load balancing
+so dock swarm gives you an application
+Level autoload balancing however
+kubernetes gives you the flexibility of
+manually configuring any other type of
+load balancer of your choice for
+application load balancing installation
+as I mentioned earlier Docker swarm is a
+loose cluster of containers which are
+running on nodes it is very easy to spin
+up a new node and then connect them to a
+swarm and this can be done in a very
+very lose coupled way where you can
+create swamps of your choice notes are
+are allowed to connect to swamps and
+quit or leave the swamps on the fly so
+in and all the installation is pretty
+easy and fast kubernetes on the other
+hand the configuration of kubernetes the
+way to spin up a big cluster specifying
+the size of the node how many Master
+nodes how many config planes that you
+want how many nodes that you want it's a
+pretty tough thing to bring up a
+kubernetes scalability kubernetes
+strength is very very strong they are
+very tightly coupled and even they have
+the capability where on the cluster size
+things or the nodes can be increased on
+the Fly based upon the requirement on a
+doer swarm the cluster strength is weak
+as compared to kues worker nodes can be
+added to a swarm worker noes can be
+asked to leave a swarm or can be taken
+out of a swarm based upon the
+requirement so this is kind of a Loosely
+coupled architecture for Doos swarm
+while KU is the cluster is very tightly
+coupled since Doos swarm runs only
+Docker containers containers find it
+very easy to share data and a lot of
+other things with each other because
+they all have the same signature they're
+all from the same family so it's very
+easy for them to share not just volumes
+but a lot of other things however for
+kuber is since it manages containers of
+different types if your application has
+to share some data across different
+containers there little bit of a
+complexity in how you would want your
+containers to share data also uh when it
+comes to kubernetes kubernetes groups
+containers in something called as pods
+while a pod can have either one
+container that's the preferred choice or
+multiple containers and the idea of pod
+is like each pod can run in any other
+node it's not guaranteed that you would
+want to have two or three pods to be
+running on the same node that makes data
+sharing a little bit of a different
+thing compared to doas form uh GUI so
+this not a good enough uh UI tool in
+Dockers form at least uh the C edition
+of it which which will allow you to get
+to know what is running on your
+containers what is the size of the
+containers what is the volume of the
+containers and all that stuff there are
+some free and open source tools like
+painer which gives you a good visibility
+into your running Docker containers
+however there's nothing at a swarm level
+that is provided by Docker kubernetes
+gives you an outof the-box dashboard
+which is easy to configure and set up
+you can also Club it with some metrics
+services and you can also get
+information about the size of the
+cluster that is running what is the load
+on the nodes and stuff like that all
+this across your cluster in a very
+beautiful dashboard perspective so that
+way um this is little bit of a good UI
+for kubernetes while for Docker form
+there isn't anything that is provided
+out of the box let me spend some time in
+explaining a little bit about the kuis
+architecture what comprises of the kuber
+cluster what resides in a master or a
+control plane and what resides in a work
+node this is a very high level uh
+depiction of a communties cluster so
+this is the master node which has got
+something called as a cluster store a
+controller a schedular component and an
+API server and these are the bunch of
+nodes that are connected or administered
+by the master node the master node can
+be 1 3 5 typically an odd number this is
+as per the typical cluster management
+thing where you would need the master
+nodes to be in odd numbers so that
+whenever there's any contention in terms
+of what needs to be deployed where or
+where to give the job to whom and stuff
+like that all the Masters would cast
+their wot and they would decide on the
+outcome so that's the master node and
+there are a bunch of uh nodes which can
+be connected and administered by the
+master node qctl or the command from
+using which anybody can assign some
+workloads to the cluster can also be run
+either on the same node or on a separate
+node so qctl is is the command line tool
+that we will be installing and using in
+order to fire up our commands to our
+cluster so if at all I have to put up a
+job on our cluster if I have to give out
+any specific commands to my cluster all
+this is done using ql there's a bunch of
+rest apis which is used by ql and ql
+will talk to the API server and fire up
+the commands specific to my cluster what
+runs in the master node Master node
+without seeing it's the most important
+component of any of the cluster if at
+all you're running um cluster with only
+one master node if your master node goes
+down there's no other way that you know
+you can or any user can talk to the
+different nodes in the cluster so Master
+node is the most vital component
+responsible for the complete kubernetes
+cluster there's always one node that
+should be running as a master node
+that's the bare minimal requirement for
+your cluster so what are the other
+components in the master node the most
+important one is called etcd so this is
+nothing but a data store a value of key
+value pair which is stored which
+contains all information about your
+cluster so all the configuration details
+which uh node is up which worker node is
+down all this information is stored in
+the cluster store so all the managers
+would access this cluster store before
+they go ahead and decide any other work
+item or anything else that has to be
+done specific to your cluster what's in
+the controller as the name says
+controller is something it's like a
+demon server that is running in a
+continuous loop all the time it is
+responsible for controlling the set of
+replicas the kind of uh workloads that
+is running based upon the configuration
+that the user has set in so if at all if
+you are aware of something called as
+replication controllers endpoint
+controllers namespace controllers all
+these controllers are managed by the
+controller component if any user asked
+for some three replicas of a particular
+pod or a service to be running and if at
+all any of the nodes goes down or the
+Pod goes down for whatsoever reason the
+controller is the one who wakes up and
+assigns this particular job or the part
+to some other available node by looking
+up for the details using in the cluster
+store that's the importance of the
+control manager or the controller the
+scheduler the scheduler assigns the task
+based upon whoever is asked for any job
+to be scheduled based upon a time frame
+or based upon some criteria it also
+tracks the working load as to what what
+exactly is the load who is running What
+in in the cluster and places the
+workload on whoever is the available
+resource at that time all right API
+server this is one other important
+component in in our kubernetes cluster
+where how would the end user deploy or
+give out any sort of a workload onto
+your cluster all the requests come to
+the API server so this is an entry point
+for all all your um requests that come
+into your cluster anybody wants to
+deploy something anybody wants to scale
+up a controller anybody wants to bring
+down few Services anybody wants to put
+in a service all this will have to come
+in as a part of a rest um API endpoint
+and API server is the entry point in
+case you don't want uh you know somebody
+to access your cluster in case you want
+only specific people or a specific users
+to be running some specific workloads
+you can set all those role based access
+control for this API server so this is
+the entry point for anyone who wants to
+submit any job to your cluster so that's
+a quick overview about the master node
+what what are the important components
+of a master node now let's go over to
+what runs in a worker or a slave node as
+I mentioned earlier slave nodes are
+something where the job that is
+submitted to your cluster is eventually
+run as a pod as a service as a container
+so in kues world there's something
+called as a pod a pod is nothing but a
+combination of a container it is a
+wrapper around your running containers
+so slave nodes or the worker nodes
+typically run these parts so that is
+where the whole workload typically gets
+run but there are a bunch of other
+components in the in the node which also
+manages what runs in the Pod who has to
+have access to the Pod what is the state
+of the Pod is it in a running state is
+it going down for some reason and all
+that stuff so let's quick ly go over
+those components that is there in the
+slim node the most important component
+in my opinion that should be on the on
+the Node should be the container run
+time as I mentioned earlier kuties can
+run any different types of containers
+not just Docker so in case you want to
+have a node which wants to have Docker
+running on it RK running on it LKC
+running on it or any other uh container
+environment that is running on it you
+have to ensure that the specific
+container runtime environment is
+available on that specific node so that
+whenever a job is submitted a
+description of what needs to be run as a
+part of the Pod what should be the image
+with with it should be powered and what
+kind of a container to spin up so that's
+what you know when the job is finally
+assigned to this particular node it
+would definitely need a container
+runtime to be up and running so that
+exists only if at all the container
+runtime is installed and running on your
+kubernetes worker note okay now that we
+know what our kubernetes node can run
+how would somebody assign a job to our
+node that is using something called as a
+cubet as the name says cubet or cubet is
+a small subset which talks to the cube
+API server so any node which has to run
+any kind of a pod all these instructions
+are passed around by the qbp server to
+the cuet and cuet is capable of
+processing whatever job that is assign
+to it and ensuring that so many parts
+and so many services are spun up based
+upon the requirement the last component
+that exist uh in the worker node is the
+cube proxy or kubernetes proxy this
+plays a very very important role acting
+as a load balancer and a network proxy
+so what typically happens is whenever
+the pods are running in nodes the parts
+can be typically running in any node
+there is no um a Affinity towards any
+node on which these parts are running
+because pods or containers are something
+called as ephemeral they can run
+anywhere so how would somebody reach out
+to these applications that is running on
+some pod which is running in one
+container now and running in probably
+another container another node
+altogether tomorrow so that is where
+your kubernetes proxy com into picture
+and this component will ensure that any
+container that is spun up or any pod
+that is spun up it keeps track of all
+these SPS and kind of connects the end
+points or acts like a DNS server so that
+it knows when somebody is trying to
+reach out to this particular service
+which is the pod on which the service is
+typically running so that plays a very
+very important role by acting as a load
+balancer and a network proxy now that at
+a very high level we know what are all
+the components that make up of our
+kubernetes cluster let's go ahead and
+create a small cluster we'll spin up
+this cluster on AWS platform finally we
+get to the demo section of my tutorial
+now that you guys are aware as to what
+is kubernetes what is the use of
+kubernetes you also know at a very very
+high level what are the components of a
+cluster what is a master node or a
+control plane what are the components of
+a master node and what should be
+existing in a worker node you probably
+thinking that it's going be pretty hard
+to kind of set this up so let me
+demystify that by running you with a
+quick demo of how to set up a simple
+three node Kubin dis cluster using a
+tool called cops and I will be doing
+this whole setup on my AWS Cloud okay so
+what is cops cops is nothing but a
+simple tool this is an admin tool that
+allows you to bring up production grade
+uh kubernetes environments as I said
+setting up a kubernetes cluster on a
+bare metal is little challenging so that
+is why I would use something called as a
+cops and I will use this on my cluster
+uh which I will spin up on my AWS
+instance so I have an AWS account and
+what I'll do first is I will first spin
+up an ec2 server I will power this with
+one of the um Linux Amis and I will
+install cops on it now this will be my
+starting point from where I'm going to
+trigger running up a big cluster in our
+case I'll try to keep it little small I
+don't want too many nodes in my cluster
+I'm going to have one master node and
+two worker nodes this whole operation
+would be done programmatically by
+installing this cops uh admin tool so as
+you may know AWS it's little hard for me
+to programmatically run other components
+or rather bring up servers it's not
+pretty simple so what I will do is I
+will create an IM am rule which will
+attach to my ec2 server so that my ec2
+server gets powered uh with all the
+required rule so that it can go ahead
+and spin up cluster based upon my
+configuration that I'm going to specify
+all right so once I have my cluster set
+up I will also install qctl which uh you
+would probably know by now is nothing
+but a command line utility using which I
+can kind of connect to my cluster give
+out some jobs put some pots and stuff
+like that so I will use ql I will also
+have a pair of SSH keys so that from
+this machine I would be able to
+successfully get onto the master node
+and submit jobs on my behalf so let me
+Begin by first logging into my AWS
+account all the steps that I will be
+following to bring up my AWS cluster
+kubernetes cluster will be documented
+and I'll be sharing you this document in
+a GitHub repository so that in case
+anybody wants to try you'll be more than
+happy to find all the required
+instructions in one place okay now the
+first thing that I would need is to
+launch an AWS ec2 instance now this is
+an instance where I'm going to install
+cops and I will use it as a base server
+from where I'm going to fire some
+commands which will bring up my kues
+cluster so let me log into my AWS
+account and um let me stick to one
+particular region and let me bring up
+some a one ec2 instance all right so let
+me launch my instance let me choose um
+doesn't matter either ways but in case
+you want to try it on your free tire I
+would recommend choose free tire only
+and choose an Ami of your choice let me
+choose this instance I will make it T2
+micro that is good for me configuration
+instance details all right I don't want
+to change anything here that looks good
+maybe I will change this 30 gig that's
+good for me let me add a tag to my
+instance I will name this as my cops
+server all right I would need a bunch of
+of boats to be opened up so what I will
+do is I create a new Security Group uh
+called open to the word I would not
+recommend that you do this since I don't
+want to it'll take a long time for me to
+specifically uh pick and choose um the
+ports that has to be open for running my
+cluster I don't want to do that I will
+open up all the uh HTTP and https ports
+so that it's quicker so I will say all
+TCP I would say from anywhere just to be
+on the safest side of also open HTTP and
+https and I will make this anywhere and
+anywhere this is good for me I will say
+review and launch all right so I chose a
+T2 micro instance just for the sake of
+easiness I opened up all the ports and
+um the instant details are you've seen
+what is that I've chosen all right now
+important part is like I would need a
+Keir I need to create a new Keir I will
+call this as simply learn keys I will
+download this keare and then I will
+launch the instance it'll take some time
+for my acc2 instance to come up in the
+meanwhile what I'll do is I will convert
+I have this pem file which is the pair
+of keys the SSH keys with which I need
+to log into my E2 instance so I'll need
+to convert this because I'm trying to
+connect from a Windows box I would need
+to convert this into a PPK file so I
+have put gen I'm going to load my set of
+keys here and convert that key into a
+PPK key all right open all right I would
+say save hang on save Private key yes I
+would say simply learn or simply learn
+private private key I save this here
+done that that's all so this is my
+public key which is the pem file and
+this is my PPK or my private key Now
+using the private key I will log into my
+ec2 instance okay now my E2 instance is
+up and running it is running in this uh
+Ohio region and this is the IP address
+of my public IP address of my machine so
+let me connect to it so I use uh MOBA
+xterm which is nothing but an SSH
+emulator you can use puty or any of
+these sessions uh which allow you to do
+an SSH uh this is my IP address of my
+machine and uh since I've spun up an
+Amazon Ami the user this is the default
+user I would need to specify the private
+keys for my session and this is the
+private key for my session say okay I am
+in my uh Amazon E2 instance so let me
+look at what are the other things that I
+need to do all right so as I said I just
+brought up my E2 instance but I would
+need my ec2 instance to run few things
+on my behalf so that it can spin up ec2
+other E2 instances it can also talk to
+an S3 bucket where I'm going to store
+the instance state of my kuet cluster
+also some sort of an autoscaling group
+because I want to spin up more and more
+instances I also want to have a private
+hosted Zone using using my Route 53 so I
+would need my E2 instance to have all
+these sort of permissions for my server
+so what I would do is I will go and
+create a permission a rule in the ec2
+rather in the AWS IM Rule and I will
+attach this IM rule to my e to instance
+all right so let me go to my IM am which
+is nothing but the identity and uh
+access management I'll will create a
+role called as possibly cops role I will
+create a role this role will be used by
+my ec2 so I'm going to click on ec2 and
+will say next permissions they would
+need a lot of permissions uh specific
+permissions to be very honest and the
+permissions are all listed out here S3
+ec2 and all this stuff just to keep it
+pretty simple what I would do is I
+create a role with the administrative
+access all right so I don't want any
+tags I will review I'll create a role
+name I will say cops roll for E2 all
+right so I'm going to create a role
+which has got administrative access rle
+so I'm going to create a role so this
+would ensure that my my ec2 instance
+from which I'm going to run my cluster
+would have all the prerequisite
+permission so that it can go and spin up
+instances talk to S3 buckets and all
+that stuff all right now let us have our
+running instance get powered by this Ro
+so I will connect this role to my
+running instance all right so this is my
+um EC to instant that is running I'll
+say action attach attach attach attach
+replace IM am roles so there is no role
+as of now I would want my cops Ro for
+this is the role that I created so I
+want this new rule to be assigned to my
+ec2 all right great now my ec2 instance
+which is my cop server has got all the
+required permissions so that he can
+create a cluster on my behalf great now
+before this let me do a sudo yum update
+hphone y so that any of the because this
+is a newly provisioned VM I just want to
+ensure that all my library system
+libraries are all updated so that when I
+do install cop and cctl and all those
+things none of them will fail because of
+some dependency or package issues so I'm
+just running a Pudo update iPhone y so
+that all the libraries are updated okay
+looks like it is done so let me go ahead
+and uh install cops cops is a pretty
+simple installation it is available in a
+particular location I have to just copy
+this and ensure that I do a curl and I
+install this particular stuff all right
+so it is fetching uh the cops tool it's
+installing for me once it is copied down
+let me change the mode so that I can
+execute it and then also let me move it
+to my user local bin so that it is
+available for me in my path okay that's
+pretty much the cops installation let me
+also do one other thing let me install
+something called as qctl so this is what
+would be you know a tool using which I'm
+going to be firing my uh commands to my
+cubis cluster once it comes up okay this
+is a pretty smaller executable so cctl
+all right so I have Cub CTL as well as
+cops installed on my easy to server now
+okay now what I'll do next is I'm going
+to create an S3 bucket in AWS so that
+the kues uh cluster state is persisted
+in this bucket so let me create a simple
+bucket with this name S3 bucket with
+this name so let me go to S3 and uh let
+me create a simple bucket with this name
+I will just say create a bucket okay so
+the simply learn. kubernetes is the
+bucket that I created so this bucket
+will store all information about my
+cluster let me now uh go and create a
+DNS entry or a DNS zone or AWS Route 53
+hostage zone for my cluster so this is
+required so that you know I can give a
+cluster name for my communties cluster
+that I'm coming up so I will create a
+private hostage Zone and possi possibly
+I will call this as um simply learn. in
+so this will be my name of my private
+hostage Zone in case you already have
+any other uh public hostage zones in
+your name you can always is put a Route
+53 hostage Zone specific for your domain
+name since I don't have anyone I'm just
+going to create a simple private hostage
+zone so let me head down to Route uh 53
+click on any of these and you'll get
+these hosted zones out here so I'm going
+to create a hostage Zone here I'm going
+to create a hostage Zone click on create
+hostage Zone um this would be simply
+learn. in I want to create a public no I
+don't want public I want a private
+hostage Zone and I'm going to associate
+my VPC ID uh for this hostage Zone since
+I'm going to try out all my exercises in
+the Ohio region I will associate the VPC
+of the Ohio region for this all right so
+this is the one uh that is specific to
+the Ohio region so I will say this one
+I'll say create hostage Z great now let
+me come back to my ec2 box my ec2 is all
+powered with whatever it needs in order
+to uh go ahead with the installation of
+my cluster only few things that I need
+to take care of is that you know now
+that I put a name for my cluster I also
+have an uh S3 bucket that I configured
+for my cluster I will have to ensure
+that I need to put in these two
+configurations as a part of my uh
+cluster building activity so I will open
+my uh bash RC file and I'm going to
+export these two variables if at all you
+remember well uh these two variables are
+nothing but the cluster name which is
+nothing but the public sorry the private
+hosted Zone that I created and the S3
+bucket where I'm going to create or
+rather I'm going to store my cluster
+state so let me copy these two and open
+up my bash RC file all right so I will
+just add these two I'll copy these and
+Export them out as my uh variable I'm
+going to save this here now let me
+ensure that this gets picked up all
+right I've got these two that I've
+configured and I also ensure that these
+environment variables are set now let me
+create a pair of SSH keys this is to
+ensure that I can log into the box that
+I'm going to be provisioning as a part
+of my cluster SS s hyphen keyen I don't
+want to give any parameters let it go to
+the home directory with the default uh
+name and without any passphrase all
+right so I created a bunch of my keypad
+now I'm all set to go ahead and run my
+cops now cops will ensure that this will
+take some time for the cluster to come
+up but this is exactly how I would
+Define my cops command I already copied
+here so cops create cluster the state of
+the cluster will be stored in this
+particular variable which is what I have
+EXP ported out the number of note count
+is two note count is the worker note
+count if at all I don't spec there's an
+configuration for specifying the master
+or the control p as well if I don't
+specify that the default one is one so
+I'm going to create one primary or the
+master node and two uh worker nodes uh
+size of my master not size of the worker
+nodes uh what are the zones where I want
+uh these to be created and where do I
+store the cluster information and uh
+okay I've already added this master
+account this is actually not requ
+required but this is the command that
+I'm going to fire off so that I bring up
+my cluster all right that went off um
+very fast but um this actually did not
+create a cluster it is just the
+definition of a cluster and uh that's
+why this came out very fast now that
+everything looks good with uh whatever
+configuration that I specified now let
+me go ahead and create the cluster by
+saying cops update cluster iph iPhone 8
+yes now this will take some time a good
+5 to 10 minutes for it to because this
+will actually start provisioning the
+servers and as I mentioned earlier based
+upon my configuration I'm going to come
+up with one master server and uh two
+nodes or the worker nodes all right so
+this is the command for me to validate
+the cluster and I'm want to try it out
+first I'm pretty sure that it'll fail
+because all my servers are not up yet it
+is taking some time with the validation
+everything failed but let me try to look
+at my ec2 instances and um see how many
+servers do I have running as of now if
+you see I had only one server that I had
+started which was my cop server and
+automatically the other three instances
+one is called noes. simply. in uh this
+these two are the nodes and this is the
+master node so these three got
+automatically provision by the cops
+command that I ran all right so this may
+take a while for it to get validated a
+good 5 to 10 minutes so what I'll do is
+I'll pause the video now and I'll come
+back once uh the server uh the cluster
+is up and running it's been a good uh 8
+to 9 Minutes uh since I started my
+cluster so let me validate now okay
+seems good so there's a master node uh
+minimum One Max one some nodes which are
+nothing but the slave noes or the worker
+noes there are two of them T2 micro uh
+subnet so my clusters seem to be up and
+running and uh my cluster name is simply
+learn. in so what I would want to do is
+now let me just log into the master and
+see if I can run some pods so let me get
+back back to my inst installation steps
+here the validation cluster is done so
+let me log into my since my cluster name
+is simply l.n this is the way to log
+into my box so let me get into my box so
+if you see here uh this is the host name
+of the machine that I'm currently in if
+you see this this is nothing but our
+this cop server this is a server now
+from here I'm trying to get into the
+master box all right so if you see the
+IP address has changed I was in a
+different box I'm in a different box now
+if I see host name you'll find a
+different host name so this is 153 which
+is nothing but the master node yep it's
+153 this is the particular host so I'm
+getting into this machine now so I
+started the cluster from my cop server
+here it ran and brought up three nodes
+so I'm actually getting into my master
+node and see if I can run some pots on
+it all right so let me try Cub CTL uh
+get cluster info try Cub CTL get nodes
+all right so there are three nodes here
+Master node and um one master node and
+two worker notes so let me see if I have
+some pods here ql get pods so there's no
+pod as of now so what I'll try to do was
+let me just pin up a very very simple
+part just to check if my connections is
+everything is correct or not correct I
+have a simple um nodejs application that
+I've built uh and I've got a container
+for that this is already pushed to the
+docker Hub register is called simply
+learn Docker Hub and the image name that
+I have here is called my node app and uh
+I will use this image to power one of my
+pods that I will run so this is the way
+in which I'm going to launch my pod let
+me show you these commands qctl run the
+name for my deployment that I'm going to
+run hyphen I image and this is the image
+that is going to be powering my
+container so this is simply learn doer
+rub for/ myde app hyph replicas equal to
+I want two replicas to be running and
+the port that I want to expose this
+particular pod is on 8080 so let me run
+this as soon as this is run it creates
+something called as a deployment all
+right now let me just say um I'm not
+really interested in the deployment I'm
+interested in checking if at all the
+parts are up and running so I will say
+Cub get po all right so that was pretty
+fast so I have two parts that are
+running here these are two replicas
+because I asked for two replicas these
+parts are running so I can run Cube C
+describe pod pickup all right I can pick
+up any of the Pod name and see what is
+the Pod what is the information does it
+contain from what is the image that is
+pulling what is the image image Name ID
+this is actually running my pod which is
+actually spinning up a container great
+so far so good so in kubernetes the pods
+can are ephemeral so they can be there
+at any time cannot be at any time if I
+need to expose my pod outside I will
+have to create a service for my PO so
+what I'll do is I'll create a very very
+simple uh service by exposing this
+particular uh deployment before that let
+me check Cube serial get deployment so
+there's a deployment that is created the
+deployment name is simply an app app so
+I will expose my deployment simply learn
+app as um yeah I'll just expose this let
+me see all right I'm not specifying what
+type and all I don't want to get into
+the complications of uh what are the
+different types of exposing the service
+and all that stuff so if I don't specify
+anything uh it gives me something Clos a
+cluster IP so this is where my pod is
+actually exposed so let me just check if
+at all this pod is up and running I'll
+just try a simple curl command uh curl
+HTTP colon this is my cluster IP and uh
+the port is 88 if at all I hit this it's
+actually hitting my application and
+giving me uh whatever um I put a simple
+uh sis. out kind of a thing where I'm
+just printing um the container ID of
+whatever pod is serving uh being served
+out of so I'm actually hitting my
+container and I'm getting this output
+from the contain so everything looks
+good my contain is up and running uh so
+let me just go and clean it up I will
+say Cub CTL uh Delete deployment simply
+Lear app they should get rid of all the
+parts that I created cubes TL getp all
+right these parts are inter terminating
+things let me just check cctl get
+Services there's one service I don't
+want this service let me delete that Cub
+CTL delete service I want this all right
+this looks good so let me come back to
+my host my cop server from where I'm
+running so I managed to successfully
+verify this part see if everything is up
+and running so what I'll do is I'll just
+go ahead and complete this uh demo by
+going and uh getting rid of my cluster
+so cops delete cluster hyphen all right
+so this will ensure that it will clean
+up my complete uh cluster that I created
+so I had three or four running instances
+if you see them all the three are
+shutting down because you know the cop
+server which had cops installed on it uh
+is now got a mandate to go ahead and
+shut down and clean up the whole uh
+instances and all those things that are
+created as a part of my deployment thank
+you for joining us on this insightful
+journey through kubernetes on the simply
+learn YouTube channel we hope this
+tutorial has equipped you with a
+comprehensive understanding of kuber
+needs from the fundamentals to advanced
+concepts if you found this video helpful
+don't forget to like share and subscribe
+for more enriching Tech content your
+feedback matters so feel free to drop
+your thoughts in the comment section
+below stay tuned for more exciting
+tutorials and until next time happy
+learning and happy coding staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

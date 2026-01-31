@@ -1,0 +1,559 @@
+hello everyone and welcome to simply
+learns youtube channel
+caution this side and i hope you guys
+are doing well today we are going to
+discuss animations in javascript
+we go through several websites and see
+things like hovering over something and
+it changes a bit
+these are known as animations we see
+that an image zooms out on hovering over
+that in some websites like amazon
+is it possible with javascript yes it is
+we'll find out how in this particular
+video so before we begin make sure that
+you are subscribed to our youtube
+channel and press that bell icon to
+never miss any updates from simply learn
+so without any further delay let's get
+started
+you can see we have an image slider over
+here the images present inside this box
+keep on changing we can also click on
+these radio buttons to go over a
+specific image if we click on this last
+radio button you can see we are moving
+to that particular image
+now suppose you go through the home page
+of any website like amazon or flipkart
+you will notice that these websites
+contain such image sliders at the top
+for different type of sales and offers
+going on right that looks quite nice so
+we'll do something interesting in
+today's video we'll go over some
+specific animations like fading of an
+image on several events we'll see how
+easy it is to make those style changes
+in javascript which we can't do with css
+or html we are particularly talking
+about style changes during events so
+talking about style changes we have done
+it in the past using css and html and
+javascript of course so guys we
+generally say that javascript is used to
+make a webpage more interactive right to
+make a webpage more interactive or
+engaging we have to do something nice to
+it so adding fade in and fade out
+animations to a picture makes the
+webpage more engaging to the user
+so what we'll do today is we'll take an
+image and use specific javascript
+properties to make changes in that image
+let's move on to the vs code and you
+will understand it much better
+now let's add an image to the webpage
+first so we have a picture on our
+computer and we'll add it
+so what we'll do is we'll write here img
+src source will be
+html.png
+and the next thing we'll be using the
+alt attribute we'll write here
+let's say javascript so we can take any
+random image we are doing this for
+experimental purpose only so what we'll
+do next is we'll close this img tag
+we'll save it and here you can see we
+have an image over here will reduce the
+size
+and so this is the perfect size i guess
+now what we'll do next is we'll use the
+id attribute as well because we need to
+access this particular image so let's
+say the id is img fine
+now here we have an image and we have
+two possibilities to perform those
+animations either we can add two buttons
+and add functionality to them or we can
+use the on mouse over and on mouse out
+events so we'll use two buttons for now
+and then we'll use the on mouse over and
+on mouse out events to do the same task
+now let's add two buttons here what
+we'll do is we'll write here input
+type is equals to button
+and then we'll write here value value
+will be let's say
+fade in for
+first button
+and we'll use the on click event fine so
+we'll write here on click and we'll call
+a function on clicking this particular
+button so this will be a function name
+fade in
+now we'll do similar thing again
+we'll copy paste it and we'll change
+certain
+values here we'll write your fade out
+and we'll call a different function so
+we'll write here fade out fine
+now save it and you can see we have two
+buttons over here
+faded and fade out so nothing is
+happening on clicking over these buttons
+we can change the size of this image
+using css right so we'll use css here
+only we'll write here
+class is equals to
+let's say size
+and
+we'll use the style tag here
+we'll write here dot
+size
+and inside this will
+write
+width
+is equals to
+50 pixels let's say
+and the height will be
+50 pixels as well fine save it and you
+can see the image is
+pretty small right now so what we'll do
+is we'll write here 250 instead of 50
+save it now and you can see it's working
+fine i guess
+the size is decent
+let's change it to 300
+right
+so we have to keep these things in mind
+like what size we want for our image and
+we can use css for that right that's
+quite easy what we did is we defined a
+class we use the class attribute here
+inside the img tag and we have defined
+it using the style tag over here we are
+not using any separate css file for that
+so save it and you can see we have a
+image over here with decent size and
+then we have two buttons fade in and
+fade up now the next task for us is to
+add functionality to these buttons we'll
+move on to the javascript file and
+creator functions there
+so this is a javascript file we'll
+create a function here let's say the
+function name is fadein so this is the
+first function and then we have the body
+of this function now the next thing is
+to use the style property to fade this
+image let's talk about it in detail
+we need to access this image right so
+we'll use the
+document.getelementbyid method to access
+the image we have already used the id
+attribute in the html file so what we'll
+do here is we'll write here
+document dot get element by id
+and the id is
+img fine
+now we have to use the style property
+the style property is used to add
+styling to any particular element or
+event with the help of javascript we can
+do it with css but we want to add
+styling as a functionality right this
+means that we want to style element or
+image by clicking a button for that we
+have to use the style property here in
+our javascript file
+so we'll write here style now the next
+and the last thing is fading the image
+now we have a term named opacity in
+programming opacity refers to the fact
+of being opaque in programming if the
+value of opacity is 1 then we can't see
+through the image like making an image
+transparent and if the value is zero we
+can see through that image or we can say
+that the image will totally disappear if
+the value is zero so let's try it out
+here
+and you'll understand it so what we'll
+do is we'll write here style dot opacity
+is equals to
+zero now save it
+and click on this fade in button click
+on this fade in button and you can see
+the image disappears by clicking the
+fade in but
+now we'll add functionality to this fade
+out button as well
+for that what we have to do is we have
+to create another function here so the
+function name will be
+fade
+out and then we have the body of this
+function the
+working will remain the same we'll again
+use the
+document.getelementbyid method
+we'll again use the img as id we'll
+write here dot style dot
+opacity now what we want is we want to
+bring back our image right so we'll
+write here 1
+now here the values are 0 and 1
+respectively for fade in and fade out
+functions let's check the output here
+save it
+click on this fade in button and you can
+see the image totally disappears and on
+clicking the fade out button you can see
+the image is here again now to actually
+make the image a slight fade
+let's say we don't want the image to be
+disappeared completely what we want is a
+slight fade in our image now what we
+have to do is we have to choose a value
+between 0 and 1. like for 0 it totally
+disappears right if we write here 0.5
+save it now and click on fade in you can
+see the image fades slightly so this is
+how we can use the fade in and fade out
+animations in javascript and
+it will be totally fine if we write here
+0.1 as well save it
+and if you click on this fade in button
+you can see we have this image over here
+still but we can say it's almost
+transparent or disappearing you can see
+it's over here maybe it's visible or
+maybe not but if you write here 0.3 or
+something like that and now click on
+this fade in button you can see we can
+see this image but the image is faded
+right so this is how we can use the fade
+in and fade out animations in javascript
+now we can do the same thing using on
+mouse over and on mouse out events in
+javascript we have to make some more
+minor changes in a html file only
+instead of using these buttons we'll use
+the on mouse over and on mouse out
+events
+inside the img tag so what we'll do is
+let's do it as well
+we'll move to our html file and we'll
+comment these two lines so we are done
+with it now the next thing we'll do is
+we'll use the on mouse over and on mouse
+out event right so we'll write here on
+mouse
+over first
+and we'll call the fade in function on
+taking the mouse cursor over the image
+and the second event will be on mouse
+out
+so we'll write here on mouse out and
+we'll call the fade out function fine on
+taking the mouse cursor away from the
+image save it and you can see we don't
+have any buttons over here now now on
+taking the mouse cursor over this image
+you can see the image fades a bit and on
+taking the mouse cursor away from the
+image you can see we have the original
+image here
+so this is how we can make fade in and
+fade out animations work in javascript
+you might hear that browsers do not
+support this method of using fade in and
+fade out animations in javascript in my
+case i have checked with three four
+different browsers like microsoft edge
+firefox chrome and internet explorer so
+it is working totally fine i want you
+guys to check if it is working or not
+with the browsers you have on your
+computer if not then do let us know in
+the comments and we'll figure it out
+make sure that you have the latest
+version of whichever browser you are
+using the fade in and fade out effect in
+javascript was easy to use all we have
+to do is to use the style property with
+opacity in between 0 and 1. quite a
+simple task right now in this video
+we'll see another animation effect in
+which we'll change the size of an image
+by hovering over that
+we see such animations in many
+e-commerce websites where if we take the
+mouse cursor over any product the size
+increases so let's do it here it's a
+simple task we'll add an image to our
+html file first so
+we'll write here
+img and the source will be we have an
+image named as coffee.png in a system
+and then we have the id attribute the id
+will be let's say img and then we'll use
+the alt
+attribute here we'll write here
+coffee let's assume that this is a
+product of any e-commerce website and we
+want to increase the size of this
+product on hovering over that
+so the next thing we'll be doing here is
+we'll be defining the width so let's say
+the width will be
+200 pixel for this particular image and
+then we'll use
+certain events here so we'll use the on
+mouse over so on taking the mouse cursor
+over we want to increase the size of
+this image right and on taking the mouse
+cursor away we want to decrease the size
+right
+so we have used these two functions
+we'll define these functions in our
+javascript file
+so we are done with this img tag
+save it and you can see we have an image
+over here in a browser so we are done
+with it we have the default size of this
+image as 200 pixels we can change it
+here we can make it 300 or 400
+or any size we want so you can see the
+image size change if we write here 300
+instead of 200 so for now we'll be using
+200 that's fine i guess
+so what we want is we want to increase
+the size of this image by taking the
+mouse cursor over it right and the size
+will be back to normal if we take the
+cursor away from the image so for that
+we have to define these two functions
+increase and decrease so let's define
+them in a javascript file
+what we'll do is we'll first write here
+function and we'll define function
+increase
+then we have the body of this function
+and we'll write here
+document dot get element by id the id is
+img
+and we'll write here dot style dot
+width
+is equals to we can't write here 400
+pixels simply it will throw an error you
+can see a red line over here so what we
+have to do is we have to write this
+inside single inverted commas
+right
+save it and on taking the mouse cursor
+over the image you can see the image
+size increases but it's not getting back
+to its original size because we haven't
+declared the decrease function yet let's
+declare the decrease function as well so
+what we'll do is we'll again use the
+same logic we'll write here function
+decrease
+and inside the body we'll write
+document dot get element by id
+we'll write here img
+dot style dot width
+is equals to the width let's say will be
+default so the width will be 200 pixels
+we'll write here 200 pixels
+and the decrease function will make the
+picture get back to its original size
+that is 200 pixels so save it and you
+can see here on the browser that the
+image is zooming in and out on specific
+mouse events
+that is one of the most easiest tasks to
+do in javascript all we had to do is we
+had to define two functions a function
+increase and the other one for
+decreasing the size so the function
+increase will increase the size by 200
+pixels and the function decrease will
+get the image back to its original form
+fine
+now there is an older method of changing
+the size of an image using the set
+interval method
+html5 documents no longer support this
+method so suppose that we want the size
+of the image to grow gradually like
+after every 10 milliseconds the size
+should increase up to a certain level
+all we have to do is to use the set
+interval method we are all aware of this
+concept in javascript so let's take a
+look at the html part so here's the html
+part which is the same as we used for
+the previous program not even a single
+change here you can see we have the
+image sources coffee.png then we have
+the ids img one
+then we have used two mouse over events
+one to increase the size and the other
+one to decrease the size and then we
+have the width as hundred we have
+changed the width here the initial width
+will be hundred and we'll notice that
+the initial image size is smaller than
+the one we used in the previous program
+now the javascript file will look
+different let's move there first so here
+is the javascript part and we have three
+variables here width addition and
+interval id
+now the initial value of width is the
+same as that of image
+which is 100 and then we have the
+variable addition which will be
+responsible for the increment of the
+size as we want the size to be increment
+by 2 pixels after every 10 milliseconds
+right the following variable is interval
+id which we'll need later on while using
+the set interval method
+now we have two functions over here the
+increase function and the decrease
+function so these are the two functions
+we have in a javascript file
+inside the increase function we have
+used the set interval method you can see
+here we have the set interval method
+and we have called the zoom in function
+after every 10 milliseconds so it will
+call the zoom in functions again and
+again after 10 milliseconds so if we
+want to make it one second we have to
+write here 1000 right we are already
+aware of this concept so we are using
+milliseconds for now now if we remove
+this clear interval method from here
+then the zoom in and zoom out effect
+will not work correctly in between we'll
+try it later so same as the case for
+decrease function as well and it will
+call the zoom out function after every
+10 milliseconds right so we have to
+define these two functions as well so
+here are the functions zoom in and zoom
+out so let's take a look at the zoom in
+function first the zoom in function is
+actually responsible for the increment
+in the size of the image
+if the width is less than 200 let's
+suppose the initial width is 100 which
+is less than 200 right then what will
+happen is
+the value of width will be increased by
+width plus addition it will be increased
+by 2 so it will check if the width is
+less than 100 the value will be 102 then
+1046810
+up to 200 and then the value will be
+assigned to the style property to
+increase the size so this statement is
+we are using for a long time now so what
+we are doing is we are assigning the
+value of this width to this style
+property and then we have used the
+console.log to check the increase in
+width
+now the else statement will stop the set
+interval function and the increment in
+image size will be stopped as soon as it
+reaches the 200 mark
+for the value of width as 200 the set
+interval function will stop
+same as the case for zoom out function
+which will decrease the size of the
+image until the size reaches
+0.
+the size will be reduced by 2 after
+every 10 milliseconds the logic remains
+the same what we are doing is we are
+using here minus instead of plus and we
+are checking if the value of width is
+greater than hundred fine let's check
+the output of this program save it and
+we'll open this file with live server
+we'll click on live server
+now
+here we are on the browser and take the
+mouse cursor over the image oh it's not
+working the reason behind it is this
+method is not supported by the current
+version of html to make this program
+work we have to put our browser in quark
+mode
+now for that we have to do a simple task
+we have to go to a html file and we have
+to remove this particular statement we
+have to remove this doctype as html
+remove it now this quirk mode is used to
+make older websites compatible with the
+browser if your program doesn't work
+sometimes do check this out by removing
+doctype from your html file sometimes it
+happens that a particular method or a
+particular type of program doesn't
+supports in your browser so do check
+this method out try running your program
+in quirk mode and maybe it will work
+so let's check the output now see on
+taking the mouse cursor over here
+the image size increases gradually and
+on taking the mouse cursor away the size
+decreases it looks nice right
+now imagine you are working on an
+ecommerce website and you want to make
+your website more interactive
+then you can put this effect over
+products and it will look nicer right
+so we have already mentioned it that
+what if we remove this clear interval
+method so we'll move to a javascript
+file and we'll see what if we remove
+this particular clear interval method
+from it so we'll remove these clear
+interval methods we'll remove this one
+and
+this one
+save it now
+and you can see there is something wrong
+on taking the mouse cursor over this
+image so you can see the image is
+shaking slightly right now this is
+because the clear interval method does
+not stop the set interval method on
+calling the increase and decrease
+function every time
+so this is how we can make our web pages
+more beautiful and interactive in
+javascript try doing something new by
+yourself and let us know in the comments
+what new you learned
+and with that we come to the end of this
+animations in javascript tutorial if you
+enjoyed watching the video do give it a
+thumbs up comment your doubts below and
+our experts will answer them for you
+thank you so much for being here watch
+out for more videos from us until then
+keep learning and stay tuned to simply
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

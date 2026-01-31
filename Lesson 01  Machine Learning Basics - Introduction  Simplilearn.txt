@@ -1,0 +1,233 @@
+machine learning can change your life
+provided you know how to implement the
+right models with the right algorithms
+hi guys welcome to this complete machine
+learning course by simply learn now
+let's have a look at what we'll be
+covering today two of our industry
+experts Richard and moan each with over
+10 years of experience in data science
+and machine learning will teach you the
+various concepts of machine learning
+including algorithms and how you can
+practically Implement them first we will
+understand what is machine learning and
+then we will go through various
+algorithms like linear regression
+logistic regression K means clustering
+decision tree random Forest KNN
+algorithm svm and naive based classifier
+you will not only learn how each of
+these algorithms work but also Implement
+them using python once you're done with
+this you will have a firm grasp on the
+concepts of machine learning after this
+comprehensive machine learning training
+we will also go through some popular
+applications of machine learning and
+then we will guide you on how you can be
+a machine learning engineer and finally
+we have collected 30 of the most
+important questions that you might face
+in a machine learning interview before
+we move ahead with the full course let
+us look at a short animated video we
+have made so that you can understand the
+basics of machine learning we know
+humans learn from their past experiences
+and machines follow instructions given
+by
+humans but what if humans can train the
+machines to learn from the past data and
+do what humans can do and much faster
+well that's called machine learning but
+it's a lot more than just learning it's
+also about understanding and reasoning
+so today we will learn about the basics
+of machine learning so that's Paul he
+loves listening to new
+songs he either likes them or dislikes
+them Paul decides this on the basis of
+the song's Tempo genre intensity and the
+gender of voice for Simplicity let's
+just use Tempo and intensity for now so
+here Tempo is on the x-axis ranging from
+relax to fast whereas intensity is on
+the y- AIS ranging from light to Soaring
+we see that Paul likes the song with
+fast tempo and soaring intensity while
+he dislikes the song with relaxed Tempo
+and light intensity so now we know
+Paul's choices let's say Paul listens to
+a new song Let's name it a song a song a
+has fast tempo and a soaring intensity
+so it lies somewhere here looking at the
+data can you guess whether Paul will
+like the song or not correct so Paul
+likes this song by looking at Paul's
+past choices we were able to classify
+the unknown song very easily right let's
+say now Paul listens to a new song Let's
+label it as song b so song b lies
+somewhere here with medium Tempo and
+medium intensity neither relax maxed nor
+fast neither light nor soaring now can
+you guess whether Paul likes it or not
+not able to guess whether Paul will like
+it or dislike it are the choices unclear
+correct we could easily classify song A
+but when the choice became complicated
+as in the case of song b yes and that's
+where machine learning comes in let's
+see how in the same example for song b
+if you draw a circle around the song b
+we see that there are four votes for
+like whereas one vot for dislike if we
+go for the majority wots we can say that
+Paul will definitely like the song
+that's all this was a basic machine
+learning algorithm also it's called K
+nearest neighbors so this is just a
+small example in one of the many machine
+learning algorithms quite easy right
+believe me it is but what happens when
+the choices become complicated as in the
+case of song b that's when machine
+learning comes in it learns the data
+builds the prediction model and when the
+new data point comes in it can easily
+predict for it more the data better the
+model higher will be the accuracy there
+are many ways in which the machine
+learns it could be either supervised
+learning unsupervised learning or
+reinforcement learning let's first
+quickly understand supervised learning
+suppose your friend gives you 1 million
+coins of three different currencies say
+one rupe 1 euro and 1 dirham each coin
+has different weights for example a coin
+of 1 rupee weighs 3 g 1 EO weighs 7 G
+and 1 Dam weighs is 4 G your model will
+predict the currency of the coin here
+your weight becomes the feature of coins
+while currency becomes the label when
+you feed this data to the machine
+learning model it learns which feature
+is associated with which label for
+example it will learn that if a coin is
+of 3 G it will be a 1 rupee coin let's
+give a new coin to the machine on the
+basis of the weight of the new coin your
+model will predict the currency hence
+supervised learning uses labeled data to
+train the the model here the machine
+knew the features of the object and also
+the labels associated with those
+features on this note let's move to
+unsup wise learning and see the
+difference suppose you have Cricket data
+set of various players with their
+respective scores and the wickets taken
+when you feed this data set to the
+machine the machine identifies the
+pattern of player performance so it
+plots this data with the respective
+wickets on the xaxis while runs on the Y
+AIS while looking at the data you'll
+clearly see that there are two clusters
+the one cluster are the players who
+scored High runs and took less wickets
+while the other cluster is of the
+players who scored less runs but took
+many wickets so here we interpret these
+two clusters as batsman and Bowlers the
+important point to note here is that
+they were no labels of batsmen and
+Bowlers hence the learning with
+unlabeled data is unsupervised learning
+so we saw supervised learning where the
+data was labeled and the unsupervised
+learning where the data was unlabeled
+and then there is reinforcement learning
+which is a reward-based learning or we
+can say that it works on the principle
+of feedback here let's say you provide
+the system with an image of a dog and
+ask it to identify it the system
+identifies it as a cat so you give a
+negative feedback to the machine saying
+that it's a dog's image the machine will
+learn from the feedback and finally if
+it comes across any other image of a dog
+it'll be able to classify it correctly
+that is reinforcement learning to
+generalize machine learning model let's
+see a flowchart input is given to a
+machine learning model which then gives
+the output according to the algorithm
+applied if it's right we take the output
+as a final result else we provide
+feedback to the training model and ask
+it to predict until it learns I hope
+you've understood supervised and
+unsupervised learning so let's have a
+quick quiz you have to determine whether
+the given scenarios uses supervised or
+unsupervised learning simple right
+scenario one Facebook recognizes your
+friend in a picture from an album of
+tagged
+photographs scenario two Netflix
+recommends new movies based on someone's
+Past movie
+choices scenario three analyzing Bank
+data for suspicious transactions and
+flagging the fraud transactions think
+wisely and comment below your answers
+moving on don't you sometimes wonder how
+is machine learning possible in today's
+era well that's because today we have
+humongous data available everybody's
+online either making a transaction or
+just surfing the internet and that's
+generating a huge amount of data every
+minute and that data my friend is the
+key to analysis also the memory handling
+capabilities of computers have largely
+increased which helps them to process
+such huge amount of data at hand without
+any delay and yes computers now have
+great computational Powers so there are
+a lot of applications of machine
+learning out there to name a few machine
+learning is used in healthcare where
+Diagnostics are predicted for doctor's
+review the sentiment analysis that the
+tech Giants are doing on social media is
+another interesting application of
+machine learning fraud detection in the
+finance sector and also to predict
+customer turn in the e-commerce sector
+while booking a capab you must have
+encountered searge pricing often where
+it says the fair of your trip has been
+updated continue booking yes please I'm
+getting late for office well that's an
+interesting machine learning model which
+is used by Global Taxi giant Uber and
+others where they have differential
+pricing in real time based on demand the
+number of cars available bad weather
+Rush R Etc so they use the searge
+pricing model to ensure that those who
+need a cab can get one also it uses
+predictive modeling to predict where the
+demand will be high with a goal that
+drivers can take care of the demand and
+search pricing can be minimized great
+hey Siri can you remind me to book a cab
+at 6:00 p.m. today okay I'll remind you
+thanks no problem I hope that has got
+you all interested to learn machine
+learning

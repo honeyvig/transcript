@@ -1,0 +1,297 @@
+hey everyone welcome back to another
+video by simply learn
+in this session we will be learning
+about two very popular mobile
+development platforms that is kotlin and
+flutter
+in this video tutorial on kotlin vs
+flutter we will not only learn about
+them but also will compare these two so
+let's go ahead and have a look at what
+we will be covering today
+so we will start with what is kotlin
+then we will understand what is flutter
+and then we will do the comparison
+between kotlin and flutter in various
+aspects
+and at last we will be learning about
+the advantages kotlin and flutter
+respectively
+but before we begin make sure to
+subscribe to our youtube channel and
+press the bell icon to never miss an
+update so let's go ahead and learn about
+kotlin
+so what is kotlin
+kotlin is a journal purpose statically
+typed programming language developed by
+jetbrains in 2010
+and later released in 2016.
+here statically typed means the type of
+the variable is known at the compile
+time
+kotlin is interoperable with java which
+means both the languages can share and
+use the information or we can say
+we can use kotlin side by side with java
+and just like java compiler the kotlin
+compiler also generates the byte code
+which can run on jvm
+that is java virtual machine
+it is very easy and friendly language
+and kotlin language is developed by
+selecting the good features of different
+languages like java javascript c-sharp
+etc
+also in 2017 google announced kotlin as
+an official supported language for
+android
+now as we have understood about kotlin
+now let's go ahead and learn about
+flutter
+so what is flutter
+flutter is a user interface toolkit
+which was developed by google in 2017
+it is not only used to develop mobile
+applications but web applications
+desktop applications and some embedded
+device as well
+flutter is not a language but a
+development kit which contains all the
+necessary libraries tools documentations
+etc to build the software
+dart is the programming language which
+is used in flutter
+that was developed by google in 2011
+and is very suitable for mobile and web
+applications
+flutter is an open source framework and
+offer a complete package of widgets
+tools etc for the development purpose
+now let's go ahead and compare both
+cortland and flutter in terms of
+different aspects so we'll start with
+the performance
+we'll start with kotlin
+the kotlin applications directly
+interact with the device which is why
+the kotlin apps runs faster than the
+flutter apps
+also the kotlin code compiles in the
+same format of the platform in which it
+is written
+which is why it is more suitable for
+cross-platform mobile app development
+and that makes kotlin a robust platform
+on the other hand if we look at flutter
+its debugging and development process is
+quite faster because of its features
+which is hot reload and hot restart
+these features allows the developers to
+change the code instantly and see its
+effect which helps in speeding up the
+development process and helps in
+building apps at much faster rate
+although comparing kotlin and flutter is
+not that fair because they don't have
+the common grounds when it comes to
+performance
+flutter is a ui toolkit its performance
+depends on how the interface of the app
+looks and its frames per seconds etc
+on the other hand kotlin is a
+programming language which is used to
+develop android and cross platform apps
+so its measurement of performance is bit
+different from flutter
+both kotlin and flutter have different
+approaches and amazing performance
+but still if we have to compare them
+then flutter has the upper hand because
+of its hot reload feature
+now let's go ahead and compare kotlin
+and flutter in terms of ease of learning
+kotlin is quite an easy language
+especially if you know java
+then it will be very easy for you to
+understand and learn this language
+because kotlin is inspired from java
+language and the users of java language
+will find the syntax of kotlin very
+familiar
+for the beginners also kotlin is an easy
+language
+learning this language will hardly take
+a month because of its concise and easy
+to learn syntax
+now coming to flutter
+to learn flutter first you have to learn
+dart programming
+to develop web mobile and desktop
+applications
+which is also an easy language to learn
+its documentation is more comprehensive
+than
+kotlin although kotlin has lesser
+learning resources than flutter but
+still it is easier to learn it because
+in flutter you have to learn the dart
+programming from scratch
+but it is not so in case of kotlin and
+also kotlin syntax is similar to java
+which gives kotlin an upper hand
+now
+let's move on to popularity
+kotlin's popularity on github is 40k
+stars
+which is quite less than flutters
+on the other hand flutter's popularity
+on github is 98.9 k stars
+since its 1.0 release which is quite
+good
+however as per google trends comparison
+the difference between average interest
+is not that much between flutter and
+kotlin
+cotton language lies at 72 and flutter
+language lies at 76
+in terms of average popularity out of
+100.
+as per stack overflow the percentage of
+stack overflow questions for flutter is
+approx 2.50
+and for kotlin it is 1.17 percent
+now
+moving to the fourth comparison which is
+integration of third-party libraries
+kotlin language doesn't require a set of
+libraries and tools to make a connection
+because it works with native platform
+ecosystem
+the app developers can deploy the same
+libraries and third party tools instead
+of making new
+one on the other hand flutter is a ui
+development tool
+so it needs third party libraries and
+tools to make a connection with native
+environment
+now
+last comparison would be the apps
+developed by kotlin and flutter
+kotlin has developed many apps including
+vmware pinterest coursera zometo netflix
+and uber etc
+on the other hand flutter has developed
+apps including cryptograph google ads
+post muse hamilton app tree etc
+so as we have compared both kotlin and
+flutter
+now next we will be moving to the
+advantages of kotlin
+first we will start with null safety
+null safety is one of the most
+innovative feature that comes with
+gotling language
+this null safety feature eliminates the
+risk of null pointer exception
+the kotlin type system helps in
+differentiating between nullable and
+non-nullable references
+and kotlin doesn't compile the code
+which tries to return null
+next advantage is robust performance
+as we already discussed that in kotlin
+language the code we write is compiled
+in the same format as the platform of
+which it is planned
+this feature provides the performance to
+the native app development which makes
+cotton language a robust platform
+next is easy to learn syntax
+kotlin language is easy and simple to
+comprehend
+it is inspired from languages like java
+c-sharp etc
+its syntax is also quite similar and
+less strict to java
+due to its similarity with java the
+users who knew java found this language
+very familiar to java and easy to grasp
+also due to its interoperable nature
+with java both languages can co-exist
+which make things easier for developers
+next advantage is kotlin is concise and
+easy to maintain
+in kotlin language you don't have to
+write extra code
+unlike java you don't have to write the
+entire code you can simply write the
+same code with fear lines
+also kotlin has a single code base that
+makes it a stable language for
+development and you can easily detect
+errors before running the code
+now moving on to the advantages of
+flutter
+so first advantage is hot reload feature
+of flutter
+this feature allows you to see the
+change that you have created like fixing
+bugs building user interface etc
+and those changes are then reflected
+instantly
+also it helps you to write the code
+faster with ease
+next advantage is flutters less
+development cost
+in flutter you have the advantage of
+using the same code because of native
+app development
+which allows us to reuse most part of
+the code
+this helps in cutting the development
+time and resources along with that it
+helps in reducing the budget up to 30 to
+40 percent
+next is widgets
+flutter sdk comes with numerous widgets
+which offers many capabilities
+these widgets helps in making the app
+attractive
+it is used to display it is used to
+design something and it is also used to
+handle the interactions as well
+the choice of widgets is responsible for
+the design or view of the screen
+now
+moving on to the next advantage which is
+mvp
+mvp and prototype development
+here mvp stands for minimum viable
+product
+it is a simpler version of the app or
+software that solves the problem
+statement
+mvp helps in giving the true potential
+of the idea
+it helps in attracting the interest of
+the users in the product
+that you are planning to launch
+flutter is a cross-platform development
+tool so minimum time and resources are
+needed and can be assessed if the idea
+is good or not
+so these were some advantages of kotlin
+and flutter
+and with that we have come to the end of
+this session if you like this video
+please give it a thumbs up i hope it
+really helped you all
+thanks for watching stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

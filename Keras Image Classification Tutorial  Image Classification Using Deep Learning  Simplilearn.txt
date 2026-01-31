@@ -1,0 +1,1181 @@
+image classification using cross
+my name is richard kirchner with the
+simply learn team that's www.simpler
+get certified get ahead
+and we're going to take a look at image
+classification using cross and the basic
+setup and we'll actually look at two
+different demos on here
+uh what's in it for you today
+what is image classification
+intel image classification data
+creating neural networks with keras and
+the vgg-16 model
+what is image classification
+the process of image classification
+refers to assigning classes to an entire
+image images can be classified based on
+different categories like weather it is
+a nighttime or daytime shot what the
+image represents etc you can see here we
+have mountains looking for mountains
+well actually doing some uh
+pictures of scenery and stuff like that
+in deep learning we perform image
+classification by using neural networks
+to extract features from images and
+classifies them based on these features
+and you can see here where it says like
+what computer sees and it says oh yeah
+we see mostly forests maybe a little bit
+of mountains because the way the image
+is
+and this is really where one of the
+areas that neural networks
+really shines
+if you try to run this stuff through
+more like a linear regression model
+you'll still get results but the results
+kind of miss a lot of things as the
+neural networks get better and better at
+what they do with different tools we
+have out there
+so intel image classification data
+the data being used is the intel image
+classification data set which consists
+of images of six types of land areas and
+so we have forest building glaciers and
+mountains sea and street
+and you can see here is a couple of the
+images out of there as a setup in the in
+the
+intel image classification data that
+they use
+and then we're going to go into creating
+a neural networks with keras
+the convolutional neural network that we
+are creating from scratch looks uh as
+shown below
+you'll see here we have our input layer
+they haven't listed max pooling uh so
+you have
+as you're coming in with the input layer
+and this the input layer is actually
+before this but the first layer that
+it's going to go into is going to be a
+convolutional neural network
+then you have a max pooling that pulls
+those the the convolutional neural
+networks returns
+uh in this case they have two of those
+that is very standard with convolutional
+neural networks uh one of the ones that
+i was looking at earlier that was
+standard being used by i want to one of
+the larger companies i can't remember
+which one for doing a large amount of
+identification had two convolutional
+neural networks each with their max
+pooling and then about 17 dense layers
+after it we're not going to do that
+heavy duty of a of a code but we'll get
+you ahead in the right direction and
+that gives you an idea of what you're
+actually going to be looking at when you
+look at the flattened part and then the
+dents we're talking like 17 dense layers
+afterwards
+i find that a lot of the stuff i've been
+working on i end up maxing it out right
+around nine dense layers it really
+depends on what you have going in and
+what you're working with
+and the vgg16 model
+vg6 is a pre-trained cnn model which is
+used for image classification it is
+trained on a large varied data set and
+fine-tuned to fit image classification
+data sets with ease
+and you can see down here we have the
+input coming in uh the convolutional
+neural network one to one one to two and
+then pooling and then we do two to one
+two to two convolutional network then
+pooling three to two and you can see
+there's just this huge layering of
+convolutional neural networks and in
+this case they have five such layers
+going in and then three dents going out
+or
+more
+now when they
+took this setup this actually won an
+award back in 2019 for this particular
+setup
+and it does it does really good except
+that again
+we only show the three dense layers here
+and as you find out
+depending on your data going in and what
+you have set up
+that really isn't enough on one of these
+setups and i'm going to show you why we
+restricted it because it does take up a
+lot of processing power in some of these
+things
+so let's go ahead and roll up our
+sleeves and we're going to look at both
+the setups we're going to start with the
+the first classification
+and then we'll go into the vgg16 and
+show you how that's set up
+now i'm going to be using anaconda and
+let me flip over to my anaconda so you
+can see what that looks like
+now i'm running in the anaconda here uh
+you'll see that i've set up a main
+python 3 8. i always put that in there
+because this is where i'm doing like
+most of my kind of playing around
+this is done in python version 3.8 we're
+not going to dig too much into versions
+uh at this point you should already have
+cross installed on there usually cross
+takes a number of extra steps
+and then our usual um
+uh
+setup is the numpy the pandas uh your sk
+your site kit which is gonna be the sk
+learn your seaborn and i'll show you
+those in just a minute
+um and then i'm just gonna be in the
+jupiter lab where i've created a new
+notebook in here
+and let's flip on over there to my blank
+notebook
+now there's a couple of cool things to
+note in here is that
+one i use the the
+anaconda jupiter notebook setup because
+it keeps everything separate
+except for cross
+cross is actually running separately in
+the back
+i believe it's a c program
+uh what's nice about that is that it
+utilizes the multiprocessors on the
+computer and i'll mention that just in a
+little bit when we actually get down to
+running the code
+and when we look in here a couple things
+to note is here's our
+oops
+i thought i grabbed the other drawing
+thing
+but here's our numpy and our pandas
+right here and our operating system this
+is our psi kit you always import it as
+sklearn for the classification report
+we're going to be using well usually
+import like seaborn brings in all of
+your pie plot library also
+kind of nice to throw that in there i
+can't remember if we're actually using
+seaborne if they just the people in the
+back just threw that together
+and then we have the sklearn shuffle for
+shuffling data here's our matplot
+library that the seaborn is pretty much
+built on
+cv2
+if you're not familiar with that that is
+our image
+module for importing the image
+and then of course we have our
+tensorflow down here which is what we're
+really working with
+and then the last thing is just for
+visual effect while we're running this
+if you're doing a demo and you're
+working with the partners or the
+shareholders
+this tqdm is really kind of cool it's an
+extensible progress bar for python and
+i'll show you that too
+remember data science is not i mean you
+know muscles code when i'm looking
+through this code i'm not going to show
+half of this stuff to the shareholders
+or anybody i'm working with they don't
+really care about pandas and all that we
+do because we want to understand how it
+works
+so we need to go ahead and import those
+different
+setup on there and then the next thing
+is we're going to go ahead and set up
+our classes
+now we remember if we had mountain
+street glacier building c and forest
+those were the different images that we
+have coming in
+and we're going to go ahead and just do
+class name labels and we're going to
+kind of match that class name of ifri
+class name
+equals the class names so our labels are
+going to match the names up here
+and then we have the number of classes
+and the print the class names and the
+labels and we'll go ahead and set the
+image size this is important that we
+resize everything because if you
+remember with neural networks
+they take one size data coming in and so
+when you're working with images you
+really want to make sure they're all
+resized to the same
+setup it might squish them it might
+stretch them that generally does not
+cause a problem in these
+in some of the other tricks you can do
+with if you if you need more data
+and this is one that's used regularly
+we're not going to do it in here is you
+can also take these images and not only
+resize them but you can tilt them one
+way or the other crop parts of them
+so they process slightly differently and
+it'll actually increase your accuracy of
+some of these predictions
+and so you can see here we have mountain
+equals zero that's what this class name
+label is street equals one glacier
+equals two buildings equals three c4
+forest equals five
+now we did this as an enumerator so each
+one is 0 through 5.
+a lot of times we do this instead as
+0 1 0 1 0 1 so you have five outputs and
+each one's a zero or a one coming out so
+the next thing we really want to do is
+we want to go ahead and load the data up
+and just put a label in there loading
+data
+just just so you know what we're doing
+i'm going to put in the loading data
+down here
+make sure it's well labeled
+and we'll create a definition for this
+and this is all part of your
+pre-processing
+at this point you could replace this
+with all kinds of different things
+depending on what you're working on
+and if you once you download you can go
+download this data set uh send a note to
+the simply learn team here in youtube
+and they'll be happy to direct you in
+the right direction and make sure you
+get this path here
+so you have the right whatever wherever
+you saved it a lot of times i'll just
+abbreviate the path or put it as a sub
+thing and just get rid of the directory
+but again double check your paths we're
+going to separate this into a segment
+for training
+and a segment for testing and that's
+actually how it is in the folder let me
+just show you what that looks like
+so when i have my lengthy path here
+where i keep all my programming simply
+learn this particular setup we're
+working on image classification
+and image classification
+clearly you probably wouldn't have that
+lengthy of a list
+and when we go in here
+you'll see sequence train sequence test
+they've already split this up this is
+what we're going to train the data in
+and again you can see buildings 4th
+glacier mountain sea street
+and if we double click let's go under
+forest
+you can see all these different forest
+images and there's a lot of variety here
+i mean we have winter time we have
+summer time
+so it's kind of interesting
+you know here's like a fallen tree
+versus
+a road going down the middle
+that's really hard to train and if you
+look at the buildings
+a lot of these buildings you're looking
+up a skyscraper we're looking down the
+setup
+here's some trees with one and i want to
+highlight this one it has trees in it ah
+let me just open that up so you can see
+it a little closer
+the reason i want to highlight this is i
+want you to think about this
+we have trees growing is this the city
+or a forest
+so this kind of imagery makes it really
+hard for a classifier and if you start
+looking at these you'll see a lot of
+these images do have trees and other
+things in the foreground
+weird angles
+really a hard thing for a computer to
+sort out and figure out whether it's
+going to be a forest or a city
+and so in our loading of data
+one we have to have the path the
+directory
+we're going to come in here we have our
+images and our labels
+so we're going to load the images in one
+section the labels in another
+and if you look through here it just
+goes through the different folders
+in fact let me do this let me
+there we go
+as we look at this we're just going to
+loop through the three to the six
+different folders that have the
+different landscapes and then we're
+going to go through and pull each file
+out
+and each label
+so we set the label we set the folder
+for file and list
+here's our image path
+join the paths this is all kind of not
+general stuff
+so i'm kind of skipping through it
+really quick
+and here's our image setup if you
+remember we're talking about the images
+we have our cv2
+reader so it reads the image in
+it's going to go ahead and take the
+image and convert it to
+from
+blue green red to red green green blue
+this is a cv2 thing almost all the time
+it imports it and instead of importing
+it as a standard that's used just about
+everywhere it imports it with the bgr
+versus rgb
+rgb is pretty much a standard in here
+you have to remember that with cv2 and
+then we're going to go ahead and resize
+it this is the important part right here
+we've set up we've decided what the size
+is and we want to make sure all the
+images have the same size on them
+and then we just take our images and
+we're just going to pin the image pin
+the label
+and then the images it's going to turn
+into a numpy array this just makes it
+easier to process and manipulate
+and then the labels is also a numpy
+array and then we just return the output
+append images and labels and we return
+the output down here
+so we've loaded these all into memory
+we haven't talked too much
+there'd be a different setup in there
+because there is ways to feed the files
+directly into your cross model
+but we want to go ahead and just load
+them all because really
+for today's processing and what our
+computers can handle that's not a big
+deal
+and then we go ahead and set the train
+images train labels test images test
+labels and that's going to be returned
+in our output append and you can see
+here we did um
+images and labels set up in there and it
+just loads them in there so we'll have
+these four different categories let me
+just go ahead and run that
+so now we've gone ahead and loaded
+everything on there
+and then if you remember from before uh
+we imported just go back up there
+shuffle here we go here's our sk learn
+utilities import shuffle
+and so we want to take these labels and
+shuffle them around a little bit
+just mix them up so it's not having the
+same if you run the same process over
+and over
+then you might run into some problems on
+there
+and just real quick let's go ahead and
+do uh
+um a plot so we can just you know we've
+looked at them as far as from outside of
+our code we pulled up the files and i
+showed you
+what that was going on we can go ahead
+and just display them here too
+and i tell you when you're working with
+different people
+this should be highlighted right here
+this thing is like when i'm working on
+code and i'm looking at this data and
+i'm trying to figure out what i'm doing
+i skip this process the second i get
+into a meeting and i'm showing what's
+going on to other people
+i skip everything we just did
+so
+and go right to here where we want to go
+ahead and display
+some images and take a look at it
+and in this display
+i've taken them and i've resized the
+images to 20 by 20.
+that's pretty small
+so we're going to lose just a massive
+amount of detail and you can see here
+these nice pixelated images
+i might even just stick with the folder
+showing them what images were processing
+uh
+again this is
+yeah be a little careful this
+maybe resizing it was a bad idea
+in fact let me try it without resizing
+it and see what happens oops so i took
+out the image size and then we put this
+straight in here
+one of the things again this is um
+but the d there we go one of the things
+again that we want to note
+whenever we're working on these things
+is the cv2
+there are so many different
+uh image classification setups it's
+really a powerful package when you're
+doing images
+but you do need to switch it around so
+that it works with the pi plot and so
+make sure you take your numpy array and
+change it to a
+u integer 8 format because it comes in
+as a float
+otherwise you'll get some weird images
+down there
+and so this is just basically we've
+split up our we've created a plot
+we went ahead and did the plot 20 by 20.
+or
+the plot figure size is 20 by 20
+and then we're doing 25 so a 5 by 5
+subplot
+nothing really going on here too
+exciting but you can see here where we
+get the images and
+really when you're showing people what's
+going on this is what they want to see
+so you skip over all the code and you
+have your meeting you say okay here's
+our images of the building
+don't get caught up in how much work you
+do get caught up in what they want to
+see so if you want to work in data
+science that's really important to know
+and this is where we're going to start
+uh having fun uh here's our model this
+is where it gets exciting when you're
+digging into these models
+and you have here
+let me get
+there we go
+when you have here if you look here
+here's our convolutional neural network
+2d
+and
+2d is an image you have two different
+dimensions x y and even though there's
+three colors it's still considered 2d
+if you're running a video you'd be
+convolutional neural network 3d if
+you're doing a series going across
+a time series it might be 1d
+and on these you need to go ahead and
+have your convolutional neural network
+if you look here there's a lot of really
+cool settings going on
+to dig into
+we have our input shape so everything's
+been set to 150 by 150
+and it has of course three different
+color schemes in it that's important to
+notice
+activation
+default is relu this is
+small amounts of data are being
+processed on a bunch of little
+neural networks
+and right here is the 32 that's how many
+of these convolutional null networks are
+being strung up on here
+and then the three by three
+when it's doing its steps it's actually
+looking at a little three by three
+square on each image
+and so that's what's going on here and
+with convolutional neural networks the
+window floats across
+and adds up all these numbers going
+across on this data and then eventually
+it comes up with 30 in this case 32
+different
+feature options that it's looking for
+and of course you can change that 32 you
+can change the 3x3 so you might have a
+larger setup you know if you're going
+across 150
+by 150 that's a lot of steps so we might
+run this as 15 by 15. uh there's all
+kinds of different things you can do
+here
+we're just putting this together again
+that would be something you would play
+with to find out which ones are going to
+work better on this setup
+and there's a lot of play involved
+that's really where it becomes an art
+form is guessing at what that's going to
+be
+the second part i mentioned earlier and
+i can only begin to highlight this
+when you get to these dense layers
+one is the activation is a relu they use
+a relu and a soft max here
+it's a whole a whole setup just
+explaining why these are different
+and how they're different because
+there's also an exponential there's a
+tangent in fact
+uh there's just a ton of these and you
+can build your own custom activations
+depending on what you're doing
+a lot of different things go into these
+activations
+there are two or three major thoughts on
+these activations and
+relu and softmax are
+well relu uh
+you're really looking at just the number
+you're adding all the numbers together
+and you're looking at euclidean geometry
+ax plus b
+x 2 plus c x 3
+plus a bias
+with soft max this belongs to the party
+of
+it's activated or it's not except it's
+they call it soft max because when you
+get the the to zero instead of it just
+being zero
+uh it's actually slightly
+a little bit less than zero so that when
+it trains it doesn't get lost
+there's a whole series of these
+activations
+another activation is the tangent
+where it just drops off and you have
+like a very narrow area where you have
+from -1 to 1 or exponential which is
+zero to one
+so there's a lot of different ways to do
+the activation
+again we can do that would be a whole
+separate lesson on here
+we're looking at the convolutional
+neural network
+and we're doing the two pools
+this is so common you'll see two two
+convolutional neural networks on top of
+each other each with its own max pool
+underneath let's go ahead and run that
+so we built our model there and then we
+need to go ahead and
+the model so let's go ahead and do that
+uh we're going to use the atom
+optimizer the bigger the data the atom
+fits better on there there's some other
+optimizer but i think atom's a default
+i don't really play with the optimizer
+too much that's like the
+if once you get a model that works
+really good you might try some different
+optimizers but atoms usually the most
+and then we're looking at loss
+pretty standard we want to minimize our
+law we want to
+maximize the loss of error
+and then we're going to look at accuracy
+everybody likes the accuracy i'm going
+to tell you right now
+i start talking to people and like okay
+what's what's the loss on this and that
+and as a data science yeah i want to
+know how the lot what what's going on
+with that and we'll show you why in a
+minute
+but everybody wants to see accuracy we
+want to know how accurate this is and
+then we're going to run the fit and i
+wanted to do this just so i can show you
+even though
+we're in a python
+setup in here where jupyter notebook is
+using only a single processor i'm going
+to bring over my little cpu tool
+this is eight cores on 16 dedicated
+threats so it shows up as 16 processors
+and actually i got to run this and then
+move it over
+so we're going to run this
+and hopefully it doesn't destroy my mic
+uh and as it comes in you can see it's
+starting to do go through the epics and
+we said i set it for five epics
+and then this is really nice because
+cross uses all the different uh threads
+available
+so it does a really good job of doing
+that
+this is going to take a while if you
+look at here it's
+eta
+two minutes and 25 seconds 24 seconds so
+this is roughly two and a half minutes
+per epic
+uh and we're doing five epics so this is
+going to be done in roughly 15 minutes
+i don't know about you but i don't think
+you want to sit here for 15 minutes
+watching the green bars go across so
+we'll go ahead and let that run
+and
+there we go
+there was our 15 minutes it's actually
+less than that
+because i did when i went in here
+realized that
+where was it
+here we go here's our model compile
+here's our model flip uh fit
+and here's our epics so i did four epics
+so a little bit better a little more
+like 10 to 11 minutes instead of
+doing the full
+uh 15. and
+when we look at this here's our model we
+did we talked about the compiler uh
+here's our history we're going to cl
+history equals the model fit
+we'll go into that in just a minute
+and we're looking at is we have our
+epics
+here's our validation split
+so as we train it
+we're weighing the accuracy versus
+you kind of pull some data off to the
+side
+uh while you're training it
+and the reason we do that is that
+you don't want to overfit
+and i'll we'll look at that chart in
+just a minute
+here's batch size
+this is just how many images you're
+sending through at a time
+the larger the batch it actually
+increases the processing speed um and
+there's reasons to go up or down on the
+batch size because of the uh the the
+smaller the batch
+there's a certain point where um you get
+too large of a batch and it's trying to
+fit everything at once
+so i yeah 128 is kind of big
+depends on the computer you're on what
+it can handle
+and then of course we have our train
+images
+and our train labels going in telling it
+what we're going to train on
+and then we look at our four epics here
+here's our accuracy we want the accuracy
+to go up
+and we get all the way up to 0.83
+or 83 percent now this is actual
+percentage based pretty much
+and we can see over here our loss we
+want our loss to go down really
+fluctuates uh 55 1.2 0.77 0.48
+so we have a lot of things going on
+there
+let's go ahead and graph those
+turn that up
+and our team in the back did a wonderful
+job of putting together um this basic
+plot setup
+um here's our subplot coming in we're
+going to be looking at
+from the history we're going to send it
+the accuracy and the value accuracy
+labels and set up on there
+and we're going to also look at loss and
+value loss
+so you can see what this looks like
+what's really interesting about
+this setup and let me let me just go
+ahead and show you because
+without actually seeing the plots it
+doesn't make a whole lot of sense
+it's just basic plotting of
+the data using the pi plot library
+and i want you to look at this this is
+really interesting
+when i ran this the first time i had
+very different results
+and they vary greatly and you can see
+here our accuracy continues to climb
+and there's a cross over here
+put it in here
+right here's our crossover
+and i point that out because as we get
+to the right of that crossover where our
+accuracy
+and we're like oh yeah i got .8
+we're starting to get an overfit here
+that's what this this switchover means
+as our value
+as a training set versus the value
+accuracy stays the same and so that this
+is the one we actually really want to be
+aware of and where it crosses
+is kind of where you want to stop at
+and we can see that also with the train
+loss versus the value loss right here we
+did one epic and look how it just
+flatlines right there with our loss
+so really
+one epic is
+probably enough
+and you're gonna say wow okay point
+eight percent um certainly if i was
+working with the shareholders um
+telling them that it has an 80 accuracy
+isn't quite true and and we'll look at
+that a little deeper it really comes out
+here that the accuracy of our actual
+values is closer to 0.41 right here
+um even after running it this number of
+times
+and so you really want to stop right
+here at that crossover
+one epic would have been enough
+so the date is a little over fitted on
+this when we do four epics
+and oops there we are
+okay
+my drawing won't go away um let's see if
+i can get there we go
+for some reason i've killed my drawing
+ability and my recorder
+all right took a couple extra clicks
+uh so let's go ahead and take a look at
+our actual test loss um so you see where
+it crosses over that's where i'm looking
+at
+that's where we start overfitting the
+model
+and this is where if we were going to go
+back and continually upgrade the model
+we would start taking a look at the
+images and start rotating them
+we might start playing with the
+convolutional neural network instead of
+doing the three by three window
+we might expand that or you know find
+different things that might make a big
+difference as far as the way it
+processes these things
+um so let's go ahead and take a look at
+our our test loss now remember we had
+our training data
+now we're going to look at our test
+images and our test labels
+for our test loss here and this is just
+model evaluate just like we did fit up
+here
+where was it
+one more
+model fit with our training data going
+in now we're going to evaluate it on the
+and and this data has not been touched
+yet so
+this model's never seen this data this
+is on
+completely new information as far as the
+model is concerned of course we already
+know what it is from the labels we have
+and this is what i was talking about
+here's the actual accuracy right here
+0.48
+or 4847
+so this 49 of the time
+guesses what the image is
+uh and
+i mean really that's the bottom dollar
+uh does this work for what you're
+needing does 49 work do we need to
+upgrade the model more
+in some cases this might be
+oh what was i doing i was working on
+stock evaluations
+and
+we were looking at what stocks were the
+top performers well if i get that 50
+correct on top performers
+uh i'm good with that
+that's actually pretty good for stock
+evaluation
+in fact the number i had for stock was
+more like
+30 something percent as far as being a
+top performer stock
+much harder to predict
+um but at that point you're like well
+you'll make money off of that so again
+this number right here depends a lot on
+the domain you're working on
+and then we want to go ahead and bring
+this home a little bit more
+as far as looking at the different setup
+in here
+and one of the
+from sk learn if you remember actually
+let's go back to the top
+uh we had the classification report and
+this came in from our sklearn or scikit
+setup
+and that's right here you can see it
+right here on the um
+see there we go
+uh classification report right here uh
+sklearn metrics import classification
+report this we're going to look at next
+a lot of this stuff uh depends on who
+you're working with so when we start
+looking at um precision
+you know this is like for each value i
+can't remember what one one one was
+probably mountains so if 44
+is not good enough if you if you're
+doing like um you're in the medical
+department and you're doing cancer is it
+is this cancerous or not and i'm only 44
+accurate
+not a good deal
+you know i would not go with that um
+so it depends on what you're working
+with on the different labels and what
+they're used for facebook yeah you know
+44 i'm guessing the right person i hope
+it does a little bit better than that um
+but here's our main accuracy this is
+what almost everybody looks at they say
+oh 48 that's what's important
+um again it depends on what domain
+you're in and what you're working with
+and now we're going to do the same model
+oops somehow i got my there it goes i
+thought i was going to get stuck in
+there again
+this time we're going to be using the
+vgg16
+and remember this one has
+all those layers
+going into it so it's basically a bunch
+of convolutional neural networks getting
+smaller and smaller on here
+uh and so we need to go ahead and um
+import all our different stuff from
+cross we're importing the main one is
+the v
+g 16 set up on there let me just aim
+that there we go
+there's kind of a pre-processing images
+applications pre-process input this is
+all part of the vg g16 setup on there
+and once we have all those we need to go
+ahead
+and create our model
+and we're just going to create a vgg16
+model in here
+inputs model inputs outputs model inputs
+i'm not going to spend as much time as
+they did on the other one uh we're going
+to go through it really quickly
+one of the first things i would do
+is if you remember in cross you can tr
+treat a model like you would a layer
+and so at this point i would probably
+add a lot of dense layers on after the
+vgg16 model and create a new model with
+all those things in there
+and we'll go ahead and run this
+because here's our model coming in and
+our setup
+and i'll take it just a moment to
+compile that
+what's funny about this is i'm waiting
+for it to download the package since i
+pre-ran this
+it takes it a couple minutes to download
+the vgg16 model into here
+um and so we want to go ahead and train
+features for the model we're going to
+predict that we're going to predict the
+train images and we're going to test
+features on the predict test images on
+here
+and then i told you i was going to
+create another model too and the people
+in the back did not disappoint me they
+went ahead and did just that
+and this is really an important part
+this is worth stopping for i told you i
+was going to go through this really
+quick
+so here's our uh
+we we have our model 2
+um
+coming in and we've created a model up
+here with the vgg16 model equals model
+inputs model inputs and so we have our
+vgg16
+this has already been pre-programmed
+and then we come down here i want you to
+notice on this
+right here layer model 2 layers minus 4
+to 1 x layer x
+we're basically taking this model and
+we're adding stuff on to it
+and so
+we've taken we've just basically
+duplicated this model we could have done
+the same thing
+by using
+model up here as a layer
+we could have the input go to this model
+and then have that go down here so we've
+added on
+this whole setup
+this whole block of code from 13 to 17
+has been added on to our vgg16 model
+and we have a new model
+with the layer input and x down here
+let's go ahead and run that and compile
+it
+and that was a lot to go through right
+there when you're building these models
+this is the part that gets so
+complicated
+that you get stuck playing in and yet
+it's so fun
+it's like a puzzle
+how can i loop these models together
+and in this case you can see right here
+that the layers
+we're just copying layers over and
+adding each layer in
+this is one way to build a new model
+and we'll go ahead and run that
+like i said the other way is you can
+actually use the model as a layer i've
+had a little trouble playing with it
+sometimes when you're using the straight
+model over
+you run into issues
+it seems like it's going to work and
+then you mess up on the input and the
+output layers there's all kinds of
+things that come up
+let's go ahead and do the new model
+we're going to compile it again here's
+our metrics accuracy sparse categorical
+loss
+pretty straightforward just like we did
+before you got to compile the model
+and just like before we're going to take
+our create a history
+the history is going to be
+a new model fit train 128
+and uh just like before if you remember
+when we started running this stuff
+we're going to have to go ahead and it's
+going to light up our setup on here and
+this is going to take a little bit to
+get us all set up it's not going to just
+happen in a couple minutes so let me go
+ahead and pause the video and run it and
+then we'll talk about what happened
+okay now when i ran that these actually
+took about six minutes each
+so it's a good thing i put it on hold we
+did four epics i actually had to stop it
+says at 10 and switch it to forks i
+didn't want to wait an hour
+and you can see here our accuracy
+and our loss numbers going down
+and just at a glance
+it actually performed if you look at the
+accuracy
+0.2658
+so our accuracy is going down or you
+know 26 percent
+34
+35
+and you can see here at some point it
+just kind of kicks a bucket again this
+is overfitting
+that's always an issue when you're
+running on uh programming these
+different neural networks
+and then we're going to go ahead and
+plot the accuracy
+history we built that nice little
+subroutine up above so we might as well
+use it
+and you can see it right here
+there's that crossover again
+and
+if you look at this look how the how the
+um uh the red shifts up how the uh
+our loss functions and everything
+crosses over we're overfitting after one
+epic we're clearly
+not helping the problem or doing better
+we're just going to it's just going to
+baseline this one actually shows with
+the training versus the loss
+value loss maybe second epic so on here
+we're now talking more between the first
+and the second epic and that also shows
+kind of here so
+somewhere in here it starts overfitting
+and right about now you should be saying
+uh oh
+something went wrong there i thought
+that
+um when we went up here and ran this
+look at this we have the accuracy up
+here it's hitting that 48 percent
+and we're down here
+you look at the score down here that
+looks closer to
+20 percent not nearly
+anywhere in the ballpark of what we're
+looking for
+and we'll go ahead and run it through
+the the actual test features here and
+there it is um we actually run this on
+the unseen data and everything
+point uh one eight or eighteen percent
+um i don't know about you but i wouldn't
+want you know at 18 this did a lot worse
+than the other one
+i thought this was supposed to be the
+supermodel the
+model that beats all models uh vgg16
+that won the
+awards and everything
+well the reason is is that
+um
+one we're not
+pre-processing the data uh so it needs
+to be more there needs to be more
+um as far as like rotating the data at
+you know 45 degree angle taking partials
+of it so you can create a lot more data
+to go through here
+and that would actually greatly change
+the outcome on here and then we went up
+here we only added a couple dense layers
+we added a couple convolutional neural
+networks
+this huge pre-trained setup is looking
+for a lot more information coming in
+as far as how it's going to train
+and so
+this is one of those things where i
+thought it would have done better and i
+had to go back and research it and look
+at it and say why didn't this work why
+am i getting only uh 18 here instead of
+44 or better
+and that would be wise it doesn't have
+enough training data coming in
+uh and again you can make your own
+training data so it's not that we have a
+shortage of data it's that that some of
+that has to be switched around and moved
+around a little bit
+and this is interesting right here too
+if you look at the precision
+we're getting it on number two and yet
+we had zero on everything else
+so for some reason it's not seeing
+uh the different variables in here so
+it'd be something else to look in and
+try to track down
+and that probably has to do with the
+input but you can see right here we have
+a really good solid 0.48 up here and
+that's where i'd really go with is
+starting with this model and then we
+look at this model and find out why are
+these numbers not coming up better is it
+the data coming in
+where's the setup on there
+and that is the art of data science
+right there is finding out which models
+work better and why
+and we went through the very basics of
+convolutional neural networks along with
+the
+vgg-16 import and how you can get
+started with that
+and again the art is the data going in
+and learning to play with it find out
+what works
+thank you for joining us today with
+simply learn again my name is richard
+kirschner with the simply learn team for
+more information please visit
+www.simplylearn.com
+get certified get ahead
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

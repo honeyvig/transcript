@@ -1,0 +1,523 @@
+hey everyone welcome back to another
+video by simply learn today we will be
+discussing about kotlin interview
+questions the 30 questions that will be
+covered in this video will help you
+summarize every important concepts and
+serves as a perfect programming resource
+for kotlin interviews
+so now let's get started with an
+exciting video on cortland interview
+questions but before we begin make sure
+to subscribe to our youtube channel and
+press the bell icon to never miss an
+update from simply learn
+so now let's go ahead with our first
+question which is
+name some of the features which are
+there in kotlin but not in java
+so some of the features which are there
+in kotlin but not in java are null
+safety feature operator overloading core
+routines range expression and smart
+casts so these are some of the
+features
+that make kotlin better language than
+java
+now coming to the second question which
+is what is the difference between where
+and well
+both where and well are used for
+declaration of variables however
+where is a general variable that can be
+assigned several times whereas val is a
+final variable that is immutable and can
+only be initialized once
+now moving on to the third question
+which is
+what are the advantages of when over
+switch in kotlin
+in java the word switch is used whereas
+in kotlin the word when is used
+when is more compact and effective than
+a regular switch
+and it has
+superior design than switch
+when can be used both an expression and
+a statement but switch cannot be used as
+both
+it can be used as statement but it
+cannot be used as expression now moving
+on to a next question which is a
+multiple choice question
+which of the following are the types of
+constructors in kotlin
+so first is parameterized and constant
+constructor
+option b is primary constructor and
+secondary constructor
+option c is default and no argument
+constructor and option d is none of the
+above so you can take your time in
+figuring out the correct option among
+these four options
+because i'm going to say it's correct
+option you can pause the video and take
+your time
+so our correct option is option b
+primary constructor and secondary
+constructor are the types of constructor
+in kotlin
+so option b is the correct option
+now moving on to our next question that
+is the fifth question which is
+how to get the length of the string in
+kotlin
+so this is also a multiple choice
+question
+our options are a
+str.length of
+option b
+length str
+option c
+str.length and option d
+str dot length off with small o
+so you can take your time in figuring
+out what is the correct option
+meanwhile
+i'm gonna say the correct option
+so a right or correct option is
+option c
+str.length
+so if you want to
+get the length of a string in kotlin you
+can use str.length
+now
+moving on to the next question which is
+which feature allows
+removing the risk of occurrence of null
+pointer exception
+so it is an important question as well
+so
+there are four options first null risk b
+null safety c null pointer nd all of the
+above
+it is a very important question
+and
+now the correct option of
+this question is
+e
+null safety
+null safety allows us to remove the risk
+of occurrence of null pointer exception
+it is a very essential feature of kotlin
+language
+now
+moving on to the seventh question which
+is
+what is null safety and nullable types
+in kotlin
+so null safety commonly referred to as
+void safety ensures that no object
+references have null or void values
+whereas in kotlin nullable types are
+references types
+that are declared by appending a
+question mark to the string this
+question mark is what we add at the end
+of the data type to make it as
+nullable
+now
+moving on to the eighth question which
+is
+what is higher order function in kotlin
+a higher order function accepts one or
+more function as arguments and returns a
+function as output
+it is not like any other function
+the higher order functions are
+frequently combined with lambda
+expression to create code that is both
+compact and powerful
+instead of integer string or array as a
+parameter to the function we will pass
+anonymous function or lambdas in higher
+order function
+so basically we pass a function to other
+function known as higher order function
+now
+moving on to the ninth question which is
+what is elvis operator
+the null safety attribute in kotlin
+allows us to assign null values to the
+variables
+can use if else or the always operator
+to see if a value has a null value
+always operator returns the first opened
+and if that operand is true otherwise
+evaluates and returns the other operand
+now our next question is
+why is scotland interoperable with java
+so this is our
+tenth question
+so kotlin is compatible with java
+because it uses jvm byte code
+jetbrains places a strong emphasis on
+kotlin's interaction with existing java
+code while building compatibility
+the team ensures that kotlin can
+interface with existing java code easily
+and thoroughly
+compiling it directly to byte code
+speeds up the compilation process and
+eliminates the distinction between java
+and kotlin on jvm
+so this is the reason kotlin is
+interoperable with java
+now coming on to the 11th question which
+is
+what are the range expressions
+a range is a set of values defined by
+their beginning and ending points
+range expression in kotlin make it
+easier to iterate over a set of values
+to make a range in kotlin use the range
+2 and down 2 functions
+we may also define a range of values by
+using the double dots operator
+as we can see in the example for
+i in 1 double dot 10
+this will print all the elements from 1
+to 10
+and for 10 in
+down to 1
+will print all the elements from 10 to 1
+in descending order
+the third one is which is
+4
+i in 1 double dot 10 step 2
+this will print
+elements with a gap
+now step two means there's a gap
+so it will print elements like one
+three
+five seven nine because we have used
+step two if we'll use step 3 then it
+will give a gap of 2
+like 1
+4 like that
+so on
+moving on to the 12th question which is
+what do you understand by
+data class
+so data classes are the classes that are
+used to hold the data or information
+these data classes were previously
+exclusively used to generate java codes
+but with the explicit implementation of
+the higher and greater collection of
+properties they are now important in
+kotlin as well
+functions like tostring and equals are
+also combined with this language
+now moving on to the 13th question which
+is immutable variable
+so this is a multiple choice question
+and the options are a variable that are
+change that can be changed b a variable
+that cannot change that is read only
+c a variable used for string
+interpolation
+d none of the above
+so
+we have already talked about immutable
+variable
+and
+you can pick the correct option
+now i am gonna say the correct option
+so the correct option is b a variable
+that cannot be changed is called
+immutable variable that is the variable
+that cannot be changed
+now coming on to the 14th question which
+is
+what are co routines
+it is a very important concept
+so the letters co and routine stand for
+cooperation and function respectively
+a core routine is a coatland feature
+that can perform everything a thread can
+do
+while still be incredibly efficient
+a core routine is a lightweight code
+that doesn't require any processor
+background switching and doesn't map on
+native threads
+so this is co routines
+now let's have a look at the 15th
+question which is
+difference between safe calls and null
+check
+safe call operator is used to determine
+whether a variable's value is null or
+not
+if it is null
+null will be returned otherwise the
+requested value will be returned
+on the other hand
+when the value of the variable is null
+you can use the null check operator to
+throw a null pointer exception
+so this is the difference between safe
+call and null check
+now coming to the 16th question which is
+what are init blocks in kotlin
+initializer blocks that are invoked
+after the primary constructor are known
+as init blocks
+one or more init blocks can be found in
+a class file
+and they will be run in order
+in kotlin it is not feasible to do any
+operations in the primary constructor
+instead
+you must utilize the init block
+so this is the init blocks in kotlin
+now our next question which is the 17th
+question is
+what are lambda's expression
+so lambda's expression are anonymous
+function that can be handled as values
+meaning they can be sent as arguments to
+a function
+returned or used in any other way that a
+normal object can be used so it can be
+returned and used in any other way like
+a normal object can be used
+so the lambda expression has no name and
+is created and assigned as a separate
+variable it doesn't have any parameters
+and returns no value in the function
+so this is called lambda function it is
+used with higher order functions
+now coming to the next question which is
+what is inline function
+so in line functions tell the compiler
+to include the entire body of the
+function wherever it is called in the
+code it is used to improve the
+performance of higher order function as
+well as the inline function call and
+inform the compiler to copy parameters
+and functions
+to use an inline function all you have
+to do is to add the inline keyword to
+the beginning of the function definition
+so this is
+inline function
+now coming to what is null safety so
+null safety is a very important feature
+the type system of kotlin is designed to
+eliminate the risk of null references in
+code
+the type system in kotlin distinguishes
+between the reference that can and
+cannot hold null
+so here's an example of not null
+reference which will show you compiler
+error
+so
+this is the example string equals abc
+after that
+the other is the example of null
+reference where we have used the
+question mark as we have discussed
+previously
+so because to allow a variable to hold
+null we have to declare a variable as
+nullable string with question
+mark so now our next question that is
+the 20th question is what is late in it
+so late in it is an abbreviation for
+late initialization
+if you don't want to initialize a
+variable in the constructor and instead
+want to do it later and you can
+guarantee the initialization before
+using it
+use the late init keyword to declare
+that variable
+it won't start allocating memory until
+it's been initialized
+now our 21st question is
+what is the difference between const and
+well
+the const keyword is used to declare
+properties that are immutable by nature
+that is the properties that are read
+only
+also the values of these properties must
+be known at compile time only
+now if we talk about val for read-only
+properties the val keyword is also used
+but the main difference between the
+constant val is that the val properties
+can be initialized at the runtime also
+but it is not so in case of const
+coming to the 22nd question which is
+what is the difference between open and
+public
+so open for extension
+is what the open keyword indicates
+the open annotation on a class is the
+polar opposite of the final annotation
+in java
+it allows others to inherit from it
+on the other hand if no visibility
+modifier is specified
+public is used by default which means
+your declaration will be visible
+everywhere
+if nothing else is supplied public is
+used by default
+so next question is
+what defines a sealed class in kotlin
+so it is a multiple choice question
+a
+it's another name for abstract class
+b
+it represents this restricted class
+hierarchies
+c
+it is used in every kotlin program d
+none of the above
+the correct option is option b
+it represents restricted class
+hierarchies
+so
+the restricted class hierarchies defines
+the seed class in kotlin
+now moving on to the 24th question which
+is what is lazy initialization in kotlin
+so lazy initialization is a feature in
+kotlin that indicates that your variable
+will not be initialized unless you
+utilize it in your code
+if it only be initialized once
+after that you repeat the process with
+the same value
+so now moving on to our 25th question
+which is what is the entry point of
+every kotlin program
+every kotlin program's entry point is
+the main function
+the main function does not have to be
+written inside the class in kotlin
+the jvm automatically encapsulates it in
+a class when it is compiled
+the command line arguments are retrieved
+using the strings given in the form of
+array string so this was the answer of
+this question now moving on to the next
+question which is what are companion
+objects in kotlin
+so if we wish to write a function or a
+member of a class that may be called
+without needing the class instance
+we can do so as a member of companion
+object within the class in kotlin
+as a result by declaring the companion
+object we can only access the class
+member by class name
+so this was the answer of companion
+objects in kotlin now moving on to the
+27th question
+which is
+where does this kotlin run
+cortland programs can execute on a
+normal jbm just like any other compile
+java code
+this means that the kotlin compiler
+converts cottling programs to bytecode
+that the jvm can understand
+as a result kotlin is a java kind that
+works alongside with java so basically
+kotlin is a kind of java you can say
+that
+it is worth noting that
+bits of java code can be used to create
+kotlin applications
+so now our next question is
+why do we need object keyword the object
+keyword in cotton allows you to declare
+a class and create an instance of it in
+one step
+the object keyword is used to obtain a
+data type with a single implementation
+it has three different meanings and can
+be used in three different contexts
+first is object declaration
+object expression
+and companion object
+so this was the meaning or why we need
+object keyword
+in kotlin so now coming to the second
+last question which is what is string
+interpolation
+so let's start with the launch
+so launch is a core routine that fires
+and then forgets
+it's as though a new topic that has been
+started
+if the code inside the launch throws an
+exception
+it's considered like an uncaught
+exception in a thread
+which is normally written to
+stdewr in backend jvm apps and crashes
+android apps
+now on the other hand async async is
+used to launch a core routine that
+calculates some data
+you must use a weight on the result
+which is represented by an instance of d
+referred
+uncaught exceptions in async code are
+held in the resultant d referred and are
+not
+transmitted anywhere else
+unless processed they are silently
+dropped
+so although async is used to start the
+co routines it does so by blocking the
+main thread at the await functions entry
+point
+and launch
+launch will not block the main thread
+but the rest of the code will not be
+executed while waiting for the launch
+result because launch is not a suspend
+call
+and this was the last question that is
+the 30th question of kotlin interview
+questions
+so with that we have come to the end of
+this scotland interview questions video
+we hope these interview questions have
+provided you more insights of what type
+of questions you should prepare or what
+type of questions you are likely to
+encounter
+if you have any doubts about any
+questions in this video feel free to ask
+in the comments section below
+our team of experts will be happy to
+solve all your queries
+i hope the video is informative and
+interesting thanks for watching stay
+safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

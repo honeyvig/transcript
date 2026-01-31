@@ -1,0 +1,442 @@
+hey everyone I'm Ral and I welcome you
+all to Simply learns YouTube channel
+today we will talk about link and Lambda
+expression but before we begin let me
+tell you guys we have daily updates on
+multiple Technologies so if you are a
+tech geek in a continuous hunt for the
+latest technological advancements then
+consider getting subscribed to our
+YouTube channel and don't forget to hit
+the Bell icon to never miss an update on
+simply
+learn so now without any further Ado
+let's get started with the agenda for
+today's session we will begin our
+session with the discussion on
+link then we will discuss the Lambda
+expression and async Lambda after that
+we will look into the Lambda in the
+standard query operators with an
+implementation now we will Dive In into
+the type
+interface then we will discuss the
+variable
+scope after that we will have a look at
+the expression tree and expression
+statements finally we will wind up this
+session with a conclusion now let's get
+started with link link is an
+abbreviation for language integrated
+query Microsoft query language is
+completely integrated and allows for
+simp simple data access from inmemory
+objects databases XML documents and many
+other
+sources link unifies queries and c and
+visual Basics through series of
+extensions next up let's discuss Lambda
+expression Lambda expressions are the
+executable components of Link equations
+that translate logic to send to the data
+source at runtime here's the basic skill
+SCH for Lambda
+expression next async Lambda a Lambda
+expression that use the asnc keyword to
+integrate asynchronous processing here's
+the syntax to print simply learn using
+asynchronous
+programming now let's implement this in
+the code editor let's get started so
+using system
+then
+using
+system dot
+collection dot
+generics we will also use
+using
+system do link
+link and
+using
+system dot
+text now name
+space
+Lambda X
+then C braces and inside that we will
+have a
+class
+program C
+Braes then I will declare a
+delegate
+and the
+and
+I then we will
+have
+static
+void
+Main stren
+args again craes and in
+this we will have
+delect with my
+delect is equals
+to
+A equals greater than to make an arrow
+a
+star
+a
+then
+int
+X is equals to
+my
+delect with the
+value let's say
+7 now let's use
+console dot right line
+and print out
+X then
+console dot
+read
+line basically this function will be
+printing out the square for the seven so
+basically it it should print out
+49 let's save
+it and run
+as you can see it is printing
+49 let's get back to our
+slides now let's discuss Lambda in
+standard query operators Lambda
+expression with query operator is
+evaluated on demand and operates on each
+elements in the input sequence rather
+than the entire sequence a Lambda
+expression allows developer to insert
+their own logic into the usual query
+operator let's take a look at an example
+in a codor where the developer utilized
+the we operator to recover the odd items
+from a provided list using a Lambda
+expression let's go to the code edor
+let's write a code to get an average of
+the OD fibak numbers in the series so we
+will start with introducing
+using system
+then
+using
+system do
+collection dot
+generics then we have
+using
+system dot
+link then we are
+using system
+dot
+text another name
+space let's have
+Lambda
+X then we have a class
+program then C
+races in this we will have
+static
+void
+main
+string here
+now we will have
+in
+braces
+Feb is equals
+to on cly Braes let's have numbers one
+1 comma
+2 comma
+3 comma 5 comma 8 comma 13
+comma
+21 comma
+34 these are some fibon
+numbers now let's declare another
+variable
+double
+average
+well equals
+to
+FB
+dot where
+and Braes n is equals toal to greater
+than
+n modulo
+2 equals to equals to
+1
+dot average
+then let's have a
+console do right
+line to
+print average
+PA and another console
+line to read line
+read
+line let's save it and run
+it as you can see it is printing
+7.33 which is basically the average of
+these
+numbers now let's get back to our
+slides now let's discuss the topic type
+inference type inference is useful in a
+number of circumstances in C and it may
+be used without explicitly stating the
+types in the case of a Lambda expression
+however time inference will only
+function if each type has been provided
+as the compiler must be
+satisfied the compiler uses type
+inference to deduce that X is a
+integer which it does by inspecting the
+Transformer arguments given below now
+let's discuss the variable scope in
+detail variables launched within a
+Lambda expression are not supposed to be
+visible in an outer method according to
+the several regulations when employing
+variable scope in a Lambda
+expression there is also a requirement
+that a captured variable is not to be a
+garbage collector unless the delegate
+addressing it becomes garbage collection
+eligible furthermore it is against the
+rule to utilize a written statement
+within Lambda expression to force the
+return of an enclosing
+method now let's try a code to
+understand this in
+detail let's start with
+using
+system
+then using
+system do
+collection do
+generics
+then
+using
+system do
+link then again
+using system
+do
+text then I will have a name
+space
+as
+Lambda
+X in craes I will have a
+class program
+then I will declare some
+delegates
+both tell
+D1 and
+delegate pan
+D2 this D2 will have in I as
+argument
+next let's have a
+class test
+where I will have my D1
+delegate as
+del1 and D2 delegate
+as Del
+to
+now let's have
+public
+void test method
+function with an argument as
+in
+input in curly
+basis let's initialize the delegates
+with Lambda expression so first in P is
+equal to
+0 then we will have
+del1 is equals to
+empty
+braces equals to greater
+than p is equal to
+10 then
+return p greater than
+input then we will invoke del2 after
+test method goes out of the score so
+del2 equals
+toes this time we will have
+x equals to greater than to make an
+arrow
+craes we will have
+return X is equals to is equals to
+e then we will close this
+delegate now we will demonstrate the
+value of P this time the delegates has
+not be evoked yet
+so we will have console
+dot right
+line here I can write p is equals
+to I will have a placement zero
+here for the
+variable J
+then we will have
+B bu
+result is equals to
+Del
+one
+then we will
+write
+console dot right
+line here we will
+have p is equals to in C
+Braes we will have placement
+zero then comma then we have B is equals
+to in curly Braes placement for
+one where the 0er and 1
+represent p and will result
+now let's write
+static
+void
+main
+string ARG
+now let's
+have
+test small
+test is equals to
+new
+test with small
+bra here now I will
+call test DOT test
+method for Value
+five now we will prove that the del2 is
+still has copy of local variable P from
+the test
+method so now
+bull
+R will be equals
+to
+test dot
+Del for the value
+10 then we will print out this with
+console
+dot right
+line
+rest then I will have a
+console dot read
+key let's save it and run it
+as you can see it is first printing P
+equal to Z then when we replace it it
+with 10 the PS 10 and it is printing B
+is true and then again result as
+true let's get back to our slide now
+let's have a look at the expression
+tree Lambda expressions are often
+utilized in expression tree development
+an expression tree distributes the code
+in data structures like a tree with each
+node being an expression such as method
+call or a binary operations such as X
+less than y statement lambdas which
+consist of two or three statement are
+also available but are not employed in
+the creation of expression tree a return
+statement must be expressed in a Lambda
+statement now let's implement this in a
+code editor
+let's
+start
+using
+system then I will use
+using
+system dot
+collection do
+generic then we will use
+system do
+link then
+using
+system dot
+text this time we will also
+use
+using system
+do link
+dot
+Expressions now let's have a name
+space Lambda X as usual
+here we will have a
+class
+program in this we will have a
+static
+void mean
+where in main we will have
+string
+args then we will have
+in
+SRC equals to new
+3 comma 8 comma 4 comma
+6
+comma
+2
+comma 10
+comma 19
+comma 2 comma 4 comma 8
+now let's have a for
+each
+statement where we will have
+and
+J
+and
+SRC dot where
+X is equal to greater
+than
+f x is less than equals to
+3 then we will return
+true
+l
+f
+x is greater than equals to
+7 then also we will return
+true
+s we will
+return false
+then we will have
+console dot right
+line and we will print
+J then we will have another console
+line dot read line
+basically what we are doing is we have
+this set and we are only returning the
+value which are either less than three
+less than equals to 3 or greater than
+equals to 7 so the four 6
+8 sorry four 6 and four will be removed
+and others will be
+printed let's save it and run it
+as you can see it is printing every
+value except for four 6 and
+four now let's get back to our
+slides let's have a look at the
+conclusion a Lambda expression can have
+parameters and return a value a Lambda
+expression may be used to declare
+parameters in a variety of
+ways there is no need need for curly
+braces in a Lambda expression if there
+is only one statement but a curly braces
+and the return value must be return if
+there are several
+statements a feature called closure
+allows Lambda expression to access
+variables that are available outside of
+Lambda expression block the closure
+should be used with caution to avoid
+problems any hazard code cannot be
+executed within a Lambda
+expression Lambda Expressions should not
+be utilized on the left side of the
+operator and this was all for today's
+session hope you guys found it
+informative and helpful if you like this
+session then like share and subscribe if
+you have any question then you can drop
+them in the comment section below thanks
+for watching and stay tuned for more
+from Simply learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

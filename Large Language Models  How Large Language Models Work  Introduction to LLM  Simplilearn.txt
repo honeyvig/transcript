@@ -1,0 +1,442 @@
+hey everyone welcome to Simply learn so
+today we will start a tutorial with an
+example imagine a world where computers
+can write stories draft legal documents
+translate languages and even hold
+conversations that feel human it's the
+power of large language models take gp3
+by open AI for example this AI Marvel
+with its 175 billion parameters can
+generate Cent essays create poetry and
+even code all from simple prompt would
+consider the Megatron touring nlg 530b a
+collaboration between Nvidia and
+Microsoft boasting and astonishing 530
+billion parameters excelling in complex
+language task like reading comprehension
+and natural language inference these
+models are transforming Industries in
+healthcare they're predicting protein
+structures and disease patterns in
+finance they're summarizing earning
+scals and in customer service they are
+powering Dynamic chat boards the journey
+from early model like Alisa which
+debuted in 1966 to today's sophisticated
+llms showcase an incredible leap in AI
+capabilities so join us guys as you
+delve into how these models work their
+applications and what the future holds
+for this groundbreaking technology and
+don't forget to like subscribe and hit
+the Bell icon so you never miss on any
+update and let's jump in craving a
+career upgrade subscribe like and
+comment
+below dive into to the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we start here's a quick
+and for you guys if you want to learn a&
+ml from the industry experts try simply
+learns postgraduate program in ml from
+per University in collaboration with IBM
+this course teaches in demand skills
+such as machine learning deep learning
+NLP computer vision reinforcement
+learning generative AI prompt
+engineering chat gity and many more so
+don't forget to check out the link from
+the description box and pin comment so
+without any further Ado let's get
+started so let's start with large
+language models and large language
+models are Advanced AI systems that are
+designed to understand generate and
+manipulate human language and they're
+trained on v data sets and use deep
+learning techniques to predict and
+generate text so this enables them to
+perform a variety of tasks such as
+translation summarization and even
+creative writing now we'll delve into
+the evolution of these models from the
+early forms to the Revolutionary
+Transformer models so we'll start from
+RNN to Transformers so human see text as
+words sentences and paragraphs but for
+computers text is just a sequence of
+characters initially Rec neural networks
+that are rnns were used to help machines
+understand text and these models process
+one word at a time which sometimes leads
+to forgetting earlier parts of the
+sequence but there's a game changer
+there comes transform former models in
+2017 the introduction of the Transformer
+model revolutionized this field unlike
+RNN Transformers use an attention
+mechanism allowing them to consider the
+entire sentence or paragraph
+simultaneously rather than one word at a
+time this approach significantly
+improves context understanding so now
+we'll see how Transformers work so
+Transformers first organize text into
+words or subwords and these tokens are
+then encoded into numerical
+presentations and converted into
+embeddings which future capture their
+meanings the encoder pre-processes these
+embeddings to create a context Vector
+that represents the entire input we'll
+understand this with the help of an
+example so here's an example and the
+sentence is as she said this she looked
+down at her hands so now first we'll
+convert into tokenization the sentence
+is broken down into smaller pieces
+called tokens as you can see on the
+screen we have shifted all the words and
+provided into inverted commas now we'll
+process with encoding so each of these
+tokens is then converted into a
+numerical representation think of it as
+giving each word a unique number and now
+we'll process with embeddings so these
+numbers are then turned into vectors
+which are multi-dimensional
+representations that capture the meaning
+of each token for instance the word she
+and her might have similar vectors
+because they often appear in similar
+context now we'll process with context
+vector so the encoder pre-processes all
+these vectors together to understand the
+entire sentence it creates a context
+Vector which is like a summary of the
+meaning of the whole sentence and at
+last we have Auto regressive generation
+so using the context Vector the decoder
+can start generating new text it might
+predict the next word in a sequence
+based on the context if it has learned
+for example given the context it might
+generate the word and next leading to a
+continuation of the sentence now let's
+break down the Transformer architecture
+and understand how all these processes
+are coming so this is the diagram for
+Transformers and this architecture
+comprises an encoder and a decoder each
+with multiple layers so starting with
+the encoder the first layer is input
+embedding so the input text is tokenized
+and converted into embeddings that is
+Vector representation and after that we
+have positional encoding this is the
+second layer this adds information about
+the position of each token in the
+sequence and after that we have multi
+head attention that's a layer and it
+allows the model to focus on different
+parts of the input sequence
+simultaneously capturing various aspects
+of the input and after that we have ADD
+and gome layer so this adds the input of
+the previous layer and normalizes the
+result and then we have feed forward
+layer so this is a fully connected feed
+forward Network that pre-processes or
+processes the attention outputs and
+after that we have again the ADD and
+gome layer this adds the input of the
+previous layer and normalizes the result
+again so this structure is represented n
+times that is indicated by NX and now
+we'll move to decoder so decoder has the
+first layer that is output embedding
+this is similar to input embedding but
+for the Target sequence and after that
+we have positional and coding layer this
+adds positional information to the
+Target sequence and then we have mask
+multi-ad attention this processes the
+target sequence while masking future
+tokens to prevent the model from looking
+ahead and then we have add a norm layer
+this adds the input of the previous
+layer and normalizes the result then we
+have multi-ad attention this attends to
+the encoder's output allowing the
+decoder to focus on relevant parts of
+the input sequence and then we have ADD
+and nor layer this adds the input of the
+previous layer and normalizes the result
+and then we have feed forward layer
+another fully connected feed forward
+Network and then we have add an Norm
+layer this adds the input of the
+previous layer and normalizes the result
+and at last we have linear and soft next
+layer so the final layer that convert
+the decoder output into probabilities
+predicting the next token in the
+sequence so this was all the process
+flow and the encoder processes the
+entire input sequence creating a set of
+encoded representations and the decoder
+generates the output sequence step by
+step using the encoded input and
+previously generated output tokens now
+talking about why Transformers can
+predict text so there are two mainly
+reasons number one is redid dency in
+language and the next is entropy and
+predictability now talking about the key
+Concepts number one is attention
+mechanism so it enables a model to weigh
+the importance of different tokens in
+the input sequence improving context
+understanding then we have positional
+encoding it helps the model understand
+the order of tokens which is crucial for
+meaning in language then we have
+multi-head tension it improves the
+model's ability to capture different
+relationships in the data by focusing on
+various parts of the sequence
+simultaneously this architecture allows
+the transform model to handle long
+sequences and complex language task
+effectively making it a Cornerstone of
+modern NLP applications now that we have
+understood how Transformers work let's
+discuss what makes large language models
+so popular and the capabilities so a
+large language model is a type of
+artificial intelligence algorithm that
+uses deep learning techniques and large
+data sets to understand summarize
+generate and predict new content they
+are a subset of generative AI
+specifically designed to create text
+based content content now talking about
+its historical context so language is
+crucial for communication but in AI
+language models serve to communicate and
+generate Concepts one of the earliest AI
+language models are Alisa that debuted
+in 1966 and then we have modern llms
+like GB3 and Megaton Turing nlg 530b
+that are vastly expand on this idea of
+billions of parameters allowing them to
+understand and generate text more
+effectively now we'll see the examples
+number one as we have discussed that is
+gbd3 that is released by open AI in June
+2020 and this model has 175 billion
+parameters and can generate taxt and
+code from short prompts it's highly
+versatile and can perform a wide range
+of language task and after that we have
+Megatron Touring nlg 530b that is
+developed by Nvidia and Microsoft and
+this model boast 530 billion parameters
+and it excels in reading comprehension
+and natural language INF frence making
+it one of the most powerful L&M to date
+so now we explore the various
+capabilities of these large language
+models and how they are utilized so
+starting with the capabilities so the
+capabilities start with generation so
+they can create stories marketing
+content and more for instance gbd3 can
+write a coherent article or generate
+creative writing pieces then we have
+summarization so condensing legal
+documents meeting notes or any lengthy
+text into concise summaries this is
+particularly useful in legal and
+corporate settings and then we have
+translation as a capability
+so converting text from one language to
+another or even translating text into
+code this makes llms invaluable in
+Global Communication and software
+development now we'll move to
+classification it can analyze text to
+determine sentiment classify topics or
+identify toxic language this can help in
+moderating online content and
+understanding customer feedback and
+after that we have another capability
+that is chat boards so building virtual
+assistant and Q&A systems that can
+interact with users in a human like
+manner that provides customer support or
+general information so these were all
+the capabilities now we look at some
+real world applications of llms across
+various Industries and we'll start with
+Healthcare so llms are used to predict
+protein structures uncover disease
+patterns and analyze medical text and
+patient records this can lead to
+breakthroughs in medical research and
+personalized Healthcare then we have
+retail as real world application it can
+enhance customer service through dynamic
+boards that can handle inquiries provide
+recommendations and improve the shopping
+experience and then we have real world
+application in software development and
+after that we have software development
+so llms assist developers in writing
+code debugging anyone teaching robots to
+perform physical task and then we have
+Finance as dual World application so
+llms can summarize earning calls
+creating meeting transcript and
+analyzing financial documents to provide
+insights and support decision making and
+then we have marketing as real world
+application it's can organize customer
+feedback segmenting products and
+generating compelling marketing content
+now that we have seen the applications
+let's understand how large language
+models work and the learning techniques
+they use so large language model work
+with training with unsupervised learning
+so llms are trained using unsupervised
+learning which means they learn from
+large data sets without label data they
+find patterns and relationships in the
+data enabling them to perform various
+tasks like text generation summarization
+and translation and there are three
+types of learning learning for the llms
+and you'll see number one is zero short
+learning so zero short learning llms can
+perform task they were not specifically
+trained for and thanks to the extensive
+training data for this and then we have
+one short learning so they can learn
+from a single example to improve their
+performance on a specific task then we
+have few short learning so learning from
+a few examples enhancing their ability
+to generalize and perform task
+accurately and then we have
+customization techniques for lnms number
+one custom ation technique is prompt
+tuning so adjusting the prompts or
+instructions given to the model to guide
+its response more effectively and number
+second is finetuning so retraining the
+model on specific data sets to improve
+its accuracy for certain task then we
+have adapters so adding smaller Network
+to the model allowing it to adapt to
+specific task without needing to retrain
+the entire model that's the adapters and
+the customization technique for llms now
+we'll move to the types of large
+language models and number one type is
+encoded only models so these models are
+excellent for understanding task such as
+classification and sentiment analysis an
+example is bird that is bir directional
+and coder representations from
+Transformers now moving to second type
+of large language model that is decoder
+only models so these models are great at
+generating text such as writing stories
+or articles an example is gbd3 that is
+generative pre-trained Transformer 3 and
+then we have third type of large
+language model that is encoder decoder
+model these models combine understanding
+and generation making them ideal for
+task like translation and summarization
+an example is T5 that is textto text
+transfer Transformer now we'll move to
+advantages and challenges of large
+language models so starting with
+advantages number one is extensibility
+so llm serve as a foundation for various
+customized use cases allowing for
+adaption to numerous tasks then comes
+flexibility llms apply across diverse
+task and deployments from chat boards to
+content creation and then we have
+performance so llms provide high speed
+low latency responses making them
+efficient and responsive and the
+accuracy so there's improved accuracy
+with more parameters and larger training
+data set and the ease of training it
+utilizes label data which accelerates
+the training process and then comes
+efficiency so llms automate routine task
+saving time and resources and now coming
+to challenges so number one challenge is
+development cost so it requires
+significant investment in hardware and
+large data sets and then comes
+operational cost so high ongoing
+expenses for running and maintaining
+llms then there comes bias so it's
+potential for inheriting biases present
+in the training data then comes ethical
+concerns there are issues around data
+privacy and generating harmful content
+then comes explainability so there's a
+difficulty in explaining how the models
+generate the results and then there's
+the last challenge that is hallucination
+so there's a risk of generating
+inaccurate or nonsensical responses from
+the llms now talking about the future of
+large language models the future of llms
+is very promising with continuous
+improvements in accuracy efficiency and
+applications businesses will
+increasingly leverage llms for various
+tasks enhancing productivity and
+Innovation so in conclusion so large
+language models are transforming the AI
+landscape by understanding and
+generating humanik text while they come
+with challenges their potential to
+revolutionize various Industries is
+immense so stay tuned for more a
+insights and don't forget to like share
+and subscribe if you have any doubts you
+can comment down in the comment section
+below till then stay safe and keep
+learning staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital Market marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click click here

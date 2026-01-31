@@ -1,0 +1,304 @@
+[Music]
+hey everyone welcome to simply loans
+youtube channel in this session we will
+be discussing about on mouse over and on
+mouse out events in javascript but
+before we begin let me tell you guys
+that we have daily updates on multiple
+technologies so if you're a tech geek in
+a continuous hunt for latest
+technological trends then consider
+getting subscribed to our youtube
+channel and don't forget to hit that
+bell icon to never miss an update from
+simply learn now let's get started with
+our one point agenda and over to our
+javascript expert kaushal so guys we
+have been discussing specific methods of
+accessing an element for the past few
+videos
+now today we are going to discuss
+something different
+before going deep into this topic let's
+recall events in javascript so the
+simple definition of an event states
+that something that happens
+so when we manipulate an html document
+in javascript we try to do something on
+the web page right so several events
+take place on a website like the user
+hovers over a specific element or clicks
+on an element or pressing a key in the
+website can also refer to events
+or we can say submitting a form or
+playing a video also refers to the same
+thing so we are using the on click event
+for the past few videos wherein we
+discussed that a specific task would be
+performed on clicking a particular
+button what we did was we were just
+calling a function by clicking a button
+in html so clicking a button is also an
+event right and the function that will
+be called upon clicking the button is
+known as event handler because that
+function is basically asking the
+computer to perform a particular task on
+clicking the button
+so like the on click event we have some
+more exciting events present in html
+which helps us make a webpage more
+interactive and responsive as well so we
+can do it with the help of javascript so
+we'll go through two such events today
+the onmouseover event and the onmouseout
+event so the onmouseover event will
+perform a task when the user takes the
+mouse cursor on that element similarly
+the onmouseout event also performs a
+task when the user takes the mouse
+cursor away from that element so for
+example let's suppose we have an image
+present in our webpage and we want to
+change the size of that image when the
+user takes the mouse cursor over that
+image and the image should get back to
+its previous size when the user takes
+away the cursor so what's basically
+happening is when the user is taking its
+mouse over the image or picture the
+picture size will increase and on taking
+the mouse cursor away from the image the
+size will get back to its default size
+so let's do it once and we'll see how
+these events work within an html
+document so first of all let's add an
+image to the html file we'll use the img
+tag for that and we'll have to provide
+the path for the image right so we'll
+write here
+in a html file we'll add an image here
+so we'll write here img and then we have
+to provide the source
+and the images are stored inside the
+images folder in this system so we'll
+write here the image name so we have
+provided the path here next up what
+we'll do is we'll use the alt attribute
+so we'll write here
+in the alt we'll write a simply code
+fine
+save
+it and here you can see we have an image
+over our browser but the image size is
+quite large right so we'll limit the
+size of this image using the width
+property so what we'll do is we'll write
+here
+width and let's say the width of the
+image will be 250 pixel
+save it and now you can see we have an
+image over here the image is in its
+normal size so this is the image so we
+have this image over here and next thing
+what we are going to do is we are going
+to increase the size of this picture on
+taking the mouse cursor over this image
+so what will happen is when we take our
+mouse cursor here the picture size will
+increase so for that we have to use the
+onmouseover property or we can say the
+onmouseover event so what we'll do is
+we'll write here onmouse
+over
+and we'll call a function on taking the
+mouse cursor over this image so we'll
+write here change size
+so we'll declare it in a javascript file
+and we'll call this function on taking
+the mouse cursor over this picture
+so next thing we are going to do is
+we are going to
+move to a javascript file and we'll
+define this change size function there
+so let's
+go to the javascript part we'll go to a
+js file and we'll write here we'll
+declare a function first so we'll write
+here function change size
+and then we have the body of this
+function so
+we can do it without taking any variable
+like in the previous videos we were
+taking a variable to store the reference
+of
+the id attribute so this time we are
+going to use the document.getelementbyid
+but we are not going to use a separate
+variable for storing the reference so
+we'll write here
+document dot get element by id and we
+haven't provided the id so let's do one
+thing let's move back to a
+html file and we'll use the id attribute
+here as well inside the img tag we'll
+write a id
+let's say the id is
+one fine
+save it and
+we'll
+right here inside the js file we'll give
+the id here as well so we have the ids
+img one
+save it and the next thing we are going
+to do is we are going to use the style
+property with this
+document.getelementbyid method so we
+will write here dot style
+and then we will write a dot width
+and then we will specify the width so we
+will write here the width as let's say
+500 pixels the default width is
+250 pixels right so save it and let's
+see if it's working fine or not so here
+is the image on the browser and we'll
+take the mouse cursor over the image and
+you can see the change in the size of
+this picture so javascript makes it easy
+to do such tasks now you might have
+noticed that the images size remains the
+same once the user takes the mouse
+cursor away from the image right so the
+image size is changed let me zoom out a
+little bit so it will be easy for you
+guys so what we'll do is we'll refresh
+this page and here you can see on taking
+the mouse cursor over this image the
+change in the size of this particular
+picture
+so now the image size is 500 pixel
+now the image size is not getting back
+to its original size like what we did
+was we use the on mouse over event and
+the image size is changing and that's
+working totally fine so the next thing
+we are going to do is we are going to
+use the on mouse out event and what will
+happen is
+the image size will get back to its
+default size like which is the 250 pixel
+so we'll
+for that we'll use another function so
+first we have to use the on mouseout
+event here
+so we'll write here on mouse out and
+we have to create another function so
+we'll write a change size 2 so this will
+be a function name save it
+and here we have to create another
+function in the javascript file so we'll
+write here function change size and the
+function name is change size 2
+then we have the body of this function
+and we'll use the
+document.getelementbyid method
+the id is same which is img1 and then we
+are going to use the style property
+again
+and this time we'll
+specify the width as
+250 pixel so this is the default size of
+our image save it so what we did is we
+created a function that will be called
+when the user takes away the mouse
+cursor from the picture and the image
+size will be changed to 250 pixels which
+was the initial size of the image
+so save it
+and now you can see here on the browser
+the image size is changing on taking the
+mouse cursor over the image the image
+size is 500 pixel now and on taking the
+mouse cursor away from the image the
+image is getting back to its default
+size right so you can see the change
+here so this is how we can use these
+events to make our web page more
+interactive and attractive as well next
+up we'll go through another example
+wherein we will change the image on the
+mouse over event and the default image
+will be shown on taking the cursor away
+from the image so this image will change
+on taking the mouse cursor over it and
+again it will get back to the default
+image on taking the mouse cursor away
+from the image so guys here's the code
+for the same and what will happen is the
+image will change on taking the mouse
+cursor over it and gets back to the
+default on taking the cursor away so
+guys the html part will remain the same
+wherein we use the img tag to add an
+image and then we have two functions one
+for the on mouse over and another for
+the on mouse out event so in the
+javascript file we defined the two
+functions here so you can see the
+function one is change image and the
+function 2 is change image 2. so what's
+happening is we are using the get
+element by id method again and this time
+we are using the src attribute and what
+we are doing is we are changing the
+source of image like we are using here
+the simplylearn.png
+so this is our image saved in the
+particular folder inside the images
+folder and in the next function what we
+are doing is we are again changing the
+image to the default image so we have
+used the
+simplico.png image here so what will
+happen is the default image will be
+replaced by this image when this
+function is called and the other
+function here will again replace the new
+image with the default one so let's take
+a look at the output and
+save it
+so
+here you can see on taking
+mouse cursor over this image you can see
+the change so this is the image we want
+to change so on taking the mouse cursor
+away from this image you can see the
+image gets back to the default one you
+can see the image is changing and it's
+quite responsive and attractive
+so this is how we can use these events
+in javascript that's all for this video
+guys see you in the next one where we
+will go through projects to revise
+things which we studied till now in
+javascript and if you like this video do
+give it a thumbs up if you have any
+doubts do let us know in the comments
+below share it with your friends and
+don't forget to subscribe thank you
+karshel it was great having you in the
+session
+if you guys have any queries regarding
+any of the topics covered in this
+session or if you need the code that we
+have executed in this particular
+tutorial then please feel free to let us
+know in the comment section below our
+team of experts will be happy to resolve
+all your queries until next time thank
+you stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,230 @@
+everyone welcome back to another video
+session by simply learn
+in this tutorial we will be learning
+about kotlin multi-platform
+the kotlin multi-platform is a software
+development kit which is designed to
+simplify the development process of
+cross-platform mobile applications
+now before we begin make sure to
+subscribe to our channel and press the
+bell icon to never miss an update
+so let's go ahead and understand what we
+will be covering today
+so we'll start with what is kotlin
+multi-platform
+then we'll understand how kotlin
+multi-platform works
+then we'll understand coleman kotlin
+code and after that we'll have a look at
+benefits of kotlin multi-platform and at
+last we'll understand some applications
+that are built using kotlin
+multi-platform
+so without further ado
+let's get started
+so first is what is kotlin
+multi-platform
+the kotlin multi-platform is a feature
+released in 2017 with kotlin 1.2 version
+this feature allows us to write the same
+code on multiple platforms directly
+it focuses on cross-platform app
+development
+it is based on the idea of write one's
+run anywhere approach
+but it takes the concept of write once
+run anywhere to a much higher level
+in which we can write the code once and
+target multiple platforms
+the kotlin multi-platform
+allows you to include other platforms
+like linux windows and the web
+while its subset that is kotlin
+multi-platform mobile
+allows the developer to write business
+logic code for ios and android from a
+single code base
+now as we have understood what is caught
+in multi-platform now let's understand
+how kotlin multi-platform works
+so let's take android and ios
+the shared business logic code for
+android gets converted to java byte code
+that can be executed in jvm
+and android has the virtual machine
+so it can easily run it
+but in case of ios there is no virtual
+machine
+so the code is converted to the native
+code that can be executed on ios
+now in kotlin compiler there is a front
+end which converts the code into
+intermediate representation known as ir
+and the back end converts that
+intermediate representation to machine
+executable code
+so in case of android it converts it
+into java byte code and for ios it
+converts it into ios native machine code
+so as we have understood how kotlin
+multi-platform works now let's
+understand
+common portland code
+to make common core clean code run
+kotlin provides platform specific
+compilers
+to convert
+the code according to different
+platforms it provides different
+compilers
+these platform-specific versions include
+kotlin slash jvm
+kotlin slash javascript
+and kotlin slash native
+these versions contain
+the platform-specific tools and
+libraries and also the extension
+to kotlin language
+of each platform-specific version
+include various platforms for example
+jvm includes java 8
+java 6 and android then the javascript
+includes browser and node
+the native includes ios mac windows
+linux etc
+multi-platform libraries helps in
+developing shared parts of the project
+at one area by providing apis for common
+cortland code and later share it with
+all of the target platforms
+the versions of platform-specific
+libraries provide the libraries that can
+be used to increase the
+platform-specific capabilities of the
+platforms that are targeted
+now
+let's understand
+the benefits of kotlin multiprogramming
+so let's start with the first one which
+is
+quick and clean code
+in cortland multi-platform
+we don't have to recreate and rewrite
+the code for different platforms
+we can simply share the common code
+between platforms which saves a huge
+amount of time features like
+interoperability makes things very easy
+and quick as well
+also there is no lagging behind the
+native platforms and because of that the
+developers don't have to wait until the
+new features are added for the support
+next is
+fast development
+so as we have already discussed that
+code sharing saves a lot of time and
+helps in making the development process
+much faster and easier
+its features including null safety ide
+support and interoperability with java
+makes it less complex and fast
+next is
+one language for close platform and
+native apps
+most crows platform app development
+tools
+don't allows you to use the capabilities
+of native to ios and android devices
+in kotlin we don't need to introduce any
+new programming language to the code
+base
+it is easy to make our android app work
+on ios devices without changing much in
+code
+the major advantage of using kotlin
+multi-platform is that we can write the
+code once and use it on both mobile
+platforms that are android and ios
+next is support and community
+kotlin is pretty famous in many
+companies and organizations
+also after google statement of kotlin as
+an official language for android
+many companies are opting this language
+and a huge amount of users
+started working on this language
+which means there is a huge community
+support for the kotlin language
+the developers who are already familiar
+with java can easily switch to kotlin as
+it is fully interoperable with it and
+easy to learn
+so the java community also adds up to
+the kotlins community
+now let's have a look at some
+applications that are built using kotlin
+multi-platform
+this includes netflix autodesk vmware
+trello
+philips
+ice rock
+so let's start with netflix
+netflix the popular ott platform
+has rebuilt the current user interface
+player in the netflix android
+application using kotlin
+next is autodesk
+autodesk is a multinational software
+corporation
+kotlin works well with ios and android
+without any java native interface
+which is a major reason for the company
+to opt kotlin multi-platform
+next is vmware
+vmware is an american cloud computing
+and virtualization technology company
+the vmware development team
+wanted a cross platform strategy for
+mobile applications
+then the quarter multi-platform was
+selected
+and now it is the default go to
+framework of choice for vmware
+next is trello
+trello is a project management
+application
+the android application of trello is
+built using kotlin
+reload uses scotland because of its
+interoperability with java
+next is philips
+philips is a popular multinational
+corporation and we all have heard about
+this company
+in philips kotlin multi-platform proved
+to be a faster at implementing the new
+features and also to get more
+interaction in the team between android
+and ios developers
+the last one is ice rock
+its lock is an outsourced company that
+provides mobile and backend solutions
+for various industries and market
+segments
+it uses kotlin multi-platform mobile to
+create applications for its clients
+apart from these there are some more
+applications and companies that have
+opted the kotlin multi-platform
+and with that we have come to the end of
+this video if you like this video please
+give it a thumbs up i hope it really
+helped you all thanks for watching stay
+safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

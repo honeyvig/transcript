@@ -1,0 +1,1680 @@
+foreign
+and welcome to today's video on Linux
+for ethical hacking if you have never
+used Linux before and are looking to get
+into it this is the perfect opportunity
+for you to learn on how you can use this
+operating system in your daily lives now
+although this video is specifically
+catered towards people who are trying to
+get into cyber security or who are
+trying to learn ethical hacking the more
+people that get into Linux is that much
+easier because it just provides an
+alternative operating system that you
+can use and perform in your day-to-day
+lives now uh it's very important
+especially for ethical hackers to
+understand how Linux works and
+specifically how Kali Linux works that
+we are going to cover today
+now as Kali Linux is also an operating
+system dedicated specifically to cyber
+security analysts and hackers and has a
+bunch of tools that makes the process of
+ethical hacking and vulnerability
+analysis malware analysis very easy
+so in this Linux crash course we will
+learn everything about car Linux what it
+is what you can use it for then
+understanding a bit more of the Linux
+system fundamentals now that can span
+across a multi a variety of topics for
+the Linux fundamentals we often have how
+to navigate the file system how we can
+use the Linux operating system command
+terminal for creating editing and just
+manipulating files will understand some
+networking commands that can help you
+we'll understand how this uh the service
+mechanism how to start store start
+Services stop services will understand
+how to install uninstall some particular
+tools will also create a small script
+with bash so that you can understand how
+you can use the bash language to start
+your scripting journey in Carl Linux
+directly before we move forward let's
+check out the ceh certification course
+by simply learn if you want to learn
+more about cyber security and ethical
+hacking in general check out our CH
+certification training course the
+certified ethical hacker certification
+is the industry standard for train
+penetration testers and our training
+program will ensure you are well
+equipped with all the necessary skills
+and techniques required to Ace the exam
+we'll get an exam voucher for free with
+the course allowing you to learn master
+and Excel as a penetration tester with a
+single package you can find the link for
+the course in the description box below
+that being said we can get started with
+our demonstration now the first thing we
+need to understand is how we can install
+Linux properly to install Linux or Kali
+Linux to be specific in this case we
+will need two things one we need the ISO
+file which is basically the installation
+file of every single operating system
+and we will need an environment to run
+it in now many people
+um use Linux or any other operating
+system as a dual boot in the system so
+that when you start up your computer or
+a laptop it will ask you where do you
+want to boot into do you want to boot
+into Windows or color Linux or Ubuntu
+something like that but for easier
+access what many people prefer and many
+people will recommend is using a
+virtualization software so what that
+will happen is you will keep using your
+normal Windows operating system but you
+can use virtualization software like
+virtualbox or VMware to run Linux
+operating systems in Windows directly it
+will run in a sandboxed environment
+which makes it easier to learn and you
+don't have to dedicate another
+bootloader access and it just gets a
+whole lot complicated dual booting is a
+lot more complicated and it is recommend
+it is recommended for beginners to just
+stick with virtualization software now
+for virtualization software you will get
+two options here which will be virtual
+Box by Oracle or
+VMware
+now I highly recommend VMware
+because I feel it is much more stable
+and it has a a bit more fluidity when
+learning operating systems now since you
+are running full-fledged operating
+systems in a single window your system
+must have a good amount of ram free so
+that it can be completely dedicated to
+the operating system being run in the
+sandbox environment so I would really
+recommend
+a VMware or virtualbox which I feel is
+has become slightly dated now meanwhile
+VMware Workstation player is going to be
+much better
+this is obviously a case of preference
+and you can try out virtualbox if you
+want most of the things will be similar
+but once you download VMware and install
+it
+you should be getting a window like this
+now this is the works workstation you
+can get the VMware Player version which
+is the free version you can get that
+element as well and again most of the
+things will be similar so now that we
+have VMware and we have our environment
+where we are going to install Linux and
+work on it
+let's check Kali Linux now kalinux as
+you can see it's the world's most
+advanced penetration testing
+distribution and more importantly it is
+based on Debian Debian is one of the uh
+you can say the forefathers of operating
+systems one of the operating systems
+which paved the way for many Linux
+distributions to be based on it apart
+from Kali we also have another operating
+system which is called parrot security
+this is also uh used by ethical hackers
+and cyber security analysts because this
+has the uh this functions the same way
+as Kali Linux as in it has all the tools
+and techniques that you may require in
+your ethical hacking Journey
+so uh you can use either of them either
+color Linux or pirate security and more
+importantly for today's video actually
+any Linux distribution will do because
+this is more about learning the basics
+and the basics will stay same
+irrespective if you go for Kali parrot
+Ubuntu or any other business
+distribution that you can think of but
+I'm just letting you know that there are
+two options here where it has a bit more
+features but Kali Linux is the industry
+standard today and has been for like a
+decade now at this point uh so it is
+much recommended to go with Kali and
+that's what we are going to work on
+today so to download the ISO file we'll
+just click the download button here
+and you can see it offers a variety of
+options you can directly download for
+virtual machines which is see as you can
+see it is the recommended but it is it
+is going to deprive you of a few
+um learning things so what we can do is
+we will get the live boot system what
+live boot will do it will provide the
+ISO file which we can later use to
+install on our VMware system so I will
+go to the live pool
+includes everything
+as you can see I got a torrent file
+I will place this torrent for download
+now
+actually instead of the torrent we can
+just download the pointless live image
+this actually here this version had
+every tool possible but this one this uh
+January Edition you can see Kali
+Community 23.1 the January live version
+Point release live image you can just
+download this one directly just click
+the download button here which is
+written at 3.8 gigs the ISO file size
+just click on download
+and your download red star
+so remember once again you can do this
+process with parrot security directly as
+well I think if you go to download
+button here
+yes we have to choose the security
+Edition now they also have multiple
+versions for let's say the home edition
+is for daily use you know
+um just casual browsing or just a
+multimedia process all those things hack
+the box is completely separate uh
+service that functions easy to easy to
+hack
+boxes that will be a completely separate
+Edition similar to Cloud architect and
+Raspberry Pi but if you are going to use
+parrot security get the security Edition
+directly just download it from here and
+you it you'll be good to go
+but for now we are just going to install
+Kal nut since that is what the majority
+of Industry uses
+and we'll move forward with it again
+these are the containers
+yes now what what would have happened if
+you had chosen virtual machine is as you
+can see there are many virtualization
+software like VMware virtualbox and
+chemo it what will provide is it will
+provide a installed file it will give a
+folder where the virtualbox have VMware
+has already installed car Linux so you
+can just load up in your VMware system
+as you can see you can it will you have
+to choose open a virtual machine if you
+download the image directly this one so
+you can just open up that folder and
+your operating system will load on its
+own but why after getting the iso you
+can customize a lot of things the thing
+about this virtual images are they're
+not customizable as such with the iso I
+can customize how much harder space I
+want to devote to just the sandbox
+operating system how much how much RAM
+usage although those rhyme usage and all
+can be customized everything will be
+tailor made based on your specific needs
+so we will check that once the download
+is completed
+which is just one minute remaining apart
+from that you can see there is a 64-bit
+I think this is 32-bit as well I'm not
+sure if a third bit is required nowadays
+considering everything is 64.
+but yes before uh while the iso is
+getting downloaded let's check out
+VMware Workstation now to get started
+creating a sandboxed environment we will
+touch upon create a new virtual machine
+yes
+uh here we can let's say check on custom
+because we want to customize how much we
+want to give
+Hardware we can use workstation 16.x
+which is the latest one
+now here I am going to choose I will
+install the operating system later
+if I give the ISO file here directly it
+will install the operating system on its
+own which can kind of diffuse the
+purpose if that was the case we would
+have downloaded the live image anyway we
+I will second I will install the
+operating system later
+we will choose in the guest operating
+system we will choose Linux and make
+sure you choose dbn 10.x 64-bit as we
+read in the website
+it is based on eBay
+it's citizen tbrn based Linux
+distribution
+now this can obviously change there are
+other operating systems on which others
+can be based like Fedora and Arch but
+this one is dbn so we are going to
+choose devian over here DB interning
+64-bit which is the latest version
+click on next we will name it as
+Kali
+Linux
+and click on next
+the number of processors I am going to
+give two processors here
+total processor courses for this you can
+determine based on how much how powerful
+your system is and how much you can give
+as it is because a major part of how how
+a virtual machine runs is not just how
+much RAM you give to it is how much RAM
+is available outside your sandbox
+environment because if let's say your
+system is uh has eight gigabytes of RAM
+you devote four gigabytes to the virtual
+machine Windows itself takes up around 4
+GB uh at least 3.5 GB when it's sitting
+idle so you have to account for all that
+when dedicating processors and more
+importantly Ram as well so we're going
+to click on next for now and here what
+I'm going to do is I am going to give
+2.5 gigabits of ram which should be
+enough for the thing at least the things
+that we are doing today this can be
+customized later on as well let's say
+you have started working and then you
+realize the amount of ram that you have
+given it's just not enough and you need
+a bit more then you can customize that
+later for now I am going to give 2.5
+gigabits of RAM
+you can see the recommended is 2 gigabit
+anyway I'll just go a step further click
+on next
+use Network address translation is the
+network connection as in what kind of
+networking it should have the virtual
+sandbox should have considering it is
+being run inside an operating system
+your windows whatever internet
+connection is given to your windows will
+go to college nuts directly but you can
+customize that let's say you don't want
+networking you want host only networking
+that you connect the guest operating
+system to a VPN later on it's a
+completely customizable process but for
+easiest access we are going to use use
+Network address translation
+well IO controller types LSI is always
+going to be the most recommended so just
+go ahead with it choose a Cai for the
+virtual Disk type now these are
+different virtual disk types that can be
+used and they have different purposes
+like some make it easier to transition
+between multiple uh installations of
+VMware or virtualbox based on what
+you've chosen but SCSI is always
+considered the best disk would be we
+will create a new virtual disk
+now this is the maximum disk size other
+disk capacity how much harder storage we
+are going to devote for the operating
+system installation and all the files
+whatever you work in the system that
+will be stored somewhere right so we're
+going to devote the basically the uh
+Chrome size to make it easier to
+understand so I will give
+30 gigabits
+of memory size
+now here you have another option
+uh you can actually allocate all disk
+space now as it is written allocating
+the full capacity can enhance
+performance which requires all of the
+physical displays to be available right
+now so the good thing about VMware is if
+I think that's in virtualbox as well if
+I do not click this even though I have
+written 30 gigabits
+he does not take up all of the 30
+gigabits in your hard disks it takes how
+much ever is required let's say after
+installation and everything uh it takes
+up 10 gigabits of space that is all that
+will be taken up it won't take up all to
+30 gigabits the more you keep working
+and slowly the data increases the size
+increases of the virtual machine a
+folder it will go up to 30 gigabits
+that's it
+so if you allocate all of it now it will
+take up the 30 gigabits directly and it
+will be slightly more performance
+because it will remove that read
+functionality when the virtual when the
+virtual machine is being run so I will
+click it and between these two options
+between single files and multiple files
+single files is faster but multiple
+files will make it easier if you want to
+move your virtual machine system from
+let's say one laptop to another or you
+have to switch between personal and
+official systems but for now I can
+choose a single file
+130 disk file will be created you can
+just put whatever name
+and I think everything else is subtle
+now what we will do is we will click on
+finish
+it will take some time to create the
+disk
+I think the iso download would have been
+completed yes the iso download is
+completed by now
+it will just take a while to create the
+disk
+that is also Kali net Hunter which is a
+mobile penetration testing platform it
+is available only on Android
+you can use it to perform small tasks
+obviously you can't you can't perform
+everything that you can on call Linux
+desktop environment but a lot of the
+things can be performed like basic
+Network scanning and some amount of
+sniffing and uh
+brute forcing tools all those things can
+be performed on net Hunter directly but
+that is a video for another day so we'll
+just wait till the disk is created and I
+will move forward with the process
+as you can see the virtual machine is
+now created so the next step would be to
+actually align the ISO file so we're
+going to click on edit virtual machine
+settings here
+we'll select the CD DVD
+position
+use ISO image file we're going to browse
+go to downloads
+use the Kali Linux ISO and click on OK
+so now we can power on
+select live system AMD 64.
+at all times okay you can see a pop-up
+here below that says
+in this case it just shows Debian
+because it is based on trivia that's it
+when you're done and the operating
+system boots Up Click I finish
+installing so we will do that when the
+time is correct
+so say the live board running up
+remember
+okay you can see collinos is booting up
+now you get the uh the usage CPU usage
+meter here and this should be
+the memory
+yes
+okay so we have entered booted into the
+desktop these are the multiple
+workspaces but once again this is not
+installed
+what we going have to do is install this
+operating system
+you can see you can use in the live
+environment you can use everything but
+you just have to
+install this operating system directly
+the networking system is working
+okay
+so once you familiarize yourself with
+the Kali Linux operating system and more
+importantly in the live environment you
+are able to check if the amount of ram
+that you have given and your processor
+in general is able to sustain everything
+or not you what we'll do is we will just
+power off the virtual machine
+and again power on and this time will
+not choose the live system what we will
+choose is we'll go down
+we'll choose the advanced installation
+options
+we'll click graphical install and and
+stop that's it now what this will do is
+to launch the graphical installer
+instead of the live system some
+operating systems like parrot security
+for example will allow you to install
+directly from the live environment but
+that's it it's not really a very big
+difference if you run it from here or
+there now the installation installer is
+launched I'm sorry I will click the
+English language yes
+it will ask for your location so that it
+will set your time zone I will choose
+India configure the keyboard you can
+choose American English considering that
+is the standard keyboard layouts that is
+available on the market
+it will load the additional components
+like the networking modules the input
+output device detection drivers all
+those things
+some of the partitioning devices as well
+I think uh it will check the network
+Hardware next
+configuring
+configuring the network with DHCP
+yes uh now that we have the uh select
+the hostname the hostname I will just
+keep it as Kali that's not a very big
+deal this is more important if you're a
+lot into networking and you want to have
+you know particular home networks as a
+kind of like acting as a server for the
+all the devices in your home Wi-Fi
+otherwise it's not an issue I can same
+thing with the domain name I will skip
+the domain name because it's not really
+essential for what we are doing here yes
+but the username will obviously be
+required the full name I will give it as
+simpler for example
+I'll keep the same username that was the
+full name this is a username
+password
+you can give based on your wish
+make sure the passwords the same
+this is the single user by the way you
+can obviously create multiple users like
+we do on multiple other operating
+systems now it will check the disk
+partitioning
+here since we are installing a VMware
+any virtualized software version works
+for VMware we will use guided which is
+use entire disk continue as you can see
+we had devoted 30 GB showing 32.2
+similar situation here we're going to
+click on continue all files in one
+partition which is recommended for new
+users you have you can partition it to
+home where TMP may be uh
+other partitions as well that you can
+keep a swap partition as well but that's
+not necessary now we'll keep all of them
+in a single partition let me just make
+sure all the changes right it will
+create the swap memory on its own and
+click on continue
+it will ask that these are the changes
+being made just select yes
+continue
+and it will start installing Kali Linux
+into the VMware virtual disk now this
+will take some time so we will speed
+this off and come back to it when the
+installation is done
+so now we have to set the package
+manager the main partitioning system is
+done and most of the installation part
+is done you just have to configure the
+package manager and use a network mirror
+click on yes
+if you do you don't need to set up
+anything else here you can just click on
+next and it will set up apt which is the
+package manager of Kali Linux now the
+package manager will do is help us
+install and install
+update the tools and libraries that call
+Linux uses all the softwares and all the
+tools that we're going to use later on
+it will configure the package manager
+for now
+it's almost done
+here we go
+now it's installing the grub bootloader
+which will uh when you start up the
+system it will ask you where do you want
+to log in
+yes install the group order to my
+primary drive click on continue
+we'll just select Dev SDA which is you
+will find a single uh Drive anyway
+instead of entering Android device name
+manually just click on whatever the
+storage space is being uh written below
+that now if you're using it on
+virtualbox or VMware which you are doing
+right now you will get only one storage
+that's it if you're dual booting you'll
+get multiple and you'll have to make
+some choices but that is Advanced and we
+don't need to get into that right now
+for now only the last one should be
+enough now it is finalizing the
+installation
+foreign
+solution clicks that's all
+and as you can see the installation is
+complete so please choose continue to
+reboot
+we'll just press continue
+now it loaded in a lot of the packages
+during the live version and during the
+installer so that it can continue with
+the installation so it's going to remove
+that live package all from the ram
+and complete the process
+as you can see color Linux has rebooted
+and is going to the installed operating
+system now
+foreign
+if you're a beginner into Linux you will
+run into a lot of the commands being
+shown just don't freak out it's all
+normal
+it does take some time to start up
+depending on how much memory you have
+given it how much I am you have devoted
+to it how much even how much hardness
+you have given it also depends on that
+and uh obviously it also relies on how
+much memory your Windows operating
+system is using so that how much extra
+Ram is available and how well windows
+can push VMware Workstation so you have
+a login screen we are going to use
+whatever
+username and password we had set during
+installation to login
+now this will be the root user you'll
+understand more about that just now
+let's just allow it to boot completely
+foreign
+so now we have called Linux operating
+system installed and ready to go and
+what I would recommend first thing is
+just go around just check if you're new
+to Linux don't make a lot of changes or
+anything like that but do move around
+for example if you can just click the
+start button here which is termed as
+applications
+you can see a lot of the programs that
+are installed now the good thing about
+Carlos is it's very help intuitive so
+for example information gathering you'll
+see all the tools that you can use for
+information gathering now same for
+vulnerability analysis web app analysis
+password attacks all the brute forcing
+tools that you can use the wireless
+attacks like air crack Reaver example
+sniffing networks like Wireshark
+Etc so just go around the operating
+system C uh check the file manager how
+it works and you know
+basically get a feel for the operating
+system directly
+okay you see here's the file manager
+just check another thing how it's
+working you can enter the settings and
+move and make some small small changes
+now a lot of the settings won't matter a
+lot in when running virtually but it's
+good to know and understand what are the
+things that Linux offers
+so it's a very important step one more
+thing if you are in a virtual machine is
+make sure that VMware tools is installed
+usually this gets installed directly but
+if not you can just reinstall here okay
+I think so our environment is ready and
+set up
+now as you might know a major part of
+Linux is the command line so we're going
+to click the terminal here or you can
+just open right terminal has opened
+so this is basically the
+command line that you can use in a Mac
+OS or windows so a lot of the things
+that we do on wind on Linux is in the
+command line itself now you can use
+General graphical tools like uh let's
+say the file manager for example you can
+do use graphical tools you can use other
+networking tools as well but it's
+something it's always better to use the
+terminal because one you can reach
+things faster compared to a graphical
+tools considering you just have to write
+a single command and that's it for most
+of the tools other than having to
+navigate through a lot of menus and
+sections and other compartments that you
+have to do on a graphical interface so
+we will have to focus more on this
+command line terminal and the first
+thing that we have to learn in a command
+line terminal is the sudo user or the
+root user we had discussed uh when
+creating the user but I told that that
+will be the root user considering we are
+only adding just one user for now
+okay so let's break that apart actually
+uh Sudo is the keyword that we are
+looking for okay now the super user or
+the root user administrator of the
+system is going to be someone who has
+the uh all of the access to access
+everything all the sensitive files all
+the sensitive settings all those things
+now if you can just see uh let's say if
+I want to open a file
+I'm going to uh put cat
+Etc
+shadow
+it's a permission denied cat is the way
+to open up text files by the way now
+this file does exist but I cannot open
+it because the permission is denied I am
+not the root user right now I'm just
+simply on Android Kali now the terminal
+does not go into root mode by default
+because it does it's not it's not safe
+from a security perspective so we have
+to check on what are the things that can
+be done securely
+that's why what we will do is we will
+write down now sudo
+let's say it uh suro is the command for
+an invoking the root user we will write
+the same command which is
+shadow
+it will ask you for your root password
+that we set before
+we'll just put the same password and as
+you can see
+it showed the details of the Shadow
+password a shadow file
+so why uh so that's the reason actually
+why it's not recommended to have the
+root user at all times it's all uh it's
+not recommended meanwhile what you can
+do is let's say you work a lot with the
+pseudo password for example a lot of the
+things that we're going to do in this
+video will require the sudo keyword
+which is the root access now if you just
+open a new tab for example
+you'll get another terminal without any
+issues now one thing I want to note out
+is if you are learning a lot of the
+tools use that require the sudo command
+like opening sensitive files like this
+one HC Shadow or making small small
+changes that require root access like
+changing the network adapter checking
+what kind of uh what kind of external
+devices are being connected from a
+system perspective although since you
+will require to run continuously so
+instead of writing sudo again and again
+and again for every command what you can
+use this command sudo Su now what this
+will do is it will change the terminal
+and change the user in this particular
+terminal tab to a root user now I will
+just press enter and you can see you can
+check this dollar sign here
+once I press on sudo SEO this will
+change to a hash and you can see the
+user has changed now from the simply
+learn to the root user which basically
+has all the permissions to do whatever
+it can with the system it can change
+into hash so now whatever you have to do
+you don't have to write sudo command
+anymore and just write candidate Shadow
+and there you go now remember this uh
+root user terminal is only valid for
+this particular tab not even this window
+this particular tab if I go to this tab
+here or I'll just close it and create a
+new tab
+Etc dollar and where you in the simply
+learn user anyway you can't log in
+directly to the root usage for security
+purposes like let's say if while it is
+ultra rare for Linux to have any kind of
+malware it is always better to not give
+it all the permissions like you can have
+in some other print system like Windows
+so you have to dial into root directly
+okay so you can use sudo command uh you
+don't have to use to recommend if you
+have the sudo SU
+a lot of the things uh sometimes you'll
+find commands that will not work like
+the cat TC Shadow they will not work or
+sometimes the commands will work but
+they won't work all the way you'll find
+something is wrong so always make it a
+point to try it with sudo once before
+moving forward
+so now let's understand how we can
+navigate the file system in Linux so
+what I'm going to do is I'm going to
+open the terminal again just increase
+the size of the texture value
+so as you can see uh this still symbol
+this means we're at the firm location to
+understand how we can determine which
+directory we are in currently we always
+remember terminal will open in a
+particular directory that's the entire
+point of the terminal or the command
+line for example to find out what you
+are in right now you can just type in
+the command PWD which stands for present
+working directory click enter and you
+can see I'm at the home folder in this
+simpler now this can obviously change
+for example if I want to move somewhere
+else now I'll just open the file manager
+and show you once
+this is the home simply run folder as
+you can see it is written here Tona is
+the name of the file manager this is the
+home folder now you have desktop
+documents downloads music all these
+folders subfolders you can say inside
+the simpler folder home folder so what
+I'm going to do is I'm going to move to
+let's say the documents folder okay so
+the command for that would be CD which
+is change directory so I'm going to
+write as you can see it'll automatically
+try to complete the more you use color
+Linux and actually most of the Linux
+operating systems the shell or The
+Terminal understands where you go and
+what you do all those things so that way
+I will going to change the directory to
+the let's say the documents folder now
+we're going to just write CD documents
+and as you can see there is an extra
+word here the documents which means that
+now you are in the documents we can use
+bwd command again to check and you can
+see home simpler documents now what if
+you're at a position where you don't
+know where uh you are and what are the
+files that are present there for example
+I just opened this in the graphical user
+interface and founder that okay these
+are the subfolders that I can get into
+to understand what are the folders
+available at your particular location
+the command is just listing for command
+is LS press enter okay this is the
+documents apologies we'll just to go
+back one step right now we are in home
+simply learn documents to go back a
+single step will just write CD double
+dot double full stop then you can see
+once again we are back to home simply
+learn now once again to understand what
+are the folders that are present we have
+to use the command LS and as you can see
+you can see everything that is present
+the desktop document downloads music
+which is all those folders can pop up
+now you can move here and there based on
+where you want to go
+apart from this let's say if you want to
+create a new folder for your own one
+thing we can do is mkdir that command
+stands for make directory now if I want
+to create a new folder by the name of
+mkdir SLP now remember make sure you
+understand which position we are at
+which is right now home simply learn
+based on the last PWD I haven't used CD
+command anything after that so now if I
+press LS you can see another folder in
+the name of SLP now you can do the same
+things you can just go to SLP you can
+see the path has now changed to home
+simple learn SLP you can go back and
+that's how you can work and create
+folders to delete let's say I don't want
+to have the SLP folder anymore I'll just
+use rmdir SLP
+now if I check LS we don't have that
+folder anymore so that's how you work in
+between folders
+now one more thing that you can do is
+just clear and it will clear up the
+terminal for you now just to check where
+we are again home simply learn now
+remember seeing the cat folder right uh
+the cat for uh sorry the cat command
+using the ETC folder and the shadow file
+now let's say if I want to see what is
+inside the ETC file for example if I
+just put down LS it will only show me
+what the the folders present in my
+present working directory what I can do
+is I can just write LS
+Etc
+and these are the folders that are
+present in the ETC folder so you can
+check other files listings here as well
+and directly giving the full path so
+that will ignore the current working
+director the present working directory
+and show the folders present in the path
+that you mentioned
+okay apart from that one more thing that
+we need to know when it comes to listing
+our details is the LA command now
+all of these commands is LS PWD at least
+90 of the commands that you're going to
+use in the Linux terminal I just clear
+this for now 90 of the commands that you
+use in Linux will have sub commands or
+uh it is also called as flags that go
+along with it now for example in my
+current present working directly if I
+press on LS
+I get these folders right but these are
+not the only folders that are presented
+these are the only folders that are
+being shown now to see the other files
+and folders that are present in the home
+folder I can write the normal command Ls
+I'm going to add a sub command or a flag
+if you say hyphen la
+and you can see there are much more than
+the desktop documents downloads that's
+something that we were already seeing
+here but apart from that you can see
+other files and folders here the dot
+cache Dot config.logout
+everything you can see now everything
+that has a DOT or full stop uh before it
+is considered a hidden file it's not
+going to show up directly using LS you
+have to write the LA command which will
+show all the files now it's very
+important to understand these sub
+commands and what are the flags that can
+be used in different purposes yeah this
+is basically the shell so the more
+research you do and understand what kind
+of flags that you can use it's going to
+be easier
+what can help here is the man command
+the man basically stands for manual you
+can find it in every Linux actually
+let's say you want to learn what are the
+flags that you can use with the ls
+command for example or you just want to
+know what that command is so you can
+just type in man LS
+and you see basically says L stands for
+list directory contents is a description
+here you can see all this sub commands
+the flags minus B minus D there's a good
+explanation for every single sub command
+that you can use in order to navigate to
+the file system or just listing this is
+just for LS command you can do this with
+almost any command that you want
+it says once you are once you've read
+what you needed to know just press Q to
+quit
+and there you have it so that's all
+about how to list commands are list
+folders and navigate through file
+systems using CD mkdir and rfdir
+now about the commands that you saw and
+all the folders that you were able to
+see let's say if I just press LS la
+you can see there is a folder called
+dot cache right so to enter the file you
+also need to just use the Siri comma you
+can see the present working director has
+changed you can just press press lscr
+and see if anything else yes you can see
+there are other folders here as well so
+the entire process Remains the Same but
+just understand that if there are some
+files and folders that you're not able
+to see which is going to happen a lot
+considering a lot of the things that are
+hidden in Linux by default you can
+access all of those things but you need
+to know the right commands and the right
+way to access them so if you are missing
+out on some files and folders just make
+sure you can uh you're using the ls
+command and sometimes say when the LA
+command to get the details of everything
+that you are missing now this folder
+currently doesn't have as such any a lot
+of missing files and folders like the
+home folder had so right now it's not
+very indicative but you get the full
+idea of it another thing that you can
+use apart from the let's say the man
+command is the hell command help hyphen
+hyphen help
+this is a small this is not as detailed
+as man and this doesn't work for all
+commands but you can do a lot of the
+commands I if you need a quick answer to
+something you can definitely check this
+out which is the hyphen hyphen help
+so why we are clear about folders like
+how to manipulate folders let's take a
+look about how we're going to work with
+files for example now let's say uh if
+you use the echo command Echo command is
+the equivalent of trying to put
+something on screen so let's say if I
+just press Echo with the codes it just
+print out hello if I want to put it
+inside a file I'll just say
+yeah
+just press Ctrl 0 I'll just pray Echo
+hello to autocomplete just press the
+right arrow on your keyboard it will
+order complete uh after that Echo hello
+I want to put this into a file let's say
+uh my file
+Dot txt
+yes uh we'll do one thing this is
+currently in the cache folder right
+we'll just go back
+yes this is the home folder so we're
+going to do the same thing here now to
+go back to our history of comments I
+want to do the same thing I want to Echo
+hello into our new file so I'll just
+press the up Arrow and it will go cycle
+through my recent commands so I'll just
+press enter
+and if I just press SLS now you can see
+the home folder there's a new file of
+MiFi dot text okay if I want to let's
+say move this file to one of these
+folders let's say I want to move this to
+the video folders so the command for
+that is c p which is copy I will copy
+the my file
+dot text to the videos folder
+so I'll just enter I don't need to
+actually enter videos to see the files
+like we had discussed so what we're
+going to do is I'm going to just type in
+LS videos
+and you can see it has the my file.x
+folder since I copied it obviously the
+home folder will also have the my file
+text in order to remove the my file text
+I have to use the RM command then we
+want to move directories we used rmdir
+to remove files we just have to use RM
+so I'm going to use RM my file.txt to
+delete the file now if I LS the home
+folder does not have but since it had in
+the I had copied uh kept a copying the
+videos folder I'll press LS videos
+press enter and you can see it still has
+the my file command
+okay now one more thing that we can need
+to know is the
+move command
+remove command will essentially move
+whatever folder wherever you want let's
+say I want to create Ico hello my file
+again I'll press LS and I'll see the
+myfile.txt folder now if I want to move
+this file let's say
+if I use the MV command instead of the
+CP command which is just for a I want to
+use the my file.txt to let's say the
+downloads folder
+it's saying permission denied so what I
+will do is I will click on sudo like we
+discussed a lot of the things will not
+work directly
+we will use the same command
+we'll use the downloads folder
+until now work
+it's time to take a look at users and
+privileges now if you remember our LS
+command
+uh let's just check my present working
+directory it's the home folder now if
+you remember the r minus L A you see a
+lot of the
+characters here which is the rwxr all
+those things now this is basically to
+understand what folder or what
+permissions a user has if you check here
+there are folders and files you can see
+the folders in the dark blue color and
+the files in the white color you can see
+Light Blue for links whether it's a
+completely separate uh thing so another
+thing the permissions part if you see
+there are three groups here
+this is a first group this is the second
+group this is the third group the first
+group is the owner of the file now what
+permissions does the owner have now for
+example right now the owner of let's say
+this one uh this way for example is root
+most of the time it will be the user but
+this time it is root it has a read write
+execute R for read W for right and X for
+execute obviously the owner will be able
+to do all those things now the second
+group is basically for anyone who is
+part of the
+domain group in the users like if you
+remember while installing that it was a
+option called Creator domain why we did
+not create it because we don't have a
+lot of users right now but when you
+create a domain what are the people in
+the group who are going to do so they
+have the read function which is the RX
+for execute but they do not have the
+right function they cannot write
+directly in this file
+similarly for the third Group which is
+anyone outside of the group so any other
+user if they are not in a particular
+group of the file then they also have
+the read function and the execute
+function but they will not be able to
+write into the file directly so that's
+how you can check all of the files that
+are able to that a user can access or
+not access
+that's basically the entire purpose of
+the uh the privilege section because we
+don't want to give undue permission to a
+people who do not require it the entire
+point of security in Linux is to be is a
+level of abstraction that is providing
+users with exactly what they are needed
+so if you have a user that does not
+require executable functions to let's
+say the downloads folder we can cut it
+off from r as a root user anyway
+so that's about providing Privileges and
+providing access to certain files
+like we had discussed the ETC Shadow
+file that we had are used when checking
+the cad file now one more thing that we
+can do again is understanding what the
+shadow file does if you just press cat e
+to C Shadow obviously it will not work
+it will just say permission to deny
+we're going to say sudo cat shadow
+this basically has the password hashes
+for all the users that are in a system
+right now you can see the root head does
+not have a hash because it's not safe to
+have a particular hash for a user just
+from security perspective uh we the the
+user that we have created which is
+simply learn you can see the password
+hash being mentioned here now depends on
+how many users you get if you create
+three four five users you can see all
+the password hashes here now you can so
+if if the why this is password protected
+by security and we need to use the sudo
+user command is because if someone has
+this hash let's say if someone is a
+cryptographer and is able to Brute Force
+through hashes then it's very it's going
+to be very easy to try and figure out
+the passwords to particular users
+passwords that's why even the hash is
+not shown with uh full confidence unless
+and until they get the pseudo user
+command
+so that's about uh you know Privileges
+and how you can use the Surah command to
+bypass the normal user limits so now
+let's take a look at some of the
+networking commands we're going to clear
+this one for now
+uh check the adapters that we have in
+use right now
+you can just write if config or actually
+IPA uh sorry I'm not c i p a
+similar information IPA is a newer
+variant it basically shows what other
+adapters and the networking conditions
+right now for example you can see
+ethernet now even though I am using
+Wi-Fi on my local system
+uh in network address translation which
+is the NAT that we set the network
+package manager when setting up the
+virtual machine virtual machine on this
+VMware it will link up as ethernet so
+you can see ethernet you can check our
+local address you can check our credit
+for subnet
+this is our broadcast address and this
+is our Mac address for the system this
+is the IPv6 address as well now
+similarly
+uh this can be checked on whichever
+system you are being connected to the
+IPA ifconfig is the same it's just uh an
+older variant apart from this there is
+another command actually I W config now
+this is particularly for wireless oh
+sorry that was a wrong spelling I have i
+w config now right now it will not show
+any Wireless extensions if you are
+looking into Wireless sniffing uh the
+network package detection or even
+Wireless hacking for example we will
+publish a video on wireless hacking soon
+so stay tuned for that apart from apart
+from Wireless hacking if you are using
+any Wireless extensions let's say we
+have small adapters that people can use
+as Portables or wireless cards for Wi-Fi
+for some systems they do not have Wi-Fi
+enabled and ICS in their motherboards
+the people use modifiable custom uh
+portable
+adapters so if you have one of those
+plugged in you will see it in Idaho
+config from ifconfig you will only may
+be able to find out the IP address and
+that's it iwconfig will give you all the
+information and you can check later
+coming to different IP addresses are
+command that you should be knowing is
+arp
+now if you are not familiar with ARP
+that is going to be address resolution
+protocol I think ipn will also show the
+same information so what both of these
+do is it basically states which IP
+address relates to what Mac address it
+will also show which one is reachable
+which one is stable all those extra now
+remember whatever is being done in these
+kind of uh IP addresses and Mac
+addresses all of them need to be put in
+a routing table if you want to connect
+with each other now how you can check
+that just enter out and you can see the
+routing table for this particular system
+you can see there is a destination for
+every IP address there's an open Gateway
+there is a mask here
+all of this stuff whatever database they
+needs to travel in between host now the
+second host let's say from this virtual
+machine I want to travel I I want the to
+communicate with a system that is in my
+similar voice in the same Wi-Fi network
+then there must be a routing table
+connection between them this can uh the
+example that I gave the same Wi-Fi
+network thing that will mostly be handed
+by the modem or the router basically but
+what if it's not what if there's just
+two systems and they're not having any
+other correction and it just had to
+happen to have a uh align cable
+connected between them you have to set
+these routing tables manually so that
+you are able to communicate this is
+going to be expressly useful if you're
+setting up in a domain group authorities
+and all those things but apart from that
+it's just a good thing to know how
+networking works now all of these
+commands this Mac addresses these IP
+addresses these are something that are
+of utmost importance so in learning
+networking when learning Linux is very
+essential I highly suggest learn
+networking so that you can be able to
+grasp these things better now based on
+how we can communicate with particular
+host addresses there is a command if you
+want to check if you can reach a
+particular host or not that is using the
+pink command now we'll take a common
+example for this because I don't have
+any other system in the uh
+Network right now so let's say if I want
+to go let's I want to see if I have
+connection to google.com now you can use
+directly an IP address as well I'm just
+going to check ping google.com
+and you can see it will start pinging
+request directly from the google.com
+server whichever is the nearest server
+that Google has
+set
+you can see it just says that it did
+it's N64 bytes from this particular IP
+address it received an icmp request was
+sent
+the time it took for each request is
+also mentioned at the end here 15 Ms 16
+Ms 17 18 all the SMS now since we are
+getting a particular request back ICB
+basically require uh needs a response if
+we are getting a response then that host
+is reachable if I did not have internet
+right now this would not be possible
+I'll just show I'll press Ctrl C
+whatever whatever command is being run
+if you want to stop it on the next
+terminal it is best to uh it is Ctrl C
+okay just press Ctrl C I will it will
+give a small report here as well it says
+51 package transmitted 50 receive how
+much packet loss was there if some of
+the requests did not go through or did
+not receive a response how much time it
+was taken all those things I'm going to
+clear and what I'm going to do
+I'm going to disconnect
+yes the network connection has been
+disconnected now if I put ping.google
+sorry ping dot google.com
+temporary failure in nameless solution
+as simple as that so once I connect
+again
+that sounded pretty straightforward
+apart from using uh domain names you can
+also use IP addresses like we mentioned
+now another IP address that we can ping
+for sure since we have internet
+connection is cloudflare's DNS
+resolution address now that would be
+ping
+1.1.1.1 now you better to have to
+understand DNS it's basically acts as an
+address book for all the websites that
+you see
+in whichever way it may be for example
+if let's say we're reaching google.com
+when we print google.com we saw this IP
+address responding request we didn't saw
+google.com particularly responding to
+requests right these IP address will
+depend based on what uh what DNA
+Services Google has and what how many
+servers they have in particular
+locations that's why
+uh hitting IP address directly also work
+that's why DNS is essential so we're
+going to bring 1.1.1.1
+and you can see we're getting response
+times for those as well now these will
+be generally faster compared to normal
+low websites
+as you can see the time is much less
+compared to pinging google.com Okay uh
+obviously if you can't Target something
+let's say one point one point two point
+five for example
+I'm not sure if that is even a host
+100 practical loss it's just uh
+nothing worked
+it will not work it won't send anything
+even if there is a host let's say if I
+have an IP address of a system that is
+in my group but it does not have
+permission to receive IPP request or it
+has just closed off all the ports that
+we cannot connect with it then it will
+just not work it will just say it's not
+existing
+you see we sent 26 packets none of them
+were received and there's a 100 bracket
+loss
+that's why I'll just check once what is
+the IP address of our system Plus
+192.168 72.130
+if I
+192 168
+700 2.0 130 I'll just play 154 or
+something
+there is no host there was another
+address there it would have received
+some request and since there is no host
+it says destination host unreachable
+that's how you can check if you have
+connectivity with the particle Sir with
+a particular system in your network or
+your group or your domain using the
+thing command so that's the networking
+command that all the networking commands
+that you need to know for now the basics
+at the very least
+the next thing you have to take a look
+at is services
+the services will differ wildly based on
+the system that you are using for
+example on Windows you see services for
+different stuff like for any remote
+desktop software you check and you see
+services
+similar cases with Linux if I just open
+let's say h top
+okay let's you know we have to install
+it stop let's just stop here it
+basically functions the top functions as
+a task manager you can see so many
+systems Services here like song tonar
+access top is running on the background
+stuff like that now if I want to start
+something particular let's take the
+Apache web server now Apache web servers
+have been in use for like the years
+decades at this point so in order to
+function uh see how Apache server is
+used the first thing I am going to check
+is my
+IP address this is my IP address
+so what I'll do is I will copy this I'll
+open my web browser Apache web servers
+are hosted on your own IP so I'll just
+paste it here and click enter
+and you can see there's nothing popping
+up now a major reason can this hobby for
+this can be the server is not running so
+one thing what we'll do is we're going
+to start the Apache server by starting
+its service so we're going to use system
+start so sorry system Apache to start
+never click enter
+it will say it just not work what I will
+do is uh sorry this correct term was
+service not system and even if I click
+on service
+Apache to start
+it will say it needs authentication now
+this could bypass by directly giving
+sudo and putting in the root password in
+the command line itself but all in all
+it's the same result so I'll just use my
+password Here and now I just remove the
+HTTP here because Apache is a local
+server
+now you can see the Apache web server
+has loaded based on Apache between
+different the remain default please now
+as you can see
+the server is working correctly
+if I just open the terminal again now to
+stop it I can once again just go so row
+service Apache to stop this will stop
+the service I'll just press enter
+I'll refresh and there will user access
+a very good part of our purchase servers
+used to be the ability to hold files
+ability to host files basically for
+people in the same domain or even the
+same network
+okay now you can see where the files can
+be stored like for example it says you
+should replace this file located at
+where HTML
+index.html so if I just open up a file
+explorer
+go to file system
+where
+www.html this is where a lot of people
+can post their files okay now another
+better way is to hold up python server
+now considering all of Linux come almost
+every single Linux distribution now
+comes with python pre-installed so how
+we can do that is
+I'll let that keep running we don't have
+an issue
+register
+no actually let's stop that it will be
+easier to understand how it's working
+if you're refresh now as you can see
+nothing is working so what we're going
+to do is we're going to start
+a python HTTP server
+python is used to python minus m is the
+sub flag for it and HTTP server we're
+going to start now what is my present
+working directory
+simpler let me just clear these present
+work directory is the home folder if you
+check what are the folders are available
+desktop documents dollars these are the
+folders now if I am running the HTTP
+server on this folder even though it
+will only my IP is going to be used for
+accessing the server it depends on which
+folder I'm hosting it from so if I host
+the python HTTP server
+wait uh python HTTP server from this
+folder I just press enter and you can
+say it says serving HTTP on 0.0 is
+basically your local IP address
+and I'm using the port 80 you can use
+whichever that's not really important
+which port to use file refresh now you
+can see I see all the folders that are
+available documents downloads these dot
+are something other things that we've
+already seen using the minus l a comma
+so all the files are now hosted properly
+as expected similarly
+if we want to use let's say any other
+files that we want to share with someone
+in a network uh easily and this can very
+well function like an FTP server this is
+not exactly FTP server but this can be
+easily accessed with just the URL
+someone is in my system and somebody
+said my home network for example they
+can just use my IP address which will be
+192.16870 to 130 they can check the Ping
+command and see if it is reachable which
+it should be unless until some
+particular Port is closed they can just
+access the files using this one now to
+stop the python HTTP server once again
+just press Ctrl C
+and
+so on so that's how you work with
+services in college index at least from
+a basic perspective that's how it's
+going to work
+and one of the last things that we're
+going to check is the ability to install
+update tools and basically all the
+software that you can see here you see
+all the applications
+that can be run for example the
+vulnerability analysis tools nmap SQL
+map River
+pixie WPS all those things now how do
+these get installed updated and
+basically dealt with so PT actually apt
+get also but uh those are
+interchangeable and you can use
+whichever one you like I use apt get
+but in order to check let's say if you
+want to update a system which is one of
+the bare minimum needs of every system
+right so the command for that is going
+to be so uh first thing I'm going to do
+is I'm going to use sudo Su which is the
+sudo super user I will just use sudo SU
+and go into the root stage because
+almost all of the commands that I'm
+going to put next require sudo so I
+might as well just be without having to
+type the password every single time now
+once I'm sure I use you the correct
+command would be apt get
+update now what this will do is it will
+check the repositories every Linux
+distribution has a few repositories that
+it gets the softwares and updates from
+it will check the package lists now for
+now the repository that is being hit is
+the correct or download Kali rolling in
+release right so it will update the
+repositories based on the data available
+on that particular address we use the
+APD get update Commander so next thing
+what we are going to do is apt get
+upgrade
+yes so now after the repositories have
+been updated with the data available on
+the web server it says that the
+following packages will be upgraded you
+can see the Apache 2 server needs an
+update then you have CS certificate
+script setup Firefox ESR which is a
+Firefox browser for extended support
+release Linux platforms all those things
+the Misa Vulcan drivers python python
+flask all those things out of total 303
+upgraded no new installations are needed
+and four need not be upgraded so after
+this operation you'll see 364 MB of
+files needs to be downloaded and 24 MBA
+additional displays will be used you can
+either continue using y or n so let's
+say you're going to update your system
+now if I just even if I click n and be
+done with that this is all about
+updating I'm going to clear this out but
+how do we install files for example if
+you remember I typed out a command
+called H top it says command stop not
+found but can be installed with apt
+install H top that can once again be apt
+get as well it's not a very big deal
+which one do you use I just cancel this
+and I will write out the command myself
+I will use let's use apt for this one
+instead of APD cat APD install at shop
+now I am able to do this very easily
+because it stop is already in the
+repository I have uh that in the Kali
+enrolling release repository that's why
+as you can see the installation has been
+started this is the the fetched 152 KB
+which is the size of edge shop it's a
+very small thing and the installation is
+now complete now if I just sit on edge
+top
+you can see a newer version of the
+without
+the task manager or the system monitor
+essentially to see what now where the
+memory is being usage the CPU percentage
+all those things so that's how you can
+install if I press Ctrl C again I'll go
+back to my command line interface so
+that's how you can install
+either to remove
+you can just use apt remove HTTP it says
+want to remove and 387 kilobyte disk
+will be freed if I just press enter we
+don't have a stop anymore so that's how
+you install and remove tools from Kali
+Linux using the APT and APD CAD now
+these apt and APK are package managers
+specifically for Debian and Debian based
+operating systems that's why these
+commands will transition will be
+consistent across all dbm based
+Distribution Systems unless and until
+they have their own package manager
+which is not really the case if they are
+based on DBL so similarly if a dollar
+has enf Arch has Batman all those things
+so those will differ but if in a
+particular
+um in a particular base distribution
+these package managers will be the same
+so that's how you can use apt and EPT
+get to understand how you can install
+and remove tools I think we've covered
+everything that we've set the agenda for
+in this color Linux tutorial and
+basically a Linux crash course now these
+are all the basics of Linux and there
+are so much more to learn if you have
+any requirements like if you want to
+learn about something maybe more about
+file systems or more about
+users and privileges or just you need
+something specific let's say you want to
+hack uh if you want to learn privileges
+escalation or if you want to learn how
+to hack wireless networks please let us
+know in the comments below we will
+definitely get back to you with that
+thank you so much for watching and keep
+learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,204 @@
+hi traders and coders my name is Matthew
+from pine script mastery and in today's
+lesson I'm going to show you how to use
+the plot function I'm going to cover all
+of the function parameters that we have
+to work with and really give you a
+thorough insight into how the plot
+function works a coders
+welcome to the plot function lesson so
+in this lesson I'm going to explain the
+plot function in great detail and
+explain what all of these input
+arguments do and how to use them in your
+own scripts so for this demonstration
+I'm going to leave overlay to false so
+that we have our own indicator box here
+that'll make it easy to see what is
+happening to this line as we manipulate
+it so as always if you hover your mouse
+over the plot function name you'll get a
+list of the possible input variables
+here we have 13 input variables I'll
+explain what they all do one by one and
+if by the end of this lesson you still
+have questions then just simply hold
+ctrl or command and click on the
+function name and you'll get a full
+description of what this function does
+now the plot function only has one
+required input meaning that we only have
+to give it one value before it'll work
+all of the other input variables are
+optional and the required input is a
+series so this could be an open closed
+hi-low or any other series of price
+variables so you could also plot
+indicator values so here we have an EMA
+50 EMA and we can plot that to the chart
+as well if we want to like so so let's
+go over the other input variables the
+next one we have to work with is title
+so this is the title of the plot I hit
+save and come up to the options menu you
+can see that it is now being renamed to
+this is the title and we can change the
+color of it and the style of the plot so
+you can change it to an area histogram
+circles
+whatever you'd like so I'm gonna leave
+this title variable in while we go over
+the next few input variables just so
+that we can see it in the settings menu
+when we go up to adjust things so the
+next optional input we have is a color
+so if you type in color equals and then
+type color
+full-stop and then control space here is
+the list of colors you can choose from
+so we could change it to purple if you
+wanted to hit save and it will change
+the color of our line
+the next option we have is the line
+width so if I type in line width equals
+and we could set this to by default this
+is set to one so if I hit save this
+won't change but you can change this all
+the way up to four and the higher you go
+the thicker the line will be so the next
+input variable is style so if you type
+in style and then plot dot control space
+here is a list of styles we can choose
+from now this is the same list you'll
+get from this formatting dialog here so
+there's a bunch of different styles you
+can choose from for example we could
+turn this into a columns indicator if we
+hit save this will now be drawn as
+columns just like your volume indicator
+or something like that and so I'm not
+going to go through all of these if you
+get time you can come in here and play
+around with these different formatting
+styles and see what you prefer for
+whatever you're working on the next
+optional input variable is whether or
+not to track the price so the type track
+price if you set this to true and hit
+save you can see that it now draws a
+horizontal price line at the last value
+the next input variable is transparency
+so if you type in trance and you set
+this to say 50 then the line will be 50%
+transparent as you can see this does not
+affect the horizontal track price line
+the next input variable we can choose
+from is hist bass which is short for
+histogram bass so we type in hist this
+will be the base price that our columns
+and histograms draw from so if we set
+this to say zero point six eight cents
+and change
+our plot style two columns we save the
+script you can see that the histogram
+base is now 68 cents and whenever price
+goes below it the columns are drawn to
+the downside and whenever price is above
+it it's drawn to the upside so I'm going
+to start a new line here so that we
+don't go off the page and the next input
+variable we can work with is called
+offset now offset tells plan script how
+many bars to shift the current plot left
+or right so a negative value will shift
+it to the left and a positive value will
+shift it to the right so if we wanted to
+shift this current closing price plot
+back 10 bars then we simply type in
+negative 10 hit save and then this plot
+should move back 10 bars like so if you
+wanted to move it 10 bars forward just
+put in a positive value in this case
+positive 10 hit save and it will now
+draw at the end of the chart here and
+you can go as far back as negative 9 9 9
+9 and that will shift the plot all the
+way to the start of the chart and now
+all we have on our chart is a horizontal
+price line I'll set this to 0 for now
+and we'll continue onwards the next
+input variable is called join and it's a
+boolean so if we by default this is set
+to false but if we set this to true it
+will now join any plotted shapes we have
+on our chart so this only works with the
+style cross and style circles so if we
+type in here a style underscore cross
+and hit save you can see it now draws a
+line connecting all of these crosses if
+we change this to circles it will also
+draw a line connecting all of these
+circles so I'll set this back to a line
+and set this to false and we'll go over
+the next input variable which is
+editable
+editable' tells pine script whether or
+not the user can adjust the formatting
+settings for this plotted line by
+default this is set to true so if you
+come up into the settings menu you can
+change the style of the plot and the
+color but if we set this to false and
+save the script now there is no settings
+option at all because we cannot change
+the now we cannot edit the plot style or
+color so I'll change this back to true
+and we'll go over the next input
+variable which is show underscore last
+now by default this input argument isn't
+used but what it does is it tells pine
+scripts how many bars back to draw this
+plot so if we set this to 10 hit save
+it only plots our line over the past 10
+bars and anything beyond that is not
+plotted to the chart so I'll change this
+to say 100 save it and you can see it
+rolls back over the past 100 bars now
+the final input argument is called
+display now there's only two options we
+can choose from here and that is display
+dot all or none if we hit none then this
+plot will not be drawn to the chart we
+still get the number in the top left
+here but the line itself is not drawn to
+our chart if you change this back to all
+then it will come back on to our chart
+and another way of achieving this is to
+just set the transparency to 100% hit
+save has the same effect except now we
+have a horizontal price line being drawn
+to the chart where as displayed on none
+removes all of our drawings all of our
+plotting so this is useful for plotting
+graphical information to the chart
+that you don't want the user to see but
+you want to be able to read the value up
+here next to the indicator name so that
+brings us to the end of the plot lesson
+and hopefully now you have a firm
+understanding of all the different
+variables you can work with when
+plotting data to your chart
+so that's it for this lesson I hope you
+found that helpful if you did and you
+want to learn more about pine scripts
+head over to pine skip mastery com here
+you'll find my advanced pine script
+courses and my basics course which is
+free so if you want to learn more about
+pine script head over here and you'll
+find out a little bit more about me and
+a little bit more about pine scripts I
+hope you found this lesson interesting
+and helpful I'll see you in the next one
+[Music]

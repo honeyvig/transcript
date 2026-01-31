@@ -1,0 +1,306 @@
+hey everyone welcome back to Simply
+learn imagine you're the tech head at a
+booming e-commerce startup your team has
+been working over time to bundle up your
+main apps into containers and now is the
+time to pick a platform to handle and
+manage them all smoothly you've heard of
+two popular options kubernets the open
+source container system and open shift
+the Enterprise kubernets distribution
+from had but which one is better fit for
+your business needs if you're new to the
+world of containers and Cloud native
+Technologies this video is for you today
+we will have an introduction to both
+kubernets and open shift and then dive
+into the key differences between these
+two powerful platforms further
+understanding the main differences
+between these two platforms moreover we
+will look at how the application
+deployment process differs the tooling
+and interfaces provided for managing
+applications and monitoring and
+crucially the security and compliance
+features that each platform offers by
+the end of this video you will have a
+clear understanding of the pros and cons
+of kubernets versus open shift and be
+able to make a more informed decision on
+which platform might be a benefit for
+your particular needs and requirements
+sounds good all right let's dive in
+craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back on that note we introduce you to
+the postgraduate program in devops by
+simply learn if your eager to become a
+devops engineer or want to propel your
+career to new heights then simply laun
+postgraduate program in devops is
+undoubtedly the right choice for you
+this comprehensive devops training
+course will unlock your true potential
+by providing you with a solid foundation
+in formalizing and documenting
+development process along with creating
+a self-documenting system the program
+will not show your expertise in advanced
+tools like puppets Sol stack and anible
+enabling you to achieve self-governance
+and automated management at scale you
+can check out the link mentioned in the
+description box below and pin comment
+and enroll now to become a successful
+devops engineer so without further Ado
+let's get started first let's start with
+the basics understanding what is
+kubernets so kubernets is just like the
+master conductor for your containers
+think of it as this super smart system
+that helps you manage all your
+containerized apps smoothly especially
+when you've got loads of them it's open
+source which means it's free to use and
+has become the go to choice for handling
+containers on a big scale with kubernets
+you get this awesome toolkit for
+automatically deploying scaling and
+looking after all those containerized
+workloads to deploy an app on kubernets
+you'd create yl manifest files that
+describe the different components the
+container image scaling requirements
+networking configuration and so on this
+flexibility is great as it allows you to
+customize cuber needs to your heart's
+content but it also means there's a fair
+amount of complexity involved especially
+when it comes to setting up supporting
+tools for monitoring logging cicd
+pipelines and more let me walk you
+through an example say you want to
+deploy your e-commerce web application
+on kubernets first you'd provision a
+cubanet cluster either on premises or on
+a cloud provider then you'd write the
+necessary ymo manifest to describe your
+app and apply those to the cluster the
+kubernetes dashboard gives you
+visibility into the state of your
+deployment but to really monitor and
+manage your apps you'd likely need to
+integrate additional tools like
+Prometheus grafana and custom cicd
+workflows now to contrast with open
+shift let's explore how it builds upon
+cuber needs and differentiates Itself by
+understanding what open shift is open
+shift is built on top of kubernets but
+it adds a number of Enterprise great
+features and an opinionated approach to
+container management the key difference
+is the open shift web console
+this is a centralized Hub where you can
+deploy manage and monitor all of your
+applications in one place it abstracts
+away a lot of the underlying kubernets
+complexity making it easier for
+developers and operators to work with
+for example to deploy your Ecommerce app
+on open shift you could simply click a
+button in the console to create a new
+application open shift would then handle
+all the kubernets Manifest and
+configurations for you in a much more
+streamlined experience compared to the
+man ual yaml editing required in
+kubernets let us now dive a bit deeper
+into some of the key areas where
+kubernets and open shift diverge at
+first we have deployment and automation
+kubernets requires more Hands-On work to
+set up cicd pipelines and streamline the
+deployment process whereas open shift
+which is built on top of kubernets
+provides a lot of deployment and
+automation functionality out of the box
+also configuring netor working in
+kubernets can be more complex as you
+need to set up load balancers and other
+networking components to expose your
+applications to the outside world on the
+other hand open shift includes a
+userfriendly web console and command
+line interface that simplify the setup
+and management of cicd pipelines
+networking and other deployment related
+tasks in case of Cub needs developers
+and devops teams often need to write
+more custom scripts and configurations
+to aut automate the deployment process
+many of the commonly used deployment and
+automation tools like Jenkins tekon are
+pre-integrated and configured in open
+shift making it easier to set up a
+robust software delivery pipeline also
+setting up and managing a robust cicd
+pipeline in kubernets requires more
+effort as you need to integrate various
+tools and services example Jenkins Argo
+CD and tech0 to handle the different
+stages of the software delivery life
+cycle whereas open shifts deployment
+automation features such as image builds
+automatic scaling can significantly
+reduce the manual effort required to
+manage the deployment process okay let
+us now dive into the differences between
+kubernets and open shift when it comes
+to application management the kubernetes
+dashboard provides basic visibility and
+management capabilities for your
+applications and resources the open
+shift console on the other hand provides
+a more robust and unified view of your
+application management kubernets allows
+you to view running pods services
+deployments and other kubernetes objects
+as well as perform some basic
+administrative tasks whereas the open
+shift console offers a comprehensive
+dashboard that displays information
+about your running applications
+including metrics logs events and
+resource utilization kubernetes has
+limited functionality and doesn't
+provide a comprehensive view of your
+entire appli application portfolio open
+shift console includes features like
+application Health monitoring deployment
+management and security scanning all
+within a single pane of glass to get a
+more complete understanding of your
+application's performance in kubernets
+and logs we need to integrate external
+monitoring and logging tools such as
+Prometheus graphon and elastic search
+which add complexity to the setup and
+management which is not in the case of
+open shift open shift provides more
+Advan features such as the ability to
+view application dependencies perform
+rolling updates and manage scaling and
+autoscaling policies although kubernetes
+has made great strides in security open
+shift really shines when it comes to
+providing Enterprise great security
+features out of the box let us now look
+into the main differences between
+kubernets and open shift when it comes
+to security and compliance kubernetes
+has made significant progress in
+security over the years with features
+like role-based access control for
+security policies and network policies
+on the other hand open shift being built
+on top of kubernets inherits all of
+these security features but also adds
+Enterprise grade security capabilities
+out of the box rbsc allows you to Define
+fine grain permissions for users and
+service accounts controlling access to
+kubernetes resources whereas open shift
+provides more secure container defaults
+such as running containers as a non-root
+user and disabling privileged containers
+by default part security policies in
+kubernetes provide a way to set security
+related constraints on pods such as
+restricting the use of privileged
+containers or running containers as a
+non-root user open shift also integrates
+seamlessly with Enterprise identity
+management systems such as ldap and
+active directory allowing you to
+leverage existing authentication and
+mechanisms Network policies in Cub needs
+allow you to control the network traffic
+flow between pods improving the overall
+security of your cluster on the other
+hand open shift also includes security
+scanning and vulnerability management
+features helping you identify and
+address potential security risks in your
+container images and
+applications however these security
+features in kubernetes require manual
+configuration and set up by the devop
+team to ensure the cluster is properly
+secured additionally windshift provides
+strong encryption for data in transit
+and AR rest as well as audit logging and
+advanced features making it a suitable
+choice for organizations to simplify
+Security Management and reduce the
+overhead for devops teams let us now
+understand which might be a better
+choice kubernets or open shift so in
+summary kubernets offers more low-level
+control and flexibility while open shift
+prioritizes ease of use and Enterprise
+grade capabilities the right choice with
+will depend on factors like your team's
+existing expertise your security and
+compliance requirements and your overall
+business needs if you have a large
+Enterprise with complex security and
+operational demands open shift may be a
+better fit but if you have a highly
+technical team and value more
+customization cuber needs could be the
+way to go ultimately I would encourage
+you to evaluate both platforms and see
+which one aligns best with your
+organization's unique requirements let
+me know if you have any other questions
+and there you have it everything you
+need to know about kubernetes versus
+open shift if you're looking to become a
+devops engineer I highly recommend
+checking out the certification program
+from Simply learn to learn more about
+kubernets Open shift and devops be sure
+to check out the other videos on the
+simple learn YouTube channel if you like
+this session then like share and
+subscribe if you have any questions you
+can drop them in the comment section
+below thanks for watching and I'll see
+you in the next video staying ahead in
+your career requires continuous learning
+and upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

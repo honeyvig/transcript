@@ -1,0 +1,340 @@
+welcome to this video on kubernetes
+architecture at simply learn de you know
+friends that kubernetes is also called
+K8 or Q it is an incredibly powerful
+platform that helps you manage and scale
+applications automatically but it can
+feel complex and overwhelming at the
+same time many people find kubernetes a
+bit tricky when they read through the
+documentation especially when they are
+trying to understand how all the pieces
+fit together to manage container
+in this video we are going to break it
+down for you in Easy terms we will
+explore two types of nodes in kubernetes
+the master node and the worker node we
+will talk about how these nodes work
+together inside the cluster to manage
+and orchestrate your applications so
+Guys Without further Ado let's get
+started but before that just a quick
+info guys simply learn has got devops
+Engineers master program you can become
+a devops expert by joining this course
+in this course you are going to learn
+about docker subes anible terraform
+Prometheus Jenkins Microsoft Azure and
+many more Technologies so guys hurry up
+now and join the course the course link
+is mentioned in the description box so
+guys let's start with understanding
+first what is POD a pod is the smallest
+unit in kubernetes it is like a wrapper
+around your application inside a pod
+there's usually one or more containers
+now you'll be wondering what is a
+container a container is where your
+actual application runs it includes
+everything that the app needs to
+function like Code system libraries and
+dependencies containers are lightweight
+and can be easily moved across different
+environment making them very popular in
+modern software development you can
+think container like a box that has your
+app and everything it needs to run
+whether you run it on your laptop or on
+a Cloud Server or inside a kubernetes
+pod the container will always behave the
+same way let me give you one
+example suppose you run an online
+e-commerce store you have a front end
+web app that the customer see and the
+back end the database that stores the
+product information and orders in
+kubernetes you might choose to package
+the front end and back end as two
+separate containers so you could run
+both the web app and the database inside
+the same Po in this case both containers
+front end and back end share the same
+resources
+such as memory and network this might be
+useful if they need to be closely
+coupled and always run together now
+parts are basically responsible for
+managing resources for containers inside
+them like the memory CPU and storage and
+each P run on a node and kubernetes
+decides which node will run on each part
+now let's understand the kubernetes
+architecture so guys as we all know that
+kubernetes is an open-source platform
+designed to automate deploy scale and
+manage centralized application it
+provides a powerful way to ensure that
+your applications are running
+efficiently and can easily scale across
+multiple machines and can also recover
+if something goes wrong at the heart of
+kubernetes architecture there are worker
+nodes and master nodes these two
+components work together to ensure your
+apps are always running smoothly in this
+video we will take a closer look at each
+of these component and how they interact
+with each other so let's understand
+first the worker nodes worker nodes are
+the machine which can be either physical
+computers or virtual machines where your
+applications actually run think of them
+as a workers for your kubernetes cluster
+they execute your app workloads handle
+the task required them to run each
+worker node in kubernetes runs these
+three main processes that is container
+runtime cuet and Q proxy let's
+understand each one of them one by one
+the first process is contain runtime the
+container runtime is like the engine of
+your worker node it is responsible for
+running your applications which are
+packaged into containers containers are
+basically lightweight Standalone units
+that contain everything your app needs
+to run this includes Code system
+libraries and dependencies the container
+runtime is a software that ensures these
+container are properly managed and
+executed on each worker node one of the
+most popular container runtime is loer
+as you can see all over here so there
+are two instances of first there is a my
+app which can be a front end then you
+can consider this as the back end so
+guys you can consider something like
+this these two as your two containers
+this can be your front end this can be
+your back end or database now there's a
+container runtime all over here which
+can be Docker in this case so the
+container runtime in this case is Docker
+and it is ensuring that the container
+for your web app is running on the
+worker node so if you have multiple
+applications they will be packaged into
+separate containers and container
+runtime will manage them making sure
+they are running as expected the next
+process that we are going to discuss
+about is called cuet cuet is like a
+manager that oversees everything
+happening on a worker node it talks to
+the master nodes which are responsible
+for managing the entire cluster the
+cubet gets instruction from the master
+node detailing which application or pods
+needs to be run on the Node it ensures
+that these applications are running by
+managing containers inside the ports
+unlike container runtime which is
+specific to managing containers the
+cubet handles the interaction between
+kubernetes and the worker node it is
+responsible for making sure that the
+right number of containers are running
+that the resources like CPU memory and
+storage are allocated properly to those
+containers so you can say for example we
+have the master node that sends a
+request to the cube Lade saying run two
+containers for the web app so one
+container is there for web app and one
+is for the database the cuet will check
+the available resources on the worker
+node and ensures that the containers are
+up and running it also continuously
+monitors the health of these containers
+to make sure they don't crash or run
+into problems if container fails the
+cubet can restart it based on the
+policies defined in the kubernetes
+ensuring that the application remains
+highly available I hope so you would
+have got an idea regarding CU blade now
+let's move move ahead and understand
+about Q proxy think of Q proxy as a
+traffic director for your kubernetes
+cluster in a distributed systems like
+kubernetes your applications which are
+running on different noes Q proxy is
+responsible for managing Network traffic
+and ensuring that data is routed
+correctly between different services and
+ports when an application needs to talk
+with each other in this case Q proxy
+sets up the necessary Network rules and
+ensures that the traffic flows smooth
+smoothly between different pods services
+and nodes it manages the internal
+networking of the cluster and ensures
+that each pod has a unique IP address
+now let's move ahead and understand
+about the working of Master nodes while
+worker nodes handle the execution of the
+application Master nodes are the brain
+of the kubernetes system the master node
+manages the overall state of the cluster
+and makes decision about which
+application should run and where they
+should run the master node constantly
+monitors the Clusters to ensure
+everything is working as expected there
+are four key components that make up the
+master node the first one is API server
+the API server is like the front desk of
+the kubernetes control plane it acts as
+an entry point for all the request you
+send to the kubernetes whether you are
+creating a new application checking the
+status of your pods or scaling your app
+you communicate with the kubernetes
+through the API server the API server
+handles all these requests and ensures
+that they are passed onto the correct
+components within kubernetes for example
+let's say you want to deploy a new web
+application in your kubernetes cluster
+you would send a request to the API
+server which would receive the request
+it will validate it and pass it to the
+appropriate components like it can be a
+scheduler or a control manager now let's
+move ahead and understand about the
+second component that is the scheduler
+if I talk about the scheduler guys the
+scheduler is like a smart planner for
+for the cluster it is responsible for
+deciding which worker node should run a
+new application when you create a new
+app in kubernetes the scheduler looks at
+all the available worker nodes and
+determines the best node for the app to
+run on based on available resources like
+CPU memory and network the scheduler
+ensures that your apps are distributed
+efficiently across a cluster so that no
+single worker node is overloaded now
+let's move ahead and understand about
+control manager the control manager is
+like like the quality control Department
+of kubernetes it constantly monitors the
+state of cluster and ensures that
+everything is running as it should if
+something goes wrong like a pod crashes
+or a node goes offline the control
+manager steps in to fix it the control
+manager is responsible for ensuring that
+the desired state of the cluster matches
+the actual state if you define that you
+want three replicas of an app running
+and one of them crashes the control
+manager will automatically create a new
+replica to maintain the desired State
+now the final component is etcd which is
+also called as the cluster brain etct is
+a database that stores all the data
+about the kubernetes cluster it is often
+referred to as brain of the cluster
+because it keeps track of everything
+including the apps which are running
+where they are running and the overall
+state of the cluster atcd is a
+distributed key Value Store meaning it
+can store data across multiple machines
+and ensure that it is highly available
+and fall tolerant this is crucial for
+kubernetes because the entire system
+relies on etcd to know how the current
+state of the cluster is for example if
+you want to deploy a new app kubernetes
+stores information about the app like
+its configuration location and state in
+etcd if something happens to the cluster
+kubernetes can recover the current state
+from etcd now let us look at the example
+of setting up a cluster now now that we
+understand how worker nodes and master
+nodes work let us go through a simple
+example of a kubernetes cluster setup in
+this you have a basic cluster with two
+Master nodes and four worker nodes
+running on it let us say these ports
+contain a web app and a database you
+start by creating pods and each pod
+contains one or more microservices for
+your web app then the scheduler steps in
+once you submit the request to
+kubernetes through the API server the
+scheduler looks at the available worker
+nodes and assigns both the pods to your
+worker nodes then comes the cubet which
+manages the Pod the cuet on the worker
+nodes receives the instruction from the
+master node to run on the two ports it
+starts a container inside each Port
+using Docker or another container
+runtime and it ensures they are running
+smoothly then we have q proxy which
+handles a communication the web app pod
+needs to communicate with the database
+pod Q proxy set ups a network route and
+ensures that the two applications can
+exchange data securely and efficiently
+then we have control manager which
+ensures the stability if one of the Pod
+crashes or fails to start the controller
+manager detects the issue and creates
+new instance of the Pod ensuring that
+both your web app and the database stay
+online then finally we have the etcd
+which keeps up the track all the
+information about the state of the
+cluster including running pods their
+location their status is stored in etcd
+this ensures that the cluster can
+recover from any issues and always knows
+what is happening so this was a simple
+example illustrating the cluster setup
+kubernetes is a powerful platform for
+managing cized application across
+cluster of machine by understanding the
+roles of worker nodes and master nodes
+you can see how kubernetes automates the
+deployment scaling and management of
+your apps so this was all for today's
+video guys I hope so you would have
+enjoyed our today's video Stay stay
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+[Music]
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

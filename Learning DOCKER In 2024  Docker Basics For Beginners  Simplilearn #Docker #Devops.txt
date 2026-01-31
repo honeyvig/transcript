@@ -1,0 +1,538 @@
+hello everyone and welcome to today's
+video on docker's tutorials for
+beginners at simply learn do you know
+friend that Docker is a powerful tool
+for simplifying the process of creating
+deploying and also managing applications
+within containers these containers
+encapsulate all the necessary
+dependencies and libraries ensuring
+consistency across different
+environments this introductory tutorial
+will guide you through the basics of
+Docker starting with the installation
+set up your system you'll also learn how
+to create Docker images using Docker
+files which are kind of text files
+containing instructions for building
+containers now before we move on and
+learn more about it I request you guys
+that do not forget to hit the Subscribe
+button and click the Bell icon now
+here's the agenda for our today's
+session so guys we will start with what
+is Docker moving ahead we will discuss
+about why Docker is important then we
+will learn about Docker versus virtual
+machine moving ahead we will also Deep
+dive into Docker components like Docker
+engine Docker images Docker contain
+container and Docker registry then we
+will move on to installing Docker on our
+Windows system and finally we will wrap
+our session with a Hands-On just a quick
+info guys simply learn has got a
+post-graduate program in devops in
+collaboration with calch ctme which is a
+professional development course that is
+going to square your skills with the
+industry standards this is a Cutting
+Edge Blended learning which is going to
+combine live online DeVos certification
+classes with interactive Labs that will
+give you a hands-on experience so hurry
+up now and join the course the course
+link is given in the description box so
+guys let's start with what is joa so
+guys Docker is a powerful platform that
+revolutionizes the software development
+and deployment by simplifying the
+process of building shipping and running
+applications within lightweight and
+portable containers these containers
+encapsulate everything that application
+needs to run including code runtime
+system tools libraries which which
+ensures consistency across different
+environments unlike traditional virtual
+machines Docker container shares the
+whole system kernel making them
+extremely efficient and fast to Startup
+Docker enables developers to package
+their applications and dependencies into
+easily distributable images which can be
+deployed seamlessly across any
+infrastructure from local development
+environments to public or private clouds
+with Docker team can accelerate software
+delivery improve scalability and
+enhanced collaboration between
+development operations and quality
+assurance teams ultimately leading to a
+faster Innovation and more Reliable
+Software releases why Docker is
+important Docker is important for
+several reasons so guys the first reason
+that comes up to my mind is
+portability guys Docker containers are
+lightweight and portable which allows
+applications to run consistently across
+different environments such as developer
+laptops on prom servers and Cloud
+platforms this portability enables
+seamless migrations and scaling of
+applications without compatibility
+issues the next one that comes up to my
+mind is efficiency Docker containers
+shares the host system kernel leading to
+faster startup times and reduced
+overhead compared to the traditional
+virtual machines this efficiency also
+enables higher resource utilization and
+improved application performance next
+that comes up to my mind is isolation
+Docker also provides process level
+isolation which allows applications to
+run independently within their
+containers without interference from
+other containers or host system this
+isolation enhances security and
+stability by minimizing the impact of
+software conflicts and vulnerabilities
+the next one is scalability docker's
+lightweight and modular architecture
+makes it easy to scale applications
+horizontally by deploying multiple
+containers across distributed
+environments the scalability enables
+organizations to meet changing workload
+demands quickly and efficiently next
+come is devops enablement Docker
+facilitates devop practices by promoting
+collaboration between development teams
+and operations and QA teams with Docker
+developers can package and deploy
+applications consistently while
+operations team can manage
+infrastructure more efficiently using
+container orchestration tools like
+communities now overall Docker
+simplifies the process of building
+shipping and running applications which
+leads to a faster delivery improved
+reliability and increased agility for
+organization across Industries now we'll
+try to understand what is the basic
+difference between a Docker and a
+virtual machine so guys if I talk about
+Docker versus virtual machines Docker
+and virtual machines serve similar
+purposes but they operate kind of
+differently if I talk about virtual
+machine they emulate the physical
+Hardware to create isolated environments
+where multiple operating systems can run
+simultaneously on a single physical
+machine each virtual machine requires
+its own guest operating system consuming
+significant resources and leading to
+slower startup times in contrast Docker
+uses containerization technology to run
+applications within lightweight isolated
+containers that share the host operating
+system kernel this approach eliminates
+need for a guest operating system
+resulting in Faster startup times lower
+resource overhead and greater efficiency
+Docker containers are highly portable
+and can be easily moved between
+environments while virtual machines
+require more complex migration processes
+overall Docker offers great agility
+scalability and resource efficiency
+compared to Virtual machines making it
+an ideal choice for modern microservices
+based architectures devops practices and
+Cloud native applications
+now we'll move on and understand about
+Docker components where we will discuss
+about Docker engine Docker images
+containers and Docker registry so guys
+Docker has four important components the
+first one is Docker engine then is
+Docker images next comes containers and
+there is Docker registry now let us
+discuss each one of them one by one if I
+talk about Docker engine so guys Docker
+engine is a core component of the docker
+platform form it is a client server
+application that consists of a demon
+process called Docker running on the
+host machine and a command line
+interface client called Docker which is
+basically used to interact with the
+demon Docker engine manages Docker
+objects such as images containers
+volumes networks and many more now let's
+move on and discuss about Docker images
+guys Docker images are lightweight
+Standalone executable packages that
+contains everything needed to run a
+specific application including the code
+runtime libraries dependencies and
+system tools images are created using a
+Docker file which specifies the
+instructions for building the image
+layer by layer images can be shared and
+distributed bya Docker Hub or private
+Docker Registries now let us understand
+containers so guys Docker containers are
+exactly instances of Docker image that
+are running as isolated processes on the
+host machine each container has its own
+file system networking and isolated
+process space making them lightweight
+and portable containers can be started
+and stopped restarted and removed using
+Docker commands they provide consistency
+across different environments and enable
+efficient application deployment and
+scaling now if you look at this
+architecture guys you can see there are
+application a application B and
+application C and the whole all
+architecture of a virtual machine
+includes a hypervisor beneath it then
+and there's a host operating system
+kernel and then there is an
+infrastructure the hypervisor typically
+operates as an intermediat layer between
+the host operating system and the
+virtual machine which facilitates a
+communication between them whereas if I
+talk about Docker you can see rather
+than containing an entire guest
+operating system within a container
+leverages the host operating system
+through the container runtime while
+ensuring the isolation now we will move
+on and understand about Docker registry
+so guys Docker registry is a service
+basically for storing and distributing
+Docker images Docker Hub is the official
+public registry provided by Docker where
+users can find and share Docker images
+for a wide range of application and
+software Stacks additionally
+organizations can set up private Docker
+Registries to store proprietary or
+sensitive images internally Docker
+Registries allows user to push pull
+manage Docker image is facilitating
+collaboration and deployment workflows
+so guys this was all about the basics of
+Docker now I'll move on and install
+Docker on our Windows system so guys now
+let's move on to our favorite web
+browser that is Google and from there we
+will go to Docker
+desktop download okay so just click on
+this and you're going to get this Docker
+desktop
+now what you can do just here you can
+just click for download for Windows you
+can go for if you are have a supportive
+version for Mac Intel chip you can go
+for this if you have an apple chip you
+can go for this if you have wanted to do
+for Linux you can do for this now just
+click on this and you can say your
+Docker desktop is just on the download
+list now few important things I want to
+tell you after this you need a
+distribution package okay so that is WSL
+for Windows so you can download that
+distribution software which is going to
+enable your Docker desktop the
+installation process is very simple now
+let me show you some of the Magics of
+using Docker desktop okay so we will be
+building this normal folder okay so here
+I've built the folder called Docker and
+I'm using vs code as our text editor so
+guys what I will do okay so I will open
+my vs code and let me show you how our
+Docker desktop looks
+so okay guys you can see all over here
+this is our Docker desktop you'll get
+something like this here is containers
+since I am running no containers so it
+is showing empty here are images you can
+download Lo any images from the docker
+Hub which is our registry and there's a
+builds there is a volumes there's a
+development environments okay there are
+a lot of other other features okay so
+let's move on little by little and let's
+understand how we can integrate Docker
+desktop in our development process so
+guys what I've done all over here so
+I've created a folder which is kind of
+empty now simple thing I'm going to do
+I'm going to go to my vs code okay and I
+will try to open this folder so open
+folder and on the desktop I'm going to
+get a Docker folder so just right click
+on this okay very nice
+now let me delete
+this so you can see all over here I have
+created a file called Docker so I'll
+delete it and make it once again so just
+right click all over here and type
+Docker
+file okay you can see there is a shine
+of a docker okay all over here
+now what you are going to do we are
+going to type something okay we are
+going to type hello world on Docker
+sounds amazing okay because on different
+programming languages our first program
+is hello world so I thought like let me
+show you how we can type hello world in
+our doc so guys let me write the
+code so I'm going to type
+from
+Alpine and
+latest okay now I'll explain each code
+one by
+one now here I'm going to create a
+directory okay so
+let's create
+a directory okay
+now I will type
+run okay and mkd that will be our slab
+directory okay now we are going to write
+the hello
+world pretty good now so in order to
+write hello world I will
+type
+run
+Echo
+[Music]
+hello world
+okay and let's add some exclamation mark
+okay so next what I will do since I've
+have created a directory all over here
+so/
+app slash
+hello.
+text
+okay now we have type all over here now
+we are going to set the working
+directory
+so
+so we'll type
+work
+Dr SL
+app then I'm going to specify the
+command to run the container
+so type
+specifying the
+command to run our
+container
+CMD
+okay here missed something that will be
+cat okay now
+here
+let's type the name of our file which is
+hello.txt
+okay now program is completed this is a
+very basic program and let me explain
+you what I have written so guys from
+Alpine latest means that is basically
+specifies the base image to use for the
+docker image in this case we are using
+the latest version of Alpine Linux next
+we can see I am creating a directory
+mkdir okay so K is missing so mkd / app
+then what I'm doing I'm writing the
+hello world so run Echo hello world and
+I'm creating this uh app /hello txt
+basically means it writes hello world to
+a file name hello.txt inside the/ app
+directory then there is workd okay it
+actually sets the working directory
+inside the container to the SL app which
+is our working directory okay now what
+is going to happen this means that
+subsequent commands will be executed
+relative to this directory and finally
+we have written CMD cat hello.txt it
+specifies the default command to run
+when a container is started from this
+image in this case it prints the content
+of the hello txt using the cad command
+so basically this Docker file can be
+used to build a image running a
+container from this image will output a
+hello world one more thing guys that
+there's a extension and you can install
+the docker extension in your vs code so
+you can say Docker you can see I have
+already installed it so you can install
+this extension on your vs code now let
+us run our
+application
+okay guys now the First Command that I
+will be typing that is Docker build T
+hello world which basically is going to
+do what is going to build our Docker
+file so let's click on
+this so you can see it is building our
+Docker file okay now it has created a
+directory all over here now let's run
+our this file so I will type Docker run
+hello world and you can see on our
+terminal it is printing hello world we
+have successfully done this thing now
+there are certain other more important
+commands and let me also tell you about
+it
+now guys in this we'll be learning about
+important Docker commands the first one
+that comes up to my mind is Docker run
+which we have already applied it all
+over
+here so guys the first command is Docker
+run so basically this command is going
+to run a new container for example you
+can type certain like
+this docker
+run hello
+world
+okay so this is our first command
+now now in this case you want to list
+the containers running so for that
+there's a command called dock of PS okay
+so suppose you can there are certain
+options with associated with it like PSA
+or all so let me show you this command
+all over here
+and
+so you can see already this container is
+running which is cat hello.txt and it
+shows 3 minutes ago so it is going to
+list the containers running for the
+docker images you can type certain like
+this Docker
+images okay so it is basically going to
+show you the available images on your
+system what images you have basically
+created okay so let me type this if I
+type all over
+here so you can see hello world is our
+latest image so there's a image ID
+created okay and the size of it okay
+now let us do certain things
+else which is docka
+build so guys Docker build is going to
+basically build a Docker image from a
+Docker file so this Syntax for this is
+like
+Docker build T and then the name of your
+image so in this case it was hello world
+so this was there so I've already ran
+this command on the system I'll show
+you so you can see Docker build T hello
+world now next thing is Docker
+pull
+so guys if we talk about Docker pull
+basically it's going to pull a image
+from a registry for example
+say Docker
+pull engine
+X
+okay next is Docker
+push so guys Docker push is going to do
+what it is going to push a image to a
+registry so for example
+docker
+push
+then hello
+world next is Docker
+stop okay so basically Docker stop does
+what Docker stop is going to stop a
+running container and the same syntax
+can be used so it will be Docker
+stop
+now next command is talker start so
+basically this command is going to start
+a stopped container so for example
+Docker start okay me copy
+this and what is the ID of the container
+ID you have to give all over
+here okay next command is Docker
+restart now
+this command is going to do what guys
+this command is basically going to
+restart a running container so for
+example the same command all over
+here
+and with a particular container
+ID now final that
+is Docker
+RM so guys basically Docker RM is going
+to remove one or more containers okay so
+for example Docker RM same and with a
+particular container ID now next command
+is Docker
+RMI so guys basically it's going to
+remove one or more images so for example
+Docker RMI and with a respective image
+ID now our final command that is Docker
+X Okay so
+so guys it is basically going to run a
+command in a running container for
+example Docker
+X okay now in this what you can give
+guys suppose Docker
+X it
+container okay we're going to give the
+container
+ID or we can give SL
+pin and give the bash command so
+basically this is going to run a command
+in a running container that is what you
+have to remember about this command it
+is a very useful command Okay so
+whenever you are building any
+microservices uh there you can apply
+these principles now finally so Guys
+these are just few basic commands to get
+started with
+Docker so guys that was all for today's
+video I hope so you would have enjoyed
+our today's video on Docker tutorial for
+beginners staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs and Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

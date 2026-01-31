@@ -1,0 +1,351 @@
+hey everyone welcome back to another
+video session by simply learn
+in this tutorial we will be learning
+about kotlin jetpack compose
+the jetpack compose is an android
+toolkit but its mechanism is also used
+for web applications
+so let's go ahead and understand what we
+will be covering in this
+topic so we will start with what is
+kotlin jetpack compose
+then we will understand why jetpack
+compose or why we use jetpack compose
+after that we will learn how does
+compose function work
+following this topic we will understand
+composable function layouts material
+design lists and animations
+now
+before we begin make sure to subscribe
+to our youtube channel and press the
+bell icon to never miss an update so
+without further ado
+let's get started
+so what is kotlin jetpack compose
+the jetpack compose is a modern user
+interface development toolkit
+it makes the app development process
+easy and speeds it up
+because of the jetpack compose you can
+write less code as compared to the
+current view building approach
+which also leads to less potential bugs
+it's changed the way developers create
+user interface
+making it easier and faster to write and
+more performant to run
+before the jetpack compose xml layouts
+were used to make
+native user interface
+the jetpack compose is much better
+advanced and easier than xml
+with the help of
+jetpack compose we can make a more
+declarative user interface with less
+code
+so
+as we have understood the kotlin jetpack
+compose
+so now let's have a look at why we need
+or use the jetpack compose
+so why jetpack compose
+the jetpack compose is used because it
+has huge benefits over the previous user
+interface building system
+first it accelerates the development
+there are various features in compose
+that helps in doing the task faster
+for example previews
+by making multiple previews we can save
+a lot of time that we earlier wasted in
+checking the user interface component in
+different states
+but with the help of multiple previews
+we can easily do that
+also the compose is compatible with
+existing code
+many libraries like kotlin core routines
+view model etc work just fine with
+compose
+second is independent
+the library of compose is not integrated
+with any operating system
+which means it is easy to add the new
+features to the user interface without
+changing the operating system
+now next is intuitive
+in compose the apis that are used is
+intuitive and declarative
+intuitive means easy to understand and
+declarative means
+all we need to do is to describe the
+user interface and the rest will be
+taken care of by compose
+the components that are made with the
+compose are not confined to a specific
+activity
+which makes the component easy to reuse
+worth is powerful and feature loaded
+compose is a powerful and feature loaded
+that helps in making the app attractive
+and user friendly you can make the app
+as you desired with these animations
+which are quite easy to implement
+compose has the support for dark theme
+material design animations etc which
+makes things very easy for the
+development
+now
+how does compose work
+the word compose came from composite
+which means the collection of objects
+the composed jetpack
+works on a composite design pattern
+this pattern is used while dealing with
+hierarchical data
+like parent-child relationship
+so in compose every view can contain
+one or more child views within it
+and the child views can further have sub
+child views
+unlike previous approaches where we
+cannot introduce
+additional functionalities in a view
+now
+as we have understood about this topic
+now we will move on to the next topic
+which is composable function
+a composable function is just like any
+other normal function of kotlin
+but the only difference is
+it is annotated by the composable sign
+it helps in transforming the data to the
+user interface hierarchy
+all the functions with composable sign
+indicate that this function is the
+compose function and the sign tells the
+compose compiler that this function is
+intended to convert data into user
+interface
+and they can only be called from other
+composable functions
+the composable function doesn't return
+any values like the codeline function
+but instead
+emit user interface elements to the
+compose runtime system for rendering as
+we can see in this example
+composable annotation is used to make
+the function message a composable
+function
+the element text is also a composable
+function which comes from compose
+library
+with the preview annotation as we can
+see we are able to see how our ui that
+is user interface is going to look like
+the preview
+are often written with composable
+annotation
+and multiple previews can be added to
+the composable function having different
+parameters
+now
+the output of this example would be
+hello rahul
+so now moving on to the next topic which
+is layout
+the layout allows us to arrange the
+components in such a way so that they
+don't overlap each other
+it basically arranges the components in
+a proper manner otherwise they got
+staggered over each other
+it is one of the most important
+component that helps in creating user
+interface
+it helps in alignment and arrangement
+purposes for the user interface
+a out is a compose function which allows
+us to arrange elements in a row column
+and box
+so let's understand
+here we can see in this example
+there is a row keyword which means these
+three words hello there mate that are
+written inside the row function will be
+arranged horizontally
+the row function allows us to arrange
+the elements in a horizontal manner
+so hello there and mate will be arranged
+horizontally
+similarly the column function
+lets you arrange the elements in a
+vertical manner
+so in this case that is in the case of
+column function
+hello there meet will be arranged
+vertically
+so this was example of layout now moving
+on to the next topic which is
+box
+in box layout the children
+are staggered over each other by default
+so we have to align them to put them in
+different positions or proper positions
+we use the align modifier to set the
+position or alignment for children
+elements
+as we can see in this example we have
+used a line modifier and we can also see
+there is alignment dot top center and
+alignment dot bottom center
+these are the alignment options that are
+applied to the child user interface
+there are total nine alignment options
+let's have a look at them
+first three are
+alignment.topstart
+alignment.top and
+alignment.top center
+here
+alignment.topstart will align the user
+interface to the top left corner
+top end will align at the top right
+corner
+and top center will align at top center
+position
+next three are alignment dot center
+start alignment dot center end and
+alignment dot center
+here center start will align the user
+interface to the mid left
+corner
+center end will align at mid right
+corner
+and center will be aligned at the mid
+center position in between center start
+and center end
+x3r alignment dot bottom start alignment
+dot bottom end and alignment dot bottom
+center
+here
+bottom start will align the user
+interface to the bottom left corner
+bottom end will align at the bottom
+right corner and bottom center will be
+aligned at the bottom center position
+that is in between bottom start and
+bottom end
+so these were the nine possible
+alignments
+now
+coming to material design
+as the name suggests it helps to improve
+the appearance using the material design
+styling
+there are three pillars of material
+design which are color
+typography shape
+first is
+color
+by using values from wrapped theme you
+can easily color wherever it is needed
+inside the compose graphic package there
+is a color class which is used by
+jetpack compose
+to define material design color system
+color class is used
+there are 13 attributes that can be used
+and those are
+primary primary variant secondary
+secondary variant
+background surface error
+on primary own secondary on background
+on surface on error
+and is light
+each of them having different means and
+is used to color wherever it is needed
+then there is typography
+in the material theme there are material
+typography styles which are used to
+style or define a type system
+with the help of typograph class we can
+customize font style font weight font
+family letter spacing text decoration
+and many more attributes
+third is shape
+material design allows us to define
+shape for small medium and large
+components as well just like typography
+we can easily create shapes
+now coming to next topic which is list
+and animations
+the list and animations are one of the
+most important thing for building an app
+we have already discussed row and column
+earlier
+here we will discuss about lazy
+composibles
+lazy composibles include lazy row and
+lazy column
+the lazy row makes a horizontal
+scrolling list
+and the lazy column makes the vertical
+scrolling list
+in this example lazy column is used
+as we can see
+here lazy columns is used
+that is vertical scrolling list
+and this is how we add elements or items
+here we are adding a single item and
+here we are adding multiple items
+with items there is an integer 7 which
+means 7 items can be added
+now
+just like list animations are also very
+important for a smooth and attractive
+user experience
+there are various apis that can give you
+control and help with the animation
+they are animation visibility
+it is used if you are animating
+appearance and disappearance
+then there is animation
+it is used if you want to have fine
+control over animation time
+then there is crossfade
+it is used to switch between composables
+with a crossfade animation then there is
+remember infinite transition
+if the animation is state-based and
+happens during composition and is
+infinite then this is used
+next is
+update transition
+it is used if you are animating multiple
+values simultaneously
+so these were some apis that can give
+you control over the animations
+and with that we have done with the
+jetpack compose topic
+in this tutorial we understood what is
+kotlin jetpack compose why jetpack
+compose how does the compose work
+composable function layouts material
+design
+list and animations
+if you have any doubts you can put them
+in the comment section
+and if you like this video please give
+it a thumbs up i hope it really helped
+you all
+thanks for watching stay safe and keep
+learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

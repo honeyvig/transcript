@@ -1,0 +1,1196 @@
+sequential models in karass
+my name is richard kirschner with the
+simply learn team that's www
+www.simplylearn.com
+get certified get ahead
+what is in it for you today we're going
+to cover what is keras
+computational graphs
+what are neural networks sequential
+models and then we'll do a hands-on demo
+so you can see what's going on with
+sequential models and cross
+so what is cross
+cross is a high level python deep
+learning api
+which is used for easy implementation of
+neural networks it has multiple
+low-level back-ends like tensorflow
+fano
+pi torch etc which are used for fast
+computation
+so you can think of this as cross being
+almost its own little programming
+language
+and then it sits on neural networks in
+this case uh the ones listed were
+tensorflow thano and pytorch which can
+all integrate with the cross model
+this makes it very diverse and also
+makes it very easy to use and switch
+around with different things
+cross is very
+user friendly as far as neural network
+software goes as a high level api
+computational graphs
+so computational graphs are really the
+heart and soul of neural networks
+we talk about a computational graph
+they are a visual representation of
+expressing and evaluating mathematical
+equations the nodes and data flow in a
+graph correspond to mathematical
+operations and variables
+you'll hear a lot
+some of the terms you might hear are
+node and edge the edge being the data
+flow in this case
+it could also represent an actual value
+they have
+oh i think in spark they have a graph x
+which works just on computing edges
+there's all kinds of stuff that has
+evolved from computational graphs we're
+focusing just on keras and on neural
+networks so we're not going to go into
+great detail on everything a
+computational graph does
+it is a core component of a neural
+network is what's important to know on
+this
+so cross offers a python user-friendly
+front-end while maintaining a strong
+computation power by using a low-level
+api
+like tensorflow pi torch etc which use
+computational graphs as a back end
+so one this allows for abstraction of
+complex problems while specifying
+control flow
+if you've ever looked at some of the
+backend or the original versions of
+tensorflow
+it's really a nightmare you have all
+these different settings you have to put
+in there and create it's a lot a lot of
+back-end programming this is like the
+old computers when you had to
+tell it how to dispose of a variable and
+how to properly re-allocate the memory
+for use
+all that is covered nowadays in our
+higher level programming well this is
+the same thing with cross is it covers a
+lot of this stuff and does things for
+you that you could spend hours on just
+trying to figure out
+it's useful for calculating derivatives
+by using back propagation
+we're definitely not going to teach a
+class on derivatives
+in this little video
+but understanding
+a derivative is the rate of change so if
+you have a particular function you're
+using in your neural network a lot of
+them is just simple
+y equals mx plus b
+your euclidean geometry where you just
+have a simple slope times the intercept
+and they get very complicated they have
+the inverse tangent function for
+activation as opposed to just a linear
+euclidean model and you can think about
+this as you have your data coming in and
+you have to alter it somehow
+well you alter it going down to get an
+answer you end up with an error and that
+error goes back up and you have to have
+that back propagation with the
+derivative you want to know how it
+changed so that you can figure out how
+to adjust it for the error
+a lot of that's hidden so you don't even
+have to worry about it with cross and in
+today's cross you'll even if you create
+your own
+formula for computing an answer it will
+automatically compute the back prop the
+the derivative for you in a lot of cases
+it's easier to implement distributed
+computation
+so cross is really nice way to package
+it and get it off on different computers
+and share it and it allows parallelism
+which means that two operations can run
+simultaneously
+so as we start developing these back
+ends it can do all kinds of cool things
+and utilize multiple cores gpus on a
+computer
+to get that parallel processing up
+what are neural networks
+well like i said there are already we've
+talked about in computational edges you
+have a node and you have a connection or
+your edge so neural networks are
+algorithms fashioned after the human
+brain which contain multiple layers each
+layer contains a node called a neuron
+which performs a mathematical operation
+they break down complex problems into
+simple operations
+so one an input layer takes in our data
+and pre-processes it
+when we talk about pre-processing when
+you're dealing with neural networks you
+usually have to pre-process your data so
+that it's between
+minus one and one or zero and one
+into some kind of value that's usable
+that occurs before it gets to the neural
+network in fact eighty percent of data
+science is usually in prepping that data
+and getting it ready for your different
+models
+two you have hidden layer performs a
+non-linear transformation of input
+now it can do a hidden a linear
+transformation it can use just a basic
+euclidean geometry and you could think
+of a node adding all the different
+connections coming in
+so each connection would have a weight
+and then it would add to that weight
+plus an intercept in the note itself so
+you can actually use euclidean geometry
+but a lot of these get really
+complicated they have all these
+different formulas and they're really
+cool to look at but when you start
+looking at them look at how they work
+you really don't need to know the high
+math behind it
+to figure them out and figure out what
+they're doing
+which is really cool that means a lot of
+people can use this without having to go
+get a phd in mathematics
+number three the output layer takes the
+results from hidden layer transform them
+and gives a final output
+so sequential models
+so what makes this a sequential model
+sequential models are linear stacks of
+layers where one layer leads to the next
+it is simple and easy to implement and
+you just have to make sure that the
+previous layer is the input to the next
+layer
+so you have used for plain stack of
+layers where each layer has one input
+and one output tensor and this is what
+tensorflow is named after is each one of
+these layers is like a tensor each each
+node is a tensor and then the layer is
+also considered a tensor of values
+and it's used for simple classifier
+declassifier models you can it's also
+used for regression models too so it's
+not just about uh this is something this
+is a teapot this is a cat this is a dog
+it's also used for generating um uh
+regret the actual values you know this
+is worth ten dollars that's worth thirty
+dollars the weather is going to be 90
+degrees out or whatever it is so you can
+use it for both classifier and
+declassifier models
+and one more note when we talk about
+sequential models the term sequential is
+used a lot and it's used in different
+areas and different notations when
+you're in data science so when we talk
+about time series we'll talk about
+sequential that is something very
+different sequential in this case means
+it goes from the input to layer 1 to
+layer 2 to the output so it's very
+directional
+it's important to note this because if
+you have a sequential model can you have
+a non-sequential model and the answer is
+yes
+if you master the basics of a sequential
+model you can just as easily have
+another model that shares layers um you
+can have another model where you have an
+input coming in and it splits and then
+you have one set that's doing one set of
+nodes maybe they're doing a yes no kind
+of node where it's either putting out a
+zero or a one a classifier and the other
+one might be regression it's just
+processing numbers and then you
+recombine them for the output
+that's what they call across the cross
+api
+so there's a lot of different
+availabilities in here and all kinds of
+cool things you can do as far as
+encoding and decoding and all kinds of
+things and you can share layers and
+things like that
+we're just focusing on the basic cross
+model with the sequential model
+so let's dive into the meat of the
+matter let's do and do a demo on here
+today's demo in this demo we'll be
+performing flower classification using
+sequential model and cross and we'll use
+our model to classify between five
+different types of flowers
+now for this demo and you can do this
+demo on whatever platform you want or
+whatever
+user interface for developing python
+i'm actually using anaconda and then i'm
+using jupyter notebooks to develop in
+and if you're not familiar with this you
+can go under environment once you've
+created environment you can come in here
+to open a terminal window
+and if you don't have the different
+modules in here you can do your conda
+install whatever module it is
+just happened that this particular setup
+didn't have a seaborn in it which i
+already installed
+so here's our anaconda and then i'm
+going to go back
+and start up my jupiter notebook
+where i already created a
+new uh python project python 3. i'm in
+python 3.8 on this particular one
+sequential model for flowers
+so lots of fun there uh so we're going
+to jump right into this the first thing
+is to make sure you have all your
+modules installed
+so if you don't have numpy pandas
+matplot library and seaborn in the cross
+an sklearn or a site kit it's not
+actually sklearn you'll need to go ahead
+and install all of those
+now having done this for years and
+having switched environments and doing
+different things
+i get all my imports done and then we
+just run it and if we get an error we
+know we have to go back and install
+something
+um
+right off the bat though we have numpy
+pandas matplot library seaborn these are
+built on top of each other panda's the
+data frame and built on top of numpy the
+data array
+and then we bring in our sklearn or
+scikit this is the scikit setup sci
+kit
+even though you use sk learn to bring it
+in it's a scikit and then our cross we
+have our pre-processing the images image
+data generator
+our model this is our basic model our
+sequential model
+and then we bring in from cross layers
+import dents
+optimizers
+these optimizers a lot of them already
+come in these are your different
+optimizers and it's almost a lot of this
+is so automatic now
+adam
+is the a lot of times the default
+because you're dealing with a large data
+and then we get our sgd which is smaller
+data does better on smaller pieces of
+data
+and i'm not going to go into all of
+these
+different optimizers we didn't even use
+these in the actual demo you just have
+to be aware that they are different
+optimizers and the digger the more you
+dig into these models
+you'll hit a point where you do need to
+play with these a little bit but for the
+most part leave it at the default when
+you're first starting out
+and we're doing just the sequential
+you'll see here layers dense
+and then if we come down a little bit
+more when they put this together and
+they're running the dense layers you'll
+also see they have dropout they have
+flattened they have activation
+they have the convolutional
+layer 2d max pooling 2d
+batch normalization
+what are all these layers and when we
+get to the model we're going to talk
+about them a lot of times when you're
+just starting you can just import cross
+dot layers and then you have your
+dropout your flattened
+your convolutional
+neural network 2d
+and we'll we'll cover what these do
+in the actual example when we get down
+there what i want you to take from here
+though is you need to run your imports
+and load your different aspects of this
+and of course your tensorflow tf because
+this is all built on tensorflow
+and then finally import random is rn
+just for random generation
+and then we get down here we have our
+cv2
+that is your
+open image or your opencv they call it
+for processing images that's what the
+cvd 2 is
+we have our tqdm
+the tqdm is for
+is a progress bar just a fancy way of
+adding when you're running a process you
+can view the bar going across in the
+jupiter
+setup not really necessary but it's kind
+of fun to have
+we want to be able to shuffle some files
+again these are all different things
+pill is another
+image processor it goes with the cv2 a
+lot of times you'll see both of those
+and so we run those we've got to bring
+them all in
+and the next thing is to set up our
+directories
+and so we come into the directories
+there's an important thing to note on
+here other than we're looking at a lot
+of flowers which is fun
+as we get down here we have our
+directory archive flowers that just
+happens to be where the different
+files for different flowers are put in
+we're denoting an x and a z
+and the x is the date of the image and
+the z is the tag for it what kind of
+flower is this
+and the image size is really important
+because we have to resize everything if
+you have a neural network and if you
+remember from our neural networks let me
+flip back to that slide
+we look at this light we have two input
+nodes here with an image you have an
+input node
+depending on how you set it up for each
+pixel and that pixel has three different
+color schemes usually in it sometimes
+four so if you have a picture that's 150
+by 150
+you multiply 150 times 150 times three
+that's how many nodes input layer is
+coming in i mean so this is a massive
+input a lot of times you think oh yeah
+it's just a small amount of data or
+something like that
+no it's a full image coming in
+and then you have your hidden layers a
+lot of times they match what the image
+size is coming in so each one of those
+is also just as big and then we get down
+to just a single output
+so that's kind of a thing to note in
+here what's going on behind the scenes
+and of course each one of these layers
+has a lot of processes and stuff going
+on
+and then we have our different
+directories on here let me go and run
+that so i'm just setting the directories
+that's all this is
+archive flowers daisy sunflower tulip
+dandelion rose
+just our different directories that
+we're going to be looking at
+uh and then we want to go ahead and we
+need to assign labels remember we
+defined x and z
+so we're just going to create a
+definition here
+and the first thing is a return flower
+type okay
+it just returns it what kind of flower
+it is i guess a sign label to it
+but we're going to go ahead and make our
+train data
+and when you look at this there's a
+couple things to take away from here uh
+the first one is we're just appending
+right onto our numpy array the image
+we're gonna let numpy handle all that
+different
+aspects as far as 150 by 150 by three
+we just dump it right into the numpy
+which makes it really easy we don't have
+to do anything funky on the processing
+and we want to leave it like that and
+i'm going to talk about that in a minute
+and then of course we have to have the
+string append the label on there and i
+want you to notice right here uh we're
+going to read the image in
+and then we're going to size it and this
+is important because we're just changing
+this to 150 by 150 we're resizing the
+image so it's uniform every image comes
+in identical to the other ones uh this
+is something that's so important is um
+when you're resizing or reformatting
+your data you really have to be aware of
+what's going on
+with images it's not a big deal because
+with an image you just resize it so it
+looks squishy or spread out or stretched
+the neural network picks up on that and
+it doesn't really change how it
+processes it
+so let's go ahead and run that
+and now we've got our definition set up
+on there
+and then we want to go ahead and make
+our
+training data
+so make the train data
+daisy flower daisy directory
+print length of x so here we go let's go
+and run that
+and we're just loading up the flower
+daisy so this is going all in there and
+it's setting
+it's adding it in to the our setup on
+there to our x and z setup
+and we see we have 769
+um and then of course you can see this
+nice bar here this is the bar going
+across is that little added
+code in there that just makes it really
+cool for doing demos
+not necessarily when you're building
+your own model or something like that
+but if you're going to display this to
+other people
+adding that little what was it called
+tqdm i can never remember that but the
+tqdm module in there is really nice and
+we'll go ahead and do sunflowers and of
+course you could have just
+created an array of these
+but this has an interesting problem
+that's going to come up and i want to
+show you something it doesn't matter how
+good the people in the back are or how
+good you are programming
+errors are going to come up and you got
+to figure out how to handle them
+and so when we get all the way down to
+the
+[Music]
+where is it dandelion here's our
+dandelion directory we're going to build
+jupiter has some cool things it does
+which makes this really easy to deal
+with
+but at the same time you want to go back
+in there depending on how many times you
+rerun this how many times you pull this
+so when you're finding errors
+going in here there's a couple things
+you can do and we're just going to oh it
+wasn't there it is there's our error i
+knew there was an error
+this processed
+1062 out of 1065.
+now i can do a couple things one i could
+go back into our definition
+and i can just put in here try and so if
+it has a bad conversion this is where
+the error is coming from
+just skip it that's one way to do it
+when you're doing a lot of work in data
+science and you look at something like
+this where you're losing three points of
+data at the end you just say okay i lost
+three points who cares
+or you can go in there and try to delete
+it
+it really doesn't matter for this
+particular demo
+and so we're just going to leave that
+error right alone and skip over because
+it's already added all the other files
+in there and this is wonderful thing
+about jupiter notebook
+is that i can just continue on there and
+the x and z which we're creating
+is still
+running and we'll just go right into the
+next flower rose so all these flowers
+are in there
+that's just a cool thing about jupiter
+notebook
+uh and then we can go ahead and just
+take a quick look
+and see
+what we're dealing with and this is of
+course really when you're dealing with
+the other people and showing them stuff
+this is just kind of fun where we can
+display it on the plot library here
+and we're just going to go through and
+see what we got here
+uh looks like
+we're gonna do like five of each of them
+i think
+is that how they set this up um
+plot library five by two okay oh i see
+how they did it okay so two each so we
+have five by two set up on our axes and
+we're just going to go in and look at a
+couple of these flowers
+it's always a good thing to look at some
+of your data
+no matter what you're doing
+we've reformatted this to 150 by 150
+you can see how it really blurs this one
+up here on the tulip
+that is that resize to 150 by 150
+and these are what's actually going in
+these are all 150 by 150 images you can
+check the dimensions on the side
+and you can see just a quick sampling of
+the flowers we're actually going to
+process on here
+and again like i said at the beginning
+most of your work in data science is
+reprocessing
+this different information so we need to
+go ahead and take our labels
+and run a label encoder on there and
+then we're just going to le is a label
+encoder one of the things we imported
+and then we always use the fit
+to categorical y comma 5 x here's our
+array
+x so if you look at this here's our fit
+we're going to transform z
+that's our z array we created
+and then we have y which equals that and
+then we go ahead and do to categorical
+we want five different categories
+and then we create our x
+in p array of x x equals x over 255.
+so what's going on here there's two
+different transformations one we've
+turned our categories into
+0 1 2 3 4 5 as the output
+and we have taken our x array
+and remember the x array is three values
+of your different colors
+this is so important to understand when
+we do this across a numpy array this
+takes every one of those three colors so
+we have 150 by 150 pixels
+out of those 150 by 150 pixels they each
+have three
+color arrays and those color arrays
+range from 0 to 250. so when we take the
+x equals x over 255
+i'm sorry range from 0 to 255.
+this converts all those pixels to a
+number between 0 and 1.
+and you really want to do that when
+you're working with neural networks
+now if you do a linear regression model
+it doesn't affect it as much and so you
+don't have to do that conversion if
+you're doing straight numbers but when
+you're running neural networks if you
+don't do this you're going to create a
+huge bias
+and that means it'll do really good on
+predicting one or two things and they'll
+just totally die on a lot of other
+predictions
+so now we have our
+x and y values
+x being the data n y being our known
+output
+and with any good setup we want to
+divide this data into our training
+so we have x train
+we have our x test this is the data
+we're not going to program the model
+with
+and of course your y train corresponds
+to your x train and your y test
+corresponds to your x test the outputs
+and this is uh when we do the train test
+split this was from the site kit sklearn
+we imported train test split and we're
+just going to go ahead and do the test
+size at about a quarter of the data 0.25
+and of course random is always good
+this is such a good tool i mean
+certainly you can do your own division
+um
+you know you could just take the first
+you know 0.25 of the data or whatever do
+the length of the data not real hard to
+do
+but this is randomized so if you're
+running this test a few times you can
+kind of get an idea whether it's going
+to work or not
+sometimes what i will do
+is i'll just split the data into three
+parts
+and then i'll test it on two with one
+being the uh or i train it on two of
+those parts with one being the test and
+i rotate it so i come up with three
+different answers which is a good way of
+finding out just how good your model is
+but for setting up let's stick with the
+x train x test and the sk learn package
+and then we're going to go ahead and do
+a random seed
+now a lot of times the cross actually
+does this automatically but we're going
+to go ahead and set it up on here and
+you can see we did an np random seed
+from 42 and we get a nice rn number
+and then we do tf random we set the seed
+so you can set your randomness at the
+beginning of your tensorflow and that's
+what the
+tf.random.set is
+so that's a lot of prep
+all this prep and then we finally get to
+the exciting part
+this is where you probably spend once
+you have the data prepped and you have
+your pipeline going
+and you have everything set up on there
+this is the part that's exciting is
+building these models
+and so we look at this model one we're
+going to designate a sequential
+they have the api which is across the
+cross tensorflow api versus sequential
+sequential means we're going one layer
+to the next so we're not going to split
+the layer and bring it back together
+it looks almost the same with the
+exception of
+bringing it back together so it's not a
+huge step to go from this to an api
+and the first thing we're going to look
+at is um our convolutional neural
+network in 2d
+so what's going on here there's a lot of
+stuff that's going on here
+um the default for well let's start with
+the beginning what is a convolutional 2d
+network
+well convolutional 2d network creates a
+number of small windows and those small
+windows float over the picture
+and each one of them is their own neural
+network and it's
+basically um becomes like a uh um
+a categorization and then it looks at
+that and it says oh if we add these
+numbers up a certain way
+uh we can find out whether this is the
+right flower based on this this little
+window floating around which looks at
+different things
+and we have filters 32 so this is
+actually creating 32 windows is what
+that's doing
+and the kernel size is 5x5 so we're
+looking at a 5x5 square
+remember it's 150 by 150 so this narrows
+it down to a five by five it's a two d
+so it has your x y coordinates
+and we look at this five by five
+remember each one of these is is
+actually looking at five by five by
+three
+so we're actually looking at 15 by 15
+different
+pixels
+and padding is just
+usually just ignore that
+activation by default is relu we went
+ahead and put the relu in there
+there's a lot of different activations
+relu is for your smaller uh
+when you remember i mentioned atom when
+you have a lot of datum data use an atom
+kind of activation or using atom
+processing
+we're using the relu here
+it kind of gives you a yes or no but it
+it doesn't give you a full yes or no it
+has a
+zero and then it kind of shoots off at
+an angle very common it's the most
+common one and then of course here's our
+input shape 150 by 150 by 3 pixels
+and then we have to pull it so whenever
+you have a two convolutional 2d
+layer
+we have to bring this back together and
+pull this into a neural network and then
+we're going to go ahead and repeat this
+so we're going to add another network
+here
+one of the cool things if you look at
+this is that it as it comes in it just
+kind of automatically assumes you're
+going down to the next layer
+and so we have another convolutional
+null network 2d
+here's our max pooling again we're going
+to do that again max pooling
+and we're just going to filter on down
+now one of the things they did on this
+one is they changed the kernel size they
+changed the number of filters and so
+each one of these steps
+kind of looks at the data a little bit
+differently
+and that's kind of cool because then you
+get a little added filtering on there
+this is where you start playing with the
+model you might be looking at a
+convolutional neural network which is
+great for image classifications
+when we get down to here one of the
+things we see is flattened so we add we
+just flatten it remember this is 150 by
+150 by 3.
+well and actually
+the pool size changes so it's actually
+smaller than that flattened just puts
+that into a 1d array so instead of being
+you know a tensor of this really
+complexity with the the pixels and
+everything it's just flat
+and then the dense
+is just another activation on there
+by default it is probably relu as far as
+its activation
+and then oh yeah here we go in
+sequential they actually added the
+activation as relu so this just because
+this is sequential this activation is
+attached to the dents
+and there's a lot of different
+activations but relu is the most common
+one and then we also see a soft max
+softmax
+is similar
+but it has its own kind of variation
+and one of the cool things you know what
+let me bring this up because if we if
+you don't know about these activations
+this doesn't make sense
+and i just did a quick google search on
+images of tensorflow activations
+um i should probably look at which set
+website this is
+but this is the output of the values uh
+so as your x as it adds in all those uh
+weighted x values going into the node
+it's going to activate it a certain way
+and that's a sigmoid activation and you
+can see it goes between 0 and 1 and has
+a nice curve there this also shows the
+derivatives
+and if we come down the seven popular
+activation functions non-linear
+activations there's a lot of different
+options on this let me see if i can find
+the
+oops let me swing find the specific
+terelu
+so this is a leaky rayloo
+and you can see instead of it just being
+zero and then a value between uh going
+up it has a little leaky there otherwise
+your relu loses some nodes they just
+become inactive
+but you can see there's a lot of
+different options here here's a good one
+right here with the rayleigh you can see
+the rayleigh function on the upper on
+the upper left here and then the leaky
+rayleigh over here on the right which is
+very commonly used also
+one of the things i use with processing
+language is the sig as the exponential
+one
+or the tangent h the hyperbolic tangent
+because they have that nice funky curve
+that comes in that has a whole different
+meaning and captures word use better
+again these are very specific to domain
+and you can spend a lot of time
+playing with different models
+for our basic model we'll stick to the
+relu and the softmax on here and we'll
+go ahead and run and build this model
+so now that we've had fun playing with
+all these different models that we can
+add in there
+we need to go ahead and have a batch
+size on here
+128
+epix10
+this means that we're going to send 128
+rows of data or flowers at a time to be
+processed
+and the epics 10 that's how many times
+we're going to loop through all the data
+and then there's all kinds of stuff you
+can do again this is now built into a
+lot of cross models already by default
+so there's different ways to reduce
+the values and
+verbose verbose equals one means that
+we're going to show what's going on
+value the monitor what we're monitoring
+we'll see that as we actually train the
+model this is what's what's going to
+come out of there if you set the verbose
+equal to 0
+you don't have to watch it train the
+model although
+it is kind of nice to actually know
+what's going on
+and sometimes we're still working on
+bringing the data in here's our batch
+side here's our epics we need to go
+ahead and create a data generator
+this is our image data generator
+and it has all the different settings in
+here almost all of these are defaults so
+if you're looking at this going oh my
+gosh this is confusing
+most the time you can actually just
+ignore most of this
+vertical flip so you can randomly flip
+pictures you can randomly horizontally
+flick them
+you can shift the picture around this
+kind of helps gives you multiple data
+off of them
+zooming rotation there's all kinds of
+different things you can do with images
+most of these we're just going to leave
+as false we don't really need to do all
+that um setup because we already have a
+huge amount of data
+if you're short data you can start
+flipping like a horizontal picture and
+it will generate it's like doubling your
+data almost
+so the upside is you double your data
+the downside is that if you already have
+a bias in your data you already have
+[Music]
+5 000 sunflowers and only two roses
+that's a huge bias it's also going to
+double that bias
+that is the downside of that
+and so we have our model compile and
+this you're going to see in all the
+cross we're going to take this model
+here
+we're going to take all this information
+as far as how we want it to go and we're
+going to compile it
+this actually builds the model and so
+we're going to run that and i want you
+to notice uh
+learning rate
+very important this is the default zero
+zero one
+um there's there you really don't this
+is how
+slowly it adjusts to find the right
+answer
+and the more data you have you might
+actually make this a smaller number um
+with larger with you have a very small
+sample of data you might go even larger
+than that
+and then we're going to look at the loss
+categorically categorical cross entropy
+most commonly used
+and this is uh how how much it improves
+the model is improving is what this
+number means or yeah that's that's
+important on there and then the accuracy
+we want to know just how good our model
+is on the accuracy
+and then
+one of the cool things to do is if
+you're in a group of people who are
+studying the model if you're in
+shareholders you don't want to do this
+as you can run the model summary
+i do this by default and you can see the
+different layers that you built into
+this model just a quick summary on there
+so we went ahead and we're going to go
+ahead and create a
+we'll call it history but we want to do
+a model fit generator
+and so what this history is doing is
+this is tracking what's going on as
+while it fits
+the model
+now there's a lot of new setups in here
+where they just use fit and then you put
+the generator in here
+we're going to leave it like this even
+though the new default
+is a little different on that it doesn't
+really matter it does the same thing and
+we'll go ahead and just run that
+and you can see while it's running right
+here uh we're going through the epics we
+have one of ten now we're going through
+six to 25.
+here's our loss we're printing that out
+so you can see how it's improving and
+our accuracy the accuracy gets better
+and better and this is 6 out of 25. this
+is going to take a couple minutes to
+process
+because we are training 150 by 150 by
+three pixels across uh six layers or
+eight layers whatever it was
+that is a huge amount of processing so
+this will take a few minutes to process
+this is when we talk about the hardware
+and the problems that come up in data
+science and why it's only now just
+exploding being able to do neural
+networks this is why this process takes
+a long time
+now you should have seen a jump on the
+screen here because i did
+pause the recorder to let this go ahead
+and run all the way through its epics
+let's go ahead and take a look and see
+what these epics are and if you set the
+verbose to
+zero instead of one it won't show what's
+going on in the behind the scenes as
+it's training it so we look at this epic
+10 epic so we went through all the data
+10 times
+if i remember correctly there's roughly
+a gig of data there so that's a lot of
+data
+the first thing you're going to notice
+is the
+270 seconds
+that's how much each of those epics took
+to run
+and so if you divide 60 in there you
+roughly get about five minutes worth of
+each epic so if i have 10 epics that's
+50 minutes almost an hour of run time
+that's a big deal we talk about
+processing uh in on this particular
+computer
+i actually have what is it
+eight cores with 16 dedicated threads so
+it runs like a 16 core computer it
+alternates the threads going in
+and it still takes it five minutes for
+each one of these epics so you start to
+see that if you have a lot of data
+this is going to be a problem if you
+have a number of models you want to find
+out how good the models are doing and
+what model to use
+and so each of those models could take
+all night to run in fact i have a model
+i'm running now that takes over
+takes about a day and a half to test
+each model
+it takes four days to do with the whole
+data
+so what i do is i actually take a small
+piece of the data
+test it out to find out uh get an idea
+of how the different setups are gonna do
+and then i increase that size of the
+data and then increase it again and i
+can just take that that curve and kind
+of say okay if the data is doing this
+then i need to add in more dense layers
+or whatever
+so you can do a small chunks of data and
+then figure out what it costs to do a
+large set of data and what kind of model
+you want
+the loss as we see here continues to go
+down
+this is the error this is how much error
+is in there it really isn't a
+user friendly number other than
+the more it trends down the better and
+so if you continue to see the loss going
+down eventually get to the point where
+it stops going down and it goes up and
+down and kind of wavers a little bit at
+that point you know you've run too many
+epics you're starting to get a bias in
+there and it's not going to give you
+a good model fit
+the accuracy just turns us into
+something that
+we can use
+and so the accuracy is what percentage
+of guesses in this case is categorical
+so this is the percentage of guesses are
+correct
+value loss is similar you know it's a
+minus a value loss
+and then you have the value accuracy and
+you'll see the value accuracy is pretty
+similar to the accuracy um just rounds
+it off basically and so a lot of times
+you come down here and you go okay we're
+doing point five point six
+point seven and that is seventy percent
+accuracy or in this case sixty eight
+point uh
+five nine percent accuracy that's a very
+usable number and it's very important to
+have if you're identifying flowers
+that's probably good enough if you can
+get within a close distance and knowing
+what flower you're identifying
+if you're trying to figure out whether
+someone's going to die from a heart
+attack or not you might want to rethink
+it a little bit or re-key how you're
+building your model
+so
+if i'm working with a
+a group of
+clients
+shareholders in a company or something
+like that
+you don't really want to show them this
+you don't want to show them hey you know
+this is what's going on with the
+accuracy these are just numbers and so
+we want to go and put the finishing
+touches just like when you are building
+a house and you put in the frame and the
+trim on the house it's nice to have
+something a nice view of what's going on
+and so we'll go ahead and do a
+pie plot and we'll just plot the history
+of the loss
+the history of the
+value loss
+over here
+epics train and test and so we're just
+going to compute these
+this is really important and what i want
+you to notice right here is when we get
+to about oh
+five epics a little more than five six
+epics you see a cross over here
+and it starts crossing as far as the
+value loss and what's going on here is
+you have the loss in your actual model
+and your actual data and you have the
+value loss where it's testing it against
+the the test data the data wasn't used
+to program your model it wasn't used to
+train your model on
+and so when we see this crossing over
+this is where the bias is coming in this
+is becoming over fitted and so when you
+put these two together
+right around five and six you start to
+see how it does this this switch over
+here and that's really where you need to
+stop right around five yeah six
+um
+it's always hard to guess because at
+this point the model is kind of a black
+box see but you know that right around
+here if you're saving your model after
+each run you want to use the one that's
+right around five epics because that's
+the one that's going to have the least
+amount of bias so this is really
+important as far as guessing what's
+going on with your model and its
+accuracy and when to stop
+it also is you know i don't show people
+this mess up here
+i show somebody this kind of model and i
+say this is where the training and the
+testing comes in on this model
+it just makes it easier to see and
+people can understand what's going on
+so that completes our demo and you can
+see we did what we were set out to do we
+took our flowers and we were able to
+classify them within about 68 70
+accuracy whether it's going to be a
+dahlia sunflower cherry blossom rose
+a lot of other things you can do with
+your output as far as a
+different tables to see
+where the errors are coming from and
+what problems are coming up
+so
+thank you for joining us today with
+simply learn for more information please
+visit www.simplylearn.com
+get certified get ahead
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

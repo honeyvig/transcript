@@ -1,0 +1,339 @@
+the increasing adoption of cloud
+computing solutions will offer robust
+opportunities for both the market of the
+forecast period and allow introduction
+of newer technologies
+the use of cloud computing solutions is
+quickly growing worldwide owing to the
+lower cost of cloud-based services and
+the lack of the need to set up separate
+idea infrastructure
+the penetration testing market is
+predicted to also grow in the near
+future due to the increasing use of
+cloud-based solutions and services for
+multiple workloads be it email data
+backups crm and collaborative services
+cloud deployment exposes software to
+more vulnerability and makes it more
+accessible to unauthorized users
+this is where penetration testing for
+security testing comes in
+with handheld devices seeming to be the
+primary device of choice for the future
+one such framework that facilitates this
+service is the offensive security back
+kali net hunter
+so let's take a look at the topics to be
+covered in today's video on kali net
+hunter
+we start with a small introduction to
+what kali net hunter is followed by
+going through the different versions of
+parallel net hunter we then learn about
+the different components in the kali
+network framework and some of the most
+helpful attacks or features that are
+featured in this distribution
+finally we take a look at the pros and
+cons of kali net hunter as a whole
+before we get started with the video be
+sure to subscribe to our channel for
+more videos like this and hit the bell
+icon to never miss an update again
+so let's get started with what is kali
+net hunter
+kali net hunter is the very first
+android penetration testing framework
+for android smartphones
+because net hunter is an open source
+project developers can freely utilize it
+without fearing copyright infringements
+or other threats the project grants
+access to the kali toolkit to compatible
+android devices which allows penetration
+testing
+furthermore net hunter provides several
+unique capabilities and available on
+other hardware platforms
+a user land refers to space outside of
+an operating system kernel meaning
+anything that doesn't have root access
+we can use an app to system supported on
+nexus or oneplus and rooted android
+phones
+while this is pretty incredible there
+are some limitations to this
+in general you can communicate with the
+instance of whatever linux device you
+want by ssh or vnc using kali net hunter
+the best device for hackers is an
+android phone installed by kali linux
+because mobile phones are more
+convenient and portable than laptops for
+personal purposes
+the night hunter interface also allows
+users to work easily with complicated
+configuration files through a local web
+apache interface
+aside from this functionality
+modified kernels that handwrite 802.11
+wireless injections and securely link
+pre-configured vpn services comprise a
+strong network security breakthrough and
+a separate dropbox with kali linux
+constantly at your disposal
+we now have a basic understanding of
+what kali linux net hunter is
+however there isn't a single
+distribution to learn about here
+kali linux net hunter has multiple
+different versions depending on the
+device at the hands of the users
+let's cover them in more detail
+so let's cover them in more detail
+while kali net hunter functions as a
+portable operating system designed for
+penetration testing there can be other
+tools you want that isn't pre-installed
+to solve this problem there is a net
+understood at the address
+store.nethunter.com
+this function is the same as a google
+play store on android or app stores on
+iphones
+except the difference is that the tools
+in this repository are more in line with
+ethical hacking and
+network penetration
+the first of the three versions that
+netflix provides
+is the net hunter rootless
+this works on almost all devices without
+any issues the number of tools available
+in this version is the lowest among the
+three
+we then have net hunter lite which
+requires root privileges to work
+properly
+it doesn't need any custom kernel
+fashion to power up and has
+comparatively more tools than net hunter
+rootless
+finally we have the original net hunter
+package with all the tools available at
+its disposal
+however your device must have good
+privileges and the custom net hunter
+kernel to install this version
+as we can clearly see the more open our
+device settings and preferences are the
+more tools kali net hunter can work with
+root privileges provide administrative
+access to many functionalities that net
+hunter can leverage and ultimately
+perform network penetration with
+some rules are exclusive to the original
+net hunter core and not under light so
+you may have to cross check your
+requirements before installing any
+version on your device
+now that we have covered the different
+versions of kali net hunter let us cover
+its different components and how they
+help in the working of this distribution
+we look at the various net hunter
+components which are effectively the
+building pieces of net hunter's
+operation
+net hunters roam comprises of various
+pieces that communicate and rely on one
+another to function properly
+below you will look at the three
+components that comprise net hunter the
+first is a modified android kernel
+followed by net hunter android app and
+finally but not least the kali linux
+chrome itself
+let's examine these in depth
+the program that provides a ui to
+simplify the user's tasks is a graphical
+component of net hunter which is its
+android
+the software provides a straightforward
+interface for controlling the kali linux
+ch root
+the fact that it has a simple ui does
+not imply that it is not capable of
+performing complex tasks this
+application contains all configuration
+files necessary by net hunter and is
+transferred to the sd card during the
+first run
+aside from the ui the program also
+serves as a boot up service allowing the
+server to activate when the device ports
+out
+the next inline is the custom android
+kernel
+the kernel is a system component that
+allows applications to link to hardware
+that meet users needs aside from
+facilitating communication the kernel
+also maintains system resources
+now the default kernels inside android
+do not supply at all utilities for
+security and exploitation
+still with a custom android kernel any
+device can empower with unique features
+which are not accessible in the stock
+ones
+now we have the kali ch root
+chute is essentially a full color lens
+installation that allows android to
+share network storage and other
+resources
+the kali linux siege tube is effectively
+the heart of netrunner and the
+configuration settings have been updated
+so that net hunter functions seamlessly
+with the android ecosystem
+netnata has a ch2 manager that
+simplifies the download and installation
+of chu
+this component is stored in an internal
+app storage region and one must meet the
+installation space requirements
+now that you have covered the different
+components of kali net hunter let us
+cover some of the tools the distribution
+offers that may be used in penetration
+testing
+at the top of the chain lies nmap
+and map stands for network mapper and is
+a free and open source utility for
+network discovery and security auditing
+many systems and network administrators
+who also find it useful for tasks such
+as network inventory managing service
+upgrade schedules and monitoring host or
+service uptime
+it is most beneficial in the early stage
+of exploitation where a hacker must
+figure out the possible entry point to a
+system before running the necessary
+exploits
+it uses raw ip packets in novel ways to
+determine what hosts are available on
+the network what services are being run
+what hosts are offering etc
+it was designed to scan large networks
+but it also works fine against single
+host
+moving on we have the mitm framework
+mitm or man in the work framework
+provides a one-stop shop for man in the
+middle and network attacks while
+updating and improving existing attacks
+and techniques
+originally built to address the
+significant shortcomings of other tools
+it's been almost completely rewritten
+from scratch to provide a modular and
+easily extendable framework that anyone
+can use to implement their own version
+of a man-in-the-middle attack
+it contains built-in smb http and dns
+servers that can be controlled and used
+by various plugins
+the next tool at hand is the kex manager
+it stands for the kali restock
+experience
+kali net100 desktop experience puts the
+kali linux desktop in the palm of your
+hand
+it provides the graphical user interface
+or gui of kali desktop on your android
+device making penetration relatively
+easier for people not comfortable with
+the command line
+however
+the major tools all include command line
+functions so this is more of a
+convenience inclusion rather than a
+functional one
+finally we have metasploit the
+metasploit framework is a very powerful
+tool that can be used by cyber criminals
+as well as ethical hackers to probe
+systemic vulnerabilities on networks and
+servers
+because it's an open source framework it
+can be easily customized and used with
+most operating systems
+with metasploit the ethical hacking team
+can use ready-made or custom code and
+introduce it into a network to probe for
+weaker spots as another paper of threat
+hunting once the flaws are identified
+and documented the information can be
+used to address systemic weaknesses and
+prioritize solutions
+we now have a very clear understanding
+of what kali net hunter is and its
+features
+let's cover some of the pros and cons of
+this particular framework
+when it comes to the advantages
+net hunter provides features that are
+not by default included in the original
+kernels of android phones
+the new tools can be used to perform
+network penetration and system checks
+for security vulnerabilities
+qualcomm jets and snapdragon have
+monitor support enabled monitor mode
+helps listen to wireless traffic and
+capture data packets which can then be
+unencrypted and snooped on
+the kernel builder's presence assists
+the easy creation of kernels that are
+not yet available to the public
+similarly the use of gitlab cli or
+command line interface speeds up the
+release timelines it allows the input of
+other developers making the bug's
+washing process easier and the
+development of the tools more
+collaborative
+the human interface device hardware is
+fully supported by default but it must
+be enabled and configured through user
+space controls
+so when it comes to the disadvantages of
+kali net hunter
+so not every android phone is supported
+as part of the official netcenter
+release
+therefore be cautious while downloading
+and running them since the wrong net
+hunter may break the phone in some very
+rare circumstances
+because some internal wi-fi systems do
+not allow monitor mode or data packet
+injection an external usb wi-fi adapter
+may be required for some devices who
+want to pursue wireless network
+penetration
+hope you learned something new today
+please let us know in the comment
+section below if you face any issues
+regarding kali net hunter and we will
+help you as soon as possible subscribe
+to our channel for more videos like this
+thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,2081 @@
+hello everyone and welcome to simply
+learns youtube channel today we'll be
+taking you through the jquery basics
+tutorial this tutorial will cover all
+the essential jquery concepts like what
+is jquery jquery selectors events and
+jquery effects
+by the end of this tutorial you guys
+will get a basic idea of jquery and when
+to use it so before we begin make sure
+that you are subscribed to a youtube
+channel and press that bell icon to
+never miss any updates from simply learn
+so without any further delay let's get
+started
+today we are going to talk about jquery
+we will go through a brief about what
+jquery is and why we use it
+before we move on to the installation
+part let's talk about what is jquery
+introduced in the year 2006 when john
+rezik a web developer became frustrated
+with the issue of cross browser
+javascript he found it so complicated
+that he decided to develop the
+javascript library of his own to
+overcome this problem that same library
+is known as jquery today
+so jquery is an open source
+fast tiny and rich feature library that
+makes it easy to interact with html
+documents and it allows its users to
+manipulate and traverse storm handle
+events animations and ejects in much
+simpler ways with an easy to use api
+that works in almost all modern browsers
+in a nutshell jquery revolutionized the
+way of using javascript to interact with
+html documents
+so let's move ahead and see how we can
+include javascript in a html file
+so here we are in the html file we have
+created an entirely new folder for this
+we'll save
+all the jquery related files in this
+particular folders we have two more
+folders here one is for the images we'll
+be using in further videos and other one
+is to save the jquery library file and
+we have a html and javascript files over
+here fine
+now there are two different ways of
+including jquery in a html file
+we can either use a cdn for that or
+download the jquery file and save it
+somewhere in a system and then we can
+use it later so the former way needs an
+active internet connection and for the
+latter one the internet connection does
+not matter
+so let's download the jquery file and
+then we'll see how to use
+jquery fine we'll move to the jquery
+website so go to google and write
+jquery.com this will take you to this
+particular website this is the jquery
+website we have you can see over here
+the size of this jquery file is just 30
+kilobytes really small right
+to download jquery click on this
+download jquery button over here
+the current ongoing version is version
+3.6.0
+and the previous two versions which are
+one point x and two point x no longer
+receives update patches so if you are in
+2021 then it's not worth using those
+versions click on the button and it will
+redirect us to a new page fine so click
+on the download jquery button
+so here you can see we have different
+jquery versions so you can download the
+compressed version the uncompressed
+development version the map file or you
+can also download the slim build
+so what happens in slim build is it
+excludes the ajax and effect modules
+for now what we are going to do is we
+are going to click on this download the
+uncompressed developmental jquery
+version 3.6.0
+and you can see we have some code
+written over here
+the code looks a bit familiar right it's
+written in javascript only there are
+more than ten thousand lines of code so
+this is basically a library with code
+written for events animations and many
+more things
+now press ctrl
+s and save the file in your system we'll
+keep it inside the jquery folder and
+change the name we'll keep it inside the
+jquery folder we'll go to desktop here
+is a jquery file will keep it inside
+this jquery folder and we'll change the
+name to
+jquery only will remove the version name
+from here save it so the file is
+downloaded and you can check it by going
+through the folder in your system the
+file is saved so let's move back to the
+vs code and try to use this file in a
+html document
+to include this jquery file in a html
+document we have to follow the exact
+same steps that we follow with
+javascript files use the script tag and
+write type and src and we are good to go
+so let's include it here we'll include
+the jquery file at the bottom after the
+body tag because we want the html file
+to be rendered first so what we'll do is
+we'll write here
+after the body tag
+script
+src is equals to
+so what we have to write here is we have
+to write here
+jquery we have the file present inside
+the jquery named folder we'll write here
+jquery.js so this is the path of a
+jquery file we'll write it type is
+equals to
+text slash
+javascript
+and we'll close the script tag
+we'll again do the same thing but first
+let me close this for you and
+now what we'll do is we'll include the
+javascript file as well so we'll write
+here script
+and src is going to be
+jq
+dot js so this is the name of a
+javascript file
+we'll write here type
+is equals to text
+slash
+javascript
+fine
+so we have included the jquery file to
+html document as well as the javascript
+file as well fine
+we are done with setting up jquery let's
+go through a small and exciting example
+of using jquery now we'll discuss the
+syntax in the upcoming videos you don't
+have to worry about it just giving you
+an example of what jquery is capable of
+doing so if you guys remember from the
+previous videos wherein we used
+javascript for fade in and fade out
+animations we were fading in and out an
+image on a button click right and we had
+to write 10 to 15 lines of code for
+those two tiny tasks so what we'll do is
+we'll do the same thing with jquery in
+just one line let's find out how
+so first thing first what we'll do is
+we'll add an image
+so we'll add an image to a html file so
+here what we'll do is after this h1 tag
+will write here img
+r c is equals to
+images slash
+j q dot png so this is the
+path of our image wherein we have saved
+our image already we'll write here alt
+is equals to js and
+we'll use the id attribute so let's say
+the id is img1 for this image
+next up we'll add a button as well we'll
+write here button
+and we'll do the same thing we'll write
+here on click it will call a javascript
+function so let's say the function name
+is func one
+and we'll write here
+the button name fine so let's say the
+button name is
+fade
+save it
+and here you can see
+we have an image over here we can resize
+the image by using image height and
+image width property here but let's
+leave it for now and we have a fade
+button over here you can see the fade
+button is not working it's just a fake
+button for now
+so we have been doing all this stuff for
+quite some time now right it's easy the
+most straightforward task in html we can
+say we need to define the function
+function now to make the image fade in
+and fade out on a button click
+so what we'll do is we'll move to our
+javascript file
+and we'll write here
+function
+function so this is a function and then
+we have the body of this function so
+that's simple what we'll do is we'll
+write here dollar
+inside brackets
+will access the id attribute so we'll
+write a img1
+before that we'll write hash
+and after that we'll write here dot feed
+toggle
+and this is a function
+and we'll write a semicolon so that's it
+guys we are done with it you guys might
+wonder about what we did here so let me
+explain guys so this dollar sign over
+here is called a selector and it is used
+to access an element from the html
+document
+we'll discuss everything about it in the
+upcoming videos so for now just think of
+it as the
+document.getelementbyid method we were
+using in javascript it has the same
+functioning
+then we have a function named fade
+toggle this fade toggle function is
+already defined in the jquery file which
+we saved earlier in our system
+this function fades out the image if the
+image is there on the screen and the
+good part is it also reverts the picture
+if we click on the button again isn't it
+interesting
+we don't have to write lengthy code for
+such small tasks so let's find out how
+it works
+save it
+go to the browser and click on this fade
+button
+see the image is gone click on the fade
+button again and here it is so guys this
+is what jquery can do in just one line
+the set interval method we were using
+previously also has an alternate here in
+jquery we have to write the time
+interval inside the fete toggle function
+and that's it what we have to do is we
+have to write here inside the fade
+toggle function so let's say we are
+writing here 3000 milliseconds save it
+and go to the browser here we are click
+on the fade button and see the magic
+easy and worth using right
+so i hope you guys understood all of
+this for now
+now before we wrap up this video let me
+show you guys the second way of
+including jquery in a html file by using
+cdn
+so we have to do the same thing again so
+go to jquery.com again and click on the
+download button scroll down and you can
+see here it says using jquery with cdn a
+content distribution network or a cdn is
+a distributed network of proxy servers
+and their data centers it provides high
+availability and performance by
+distributing the service related to end
+users provided that the user has an
+active internet connection
+so click on any of them from wherever
+you want to download for example
+we'll click on the cdnjs.cdn
+so we'll click on this and it will take
+us to a new website copy the link from
+here with script text so if you click on
+here it will say
+copy with script tag right so what we
+have to do is we have to copy the link
+from here with the script tags and go to
+the javascript file
+place it in place of script tag here now
+what we'll do is we'll paste it here in
+instead of this script tag
+now
+we have written over here srcs
+cdnjs.cloudfair.com and this is the
+whole path and then we have integrity
+cross origin referral policy and all
+fine save it now
+go to your program and let's see if it's
+working or not click on the fade button
+wait for three seconds and it's totally
+working right
+so in today's video we came across an
+introduction to jquery i hope you guys
+understood it we are going to discuss
+selectors in jquery
+we'll go over some particular types of
+selectors in this video
+we are all aware of accessing an html
+element in javascript we have three
+different methods for that the get
+element by id the get element by class
+name method and the get elements by tag
+name method so these three methods we
+have been using for a long time
+apart from these three methods we can
+also use query selectors for accessing
+css selectors right so let's do the same
+task using jquery today
+now selectors allow us to manipulate or
+access html elements as a group or
+single element in jquery
+the syntax for accessing any particular
+element is so simple that we don't have
+to remember all of it just go through it
+once and you might remember it for life
+all we have to do is to use a dollar
+sign and pass the id or class name with
+particular symbols to let the jquery
+file know the type and that's all
+the question that arises here is how it
+is different from javascript if we are
+doing the same thing in jquery then what
+is the real difference between these two
+so guys jquery selectors are used to
+find or access html elements based on
+their name id classes types attributes
+values and much more in simple words
+jquery provides us the flexibility to
+access any element in different ways
+jquery selectors are based on css
+selectors and it contains some custom
+selectors as well so let's start by
+going through the simple syntax and you
+guys will get an idea of what selectors
+are in jquery
+what we'll do is we'll create an html
+element with specific id first and then
+we'll try to access that element so what
+we'll do is we'll move to the body part
+and we'll write here
+div
+id is equals
+to let's say div one
+so we are creating a div tag now inside
+this what we'll do is we'll write some
+paragraphs so we'll use the p tag for
+that we'll write here p let's say we are
+writing here this is paragraph one
+let's add another paragraph here what
+we'll do is we'll again use the p tag
+and we'll write here
+this is
+paragraph
+two fine so what we'll do next is we'll
+copy this whole div tag and we'll paste
+it again basically what we are doing is
+we are creating two div tags here fine
+we'll write the id as div 2 and here
+we'll write this is paragraph 3 and this
+is paragraph 4 just for your convenience
+guys
+now what we'll do is we'll create a
+button and we'll call a function on
+clicking that button so the same part
+with javascript as well what we'll do
+here is we'll write here
+button
+and here we'll write
+on click
+so after this we'll write
+let's say we are creating a function
+named function this button click will
+call this function and
+let's say
+the button name is click me fine
+what we did here was simple we have used
+two div tags and four paragraph tags
+over here now we'll make some styling
+changes here in both the div tags so
+that they'll look different from each
+other we have already added the style
+sheet here we have the link as
+stylesheet and the href is style.css so
+this is a css file we'll make some
+styling changes to our div text from
+here so before that let's save this
+program once and check the output so
+here are our paragraphs we have
+paragraph one two three and four so all
+of these paragraphs are present inside
+two different div tags
+we are not able to see those div tags
+but we have used them here so what we'll
+do is we'll make some styling changes to
+make them look different
+so you can see the click me button is
+not working as of now now what we'll do
+next is
+we'll go to style.css and
+we'll start styling those div tags we'll
+write here
+hash
+div one
+so we'll style d1 first we'll write here
+margin
+as auto
+let's say
+text align at the center
+border we are going to add we'll write
+your border
+as three pixels black and
+dot it fine
+next up we'll write here
+font size as 50 pixels let's say
+and the background color is going to be
+let's say credit blue fine
+next up we'll write here
+height so
+let's define the height of this div tag
+we'll write a height as
+300 pixels
+and
+width has 300 pixels fine now we have to
+write one more thing here the position
+is going to be
+relative
+and save it here you can see we have a
+div tag over here so you can see the
+font size is quite large what we'll do
+is we'll reduce the font size here let's
+say the font size we are going to write
+here as 30 pixels so now you can see
+it's working totally fine we have two
+paragraphs inside a particular div tag
+we have two paragraphs inside a
+container what we'll do next is we'll
+copy this piece of code
+and we'll do the same thing for the
+second div tag right we'll write here
+div two save it and here you can see we
+have two div tags over here
+now what we'll do is we'll change the
+color of this div tag fine
+let's say the color of this div tag is
+yellow
+save it and here you can see we have two
+div tags over here right here
+margin top is
+10 pixels
+fine save it and here you can see they
+are not touching each other now now we
+are done with styling our div tags
+according to our need you can check it
+by going through the webpage and here
+you can see we have both our boxes
+present over here so let's move on to
+the jquery part now and we'll try to
+make some changes in the styling of
+these div tags using jquery selectors
+so we'll move to a javascript file
+first of all we'll access both the div
+tags here we'll try to make some changes
+in both the boxes using the element name
+so we have to create a function named
+function here so first of all we'll do
+that we'll write your function
+function
+and inside the body of this function the
+next thing we have to do is to change
+the style of these div tags right so the
+jquery syntax goes like this we'll
+define the syntax first so it goes like
+dollar
+then we have the element name
+so a dollar sign followed by an element
+name
+now the javascript alternative for this
+statement will be
+document dot
+get element by tag name and then we'll
+write here the
+element name fine so this is the
+alternative of this particular statement
+in javascript you can check if it's
+right or not
+so you can see here it's showing some
+error because we haven't written the
+original element name here so it's
+totally fine
+now once we are done with this part we
+have to mention here the action as well
+in the jquery syntax
+so the actions here may be predefined or
+we can customize those functions as well
+for now we'll use the predefined actions
+so let me tell you the syntax first
+we'll write here action so action is
+going to be a function which will
+perform certain
+task in the
+div tags fine
+now let's move on and write the actual
+code here
+now in this particular case we are
+accessing the div tags here so we want
+to make similar changes to both the div
+tags right what we can do is we'll write
+here
+dollar
+inside this
+we'll write the element name inside
+double quotes and
+after that we'll
+write the action name so we'll write
+here dot css and inside css we'll write
+here
+background
+color and after this we'll define the
+color here
+so let's say the color is orange let's
+say so let's define them inside single
+inverted commas
+and
+we are good to go
+now what we did here is we selected both
+the div tags we have to put the element
+name inside the double quotes then we
+have the action as css that will allow
+us to make styling changes in the html
+elements then we have defined the style
+changes inside the brackets here what we
+are doing is we are changing the
+background color of both the div tags on
+the button click to orange
+so
+let's save it and what we'll do is we'll
+click on this click me button and see if
+it's working or not so click on it and
+you can see the color is orange for both
+the div text
+you can see it again we'll refresh this
+page click on this click me button and
+you can see the color is orange now
+fine so this is how we can access all
+the elements from an html file using the
+element name only it is an alternative
+to get element by tag name fine
+now let's suppose we want to make
+changes to a particular paragraph let's
+say paragraph 1 only in javascript we
+can do it with the help of
+document.getelementbyid method in jquery
+we can also use the id attribute to do
+so so let's suppose we want to change
+the font style of paragraph 1 only we
+want to change it to italic so we'll do
+it with the help of jquery so what we
+have to do is we have to provide the
+paragraph tag and id first so we'll move
+to html file
+here is the html file and this is the
+paragraph one we'll use here id as
+p1 for this paragraph
+save it now
+and now what we'll do is we'll comment
+this piece of code
+and we'll write here again
+dollar so we are using the id attribute
+so we have to use hash here
+we'll write here p1 dot css is the
+action name
+and inside this will write
+font style
+and the font style is going to be
+italic
+fine
+so we have to close this bracket over
+here
+and we have to remove this bracket from
+here fine the thing to notice here is we
+have to include the hash symbol before
+the id attribute while accessing any
+particular id save it
+go to the browser and click on the
+button over here and you can see the
+font style of the paragraph is changed
+to italic now see the same thing we can
+do with get element by id method as well
+it's straightforward right now the
+question is what if we have two elements
+with the same id and we want to change
+the style of both the elements in jquery
+it doesn't work in that way so what
+we'll do here is we'll move to a
+html file and we'll give this paragraph
+3 the same id so what we'll do is we'll
+write here ids p1 save it now and let's
+see if the font style for paragraph 3
+changes or not on the button click
+so on clicking the button over here you
+can see the style does not change it
+means that jquery needs the id to be
+unique for each element fine
+so the other alternative to do so is to
+use the class attribute in place of id
+attribute we'll do the same thing
+instead of using id as p1 what we'll do
+is we'll write here
+class so let's say the class name is
+para for paragraph one and for paragraph
+three
+we'll use the same class name we'll
+write here para
+now let's try to access both the
+elements using jquery selectors so we'll
+move to a javascript file again and
+we'll comment this
+statement and over here what we'll do is
+we'll write here
+dollar
+element name so we have to write here
+the class name with the dot symbol
+then we'll write here
+dot css
+and we'll write here
+fonts
+tile as
+italic
+fine
+now save it
+click on the button over here and you
+will be able to witness the change in
+the web page so you can see it's not
+working
+we have done something wrong here
+so let's check it out once
+we haven't saved the html file i guess
+so we'll save the html file
+we'll save the javascript file and we'll
+click on this click me button you can
+see the change in the web page now
+now you can see how we are able to make
+changes in both the paragraphs at the
+same time so this is how we can use
+jquery selectors we covered three
+different types of selectors the id
+class name and element name selectors
+so let's go through some more types of
+selectors today let me tell you guys
+what selectors are in jquery again to
+revise what we have done till now
+selectors allow us to manipulate or
+access html elements as a group or
+single element in jquery based on their
+name id classes types attributes values
+and much more in simple words jquery
+provides us the flexibility to access
+any element in different ways
+the previous three selectors are easy to
+understand and i hope you guys must have
+gotten the idea of how they actually
+work in jquery
+if you haven't watched the previous
+video on jquery selectors i recommend
+you to go through it as we'll be using
+the same code we have used for those
+three selectors
+so let's start with our first selector
+of the day
+over here you can see we have the code
+from the previous video wherein we
+created two different boxes and made
+some style changes using jquery
+selectors and actions
+if you see here we have used jquery for
+selectors and we are performing certain
+actions right so if we click on this
+click me button you can see the font
+style changes to italic for both
+paragraph 1 and paragraph 3.
+so what we'll do now is we'll add
+another box here with different content
+like let's say we are adding a list of
+items or something so for that we'll go
+to our html file and we'll write here
+after this div tag we'll create another
+div tag so inside this particular div
+tag what we are going to do is we are
+going to provide the id as
+let's say
+div 3 to this particular div fine
+now inside here what we'll do is we'll
+use an ordered list and then we'll use
+list element fine so
+here what we'll do is we'll write item
+one and we'll copy this piece of code
+and paste it again for five times so
+let's change the item name to item 2 3 4
+and
+5. save it and you can see here we have
+a list of items on our web page so let's
+style this div tag as well to look
+almost the same as the other two
+containers so what we'll do is we'll
+move to our css file we'll copy this
+piece of code for div one
+and we are going to paste it here fine
+so what we are doing is we are basically
+using the same code we are styling the
+element the same way we did for previous
+two div tags fine save it now and here
+you can see we have three boxes over
+here we have three containers over here
+the first two containers contain four
+paragraphs and the last container
+contains a list of items
+now we are done with both html and css
+parts so let's move on to the jquery
+part now
+now let's suppose we want to make
+changes in the first two containers only
+or in any two containers let's say we
+want to change the background color of
+the first container and the third
+container to green
+and we have used the same class for the
+first and second container let's do one
+thing we'll move to html file and you
+can see over here we have the first div
+tag with class as div with two v's and
+then we have another div tag with the
+same class so the third one does not
+have any class for that right
+so in that case we can't use the element
+name to do so because if we use the
+element name for making changes then
+those changes will be visible in all the
+three containers we can use the class
+name but we have used the same class for
+div one and f2 so it's impossible
+what we can do here is we can use the id
+attribute because we have unique ids for
+both the div text for div 1 and div 3.
+now jquery allows us to make the same
+changes in one or more elements using
+the id attribute only
+so the task is simple what we have to do
+is we have to go to a javascript file or
+jquery file we can say we'll comment
+this statement for now and we'll write
+here dollar
+and inside brackets will pass the id
+attribute so we'll write here given
+comma
+div
+and
+we have to put here the hash symbol
+because it represents the id of any
+element so we'll write here dot css and
+inside this will write
+background
+color and the background color is going
+to be
+green
+fine
+that's it guys what we have to do is we
+have to separate the ids with the comma
+and we can make changes to several
+elements at the same time
+save it
+and click on the button over the browser
+so what we'll do is we'll reduce the
+size a little bit so that both the
+containers are visible so you can see
+the first and the third containers have
+same colors over here so let me first
+change the color of the third container
+we'll go here and we'll change the color
+to let's say
+gray fine save it and you can see all
+these three containers has different
+colors so what we'll do is we'll save
+this piece of code and we'll click on
+this click me button and you can see the
+containers with id 1 and id 2 the color
+is changed to green so what if we want
+to do the same thing for the third
+container and the first container so if
+we write here div 3 instead of div 2
+save it now click on the button and you
+can see the color is changing for both
+the containers so it's working totally
+fine not only that but instead of using
+multiple ids we can also use different
+attributes at the same time like we can
+use the class name and the element name
+here as well so let's say if we write
+here let's comment this piece of code as
+well
+and we'll write here in the next line
+dollar
+let's suppose we are writing here
+given so this is the id for the first
+container so we are using the hash
+symbol so remember it is a id and right
+here we are writing
+li so li is the tag name and we are
+using tag name over here so what we'll
+do is we'll write here css
+and then we'll
+change the background color
+and the background color is going to be
+let's say purple fine so we are done
+with it save it and click on the click
+me button you can see
+the color of both the elements changed
+at the same time
+this is one of the reasons to choose
+jquery it provides us the ease to work
+on multiple attributes at the same time
+the color of the first container and the
+color of the list elements changed
+simultaneously here
+so we can also make changes to the
+particular element present inside the
+specific div tag for example let's say
+we have two more paragraphs outside the
+div tag so let's add them first and what
+we'll do is we'll move towards html file
+we'll copy this piece of code from here
+and we'll paste it
+here after the h1 tag
+fine now what we'll do is we'll change
+the paragraphs
+so let's say the paragraph one says
+this is paragraph one
+outside
+div tags fine
+we'll do the same here as well we'll
+write here outside
+div tags save it now and you can see
+over here we have two paragraphs over
+here what we'll do is we'll remove the
+second container from here
+so let's do it
+and save it now
+we'll remove the styling as well for the
+second container
+save it now we have only two containers
+over here and we have a click me button
+fine
+now what we want is we want to make some
+changes to the paragraphs present inside
+the first and the second containers we
+can't use the element name because it
+will make changes in all the paragraph
+elements so what we can do here is we
+can write here
+we'll move to our javascript file and
+we'll write here
+dollar and inside this we'll write
+div
+greater than sign and we'll write here p
+now we are going to use here
+fate toggle
+so what we did here is we asked jquery
+to make changes to the paragraph
+elements present inside the div tags we
+have also used the fate toggle action
+here to make it more clear to you guys
+the syntax is simple we have to pass the
+parent element with a greater than sign
+and then the element name in which we
+want to make changes so let's see if
+this statement is working or not
+save it move to the browser click on
+this click me button and you can see the
+paragraph is completely hidden
+right you guys don't worry about the
+actions for now because we'll cover them
+in the upcoming videos although they are
+not complicated but still if you are
+thinking about them then don't worry we
+are here to help you with that
+this statement can also work without the
+greater than sign just like it does in
+the css properties so let's see if it
+works or not after removing this greater
+than sign save it now you can see the
+paragraphs are here and we want to fade
+them out on button click so click on
+this click me button and you can see
+it's working totally fine and if we
+click on this click me button again you
+can see the paragraphs are here
+next up what if we want to access the
+first paragraph only
+now we are talking about this particular
+paragraph so what if we want to access
+it
+we can't use any of the selectors we
+have been through till now it does not
+have any id or class and we can't use
+the element name because that will make
+changes in all the paragraph elements
+for that what we have to do is we have
+to write here
+dollar
+and after it will write
+p
+colon
+first fine then we'll write here fate
+toggle and we'll call this function
+so we are done with it this statement
+will access the first paragraph element
+from the whole html document
+save it click on the button and you can
+see on clicking the button the paragraph
+one is completely hidden click on the
+button again and the paragraph is here
+again
+but will it work the same way if we
+write second in place of first like if
+we only want to access the second
+paragraph not the first one so let's try
+doing it
+and it will be easy for you to
+understand so we'll write here second
+now what we want is we want to access
+this particular paragraph save the
+program move to browser click on this
+click me button and you can see it's not
+working you can go through the inspect
+elements and you'll find an error over
+here
+so if we go to console you can see it
+says
+unsupported pseudo second so it does not
+supports this so we can do it for the
+first
+element present in the html file only so
+we'll write here first again
+save it now and you can see it's working
+now
+we can do the same thing with the class
+name id or the element name what else we
+can do here is we can make changes in
+the odd and even elements as well so
+let's suppose we want to hide the list
+item present at odd numbers for that we
+have to write a simple code so what
+we'll do is we'll comment this as well
+because
+if you want to check it later you can
+check it from here that's why we are
+commenting all the statements so what
+we'll do here is we'll write here
+li
+and we'll write here after colon even
+fine
+then we'll write here
+fade toggle
+save it click on the button over here
+and the list elements present at 0 2 and
+4 are gone because even numbers start
+from zero
+that's why the item one three and five
+are gone and the item two and four are
+present at odd places now we can do the
+same thing for odd elements as well so
+for that we have to write here
+odd in place of even save it now
+click on the click me button and you can
+see the items 2 and 4 are gone now of
+course they'll reappear on the screen if
+we click on the button again that's
+because of the fade toggle method we
+have used we are going to discuss events
+in jquery
+we'll go through an introduction to
+events then we'll cover some particular
+type of events in this video as we have
+completed javascript before jquery so i
+hope you guys must know by now the
+definition of events so the simple
+explanation of an event is something
+that happens
+like when we manipulate an html document
+in javascript we try to do something on
+the web page right several events take
+place on a website like
+the user hosts over specific elements or
+click on an element pressing a key in
+the website can also refer to an event
+or submitting a form or playing a video
+also refers to an event in a website so
+this is the basic definition of events
+so let's go through an example of
+javascript events and we'll see what
+they actually are
+we'll create a button for calling an
+event and then we'll do same sort of
+stuff with jquery as well so let's do it
+with javascript first so first of all
+what we'll do is we'll write here
+we'll add an image on our browser so
+we'll write here img
+src is equals to images the image is
+present inside the images folder and the
+image name is
+j1.png
+then we'll write here alt and alt is
+going to be
+javascript fine
+let's give it
+an id as well so we'll write here ids
+img1 for this img tag and then we'll
+create a button over here so we'll write
+here button id is equals to let's say
+btn
+and then we have
+on click event so we'll call a function
+on clicking the button so we'll write
+here
+function function
+and then we'll
+close this tag so let's say the name of
+this button is click
+fine
+we are done with it save it so the image
+is quite large so what we'll do here is
+we'll change the size of this image so
+we'll write here width is equals to
+let's say
+250 pixels fine save it now and you can
+see the image size is fine now so what
+we did here was a primary task we have
+added an image and we are calling a
+function using the on click event it
+means that if the user clicks on this
+button then something will happen and
+for now that something depends upon us
+and we'll define it after this so
+basically something will change in the
+web page on button click fine so let's
+define this function now first
+so we'll move to a javascript file this
+is a javascript file and we'll write
+here
+function
+function fine so we have to define this
+function so what we'll do is we'll write
+here document
+dot get element by id and id of images
+image
+1 i guess let's confirm it once so the
+id of
+image tag is img1
+and then we'll write here dot
+style dot width so let's say we are
+changing the width of this
+image on
+clicking the button so we'll write here
+let's say
+500 pixels
+fine this is the size we want to change
+save it now that's it so we are doing
+all this to give you guys an idea of
+what events are in jquery and how they
+are different from events in javascript
+so this button click over here is
+basically an event if we move to html
+file and see here so this on click over
+here is
+actually an event and this event will
+call function1 so the function1 we have
+defined in a javascript file and this
+function1 will change the width of this
+image fine i hope you guys understood it
+so what we'll do now is we'll save this
+piece of code we'll go to the browser
+and click on this button so click on it
+and you can see the image size is large
+fine you can refresh it you can click on
+it and the image size is large we can
+also revert the changes by creating
+another function here like we'll write
+here function functo and then we'll give
+the original size and on clicking
+another button the image will get back
+to its original size so we can do it but
+we'll not do it as of now
+now
+similar events are present in jquery as
+well the events and functioning remain
+the same the only thing that changes in
+jquery events is the way of calling an
+event so the syntax in jquery goes like
+this
+so what we'll do is we'll remove this on
+click button from a html file
+we'll remove this on click event from
+here and now this button has an id btn
+and it's actually a button now what
+we'll do here is we'll comment this
+piece of code
+because we want you guys to see the
+difference in
+both events in javascript and jquery now
+what we'll do is we'll write here
+dollar
+inside this will access our button so
+we'll write here button button is the
+element name we are not using the id
+attribute here of course we can write
+here hash btn as well so we'll write
+here
+dot
+click and what we'll do is we'll create
+a
+function name so we will write here funk
+one and the next thing we are going to
+do here is we are going to create this
+function we are going to write here
+function func one and the rest of the
+things will remain the same so we'll
+write here dollar will access the image
+so we'll write here
+hash img1
+and then we'll write here dot css will
+pass here width
+and the width is going to be
+500 pixels fine
+fine so we are done with it this click
+function over here so if you see here
+you can see this click is a function
+basically so this click function over
+here is actually a predefined function
+in the jquery library that will be used
+to perform a specific task on the web
+page
+save it save the program now move to the
+browser click on the button and you can
+see the size is changing we can also use
+the concept of anonymous function here
+in place of creating a whole function
+like if we don't want to write here func
+one and then we don't want to create
+another function what we can do here is
+we can write here
+dollar
+button and then we'll write here dot
+click
+inside this will write function
+this is the body of this function
+we'll put semicolon over here and we'll
+copy this statement from here fine
+now comment this piece of code
+and here we have used the concept of
+anonymous function fine it's quite
+simple so save it
+and click on the button
+you can see it's working totally fine so
+this was just a tutorial of how we can
+use events in jquery so this is
+basically an introduction of events
+now next up we'll be going through an
+event that will be needing every time we
+are using jquery so what we are going to
+do is we are going to write here
+dollar and we are going to access
+document so this document refers to the
+whole html document
+and then we'll write here
+ready and then we'll write here a
+function so we'll
+create a body of this function
+now
+the ready function will be called after
+the html documents is fully loaded what
+we want to do is we want to keep the
+jquery part in a queue until the
+document is being loaded so for example
+let's say we have a big website with so
+many buttons and different things
+present inside it
+now the button will perform some actions
+on clicking right let's say the user's
+internet speed is not adequate and the
+button loads before anything else on the
+web page it will affect us right like if
+the user presses the button before
+anything loads in the web page then
+there's no way of writing any jquery for
+that right we can't do anything for that
+so what we want is we want the html
+document to be loaded fully before the
+jquery part works so for that we use the
+ready event so red is basically an event
+in jquery so make it a habit of using
+the ready event guys it is considered a
+good habit by programmers across the
+world so what we have to do is we have
+to put
+this code in a jquery part or javascript
+part and then we have to write anything
+inside of it so what we'll do is we'll
+cut it from here we'll paste it here and
+let's remove this for once so this is
+how our javascript file will look like
+after including the ready event in a
+website so what we have to do basically
+is we have to include the ready event in
+our javascript file and then we have to
+start writing code for other events as
+well we'll cover the remaining events in
+jquery and we'll see how they are
+different from javascript events
+we have been through certain types of
+events in the previous part
+we have an idea of how to call an event
+in jquery and how to use the on click
+event to manipulate the html element
+so we'll use the same code in today's
+video as we'll be going through some
+more types of jquery events and you guys
+will have an idea of several jquery
+events by the end of this tutorial so
+let's start with the first event of the
+day if you guys ever notice that some
+buttons work on double click only in
+javascript we use on double click for
+such events now jquery also supports
+such events so in jquery instead of
+using double click or on double click
+what we have to do is we'll go to this
+code and we'll write here
+double click only that's it so this is
+the event and this is the function we
+have created so what will happen is on
+double clicking this button this image
+size will change to 500 pixels rest of
+the part will remain the same now i
+suggest you guys to watch the previous
+part because we have been using the same
+code so i hope you guys have watched
+that part before going through this
+video so what we did here was we changed
+the name of click event to double click
+only and the rest will remain the same
+now save the program go to browser and
+click on this button over here you can
+see the button is not working on
+clicking it now double click on it and
+it's working totally fine right so this
+is how we can use the double click
+jquery event
+now the following events we'll cover are
+the mouse enter and mouse exit events if
+you guys remember from the animations in
+javascript video wherein we were
+changing the animation on mouse over
+then you must have noticed that we are
+using the on mouse over and on mouse out
+events right so the same events with the
+same task we have in jquery as well
+the names are mouse enter and mouse
+leave
+so here the mouse enter event represent
+the on mouse over event and the mouse
+leave event represents the on onmouseout
+event
+now the rest of the things will remain
+the same what we'll do here is
+let me just remove this piece of code
+and we'll write this code again so we'll
+write here
+dollar
+and then we'll access our image so this
+is the id of our image so we'll write a
+hash
+img1 and then we'll write here
+mouse enter
+and then we'll create a function over
+here
+so function totally depends upon us we
+can create an anonymous function or we
+can create a separate function as well
+so what we'll do here is we'll write
+here inside this function
+dollar and will again access this image
+so we'll write here img1
+dot
+css and then we'll pass the styles over
+here we'll write here width and we'll
+change the width of this image to
+500 pixels
+fine
+now the next thing we'll do is we'll
+write the code for mouse leave event as
+well so if you save this program for now
+and you can go over here on the browser
+and hover your mouse cursor over the
+image you can see the size is changing
+now what we'll do is we'll write the
+code for mouse leave event as well so
+for that we'll write here
+dollar
+and then we'll access the image again
+we'll write here mg1
+dot mouse leaf
+and then we'll create a function over
+here so we'll write here function and
+the function will be responsible for the
+change in size of this image so we'll
+write here dollar
+then we'll again access the
+image so we'll write here img1
+then we'll write your dot css and then
+we'll write here
+width
+is going to be again to the default ones
+so the default width is i guess 250
+pixels let's check it out over here
+so if you can see here the width of this
+image is 250 pixels right so what we'll
+do is
+we are done with it we'll save this
+program
+and now go over to the browser you can
+see that the image size increases on
+taking the mouse cursor over it and the
+image gets back to its original size on
+taking the mouse cursor away from it
+so simple and so easy right
+now there exists a common event that can
+act like both the mouse enter event and
+the mouse leave event so the whole event
+is used to do so it takes two arguments
+and the rest will remain the same so
+what we'll do is
+we'll comment this piece of code for now
+and we'll write an alternate code for
+this
+so we'll write here
+dollar and then we'll access the image
+so we'll write here
+hash
+one then we'll write here hover
+we'll write here
+funk1 and
+fung2 so these are the two functions we
+are going to create so next up let's
+create these functions so we'll write
+your function
+func one this is our first function and
+then inside this will write dollar
+will access the image again so we'll
+write here img1
+dot css dot
+okay dot css then we'll write here width
+and the width is going to be
+let's suppose 500 pixels for onmouseover
+event and then we'll create another
+function over here we'll write your
+function funct2
+now inside the body of this function
+what we are going to do is we are going
+to copy this piece of code from here and
+then we'll paste it here fine now
+instead of 500 pixels we want the image
+to get back to its original form so
+we'll write here
+250 pixels only
+so here we are we are done with the
+programming part now save this program
+and you can see it over here that we
+have the exact same functionality like
+that of mouse enter and mouse leave
+events so the whole event works almost
+the same
+we'll look at different effects present
+in jquery and we'll see how easy it is
+to use those effects
+let's start this video with a simple
+definition of effects in layman terms an
+effect refers to an event condition or
+state of affairs produced by a cause for
+example we click on a button on the
+website and suddenly the image
+disappears this refers to the fade in
+effect and then we click on another
+button and the image is back the fade
+out effect right we have been through
+such effects and animations previously
+in the javascript part as well if you
+guys remember we have the zoom in and
+zoom out effects as well wherein we were
+clicking on a button and the size of the
+image changes to large and all of that
+stuff refers to effects and animations i
+hope you guys must have got an idea
+about what we'll be doing in this
+particular video first of all we'll add
+an image to a html file and then we'll
+use different effects on that particular
+image the task is straightforward right
+so let's move on to the programming part
+directly now let's add an image over
+here on the browser first we can create
+a container as well but let's do it with
+images only for now because it will be
+easy and more understanding for you guys
+so we'll go through the hide and show
+effect first
+so we'll add an image and three buttons
+to our webpage
+one for hiding another one for showing
+and
+last one for both so you will understand
+it much better while working on them so
+let's add the image and buttons over
+here
+we'll write here
+img
+src is going to be
+images slash
+j1.png
+then we'll write here alt as
+javascript so this is a basic image we
+have in a images folder we'll write here
+id as img1 for this image and the width
+is let's say
+250 pixels for this image fine
+save this program and you can see the
+image over here on the browser now the
+next thing we are going to do is we are
+going to add buttons as well so we'll
+write here
+button and let's say the id of this
+button is going to be
+btn1 for button one
+will write here height
+then we'll copy this statement from here
+and we'll paste it three times
+the button id is going to be two and
+three
+and the button name is going to be
+show and
+let's say the last button name is toggle
+fine
+so here we are we have an image over
+here and three buttons for different
+tasks what we want is we want to hide
+the image by clicking on the hide button
+and we want the image to get back on the
+web page by clicking on the show button
+fine so what we'll do here is we'll use
+the
+br tag as well so we will write here
+br twice and here you can see we have
+three buttons over here let me zoom it
+out a bit
+so we have three buttons over here hide
+show and toggle so these three buttons
+have three different ids btn one two and
+three and we have an image over here
+fine now let's move on to the jquery
+part and we'll see how easy it is to
+perform such tasks in jquery
+so here is a javascript file and we have
+the ready function over here already so
+we'll write a code inside this
+particular event only
+now what we'll do is we'll write here
+dollar
+and then we'll write here
+button1 will access this button with
+idbtn1
+then we'll write here click click is the
+event
+and we'll write your function and the
+function is going to be an anonymous
+function fine next up we'll write a
+dollar
+then we'll access
+the image with id as img1
+then we'll write here dot height
+and that's it so what we did here was
+easy we use the click event and hide
+effect
+hide here is actually a predefined
+function in jquery that will make the
+desired element completely hidden from
+the web page so let's check the output
+for this code first save the program
+move to the browser
+and click on the hide button over here
+so you can see the image is completely
+gone from the web page it's not present
+here anymore
+and you guys can see how easy it is to
+perform such tasks in jquery because we
+have a predefined function already
+present in our jquery file isn't it
+great we don't have to write long code
+for a small task right all we need to do
+is to write a single line of code and we
+are good fine
+so let's write the same code for the
+show button as well now we need to
+access the button with ids btn2 and the
+action will change to show
+so what we'll do here is we'll copy this
+piece of code from here
+and we'll paste it here again now
+the next thing we'll be doing here is
+we'll be changing the id to btn2
+and the height function will change to
+show here fine now save the program move
+to the browser and you can see we have
+both the buttons working over here if we
+click on this height button the image is
+hidden and if we click on this show
+button you can see the image is here
+again so these two buttons are working
+totally fine you can see
+if we click on the show button the image
+is back here again
+now if we want this task to be performed
+after 2 seconds let's say we can say we
+want the image to take 2 seconds to hide
+and we know that in javascript we can
+use the set time interval method or the
+settimeout method something like that
+but in jquery we have an easy
+alternative for this so what we have to
+do is we have to write here
+inside this height action we'll write
+here 2000 similarly we'll do the same
+thing for show as well we'll write here
+2000 now 2000 here refers to
+two seconds fine
+save the program
+click on the hide button now and you can
+see the image is taking two seconds to
+get completely hidden similar thing will
+happen with the show button as well if
+we click on the show button you can see
+the image takes two seconds for that as
+well
+so it's working totally fine right it
+seems like the fade in and fade out
+effects but there is a difference
+between this effect and the fade in and
+fade out effect we'll go through it in a
+moment
+for now what we'll do is we'll add
+functionality to this toggle button over
+here now this toggle button over here
+has the capability to perform both tasks
+using a single button what i mean by
+that is we don't have to create two
+separate buttons for hiding and showing
+the image what we can do is we can also
+use a single button for this task so
+let's add functionality to this button
+first and for that we'll write here
+dollar the id for this toggle button is
+hash btn3
+then we'll write here dot click
+and we are going to create an anonymous
+function
+now inside the body of this function
+will again access the image
+so we'll write here hash img1
+then we'll write here dot
+toggle fine
+let's change the timing here let's say
+we want this to take three seconds on
+using the toggle button now save this
+program click on the hide and show
+button and you can see they are taking
+two seconds to complete the task right
+two seconds to hide the image and two
+seconds to show the image again now the
+toggle button will work differently but
+the toggle button will do is on clicking
+the toggle button it will take three
+seconds to hide the image and if we
+click on this button again you can see
+after three seconds the image is back
+here again fine the toggle function over
+here is written in such a way that it
+can perform the tasks of both the height
+and the shoe functions
+the time we mentioned here totally
+depends upon us so we can either use it
+or we can leave it as well now moving
+ahead we have another type of effect
+present in jquery which acts almost the
+same as the hide and show functions but
+the animations is slightly different
+so we are talking about the fade in and
+the fade out effects in jquery we'll go
+through them now and we'll see the
+difference between hide show toggle and
+fade in fade out and fade toggle fine so
+what we'll do is we'll add three more
+buttons in a html file so that we can
+witness the difference between all of
+them so what we'll do is we'll copy this
+piece of code from here
+we'll paste it here
+and we'll write here the button ids 4 5
+and 6.
+now the button names are going to be
+fading and the second button is going to
+be
+fade out
+and the last one is going to be
+fade toggle fine
+save the program
+and you can see we have three more
+buttons over here now you guys will get
+confused but don't worry about it it's
+an easy task
+so what we'll do now is we'll use jquery
+for fading in and out this particular
+image
+now the syntax will remain the same so
+we'll move to a javascript file
+and now what we'll do is we'll access
+button four five and six which are fade
+in fade out and fade toggle so we'll
+write here
+hash
+btn 4
+for the fade in button so we'll write
+here dot
+click
+and on clicking we'll call an anonymous
+function again
+and then we'll access the image over
+here so the image id is img1
+then we'll write here dot
+fade in and we'll
+pass the timestamp as well so let's say
+the timestamp is 2000 for this fade in
+function
+fine
+now we'll do the same for fade out as
+well so we'll copy this from here we'll
+paste it here
+the button id is going to be 5 and
+instead of fade in we have
+fade out over here
+fine so we have to write here fade out
+with a capital o and fade in with a
+capital i
+now we have written the code for both
+fade in and fade out buttons here so
+that it will not create any sort of
+confusion for you guys
+the fade out effects work the same as
+the hide effect and the fade in effect
+works the same way as the show effect
+fine
+so save this piece of code click on
+height and you can see these functions
+are working totally fine
+the hide and show buttons are working
+totally fine now click on this fade out
+button and you can see the image fading
+out in two seconds click on the fade in
+button and the image is here back again
+after two seconds
+so these two buttons are working totally
+fine
+the fade toggle effect the last button
+over here will write the code for this
+button as well so this fit toggle effect
+in jquery acts the same as the toggle
+effect it can work like the fade in and
+the fade out button so let's write the
+code for that as well what we'll do is
+we'll copy this piece of code from here
+and we'll paste it here the button id is
+6
+and instead of fade out
+we'll write here
+fit
+toggle fine
+now save this program
+and you can see the button over here is
+working totally fine on clicking fade
+toggle the image fades away after two
+seconds or we can say it's taking two
+seconds to fade away and on clicking the
+sway toggle button again you can see the
+image is here again
+we can see the difference here as well
+between the height show and fade in fade
+out effects
+the fade effect is different from the
+other effect the syntax although seems
+to be the same and no significant
+differences in the syntax and the
+working the only different thing is the
+way of achieving the desired effect
+you can see the difference by clicking
+the button you can see on clicking the
+hide effect the animation is different
+from that in fade in or fade out effect
+you can see there is a difference of
+animations only
+now let's move ahead and talk about
+another effect in jquery
+the upcoming effect will discuss is the
+slide effect the syntax is same so let's
+go through the slide effect quickly
+now what we'll do is we'll add three
+buttons and we'll discuss the slide
+effect fine so what we'll do here is
+let's remove these buttons
+and
+okay so let's do one thing let's remove
+these three buttons
+and we'll write here
+id is 7
+8 and
+9. fine
+and then we'll change the name of these
+buttons so we'll write here
+slide up
+slide down
+and
+let's say
+slide toggle fine now i hope you guys
+must have understood the working of
+slide toggle by now it will work in both
+ways it will make the
+image slide up and slide down at the
+same time by using a single button so
+don't worry about it we'll remove these
+br tags from here and we'll paste them
+here
+save this program now and we have three
+buttons over here slide up slide down
+and slide toggle now what we'll do is
+we'll remove this piece of code as well
+i hope you guys must have got it by now
+the next thing we are going to do is we
+are going to write the code for slide
+effect
+fine the syntax remains the same so we
+will write here dollar
+the button id is going to be btn7
+for slide button for slide up button
+we'll write here the click event and
+we'll create a function over here
+fine the task will remain the same we'll
+write here again
+img1 will access this particular image
+and will write here
+slide up
+we want this image to take two seconds
+to slide up so we'll write here 2000 as
+the timestamp
+now save this program and click on the
+slide up button over here
+you can see the image sliding in the
+upward direction right now what we'll do
+is we'll write the code for slide down
+and slide toggle as well
+so we'll write here button
+8 for slide down
+will right here slide down instead of
+slide up
+and we'll write here slide
+toggle fine we'll write here btn 9 for
+slide toggle
+save the program and you can see on the
+browser that all the buttons are working
+totally fine if we click on slide up
+button the slide up button is working
+fine the slide down button is also
+working fine and if we click on the
+slide toggle button you can see the
+image is sliding up and down as well so
+before wrapping up this video now let me
+tell you guys about the stop method as
+well so what we'll do is we'll add
+another stop button on our webpage we'll
+move to a html file
+will copy this particular statement from
+here
+we'll change the name of this button to
+stop
+and the button add is going to be btn10
+fine save this program now
+we'll move to a javascript file and
+we'll write here
+dollar will access this stop button so
+we'll write here btn10
+dot click
+and we'll create a function over here
+now inside this function will write hash
+img1
+will access this image and then we'll
+write here
+dot stop so we are calling a function
+over here so stop is a function
+basically now save the program and move
+to the browser now you can see if we
+click on this stop button when the
+effect is taking place
+so if we click on this slider button and
+then in between we click on this stop
+button you can see the difference over
+here we can slide down the image from
+here and
+we can do the same thing
+with the stop button so what stop button
+is doing is it stops the effect in
+between
+right
+you can see all the buttons over here
+are working totally fine and we can
+stop this effect in between right
+so this is why we use jquery for such
+tedious tasks a single line of code can
+do it so quickly and so easily right
+so these are some of the significant
+effects we have in jquery and they are
+pretty easy to use as well
+we are going to discuss the jquery
+animate effect
+we discussed jquery effects and we know
+how to use certain effects like fade in
+fade out and the scroll up scroll down
+effect to make changes in html documents
+today we'll take a look at the jquery
+animate effect in particular here's the
+code from the last part wherein we use
+the scroll effect in an image
+the image slides up on clicking the
+slide up button
+and the image slides down on clicking
+the slide down button we can also stop
+the sliding effect in between by
+clicking on this stop button as well so
+far we have been using these effects to
+make our web pages more interactive
+right
+now this animate effect we'll use in
+today's video is a bit different from
+these effects the animate effect uses
+css properties and it can be used to
+make an image or an object like a
+rectangle or something move across the
+web page in a particular manner
+seems confusing right so let's start
+writing the code and everything will be
+clear to you guys we'll be using an
+image for this task so let's remove all
+this code from here first we'll write
+the code again
+now we'll remove this code from here
+and we'll write the code again so let's
+add the image over here and then we'll
+style that image using the style tag
+only so we will write here
+div will be using a container for this
+inside this will write img
+now src is going to be images
+slash
+j1.png so we'll be using the same image
+for this task
+then we'll write here alt
+so let's say we are writing here
+something and then we'll write here ids
+img let's say fine
+let's close this image tag save the
+program now and you can see the image
+over here the image size is quite large
+we can reduce the size of a chrome
+browser so you can see this is the image
+now what we'll do next is we'll style
+this image using the style tag so let's
+style this image as well here we'll move
+to a head tag and we'll write here
+style
+fine
+now inside the style tag we'll access
+this image using the image id so id for
+this image is img we'll write here img
+and then inside this will write some
+properties over here so let's define the
+height of this image first
+let's say the height is going to be 250
+pixels
+then we'll write here
+width as well so let's say the width is
+again 250 pixels
+and we'll use opacity over here fine
+we'll write here opacity is equals to
+let's say 0.4
+we'll discuss it later why we are using
+opacity here
+now the last thing we are going to do is
+we are going to write here position as
+absolute
+so opacity here will define the fading
+effect of this image save this program
+and you can see it here on the browser
+we have a picture with an opacity of 0.4
+it's obviously different from the actual
+image let's increase the size of this
+image for now
+so here is the image
+now the next thing we'll be doing is
+we'll be adding a button over here to
+call the animate effect for that we'll
+write here after this
+button and the button id is going to be
+let's say btn
+then we'll write here the name of our
+button is let's say animate
+save this piece of code and you can see
+we have the animate button over here
+we'll use the br tag to create some
+distance between the button and the
+image so save this program and you can
+see over here that we have a button and
+an image
+now we'll use the animate effect to make
+this picture move across the browser or
+we can say across the container
+so we'll use the click event for the
+animate button
+now let's move on to the jquery part
+here we are in the jquery part we'll
+remove this piece of code and now we'll
+try to access this animate button using
+the button id fine so for that we'll
+write here dollar
+inside this we'll write
+btn so this is our button id
+and then we'll write here dot click we
+are going to use the click event over
+here
+then we'll create an anonymous function
+this task is easy and here we are we
+have used the click event here so the
+next thing we'll be doing is to use the
+animate effect now so for that we'll
+write here
+dollar now we are going to use this
+animate effect over a image so the image
+id is img and then we'll write it dot
+animate
+and we'll leave it for now
+now this animate effect over here has
+three different parameters the first one
+are going to be the css properties the
+style changes we are going to create on
+a picture so we'll write those changes
+inside the curly braces the second
+parameter is the timestamp
+and let's say we are using 2000 over
+here so 2000 over here is the
+milliseconds
+now the third parameter which is the
+callback we'll be discussing callback in
+the upcoming videos for now we'll use
+these two parameters only
+now let's move ahead and we'll write the
+css properties here inside these curly
+braces
+so we'll write over here let's say we
+are writing here left
+and we'll write here left as
+150 pixels fine
+now this left property over here will
+take the image 150 pixels away from the
+left side of the container
+so save this program and now you can
+witness the changes on this web page
+click on the animate button
+and you can see the image slides over to
+the right corner the animation takes two
+seconds to complete because we have
+given the timestamp here as 2000
+milliseconds let's reduce the size of
+this chrome browser a bit and now you
+can see it properly refresh the page and
+we'll click on this animate button and
+you can see the image slides over the
+effect is working fine let's make some
+more changes to this image style by
+clicking the animate button
+all we have to do is to add some more
+css properties to this animate effect
+and for that we'll write here some more
+properties with the help of commas only
+so we'll put a comma over here and we'll
+write here let's say
+opacity so we'll change the opacity of
+this image to
+1
+then we'll again use the comma and
+change the height and width as well so
+let's say the height is going to be 400
+pixels
+and then we'll write here width as well
+fine so width is going to be again 400
+pixels
+so we are done with it now the height
+and width of this image will change to
+400 pixels along with the opacity
+changing to one
+it means that the image will be
+completely opaque after clicking on the
+animate button save this program now and
+move to the browser click on the animate
+button here to see the magic now
+you can see the size of the image
+increasing gradually here in 2 seconds
+however this animate method does not
+have any toggle function though so we
+can't retrieve the changes just by
+clicking on the button again let me
+reduce the size a bit more so that it
+will be easy for you guys to understand
+this effect
+here we are we have this effect click on
+the animate button and you can see the
+change now
+from opacity as 0.4 to opacity as 1.
+there are some changes in the animations
+right so this is what animate effect
+does in jquery
+now instead of writing here 2000 what we
+can do is we can write here slow or fast
+so let's try doing it as well what we'll
+do is we'll write here instead of 2000
+we'll write here slow for now so we'll
+write here slow save this program click
+on the animate button again and you can
+see the change
+so it's not taking two seconds anymore
+now the slow keyword will work and the
+animation effect will change fine
+and with that we come to the end of this
+jquery basics tutorial if you enjoyed
+watching the video do give it a thumbs
+up comment your doubts below and our
+experts will answer them for you thank
+you so much for being here watch out for
+more videos from us until then keep
+learning and stay tuned to simply
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

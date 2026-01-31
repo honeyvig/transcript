@@ -1,0 +1,258 @@
+hello everyone i hope you're doing good
+and staying safe welcome to another
+interesting tutorial on sql joins by
+simply learn in today's session we'll
+learn what exactly is sql join and its
+various types as the name suggests join
+means to combine something in a similar
+way sql join is used to combine records
+from two or more tables in a database
+more on that soon but before we get
+started if you are tech geek and the
+pursuit of learning new technologies
+consider getting subscribed to our
+channel simply learn to stay updated
+with all the latest tech content and hit
+that bell icon to never miss an update
+from us so without any further delay
+let's get started with today's topic
+firstly let us discuss the agenda for
+today's session we'll start the tutorial
+by understanding what is sql join and
+then we'll discuss why we use sql join
+and then we'll go through different
+types of sql joins such as sql inner
+join sql outer join sqlf join and
+finally sql right join
+so without any further delay let us dive
+straight into today's topic so what is
+sql join in relational databases the
+information you want to retrieve is
+often stored in various different tables
+in such scenarios you'll need to join
+these tables to view data in a much
+better way this is where sql join comes
+into picture sql joins is widely used
+clause in s in sql essentially to
+combine and retrieve data from two or
+more tables
+based on related columns or you can say
+common fields between them now consider
+two tables here table one has three
+columns abc and three records let's say
+for reference we'll take them as one two
+three similarly table two also has three
+columns bcd and three records three four
+five here i have taken a different color
+combination to represent values that are
+present in various columns now instead
+of querying each table every time to
+retrieve data i'll simply join these two
+tables and this will be the following
+resultant table
+also make sure when you're joining two
+tables it should compulsorily have a
+common column here c is the common field
+which forms the basis to join these two
+tables here
+why we use sql join
+flexibility sql join allows the user to
+access and manage records from more than
+one table easily
+let us understand with an example
+consider mercedes-benz which is one of
+the leading car manufacturers in the
+world and let's say they want to access
+the records of the customers from the
+database now in the database let us take
+they have various different kinds of
+tables such as customer table order
+table vehicle table now if they want to
+get the vehicle details of so and so
+customer xyz for that they have to first
+query the cursor table to get the
+customer id now if once if they get the
+customer id they have to query the order
+table to get the order id and finally
+with the help of order id they can get
+the vehicle details now as you can see
+this is a time taking process and hectic
+at the same time now instead of that
+i'll just simply join these tables
+which will allow the users to combine
+rows from two or more tables based on
+different types of conditions in this
+way you can access and manage your
+records easily
+data redundancy sql join allows
+the user to maintain data redundancy as
+much as low as possible so that we can
+maintain the amount of data anomalies
+that is the duplicate values that are
+repeated in various tables in the
+database
+finally efficiency sql join executes the
+query faster and shows the result much
+more quickly because instead of using
+various sub queries for each and every
+table individually we can just simply
+join uh two tables using a
+simple single query
+types of sql joins sql joins are broadly
+classified into four types they are
+inner join outer join left join right
+join and additionally we also have cross
+join which is not that significant uh in
+its usage because most of the times we
+use the first four joints
+now that we have gone through different
+types of sql joins let us discuss each
+of them in detail
+firstly let us discuss about sql inner
+join sql inner join joins two tables
+based on a common column and selects the
+records that have matching values in
+these columns
+now when the condition
+is applied for these columns the query
+checks all the rows of table 1 and table
+2. only the rows that satisfy the join
+predicate are included in the resultant
+table
+let us now understand the uh syntax of
+the sql inner join the syntax is
+followed as select table one dot column
+one table one dot column two table do
+dot column one and so on from table one
+inner join table two on table one dot
+column equals to table two dot column
+now inner join syntax basically compares
+rows of table one with table two to
+check if any anything matches based on
+the condition provided in the on clause
+and when the condition is met it returns
+matched rows in both tables with the
+selected columns in the select clause
+let us now discuss about the sql outer
+join sql outer join or else it is called
+as sql full join or full outer join is
+used to get all the rows which are
+present in both the tables that means it
+will return all the records which are
+present in either left table that is the
+table 1 or the right table that is table
+2 even if there are no matching records
+present in both the tables let us now
+understand the syntax the syntax remains
+same that is select table 1 dot column 1
+table one dot column two and so on up to
+table two dot column two from table one
+full outer join is the keyword that we
+use here table two on table one dot
+column equals to table two dot column
+now here you have to mention the uh the
+same or the similar column name in the
+after the on predicate statement
+next we have sql left join
+left join or left outer join also known
+as left join results in a table
+containing all the rows from the table
+on the left side of the join that is the
+first table and only the rows that
+satisfy the join condition from the
+table on the right side of the join that
+is the second table any missing values
+for the rows from the right table in the
+result of the join tables are
+represented by null values let's look at
+the syntax the syntax is followed as
+select column list that is the column
+that you want to uh display in your
+table now make sure you maintain the uh
+syntax of the column list that is the
+table name dot column name otherwise it
+will throw an error so let me just
+repeat the syntax the syntax is select
+column list from table one the keyword
+that we use here is left join table two
+on table one dot column equals to table
+two dot column
+so in this way you can use the left join
+to display the records
+next finally we have the uh sql right
+join now
+right join or right outer join is
+opposite to that of the left outer join
+now it follows the same rules as the
+left join and the only difference is
+that all the rows from the right table
+and only the conditions satisfying the
+rows from the left table are present in
+the resultant table that means it will
+return all the rows from the right table
+and all the matching records that are
+present in the left table the syntax
+remains the same that is select column
+list that you want to display in your
+table from table 1 write join is the
+keyword we use table 2 on table 1 dot
+column equals to table two dot column
+now to sum up all these different sql
+joins and how they work i've taken a
+graphical representation of two
+different tables here which will help us
+visualize the real time working of sql
+joins now consider table one here which
+is columns a and b and records uh two
+different records let's say record zero
+record one and similarly we have table
+two which have uh columns a and c and
+two records that is record zero and
+record two now if you apply left join
+and by the definition of left join it
+will only uh return those values which
+will which are present in the left table
+and the matching records that are
+present in the right table now here the
+uh
+matching value that are present in both
+the tables is zero and they require
+values that are present in the left
+table is one and if you consider the
+right join it will match the request
+from both the tables and it will display
+the only the values from the right table
+that is the reason it is being displayed
+uh the record zero and the record two
+and if you look at the inner join it
+will match
+uh the values from both the tables now
+the common value that is present in both
+the tables is record 0
+and if you finally look at the outer
+join it will record it will return all
+the values from both the tables
+irrespective if they are matching or not
+that is the reason
+all the records that is record 0 record
+1 and record 2 are being displayed
+and with that we have come to the end of
+today's session that was all about sql
+joins stay tuned for more upcoming
+videos veren will execute all these
+types of joints in mysql workbench using
+various examples thank you for watching
+the video guys i hope you found this
+tutorial useful and informative if you
+have any further queries regarding any
+of the topics covered in the uh tutorial
+feel free to let us know in the comment
+section below and a team of experts will
+be more than happy to resolve all your
+queries at the earliest until next time
+stay safe and keep coding
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

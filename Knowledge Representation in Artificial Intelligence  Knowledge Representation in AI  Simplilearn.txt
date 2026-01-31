@@ -1,0 +1,342 @@
+foreign
+to enable a computer system to
+understand human language it must have a
+way to represent knowledge and meaning
+in a form that system can work with this
+is where knowledge representation comes
+in
+knowledge representation involves
+designing a formal approach to represent
+knowledge in a way a computer can
+process
+in artificial intelligence knowledge
+representation is the process of
+presenting information about the real
+world in a way that a computer system
+can comprehend and use knowledge
+representation aims to give computers a
+method to reason about the real world
+make choices and Reserve issues based on
+the information that is available to
+them natural language processing relies
+heavily on the knowledge representation
+since it gives the text Data a way to
+represent and manipulate meaning NLP
+deals with understanding and processing
+human language which involves
+understanding the meaning of words and
+sentence in NLP knowledge representation
+represents meaning in text Data such as
+sentences paragraphs and documents this
+representation enables NLP systems to
+analyze and manipulate the meaning of
+Text data in various ways such as
+information retrieval question answering
+text summarization sentiment analysis
+and Mission translation overall
+knowledge representation is a crucial
+component of NLP because it gives text
+Data with ability to represent and
+manipulate meaning which is necessary
+for computers to understand and process
+human language of after all NLP is a
+subfield of artificial intelligence that
+deals with the interaction between
+computers and humans using natural
+language NLP involves in a wide range of
+tasks such as text classification
+Mission translation chatbots and many
+more if you want to become an expert in
+the field of AI and ml then take up the
+professional certificate program in Ai
+and ml by simplyler and master those
+necessary skills check out the link in
+the description for more details
+knowledge representation is a critical
+component of artificial intelligence and
+a rapidly growing field there are many
+exciting career opportunities available
+for professionals with expertise in this
+area some of the most popular career
+paths in knowledge representation and AI
+include AI engineer natural language
+processing specialist EI researcher
+knowledge engineer chatbot developer
+data scientist and many more the average
+base income of an AI engineer in India
+is rupees 9 lakh 80 000 per year whereas
+the average base pay of an AI engineer
+in the United States is dollar
+1285 per annum it's worth noting that AI
+is a rapidly growing field in India as
+there is a high demand for skilled
+Professionals in this area which can
+result in higher salaries and attractive
+compensation package for qualified
+candidates on that note welcome to the
+simply learn YouTube channel today we
+are here with an interesting video on
+knowledge representation in EI without
+any further delay let's have a look at
+the agenda so first we'll start with
+what is knowledge representation next
+what kind of knowledge to represent in
+AI advancing we will understand the
+types of knowledge moving ahead let's
+have a look at the AI knowledge cycle
+and then the properties and finally the
+approaches of knowledge representation
+before going deep into the topic let us
+understand knowledge representation with
+an example so imagine you are organizing
+a party and you need to keep a track of
+your guest dietary restrictions so you
+could represent this information in a
+table that lists each guest and their
+dietary restriction
+so in this table each row represents a
+guest and the column represent their
+name and dietary restriction organizing
+this information in a structured way
+allows you to reference it as needed
+throughout the party planning process
+quickly so this is an example of
+knowledge representation because you are
+using a system to represent information
+meaningfully that can be easily accessed
+and used other example of knowledge
+representation include using a graph to
+represent relationships between concept
+or a decision tree to represent a
+decision making process now we got a
+basic idea of what is knowledge
+representation in EI so moving ahead
+let's have a look at the various kinds
+of knowledge that AI needs to represent
+so first object so an object is a thing
+or entity that can be identified and
+described so for example a car a person
+or a book are all objects
+coming to events and event happens at a
+specific time and place for example a
+wedding a concert or a game or all
+events next is performance performance
+is a measure of how well a task is
+accomplished for example in sports
+performance might be how many points a
+player scores or how fast a runner
+completes a race
+next we have meta knowledge So Meta
+knowledge refers to knowledge about
+knowledge it is the knowledge that
+describes how other pieces of knowledge
+are related to each other for example
+knowing that a car is a type of vehicle
+is an example of meta knowledge
+next we have facts so facts are
+statements that are true or false for
+example this guy is blue is a fact
+knowledge base a knowledge base is a
+collection of knowledge and information
+that is organized and stored in a
+specific way for example a customer
+information database is a type of
+knowledge base to provide an example of
+these Concepts consider the domain of a
+car dealership in this domain an object
+might be a specific car model such as
+the Toyota Camry and even may be a test
+driver or a purchase of a car so
+performance might be how well a
+salesperson can sell a specific car
+model and meta knowledge suggests that
+the Toyota Camry is a certain type a
+fact might be that the Cadbury has a
+particular fuel efficiency rating
+finally the knowledge base might include
+information about the customer
+preference sales data and vehicle
+specification so next let's discuss on
+the types of knowledges first we have
+declarative knowledge this is factual
+knowledge about the world including
+information about objects Concepts
+events and relationships declarative
+knowledge can be represented as a set of
+propositions or statements
+next we have procedural knowledge this
+is knowledge about how to do things
+including skills procedures and
+techniques so procedural knowledge can
+be represented as a set of rules or
+algorithms
+and next we have meta knowledge So Meta
+knowledge refers to the knowledge that
+describes or characterize other
+knowledge it provides information about
+other knowledge properties relationships
+and context
+next we have heuristic knowledge refers
+to knowledge occurring those trial and
+error and it often based on experienced
+rather than formal rules or logical
+reasoning
+and finally we have structural knowledge
+structural knowledge refers to the
+organization and arrangement of
+information or data meaningfully
+structural knowledge is used to create
+models that describes the relationships
+between different concepts or entities
+in knowledge representation so following
+to this we have cycle of knowledge
+representation in AI so perception so
+perception is the process by which
+information is gathered through the
+sense and processed by the brain in the
+context of knowledge representation
+perception refers to the ability of an
+AI system to sense and interact with the
+real world and extract meaningful
+information from it then we have
+learning so learning is gaining new
+knowledge skills or behavior through
+experience study or instruction in the
+context of knowledge representation
+learning refers to the ability of a
+system to occur new information and
+modify its internal knowledge
+representation based on that information
+and then we have knowledge
+representation and reasoning so
+knowledge representation is creating a
+model of knowledge in a computer system
+that can be used for reasoning and
+decision making the reasoning is used
+that model to conclude make inferences
+and solve problems so in the context of
+knowledge representation the goal is to
+represent knowledge in a way that it is
+efficient and effective for reasoning
+and then we have planning planning is
+creating a sequence of actions to
+achieve a goal in the context of
+knowledge representation planning refers
+to the ability of a system to create a
+plan of action based on its internal
+knowledge representation and finally we
+have execution execution is a process of
+carrying out a plan of action in the
+context of knowledge representation
+execution refers to the ability of the
+system to implement a plan of action
+based on its internal knowledge
+representation and the environment
+Factor it perceives now let's discuss
+the properties different properties of
+knowledge representation including
+expressiveness a knowledge
+representations system should be able to
+express a wide range of Concepts and
+relationships between them the next
+property is inferential adequacy a
+knowledge representation system should
+support the ability to reason with the
+represented knowledge the next property
+is efficiency a knowledge representation
+system should be able to manipulate and
+retrieve knowledge efficiently
+next transparency
+a knowledge representation system should
+be transferred to the user allowing them
+to understand and modify the knowledge
+quickly and finally scalability a
+knowledge representation system should
+be able to handle large amounts of data
+and still maintain its efficiency and
+expressiveness moving ahead let's have a
+look at the approaches of knowledge
+representation knowledge representation
+is an essential aspect of artificial
+intelligence that involves organizing
+and structuring knowledge in a way that
+computer systems can effectively utilize
+there are different approaches of
+knowledge representation in AI including
+simple relational inheritable
+inferential and procedural knowledge so
+let's explore each of these approaches
+of knowledge representation with an
+example first we have SIMPLE relational
+knowledge this type of knowledge
+representation involves organizing
+knowledge through relationships between
+entities or objects simple relational
+knowledge is typically a set of rules
+defining the relationships between
+different objects for example a simple
+relational knowledge representation for
+a family could be John is the father of
+Mary Mary is the sister of Peter Peter
+is the son of John next inheritable
+knowledge inheritable knowledge
+represents the knowledge that can be
+passed on from one object or entity to
+another so this type of knowledge
+representation is often used to
+represent hierarchical relationships
+between objects for example an animal
+that belongs to the class of mammals
+inherits all the attributes of its
+parent class so in this case the
+inheritable knowledge is represented as
+mammals are warm blooded animals dogs
+are mammals therefore dogs are also
+warm-bladed animals next inferential
+knowledge inferential knowledge
+represents knowledge derived from
+another knowledge so this type of
+knowledge representation is often used
+to represent logical relationships
+between objects for example in a medical
+diagnosis system a doctor might infer a
+patient's condition based on their
+symptoms so the inferential knowledge is
+represented as if a patient has a fever
+and a cough they might have pneumonia
+the patient has a fever and a cough
+therefore the patient might have
+pneumonia next procedural knowledge
+procedural knowledge represents the
+knowledge that involves a sequence of
+actions or steps to achieve a particular
+goal so this knowledge representation is
+often used in expert systems or
+intelligent agents performing tasks or
+solving problems for example a
+procedural knowledge representation for
+making a cup of tea could be boiled
+water in a kettle put a tea bag in a cup
+pour the hot water into the cup wait for
+a few minutes remove the tea bag and add
+sugar or milk as desired so overall
+knowledge representation is a critical
+aspect of AI and different types of
+knowledge representation helps to
+organize knowledge in ways that the
+computer system can effectively utilize
+so guys what are your thoughts on how
+effective knowledge representation is
+for AI system do let me know in the
+comment section if you like this video
+share it with your friends before I sign
+off make sure you subscribe to our
+Channel and hit the Bell icon to get all
+the updates we'll be back with more such
+interesting videos until then keep
+learning and stay tuned to Simply learn
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

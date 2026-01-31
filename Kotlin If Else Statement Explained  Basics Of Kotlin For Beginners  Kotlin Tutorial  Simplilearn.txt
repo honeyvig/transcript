@@ -1,0 +1,422 @@
+hey everyone welcome back to another
+video tutorial by simply learn in this
+video session we will be learning about
+if else in kotlin
+so let's go ahead and have a look at
+what we will be covering today
+so we'll start with conditionals in
+kotlin then we'll understand different
+types of effects expressions like if
+expressions if else expression
+if else if ladder expression and
+courtlin nested if expression
+but before we begin
+make sure to subscribe to our channel
+and press the bell icon to never miss an
+update from simply learn
+now let's move on to the first topic
+which is
+conditionals in kotlin
+conditional expression refers to a
+situation that may happen or exist if a
+specific condition is met
+for example there's a statement like
+we can sit on the front benches if we
+reached before the given time
+now here the conditional statement is
+if we reached before the given time
+and the main clause is
+we can sit on the front benches
+so here sitting on the front bench which
+is a main clause is dependent on
+if they reach before the time
+so now
+there are some conditionals in kotlin
+like if else and else if
+so let's have a look at that first is if
+statement
+if is used when a block of code must be
+executed based on the condition to be
+true
+second is else statement
+else is used when a block of code must
+be executed if the same condition is
+false
+third is else if statement
+elsif is used to specify a new condition
+if the previous condition is false
+we will understand them in detail
+now moving on to different types of if
+else expressions
+first is if expression
+second is if else expression third is
+if else if ladder expression and fourth
+is nested if expression
+now let's understand the if expression
+first
+if expression is a conditional statement
+which checks if a particular condition
+is satisfied
+the condition is specified inside the if
+brackets and it checks if it met the
+condition or not
+if they met the condition then the block
+will execute otherwise not
+as we can see there is a statement then
+there is if condition
+if the condition is satisfied that is if
+it is true
+then only the if code will execute
+otherwise
+if
+it is false then control will exit
+now moving on to if else expression
+the if else expression has two blocks of
+statements the if block executes if the
+condition is true and if the condition
+is false then the else block executes
+the if else is similar to if expression
+the only difference is
+it has one extra block known as else
+block
+a simple example of if else is a
+conversation between a father and a son
+the father says if you scored more than
+85 percent then i will buy you a car
+but if you scored between 75-25 percent
+then i will buy you a bike
+here i will buy you a car is the code
+written inside the if block
+and i will buy you a bike
+is a code written inside the else block
+so when
+the son
+scores 85 percent then his father
+buy him a car
+but if he scores between 75-25 range
+then he will get the bike
+now
+moving on to if else if ladder
+expression
+kotlin if else if condition is used when
+there are multiple conditions to be
+checked
+in this expression first the if
+expression is checked if it's true
+then it executes the if block otherwise
+it moves to the other else if conditions
+if none of the condition turns out to be
+true then it executes the last final
+else expression
+to understand it let's have a look at
+this example
+according to this example if a student
+scores marks between 80 and 105
+then the cutoff is not cleared but he or
+she can sit for the second examination
+if the marks code is between 105 and 130
+then the cutoff is cleared
+if the marks scored between 130 and 180
+then the cutoff is cleared and also
+there will be no feet
+and else cut off not cleared so by this
+example we understood
+that there are multiple conditions
+and each condition has a specific
+criteria
+if the marks of the student is fit in
+that criteria then that specific block
+gets executed
+now
+moving on to the nested if expression
+in kotlin nested if expression there are
+if statements inside another if
+statement
+first the if statement is checked
+if it is true then the nested if
+condition is checked
+if the conditions turns out to be false
+then it will move to the else expression
+in this example it checks for true in
+condition 1
+then checks for true in condition 2.
+if condition 2 evaluates to true
+statement 1 that is even number is
+executed
+otherwise statement 2 that is odd number
+is executed
+similarly if condition 1 evaluates to
+false then else block executes and the
+statements
+negative number is printed
+so as we have understood all of these
+expressions
+so now let's do its practical
+implementation
+choose from over 300 in demand skills
+and get access to 1 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more
+so this is our code editor that is
+intellij idea
+so here we will be doing some examples
+of kotlin if else
+so let's start with the first example of
+if else expression
+so we'll write
+function main
+and inside this function we'll create
+a
+marks let's say the marks of the test
+so we have named it test marks
+now
+let's say
+he is code 78 he or she scored 78 now
+we'll use if condition
+and we'll write the condition
+that if text marks
+is let's say less than 75
+then we will print you didn't qualify
+the test
+so we'll write
+deland
+and
+qualified the test
+so basically to qualify a test you have
+to score more than 75
+so in else block
+we'll write
+print ln
+will write you qualified the test
+basically if you have scored less than
+75 marks you are not qualified but if
+you have scored more than 75
+then you have qualified the test here we
+have used the basic effects expression
+here the test marks is the variable that
+we have set let's say 78
+and if we have changed it like
+less than 75 let's say 70 then it will
+get printed you didn't qualify the test
+but as we have set the value of test
+marks as 78 so it means
+you qualified the test will
+print
+it's a simple example let's try to run
+this
+so as you can see you qualified the test
+is printed
+so as we know that the marks is 78 so it
+is printing you qualified the test
+and if we have let's say
+max is 70 now again let's try to print
+it
+now it will print
+you didn't qualify the test
+as you can see it is printing you didn't
+qualify the test
+now
+let's have a look at an example of
+nested if
+so now create a new file
+okay we have to change the name of this
+file
+all right
+so in this example again we'll write
+function main
+inside this function will create a
+variable
+let's say the name of the variable is
+num
+and we'll assign it 50.
+now we'll set a condition if the value
+of num
+is let's say less than 100
+then we'll print number is less than 100
+first of all we'll print that
+now if num
+is equal to 50
+so this is the if condition inside the
+first if condition this is the first if
+condition this is the if condition
+inside this if condition so it's a
+nested if
+now here we'll print
+that
+number equal to 50.
+now inside this if condition again we'll
+write an if condition saying that if
+number is let's say greater than
+40
+then we'll print number is greater than
+40.
+basically we are printing
+the condition
+all right so this is the code
+now
+first if condition then there is nested
+if condition then there is another
+nested if condition first condition says
+if the number is less than 100 then it
+will print number is less than 100 if it
+is equal to 50 then it will print number
+equal to 50 if it is greater than 40
+then we'll print the number is greater
+than 40.
+so now let's try to run this program
+so as we can see number is less than 100
+first it is printing
+after that number equal to 50
+then the number is greater than 40.
+so as we know the number is 50 that is
+why all the three
+statements are printed
+now let's say if we change this number
+like let's say the number is 45.
+if the number is 45 then number is less
+than 100 is printed
+and this sentence that is the number is
+greater than 100 is printed and not
+number equal to 50 because to print this
+number equal to 50 sentence the number
+must be equal to 50.
+now let's try to run this again
+so as you can see number is less than
+100 is only getting printed because as
+we can see here
+to
+get inside this if condition the number
+must be 50
+as the number is not 50 but 45 so it is
+not getting inside this if condition
+so that is why this condition is also
+not getting checked so that is why only
+number is less than 100 is getting
+printed
+so this is an example of nested if
+expression
+now let's do an example of
+if else if letter expression
+let's name it if else three
+all right so now
+here we will do an example of if else if
+ladder expression where we will
+give grades to the student based on
+their marks
+so let's start
+function main
+inside this we'll create a variable
+let's say well score
+and assign it a value
+so this value is the marks of the score
+or you can say
+the score is 76
+now
+we'll create a variable
+whose type is string
+now
+after that
+we will have to assign this grade
+so basically we are assigning the value
+of effective letter expression to this
+variable grade
+so this is how we do it if
+score variable
+is greater than equal to 90
+that is if the score is greater than 90
+then we'll simply print your grade is a
+plus
+so yeah
+i will do it
+it is a plus
+now
+if a student
+scores more than 90 then his grade is a
+plus
+now
+he will write
+else if
+so inside the elsif there is a condition
+we can write the condition inside the
+else if as we know
+4 is greater than equal to let's say
+80
+then we'll print
+your grade is a plus
+your grade is a not a plus now after
+that
+another else if
+if the score is greater than equal to
+70.
+then the grade is
+will write your grade
+is
+b plus
+let's see if the score is greater than
+60 similarly
+write your grade is
+e
+you can do same for all of these we can
+just copy paste it
+this one is 60 then let's make here 50
+and the grade would be
+c
+e plus
+now here would be let's say 40
+we'll do it 40 and the gate would be
+c
+now after that 35
+let's make it 35
+your grade is
+[Music]
+or a d
+now
+in else block will simply write
+that is your grade is f that is if you
+scored below 35
+your grade is f that is your fail
+so you must score more than 35 to pass
+the exam
+right now after that we can print
+this great variable
+and let's try to run this
+so as you can see your grade is b plus
+it's getting printed and i think
+by mistake
+there is n in between
+here it is
+that is why it is printing in here so
+our score was 76 so that is why it is
+again taking printed your grade is b
+plus
+so this expression is used when there is
+a need of multiple conditions like in
+this case we have
+we had the need of multiple expressions
+like
+one condition is score must be greater
+than 90 then only the score will be a
+plus then score must be greater than 70
+score must be greater than 60 similarly
+for every statement that is to be
+printed there must be a specific
+condition
+and in this type of case we use if else
+if letter expression
+so these were few examples of if else
+expressions
+you can try this on your own
+and with that we have come to the end of
+this session
+if you like this video please give it a
+thumbs up i hope it really helped you
+all
+thanks for watching stay safe and keep
+learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

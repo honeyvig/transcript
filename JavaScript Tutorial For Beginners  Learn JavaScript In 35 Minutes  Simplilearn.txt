@@ -1,0 +1,803 @@
+hello everyone and welcome to today's
+video on JavaScript tutorials for
+beginners do you know friends that
+JavaScript is a versatile programming
+language which is widely used in web
+development for creating Dynamic and
+interactive websites in this tutorial we
+are going to explore the fundamental
+building blogs of JavaScript including
+variables objects control flow and many
+more now before we move on and learn
+more about it I request you guys that do
+not forget to hit the Subscribe button
+and click the Bell icon for further
+updates but before we move on and start
+our session there is just quick info for
+you guys if you want to accelerate your
+career as a certified Java fullstack
+developer and acquire essential industry
+skills such as react angular springbot
+hibernate and GSP while also mastering
+MVC and web services to craftly then
+simply learn has got you covered you can
+join the course the course link is is
+mentioned in the description box hurry
+up and join now so guys let's start with
+a short introduction about JavaScript
+JavaScript is a versatile programming
+language which is primarily used for
+creating Dynamic and interactive content
+on websites it was initially developed
+by Netscape communication corporations
+and first appeared in
+1995 over the years JavaScript has
+evolved into one of the most widely used
+programming languages in the web
+development JavaScript was created to
+add interactivity functionality and
+behavior to the web pages unlike HTML
+which stands for hypertext markup
+language and CSS which were primarily
+used for structuring and styling web
+content JavaScript allows developers to
+create Dynamic features such as
+animations interactive forms realtime
+updates without requiring a page reload
+now let us see what was the purpose of
+using JavaScript the first one is client
+side scripting one of the javascript's
+key role in web development ment is
+client Sid scripting this means that
+JavaScript code is executed on the
+user's device rather than on the server
+enabling immediate feedback and
+interaction with web content next one is
+versatility JavaScript is not limited to
+web browsers it can also be used for
+server side programming languages like
+nodejs mobile app development like we
+use react native and ionic and also for
+desktop application development like
+electron and also for game development
+like phaser 3G s and many more third one
+is standardization JavaScript is
+standardized through the EC script
+specification which defines the language
+syntax features and behavior this
+ensures consistency across different
+JavaScript implementations and version
+now let us understand what is the role
+of JavaScript in web development the
+first one that we have all over here is
+enhancing user experience JavaScript
+enables developers to create Dynamic
+responsive and interactive user inter
+interfaces with features like form
+validation client side data processing
+and Dom manipulation JavaScript enhances
+the overall user experience next one we
+have Ajax which stands for asynchronous
+JavaScript and XML JavaScript
+facilitates asynchronous communication
+with we servers allowing for seamless
+data exchange without reloading the
+entire web page this enables the
+development of modern web applications
+with real-time updates and smoother user
+interactions third one we have all over
+here is Frameworks and libraries
+JavaScript has a vast ecosystem of
+Frameworks and libraries like react
+angular view that has streamlined the
+web development by providing pre-built
+component State Management Solutions and
+other tools for building scalable and
+maintainable web applications now you
+would be wondering why JavaScript is so
+popular guys JavaScript is supported by
+all major web browsers making it
+accessible to wide audience of
+Developers and users first reason is the
+community and resources JavaScript has a
+large and active developers Community
+contributing to its extensive
+documentations tutorials forums and
+open- Source projects second one we have
+is job market demand with the rise of
+webbased applications and increasing
+demand for interactive user experiences
+Proficiency in JavaScript is highly
+sought after by employers across various
+Industries third one we have all over
+here is continuous evolution ution
+JavaScript continues to evolve with
+regular updates to the ECA script
+specification introducing language
+features enhancements which keeps it
+relevant and competitive in the
+everchanging landscape of web
+development so guys in summary
+JavaScript plays a crucial role in web
+development by enabling Dynamic and
+interactive user experiences and its
+popularity stems from its versatility
+standardization and widespread adoption
+across the web development community now
+let us move on and understand some of
+the basics of JavaScript guys we will be
+using vs code as a text editor for our
+hand John so guys let's start with the
+first thing that is Javascript syntax
+and its Basics JavaScript syntax forms
+the foundation of any JavaScript code it
+is a set of rules that governs how
+JavaScript programs are written and
+structured here's a breakdown of the
+JavaScript syntax the first one we have
+is statements and semicolons JavaScript
+programs consist of statements which are
+individual instructions that tell the
+computer what to do each statement
+typically ends with a semicolon while
+JavaScript allows you to Omit semicolons
+in some cases due to automatic semicolon
+insertion it is considered a good
+practice to include them to avoid
+potential issues for example if I
+declare a variable xals to 5 and if I
+type consol log dox so guys in this
+piece of code you can see I have
+inserted semicolons at each place place
+next one we can see all over here is
+comments guys comments are the
+executable lines in your code that are
+ignored by the JavaScript interpreter
+they are used to provide explanations
+documentation or temporarily disable the
+parts of the code for testing or
+debugging purposes JavaScript support
+two types of comment the first one is
+single line comment and second one is
+multiple line commands for example let
+us see something like this so you could
+see this statements and semicolons which
+I have written all over here this is a
+single line command now let me show you
+a multi-line command multi-line command
+basically can span across multiple lines
+such as we can see if I do something
+like
+this put a star okay
+and closes so you can see I have
+commented these part of the code which
+are not going to be read by The
+Interpreter so guys this is a multi-line
+comment now let us move ahead and
+understand the third thing that is case
+sensitivity JavaScript is a case
+sensitive language meaning it
+distinguishes between uppercases and
+lowercase letters this applies to
+variables names functions keywords and
+other identifiers used in the code for
+example you can see all over here I have
+declared a variable where my where
+equals to hello then I have also
+declared where myw equals to world now
+if I try to do it console log myw the
+output is going to be hello and
+similarly if I try to do console.log myw
+the output is going to be the world so
+guys you can see all over here the case
+sensitivity the first one the capital V
+is there and in the second V is small so
+the output is different the first one is
+has output of hello and second as output
+of world now fourth thing that is white
+space and indent
+guys JavaScript ignores spaces tabs and
+new lines collectively which is known as
+white space in most of the cases however
+proper indentation and formatting
+improve code readability and
+maintainability developers often use
+consistent indentation to visually
+organize code blocks making it easier to
+understand the structure of the program
+for example you can see there is a if
+code okay so I've used a conditional all
+over here if true and if you can see I
+have indented
+console.log inside this something like
+that we use in Python so guys this
+basically improves the program
+readability and maintainability now let
+us move to the next part that is
+identifiers guys identifiers are the
+name given to variables functions labels
+or objects in JavaScript they are used
+to identify and reference different
+elements within the code identifiers
+must adhere to certain rules first like
+they must begin with the letter
+underscore or a dollar sign they can
+contain letters digits underscores and
+dollar signs they cannot be JavaScript
+keywords or reserved words they cannot
+contain spaces or special characters
+except underscore and dollar sign so
+guys you can see one example all over
+here we have where my variable and then
+I've declared function my function and
+there's something written to be written
+in a function body so this is how the
+identifiers are working now let let us
+understand the basics let's start with
+the variables guys variables in
+JavaScript are containers which are used
+to store data values they play a very
+crucial role in programming as they
+allow developers to store manipulate and
+retrieve data within their code here's
+an overview of it first thing is
+declaration variables in JavaScript are
+declared using keywords such as where
+let or const the V keyword was
+traditionally used to declare variables
+but has being largely replaced by let
+and const especially in modern
+JavaScript code if we talk about V guys
+it is basically used for declaring
+variables with functional or Global
+scope let was introduced in es6 let
+allows for Block scoped variables that
+can be reassigned if I talk about const
+which was also introduced in es6 const
+is used to declare variables with block
+scope that cannot be reassigned through
+the values they referred they can still
+be mutable for object and arrays for
+example if I say V age equals to 25 so
+guys using V I have declared this
+variable next is let name equals to John
+so using let I have declared this
+variable now there is a constant Pi
+which I have declared con pi equal to
+3.14 which is basically a constant value
+next one is assignment once a variable
+is declared it can be assigned a value
+using the assignment operator this
+assigns the value on the right hand side
+of the operator to the variable and on
+the left hand side example if I say say
+VX and x equals to 10 okay this is not
+equal this is we are basically assigning
+the value 10 to the variable X okay so
+you might get confused in the future
+that this sign equals to the equal to
+sign is also standing for equality but
+that's not the case it is basically
+meaning that it is assigning certain
+value to this variable now let us
+understand the naming conventions
+variables names in JavaScript should be
+meaningful and descriptive they can
+consist of letters digits underscores
+and dollar signs however they must begin
+with a letter underscore or dollar sign
+and they cannot be JavaScript keywords
+or reserved words for example there we
+have where first name or where user age
+so you can see in this way we can
+declare our variable okay the first we
+have used a camel case and the second
+one I have used user underscore AG so in
+this way you can declare clear your
+variable now let us understand some of
+the basic data types used in JavaScript
+JavaScript is a dynamically typed
+language meaning variables can hold
+values of any data type common data
+types includes numbers strings booleans
+arrays objects null and undefined so if
+you have V num equals to 10 that's
+number V name equals to Alice that is a
+string and if I try to do some Boolean
+where a student equals to true so these
+are the of the data types and very basic
+data types that will be used across our
+programs so the first one you can
+consider it in the number the second one
+is a string type and third one is a
+Boolean type Boolean means it can
+contain values such as true or false now
+let us understand one of the very most
+important part that is scope of the
+variable and it is frequently Asked in
+the interviews so guys variable scope
+refers to the visibility or
+accessibility of variables within
+different parts of the program it
+determines whether in your code a
+variable can be used or accessed
+understanding variable scope is very
+very crucial for writing clean efficient
+and a bug free code in JavaScript
+variables can either have a local scope
+or a global scope and the type of scope
+depends on how and where the variable is
+declared let us discuss the first one
+that is the global scope variables
+declared outside of any function have a
+global scope they can be accessed from
+anywhere within the program including
+inside functions Global variables are
+accessible throughout the entire script
+making them available for use in any
+part of the code example guys you can
+see I have written something like this
+where Global where I am a global
+variable and then I've declared a
+function with my function and I'm trying
+to console log or trying to print Global
+variable now in this code you can see
+this is a global variable and this can
+be accessed throughout the program
+because it is not declared inside the
+function now in the second case which is
+a local scope so guys variables declared
+within a function have a local scope
+they are only accessible within the
+function in which they are defined local
+variables exist only for the duration of
+functions execution and they cannot be
+accessed from outside function example
+like function my function where local V
+I am a local variable so guys as you can
+see all over here I have declared my
+variable inside this function and
+finally I'm trying to print this local
+variable so guys as you can see all over
+here inside this function we are
+declaring our variable but in the case
+of global we are declaring our variable
+above the function not inside the
+function now guys let us move on and try
+to understand the blog scope so guys
+blog scope was introduced in ECA script
+6 such as let and const keywords which
+allow variables to have a block scope
+meaning they are confined to the block
+of code within curly braces in which
+they are declared this includes Loops
+conditionals and functions variables
+declared with the let and const are not
+hoisted to the top of their scope like
+variables are declared with VAR so guys
+you can see an example I have mentioned
+for the block scope so there's a
+condition if true let block variable I
+am a block scope variable and then I'm
+trying to print it so guys in the block
+scope basically I'm declaring my
+variable within the curly braces okay so
+for example in the case of Loops
+conditionals and function so we are
+basically using let keyword in this case
+which denotes the block scope of this
+variable now let us move on and try to
+understand what is variable hoisting so
+guys if I talk
+about okay this is also kind of
+interesting sometimes interviewers can
+ask you about it so guys in JavaScript
+variables declared with VAR are hoisted
+on the top of their scope during their
+compilation phase this means that
+regardless of where the variable
+declaration appears in the code
+JavaScript moves it to the top of its
+containing function or script however
+only the Declaration is hoisted not the
+initialization variables declared with
+let and cons are also hoisted but they
+are not initialized until their actual
+declaration is encountered in the the
+code so guys you should be well versed
+with understanding the variable scope
+which is going to help prevent naming
+conflicts improving code readability and
+ensuring that variables are used where
+they are intended it is kind of
+essential to be mindful of variable
+scope when writing JavaScript code to
+avoid unexpected behaviors and bugs so
+guys let's start with operators and
+expressions in JavaScript operators and
+expressions are fundamental concepts in
+JavaScript that allows developers to
+perform various computations and
+operations on data here's an overview of
+operators and expressions in JavaScript
+the first one we have is arithmetic
+operators arithmetic operators are used
+to perform mathematical calculations
+such as addition subtraction
+multiplication division and modulus for
+example as we have all over here you can
+see we have VX equal to 10 where y = 5
+and where sum = to x + 5 now I have also
+given V product X cross Y and quotient
+and remainder as now if I want to print
+this variable as you can see so let's
+try to run the V uh say
+sum and if we try to run our program
+okay
+we'll type node and the file name okay
+so you can see it's printing two Z and
+five so if I'm trying to print the
+quotient quotient means X ided Y so 10
+ided 5 gives 2 okay now the remainder as
+we can see there will be no remainder so
+the answer is coming zero now 10 + 5
+which is sum it is giving 50 so guys if
+want to run your Javascript file type
+node and the name of your file okay now
+let us try to see now let's clear our
+screen
+first now let us try to understand
+second operator which is the comparison
+operator so guys if I talk about the
+comparison operators comparison
+operators are used to compare two values
+and return a Boolean result which means
+true or false for example if you declare
+two variable say V A equals to 10 and v
+b equals to 5 and if I say console. log
+A cross B okay which means is a is
+greater than b so 10 is greater than
+five so it is going to return true
+similarly this statement a less than b
+is going to be false the third one is a
+greater than equal to B fourth is a less
+than equal to B this is a equality
+operator so guys as I have told you you
+should always be cautious with
+assignment and equality operator for
+equality it gives double equal to now
+this is three equal to signs and this is
+equals to equal to with strict equality
+okay now let us try to understand what
+does it mean
+let us copy this
+code and if you try to run our program
+we can
+see so we can see we have got our output
+let me Zoom it a little bit so for first
+it says true second is false third is
+true fourth is false okay now we are
+interested to see the seventh one so
+it's saying false so we can see five is
+not equals to 10 okay and if I say the
+strict inequality it is also going to
+say that the eth one which means it's
+strict equality okay so it was also
+returning false all over here the last
+two statement which means it is not
+equal to it is returning true and a is
+also not equal to B so one is a strict
+in in equality and one is a lose
+inequality but this is a strict one and
+this is a loose one so guys this is how
+the comparison operators work now let us
+try to understand the third operator
+that is logical operators logical
+operators are used to combine and modify
+the Boolean values for example the first
+one that we have is an and operator so
+guys it means logical and it is going to
+return true if both of the operant are
+true for example in this case if I say
+VX equal to true and where y equals to
+false and if I try to print console. log
+X and Y so if both of them are true then
+it's only going to return true otherwise
+here the answer will be false now x or y
+means you can consider it as an or
+operator which is going to return true
+if at least one of the operants is true
+so guys where X is true and where Y is
+false so one of them is true which means
+X is true and here our answer will be
+true
+Now console. log not equals 2x which is
+a logical not operator so if I tried to
+print console.log not equals to X means
+not equals to True negation of true is
+false so here answer will be
+false I hope so you would have got a
+brief idea regarding the logical
+operators now let us move forward and
+try to understand the string
+concatenation guys in JavaScript the
+plus operator can also be used for
+string concatenation which means joining
+two or more strings together for example
+we have our first variable where first
+name equals to John and where last name
+equals to do and if I try to concatenate
+the first name plus last name which
+means where first name plus last name so
+it is going to return John do okay let
+me try to run this code and show
+you
+so you can see all over here we are
+getting the output John do now I hope so
+you would have got an idea regarding
+string cont cenation now let us move
+forward and explore the next concept
+which is the Turner operator so guys in
+the Turner operator which means that the
+condition something says like this let
+me try to write the Syntax for
+this so say if there is a
+condition okay and if there is
+expression
+one and here is expression
+two so guys this is a short hand of
+writing an F statement for example we
+can see all over here we have declared
+our age as 20 and this is the variable
+message now here's a condition okay so
+if age is greater than equal to 18 now
+if this is true it is going to print
+this otherwise it is going to print this
+now let us try to run this
+code
+so guys as you can see all over here
+it's printing you are an adult which
+means this statement is true what if if
+I would have done something like this
+so so you can see this statement is
+false age is not less than 180 otherwise
+it is printing this false which is you
+are a minor now as you can see all over
+here we have to manipulate over this
+thing something like this this is an
+short form of if andl statement so if
+this condition is true it is going to
+print this if this condition is going to
+be false it is going to print this now
+let us try to understand the control
+flow so guys control flow refers to the
+order in which statements are executed
+in the program in JavaScript control
+flow is managed through conditional
+statements and Loops which allow
+developers to control the flow of
+execution based on different conditions
+let us explore the key components in
+control flow in JavaScript first one we
+have is conditional statements so guys
+conditional statements allow you to
+execute block of codes based on certain
+condition the most common types of
+conditional statement in JavaScript are
+if else if and else let us understand
+the first one that is if statement so
+guys it's General block of code is
+written something like this if in a Clos
+bracket or parenthesis we have written
+condition
+and inside this what is a code or block
+of code to be executed is written all
+over here now you can see if condition
+then if this condition is true just
+print this thing any condition okay now
+if I talk about Els if guys so in the
+case of Els if we have to use if and
+else so if the condition is true means
+we have written certain condition okay
+if it is true then it prints this
+statement otherwise if the statement
+repeat otherwise if the condition is
+false it is going to print this it is
+very simple let me show you one of the
+example now instead of doing this what
+we can do all over here
+is okay we have declared the variable
+age okay so if age is less than 18 so we
+can say something like
+this okay
+or
+else we can
+say you are
+minor okay now let us try to run this
+code so it says that you are minor very
+simple now if this condition is true
+means our age is given as 20 and this
+statement shows that this is false so
+our code is going to be executed for
+this block which says you are minor now
+I hope so you would have got an idea
+regarding LF now let us try to
+understand the lsf statement so guys if
+there is certain statement like if
+condition one okay suppose if this
+condition has to be true we can execute
+this else otherwise this condition
+otherwise this condition so if there are
+multiple else in the statements we can
+use lsf okay you can do something like
+this in this case
+Okay say
+console.log you can say are you sure
+[Music]
+and
+okay okay now it's correct so suppose we
+have declared our variable age as 20 and
+we are saying if age is less than equal
+to 18 then you are an adult okay now you
+can ask something like this if age is
+equals to 18 then you are printing are
+you sure you are 18 otherwise you are a
+minor so if you are multiple lse in the
+program okay so we can use lsf in this
+case but only thing to remember is that
+using else if you have to also put
+condition all over here with else there
+is no need to put any condition in the
+parenthesis now guys let us try to
+understand the switch statement the
+switch statement is used to perform
+different actions based on different
+conditions it evaluates an expression
+and also executes the codes associated
+with the first matching case for example
+switch expression case value one which
+says code to be executed if the
+expression matches the value one
+otherwise if the code to be execute it
+matches this expression then you will
+execute this code third one is this one
+if if none of it matches then we have a
+default code to be executed now in this
+way we basically are designing our
+switch expression let me show you an
+example of the
+same okay guys so you can see all over
+here I have declared a variable where
+day equals three and this says where day
+name now we have used our expression as
+day now if the case one if it is case
+one we have given the day name as Monday
+if there is case two we have given the
+name as Tuesday and similarly for all
+the seven days I have mentioned if none
+of the case matches to it we have given
+a invalid day now in this case I have
+given day equals to three which means
+that it is going to print Wednesday let
+me show you this so we are going to run
+this program
+so say it says Wednesday similarly if I
+say day as
+4 so you can say it says today is
+Thursday I hope so you would have got an
+idea regarding switch statement now let
+us move forward and try to understand
+the for Loop so guys Loops are basically
+used to execute a block of code
+repeatedly until specific condition is
+met JavaScript supports several types of
+Loops example for Loop while loop and do
+while loop if I talk about for Lo
+basically here what it happens so for
+there will be parenthesis and there will
+be initialization condition which means
+you can do increment or decrement for
+example in this code for where I equals
+to Z and I less than 5 I ++ console. log
+I which means that our variable I is
+initialized with zero and it is going to
+go till five and it is going to
+increment and print all these value
+iteratively so let me copy this code and
+let us try to run this program
+so guys you can see all over here is
+printing 0 1 2 3 and four I hope so you
+would have got an idea regarding this
+now let us try to understand the while
+loop so guys in case of while loop we
+write something like this so suppose we
+have initialized our variable I and
+we're going to start with a while
+keyword and there will be a parenthesis
+and in this parenthesis I have declared
+i l than five which means that until
+this condition is met it is going to
+print the value of I
+and after printing the value of I we are
+incrementing with the increment operator
+basically the output of this code and
+this code is same but the way of writing
+is different so please uh take a small
+note on this one okay now let us try to
+understand the do while loop so
+similarly I have initialized a variable
+I equals to Z and here is a do keyword
+so what part of code we want to execute
+all over here we can write it suppose I
+want to print console. log I and I ++
+same task we are doing in different
+different manner now if while this
+condition is met means if I is less than
+five till this condition is meant this
+piece of codes is going to get executed
+so similarly this is another way of
+doing the same thing now let us go to
+the Breck and continue part so here you
+can see all over here there is a for
+Loop and I have declared a variable I
+equals to Zer and I is less than five
+and we are incrementing with I ++ now if
+I is equals to 3 we are doing the break
+part and rest we are executing this code
+okay so let me show you and let's try to
+run this
+code so guys as you can see all over
+here is printing 0 1 and two now let us
+try to understand this logic one by one
+so you can see all over here here
+initialization has happened just like
+the for Loop and I should be less than 5
+and I ++ now if I value equals to three
+you are going to break this piece of
+code no iterations are going to perform
+so till three means 0 1 and two are only
+going to get printed rest of the things
+are not so that is how this is working I
+hope so you would have got an idea
+regarding this basically Breck puts a
+stoppage in your code execution so this
+was your break statement now if I talk
+about continue let us try to run this
+first so you can see all over here now
+now if I put instead of break continue
+so what it's going to do it is going to
+skip this section when I equals to 3 and
+it is going to print all of it but in
+the case of Breck after three it's not
+going to perform so 0 1 2 and four are
+going to get printed but in the case of
+brick it is just printing 012 and it's
+stopping the code so that is what a
+difference between brick and continue I
+hope so you would have got an idea
+regarding this so guys that was all for
+this video so I hope so guys you would
+have enjoyed our today's video on Java
+Script tutorials for beginners staying
+ahead in your career requires continuous
+learning and upscaling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in Cutting
+Edge domains including data science
+cloud computing cyber security AI
+machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

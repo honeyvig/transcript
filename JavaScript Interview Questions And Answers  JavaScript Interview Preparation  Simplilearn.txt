@@ -1,0 +1,748 @@
+hello everyone and welcome to top 25
+JavaScript interview questions at simply
+learn so guys let's straight dive in but
+before that do not forget to hit the
+Subscribe button and click the Bell icon
+for further updates so guys let's get
+started so our first question is what
+will be the output of the following code
+and why so our code is console.log 0.1 +
+0.2
+then there are three equal to signs
+which is equals to 0.3 it is a pretty
+tricky question but you can pause this
+video and think for a while so guys I'm
+in vs code as you can see now let us try
+to run this code and see the
+output so as you can see the output is
+false now let us explain this code that
+why it is coming false so because in
+JavaScript you know that the numbers are
+stored in a format called Flo in point
+which sometimes can't represent decimal
+numbers exactly so when you add 0.1 and
+0.2 the result is not exactly 0.3 but it
+is
+0.300 than some other decimal value and
+that's why when you compare 0.1 + 0.2
+with 0.3 it returns false it's a kind of
+tricky question but if someone asks you
+next time then you will be probably able
+to answer that now let us move to our
+next question so guys here's our next
+question the question is explain the
+concept of hoisting in JavaScript with
+example now guys as we know that
+hoisting means that JavaScript moves all
+the variables and function declarations
+to the top of their scope before the
+code is done but if it doesn't move the
+value just a declaration so that is
+referred to as hoisting I'll repeat once
+again that basically in the scenario
+what you have to do guys all the
+variables and function declarations you
+know you have to add it to the top of
+the scope before your code is run so
+I'll give you an example uh say suppose
+we have declared a variable a equals to
+say
+five
+and so here what I want to say that
+suppose console do log
+a and I have written this piece of code
+or state print at the top and it is kind
+of undefined right
+now so here the variable a is hoisted to
+the top but its value five isn't so when
+you are trying to print before assigning
+it a value you get undefined so next
+with an example suppose in the similar
+way say we created a function called
+greed okay and it is uh
+not calling anything now here we have
+our function declaration say function
+greet and here say with console.
+logit and here we can say
+hello now in this case the whole
+function greet is hoisted to the top so
+you can call it before it appears in the
+code so this is basically called as
+hosting I hope so you would have got a
+brief idea regarding hosting now let us
+move to our next question our next
+question is what is closure in
+JavaScript and provide a practical
+example of its use so guys a closure in
+JavaScript means that an inner function
+can remember and access the variable of
+its outer function even after outer
+function has finished running example
+can be something like this so guys as
+you can see all over here I have created
+a function create count and here I have
+initialized count equals to zero now
+then there is inner function which is
+return function and it is incrementing
+the count by one and finally returning
+the count so now in the next thing what
+we are doing basically we are creating a
+counter okay then now it's basically
+console. loging the counter and you can
+see the output will be something like
+one and two so guys in this example even
+though create counter is done the inner
+function still has access to the count
+because because of the closure closures
+are useful basically in this scenario
+when you need to keep some data private
+so I hope so you have got brief idea
+regarding closures so basically at the
+end of the day it is an inner function
+that can remember and access the
+variables of the outer function okay
+even if the outer function has finished
+running so that is basically a closure
+and I have shown you an example so you
+can run this code also so as you can see
+in the output the answer is 1 and two so
+it is remembering these value which is
+created by this function so these are
+closures now let us move to our next
+questions so guys our next question is
+how does this keyword work in JavaScript
+so guys the value of this depends on how
+the function is called it refers to a
+object that is currently executing the
+function for example in the global
+context you can get something like this
+say you are printing console.log this so
+with respect to browser so if you type
+this in the browser this refers to the
+window object in terms of method context
+if I tell you say suppose we created an
+object with name as Alice and there's a
+function so guys in context of the
+object like method context you can get
+something like this suppose I have
+created object with the name Alice greed
+function and I'm calling this do name so
+I'm trying to access this value so guys
+in context of the arrow function you can
+create something like this say object
+name Charlie then in terms of GD you are
+applying the arrow function and it is
+printing this do name which is accessing
+the value Charlie so this is how this
+works in this context so I hope so you
+have got a brief idea regarding this
+that how you work with this now let us
+move ahead with the next question so
+next question is can you implement a
+simple debounce function in JavaScript
+and explain how it works so guys a
+debounce function makes sure that a
+particular function is not called too
+often it waits for some time after the
+Last Action before the calling function
+so for example you can do something like
+this say you have the function debounce
+and in which you have given an argument
+Funk and delay then you are creating a
+variable let time out and you are
+returning a function with arguments as a
+spread operator now you're clearing the
+timeout and next you are setting out the
+timeout and finally you are putting
+inside the function the rest operator
+which is ugs and finally the delay so
+basically what this piece of code is
+doing guys this function delays the
+running Funk until after the delay of
+milliseconds have passed without any
+more calls so this is how debounce is
+working it is basically useful for
+actions like resizing a window or typing
+a search bar so this is a simp sample
+example where I have used de bounds so
+in a lot of ways you can use debound
+guys now I hope so you would have got an
+idea regarding debound now let us move
+ahead to our next question so guys our
+next question is what is the event Loop
+in JavaScript and how does it works so
+guys the event Loop in JavaScript allows
+to perform non-blocking operations even
+though it has only one thread which
+means that that it can do one thing at a
+time basically it helps JavaScript run
+asynchronous code like timers promises
+and event handler so that is all
+referring to the event Loop basically
+all the non-blocking operations which
+can be like suppose you are fetching
+anything from any data okay or using any
+API call back you are doing in your code
+so these are the non-blocking operations
+basically so you can do and and it means
+also that you have to perform only one
+operation at a time so that is what is
+event loop I hope so you would have got
+a brief idea regarding this so for
+asynchronous operation we use event Loop
+now let's move ahead to our next
+question that is just quick info for you
+guys if you want to accelerate your
+career as a certified Java fullstack
+developer and acquire essential industry
+skills such as react angular springbot
+hibernate and GSP while also mastering
+MVC and web services to craftly then
+simply learn has got you covered you can
+join the course the course link is
+mentioned in the description box hurry
+up and join now so guys let us start
+with our next question that is how would
+you deep clone an object in JavaScript
+so guys deep cloning means creating a
+copy of an object where even nested
+objects are cloned they are not just
+referenced by it so one example I will
+show you so consider this example guys
+where I have declared a variable called
+Original and here are the nested objects
+now I'm trying to create a clone of this
+using the structured clone so this is an
+example of deep cloning where I'm
+basically creating an object of an copy
+of an object where even nested objects
+are also present so this can be a very
+good example now let us move ahead and
+discuss our next question so guys our
+next question is what are promises in
+JavaScript and how do they differ from
+callbacks so guys A promise is an object
+that represents the eventful result of
+an asynchronous operation promises
+provide a cleaner more readible way to
+handle asynchronous operations compared
+to the traditional callbacks where if I
+talk about callback Skies you can pass a
+function to another function and it is
+called once till the task is done this
+can get messy and lead to a call back
+hell so here comes the promises which
+allows us to chain operations and handle
+errors in more readable way so guys this
+is what a difference between promises
+and call backs is now let us move ahead
+and discuss our next question so guys
+our next question is how do call apply
+and bind methods work in JavaScript so
+basically call calls a function with a
+this value and arguments provided one by
+one in the JavaScript where if I talk
+about apply it is similar to call but it
+also takes an AR argument as an array
+and if I talk about Bindu it creates a
+new function that when called has its
+own set provided by the value unlike
+call and apply it doesn't immediately
+call the function so let me show you an
+example of the same so guys as you can
+see all over here this is call so this
+function is taking user as an argument
+and it is printing this string called
+hello now similarly with the apply it is
+taking a variable as an argument and it
+is taking a as a second argument now if
+I talk about bind guys what bind is gu
+doing it is basically creating a new
+function so that when it is called so
+you know this has its own set of the
+provided values so constant greed greed.
+bind so here it is user and this is
+calling the Greet user with this value
+so this is how the difference between
+this is and this is pretty different
+than call and apply I hope so you have
+got a brief idea regarding this now
+let's move ahead and discuss our next
+question so guys our next question is
+what is the difference between double
+equal to and triple equal to operators
+in JavaScript or basically I would say
+what is the difference between lose
+equality operator and a strict equality
+operator so guys if I talk about the
+lose equality operator here it compares
+the values after converting them to the
+same typ and if I talk about the strict
+equality it Compares a value without
+converting the types so both value and
+type must be the same so guys I will
+show you an example all over
+here so if I
+say
+5 = to 5 then this will be true okay
+because this is converted to a type
+number then this is giving equal to this
+but if I just add one more then this is
+a strict equality and here the answer
+would be false
+so means it doesn't converts a type so
+this is a difference between strict
+equality and lose equality operator I
+hope so you have got a brief idea
+regarding this now let's move ahead and
+discuss our next question so guys how
+can you implement inheritance in
+JavaScript using prototypes so very nice
+question guys so basically in JavaScript
+inheritance can be achieved through
+prototypes so every object in JavaScript
+has a prototype and objects can inherit
+properties and methods from their
+prototypes so in this way they can
+achieve inheritance I hope so you have
+got an idea and example could be
+something like this so guys as you can
+see all over here we have the function
+animal okay and here it is taking name
+as an argument and I'm creating a
+binding for this then I'm using animal.
+prototype dopak and this function this
+is basically printing this do name the
+name of the animal and it makes sound
+now the function dog is coming which is
+inherited from this now here I'm calling
+the name and the breed so animal do call
+this. name okay this calling the
+Constructor and here I am adding this
+this. breed equals to breed okay now
+here I'm creating the object for it okay
+and uh I'm creating the Constructor like
+I'm fixing the Constructor for the dog
+okay to add this next argument also and
+uh finally what we are doing we are put
+a method called bark all over here with
+the help of prototype and with the name
+it is just printing Bo so this is how
+inheritance is Achieve one small snippet
+okay with the help of prototype you can
+achieve something like this I hope so
+you would have got a brief idea
+regarding this now let's move ahead and
+discuss our next question so guys our
+next question is what are Arrow
+functions in JavaScript and how do they
+differ from regular functions so guys
+Arrow functions are a shorter way
+basically to write functions in
+JavaScript and they were basically
+introduced in es6 module Now Arrow
+functions are more concise so suppose we
+are adding something like this suppose
+we are adding two numbers A and B and
+I'm taking this argument and with the
+help of Arrow function I'm just
+returning this a b parenthesis = to a
+plus b so regular functions have their
+own of this basically what we do if we
+have to do with the regular function say
+we are going to create an add function
+we are declaring it and then we are
+going to do the parenthesis is going to
+be a pretty long way so this is pretty
+short a way to write uh and this is how
+it differs from the regular function in
+terms of the syntax so whenever an
+interviewer asks you this question what
+you can do you can give a snippet code
+and then you can try to explain this now
+let's move ahead and try to discuss our
+next question so guys our next question
+is how do you handle asynchronous
+operations in JavaScript and for hint I
+have given you can compare call backs
+promises and a Synco weight so basically
+you have to give this answer something
+like this so there are three main ways
+basically to handle asynchronous task
+the first one is callbacks where you
+pass a function that gets called when
+the asynchronous task is done like the
+problem can be a nested code for example
+call back H so say suppose we are
+fetching a data all over here and in
+this case we can use it so guys you can
+take an example of the call call back
+all over here so where basically what
+I'm doing I'm passing a function that
+gets called when the asynchronous task
+is done suppose I'm trying to fetch a
+data so you can see this snippet of code
+so this is call back now if I talk about
+promises guys it is in cleaner and
+alternative way to the callbacks you can
+chain do then for success and do catch
+for errors something like this for the
+same code I have written F data do then
+result then use Arrow function process
+result result. catch error then handle
+error pretty simple now next if I talk
+about a synovate so basically this is
+built on promises but it looks like a
+regular synchronous code you can use a
+wait to wait for a sync tasks now you
+can see all over here suppose I'm trying
+to fetch something and here I'm using
+the try and catch and here I'm storing
+the result this is awaiting to fetch the
+data okay then when this uh data has
+come up then basically I'm storing this
+result in the processed result and if if
+not then I'm handling the error so this
+is how we are using async and weight
+basically it's looks like more of a
+synchronous code but it is pretty
+different from that so this is how call
+back's promises and Ayn ofate differs
+from each other I hope so you would have
+got a brief idea regarding this now let
+us let's move ahead and discuss our next
+question so guys our next question is
+when you would use one or another if I
+talk about arrays versus objects so if I
+talk about arrays guys arrays are order
+list of values that are indexed by
+numbers starting from zero and it just
+goes on basically you can use an array
+when you need to store a list of items
+in an order and you want to access them
+by their position or index so for
+example we have fruits and and we have
+name as apple banana and Cherry and I
+want to access the Apple so I can
+directly use console do log and I could
+use a variable name fruits and then
+access by it index zero now if I talk
+about object Skies objects are
+collection of key and value pairs okay
+each key which is a property is a string
+and the value can be anything so
+basically you can use object when you
+want to store data with named Properties
+or when you need a quick access to
+values by a unique identifier that is so
+in that scenario you can use this I hope
+so you would have got brief idea
+regarding this now let's move ahead and
+discuss our next question so guys our
+next question is how can you prevent
+cross-side scripting attacks in
+JavaScript applications so guys
+cross-side scripting attacks can happen
+when hackers inject malicious script
+into your web applications to prevent
+this what you can do guys you can
+sanitize user input ensure that any
+input from users like for example form
+submissions is cleaned up so you can use
+libraries like Dom purify to remove
+dangerous scripts next what guys you can
+do you can use content security policy
+you can set up security headers that
+restrict the loading of script from the
+untrusted sources this can be one of it
+so guys by using these techniques you
+can prevent the cross- side scripting
+attacks now let us move ahead and
+discuss our next question so guys our
+next question is proide and code EX
+example demonstrating promise chaining
+so guys basically promise chaining is
+like involving multiple promises
+together so that the subsequent promises
+wait for the previous one to settle
+which is either fulfilled or rejected
+now I'll explain You by this example
+what does it exactly means so let us
+open our text editor so guys as you can
+see all over here so I'm using this
+variable let promise which is equals to
+new promise and it is doing resolve and
+reject and then again it is using an
+arrow function and here it is resolving
+the hello reject and basically it's
+resolving hello JavaScript so as you can
+see all over here that what we are doing
+it is linking one promise to the another
+so that is what basically promise
+chaining is I hope so you have got a
+brief idea regarding this now let's move
+ahead and discuss our next question so
+guys our next question is what is even
+delegation in JavaScript and how does it
+improve performance and manageability so
+guys even delegation allows ows you to
+add a single event listener to a parent
+element and it handles events for its
+child elements even if the child
+elements are added later which basically
+improves performance and reduces the
+need to add multiple event listeners so
+guys instead of adding an event listener
+to each individual element you can add
+it to the common parent so guys when an
+event happens on a child element it
+bubbles up to the parent and the event
+listener then catches it but this is how
+event delegation works now if you talk
+about performance it reduces the number
+of event listeners especially in a large
+list or table so guys this is uh one
+example of this I hope so you would have
+got a brief idea regarding even
+delegation now let's move ahead and
+discuss our next question that is what
+are generator functions in JavaScript
+and how they differ from regular
+functions so guys generator functions
+are a special type of functions that can
+be paused and resumed the return an
+iterator which allows you to yield
+values one at a time instead of
+returning all the values at once so this
+is how they differ from regular
+functions so basically you use the
+function syntax and yield keyword to
+pause and resume the execution you will
+run from start to finish without pausing
+so this is how it differs in the syntax
+in comparison to the regular
+functions so guys this is how you can
+answer this question so guys let us
+start with our next question
+that is what is the difference between
+map filter and reduce methods in
+JavaScript so guys if I talk about map
+method it creates a new array by
+applying a function to each element in
+the original array so guys you will use
+this function in a scenario where you
+want to transform every item in an array
+whereas if I talk about filter guys
+filter creates a new array with only
+elements that pass a certain condition
+like in a scenario where you want to
+filter out specific items from the AR
+then you can use the filter method then
+reduce if I talk about reduce guys it
+reduces the array to a single value by
+applying a function that combines all
+the element you can use it in a scenario
+where you want to accumulate values or
+calculate something from all items in an
+array I hope so you would have got a
+brief idea regarding this now let us
+move ahead and discuss our next question
+so guys our next question is what is
+prototype chain in JavaScript and how
+does JavaScript use prototypes to
+achieve inheritance so guys in
+JavaScript objects can inherit
+properties and methods from other
+objects and this is done through the
+Prototype chain so guys every object in
+JavaScript has hidden length to another
+object it is called prototype and this
+is how inheritance works when you try to
+access a property on an object
+JavaScript first looks for the property
+of the object itself if it does not find
+it it looks up to the object's prototype
+and so on up the chain until it reaches
+now null so in this way it achieves this
+for example in this code
+guys as you can see in this code we have
+function animal okay and here we are
+using Constructor for this so we are
+binding name property all over here
+similarly I am creating a prototype for
+a speak where this function is printing
+this makes a sound similarly for the dog
+here two arguments are given name and
+breed now similarly using the dog
+prototype I'm creating the object for
+this then I'm fixing this Constructor
+for the dog with the help of prototype
+and I am also creating a function bar
+okay so I'm taking this object Prototype
+all over here and I'm printing this
+console.log this.name box so this is how
+inheritance is working in this scenario
+I hope so you would have got some rough
+idea regarding this like what is
+prototype chaining now let us move ahead
+and discuss about our next question so
+guys our next question is what are
+immediately invoked functions
+expressions in JavaScript and why they
+are used so guys an immediately invoked
+function expression is a function that
+is defined and executed in a right way
+as soon as it is created it doesn't want
+to be called later why you want to use
+iif the first reason that comes up to my
+mind is because of encapsulation because
+it creates a new scope so that variables
+inside the function won't interfere with
+other codes in the global school next is
+also avoiding Global pollution which
+helps in preventing the creation of
+global variables by keeping them in
+private inside the function so this is
+why they are used I hope so you would
+have got a brief idea regarding this now
+let us move ahead and discuss our next
+question that is explain currying in
+JavaScript and how does it differ from
+partial application so guys currying is
+a process of transforming a function
+that takes multiple arguments into a
+series of function that each take one
+argument at a time so for example in
+this code so guys as you can see in this
+code I have created a function add a it
+is returning a function B then it is
+returning a function C which is
+returning a plus b plus C now I'm trying
+to print console log add 1 2 3 but the
+output will be six so guys here add one
+returns a function that expects B so
+then it adds add 1 and two which is
+returning another function which expects
+three and finally it adds a sum of 1 + 2
++ 3 which is equals to 6 so guys this is
+how it works so I hope so you would have
+got a brief idea regarding currying in
+JavaScript now let us move ahead and
+discuss about our next question so guys
+next question is about what will be the
+output of the following code and here is
+our code console. log 0.1 + 0.2 = toal
+to 0.3 then is
+these are two parenthesis okay then
+parenthesis and a curly braces then a
+curly braces and a
+parenthesis so what will be the output
+let us try to run this in visual code so
+guys here is this required code all over
+here let me Zoom
+this now if I try to run this guys now
+the first one is giving false because we
+have discussed this earlier so 0.1 0.2
+because of a floating Point okay this
+value is not equals to exactly 0.3 the
+second one what we are getting all over
+here is an object of object okay now let
+me try to explain you so when you try to
+add this and this is basically an empty
+string in JavaScript so when you try to
+add two arrays they are first converted
+to Strings and empty arrays are
+converted into empty screen so the
+result is an empty string okay now if
+you see this the third line which is
+parenthesis and a curly brace so it
+returns object object okay why because
+empty array is converted into an empty
+string and then empty object is
+converted to the string so it is object
+of object so when you concatenate them
+the result is object object so that's
+why and the same reason goes all over
+here so basically this is giving an
+answer for this now if you see the last
+one we have this parenthesis and this so
+this will also return the object which
+is same concept which I have told you so
+m empty is going to convert into empty
+string and then empty object so that's
+why it's giving object object so this is
+some of the interesting question which
+can be asked in the
+interviews so guys this is one of the
+thing now let us move ahead to our next
+question so guys let us discuss our next
+question that is what is spread operator
+in JavaScript so guys the JavaScript
+spread operator allows us to quickly
+copy all the part of an existing array
+or an object into another object so
+suppose we have arrays say a number one
+1 2 3 we have arrays number two 4 5 6
+and there is number combined so I want
+to copy all these values so I can take
+as spread operator number one and number
+two so these are value will be copied in
+all over here so combin will be value of
+1 2 3 and 4 5 6 so basically it is an
+easiest way to quickly copy all the part
+of an existing array or an object into
+another object or an array so guys this
+is very simple example of spread op
+operator now let us move ahead and
+discuss our next question so guys what
+are symbols in
+JavaScript so guys symbol data types if
+I talk about in JavaScript are new type
+of primitive data type that were
+introduced in the es6 version of this
+language they are used to represent
+unique values that can be used as
+identifiers or keys in the object they
+are also used to create private
+properties and methods in classes
+symbols are unique and immutable so they
+can be used as unique identifiers in
+objects and classes symbols can can be
+used to create private properties and
+methods in classes symbols are also
+useful for creating constants that can
+be shared across different parts of our
+code so guys this was a simple
+definition of symbol so guys that was
+all for today's video I hope so you
+would have enjoyed our top 25 JavaScript
+questions at simply learn craving a
+career upgrade subscribe like and
+comment
+below dive into the link in the
+description to FastTrack your ambition
+whether you're making a switch or aiming
+higher simply learn has your
+back staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+[Music]
+more hi there if you like this video
+subscribe be to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

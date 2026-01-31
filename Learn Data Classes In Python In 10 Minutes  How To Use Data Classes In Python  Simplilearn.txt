@@ -1,0 +1,234 @@
+a data class in Python is a class
+focused solely on holding data values
+without the need for additional methods
+while they assemble regular classes they
+serve the purpose of efficiently storing
+information for communication between
+different parts of program or system
+however repeatedly writing the init
+method can generate incredible work and
+potential errors when creating classes
+to work only as a data containers
+Python's data classes module introduced
+in version 3.7 offers a simplified
+approach to creating such courses
+without the necessity of manually
+writing the methods hi everyone my name
+is mik and in this video we will explore
+utilizing the data classes module
+showcasing how it is streamlines the
+creation of new classes with this module
+not only does it automatically include
+the init method but it also provides
+several other pre-implemented methods
+reducing the need for manual
+implementations all of these can be
+achieved with just a few lines of code
+overall python is your gateway to data
+science Mastery if you want to become a
+data scientist with our courses from
+prestigious University it's just a piece
+of cake supercharge your data science
+career with a post-graduate degree in
+data science from P University and IBM
+in collaboration with simply learn gain
+ml python T generative ai explainable ai
+chat gity and more expertise benefit
+from master classes by PD faculty and
+IBM expert elevate your skills now after
+completing the course simply Lear
+Learners have made successful career
+transition boosted career growth and got
+salary hikes with this course delve into
+essential topics like python R ml data
+visualization generative ai explainable
+ai chat GPT and many more using an
+Interactive Learning approach with live
+session led by global expert elevate
+your data skills with us the course link
+is in the description box and the pin
+comment so take action upskill and get
+ahead so without any further Ado let's
+get started so welcome to this Dem part
+of data classes so data classes are
+super beneficial over here it will
+really reduce your whole lot of time
+with respect to coding and when you
+probably specifying working object
+oriented programming with respect to
+creating classes with respect to
+creating variables and with respect to
+defining various and build function with
+this present inside the classes so if
+you really interested and want to really
+save time please make sure that it will
+be an amazing tutorial to go ahead with
+so I'm just going to show you a lot of
+example I hope everyone knows about the
+classes objectoriented Concepts right
+inheritance and all now the previous way
+of how we used to use and now with the
+help of this data classes accurat or
+concept over here everything is going to
+get simplified so let's go ahead without
+wasting any time so so first here I will
+write from data
+classes
+import
+data
+class make sure the library is installed
+in your system or you can install like
+PP install data class okay so
+data
+class
+I'm making one Clause as a
+person okay so first I will write name
+St Str this is a string okay then H be
+integer then
+profession okay then again
+string right so here I will write
+person person one equals
+to uh I will write here
+person this
+my comma my
+age then
+profession python
+developer right so as soon as I will
+print this person one what happened see
+I will run
+it see the whole person name age and
+profession is here
+right so as soon as we call this class
+person here so what is happening the
+data class decorator automatically
+generate the following methods for you
+like first is init so in it initialize
+the object and assigns the provided
+value to the attributes then the rapper
+provides a string representation of the
+object then EQ this implements equality
+comparision between two objects of the
+class on there right
+so everything is happening internally
+you don't have to Define externally
+anything
+okay so okay so next uh how you can
+change the particular you know the given
+value so I will write here
+from from data classes import data
+class okay then uh okay I will write it
+the class then
+class uh
+person
+right then I will write
+name okay s
+Str then
+RO
+number okay then
+integer
+then
+profession okay or I can write here
+school
+school
+name okay so I can give a string
+directly
+okay so I will write here school name St
+Str equals
+to equals to so school name same
+John
+okay
+now yes I will write here
+person St
+John person
+two to
+person person
+right then Z number will be
+44 that's
+it then
+print person
+two okay invalid syntax fine we can't
+give a space right we can use
+underscore school name
+right so now what you can do for the
+changing so you can simply write here
+person to dot
+profession oh sorry not profession
+school
+name okay then equals to you can write
+the different name
+s or I write
+Oxford University
+Okay then if I will write
+print person to that see you can change
+the name okay so the unit that also can
+be actually handled by the data classes
+right so there is one con More Concept
+of this Frozen
+classes okay so uh which is known as the
+immutable classes so how you can create
+the immutable classes first I will write
+here
+immutable
+classes so I will write here
+data
+class so here Frozen is the word
+okay Frozen is uh I'm setting it
+true then I will write
+class
+Square okay then X = to
+and yals to and sorry not equals
+to okay so I will write here
+square equals
+to square the function name data class
+name then 3 comma 4 okay so print
+square right so it will print x = 3 y =
+4 right what if you want to change the
+value of x okay so I will write here
+Square dot
+x equals to
+32 so you know cannot assign to field X
+so this will this is the error so it is
+happening because of this Frozen so what
+Frozen do Frozen set is just an
+immutable version of a python set object
+so while elements of a set can be
+modified at any time then element of
+Frozen set remain the same after the
+creation so due to this Frozen sets can
+be used as a key dictionary like we used
+to do in SQL SQL or as the elements of
+another set right so this is how you can
+use data class you can use data class
+for The Inheritance you can use data
+class for the storing variables and for
+many other things right so so with this
+said we have come to end of this video I
+hope you like this video if you have any
+queries please comment down below our
+team of expert will help you as soon as
+possible thank you for watching stay
+safe and keep learning with simply learn
+staying ahead in your career requires
+continuous learning and upscaling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here
