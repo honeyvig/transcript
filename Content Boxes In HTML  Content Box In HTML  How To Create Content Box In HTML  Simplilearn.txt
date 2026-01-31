@@ -1,0 +1,355 @@
+hello everyone
+welcome to this video on content boxes
+in html by simply learn
+in this video we are going to create the
+content boxes which are used in web
+pages for various purposes
+so let's see an example of what we are
+going to create so in this video we are
+going to create something
+like this this is the content box with
+the icon and the description of the
+content box
+icons here used is from the font
+awesome cdn
+so let's start creating
+so i have my two files open which is
+html and css
+let's add the standard boiler plate
+we'll add the content
+boxes in
+html
+as the title
+let's link our css file
+now inside the body
+let's add a div class container
+inside the disk class container i'll
+create another div box
+i will require three such boxes so we'll
+copy paste this three times
+on the style sheet
+let's set the margin
+to zero
+and padding also to zero
+we'll set the font family
+to
+stand
+serif now
+for the container
+class
+we'll set the position to relative
+and we'll set the width to 1200 pixels
+which is the whole width of the content
+box
+we'll set the height
+to 300 pixels
+and we'll set the margin
+to
+240 pixels and auto
+for the boxes inside the container
+we'll add the position
+relative
+and we'll set the width to
+let me explain what this is
+this css type function is used to
+perform a calculation to be used as a
+property value
+this is specifically used for the width
+of the div classes
+it requires a mathematical expression
+the result will be used as a value
+so we'll be using lot of this type
+function here in this code
+we'll set the height to
+300 pixels minus 30 pixels
+one property of calc function is that it
+takes single expression as its parameter
+the expression can be any simple
+expression combining the following
+operators
+plus so that is addition minus that is
+subtraction multiplication and division
+we will set the background
+to hash 0 0
+we'll set it to float left
+and we'll specify the margin to 15
+pixels
+and we'll set the box sizing to border
+box
+overflow will be hidden
+and border radius
+let's set it to 10 pixels see
+just save the file and let's go back to
+the page to see how it currently looks
+so you can see our boxes are in the
+proper places we have the background
+black with the proper margin between
+them
+okay so we have the structure
+let's
+code more
+now we need the icon
+for that
+we will require
+a icon from the font awesome
+cdn so we'll add the font awesome cdm to
+our page
+so we will search
+quantosim
+cdn 4.7.0
+we are using the older version because
+it is more stable
+so go to this font awesome
+libraries
+here select the version and copy the
+link tag
+go back to the page and add it here
+delete this integrity part
+now
+here inside this class box
+add one div which will be named class
+icon
+and inside here we'll add the link of
+the icon so search here
+font or icon 4.7
+go to the first one
+here you can search the any icon you
+want uh let me search for
+say
+information
+so i'll go to the information
+and i'll copy this
+go back to the code and add it here
+now inside this i'll create another div
+which will be for use for content so
+we'll name it class content
+and inside this i'll add one h3
+info
+and inside it
+i'll add some
+text uh
+copy this much from here
+to here
+now delete this whole part
+and put it inside
+p tag
+so inside the p tag
+add them
+yeah
+so
+let's go back to the file and see how it
+looks right now
+okay so you cannot see the icon here
+because it is black let's try to change
+the color here
+so that you can see the icon
+so let's set it to ff0
+okay so you can see i have the icon in
+place this is and this is the text that
+we have added to this content box
+now let's style this content box first
+set it back to 0.
+now
+container dot box
+dot icon
+will set the position to absolute
+set the top
+to zero
+left to zero
+and we'll set the width to 100 percent
+we'll set the height also 200
+background will be hash f00
+i will set the transition
+to 0.5 seconds
+and we'll keep the z index as one so
+that the icon will be visible
+okay
+refresh
+yeah you can see the icon here
+okay
+now let's add the hover effect on that
+so container
+dot
+box dot
+over
+icon
+we'll set the
+top to 20 pixels
+calculate the left to
+50
+minus 40 pixels
+with
+80 pixels
+i keep it to 80 pixels as well
+and let's set the border radius
+to 50
+okay
+so now that we have
+repeat
+so now that we have added the whole
+effect let's save and go back to the
+page
+now let's
+design the icon so container dot
+box dot icon
+dot fa
+also set the position to absolute
+top will be 50
+left 50
+transform let's translate it to
+minus 50
+minus 50
+and give the font size
+to
+80 pixels
+transition 0.5 seconds
+and we'll set the color to
+save the file and let's go back to the
+page
+yeah
+so you can see our icon has now
+bigger size and with the hover effect it
+shrinks for text to visible
+okay
+now we need to add the hover effect to
+the icon so that the font size increases
+for that we'll add container
+box dot over
+we'll keep the font size to
+40 pixels
+okay
+now it's time to design the content
+inside the container box so we'll set
+container
+dot box
+dot content
+all the positions are absolute
+we'll set the top 200
+percent so that when the icon shrinks
+the whole text will visible to the text
+box
+we will set the height
+to will calculate it
+100
+minus 100 pixels
+text align center
+keep the padding 20 pixels
+for proper spacing
+box sizing as border box
+transition to 0.5 seconds
+and we'll keep the opacity to zero
+okay save the file and let's go back
+yeah
+and you can see the icons are in the
+center of the shrinking circle
+now let's add the hover effect
+now when you set the opacity to one
+another text
+okay we have not
+designed yet h3 and p so let's start
+designing it
+so container
+dot box
+dot content h3
+10 pixels
+keep the padding to 0
+color
+and let's keep the font size to 24
+pixels
+now you will see the text will be
+visible inside the box
+so refresh
+yeah
+you can see this is the heading of our
+like this content box
+now similarly let's tile the paragraph
+tag
+so container
+dot box
+dot content
+p
+margin will be zero
+padding will be also zero
+and color will be fff as usual
+if
+yeah we are almost there
+now we will design these two boxes with
+some spacing and effects over here
+now
+inside this
+delete them we'll copy paste the above
+code here
+so copy from here dip class container
+we'll change the icon classes here
+so for this let's keep search as
+a rch
+instead of copying the class by going
+back to the font cdn we can directly add
+the class search here if we know the
+name of the class
+and here we can add
+location
+so the class name for location is map
+marker
+save the file
+and let's go back
+yeah
+now you can see
+these things are here
+with the good content box when you hover
+over this box the
+this whole thing shrinks and you can see
+the text visible
+now add we'll add some styles we'll
+change the color and we'll add one
+background here so that when this
+shrinks the background color of the
+black changes
+okay
+so we'll go back to our code
+so to change the color of the box
+we'll have here dot container
+dot
+box
+and we'll use the nth child property and
+child
+one because the first box
+dot icon
+so we'll keep its background to
+pink
+okay
+and dot container
+box and child
+one
+its color will be when it shrinks
+let's keep it to orange
+yeah
+so
+save the file
+go back
+and refresh
+okay so you can see we have the icons in
+places and when you go
+click on here so the hover effect
+shrinks this and this is the pink in
+color we have the background orange with
+some text here
+you can see
+smooth transitions
+so
+this is all for the content boxes in
+html you can use different icons here
+using this font as awesome icon there
+are several icons here you can use any
+of them
+and just make sure that the padding and
+the text are aligned in the proper
+places
+so that's it for this tutorial i hope
+you have learned something new thank you
+and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

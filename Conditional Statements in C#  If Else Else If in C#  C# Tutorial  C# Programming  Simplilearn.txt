@@ -1,0 +1,492 @@
+hey everyone i am peppa khandelwal and i
+welcome you all to simply learns gtape
+channel today we will talk about
+conditional statements in c sharp
+but before we begin let me tell you guys
+we have daily updates on multiple
+technologies so if you are a tech geek
+in a continuous hunt for our latest
+technological advancements then consider
+getting subscribed to our youtube
+channel and don't forget to hit the bell
+icon to never miss an update from simply
+learn
+now without any further ado let's get
+started with the agenda for today's
+session
+we will begin a session with the
+discussion on what are conditional
+statements
+then we will discuss the types of
+conditional statement
+then we will dive deeper into the types
+to discuss conditional branching with
+examples
+finally we will wind up this session
+with the discussion on conditional
+looping
+let's get started with what are
+conditional statements
+conditional statements in c sharp are
+used when we wish to perform certain
+actions based on a given condition
+decision making statements necessitate
+a few conditions that the program may
+assess and a set of statement that can
+be performed
+if the condition evaluates as true
+or another statement that can be run if
+the statement evaluates as false
+conditional refers to a program capacity
+to infer and do various actions based on
+the conditions of the codes written in
+that program
+next up let's discuss the types of
+conditional statement
+conditional statements are categorized
+into two types
+conditional branching and conditional
+looping
+let's have a in-depth discussion on
+conditional branching
+there are two ways to accommodate
+conditional branching
+if-else statement and switch case
+statements
+let's discuss if-else statements first
+the if statement is made up of a boolean
+expression followed by a statement
+the statement inside the if condition is
+executed only if the boolean expression
+returns true
+if it returns false then the program
+will simply execute the else statement
+if it is available
+as you can see in this flowchart
+let's try a code to demonstrate if else
+statement
+let's start
+with degree layering
+and x comma y
+then
+console
+dot write line
+in this we will print
+enter
+to
+number
+now
+let's get a user input
+so x
+is equal to end
+dot
+parse
+and we will have console
+dot redline
+this will request the x
+input
+let's copy paste
+repeat
+let's copy paste the same
+function
+but this time for y
+now let's write an fl statement so if
+x
+is greater than y
+then in that case
+we will print
+console
+dot write line
+that x
+is
+greater
+than
+y
+let's go for another condition else
+then if
+we have x
+is less than y
+now in this case
+we will be printing
+that y
+is
+greater than
+x
+now let's say
+they are equal
+since we have already covered
+the greater than part and the less than
+part so only condition left is equals so
+we don't have to mention another if
+statement for x equals to y so we will
+just write else
+and print
+console
+dot
+write line
+both
+are equal
+let's save it
+and execute
+let's enter value
+7
+and
+5
+here it is printing x is greater than y
+let's try equal
+function as well
+let's give it value as 3
+and 3
+and it is printing both are equal
+let's get back to our slides
+next let's discuss switch case statement
+in this scenario we have been given
+number of cases and a default case
+in each case
+is numbered starting from 1 to the n
+except for the default case in the
+beginning we are prompted to choose a
+number
+whatever number we pick then program
+will execute the same numbered case
+in case if there is no case with the
+chosen number it will execute the
+default case
+let's try this statement in a code
+editor
+let's start with defining integer x
+then we will define a function
+that is public
+world
+get data
+here
+we will
+write a console.write writeline
+and we will choose
+as
+choose
+the
+following
+color
+then we will have x
+is equals to
+end
+dot parse
+console
+dot
+red
+line
+now let's have a switch
+statement
+so we have switch
+with argument
+as x
+we will have first case
+console
+dot write line
+and we will print
+you
+choose
+red
+break
+then we can have another case
+two
+and we will have
+same kind of statements
+so console
+dot write line
+you choose
+blue
+then a break statement
+these break statements basically
+will loop you out of this switch case
+so
+let's say case three
+and we have another console case
+right line
+and this time
+you choose
+yellow
+and
+break statement
+to get them out of here
+now there can be a case where
+we have to define a default case
+when we choose a number other than one
+two three
+so
+the default
+will have
+console
+dot
+right line
+and it will by default choose
+fight
+and then
+we will also use break for this one as
+well
+now let's write the function for the
+main block
+here
+we will define an object
+for the switch
+case
+so
+for program
+obj
+is equals to
+new
+program
+then
+we can have obj
+dot
+get data
+and
+we can have
+last line as console
+dot
+redline
+let's save it
+and execute it
+as you can see it's asking us to enter a
+number
+let's enter one
+and it's printing you choose red
+let's enter
+let's execute again
+this time let's answer
+a number which is not in the our cases
+let's say use 5
+and it will automatically choose us
+white
+let's get back to our slips
+if getting your learning started is half
+the battle what if you could do that for
+free visit scale up by simply learn
+click on the link in the description to
+know more
+now we have successfully defined the
+conditional branching statements
+now let's discuss conditional looping
+there are four methods to accommodate
+conditional looping
+first up
+for loop while loop
+do while loop
+and four each loop
+let's discuss them in detail
+first up for loop
+the condition of the for loop includes
+the
+set up and change inside the syntax as
+well
+we will first check the condition like
+if we are at the last item
+if it is deemed false then we will keep
+this loop going otherwise we will end
+the loop
+let's try a code
+let's start
+with an console right line
+here we will print
+a statement as square
+of
+1
+to
+10.
+let's write a for loop to do that
+we can have end
+i is equals to 1
+then i less than equals to
+10
+then i
+plus plus
+then we will have console
+dot right line
+and then we will have i star i
+as its argument
+let's try
+as you can see it is printing
+the squares from 1
+to
+100
+let's get back to our slides
+next we have is a while loop
+in this scenario the while loop will
+validate a condition
+then it will execute the code block as
+long as that while condition is true
+and the loop will keep executing unless
+the condition becomes false
+let's try a code
+to understand this thoroughly
+let's start
+we'll first have
+an integer x
+then
+we will
+write function
+which is public
+void
+while
+demo
+then we will have
+a while loop inside
+with an argument condition as x less
+than equals to
+50.
+let's decrease that to 10
+then console
+dot
+write line
+and this will print x
+it will keep on printing x
+until
+x becomes
+greater than 10
+to do that the x plus plus will
+increment its value after each loop
+then let's go to our main block
+here
+we will call while
+loop
+then object
+equals to
+while
+nope
+new keyword
+now let's use this newly created object
+to call
+while demo
+let's save it
+and execute it
+and here you can see it is printing its
+value from 0 to all the way up to 10
+then the while loop
+was dismissed because it existed the
+while condition
+let's get back to our slides
+next we have do while loop
+in this scenario it will first run the
+do code block
+then the while loop will validate a
+condition
+and then if that condition is true it
+will execute the do block as long as the
+while condition remains true
+this loop will keep executing unless the
+while condition becomes false
+let's go to a correlator and try a code
+let's start with an end
+x
+then we will have
+a function
+that is public
+world
+too while
+demo
+here
+we will write
+a do command
+and the trend
+console
+dot write line
+x
+and x
+plus plus
+then we have a while condition
+within condition as
+x
+should be less than equals to
+10.
+let's say in a case the x was 11
+then also the do function will first
+execute it
+basically in this do while loop
+if
+our x was already greater than 10 since
+our condition that x should be remain
+less than 10.
+this do block will still run
+for the first time
+because it did not encounter this while
+condition yet
+so after running it once it will print
+11
+then it will encounter this while
+condition
+and since the while condition will come
+out to be false this dual loop will be
+terminated
+let's write the main block
+do i look
+obj
+is equal to
+new
+do i loop
+then we will use obj
+got
+dual demo
+call it
+let's save this and run it
+as you can see it is again printing from
+0
+to 10.
+let's get back to our slides
+finally we have 4 each loop
+when a program
+wants to iterate through a contents of a
+list
+it uses a for each loop
+it can be applied to a collection such
+as array list or arrays
+let's write a code to understand it
+better
+let's start with the main block
+and write
+string
+break it
+close
+which is equals to
+let's have arguments
+as die
+comma
+we can have shirt
+we can have code
+we can have
+bands we can have
+shorts
+now let's write a four each loop
+so
+for each loop
+we will have
+string
+i
+in
+cloth
+then we will have a console
+dot right line
+and it will print i
+let's save it
+so according to the foreign loop it will
+run this eye in this cloth
+which is a string so basically it will
+print these all elements
+one by one through this loop
+and here as you can see it is printing
+ties shirt coat pants and shorts
+one by one
+and this was all for today's session
+hope you guys found it informative and
+helpful if you like this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,916 @@
+hello everyone welcome to simply learns
+youtube channel today we will be
+discussing about circular queuing data
+structure but before we begin let me
+tell you guys that we have daily updates
+on multiple technologies
+so if you are a tech geek in a
+continuous hunt for latest technological
+advancements then consider getting
+subscribed to our youtube channel and
+don't forget to hit that bell icon to
+never miss an update from simply learn
+now without any further ado let's get
+started with the agenda for today's
+discussion
+so at first we'll discuss why the
+concept of circular queue was introduced
+followed by that we will understand how
+we can represent a circular queue using
+an array and linked list
+advancing ahead will deal with the
+implementation of a circular queue using
+array and linked list and finally we
+will cover the applications of a
+circular queue to understand its
+importance
+i hope i made myself clear with the
+agenda
+now let's get started with our first
+topic which is why the concept of
+circular queue was introduced
+in our previous sessions of queue
+implementation we discussed the
+challenge of memory wastage while
+operating on linear queue and as per our
+previous discussions we know that memory
+is a crucial resource that we should
+always be protecting
+it's not that some amount of unused
+memory will be real problem in today's
+modern day computers it's just that
+while designing solutions and algorithms
+we should always analyze and understands
+implication like memory usage as well as
+the time taken for execution
+in the case of linear queue we have
+already learned that insertion is done
+at the rear end and deletion is done at
+the front end
+initially when the queue is empty both
+of these pointers point to null memory
+space that is -1 according to our
+convention
+but as we keep adding elements into the
+queue the rear pointer keeps
+incrementing until it reaches the max
+size of the queue in this particular
+example of the queue the new data
+element will be inserted after each
+incrementation of a rear pointer until
+the pointer reaches the end of a queue
+when the front pointer remains pointing
+at the exact same location until we
+perform dq operation
+but here comes the challenge when we
+perform those dq operations the empty
+space gets created at the starting part
+of the queue and there is no way we can
+reutilize this blank space as the rear
+pointer has already reached the end of q
+so to overcome this limitation the
+concept of a circular queue was
+introduced
+a circular queue is nothing but the
+extended notion of a linear queue as it
+also follows the principle of first in
+first out with the exception that the
+last position of this particular queue
+is connected to its first position
+making a circular link
+this circular link is responsible for
+naming of this queue as a circular queue
+or a ring buffer
+additionally this new circular link
+feature resolves the problem of memory
+wastage in a linear queue
+let's understand how this problem is
+actually getting resolved with the help
+of an example
+this figure is an illustration of a
+circular queue having size 5. the
+element at the front node is 7 and the
+element at the rear node is 9. as we can
+clearly see this queue is completely
+filled and if we try to perform enqueue
+operation it will definitely return an
+overflow error
+we can only perform a dq operation on
+this queue
+but if we perform dq operation the front
+pointer will be updated to point to the
+next available data element further due
+to this decay operation the empty space
+will get created in the beginning part
+of a queue but because of the circular
+link rear pointer can arrive back at the
+empty space for making insertion of a
+new data element hence the circular
+queue concept is better version of a
+queue data structure considering its
+benefits over a circular queue
+moving ahead we'll discuss how we can
+represent a circular queue using an
+array and linked list
+however initially we should also look
+into the principle of circular
+incrementation which drives the
+insertion in a circular queue
+the circular queue incrementation is a
+process of pointer incrementation that
+allows zero pointer to arrive back at
+the beginning part of the queue once it
+reaches the max size of q
+let's understand how circular
+incrementation works with the help of an
+example
+the simulation of a circular queue shown
+here has max size 6 which means it can
+store 6 data elements in the first
+scenario when q is empty it can store
+elements by simply incrementing the rear
+pointer as shown in the animation
+the other scenario for insertion in
+queue is when the rear pointer is at the
+end of q and there is an empty space at
+the beginning portion of a queue due to
+dq operations in this case the rear
+pointer can arrive back at the beginning
+of q to insert a new element at any
+empty space
+but the biggest question that arrives
+here is how the circular incrementation
+is happening logically or arithmetically
+let's contemplate the logic for this
+process of circular incrementation with
+the help of previous example
+in the last example of a circular queue
+the max size of a queue was 6 and rear
+pointer was pointing to the index 5
+where print pointer was pointing to
+index 2.
+now for the new incrementation to happen
+we have to bring rear pointer to the
+index 0. let's analyze how we can do
+that if we simply add 1 to the rear
+pointer then we will get 6 as a result
+which is also the max size of our cube
+now if you guys remember the modulus
+operator in programming you can clearly
+achieve the circular incrementation for
+example in this case rear plus 1 modulus
+max size will output 0 the result which
+we want so with the help of modulus
+operator we can perform the circular
+incrementation to formulate a circular
+link using arrays now that you have
+understood how circular link is
+implemented in case of array
+implementation of circular queue we will
+now look into representation of a
+circular queue
+in the array representation of circular
+queue you can clearly see that the last
+index of the array is connected to the
+first index by circular incrementation
+process
+moving forward we'll look into the
+different cases of inserting an element
+into the queue
+the first case that we are going to
+discuss is to determine if the queue is
+full as we cannot insert a new element
+into the queue when it is full but how
+can we judge if the queue is full well
+that's quite easy
+if the result of circular incrementation
+matches to the index value of friend
+pointer then there is no space for
+insertion of a new data element that
+means if rear plus 1 modulus max size is
+equal to front then the queue is full
+and insertion cannot be achieved the
+next case for inserting an element into
+a circular queue is when there is space
+at the beginning of a queue
+let's say the size of an array is 5 in
+which the rear pointer is pointing to
+the index 4 and the front pointer is
+pointing to index 2.
+by making circular incrementation we can
+insert element at the empty space by
+using rear is equal to rear plus 1
+modulus max size statement we can bring
+our rear pointer to the beginning part
+of our queue to make a new insertion
+that's all about array representation of
+a circular queue now moving ahead we
+will discuss the representation of
+circular queue using a linked list
+the linked list representation of a
+circular queue can be achieved by
+changing the reference field of the tail
+node for that we can just add the
+address of head node in the reference
+field of the tail node the
+implementation of a circular queue using
+linked list is more efficient than array
+implementation as it manage memory more
+effectively further it is a dynamic
+structure that can be allocated with
+more memory space if required at the
+runtime
+on that note we have covered the
+representation of circular queue using
+both arrays and linked lists
+now we'll implement a circular queue
+using both of this data structure with
+the help of c programming language
+first let's dive into the array
+implementation of a circular queue using
+the c programming language for that
+let's visit our code editor and get
+started
+the program for array implementation
+will begin with the declaration of array
+and pointer variables so let's create an
+array first and
+a
+close braces and semicolon
+now the size that we want to allow to
+this array is 5 so let's define our max
+size value as 5 first
+hash
+define
+max
+underscore size
+as
+5. now let's pass this as an argument to
+this array
+now we will define the pointer variables
+as well
+so end
+front
+is equal to -1
+and also the rear pointer
+okay now we have successfully created
+our array and pointer variables
+so after this we'll begin with the
+implementation of circular queue
+operations the first primary queue
+operation that allow us to manage data
+flow in a queue is enqueue so we will
+create this function first
+void
+and queue
+and will pass an argument
+variable x to insert an element
+for implementing this operation
+we have to check if the queue is empty
+if a circular queue is empty then we'll
+set both the front and rear pointer to
+zero manually for that we'll write a
+statement f
+front is equal to equal to minus 1
+and and
+rear
+is equal to equal to minus 1
+then
+set
+front
+equal to
+rear
+equal to
+zero
+we have just written the condition for
+instance when the queue is empty next
+we'll write the condition to check if
+the queue is full so for that we'll
+create else if condition
+else
+f
+rear
+plus one
+modulus
+max underscore size
+is equal to equal to
+front
+then printf
+q
+is
+full
+slash n
+and return the control to the next
+function
+if both these above mentioned conditions
+fail
+then we'll have to increment the rear
+pointer using the technique of circular
+incrementation so for that we'll create
+another else loop
+else
+rear
+is equal to
+rear
+plus
+one
+modulus
+max
+underscore
+size
+and outside this will make an insertion
+into our array
+with this we have successfully created
+our enqueue operation now we'll move
+towards the dq operation
+for that we'll create another function
+void
+dq
+the dq operation is responsible for
+removing the element from the print node
+of a cube further an element can only be
+deleted when there is at least an
+element to delete so
+first we'll have to check if a queue is
+empty or not for that we'll write a
+statement if
+front
+is equal to equal to minus 1
+and and
+real
+is equal to equal to -1
+now inside this block will
+printf
+q
+is
+empty and we cannot delete any element
+we will return the control to the next
+function
+in addition to that if there is only one
+element inside the queue will have to
+set both front and rear pointer to the
+null manually so for that we'll write
+another condition
+else f
+front
+is equal to equal to ria
+which must be the 0th index or the last
+element inside q
+and inside this function will write
+front
+is equal to rear
+is equal to minus 1 which means we'll
+set it back to the null state
+if both these conditions fail then we'll
+simply have to increment the front
+pointer using technique of circular
+incrementation for that we'll write
+another condition
+else
+front is equal to
+front
+plus one
+under braces
+modulus
+max underscore
+size
+with the help of these three conditions
+will be able to delete element from our
+queue
+now moving forward we'll look into
+another operation that is print function
+so let's create a new function for that
+void
+print
+we will understand this function with
+the help of powerpoint because it will
+be more understandable to all of you if
+i show things in moving simulation so
+let's visit powerpoint for that purpose
+the count variable used in this print
+function is supposed to count the number
+of elements inside the queue we'll
+understand how it is operating
+arithmetically with the help of an
+example
+let's say the max size of our array is 5
+where front pointer is pointing to index
+1 and rear pointer is pointing to index
+4.
+to work out the value of count variable
+we'll need to perform following
+operation
+rear plus max size minus front modulus
+max size plus 1 is equal to count
+by filling the values in this operation
+we'll get 4 as a result which is the
+exact number of elements inside the
+queue
+now we will iterate through the queue
+using for loop and will also print the
+elements i hope you are clear with the
+implementation of this print function
+now
+moving forward we will revisit the code
+editor to write main function and to
+check the result of our program and see
+inside this main function we'll call
+enqueue function to insert some elements
+into the queue
+and after few insertion operations will
+call print function to represent the
+state of our queue
+so let's insert few elements at first
+nq
+file
+and q
+seven
+next element that we will insert is
+n q
+minus
+three next
+and q
+0
+now
+let's write one printf statement
+the element
+inside
+the queue
+are
+and in next line we'll return the state
+of queue using
+print
+function
+well there is single mistake in this
+code here we have written printf
+statement in upper case which is a case
+error in c programming so we'll change
+it to the small p
+now
+we'll
+few elements to understand the operation
+of dq as well so let's dequeue two
+elements
+one more time
+and after these two operation we'll also
+print the state of queue once again
+using the print function
+well we'll write one more statement
+f
+the state
+of q
+after
+two
+deletions
+and also
+we want this statement to come in
+next line
+so let's check slashing
+okay so with this we have successfully
+completed a coding implementation of
+circular queue using arrays so let's
+compile this code and check if it is
+working fine or not
+well
+here is the output that we have got the
+elements inside the queue are five seven
+minus three zero so let's check our
+order of insertion so we incur 5 7 minus
+3 and 0 and in similar order
+the elements are inserted in our cube
+also we deleted two elements from the
+front node that is 5 and 7 which are
+also deleted here with this
+we can say that our code works fine so
+let's move towards link list
+implementation of circular queue
+for link list implementation of queue
+first we'll need to create structure of
+a linked list and pointer variables so
+first we'll create a structure for node
+struct
+node
+end
+data part
+and
+the address part
+[Music]
+now we'll create pointer variables so
+for that
+we'll write statement struct
+node
+star front is equal to -1
+similarly
+struct
+node
+star
+rear
+is equal to
+-1
+after done with this point the
+declaration will begin with the
+implementation of queue operations the
+first operation that we'll work on is
+enqueue operation for that let's create
+a new function
+void
+enqueue
+and
+x
+and inside this function will create a
+temporary node using the previous
+structure of node so for that
+we'll write statement struct node star
+new
+node
+is equal to
+struct
+node
+star
+malloc
+size of
+struct
+no
+after creating a new node now we will
+also insert values into both data and
+reference fields
+data will be the argument provided by
+the user and the reference field will be
+set to null initially
+so
+let's do that here
+new node
+arrow operator
+data
+is equal to
+x
+and similarly
+new node
+arrow operator
+next is equal to
+zero
+now there are two conditions for
+inserting a new node into the linked
+circular queue
+in the first condition we'll insert a
+new node into an empty queue
+in this case both the front and rear
+pointer must be not so let's write a
+condition for that if
+rear
+is equal to equal to minus 1
+then
+front
+is equal to zero
+is equal to
+new node
+and
+rear
+dot
+next
+is equal to
+front
+now in the second case the queue already
+contains more than one data element
+the condition rear is equal to equal to
+-1 becomes false in this scenario we'll
+just update the rear pointer to point to
+the new node for that we'll create a
+else block
+else
+rear
+dot
+next
+is equal to
+new node
+and
+rear
+is equal to
+new node
+where
+rear
+dot
+next
+is equal to front
+with this we have successfully
+implemented our enqueue function so now
+let's move towards dq function for that
+we'll create a new function
+void
+dq
+and inside this function body will also
+create new temporary
+pointer so let's create that struct
+node
+node
+star
+temp
+and we'll set this temp
+is equal to front so that we can delete
+it from our queue
+next we'll build a condition for
+deletion the first condition that we'll
+check is if our queue is empty or not
+for that we'll write statement if
+front
+is equal to equal to minus 1
+and and
+real
+is equal to equal to -1
+if
+this condition becomes true then we will
+print f
+q
+is empty
+let's add slash in here
+so that it gets printed in next line
+and semicolon
+okay
+further if there is only one element in
+the queue then we'll set both front and
+rear pointer to the null manually so for
+that purpose we'll create another block
+else f
+front
+is equal to equal to rear
+which will happen when there is only one
+element in our queue
+and inside this condition
+we'll
+put current
+is equal to rear
+is equal to minus 1.
+and we will
+free
+the temporary variable
+which is also storing the front pointer
+okay now if both these above mentioned
+conditions fail then we will update the
+value of front pointer to point to next
+node and will also de-allocate the
+memory
+of deleted node using free function for
+that we'll write another else condition
+else
+front
+is equal to front
+arrow operator
+next
+and
+rear
+arrow operator
+next
+is equal to
+front
+and we will
+free
+the pointer present at front node which
+we have previously stored in this
+temporary
+structure
+with this we have successfully
+implemented the dq operation now we'll
+work on the display function which will
+represent the state of our queue for
+that let's create
+new function
+void
+display
+and inside this function
+will also create
+the temporary node
+struct
+node star
+temp
+is equal to front
+and
+now let's write one printf statement
+to display
+the elements in a queue the elements
+inside
+q
+are
+okay
+semicolon
+now the first condition that we are
+supposed to check inside this function
+is if a queue is full or not for that
+we'll write if statement
+if
+front
+is equal to equal to minus 1.
+and and
+rear
+is equal to equal to minus one
+then
+printf
+q
+it's empty
+let's add slashing
+otherwise
+we will print the elements inside the
+queue using while block
+temp
+arrow operator
+next
+it's not equal to
+front
+then
+print
+f
+modulus
+d
+which is nothing but
+the data part of
+our temporary pointer
+and again
+print f
+modulus d
+comma
+temp
+data
+okay
+with this we have successfully completed
+the implementation of our display
+function
+now next we'll look into our driver
+method that is main function
+inside this driver method we'll call
+enqueue function to insert
+few elements
+first we'll pass five
+then we will insert
+minus 32
+then
+6
+and we will enqueue
+three final
+now let's
+print
+the state of queue using display
+function
+now after this we will dq few elements
+and we will display the state of cube
+once again
+but before this
+we'll write one more
+statement
+printf
+the state
+of queue
+after
+deleting
+two
+elements
+and let's have slash and so that this
+statement
+gets added to the next line
+with this we have successfully
+implemented a linked list implementation
+code for circular queue so let's compile
+it and check if it is working fine or
+not
+okay there are few
+we have successfully implemented our
+code now but the only problem we are
+facing here is all the elements are
+getting placed close to each other
+to remove this close proximity will have
+to make changes in our display function
+so let's do that
+we'll add
+space before modulus d in both the cases
+and again compile it
+so let's
+run it again
+okay
+so now our output looks fine
+right the elements inside the queue are
+5 minus 32 6 and 3 and after deleting
+first two elements that are front
+elements
+we will remain with 6 and 3 that means
+the first two front elements 5 and minus
+32 will get removed out of our circular
+queue
+okay so we have finished the circular
+queue implementation using linked list
+as well so let's move back to our
+powerpoint presentation the last topic
+that we have on our agenda is
+applications of a circular queue so
+let's deal with this topic to understand
+the importance of circular queue
+the first application of a circular
+queue that we are going to discuss about
+is data buffer after that we'll discover
+cpu scheduling algorithms and computer
+controlled traffic light systems
+data buffer is a region of a physical
+memory which is used to temporarily
+store data while it is being moved from
+one place to another typically the data
+is stored in a buffer as it is retrieved
+from an input device such as a
+microphone or just before it is sent to
+an output device such as speakers
+basically when the input is provided to
+the microphone while using applications
+such as google me whatsapp zoom meeting
+etc then the input does not get stored
+in the physical memory of the device
+instead it gets stored in data buffer
+implemented in this application the data
+buffer will store the input signal in
+order and similarly it will dequeue it
+in exact same order just like first in
+first out circular queue
+furthermore this data buffer is also
+used in internet streaming applications
+let's understand how it is used in case
+of one of the most famous streaming
+platform netflix
+netflix uses amazon cloud services to
+cater for their computing as well as
+storage needs the server of netflix are
+deployed over aws cloud
+which are further connected to the
+content delivery network servers that
+are spread across the globe
+these servers work together to provide
+fast delivery of internet content in the
+form of audio and video chunks or
+packets
+these packets will be received in a
+virtual data buffer implemented inside
+ms silver site which is an application
+used by netflix to stream content on
+remote devices
+this buffer acts like an accordion in
+this streaming application it gets
+filled when packets are being delivered
+at a rate that exceeds the video stream
+data rate and empties when the packets
+are not being delivered fast enough
+the next application of a circular queue
+is a ready queue in cpu scheduling
+algorithms cpu scheduling determines
+which process will own cpu for execution
+while other processes are on hold the
+main task of cpu scheduling is to ensure
+that whenever the cpu remains idle the
+os at least selects one of the processes
+available in radiq for execution
+the algorithm named round robin uses a
+circular queue to implement the ready
+queue state
+the ready queue stores all the processes
+that are available for resource
+allocation having their own burst time
+the burst time is the time that
+processes need to hold the cpu for their
+execution but in this algorithm the cpu
+has assigned with timestamp of 2
+microseconds this timestamp is the
+actual period for which the processors
+can hold the cpu for execution so for
+example the first process p1 had a burst
+time of 4 microseconds but it can only
+access the cpu for 2 micro seconds due
+to its timestamp
+so this process will again re-enter the
+queue at the rear end further the empty
+space created at the beginning of radicu
+will be managed by the process of
+circular incrementation this is the
+advantage of implementing radiq using a
+circular queue
+the next application is computer control
+traffic system the circular queues are
+used in these systems to activate the
+signal lies for constant intervals of
+time the computer system used for
+traffic light control stores a circular
+queue containing the commands to lit the
+traffic lights these commands will be
+activated for a certain amount of time
+and will be re-inserted at the rear end
+of a queue this process is an example of
+circular fifo principle which is
+followed in insertion and deletion for
+circular queue
+so with this we came to the end of this
+video i hope this video was informative
+and exciting if you have any queries
+regarding the topics covered in this
+video then let us know in comment
+section below our team of experts will
+be happy to resolve all your queries
+thank you so much for watching this
+video and stay tuned to simply learn for
+more such technical videos
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

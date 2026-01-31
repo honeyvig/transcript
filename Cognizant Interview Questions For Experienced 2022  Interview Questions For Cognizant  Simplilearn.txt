@@ -1,0 +1,1087 @@
+everyone welcome back to another video
+by simply learn in this video we will be
+discussing cognizant interview question
+4 experience
+so we'll go through different types of
+interview questions that are often asked
+during the interview process at
+cognizant
+so in this video
+we will be learning about cognizant then
+we'll understand cognizant recruitment
+process and different interview rounds
+after that we'll understand cognizant
+technical interview questions for
+experienced
+then we'll understand the objective
+interview questions and hr interview
+questions for freshers and experienced
+after that we'll understand how to
+prepare for cognizant hr interview and
+then cognizant careers
+but before we begin make sure to
+subscribe to our youtube channel and
+press the bell icon to never miss an
+update from simply learn
+so cognizant helps business streamlight
+process reimagine customer experiences
+and modernize technologies to keep up
+with the constant changes in business
+environments
+its technology offers the tools and
+flexibility necessary for each person to
+develop their best self
+whether changing the companies that the
+world relies on or helping you build
+your best self
+in addition to information technology
+security consulting i.t and bpo
+cognizant also offers services in
+education and government
+cognizant has three key areas of focus
+digital business digital operations and
+digital systems and technology so this
+was about cognizant now let's understand
+cognizant recruitment process
+so cognizant believes in employing
+people that are driven to succeed and go
+above and beyond to contribute
+significantly with their digital
+expertise
+their hiring method takes into account
+the fact that students have varying
+levels of ite experience
+they are offered jobs depending on the
+skills and interest in technology
+the process for freshers happens in two
+ways
+that is on-campus recruitment off-campus
+recruitment
+the recruitment of experienced
+candidates take place through job
+portals like nocri
+monster jobs linkedin indeed
+referrals etc
+so this was the recruitment process now
+let's understand different interview
+rounds at cognizant interview rounds are
+divided into first aptitude test then
+technical interview then hr interview
+so first understand the aptitude test
+if you are a fresher you must take the
+aptitude test first
+candidates can take the test on an
+online platform
+usually freshers apply for the jancy
+position in cognizant
+the gen c interview questions are
+divided into the following that is
+quantitative ability then logical
+reasoning and english comprehension
+while the experienced candidates have to
+take skill based assessments
+this test is based on previous
+experience and technologies
+now let's understand the technical
+interview round
+so
+technical round is standard for freshest
+and experienced candidates it is one of
+the crucial and difficult rounds in the
+entire process
+the questions can vary from data
+structures databases system design ui ai
+ml etc now moving on to hr interview
+questions
+hr interview round there is not that
+much to prepare hr will usually check
+your attitude and organizational fitment
+so that is what you need to prepare for
+that round
+now let's have a look at cognizant
+technical integrations for experience
+so our first question is
+what is a linked list
+so a linked list is similar to an array
+it is a collection of elements in a
+linear fashion
+the order of the elements is determined
+by the pointer
+and this pointer points to the next
+element in the collection
+so this is what linked list is
+now moving on to the next question which
+is
+can you reverse a linked list explain
+so yes we can reverse a linked list
+please follow this solution
+now as you can see first of all
+initialize three pointers previous as
+null
+current as head and next as null
+now i trade through the linked list so
+in a loop do the following like before
+changing next of current store next node
+like next equals current air operator
+next
+now
+change next of current now this is where
+the actual reversing happens
+now current air operator next equals to
+previous
+now this is where the actual reversing
+take place move the previous and current
+one step forward so here what we are
+doing is we are moving the previous one
+step forward so we are storing the
+current value to the previous and the
+next value to the current
+so this is how we can reverse
+a linked list
+now
+moving on to the next question which is
+what is q
+provide a real life example
+so it is one of the most important data
+structure
+the queue follows the first in first out
+method
+it means that the element that is
+inserted first gets removed first
+the elements are inserted near the
+bottom and the deletion is done at the
+top end
+a cue for cinema tickets is a fine
+example of queue
+now
+let's move ahead
+so our next question is what is a doubly
+linked list
+it is an advanced version of a simple
+linked list one can traverse forward and
+backwards using a doubly linked list
+unlike a simply linked list it stores
+the previous pointer as well
+now
+moving to the next
+question what is the difference between
+push function and pop function
+so push function is used to insert the
+elements in the stack
+while pop function is used to remove the
+elements from the stack
+the top is used to keep a track of
+elements at the top of the stack
+so this is the main difference between
+push and pop function
+now
+moving on to the next question
+explain
+graph so a graph is a non-linear data
+structure where elements are connected
+by links
+these elements are termed as vertices
+and the links are called edges
+and the length of the links doesn't
+matter in graphs
+now moving on to the next question which
+is
+what is the difference between stack and
+array
+so stack based on the leaf of principle
+that is last in first out
+the sequential process of accessing data
+means that the last data is entered
+after the first has been erased
+whereas in an array there is no
+particular order and each element can be
+accessed by inspecting its index
+now
+coming to the next question which is
+what is a stack
+so stack is a linear data structure it
+is similar to q but follows the last in
+first out principle
+the elements that are inserted last are
+removed first
+stack has two methods that is pop
+function and push function
+a example of stack would be a bucket of
+clothes resembles as stack
+now let's move on to the next question
+explain the concept of a binary tree
+so binary tree is a non-linear data
+structure
+every node in the tree has a left and
+right pointers along with the data
+the topmost node is known as the root
+node
+the nodes that have sub nodes is called
+parent node and nodes that do not have
+any sub nodes are known as leaf node
+so binary trees are used in binary
+search tree implementation
+they are useful in storing records
+without taking up much space
+so this was the concept of binary tree
+now let's move on to the next question
+which is
+write a program to implement search in
+binary tree
+so you can have a look at this example
+first
+so in this example we are searching node
+using the condition if the root to be
+searched is less than or greater than or
+equal to the key value
+so in first condition we are checking if
+root is null or key root is present at
+the root
+then we are checking if root is less
+than key root value
+if it is then we are calling the search
+function again and passing the parameter
+as root dot write that is right node
+else we are checking if root is greater
+than key root
+if yes then we are
+calling the search function and passing
+the parameter as root dot left that is
+the left node
+root so this is how you can search or
+implement search in a binary search tree
+now moving on to the next question
+explain dynamic programming
+so
+dynamic programming is a technique
+widely used in competitive programming
+where overlapping methods are used
+the main problem is divided into smaller
+problems so that the result generated
+from solving them can be reused again
+so this is what dynamic programming is
+all right
+now the next question is explain
+traveling salesman
+what is it used for
+so
+the traveling salesman problem is an
+algorithmic problem tasked with finding
+the shortest rows between a set of
+points and location that must be visited
+in the problem statements the points are
+the cities a sales person might visit
+the salesperson goal is to keep both the
+travel cost and the distance traveled as
+low as possible
+focused on the optimization the
+traveling salesman's problem is often
+used in computer science to find the
+most efficient route for data to travel
+between various nodes
+applications include identifying network
+or hardware optimization methods
+so this was the traveling salesman
+problem
+now moving on to the next question which
+is
+explain the concept of merge sort
+merge sort falls under divide and
+conquer algorithm
+the problem is broken down into smaller
+problems of the same type until they are
+solvable the solution to the sub problem
+is then combined to provide the solution
+for the initial problem
+the time complexity of merge sort is
+o
+n into log n
+all right now moving on to the next
+question
+can you implement bubble sort algorithm
+all right so let's have a look at it
+first
+so the bubble sort algorithm is one of
+the classic sorting algorithms the idea
+is to swap the adjacent elements
+if they are in wrong order
+so bubble saw doesn't work well with
+large data sets
+so in this example we start from the
+first index and compare first and second
+elements
+if the first element is greater than
+second then we swap both of them for
+swapping we are using the temp variable
+that is a temporary variable
+same goes for the second and third
+element and this goes on until the last
+element
+so this is how we can do this
+now moving on to the next question which
+is
+explain the pre-emptive multitasking
+the preemptive multitasking process
+allows computer programs to pool
+operating systems and hardware resources
+it uses established criteria to switch
+resources between processes and
+distributes operating and computing time
+among processes
+preemptive multitasking is also known as
+time shared multitasking
+now
+our next question is
+what are the steps involved in oracle
+database startup
+so the steps involved in oracle database
+startup is
+amount mount and open
+you can also read about this in detail
+now
+our next question is
+can you explain rac
+so rxe stands for real application
+cluster
+oracle introduce is to provide high
+availability and clustering for the
+databases
+more than two nodes of the database form
+a cluster and provide 24 7 database
+availability even if some nodes in the
+cluster go down
+so this is rac
+that is real application cluster
+now coming to the next question
+what is split brain syndrome
+so split brain syndrome happens when the
+database node starts behaving like an
+independent database
+this can cause corruption and data loss
+to prevent split brain syndrome a voting
+disc is used
+all right
+now our next question is
+what is depth first search algorithm for
+binary tree
+so an algorithm called dfs or depth
+first search
+is used to search all the nodes in a
+graph or tree
+the concept of traversing is to see all
+the nodes at once
+all right
+now our next question is swap two
+numbers without using the third variable
+so it is a coding question or
+programming question
+you can have a look at this first
+so in this example we are just swapping
+two integers without using any temporary
+variable
+so we are taking two variables x and y
+so say
+three and five x is three and y is five
+then we are taking sum of x and y and
+storing it in x
+making x equals eight
+then we are subtracting y from x and
+storing it in y
+that makes y equals to three
+next we are again subtracting y from x
+and storing it in x making x equals to
+5
+now x becomes 5 and y becomes 3
+so this is how we can swap two numbers
+without using a third variable
+all right
+now our next question is
+what is index
+and how does it work
+so index is used to optimize and improve
+the performance of the database
+it is a data structure used to access
+and quickly locate the data in the
+database
+just like the index in the book database
+index works in the similar way
+right
+coming to the next question find the
+length of string without using the
+string functions
+so this is again a coding question
+so in this example we are taking a
+character array as input
+then we are checking if the value inside
+a character array is null or not by
+using the null operator
+then we are validating the same in while
+loop and if it validates to be true then
+we are increasing the count of length by
+1.
+so this is how this
+question can be done
+all right
+next question is explain the fill factor
+so the fill factor represents how much
+space on each leaf level page will be
+devoted to a data
+so sql server's smallest unit is the
+page
+which is composed of 8k pages
+the number of rows per page depends on
+the size of the rows
+the default value for fill factor is 100
+which is the same as the value 0.
+when the fill factor is set 200 or 0
+sql server will fill the leaf level
+pages of an index with as many rows as
+possible
+there will be no or very little blank
+space on the page when the fill factor
+is 100.
+now
+explain what is views and what
+operations can be performed on views
+views are virtual tables that contains
+data from combination of two or more
+tables
+views are important when the data is
+stored in different tables and you want
+to have a single table
+you can create update and delete a view
+and these are the operations that can be
+performed on views
+these are the operation that can be
+performed on views
+now let's move on to the next topic
+now let's understand cognizant objective
+interview questions
+so our first question is
+a 300 meter long train
+running at the speed of 150 kilometer
+per hour crosses the second train
+running in the opposite direction with
+the speed of 120 kilometer per hour in
+nine seconds
+what is the length of the second train
+option a is 370 meter option b is 400
+meter option c is 375 meter and option d
+is 372 meter
+you can take some time to solve this
+question
+you can also pause this
+video in order to figure out the correct
+option
+meanwhile we will discuss the correct
+option
+so the correct option is c 375 meters
+so the train is running in the opposite
+direction
+then the total speed would be 150 plus
+120 which is equal to 270 kilometer per
+hour
+and if we will convert it into meter per
+second then it becomes 75 meter per
+second
+now let the length of another train be l
+meter
+now
+300 plus l that is the length of the
+other train
+divided by 9 equals to 75 meter
+this becomes distance upon time equals
+to speed that is 300 plus l divided by 9
+equals to 75
+now 75 is the speed that is 75 meter per
+second now by solving this equation
+l that is the length comes out to be 375
+meter
+all right now moving on to the next
+question which is
+assume
+a x equals to b y then
+option a
+log a
+by log b equals to x by y
+option b is log
+a by b equals to x by y
+option c is log a divided by log b
+equals to y by x
+option d is
+log b divided by a equals to x y
+now you can again pause this video to
+figure out the correct option meanwhile
+we can go ahead with the right option so
+the correct option is
+c
+that is log a
+divided by log b equals to y by x
+now moving on to the next question which
+is
+sum of two numbers is 80 and the product
+is 320 then what is the sum of the
+reciprocals it is a very basic question
+function a is one option b is two option
+c is one by four and option d is one by
+two
+now you can take your time
+by pausing this video
+meanwhile the correct option is option d
+one by four
+so given a plus b equals to eighty that
+is the sum of two numbers equals to 80
+and a into b that is product of two
+numbers is 320
+then sum of their reciprocals as we know
+the formula that the sum of their
+reciprocals is equal to a plus b divided
+by a into b that is equal to
+a plus b that is the sum divided by the
+product which comes out to be 80 divided
+by 320 that comes out to be one by four
+so one by four is the correct option
+that is an option d right guys now
+moving on to the next question
+so our next question is how many seconds
+will a 300 meter long train moving with
+a speed of 83 kilometer per hour take to
+cross a man walking at a speed of 3
+kilometer per hour in the direction of
+the train
+so option a is 13.5 seconds option b is
+14 seconds option c is 13 seconds or
+option d 14.5 seconds
+so you can pause this video again
+and try to solve this question on your
+own meanwhile i'll
+speak the right option now
+so the correct option is a 13.5 seconds
+so
+the train and man are moving in the same
+direction
+so the relative speed will be 83 minus 3
+which is equal to 80 kilometer per hour
+now we know that we have to convert it
+into meter per seconds so we'll convert
+80 km per hour into meter per second by
+multiplying it with 5 by 18
+which comes out to be 200 by 9 meter per
+second
+and we know that time equals to distance
+upon speed so our distance is 300 and
+our speed is 200 by 9 so we will divide
+300 by 200 by 9 and our answer would be
+13.5 seconds so yes the correct option
+is 13.5 seconds that is option a now
+moving on to the next question
+so a set sum of money amounts rupees 3
+000 in two years and raised 3 400 in
+four years
+find the sum and the rate of interest
+so our option a is inr 2013
+a 2000 is the sum and rate of interest
+is 13
+option b is twenty six hundred and seven
+point seven percent
+option c is fifteen hundred and twelve
+point five percent and option d is
+sixteen hundred and twelve percent
+now i'm gonna tell the correct option
+so the correct option is
+option b
+that is twenty six hundred and seven
+point seven percent
+so the interest paid in two years would
+be thirty four hundred 3 000 which is
+400 for two years
+now so for one year we will divide 400
+by 2 so it comes out to be 200
+then for two years it would be 400 for
+one year it would be 200
+then the principal sum at the beginning
+is 3 000 minus 400 that is 400 for two
+years so we'll uh subtract 3000
+minus 400 which comes out to be 2600 so
+2600 is the principal sum at the
+beginning now if we apply the formula of
+rate of simple interest that is 200
+divided by 2600
+that is the
+sum at the beginning into 100 then it
+comes out to be point seven percent so
+the correct option is option b twenty
+six hundred and seven point seven
+percent
+now moving on to the next question
+what is the anthem of vindictive
+so you can select from these options
+option aks option b for giving option c
+revenge full option d
+refined
+so the correct option is option b that
+is forgiving
+now moving on to the next question
+what is the antonym of peculiar
+option a is normal option b is exception
+option c is unique and option d is
+specific
+now again i'm gonna speak the correct
+option so the correct option is option a
+normal
+now again next question what is the
+antonym of prejudice
+option a bias option b injustice option
+c impartial option d judge
+the correct option of this question is
+option
+c
+impartial
+so these are some antonym that you can
+prepare or some more antennas or
+synonyms that you can prepare on your
+own
+now
+moving on to the next question
+photometer is to mileage then compass is
+to you have to select from distance b
+direction
+c speed or option d gravity
+now
+the correct option is option b direction
+automator is to mileage then compass is
+to direction
+all right
+now again we will move to the similar
+question like that
+a marathon is to raise then hibernation
+is to
+option a sleep option b awake option c
+dream or option d animal
+now the correct option is option a
+that is sleep
+marathon is two days then hibernation is
+to sleep
+are pretty easy questions
+next question is window is to pane then
+book is to option a page option b cover
+option c author option d inc
+direct option here is option a page
+now the next question
+cup is to coffee then bowl is to a water
+b noodles c bread or d soup
+correct option here is d soup
+now cup is to coffee then bowl is to
+soup it was pretty easy
+now moving on to the next question
+we cast plants six separate saplings a b
+c d e f in rows number one to six
+according to the following conditions he
+must plant a before b and e
+he must plant b and d
+the third has to be c
+which sitting arrangement is
+acceptable now these type of questions
+doesn't really need any explanation
+so here are the options option a
+a f c b e d this is the arrangement
+option b
+a b d e c f arrangement
+option c
+d b a c f e arrangement or option d
+c e f b a d arrangement
+so you have to select the correct option
+among these
+and now i'm gonna tell you the correct
+option which is option a
+that is
+a f c b e d
+so this is the correct option
+now we can move to the next question
+which is
+when rahul saw aditya he recalled he is
+the son of the father of my daughter
+who is rahul
+option a brother option b
+cousin option c father-in-law or option
+d brother-in-law
+take your time by pausing this video
+now i am going to tell the correct
+option so the correct option is
+option d that is brother-in-law
+next question is
+which of the following is synonym of
+catechize
+option a query option b silence option c
+walk away or option d sync
+the correct option of this question
+would be option a query
+now moving on to the next question
+so which of the following is synonym of
+luth
+option a love option b play option c
+hate or option d dance
+so the correct option is option c that
+is hate
+now
+the next question would be
+which of the following is synonym of
+receipt
+option a attack
+option b retreat
+option c dodge or option d complain
+now the correct option of this question
+is
+option b retreat
+all right
+now moving on to the next question
+so which of the following is the synonym
+of spurious
+option a real option b genuine option c
+fake or option d excellent
+so the correct option of this question
+would be option c fake
+now
+again a similar type of question
+which of the following is synonym of
+pudgy
+option hrb
+option b skinny option c ugly or option
+d beautiful
+the correct option of this question
+would be
+option a chubby
+all right now the next question would be
+if v j can be written as
+x k l c a then what can
+r c t k u be written as so you need to
+solve this question with pen and paper
+then only you can figure out the correct
+option
+so the options are a paris b param c
+pairs
+d plants
+now i'm gonna tell you the correct
+option
+so the correct option would be option a
+that is paris
+now the next question would be
+after walking eleven kilometers towards
+south a man turns right
+he walks two kilometer to the left and
+seven kilometer to the right
+after that he walks three kilometer
+straight back
+where is his starting point now
+so again you have to do this
+question with pen and paper
+so option a is southwest option b is
+south option c is northwest option d
+north
+correct option of this question would be
+option d that is north
+now coming to the next question consider
+some digits between 10 and thousand such
+that when each number is divided by 6 7
+and 11 it leaves 5 as the remainder in
+each case
+what are the original numbers
+option a 535 option b 400 option c 462
+or option d 135
+the correct option of this question
+would be option c that is 462.
+now moving on to the next question
+in the 800 meter race
+a gives b a start of 5 second and beats
+him by 25 seconds
+in another race a beats b by 15 seconds
+the speeds are in the ratio
+so the ratios are option a 10 ratio 11
+option b 9 ratio 8 option c 8 ratio 9
+or option d
+8 ratio 8.
+this one is pretty easy question and
+now i'm gonna tell the correct option so
+the correct option would be option
+b that is nine ratio eight
+now
+moving on to the next question
+if 1 raised to the power 3 plus 2 raised
+to the power 3 plus 3 raised to the
+power 3 up to so on 10 raised to power 3
+equals to 4 0 5 0 then find the value of
+2 raised to the power 3 plus 4 raised to
+the power 3 plus 6 raised to the power 3
+up to so on 20 raise to part 3
+so here are our options like a 10 000 b
+32 400 option c
+42 350 or option d 32
+000.
+now
+i'm gonna speak the correct option so
+the correct option is 32400
+so we have given that 1 raised to the
+power 3 plus 2 raised to the power 3
+plus 3 raised to plus 3 up to so on 10
+square 3 equals to 4 0 5 0. so we have
+given the value of these
+now we have to find the value of 2
+raised to power 3 plus 4 raised to the
+power c up to so on 20 raised to power
+3.
+so first of all we'll take the common
+so we'll take two respawn three common
+out of these
+so it would be like two raised power
+three in the bracket there would be one
+s power three plus two raised power to
+three plus three raised towards we have
+to so on one hundred three
+ten raised power three
+all right so we know that 2 raised to
+the power 3 is equal to 8
+now
+and the rest of it we have
+the value like 4 0 5 0 so we will simply
+multiply 4 0 5 0 into 8 then it comes
+out to be 32
+400
+you can try this question on your own it
+is pretty easy
+all right
+now moving on to the next question that
+what will be the most significant number
+which divides 37
+59 74 leaving the remainder 2 3 and 4
+respectively
+option a would be 7 option b would be 9
+option c 10 and option d 5.
+now i'm going to tell the correct option
+so the right option would be option a 7
+so these were some cognizant objective
+interview questions
+now coming to the hr questions for
+freshers
+so those that make it through the
+technical round will advance to the
+final round which is the cognizant hr
+interview
+candidates will have to face interaction
+with cognizant's hr manager in the stage
+during the hr stage candidates may also
+be interviewed by a panel more than
+in which there are more than one
+interview
+so participants will be asked things
+about their personal history
+academic qualifications interest
+strengths weaknesses professional
+experience and so on
+finally if candidates are chosen in the
+in this round they will now be recruited
+for the job description for which they
+have applied
+all right now let's move on to the
+questions part so the first question
+which is also very common would be tell
+us a bit about yourself
+so this topic is typically asked to
+initiate a conversation and to gain a
+basic understanding of the candidate
+candidates typically begin with their
+current academic qualifications
+technologies learned family history
+projects completed in the final academic
+semesters
+internship programs completed and in
+what role
+the internships are etc
+now to answer confidently to make the
+best impression on the interview
+the manner in which you conclude your
+answer can set the tone for the next few
+questions
+now
+let's move on to the next question
+so how do you increase your knowledge so
+this is
+an important question
+so you need to prepare for this question
+so you can answer like learning does not
+come to an end ever like the interviewer
+will want to know if you are a critical
+thinker who challenges yourself to grow
+you can respond to this question by
+saying that you are aware of current id
+trends and that your knowledge will not
+only help you advance in your career but
+will also be beneficial to the company's
+growth
+all right
+so this is how you can address this
+question
+now moving on to the next question
+so what are your qualifications so you
+must serve an example how you differ
+from the other candidates
+tell them about your abilities that will
+help you to make a beneficial influence
+at work
+operating in a new environment is not
+really a problem for you and
+you can say a lot of similar things like
+that
+check that you match the job description
+and explain how you believe you could be
+a good fit based on your strengths
+all right so this is how you can answer
+this question now we can move to the
+next question which is
+you are employed how long do you
+anticipate working for us
+all right so no employer wants
+an interviewee who will leave the
+company after only a few years
+so they anticipate that the candidates
+will be a good fit for the company for
+like seven to eight years
+and even if you are unsure you must tell
+them that as long as the job you do
+challenges and leads to a profitable
+company it will help you grow
+so in this way you can answer these
+types of questions
+now the next question
+why do you believe you are qualified for
+this position
+so now remember why you applied for this
+specific rule when answering this
+question tell the interviewer about your
+qualifications and how
+they make you eligible for this position
+in addition emphasize uh how you can add
+value to the current workflows
+all right
+now tell us about some of your strengths
+this is again a very common and
+important questions
+so again it's
+critical to research the job
+requirements before attending the
+interview
+make a list of your areas of strength
+and say the ones which
+this role requires
+all right now the next question would be
+tell us a little about your weaknesses
+all right so do not give a weak point
+that will directly impact your selection
+but also do not claim that you don't
+even have a weakness
+so the best way to respond this question
+is to flip one of your strengths into a
+shortcoming but you believe it is an
+important to function in this way
+another option for answering this
+question is to provide a totally
+unrelated weakness that is that will not
+affect your work in the company
+all right now moving on to the next
+question that would be
+what do you like to do in your spare
+time aside from study
+all right so candidates must respond to
+this question by discussing their
+hobbies or extracurricular activities
+like just don't say that outright that
+you enjoy reading books watching
+television and playing sports since the
+interviewer will ask you what genre you
+love to read and why as well as the
+technologies of the sport
+so ensure you answer this question
+honestly and only if you have such a
+knack for doing so in your spare time
+so
+these were some cognizant hr interview
+questions now let's understand
+how to prepare for these hr interview
+questions
+all right
+so
+to prepare for these hr interview
+questions you must participate regularly
+before actually taking the test
+make sure you have a good comprehension
+of the topic and enough practice
+reading good literature or registering
+for a suitable online course can help
+you clear your doubts now the second
+point would be make sure you review your
+coding test papers and practice
+programming principles like c c plus
+plus in java
+as well as other computer essentials
+like oops concept
+and databases and networking
+and the third point would be ensure all
+the information on your cv concerning
+your prior projects and internships is
+correct and that you understand
+everything
+you will be questioned on your past
+projects and work experience as well as
+what technology you used and what you
+have achieved so our fourth point would
+be ensure that you are updated on the
+technological developments
+you should be familiar with the recent
+technology advancements etc
+so you must be updated with the latest
+trends in technology as well so these
+were some tips to prepare for the
+cognizant hr interview questions
+now
+let's have a look at cognizant careers
+so the cognizant recruitment takes place
+for freshers and experian candidates
+so cts runs recruitment for the
+following positions
+so first would be gen c then gen c
+elevate
+then gen c pro
+and gen c next
+so these were some following positions
+that ctd runs recruitment for
+all right cognizant recruitment is quite
+rigorous like it is one of the fortune
+500 companies and a great place to work
+cognizant is an excellent place to start
+your career if you're a fresher
+even for experienced candidates
+cognizant is good paymaster and has a
+terrific project
+that can elevate your career
+and following are the ct's recruitment
+lgbt criteria like more than 60 marks in
+10th and 12th or diploma
+a minimum of 60 marks in graduation
+a maximum interval of 1 year is
+permitted and graduation and post
+graduation in be that is bachelor of
+engineering b tech me m tech and mca
+a candidate should not have any pending
+backlogs during the
+so these were some eligibility criteria
+that you need to take care of
+and with that we have come to the end of
+this video if you like this video please
+give it a thumbs up i hope it really
+helped you all
+thanks for watching stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

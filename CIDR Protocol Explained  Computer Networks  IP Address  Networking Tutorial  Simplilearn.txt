@@ -1,0 +1,196 @@
+with the increase in the networking
+devices either for professional or
+personal use the need to access the
+internet to perform various activities
+has increased
+and in this process having an ip address
+assigned and then being routed to the
+network model and is applied using the
+classless
+intel domain routing
+c idea hi guys and welcome to yet and
+then the trusting video by simply learn
+but before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to never miss an
+update from us
+now without further ado let's take a
+look at the agenda for today's session
+to begin with we will look into what is
+cidr
+that is classless interdomain routing
+moving on we will look at some of the
+rules to perform the cidr addressing
+continuing with the working of the sea
+idea
+and at the end we will look into some
+examples
+to better clarify all the doubts we have
+learned so far now let's take a look at
+the first heading that is what is cidr
+the cidr or classless interdomain
+routing is a network concept designed to
+oversee the assignment of ip addresses
+to a system to replace the outed way of
+classful addressing system
+furthermore using the cidr method there
+is low wastage of ip addresses and it
+also is helpful in maintaining the
+routing table
+and it performs the task of submitting
+which saves a lot of ip addresses now
+let's move on to the next heading that
+is
+rules of using cidr
+to better understand the working of cidr
+addressing in the later part
+please take a look at the rules very
+seriously
+let's take a look at the first rule that
+is
+the ip addresses assigned
+are according to the c idr
+are to be continuous
+as the isp will provide them in a
+sequence to minimize the address wastage
+for example
+if we have an ip address 200.10.18.32
+then the addressing will take place as
+200.10.18.33
+and moving on to
+the nth position as mentioned in the
+example this proves that they are
+continuous in assigning of ip addresses
+let's move on to the next rule that is
+the number of addresses in a cidr block
+is to be power of 2 that is
+in case the number of addresses is odd
+then its invalid value
+for example
+2 to the power 4 is equal to 16 where 4
+represents the number of forced
+whereas if the value is 17 then it's an
+invalid value as for the last rule we
+have
+use of cidr block for notation purpose
+that is for example if we have
+200.11.19
+28 as an ip address
+then
+the block id of this ip address is 28
+and the host id is 4 which is calculated
+using 32 minus 28. because in an ipv4
+address 32-bit is the maximum limit
+now let's move on to the next heading
+that is working of cidr
+the cider addressing applies the
+variable length subnetting masking that
+is vslm for short as the basis of its
+working method
+that is used to break the conventional
+ip addresses into smaller sub networks
+of varying sizes according to the user
+requirement let's take a look at an
+example to understand the working
+process
+in the given example the ip addresses
+195.10.20.40
+slash 16. now let's solve the question
+to begin with from the giving ip address
+we can determine the network prefix that
+would be 195.10.20.40
+whereas the suffix represent the slash
+16 part
+the number 16 in an ip address represent
+the number of ones in the address that
+is known as the block id or the network
+id
+and the host id is determined using
+32-16 because 32 is the maximum limit of
+bit length in an ipv4 address
+so the host id is 16.
+and the total number of force that are
+available in the network is calculated
+using 2 to the power number of host that
+would be 2 to the power 16 for this case
+so the value is 65 536
+available host in this given network id
+now let's move on to the examples to
+better understand the working
+the first example is
+the given ip address 192.168.200.10
+slash 28 and we have to find the
+relevant information
+let's begin for the first step
+convert the ip address in a binary
+decimal format that is
+for this ip address it would be
+the given binary format
+now let's find out the network mask for
+this ip address that would be
+28
+ones
+and four zeros
+the point to be noted is
+according to the slash number
+we point the number of ones for network
+mask
+for example in this question we have
+slash 28 so the network mask has 28 ones
+beginning from left to right
+and the last four digit would be zero
+and in numerical form the value comes
+out to be
+255.25
+and this is the network mask for our ip
+address
+now let's move on to the next
+information that is network id
+the network id for the given ip address
+is calculated using
+this way
+by the given subnet mask that is slash
+28
+we assume
+that
+192.168.2
+does not change
+because it is a part of network id
+and the point to be noted is the network
+id is never to be
+tampered with
+only the host id can be used to change
+the value
+that means we will open the dot 10 part
+in binary format that would come out to
+be 0 0 0 1 0 1 0
+then
+change once to zeros
+and perform
+the and operation after performing the
+and operation for the last four digit
+that is the host id part we will get
+192.168.200.0
+28 that represents the network id for
+the given ip address
+similarly we can find the number of
+first that would be easy that is
+32 minus 28 that is 4
+and the total number of hosts would be 2
+to the power 4
+that is 16
+and the first host id in this given ip
+address would be
+192.168.200.1
+with the completion of this example we
+have completed all the relevant parts
+regarding cidr working
+if you have any questions regarding the
+topic you can ask them in the comments
+section
+thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

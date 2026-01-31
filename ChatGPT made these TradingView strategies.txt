@@ -1,0 +1,770 @@
+hey what's up Traders welcome back to
+another video in today's video we are
+going to be exploring chat GPT again so
+in a previous video I about a year ago I
+showed you guys what chat gpt3 was
+capable of with pinescript and uh let's
+just say it was not good it was pretty
+appalling but chat GPT 4 the premium
+version of chat GPT the latest version
+is a different story so let's have a
+look at that today I think you guys are
+going to find the results pretty
+interesting I know I did
+[Music]
+all right so the plan for today is to
+let chat CHT write all of the code I
+might do some editing here and there
+just to tweak the script but the whole
+script the foundation of the script is
+going to be written purely by chat GPT
+based on prompts that I give it
+questions I ask it so to do that I'm
+going to be using a book my favorite
+book one of my favorite books on trading
+I threw out the jacket cover so you'll
+have to deal with the spine there it's
+called Unholy Grails a new road to
+wealth by Nick ratch now my version of
+the book is pretty knacked cuz I've read
+it through several times um I've even
+got it signed look at that how exciting
+U and in today's video we are going to
+be focusing on two systems in this book
+to start with maybe I'll revisit this uh
+Series in the future if you guys are
+really interested in it but for today
+today we'll keep it simple we'll keep
+the video as short as possible and stick
+to two systems in this book the thing I
+like about this book is that these
+systems are purely systematic rules
+based no subjectivity no discretion
+they're literally just black and white
+rules you tell the system what to do and
+the system does it with no input from
+you other than parameter tweaking so
+that's why I'm using this book because
+with computers uh when it comes to
+telling it what to do simple is better
+obviously and chat GPT has come a long
+way but it's still got some limitations
+so the more incise we can be in our
+commands the better so to start with a
+bookmarked a couple of uh systems here
+and by the way if you haven't read this
+book if you don't have a copy of this
+book you need to get a copy I'll leave
+it in the pin comment below a link to it
+um it's a fantastic book it really is
+it's a must read for any serious
+systematic Trader um the main system
+which we'll cover in a moment the uh
+Ballinger breakout strategy that's I
+can't angle this to the camera the the
+Ballinger breakout strategy which is
+hard to see there but you'll see it in a
+moment on the charts when I tell chat
+GPT to write the scripts it's a very
+simple system it's quite old now but it
+still stands up so it's pretty robust to
+this day I did some testing on it
+yesterday through real test on a
+portfolio based level SO trading
+thousands of stocks with a 20 position
+portfolio and it still does pretty good
+so we'll stick with that to start with
+um let me outline the rules so the whole
+concept of this system is um I'll throw
+throw it on the charts real quick just
+so that we can see what we're doing all
+right so the book outlines this is a
+daily chart system long only for
+equities so let's have a look at this
+Market real quick the book outlines that
+the Ballinger band must be based on a
+100 period SMA and it uses two different
+standard deviations so for the upper
+band we're using a three standard
+deviation if price closes Above This
+upper band we buy for our stoploss SL
+triling stop uh we use one standard
+deviation from the low uh from the the
+middle moving average the base Anchor
+Point for the for the Ballinger band so
+if price closes below this band we exit
+any open positions it's a trend
+following system
+essentially and um very simple those are
+the only rules literally it gets a
+little more complicated later on as we
+build on it so we'll add a regim filter
+will um and in the in the book it's
+based on a portfolio of stocks instead
+of a single market system so you would
+trade in the book it says 20 different
+positions 20 different uh stocks at a
+time for today because trading view is
+incapable
+currently of doing portfolio based
+testing we're just going to cycle
+through some systems and just see what
+chat GPT is capable of that's the main
+point of this um video it is not
+investment advice it's not trading
+advice do not get your trading advice
+from chat GPT do not rely blindly on
+chat gpt's code to trade it's a very
+very bad idea as I'll show you later in
+the video um examples of why that's the
+case but chat GPT has come a long way
+and it's a very very valuable tool for
+us as programmers and Traders so let's
+get into today's video by converting
+this initial Ballinger breakout system
+into pinescript using chat GPT now as
+mentioned this is uh chat gbt 4 the
+premium paid version of chat G uh chat
+gbt currently it's I think $20 a month
+to get access to this it is worth it
+compared to chat gpt3 especially for
+pinescript that's because chat gpt3 is
+only trained up to 2022 I believe
+internet information and so it's
+outdated it doesn't have the latest
+pinescript syntax it's trained back on
+pinescript version 4 syntax however chat
+GPT 4 is trained on old version 5 syntax
+it's not up Tod dat currently there are
+a lot of new features it's not aware of
+but um it is aware of the base Syntax
+for the latest version of pinescript so
+we can get some decent scripts out of
+this so first of all I'm going to start
+with a prompt a simple prompt I want you
+to write a script for me in pinescript
+version 5 Syntax for the trading view
+platform can you do that for me all
+right so it said absolutely I can help
+with that it knows what we want now we
+just need to feed it the information the
+parameters of the script I've written
+these prompts out in advance to save
+time in just notepad and I'm just
+copying and pasting them in but I'll
+read them to you as I go I want you to
+write a strategy script the system is
+long only trades the daily chart and
+does not use margin the rules are as
+follows one enter long if the market
+closes above its upper Ballinger band
+set to a 100 period moving average for
+the band and three standard
+deviations two exit the entire position
+if the market closes below the Ballinger
+band's lower band also set to a 100
+period moving average for the band and
+one standard deviation let's see what it
+does here we go this script is for
+educational purposes and should be
+tested thoroughly before any live
+trading good advice is doing the
+disclaimer for me so far looks okay it's
+not a perfect script uh I don't need to
+hear it tell me how to do this let's
+just copy this code or you can click up
+here copy code jump over to my charts
+paste it
+in now I've just pasted this in
+completely from the uh chat GPT code box
+let's save the script see if it works
+cannot compile script that's a good
+start okay strategy. exit must have at
+least one of the following
+parameters okay so not a great start for
+chat GPT 4 I have to admit I don't think
+we need this line of code at all cuz we
+have this exit clause here this exit
+condition so it doesn't need a strategy.
+exit function there we go perfect not
+bad 500% return on this stock with a 90%
+draw down meaningless on a single Market
+but the script let's get rid of my
+Ballinger band there the script appears
+to be working I did have to modify it
+slightly there I had to remove that
+redundant piece of code at the end this
+strategy. exit now before I started
+recording this video I did ask it these
+questions already um because I wanted to
+make sure I wasn't wasting my time and I
+wanted to be prepared um in advance for
+anything that that throws at me and I
+have to admit the first time I asked
+that uh this exact prompt it did spit
+out a script that worked without any
+editing so I don't know why the second
+time it included this ER erroneous line
+of code uh but that's that's the catch
+with chat GPT it's a valuable tool but
+it's not very consistent at times
+but anyway this script is doing what
+it's intended to do we're not displaying
+the Central Moving average so let's go
+back and ask it to do that can you add
+the Central Moving average to this
+script as a
+plot I'll fast forward all this for some
+reason it takes a long time to print
+this stuff I don't know why it doesn't
+just print it out immediately still
+included the erroneous line of code
+that's okay let's copy that paste it in
+remove that line of code save the
+script
+uh there we go there's our 100s SMA
+let's add on a Ballinger band really
+quick just to make sure that this is in
+fact drawing the correct indicator
+values so we need a 100 period with a
+three standard
+deviation looks good remember the lower
+band is one standard deviation so that's
+going to be off here we set that to
+one now it matches the bottom band
+it's
+working so pretty cool pretty powerful
+stuff I didn't have to write a single
+line of code there in fact I had to
+remove code to get this script to work
+so pretty interesting stuff chat GPT is
+coming a long way when it comes to um
+pin script at least and coding in
+general I have to admit I work on a few
+hobby projects in my spare time some
+gaming stuff making games working on
+modding existing games just for fun um a
+lot of nerdy coding stuff and I use
+chaty all the time to assist me in stuff
+that I don't understand for example 3D
+Vector
+math completely outside my pay grade um
+but if I need to ask it to do something
+in 3D space uh sometimes it will just
+give me a formula that I can plug into
+my code and it just works and I don't
+understand why it works but it works so
+that's really cool this is a very
+powerful tool that is going to be
+invaluable in the future and if you're
+not learning and playing around with
+these um language models uh you're
+missing out really are this is the
+future um in terms of another tool in
+our tool belt um I remember when I
+started coding you had I used notepad um
+literally just Microsoft Notepad back in
+2005 I think is when I started to write
+my first code maybe even sooner than
+that
+and autocomplete was not a thing typing
+in something like uh strategy Dot and
+then having this list of functions
+contained within the strategy library
+that didn't exist back when I started
+coding at least it wasn't easy it wasn't
+inbuilt into every coding um editor ever
+um so much of coding writes itself
+nowadays it's amazing it really is we
+are so blessed to be living in a time
+where this these features exist and chat
+gbt is going to take that to the next
+level well not chat gbt specifically but
+AI language models are going going to
+integrate with coding Platforms in the
+future there's no doubt and we will be
+able to do things like ask it to spit
+out a template for specific purpose and
+it won't be perfect all the time but
+this is pretty close now none of these
+parameters are user
+inputs um we could ask chat gbt let's
+say can you make make the system
+parameters user
+inputs see what it does all right right
+still included this line of code at the
+end I don't know why it's doing that but
+anyway that's fine let's paste this in
+get rid of that last line of code save
+it and check the settings menu let's
+change it 50 period moving average it
+works very cool very
+cool change our standard deviation to
+two Works amazing very cool stuff again
+I haven't written a single line of code
+here I've just asked chat gbt to write
+it for me and it's done a decent job I
+have to admit it's not perfect but it's
+decent even the formatting is impressive
+the commenting I mean this is the exact
+structure that I would normally use I
+normally put my plots at the very end of
+the script but hey that's just
+nitpicking I mean this is formatted well
+the descriptions are good very good a
+little bit too verbose if you ask me a
+bit too
+detailed but everything here is is spot
+on to what I wanted so that's very
+impressive all right so in the book
+there's one more feature of this
+Ballinger band breakout system which is
+a regime filter a regime filter is where
+you reference an an external market so
+in this case we're trading stocks so
+let's go to something like apple if we
+were trading Apple or a US market a
+regime filter in that context would be
+like a trend filter keeping you out of
+bare markets so we don't want to be
+buying markets during the 2008 financial
+crisis for example um or during co co
+selloff
+and a regime filter keeps us out of
+trouble by overlaying a 200 period index
+filter over the system so let's ask chat
+GPT if it can add that into this script
+all right so here's my prompt okay now I
+need to improve that script I need to
+add what is called a regime filter this
+filter will only take trades if the S&P
+500's daily price is trading above the
+S&P 500's 200 period moving average a
+lot of numbers there can you add that
+filter to this script let's see what the
+robot does to integrate a regime filter
+based on the S&P 500's daily price being
+above its 200 period moving average we
+need to use trading view security
+function correct in this example I'll
+assume the ticker symbol is SPX but Ure
+that you're using the exact symbol used
+on your data provider correct good
+advice this updated script will include
+the regime filter Logic the script will
+only enter trades when the condition of
+the S&P 500's trading above its 200
+period moving average is met perfect
+let's see if it oh it's not done
+yet still included that erroneous line
+code I could probably tell it to stop
+doing this but I won't bother it's easy
+to easy to
+remove uh let's have a look at our raim
+filter code all right so we're getting
+the daily close using the security
+function on the S&P 500 symbol which is
+a user input that's good very good 200
+SMA on S smps close on the daily chart
+regime filter spot on let's see if this
+script compiles there we go appears to
+have
+worked um what's this line here oh these
+are drawing tools let me remove them um
+okay all right so I can't turn the
+regime filter on or off um let's quickly
+ask it if it can make can you make
+whoops whoa can you make the regime
+filter a user input I'll fast forward
+this bit certainly I'll adjust the
+script I like how it just tirelessly
+does what you say um that's kind of nice
+I have to admit all right let's paste
+this code in see if it works oh again
+we've got this line of code at the end
+let's get rid of that so as you can see
+chat gbt not perfect but pretty good all
+right so let's see what happens when we
+turn our regime filter off all right we
+get a much bigger return on
+Apple let's turn it back on and keep an
+eye on the draw down the point of a
+regime filter is more to limit draw down
+it's a risk management tool more than a
+profit maximization tool so let's turn
+that on see what happens oh didn't
+change the draw down at all interesting
+let's try Tesla let's see what happens
+when we turn it off on Tesla still no
+difference it only took six trades on
+Tesla
+anyway um I don't know what's the stock
+we could test it on let's try JP Morgan
+all right so it is it is working because
+when I turn it of the stats here change
+um it's just rarely coming into effect
+it seems again these are s single Market
+tests in an actual portfolio based test
+a regim filter has a big effect because
+you're trading so many stocks so many
+markets it does limit um the amount of
+Trades that are taken in non-ideal
+circumstances so anyway this first
+script is a success we have successfully
+converted the Ballinger breakout
+strategy or system from Unholy Grails
+the book based on the original rules and
+it's working this is exactly what I
+expect we're buying breakouts Above This
+upper band we are selling closes below
+the lower band that's exactly what the
+system was intended to do successful
+test right there very impressive chat
+bd3 would not have been able to do this
+um or it might have been but it would
+have been in version 4 syntax and would
+have required some editing and
+modification which goes against the
+whole purpose of using this tool so
+before we wrap up this video Let's do
+one more system out of the book so the
+system I chose to do is called a moving
+average Channel system the Mac is
+created using two moving averages the
+first is a 10 period moving average of
+the daily highs as opposed to closing
+prices which we usually use a moving
+average on and then next it uses a 8
+period moving average on the lows of
+price action as its stop- loss
+the book goes into more detail here
+again if you haven't read it you really
+need to get your hands on it um but
+basically the rule here is we have a 10
+period SMA based on let me get my dra
+drawing tool out and I'll hide hide the
+script we're going to have a 10 period
+SMA based on candle highs and an 8
+period based on candle lows and that'll
+give us a channel and the system is we
+need five candles that print entirely
+above the upper band so the low of this
+These Bars must be above the upper band
+band all five of them consecutively
+before we buy and then it's the same for
+sell signal we need five bars closing
+below the lower band where all of its
+Highs are well below the band we can't
+touch the band if we touch the band our
+counter resets and that's the system
+it's very simple um so let's ask chat
+GPT if it can make a script based on
+these rules okay so here is my
+prompt all right now I want you to write
+a brand new strategy script unrelated to
+the last the system is long only trades
+the daily chart and does not use margin
+the rules are as follows plot a 10
+period upper moving average based on
+candle highs and an 8 period lower
+moving average based on candle lows
+enter long if five consecutive bars
+print higher than the upper moving
+average if a bar touches the upper
+moving average reset the counter we need
+five bars to print with their low
+entirely above the upper
+Ma I'll say same name for the lower ma
+but the highs must be below it and then
+number four exit position if five
+consecutive bars print lower than the
+lower moving average let's see what chat
+GPT can do with this
+prompt here's a pinescript strategy for
+trading view that implements your moving
+average channel strategy the script is
+structured to follow the specific rules
+you've outlined focusing on a longly
+system that trades on the daily chart
+without using margin the script includes
+conditions for entering and exiting
+positions based on the relationship of
+consecutive bars to the moving averages
+of candle highs and lows all right
+there's our script it looks a bit better
+than the first one in terms of not
+including erroneous lines of code at
+first glance at least let's see how it
+stands up in the
+editor save the script it seems to have
+worked I mean this is a pretty simple
+system so I'm not surprised this one
+worked um sweet okay so we have our
+parameters they're not user puts but
+that's fine that's easy to fix uh we
+have a 10 period upper and 8 period
+lower ma length we're getting the smas
+we're plotting them we're counting how
+many bars printed above or below the
+corresponding moving average and if we
+have our consecutive five bar um print
+we enter our trade so let's have a quick
+look at how this works on let's go to a
+different Market all right here looks
+like this looks like a good trade to
+examine all right so we've got one 2 3
+four five bars that printed above the
+upper band we open a trade on the next
+bars
+open that meets the rules we don't have
+five bars in a row that print below any
+of these moving averages the lower band
+until here so we have 1 2 3 4 five I
+guess that would be pretty close this
+bar here since it doesn't have a wick uh
+it did even though the moving average
+crosses over the
+corner um I think we'll find that the
+opening price was below that band um so
+we do have 1 2 3 4 five consecutive bars
+below the band and we exit on the next
+bars open so there you go um wow I'm I'm
+going to guess that this stayed in a
+trade for a very long time let's zoom
+out and see if we can find that trade
+yeah okay there's been a few of them
+actually quite a few of them um so this
+is data mining at this
+stage this system would not perform this
+well on most markets it just so happens
+to have performed really well on Apple
+because it's bought a lot of these
+monster rallies and stayed in them for
+very long time um that's not going to
+work on most markets but very
+interesting it uh it worked that's the
+takeaway chat GPT did successfully write
+this script feel free to adjust the
+script oh that's very kind of it um it
+gives us permission to adjusted script
+or ask for additional features okay on
+that note let's get back to the book an
+interesting note in the book here um if
+I find the page is here Nick says if a
+fault had to be identified with this
+system it would be that the exit
+mechanism is based on a pattern sequence
+so what he means by that is a
+Candlestick pattern sequence the reason
+that's a fault or um a risk in this
+system is because candle patterns aren't
+guaranteed to to ever appear on a chart
+you could go months without this
+condition being met a five bar
+consecutive low for the entry it's not a
+big deal you know because for an entry
+we're not in a trade um the entry can be
+as as complex as we want really to a
+degree there's a balance there um if
+it's too complicated it won't take any
+trades um or not enough trades and if
+it's not complicated enough it'll take
+too many trades this particular system's
+entry criteria is okay in my opinion and
+I think Nick's as well it's acceptably
+it's not particularly complicated but it
+will filter out a lot of Trades so
+that's not a bad thing but the exit is a
+risk because let's have a look in the
+example here Nick points out AGL energy
+which is an Aussie stock between April
+2010 and April 2021 so let's sorry 2011
+so let's go to AGL on the ASX and go
+back to 2010 and I'll show you what he
+points out in the book here is the
+trading question so in the book this
+book was published back in um this book
+was published back in 2012 um so quite a
+while ago now but um these systems some
+of them at least the Ballinger band
+system for for example does stand up to
+this day um it's not amazing it needs
+tweaking probably but it's it's these
+these systems are quite robust which is
+what I love about niw work now what's
+wrong with this trade let's zoom out the
+chart and see if you can guess what's
+wrong with this trade here that we
+opened well it stayed in a
+trade for nearly 3 years before it
+closed for a loss so we held a trade for
+3 years nearly um and took a 3% loss on
+that position that's pretty nasty now 3%
+loss not a big deal tying up your
+capital for 3 years in a trade that goes
+nowhere bad very bad very bad Trader
+that's uh that's bad opportunity cost
+right there and so the book proposes a
+solution for that which is a
+25% roughly it lands on a 25% trailing
+stop from the high so the highest price
+after entering a trade if the stock
+Falls 25% which is a long fall uh we
+exit the trade that's just an example
+there are plenty of other examples we
+could have a Time based stop if you're
+in the trade for longer than x amount of
+days get out of it um we could tweak the
+exit reason so that instead of five bars
+being below the moving average maybe we
+only need five
+lows um to be below the moving average
+um obviously these tweaks will change
+the nature of the system and its
+performance metrics but this is
+something you need to be care careflow
+when you're developing A system that
+uses a SE sequential Candlestick pattern
+for an exit so anyway what's ni solution
+trailing stop let's ask uh chat GPT if
+it can add that can you adapt that
+script so that it if the market closes
+under 25% below its entry price the
+system exits stop loss now this should
+say below the highest price after entry
+in a trade the system exits stop loss
+and make that percentage a user input
+let's see what chat GPT does with this
+prompt all right it's going to track the
+highest price okay it's done this in a
+very convoluted way in my opinion but I
+think it'll work let's have a
+look again not perfect but if it does
+the job it saves us
+time um that's
+valuable okay we've already got an error
+I see what the problem is already um you
+can't use Min Val Max Val unless you
+specify what type the input is so if we
+put input. int that should fix that
+error there we
+go um now it still didn't exit this
+trade for some reason uh because the
+close has to be below the let's change
+this to low and save the code see if
+this exits the trade down here it should
+do and it doesn't okay
+interesting it should have exited the
+trade somewhere around here so
+something's wrong with this code let me
+add some debug code on the end here to
+see what's going on okay I see what's
+happening here was a new entry setup 1 2
+3 4 five bars printed above
+our um upper band I'm guessing that
+condition resets our highest price and
+it does so if I change this to say
+answer strategy. position size equal Z
+that should fix that issue let's have a
+look there we go perfect fixed
+it as you can see I needed to modify
+that script slightly if you didn't know
+Pine script quite well then this might
+be completely useless to you if you're
+not experienced with pine this script
+would not have worked and you might not
+have known why so it's still necessary
+to understand pin script I think in
+order to use chat GP and tools like this
+in your coding process now if this was a
+simpler script maybe you'd get away with
+it um I think chat GPT is fantastic for
+spinning out templates for educating you
+about Concepts maybe relating to
+pinescript but I don't think anything
+can replace um actually learning the
+language yourself I don't think this
+tool should be depended on blindly I
+think you still need to invest in your
+own education as a Trader and learn the
+languages you're going to be using
+um but chat gbt can help with that
+certainly now in this particular case
+the trade still was open for uh over a
+year here and we still took a 7% loss so
+I think even Nick would agree that this
+stop loss is not sufficient um I think a
+Time based stop would be better maybe it
+only kicks in after X amount of days or
+x amount of profit um you know we had a
+nice profit here of 10% maybe once
+you're in 10% profit you ratchet up that
+stop loss a bit more um or you get a
+little looser on your conditions for
+exit maybe instead of five lower closes
+you start looking for five lower
+lows um regardless of whether they they
+touch a moving average the exit reasons
+you could use and the creativity you can
+use kind of endless U but I thought I
+think this was an interesting overview
+of what is possible with chat GPT here's
+a nice nice trade right here um this
+system is interesting I have to admit
+this is interesting I wouldn't mind
+plugging this into uh into real test and
+and playing around with it on a
+portfolio based level um I I've been
+meaning to revisit all the systems in
+this book and do that I did that with
+the Ballinger band system yesterday and
+and got some decent results so maybe
+that's my homework for uh for the next
+week but anyway I think that'll do it
+for today's video I don't think I have
+anything else to say other than uh chat
+GPT is amazing chat GPT 4 is a a big
+step up from chat gpt3 it talks too much
+in my opinion uh but that's that's okay
+I think that can be tweaked in the
+settings and um this is something to
+keep an eye on as coders especially and
+as Traders this can really help us it is
+a very valuable tool it will not replace
+the power of the human brain anytime
+soon I still think you need to know what
+you're doing with your trading chat GPT
+is a perfect example of garbage in
+garbage out if you give it bad
+information to work on it's going to
+give you horrible information back
+because even if you give a good
+information to work on sometimes it
+gives you bad information back so um
+knowing what you're doing is still very
+important in today's world of trading
+and coding but we've got a very valuable
+tool here to play with keep an eye on it
+in the future definitely play around
+with it uh but don't expect it to
+replace the hard work involved in
+actually learning what you're doing
+learning your tools learning your trade
+um as a Trader pun intended uh with that
+said if you want to learn pinescript and
+you're new to pinescript check out our
+website I have a five or 6 hour long
+free Basics course there completely free
+no strings attached um if you don't like
+my teaching style or you don't like
+pinescript you lose Nothing by checking
+that out uh if you do like pinescript I
+have a course there teaching you the
+entire language and everything I know
+about it the Mastery course um so with
+that said go and check that out check
+out this book Link in the pinned comment
+below um yeah good luck with your
+trading I love you guys and I'll speak
+with you in the next video take
+care

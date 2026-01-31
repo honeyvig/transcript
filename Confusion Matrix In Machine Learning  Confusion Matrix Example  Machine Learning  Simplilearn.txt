@@ -1,0 +1,422 @@
+hello everyone I am M and welcome to
+this video where we will explore a basic
+but important Concept in machine
+learning the confusion metrics if you
+are new to machine learning
+understanding the confusion metrics will
+help you see how well your model is
+performing so let's start with a simple
+example imagine you have built a model
+to predict whether an email is Spam or
+not so after training the model you test
+it on new emails the confusion matx is
+like scorecard that show how well your
+model's prediction match the actual
+results it helps you see whether your
+model is getting things right and where
+it is making mistakes for example your
+model might correctly identify most spam
+emails but it might also mistakenly flag
+some non-spam emails as spams or it
+might miss a few spam emails and let
+them throw as if they were not spam so
+the confusion Matrix lays out this
+clearly so you can understand exactly
+how your model performs so why is this
+important because simply knowing how
+often your model is correct doesn't give
+you the full picture the confusion
+Matrix helps you see the details of
+models performance which is the key to
+improving especially if one type of
+error is more serious so by end of this
+video you will clearly understand what a
+confusion Matrix is how to read it and
+how it can help you to fin tune your
+machine learning models craving a career
+upgrade
+subscribe like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we start if you want to
+learn Ai and ml from the industry expert
+try a simpl as postgraduate program in
+Ai and machine learning from P
+University in collaboration with IBM
+this Cod teaches in demand skills such
+as machine learning learning NLP comp
+Vision reinforcement learning generative
+AI prompt engineering chat GPT and many
+more so don't forget to check out the
+course link from the description box
+below and the pin comand so without any
+further Ado let's get started so what
+are confusion metrics and why do we need
+them so in machine learning
+classification is used to divide data
+into different categories but after we
+have clean prepared the data and trained
+our model how we can tell if the model
+is performing well so there is where
+confusion metrics come in handy so a
+confus MC is a tool that helps measure
+the performance of a classifier in
+detail it goes beyond just giving an
+overall accuracy score it shows exactly
+where the model is making mistake and
+how it is classifying each category for
+example if there is an imbalance in the
+data where one category has many more
+instances than other the model might
+predict the majority category most of
+the time and still show a high accuracy
+but this wouldn't be helpful because the
+model is not accurately predicting the
+minority categories the confusion
+matrics help visualize these outcome by
+showing a table of all the predicted and
+the actual values allowing use to see
+where the model is performing well and
+where it needs Improvement so moving
+forward let's see confusion matrices
+parts or how to create 2x two Matrix so
+we can get four different outcomes when
+comparing the predict actual values from
+a classifier the first one is true
+positive this is when the model directly
+predicts a positive outcome you
+predicted positive and it was actually
+positive the second one is false
+positive this happens when the model
+incorrectly predicts a positive outcome
+for something that is actually negative
+or a predictive positive but it was
+actually negative the third one true
+negative this is when the model
+correctly predicts a negative outcome
+you predict a negative and it was
+actually negative and the fourth one
+false negative this occurs when the
+model incorrectly predicts a negative
+outcome for something that is actually
+positive CU predictive negative and but
+it was actually positive so moving
+forward let's see some matrices of
+confusion Matrix so this is a graph so
+we know there are four parts true
+positive false positive false negative
+and true negative so this one is true
+positive this one is false positive this
+one is false negative this one is true
+negative so just consider consider a
+confusion Matrix made for a classifier
+that classify People based on whether
+they speak English or they speak Spanish
+okay from this diagram you can see that
+fine so these are some values TP FN FP
+TN there is nothing two positive two
+negative like this just from looking at
+the Matrix the performance of our model
+is not very clear so to find out how
+accurate our model is we use the
+following matrices the first one is
+accuracy so this is the formula of
+accuracy TP means true positive means
+this 86 value so the accuracy is used to
+find the portion of correctly classified
+values it tells us how often our
+classifier is right it is the sum of all
+the True Values divided by total values
+so in this case this is
+88% okay 86+ 79 2 positive + 2 negative
+divided by this it will come 88 2 three
+okay and the second one is precision so
+Precision is used to calculate the model
+ability to classify positive value
+correctly it is the true positive
+divided by the total number of predicted
+positive value so this is the formula it
+is true positive divided by two positive
+plus false positive so in this case the
+value will come
+87.7% okay and the third one is recall
+so recall is used to calculate the
+model's ability to predict positive
+values
+how often does the model predict the
+correct positive values so it is true
+positives divided by the total number of
+actual positive values so in this case
+the value is
+88.9 okay and the last one is F1 score
+so it is the harmonic mean of recall and
+precision it is useful when you need to
+take both precision and recall into an
+account so in this case the value is
+88.7 7% so now let's jump into the demo
+part and see how we can get these values
+accuracy precision recall and F1 score
+from our data set using handson so I'm
+performing this in Google collab so
+first I will rename it to
+confusion
+Matrix okay so yes let's start so first
+we will import some basic libraries of
+python like numpy and the pandas so here
+I like import numpy as NP
+and
+import pandas aspd why I'm writing this
+npn PD because I don't want to write
+again and again npay and pandas okay
+this is a short form NP so everyone
+knows I guess npay and pandas because
+these are the basic Library so numai is
+used for mostly linear algebra stuff and
+pandas is used for the creating data
+frames data processing or if you want to
+read files CSP files like that okay yeah
+so now let's import our data okay so
+data equals to pd.
+Dore CSV then file name data. CSV so I
+will upload this file on the description
+box below you guys can check out from
+there okay yes so let okay what is
+saying no such file or directory on data
+or CSV I guess it's
+there okay it's not let me import it
+okay
+yeah okay now file is there yeah it's
+working fine so now let's
+check okay F
+Ros yeah so this is our data you can see
+we have
+columns withit data dot
+columns okay so we have this 32 columns
+in our data set ID diagnosis radius
+means texture means parameter mean so I
+just simply you know talk this data
+there is nothing related to confusion
+Matrix and all okay we have to just we
+can perform you know confusion Matrix to
+you know any data so head is used for
+displaying top five rows of of our data
+set okay if I will write data simply you
+can see the full data okay with 33
+columns and all the r right so uh now we
+don't need this ID
+and one is this unnamed data because
+there is no
+values okay so what I will do I will
+write data dot drop
+ID comma okay let me copy it because I
+don't want any spelling
+mistake
+yeah copy paste here okay let me write
+XIs = to
+1 then comma in place equals
+to
+True okay let me run it okay if you
+check data do head
+now I guess there will be no ID and all
+see there is now no ID and all okay this
+we remove that LGE column as well un
+name
+32 okay so now what I have to
+do I will write here data
+dot
+diagnosis equals to 1
+if each was equals to
+M okay
+else
+zero
+for each in
+data
+dot
+diagnosis
+diagnosis yeah so if you can see there
+is mmm value and there is you know
+other values as well so for M I am
+putting one for for the rest I will put
+zero okay let's check
+again yeah okay you can see it's done
+replacement is done
+basically okay so let's check the info
+of the
+data so these are some basic uh what to
+say functions of
+python so these are the column these are
+the non Nal values these are the data
+values okay float we have or int we have
+okay so we have only two t type of data
+sets so now what we will do we will do
+normalization okay yals to data dot
+diagonosis
+diagnosis dot
+values okay so here I will write
+xcore data equals to
+data.
+drop
+diagnosis
+comma
+XIs = to
+1 okay here I will write x equals
+to
+xcore
+data minus X NP do minimum value and the
+xcore
+data and divided by so I put using that
+formula if you guys know okay divided
+by
+NP so I'm basically what I'm finding is
+accuracy okay I'm using that formula NP
+dot Max of X for
+data then minus
+NP dot main value then xcore
+data
+okay okay some okay access value is
+wrong sorry spelling is
+wrong now find
+yes it's fine so now we will do train
+test split so what is stain test dis
+spit okay so first let me
+route underscore
+selection
+import
+train test split okay so what is train
+test split so what we do we you know
+split our data set into training and the
+testing mostly we train and the some
+part of data we test okay so here I will
+set the ratio so xcore
+train comma
+xcore
+test comma Yore
+train comma
+ycore test
+equals to
+train test
+split then X comma y comma
+testore
+size equals to
+0.15
+means 85% we are on the training and 15%
+we are on the testing part okay comma
+random
+State equal to 42 okay let me run it
+it's working fine yeah it's working fine
+so now let's see the accuracy from the
+random Forest so I will write
+from skar
+do
+emble
+import random
+random Forest
+classifier okay then RF equals
+to random forest classifier and
+ncore
+estimators equals to
+100 and here I will set random state
+to
+1 okay then RF this is a short form of
+random Forest do
+fit
+fit xcore
+train comma Yore
+train then
+print random Forest
+score comma
+RF do
+score then xcore test comma Yore test
+okay now let's check how much the
+accuracy so accuracy is coming
+95% okay which is very good so now what
+I will do I will create confus confusion
+Matrix now
+Yore
+prediction equals to RF do
+predict xcore test
+okay and Y underscore true equals to
+Yore
+test okay so here now let's create the
+array
+skar
+dot
+matrix
+import confusion Matrix
+okay then I will write CM short form of
+confusion
+metric here I will write y
+true comma y
+prediction then confusion
+Matrix so this is our array okay the
+true positive and and this is
+false negative and this is false
+positive like this okay so now let's
+create the visualization of confusion
+metrix okay so here I write
+import
+cbor as
+SNS and
+import M plot
+Li do p
+plot as
+PLT PLT means plot okay the short form F
+comma ax =
+to PLT do
+subplots let's give the figure
+size equals to 5A
+5 then SNS do heat
+map then confusion Matrix comma n not
+equals to
+true then comma line
+width = to
+0.5 comma line
+color equals to let's give
+red
+then
+fmt
+to I don't need any
+you know uh that decimal
+values comma ax = to
+X okay then PLT
+do X
+label y underscore
+prediction then PLT
+dot y
+label then y underscore true
+add the okay forgot to add
+this Braes then PLT do
+show yeah so as you can see this is the
+Y True Values and this is the Y
+prediction values okay this is the heat
+map we have created so this is how you
+can visualize your confusion Matrix fine
+so with this we have come to end of this
+video if you have any question or doubt
+please feel free to ask in the comment
+section our team of experts will help
+you as soon as possible thank you and
+keep learning with simply learn staying
+ahead in your career requires continuous
+learning and upscaling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security
+AI machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to to watch
+similar videos to ner up and get
+certified click here

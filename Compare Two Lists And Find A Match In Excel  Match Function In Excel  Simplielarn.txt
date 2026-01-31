@@ -1,0 +1,207 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn
+about how to check if a cell value match
+to a list in Excel or not let's say you
+have one element in one sheet and a set
+of elements in a different sheet if you
+want to find it or if you want to find a
+match of one single element it's very
+easy just use the match function or a
+lookup function or an index match
+function correct but let's say you have
+a list of elements that need to be
+matched with another one interesting
+right that's exactly what we are going
+to do today so that said if these are
+the type of videos you'd like to watch
+then hit that like And subscribe buttons
+and the bell icon to get notified
+craving a career upgrade subscribe like
+and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your back
+just for a quick and yourself master
+data analytics skills and land your
+dream job or grow your career then you
+must explore simply learn scad of
+various data analytics programs simply
+learn offers postgraduate programs from
+Pur University in collaboration with IBM
+through this program you will gain
+knowledge and work ready expertise in
+skills like prescriptive and Predictive
+Analytics regression classification and
+over a dozen others that's not all you
+also get the opportunity to work on
+multiple projects and learn from
+industry experts in top TI companies and
+academic instr top universities after
+completing these courses thousands of
+Learners have transitioned into a data
+analytics role as a fresher or moved
+onto a higher paying job profile if you
+are passionate about making your career
+in this field then make sure to check
+out the link in the pin comment and
+description box below to find a data
+analytics program that fits your
+experience and areas of Interest now
+without further delay let's get started
+with the demonstration for today's
+session now we have opened the Microsoft
+Excel workbook here let's say we have a
+fingerprint ID for all the employees in
+a company now we have about 500
+fingerprints here 501 fingerprints right
+over here right all these employees
+belong to different different
+departments let's say HR department
+development testing sales marketing Etc
+right now here in the second sheet I
+have have a specific list of employees
+from HR department let's say I have
+about 42 fingerprint IDs here right now
+what I have to do is I have to create a
+match function and
+identify all the 42 HR department
+employees in sheet 2 and tag them in
+sheet one let's say this particular ID
+belongs to an HR department then I
+should be writing here
+employee from HR department correct now
+we have 42 entries it is fine but let's
+say we had 440 or 450 entries now would
+you manually go and you know copy this
+and go to this sheet find Control Paste
+and find all would you do this TS
+manually what you do this match list
+manually right 440 times this is truly
+timec consuming right if there was one
+single formula which you can use and
+identify all those 450 employees in one
+go it could be a miracle right now
+that's exactly what we going to do today
+so we will be using an F condition we
+will be using an EAS num function and
+along with that we will use the match
+function so these are the three
+functions that we are going to combine
+together and try to identify the match
+between the two lists and given an end
+result if the employee belongs to the H
+department or not right now let's do
+that quickly now let me write the
+formula equals to if condition pressed
+after selected Now The Logical test is
+at number so you might be having a
+question is number since we have uh the
+data in a mix and match it's a number
+plus text Will this work for only
+numbers or will this only work for
+alphabets no worry it works with both
+numbers as well as character type data
+types now I'm going to select the ease
+number function now comes the match
+function so use the match function press
+tab to select now the lookup value so
+the first lookup value will be this
+particular value which is in the cell A2
+don't worry it will automatically change
+when the formula enters to the next cell
+right when it enters to A3 it will I
+mean when it enters to B3 this A2 will
+become A3 so no doubt in that now it
+will be A2 comma the look up AR which
+array should I look to find the match so
+the lookup array is right over here I'm
+ignoring A1 we starting from A2 to all
+the way up till
+a43 so we have provided the lookup range
+or look up aray now the match St we want
+the exact match no matter what right so
+press St to select the exact match now
+close this particular match function now
+if this condition matches then we should
+be typing it as or we should be getting
+an end result as employee belongs to HR
+department and if not you can just so
+you know kind of write another text so
+the formula is not completely close okay
+just ignore it okay now we have to close
+the brackets with the leading values so
+the match function is closed and after
+that we need to close the ease number
+function now comes to the uh if
+condition so if it is true then add this
+particular value that is employe from HR
+department if
+not other department okay other or you
+can also leave it as blank okay so this
+is the formula press enter so this
+particular ID belongs to other
+department let's eliminate this now
+let's drag okay let's name it as EMP
+Department
+details now let's drag the formula
+across there you go now you can also add
+a boundary border and now you can add a
+filter and uh filter this particular
+table for employee from HR department
+and there is a small error in the
+formula but no problem let's remove the
+filter and check the error I think it
+should be a about fixing the ranges so
+let's fix the range function F4 so we
+want uh the column to be fixed and the
+row numbers can change and here the
+range what we are looking at so let's
+give the range once again now let's fix
+fix the range F4 to fix there you go now
+enter and we can also remove this for
+now I don't think we need this enter and
+now drag the formula yes there you go we
+have all the 42 entries so previously
+there was a small fixing error so we
+need to fix the range of elements that
+we are looking at now just eliminate the
+blanks and just select employee IDs and
+there you go you have all your 42
+employees present in the HR department
+so that's exactly how you use the match
+function to match a list of elements
+from from one array and match it with
+another array and with that we have
+finished this session so thank you at
+the end if you have any queries
+regarding any of the topics covered in
+this session or if you require any
+assistance like PPD or demo formulas or
+the please do let us know in the comment
+section below and our team of experts
+will be happy to resolve all your
+queries at the earliest until next time
+thank you for watching and stay tuned
+for more from Simply learn staying ahead
+in your career requires continuous
+learning and upscaling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path path to Career Success click the
+link in the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

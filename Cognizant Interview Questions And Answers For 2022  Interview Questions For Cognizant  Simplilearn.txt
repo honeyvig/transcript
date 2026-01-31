@@ -1,0 +1,1126 @@
+everyone welcome back to another video
+by simply learn in this video we will be
+discussing cognizant interview questions
+we'll go through different types of
+interquestions that are often asked
+during the interview process at
+cognizant
+so in this video first we will learn
+about cognizant then we'll understand
+cognizant recruitment process
+then we'll go through different
+interview rounds
+then we'll understand cognizant
+technical intro questions for freshers
+after that we'll learn about cognizant
+objective interview questions then hr
+intro question for freshers and many
+more topics like that
+before we begin make sure to subscribe
+to our youtube channel and press the
+bell icon to never miss an update
+so before moving ahead let's understand
+about cognizant
+so cognizant helps business streamlight
+process reimagine customer experiences
+and modernize technologies to keep up
+with the constant changes in business
+environments
+its technology offers the tools and
+flexibility necessary for each person to
+develop their best self
+whether changing the companies that the
+world relies on or helping you build
+your best self
+in addition to information technology
+security consulting i.t and bpo
+cognizant also offers services in
+education and government cognizant has
+three key areas of focus digital
+business digital operations and digital
+systems and technology so this was about
+cognizant now let's understand cognizant
+recruitment process
+so cognizant believes in employing
+people that are driven to succeed and go
+above and beyond to contribute
+significantly with their digital
+expertise
+their hiring method takes into account
+the fact that students have varying
+levels of it experience
+they are offered jobs depending on the
+skills and interest in technology
+the process for freshers happens in two
+ways
+that is on-campus recruitment off-campus
+recruitment
+the recruitment of experienced
+candidates take place through job
+portals like naukri monster jobs
+linkedin indeed employer referrals etc
+so this was the recruitment process now
+let's understand different interview
+rounds at cognizant
+interview rounds are divided into first
+aptitude test then technical interview
+then hr interview
+so first understand the aptitude test
+if you are a fresher you must take the
+aptitude test first
+candidates can take the test on an
+online platform
+usually freshers apply for the agency
+position in cognizant
+the gen c interview questions are
+divided into the following that is
+quantitative ability then logical
+reasoning and english comprehension
+while the experienced candidates have to
+take skill based assessments
+this test is based on previous
+experience and technologies
+now let's understand the technical
+interview round
+so
+technical round is standard for freshest
+and experienced candidates it is one of
+the crucial and difficult rounds in the
+entire process
+the questions can vary from data
+structures databases system design ui ai
+ml etc now moving on to hr interview
+questions
+hr interview round there is not that
+much to prepare
+hr will usually check your attitude and
+organizational fitment
+so that is what you need to prepare for
+that round
+now let's have a look at some cognizant
+technical intervention for freshers
+so our first question is explain the
+concepts of pointers in c
+so it is an important concepts
+so the answer would be a pointer is a
+variable that stores the address of
+another variable it is used to point to
+the variables indirectly
+it makes it possible to manipulate the
+values
+so this is how you can answer this
+question
+now moving on to our second question
+which is
+can you explain memory leaks
+so a memory leak occurs when object
+available in a heap are not utilized
+the garbage collector fails to remove it
+from memory
+hence these objects are kept in memory
+unnecessarily
+memory leaks can lead to performance
+issues and are bad for applications
+health
+so this was the explanation of memory
+leaks
+now
+our third question is
+how does garbage collection work
+so garbage collection is a very
+important concept as we all know
+so garbage collection is the automatic
+memory management technique used in java
+to free up the memory it locates items
+that are no longer needed by the program
+and deletes or removes them
+there are various garbage collection
+algorithms used by a garbage collection
+system
+now
+moving on to our fourth question
+that is explain the mark and sweep
+algorithm
+so the mark and sweep technique is known
+as tracing garbage collector because it
+traces out the whole collection of items
+that are either directly or indirectly
+accessible by the program
+it works in two phases
+so in the first phase the algorithm
+detects the unused objects in the memory
+while in the second phase these objects
+are removed from the memory to reclaim
+the wasted space
+the main drawback of the mark and sweep
+method is that regular program execution
+must be suspended while the garbage
+collection algorithm runs
+now
+moving on to the next question which is
+is a dangling pointer so pointers that
+are not initialized with a valid address
+are called dangling pointers
+it occurs during the object destruction
+phase
+the object is destroyed by memory but
+the pointer's address is not changed so
+this is dangling pointer
+now moving on to the next question that
+is what is recursion
+so it is a very popular concept we all
+have heard about this
+a recursion algorithm calls itself with
+smaller input values and returns the
+result for the current input by carrying
+out basic operations on the return value
+for smaller input
+generally if a problem can be solved by
+applying solutions to smaller versions
+of the same problem and the smaller
+versions shrink to readily solvable
+instances then the problem can be solved
+using a recursive algorithm
+now coming to the next question which is
+what is a data type
+so a data type is a characteristic of
+the data
+it helps the machine understand
+how machine will use data in the code
+coming to the next question which is
+explain malloc function
+malloc function is used for memory
+allocation
+this function is used to allocate the
+memory dynamically
+and here's the example
+ptr
+equals cast type astrosix sign malloc
+byte size
+so this was malloc function now moving
+on to the next question which is
+can you explain a string
+so the string is a data type it is used
+to represent a sequence of characters so
+we'll now discuss in different languages
+how string is declared so in c plus
+language it is declared like this like
+string hello world in c language it is
+declared character str name size
+in java language it is similar to that
+of c plus language that is string hello
+world
+now in python it is hello world hi
+so you can declare string in different
+languages like c plus plus c java by
+different methods
+now moving on to our next question which
+is
+what is an integer
+so the integer is a data type it is used
+to represent numbers
+in c language it is used as int a then
+in c plus plus and java it is used as
+similar to that of c language then in
+python it is declared as a equals 10
+that there is no data type we can see
+now
+coming to the next question which is
+what is an array
+so the array is a collection of similar
+elements stored in the continuous memory
+block
+the data stored in the memory can be
+accessed by index
+arrays are used to sort large amount of
+data in the memory this was array
+now coming to the next question which is
+what are the primitive data types
+so there are eight primitive data types
+in java
+these data types have no additional
+methods
+it only mentions the size and type of
+the variable's value
+and these primitive data types are
+byte short int long float double boolean
+character
+so these were some primitive data types
+in java
+now our next question is
+what is the difference between int and
+integer in java
+so let's start with int first
+so int is a primitive data type
+on the other hand integer is a wrapper
+class
+int has no additional methods whereas
+integer has additional methods and
+flexibility for storing and manipulating
+the data
+int is not a class but integers on the
+other hand is a class
+so this was a basic difference between
+int and integer now moving on to our
+next question which is what is a
+bootloader
+so the bootloader is an essential
+component in the booting process of the
+operating system
+it is also called the boot manager it
+places the operating system in the
+memory
+next is
+explain the difference between
+interpreter and compiler
+so let's start with the interpreter
+first
+so interpreter translates one line of
+code at a time
+whereas compiler scans the entire piece
+of code and converts it into machine
+code
+interpreter is faster than compiler in
+analyzing the program whereas compiler
+is slower to analyze program but the
+overall execution time of compilers is
+faster than interpreter
+interpreter are memory efficient whereas
+compiler on the other hand are less
+memory efficient than interpreter
+the examples of interpreter are python
+and ruby and the examples for compilers
+are c and c plus java now
+coming to our next question which is
+what is oops concept
+so oops stands for object oriented
+programming it is about writing a code
+in functions and procedures the idea is
+about reading the code in a minimalistic
+way that reuses code
+the oop follows abstraction inheritance
+encapsulation and polymorphism
+so this was the oops concept now
+moving to the next question which is
+explain inheritance so inheritance is
+the mechanism that allows
+one object to acquire all the
+characteristics and properties of
+another object
+a class used for inheritance is called
+the base class or superclass
+while the class that inherits is called
+a derived class or subclass
+like it can be understood from a simple
+example like the sun inherits all the
+properties and characteristics of his
+parents
+and you can create multiple objects
+using template of parent objects now
+coming to the next question which is
+explain encapsulation o encapsulation is
+used to protect the data from the
+outside world
+encapsulation means shielding the data
+it is done by wrapping it under a single
+program or function
+the data in an encapsulated class is
+hidden from other classes by making the
+data private in nature so this was
+encapsulation now moving on to the next
+oops concept
+that is
+explain polymorphism
+so polymorphism means taking multiple
+forms
+the object in the program can act in
+different ways depending on the message
+or the event occurring
+a very good example of polymorphism is
+that a man can have different roles like
+father son or uncle yet he is the same
+person polymorphism also means many
+forms
+so now coming to the next question which
+is what is a constructor
+so the constructor is used to initialize
+the object it is similar to the method
+every time a class is instantiated
+constructor is used for it
+during the instantiation the memory
+required for the object is allocated
+there are two types of constructors in
+java that is default constructor and
+parameterized constructor
+now coming to the next question which is
+explain destructor
+so a destructor is used to destroy the
+objects that are created while the class
+was instantiated
+it is a special method that gets called
+when the object life cycles comes to an
+end
+it can remove the object from the memory
+and reclaim the space
+the destructor also releases any locks
+held by the object and closes the
+database connections
+now coming to the next question which is
+what is constructor overriding oh an
+answer of this question would be you
+cannot override a constructor in java
+the constructor is similar to a method
+but it does not work like a java method
+if you try to call a superclass
+constructed in a subclass the compiler
+treats it as a method and will throw a
+compilation error now coming to the next
+question which is what is constructor
+overloading
+so constructor overloading can be
+defined as having multiple constructors
+with different parameters so that every
+constructor can perform a different
+activity
+in java these constructors must have
+unique signatures and for error free
+compilation different sets of arguments
+must be passed to these constructors
+so here we can see an example
+so in this example we are creating two
+objects of a class
+one with zero parameters and another
+with
+one parameter
+so when we create an object constructor
+of class gets called here we have two
+constructors one with no arguments and
+other with one argument
+creation of person one object will call
+person
+constructor and person to object we'll
+call person int constructor this is
+constructor overloading
+so this is a fine example of constructor
+overloading
+so as we have understood now what is
+constructor overloading now we can move
+to the next topic which is explain
+virtual functions
+so a virtual function is a member
+function that is declared in the base
+class and it is overwritten by the
+derived class
+so virtual function helps in achieving
+runtime polymorphisms
+rules to keep in mind for virtual
+functions are
+it cannot be static
+then it should be accessed using a
+pointer for reference to the base class
+then third would be a class can have
+virtual destructor but not a virtual
+constructor
+so this was virtual functions
+now moving on to the next question which
+is what are dml statements
+so dml is also known as data
+manipulation language
+these statements are used to manipulate
+the database objects inside the database
+following are included in dml
+first is insert
+second is delete and third is update
+now coming to the next question which is
+what are ddl statements
+so ddl is also known as
+data definition language
+so these statements are used to define
+or modify objects in database
+and following are included in ddl that
+is create
+alter drop truncate
+so now moving on to the next question
+which is what is sql so sql is known as
+structured query language
+it is the language used to manipulate
+the database sql includes various
+categories like ddl
+dml and tcl
+now
+coming to the next question that is
+we have to write a program to find
+the power of a number you can have a
+look at this example this type of
+questions are also are during the
+interview process
+so in this example we are taking two
+inputs
+n and base
+then we are taking a while loop which
+validates if n is equal to 0 in loop we
+are taking the product of result and
+base till n equals to 0.
+for example if n equals to 5 and base
+equals to 2
+then we will multiply 2 5 times that is
+32
+so this is how
+you can solve this problem
+now moving on to the next
+coding problem
+which is write a code to reverse a
+number in java you can have a look at
+this example first so in this example we
+are taking n as an input
+and a while loop which is validating if
+n
+more than zero
+in while loop we are first finding last
+digit of 1
+so then we are using that last digit and
+adding it to a product of 10 and sum the
+sum is storing the digits of reversed n
+finally we are deducting the last digit
+from the number
+and by dividing n by 10
+for example if n equals to 12 then r
+equals to 2
+then sum would be 0 into 10 plus 2 which
+is equal to 2
+and n equals to 1
+then again when r equals to 1
+sum equals to 2 into 10 plus 1 which is
+equals to 21 that is the reverse number
+so this is how we can reverse a number
+so as we have covered the technical
+interview questions now let's understand
+cognizant objective interview questions
+so our first question is
+a 300 meter long train
+running at the speed of 150 kilometer
+per hour crosses the second train
+running in the opposite direction with
+the speed of 120 kilometer per hour in
+nine seconds
+what is the length of the second train
+option a is 370 meter option b is 400
+meter option c is 375 meter and option d
+is 372 meter
+you can take some time to solve this
+question
+you can also pause this
+video in order to figure out the correct
+option
+meanwhile we will discuss the correct
+option
+so the correct option is c 375 meters
+so the train is running in the opposite
+direction
+then the total speed would be 150 plus
+120 which is equal to 270 kilometer per
+hour
+and if we will convert it into meter per
+second then it becomes 75 meter per
+second
+now let the length of another train be l
+meter
+now
+300 plus l that is the length of the
+other train
+divided by 9 equals to 75 meter
+this becomes distance upon time equals
+to speed that is 300 plus l divided by 9
+equals to 75
+now 75 is the speed that is 75 meter per
+second now by solving this equation
+l that is the length comes out to be 375
+meter
+all right
+now moving on to the next question which
+is
+assume
+a x equals to b y then
+option a
+log a
+by log b equals to x by y option b is
+log
+a by b equals to x by y
+option c is log a divided by log b
+equals to y by x
+option d is
+log b divided by a equals to x y
+now you can again pause this video to
+figure out the correct option meanwhile
+we can go ahead with the right option
+so the correct option is
+c that is log a
+divided by log b equals to y by x
+now moving on to the next question which
+is
+sum of two numbers is 80 and the product
+is
+then what is the sum of the reciprocals
+it is a very basic question function a
+is one option b is two option c is one
+by four and option d is one by two
+now you can take your time
+by pausing this video
+meanwhile the correct option is option d
+one by four
+so given a plus b equals to eighty that
+is the sum of two numbers equals to
+eighty and a into b that is product of
+two numbers is 320
+then sum of their reciprocals as we know
+the formula that the sum of their
+reciprocals is equal to a plus b divided
+by a into b that is equal to
+a plus b that is the sum divided by the
+product which comes out to be 80 divided
+by 320 that comes out to be one by four
+so one by four is the correct option
+that is an option d right guys now
+moving on to the next question
+so our next question is how many seconds
+will a 300 meter long train moving with
+a speed of 83 kilometer per hour take to
+cross a man walking at a speed of three
+kilometer per hour in the direction of
+the train so option a is 13.5 seconds
+option b is 14 seconds option c is 13
+seconds or option d 14.5 seconds
+so you can pause this video again and
+try to solve this question on your own
+meanwhile i'll
+speak the right option now so the
+correct option is a 13.5 seconds
+so
+the train and men are moving in the same
+direction
+so the relative speed will be 83 minus 3
+which is equal to 80 kilometer per hour
+now we know that we have to convert it
+into meter per seconds so we'll convert
+80 kilometer per hour into meter per
+second by multiplying it with 5 by 18
+which comes out to be 200 by 9 meter per
+second
+and we know that time equals to distance
+upon speed
+so our distance is 300 and our speed is
+200 by nine so we will divide 300 by 200
+by nine and our answer would be 13.5
+seconds so yes the correct option is
+13.5 seconds that is option a now
+moving on to the next question
+so a set sum of money amounts rupees
+three thousand in two years and which is
+3400 in four years
+find the sum and the rate of interest so
+our option a is inr two thousand and
+thirteen percent a two thousand is the
+sum and rate of interest is thirteen
+percent
+option b is twenty six hundred and seven
+point seven percent
+option c is fifteen hundred and twelve
+point five percent and option d is
+sixteen hundred and twelve percent
+now i'm gonna tell the correct option
+so the correct option
+is option b
+that is twenty six hundred and seven
+point seven percent
+so the interest paid in two years would
+be thirty four hundred minus three
+thousand which is four hundred for two
+years
+now so for one year we will divide 400
+by two so it comes out to be 200
+then for two years it would be 400 for
+one year it would be 200 then the
+principal sum at the beginning is 3 000
+minus 400 that is 400 for two years so
+we'll uh subtract 3000
+minus 400 which comes out to be 2600 so
+2600 is the principal sum at the
+beginning now if we apply the formula of
+rate of simple interest that is 200
+divided by 2600
+that is the
+sum at the beginning into 100 then it
+comes out to be 7.7 percent so the
+correct option is option b
+six hundred and seven point seven
+percent
+now moving on to the next question
+what is the anthem of vindictive
+so you can select from these options
+option aks option b for giving option c
+revenge full option d
+refined
+so the correct option is option b that
+is forgiving
+now moving on to the next question
+what is the antonym of peculiar
+option a is normal option b is exception
+option c is unique and option d is
+specific
+again i'm going to speak the correct
+option so the correct option is option a
+normal
+now again next question
+what is the antonym of prejudice
+option a bias option b injustice option
+c impartial option d judge
+the correct option of this question is
+option
+c impartial
+so these are some antonym that you can
+prepare or some more antinoms or
+synonyms that you can prepare on your
+own
+now
+moving on to the next question
+photometer is to mileage then compass is
+to you have to select from distance b
+direction
+c speed or option d gravity
+now
+the correct option is option b direction
+automator is to mileage then compass is
+to direction
+all right
+now again we will move to the similar
+question like that
+a marathon is to raise then hibernation
+is to
+option a sleep option b awake option c
+dream or option d animal
+now the correct option is option a
+that is sleep
+marathon is two days then hibernation is
+to sleep
+they are pretty easy questions next
+question is window is to pane then book
+is to option a page option b cover
+option c author option d inc
+direct option here is option a page
+now the next question
+cup is to coffee then bowl is to
+a water b noodles c bread or d soup
+correct option here is d soup
+now cup is to coffee then bowl is to
+soup
+it was pretty easy
+now moving on to the next question
+vikas plants six separate saplings a b c
+d e f in rows number one to six
+according to the following conditions he
+must plant a before b and e
+he must plant b and d
+the third has to be c
+which sitting arrangement is acceptable
+now this type of question doesn't really
+need any explanation
+so here are the options option a
+a f c b e d this is the arrangement
+option b
+a b d e c f arrangement
+option c
+dba cfe arrangement or option d
+c e f b a d arrangement
+so you have to select the correct option
+among these
+and now i'm gonna tell you the correct
+option which is option a
+that is
+a f c b e d
+so this is the correct option
+now we can move to the next question
+which is
+when rahul saw aditya he recalled he is
+the son of the father of my daughter
+who is rahul
+option a
+brother option b
+cousin option c father-in-law or option
+d brother-in-law
+take your time by pausing this video
+now i'm gonna tell the correct option so
+the correct option is
+option d that is brother-in-law
+next question is
+which of the following is synonym of
+catechize
+option a query option b silence option c
+walk away or option d sync
+the correct option of this question
+would be option a query
+now moving on to the next question
+so which of the following is synonym of
+luth
+option a love option b play option c
+hate or option d dance
+so the correct option is option c that
+is hate
+now
+the next question would be
+which of the following is synonym of
+receipt
+option a attack
+option b retreat
+option c dodge or option d complain
+now the correct option of this question
+is
+option b retreat
+all right
+now moving on to the next question
+so which of the following is the synonym
+of spurious
+option a real option be genuine option c
+fake or option d excellent
+so the correct option of this question
+would be option c fake
+now
+again a similar type of question
+which of the following is synonym of
+pudgy
+option hrb
+option b skinny option c ugly or option
+d beautiful
+the correct option of this question
+would be
+option a chubby
+all right now the next question would be
+if v j can be written as
+x k l c a
+then what can
+r c t k u be written as so you need to
+solve this question with pen and paper
+then only you can figure out the correct
+option
+so the options are a paris b param c
+pairs
+d plans
+now i'm gonna tell you the correct
+option so the correct option would be
+option a that is paris
+now the next question would be
+after walking 11 kilometers towards
+south a man turns right
+he walks two kilometer to the left and
+seven kilometer to the right
+after that he walks three kilometer
+straight back
+where is his starting point now
+so again you have to do this question
+with pen and paper
+so option a is southwest option b is
+south option c is northwest option d
+north correct option of this question
+would be option d that is north
+now coming to the next question consider
+some digits between 10 and thousand such
+that when each number is divided by 6 7
+and 11 it leaves 5 as the remainder in
+each case
+what are the original numbers
+option a 535 option b 400 option c 462
+option d 135
+the correct option of this question
+would be option c that is 462.
+now moving on to the next question
+in the 800 meter race
+a gives b a start of 5 second and beats
+him by 25 seconds
+in another race a beats b by 15 seconds
+the speeds are in the ratio
+so the ratios are option a 10 ratio 11
+option b 9 ratio 8 option c 8 ratio 9 or
+option d
+eight ratio eight
+this one is pretty easy question and
+now i'm gonna tell the correct option so
+the correct option would be option b
+that is 9 ratio 8.
+now
+moving on to the next question
+if 1 raised to power 3 plus 2 raised to
+the power 3 plus 3 square 3 up to so on
+10 raised to the power 3 equals to 4 0 5
+0 then find the value of
+2 raised to the power 3 plus 4 raised to
+the power 3 plus 6 raised to the power 3
+up to so on 20 raised to the power 3.
+so here are our options like a 10 000 b
+32 400 option c
+42 350 or option d 32 000
+now
+i'm gonna speak the correct option so
+the correct option is 32 400
+so we have given that 1 raised to the
+power 3 plus 2 raised to the power 3
+plus 3 raised to plus 3 up to so on 10
+raised to 3 equals to 4 0 5 0. so we
+have given the value of these
+now we have to find the value of 2
+raised to power 3 plus 4 raised to the
+power c up to so on 20 raised to power
+3.
+so first of all we'll take the common
+so we'll take two respawn 3 common out
+of these
+so it would be like 2 raised to the
+power 3 in the bracket there would be 1
+square 3 plus 2 raised to the power 2 3
+plus 3 raised to r 3 up to so on 103
+10 raised to 3
+all right so we know that 2 raised to
+the power 3 is equal to 8
+now
+and the rest of it we have
+the value like 4 0 5 0 so we will simply
+multiply 4 0 5 0 into 8
+then it comes out to be 32
+400.
+you can try this question on your own it
+is pretty easy
+all right
+now moving on to the next question that
+what will be the most significant number
+which divides 37 59 74 leaving the
+remainder 2 3 and 4 respectively
+option a would be 7 option b would be 9
+option c 10 and option d 5.
+now i'm going to tell the correct option
+so the right option would be option a7
+so these were some cognizant objective
+interview questions
+now coming to the hr questions for
+freshers
+so those that make it through the
+technical round will advance to the
+final round
+which is the cognizant hr interview
+candidates will have to face interaction
+with cognizant's hr manager in the stage
+during the hr stage candidates may also
+be interviewed by a panel more than
+in which there are more than one
+interview
+so participants will be asked things
+about their personal history
+academic qualifications interest
+strengths weaknesses professional
+experience and so on
+finally if candidates are chosen in the
+in this round they will now be recruited
+for the job description for which they
+have applied
+all right now let's move on to the
+questions part so the first question
+which is also very common would be tell
+us a bit about yourself
+so this topic is typically asked to
+initiate a conversation and to gain a
+basic understanding of the candidate
+candidates typically begin with their
+current academic qualifications
+technologies learned family history
+projects completed in the final academic
+semesters internship programs completed
+and in what role
+the internships are etc
+now to answer confidently to make the
+best impression on the interview
+the manner in which you conclude your
+answer can set the tone for the next few
+questions
+now
+let's move on to the next question
+so how do you increase your knowledge so
+this is
+an important question
+so you need to prepare for this question
+so you can answer like learning does not
+come to an end ever like the interviewer
+will want to know if you are a critical
+thinker who challenges yourself to grow
+you can respond to this question by
+saying that you are aware of current i.t
+trends and that your knowledge will not
+only help you advance in your career but
+will also be beneficial to the company's
+growth
+all right
+so this is how you can address this
+question
+now moving on to the next question
+so what are your qualifications so you
+must serve an example how you differ
+from the other candidates
+tell them about your abilities that will
+help you to make a beneficial influence
+at work
+operating in a new environment is not
+really a problem for you and
+you can say a lot of similar things like
+that
+check that you match the job description
+and explain how you believe you could be
+a good fit based on your strengths
+all right so this is how you can answer
+this question now we can move to the
+next question which is
+assuming you are employed how long do
+you anticipate working for us
+all right so no employer wants
+an interviewee who will leave the
+company after only a few years
+so they anticipate that the candidates
+will be a good fit for the company for
+like seven to eight years
+and even if you are unsure you must tell
+them that as long as the job you do
+challenges and leads to a profitable
+company it will help you grow
+so in this way you can answer these
+types of questions
+now the next question
+why do you believe you are qualified for
+this position
+so now remember why you applied for this
+specific rule when answering this
+question tell the interviewer about your
+qualifications and how
+they make you eligible for this position
+in addition emphasize uh how you can add
+value to the current workforce
+all right
+now tell us about some of your strengths
+this is again a very common and
+important questions
+so again it's uh critical to research
+the job requirements before attending
+the interview
+make a list of your areas of strength
+and say the ones which
+this role requires
+all right now the next question would be
+tell us a little about your weaknesses
+all right so do not give a weak point
+that will directly impact your selection
+but also do not claim that you don't
+even have a weakness
+so the best way to respond this question
+is to flip one of your strengths into a
+shortcoming but you believe it is an
+important to function in this way
+another option for answering this
+question is to provide a totally
+unrelated weakness that is that will not
+affect your work in the company
+all right now moving on to the next
+question that would be
+what do you like to do in your spare
+time aside from study
+all right so candidates must respond to
+this question by discussing their
+hobbies or extracurricular activities
+like just don't say that outright that
+you enjoy reading books watching
+television and playing sports since the
+interviewer will ask you what genre you
+love to read and why as well as the
+technologies of the sport
+so ensure you answer this question
+honestly and only if you have such a
+knack for doing so in your spare time
+so
+these were some cognizant hr interview
+questions
+now let's understand
+how to prepare for these hr interview
+questions
+all right
+so
+to prepare for these hr interview
+questions you must participate regularly
+before actually taking the test
+make sure you have a good comprehension
+of the topic and enough practice
+reading good literature or registering
+for a suitable online course can help
+you clear your doubts now the second
+point would be make sure you review your
+coding test papers and practice
+programming principles like c c plus
+plus in java
+as well as other computer essentials
+like oops concept
+and databases and networking
+and the third point would be ensure all
+the information on your cv concerning
+your prior projects and internships is
+correct and that you understand
+everything
+you will be questioned on your past
+projects and work experience as well as
+what technology you used and what you
+have achieved so our fourth point would
+be ensure that you are updated on the
+technological developments
+you should be familiar with the recent
+technology advancements etc
+so you must be updated with the latest
+trends in technology as well so these
+were some tips to prepare for the
+cognizant hr interview questions
+now
+let's have a look at cognizant careers
+so the cognizant recruitment takes place
+for freshers and experian candidates
+so cts runs recruitment for the
+following positions
+so first would be gen c then gen c
+elevate
+then gen c pro
+and gen c next
+so these were some following positions
+that ctd runs recruitment for
+all right cognizant recruitment is quite
+rigorous like it is one of the fortune
+500 companies and a great place to work
+cognitive is an excellent place to start
+your career if you're a fresher
+even for experienced candidates
+cognizant is good paymaster and has a
+terrific project
+that can elevate your career
+and following are the ct's recruitment
+eligibility criteria like more than 60
+percent marks in 10th and 12th or
+diploma
+a minimum of 60 marks in graduation
+a maximum interval of 1 year is
+permitted
+and graduation and post graduation in be
+that is bachelor of engineering b tech
+me mtech and mca
+a candidate should not have any pending
+backlogs during the recruitment
+these were some eligibility criteria
+that you need to take care of
+and with that we have come to the end of
+this video if you like this video please
+give it a thumbs up i hope it really
+helped you all
+thanks for watching stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

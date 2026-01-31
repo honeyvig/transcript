@@ -1,0 +1,587 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn
+about creating an interactive dashboard
+in Excel but with a small twist and the
+twist is chat GPD will be assisting us
+to build this dashboard interesting
+right so that said if these are the type
+of videos you'd like to watch then hit
+that like And subscribe buttons and the
+bell icon to get notified just for a
+quick info if you want to upscale
+yourself to master business analytics
+skills and land your dream job or
+growing your career then you must
+explore simply learns go of various
+business analytics programs simply learn
+offers a postgraduate program in
+business analytics from peria University
+in collaboration with Amazon Google and
+Microsoft through this program you will
+gain knowledge and work ready expertise
+in skills like prescriptive and
+Predictive Analytics regression
+classification and over a dozen others
+that's not all you also get the
+opportunity to work on multiple projects
+and learn from industry experts in top
+TI product companies and academicians
+from top universities after completing
+these courses thousands of Learners have
+transtion into a business analytics role
+as a fresher or moved onto a high paying
+job profile if you are passionate about
+making your career in this field then
+make sure to check out the link in the
+pin comment and description box below to
+find a business Analytics program that
+fits your experience and areas of
+Interest now without further delay let's
+get started so now you can see some data
+on my spreadsheet so we have row ID
+order ID audit date and ship date ship
+mode Etc so this means that this
+particular data set belongs to a a sales
+data set for a store or something so
+what I have done is if you look out the
+videos on our Channel we already have
+created one of the interactive
+dashboards using the same data set so we
+try to extract month- on Monon sales
+region category subcategory Sales
+Country wise sales shipment type sales
+Etc right so I have uh you know kept the
+data as it is and all the pivot tables
+as it is now let's say we do not know
+how to create all these pivot tables and
+pivot charts and slicers Etc we just
+know that we have the data and you're
+new to this and want to analyze your
+data how do you do that chat GPD is here
+for the rescue so before we get on to
+chat GPD let's quickly remove all our
+reference pivot tables about pivot tabl
+I'm quickly deleting all these they left
+out with only the data right and again
+you can do this dashboard using chat gbd
+3.5 or in case if you have a premium
+version which is chat gbd4 you can
+directly attach your data set onto the
+chat GPT prompt and chat GPT will do all
+the analysis you need right but for now
+let's experiment using the chat GPD 3.5
+version which is basically open source
+and free to use now let's quickly hop on
+to chat
+GPD so there you go we have chat GPD
+version 3.5 we are not switching to
+four so now let's quickly um
+explain what we are up
+to hi chat GPT just keep it simple as if
+you're talking to your
+friend
+the D set belongs
+to super store
+sales or is
+about
+the data set is about uh Superstore
+sales
+report and I need
+to
+create a
+dashboard
+for month on
+month
+seal
+so this is the prompt and basically I
+just explained in a brief way I'm not uh
+giving a detailed information but hope
+this works so basically Ally uh what you
+are supposed to do is uh give U the
+requirement one by one but I'm giving it
+in a single prom so that I'll get the
+results in one single PR let's hope for
+that so what you're trying to explain CH
+GPD is that you have a sales data set
+and you're using Excel for for storing
+it and manipulating the data and trying
+to build some Innovative interactive
+visually appealing charts and you don't
+know how to do it so you explain that to
+your chat jpd and uh what are the uh
+things you are looking to build what are
+the charts you're looking to build so
+I'm looking to build a month-on-month
+sales report which can be a quarter on
+quarter month on month year on Year date
+wise however the way you like it right
+so uh make sure that your data is
+properly formatted first so here let's
+check out that your date column is
+formatted to date data type right
+sometimes what happens is the
+representation of date uh changes to
+user by user let's say this particular
+data set or this particular inventory
+has been allocated to five different
+people to entry the data right somebody
+might use this type of you know here you
+have uh let's create a new sheet and try
+to let me elaborate what I'm trying to
+explain so let's say um person
+one person three so let's say I use this
+type of uh
+formatting 15th December 2025 something
+like that and somebody else uses 15 12
+2025 and another one uses 15
+December
+2025 and also sometimes few people also
+uh intend or you know may um follow uh a
+date pattern which looks some something
+like this December the 31st
+2025 right and it's not wrong so many
+people will have different uh
+conventions of writing their dates so
+you need to make some data cleaning and
+okay if you are coming back to data
+cleaning we have listed a video in our
+descriptions for data cleaning in Excel
+and uh that would help you in various uh
+data cleaning operations that are um you
+know used in day-to-day lives of a data
+analyst so that should help so basically
+what you are looking for is so instead
+of General go back to the data types and
+here you can check out the data type
+options and you can either give a short
+date long date or in the case you want
+to go for some additional formatting you
+can also go to more formatting and here
+you can check out the custom formatting
+options here you can give a customized
+option for now I want to go with date
+and the date I want to go with is this
+particular one which gives me date month
+and yeah click on that and you should be
+good to go right so make sure that all
+the uh uh dates in your spreadsheet are
+following one single date pattern so
+that when it comes to uh month on month
+quarter on quarter and EBY sales that
+will help you a lot okay it will just
+give you a filtered option it will give
+you year on year first then quarter on
+quarter next and if you expand the
+option of quarter on quarter you will
+have month on month and if you expand
+the month then you will have date wise
+so you will have a you know better
+understanding when we perform this
+operation in a practical Way in real
+time and then we have the next type of
+chart where we want to identify
+country-wise sales then we have
+regionwise sales so let's say I have one
+country here let's say one sales from
+France and uh I want to know what are
+the uh sales happening in central region
+of France North region of France so
+you'll have region wise sales there and
+category wise which category is giving
+you the maximum profits or the maximum
+sales and inside the category which is
+that subcategory or which product is
+that that which is giving you the
+highest number of sales you can identify
+that and based on that you can plan a
+business uh you know you can get up with
+a business strategy there and shipment
+modes so which type of shipment mode
+which should you invest in money so that
+you can you know offer better services
+to your customers so everything comes so
+this is what I want to uh you know um
+extract from my D set so this is my
+requirement you have explained this to
+your chat GPD through the prompt and
+just
+enter now chat GPD should help you break
+down the requirements and chat gbt
+should help you uh how to you know it'll
+get tell you how to uh do the process
+so here it will tell you the line chart
+so basically it's a it's a it's a rule
+that month on month sales or quot on
+quarter sales basically wherever the
+time is involved the line chart is the
+best to represent your numbers so now it
+basically tells you how to uh represent
+your charts in what or how what type of
+chart to be selected that's good but now
+uh can you help
+me
+create the first
+chart in
+Excel there you go so it tells you how
+to create it and sure you have a column
+for dates and other corresponding values
+so basically it is telling you to have a
+properly mentioned or properly defined
+metadata or column headers
+then select the data go to the insert
+tab choose the line chart okay and let's
+say uh you wanted to create an
+interactive dashboard right so to create
+an interactive dashboard or to basically
+create a dashboard you need a pivot
+tables and you don't know how to create
+a pivot table you can ask chat GPD to
+help you create uh a pivot
+table help me create a
+pivot
+table
+for the first
+type for all the types okay
+or for the data
+set
+certainly so it'll mention you the steps
+to follow to create a pivot
+table there you go so what's the first
+step highlight the range of cells that
+contain your data set and including
+headers and go back to Excel and you can
+just click on any cell and control a all
+your D set has been selected or these
+days you can just select one of the
+cells and go to insert menu and pivot
+table and now from the table range Excel
+will automatically select the entire
+range of the table you're looking for or
+your working on and in case if you are
+having any doubts on that you can just
+select all the range and go to the same
+insert option and select the pivot table
+click on okay in a new worksheet and
+there you go you have your new uh say
+pivot table let's delete this now
+remember we wanted to create the
+month-on-month sale for the first uh
+pivot table and pivot chart so and
+remember about the uh date formatting so
+we'll be looking on that
+now we will drag OD date onto row here
+and you can see here so this is what I
+was talking about so Excel has
+automatically segmented your dates we we
+have about 10,000 rows in this
+particular dat set and it has segregated
+all the 10,000 rows into four different
+years 2020 21 22 and 23 and if you
+expand the selection of air it has
+segregated again into Portal 1 2 3 and
+four right and if you expand and quarter
+one you have month-on-month sales in
+quarter one month- on-month sales in
+quarter two and month-on-month sales in
+quarter three and so on right so this is
+why I was requesting you to have a
+proper data formatting for all your
+dates right which could be really
+helpful when you want to extract the
+quarter on quarter sales and date wise
+sales and year-wise sales right so now
+we wanted to find out month- on-month
+sales right or year on-ear sales so
+where is the sales yeah here we have the
+sales parameter just drag that onto the
+values and there you go now format this
+into the currency
+type so the currency is dollars American
+dollars and you can eliminate the
+leading zeros here if you don't want
+them there you go now you have the whole
+number here you can also do the same for
+this
+you can select the entire
+table go to pivot table okay let's check
+the uh options provided by chat
+GPD so basically we have created a pivot
+table now we want to create a pivot
+chart how do I create a pivot
+chart
+so again it's making really clear
+statements and really clear steps so
+it's again making sure that you create a
+pivot table first right so we have a
+pivot table and uh highlight pivot table
+data click anywhere on your pivot table
+to highlight the entire range insert
+pivot chart with the pivot table
+selected go to the insert tab on the
+ribbon and then click on pivot chart and
+uh open the insert chart dialogue box
+choose the type you want and uh
+customize the chart select the chart so
+customizing the chart we'll look onto it
+and Fields if you want to keep a few
+Fields you can and if you want to
+eliminate a few Fields you can you can
+also do that refresh data let's say why
+refresh data see chat gbd is so
+brilliant right so let's say uh I have
+the sales data until 2023 and now we are
+in 2024 let's say we update 2024 onto
+this particular spreadsheet and now we
+have that particular data in the
+original spreadsheet but that is missing
+here in that scenario what you can do is
+just go to data and here you will find
+the refresh all option once you click on
+this you can find the 2024 data updated
+here for now we have not added yet but
+in case if it's added all you can do is
+just refresh your sheet and everything
+will change so brilliant suggestion from
+chat jpd and save and share in case if
+you want to share so let's follow the
+same steps select any cell in the pivot
+table select all the sheets go to insert
+Tab and here recommended charts or go to
+the charts option and select the chart
+that you are looking for so we are
+dealing with uh time so I would go with
+the line chart just click okay but in
+case if you want to create an
+interactive dashboard just go to pivot
+table analyze and here you have the
+pivot charts and again it'll give you
+the same option just select the line
+chart here and press okay so you have
+your line chart over here so
+again if you are editing this so you can
+remove the Legends if you want remove uh
+anything else or you can customize that
+okay there you
+go and if you want to edit the name of
+the chat you can also do that so I will
+do this as M Sales
+report okay accordingly I'll change the
+sheet
+name
+there you go right
+now quickly we will create the other
+charts as well so the process is same
+you can hold control and drag this
+particular sheet and you have the next
+sheet so the next uh requirement that we
+had that we requested chat jpd was the
+country wise
+sales so everything will remain the same
+what changes is is okay let's close this
+and here instead of order data we will
+have okay let's remove this from rows
+and quarters
+months right country so we will drag
+country into rowes and there you go now
+we have countries now country wise so
+you can uh select this cell go to pivot
+table analyze pivot chart and you can
+select the bar graph so automatically
+gave you the first suggestion as bar
+graph click on that and you have the bar
+graph over here and you can also edit
+the chart you don't want you don't want
+the Legends you can remove them and edit
+the name of the chart
+to Country wise
+sales so and uh quickly drag and drop
+the sheet again new pivot table and here
+you wanted
+category wise
+sales or segment wise
+sales uh close this
+particular thing this and instead of
+country you're going to add segment to
+the row and remove country and you have
+segment wise sales select any sell on
+the pivot table go to pivot table
+analyze pivot chart and here you can use
+any of the available um charts here let
+me use the final chart or
+histogram bar chart will be better press
+okay and there you go you have the bar
+chart same edit your you know customize
+your uh
+chart change the name
+to segment wise
+sales hold control and drag the sheet
+now you have subcategory wise
+sales instead of segment you will be
+selecting the
+subcategory you can remove
+segment and you can see the chart also
+changed here and again you can do the
+category wise sales so this was segment
+wise
+sales you can quickly change the segment
+to
+category and you have it we quickly
+quickly go back to yeah so we have done
+the category Wise subcategory Wise
+region wise is remaining and shipment
+modes
+so quickly drag or drop the region
+remove sub category from the
+list there you have the region wise
+sales edit the
+name
+and the last one which is about the
+shipment
+modes
+remove region and there you
+go you can create a new dashboard over
+here and name it as
+dashboard you can do some customization
+to your dashboard like selecting these
+sales
+giving it a
+color there you go now you can quickly
+copy and paste all these uh charts to
+the
+dashboard starting from the
+month-on-month sales
+copy
+paste so I'll quickly do all the uh pas
+thingss as soon as
+possible
+e
+the there you go you can also manage the
+size of these charts so that everything
+fits onto one sheet so for now let's try
+to unpen
+this so that we have a little better
+visual
+appearance okay not a
+problem and now uh we need some filter
+right so something which can make it a
+little more interactive that's when you
+add slices
+and let's say you don't know how to add
+slices back to chat gbd and ask chat GPD
+how do I add
+slices to my
+dashboard there you go so is telling you
+to
+uh add everything in a step by-step way
+and it also is is talking about the
+interactivity right it's it is asking
+you to connect all the slices it it's
+telling you to report the connections
+right if you just add the slices based
+on one single okay basically you need to
+select one of your charts here and
+select a pivot table or PIV chart go to
+the PIV table chart associated with the
+slicer and insert go to the insert Tab
+and insert a slicer I I'll tell you that
+so basically it it's telling you in a
+very beautiful way stepbystep manner
+right and even after adding the slicer
+it it is telling you to connect all the
+uh basically all the charts or all the
+um you know CH dashboards and charts you
+created at this particular tutorial and
+connect all those charts to that
+particular slicer using the report
+connections option and you can get the
+interactivity right so in in a very
+beautiful manner it has explained let's
+try the way it has explained to us go to
+the dashboard select any one of it and
+uh go to the insert option and here you
+have the slicer right so now you have
+all the slicers over here so basically
+we wanted what type of slicers so I have
+created a month-on-month
+uh chart so I'll go with order date
+slicer which is here then I have created
+segment wise sales so I want segment
+slicer country wise slicer category and
+subcategory wise
+slicers region wise so region slicer and
+do I have anything else let's scroll
+down that's the last one so where is the
+shipment
+here yeah shift mode country region
+category subcategory segment order dates
+and shift mode so I will have multiple
+slices in one go right now you have to
+arrange your slices in such a way that
+they are interactive and they they look
+like they are sorted in one place so let
+let me do that quickly we have some
+space left here in the bottom place of
+the dashboard you can also keep your
+slices there so what basically chat gbd
+meant was if you try to use the slices
+here it will you know the changes will
+reflect only in one of the pivot charts
+not on all the pivot charts so to get
+that interactivity to get that
+connectivity between all the charts you
+need to do a small setting which is
+called as report connections so select
+one of the slices over here right click
+and here you have something called
+report connections so when you report
+connections you have all the pivot
+charts and pivot tables that you just
+created you can just select all those
+pivot tables that you created and press
+on okay so that all these pivot tables
+are connected to that particular slicer
+uh you can just expand this and check if
+all the pivot tables are selected press
+okay do the same for all the slices I'll
+quickly do
+that
+so there you go we have interconnected
+all the charts now let's say I want to
+find out the sales that happened in the
+latest year just go to the filters
+select any of the dates
+2023 and you have the data and if you
+want to select any particular country
+then you can also do that I want to go
+with United Kingdom and in United
+Kingdom we have all the data here let's
+say I want to check out only for the
+phones there you go now you have an
+interactive dashboard which will tell
+you the sales that happened on the date
+of 16th of November 2023 in the region
+United Kingdom for phones all right and
+uh segment is home or office ship and
+mode with standard class and major sales
+that happen are from nor region and the
+categories from tech technology right
+and that's how you create an interactive
+dashboard using chat GPD in Excel so
+each and every step has been mentioned
+very clearly by chat GPD and you have
+all the data in one place so let's
+quickly remove all the
+filters and there you have the entire
+dashboard right and with that we have
+come to an end of this session on chat
+GPD to create an interactive dashboard
+in Excel if you have any queries
+regarding any of the topics covered in
+the session or if you require the data
+that we have used in the session or the
+prompt that we used in this session
+please do let us know our team of
+experts we'll be more than happy to
+assist you at the earliest until next
+time time thank you for watching and
+stay tuned for more from simp Leon

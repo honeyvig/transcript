@@ -1,0 +1,407 @@
+hi guys and welcome to yet another
+trusting video by simply learn
+in today's video we will learn about
+command prompt which is an application
+of windows system
+in this video we will also learn about
+the command tricks that can be used in
+the command prompt
+but before we begin if you love watching
+tech videos subscribe to our channel
+and hit the bell icon to never miss an
+update from us
+for today's video the agenda is
+firstly we will understand what is the
+command front application
+continuing with how the command prompt
+works
+and lastly the command tricks
+now without further ado let's begin with
+what is command prompt
+command prompt is a windows application
+that requires a user to enter a command
+for execution purpose
+the command prompt is also a text based
+interpreter
+moving on we have command prompt working
+the command prompt works as a command
+line interpreter
+which requires the user to enter a
+command line in the terminal window
+after that we have to press enter to
+execute the function
+command prompt also allows us to have
+multiple windows open at the same time
+with execution of different commands
+the commands in the terminal window
+allows us to access data about
+settings related to our system
+or network status
+or booting sector commands
+moving on let's take a look at the
+tricks
+for better understanding let's divide
+the tricks in some parts
+the first is network related
+network related commands include network
+status creating a wi-fi hotspot
+obtaining an ip address of a specific
+site etc
+then we have general commands this
+includes
+clear option cut paste
+changing the font and renaming folders
+and lastly we have task and folder
+commands which includes hiding a folder
+sorting the lists of folders and gaining
+a list of all the installed programs
+to better understand the command prompt
+working let's take a look at the demo
+for the same
+to access command prompt
+go to search option
+and write cmd
+on clicking enter
+we'll have a command prompt
+to begin with let's take a look at some
+of the general settings
+for example
+let's change
+the name over here instead of the drive
+and the user info let's type something
+else
+to do this we have to write prompt and
+then the keyword we wanted to represent
+for example
+simply click enter
+as we can see
+the drive link and the user info is
+changed to simply
+now for example if we want to change the
+title of a command prompt
+that is represented over here
+we have to execute the command
+title
+and the new title you wanted to
+represent
+in this case let's take trial
+and the command prompt title is changed
+to trial
+to access much better options and
+attributes regarding the
+command we can use
+help command
+after help we should write the command
+we need help with for example prompt
+by doing this we can access different
+attributes that are related to the
+prompt command
+let's
+try then let's try adding greater than
+sign
+along with our
+prompt name
+for this we have the command
+prompt
+the keyword we want
+simply
+along with the attribute sign
+which is dollar gene case of greater
+than
+and press enter
+and here is the output
+along with simply we have the greater
+than sign
+seems like we have too much output on
+the terminal window
+to clear out all these outputs you can
+use a command clear
+which represented by
+cls
+this would clear up the whole terminal
+window
+moving on let's try changing the font
+color for the command prompt
+to do this we have the command color
+along with the attributes you wanted to
+changed with
+in this case we have zero nine this
+would change the font color to blue
+seems like the command works fine
+but to better change the command we can
+also do
+color
+help
+this would give all the attributes that
+are related to the color command
+we can not only change the font color
+but also the background color let's try
+doing that now
+to change the background color we have
+to write the command
+color
+with
+the color background to be purple
+five
+and the font color to be
+red
+which represented by four
+seems like the command works fine
+moving on let's take a look at some of
+the network settings
+for networking commands the most basic
+is ipconfig
+this command gives us an overview for
+all the connection that are connected to
+our system right now
+all the wireless adapter lan ethernet
+settings
+ip address subnet mask and the default
+gateway
+this is all represented by the ipconfig
+command
+in any case if you want to copy all this
+output
+and paste it somewhere else
+you can use a command
+cut and copy
+in terminal window it's quite difficult
+if you want to select all this
+and do control c it's not valid
+so the command for the same is
+ipconfig
+then the pipe sign
+with clip
+on entering
+this command would copy the output from
+ipconfig
+and now we can paste it to somewhere
+else for example
+on notepad
+now as we can see the output is pasted
+on the text file
+let's clear up the window and move on to
+the next
+command for the next command we have
+wi-fi hotspot creation
+to create a wi-fi hotspot from your
+system you have to write the command
+net
+sh wlan
+set
+hosted network
+then is
+mode equal to allow
+space
+ssid
+which represents the hotspot name
+let's give it
+star
+then we have
+key which represents the password for
+the hotspot
+let's give it
+password
+123.
+this command would create a hotspot
+seems like we have some condition which
+is
+administrative privilege
+to do this
+access
+cmd onstart menu
+right click
+and open the command prompt as
+administrator
+by doing this we have to again type the
+whole command
+plan
+hosted network
+mode
+allow
+along with ssid
+which is star
+and the password
+as seen
+the hotspot has been created
+successfully
+to start the hotspot we have to write
+the command
+net sh
+wlan
+start
+along with hosted network
+and press enter
+this would execute the command and start
+the hotspot
+to stop the command
+we have to write
+stop
+instead of start in the same
+this command on executing would stop the
+hotspot
+now moving on let's try accessing a
+website from the command prompt window
+to do this write the command start
+the address of the website
+in this case let's take simply learn
+and press enter
+this would take us to the simply learn
+website
+command prompt also allows us to access
+the ip address of a particular website
+to do this write the command
+ping
+the name of the website for in this case
+let's take
+google
+and press enter
+this would give us
+the ip addresses that are related to the
+google website
+moving on let's take a look at some of
+the commands related to tasks and folder
+to begin with let's take a look at all
+the running tasks
+on the computer right now to do this
+write the command
+task list
+this command on execution would provide
+us with a list of all the tasks that are
+currently running
+and seems like these are all the
+programs or application that are
+currently
+on execution
+to get a better understanding of the
+applications and get a better detailed
+result
+try using this command which is
+task list
+with slash
+b
+on execution of this command
+we will get a output with detailed view
+of all the applications that are running
+in any case if you feel like that the
+output is too long or the process is
+taking too much time you can do
+control c
+on execution of this command the process
+would stop midway
+now let's take a look
+at all the installed programs in the
+system to do this
+we have the command
+wmic
+product
+space
+get space name
+on execution of this command all the
+list that is related to all the
+installed programs would come up
+this might take a second or two
+and seems like we got our output
+sometimes on accessing a particular
+folder or a file in a command prompt is
+too difficult as we have to write the
+whole address
+of the particular file or the folder
+but
+we have a shortcut method this method is
+for example if i want to access this
+file
+directly open the file
+and go to a subfolder
+and on the title bar
+click it and write cmd
+this would open up a command prompt
+window for particularly that folder
+this way we don't have to write any
+address in the command prompt line
+and avoid any error
+there are often cases when we want to
+hide a particular file from a system
+this can be done by accessing
+the hidden option given in the
+properties
+by doing this
+we can hide a particular folder
+but in this case there is an option
+available known as show hidden items
+that is a drawback
+command prompt terminal also allows us
+to hide folders and it does not have any
+drawback
+similarly to the windows system
+to hide a particular folder access the
+file and write this command
+at rib
+plus symbol h space plus symbol
+s space plus symbol r
+then the name of the folder in this case
+we have
+example
+pressing enter
+on execution of this command we see
+that the example folder is hidden now
+and if we choose
+show hidden options
+there's no change
+that means a file is secured now
+to unhide the same file
+instead of plus in the command earlier
+use minus sign
+minus h minus s
+and minus r
+and press enter
+on doing this command the hidden file
+would be unhidden
+to finish up the video let's take a look
+at some of the extra tricky commands
+for example
+shutdown command
+this command would allow us
+to shut down our system from the command
+prompt window
+to do so write shutdown
+minus sign s
+s represent shutdown
+if you want to restart your system
+write minus r
+and in case you want to log out use
+minus l
+then we also have a condition the
+shutdown system for example
+typing
+s
+space
+slash
+p
+along with the time
+this command represents if you want to
+shut down your system after 10 seconds
+and in case you want to shut down in 60
+seconds do 60.
+in the same command we have another
+variation
+if we want to represent a particular
+string on shutdown do this
+slash
+c
+space double quotes and write your
+string in the double quotes for example
+going out
+on execution of this command
+the window will shut down along with
+going out string represented
+with this we have reached the end of the
+video
+if you have any questions regarding the
+topic you can ask them in the comment
+section below thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

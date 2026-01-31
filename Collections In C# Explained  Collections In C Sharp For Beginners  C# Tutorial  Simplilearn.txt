@@ -1,0 +1,450 @@
+hey everyone i am bhabha khandelwal and
+i welcome you all to simply launch
+youtube channel
+today we will be going over the
+collections in c sharp but first let me
+remind you that we have our daily
+updates on numerous technologies so if
+you are a tech geek looking for the
+latest technological innovation then try
+subscribing to our youtube channel and
+don't forget to hit the bell icon so you
+don't miss an update on simply run
+so now without any further ado let's get
+started with the agenda for today's
+session
+we will begin our session with the
+discussion on what are collections
+then we will have a brief discussion on
+types of collections
+following that we will discuss generic
+collections
+and the non-generic collections with the
+help of a demo
+finally we will end this session with a
+few pointers on collections
+so
+let's get started with the discussion on
+what are collections
+first
+collection classes are specialized data
+storage and retrieval classes
+stacks queues list and hash tables are
+all supported by these classes then
+collection classes performs a variety of
+functions such as dynamically allocating
+memory to components
+and retrieving a list by objects by an
+index among others
+at last
+these classes construct
+collections
+of object objects
+which serves as a foundation for all
+data types in c sharp
+next let's go over the types of
+collections
+they are majorly two types of
+collections defined
+first the generic collection
+and the non-generic collection
+let's discuss them in detail first we
+have our generic collections
+a generic collection is a class that
+provides type safety without requiring
+derivation from basic collection type
+and the implementation of type specific
+members the collection classes
+are found in the namespace
+system.collections.generics
+internally generic collection store
+elements in arrays of their respective
+types
+that is it can only have
+if if the collection is of n-type then
+it can only have elements of in-type
+now there are several generic
+collections available
+first list
+then we have dictionary
+next sorted list
+then we have stack
+and finally queue
+now let's go over the codes on each of
+them
+now
+let's go over some general
+functions first start with a genetic
+list
+here to declare a list we use less
+end
+and then the name for the list
+then we use new
+identifier
+to start a new list
+this is the basic syntax to create a
+list
+now to add a list we use an add function
+so we are using gen list dot add to add
+30 in this list and 60 then 90 then 120
+after that we are using this for each
+loop to print out this list
+now let's print it
+as you can see it has printed 30 60 90
+and 120 just in the order we printed in
+this list
+let's close this
+now
+let's see dictionary
+here we have this basic code for the
+dictionary
+to initialize the dictionary we use
+keyword dictionary then in angular
+records we define
+the type
+of both the parts of the dictionary one
+is key and one is value
+then we have dictionary name then we
+again use new keyword
+to finally start this dictionary
+this is the basic syntax to create a
+dictionary
+then we have this function add to add
+the data in the list note that we are
+giving two values
+one is
+end which is given here as key
+then we have here a string
+now
+we are using a foreign function where we
+are
+asking a key value pair
+and naming it key y kyp
+in this dictionary
+key value pair means key and value pair
+that is we are basically accessing both
+the values together we can simply write
+key here
+key kyp in dictionary and we can get the
+same thing
+then we are using the right line command
+basically printing out the key and the
+value separated by this
+space
+let's save it
+and run it
+here you can see we are reprinting first
+the key one
+then the value soda
+same goes for the burger fries and onion
+rings
+now
+let's go over
+our
+sorted list
+now for the sorted list
+we also have a key and value pair
+now to make it a little different
+i used string here
+instead of end
+now
+to create a sorted list we use a sorted
+list
+name
+then
+we give 2l
+then we can give two
+different data types for the two
+different values
+then we have sorter list
+as list as the name
+then we have new keyword
+then we basically create this
+then
+we use add function to add the
+value key and value
+to this list
+then we use key value pair in a for each
+to print out the values
+let's save it
+let's close this so that we can get new
+data
+let's save it
+and run it
+and here as you can see we are printing
+out american fry omega burgers french
+fries lime soda onion ring in the same
+order as they are added
+now
+let's go over a stack
+now for a stack
+we are using stack then we are only
+giving one value since stack has only
+one value one type of data in one time
+so we are giving a string values to the
+stack
+i named this stack
+just to make the pun
+then we are using new keyword
+and this is the basic syntax for a stack
+now for stack
+to enter the values in the stack we use
+push command now if you remember stack
+we basically push a value above another
+so basically if we have given rear first
+that means it will be at the bottom
+because first we are entering rare then
+medium layer will go up above rare then
+medium will go up
+a mid medium there then weldon will be
+on top so when we will print this out
+it will basically print
+well done first then medium then medium
+rare then rear last
+and we are using this four inch loop to
+print out this
+stack
+let's run it
+and sure enough as you can see we are
+first printing out the weldon
+the medium the medium rare than rare
+now
+let's go
+and try out cues
+here qs is also using only one type of
+variable so we are using string here
+i have named it genqueue
+then we are using new keyword
+to create a new queue
+and this is a complete syntax to create
+a queue
+here to add new data in a queue we use
+nq
+so we are entering mark bill xavier
+michael
+now
+and we are also using a four-ish loop
+to print out the values for this cube
+let's run it
+and here it is printing mark bill savior
+michael just in the way it was skewed
+now we have discussed all of these
+generic lists
+so now let's get back to our slides
+choose from over 300 in-demand skills
+and get access to 1 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more
+next let's discuss a non-generic
+collections
+non-generic collections are specialized
+data storage and retrieval classes that
+handle stacks queues list and hash
+tables
+the system.collections space contains
+the non-generated collection classes
+non-generic collection classes store
+elements and object areas internally
+allowing them to hold any type of data
+so basically
+same
+collection can have different type of
+databases now there are various types of
+non-generated collection such as
+arraylist
+hash table
+then we have sorted list
+then stack
+then finally we have q
+now let's now go over few of these codes
+to explain each of these collections
+and here we have
+a non-generic list
+so let's go over error list first
+now here
+to declare an error list we use
+arraylist
+keyword
+then we gave it the name
+l
+then we have
+new keyword then error list
+if you notice here clearly
+unlike generic list
+we are not giving any kind of data type
+so basically allowing us to use
+different types of data types
+next in the next line we are declaring a
+string
+which tells us
+like share and subscribe so you also
+don't forget to like share and subscribe
+to this video
+next x equals to 11
+this is an integer type of variable
+then we have a datetime variable
+d
+which basically is telling us to parse
+in a datetime format this 3 december
+1998.
+then we are using add command to add
+all three of these
+in this error list
+then we are using four each to print out
+the serial list
+now let's run it
+now here as you can see it has printed
+out this string like share and subscribe
+then it has printed out this integer
+type
+then for the date time
+since we asked us to pass this in the
+date time format so it gave us 0 3 it
+replaced the december by 12
+and then given us the year 1990
+after that it is also giving given us
+the time
+it has given us a default time of 12 a.m
+since we didn't provide any date any
+time from our site
+now
+let's check out hash tables
+now in hash table
+we use hash table command
+then we give it a name
+then
+we are having the new keyword to
+finally create a complete hashtable this
+is the basic syntax to create a hash
+table
+now we are using add command to add
+these values and hash table has two
+pairs
+a key
+and a value
+just like dictionary
+now i use the same
+data set for the dictionary which i use
+for the hash table to make a comparison
+then
+we have for each dictionary entry to
+basically print out these h key and h
+value
+let's run it
+let's close it first for that clarity
+now let's run it
+here
+as if you look closely it is printing
+out four onion rings first then three
+fries then two burgers then one soda and
+why is that because in hash table
+basically insert
+the data
+on one above the other just like a stack
+now that's the bigger difference between
+a dictionary and a hash table
+now
+let's go over a sorted list
+now in a sorted list
+we are using sorted list command
+now if you are noticing something very
+simple
+we are not giving them any kind of
+idea on what could be our
+keys and what could be our values data
+types of these so basically we can have
+different types of data types here as
+well
+now i'm using the same data set
+which i used here
+in generic sorted list
+to make a simple comparison
+if you look closely we are saying so
+that you can understand here in general
+we were using
+these data types
+to create a sorter list
+whereas
+in non-generic we are not giving any
+data types but we are using the same
+data
+now let's try and print this we are also
+using dictionary entry to get access
+each of these values if you had noticed
+in sorted list we used key value pair
+but in non-generic we are using a
+dictionary entry
+let's run it
+and it has printed american burger
+french fries and soda onion ring
+then next in our list is stack
+here we are also using stack but we are
+not giving any kind of idea on what kind
+of
+values it will be
+to make the pun i again use stack
+then give out the values as rare medium
+rare medium and well done
+now let's try and print it
+here as you can see it is printing out
+well done medium medium rare because
+it's a stack so it will always have the
+last value added as its first
+now let's discuss cues
+and here cues
+we are using q keyword to define a queue
+then a name then a new keyword
+and this is a complete syntax for a
+queue in a non-generic collection here
+we are using enqueue to print out to add
+the data in the queue
+then we are using
+object
+to
+get the values from this queue
+now let's run it
+and here as you can see we are printing
+mark bill savior and michael
+now this is all for these quotes let's
+get back to our slides and finish up
+this session
+finally let's conclude this session with
+some pointers on collections
+first in most circumstances it is
+preferable to utilize generic
+collections
+since they operate quicker than
+non-generic collections and help reduce
+exemptions by displaying a compile-time
+error
+then a non-generated collection type are
+found in system dot collection string
+source while generic type collections
+are found in the
+system.collections.generate namespace
+next c sharp
+also has
+several specialized collections that are
+teamed to deal with a specific sort of
+data type which may be found in the
+system.collection.specialized
+namespace at large the collection class
+support a null as a valid reference type
+value and enables redundant
+element
+like some duplicate elements
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simply learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

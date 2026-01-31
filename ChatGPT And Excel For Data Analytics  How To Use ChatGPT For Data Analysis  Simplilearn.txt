@@ -1,0 +1,378 @@
+welcome to Simply learn in this video we
+are focusing on chat GPT and its
+groundbreaking role in data analytics in
+a world where data is the new goal
+understanding and analyzing this wealth
+of information is crucial but as the
+volume of data grows exponentially
+traditional analysis methods are being
+pushed to their limits enter chat GPD a
+revolutionary AI developed by open AI
+That's transforming how we approach data
+analytics but what makes chat gbt stand
+out in the crowded field of data
+analytics tools how can it not only
+streamline complex processes but also
+uncover insights that were previously
+hidden in plain site stay tuned as we
+unrel the capabilities of chat GPT share
+real world applications and show you how
+it's being used by analysis and
+businesses alike to make smarter
+datadriven decisions and whether you are
+a data scientist a business professional
+or just a tech Enthusiast curious about
+the future future of AI in data
+analytics this video is for you so let's
+dive in and discover how Chad GPT is not
+just revolutionizing data analytics but
+also how we understand and interact with
+the vast Universe of data and don't
+forget to hit that like button subscribe
+and in the Bell to stay updated on all
+our future Explorations into the
+fascinating world of technology now
+let's get started and unlock the
+potential of chat GPD for data analytics
+together and guys if you're one of the
+aspiring data analyst looking for online
+training and graduating from the best
+universities or a professional who
+elicits to switch careers with data
+analytics by learning from the experts
+then try giving a short to Simply learns
+Purdue postgraduate programming data
+analytics in collaboration with IBM the
+link is in the description box that will
+navigate you to the course page where
+you can find a complete overw of the
+program being offered so let's get
+started guys so guys an Excel data
+analyst always looks for ways to improve
+their efficiency and gain deeper
+insights from the data that's where CH
+jbt comes in handy so chat jpt is an AI
+powered language model that can assist
+you in various task including Excel
+based data analysis and for that data
+analysis let's dive into some demos to
+see how it works so guys as you can see
+this is the chat JT 4 and you could see
+this has the support of D browsing and
+Analysis and usage limits May apply like
+we have the version that has some usage
+limits and for the data I have
+downloaded the data from the
+I will provide you the link in the
+description if you want to download the
+same data you can and I have that in my
+downloads so this is the data that we'll
+be using so the first thing we'll be
+doing is data cleaning and preparation
+so firstly let's explore data cleaning
+and preparation before diving into
+analysis it's essential to ensure our
+data is clean and ready for processing
+so for that we will write a prompt in
+chat jpt and ask him to clean the data
+chat jpt he has the feature to insert
+the files provide the Excel file to the
+chat jpt and we'll ask him that can you
+help me identify and remove duplicates
+in this Excel spreadsheet so let's ask
+him can you help me identify and remove
+duplicates duplicates from this Excel
+spreadsheet from the
+provided
+Excel spreadsheet you could see that J
+has started generating the response and
+he is telling us that he can definitely
+help us with that and he is analyzing
+that so you could see that J has
+provided us the response so let's first
+go to our
+spreadsheet so this is the spreadsheet
+order number quantity
+ordered price of each quantity and Order
+lines so you could see that first CH GT
+has encountered an error and that is
+with the corrector and coding mpch and
+then he has loaded the spreadsheet
+successfully with the second attempt and
+you could see that he has provided a
+like the smaller or the briefer version
+of the spreadsheet that is the data set
+consist of sales data with column such
+as order number quantity order price
+each order line sales order date status
+so he asking us could you specify how
+you would like to identify duplicates
+for example should be consider a row a
+duplicate if all its values match and
+another row exactly or are there
+specifically columns we should focus on
+to determine duplicates so we should or
+here we will be focusing on the column
+section so here we want to identify
+by column
+section so is asking which columns they
+should identify duplicates so we want
+the duplicates in order
+number so the CH G has started analyzing
+the
+spreadsheet
+so you could see that CH GT has
+addressed the response that they have
+identified a total of
+287 rows in the spreadsheet that have
+duplicates based on the order number
+column so this indicates that multiple
+rows share the same order number
+suggesting there might be different
+items or transactions within the same
+order would you like to proceed by
+removing these duplicates while keeping
+either the first or last Ence of each
+order number or do you have another
+approach in mind for handling these
+duplicates so before identifying the
+duplicates what we will do is we will
+first get rid of the extra spaces so
+we'll ask CH gbt
+that first
+find the Extra
+Spaces in the
+spreadsheet
+and help us remove
+them
+so you could see that it has started
+analyzing
+it so he is asking us that would you
+like to proceed with any further
+cleaning or data manipulation yes we
+going to proceed further with data
+cleaning only and now we will treat all
+the blank cells if there are
+any now treat
+all the blank
+cells if there are
+any so the spreadsheet contains blank
+cells in the following columns with the
+respective counts of blank entries that
+is address line to has 2521 blank sales
+than the state so depending on
+preference or the requirements of data
+analysis we can treat these blank cells
+in several ways such as filling them
+with the place holder value that is not
+provided using a specific value that
+makes sense for data that is example a
+default state of TI but potentially
+leaving them as if blanks carry
+meaningful information in the context of
+your data so what we'll do we will
+provide a
+placeholder provide a placeholder
+instead that
+is not provided or not applicable
+okay so would see in that has responded
+that it has replaced the blank cells in
+the columns that is address line two
+state postal code and territory with the
+placeholder node provided so you could
+see there's a verification sample
+showing the updates so this is how you
+could clean the data and now with chat
+jpt you can quickly identify and
+eliminate duplicates in your Excel
+spreadsheet using build-in functions and
+formulas saving your time and effort so
+that would be done by the chat jpt and
+you can download the Excel file from the
+chat GPD only after that you can just
+ask him that provide me the output or
+the resulted spreadsheet so if we talk
+about now data analysis and
+visualization let's delve into that so
+Excel offers powerful tools for
+analyzing and visualizing data and chat
+jpt can help you make the most of them
+so for this also we'll write a prompt to
+the chat jpt and we'll write for example
+we'll write please create a pivot table
+and a corresponding chart to analyze
+sales performance by region so let's see
+like this prompt what output does chj
+show to us so let's ask him please
+create a PV
+table and a
+corresponding chart to
+analyze sales performance by
+region
+so you would see that jut has started
+analyzing the data and the spreadsheet
+and you could see that the pivot table
+below shows the sales performance per
+region or the territory so this table
+indicates that the EMA region has the
+highest Sal performance followed by
+regions where the territory was not
+provided then Apec and finally Japan so
+now let's create a chart to visually
+represent this sales performance by
+region you could see that it has
+provided a chart that is a b chart
+illustrating the sales performance by
+Tory so you could see the guys that it
+has provided us the analysis and CH jpd
+can guide you through the process of
+creating pivot tables charts and other
+visualizations in Excel enabling you to
+gain valuable insights from your data
+with ease so let's move to Advanced
+analysis and automation so lastly we
+will explore Advanced analysis and
+automation so Excel capabilities extend
+beyond basic functions and chat jpd can
+help you leverage its full potential and
+for this also we write a prompt to the
+chat jpd that can you assist me in
+building a forecasting model to predict
+future sales based on historical data
+present in the spreadsheet so let's see
+what Chad j respond to us so let's ask
+him can
+you assist me in
+building a forecasting
+model to predict future
+sales based on historical
+data so let's see what CH J respond to
+us so you could see that building a
+forecasting model to BU future sales
+based on historical data in several
+steps so for this you have to prepare
+the data select a model train the model
+evaluate the model and make predictions
+so let's start by preparing the data
+we'll aggregate sales by order date to
+create a Time series of total daily
+sales then we'll choose a model based on
+data's characteristics so we
+will grant the permission to chat gyy to
+proceed with the steps so we started
+analyzing the
+data so you could see that that the data
+has been prepared into a Time series of
+total daily sales and before choosing a
+forecasting model it's helpful to
+visualize the sales time series to
+understand its characteristics such as
+Trend and seasonality so Chad JPY has
+fled a daily sales data and then he has
+given the visual Trends and the possible
+seasonal patterns and the next steps
+would include testing for stationarity
+more model selection and parameter
+touring model training and then
+forecasting so you could follow all
+these steps with the help of chat GPT
+and could create a forecasting model if
+you want we can move to the next step so
+you could like provide a PR to the chat
+chipy that move
+to or proceed with Next
+Step so step by step ch will provide you
+a forecasting model or it will help you
+create a forecasting model as you can
+see it has started analyzing it to the
+augmented D Fuller that is ADF test
+gives up a P value of approximately
+0.0033 since this P value is less than
+the common significance level of 0.05 we
+can reject the null hypthesis that the
+time Series has a unit meaning the time
+series is stationary so you could see
+that he is asking us shall we proceed
+with the Sima model parameter selection
+yes here is the model parameter
+selection so you could select any based
+on the trends and the bar graphs ploted
+by the chat
+CH so you could see guys that the chat
+chity has analyzed the spreadsheet and
+provided the response that the grid
+search for the optimal Sera parameters
+based on the lower a information
+Criterion suggest the best fit model
+uses the parameter 011 and for ARA and
+01112 that is for the seasonal component
+so you could see that it has provided
+the model and the parameters now he's
+asking us shall we move on to
+forecasting future sales with this model
+yes proceed with that so you could see
+that with Chad G's assistance you can
+build complex forecasting models in
+Excel allowing you to make informed
+decisions and plan for the future
+effectively so chat jpt is a valuable
+tool for Excel users and data analysis
+offering assistance in data cleaning
+analysis visualization and Automation
+and by integrating chat GPT in your
+Excel workflows you can enhance your
+productivity and uncover new insights
+from your data so you can try chat GPT
+for Excel data analytics today and take
+your Excel skills to the new level and
+you would see that uh there's an error
+in the analyzing and he has encountered
+an error while trying to plot the
+forecast with its confidence intervals
+so this type of error can occur due to
+data type issues particularly when
+handling data indices in forecast and
+despite the siup the forecasting process
+using the ca model was completed and we
+were able to generate forecast for the
+next 12 months unfortunately due to the
+plotting issue we couldn't visually
+display it so we will ask him can you
+try once
+again so you could see that this time
+Shar gbt has provided us the forecast
+for the next 12 months that is the
+forecast have been successfully plotted
+along with the historical daily data so
+here we have our forecast model and with
+the chat G's assistance we can move with
+other analysis also and with that guys
+we have come to the end of this session
+if you like this session please like
+share and subscribe if you have any
+doubts or questions you can drop them in
+the comment section below thanks for
+watching and stay tuned for more from
+Simply learn staying ahead in your
+career requires continuous learning and
+Skilling whether you're a student aiming
+to learn today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+IND industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

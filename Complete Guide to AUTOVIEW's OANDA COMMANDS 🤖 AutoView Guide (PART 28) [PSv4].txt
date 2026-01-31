@@ -1,0 +1,994 @@
+hey traders welcome to part two of my
+video series covering how to auto trade
+forex
+through oanda using auto view and
+trading view alerts
+today's lesson is going to be more of a
+theory lesson covering the commands and
+syntax that we have to work with
+when we are managing and executing
+trades through orlando using autoview
+so this is a great lesson to take notes
+on get out of notepad
+or open up notepad on your computer and
+just jot down some notes as we go
+through this material
+because it will help you down the line
+when we get into the more practical
+examples
+of this information so let's get started
+alright so let's go over the main order
+view commands for working with
+oanda so there are several commands we
+have to work with
+when it comes to orlando this is not a
+full list there's a few more we'll go
+over on the next slide
+but these are the main ones for managing
+your positions
+so i've broken this up into three
+categories we're going to have the
+command itself
+what the command does and a few examples
+of
+using that command with autoview so i'll
+break these down one by one
+the first command is e equals so
+equals sets this e parameter and the e
+parameter corresponds to your broker or
+exchange
+so if you were using this with crypto
+you would reference an exchange like
+binance or
+bittrex or whatever exchanges autoview
+works with
+but for us we are using oanda and so
+this will always be set to awanda
+practice for demo trading
+or oanda without practice in it if you
+want to
+live trade so whenever you set up your
+alerts your
+alert will always need to start with the
+exchange you want to reference
+otherwise all of you won't know what to
+do with that command and while we're
+here it's important to mention that
+if you don't have any of these commands
+in your alert then the alert will be
+completely ignored by autoview so just
+because you have autoview installed on
+your computer if it's your main computer
+you use
+for your live trading if an alert
+triggers and you do not have
+any of these parameters set in the alert
+message the text message
+of your alert box then autoview will
+ignore that command completely
+so you can still use autoview in
+conjunction with regular alerts
+if you are a manual trader so keep that
+in mind but if you are using autoview
+and you want your commands to be
+executed you must start every command
+with the exchange you want to trade on
+the next command we have is s and that
+sets the symbol
+or the market that we're trading so in
+our case through oanda that will be a
+market ticker code now keep in mind that
+trading view does not put a slash in
+their
+um ticker id so ticker and ticker ids
+in your scripts so if you reference sim
+info bear with me i'm terrible at
+writing with a mouse
+sim info dot ticker or ticket id then
+you need to add a slash in between
+the market that you're trading so i'll
+show you how to do that when we get to
+the actual coding portion of these
+lessons that won't be covered in this
+video we're just going over the theory
+and the syntax of each command
+but don't worry it's really easy to fix
+your ticker id
+to comply with oanda's requirements
+so the next command we have is b which
+stands for book and this sets the order
+direction
+there are only two valid parameters here
+and that is long
+or short so if you want to go long you
+would type b equals long
+if you want to go short you type b
+equals short and i should have mentioned
+this earlier but each command
+is separated by a space so all you need
+to do is write this out
+have a space then your next command then
+another space and then your next command
+etc anyway moving on we then have q
+which stands for quantity
+or position size and this can be set to
+anything that
+you are able to trade based on your
+account balance and your
+leverage so this is one of the main
+limitations of autoview
+autoview does not know what your awanda
+account balance is or it does know what
+your account balance is but it cannot
+calculate
+your position size based on your stop
+loss distance so remember if you're
+trading
+a market let's say you go long on this
+candlestick pattern here
+and your entry is at the close of that
+candlestick and your stop loss is one
+atr below
+the swing low if you're an experienced
+trader then you know that you want
+to adjust your position size based on
+your stop loss
+not the other way around you don't want
+to decide your stop-loss based on how
+much money you want
+you are willing to lose you want to base
+your stop-loss based on price action
+or your rules-based strategy and then
+you want to risk let's say one percent
+of your account autoview cannot
+determine what this distance
+is in terms of dollar
+risk now obviously this is a massive
+problem when it comes to
+automating trading strategies but the
+good news is
+i've figured out a way to basically
+plug your account balance into your
+scripts and then your script will
+calculate your position size
+based on your stop-loss distance in pips
+your account balance
+and the risk percentage you want to risk
+now it's not a perfect
+solution because you need to update your
+account balance regularly especially
+if you're trading this on a lower time
+frame or any time frame that has a high
+trade
+frequency so you need to reset all your
+alerts and change your account balance
+as your account balance fluctuates but
+there are always pros and cons when it
+comes
+to things like this the pro of autoview
+is how simple and easy it is to use
+the con is that or the drawbacks
+are that you need to kind of babysit
+your scripts much more than you would
+need to if you were using a language
+like python or java to fully automate
+your strategies but when we get into the
+password portion of this you'll see
+why those drawbacks are worth putting up
+with in order to use auto view
+in your forex trading but anyway if you
+just wanted to use a fixed position size
+you can just set q
+to whatever this is um units in oanda
+works in units
+so if you wanted to trade a mini lot
+you'd have to write in 10 000
+uh without the comma so just 10 000 or
+if you wanted to trade a full standard
+lot
+you'd need to type in 100 000 units but
+the
+wonderful thing about awanda one of my
+favorite things about this broker is
+that you can even trade
+a single unit if you want to a single
+dollars worth
+of a position which most brokers do not
+allow you to do
+and that makes our position sizing our
+dynamic position sizing
+in our scripts much easier when we get
+around to that and as i said we'll cover
+that in a different video
+moving on we have t which sets the order
+type
+so t stands for type and there are only
+two types
+two order types we have a market order
+or a limit order
+so if you set market if you set t equals
+market
+on your command then the trade will be
+entered at market
+which means you'll be paying the spread
+and again another limitation of autoview
+is that orderview does not know
+where your position was entered or at
+least they can't tell your script
+where your position was entered because
+your script can talk to
+autoview but autoview
+cannot speak back to your script so
+we're working with one-way communication
+here
+when it comes to these commands so if
+you enter
+an order using a market order you enter
+a trade using a market order
+keep in mind that whatever you set your
+stop loss to your risk reward profile
+will be affected by the spread
+and that is a big problem on the lower
+time frames particularly the one minute
+five minute chart that sort of thing 15
+minute chart
+and above isn't too bad depending on the
+market you're trading and the spread
+that you get so major forex pairs and
+major markets aren't too badly affected
+by the spread
+but if you are having issues with the
+spread then you're going to need to use
+a limit order and it's best to use that
+limit order in conjunction with this
+command here which we'll get to in a
+second which sets your expiry
+on that limit order and we'll go over
+why that's important in a minute
+but next up we have sl which stands for
+stop loss
+in pips from your entry so this
+example command here would depending on
+the atr
+of this pair would set your stop loss to
+15
+pips from your entry so if you're using
+a limit order it would be exactly 15
+pips from your limit order price
+but if you're using a market order it
+will be 15 pips from your entry
+at market next up we have tp which
+stands for take profit and this
+is in pips from your entry exactly the
+same as your stop loss but a profit
+order
+so this would be a four pip take profit
+order
+depending on the atr or decimal places
+of the currency you're trading
+personally i do not recommend
+using these commands i recommend these
+ones here which we'll get to in a second
+which deal in price instead of pips this
+one is a lot more
+consistent in terms of its execution
+because as i said if you're using market
+orders and your fills are being affected
+by the spread
+then dealing with pips as your stop loss
+and take profit can
+lead to inconsistencies between your
+script and
+actual live trading which we'll cover in
+future videos when we start playing with
+code
+the next command is dt that stands for
+date slash time
+and this is your expiry for limit orders
+so if you want to set a date you use dt
+equals and then a date so we have the
+year we have the month
+and then we have the day so this example
+would set a
+limit order with an expiry on the 23rd
+of april 2021
+or if you prefer you can use unix
+timestamps
+which works in seconds not milliseconds
+so for example let's jump over to a unix
+timestamp website so here we are on a
+unix timestamp
+website this is the timestamp we are
+working with when it comes to unix
+commands so if you wanted to set an
+expiry on your limit order
+that was two minutes from the current
+time
+you would need to add 120 to this number
+here but the good news is
+pinescript and tradingview provide
+inbuilt functions and it'll
+inbuilt variables to deal with
+timestamps the catches they work in
+milliseconds so you need to divide
+everything you do
+in pinescript's timestamp by 1000 to
+turn that into seconds but that's easy
+to do and we'll cover that
+in future lessons and then finally the
+last two
+important commands we have here on our
+main awanda commands is
+fsl and ftp this stands for
+fixed stop-loss and fixed take profit
+which
+works in price not pips so if you wanted
+to set a
+fixed stop-loss order on either a
+limit order or a market order position
+you use
+fsl and then you put in the price the
+exact price you want that stop loss
+order to be executed at
+and your ftp is your fixed take
+profit price i prefer using these
+commands when working with
+strategy scripts and other indicator
+scripts rather than
+sl and tp because as i mentioned earlier
+for example
+if you enter on this candlestick pattern
+here and you enter at the closing price
+but you use a market order and you were
+filled a couple of pips higher
+if you use an sl a stop loss order then
+let's say your script has a one atr stop
+loss below this low but you send it
+a stop loss in pips then that will come
+uh
+count from your entry price so for
+example if you had a 15 pip stop
+or or one atr pip stop from your entry
+and you got
+hit by a bit of spread then your
+stop-loss would be a little bit higher
+since your order was entered a little
+bit higher your market order was filled
+a little bit higher
+and that can completely change the
+profitability of a script because your
+stop-loss is not
+being placed where your strategy script
+would ordinarily place it whereas if you
+use an fsl
+and you did the same thing you entered
+at market at the close but you were
+filled a little bit higher
+yes you will skew your risk reward
+profile a little bit because your
+stop-loss will be
+a little bit further away from your
+entry but at least your stop-loss will
+be in line
+with how your script was back-tested so
+keep that in mind
+and as i mentioned earlier several times
+now we will
+cover this in actual code when we get to
+it i'll show you how to mitigate these
+problems
+using things like a time filter so that
+you your
+script does not execute trades during
+certain times of day
+so for me personally where i live here
+in australia there are certain times of
+day in the morning
+where the spread is horrendous around
+six to eight am my time uh
+the spreads can jump up as high as 10 to
+20 times their normal
+distance and that can severely
+negatively affect
+certain strategy scripts so i have found
+ways to mitigate that problem which i
+will cover when we get
+into the scripting portions of this
+lesson series
+but moving on we have one more slide
+here and that is our secondary oanda
+command so these are commands you won't
+use quite as often as the others but
+they are still
+important to know and this pretty much
+covers all of the oanda commands there
+aren't too many more than this
+i don't know of any more than these ones
+that i've covered
+the autoview website isn't super
+detailed when it comes to
+broker-specific commands but as far as
+i'm aware
+i have covered every single oando
+command in these two slides but let's
+get on to the
+last few commands here which are these
+ones here
+i'll explain what they do and give some
+examples so the first one is c
+this stands for cancel or close so if
+you write in here c
+equals order that will close cancel any
+open limit orders that you have
+if you type in c equals position then
+that is what you use to close
+positions at market or using limit
+orders etc
+so for example i have a script my
+ultimate pullback indicator
+which has a bunch of exit reasons for
+example
+if the script has you trading to the
+upside to the long side
+and the rsi goes overbought so here's
+the rsi
+let's say the rsi goes overbought and
+then
+you get a bearish engulfing candle then
+my script
+will exit this position
+at market using c equals position and
+using
+t equals market and the referencing the
+symbol that i'm trading etc
+so this is how you close positions or
+cancel open
+limit orders this is also important for
+things like adjusting your stop loss
+on an existing position once you've
+opened a position with a stop loss you
+can't just
+update the stop loss with a command you
+need to clear it or cancel
+your existing stop loss order and then
+send a new command to add a stop loss
+order
+to that existing position which we will
+go over
+in these lessons next up we have fgsl
+which is a new command that was only
+recently added to awanda and that sets a
+fixed guaranteed stop-loss price
+basically this is a special stop-loss
+order
+that protects you against slippage and
+gaps so you are guaranteed to be filled
+at whichever price you put in here the
+catch is you pay a premium
+to have that guaranteed stop loss this
+is a recent thing that was added to
+oanda literally a few weeks ago i
+believe at least here in australia so i
+haven't used this order type yet but we
+will play around with it if we get time
+but theoretically as far as i can tell
+this should act
+exactly the same as a fsl a fixed
+stop-loss you just enter a price
+and it just acts as a normal stop-loss
+except you pay a premium
+if it gets filled because it is
+protecting you from
+slippage next up we have ts and fts this
+is your trailing stop
+and it works in pips not points i don't
+know why i wrote points there
+it works in pips and i did a bit of
+testing on this
+as far as i can tell ts and fts do
+exactly the same thing they both just
+initiate a trailing stop
+so one is called a fixed trailing stop
+price and one is just called the
+trailing stop price
+as far as i can tell they do exactly the
+same thing and basically if you
+write in ts equals 0.005 on a
+order that you open using order view
+once your order is filled let's say you
+enter short
+on this candle here you enter here with
+a 180 stop loss
+if you specify a trailing stop of 5 pips
+then as price action goes into your
+favor
+your stop loss will trail below price
+action
+by 5 pips so every time the market goes
+five percent of profit your trailing
+stop
+moves five pips down i believe that's
+how it works we'll do a bunch of testing
+with this later on
+in the lesson series but these two
+commands are the same thing
+ts and fts is just your trailing stop in
+pips pips
+not points next up we have ro which is
+just reduce only
+so if you set this to one the only two
+parameters that are valid for this
+command is one and zero
+by default it's set to zero if you set
+it to one that means any command any
+market order or limit order command you
+send
+to autoview can only reduce open
+positions it cannot open new positions
+so for example let's say you have 10
+contracts going short
+and then you send a command to autoview
+to add five contracts to your short
+position with ro set to one
+that command will not be executed by
+oanda because it is
+not reducing your position it is adding
+to your position so if you set arrow to
+one and let's say your 10 contracts
+short
+you set arrow to one you send a market
+order to
+buy five contracts then this order will
+be executed
+and you will now only have five
+contracts open on that market
+then let's say you send another command
+to buy
+10 contracts this command will not be
+executed because you have
+only five units open or contracts open
+and you've set your order to reduce only
+so rather than selling five contracts
+and then going short five contracts
+it just won't be executed because you've
+set ro to one or enabled
+next up we have d this disables
+execution of any commands this is for
+debug purposes
+basically if you set d to one it's set
+to zero by default
+but if you set it to one then any
+command you send autoview will not be
+executed but it will show up in the log
+section of your order view plugin which
+is this
+thing here the log on your auto view
+plugin settings menu if you set d equals
+one
+then the log book thing here will write
+out
+what that order would have done if it
+had been executed but it won't actually
+execute the command
+so this is good for practicing playing
+around with real money
+orders if you're doing dealing with a
+demo account it really doesn't matter
+if you screw something up but if you are
+dealing with real money or you're trying
+to debug
+something out of your script use d
+equals one
+to disable live execution of your alert
+commands
+and then the final two commands we have
+here is delay
+this just sets a delay on your command
+by x amount of seconds so if you for
+example you set delay to 30
+that means your command will not be
+executed for 30 seconds after being
+received
+so i'm not really sure of any use cases
+for this unless you're sending a bunch
+of commands
+to autoview all at once and you want to
+space them out a little bit
+but for the most part i don't think many
+of you will be using this delay command
+and that's why it's on the secondary
+commands page then finally we have a
+which stands for account so by default
+this is set to an
+asterisk which means it will just
+execute based on whichever account
+you've connected
+to oanda through autoview but there are
+ways you can set up multiple
+subaccounts through autoview so for
+example let's say you
+had a daily chart strategy that you
+wanted to keep separate from your 15
+minute
+intraday strategy you could set up two
+accounts with two different account
+balances
+you can connect them both to autoview
+using a different alias for each account
+and then when you send your commands to
+autoview
+you can use a equals and then your
+account alias
+to specify which account you want that
+order to execute on
+pretty simple stuff not many of you will
+use this especially in the beginning
+but once you get familiar with autoview
+this is a very very useful
+feature and something that i've been
+playing around with myself recently
+as i've got more comfortable with
+autoview so that's it for the commands
+that's really all we
+really need to work with these are the
+only commands that i've used in my
+testing
+and in all of my different strategy
+scripts and indicators that i've written
+that i've tested with autoview between
+these two pages of
+commands you should be able to achieve
+practically anything
+with autoview in relation to your
+training view scripts
+but before we wrap this up let's go over
+just a couple of
+example commands so here are a few that
+i wrote out here's an example of how to
+open a position
+at market with no stop loss or target so
+we're just opening
+a position where setting the exchange to
+awanda practice
+we want to go long we want a position
+size of one
+unit and the symbol we're trading is
+australian dollar so
+aud slash usd and we want to trade
+our type our order type is at market so
+we just want to set a market order to be
+executed immediately
+at the market price going along one
+contract on
+aussie dollar on our practice account
+the next example is opening a position
+at market with
+a fixed stop loss price so this command
+is exactly the same up until here
+so notice that every parameter here is
+identical to this
+first command except that at the end we
+add our fixed stop loss
+price at 78.503 so this command would
+open a trade at market with a stop loss
+at 78.503
+and it's worth mentioning here that
+let's say that price action is at
+78.4 when this command gets sent to
+oanda
+owanda won't open the trade because your
+stop-loss price
+would be filled instantly after being
+filled on your market order
+so keep that in mind awanda have done a
+pretty good job with a
+um api of protecting you from opening
+trades or positions that don't make
+sense
+so if you do mess up your command 99 of
+the time the command won't even go
+through
+to oanda anyway the next example we have
+here is
+open a position at market with a fixed
+stop loss and
+profit target so that's exactly the same
+as this
+this command here this first one up
+until here
+and exactly the same as the second
+command up until here
+and then all we do is add our fixed take
+profit on the end of this command
+and this would open a market order on
+aussie dollar with one unit
+going along on our demo account with a
+fixed stop-loss price of 78.503
+and a take profit of 79.052
+so your order would be filled at market
+and your stop loss and take profit limit
+orders would
+also be entered at the same time which
+is actually really cool wait till we get
+into this and we start playing around
+with example commands
+it's a lot of fun to see all of your
+orders just appear and magically move
+around
+all on their own it gets quite addictive
+to watch especially in the beginning
+when you're new to all of this
+but moving on to the final example here
+this is a bit more of an advanced
+example on this one we are setting a
+limit order with a fixed
+price opening so we're setting a limit
+order with a
+price that we want to be filled at then
+we're setting a stop loss in pips
+not as a fixed price and a
+profit target as a price so we're using
+the ftp
+and the sl command to set our stop loss
+in pips
+we're using a limit order instead of a
+market order and we're telling
+autoview which price we want that limit
+order to be filled at if you don't
+specify a price
+in your limit orders then oanda will
+just set the limit order to whatever the
+current
+market price is on whatever instrument
+you're trading which can be a problem
+if there's a delay in your command being
+sent to aranda
+so i do recommend setting your limit
+order price
+in your scripts which again we'll get to
+later in this lesson series
+uh here's the example of this command
+it's a little bit different here
+we're still referencing awanda practice
+as our exchange
+we want to go short here instead of long
+so our book
+parameter is short our quantity is 5 000
+units
+we're still on the market of australian
+dollar versus u.s dollar but now we've
+set
+our type to limit instead of market and
+then
+fp stands for fixed price and this is in
+relation to our limit order
+so we want to open a short limit order
+at 78 cents on
+aussie dollar we want our stop loss to
+be 15 pips
+above our entry and we want our take
+profit to be at 77.5 as
+a price limit order so hopefully that
+all makes sense i know this is a bit of
+an information dump and it's
+much more helpful to see this in
+practice when we get down into our
+scripts
+but i thought it would be valuable to go
+over the theory
+of these alert syntaxing commands before
+we get our hands dirty with some code
+i'll obviously leave links below this
+video for
+the official order view syntax
+and commands list i will also leave a
+link to the oanda api
+it's sometimes useful to cross-reference
+things with the api that's how i
+worked out a lot of these commands that
+they didn't have good examples on
+inside the order view documentation just
+really quickly i'll show you what i mean
+so here we are on the orderview webpage
+if you come up here and click on alert
+syntax that will take you down
+to the alert syntax list the majority of
+these commands do not apply to us
+they're not useful with oanda
+the ones that are useful with oanda are
+typically listed here with
+oanda next to the inside the description
+and i've covered all of the main ones
+here that are listed here but as you can
+see
+the information provided here is pretty
+minimal
+there's a few things here that i didn't
+really understand what they meant
+until i played around with them and did
+a bit of
+trial and error and experimenting but if
+you do run into issues here
+i'll leave a link below the video to the
+owanda api which we'll go to now
+and here is the documentation for the
+rest api
+version 20 which is what we are using
+here now you can use this api with any
+programming language you would use with
+python
+java i'm sure there are others
+out there that are that are suited to
+using this api
+all of you have done this all for us and
+they've basically made a bridge
+so that trading view alerts we've got
+trading view
+sends their alerts to auto view
+auto view passes those commands or
+analyzes those commands converts it into
+the relevant
+awanda rest api syntax in json format
+which is
+if you don't know what that means don't
+worry about it because that's the point
+of using autoview so trading view
+scripts talk to auto view and auto view
+translates that information to awanda's
+api
+and the api can talk back to auto view
+but auto view cannot talk back to
+trading view so we're working with a
+one-way
+communication here our scripts are
+talking order view and then autoview is
+doing its best to translate that
+information into the oanda api
+uh the whole point of explaining this is
+that right here we are on the
+rest api documentation for rwanda
+and if you scroll down all of these
+endpoints here
+and definitions you can actually get
+more information on what these commands
+do
+now the api commands here are different
+to order views commands so for example
+take profit order is not written as
+ftp or tp it's just take profit order
+but if you click on that
+you can get a little bit more
+information here and if you're
+experienced with programming
+this can really help you uh understand
+what auto view is doing when it's
+sending your commands to oanda
+but for the most part you will not need
+to do this hopefully i'll do a great job
+of explaining what all these commands do
+to you in layman's terms
+and in practical terms when it comes to
+our trading view scripts so that will do
+it for today's video i did want to go
+down to the charts to show you
+examples of executing these commands but
+this video is already a bit too long
+so i'll do that in the next video in the
+next video we'll take
+all of those example commands that we
+wrote out here
+or that i wrote out here and i'll show
+you some of these example
+commands in practice using actual alerts
+on trading view
+but until then i will see you in the
+next video if you found this video
+interesting hit the subscribe button
+because i will be back very soon with
+the next part of this series
+and please hit the like button comment
+all that fun stuff
+if you found this video interesting or
+you have suggestions or any feedback for
+me that'd be great
+i love to hear from you guys and girls
+or women or whatever you identify as
+i don't want to get in trouble but in
+the meantime if you haven't signed up
+yet already
+i highly recommend you come over to my
+website panscriptmastery.com where i
+have a whole
+mastery course lesson series with 96
+lessons and
+dozens of hours of content covering pine
+script in great detail
+i also have a free basis course over
+here if you are
+brand new to pun script and recently i
+added my indicators and strategies
+course to this list
+where you can buy the source code to
+every single indicator and strategy
+script that i've ever written
+and there's quite a lot of them here the
+ultimate pullback indicator is my
+flagship indicator that i use to trade
+profitably and have
+used to trade profit profitably for the
+past couple of years i've recently
+fully automated this using autoview so
+if you want to shortcut this process a
+little bit
+and steal my best work that is already
+set up to
+run with autoview so you can basically
+just copy and paste sections of my code
+if you need to
+in order to fast track your own strategy
+development
+in the strategy lab here i have three
+more strategies that i plan to add to
+this section in the weeks to come i'm
+still working on recording the lessons
+to that material and i also am expanding
+the order view
+section so all of these lessons that i'm
+recording now for youtube will go up
+in this order view section and once this
+series is done i will probably keep
+adding to this section as i learn more
+things about all of you
+so yeah here's a few things a little bit
+of extracurricular
+material if you're interested in that
+and you are willing and motivated enough
+to invest
+in your trading journey it's not cheap
+because this stuff
+this is accumulation of tens of
+thousands of hours of work
+including learning programming in the
+first place in all the best practices
+learning how to trade and converting all
+of that knowledge into
+scripts this stuff isn't cheap because
+it's extremely valuable both to me
+and to the people who have bought it
+already and are using it so it's not
+cheap if you can't afford it that's
+perfectly fine
+or if you just don't want it that's fine
+i will be back with more free lessons
+soon
+and hopefully if you are in the camp
+that can't afford this
+um before long you will be able to
+afford it because i will help you
+automate some profitable strategies so
+stick around guys i will see you soon
+i will be back very shortly keep in mind
+none of this is investment advice this
+is all for educational purposes only
+and for entertainment it's just for
+people who are curious about this stuff
+people who want to tinker around and try
+this stuff if you're very serious about
+all of this
+and you actually need help with the
+financial application of all of this
+stuff
+definitely i encourage you to go and
+find a licensed financial advisor
+to guide you but in the meantime if you
+are interested in this stuff
+sign up for a free oanda demo account it
+costs you nothing there is zero risk
+and you can play around with this stuff
+in your free time until you get the hang
+of it
+and who knows what it could lead to
+anyway that's it for today
+thanks for sticking around and being a
+part of this community i will see you in
+the next video take care everybody

@@ -1,0 +1,353 @@
+hello everyone
+welcome to simply learn
+maths and statistics for data science
+are essential because these topics form
+the basic foundation of all the machine
+learning algorithms
+in fact
+mathematics and statistics is behind
+everything
+from shapes patterns colors and
+algorithms
+so today we'll discuss two important
+topics of statistics that is confidence
+interval and hypothesis testing
+we'll discuss how to use it when to use
+it and the real life application of the
+same
+but before we begin if you haven't
+already subscribed to our channel please
+do so so that you never miss an update
+let's move forward
+estimation and confidence interval
+using descriptive and influential
+statistics you can make two types of
+estimate about the population one is
+point estimate and other is interval
+estimate
+a point estimate is a single value
+estimate of a parameter for instance a
+sample mean is a point estimate of a
+population mean
+an interval estimate gives you a range
+of values where the parameter is
+expected to lie
+a confidence interval is the most common
+type of interval estimate
+both the types of estimate are important
+for gathering a clear idea of where a
+parameter is likely to lie the
+confidence interval is a range of values
+it is expressed as a percentage and it
+is expected to contain the best estimate
+of a statistical parameter
+the two most frequently used confidence
+interval are 95 percent and 99
+a confidence interval of 95 percent mean
+that it is 95 percent certain that our
+population parameter lies in between
+this confidence interval
+now what is level of confidence
+with respect to estimation problems
+alpha refers to the likelihood that a
+true population parameter lies outside
+the confidence interval the level of
+confidence is denoted by 1 minus alpha
+and it is usually 90 95 or 99
+alpha is usually expressed as a
+proportion so if the confidence level is
+95 percent then alpha will be equal to 1
+minus
+0.95 that is 0.05 now let's move on to
+discuss what this confidence level means
+a 95 confidence interval of the mean is
+a range with an upper and lower number
+calculated from a sample
+because the true population mean is
+unknown this range describes the
+possible values that a mean could be
+if multiple samples are drawn from the
+same population and a 95 percent ci
+calculated for each sample we would
+expect the population mean to be found
+within 95 of these confidence intervals
+95 percent of the sample means for a
+specified sample size will lie within
+1.96 standard deviations of the
+hypothesis population mean similarly for
+99 percent confidence interval 99
+percent of the sample means will lie
+within the 2.5 standard deviations from
+the population mean
+now let's see how you can calculate the
+interval estimates
+the interval estimate can be calculated
+by adding and subtracting the margin of
+error to the point estimate
+it gives us the idea of how close a
+point estimate is to the value of
+parameter
+the general form of the interval
+estimate is
+x bar plus minus margin of error
+to calculate the interval estimate we
+have the formula x bar plus minus z
+s divided by root n
+where x bar is the sample mean z is the
+number of standard deviations from the
+sample mean s is the standard deviation
+and n is the size of the sample
+now that we have discussed the interval
+estimate and the margin of error let's
+understand all this concept with the
+help of an example
+suppose a student measuring the boiling
+temperature of a certain liquid observes
+the readings on six different samples of
+the liquid
+he calculates the sample mean to be
+103.4
+and if he knows that the standard
+deviation of this procedure is 1.2
+degrees
+we have to calculate the confidence
+interval of the population mean at a 95
+confidence interval so using this
+formula of interval estimate
+x bar plus minus z into s by root n
+we'll find the confidence interval
+here
+x bar is one zero three point four and z
+value is one point nine six
+corresponding to ninety five percent
+confidence interval
+and standard deviation is one point two
+divided by root 6 which is sample size
+so calculating we'll get the value to be
+102.47 and 104.33
+which shows that it is 95 percent
+certain that our population parameter
+lies between this confidence interval
+what is hypothesis testing
+hypothesis testing or significance
+testing is a method for testing a claim
+or hypothesis about a parameter in a
+population using data measured in a
+sample the purpose of the hypothesis
+testing is to check if there is enough
+statistical evidence in favor of
+hypothesis that we have claimed
+now we will move on to the research
+question
+a research problem is a broad issue that
+you would like to address through your
+research
+it identifies a difficult doubt or area
+of concern in the theory or in practice
+that requires thought and investigation
+research objectives are clear statements
+of what you aim to achieve through your
+research
+there are specific actions that you will
+take and act as a milestone that will
+help you complete your research a
+research question is a specific concern
+that you will answer through research it
+is derived from a research problem but
+is based on a study design
+when you narrow down on a research
+problem to a specific idea that points
+towards a feasible way to investigate or
+address the research problems we will
+get a research question
+now
+what you should really take care of is
+this slight difference between the
+research question and the hypothesis
+hypothesis makes prediction about
+experimental outcome whereas research
+question does not
+let's understand with the help of an
+example suppose your research question
+is how many hours per day a student
+spends on a gaming and you want the
+answer for that
+another recent question may be
+do the college students with more study
+hours can achieve the higher gpa than
+the students who do not put in more
+hours for study
+these questions can be answered by
+framing a hypothesis so let's understand
+what a hypothesis is
+a hypothesis is a temptative statement
+about the relationship between two or
+more variables
+it is a specific testable predictions
+about what you expect to happen in a
+study the hypothesis is a prediction but
+it involves more than a guess
+most of the time a hypothesis begins
+with a question which is then explored
+through background research
+hypothesis translates the research
+question into a prediction of expected
+outcomes
+unless you are creating an explanatory
+study a hypothesis should always explain
+what to expect to happen
+so as in the period side we have framed
+the question that how many hours per
+student spend on a gaming related to
+this question we can create a hypothesis
+that students who spend more time on
+gaming are socially alienated
+so there are some good criteria for a
+good hypothesis let's discuss what are
+those
+a hypothesis should be compatible with
+the current knowledge in the area and it
+should follow the logical consistency it
+should not be inconsistent in places
+a good hypothesis must be shaded briefly
+and clearly
+and it should be testable now we'll
+understand what a null hypothesis and
+alternative hypothesis is
+the null hypothesis is the assumption
+that an event will not occur
+a null hypothesis has no bearing on the
+study's outcome unless it is rejected
+h naught is a symbol for null hypothesis
+the alternating hypothesis or a research
+hypothesis is a logical opposite of the
+null hypothesis
+the acceptance of the alternating
+hypothesis follows the rejection of the
+null hypothesis
+let's understand the null hypothesis
+with the help of an example suppose we
+have a research hypothesis that a
+duration of an advertisement on the tv
+channels is positively related to the
+sales of the product
+the more the duration the more the sales
+of that product
+so the null hypothesis of this
+assumption would be
+the duration of the advertisement on the
+tv channels are not related to the sales
+of the product they're not related at
+all now we'll move on to the test
+statistics that i frequently discussed
+when creating hypothesis testing
+the test statistics is a number
+calculated from the statistical test of
+a hypothesis it shows how close your
+observed data matches the distribution
+expected under the null hypothesis of
+data statistical test
+the distribution of the data is how
+often each observation occurs and can be
+described by central tendency and
+variation around the central tendencies
+the test statistics summarizes your
+observed data into a single number using
+the central tendency variation sample
+size and the other number of predictable
+variables in your statistical model
+there are broadly three capsule
+statistical tests
+different statistical tests have
+slightly different ways of calculating
+these test statistics but the underlying
+hypothesis and interpretation of the
+test statistics stay the same
+so the first one is a t-test
+a t-test is a statistical test that is
+used to compare the means of two groups
+it is often used in hypothesis testing
+to determine whether a process or
+treatment actually has an effect on the
+population of interest or whether the
+two groups are different from one
+another the null hypothesis is that the
+true difference between these group
+means is zero and the alternative
+hypothesis is that the true difference
+is different from zero
+now let's move on to the test
+the tests are statistical way of testing
+a hypothesis that either we know the
+population variance or we don't know the
+population variance but our sample size
+is greater than 30. we perform the z
+test when we want to compare a sample
+mean in the population mean
+the next is an f test the f test or the
+f statistics is simply a ratio of two
+variances
+variances is a measure of dispersion or
+how far the data are scattered from the
+mean larger values represent the greater
+dispersion despite being a ratio of
+variances you can use a f test in a wide
+variety of situation
+f test can assess the equality of
+variances however by changing the
+variances that are included in the ratio
+the f test became a very flexible test
+now that we have discussed all the
+theories related to the hypothesis
+testing let's take an example to
+understand them more clearly
+consider a study on a group of students
+whether students receive a special
+learning aid to the online videos on
+science
+it is hypothesized that after viewing
+these online videos the group of
+students score better than the one who
+have not seen the videos
+so in this case a research hypothesis
+will be students who have received a
+special science learning videos will
+score high in a science competency test
+and its null hypothesis will be the
+special science learning videos made no
+impact on the scores of the students
+now we will discuss what a significance
+level is
+level of significance or significance
+level refers to a criterion of judgment
+upon which a decision is made regarding
+the values stated in the null hypothesis
+this criteria is based on the
+probability of obtaining a statistic
+measured in a sample if the values
+stated in null hypothesis were true
+generally the criterion of the level of
+significance is typically set at 5
+or 0.05
+this value of significance level can
+also be taken as one percent or 10
+depending upon your requirement
+if the result obtained from the study
+indicates the probability lower than the
+significance level so in this case a
+researcher can reject null hypothesis
+otherwise if the result of the study
+indicates the probability higher than
+the significance level the researcher
+can support the null hypothesis so with
+this we have come to an end to this
+tutorial thank you all for watching this
+session we hope you enjoyed it if you
+have any questions feel free to put them
+in the comment section of this video
+thank you again and happy learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

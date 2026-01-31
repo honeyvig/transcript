@@ -1,0 +1,876 @@
+Welcome to our tutorial on creating a
+chat gbt clone using react in this
+beginner friendly guide we will walk you
+through the process of building your own
+AI powered chatboard similar to chat GPT
+using simple language and step-by-step
+instructions you will learn how to
+harness the power of react to create an
+interactive and engaging chat interface
+just bring your enthusiasm and curiosity
+by the end of this tutorial you will
+have a solid understanding of react
+development and be equipped to build
+your own Innovative projects
+let's dive in and bring your chair gbt
+clone to life craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we begin just a quick
+info for you if you are a professional
+who wants to switch career with software
+engineering by learning from the expert
+then try giving a shot to Simply learns
+postgraduate program in fullstack web
+development accelerate your career as a
+software developer through this
+postgraduate program in fulltech web
+development course in collaboration with
+celtech ctme in just few months you will
+learn modern coding techniques and boot
+camp level intensity and gain all you
+need to be a fullstack technologist the
+link in the description box should
+navigate to the hom page where you can
+find a complete overview of the program
+being offered all right so this is our
+visual studio now now we can do the
+coding thing for creating the CHD all
+right so first of all you'll have to
+create the react app first of all you'll
+have to write the command npx create
+react app then my app as you can see
+then after that you can CD to your drive
+and then you can do the command that mpm
+start and that's what we did at Local
+Host 31 as we can see it is running now
+next thing what we'll have to do is
+we'll have to in install some
+dependencies so let's do that all right
+so here what we'll do is we'll install
+npm install open AI two dependencies are
+there you can install that all right so
+I think it's done the other one is npm
+install xos so npm install xos is for
+like simplifying the network and making
+the API requests so that's why we'll
+have to install this as well npm
+installed xus all right all right now we
+will start by creating a component so
+let's create a new file let's name it as
+header. GSX first of all we'll work on
+the header component so here we can
+import react
+from
+react all
+right const
+header so here we are creating this
+component
+function so first I'll write some part
+of the code then I'll explain to you
+guys so first of all we'll create a div
+here also
+div all right now let's name this
+div last name
+header
+all right now inside this div we'll
+create another
+div class name let's
+say
+header let's keep it short only let not
+complicated all right header let's say
+say
+subd all right so these are the two
+Dives the outer div is header and the
+inside div is header subd all
+right let's do this now inside both of
+these div let's give some space because
+we are going to create
+something all right after giving some
+space
+all right now we'll create a P tag
+inside this P
+tag let's name it class name
+is header
+sub
+text all right inside this P that is the
+paragraph tag we'll write what we want
+to display above the on the heading
+basically so let's write something let's
+say I am
+chat
+GPT and
+AI
+language
+model
+developed
+by open a
+all right after writing this this is the
+outer div this is the inner div then we
+are going to use this bracket thing this
+is for the space only all right so this
+is what we'll have to write in the div
+let's put enter in it so that it is
+visible all right so this is it now I'm
+going to explain to you guys what we did
+in this one now here inside the nested D
+we will create an H1 element and we will
+write something like chat GPT or chat
+GPT clone something like that so we'll
+write H1 so we want it to like display
+at the header so let's do
+that CH GPT will write all right so we
+can also give a class name
+all right so after that there's a br tag
+and then there is a header subtext class
+name that is p so inside this P that is
+paragraph tag we have written something
+that will also display at the header
+only then we have closed this div bars
+and yeah we we have to export it as well
+so we'll
+write
+export
+default header we haven't really done
+much in this
+one all
+right so this is our header also we can
+also add an logo image or something like
+that near this chat
+gbt all right
+so let's do that so this is the image
+source so this is the image you can
+select your own image from Google or
+from elsewhere so this is the alternate
+this is the name of that that is the
+logo image so now we'll have to import
+it as
+well you can just download the image
+from Google and paste it in the folder
+of this GPT and then you can use it all
+right so import then the name of
+the image the name of the image is chat
+GPT logo all right from right do
+slash do SVG right so we are done with
+this header but we forgot one thing
+we'll have to import it in app as well
+so for that let's go to app which is our
+main thing so you can just remove this
+remove this as well all right so here
+the name of the component header is the
+name of the component so as you can see
+this is I am a chat GPT and AI language
+model developed by open AI it is visible
+but let's say now we want to make a text
+area and a button as well so we'll
+create another component for that so
+let's go to SRC and create a new file
+and let's name that file as
+chat
+form. Js X make sure if you're are
+making a component start with a capital
+letter all right so this is Chad form.
+jsx all right now in this one again we
+will import react from react that is the
+react Library I've
+done import react
+from react all right now again
+const chat form
+that is the name of the
+component all right so this is one all
+right now here we'll write div first of
+all let's name this class name as form
+div as we have to create that now inside
+this div we'll create a text area so
+right WR text area in
+text now inside this text area that is
+the first tag we'll write rows I'll
+explain you why we are writing this
+first let's write it row five then there
+is last name let's name this class
+as form
+control
+all right then there is
+placeholder
+and in the placeholder let's write ask
+me all right so this is it now after
+this text area we'll create a button as
+well now inside this button we'll put
+like
+generate response we'll also add the
+functionality afterwards but let's write
+this first of all and let's name it
+we'll name
+it what should we name it form button
+let's write it form
+button all right form button now the div
+is closed all right now this is another
+the component that we'll have to export
+so let's write
+export
+default chat
+form all
+right now here in
+app.js will again go and include this
+component the name of the component is
+chat form so when we'll add the
+component this import statement will
+automatically get get imported but
+sometimes it doesn't so if in your PC it
+is not happening then you'll manually
+have to type this import chat from like
+the name of the component from do/
+wherever it is in your folder you can
+like do so you might have to do write
+this manually all right now let's see if
+it is working or not so as you can see
+here ask me and this is the generate
+response so this is the text area and
+this is the button that we want to
+generate
+all right now let's get back to the code
+now we will create some other components
+and we'll add the functionality one by
+one but before we proceed to the next
+component let's first understand this
+chat form. GSX all right so the rest of
+the part is pretty understandable as we
+can see but the thing here that is the
+text area the text area is bit confusing
+I can understand so the line starts so
+let me uh make you understand from the
+beginning a little bit so this line
+starts from the jsx blogs that describes
+the component structure so it's a div
+element with a class name form d as we
+can see form D so this div will be the
+root element of this component wrapping
+everything that the component returns so
+inside the jsx copy code like the text
+area as we can see we have Rose five
+class name form control placeholder ask
+me we have written and then we have
+closed this tag so inside the div
+there's a text area element as you can
+see now this text area is where users
+can input text it has several attributes
+rows class name so rows Define sets the
+visible number of lines in the text area
+so we have limited to five then class
+name so class name is form control it's
+it is basically for CSS then placeholder
+it is that is ask me that we want it to
+display so it provides basically a
+placeholder on the text that appears in
+the text area as we have just saw so
+yeah after that uh there's normal div
+tag that we have closed so this is what
+Chad form. JS is now we will create a
+answers. jsx component which will handle
+the question and answer that will be
+displayed on the screen all right so
+let's proceed with that for that we will
+create another
+component and we will name it
+answers.
+JX all right let's
+start answer
+SEC now we'll write return in the return
+we'll create divs multiple divs
+actually
+D class name
+let's say answer
+D all right then there is another
+div class name answer
+subd
+all right so two Dives there
+are now after answer subd there is right
+then we'll name it HR
+line so this is basically an En closing
+tag all right I'll explain it to you
+what we are
+doing first just let's observe
+it
+all right here's another
+div so this div is
+answer
+container all
+right then one more day we'll
+create and we'll name it answer
+section all right now we'll use a P
+tag p and class
+name question close it for now let's
+write who are the who are your
+Founders right then another P tag so
+here would be the
+answer
+I'll explain it to you step by step so
+you don't have to worry first let's just
+observe it so let's just copy something
+open let's write something random here
+open AI was founded by a
+group
+of
+prominent
+individuals
+all right so after that there's a P tag
+and then we can create another
+div so for this day we will name it
+let's say copy
+icon now inside this
+div okay
+fa
+solid
+fa
+copy
+all right and then there's divs that are
+being closed all right so there are a
+lot of spaces let's just eliminate these
+spaces all right
+now exp sport default answer SEC all
+right so now let's understand this code
+first of all so basically this react
+component named answer SEC is designed
+to display a list of messages each with
+an input question and its corresponding
+answer so first of all we have to import
+react from react that we forgot so we'll
+write import
+react from
+react all right so this line will import
+the react
+library after that so after that there
+are multiple divs that we will be using
+further in this project so first is
+answer div that is the class name of the
+first div so this line starts the GSX
+structure with the div element that has
+the class name of answer div and this
+div serves as the root element of the
+component then another div that's within
+the root div that is answer subd so this
+is the nested structure might be used
+for styling it will be used for
+organizational purposes then this HR
+line where it is yeah HR line the name
+of the class is HR line so HR tag it is
+so I want to let you know guys that this
+line places a horizontal rule element in
+the component used as a separator
+basically all right so yeah the rest of
+the go all right so we have exported
+this now let's
+imported all right so so as you can see
+where the founders this is being written
+so what we wanted is being written now
+let's move on to the next steps all
+right so the next step is getting an API
+from openai that is the official
+openai so
+open.com we can go so here you can log
+in all right so now we'll click on API
+because we want the API only now you can
+go to here and here we can see API keys
+so from here we can generate an API key
+if you don't have an premium account
+that is you haven't taken the
+subscription then you can just login and
+pay the enter the credential details as
+well and then also you can get the apis
+for that we can cre this create new
+secret key we'll click on that and then
+we'll come over here and we can name
+anything we want my key chat gbt key
+whatsoever you want after naming it we
+just have to click on create a secret
+key so
+once the secret key is created Creed
+that is the API is created you here is
+the option of copy just copy it and save
+it into you can save it to notpad or
+anywhere else because once it is
+generated then it it get vanishes so you
+just have to save it and then you can
+use it all right so this is how you can
+use the API Keys make sure that it is
+not expired you can check that by going
+to usage and check then only the API
+will work if it is not expired and you
+have have the credits all right so all
+right we are back to the code and now we
+will go to the chat form. jsx here we'll
+have to add some use State because we'll
+have to manage some State over here so
+for that let's do one thing we'll have
+to import first of all we'll write
+import so to use use State you'll have
+to import it first of all this is how
+you will import it import used State
+from
+react all right as we can see now we'll
+have to do some use of state so what
+we'll do is first of all there's a chat
+form as we can see and const input text
+so this is what we are writing that we
+want to manage over here so input text
+let's name it set input text we
+write
+all
+right
+so commas over
+here all right next we will assign the
+value of text area field to the state
+and establish an on change event to keep
+the state updated Whenever there are
+changes to the input value so for that
+this is the text area
+so this is that we have written
+previously now here we we'll also have
+to include some more things like after
+placeholder we can include
+this value so all right so we'll write
+inside the GSX we'll write input text
+this is the input text that we are
+adding all right so this is the initial
+value basically and this is the initial
+value that is is here so basically this
+is the initial value and this is what
+that is being displayed and this is the
+basically set input text is the updator
+so this will update this and this is
+what that will display so the initial
+value is this and this is what is going
+to display so this is value and value is
+going to display now we'll have to set
+the value that means we'll have to
+update it as well so for that we will
+include some on change event so that
+that's what we're going to do we'll
+write
+on change FYI if you are not
+understanding this part you'll have to
+have a look at react hooks so using
+inside react hooks there is a use State
+just g go through it you'll have a clear
+idea what I'm going to teach you and
+what I was explaining all right so on
+change so now inside this jsx what we'll
+do is that is an event then set input
+text that is the updator basically event
+that is e do. Target
+do
+value all right so this is how we're
+going to update it so on change this
+event will Target the value so this is
+the updator so this is updating this
+value basically that is being displayed
+here all right now we will create an
+onclick event so let's give a br first
+of all let's give some space all right
+so as we know this button on click we'll
+create so let's do
+that so in this on click what we'll do
+is inside the
+jsx let's do a function let's write a
+function response
+generate input text comma set input text
+all right so what we are doing is we are
+creating an on click event to load a
+function whenever the submit button is
+clicked this method will create in the
+app.js and passed as a props into chat
+form. jsx component with the input text
+and the set input text values as
+arguments so we will pass this to the
+chat form. jsx basically so
+here
+[Music]
+response
+generate you can see now next we will
+create an environment variable in a
+newly created EnV file and store the
+open AI key inside it then you can make
+the file in the root folder of your
+application and store the key to the
+variable let's name the variable you can
+name anything
+and let's
+create
+all right
+Dov all right now here I will paste my
+API key so here I have pasted the API
+key and stored into the variable now
+I'll use this variable all right now we
+will come to the
+app.js here we will import the
+configuration openi classes from the
+openi package so these classes are
+necessary to configure and interact with
+open API so we'll write import I've
+started doing this in chat form
+component so we'll go to the app.js yes
+here we will do here we will import
+those classes we'll write import
+configurations open AI
+API
+from
+open
+a so yeah so this is the thing that
+we'll have to import now we will proceed
+with creating a method within the app.js
+itself to handle the complete process of
+interaction with the openi API so we'll
+start now here we will create a
+configuration object using the
+configuration class then the API key
+property of the configuration object is
+set using process. e NV dot the variable
+that is being assigned to the API key so
+this allows the API key to be stored
+securely in an environment variable also
+we'll have to make sure to set the
+environment variable with your actual
+open AI API so let's just do that all
+right so we'll start with it first of
+all uh inside before this uh return
+we'll have to do all right so con
+[Music]
+configuration new configuration this is
+from this library that we have included
+right AP
+key
+underscore
+[Music]
+open react _ appcore open AI key all
+right all right I'll explain to you guys
+what I'm doing all right so this
+response generate function that I just
+wrote I'll explain to you so here we
+have defined a function named response
+generate which takes two parameters that
+is input text and set input text so
+inside this function we Define an object
+named options with various properties as
+you can see prompt model max tokens Etc
+so basically options is the object and
+these are the properties so first is
+prompt so prompt property contains a
+string template with the text complete
+this sentence input text so this input
+will use that that input text it's a
+prompt to be sent to the open API for
+generating a response basically then
+this model so this model is basically
+the spec I repeat so this model
+specifies the version of GPT to be used
+that is the GPT model version to be used
+in this case it's GPT 3.5 turbo all
+right then there is Max tokens so max
+tokens is 50 it specifies the maximum
+number of tokens that is words in the
+generated response then n n specifies
+the number of responses to generate here
+it is set to one then there is stop then
+this stop specifies the stopping
+condition for the generated response all
+right now after that we can see uh there
+is let complete options object so this
+object we have used a spread operator
+over here here we have created complete
+option object by spreading the
+properties of the options object and
+override in the prompt property with the
+input text parameter so this is the
+prompt and this is the input text
+parameter so the complete options object
+is what will be passed to the open AI
+API for generating the response in
+summary the code defines function
+response generate that prepares options
+for sending a request to the open AI API
+for generating response based on the
+provided input text the functional I
+repeat the function dynamically adjust
+the prompt in the options based on the
+input text received as a parameter now
+we will create messages and set messages
+with an initial value of an Mt array
+we'll create basically a state named
+messages and set messages with an
+initial value of Mt so for that let's
+create it all right so
+const
+new
+state empty all right now the array that
+is this array will serve as a container
+for storing questions and answers so
+this array will be then passed as a prop
+to the answer section component that we
+have created all right so the next thing
+that I wrote is const till this so now
+I'm going to explain you what I wrote so
+basically this con response await open
+a. completions do create complete
+options so this line of code will
+synchronously send a request to open AI
+to generate a response based on the
+provided complete options so the AIT
+keyword indicates that the code will
+wait for the response from API before
+proceeding further once the once I
+repeat once the response is received it
+will be stored in the variable response
+so this is what this line means
+all right so now I'll make you
+understand the other half of the code as
+well so for that we have a conditional
+check if we can see as you can see if is
+there so if is the conditional check so
+we have written if response. choices.
+length which verifies if there's at
+least one choice that is response
+received from the open AI API so we have
+written response. choices. length so it
+is checking if there's at least one
+choice response received from the open
+AI API if there is at least one choice
+response that is if there is at least
+one choice available we update the state
+of messages and use I repeat we update
+the state of messages using set
+messages so this is the set messages so
+we will update the message using the set
+set messages function we add a new
+object to the existing array of messages
+so this object contains two properties
+questions which hold holds the input
+text and answer which holds the
+generated response obtained from the
+response.
+choices. text all right this is the this
+is what I'm talking about this will hold
+the input text and answers which holds
+the generated response obtained from
+this this is uh this will uh hold the
+answer basically so we use the spread
+operator as we can see messages to
+include previous messages in the array
+so this ensures that previous mess
+messages are not lost when updating the
+streate after updating messages we clear
+the input text basically by setting it
+to an empty string using the set input
+text
+and empty so this will clear up the
+input text all right along with it we
+forgot to do one thing we'll have to
+pass the props to these components as
+well so let's write response
+generate
+and here we'll write response
+generate we'll pass this to chat form
+and here we'll have to pass the sorry
+and here we'll have to pass the messages
+all right so as we have passed the prop
+now we'll have to go to the answer SEC
+component so that we'll make sure that
+it will receive the props value from
+app.js and then we'll use the map
+function of the JavaScript so let's do
+that so as we can see over here we use
+the jsx brackets and
+then messages all right now here we will
+use the map function so in the map
+function now the question is where
+should we use that so so we'll use under
+the answer section so we'll use the GSX
+bracket first of all remove
+this all right
+so so inside these brackets we'll
+use all right
+so messages do map so messages that we
+have received as a prop we'll map this
+and how to do that like this
+only inside the function this function
+Arrow function value we are passing and
+index we are
+passing all right
+now here we'll
+write div class
+name
+class name
+let's name it
+answer no let's not do
+that let's do one
+thing
+from here we will include
+it so I wrote the code now inside this
+key we'll write index I'll explain it to
+you what we are doing over here then
+here we'll pass value dot
+input then value dot
+answer
+all right so this is we are doing is
+mapping basically so this part of the
+code is a jsx expression that iterates
+over an array of messages that we have
+received this is the
+messages all right and generates GSX
+elements dynamically based on each
+message so messages. map and index is
+there so it will generate the messages
+on each message
+so first as we can see messages. map
+value index so we use the map method on
+the messages array to iterate over each
+message for each message we execute a
+function that takes two parameters value
+that is the current message object and
+the index the index of the current
+message in the array basically then as
+we can see div class name is there so as
+we can see div class name answer section
+as you can see first class name is
+answer section so as you can see key
+index is there so now I'll explain this
+part for each message we generate div
+element within the class name answer
+section we assign a unique key prop to
+each div element using the index to
+ensure efficient rendering and updating
+of the elements all right after that we
+can see there is question so inside each
+div we include a p element so with with
+class name question so this P that is a
+paragraph element displays the input
+text of the message it will display that
+so value. input representing the
+questions asked so whatever we will put
+whatever we will input that will display
+so the paragraph tag element displays
+the generated I repeat so the paragraph
+tag element displays the input text of
+the message that representing the
+questions asked all right now this is
+the answer class name paragraph tag so
+this paragraph element displays the
+generated answer value. answer as we can
+see so this will uh generate the display
+the generated answer corresponding to
+the input question all right so that's
+why we have used the map method to
+iterate over each question and answer we
+are done but there are some errors that
+we need to figure out right so uh make
+sure to include this U state that is the
+hooks hooks use State make to include it
+in app.js and also this import open a
+from open
+AI so the previous uh configuration that
+we have uh imported is not working so we
+have tried this one import open AI from
+open Ai and instead of writing this code
+we will be writing some other code so
+now let's just have a look at it because
+this code seems to be not working this
+is showing some error so let's try some
+other code let me just write it down and
+then I'll explain to you
+guys open
+AI all
+right
+[Music]
+env.
+react _ app that is the variable where
+our key is stored so basically we'll
+have to write it open
+AI underscore I key all right so this is
+the name of that variable
+now
+dangerous allow
+browser
+true right so
+yeah so basically this code initializes
+an instance of an open API I repeat of
+open ai's API with an API key allowing
+access to open AI services such as
+generating responses using AI models the
+option dangerously allow browser equ
+equals true enables the
+users I repeat enables the usage of API
+in a browser environment despite
+potential security risks so this is what
+this code means now we have have
+corrected the all the errors and all as
+we have included the right libraries and
+we've also included the CSS you can do
+CSS on your own like it's specific I
+repeat like it is very specific person
+to person but if you want the CSS we can
+we will attach the source code in the
+description you can find the CSS and
+other code links over there so make sure
+to check it now let's have a look how
+our website is looking let's see all
+right so let's have a look at it as you
+can see we have added the CSS made this
+round and and some other CSS animations
+so let's ask some
+questions the capital of India is New
+Delhi as we can see all right now let's
+ask another
+question
+all
+right again we'll
+ask what is Chad
+gbt how many states are
+there in
+India
+there are currently 28 States and eight
+union
+territories
+okay polymorphism refers to ability of
+an object or method to make multiple
+forms behaviors depending on the context
+in which it is used so yeah it is
+working fine as we can see so this is
+how you can create your own chat gbt in
+this video we have created this chat gbt
+from scratch you can create your own
+chat gbt by referring to this video
+thank you for joining us today to
+explore how to create a chat gbt clone
+using the remember practice makes you
+perfect keep coding stay curious and
+Unleash Your creativity farewell and may
+your projects be as Innovative as your
+aspirations with that we have come to
+the end of this video If you like this
+video please give it a thumbs up I hope
+it really help you all thanks for
+watching stay safe and keep learning
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

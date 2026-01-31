@@ -1,0 +1,128 @@
+hey everyone welcome to simply learns
+youtube channel in this session we will
+learn about how to include check boxes
+in excel but before we begin let me tell
+you guys that we have daily updates on
+multiple technologies so if you're a
+tech geek in a continuous hunt for
+latest technological friends then
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn
+now without further ado let's get back
+to the practical mode and try to include
+some check boxes in this particular
+excel spreadsheet
+so you can see that i've got some data
+which is first name of the employee last
+name of the employee and phone number
+and let us assume that your manager has
+given you a task to identify all those
+employees which did not give an
+phone number so you wanted to identify
+them using a check box right
+like you will be providing a check for
+all the employees that we have
+received the phone numbers and you will
+not be checking the employees which did
+not give the phone number right so let's
+try to do that so to include a check box
+you might want to get into the developer
+option
+but for few reasons microsoft has
+disabled developer option by default to
+enable developer option all you have to
+do is just navigate anywhere on the
+ribbon here
+and right click and then you can see
+customize the ribbon option when you
+click into it you will be redirected
+into the ribbon option and here you can
+see the developer option on the right
+side
+right this one so by default you can see
+that your developer option is not
+enabled to enable it you have to check
+in it and there you go you have it now
+so press ok and you'll have the
+developer option
+now go to the developer option and
+select the insert option and there you
+can see the check box
+now draw the check box anywhere
+i'll draw it over here
+and there you go
+you have the first checkbox right
+now if you want you can even customize
+this
+so carefully click it
+you can edit the text
+and
+write it as
+done
+now you can even copy this to all the
+cells
+just select and drag and there you go
+now
+you can go ahead and check all the
+employees which you have received the
+phone numbers
+and you can eliminate the ones which did
+not provide you with the phone numbers
+that's how you can do it
+and there's also another option where
+you can use this
+to include it in a formula
+since this data is only of 25 rows you
+can manually check in the data and you
+can leave the data which is you have not
+received
+but what if you had 2500 right then you
+might need formula
+so in such scenarios you can use a
+formula
+so how do you use that so
+for example
+uh if this particular box is checked
+then you will get a true value here and
+if it's not checked you will have a
+false value then you can use that
+boolean value to include in your formula
+right sounds interesting now let's try
+to implement that
+you can right click the cell and you can
+find format control
+then
+you can see here
+you have an option called
+cell link here select the cell link
+and press ok
+so here you can see if you have checked
+this the value is true
+and if you uncheck this
+you can see the value turned false now
+you can use this particular cell
+reference for including this in a
+formula
+now let us also check how to include
+checkboxes on google sheets in google
+sheet it's really simple all you have to
+do is get into the insert option and you
+can see a really available check box you
+don't have to use any developer options
+over here
+and there you go you can just check and
+uncheck it now with that we have come to
+an end of this tutorial on check boxes
+in excel if you have any queries
+regarding any of the topics covered in
+this session then please feel free to
+let us know in the comment section below
+and until next time
+thank you stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

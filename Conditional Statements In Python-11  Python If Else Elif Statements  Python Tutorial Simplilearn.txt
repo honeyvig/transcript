@@ -1,0 +1,765 @@
+hi everyone
+welcome to another video tutorial on the
+python series of videos by simply learn
+today we are going to learn about
+conditional statements in python
+before i begin make sure to subscribe to
+the simplyland channel to learn
+interesting technologies so let's get
+started
+conditional statements in python perform
+specific operations and take actions
+depending on whether a specific boolean
+constraint evaluates to true or false
+conditional statements are handled by
+blocks of if statements in python
+now conditional statements are also
+known as decision making statements
+so python provides different types of
+conditional statements that you can use
+to make decisions
+we have the simple if statement
+then we have if else statement
+elif statement the nested if statement
+as well as nested if statement we will
+learn them one by one with the help of
+the syntax and code examples
+so this is how the syntax of if
+statement looks like so you pass in the
+if condition and then we have
+a set of statements inside the if
+condition
+so on the right side you can see the
+flow diagram how the if statement gets
+evaluated so first we have the test
+expression that is the if condition now
+if this expression evaluates to true
+then we go inside the body of the if
+statement so this is basically
+the body of the
+if statement that contains a list of
+statements or blocks of statements
+now if the test expression evaluates to
+false
+we execute
+the statements that are present after
+the if condition
+all right now let me take you to my
+jupiter notebook where we'll
+understand if statement with an example
+okay so here i am on my
+jupyter notebook i'll just rename this
+to
+conditional statements
+i'll see it as demo
+and we'll rename it okay
+i'll just expand the
+screen size
+all right
+okay
+so first of all let's
+write a simple if statement
+i have given a comment
+here suppose we have a variable called
+grade
+and the value of grade is 80
+then i'll write my
+if statement as
+if grade
+is greater than
+equal to
+50
+then i'll give a
+colon
+then i'll write a print statement print
+passed in the
+exam
+now this is how you write a simple if
+statement so you have the if keyword
+followed by
+the condition so here my condition is
+i'm checking whether the grade is
+greater than equal to 50. now here
+i've already defined my grade to 80
+so this if statement or the if condition
+will check whether 80 is greater than
+equal to 50. now this is true
+then
+my print statement gets executed
+let me run it and show you the result
+there you go here you can see we have
+our
+printed message as passed in the exam
+because 80 is greater than equal to 50.
+but what if i change this to let's say
+30.
+if i run this there is no output here
+the reason being
+30 is
+greater than equal to 50 is false so
+my print statement did not execute
+okay
+now if you want
+you can
+also print
+another statement outside the if
+condition
+i'll give the message as
+execute
+statement
+after if
+now one thing to remember that
+this print statement is outside the if
+condition
+so if i run it
+only my
+last print statement gets executed which
+is outside the
+ips
+condition okay
+now let's write another
+simple
+if statement
+now this time
+we are not going to define the grade
+value or
+pre-define the grade value here we are
+going to take the grade value as an
+input that is a user input
+so i'll write grade equal to
+now the way to take a user input is by
+using the input function
+so first of all we need to convert
+our entry into an integer so i'll write
+int function and inside that i'll pass
+in my input function
+then
+i'll give my message as enter the
+number
+all right so this statement will take
+the
+number from the user
+now i'll write my if statement if
+grade is greater than equal to
+50
+then
+it won't give a space here
+let's delete this piece
+then i'll write print
+you have
+passed in the exam
+okay
+let's run it you see here
+my program is asking for the
+user input it says enter the number i'll
+give my number as let's say 60.
+if i hit enter
+that gives me the result passed in the
+exam
+now let's run it again
+this time i am going to give as let's
+say
+35
+if i run it
+there is
+no output here the reason being our
+grade 35 is not greater than equal to 50
+so our print statement did not execute
+all right okay now let me give a space
+here we'll run it again and this time
+we'll pass our grid as let's say
+75
+let me run it you can see here
+it gives me the message passed in the
+exam
+now moving to our next statement we have
+the if else statement so this is how the
+syntax of if else statement looks like
+so first you have the if condition
+followed by a colon
+if this condition evaluates to true then
+we execute the list of statements that
+are present inside this if condition
+else
+we have the else block here
+if this condition returns
+false then we execute the
+list of else statements
+so here is the
+flow of how the
+if statement executes the different
+statements
+so first we check the test expression
+if that evaluates to true then we have
+the body of if
+and if it is false then we have the
+body of else
+and later
+there are any statements that are
+present outside the effects block will
+execute those statements
+now let's head over to our jupiter
+notebook and we'll see
+how the effect statement works by
+example
+okay
+so here
+i'll show you another example of using
+two if statements
+so i'll define my grade as 40
+i'll write if
+grade
+is greater than equal to 50
+then we'll
+print
+let's see
+pass
+then
+i'll write another if statement
+i'll say grade is
+less than
+50
+then we'll print
+fail
+now here i'm using two if statements let
+me run it you see here
+i have my result as fail the reason
+being our grade 40 is less than 50 and
+hence it has printed fail
+now instead of using two if statements
+you can use the if else statement
+so in this case we'll have our if
+statement checked for if grade is
+greater than equal to 50
+if this is true then we'll print
+whatever is there inside the if
+statement but in case this evaluates to
+false we have another
+else block that we are going to write
+let me show you how to write the full
+statement
+so i'll give a comment as
+if else
+okay
+i'll say
+grade
+equal to 40
+then
+we'll check if grade
+is greater than equal to 50.
+print
+pass
+then
+instead of using
+the if statement again i'll write else
+followed by a colon and then i'll write
+print
+fill
+make sure this field is inside
+double quotations
+if i run it
+it gives me the result fail the reason
+being
+40 is not less than
+repeat 40 is not greater than equal to
+50 so hence it has printed field
+now instead of taking
+the value as 40 we can have the
+user give the input so we'll use the
+input function
+i'll say
+enter
+the
+grade
+let's run it again
+you see here my program is asking for
+the user input
+let's say i'll give 80
+will
+run it
+it says pass because 80 is greater than
+equal to 50 let me run it again this
+time let's say i'll pass
+my grade as 45
+will run it
+it gives us fail
+all right
+now moving to our next
+conditional statement we have the
+ellipse statement
+now this is how the syntax of ellipse
+statement looks like
+so here first we have the if condition
+now if the if condition evaluates to
+true we have the body of if there is
+basically a set of statements
+now if the first test expression or the
+if condition evaluates to false then our
+alif condition gets executed now if our
+l if condition is true then we have the
+body of alif so this is the ellipse
+statement body
+finally
+if the alif condition also evaluates to
+false then we have the block of else
+statements you can see here
+we have
+body of else and later if there are any
+statements outside this
+if alif and else block then those
+statements get executed
+now we'll see this with the help of
+examples
+okay
+so here on my
+cell i'll give my
+comment as
+left statement
+okay
+suppose
+i have a variable called score
+and
+this take the value
+as integer from the user so i'm using
+the input function
+i'll
+say enter
+the
+score
+i'll give a space
+then
+i'll write my
+if condition i'll say if score
+is
+let's say greater than equal to 90
+give a colon
+then we'll print
+our message has
+passed the
+exam with
+let's say agreed
+i'll just copy this statement because we
+are going to
+print
+similar statement
+below as well
+and now i'll have my
+alif condition i'll write
+lf
+alif is actually else if
+score is greater than
+equal to
+let's say
+75
+i'll give a colon
+we'll print
+past the
+exam with
+b grade
+then i'll again have my
+alif
+statement i'll write if score
+is greater than equal to let's say
+60
+will print pass the exam with
+c grade
+next
+let's write another alif condition i'll
+write lf
+if score
+is
+greater than
+this should be greater than equal to
+okay
+is greater than equal to
+let's say
+40
+then we'll print past the exam with
+degrade
+and finally
+we'll have the
+else condition
+i'll write
+print let me just scroll down
+field
+in the exam
+ok
+so this is how you write a
+life conditional statement so first i am
+taking the user input of the score then
+i am checking if score is greater than
+equal to 90 i am displaying my message
+as pass the exam with a grade then i
+have a list of
+alif statements
+to check for different scores
+if all these evaluates to false i am
+having my else statement printed
+let's
+run it
+okay
+so we'll try out different
+scores
+let's say
+someone's code 95
+if i run it
+so that
+candidate has passed the exam with
+e-grade because
+if you see the condition my score 95 is
+greater than equal to 90 and hence we
+have passed the exam with a grade as the
+message
+run it again let's say i have 80.
+if i run it it says pass the exam with b
+grade the reason being 80 is greater
+than equal to 75 and hence we have this
+message printed
+let's run it again suppose someone
+scored let's say 25.
+far on it
+okay
+it throws me an error it says
+name score not defined
+okay so this should be score actually
+here there was a spelling mistake
+i'll run it
+i'll pass my score as 25
+it gives me
+failed in the exam the reason being my
+score
+25 is less than equal to 40 and hence we
+have failed in the
+exam cool
+now you can also use a for loop and then
+have a list of refers block or if else
+statements let me show you how to do it
+suppose i write for x in i'll use the
+range function
+i'll go till
+10 which means from 0 to 9
+then i'm checking if
+my x
+is
+less than equal to 3
+i'll print
+x
+is
+less than or
+equal to
+3
+okay
+now
+we have the
+ellipse statement if alif
+x greater than
+5
+i'll print
+x
+is
+greater than
+five
+then we have the
+else condition
+will print let me just scroll down
+i'll print x
+must be
+four
+or
+five
+okay
+so
+here i have used a for loop and i am
+[Music]
+checking for each iteration from zero to
+9 and then we have a set of if elephant
+else statements
+let's run it
+there you go you can see the output here
+so first
+in my range i have 0
+so it will check if 0 is less than equal
+to 3 which is true so it has printed 0
+is less than or equal to 3.
+so it will go till 3
+and then
+when 4 comes it will check if
+4 is greater than 5 now this is also
+false so it will skip executing the lf
+statement
+and it will print whatever is there in
+the else
+block which is
+4 must be 4 or 5. so you can see the
+message here 4 must be 4 and 5.
+similarly for 5 also the same message
+will be printed the reason being
+5 is not greater than 5
+and then for the rest of the
+numbers from 6 to 9 we have
+6 is greater than 5 7 is greater than 5
+8 is greater than 5 and 9 is greater
+than 5
+all right
+now moving ahead
+next we have the
+nested if statement so here is the
+syntax of nested if so you have the if
+condition and inside the if condition
+you have another if condition and hence
+it becomes the
+nested if condition statement
+and inside this condition you have the
+list of statements or the blocks of
+statements
+so here is how the flowchart or the flow
+diagram looks like
+so first
+we are evaluating the expression1 which
+is this condition
+if it is true we are going inside and
+checking the second condition
+if that is also true then we are running
+the body of it which is this part of the
+syntax
+and later if there are any statements
+that are present outside the if
+condition we are executing those
+so in case the first test expression
+evaluates to false
+we are coming outside and directly
+printing
+whatever is there outside
+the if condition
+let's
+see this with the help of an example
+okay
+so i'll give my
+comment here as nested if
+cool
+so first of all i'll declare a variable
+called num
+now this
+num will have a
+user input
+value
+so i'll write input
+enter the
+number
+then
+i'll have my first
+if condition
+i'll say if
+number or num is less than 250
+i'll give a
+colon
+then we'll use the print statement
+num
+is
+smaller than
+250.
+i'll write my second if statement
+and we'll check if num is
+less than
+180
+and will print
+num
+is
+smaller
+than
+180 as well
+finally i'll have my else statement as
+print
+number
+is
+greater than
+180
+all right
+let's run this
+and first we'll check with the number
+100
+okay there you go
+so here i'm checking whether 100 is less
+than 250 which is true so we have
+printed 100 is smaller than 250 again we
+are checking if 100 is less than 180
+which is true again
+so we are printing 100 is smaller than
+180 as well there is a spelling mistake
+okay
+now let's see for let's see 150
+again we have 150 smaller than 250 150
+also smaller than 180
+let's run it this time let's say we'll
+pass
+300
+okay you can see our
+result here
+300
+is
+less than 250 is false so we'll skip
+printing this again we'll check whether
+300 is less than 180
+which is
+false again so we'll skip printing this
+statement as well
+we'll only have our else block printed
+which is 300 is greater than 180
+okay
+now coming to the final section where we
+will see about nested files
+so here you can see we have the syntax
+for nested if else statement
+so we have an outer if condition and
+inside that we have another if condition
+then we have
+the list of
+statements or the body of the if
+condition
+if this is false then we execute the
+else part
+and after that we also have an outer
+else
+statement
+so this is how
+the flow diagram looks like we'll check
+for the test expression one
+if that is true then we'll go inside and
+see the test expression
+two
+and if that is true we'll execute the
+body of if statement which is this part
+of the syntax
+then
+if these are false then we'll see the
+body of else one
+if the second expression is false then
+we go to the body of else two
+and after that if there are any more
+statements we'll execute them as well
+all right
+we'll see an example here
+so i'll give my comment as
+nested
+if else
+okay
+so i'll declare a variable a which will
+take a user input
+of type integer
+i'll say
+enter
+the
+number
+i'll write if a is less than 50
+so this is my first if condition
+if this is true it should be less than
+50
+okay so if my first if statement is true
+then we'll
+check for the second if statement which
+is let's say if
+a
+modulus 3 equal to equal to 0 which
+means if the remainder of the division
+is 0
+then we say
+print
+a
+divisible
+by
+3
+and
+is
+less than
+50
+okay
+then we have our
+else statement as else
+print
+my number e
+is
+not
+divisible
+by 3
+but
+is
+less than 50
+finally
+i'll have my
+last
+else statement
+where i'll print my number a
+is
+greater
+than 50.
+okay so this is how you write a nested
+if full statement so i am taking my
+number as a user input
+first i am checking that number is less
+than 50.
+if that is true i am again checking if
+that number is divisible by 3 if it is
+divisible i am printing my message as
+the number e is divisible by 3 and is
+less than 50.
+if this is false i am saying
+the number e is not divisible by 3 but
+it is less than
+50
+else i am saying the number is greater
+than 50. let's run this
+and we'll try out different
+examples let's say i'll say my number is
+12.
+my message is 12 is divisible by 3 and
+is less than 50 which is
+this part of the code so my number 12 is
+less than 50.
+this is true
+then i'm again checking whether 12 is
+divisible by 3
+it evaluates to true and hence we have
+this result printed
+okay let's say this time i'll say 30
+so i have my message 30 is divisible by
+3 that is less than 50.
+let's run it again and this time let's
+say we'll say 72
+so here i have my message 72 is greater
+than 50. the reason being 72 less than
+50 is false
+hence this part of the code is not
+executed it will directly come to the
+else part
+which says 72 is greater than 50.
+okay
+so that brings us to the end of this
+demonstration on conditional statements
+in python so first we learned how to
+write simple if statement you saw how to
+take
+inputs from the user
+we also learnt how to write
+if
+statement
+then you learnt about
+elif statement
+you also saw how to use a for loop and
+inside that you can use your if
+statement your lf your else
+later on we saw how to write nested if
+statements and finally we learned how to
+write nested if statements
+cool so that brings us to the end of
+this video tutorial on conditional
+statements in python i hope it was
+useful and informative if you have any
+queries then please feel free to put
+them in the comments section of the
+video thank you for watching and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

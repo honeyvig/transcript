@@ -1,0 +1,694 @@
+hey everyone i am pepper khandelwal and
+i welcome you all to simply learns
+youtube channel in this session we will
+talk about circular linked list we shall
+begin our session by introducing a
+circular linked list
+then we will try to implement it in the
+code editor after that we will try
+various operations on them like
+insertion and deletion
+finally we will sum up what we have
+learned in this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon so you never
+miss an update from simply learn
+so without any further ado let's get
+started with introduction to circular
+linked list
+a circular linked list is a linear data
+structure made up of nodes
+it is like a singly linked list except
+its last node points at the head node
+these nodes consist of two parts data
+and reference to next pointer these
+nodes can be traversed using the next
+pointer
+now let's try to implement it in the
+code editor we will start by creating
+nodes to create a node we need a class
+node
+we will define its members as public
+into data
+and node pointer
+next
+now let's write a function to insert a
+node at the beginning
+void push
+we will use arguments as a pointer to
+node pointer had
+and enter data
+we will define a node
+newnode
+equals to new
+node parenthesis
+star head
+now we will put in the data into a new
+node
+since we are inserting at the beginning
+of the linked list that's why this new
+notes next should be the head pointer
+if linked list is not null then set the
+next of the last node as head
+file
+next
+is not equals to
+head
+temp
+is equals to
+temp
+arrow next
+now then
+next
+is equals to new node
+else
+new node
+next
+is equals to
+new node
+star head
+equals to new node
+now let's write a function to print this
+linked list
+void
+print list
+node
+star head
+node
+star temp
+is equals to head
+if
+add
+is not equals to
+null
+then
+do
+see out
+damp
+while
+amp
+is not equals to
+head
+this condition is important to stop this
+loop so that it doesn't go infinitely
+now let's go to the main block
+let's initialize this list as empty
+node star head
+equals to null
+now let's insert some nodes in this
+linked list
+push
+ampersand
+ampersand head
+comma 11
+head
+comma
+5
+now this linked list looks like
+5
+11
+9
+2
+then it will again go back to 5.
+now let's try to print this
+c out
+circular
+list
+now let's try and execute this
+as you can see we have successfully
+created our first circular linked list
+let's get back to our slide we have now
+introduced the circular linked list now
+let's discuss some of the operations we
+can apply on a circular linked list
+we can perform two operations on a
+circular linked list
+first up insertion
+we can perform insertion at three
+different situation at the beginning at
+the last and at a specific position
+after a node
+next up deletion we can perform deletion
+at the three different situations
+first up at the beginning at the last
+and at a specific position after a node
+let's discuss these in detail first up
+insertion at the beginning
+we have to give the first node's address
+to the new nodes next pointer to execute
+this
+next up insertion at the end
+we have to give new nodes address to the
+last node's reference pointer
+next up insertion at a specific position
+we will change the previous node's
+reference address to the new node's
+address and the new node's reference
+pointer to the next node's address
+now let's try these operations in a code
+editor
+so far we have implemented a linked list
+using classes
+now let's try to implement it using
+structures
+we will start by creating a struct
+node
+with its element as int data
+and structure
+next
+now we will write a function which can
+only insert a node to an empty list
+struct
+node
+star
+add
+empty
+new data
+now since this function is only for the
+empty list so we will have to check if
+the link list is empty or not
+if
+last
+is not equals to
+null
+then we will return
+last
+now let's create a node dynamically
+struct
+node
+start temp
+equals to
+struct
+load
+star
+malloc
+size of
+structure
+we will copy this statement because we
+will need it in the future functions
+we will assign the data to this new node
+temp
+data
+is equals to
+neutral
+data
+last
+is equals to temp
+now we will create the link
+to that we will use last
+next
+is equals to last
+since we are in an empty list so the
+first node will always point to itself
+return
+start
+node
+start
+we are creating a function to insert at
+the beginning of the linked list
+struct
+node
+star
+add
+again
+as argument we will use struct
+data
+if
+last
+is equals to null
+then we will return
+empty
+last
+data
+now we will create a node
+dynamically
+have already copied the statement for
+the ease
+now we will put in the data
+data
+next
+is equals to
+last
+next
+last
+next
+is equals to
+return
+last
+now we will write a function to insert a
+node at the end
+start
+node
+star
+add
+and
+and
+data
+if
+last
+equals to equals to null
+then
+return
+add empty
+last
+comma
+data
+now we will dynamically create a node
+and put in the data
+temp
+data
+equals to data
+next
+is equals to
+last
+next
+now last next
+is equals to
+temp
+and last equals to
+temp
+return
+now we will write a function to insert a
+node after a specific node
+so struct
+node
+star
+add
+after
+struct
+node
+star
+last
+item
+this item is a node after which we have
+to insert the node
+if
+last
+equals to equation null
+then return
+struct
+node
+star
+temp
+comma
+star p
+p
+is equals to
+last
+next
+now do
+if
+equals to
+item
+equals to
+we will dynamically create a node here
+temp
+is equals to
+struct
+node star
+malloc
+size of
+structure
+now we will put in the data so temp
+data
+is equals to data
+temp
+next
+is equals to
+next
+a p next
+is equals to
+temp
+if
+e is equals to last
+last
+is equals to temp
+return
+last
+next
+while
+p
+is not equals to
+last
+text
+see out
+item
+not
+present
+in the list
+return
+last
+now we will write a function to print
+this list
+void
+print
+list
+struct
+node
+star lost
+star p
+now if
+last is equals to null
+then
+see out
+list
+is empty
+and return
+else
+we will point to the first node of the
+list
+so p is equals to
+last
+text
+to traverse the list we will use do
+while loop
+so do
+c out
+data
+is equals to
+p next
+while
+e
+is not equals to
+last
+text
+now
+let's write a code for the main block
+we will start with an empty list
+struct
+node
+star
+last
+supposed to
+none
+now last is equals to
+add
+empty
+last
+comma
+six
+last equals to
+add begin
+last
+comma
+4.
+last
+equals to
+add
+begin
+last
+comma two
+last comma
+12
+last
+equals to
+add
+after
+last
+comma
+10
+comma
+4.
+list
+let's execute this
+as you can see we have created the
+linked list in the correct order
+let's get back to our slides
+now let's talk about deletion
+first up deletion at the beginning
+we have to change the first node's
+address to the null to execute this
+next up deletion at the end
+we have to change the second last node's
+address
+to null to execute this
+next up
+deletion at a specific position
+we will change the previous node's
+reference address to the next node's
+address
+now let's try these operations in the
+code editor
+let's get started with creating a node
+to create a node we need a class
+node
+we will declare its members as public
+and data
+node pointer
+next
+now we will write a function to insert a
+node at the beginning of the list
+void
+push
+a pointer to the node pointer header
+and new data
+now let's create a node and make head as
+next of it
+load
+star
+node
+equals to
+new
+node parenthesis
+let's put in the data
+new
+node
+data
+is equals to new data
+and new node
+next
+is equals to
+head
+if linked list is not null then set the
+next of the last node
+as the first node
+if
+star head
+is not null
+then they will find the node before head
+and update next to it
+so node star
+temp
+is equals to star head
+while
+next
+is not
+equals to head
+temp is equals to
+temp
+next
+temp
+next
+equals to
+new node
+else
+new node
+next
+is equals to
+new node
+star head
+is equals to
+new node
+now let's write a function to delete a
+given node from the list
+so
+void
+delete
+node
+its argument is a pointer to the node
+pointer
+add
+and
+ent key
+now if linked list is empty then we will
+simply return it
+if
+starhead
+is equals to
+null
+then return
+otherwise
+if
+header
+data
+is equal to key
+and
+add
+next
+is equals to head
+then
+free
+add
+and
+add
+is equals to null
+return
+now
+node
+last
+is equals to
+star head
+comma star d
+now if head is to be deleted
+then
+star head
+data
+is
+equal to
+key
+then
+while
+last
+next
+equals to
+star head
+then
+last is equals to last next
+now we will point the last node to the
+second node of the list
+now we will free this head
+our
+head
+equals to
+last
+next
+now if either the node to be deleted is
+not found or the end of the list is not
+reached then
+while
+the last
+next
+is not equals to
+head
+and
+last
+next
+data
+is not equal to key
+and last equals to
+last
+next
+if note to be deleted was found
+then
+if
+last
+next
+data is equals to key
+then
+d is equals to
+last
+next
+and
+last
+next
+is equals to
+these next
+now we will free
+d
+or else
+c
+out
+no such
+key
+found
+you
+now let's write a function to print this
+list
+void
+print list
+node star
+head
+node
+star
+temp
+is equal to
+head
+f
+head
+is not null
+do
+see out
+temp
+data
+amp
+is equal to
+next
+while
+temp
+is not equals to that
+see out
+now let's write a code for the main
+block
+we will start by empty list
+so note star
+head
+equals to
+null
+now we will push
+ampersand head
+push
+ampersand head
+comma
+five
+push
+ampersand head
+comma
+seven
+push
+ampersand head
+comma
+eight
+and push
+ampersand head
+comma 10
+now we will print the list before any
+deletion operation
+see out
+list
+before
+deletion
+list
+head
+now let's delete
+add
+let's delete seven
+see out
+list
+after deletion
+print list
+add
+let's execute this
+as you can see our deletion function is
+working perfectly
+let's get back to our slides
+at last let's sum up what we have
+learned in this session
+first up we have recognized circular
+linked list as dynamic data structures
+next the circular linked lists offer
+faster insertion and deletion operation
+next a circular linked list are
+unidirectional in nature
+that is we can only traverse it in one
+direction
+finally a circular linked list traversal
+is quite tricky as we have to stop the
+loop as soon as we revisit the first
+node
+otherwise it will traverse it
+indefinitely
+and this was all for today's session
+hope you guys found it informative and
+helpful
+if you like this session then like share
+and subscribe
+if you have any questions then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simplylearn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
