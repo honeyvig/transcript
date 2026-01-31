@@ -1,0 +1,1076 @@
+hi traders welcome back my name is
+matthew from the art of trading today's
+lesson
+is going to be covering how to use
+arrays in pinescript
+we're not going to do anything too
+complicated we're just going to
+introduce you to the basics but we are
+going to create something pretty useful
+we're going to create a correlation
+meter which is going to determine
+exactly how correlated two different
+markets are and we're going to achieve
+that using arrays so if that sounds like
+something you'd be interested in please
+stick around hit the like button while
+the intro rolls and we'll get started in
+a second
+so the script we're going to be working
+with today does a couple of different
+things
+the first thing it does is it stores the
+past
+x amount of price data so in this case
+we're going to use candle closes by
+default
+but you can change that here but we're
+going to save the last
+20 candle closes on the current market
+and on our reference market we're going
+to save those values
+into two separate arrays and then we are
+going to use some inbuilt
+pinescript functions to analyze that
+data
+we're going to get the correlation
+between
+these two data sets and we're also going
+to get the covariance well we need to
+get the covariance first
+and then we'll use the covariance to
+calculate our correlation coefficient
+now if all of that sounds like gibberish
+to you don't worry
+i literally learned most of this stuff
+this morning it's not rocket science but
+it is quite advanced for
+a fool like me i have the equivalent of
+math dyslexia
+so if i can handle this you should be
+able to too
+and as we go through the lesson i'm
+going to explain all of these concepts
+hopefully in a way that makes sense
+to you whether you are experienced with
+this stuff or a complete beginner
+so with all that said let's get started
+so right now i have euro yen weekly
+chart
+up on my trading view charts the script
+is drawing these red lines here these
+red bars
+are the s p 500 closes so if it closes
+positive
+that means the s p 500 closed higher and
+if it closes
+negative that means it closed lower and
+by closers i mean
+percentage gains so each bar on this
+indicator box here represents the
+percentage
+change from the previous bar on the s p
+500
+but we can change this to whatever we
+want so we could we could change this to
+aussie yen for example
+and now we're comparing the euro yen's
+weekly candles to the aussie yen's
+weekly candles
+and as you can see here we have quite a
+high correlation
+the closer this black number is to 1 1.0
+the more positively correlated these
+markets are which just means that if one
+market is moving up
+then the other market is also likely to
+be moving up
+and the micro movements might not be the
+same but the correlation number here the
+correlation coefficient
+can give you a rough idea of just how
+correlated a market
+is and what this would be useful for
+there's a few uses you could use this
+for
+in forex trading the way i would use
+this is i would
+use it to determine which currency pairs
+are likely to be
+correlated so that i can manage my risk
+accordingly so for example if i'm
+trading the euro yen
+and i'm long on the euro yen let's say i
+have a high probability set up and i'm
+aggressive with it i have two or three
+percent
+of my total capital involved in that
+trade
+it's probably not a good idea for me to
+then open a trade on aussie yen
+with the same amount of risk if these
+two pairs are highly correlated because
+all that means is that if one trade
+loses
+the other trade is likely to lose as
+well and then i'm taking a double hit
+for nothing what would be better in that
+scenario if i do have two trading
+opportunities on two highly correlated
+pairs
+would be to split my risk so if i have
+one position on euro yen
+that might be 1.5 percent risk and on
+aussie yen i might have 1.5 percent risk
+as well that way in the
+unlikely or off chance that one of them
+wins and one loses
+i don't double my loss by taking a large
+position on a correlated market
+and there are other use cases for this
+as well which we'll go into later
+but anyway let's get into the code and
+i'll explain what we're doing as we go
+and if you're already lost don't worry
+this should make sense by the end
+hopefully this makes sense by the end of
+the lesson
+i'm going to do my best to explain all
+of this stuff in detail
+so let's get into the pine editor and
+start this lesson just really quickly
+before we get into the pine editor
+i thought i should probably show you a
+visual representation of what an array
+is
+it's basically just a list of data so
+here we have
+our values and they can be anything
+so we saw that here they can be a float
+an integer a boolean a color a string
+and they're stored in these little boxes
+which correspond
+to a array index
+so similar to historical operators for
+price action like
+referencing previous bars you can do the
+same thing with arrays
+now dealing with them in partnership is
+slightly different to using the
+historical operator
+which if you're not sure what that is
+that's the square brackets
+to reference previous bars so you could
+reference the previous closing price
+like this you could also reference the
+value corresponding with the array index
+of one it's the same concept in theory
+and arrays in partscript have a maximum
+size of 100 000
+data values which is quite large i don't
+think there's many cases where you would
+need to exceed that many
+data entries into an array so that's
+what an array is in pinescript just
+think of it as a data set
+with each uh entry corresponding to
+a array index which starts at 0
+and counts up from there in increments
+of one and so in this particular case we
+have
+nine values an array length of nine
+but the array index for the final entry
+in this array
+is eight because we do start at zero so
+keep that in mind that takes a little
+bit of practice
+to get used to if you're not used to
+dealing with arrays anyway let's jump
+over to the pine editor and get into
+this script first thing i'm going to do
+is delete all of this code
+and we're going to start from scratch so
+that you can follow along
+and see what i'm doing and i'll explain
+what i'm doing
+line by line all right so first things
+first we just have a blank script here
+we just have our study annotation
+function you can call this title
+whatever you want
+i've set overlay to false because i want
+to be drawing into my own oscillator box
+or indicator box
+and the first thing i'm going to do here
+is always is get some user input
+i'm just going to copy this code over
+here because
+hopefully by now if you've followed
+enough of my lessons you should know how
+getting user input works we're getting
+three user inputs here we're getting a
+look back period
+our price source and our reference
+market
+so we're using the inbuilt in input
+function just titling them
+accordingly so the user knows what they
+correspond to
+and i'm setting the types our lookback
+is going to be an integer this is how
+many bars to look back
+our source is a price source which can
+be anything if i
+minimize this and open this up here is
+our price sources
+and you can also choose from price
+sources on indicators or markets that
+you've
+added to your chart so if we wanted to
+we could calculate
+all of this data based on an average of
+the open the high the low and the close
+or just the high the low and the close
+for today's lesson i'm sticking i'm
+keeping it simple i'm sticking with
+close
+and then the final input we're getting
+is our reference market that's just the
+type of input dot string
+and this default value here if you've
+never used the security function to
+reference other markets other than the
+one that you've loaded onto your chart
+the format of this is you can either
+just put in the string i could have just
+put in spx 500 usd here
+and that would reference that market
+that ticker id this is the ticker id
+but i like to also specify which
+brokerage or exchange
+i want to get that data from so in this
+particular case
+we're referencing the oanda exchange i'm
+using the
+semicolon to then reference the ticker
+id
+so this is the broker or exchange this
+is the market
+i want to reference and this works with
+any
+exchange if you go up into here and we
+type in apple for example
+you could write nasdaq apple so i could
+change that to nasdaq and apple if i
+wanted to
+and then this would reference apple's
+price from the nasdaq exchange
+so that's it for our user inputs so the
+first thing we need to do before we
+continue is get the percentage
+change of our reference data
+so the way we do that i'm going to
+create a variable here that
+references the security function and the
+security function takes a minimum
+of three parameters or arguments
+we need to specify the symbol we want to
+reference
+we need to specify the resolution or
+time frame we want to reference
+and we need to give it an expression
+that we want to reference
+so this could be anything this could be
+an indicator expression
+this could be any number of
+code expressions that you could use in
+pinescript
+but for today's lesson we're going to be
+keeping it really simple and we're just
+going to be referencing
+the source input so by default this is
+going to be the closing price
+so our symbol is going to be our
+reference input
+and our resolution is going to be our
+time frame
+dot period so that's whatever time frame
+we've currently set
+our chart to so right now i'm on the
+weekly chart this would just
+reference the weekly chart on our
+reference market
+so hopefully that makes sense so now
+just to make sure that we're getting
+the right data here let's plot our
+reference data
+to the chart say the script make sure
+there's no compile errors
+and there we go everything's working
+fine if i go to spx 500 us dollar
+this blue line should mimic the closing
+price of this chart
+i'll get rid of that don't need that so
+um
+it's on percentage right now three nine
+three five
+and three nine three five perfect so
+so far so good and get rid of that plot
+so the next thing we need to do
+is get the percentage change of
+the current bar on our reference market
+compared to the previous bar
+so to do that i'm going to create a new
+variable called reference
+change that is going to be set to i'm
+going to open two
+parentheses here i'm going to say
+reference data
+subtracted from our previous
+bars reference data divided by our
+previous
+reference close multiplied by 100
+this line of code here this expression
+will give us
+our reference markets change as a
+percentage
+so now if i plot this to the chart
+reference change save the script oops
+and i have a typo here
+hopefully that's the only one there we
+go minimize that
+so now this blue line here is printing
+the percentage change so up here you can
+see that the current bar has a plus
+0.84 percent change from the previous
+bar and down here we have
+0.8 or positive 0.8 so we are
+calculating an accurate reading so
+that's how we get the percentage
+change in price next thing we need to do
+is get the percentage change of our
+current market
+so to do that i'm going to create a new
+variable called current data and this is
+going to be set to our source
+input so we want to compare the same
+source
+across our reference market and our
+current market so if you were to change
+this
+default value to something like
+ohlc 4 or open high low close
+then it will compare the average of our
+open high low close on our reference
+market
+to the average of our open high low
+close on the current market
+and again to get our percentage we can
+pretty much copy this
+line of code here i'm going to change
+this to current
+change copy current data we can paste
+that across there
+and now we're getting the exact same
+percentage
+change calculation but on the current
+market instead of our reference
+market so now we have our two value data
+sets
+all that's left to do is input these
+into an array
+and then once we have some data to work
+with we can start calculating
+our correlation coefficient so now we
+have our two data sets we're getting our
+reference markets change and our current
+markets change all that's left to do is
+input this data into two different
+arrays
+and then we can use those arrays to
+perform some
+statistical calculations so to declare
+an array
+it's extremely simple i'm just going to
+comment this here
+we're going to use the var operator and
+if you're unfamiliar with the var
+operator all that does
+is it makes sure that this variable
+we're about to declare does not get
+reset on each new bar
+it's only declared once on the very
+first bar on our chart
+as opposed to these variables here which
+are not var variables
+and these get recalculated on every new
+bar on our chart
+but since we're using arrays the whole
+purpose of arrays
+is to store data across all of the bars
+on our charts so that we can perform
+calculations
+and analyze that data so if we don't
+create these as var
+arrays then these arrays will be cleared
+and reset on every new bar in our chart
+we don't want that so we use the var
+operator to make sure that doesn't
+happen and we're going to create two
+arrays here
+one's going to be called reference array
+and the other other one
+i'm going to call current array so
+reference array
+is an array or a list of our reference
+markets
+change in percentages and current array
+is exactly the same but for the current
+market
+that we've loaded onto our chart and let
+me change this market
+so that we have two different data sets
+here to work with so to declare an array
+you need to use the array inbuilt array
+object or um class and this array
+operator just contains the list of all
+the inbuilt array functions that we can
+work with
+in pine script so arrays behave very
+similarly in pinescript to
+lines and labels so if we were creating
+a label here you would
+write label dot new or line
+dot new but for today we're using arrays
+the main difference with arrays is that
+there is a number of different
+data types that we can reference so you
+can make a color array
+you can make a float array or decimal
+point number array you can make an
+integer array or whole number array
+you can make a label array a line array
+or a string
+array today we're only going to be
+working with floats
+so floats are just any number with a
+decimal place
+such as a price or a percentage value so
+the array
+dot new float function if we click
+control click
+on this name this function name we can
+get a rundown
+on exactly how this function works this
+function
+can take either a single input parameter
+or function parameter or
+two function parameters so one is the
+size
+of the array if you're unfamiliar with
+arrays
+think of them like lists with the main
+difference being that we need to specify
+the length of the list before we start
+working with it and
+initial value is the initial value of
+all array elements so this think of this
+as like a default value
+for your arrays we're not going to be
+using the default value today
+we're just going to be using the array
+size and for our array size we're going
+to reference our lookback
+input parameter so i paste look back in
+there
+by default these two arrays will be
+initialized as floating point arrays
+with a look back period of 20 or a size
+of 20 meaning that these arrays these
+two arrays will hold
+20 historical price
+changes as percentages by default if you
+don't change
+this variable here in your script
+settings then these two arrays will be
+initialized with a length of 20
+and so these arrays will store the past
+20 bar changes as percentages
+so because we have an array length of 20
+here our look back is set to 20 by
+default
+so our array length is only 20
+data values we need to make sure that
+every time we add a new value
+to our array we delete a previous value
+to make room for it so the way we're
+going to approach this
+today in this script is we are going to
+use a first in
+first out approach if you're not sure
+what that means there's a little diagram
+here that's quite helpful
+so we're creating a q version of an
+array
+you could also create a stack version
+today's version is going to be q
+so the first value that goes in gets
+shifted down until we hit our array size
+in this case will be 20. so when we have
+20 values
+in our array the first value that
+entered this array
+will be the first one to be deleted and
+so we basically cycle through
+with a first in first out approach an
+alternative method
+for using arrays is a last in first out
+approach which is like a stack
+so think of it like a stack of papers
+you stack up a bunch of values
+for whatever reason and there are some
+cases where you don't want
+to remove the very first value you want
+to remove the last value that went in
+first but for today's lesson we are just
+focusing on a q
+array so the first variable that goes
+into our array is the first one to be
+deleted when the array's maximum
+capacity is reached
+so in order to achieve that we need to
+shift or remove
+the last or the first entered
+value from our arrays which is a
+first in first out approach or fifo for
+short
+and to do that we need to use the array
+dot shift
+function and then we need to input our
+array id
+so id stands for our array variable name
+so paste that in there that will delete
+the very first data value we entered
+into our reference array
+before we add a new variable into this
+array so this will make sense in one
+second
+because the next thing we're going to do
+is
+add the current values to
+our arrays in order to add a value to an
+array
+we need to use the push function so the
+array.push function you can think of
+this as an array.add
+function this will add our data value
+to the specified array so the array
+we're going to add to first is our
+reference
+array and the data value we're going to
+add to this array
+is our reference change so our
+percentage change for the current bar
+and by current bar i mean the current
+bar that this script is running on so
+this happens to be a historical bar then
+that bar's
+percentage change will be added to the
+array and once our array hits our
+maximum capacity
+of 20 it will start deleting or removing
+the first value that was added like a
+queue and will cycle through those
+values
+as more data is printed to our chart so
+i can copy this line of code here
+and we can push to our current array
+our current change is a percentage so
+these four lines of code here handle all
+of our array
+operations we are first removing the
+oldest
+data value from our array before we add
+any new
+data values to our array
+give me a second my cat wants to come in
+here he doesn't like being locked out of
+the office you want to help me
+are you going to be annoying huh
+this is hunter hunter s thompson if
+anyone's wondering
+what his name is there you go entertain
+yourself for a bit
+so now that we've set up our array
+commands or functions
+the next thing we need to do is
+determine and plot
+our covariance relationship so
+covariance
+i found a pretty good definition here on
+investopedia
+so first what is covariance
+covariance measures the directional
+relationship
+between the returns on two assets a
+positive
+covariance means that asset returns move
+together
+while a negative covariance means they
+move inversely or apart
+covariance is calculated by analyzing at
+return surprises or standard deviations
+from the expected return or by
+multiplying the correlation between the
+two variables by the standard deviation
+of each variable
+now some of you will understand what all
+of that means i don't
+but the good news is we don't need to
+understand this in order to use it in
+our script
+so let's go back to the pine editor and
+determine
+our covariance best of all we don't even
+need to write the code
+ourselves i'm going to create a new
+variable here called covariance
+and that's going to be set to array dot
+co variance so this inbuilt function
+will perform all of that calculation for
+us
+in a single line of code couldn't be
+easier which is perfect for
+dummies like me that have no idea how to
+calculate this stuff
+so to get the covariance we need to
+reference two arrays
+so that we can get the variance between
+the two of them so we're going to
+input our reference array here and our
+current
+array and we're done we're getting the
+covariance
+but before we continue we should
+probably plot that data to the chart so
+that we can
+visually see what's going on so i'm
+going to plot our covariance
+value i'm going to give it a color of
+color dot purple
+i'm going to give it a style of plot dot
+style
+underscore area i'm going to give it a
+transparency of 0
+and i'm going to title it our co
+variance
+so now i'm going to save my script and
+make sure everything compiles
+and there we go working perfectly so as
+you can see
+throughout this period here which was
+the peak of the covert
+pandemic outbreak so if we have a quick
+look
+if we look at the 16th
+of march on gold and we go over to the s
+p 500 and look at the
+16th of march from there you can see
+that
+since that day both these markets
+have moved higher so
+during this period we had a high a
+positive covariance
+or a directional correlation so these
+markets were moving in sync
+but that's not always the case there are
+occasions when
+we have a negative covariance and that
+means that these markets
+are moving in opposite directions so
+anyway
+our script is working as we wanted to so
+let's finish writing our code and then
+we'll go and look over a few different
+covariance and correlation examples over
+various markets
+so before we calculate the correlation
+coefficient
+between these two data sets let's plot
+our reference
+market data to the chart just for visual
+representation
+so here i'm going to say plot our
+reference data
+we're going to use two plot functions
+here one is going to plot our reference
+change the other is going to plot our
+current markets change and then we're
+going to set the color of our reference
+market to red our style to plot
+dot style columns we're going to set
+transparency to 10
+i'm going to give this a title of
+reference market
+and then for our current markets price
+change we're going to set the color to
+blue
+we're going to set the style to plot dot
+style
+histogram we're going to set the line
+width to 4
+and then i'm going to title this one our
+current
+market so now if i save the script we
+should get a little bit of a different
+visual representation
+on the chart so the red bars here is our
+reference markets percentage change
+so each bar on our chart this red bar is
+representing
+our reference mark of the s p 500 its
+percentage change on that same bar
+and the blue number here is the
+percentage
+change of the current bar so you can see
+here we had a 0.73 percent change on the
+current bar
+that corresponds to the same number up
+here
+so far so good let's wrap up this script
+by calculating
+our correlation coefficient before i do
+that i should probably explain what that
+is
+so here we are back on investopedia i'll
+leave these links in the video
+description
+and here's a short summary definition of
+correlation coefficient the correlation
+coefficient is a statistical measure
+of the strength of the relationship
+between the relative movements of two
+variables
+or two markets the coefficient values
+range between
+negative one and positive one if they
+fall outside that range then there's
+been an error
+in the calculation so correlation of
+negative one shows a perfect
+negative correlation meaning that for
+every dollar a market goes up
+the other market goes down a dollar and
+a correlation coefficient
+of positive one shows a perfect positive
+correlation
+meaning that for every dollar a market
+goes up the reference market
+also goes up a dollar and finally a
+correlation of zero
+means there is no correlation no direct
+correlation between the two
+markets or two variable data sets so
+ideally in your portfolio
+depending how you've set it up you would
+hedge your positions by
+trading a market with a negative
+correlation to whatever market you're
+investing in and from a trading
+perspective if you
+are creating a trading strategy across a
+portfolio of different markets
+ideally you'd want a correlation as
+close to zero as possible
+because if you have a high correlation
+between two markets that you're trading
+uh it's the equivalent of doubling your
+risk and obviously you can double your
+reward that way as well but
+it's just magnifying your trading
+results if you can find two markets that
+have
+zero correlation or as close to zero as
+possible
+that's a good deal as far as portfolio
+theory goes
+or in other words the closer to zero
+your correlation coefficient
+is across all the markets you trade and
+invest in
+the more diversified your portfolio is
+and so for investors your portfolio
+might be a
+bunch of stocks you want those stocks to
+have as little correlation as possible
+and for a trader you want your
+strategies and the markets you trade
+to have as little correlation as
+possible at least in a perfect world
+with currencies that can be a little bit
+difficult which will show at the end of
+the lesson
+where we finish our script i will show
+you the correlation
+between several different markets so
+before we calculate
+our correlation coefficient between
+these two arrays
+or these two different markets we need
+to get a little bit more information
+first thing we need to do is determine
+the standard
+deviation of our two arrays or two data
+sets
+again just like this inbuilt function
+here
+pinescript has made this extremely easy
+for us we don't need to even know what a
+standard deviation is
+it probably helps to know but we don't
+need to because we can just use the
+array.stdev
+function which will get that value for
+us so for our reference
+market i'm going to create a new
+variable called reference dev
+short for deviation and we're going to
+pass
+our reference array into this standard
+deviation
+function and this line of code will get
+our standard deviation
+for our reference market copy this line
+of code
+change this to current deviation
+and paste that in there change this to
+current
+array now we're getting the
+standard deviation of our reference
+market and our current markets data set
+now that we have that information we can
+calculate our correlation coefficient
+which is
+extremely easy there's no inbuilt
+function for this as far as i know for
+buying script
+but it's easy enough to calculate all we
+need to do is divide our covariance
+by our reference deviation multiplied
+by our current deviation that's it
+this formula here will give us our
+correlation ranging between negative one
+and positive one so to prove that is the
+case let's plot this
+to the chart we're going to plot our
+correlation
+value to the chart it's going to have a
+color of color dot black
+a line width of two and a style of plot
+dot um i'm gonna use a step line
+for this just for something different
+you could use plot this as anything you
+want
+but i'm trying to keep this varied here
+and show you
+multiple different ways to plot this
+data to your chart
+while we're at it and then finally i'm
+going to title this our
+correlation strength so this is the
+strength of the correlation between the
+two markers
+oscillating so it's a form of an
+oscillator i suppose between
+negative one and positive one so that's
+it our script is complete if i save the
+script
+hopefully it compiles without any errors
+there we go
+and now our black line here is plotting
+the correlation coefficient
+of these two markets so this number here
+this black number
+is our correlation coefficient between
+the s p 500
+and gold on the weekly chart and this
+value is being calculated over the past
+20 bars on our chart pretty cool pretty
+easy
+so that's the power of pine script the
+concepts that we're working with here
+may be very advanced this mathematical
+concept may be quite advanced
+but to achieve it in panscript couldn't
+be simpler
+so one last thing before we continue
+this was something i did that
+i thought was interesting i'm gonna just
+paste this in here
+i'm just creating three horizontal lines
+here h lines
+at positive one negative one and zero
+if i save the script here i minimize the
+editor
+and let's just look at this visually
+basically the
+purple area here is our covariance
+there's not a lot we can do with this
+information in particular
+but we needed to get that information in
+order to calculate
+our correlation coefficient now this
+correlation coefficient
+is much more useful than the covariance
+because we can use this
+as a gauge to determine just how
+correlated two different markets are
+and i'm going to show you exactly what i
+mean right now i'm going to come up to
+the settings menu
+of our correlation meter go to style i'm
+going to turn off covariance
+and our reference market and current
+market so now this black line
+represents the correlation between
+whichever markets we've set up here
+so just to confirm that this is indeed
+working
+right now we're on the chart for gold
+let's change our ticker to silver
+and let's just see how correlated gold
+is
+to silver so now you can see this black
+line
+hovers very close to one which means
+these two markets gold and silver are
+extremely correlated
+it stays above zero uh almost
+indefinitely if we zoom out our chart uh
+all the way to the beginning
+of price action this market has
+maintained extremely high correlation
+directional correlation
+to silver in layman's terms
+that just means when gold goes up silver
+goes up when gold goes down
+silver goes down when gold goes sideways
+silver goes sideways
+in practical terms that means that if
+you're putting
+a lot of risk on gold you do not want to
+put a lot of risk
+on silver in the same direction because
+then you're doubling your risk
+essentially and for just a couple more
+examples let's check the correlation
+between
+silver and the s
+p 500
+click ok uh we'll go to the weekly chart
+i feel like the weekly chart shows the
+best
+representation so again after that
+initial
+panic sell silver has rallied quite
+aggressively to the upside
+so did the u.s stock market and so we
+had a high
+correlation coefficient between those
+two markets
+let's do something a little bit
+different let's try a stock
+so here is apple compared to
+the s p 500 again during
+the panic everything sold off and then
+we had this strong rally
+during this period we had a high
+correlation coefficient
+between apple and the s p 500
+so hopefully now you're seeing how this
+could be quite useful
+in your trading process to identify just
+exactly how correlated certain markets
+are
+let's look at one last example before i
+wrap this video up let's go to a
+currency pair like the euro dollar
+and right now you can see that the
+correlation between
+the us dollar and the s p 500 is all
+over the place there is no direct
+correlation here
+we hover around zero most of the time
+but if we were to change our market to
+let's say
+euro yen now we have a high
+positive correlation you can see that
+this black line
+stays above zero most of the time that
+indicates a high positive correlation
+let's change this to australian dollar
+against the swiss franc
+now we have a high negative correlation
+so this black line stays below zero most
+of the time
+that means that often when euro dollar
+is selling off
+aussie swiss is rallying so there's an
+interesting
+correlation statistic there that you
+would probably not recognize
+if it wasn't for this sort of
+information being plotted onto your
+chart
+so that brings me to the end of today's
+lesson i hope you found that interesting
+this was the most practical example i
+could think of to use arrays
+for there are obviously many different
+ways you can use arrays
+you could use them to calculate support
+and resistance
+zones potentially you could use it to
+store
+information so for example you could use
+it to
+store pivots or you know tests of
+support
+and resistance and you can check if a
+certain zone gets tested more than three
+times
+maybe you can draw a h line across your
+chart if
+current price action is within an x
+amount of percentage
+of that zone that's a good example of
+a way you could use arrays but there are
+many many different use cases for these
+most of them are quite obscure
+and so i don't think i'll be going into
+arrays much more
+on youtube if you want to learn a lot
+more about arrays and go into more
+detail about them
+check out pinescriptmastery.com i have a
+course there the punch punishment
+mastery course
+where i'll be going into more detail
+about this if and when students request
+that
+over the months to come as i become more
+familiar with arrays myself
+well that's it for today's lesson thanks
+for sticking around to the end i
+appreciate it if you found it valuable
+please hit the like button
+hit the subscribe button if you haven't
+already i'll be back soon with more
+lessons
+on pinescript and uh yeah that's it for
+today
+uh good luck with your trading stay away
+from exposing yourself
+too much on correlated markets and i
+will see you in the next one
+take care goodbye

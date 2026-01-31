@@ -1,0 +1,102 @@
+foreign
+'s YouTube channel in the session we
+will learn how to use like operator in
+SQL but before we begin let me tell you
+guys that we have daily updates on
+multiple Technologies if you're a tech
+geek in a continuous hunt for latest
+technological friends then consider
+getting subscribed to our YouTube
+channel and don't forget to hit that
+Bell icon to never miss an update from
+Simply learn now without further Ado
+let's get started with our one point
+agenda that is how to use like operator
+in SQL so at first let's take a quick
+look on the syntax that we will be using
+for getting the like operator operation
+right so it's really simple so all you
+need to do is Select star from table
+name so instead of star you can also
+give your selected columns here but by
+default I'm using to select the entire
+table right and it can go with a where
+Clause so after the table name you will
+be given the where clause and the column
+name that you want to extract and you
+will be using the like operator with the
+constraints and I'm using the single
+quotes here right because this
+particular like operation can be used
+upon string or worker or character type
+data types right so we will represent
+that particular data type using single
+code now that we are clear with the
+syntax let's go to the Practical mode
+that is the SQL workbench or MySQL
+workbench and execute the like operator
+command if getting your learning started
+is half the battle what if you could do
+that for free visit skill up by simply
+learn click on the link in the
+description to know more
+SQL workbench and
+consider the employee name so we have
+some text or worker type of data type in
+the employee name as well as the
+employee Department right let's use that
+particular data and here we have the
+command and Select Staff from employee
+table 2 where we can edit the same
+command employee name
+uh
+like
+and remember the single quotes right and
+we will be using the percentage
+operation here right we can give the
+full name so we have Jennifer here right
+Jennifer or let's remove Jennifer and if
+somebody asks you give me all the names
+which start with the G right in that
+particular situation we will using the
+modulus symbol or percentage symbol
+right now what we will get is all the
+names that start with the alphabet J and
+now let's say we found all the names
+that include a certain alphabet let's
+say r
+right then we can use the modulus symbol
+again it can start with anything and it
+can end with anything but it should have
+alphabet R so this is how it works so we
+have all the names which start or
+include the alphabet are in them right
+and that's how we can use the like
+operator in SQL you can also use like
+operator in this way where you can get
+the entire name let's say somebody asks
+you to get one single row which has the
+employee name as Peter right you can
+also do this in this way
+there you go you have Peta choose from
+over 300 in-demand skills and get access
+to 1 000 Plus hours of video content for
+free visit skill up by simply learn
+click on the link in the description to
+know more so with that we have come to
+an end of this session on how to use
+like operator in SQL if you have any
+queries regarding any of the topics
+covered in this session or if you
+require the resources like the code or
+PPT do let us know in the comment
+section below and our team of experts
+will be more than happy to resolve all
+your queries at the earliest until next
+time thank you stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

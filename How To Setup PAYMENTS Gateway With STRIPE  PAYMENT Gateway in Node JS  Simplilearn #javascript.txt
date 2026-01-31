@@ -1,0 +1,1032 @@
+welcome back to our Channel where we
+simplify tech for everyone today we are
+diving into a crucial aspect of modern
+web development in the digital age
+facilitating online payments is a
+GameChanger for businesses that's why we
+are focusing on a powerful Duo nodejs
+and stripe nodejs known for its
+efficiency and scalability in building
+Network applications and stripe a leader
+in online payment processing together
+they create a seamless and secure
+payment system for a website or app this
+video is tailored for you we will guide
+you through the setup processes step by
+step from initial configuration to
+successful Payment Processing you will
+learn how to integrate Stripes payment
+Gateway using node.js manage secure
+transactions and handle different
+payment scenarios and don't worry we
+made sure to include best practices for
+security and efficiency so let's get
+started and unlock the potential of
+online payments I'm abisara your guide
+on this accelerating Journey buckle up
+and let's launch into how to set a
+payments with nodejs and stripe and
+before commencing just a quick info for
+you if you are a professional who wants
+to switch careers with software
+engineering by learning from the experts
+then try giving a short to Simply learns
+postgraduate program and fullstack web
+development accelerate your career as a
+software developer through this
+postgraduate program in fullstack web
+development course in collaboration with
+Kelch ctma in just a few months you will
+learn more en coding techniques with
+boot camp level intensity and gain all
+you need to be a fullstack technologist
+the course link is mentioned in the
+descript deson box that will navigate
+you to the course page where you can
+find a complete overw of the program
+being offered take action upskill and
+get ahead so let's get started with the
+integration of stripe using
+nodejs so first we'll create a directory
+for that and moving on in the project
+section we'll have a folder and name it
+as
+integration using
+nodejs and inside inside this we'll open
+the command
+prompt
+and write the command code space
+period and it will open a vs code for
+us so you can see that we have the vs
+code here so we have created a project
+and now we have navigated it and here we
+will open the
+terminal so now we will run a command
+that would be npm init minus y to create
+a package.json file with default
+settings so we'll write the
+command
+npm in it minus
+y as you run the command you could see
+that the package.json file has been
+created so moving on now we'll install
+the required packages so we'll install
+Express n stripe so in the terminal
+we'll run so we'll run the
+command
+npm install
+Express stripe and do envirment so we
+install all the three
+packages so you could see that they will
+we updated here EnV Express stripe they
+have been installed and and now we'll
+create the essential files here so we
+will create
+app.js so this will be our main server
+file and we'll create
+EnV so in this file I will store the
+secret key of the stripe so it can't be
+publicly shown we will store our secret
+key and then we'll create a public
+folder so this will hold our front end
+files like HTML CSS and client s side
+JavaScript so here we will create a
+folder and name it as
+public and inside this folder we'll
+create a file index.
+HTML and we'll create style. CSS so
+we'll style our front end
+here okay and now we'll set up our
+server so for that we have we will
+requiring the modules that would be
+Express and stripe that we have created
+so we'll initialize it and then we'll
+set up our front end that would be
+index.html and then we'll test it
+locally or we'll just open on the port
+number that will assign it okay so
+moving to that first we'll
+see so how to set up the stripe so this
+is the dashboard here I'll click on sign
+in so as I have already created the
+account you could also create the
+account and we'll move to test mode and
+here in the developer section you'll get
+the API Keys here so publishable key uh
+I can reveal it so you guys can see it
+but the secret key I will put that into
+the EnV file I will store it here and I
+want reveal it and moving back so you
+could make a profile here and then use
+the developer mode and use the test mode
+to do that or else you could just create
+a profile or you could live test also so
+before moving I will show you our main
+project that we will be running so for
+that we will open the
+port and before that we'll
+initialize our project so this is our
+project that we'll be creating
+sojs we will run a terminal and the new
+terminal
+here and we'll write the command note
+the name of the file that is
+app.js and click enter so you could see
+that the server started on Port 3000
+okay so we can go
+to any browser and just write
+STP local
+port in the browser we'll just write
+Local
+Host and our port number that is 3,000
+okay so this is our local host 3,000 and
+this is our front end and here we will
+enter the card number that would be 4242
+that is the test key we are not making
+the original payment here but just the
+test key so we'll click on pay and you
+could see that the payment is
+succeeded so this is what we will going
+to create it we'll just use the test
+Keys here we will not use the live keys
+if you want to use the live Keys you can
+use that as all the documentation is
+present on the stripe website so you
+could read the docs and move on to the
+if you just click on off the test mode
+you go to the developer section and then
+you can have the API keys for the live
+section so you could accept the payments
+also here but currently we are using the
+test mode and we'll be using the test
+keys so this is our front end and as we
+have paid you could see that the payment
+has succeeded so this is what we'll be
+creating here now we'll start start with
+our project from the
+scratch so let's start with the project
+here so first we'll start with the HTML
+file
+and we'll start with the basic thing
+that would be Doc type HTML and
+then moving on to HTML
+Lank
+that would be
+English and after that we'll start the
+heading
+here we'll start the hero and inside
+we'll set meta
+correctors initialize stock type HTML
+that will tell the web browser that we
+using HTML 5 the latest standard of HTML
+and here we have begin our HTML document
+and specify that we'll be using English
+and inside the head we'll
+write meta car
+set and that 2 equal to UTF minus 8 so
+this ensures a page uses the Universal
+Character set which includes most
+characters from all know
+languages so that would be UDF Min
+see and after
+that right meta name equal to
+viewport and content equal to
+width equal to device
+width okay
+and we'll initialize the
+scale and that to equal to
+1.0 so I'll make this bigger so you guys
+can
+easily
+see so we have set the meta name equal
+to viewport and content equal to width
+equal to device WID
+so this helps a page look good on all
+devices whether it's a phone tablet or
+computer now we'll set the title
+here so we'll set the title as simple
+payment
+page
+okay and after
+that we will link the stylesheet or
+style. css file here so for that we'll
+right ink L
+to style
+sheet to file name that is style.
+CSS okay and after that we will Source
+the stripe file that is
+javascript. strip.com version 3
+or we could link it here or we could
+link it
+afterwards so we link it here only that
+is that we'll write
+script Source equal
+to
+https double back
+slash js. stripe.com
+SL
+V3 we'll close
+it and the script file loads to be
+closed here and after that we'll close
+the header
+here and we'll start with the
+body and before starting the body we
+will move to app.js file and we have set
+up the index. J uh HTML file and now in
+the app.js file in the root of your
+project directory here we will set the
+express server and handle the backend
+logic and after that we'll move back to
+the index tol file and create it so in
+this file we have already imported
+Express strip and path and we'll
+initialize our Express app and set it to
+listen on a port and for the middle we
+we'll use express. Json for Json paring
+and express. static to serve static
+files from the public directory and
+strip payment intent route and we'll
+create a post route here so for that
+we'll start
+with
+require the
+environment and we'll configure
+it and after that we'll create con
+Express and inside we'll write
+require
+Express man will
+create for stripe
+also that will
+require
+stripe and
+here in the environment only we will
+write the stripe secret
+key and this will store in the
+environment file that is to TMV file so
+that it won't be publicly available and
+after that we'll set the path
+that would
+be require
+path and after that we will start with
+the express that would be
+constant app equal
+to
+express and we have initialized here our
+server file now moving back to our HTML
+file
+that is
+index.html now we'll create the front
+end first and then come back to the
+app.js
+file so in the body section we will
+create a
+div and name the class as
+container and we'll have the heading
+here that would be welcome to the simple
+payment
+page so we could just simply
+visualize what we will be creating for
+the front end as we have to run the port
+here so we won't be running
+regularly we'll just create
+the front end and after that we'll see
+it and here we'll create a form and give
+an
+ID and give at ID as payment form only
+and inside we'll create a
+div and for that also we'll give the ID
+and that will give us card element
+okay
+element so here stripe card element will
+be inserted here and after that we have
+closed the
+div and we'll create one more
+div and name the ID as card error
+here and we'll set the role that would
+be S
+alert
+okay and the dev has been closed here
+after that we'll create a button
+here and for that also we'll set the ID
+that would button ID equal to submit
+button
+and the text that would be displayed on
+the button would be pay and after that
+the form is
+closed so here we have created a
+division or section in the HTML document
+that would be typically used for styling
+and layout so it will be marked with a
+class container which can be styled
+using CSS that will style now only
+and after that we have created a header
+that is welcome to the simple pay
+payment page this will be a top level
+heading which is displayed prominently
+on the page and this H1 element is
+usually used for the main title or a
+significant heading on the page then we
+have created the form and given the ID
+payment form and this element divs a
+form that will be used to capture input
+from the user and the ID attribute
+assigns a unique identifier to the form
+that would be allowing it to be targeted
+with JavaScript and CSS that we'll be
+doing in the app.js file and then we
+have created a div and given the ID card
+element so an empty division with the
+stripe card input elements will be
+dynamically inserted so this is where
+the user will enter their card details
+and then we have created another div
+that is card errors and we have created
+the role that would be alert so this is
+another division that will designate to
+display any error messages related to
+the card input and the role here alert
+that would be helping with accessibility
+indicating to screen readers that this
+section will display Dynamic content
+typically error messages and then we
+have created the button and given the ID
+submit button and the user will click to
+submit the form for using this button
+only and you know that the ID attribute
+will help us identify this button
+uniquely within the document okay
+so moving on after this Dave we'll start
+with the script here that would be the
+JavaScript code so we have created the
+basic structure and now we'll add
+JavaScript here that will be first we'll
+initialize stripe
+here so for that we'll start with
+script and inside we
+will create a variable stripe so this
+will initialize the stripe object with
+your publishable key which enables your
+front end to communicate with the stripe
+API so for that we'll create where
+stripe equal
+to stripe and inside we will add the
+publishable key so we'll go back and in
+the test mode in the API Keys we have
+the publish key we'll copy this and
+paste it here so you could paste the
+keys in any document so you won't get
+them lost as the secret key gets renewed
+or it won't be revealed after some time
+and it would be generated a new key so
+you could just copy and paste it and
+store it in any document or where you
+want to store it and after that we will
+create a line that will create an
+instance of stripe Elements which will
+be used to generate the UI for the card
+input so for that we'll write where
+element
+and that would be stripe elements
+okay now we'll create the card element
+here
+so for that we will
+write where card equal
+to
+elements dot
+create and inside will pass
+card so this creates a card element
+which is a flexible single line input
+that collects all the necessary card
+details from the
+user and now we'll use card do Mount
+that would Mount the card element onto
+the Dome inside the div with the ID of
+card element so for
+that we'll create card do
+Mount
+and inside we'll
+pass card
+element
+okay and now we'll set form submission
+handle so we'll create a variable form
+here and start with the form submission
+Handler so we will add an event listener
+for the submit event on on the form when
+the form is submitted so the enclosed
+function will be
+executed so for that we'll create
+variable form equal
+to document
+dot get element by
+ID and we'll pass the ID of the form
+here that
+is that was payment
+form okay we have pass the ID
+here and now we'll add the event
+listener here that is form
+dot at event list
+now and what it will do it will
+submit and we'll create a function and
+we'll pass the event here so we'll
+Define this
+function
+okay so
+inside we use even
+don't prevent
+default so this will prevent the form
+from being submitted in the traditional
+way allowing us to handle submission
+with JavaScript for more
+control so that's why we'll use prev
+default here
+and after
+that we will use the create payment
+method and
+inside we add
+type and for this type we have
+card and
+then
+card and
+then
+function and we'll pass the result
+inside it and
+here so you could see that we have
+created payment method and then function
+so this line calls stripe to create a
+payment method based on the information
+entered into the card element and now we
+will use if else that will be a
+conditional statement that will check if
+there was an error in creating the
+payment method and if there is an error
+it is handled and displayed if not the
+else block continues and executes so we
+will declare the conditional statement
+here that is
+if result do
+error then here we will create a
+variable and name it as error
+element
+and that will have
+card errors that we have created
+alert
+okay and inside we will pass the ID that
+we have given in the form that is card
+errors and after that we will assign the
+text content for
+that for this variable only that is
+error element Dot
+text
+content and that's equal
+to result
+Dot error.
+message
+okay and after
+that we'll initialize
+else and in the else we will fetch
+create payment method so this line will
+send a request to your server
+that would be Server create payment
+intent endpoint that will passing the
+payment method ID in the body so for
+that we'll
+write
+fetch slash
+create
+payment
+intent and it will
+be pass method that would be the post
+method and then we'll set the
+headers those will
+be content
+type
+and the content type will be application
+SL
+Json
+okay and now we'll write the body for it
+that
+is Jon don't string
+I and
+inside we will pass P method
+ID and that will be result do payment
+method.
+ID and then it's closed and
+then we'll have
+function
+response
+and we'll use the conditional statement
+here if response is not
+okay
+then
+throw new
+error
+that would be Network response was not
+okay and we'll
+also print here the response. status
+text
+that what is the status
+or what is the error
+here and then here we will
+return response to text that will be
+handling response as text
+only
+okay
+and
+then we'll use the
+function and pass text to
+it and we'll create a data
+variable that
+is
+if
+text
+json.
+pass
+text
+and
+if data.
+error then we'll create a
+variable and name it as error
+element
+and pass the alert message
+ID card
+errors and we'll add the text
+content error element dot text
+content and that to equal to data do
+error and
+else there will be alert that the
+payment is
+succeeded
+okay and here we'll add
+catch pass
+error and inside we'll write console do
+error and inside we'll
+pass
+error and we'll create a
+variable error
+element and here also we'll assign the
+ID that
+is the card errors
+ID
+and here we will set the text content as
+error do message what
+error will
+be there it would
+be messaged as like displayed as
+message
+after this we will close
+it this
+two put that this will
+there then after that script is closed
+then body and
+HTML so this is our HTML file after
+intent so here we have created the
+create payment intent end point that
+will pass the payment method ID in the
+body and then we have return the
+response to text so this converts the
+servers response into
+text and then we have created a variable
+data and pass the text into Json format
+so this tries to pass the text response
+as Json if passing fails it defaults to
+an empty object and then we have another
+conditional statement that checks if the
+pass data contains an error if it does
+the error is displayed otherwise a
+success message is shown and then we
+have the catch statement so this catches
+any errors that might occur during the
+fetch request and displays them so we
+are done with the HTML file now moving
+to CSS file where we will
+modify or beautify our HTML elements so
+first we'll set the default font for the
+whole body content and for that we'll
+write the syntax
+body and inside we'll set the font
+family and you can
+set any fonts but here we are selecting
+the
+helvetica
+new and if this font is not available it
+falls back to helvetica and then aiel
+and then finally to default sense
+serif
+oh and now we'll set the background
+color for the whole body and that will
+set as light gray
+background so background color and for
+that we'll use
+the color code that is EC EC
+EC and then I'll set the margin for the
+whole
+body and then the
+padding
+and then we'll set the display and that
+to as
+Flex then we have the justify content
+and we'll make it as
+Center and then we'll set the Align
+elements with the Align items and that
+two will set it as Center and then we'll
+set the the
+height so we have set a light gray color
+as the background of the entire page and
+then we have set the margin as zero that
+will remove any default margin around
+the body and we have set the padding as
+zero that will remove any default
+padding inside the body and then we have
+display that we have set as Flex so this
+applies Flex boox layout to the body
+allowing its children to be Flex items
+and then we have justify content and
+that to as Center so this horizontally
+centers the content within the body and
+then we have align items and that to
+Center so vertically centers the content
+within the body and then we have set the
+height of the body to 100% of the
+viewport height and now we'll style the
+elements within the class
+container so for
+that we'll start with period
+container and first we'll set the
+background and for that we'll write the
+color
+code and we'll set it as bite
+only and then we'll set the
+padding
+then border
+radius then we have Bo
+shadow
+and now we'll set the width for the
+container and that do as
+100%
+and then we
+have Max
+width and we'll set it as 480
+pixels so here we have set the
+background color to white and then we
+have added a padding of two Ram that is
+a unit based on the root elements font
+size and that to around the content
+inside the container then we have set
+the Border radius that to at 8 pixels
+that will Round the Corner ERS of the
+container with the radius of 8 pixels
+then we have box shadow that adds the
+shadow to the container and then we have
+set the width as 100% so the container
+takes up 100% of the width of its parent
+element and then the maximum width of
+the container is set to 480 pixels now
+we'll style The Heading of a HTML now
+we'll add the CSS for the headings and
+we have used H1
+tag so for
+that we'll start with H1 and add the
+color for the
+heading and for this two we'll use the
+color
+code and we'll use the black color
+here and then we will set text
+align and we'll set it as
+Center and then we'll set the margin
+bottom and that
+two at 2
+RM and now we'll style the card
+element so for that we'll write hash
+card
+element and start the CSS for it so
+we'll set the
+padding
+as 0.75
+RM now let's set the
+border so the Border would be 1
+pixels and with solid and we'll give it
+a
+color we'll give it a gray color so for
+that we'll write the color code and then
+we have border
+radius and that will set as 4
+pixels and then we'll set the margin
+bottom and put that we will assign a
+value 1
+RM and then we'll set the background
+color so background color would
+be
+light gray and for that we'll write the
+color
+code so the card element is done now
+we'll move to the submit button and
+style for the elements with the ID
+submit
+button so we'll start with the submit
+button
+and first we'll set the background color
+and we'll set it as
+green and for that we'll write the color
+code that is 22A
+45d and then let's set the whole button
+color as
+white
+so and then we'll add the padding
+and this padding will added inside the
+button and we'll set the Border as
+none moving on we'll set the Border
+radius and that two with 4
+pixels and here we'll set the cursor as
+pointer so it will change the cursor to
+a pointer when hovering over the
+button and we'll set the width as
+100% so it will make the button span the
+full width of its parent and now we'll
+set the font
+size and this will set it as 16 pixels
+so it will set the font Sid of the
+button text so now we will style for the
+submit button when we will hover it
+over so it will change the color so
+we'll set the background
+color when we'll H over the submit
+button so when we'll H we'll set the
+background color as light
+green so for that we'll write the color
+code you could get these color codes or
+just write the name of the color and now
+we will style the elements with the ID
+card errors so we'll set color for it
+and margin top so for card
+errors we will style it and add the
+color as light red you could just write
+the name of the color or
+have the color codes online and now
+we'll set the margin
+top and we'll set it as V
+RM and now we'll set a media query for
+screens with a maximum width of 600
+pixels so for that we'll write add the
+rate
+media and inside we'll pass Max
+width
+and that is 600
+pixels and we'll set the
+width to
+90%
+so this is a CSS file and we are almost
+done with
+it so first let's move to app.js
+file and we'll add the function ality
+for
+it so here we will first add required NV
+so here are first line adds environment
+variables from a EnV file into process.
+EnV that we have used here for the
+stripe secret key so this is used to
+securely access sensitive data like API
+key and then we are importing the
+express.js module that is a web
+application framework for nodejs and
+assigns it to the variable Express and
+then we have imported the stripe module
+for nodejs and initialize it with the
+stripe secret key from the environment
+variables so this is used for secure
+communication with the stripe API and
+then we have imported the path module a
+core nodejs module that provides
+utilities for working with file and
+directory paths and then we have created
+an instance of an express application
+and assign it to the variable app
+and now moving on we'll set the port for
+the server so it first tries to use a
+port number defined in the environment
+variables and that is used for
+deployment or default to 3,000 for local
+deployment so we'll set the port
+here equal
+to processes do Port
+EnV
+port and we'll set the port as
+3,000 so we'll use the port from the
+environment or fall back to 3,000 and
+now we'll pass the Json and URL encoded
+data with buil-in
+midw
+so here we'll use the express app to use
+middleware for passing incoming Json
+payloads so this is necessary for
+handling Json data sent in request so
+for that we'll write
+app.use and inside we'll write express.
+Json and then we'll
+use Express
+dot
+URL encoded so this will enable passing
+the URL encoded data like the data from
+HTML forms with the query string Library
+so the extended true option allows for
+Rich objects and arrays to be
+encoded so for that we'll write Express
+to URL
+encoded and inside we'll pass extended
+as
+true and now we'll serve the static
+files from the public
+directory so here we'll create a
+variable that will contain the path to
+the current directory and we'll set path
+to Joint that is used to create a path
+to the public
+directory so for that we'll write app.
+use and we'll use
+express.
+static and we'll join the path for that
+we'll
+write path note
+join directory
+name and the name of the directory that
+is
+public
+and now we will create endpoint to
+create a payment
+intent so this will define an
+asynchronous route Handler for post
+request so that to to the create payment
+intent endpoint so it will use async or
+a wait for asynchronous operations so
+let's create the post
+route
+so for that we'll write app.
+poost and
+inside we
+will pass the
+request that
+is create
+payment
+intent and now we'll use the async or uh
+wait for asynchronous
+operations so inside the handle we will
+use required. body and this object is
+destructed to extract payment method ID
+and amount so we'll use
+the try block here try and
+catch and inside try we'll create a
+variable and inside we'll pass payment
+method ID and
+amount
+and that will set as required dot
+body so this object is destructed to
+extract payment method ID and amount and
+now a stripe payment intent is created
+with predefined values and the extracted
+payment method
+ID so in a production environment we'll
+make sure to validate the amount that
+the user is supposed to pay before
+creating the payment
+intent so let's create the payment
+intent that would be a stripe payment
+intent and that for the predefined
+values so we'll create the variable and
+name it as payment
+intent and use a
+weight stripe dot payment
+intents dot
+create and inside we'll set the amount
+so you could set the amount in the
+smallest currency unit so we are setting
+it as
+1,000 and then the
+currency you could set any currency we
+are setting as US
+dollar and then the payment
+method
+and then the confirmation
+method and we'll set it as
+manual
+and then we'll set the
+confirm as
+true and then we'll set the return
+URL
+that will return you after completing
+the payment to the provided
+URL
+and now we'll send the client secret
+back to the
+client so we have implemented the error
+handling to catch and respond to any
+issues during the creation of the
+payment
+intent so will send the client secret
+back to the client for that we will
+create the client secret of the payment
+intent so that will
+send that response back to the
+client for that we'll
+write rest. join and
+inside we'll pass client
+Secret
+and the payment intent do client
+secret and now we'll close the dry block
+here and start the catch
+block and pass if there is any
+error so what it will show console do
+error
+and it will display error creating
+payment intent and then it will show the
+error and it will also show the
+status and
+the stat repeat and the status as
+500 and here we'll pass the
+Json and display the error
+message
+and now we'll start the express
+server and for that we'll write the
+command app to Lon and it will start the
+server and listen for connections on the
+specified port and when the server
+starts it logs a message to the console
+indicated the port it's running
+on so for that we'll write the command
+app to Lon
+and inside
+Port
+console.log so server started on Port
+and then the port
+number
+so here we are done with our app.js
+file and we have created the server so
+let's move to the
+terminal and run the command node the
+file
+name node
+app.js so we are getting some errors
+here
+yeah and don't forget to paste your
+secret key in the EnV
+file
+so we have pasted the file uh we have
+pasted the key here and let's start the
+server
+again so to disconnect the server just
+type the command contrl
+C and let's start the server
+again
+so you could see that the server has
+started and it's at the port number
+3,000 so you can move to any
+browser and just type the
+command
+or https Local Host and the port number
+is
+3,000
+so you could see
+that this is our payment page so welcome
+to the simple payment page here you can
+test with any of the test cards
+available on the
+stripe so we have one of the cards we
+will enter
+that
+and click on the pay
+button so you could see that an alert
+has been displayed that Local Host 300
+says the payment has been succeeded and
+after clicking okay it will move back to
+the return URL that is the payments
+page
+so finally we have
+integrated the stripe payment Gateway
+with our website so with that we have
+come to the end of this session of
+integrating stripe with nodejs and if
+you have any questions or comments so
+comment them in the comment section
+below and our experts will be happy to
+help you as soon as possible until next
+time stay safe and keep learning staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on on
+the path to Career Success click the
+link in the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

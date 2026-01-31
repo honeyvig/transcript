@@ -1,0 +1,285 @@
+hi traders so in the previous video i
+showed you how to set up pine connector
+with metatrader4
+in today's video we're going to cover
+the exact same steps for benetrader 5.
+so this is my pepperstone demo account
+client area
+this broker offers metatrader5 so now
+i'm going to download
+metatrader5 and go through all of the
+steps we did in the previous video where
+i showed you how to set this up for
+metatrader4
+the steps are very similar so i'm just
+going to save this file to my downloads
+folder
+then i'm going to install metatrader5
+just to the default directory
+and click finish close this webpage
+and metatrader5 is installed now i just
+need to log
+in to do that i just click file login
+to trade account then you need to find
+your broker's server
+mine's already listed here so i can
+click next
+and then log in with an existing trading
+account
+paste over my id and my password
+select the right server here click
+finish
+and we're in so just to make sure this
+is working i'm just going to buy
+a euro dollar just 0.01 lots
+there we go working perfectly fine
+so now let's close this trade and
+install
+pine connector the steps are identical
+to metatrader4
+the first thing we need to do is open up
+our data folder so
+file open data folder open up mql5
+open up experts now this is where we
+need to paste our
+expert advisor file so let's go over to
+the pine connector
+website click on download mt5ea
+save that to my downloads folder then
+browse to that folder
+cut this file and paste it into
+my experts folder here now i need to
+close metatrader5 and reopen it so that
+the platform can
+load that script metatrader5
+now when we open up this little drop
+down box
+the pie connector ea should be in there
+there we go
+now it's the same steps as before i can
+close all of these windows
+maximize this one now before we add this
+to the chart we need to
+come up to tools and then options and
+adjust some of these settings
+we need to go to the expert advisors tab
+and
+then we need to allow algorithmic
+trading and allow
+dll imports now these other settings are
+optional
+i'm going to untick them now we can
+click ok
+and now we can add the ea to our chart
+if this window isn't open for you just
+press ctrl
+n right click on the pi connector ea and
+click attach
+to chart then we need to make sure that
+allow dll inputs
+is enabled then we need to go to the
+comments tab
+and make sure allow our go trading is
+enabled
+then finally we need to go to the inputs
+tab and paste
+in our license id into this text box
+here
+so to do that we need to go back to our
+account page on the pi connector website
+copy this license id here
+and paste that into that text box there
+and then the next thing i need to do is
+change my target type
+to based on price and my volume type
+to percentage of account balance
+click ok and there we go if you have
+this message up here that means that the
+expert advisor was successfully
+installed onto the platform and this
+date is your expiry date for your free
+trial so now we can go over to trading
+view and test
+our command i'm just going to test the
+same command that we wrote
+out in the previous video or previous
+lesson covering how to set up
+metatrader4
+the syntax alert syntax is identical
+between mt4 and md5
+so let's jump over to the trading view
+platform
+and this time i'm on aussie dollar just
+for something a little bit different
+i've changed my ticker to aud usd
+my risk to one percent of my account and
+my stop loss is at 74 cents
+and take profit at 76 cents now remember
+you will need to change your ticket id
+based on whatever your platform
+however your platform handles your
+ticker ids if you've watched my previous
+video lesson on metatrader4 you'll know
+that
+my ticker ids over there ended with a
+dash 2.
+so whenever i sent the ticker symbol to
+pi connector i had to add a dash 2 onto
+the end of my
+symbol this particular broker pepper
+stone does not have that
+formatting i can just send the standard
+ticker id
+to this platform if the market you want
+to trade
+isn't listed here just press ctrl u and
+that will bring up the
+symbols list now you can see that pepper
+stone have a much better organized
+group grouping name convention compared
+to
+the oanda metatrader4 platform that was
+a mess
+now you need to make sure that the
+symbol you want to trade has this yellow
+little dollar sign next to it so for
+example if you wanted to trade euro
+aussie
+i would need to double click on this to
+enable trading on this instrument
+in this case i'm trading a major pair
+aussie dollar which is already enabled
+but just make sure that you write out
+the right ticker id
+here if you have weird symbols after or
+before the
+symbol name or the actual ticker make
+sure to include that
+in your alert message all right so now i
+can click save
+and let's see if the alert will work
+there we go the alert just fired
+and i have an error so i was doing some
+testing earlier
+and i'm not sure what is causing this
+error
+if we open up the point connector
+documentation scroll down to the very
+bottom and click
+on errors if i click on that and scroll
+down to the meta trader 5
+error codes section you can see the list
+of errors here
+and their value i'm getting error 4756
+which means trade request sending failed
+and this is apparently commonly caused
+by an unsupported
+filling mode uh if this is the case then
+i need to download a different copy of
+this expert advisor or no prices
+which means the symbol was not
+highlighted in yellow in symbol list
+my symbol is definitely highlighted in
+yellow so i'm guessing i'm getting this
+error here i'm not sure what causes this
+error and the reason i've
+left all of this in this video even
+though i'm getting this error is because
+it's possible that your version of the
+latest ea
+does not have this problem on whichever
+platform and broker you're trading
+through
+but for me in order to fix this error i
+need to click
+on download this copy of the ea which is
+a different version of this pi
+connector expert advisor you can see
+that it's 2.025 instead of 2.03
+so i'm going to save this file into my
+downloads folder i'm going to come back
+to metatrader close this error window
+and i'm going to delete the
+pi connect.mt5 203 file so just delete
+that expert advisor click yes
+close metatrader open up my downloads
+folder
+find this new metatrader5 expert advisor
+file here
+the 2.025 i'm going to cut that
+open up my experts folder for mt5 and
+paste that in here
+and now i need to do all of these steps
+again so i need to
+open up metatrader 5 again
+now you can see that this expert advisor
+has been loaded the 2.025 version
+i'm going to just quickly open up the
+aussie dollar market on my chart and now
+i need to do all of these steps again so
+i need to
+click on pi connector right click attach
+to chart
+i need to make sure allow dll imports is
+selected then i need to make sure that
+allow algo trading is enabled
+then i need to go to inputs and paste my
+license id
+in here so let me go back to my account
+page copy this number here open up
+metatrader and paste it into my license
+id
+now i'm also going to change my take
+profit to be based on price
+and my volume type to be based on my
+account balance percentage of account
+balance
+now if i click ok that should add this
+expert advisor to the chart you can see
+the expiry date up here
+showing that means that the installation
+was successful
+now when i run my trading view alert
+this
+should work with this version of the
+expert advisor
+so let's go back to trading view and
+re-save this alert i'm going to click
+save
+open up metatrader and there we go
+this alert worked you can see that the
+platform just opened up a buy position
+on aussie dollar
+with the with opening price of 75406
+stop loss of 74 cents take profit of 76
+cents
+and we have a 0.07 volume
+or around 7 000 units which amounts to
+roughly 1
+of a 10 000 us dollar account balance so
+that will do it for the metatrader 5
+setup guide for pine connector i will
+see you in the next video where we will
+test a bunch of
+different alert commands through the
+platform now if any of this was
+confusing to you
+do make sure to go to the point
+connector website
+and read through these setup guides if
+you get any weird error codes
+make sure to scroll to the bottom of the
+page click on errors
+and there should be a description for
+each error code
+that you might get and of course if you
+run into any problems that you
+can't solve yourself make sure to send a
+message to the pine connector
+support team by just clicking on this
+little message box here
+and the team will help you with any
+problems you have anyway i'll leave it
+there take care best of luck with your
+trading and i'll see you in the next
+lesson

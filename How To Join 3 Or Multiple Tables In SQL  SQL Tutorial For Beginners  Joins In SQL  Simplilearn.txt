@@ -1,0 +1,134 @@
+YouTube channel in this session we will
+learn about how to join three or more
+tables in SQL that's right so so far we
+have a fundamental understanding of how
+to join two tables but in a few
+situations you might have to extract the
+data by joining three or more tables
+right so that's exactly what we are
+going to discuss today so that's said if
+these are the type of videos you'd like
+to watch then hit that like And
+subscribe buttons and the bell icon to
+get notified whenever we host just for a
+quick info if if you want to upskill
+yourself to master business analytics
+skills and landar your dream job or grow
+in your career then you must explore
+simply learn SC of various business
+analytics programs simply learn offers a
+post-graduate program in business
+analytics from P University in
+collaboration with Amazon Google and
+Microsoft through this program you will
+gain knowledge and work ready expertise
+in skills like prescriptive and
+Predictive Analytics regression and
+classification and overed as others
+that's not all you also get the
+opportunity to work with multiple
+projects and learn from industry experts
+in top TI product companies and academic
+from top universities after completing
+these courses thousands of Learners have
+transitioned into a business analytics
+role as a fresher or moved onto a higher
+paying job profile if you are passionate
+about making your career in this field
+then make sure to check out the link in
+the pin comment and description box
+below to find a business analytics
+program that fits your experience and
+areas of Interest now without further
+delay let's get started now we will jump
+into the MySQL workbench where we have
+our query ready so here we will be using
+three tables employee details employee
+register and employee joining register
+so we want employee name contact number
+and joining date joining date is
+available in joining register contact
+number is available in employee register
+and employee name is available in
+employee details right so here we are
+utilizing all three tables and joining
+them to extract these three columns so
+here I'm providing the table name and
+the column name to make sure that the
+SQL workbench will not get confused
+which employee name I mean which
+employee name column should I access
+which table should I use so to clear
+that confusion I'm providing the table
+name so my SQL will use employee details
+table and from there it will extract the
+employee name column and contact number
+to be sure it is present in only one
+table so it will go to employe register
+and joining date it is also present in
+only one table so no need to specify the
+table name but to be on safer side if
+you want to add you can add that's well
+and good and it will create an impact to
+your interviewer considering that you
+know about the syntaxes so I'll just
+follow the normal syntax the way I'm
+going now and now I'm trying to join
+it's the same operation what you use to
+join two different tables so you'll just
+join use the join clause and give the
+second table name and on what basis so
+so I'm joining these two tables on the
+primary key employee ID so both tables
+have the same common employee ID So
+based on that I'm joining these two
+tables and then you will use the join
+Clause once again and give the third
+table name here and based on which
+primary key or which common key so this
+is the one which is common in both the
+tables and is unique which is the
+employee ID so I'm using the same one to
+join the two tables with the third one
+you can follow the same syntax and join
+another table to it as well well so with
+this let's execute this particular query
+to find our answer so there you go you
+got the query executed and you have the
+table over here with employee name
+contact and joining date so with that we
+have come to an end of this session on
+how to join three or more tables in SQL
+if you have any queries regarding any of
+the topics covered in the session or if
+you require the details or resources
+that we used in the session like code
+document or PP then please do let us
+know in the comment section below and
+our team of experts will be happy to
+resolve all your queries at the earliest
+until next time thank you for watching
+and stay tuned for more from Simply
+learn staying ahead in your career
+requires continuous learning and of
+Skilling whether you're a student aiming
+to learn today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+for digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn ner up and get certified
+click
+here

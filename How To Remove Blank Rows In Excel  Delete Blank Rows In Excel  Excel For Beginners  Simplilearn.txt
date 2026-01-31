@@ -1,0 +1,122 @@
+hey everyone welcome to simply loans
+youtube channel in this session we will
+be learning how to eliminate blank rows
+in excel but before we begin let me tell
+you guys that we have daily updates on
+multiple technologies so if you're a
+tech geek in a continuous hunt for
+latest technological trends then
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn now without further
+ado let's get started with our one point
+agenda that is how to eliminate rows in
+excel
+now let's get started with the practical
+move
+now we are on our spreadsheet and you
+can see i have some sample data on my
+spreadsheet and it does have some
+blank rows
+now how do i eliminate these blank rows
+so one step is you can you know select
+the entire row and try to right click
+and delete it
+again this sort of method might take
+hours to get rid of all the blank rows
+and most of the time you might end up
+even selecting the rows with data in it
+right so if i want to select multiple
+rows
+then i'll be
+selecting some rows with data as well
+which might be a little troublesome in
+the future now let's try to use the
+easier way now for that go to the find
+and select option
+select the go to special option and in
+that select the blanks option and press
+ok
+now hold ctrl key and press minus key
+and you will have an option of deleting
+the cells now select the entire row now
+we are selecting the entire rows with
+blank data and press ok and the cells
+will be shifted now this was simple
+but let me show you another example
+so even here we have some blank rows but
+in between those blank rows for example
+take cell 17 or cell d17 or row 17 we
+have some data testing
+and here in the employee id we have some
+data in a26
+and again in b39 we have some data that
+is first name
+right in such scenarios how do i
+eliminate data
+so we have a simple logic for it so all
+we need to do is add another row which
+is to count the number of cells in the
+row
+now that can be
+count
+now here equals to the function is count
+a
+let's tab
+and
+the cells will be from
+a2
+to
+g2
+press enter now you have 7
+so now we are basically calculating the
+number of cells so if you apply the same
+to the entire
+data set
+let's drag it
+and there you go so there are certain
+places where you find zero which are
+basically the empty columns right
+now let's do some formatting if you need
+let's try to add filters
+ctrl a ctrl t
+and now table will have filters and
+headers
+now here you can see the drop down icon
+click on that
+now instead of select all what you can
+do is select zero
+now you will be highlighted with all the
+rows which do not have any data
+select all those and press on delete or
+what you can do is
+the same way
+control minus
+and there you go
+now
+clear the filter
+now all you have is the data
+without any kind of blank rows
+so all the rows that had some amount of
+data are retrained and all the data or
+all the cells or all the rows which do
+not have any data which are completely
+blank they have been eliminated so
+that's how you eliminate blank rows in
+excel with that we have come to an end
+of this tutorial if you have any queries
+regarding any of the topics covered in
+this session or if you require the data
+set that we used in this session then
+please feel free to let us know in the
+comment section below and our team of
+experts will be more than happy to
+resolve all your queries at the earliest
+until next time thank you stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

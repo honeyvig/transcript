@@ -1,0 +1,95 @@
+foreign
+'s YouTube channel in this session we
+will learn how to add date element into
+the SQL tables but before we begin let
+me tell you guys that we have daily
+updates on multiple Technologies if
+you're a tech geek in a continuous hunt
+for latest technological friends then
+consider getting subscribed to our
+YouTube channel and don't forget to hit
+that Bell icon to never miss an update
+from Simply enough now without further
+Ado let's get started now you might be
+having multiple questions is adding a
+date is that tough and SQL tables no you
+can add a date and SQL in the format of
+worker or character everything but if
+you want to perform analytics then using
+the date format or date data type would
+be more beneficial right so for the SQL
+table you do have some formats to follow
+so that's exactly what we are going to
+discuss in this particular tutorial now
+let us imagine that we're going to
+create a table using the following
+syntax that is create table keywords
+table name which is a user defined table
+name and the parameters their respected
+data types and at the end let's say we
+have a date element as date of joining
+and for date of joining we will have the
+data type as date right then let's see
+the code
+and you need to make sure that when you
+are trying to enter the date element
+into your table you need to be a little
+more cautious to follow a pattern SQL
+has predefined approach to store dates
+which is in the format of YY here mm for
+month DD for dates you need to follow
+this particular way of writing your date
+and if you make some minor at let's say
+you add a date first then the month and
+then the year then obviously SQL will
+throw an error so we don't want that to
+be happening so in that case let's try
+to follow the approach that SQL has now
+let's quickly go back to SQL workbench
+and see how exactly it works so here we
+are back on the SQL workbench let's run
+this use database command to get access
+to our database there we go now let's
+see we have a freshly created database
+and it doesn't have anything
+right now we will add these particular
+details into the data table and here you
+see we are following the
+year month and date approach right now
+let's quickly run this command and there
+you go the date has been updated into
+the table let's now run the command
+again now we have the dates here now
+let's say we try to break the rules now
+we will try the DD mm and the YY format
+here right now let's try to run this
+particular code once again so let's
+eliminate all the previous elements
+and let's consider this as a new entry
+right now let's try to execute this
+there you go so it will automatically
+throw an error saying the date value is
+incorrect you need to change it back to
+the original form that is YY month and
+the date
+only then it will accept this particular
+value
+there you go
+so that's how you add date to your SQL
+tables and with that we have come to an
+end of this session on how to add date
+into your SQL tables and if you have any
+queries regarding any of the topics
+covered in this session or if you
+require the resources that we used in
+the session like PPT code Etc then do
+let us know in the comment section below
+and RTM of X Plus we'll be more than
+happy to resolve all your queries at
+your list until next time thank you stay
+safe and keep learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

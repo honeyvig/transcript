@@ -1,0 +1,650 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn
+about the latest Dax and filter
+functionalities that are recently
+updated into CBI that's said if these
+are the type of videos you'd like to hit
+that like And subscribe buttons and the
+bell icon to get
+notified craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your ambition
+whether you're making a switch or aiming
+higher simply learn has your
+back just for a quick info if you want
+to upscale yourself master powerbi
+skills to landar your dream job or grow
+in your career then you must explore
+simply learns pl300 which is a Microsoft
+powerbi certification training that we
+have recently included into our arsenal
+of data analytics this program enables
+you to solve business problems and
+improve operations
+this course helps you master the
+development of dashboards from publish
+reports discover better Insight from
+data and create practical recipes for
+various tasks that you can do Microsoft
+powerbi that's not all you also get 30
+plus hours of Blended learning industry
+based projects for experimental learning
+dedicated live lessons by faculty of
+Industry experts industry recognized the
+course completion certificate and many
+more after completing this certification
+thousands of Learners have transitioned
+into a data analytics role as a fresher
+or moved onto a Higher beinging job
+profile if you are passionate about
+making your career in this field then
+make sure to check out the link in the
+pinned comment and description box below
+to find more details about the pl300
+Microsoft powerbi certification training
+that said let's get back to the training
+session for today so Dax is basically
+the data analytics expressions and in
+Dax we have a lot of Dax functions
+namely aggregate date and time filter so
+this is filter One Financial functions
+information Math logic and many more so
+we are covering one after the other Dax
+functionalities in our powerbi playlist
+we have already covered aggregation and
+date and time functions now we are going
+to start with Filter functions now what
+exactly is a filter this is a
+straightforward question and you will be
+expecting a straightforward answer right
+you will be applying some filters or
+conditions based on which you will try
+to filter out and extract the data let's
+say we have four years of data 2021 2 3
+and 4 and you wanted to take a look at
+the latest data from 2023 to 2024 what
+you do is just apply a filter change the
+dates and apply the condition that I
+want the date from 2023 to 2024 and rest
+everything you can leave and the data
+will be extracted so as simple as that
+so uh we're not just covering that basic
+filter here so we will be covering some
+most frequently used and latest updated
+filters in PBI like the calculator
+filter so there are types of filters
+filters for one dedicated page and all
+filters and after that some lookup
+values match buy and match functions
+fuzzy match offset AUD bu Partition by
+range right so and window so these are
+the newly updated uh filter functions
+and apart from that all everything is as
+the same old Power Pi so a few of them
+are recently updated in the recent times
+now let's get back to the um functions
+which are we will be discussing today so
+this is the first one which is the
+filter function apart from that we will
+take a look at the lookup value so when
+it comes to lookup value if you are
+someone who knows Excel then you might
+be wondering lookup is the best maybe
+one of the best features to look for
+value and extract the detail so we have
+multiple lookup functions which is X
+lookup we have V lookup we have H lookup
+and if you're not a big fan of lookup we
+also have index match which is also an
+alternative the best alternative to
+lookup functions but when it comes to
+excel it's 100% reliable but when it
+comes to PBI of course we can say it is
+reliable but as far as your data doesn't
+have any discrepancies let's say I'll
+give you a simple um use case so so
+let's assume that in this use case you
+are dealing with um School data so rule
+number one rule number two and rule
+number three so U rule number one has
+someone named as Jack and role number
+two has someone named Jackie right so if
+you are using a fuzzy match let's say
+you are don't want to okay when it comes
+to fuzzy match I'll let you know what
+fuzzy match does so what fuzzy match
+does is let's say j a c k are the first
+four letters j a k i e okay let me open
+up a simple spreadsheet so I so that I
+can tell you in a much better way so uh
+FC one and let me also open up
+fc2 so here we have uh two different
+files right so here you can have some
+customers data LS ballot and here we are
+missing a d and in Ben feda here we are
+having some case sensitivity so the
+second name f is capital and here the
+second name f is small so what is
+happening here is there is a slight
+discrepancy maybe a spelling mistake
+maybe a case sensitivity right so pubi
+assumes both Ben feda and the second Ben
+feda are two different entities right in
+such scenarios and in in a few in a few
+other situations where you are dealing
+with data duplications maybe uh the
+username for a dedicated ID username
+Jack for user ID one and user ID 2 is
+also having a name as Jack right there
+might be two different Jacks right so
+Jack one is different and Jack two may
+be different correct two people can have
+same names so in such scenarios the
+lookup might not work properly so in
+such situations we will be using some
+alternate functions there so it's like
+the calculate function so we will also
+have a demo on that after that we have
+uh the match by so that's that's where
+we'll be discussing about the fuzzy
+match and we have offset so you'll be
+having a deep understanding of offset if
+you are some one who deals with
+databases on a daily basis and that is
+something new which has been covered in
+powerbi and along that you have aut by
+Partition by so these are the few
+different functions we will be learning
+today so that is the brief introduction
+of this today's session now let's
+quickly switch to powerbi and try some
+practical demonstrations so there you go
+we are in the uh report view right now
+let's quickly shift to table view so
+here we are dealing with uh four
+different tables this is our ORD table
+customers table and sales table right so
+in our previous session we dealt with
+data modeling where we had multiple
+tables and we kind of establish a
+connection right so I'll if I want to
+try to establish a connection I'll just
+drag and drop this matching customer IDs
+with the other tables and basically get
+the connection between them I can model
+the data table right and if you are not
+a fan of doing this manually you can
+also get that done from from probi
+itself from the options which is
+mentioned in the previous session so um
+so far so good so here we will start off
+with uh you know look up values now we
+have customers data correct so when you
+look at the customers data we have kind
+of 1 2 3 4 five six columns customer ID
+customer name where does he or she
+belong to where is the state country
+region is it Central north right and
+this is the basic information we have
+and when it comes to orders we have
+order ID customer ID order name order
+date and when it comes to sales this is
+what we have here and shipment is about
+the order date and shipment shipping
+mode right now what happens is you're
+about to present this data to your
+client or your manager and here she
+wants a little more detail let's say he
+doesn't know to uh build a chart build a
+visualization
+he just anything right so he just wanted
+to add one more detail to this
+particular table he wants to know which
+product did to be order right so he
+wanted to have the product name right in
+front of customer's name so how would
+you do that so it's a simple lookup
+function right now here we have the
+lookup function so let me erase that so
+it's simple you just select the okay let
+me also remove this from the model just
+right click and you will be getting the
+option of delete this from the model
+okay let's create it from the scratch
+now I just have six tables let us assume
+that we wanted to add a new column here
+right so it's simple you just select the
+table right and after you select the
+table it will be basically in the Home
+tab now after you select the table you
+get the table tools right and here
+select the option of new column correct
+so a new column will be generated now
+you can maybe name the column so I'll
+name it as
+product
+ordered equals to so lookup so it's not
+a v lookup it's not a h lookup it's you
+know there's no dedicated name to that
+it's just named as lookup value so I
+presume it's a x lookup anyways so
+that's how you access the lookup
+function now what you are looking for
+what are you looking for basically if
+you're dealing with Excel you write the
+lookup function not the result right you
+actually give the address or reference
+of the cell where you have the value
+which you are looking for but here you
+are focusing on the result what you want
+it to have there so we want the product
+name here right we not giving a cell
+reference where you have a look of value
+it's not that way what you're expecting
+to have in your column we are expecting
+we expecting to have the product name
+right so the product name various
+product name so the product name is
+inside sales table you can see product
+name over here right so go back to your
+uh look up function here you will have
+the name so the table name is sales so
+you have sales and you're looking for
+product name press St to select there
+you go now search column so search
+column is let's say in Sal table you
+have customer ID and product name and in
+customer table you have customer ID and
+customer name correct so there is a
+primary key in customer table that is
+customer ID and here you can reference
+customer ID as a foreign key from sales
+table right so what you're going to do
+is you have the product name so you now
+are looking for the customer ID right in
+sales table in customer ID column what
+customer ID is there in front of a
+product name correct so okay let's not
+complicate this let me open the sales
+table so here you have the product name
+right so now you have given the the
+first lookup value you have given the uh
+okay let me open the function okay so
+you given you've given the required
+result you've given the name now you are
+pointing to this customer ID right so
+you are pointing to this customer ID so
+for the respective customer ID you're
+trying to extract the product name so
+that's the basic approach now so we have
+given the first uh value now the second
+one second parameter is search value
+that is sales customer ID press after to
+select and the last one search value so
+what you're looking for so you're
+looking for the customer ID from the
+customers table so what you have to do
+was uh customers table customer right
+press stab to select now close the
+bracket and if you enter you will get an
+error that was expected as we discussed
+before so the problem is one customer ID
+might have purchased different products
+correct so uh TS
+2134 might have purchased um some
+product from technical uh category and
+some product from uh Furniture category
+correct so what lookup is thinking is it
+is thinking it is a duplication of the
+entry so it is understanding it in this
+way so I can't extract so basically
+lookup will extract one value right now
+here what happening what's happening is
+this lookup function is trying to
+extract multiple values right so that's
+what it is saying a table of multiple
+values was supplied where a single value
+was expected correct so there is a look
+around for this now basically I just
+wanted to help you understand how a
+lookup function Works in this particular
+scenario so to get the answer for this
+question we might have to you know make
+things a little little different and to
+try to look around for the value so we
+will use calculate function for this
+particular one so calculate calculate
+and uh first no first non blank press
+select and uh
+okay so what we doing is we are
+implementing a calculate function so
+let's say TS 21 3 40 has three entries
+so what we are doing is the first
+non-blank entry so the first row we are
+selecting that particular one from the
+sales product name and we're going to
+filter all sales and wherever the
+customer ID from customer table is
+equals to the customer ID from sales
+table we will pick those entries and
+after picking those multiple entries we
+will just pick the topmost value and we
+will fill the product order just now
+enter and uh okay I thought we should
+refresh but automatically it got
+refreshed and we have the names of the
+product being ordered so that's how we
+use the lookup function in pobi and
+there is a turn around if Cas in in case
+if your powerbi is unable to detect the
+look up value that's what you can do but
+there is another way might be a
+difficult one you might have to check
+your data set and make sure that each
+and every entry is unique so that's not
+uh that's not something which can you
+can do overnight so this is a quick work
+around for your lookup formula now if we
+go back to the report stage and page one
+here we have filters correct so the
+basic filters and you don't have uh
+filter by visual there are a few more
+options if you just switched back to the
+introduction of this course so we had uh
+new functions which is filter by
+visualization filter by a few more
+operations it can apply filter to a
+dedicated sheet you can apply filter to
+the entire uh sheets right here you can
+see the option add filters to this page
+alone so we have page one and page two
+so if you want to add a specific filter
+to overall all pages you can add such
+filters over here so these are the two
+filters that we already know and how
+they work now let's try a new filter
+which is the filter by visualization let
+me try to build a donut chart and drag
+region into Legends and sales into
+values right now what we have here is a
+visualization so whenever you try to
+build a visualization onto your page you
+will find a new filter over here which
+is named as filter on this Vision right
+so what you can do is you can just drop
+down and here you have a specific
+filters that you can apply and maybe if
+I want to apply filters for central
+region I just add it and I get a central
+region filter now if I maybe I want to
+add the category sales I can also do do
+that and uh let's say if I want to
+dedicatedly find the sales that happened
+inport Central and East I can do that so
+that's a new addition to power not not
+so great or not so out outstanding out
+of the box but this is how it basically
+works just an additional tool in the
+Arsenal and uh filter by page so
+basically that's the filter what you are
+adding and want to work on this
+particular dedicated page you can do
+that if you want to add a filter that
+works for all the pages you can do that
+over here right so this was
+filter by Visual and a few more new
+filters that got addition to the powerbi
+and uh if we get back to uh page one
+page two and Page Three page one and
+data view okay this is the data view so
+far we covered calculate look up filters
+now let's try to uh look around a few
+more editions so if you go back to this
+particular documentation from Microsoft
+so here we have match by okay let's uh
+discuss the fuzzy match so here as we
+discussed before so these are the data
+sets now let me open a new uh PBI window
+and try to load that
+data there you go let us import the
+spreadsheets so we are importing the
+first FZ1 fuzzy match one just select
+the sheet and load data so we're not
+transforming the data it's really small
+and it's uh it's something which we
+created just for a demo purpose so there
+there are no problems with the data set
+as for as I know so there is no need for
+transforming you can just directly load
+the data so we have the sheet one right
+here and Sheet two should be shly
+loaded yeah so the first data set is
+loaded now let's try the second
+one there you go now we have both
+sheets let's quickly go to the table
+view so that we have the table view
+there you go now we are trying the fuzzy
+match function right for that we should
+be going back to the uh report View and
+here here we should transform the data
+as you can see uh the column header the
+first row of the column header was
+supposed to be uh considered as you know
+the first row of the table was supposed
+to be considered as the column header
+but it's not so that is something which
+can be fixed in transformation right so
+apart from that let's go to the
+transform data that we have here and uh
+here you have the merge queries options
+so you can merge it as new and in this
+particular dialogue box you can use this
+particular option which says fuzzy match
+to perform the match so what does fuzzy
+match does so fuzzy match is something
+which gives you a threshold let's say if
+there is at least maybe some match okay
+so here we have Ben ferner and Ben
+ferner right so there is something which
+makes it different from the other that
+is the uh capital F right so the case
+sensitivity is something which makes it
+different and if you the other ones like
+Lis so a d is missing at the end in the
+second name right so we can give powerbi
+some thr maybe if you find a 90% match
+you can consider it as one and the same
+right that's what this uh fuzzy match
+does and match does right so if you are
+looking for an exclusive tutorial on
+Match function in Excel and match
+function in powerbi we do have those
+tutorials we will have them Linked In
+the description box below you can have a
+look now we have loaded the sheet one
+and this is the sheet two so here you
+can add the fuzzy match and uh you can
+also choose what type of merge you want
+to do deal with it I'll go with the full
+out one and that's done right and here
+you have the fuzzy matching options
+where you can give the threshold maybe
+you can give ignore case match by
+combining text pass and you can give the
+threshold maybe as
+90% and uh maximum number of matches
+optional and transformation table
+optional yeah that should be good enough
+and you can establish a fuzzy match so
+this is uh the next part of the tutorial
+and uh so far so good now what's left is
+maybe we can deal with uh okay let's go
+with visal documentation so far we have
+done with a lookup filter filter Visual
+and match and so we are left out with
+offset order by Partition by and range
+so let's continue with that so let's
+quickly close this window and re start
+our
+powerbi with the file so um our data set
+is loaded and we have a simple table
+over here so it will explain us about
+the city wise sales or orders that we
+have received Now using this particular
+table we will try to ingest offset
+window and index into this particular
+data table now what exactly do you mean
+by index offset and uh window right so
+so offset is something uh okay let's go
+to the offcial documentation and have a
+clearer understanding of offset so
+offset is something which returns a
+single row that is positioned either
+before or after the current row within
+the same table by given offset if the
+current row cannot be reduced to a
+single row multiple rows may be returned
+so what exactly this means so offset is
+something which gives you the value of
+of the previous element present in the
+previous row to the current row so let's
+say uhct the value present in row number
+two which is the number of orders
+received in Chennai then you will okay
+let's consider offset works if you are a
+user in SQL then you know that uh uh it
+works in a different way right whenever
+you give offset as zero it will point to
+the first row right in our case in our
+use case we wanted to extract the values
+from the second Ru so the offset will be
+one so what we are basically trying to
+do is trying to Define some formula
+where the powerp will understand how the
+offset operations work in a data table
+right and index is something uh you
+already know it was it will just index
+the values you have uh in your dat set
+so uh basically index will return a row
+an absolute position specified by a
+position parameter within specified
+partition sorted by specified order if
+the current partition can't be deduced
+to a single partition multiple rows may
+be returned so keeping it simple not to
+complicated index acts like the address
+to a specific row right let's say you
+wanted to access the row number three if
+you provide a specific index it's like
+the primary key it's something which
+does not change it's something which
+cannot be duplicated right so you
+provide an index and it'll identify the
+row and pull up right so basically what
+you're trying to do here is just make
+PBI understand what an offset is what an
+index is and what a partition or ory and
+what exactly is a window right so we
+will now get started with defining these
+things starting with index then we will
+understand the next one which is offset
+followed by that we will dive into the
+uh window function where we will also
+use some partitions and order by
+functions uh having that said let's get
+started with VI so there you go uh just
+select the table or go to table tools
+and let's use this drop down and here
+you have the new column and now we will
+get started with defining the index so
+column it should start yes there you go
+so this is our index we are trying to
+calculate the number of orders and we
+are indexing the value and we are giving
+a minus two which will dedicate to the
+next uh upcoming second one right so so
+here let's say you wanted to find out
+the last second R uh this one this entry
+you can find it out and in case if you
+wanted to find out the last but one you
+can do it and if you wanted to find out
+the first then one right so that's how
+it works and uh yeah so just enter and
+here you are giving the data set table
+name and column name enter and you have
+the index right now let's go ahead with
+uh the next one which is about the
+offset add a new column go to column
+tools so we should be creating a new
+column and uh this is my offset
+calculate number of orders all selected
+from the table and the category so we
+are specifying the offset so uh we want
+to point out to the first row so we
+should be uh provided as
+zero let enter we will now have our
+offsets
+there you
+go there is a slight error that should
+be fixed shortly maybe some error with
+the data modeling or data connections
+anyways let's continue I think uh the
+last function is window so there's a
+circular dependency identified uh we
+should resolve that so basically what
+we're trying to do is we are trying to
+find out the difference between the
+offset and uh the number of orders we
+receive now let's proceed and create a
+new
+measure sorry new column so here we will
+be trying to create a
+window so there you go so there was a
+small circular dependency issue that we
+just fixed and uh here we have the
+window formula and basically what we're
+trying to do here is identifying the
+number of orders we received and what's
+the difference between what's the offset
+and what's the window right it's giving
+the uh entries present in the current
+row so this is how you can Implement uh
+the index offset window and few other
+latest uh build functions in powerbi
+like look up and match by fuzzy match
+Etc and this brings us to the end of
+this tutorial on filter functions in PBI
+and thanks for watching should you have
+any queries regarding any of the topics
+covered in this session or if you
+require the resources like PPD D sets or
+any of the workbooks that be used in
+this session then please feel free to
+address in the comment section below and
+our team of experts will be happy to
+resolve all the queries that you are
+until next time thank you for watching
+and stay tuned for more from Simply Lear
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top Cor corporations and delivered
+by industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

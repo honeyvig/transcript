@@ -1,0 +1,1148 @@
+hello everyone and welcome to simply
+learns youtube channel i hope you guys
+are doing well today we'll be taking you
+through an html mini project
+html stands for hyper text markup
+language it is also known as the most
+basic building block of the web which is
+used to create the structure of any
+website with the help of numerous
+predefined tags
+it helps the browser to understand the
+structure and style of a document or
+files for viewing over the internet in
+this video we'll create the layout of a
+simple job application form with the
+help of html and css only
+so before we begin let me tell you guys
+that we have regular updates on multiple
+technology videos so if you are a tech
+geek in a continuous hunt for the latest
+technological trends then consider
+getting subscribed to our youtube
+channel and press that bell icon to
+never miss any updates from simplylearn
+so without any further delay let's get
+started
+html is used to create the layout of any
+web page by layout we mean the structure
+of a web page today we'll be creating
+the layout of a job application form
+where the user can apply for a job
+let me quickly take you through what we
+are doing today and then we'll see how
+we can do it
+so here we are on the landing page of
+our application form you can see here
+that we have a bunch of input text boxes
+where the user can fill in all the
+required information to apply for a job
+we have to style this web page to make
+it look more attractive to the user
+obviously
+we'll be using some css for that and
+you'll learn everything we are doing in
+this video so here you can see we have
+the column for first name last name then
+we have email job role address city pin
+code date of birth and a cv portal so
+here the user can choose a file to
+upload from then he can apply and on
+clicking on apply now you can see we
+have
+this pop-up which says please fill out
+this form we'll go through everything in
+this tutorial so please watch the video
+till the end and you can post all your
+queries in the comment section will
+definitely help you out
+so let's start creating this layout for
+this we will move back to our html
+document here we have a html document
+and we'll start writing our code here
+only the first thing we are going to do
+is we are going to create a div or we
+can say a container so let's use the
+class attribute first let's say the
+class for this is going to be container
+we'll close this and here we have a
+container fine
+the next thing we are going to do is we
+are going to create the box first so for
+that we have to write here
+div
+and again we have to use another class
+for this
+the class attribute we are using this is
+because of the css part we are going to
+style each element with the help of id
+or class or the tag name fine so first
+of all we'll write a class let's say the
+class name is going to be
+apply box
+and then we'll
+move inside here and
+we have a heading then so we'll write
+here h1 and inside h1 we'll write
+blog
+application
+fine so let's go through the
+form first so here you can see we have
+written job application here now what we
+are going to do is we are going to write
+this web over here you can see
+the font for web is a bit smaller so
+let's write the code for this as well
+we are going to write here after this
+job application
+we are going to use the span tag again
+and then we will write here class class
+is going to be
+title and let's say
+small fine
+we'll write something inside here so in
+brackets we have written web over here
+fine so here we have
+the title of our application form save
+it now and here you can see we have job
+application web written over here we are
+going to make this font smaller on the
+css part where we are going to style
+this particular with the help of class
+attribute so
+let's move ahead and now what we'll do
+is
+we'll create another
+form inside this
+div tag so we are going to write here
+form
+and then we are going to write here
+action we are going to
+let it
+be there and now we are going to create
+another div inside this form tag so we
+will write here div then class we are
+going to use
+form container fine so this is a class
+name
+and let's do one thing
+so we have this div tag over here we are
+going to use
+another div tag for each input box we
+have
+so we'll write here
+class class is going to be let's say
+form
+control fine
+so keep this thing in mind we have
+different class name for each div tags
+we have used still now
+don't get confused in this part so the
+next thing we have in application form
+is
+the label you can see here we have the
+label as first name here fine so let's
+use the label tag for this so we are
+going to move back to our html document
+and we are going to write here
+label
+so we'll write your label is for
+first name fine so this is
+the label then we have the label as
+first name fine so this is the label for
+a input box now the next thing we are
+going to do is we are going to write
+here
+input
+now we are going to use the
+input
+tag fine for a placeholder or we can say
+for a text box then weill write your id
+id is going to be
+first name
+and then we have another attribute over
+here as name as well so we'll write here
+name as
+again let's say
+first
+name for this
+text holder or we can say for this
+placeholder or text box whatever we can
+say
+now we are going to use the placeholder
+attribute placeholder is going to be
+enter
+first name fine
+so we'll use
+this
+and then we'll write here at the end
+required
+we'll discuss what this required
+property will do in a way so let's close
+this input tag for now save the program
+and you can see we have a first text box
+over here with the label as first name
+and then we have this text box where the
+user can enter the first name
+you can see we have a pop-up here which
+says please fill out this field this is
+because we have used the required
+attribute inside the input tag
+fine
+so let's move back to a application form
+here and you can see we have several
+text boxes over here right we need to
+add all of them first fine so let's do
+one thing
+let's move back here and we'll add all
+the text boxes first so the next text
+box we have to add is for the
+last name so we are going to use the
+same procedure we are going to use a div
+tag for that
+now we have to come out of this div tag
+first and then we have to write here
+another
+div tag fine so div we are going to
+write here and we are going to write a
+class class is going to remain the same
+for all the div tags remember this is
+the div tag for first name so we have
+the class name as form control over here
+we'll copy it from here we'll paste it
+here
+we are going to use the same class for
+all the text boxes so that we can later
+style them at once fine
+so let's
+right here inside this div tag
+we are going to use the label first
+again and
+we are going to write here for
+last name label is for last name
+then we have
+a
+last
+name over here fine
+now we are going to use the input tag
+again
+for the text box we will write it input
+id is going to be let's use some space
+over here to make it more
+cleaner to you guys so we'll write here
+id as last underscore name
+then we have name as
+last name again then we have
+placeholder inside placeholder we'll
+write enter
+last name
+fine
+so we'll use the required attribute here
+again so we'll write here
+required
+and that's it we are going to close this
+input text save it again and you can see
+we have this last name present over here
+on our
+browser so this is the label name and
+this is the text box similar thing we
+are going to do for each text box we are
+going to add
+now the next text box we are going to
+add is for a email address fine
+so we'll write here again
+div class is going to be
+for
+control and
+that's it inside this we are going to
+use the label tag again we are going to
+write here for
+and level is going to be there for email
+then we'll write here
+email this is a heading and then we are
+going to use a input so input
+inside input we are going to use the
+type attribute because we are going to
+write here email because this is where
+the user will enter the email so for
+that we are going to use the type
+attribute and the type is going to be
+email file
+fine
+next up we'll write your id id is going
+to be email and then we have
+name again as email and finally we have
+placeholder so we'll write here
+and
+email
+and then we'll write here
+required fine
+next thing we are going to close this
+input text save the program and you can
+see we have the text box and label for
+our email as well
+so again we are going to use the div tag
+this time we are going to use it for
+another text box so we'll write here div
+class is form
+control and then we have inside this we
+are going to write here
+label label is going to be
+therefore let's check it out once so
+after email we have a job
+fine so the label will remain the same
+but instead of input tag we are going to
+use the select tag because we are going
+to provide options to the user so you
+can see we have four different job roles
+present over here we have react node js
+full stack and front end so let's see
+how we can do it we'll move back to html
+document and we'll write here label for
+else
+job rule fine so we'll write here job
+underscore
+role
+and we'll write here
+job fine
+after label we are not going to use the
+input tag again we are going to use the
+select tag fine so we will write here
+select
+and then we will write here id id is
+going to be
+job underscore rule fine
+then we'll write here name name is going
+to be job rule again
+and we'll write here
+fine that's it
+so we are going to
+put some options inside this
+so we'll use the select tag here and we
+are going to use option fine so we'll
+write here
+option option is a tag
+then we'll write here
+value the first value is going to be
+select job rule so this is what we want
+the user to see when he opens the
+up application form so we'll write here
+select
+job role
+that's it then we have another option so
+we are going to use another option tag
+for this
+we are going to write your value as
+react and
+the value is going to be
+react
+fine
+save it now and you can see we have
+another text box or we can say select
+box here for job rule click on it and
+you can see we have two different
+options select job role and react over
+here similarly let's add other options
+as well what we'll do is we'll copy this
+from here
+well paste it four times and we are
+going to change the values here after
+react what we have is
+node fine so we'll write here node
+instead of this we are going to write
+here node.js
+then we have
+full stack so we'll write here
+full stack developer
+and we are going to change the value as
+well so we'll write here
+full underscore stack and then we have
+at the end front end so we'll write here
+front end and we'll change the value
+here as well we'll write here
+front and
+developer
+fine
+save it now and
+click on this job role again you can see
+we have four different job rules present
+here we have react node full stack and
+front-end developers
+fine so this thing is working fine
+now let's do one thing
+what we are going to do is we are going
+to create another dev tag because we
+have another
+text box over here you can see this is
+different from other text boxes so for
+this we are going to use the text area
+tag fine so let's do one thing let's
+create another div tag here
+so you can see it over here that this is
+different from other text boxes so we
+are going to use different class for
+this so we'll write here class class is
+going to be let's say
+text area
+control
+and then inside this div tag we have to
+put the label for address
+so we'll write here label for
+address and
+the label is going to be addressed fine
+save it now move back to our
+html document and you can see we have
+address written over here now let's use
+the text area tag for this
+so we'll write here after this
+text area this is a tag we are going to
+use the id attribute again id is going
+to be
+address
+then we have the name as
+address and we have
+the row attribute fine so we'll write
+here row row is going to be 4
+and after this what we are going to do
+is we are going to use the calls as well
+so we will write your calls is going to
+be let's say 50 columns fine so 4 rows
+and 50 columns for this particular text
+area first
+then we'll write here placeholder
+placeholder is going to say enter
+address
+and after this we'll write
+required over here because address is
+mandatory fine close this and here we
+have the text area element present over
+here save the program and you can see
+the text area over here it looks
+different right we can write anything
+inside it
+so the text area is here
+now let's move ahead and we are going to
+create other
+text boxes we have in our application
+form so let's
+move back here and you can see we are
+left with city pin code date of birth
+and upload your cv fine so let's
+create the text box for city now
+now city is the same text box as we had
+for other text boxes like first name and
+last name so we are going to use the
+same class for this text box so we are
+going to write here div
+class is going to be
+which class we used previously so we
+have used form control so we'll write
+here
+form underscore control
+and after this we are going to use the
+label first so we'll write a label for
+city fine so we'll write here city now
+the label is city with
+c capital
+save it now
+move back to the output and you can see
+we have city present over here
+now we are done with the label tag so
+the next thing we are going to do is we
+are going to use the input tag again
+now for this we are going to write here
+input
+id is going to be city
+then we have
+let's do it the same way as we are doing
+for others then we have name as well
+name is going to be city again
+then after name we have placeholder so
+we are going to write your placeholder
+inside this we are going to write enter
+city name
+fine
+and at the end we are going to write
+here required
+that's it
+close the input tag save it now and you
+can see the text box over here on the
+browser which says antacity name
+everything till now is working totally
+fine so let's move ahead and we are
+going to create another text box for pin
+code fine so we'll write here
+dip class we are going to use the same
+class class is a
+form control
+fine
+now inside this div tag we are going to
+use the label tag again label is for
+pin
+code
+and we have to write here pin code again
+we are done with the label let's move
+ahead and we are going to use the input
+tag again
+for input we are going to write it type
+because
+a pin number is always numeric we are
+going to specify type as number then
+after type we have id id is going to be
+pin code after id we have name as pin
+code again
+and we have to use the placeholder
+attribute here so we'll write here enter
+pin code here
+and we are going to write
+required here again so we are done with
+the
+pin code as well so here you can see it
+works fine
+now let's move ahead and after pin code
+what we have in our application form
+so let's move back and here you can see
+after pin code we have dob which means
+data but
+or we can
+just try it here anything
+so you can see we have date of birth as
+well so one minute let's close it and
+you can see 10 1 19.99 so let's see how
+we can create this fine using html only
+choose from over 300 in demand skills
+and get access to 1 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more so we are going
+to use the div tag again this time we
+are going to do it for date of birth so
+we will write here dip class will remain
+the same as
+form control
+and inside this we are going to write
+here
+label label is for
+date then we have to write here d
+to
+b
+fine
+so save it now and let's see if it's
+working or not you can see we have dob
+present over here now it's time to add a
+calendar to a html fine so we'll write
+here
+input
+value we are going to define so let's
+say the value is going to be
+2022
+and then let's say
+today's date fine 24
+or
+85
+fine save it now and you can see it says
+2022 2405
+let's
+do one thing we are going to write here
+type type is going to be
+date
+and then we are going to write here id
+as
+date again
+and after this we have to mention
+name as date fine
+we are done with it save the program and
+you can see it says ddm yy
+so we have
+to mention here
+0 5 and
+24 save it now and you can see it says
+24th may 2022
+fine
+let's change it to 1999.
+save it now and you can see we have a
+calendar over here
+we have here since 1999 we can use any
+of them
+you can see we have here still 20 20
+and it's going on for fine so this is
+how we can add a calendar using html we
+have to mention the type as date and
+that's it we are done fine
+now let's move ahead and we are now left
+with this particular thing we have to
+create an option where the user can
+choose a file from his system and he can
+upload it fine so let's create this as
+well we'll see how we can do it
+now what we have to do is we have to use
+another div tag for this fine
+so we'll write your diff
+class is going to be the same so we'll
+write your form
+control
+and after this some of the part will
+remain the same we'll write here d
+or we can say label for
+will write here upload
+and label is going to be upload here
+fine
+we are done with the label now what we
+have to do is we have to use the input
+tag again
+so we'll write here input
+then we have the type as
+file
+and after this we have
+id as upload and
+name is
+upload fine
+we'll write here required once again
+and that's it
+fine
+so save it now and let's check if it's
+working you can see we can choose a file
+from here click on it and it will let
+you choose any file from your system
+fine now we are almost done with the
+application form the last thing left now
+is the apply now button let's create
+this button now and then we'll be
+done with this particular application
+form completely fine so we'll write here
+after this
+div
+we have to define a class for a button
+so we'll write here button
+container
+now after this we are going to write
+here
+button we are going to use the type
+attribute
+button type is going to be a submit
+button
+so we'll write here apply
+now
+fine we are almost done with it save the
+program move back to the browser and you
+can see we have our application form
+here the complete application form the
+html part is done we are done with the
+structure now we know that how the form
+will look like the form will contain all
+the information about the first name
+last name email job role of the
+candidate address city pin code date of
+birth and an option to upload the cv
+fine then the user can click on apply
+now button and you can see on clicking
+apply now you can see it says please
+fill out the speed this is because the
+required attribute we used in the input
+tag fine
+let's move to the css part now and we
+are going to style this according to our
+need
+so here we are in a css file let's see
+what styling changes we have to made in
+our application form first of all you
+can see the background here we have two
+different colors present in the
+background we'll see how we can manage
+them
+then we have this container which is for
+the application form and you can see
+everything here looks completely perfect
+and
+in this
+application form we are creating right
+now it looks a bit confusing right so
+let's use css and we'll make this
+particular form look like this one fine
+so
+let's start writing our code in css so
+first of all we will write here
+hash trick
+this is for the whole html document so
+we'll write here margin
+margin is going to be 0 initially then
+we have
+padding padding is going to be 0
+and then we have
+box sizing as border box save it now and
+you can see the margin and padding over
+here is 0
+fine
+now let's style it
+so we are going to write here body we
+are going to use
+background color initially so we will
+write a background color background
+color is going to be hash
+3 4
+a d f f so we have all the colors
+present with us and you can use any
+color of your choice now save the
+program and you can see the background
+color is blue as of now we'll change it
+later on i'll also show you how we can
+achieve that two different color thing
+using css so first of all what we are
+going to do is we are going to style a
+container so you can see over here that
+we have a class named
+container fine so the first div tag has
+the class as container we are going to
+create the container now so to specify a
+class in a css file we have to use the
+dot operator and we are going to write
+here container
+now inside container we are going to
+write max width
+max width is going to be 900 pixels
+and let's say
+margin margin is going to be 0 and auto
+save it now you can see there is no
+difference as of now
+we'll see the difference in a moment
+let's move ahead and now we are going to
+style apply box fine so now we are going
+to create this particular box you can
+see over here we are going to create
+this box
+with the help of css so let's do it
+well right here
+dot
+apply
+box fine
+we are going to write here
+max width max width is going to be 600
+pixel for this box
+then we have padding padding is going to
+be 20 pixels
+and then we have
+background color as
+white
+then we have margin
+margin is going to be
+0.02 again then we have
+margin top margin top is going to be 50
+pixels
+and after this margin top we have the
+box shadow as well
+so for box shadow we are going to write
+here
+4 pixel and then 3 pixel
+5 pixel
+and we are going to use the rgba values
+so we'll write here rgba
+red green
+so the value of rgba are going to be 1
+comma 1
+comma
+1 comma
+0.1
+which is sort of black color save it now
+and you can see it over here
+you can see the box which has some box
+shadow present around it
+left right top and bottom side fine so
+we are styling a
+application form now so next thing we
+are going to do is we are going to
+define the border radius border radius
+is going to be 10 pixel
+save the program and you can see the
+border changing from this side
+right from each corner the border is a
+bit rounded
+at the end we are going to write here
+text align at the center save the
+program and you can see the text is
+aligned at the
+center now
+now we have to style this web first
+so you can see it over here the font
+size of web is pretty small when
+compared to this job applications font
+size
+so let's
+move back to html document and you can
+see the class title small over here
+we'll use this class so we'll write here
+title underscore small
+and inside this we are going to define
+the font size font size is
+going to be
+20 pixels fine save it now and you can
+see the change in font size
+we could have used this font size
+property in the html part only but we
+are using css so let's do it here only
+let's do all the styling over here in
+this file only fine
+next up
+what we have is
+we have the form container class you can
+see it over here we have the form
+container class which remains the same
+for all the text boxes so let's style
+this class as well
+so we'll write here dot
+form
+container
+and inside this we are going to write
+display as
+flex we want it to be flexible so we'll
+write here
+flex direction as column so it will be
+flexible column wise then we have the
+font weight fine so we'll write your
+font weight as
+bold
+save it now and you can see the font is
+bolder now after this we are going to
+use the label tag so we are going to
+style all the labels fine so we will
+write here
+label
+and inside this we are going to write
+font size font size is going to be 15
+pixel for each label
+and we are going to write margin bottom
+is
+5 pixels save it now
+you can see the font size is of 15
+pixels now
+now we are going to use three different
+tag names we are going to use the input
+select and text area tags fine so let's
+write over here
+input
+then we have
+select and we have
+text area fine
+so all these tags we have used for uh
+text boxes fine so let's do one thing
+we'll write your padding padding is
+going to be 6 pixel and
+10 pixels
+then we have the border for each
+text box so we are going to write your
+border as one pixel
+solid in nature and
+the color code is this fine so white we
+can say or off white a bit of off-white
+we can say
+then we have the border radius as 4
+pixel for each text box
+and we have the font size fine font size
+is going to be 15 pixel for each text
+box save it now and you can see over
+here
+we have every text box present over here
+we have first name last name email
+and each of them looks a bit similar to
+this particular
+application
+fine let's style them again so we are
+going to write here after this
+input
+we are going to use the focus property
+over here
+on focusing we are going to write here
+outline
+so we are going to write here outline
+color outline color is going to be we
+have the rgb values so we'll write a rgb
+38 comma
+zero comma
+two fifty five thirty eight for red zero
+for green and two fifty five per blue
+fine save it now and you can see on
+focusing on each text box
+the border changes to blue color we can
+say the outline is changing to blue
+color for address you can see the
+outline is black as of now for other
+text boxes you can see the outline
+changing to blue color fine
+now after this input we have the button
+fine so we'll use the button container
+class so we'll write here
+button
+container
+and inside this button container we are
+going to write
+display as
+flex and
+we have
+to justify content at the
+flexing fine margin top we are going to
+define margin top is going to be 20
+pixels
+and that's it
+fine we are done with the button
+container as well save it now and you
+can see the button present at the bottom
+right of our
+application form
+now after this we are going to style a
+button as well so for that we are going
+to use the button tag we will write your
+button
+background color we have the rgb value
+for a background color which is
+0 comma 47 for
+green and 255 for
+b
+fine you can see the button is blue in
+color now
+next up we are going to write here
+border border is going to be
+transparent for a button
+then we have
+padding as
+5 pixel and
+10 pixels
+fine save it now and you can see the
+padding is 5 pixel for top and bottom
+and 10 pixel for left and right
+so we are done with the padding
+then we have after this
+color fine so we are going to change the
+font color for this we are going to use
+the color property
+color is going to be white again
+and after color we have the border
+radius
+border radius is going to be
+8 pixels and after border radius
+we have the transition as well
+so transition is going to be
+in 0.3 seconds and it is going to be
+easy
+fine
+save it now and you can see the
+transition over here
+save it again and you can see the
+transition in
+button fine
+now after this we are going to use the
+hover effect on a button for that we
+have to write here button and we have to
+define
+over over here
+then we have
+to write here
+background color we want to change on
+hovering over the button so we'll write
+your background
+as
+this
+then we have
+border here border is going to be
+2 pixels and
+solid in nature and we have the rgb
+values with us rgb values are 0 comma
+47 comma 250
+5. fine
+so we have to put the bracket over here
+save it now and you can see
+on clicking or on taking the mouse
+cursor over this button it changes
+and the background color is why the
+border color is blue on hoof fine so
+this thing is working totally fine as of
+now
+we are going to change the color as well
+color is going to be black which is the
+font color
+then we are going to write here
+transition transition is going to be
+0.3 seconds and
+ease out fine
+then we have to write the cursor as
+pointers save it now take your mouse
+cursor over the button and you can see
+the transition and you can see the font
+color is black the border color is blue
+and the background color is
+white or off-white we can see fine so
+the hover effect is also working fine
+next up
+what we want to
+style is the text area we are left with
+this text area only increase the size of
+our browser and you can see this is our
+text area we are going to style it first
+so we'll write here dot
+text
+area underscore
+control this is the class name we have
+then we'll write here
+grid column grid column is one
+so it basically is grid in and grid out
+so
+one column and we are going to span two
+so we will write your font weight as
+bold fine save it now and you can see
+the change on the browser
+then we have to write here dot
+text area
+control space
+text area fine we are going to use the
+tag name here as well we are going to
+write your width
+width is going to be 100 percent
+fine
+now save the program
+increase the size and
+you can see
+the address is over here the width is
+completely taken by the text area fine
+now what we are going to do next is
+we are going to
+make it look better in this version as
+well so we'll write here at the rate
+media width
+and then we have
+max width as 460 pixels
+and we'll write here
+dot
+text area control
+we are going to write here
+grid column
+will write you one
+by
+span
+fine
+so let's see if this thing is working or
+not
+save the program and
+you can see this thing is not working as
+of now
+move back here open it with live server
+and you can see the
+application form is not what we expected
+it to be
+let's see if something is wrong here
+we have used the form container class
+but
+we forgot to use the form control class
+so the mistake here is we have to write
+here
+form control for this and we have to
+define another class over here so we
+have to write your form
+container save it once and you can see
+it's almost fine so we have to define
+the form container class now
+inside the form container class we have
+to write here margin top margin top is
+going to be
+20 pixels
+then we have
+display as
+grid and we will define the grid
+template columns so we'll write a grid
+template columns
+we'll write here
+repeat
+and inside here we'll write auto fit
+comma min max
+and we have to define the minimum and
+maximum over here
+fine so the min is going to be 200
+pixels
+and max is going to be
+1fr
+fine then we have to define the gap as
+well gap is going to be
+20 pixels
+i hope this thing will work now
+let's see if this thing is working or
+not
+save the program and you can see we have
+the same
+application box over here as well now
+one thing we
+haven't achieved yet is the background
+which is
+of two different colors we have two
+different shades of grey over here let's
+see how we can achieve it
+so for that what we have to do is we
+have to move to the body section and we
+have to write over here background image
+so background image we have to use
+webkit linear gradient and we have to
+define
+the angle here 120 degree then we have
+the colors as hash
+313131 which is gray
+and then we have to write here
+50 percent
+fine then we have to put a comma over
+here we have to define the second color
+as well which is hash
+four f five
+three five five fine which is also a
+different shade of gray
+then we have to write here 50 percent
+so gradients allows us to display smooth
+transition between two colors 120 degree
+here is the angle and 50 defines the
+area the color will acquire save the
+program and
+increase the size of a window you can
+see we have two different colors of gray
+or we can say two different shades of
+gray here
+now we have created our application form
+completely fine you can see the
+transition working and you can see the
+transition working here as well
+it's working totally fine
+right now let's try to fill out this
+formula so let's enter a first name here
+we'll write here caution then we have
+let's say name
+then we have for email
+caution and we have to write here
+something
+like this at the rate
+gm.com then we have to select the job
+role
+so you can select a job
+as node.js developer then we have the
+city name city name is let's say
+now try to apply you can see we need to
+fill out this field because we have used
+the required attribute in almost each
+text box right so let's enter the pin
+code here then we have the dob here
+we can choose any file from here and
+click on apply now you can see we have
+to choose any file from here
+so we'll use this file
+apply now click on apply now and you can
+see the form is refreshed
+we haven't used javascript with this
+form so to make it completely working we
+have to use javascript with this form
+for now we are done with the styling and
+the structure of this particular web
+page right i hope you guys got it so
+that's all for this video guys see you
+in another session if you enjoyed
+watching this video do give it a thumbs
+up if you have any doubt please let us
+know in the comments below share it with
+your friends and don't forget to
+subscribe simply thank you
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

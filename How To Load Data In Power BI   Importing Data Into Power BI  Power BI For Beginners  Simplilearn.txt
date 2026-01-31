@@ -1,0 +1,393 @@
+hey everyone welcome to Simply Lo's
+YouTube channel today we will learn
+about data loading in powerp so this is
+a complete module so here we will be
+dealing with different types of or
+different ways of loading data onto the
+PBI that said if these are the type of
+videos you'd like to watch and hit that
+like And subscribe buttons and the bell
+icon to get notified craving a career
+upgrade subscribe like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back just for a quick info if you want
+to upscale yourself master data
+analytics skills and landar your dream
+job for growing your career then you
+must explore some celand go of various
+data analytics programs simply learn
+offers postgraduate programs from PTO
+University in collaboration with IBM
+through this program you will gain
+knowledge and work ready expertise in
+skills like prescriptive and Predictive
+Analytics regression classification and
+over a dozen others that's not all you
+also get the opportunity to work on
+multiple projects and learn from
+industry experts and Top Tire product
+companies and academic from top
+universities after completing these
+courses thousands of Learners have
+transitioned into a data analytics role
+as a fresher or moved on to a higher
+paying job and profile if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the pin comment and
+description box below to find the data
+analytics program that fits your
+experience and areas of Interest now
+without further delay let's get started
+now powerbi can import data in three
+different modes the first one is import
+mode where you can just directly connect
+to the source and import the data in
+batch mode and another mode is the
+direct query mode where the data the
+real time data is already connected to
+the powerbi dashboard and by just
+refreshing the powerbi or the data
+source you can get the real time
+insights on the data and the third one
+is the mix and match of both import and
+directquery mode you can also call it as
+a dual mode or also as a composite mode
+so if you want to know a little bit more
+detail in these three modes you can just
+let us know in the comment section below
+and we will have a complete tutorial
+covered for that right now we will get
+started with the types of data importing
+using PBI so you can import data in
+different ways it may be from files it
+may be from an Excel document it may be
+from a website it may be from SQL or any
+other database or it can also maybe from
+cloud Etc right so we will be dealing
+with all of those here and uh let's get
+started so here we are on my PBI window
+now they can be instances
+where you might have to load data from
+one or more sources and you might have
+to club that data together now let's say
+I have um continuous data from four to
+five different years and we have a
+separate workbook or Excel workbook for
+different years right and in that
+situation let's say you have a
+requirement where you have to completely
+segregate all those four five years of
+data into one single file and import all
+that into your pobi and create your
+insights based on year on-ear
+performance or month-on-month
+performance right so in a few situations
+you might have your data in an Excel
+source and another set of data in maybe
+your database maybe in a website or
+maybe in a different Source correct so
+in those situations you might have to
+collect all your data dump it into
+powerbi and use data transfer
+and data modeling in powerbi and create
+one clean data set for you to perform
+your analysis and extract some valuable
+insights so that's a different tutorial
+for a different day but to help you with
+the fundamentals of data transformation
+and data modeling we already have in
+detail data transformation and data
+modeling tutorials in powerbi but if you
+want that all to be segregated into one
+single tutorial you can let us know in
+the comment section below and we will
+have that done as well now let's proceed
+with our data loading into powerbi the
+first type we will go with importing
+data from file right so you can just go
+to the get data option over here and you
+already have a lot of varieties but in
+case if you are not getting the one
+you're looking for you can just click on
+more and you will have a set of options
+readily available on your screen like
+this one now here you can see some more
+options so here I have a file option
+over here you can just click on file or
+a folder over here and now it will
+directly navigate you to the file system
+of your computer just double click on
+that and here you will have the browse
+option just click on browse and remember
+where you have your file so I have it in
+my downloads and here I have Excel and
+just press okay and now your data has
+been successfully loaded onto your PBI
+window now here you can you can just
+click on load to load data or in case
+you find it so here we have four
+different years just as we discussed in
+the beginning the data of sales from the
+last four years 2020 2021 2022 and 2023
+so in such situations you can just click
+on transform data and transform your
+data and model your data into one single
+Excel workbook and start your analysis
+so if you just click on load you can
+directly load the data onto your powerbi
+window and this is one way of doing it
+and uh see your data yes there you go
+the data has got successfully loaded can
+just directly select the data that you
+want that you are working with and you
+can have it here and now let's proceed
+with the second way of loading data so
+I'll lo you know I name this file as I
+need this workbook as file load data
+from
+file right and now let's create a new
+page or new uh workbook where we will
+load data from an Excel
+file right so here you can just click on
+Excel workbook option directly over here
+or you can also go with the same get
+data option we'll go with Excel workbook
+you can see it has directly redirect me
+to the place where I have my Excel files
+so you can just click on Excel data that
+we working on and press open and shortly
+you can see the Excel files getting
+loaded over here and now you can have
+the option of choosing what table you
+want to load right there are
+possibilities where one Excel workbook
+might have multiple sheets but for now
+our Excel data has only one sheet which
+is named as data you can just click on
+it and have a brilliant preview of your
+data can check for any of the errors let
+me remind you if in case if you have
+some data cleaning to be done on your
+data powerbi will automatically open
+power query window for you where you can
+run all your data cleaning operations
+and each and every step you are
+investing or you are making while
+creating the data cleaning process or
+while you're going through the data
+cleaning process
+and you can manual you can eliminate the
+manual task and you can save all the
+steps and you can automate your data
+cleaning process and powerbi will
+automate that process and clean every
+single cell of your data set and your
+data will be ready for extracting
+insights now this is another way of you
+know importing or loading data into a
+powerbi window from Excel files you can
+just directly load or in case if you
+want to transform you can just click on
+transform data and the powerbi window
+will get redirected to a power query
+window where you can you know clean your
+data and load it so this is the second
+way of doing or loading your data is a
+problem you can just view and clear
+those errors manually that's one way of
+doing it and I'll just close it for now
+and let's focus on loading data from a
+different source so now we have so far
+loaded data from a file loaded data from
+an Excel file now another way is load
+data
+from a
+website so before we move ahead let's
+have a look on the website that we are
+selecting for
+today so uh we are selecting the world
+population website you can see this
+particular website is running real time
+so it's giving us the calculations in
+real time right so you can also load the
+realtime streaming data onto powerbi so
+all you have to do is just just select
+the or you to copy the URL over here
+this is present right here and uh just
+go back to powerbi window and here you
+have the options so take the option of
+web and now it will ask for the URL you
+can just you paste the URL and just you
+select the basic or if you have some
+advanced settings you can also have the
+advanced parameters mentioned for PBI so
+I'll go with the basic ones here and if
+you in case if you want to also explore
+the advanced settings please do let us
+know so that we can create an exclusive
+tutorial for loading data from website
+using advanced settings so it's a longer
+tutorial so you do let us know so that
+we can create an exclusive tutorial for
+that now just press okay and your data
+should be loaded just Connect Now a
+preview of the data will be loaded onto
+your screen you can just select the
+table that you want right so we have
+multiple if we just go back to the
+website so you have multiple tables here
+so the first table it will recognize
+this particular part of data as a table
+and apart from that here it has top 20
+largest countries by population like as
+a table and uh any other tabular data
+present on the website see this one it
+will also be considered as the table so
+you can select any one of the tables you
+want and load that data onto cover Pi
+now let's select anyone I think you
+might have a preview here it's still
+loading so there you go so we have
+multiple tables here so you can just
+select the table and have a preview and
+see if that's the table that you wanted
+to import and if you find the table that
+you're looking for you can just click on
+the load or transform data in case if
+you want to do any data cleaning you can
+just click the option of data transform
+and do that and if you are happy with
+the data that you have on your preview
+then you can just select the option of
+load the data so I think this is the
+table I'm looking for you can just click
+on load data and that will be directly
+loaded onto your P platform and it will
+be ready for your analysis and
+extraction of insights might take a
+little while but that's okay there was
+some error it was not found let's
+discard and try to get that once
+again now we have the preview of the
+data now let's directly load it there
+you go there we have our table number 12
+directly loaded so here you can see
+correct this is how you can load data
+from a website and now let's explore
+another one where we can load data from
+either a cloud or a database correct now
+here we t
+load
+data from
+database so there are multiple databases
+available you can load data from a SQL
+Server you can load data from a MySQL
+workbench you can load data from PHP my
+admin which is propos SQL you can load
+the data from Microsoft SQL server and
+data was and also from the cloud sources
+all you have to do is just add the
+server ID and any credentials like the
+username password Etc and the data will
+be loaded now let's try to load data
+from a MySQL workbench or mySQL database
+so you can just click on more and here
+you can
+type my
+SQL database there you go and just
+connect if you are connecting uh you
+know now uh for the first time it will
+ask for the server ID and dpas so we
+will go with the Local Host over here so
+the address for Local Host is
+127.0 do0 do okay let's quickly check
+our port number from the my secret
+workbench so my port number is
+3308 and 3306 let's work with
+3308 1
+3308 don't forget the double colon over
+here this one it's very important and uh
+if we just dive deep into this
+particular database we have different
+databases SLP system well if you just
+click on SLP we have so many tables so
+let's go with SLP I type on SLP and
+press on okay so it might also add ask
+for uh user ID and password so my user
+ID and password are root and uh just PBI
+at the rate 1 to3 so everyone could have
+their own passwords correct so you might
+have a username dedicated username and
+dedicated uh password just use that so
+I've already logged in here so it just
+gave me direct approval to navigator in
+case if you're using this for the first
+time you will just have um user name and
+password request on your screen you can
+just type it down and press okay so here
+we have uh book selection table and few
+other things book owner order employee
+details employee register so I'll just
+go with employee details this is the one
+just load a transform data if you are
+happy with the data preview you have
+just load the direct data directly and
+um yeah it should be loaded shortly
+there you go so since simply learn
+employee details this is just a simple
+small data set that I have personally
+created and you can load it onto thebi
+and start your analysis so um in case if
+you're working with Cloud the same you
+just have to enter the details from
+cloud and that's how we can do it and in
+case if you're looking for an exclusive
+tutorial on how to load data from Cloud
+to PBI please do let us know and we'll
+have it done for you and with that we
+have come to an end of this tutorial on
+how to load data from different sources
+to PBI so far we have looked for how to
+load data from different files how to
+load data from an Excel document how to
+load data from a database or Cloud how
+to load data from a website and if there
+is anything that you are exclusively
+looking for please do let us know in the
+comment section below and we will have
+it answered for you and uh and if you
+have any queries regarding any of the
+topics covered in this session or if if
+you are looking for the resources like
+pbd and DDS that we used in the session
+please do let us know in the comment
+section below and our team of experts
+we'll be happy to help you as soon as
+possible until next time thank you for
+watching and stay tuned for more from s
+staying ahead in your career requires
+continuous learning and upscaling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

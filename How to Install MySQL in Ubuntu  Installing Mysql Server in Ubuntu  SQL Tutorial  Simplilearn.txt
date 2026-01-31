@@ -1,0 +1,152 @@
+foreign
+'s YouTube channel in the session we
+will learn how to install MySQL in
+Ubuntu but before we begin let me tell
+you guys that we have daily updates on
+multiple Technologies if you're a tech
+geek in a continuous hunt the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and don't forget to hit that
+Bell icon to never miss an update from
+Simply Now now without further Ado let's
+get started with our one point agenda
+that is how to install MySQL in Ubuntu
+but before we begin if you are an
+aspiring data analyst then I have the
+perfect course for you we have the
+professional certificate program in data
+analytics bosche carrier over this data
+analytics program in partnership with
+Purdue University and in collaboration
+with IBM which features master classes
+and follows an applied learning model
+with real-time projects and business
+case studies now that we have a clear
+understanding of the GP data analytics
+certification with simply learn in
+collaboration with IBM from Purdue
+University we will get started with our
+tutorial for today's session so now
+we're on the Ubuntu operating system
+let's quickly start our terminal
+the shortcut key for that is Ctrl alt D
+so now we have the terminal opened so we
+might have to run a few couple of
+commands
+so the first one would be pseudo apt
+upgrade or update
+that will ask for the host password
+now you have the update
+so usually what happens is when you try
+with the default method or when you
+drive the default codes or the commands
+you might miss a couple of updates or
+two or files right so what happens when
+you try with the default codes the
+default commands you might miss a file
+or two so when you update the Ubuntu you
+will get the missing files as well now
+if in case if you find I've got all the
+updates but in case if you find some
+files are missing you might receive a
+message from Ubuntu saying can't update
+or not fetched right in that case you
+can try upgrade command
+even
+then if you miss a couple of files there
+is another similar command which says
+sudo apt full upgrade we should also try
+that as well
+so basically what happens is you might
+have one single command which says sudo
+app install MySQL right so that
+particular command will run but
+unfortunately sometimes it messes to
+face complete get and when it misses to
+get all the files So to avoid that we
+will try the brute force method which
+will get all the files all the updates
+on all the executable files you require
+to run MySQL and Ubuntu right
+just a couple of minutes yes
+so similar to upgrade we have full
+upgrade
+it's done
+and in case if you wanted to remove some
+unnecessary files you have a command for
+that as well so let's take a look at
+that
+so the sudo app Auto remove will remove
+any of those old packages which you no
+longer need after the complete for
+Library let's run that
+there you go so now we are done with the
+Ubuntu update let's clear all the screen
+by pressing Ctrl plus C shortcut with me
+the shortcut key control L has been
+press and the screen has been cleared
+now now we are good to go with our SQL
+installation command which is sudo
+APD
+get installed
+my SQL
+yeah so again we Face some issues
+regarding the installation so this means
+that we might have some files which we
+might not need related to mySQL so my
+suggestion would be to eliminate those
+particular files using the sudo apt get
+remove Purge MySQL server MySQL client
+MySQL common yes
+that is why so we're trying to remove
+any of the existing files so let's again
+let's try to get Auto remove
+and auto clean
+again the update
+there you go we have the update and now
+we shall try to install the MySQL server
+with the following command but the
+difference is we are trying to install
+it with yes that is hyphen y
+providing the permissions
+there you go you can see MySQL is
+running as pid6045
+anyways let's also check the status once
+the update is done
+there you go let's quickly check the
+status by using pseudo system control
+status MySQL
+and there you go
+it says the server is operational and
+the main PID is
+6240 let's quickly clear the screen
+using Ctrl L key combination and now
+let's start SQL by using the command
+sudo MySQL they should start my sequel
+for you there you go that's how you
+install MySQL and Ubuntu operating
+system again you can run all your
+queries based on my SQL and in case if
+you want to quit just type in quit and
+with that we have component of this
+session and if you have any queries
+regarding any of the topics covered in
+this session or if you require the
+resources that we use that has all the
+codes that we use to clean the operating
+system update the operating system clean
+the existing MySQL files update the
+system again and install the MySQL in
+Ubuntu every single code has been
+documented and if you need it let us
+know in the comment section below and we
+will have it shared with you at the
+earliest and until next time thank you
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
+foreign

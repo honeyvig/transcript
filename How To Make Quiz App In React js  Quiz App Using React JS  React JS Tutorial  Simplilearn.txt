@@ -1,0 +1,706 @@
+hey everyone and welcome to another
+video by simply learn today in this
+video we will create a quiz app using
+react whether you are new to coding or
+season developer this project will help
+you sharpen your skills and learn more
+about building interactive web
+applications so let's roll up our
+sleeves fire up our code editor and dive
+into the wonderful world of react with
+the focus on Simplicity and userfriendly
+design we will work together to bring
+your quiz app to life get ready to
+challenge yourself and have some fun
+along the way we will make an app that
+will ask some questions and at last we
+generate the score based on number of
+correct answers you have selected all
+right so let's get started into building
+a react app just a quick INF for you if
+you are passionate about fullstack
+development as a career then join our
+comprehensive fullstack developer course
+to propel your career as mon stch
+developer dive deep into mongodb xjs
+react and nodejs alongside G HTML CSS
+and JavaScript empowering you to craft
+and deploy Dynamic applications and
+services with 40 plus micro Skilling
+exercise and six plus real world
+projects you will hone your skills and
+Tackle challenges like a Pro Master 10
+plus fullstack development tools and
+Frameworks accelerating your Learning
+Journey with AI coding assistant tools
+take the fast track to expertise and
+unlock boundless opportunities in the
+dynamic world of fulltech development
+and roll now and shape your future
+success all right so now we'll have to
+navigate to the vs Studio to create this
+app for that we will be creating a
+folder first of
+all let's create a
+folder let's name it
+chat react
+quiz
+react quiz all
+right now let's go to visual studio code
+so this is our Visual Studio code and as
+we can
+see this is the Explorer we'll go to
+Open folder
+and we
+will as you can see we will select this
+one react quiz in the desktop that the
+folder that we have just created select
+folder and in this folder we will be
+creating this app all
+right
+so yeah let's first go to the
+terminal now
+npx
+create re
+app npx create react
+app my
+app so this is the command that you can
+put and this is the command that is
+being used to create an react app so you
+can start with this you can also copy
+paste it from the visual website so now
+the app is being created we'll have to
+wait for some time time all right so it
+is done as you can see now we can
+navigate
+to it's fine like we know we'll go to
+the folder CD so we named it my app so
+we'll have to go inside my app now we'll
+do npm
+start all right npm start the server
+will be online now as you can see it
+will open a server
+Local Host 3000 so here our app will be
+displayed all right
+perfect so now let's start with creating
+the app first of all we'll have to check
+on my app inside my app we have this SRC
+folder app. CSS
+app.js index all of these things are
+important some of them are not important
+but we will not focus on that all right
+so first of all we will be creating this
+quiz app so for that we'll have to
+create a component let's name that
+component as
+questions right so for that
+questions.
+jsx all right so we have created this
+questions. jsx so this will be the main
+component basically where all the
+functionality will take place mostly
+so let's start by importing the library
+import react from
+react all right now this is the
+component so we will be naming it as
+questions which is the name of the
+component in the return we will write
+first of all we'll write the div and
+create a container basically so let's
+add div so here basically div we will
+start with the div element that reps all
+the content of our quiz application so
+we have written div and we'll also
+mention the name of this div after some
+time now inside this div uh basically we
+have to create a paragraph that is p
+element that serves as the heading for
+our quiz application it displays it will
+display the basic heading like quiz app
+or something like that so let's start
+and create that all right so we'll start
+with it sorry it is p class name just
+close the P
+first yeah let's name the class as
+container write now inside this what we
+can do as of now let's not do anything
+we'll simply write
+quiz
+application yes that would be fine or
+all right now uh after this we will be
+creating a container div that is another
+div element with the class name
+container this div holds the main
+content of our quiz application
+basically so let's proceed with that all
+right so another div okay so this will
+contain the
+entire thing or the functionality so
+let's name this one as container and
+change the name of the paragraph above
+all
+right let's name it heading txt or
+something like
+that all right so yeah in this we will
+write the complete functionality of this
+code most like 90% of the functionality
+here we will write so now the next the
+first thing that we'll be creating is we
+will use a turn operator to show the
+result uh to conditionally render
+different content based on the value of
+the show result State variable aable
+that we will create the show result
+State variable we can create now also
+and we can create afterwards also but as
+of now let's keep in mind we are
+basically conditionally rendering
+different content based on the value of
+that show result State variable so let's
+first create it so that there will there
+is no
+confusion all right
+so show
+result we just creating US state hook
+and then set show
+result and think we should keep it as
+Boolean
+false all right so now let's start
+writing now here we will use a component
+basically so that component is let's say
+question result we will create after
+this but as of now let's pass some value
+into it we will be creating that
+component after some time question
+result
+okay yeah question result now let's pass
+some things like we'll have to pass some
+scores and all so basically what we are
+doing is like if the show result
+basically is true we will render the
+quiz result component passing in probes
+such as score total score and try again
+function if show result is false we
+render the quiz question along with
+options for the user to select quiz
+question so let's start we'll be passing
+these so first of all we'll pass score
+so GSX brackets all right now total
+score will be
+needing total score will
+be depend on the DAT data let's name It
+Quiz data quiz data do
+length so here we'll write another
+function that let's name that function
+as reset all so we will be writing all
+these functions after this so you don't
+have to worry about it like reset all
+function will be writing let's write it
+this way all right so here we are I just
+first want to create a basic
+structure right
+now last
+[Music]
+name
+question all right so so inside the div
+with class container if show result is
+false we render the quiz question we
+have another
+with class question to display the
+question number and the actual question
+text the question number is displayed
+using a span element with the ID
+question number and the question text is
+displayed using another span element
+with the ID question. txt not question.
+txt but question txt let's say we access
+the question text from quiz data array
+that we will show you after some time
+using the current question State
+variable so that quiz data array is
+basically the data that we have created
+it is basically an array with the number
+of questions you can add questions as
+far you want but we have already created
+this that we will be uh showing to you
+all right so let's start
+[Music]
+span fan ID is question
+number all
+right
+all right now another
+span this one's ID would
+be let's say question. txt yeah as we
+discussed SL
+txt all
+right
+all right so as you can see here the
+thing is uh you might be confusing
+current question plus one why we have
+done it because we want to increment the
+question by one so that's why we have
+done it as we can see question number
+this pan ID is for the question number
+and this for the question text and this
+is basically our array that we will be
+be showing to you we will create this we
+already have the data of this quiz data
+array so basically what we are doing is
+we are accessing the question text from
+quiz data array using the current
+question State variable and you now
+you'll ask where is the current question
+State variable that we'll have to create
+like we did this similarly we will be
+creating that all right here we can see
+uh without wasting time current question
+here is the current question and this is
+basically the updator so it will update
+this current question and the
+initialized value is zero all right so
+up to this you understood the code now
+let's move on to the next part now here
+what we'll do is below this question
+basically div we have another div with
+class option container that we'll create
+to hold the options for the current
+questions so what all the options that a
+current question has it will hold those
+questions all right so basically in this
+one we will map through the options
+array for the current question questions
+from quiz data that quiz data array and
+render a button element for each option
+so yeah let's start and I'll explain to
+you all right so now let's start all
+right let's create a
+Dev all right
+jsx what we'll write
+is quiz
+data current question
+state
+DOT
+option
+container not option container no not
+option container but option
+do map we mapping basically so we have
+option
+dot options it will
+be change.
+map here we are using the map function
+to map each element of the quiz data all
+right
+turn
+all right now inside this button there
+will
+be nothing actually CL name
+let's do
+something yeah now before writing let me
+explain the button text that we'll be
+creating is set to current option text
+and its class is dynamically set based
+on whether the option is clicked or not
+when a user clicks on an option it
+triggers the set click clicked option
+function to update the clicked option
+State all right so clicked option state
+that also will be creating the use state
+so you don't have to worry we'll create
+that so the button text is set to
+current option text and its class is
+dynamically set based on whether it is
+clicked or not so we'll be writing a
+condition for that all right so let's do
+that so this is our condition so let me
+just complete the code and then I'll
+explain to you
+right
+I
+cck all right
+so yeah after this what we can do is so
+by
+mistake it got closed over here but it
+should all of this came under the this
+button
+right now in between this button and the
+button there must be jsx
+option all right so now let me explain
+what is this like you must be confusing
+this code so uh here this code
+represents a button used in a quiz it
+has a special class named option Button
+as we can see here it is option button
+so uh for styling purpose it is now
+depending on whether the the button is
+selected it dynamically adds a checked
+class to change its appearance the key
+attribute helps react keep track of each
+button when clicked it triggers a
+function set clicked option as we can
+see to update the chosen option the
+expression I +1 ensures each button has
+a unique identifier overall this button
+visually highlights the selected option
+and updates the quiz State when clicked
+making it Interactive and user friendly
+for quiz participants all right so this
+was about this so let's move on to the
+further code now we will have to create
+the US state hooks also so let's first
+complete the code all right it was like
+this only all right so after this D we
+will be getting an
+input
+type
+button value would be let's say next
+next
+ID
+next
+button all right yeah on
+click all right so this is what it is
+now let me explain now this is the
+basically the next button after
+displaying the options uh we render a
+input button with the value next and the
+ID next button as we have given when the
+user clicks on this button it triggers
+the change question function to move to
+the next question or display the
+question result if all the question have
+been answered so this is basically the
+next question button and if all the
+questions have been answered then it
+will simply display the result all right
+so this is what it is it will trigger
+this change question function now let's
+create the uh what we call U States
+above but before that as we are
+including use State then we have to
+include this use State all right now
+after that we'll have to import some
+other things as well like
+import quiz
+data
+from
+SL data we will also import the
+component that is question result but
+for that we'll have to create it first
+we will be creating that let's create
+the use State hooks for score as you can
+say this score one all
+right now use
+state zero we will initialize it with
+zero all right now another one is
+con click
+function click option actually yeah and
+set CLI
+[Music]
+option new
+state all right so one of this is false
+all of these are zero we have
+initialized it with all right
+now now the quiz data array so let me
+just show you here we have this quiz
+data array we have already created this
+so we're just going to copy paste it and
+go to SRC and new file name It Quiz
+data.
+jsx right now we'll just copy paste it
+and here we can import it so we already
+imported it so no worry
+yeah these are the question that will be
+asked all right now we'll have to add
+the functionality for changing the
+question we have wrote the code but we
+haven't wrote the functionality so we'll
+write
+cons change question let me just first
+write it and then explain it to
+you all right so now update score this
+is another
+function so first of all it will provoke
+this function now I will put a condition
+if current question is less than quiz
+data do
+length minus
+one then Set current question current
+question this
+one
+set all right right so here what we are
+doing is so basically the change
+question function this is basically the
+change question function this is
+responsible for updating the current
+question handling the transition between
+questions updating the user score and
+determining whether to display the quiz
+result once all question have been
+answered so here this is update score
+this update score we will understand
+afterwards we will be creating this
+function so let's just understand the
+conditional statements after updating
+the score in the conditional statements
+the function checks if the current
+question index that is current question
+is less than the total number of
+questions in the quiz data array minus
+one that is quiz data. length minus one
+if the condition is true it means there
+are more questions remaining in the quiz
+all right so so after that moving to the
+next question for that Set current
+question current question plus one now
+if there are more questions remaining
+the function updates the current
+question state by incrementing it by one
+using set current question current
+question plus one this moves the quiz to
+the next question additionally it resets
+the clicked option state to zero using
+set clicked option zero that we will
+have written so this ensures that when
+the user moves to the next question no
+option is pre-selected that means end of
+quiz if there are no more questions
+remaining that is if the current
+question is equal to the total number of
+questions minus one the function sets
+the show result state true using set
+show results true that here we can see
+here so this indicates that the quiz has
+ended and the result should be displayed
+to the user this is how it is now let's
+create this update score function so
+let's
+start
+const
+score so in if condition we'll write
+click
+option
+triple equals to yeah
+click option triple equals
+to quiz
+data quiz data that is the data array
+just a second by mistake this happened
+yeah quiz data now under this current
+question okay dot
+answer so in this we will set the score
+like set score the use State hook this
+is basically the updat score + one we
+basically updating the score use State
+all right so this is it this is const
+update we are updating it so let me tell
+you this is the update score function
+the first action within the change
+question function is so this is the
+change question function when this is
+initiated this is the first that is
+being taken so uh the updates this
+function is responsible for updating the
+user score based on their selection for
+the current question it checks if the
+option selected by the user matches the
+correct answer for the current question
+and update the score accordingly so that
+is why only we have this triple equal to
+if it is matching then only the score
+will be added otherwise not so this was
+it now after that there's another
+function known as re reset all function
+so let's create that function con reset
+all set show result
+false
+Set
+current equation
+set let me just first write these and
+then I'll explain to you
+zero then set
+score Z this is basic as the name is
+suggesting this is basically for
+resetting basically the reset all
+function is essential for providing
+users with the option to restart the
+quiz from the Beginning by resetting All
+State variable associated with the quiz
+progress so set show result Falls as we
+can see first of all this line sets the
+show result State variable to false
+indicating that the quiz result should
+no longer be displayed so the Set
+current question zero that is being
+written so this line sets the current
+question state with variable to zero
+indicating that the quiz should start
+again from the first question then as we
+can see set clicked option is there this
+line sets the clicked option State
+variable to zero ensuring that no option
+is pre-selected when the quiz restarts
+then set score this line sets the score
+State variable to zero resetting the
+user score to zero so when the reset all
+function is called it essentially revers
+the quiz back to its initial states
+allowing the users to start the quiz
+question or quiz a fresh now the only
+thing left is to create this component
+question result all right so let's just
+create
+this question
+result do jsx all right so now I'll
+explain the code to you guys let me just
+write it so as you can see this is the
+code question
+result and now I'm going to explain to
+you rather than writing so the thing is
+question result is a simple component
+used to display the quiz result and
+provide an option to try the quiz again
+it receives props from its parent
+component that is uh what we call this
+question. jsx or app.jsx the parent
+component is basically app.js making it
+reusable and adaptable to different quiz
+scenarios so this is a react functional
+component named question result it
+receives props that is score total score
+and Try Again from its parent component
+uh the component returns GSX elements
+enclosed in a fragment inside the
+fragment there's a div with cloud
+show score as we can see so uh this show
+score displaying the user score and
+total score below that there's a button
+element label try again which triggers
+the try again function when clicked then
+there are props props score basically
+props do score represent the users score
+passed from the parent component props
+do total score represent the total
+possible score of the quiz passed from
+the parent component then props do try
+again represent the function passed from
+the parent component which is called the
+try again button is clicked so then the
+question result component is exported as
+the default export using export default
+quiz result so the thing is in the
+parent component you would import
+question result component and use it
+where wherever necessary for example if
+you have a quiz component in the parent
+component you might render question
+result below the quiz to display the
+result you would pass down the propes
+like score total score function for
+trying again the question result
+component from app.js all right so
+basically here in this component you'll
+have to just know that basically
+displaying the result and provide an
+option to try the quiz again like it
+basically receives props from parent
+components making it reusable adaptable
+to different quiz scenarios basically
+this is what we are doing now the final
+thing that we're going to do is just
+include our questions component over
+here all
+right so as you can see one error one
+warning is there questions is we'll have
+to export and import it
+also so there are few syntax error as we
+can see but we'll figure it out first
+let's just
+export
+questions yeah export default questions
+app.js here we will be importing
+it
+import
+questions from
+do
+slash
+questions all
+right there are few errors not in this
+but over
+here it's mostly syntax error let's try
+to figure these out there are few errors
+two errors it is showing
+now res set all okay one error is this
+all right quiz data have done by mistake
+it should be question
+result all right now here is some error
+that I need to figure
+out yeah there it
+is all right now let's
+see okay so we need to import this quiz
+data also that's why it is like this
+let's just quickly import it all right
+so we have used this GSX brackets that's
+why it is saying because we haven't done
+the named import when we are doing the
+named import then only we use it as
+we're exporting by default so we don't
+have to do that all right so let's see
+so it is like this now let's do some CSS
+styling of it all right so we have
+included the CSS we will be attaching
+the CSS in the description you don't
+have to worry about it now let's see how
+our app is looking so it completely
+changed how it is looking you can also
+add Transitions and something make it
+more styly something like that so which
+of the following is used to manage
+component State and react this is the
+first
+question so use State this is the
+correct answer I'll also select some
+wrong answers
+also so that we can show you the score
+in the end what does CSS stand for
+getting sty
+sheets all right next which of which is
+not a JavaScript data type let's
+say object just let's
+say what was the year was JavaScript was
+La 1996 let's say now let's see there
+were four questions right so let's click
+on
+next so as you can see we scored two out
+of four okay let's try another one use
+State style
+sheets all right integer let's say 1995
+4 out of four yes we passed the exam or
+the app so this is how you can create
+this app if you click on try again it
+will again load uh the code will be
+provided in the description box all
+right guys with that we have come to the
+end of this video If you like this video
+please give it a thumbs up I hope it
+really help you all thanks for watching
+stay safe and keep learning staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

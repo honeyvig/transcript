@@ -1,0 +1,401 @@
+hey traders in today's video I'm going
+to show you guys an example of how to
+code a trailing stop in pinescript for
+the trading view
+[Music]
+platform none of the material in this
+video is financial advice I'm
+experienced in managing my own finances
+but I'm not qualified to give anyone
+advice on what to buy or cell everything
+I do in these videos is purely to
+demonstrate coding techniques and the
+code I write is purely for example
+purposes you should always do your own
+research and due diligence before
+engaging in trading or investing and
+please seek professional guidance if you
+need it with that said let's look at
+some code so a trailing stop is
+typically used to lock in profits on
+Trend following systems and systems that
+look to ride momentum in markets it's a
+very common exit method in many
+strategies out there and today I'm going
+to show you a simple template for
+creating an ATR based trailing stop so
+the ATR or average true range is a
+method for analyzing price action
+volatility the higher the ATR value the
+larger the candles or movements in price
+action over that time period and so the
+advantage of an ATR based trailing stop
+is that it will adapt to volatility so
+as the market increases in volatility
+your stop loss Will typically widen so
+to start with I'm just going to create a
+blank strategy script in the pine editor
+this is purely an example script from
+the trading view platform um it's not a
+particularly good system definitely
+don't trade it but it gives us a good
+template to work with in terms of Entry
+uh in terms of entering trades so that
+we can play around with some code so
+before we start I'm just going to tidy
+this up a little bit there we go we have
+the sample script from Trading views
+sample Library added so the first thing
+I'm going to need here is some user
+inputs so let's copy over some code so
+I'm going to get a bar look back an ATR
+length and an ATR mul multiplier and
+I'll explain what all of these do as we
+get on with the scripts the first thing
+I need is the ATR value so let's copy
+this code over here this line of code is
+getting the ATR value from the inbuilt
+ATR or technical analysis library and
+that gives us this red line here this
+value that is what I'm going to use to
+Trail my stop loss based on volatility
+so the next thing I need to do before we
+move on is calculate a long trailing
+stop so this is a long trade I need to
+get an initial trailing stop value for
+that long trade and then same for short
+trades I need to get an initial uh
+trailing stop short and then what we can
+do is compare that value to the
+currently saved stop loss and Ratchet
+that down in the case of a short trade
+or ratchet it up in the case of a long
+trade so I'll copy over some more code
+here so here we are calculating our stop
+loss values trailing stop loss has this
+V keyword in front of it and that makes
+it persistent across all the bars on my
+chart so this essentially saves my
+trailing stop value now it will be
+initialized as na or not a number it's
+not a value it's null and then we have
+two float values here so let's look at
+the long stop value to start with what
+this line of code is doing is first
+we're getting the highest low over our
+look back period so that'll be 10 bars
+by default so we're counting back 10
+bars and getting the highest low over
+that period so in this case that would
+be the value here and then we are
+subtracting the ATR value which is our
+red number multiplied by our ATR
+multiplier input so if I save my code
+here this should compile without any
+problems there we go we're not doing
+anything yet I'm not actually using this
+uh this trailing stop but if I come up
+to the settings here if I set this to
+two now I will be trailing my stop loss
+two times this value from the highest
+low over our look back period and
+obviously for short trades it's going to
+be the opposite we're trailing from the
+highest high over my look back period so
+now one of the best practices for me in
+my own coding process is to have a
+Boolean value here that checks if I can
+take trades and what this is going to do
+is validate any indicator values so
+because we're getting a 14 period ATR
+value if I go to the very first bar on
+my chart I need at least 14 bars to
+print before this value will give me a
+number if we hover over these early bars
+there is no number there so if I take a
+trade in these early bars then I will
+not have a stop- loss because if I do
+any mathematical calculation with any of
+these values that are na then the value
+itself will be set to na so multiplying
+an NA value by our multiplier so 2 * na
+equals Na and if you open a trade or
+pass in a stoploss value into the
+strategy uh functions that means you
+don't have a stop loss which is
+obviously not good and So to avoid
+issues on certain markets where the
+script takes a trade very early on I
+like to check my indicator values using
+this little Boolean value here now
+depending on the script I'm working with
+I might have a lot of indicator values
+to check in this case we only really
+need to check the ATR value so here I'm
+checking is our long stop and our short
+stop not na I could simplify this by
+just checking the ATR value itself in
+this particular script so I'll leave it
+as that to keep things simple and I've
+also got this background color function
+here which will highlight the chart when
+this condition is true so if we do not
+have a valid ATR value if I save my
+script here the chart will turn red so
+this period of time here we should not
+be taking any trades because uh we don't
+have the indicator values required in
+order to manage the position all right
+so now we can get on to the actual
+trailing stop code the first thing I'm
+going to do is change this um template
+code here for for entering trades and
+just add on our can take trades check so
+in this particular example script we're
+just looking for a moving average
+crossover but if I add in can trades and
+moving average
+crossover now the script will not take
+any trades unless our indicator values
+are valid so that solves one potential
+problem um it's a bit of an edge case
+but it can happen it's happened to me in
+the past and I couldn't figure out why
+my script wasn't taking any trades and
+then I realized it's because it wouldn't
+close a trade that it took very early on
+in price action but anyway let's move on
+so here we're entering long trades and
+here I am entering short trades now this
+particular script the way it works is it
+shorts and then it closes that short the
+next time it gets a buy and then the
+next time it gets say another signal it
+opens a new short trade and and then it
+closes that short trade and that's how
+this system works because I'm going to
+adapt it to us a trailing stop I don't
+want it to do that anymore so I'm going
+to add another check here n strategy.
+position size equals 0 if I copy this
+and paste it in the short condition as
+well I could also add this on to the end
+of this line here but then this line of
+code is getting quite long so I'll leave
+it inside this if statement and what
+this is doing is now checking um do we
+we have a moving average crossover and
+my indicator values are valid and my
+position is flat so I'm not long I'm not
+short I don't have any open trades if
+that condition is met then I will open a
+long trade or a short trade I'm also
+going to change
+my trade IDs to make these easier to
+reference later so this is our long
+trade this is our short
+trade if I save the code now the script
+will open a trade and never close it
+because I haven't put in my trailing
+stop code yet that is what I'm going to
+do next now there are many ways I could
+go about this but for this particular
+video I'm going to demonstrate the most
+efficient way to do this with the fewest
+lines of code possible while still
+keeping the code readable and not being
+too convoluted so what I'm going to do
+here is I'm going to check the first
+thing I'm going to check is is my
+position size greater than zero that
+means I have an open long trade so now
+I'm updating the long trailing stop so
+now now I need to check is my trailing
+stoploss value this value up here na if
+it is na then we have not taken any
+trades and we need to set an initial
+value for this stop loss value so if my
+initial trailing stoploss value is not
+set or my temporary long stop value up
+here that is constantly calculating the
+long stop value if that is greater than
+our saved trailing stop value
+then I want to override my saved stop
+trailing value with the new long stop
+and what I'll do is I'll plot these two
+lines onto the chart so that you can see
+what this is doing visually so let's
+start by just plotting my long stop save
+my code you can see this blue line is
+constantly moving now for a trailing
+stop I don't want it to do this I want
+it to only move up I don't want it to
+ever move down so every time it moves up
+it should stay there so this should stay
+up here if I'm involved in a long trade
+so if I comment out my short conditions
+here and I plot my trailing stop
+loss I will title this stop loss and I
+will give it a color of red a line width
+of one and a style of plot. plot style
+I'll just write style I'm looking for
+line break line br so this will break
+the line so I'll show you what I mean if
+I save my code now we will no longer
+take short trades so I'll just look for
+the first long trade there it is you can
+see my blue line here is constantly
+moving 1 ATR from the lowest low but as
+soon as this script enters a trade the
+red line is tracking that blue line but
+as soon as the Blue Line starts to move
+down the red line stays where it is and
+that's my trailing stop and it should
+exit my trade up here but I haven't
+added my exit code yet but now hopefully
+you can see visually what this code is
+doing so now I'm going to uncomment my
+short code and we'll add in an else if
+statement here so now what I'm going to
+say is if I'm in a long trade do this
+otherwise if I'm in a short
+trade so my position size is negative
+and not zero that means I am short if
+that's the case then I can copy this
+code here to update my short stop and
+now I just need to flip these operators
+around um
+so is my saved trailing stop my red line
+na not set or is my short stop lower
+than my saved stop my trailing stop loss
+if that is the case then we update the
+trailing stop loss to Short Stop This is
+why we need to set trailing stop loss to
+V to make it persistent otherwise it's
+going to jump around the same as the
+values here uh this is my long stop
+which is constantly updating on every
+bar I do not want that to happen with my
+trailing stop I only want my trailing
+stop to change if it is moving higher in
+the case of a long trade so that's it
+the final thing I'm going to do is one
+last else if this else is true then that
+means I'm not in a long trade and I'm
+not in a short trade so I'm not in any
+trade and in that case I want to reset
+my trailing stop loss to na now I'll
+leave these plots here for now so that
+we can see what's going on but the final
+thing I need to do is exit my trades
+with the trailing stop so I'll just copy
+this code over to save time and explain
+what's happening so I'm using the
+strategy. exit function to exit my long
+trade um so the format of this is this
+is the name of my exit which will
+display on the chart it's like a
+comment and in the strategy tester
+listed trades this second value is the
+trade I want to close so here I'm
+closing the long any open long trade
+here I'm closing any open short trade
+and I'm passing in a stoploss value
+which is a price parameter and this
+price parameter is my trailing stop loss
+this red line so now when I save my code
+the script will exit my long trade right
+there there we go so if I zoom in a
+bit um you can see that our stop loss
+was hit on this bar here and our
+stoploss stops drawing we have a line
+break that is why I made uh this plot a
+line break if I get rid of the break and
+save my code this line will now
+join um which is just an aesthetic thing
+it just looks weird to me I don't like
+that because you have this line jumping
+all over the chart especially in cases
+like this we don't take a trade for a
+while by adding lion break we get rid of
+that janky drawing and now the line
+stops drawing as soon as it's set to
+na so now I can get rid of my
+longstop plot I'll comment this as draw
+stoploss save my code and we are done
+with this particular example script so
+now let's just make sure it's doing what
+I think it should be doing we're
+entering short trailing stop loss kicks
+in and then we do not exit the trade
+until that stop- loss is hit so perfect
+example of an ATR based trailing stop
+there obviously a lot of different ways
+you can do this you could Trail the stop
+loss from a closing price you could uh
+Trail the stop loss on a percentage
+basis for the uh stock market or I could
+flip this to be the lowest low and the
+highest high over our look back period
+which probably makes more sense for um
+most trading systems now we're trailing
+1 ATR above the highest high and locking
+in profits as it moves down this is a
+bit more forgiving than the lowest high
+gives some more breathing room for the
+trade so better for Trend F systems um
+but for momentum systems I find that
+having a tighter stop loss to capture
+short-term momentum works a lot better
+for me in my systems but yeah you get
+the idea there are all different kinds
+of trailing stops we could instead of
+having a limit order we could wait until
+price closes above the stop loss that's
+pretty easy to code all I would need to
+do is comment out my limit order code
+and then I could just check if strategy.
+position size is greater than zero that
+means I'm long and then I can say and
+the close is greater than trailing stop
+loss then I want to strategy do close
+and then I need to pass in my ID if I
+copy that
+code and uh paste that down here and
+flip this operator flip this
+operator change this to short now we
+will only exit short trades if we
+close above or below the uh stop loss
+and that didn't work work because I've
+got these operators around the wrong way
+excuse me save that there we go that's
+better so now you can see the script is
+waiting for a bar to close above the
+stop loss and then exiting on the next
+bars open so those are a few different
+methods for trailing stops I'll comment
+this out and uh uncomment this for now
+and I'll leave this code in here as an
+example the source code to the script
+will be below the video in the pin
+comment as always if you'd like to learn
+more about pinescript check out our
+website I have a completely free 6-hour
+pin script Basics course there which
+explains the core fundamentals of Pine
+and if you want to take your coding
+skills to the next level check out my
+Mastery course we have over 50 hours of
+content and 50 plus five star reviews
+and growing the pin script Mastery
+course also comes with support where I
+can help answer any questions you have
+about pinescript coding and of course
+there's tons of free content on my
+YouTube channel so if you're new to
+pinescript go and check that out too I
+hope you found this video interesting
+best of luck with your trading take care
+and I'll speak with you in the next
+video goodbye
+bye

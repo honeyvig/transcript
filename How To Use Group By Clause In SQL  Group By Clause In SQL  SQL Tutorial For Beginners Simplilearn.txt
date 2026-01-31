@@ -1,0 +1,102 @@
+foreign
+'s YouTube channel in this session we
+will learn how to use the group bike
+loss in SQL but before we begin let me
+tell you guys that we have daily updates
+on multiple Technologies if you're a
+tech geek in a continuous hunt for
+latest technological Trends then
+consider getting subscribed to our
+YouTube channel and don't forget to hit
+that Bell icon to never miss an update
+from Simply learn now without further
+Ado let's get started with our one point
+agenda that is how to use the group by
+clause in SQL now before we execute the
+actual code let's take a quick peek on
+the syntax that we will be using today
+now the syntax is completely similar to
+the regular syntax that we usually use
+which will have the select keyword
+parameters that you want to print in
+your table the from keyword and the
+table name which you are trying to
+access the only difference is you will
+have a new keyword that is the group by
+keyword and based on a certain parameter
+right now we would get back to the
+Practical mode that is the MySQL
+workmans to understand the practicality
+of group by clause in a much better way
+if getting your learning started is half
+the battle what if you could do that for
+free visit scale up by simply learn
+click on the link in the description to
+know more
+now we are on our SQL workbench now
+let's get access to our simply on
+database there you go now let's quickly
+take the look at the tables we have we
+have two different tables now let's get
+access to our
+employee table
+now we have all the employee numbers
+employee names Department designation
+salary Etc right let's say you wanted to
+know the average salary of all the
+employees right so that would be select
+that is the AVG
+average function of salary
+low set bracket from
+employee right
+let's execute this
+there you go now you have the average
+salary of the entire office but what
+happens when your manager asks you to
+find the average of each and every
+Department average salary of the
+employees in each and every Department
+how would you do that
+right every organization has multiple
+departments HR development testing etc
+etc right now your manager wants the
+individual Department's average salary
+then you can use this particular clause
+which says Group by department so the
+entire table will be categorized based
+on the Departments and it will be
+grouped on the basis of the department
+and I'm also using the order by here
+which we will discuss in the next
+session but to give you a brief
+understanding of why we're using order
+by let's say your manager asks you to
+find the department which has the
+highest average salary right then you
+will be ordering the tables or ordering
+the rows based on the descending order
+of the salary now let's quickly execute
+this query and see the output there you
+go the query got successfully executed
+and we have the average salary of each
+and every Department choose from over
+300 in-demand skills and get access to 1
+000 Plus hours of video content for free
+visit skillup by simply learn click on
+the link in the description to know more
+and with that we have come to an end of
+this session on how to use Group by
+clause in SQL if you have inequities
+regarding any of the topics covered in
+this session or if you require the
+resources that we used then do let us
+know in the comment section below and
+our team of experts will be more than
+happy to resolve all your queries at the
+earliest until next time thank you stay
+safe and keep learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

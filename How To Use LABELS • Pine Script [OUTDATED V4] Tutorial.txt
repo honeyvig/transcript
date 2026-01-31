@@ -1,0 +1,241 @@
+hi coders and traders this is Matthew
+from pine script mastery calm in today's
+lesson I'm gonna be addressing a
+question I got from a student recently
+about drawing text onto your chart so
+this student asked can the text
+parameter be referred to a string
+variable on the plot shape function he
+wants to draw the difference of two emas
+converted into a string variable and
+then placed into the text parameter of
+the plot shape function now
+unfortunately you can't do this in Pine
+script because the text parameter of the
+plot shape function requires a constant
+variable meaning a variable that does
+not change but in today's lesson I'm
+going to show you how to achieve the
+exact same thing plotting the difference
+of two EMA's to your chart using the
+label object so if that sounds like
+something you'd be interested in stick
+around and I'll show you how to achieve
+that in this lesson so here I am in the
+PI in script editor and all I've done is
+create a blank script I've changed the
+title and I've set overlaid it true so
+let's get started with the code for this
+lesson the first thing we need to do is
+calculate the difference between two
+EMAS
+so here I'll create a comment here it
+says calculate difference between 50 EMA
+and 100 EMA and we're going to give this
+variable a name of variable value and
+this could be any variable that has an
+integer or float value so what we're
+going to do here is we're going to get
+the EMA over the past 100 bars on the
+closing price and we're going to
+subtract that from the 50 EMA of the
+closing price so now of course one way
+you could plug this to the chart is to
+just paste that in there save the script
+and up here in the top left you will get
+your value plotted to the chart that's
+one way to achieve this but if you want
+the text to be drawn directly onto your
+chart beneath the candle or beneath a
+price action setup or something like
+that then you need to use the label
+function so if we were to use the plot
+shape function and we were to say draw
+this on every bar on our chart and set
+the text to first of all just test we
+save the script we're getting a shape
+drawn above all of our bars with the
+text test but if we were to change this
+to say two string
+variable value and save the scripts get
+an error the reason for that is that
+this text parameter needs to be a
+constant string meaning any string
+variable that does not get changed in
+our script at any time that doesn't help
+us when we're trying to do what we're
+trying to do here which is plot the
+difference between these two EMAS to our
+chart as text so we need to use the
+label functionality so here we're going
+to say create a label and the first
+thing I'm going to do is create our
+label text which is going to use the two
+string function and what this two string
+function will do is convert any variable
+or value that we give it into a string
+datatype so that we can pass it into the
+text parameter of our label object so I
+know it's a bit of a mouthful but I'll
+show you and demonstrate how to achieve
+that next so we're going to convert our
+variable value into text that will
+assign this label text variable to this
+text string version of whatever this
+turns out to be and next up we need to
+create our label to draw this to the
+chart so I'm going to just create a new
+label object called our label and that's
+going to be set to label dot new and
+then open parenthesis to start using
+this function so this label function
+takes a number of function parameters
+the first one is an x-coordinate and
+that is going to be what bar number to
+draw this on so if we just set this to
+bar underscore index that will just
+reference the current bar index on
+whichever bar this script happens to be
+running on and so by default if we leave
+this as it is it'll just draw on every
+bar on our chart the next parameter it
+takes is a y-axis parameter and we don't
+need to use this parameter because we're
+just drawing it onto the bar we're not
+drawing it anywhere else on our chart
+except for just on the bar itself so we
+can just write n/a in there the next
+function parameter we need to define is
+our text parameter and for this we're
+going to pass our label text variable
+here well you could just copy this and
+paste it into here as well but then this
+line gets really long so I'm gonna leave
+that as that and of course you could do
+any edits you wanted to with this string
+such as adding on some sort of tag or
+something like the simian photo
+ticker ID and that sort of thing so
+we'll leave that as its own variable for
+now the next function parameter this
+takes is an X location but that's an
+optional parameter we're not going to
+define that today because we've already
+defined our x coordinate as bar index so
+we don't need to give it an X location
+we do need to give it a wire location so
+we're going to set the wire lock to Y I
+locked up below bar so this will set the
+Y location to below the bar the next
+parameter we need to put into this
+function is the color so we'll give this
+a color of color green you can set that
+to whatever you wanted to and we'll set
+the text color to color dot white so
+we'll have white text over a green label
+so here we need to write a few more
+function parameters so I'm going to
+start a new line here so I'm gonna put a
+comma on the end of this line and then
+continue this line on the next line with
+a space one space indentation if you do
+not include this indentation then the
+pine Script compiler will not know that
+you're trying to write this line of code
+across multiple lines and you'll get a
+compile error so always remember to
+indent at least one space if you're
+going to continue on to the next line
+with your code so the next function
+parameter that we're going to use here
+is our style parameter and we're going
+to set this to label dot and if we press
+control space you'll get a list here and
+if I start to write style here's a list
+of all the styles we have to choose from
+and there's quite a few but for today's
+lesson we're just going to go with style
+underscore label up and then we're going
+to give it one more function parameter
+which is our size we're gonna set these
+size to size dot normal and now if I
+save the script we will be getting
+labels drawn on to our chart as you can
+see here there's quite a few of them
+they start to draw over the top of each
+other and that's a problem yeah but we
+can fix that later you can also see that
+it's drawing the difference in the two
+EMAS
+in pits so if I add two exponential
+moving averages onto my chart one is a
+fifty EMA and one is a hundred EMA and
+we measure out the
+difference between these two EMAS you
+can see we get around 89 pips which is
+what this label here says that's eighty
+nine point five blah blah blah pips if
+you want to convert this into points in
+the whole numbers all we need to do is
+wrap these in parentheses and divide
+this by Simeon firm in tick now if I
+save the script these will be in whole
+numbers and they'll be in points so here
+we have 895 points between the EMAs and
+if you wanted to get this in pips you
+just divide this number again by 10 but
+we'll leave it in points for now cuz
+that's not important but before we
+finish this lesson let's just tidy this
+up a bit
+by deleting any label that is not the
+current label so in order to achieve
+that all we need to do is delete our
+label they came before the current label
+so now if I save the script every time a
+new label is drawn to the chart the
+previous one gets deleted and we just
+have one label drawing onto our chart so
+now we're drawing the difference between
+the EMA variables as a string text
+variable using a label directly on to
+our chart and there are multiple useful
+use cases for this functionality for
+example if you wanted to draw your
+stop-loss price directly onto your chart
+you can do so here so if I add on my
+ultimate pull back indicator that I have
+created in the past and I come into the
+settings menu and turn on draw stop by
+labels to the charm round it to a whole
+number as well you can see that this is
+drawing my stop-loss size in pips to the
+chart which is in this case around 148
+pips you rounded up to the nearest
+number so that's one useful application
+of this sort of information and my
+favorite way to use this whenever I
+detect a setup on my chart with a stop
+loss in a target price I can draw that
+information directly onto my chart so it
+don't need to measure this out and I can
+get an accurate reading of the distance
+if I turn around our stop loss the whole
+number off my stop loss is exactly one
+hundred and forty seven point five pips
+from the closing
+of these set up candle so that's it for
+this lesson
+I hope you found that helpful if you did
+and you want to learn more about pine
+scripts head over to pine script mastery
+com here you'll find my advanced pine
+script courses and my basics course
+which is free so if you want to learn
+more about pine script head over here
+and you'll find out a little bit more
+about me and a little bit more about
+pine scripts I hope you found this
+lesson interesting and helpful I'll see
+you the next one
+[Music]

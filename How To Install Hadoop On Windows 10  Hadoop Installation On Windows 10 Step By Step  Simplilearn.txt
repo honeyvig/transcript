@@ -1,0 +1,218 @@
+hello all hope you're all doing well so
+today's topic is how to install hadoop
+in windows 10. before moving please make
+sure you subscribe to our channel and
+press the bell icon to never miss an
+update moving on to agenda
+first we shall see prerequisites before
+installing
+after that setting environment in your
+device
+and finally hadoop setup so first of all
+we need to install jdk for
+your system
+to install it you have to go to oracle
+website and click on to this windows x64
+version and click here to download
+click on i reviewed and agree
+and click on to download
+you can see it is downloaded sometimes
+it will ask for login and sign up so you
+have to give your own email id and
+password for that
+so it will take some minutes to install
+so prepare it to install click on next
+next and
+your file is being installed
+so you can
+install in some other folder to avoid
+confusion
+you can go to
+this pc
+and create new folder
+name it as
+java
+and click on okay
+so it is now being installed
+to your system
+so now you can see java essay
+development kit is successfully
+installed click on
+close
+next to download hadoop you have to
+visit their official website and
+click on
+binary
+to install hadoop you will get this
+mirror link which is a tar file
+and you can see it is started
+downloading
+and now you can see that the hadoop tarp
+file is downloaded
+now the next step is to
+set environment variable you can go to
+start menu go to settings
+click on settings go to system
+and click on
+environment
+edit environment variables
+okay
+now edit environment variables
+click on environment variables
+so now here click on new
+and give
+java
+java underscore home
+and you have to give variable value that
+is part of jdk files up to bin
+folder so
+in environment variable
+you have to
+set the path for
+system variables
+and click on new
+and give variable name and variable
+value from the same jdk bin directory
+so
+after this click on ok and close all
+this
+so environment variable is set
+we have to extract the
+hadoop
+tar file click on tar file
+click on 7-zip and click on extract here
+so that the star file is extracted in
+your windows system
+now you can see the hadoop file is
+extracted
+so
+here these are the directories which
+will be there now we have to
+set up environment variables for hadoop
+also before that we have to see whether
+java or jdk file is being installed in
+your system to do that you just have to
+go to command prompt
+click on command prompt and just give
+the command as
+java
+c to check whether it is installed in
+your system
+here i am
+after extracting how to file i am
+extracting it another time because in
+hadoop when we install
+it and after that you will get another
+tar file so we have to extract that tar
+file also and we will get some errors
+here so we can just ignore this error so
+in our system hadoop is successfully
+extracted and we can click close
+so next step what you can do is just
+copy the hadoop file and paste it in
+another folder like c folder to avoid
+confusion now that you have copied it
+you can click on etc
+and after that you will get
+many files
+like many files so we have to select
+only five files and change the
+configuration of that xml file
+so they are one is coresight
+and afterwards hdfs site and afterwards
+we have to
+change map reduce site
+this is the xml file
+and after that we have to change jan
+file also
+so the last file that we are going to
+edit is hadoop environment
+file so this will
+this we will edit by using
+command prompt
+here all you need to do is right click
+click on edit with notepad
+and
+write the code here to change the
+configuration
+so the xml files that we are going to
+edit now is
+coresight.xml
+htfsi.xml
+mapreduceside.xml and yarn.xml and
+another file that we are going to edit
+will be in command from
+and the last file that we are going to
+edit through command prompt
+so first let's look at coresight.xml
+so this is the code
+that we are writing in codesight.xml
+this is the selected code that we have
+to write
+after that let's move to hdfsi.xml
+so before editing how to folder we have
+to create two files
+inside hadoop
+so in this
+page we have to create another folder
+we can name it as
+data
+inside that we have to create two more
+folders one is name node and another one
+is data node
+let me create two folders
+called as
+name node and data node
+so in hdfs site dot xml
+we are writing this code
+to get the configuration
+so this is the path of name node and
+this is the path of data node that we
+have created recently next let's see
+mapreduce site file
+this is also an xml file we have to
+write
+this much code this is a small bit of
+code that we need to write
+with name value and property tax
+in
+yarnside.xml file we have to write this
+code with same name value and property
+tags this is all we need to write in xml
+sites now the last file that we are
+going to edit is hadoop environment that
+we can edit
+in this
+java home by giving the path of the jdk
+file that we have created in environment
+variables
+we have to set environment variable
+using
+just go to system and click on this
+option and you can set both environment
+and path variables like how we did in
+jdk after your path variables and
+environment variables are set your
+hadoop installation is done now we have
+to check
+whether hadoop installation is
+successful or not to do that you have to
+go to command prompt
+all you need to do is
+click hdfs
+name node
+name node
+and
+hyphen format
+and this is the command that you need to
+run to check whether hadoop is installed
+properly in your system or not
+so this is how you need to install
+hadoop in your system thank you for
+watching the video in case of any doubts
+leave it in comment section
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

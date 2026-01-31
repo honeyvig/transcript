@@ -1,0 +1,520 @@
+foreign
+YouTube channel before we begin if you
+love watching Tech videos subscribe to
+our Channel like that tutorial and hit
+the Bell icon to never miss an update
+today we are gonna integrate chat GPD on
+WhatsApp
+this will be a straight tutorial on how
+to integrate chat GPT on one device and
+you can use other device over the mobile
+phone to start a chat with the
+integrated device and the chat Deputy
+will answer all your queries I will show
+you a demo before starting
+so for that
+first we'll open the command prompt
+and run the file
+mean
+for that
+write the command go run
+main.code so this is the file that is
+written in the go language
+and we're gonna run with the command
+Goran main.com for that you need to have
+colang installed on your system
+so I will guide you with all the process
+but currently we are seeing the demo so
+here this command will generate a QR
+code that will scan with the device
+which we want to integrate the chat GPT
+on so we'll wait for the file to get
+executed and after this we will execute
+the server.py file and that will open
+the chat Jeopardy on the Firefox browser
+you can also use other browsers that is
+chromium and other if you want but we'll
+use Firefox to skip the one step
+verification that chat Deputy ask us
+whether if we are a bot or a human so we
+will run the file again as there was
+some error
+so this time yeah it print perfectly now
+we'll take the device and open WhatsApp
+on it in which we want to integrate the
+charge APD so I am using one device to
+just capture this QR code
+so this is the device
+and you can see
+that my device has captured this QR code
+and you can see here that WhatsApp me
+meow
+it has been activated so now we'll run
+another file that is server.py file and
+that is the python file for that we'll
+open the command prompt again and that
+would be another command prompt and to
+run that file we write the command
+python
+server.py
+and you can see
+in the Firefox browser chair GPT has
+opened and I have logged in already so
+we didn't it didn't ask me to login
+again
+now
+we'll take another device and with
+message on the
+mobile device which has been integrated
+with the charger building
+so from this device
+I will write hi
+and you can see on the screen that chat
+Gypsy replies hello how can I assist you
+today and the scene you could see on the
+WhatsApp chat so today we will ask
+Church repeating
+what is the capital of
+India so you can see that the charge
+repeating is typing
+the capital of India is New Delhi and it
+has been responded to
+or mobile device so this is how
+we can integrate chat GPT on a WhatsApp
+and this would be the simple tutorial in
+this you don't need to code any
+uh this there would be another tutorial
+if you know what's behind the
+code or what behind the integration part
+so you could
+watch that video and know how we have
+integrated but in this tutorial I will
+guide you with how to download the files
+and how to run the files and how you can
+integrate charge Deputy on your device
+so before proceeding with the tutorial I
+have an insightful for you guys
+that is if you are aiming to get
+certified as an AI and ml engineer and
+want to build a career in AI in that
+case you can check the Caltech
+postgraduate program in Ai and machine
+learning by simply learn which will open
+the doors for the best career
+opportunities and find the details of
+this course you can check the link in
+the description box below and the pin
+comments and we have a special discount
+for our YouTube Community you guys can
+Avail the course with a 15 discount by
+applying a coupon code
+ytb15 on the payment page and this
+coupon code is also mentioned in the
+description box
+and before starting let us have a simple
+question
+to brush upon our knowledge
+so I have a question for you and your
+question is how much time did open ai's
+chat GPT took to hit 1 million users
+so
+it's 10 days and your first option is
+nine days second option is five days
+third option is seven days and the
+fourth option is six days
+please answer in the comment section
+below and we'll update the correct
+answer in the pinned comment or we will
+answer you directly in the comments so
+you can pause the video give it a
+thought and answer in the comment
+section
+now we will move to start integrating
+charge GPD on our device
+so for that first you have to download
+this repository and it contains some
+files and I will upload some more files
+here you just have to download it
+download the zip file
+and after downloading it
+you just need to extract it in a folder
+foreign
+so we will extract and
+C drive in Python projects
+mainly we create the folder here only
+so here we'll create a folder
+okay integrate charge obtain WhatsApp
+mean or yeah
+right integrate
+checked keep it that's it
+so inside this folder
+we'll extract the files and I think it's
+been done
+so we'll just visit
+C drive python projects and inside it we
+have integrate chat repeating and we
+have these two files so to run these two
+files what you need is you need python
+installed on a system and golang
+installed on your own system so I hope
+you guys know how to install Python and
+golang if you don't I will just give you
+a quick tutorial
+so to download the
+python you just need to visit the
+python.org website and move to the
+download section and you will see the
+download the latest version for Windows
+you just need to click that
+and the download will start for you the
+package has been downloaded so I will
+provide you the link on how to download
+the
+python in the description box and also
+the link for the GitHub repository
+so you don't have to search it anywhere
+also you can search it on the browser
+just write integrate charge obtain
+WhatsApp and avisara Ahuja you will get
+the GitHub link and just write GitHub
+also in the search bar you will just
+redirect it to
+this
+and now you have downloaded the python
+so just open the exe file
+and start with the installation so you
+can choose add python dot dxa to path
+you can choose that
+and
+customize installation
+and just click on the python test suit
+and the next you can add the python to
+environment variables so you have to
+take both these options
+and then you will click on the install
+as I have already installed it so I
+won't need to install it again you just
+need to click on the install button and
+here you will get the python installed
+okay
+and the other thing you need is golang
+go language
+so to download it you have to go sorry
+you have to go to its official website
+and go to the download section and here
+you will see the Microsoft Windows as I
+am working on the Windows operating
+system so I will download for the
+windows I've already downloaded and
+installed it so you guys can download it
+and I will show you like this is simple
+how to install golang you don't need to
+add anything so it's been downloaded
+okay
+to guide to the installation okay
+so we are just waiting for the setup to
+be initialized so that
+we can install it
+now you can see the next button is
+available just click on that
+is currently installed yes you can see
+that it's already installed so you don't
+need to do anything in installing the go
+language just click on install and it
+would be installed for you so I won't be
+installing it again as I have already
+installed on my device
+so moving on now what we'll do
+first we will run the server.py file
+so for that
+we will go to the folder where we have
+extracted our files and here we will
+open the command prompt and
+run the file server.py so to run a
+python file we have to write the command
+Python and then the name of the file
+that is server and its extension that is
+py so we have
+initiated that
+okay uh Firefox is already running as we
+have node
+closed but we have opened for the demo
+I think uh
+it's an error
+I will
+again
+run the confound I will just close the
+previous command prompts
+yeah I have
+closed them
+now I will open the new one and you
+should open the command prompt the new
+command prompt after installing the
+Python and The Go language I will also
+assist you in
+installing the GCC compiler because you
+would be needing that for go language
+so first we'll
+random server file
+so you could see that by running the
+python server.py file
+you could see that the charge upd has
+opened up in the Firefox browser
+so I will show you the code
+what we need for that you need to
+install the flask
+system OS modules
+playwright module
+and here
+in the 16th night you could see that we
+have used Firefox you could use chromium
+for Chrome but the case is you need to
+do the one step verification that is the
+captcha thing for
+in your leg
+initializing the charity but we don't
+need that so we are using the Firefox so
+you should have Firefox on your system
+now what I want you to do is just
+install these modules as if you if these
+modules would not be installed on your
+system it would show an error it would
+give you an error in the command prompt
+only as I have already installed them so
+it's not giving me any error
+so I will tell you the commands to
+install them
+[Music]
+so to install flask you can just write p
+y p i space flask in any browser and it
+will direct to the website
+so you could open the first link that
+would be pypi.org and this is a command
+pip install flask so you can just copy
+that
+and open your command prompt first we'll
+create it Ctrl C
+and
+now you could see that we are in the
+folder integrate chat repeating and here
+you could paste this command and press
+enter
+it states that that the requirement is
+already satisfied as I have already
+installed these modules
+and the other module you need is
+playwright so just copy the command go
+to your command prompt and paste this
+command
+and press enter it would be installed
+for you and another
+module you need is virtual environment
+so just copy this and paste in your
+comment prompt and another module you
+need is
+the OS module
+OS
+OS system and we'll open the py pi
+that is the official website the PIP
+command website and you just copy the
+command
+go to your command prompt
+paste the command and press enter and
+this module would also be installed for
+you guys
+and now you have installed the go
+language the Python language and the
+modules you need to run the server.py
+file now what you need to do is run the
+go file but before running the golang
+file what you need is
+GCC compiler so to download it
+I will provide you the link for the GCC
+or you could just see here I'll provide
+you the link in the description box
+below you could just click on that
+you will be directed to this page just
+click on this release that was 24th May
+and what you need to download is this 64
+plus 32-bit
+just download it
+and as it gets downloaded just open it
+and click on the create button
+and after that the second option then
+next and the directory you want to
+install in
+as I already installed this
+I will choose
+the C directory only
+in C
+I would
+install in Python projects okay
+okay it didn't
+took the folder
+in C
+of course we can sell it
+in Python projects and
+in the same folder that was integrated
+charity
+okay
+so I'll click on next
+there's no time Direction yes I want to
+install here and when you click on
+install it would get installed for you
+guys I've already installed it
+started so it will get installed again
+so now what you have to do is you have
+got the
+all the requirements to integrate the
+chat Jeopardy on WhatsApp that is all
+the modules for the server.py file and
+the main.co file for that you have
+installed the go language and the GCC
+compiler so you could run both the files
+and for that
+we will close the command prompts and
+open the new command prompts
+and this is a
+folder
+so we will open one come command prompt
+here
+sorry
+and we have to open different command
+prompts for both the files for the
+golang file and the python file okay
+so we will open the command from tab
+and
+now to run the golang file we need to
+write the command go space run space the
+name of the file and extension that is
+main.co
+and we have executed the file and this
+file will provide us with a QR code and
+we'll scan the square Port from our
+first device in which we want to
+integrate the chart GPD and before that
+we will run our another file that is
+server.py file and for that we'll open
+another command prompt
+and to run this command
+and to run this file we'll write the
+command python space the name of the
+file that is server and the extension.py
+so we'll see whether a QR code is
+generated or not
+and I can see
+that it's been linked to
+the previous device as we have done in
+the demo so we haven't logged it
+out
+so I will check with the device yeah
+it's been active so I will just
+log out from that device
+and run it again
+or I will open another command prompt to
+run the golang file again
+so to run it
+will open the command prompt and write
+the command CMD for that
+and here we'll write the command to run
+the
+go file
+and we have done that
+and if we see the server.py file
+in your
+has been
+perfectly executed
+but we are not able to
+yeah all right
+everybody is running fine now what we
+have to do is
+use our first device to scan this QR
+code so that chatubity
+gets linked to our first device and then
+we'll use another device
+to chat with the chat GPD
+so now we have opened our first device
+and open the WhatsApp and click on the
+link devices
+and here
+I'm going to scan this QR code
+and you can see that it's logging in
+now it's logged in
+and now from the another device
+will ask a query to judge everybody
+and we'll ask charged repeating to write
+a code
+to add two integers
+and that one python
+so we just misspelled python but we hope
+that our chair GPT
+understood that so here we can see that
+the judge everybody got the command
+and it has
+random good example so here's an example
+called to add 20 percent python
+so you can see that
+charity has been integrated and we'll
+see
+its response yeah we got the response
+and now we'll ask another question and
+that would be
+what is the currency of United States
+um
+let's see what it responds the country
+of the United States is the United
+States dollar it is the most commonly
+used currency in international
+transaction and in other words primary
+Reserve currency
+so we can see that till it writes all
+the lines whose sentences it's been
+executed on the browser and after it
+completes oh it stops generating the
+answer
+it centered to the WhatsApp chat
+so here
+we are done with a project
+now you guys have understood how to
+integrate chatgibility with WhatsApp and
+what you have done is we have downloaded
+the repository and we have to extract
+all the files that are present in the
+repository I will update all the files
+you just have to extract them into a
+folder and then run the main.co file and
+the server.py file and before executing
+these files you need to have golang and
+python installed on your system and for
+the python you need some modules that we
+have seen that is the playwrite module
+The Flash module the OS system module
+and the virtual environment module so we
+have seen how to install them and when
+you will just execute the file on the
+command prompt you would get errors if
+these files or modules are not installed
+on your system and for golang we have
+installed the GCC compiler and after
+installing all these requirements then
+you have to just run both the files and
+when you run the golang file you will
+get the QR code just scan it with your
+device on which you want to integrate
+the chat APD and after that from any
+device you can just message on that
+number on which you have integrated the
+charity and the child GPT would answer
+all your queries
+and with that our session is completed
+and I hope the session was interesting
+and informative if you liked it please
+let us know in the comment section below
+and also do subscribe to our Channel and
+stay tuned for more from Simply learn
+foreign
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

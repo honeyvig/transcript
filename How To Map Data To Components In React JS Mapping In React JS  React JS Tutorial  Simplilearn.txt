@@ -1,0 +1,339 @@
+in the vast world of web development
+react has become a go-to choice for
+building engaging user interfaces its
+component based architecture a key
+feature simplifies the development
+process by breaking down UI elements
+into reusable building blocks at the
+heart of react power lies at the concept
+of mapping data to components this
+essential process allows developers to
+dynamically render content within their
+applications by connecting data to
+specific components react enables
+developers to create user interfaces
+that responds to changes in data
+providing a seamless and interactive
+user experience throughout this
+exploration we will delve into the
+Integrity of mapping data to components
+in react we will uncover straightforward
+techniques and best practices with
+Hands-On
+examples craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+hire simply learn has your
+back just a quick info for you if you
+are a professional who wants to switch
+careers to software engineering by
+learning from the experts then try
+giving a shot to Simply learns
+postgraduate program in fullstack web
+development accelerate your career as a
+software developer through the
+post-graduate program in fullstack web
+development course in collaboration with
+Caltech ctme in just a few months you
+will learn modern coding techniques with
+boot camp level intensity and gain all
+you need to be a fullstack engineer the
+link in the description box should
+navigate to the homepage where you can
+find a complete overview of the program
+being offered mapping data to components
+in react is a powerful concept that
+allows us to dynamically render
+components Based on data it's a
+fundamental skill in building Dynamic
+and interactive user interfaces react we
+often work with arrays of data let's say
+we have an array of products each
+represented by an objectoriented
+information like name price description
+and we want to display these products on
+a web page as individual cards this is
+where mapping of data to components
+comes in handy to map data to components
+in react we typically use the map
+function so this function iterates over
+each item in the array and returns a new
+array of react components here's a
+simple example suppose we have an array
+of products where each product is
+represented by an object containing
+information such as name price and
+description additionally we have we have
+a product card component that is
+responsible for rendering each product
+as a card on a web page now the map
+function in react is like a handy tool
+that helps us deal with list of items
+such as an array of products it's bit
+like having a conveyor belt where each
+products comes along one after the other
+when we use the map function on our list
+of products it takes each product and
+does something with it one by one in our
+case we are creating a special card
+called Product product card for each
+product this card is like a template for
+showing the details of that product as
+the map function goes through each
+product it grabs the details of that
+product like its name price and
+description and passes them to the
+product card component it's bit like
+giving the product card all the
+necessary ingredients to create a card
+for each product once the map function
+has gone through all the products we end
+up with a whole bunch of product card
+components each tailor to a specific
+product think of it like having a stack
+of cards each showing a different
+product now when we put all these
+product card components together and
+render our main app component it's like
+laying out all those cards on a table
+each card represents a different product
+and they are all neatly arranged for us
+to see on the web page the beauty of
+this approach is that we don't have to
+manually create a card for each product
+the map function does all the heavy
+lifting for us making our code more
+efficient and allowing us to easily
+handle large sets of data it's a smart
+and scalable way to display information
+on a web page so now let's understand
+this with the help of handson example
+all right so this is our vs Studio code
+now as we can see this is data.js so
+this is the array that we will be
+mapping so this is the data that we will
+be mapping to the components all right
+so this is our app.js component and this
+is CJs we have already named them all
+right now let's start with app.js first
+of all we'll
+import this imported right now we'll
+start with
+function right so now let's create
+so let's
+me so let it be like this as of now also
+we need to export
+it all right so this is our app.js as of
+now first of all now we'll have to move
+to card. JS and create a proper
+component over there so this is our CJ
+component here we will be receiving the
+props display on the screen so
+whatsoever will be displaying on the
+screen will be here only so let's start
+so
+inut react
+from
+so inside this D we will do some CSS as
+well so let's do that let's TR and as we
+know in the GSX format this is how you
+have to does then do CSS
+so right now
+padding padding let's keep the padding
+20s let's
+say okay now to the margin let's keep
+the margin and Mi
+it yeah that would be fine you can
+adjust
+accordingly
+and now here we keep an
+image right so first the
+source
+image
+URL you can see
+this
+right so this is the image
+now in H2 we will write the
+title keep it
+inside all right
+now
+the description would be right so keep
+the description so as of now let's not
+include these
+jsx it will be
+understand keep this
+description this is a wrong sytax by the
+way
+just right now this is done then export
+default all right so let
+it now in the app.js we'll have to map
+first of all the data from here right so
+as you can see in this array ID is there
+title is there description image so ID
+is unique so we'll be proceeding with
+that first of all here in the what we
+call
+app.js we'll be creating this key title
+description images inside this div tag
+so and we will be
+I I we will be mapping these so in order
+to map this we have to keep them inside
+the
+GSX so let's do
+that right so the name
+is all right so the name is cards Thea
+this is the
+name right cards data do map use the map
+function
+right
+so
+this so here this is a component
+card inside this
+component we'll be passing the box so
+we'll be passing the
+key card ID
+right
+then
+Titan
+card
+title
+right
+descrition
+I'll explain you what I'm doing over
+here first let's just see how it is
+working all right so we have
+this so inside this component we are
+returning a jsx structure it's a div
+element containing a Java Script
+expression so this expression Maps over
+the cards data so this one is cards
+data all right so like basically this
+expression will map over the card data
+array and renders a card component for
+each item in the array so each card
+component is passed props like key title
+description and image URL so the these
+props are extracted from each card
+object in the cards data array now let's
+move to the card component so here what
+we are doing is we are basically passing
+these props and as we can see this is a
+component card component and inside the
+component we are passing these
+props so here we'll have to receive
+those props basically so there are few
+ways to receive the props let's do this
+way title description and the other
+thing
+was image
+URL all right so yeah title description
+and image URL so these three were the
+props and now as you can see here we'll
+have to enclose this in curly bres
+because GSX and description as well all
+right and image we have already done
+that so yeah in order to display these
+in order to display these informations
+or data basically from here to here that
+is the screen web page we'll have to
+enclose them in jsx tags now I'll
+explain you what we are doing in this
+part so this is basically a jsx
+structure returned by the card component
+it represents the visual representation
+of the card this basically represent the
+visual representation first there will
+be an image then there will be a title
+and there will be a description so the
+div element with inline styles for
+Border padding and margin this is what
+it is and then inside div as you can see
+there's a image tag and displaying the
+image specified by image
+URL then the alt attribute is set to
+title prop then next there is an H2 tag
+and that is displaying title prop then
+finally there's a P tag that displays
+the description prop
+after that there's export default card
+yeah one more thing is there we'll have
+to import here as well then only this
+will work so we'll
+import import
+card
+from
+Bo
+cards
+data
+from SL
+data all right so this is the parts
+these are the parts all right now let's
+save
+it let's see if it is working or
+not all right so compiled
+successfully now let's see if it is
+working or not so open this so as you
+can
+see card one this is and card two but I
+think the description is not being
+displayed we'll have to check why it is
+not getting displayed all right so by
+mistake we wrote cards data but we'll
+have to write cards only card
+only right now let's save it now let's
+see if it is working so yeah now the
+description is as you can see it is
+visible this is the description for card
+one this is the description for card two
+this is the title this is the image as
+we predicted so we can see here also
+image title then description same here
+it is image title description so as we
+can see here here only one or a single
+block of code we have written and we are
+over here we are creating two cards
+basically so we can create 100 out of
+this single only more than 100 so
+basically what we are doing is if we
+have these more objects or more arrays
+then we would have done that as well so
+there are two arrays so for that we have
+created two cards because we are
+basically passing this data one by one
+to this template we can say first we
+pass this then we pass this to this
+template so it is being display so this
+is the beauty of this
+react so I hope you understood how to
+map data to components and if you have
+any doubts regarding this you can put
+into the comment section and with that
+we have come to the end of this video If
+you like this video please give it a
+thumbs up I hope it really help you all
+thanks for watching stay safe and keep
+learning staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to no
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

@@ -1,0 +1,272 @@
+hey everyone welcome to Simply La
+YouTube channel today we will learn
+about Advanced tips on how to use f
+formula in Excel that said if these are
+the type of videos you'd like to watch
+then hit that like And subscribe buttons
+and the bell icon to get notified just
+for a quick info if you want to upscale
+yourself master business analytics
+skills and land your dream job or
+growing your career then you must
+explore simply lar CAD of various
+business analytics programs simply learn
+office postgraduate program from per
+University in collaboration with Amazon
+Google and Microsoft through this
+program you will gain knowledge and work
+ready expertise in skills like
+prescriptive and Predictive Analytics
+regression classification and over a
+dozen others that's not all you also get
+the opportunity to work on multiple
+projects and learn from industry experts
+from Top T product companies and
+academic from top universities after
+completing these courses thousands of
+Learners have transitioned into a
+business analytics role as a fresher or
+moved onto a higher paying job profile
+if you are passionate about making your
+career in this field then make sure to
+check out the link in the pin comment
+and description box below to find a
+business analytics program that fits
+your experience and ages of Interest so
+without further delay let's get started
+with the advanced tips on how to use f
+formula in Excel now I have started my
+Microsoft Excel and you can see I have a
+really small data set so let's get
+started by the simple F function as we
+know it let's say we want to find out
+the result of the following students and
+there is a criteria let's say less than
+or above some number they pass and less
+than or above some number they are fail
+right now let's get started with the IF
+function equals to if and the
+cell if this number is less than 35 then
+the result is
+fail else result is pass now enter the
+answer is passed and now if you drag the
+same formula across all the cells you
+have the results so this is how we
+basically know the function now let's
+advance to a higher level where we have
+multiple criteria you also want the
+result like we got in the first sheet
+which is pass or fail and along with the
+result we also want the grade in one
+single a function let's try to do that
+so let's revise the simple if if
+function less than
+35 then
+P else
+has now I have a multiple level of f so
+if the same cell okay we must equals to
+f the max
+cell is greater than equal to 80 so here
+we have the criteria so if it is greater
+than equal to 80 then it should be an a
+comma another if it's similar to an
+ested if which you use in programming so
+another if select the F function by
+using Tab Key and then the same cell
+which is E8 if it is greater than or
+equal
+to 65 according to the criteria then you
+should be printing
+B comma another nested F function if the
+same cell E8 is greater than or equal to
+55 it should be C Comm if
+E8 is greater than or equal to 45 then
+you must be printing d
+if
+E8 is greater than or equal to 35 then
+you must be prangle e else it should be
+an F now close the bracket just ensure
+that you get the black one which means
+that all the brackets are in the right
+place just press enter and drag the same
+formula across all the rules and you
+will have the grades and to make life
+easier you can also choose if s or if
+method so let's also try to explore that
+drag the same sross here and add lines
+and equals to instead of a simple F you
+can go to the last one which says ifs
+right now ifs will make things easier
+instead of using IF inside un nested if
+you can just write your conditions and
+your grades so the say same cell which
+is E8 should be greater than or equals
+to 80 then in such scenario you can just
+print a comma the second condition which
+is the same E8 should be greater than or
+equal to 65 then you can get a B comma
+if the same marks is greater than or
+equals to 55 then you can print me c
+comma if the same
+E8 is greater than or equal to 45 then
+you can print me
+D just make sure that you're placing the
+commas in the right
+place if the same E8 cell is than or
+equals to 35 then you can print me e and
+if it is none of those then if it is
+none of of those so you're indicating
+that with a number one then you can
+print me
+f
+okay Enter there you
+go the same formula it RS all the rows
+and you have your grades and with that
+we have covered two three methods the
+simple F multiple nested F and Fs now
+let's go to the next sheet where we have
+another one so so far we have
+concentrated on one particular cell
+let's say if E8 is greater than a number
+than pass or fail now let's say we have
+multiple criterias the marks should be
+above certain number and also along with
+it we should also have attendance let's
+say we have a
+rock in the last section and uh we
+want if we consider the result only by
+number is pass but if we have a
+condition
+that let's say if you're an engineering
+student you already know that you have a
+minimum criteria of 60% of attendance
+right so let's say we are judging the
+result of Rog based on both numbers as
+well as attendance then rock is a
+failure candidate right so how do you
+decide based on two conditions so that's
+our condition here that's our criteria
+here so let's try to investigate with
+the same IF function so equals to if
+select the function by using Tab and
+before you get ahead with the condition
+try to include an and function press T
+to select and now select the
+cell for Marks which should be greater
+than let's say 35 and also comma the
+attendance cell which is f8 here to be
+greater than percentage so we have the
+percentage in the F column so give the
+decimal numbers so what's the minimum
+number which which we are looking at is
+0.6 so
+0.6 if both these conditions are
+satisfied then print me pass else print
+me
+fail bracket enter now drag the same
+formula across all the cells and here
+you have the results so you should be
+getting both numbers above 35 and the
+attendance should be above 60 now this
+was the next type of condition or tip
+for using advanced level F conditions
+now coming here so we will be using the
+next U step for using F conditions so
+the only difference is in place of if we
+will be using the function choose so
+here we have list of professors and days
+of a week so let's say we need to find
+out which Professor will be scheduled to
+your class on a specified date right so
+here we have dates and based on this
+particular calendar you will be
+receiving professors chenny Albert St
+Gilbert Swati John and Ken now let's try
+to use the choose function so first we
+need to extract the week dat so equals
+to week dat of the date comma and here
+you have numbers so number one Sunday
+which means it is considering Sunday as
+the first day of a week according to our
+calendar we have Monday as the first day
+of a week so we need to select the
+second one press St to select there you
+go if you close the bracket you will be
+receiving the number four right so on
+1st of February 2024 we have Thursday
+right now this is not what we need we
+need which Professor is going to come
+here so Professor Gilbert is expected to
+arrive on 1st of February so we need to
+make minor changes to this so you need
+we need to be using choose a function
+over here press T to select
+and
+comma if it is first then it should be
+Prof
+Jenny second one is Prof
+Albert so
+on there you go now enter so some type
+of mistake here we missed double Cod
+here and not write enter once again and
+there you go now if you drag the same
+formula across all the cells you have
+your particular professes for the te
+then and to make things a little more
+easier instead of using choose you can
+use index match because we are getting
+the address here right a cell address so
+you can use index match equals to index
+of week day press stop to select of this
+particular cell
+comma second option choose
+that so far we have the match function
+and now we need to give the index for
+this particular one so the index is from
+K7 to k30 so this is our index and the
+match we already have now press enter we
+drag the same formula across all the
+cells you have your results yeah so a
+small mistake here just quickly undo it
+and if you double click the formula here
+you can see we have not fixed the range
+so let's fix the range using function
+key F4 now enter now drag the same
+formula across all the cells now you
+should be having no errors there you go
+and those were a few Advanced tips on
+how to use if formula in Excel and with
+that we have session on how to use IF
+function in a few Advanced variations
+and if you have any queries regarding
+any of the topics covered in this
+session or if you require the DAT set
+that we used in this session then please
+feel free to let us know in the comment
+section below and our team of experts
+will be happy to resolve all your
+queries at the earliest until next time
+thank you for watching and stay tuned
+for more from Simply learn staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

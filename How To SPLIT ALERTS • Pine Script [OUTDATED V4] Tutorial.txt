@@ -1,0 +1,178 @@
+hi traders encoders my name is Matthew
+from pine script mastery calm and
+today's lesson I'm going to address a
+question I got from a student about how
+to split long alerts and short alerts so
+PI script only allows you to use the
+alert condition function in your script
+once so if you have users who want to
+split up long alerts from short alerts
+and only have one of those alerts come
+through in your script then how do you
+achieve that well I'll show you how to
+do that in this lesson but just really
+quickly I just want to let you know that
+this information was recorded for my PI
+in script mastery course over at pine
+script mastery comm and if you want to
+learn more about pine script I have a
+free basics course over there and I also
+have a mastery course which covers
+everything that you need to know about
+plan scripts in order to create your own
+complex indicators and strategy scripts
+so if you're interested in that go and
+check that out otherwise stick around
+and I'll show you how to split your
+trading alerts alright so here we are
+with the blank script all I've done is
+change the title and set overlaid it
+true the first thing we're going to do
+here as always is get our user input we
+need two inputs here to demonstrate this
+example we need to get whether the user
+wants to trigger long alerts and whether
+or not the user wants to trigger short
+alerts so I'm going to create a new
+variable here called long alerts this is
+going to be a boolean input variable so
+we're going to use the input function
+I'm gonna give it a title of trigger
+long alerts I'm gonna give it a type of
+input bool short for boolean and I'm
+going to give it a default value of true
+and next up we have short alerts and
+we're gonna do exactly the same here
+just create a new input function call
+I'm gonna call this one title this one
+trigger short alerts and give it a type
+of input bool as well and a default
+value of true as well so by default both
+long and short signals will be
+triggering alerts the next thing we need
+to do is detect our candlestick patterns
+or our trading setups whatever it is
+that you want to trigger your alerts
+in today's example it's not about
+detecting the candlestick patterns
+themselves so I'm gonna keep this as
+simple as possible and all we're going
+to do is detect bullish candles and
+bearish candles so a bullish candle is
+any candle that closed higher than it
+opened and a bearish candle is any
+candle to close lower than it opened so
+these would be our simple alert triggers
+for today but you could apply this
+information this logic to any alert
+triggering condition no matter how
+complex or simple so next up let's plot
+some shapes to the chart so we know that
+we are detecting these candlestick
+patterns let's plot a shape when we get
+a bullish candle
+let's give it a color of color green
+let's give it a style of shape thought
+error up since it's a bullish kenneling
+up and we'll give it a location of
+location dot below bar geez I'm doing a
+lot of typos today sorry about that so
+now we can pretty much just copy and
+paste this entire line of code paste in
+our bearish candle condition change the
+color to red change the arrow to arrow
+down and change the location to above
+bar so we can now get rid of our plot
+clothes function every pine script
+indicator script that you write needs at
+least one output plot function to your
+chart and plot shape will suffice so now
+if we save the script add it to our
+chart will be getting green arrows
+underneath bullish candles and red
+arrows above bearish candles so we are
+detecting our signals correctly let's
+now trigger our alerts and create a new
+section here called trigger alerts and
+I'm gonna use the alert condition
+function and now this is where we need
+to split our lurtz
+so what we need to do here is because we
+can only use one alert condition per
+script we need to find a way to split
+our bullish alerts and our barish alerts
+so that when the user comes up into the
+settings menu and turns one of these off
+they no longer trigger alerts to their
+phone or that chart or whatever they've
+got it set to so the way we will do this
+is will open a pair of parentheses here
+and we'll say did we get a bullish
+candle if we did this alert will trigger
+but we also need to combine our long
+alerts boolean condition so
+say and long alerts is set to true then
+we will get a bullish candle alert sent
+to our phone or our charts next up we
+need to detect if we had a bearish
+signal so here we'll write or then open
+another set of parentheses did we get a
+bearish candle and if we did get a
+bearish candle setup triggered to our
+chart then we only want to trigger our
+alert if our short alerts boolean is set
+to true so here we'll say and short
+alerts so that's it we've now split our
+long alerts and our short alerts using
+this syntax here so now this condition
+will be checked if both of these
+bullying's are true then an alert will
+be triggered otherwise if both of these
+conditions are true an alert will also
+be triggered so unfortunately because
+the alert condition requires constant
+variables for the title and message
+you cannot customize the title and
+message at the moment so you can't say
+you got a long alert or you got a short
+alert based on one of these conditions
+hopefully in Planet script version 5
+that'll become a feature but for now we
+are stuck with the way this works and so
+we'll give this a title of just alert
+and a message of alert for ticker so
+pine script will replace this ticker tag
+with the name of the market you're
+trading so in this case New Zealand
+dollar against Japanese yen so this will
+be turned into NZD JPY but we'll leave
+that as it is for now save the script
+and we're done so now in order to use
+this properly what you need to do is
+come up to the settings menu and if you
+only want to trigger long alerts and you
+do not want to trigger any short alerts
+you need to uncheck this box click OK
+and then set your alert so now if you
+come up to the condition box and select
+our script name whatever settings you
+set here will only be triggered for long
+trades and serve I click create
+we'll only beginning along alerts and if
+I wanted to only trigger short alerts to
+turn that on there and do the same thing
+so I'll leave this video here and go and
+manage my own trades but as I mentioned
+at the start of the video this lesson is
+going to go up in my pine script mastery
+program so if you want to learn more
+about pine script and you really want to
+drill down and master this language head
+over there check out my free course if
+you like the free cost and I'd love to
+see you in the mastery course and if not
+it's not a problem
+to stick around on YouTube make sure you
+hit subscribe and hit that like button
+and I'll see you in the next video take
+care and good luck with your trading

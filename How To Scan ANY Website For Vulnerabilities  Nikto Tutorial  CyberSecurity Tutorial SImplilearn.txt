@@ -1,0 +1,350 @@
+welcome to this tutorial on how to scan
+a website for vulnerabilities in today's
+digital landscape web security is more
+important than ever cyber threats are
+constantly evolving making it crucial to
+ensure that your website is protected
+against potential attacks vulnerability
+scanning helps identify weaknesses in
+your web applications before attackers
+can exploit them so in this video we
+will explore three powerful tools number
+one is ncto then nuclei and 3v so these
+tools provide comprehensive scanning
+capabilities for various environments
+including websites Network container
+images file systems and servers moreover
+these tools are widely used by
+penetration testers cyber Security
+Professionals and ethical hackers to
+ensure web applications and servers are
+secure so by the end of this tutorial
+you will have a solid understanding of
+how to effectively use these tools and
+the particularly ncto tool to secure
+your web
+applications craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back and before commencing guys just a
+quick info for you if you are an
+aspiring cyber security professional
+looking for online training and
+certification from prestigious
+universities and in collaboration with
+leading experts to enhance your
+credibility then search no more simply
+learns postgraduate program in cyber
+security from Mi University in
+collaboration with EC Council should be
+your right choice for more details you
+can use the link in the description box
+and pin comand so let's get started so
+guys first we'll start with the tool
+ncto so this is the website or the
+GitHub repository that nto has so just
+search nto GitHub and you will find out
+the GitHub repository that's just on the
+first ranking move to that and if I tell
+you about ncto so it's a widely Ed tool
+and that is used by penetration testers
+cyber Security Professionals and ethical
+hackers and it helps identify potential
+vulnerabilities in web applications it
+was developed by Chris suo and is part
+of the open-source security testing
+methodology manual so ncto performs
+comprehensive test against web server
+for multiple items including over 6700
+potentially dangerous files or programs
+and checks for outdated versions of over
+1,250 servers and version specific
+problems on over 270 servers if we talk
+about key features of ncto so it has
+comprehensive scanning and ncto can
+detect a wide range of vulnerabilities
+including server misconfigurations
+default files and programs insecure
+files and Scripts and outdated software
+versions and it has an extensive
+database nto uses a robust database of
+non vulnerabilities which is regularly
+updated to include the latest security
+threats and issues and it has
+customizable testing users can customize
+the scanning process by specifying
+parameters such as the target host port
+and the scan type nto also supports
+plugins to extend its functionality and
+then comes the feature reporting so nto
+can generate detailed reports in various
+formats including plain text XML and
+HTML I will show you guys how we can
+generate that and it makes it easier to
+document and share scan results and if
+we talk about advantages so the
+advantages number one is ease of use so
+nto is straightforward to use with a
+simple command line interface that
+requires minimal configuration and this
+is open source so being an open source
+tool nto is free to use and can be
+modified to suit specific needs making
+it accessible to individual
+and organizations of all sizes and it
+has an active community so because of
+that the users and developers who
+contribute to its development and
+provide support and ensures that it
+remains up to date with the latest
+security Trends and we talk about some
+limitations so it has noise generation
+ncto can generate a lot of network
+traffic and may trigger intrusion
+detection systems that is IDs making it
+less suitable for stealy assessments and
+if we talk about basic scanning so while
+Lio is great for identifying non
+vulnerabilities it may not detect more
+complex security issues or zero day
+exploits for comprehensive security
+assessments it should be used alongside
+other tools so let's get started with
+installing it you can find the
+repository and you could see here all
+the files the programs they have return
+and if you go in the read me section you
+can find the full documentation just
+click on that and you could have the
+whole overview history and trivia and it
+is based on the Pearl language and if
+you want to install on the docker
+Windows Cali so they have all the things
+and if you want to see the usage that
+would be if you want to use it for the
+basic testing purpose you can have the
+look here you can use the commands and
+if you want to scan multiple host you
+could do that too and if we get back so
+this is the whole documentation you can
+have a look on it
+and here most probably all the usages
+you could have a look and now we'll move
+to install it so you can clone the
+repository on your system for that you
+should have get installed and use the
+command get clone and after that the
+repository name so for that we'll open
+the terminal if you want to install with
+the git as this is the open to system
+and I don't have the git get installed
+here so you just have to write the
+command get clone copy the file or not
+the file but the link and paste it here
+and you could go in with the cloning
+thing and after that you could navigate
+the program directory and run it using
+the PE command so to install Necto you
+just have to write the commands I will
+show you guys so just write first what
+you can do is sud sudo app
+update and he is asking for for the
+password I'll provide
+him so he has updated all the packages
+and now what we'll do we will install
+ncto as I've already installed but I
+will write the command for you guys so
+sudo appt install
+ncto so you could see that he is leading
+packages that is done done done and nto
+is already the newest version that is it
+is already installed in the system so
+with this command that is Pudo app
+install ncto you can install the ncto on
+your system and after that to use it and
+that's a basic command that is ncto
+minus H and the server name or you could
+use the IP address like you could use
+three methods to search with ncto that
+could be IP address to SCAN local
+servers web domain to check public
+websites or SSL or HTTP websites that is
+to test secure websites also so here we
+will have a website and to ensure you
+guys so use this tool just for ethical
+use we are not promoting it to use it
+for any black at hacking purposes and we
+are also using to just scan the
+vulnerabilities and we won't be showing
+much of it as we don't promote these
+kind of
+activities so you could see that it has
+started the process that is the target
+IP Target host name Target Port that is
+443 and the target time so he is
+running and for2 and Mac OS you can also
+install it and for the ethical
+considerations always use these tools
+ethically and legally and ensure you
+have explicit permission to scan any
+website or server unauthorized access or
+scanning can lead to legal consequences
+and damage to your rep reputation so
+kindly have this question with you so
+it's a time-taking process so this tool
+works with the port number and where the
+website is hosted so all these things
+matter for the scanning purpose or
+getting the vulnerabilities
+checked so till then nto is scanning the
+website I will show you guys the nvd
+website so this is National Institute of
+Standards and Technology National
+vulnerabil
+database so this is the US government
+repository of Standards based
+vulnerability management data that is
+represented using the security content
+automation protocol and this data
+enables automation of vulnerability
+management security measurement and
+compliance so what vulnerabilities you
+are finding here you can go on and
+search on here on this website as this
+is the basic foundation for all these
+tools
+so guys as it is taking more time I will
+show you guys more features of ncto till
+then so we are in the new window and
+till then it happens we'll see more
+features so what you can do is you could
+write nto minus help and you can get all
+the commands that are used by ncto and
+after this we have seen the basic syntax
+where you could just write ncto minus H
+and the IP or the host name and if we
+know that the Target website is an SSL
+site that you are targeting so we can
+specify with the ncto command I'll will
+show you guys what you can do that is
+ncto minus H and what you want to
+specify that could be IP or host name so
+I will just write HTTP and what you want
+to specify and after that you just write
+minus SSL so by adding SSL to the end of
+the command the ncto knows that the
+targeting website is an SSL site so this
+was about the SSL website and if you
+want to scan an IP address first you
+need to do is IP
+config and that to in Kali Linux as the
+command is we have to install the dev
+name and you could find the if config
+and you can also scan any HTTP website
+here that is by using ncto minus H and
+then the website URL and let's see it's
+still doing so till that guys I will
+tell you about the other tools that is
+nuclei so nuclei is also a fast tool
+that is used for vulnerability scanning
+and that is based on simple yml command
+based templates and it is used for
+security Automation and it is capable of
+scanning for a wide range of
+vulnerabilities across websites networks
+and CVS
+nucle GitHub and you could see the
+repository here and similarly you can
+install the nule if you want to work
+with nuclei and you could get all the
+information in the read me section so
+how it works and how you can run on your
+targets and how you can install it so
+for installing you would just go with
+this command and how to use it that's
+also same that is nucle minus H and then
+you have to write the IP or the domain
+name so if we talk about its key
+features so it is customizable it uses
+yml templates to Define scan rules and
+the performance it is designed for Speed
+and efficiency and it is versatile that
+scan for various types of
+vulnerabilities and similarly we have
+another tool that is trivy trivy scanner
+or just we will move to trivy GitHub so
+trivy is a comprehensive security
+scanner for container images file
+systems and kubernetes
+it identifies vulnerabilities
+misconfigurations and sensitive data and
+if we talk about its key features so it
+has container scanning that examines
+doal images for non vulnerabilities file
+system scanning analyzes files and
+directories for security issues and
+kubernets integration it checks for
+security Flows In kubernets cluster for
+the installation purpose you could just
+move to read me section and you will
+find all those details how's the Journal
+usage and both these nuclei and triy are
+robust tools that offer unique
+capabilities for scanning across
+different environments and enhances the
+security of web applications containers
+and kubernets clusters so these are all
+three tools like there are many tools
+that you can use and what we have done
+with this we have done with ncto and you
+could see that he has completed the
+process of scanning and what I told you
+is this is the target IP host name port
+and the start time and you could see
+that for the server cloud front he has
+retrieved the header and he has found
+some issues that is uncommon header with
+contents and he has found no CGI
+directories and if you want to force
+check all possible directories you can
+use minus C command for that so we won't
+be discussing these vulnerabilities if
+you want you can check them out on the
+anid website and he has checked 654 four
+items and zero errors and nine items
+reported on remote host so he has
+reported them so this is how we scan any
+website for vulnerabilities and you
+should have the authority or the command
+or the consent for any website to check
+before that so with that guys we have
+come to the end of this session if you
+like this session please like share and
+subscribe if you have any doubts you can
+comment down in the comment section
+below thanks for watching and stay tuned
+for more from Simply learn staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,381 @@
+hey Traders welcome back to the channel
+my name is Matthew from the art of
+trading and in today's video I'm going
+to be showing you a brand new Pine
+script feature that has unlocked a whole
+world of new capabilities but before I
+do that I want to apologize it's been a
+while since the last video I've been
+really busy the past few weeks with
+family stuff but I'm back to work now
+and before we get into today's lesson I
+just want to tease next week's video
+where I'm going to break down the script
+you see on my chart which is a monthly
+performance table and what this table
+here is doing is breaking down my
+strategy test data on a month by month
+and year by year basis and it's showing
+me the total return for each year the
+max drawdown for each year all these
+numbers here are percentage returns for
+each month so here we have a 2.34 gain
+here we have a minus 3.9 percent loss
+and then this column here is the
+intra-year drawdown so the worst
+drawdown the system experienced
+throughout the year and then down here
+we have some performance metrics that
+aren't given by the default trading view
+strategy tester such as our compounded
+annual growth rate our Max draw down for
+the entire system on a realized Equity
+basis I'll explain what that means in
+next week's video we have our ma ratio
+which gives us an indication of the pain
+to gain ratio of the system so in other
+words how much money did we make versus
+how much do we suffer to make that money
+every system has some point of suffering
+and the whole point of trading is to
+balance the suffering with the gain and
+this my ratio can give you a really
+quick indication of how good the system
+is so this system here isn't fantastic
+ideally you want to see a ma ratio well
+above 0.5 but anyway we'll cover all of
+this in next week's video when I have
+time to record it you honestly have no
+idea how long it took to build this tool
+out it took several weeks of intense
+head scratching and dozens of coffees
+but I got it done and I'm really excited
+to release it to you guys next week so
+make sure to subscribe to the channel if
+you haven't already so that you don't
+miss next week's lesson for those of you
+who are in the Mastery course the source
+code of the script is already up in
+there so go and check that out if you're
+a Mastery course student there'll be a
+link below in the video description and
+pin comment so anyway with all of that
+out of the way let's get to the content
+of today's lesson and that is this brand
+new update from the training view team
+and we can now connect our scripts to
+more external inputs this unlocks a
+whole new world of possibilities so I'll
+just quickly read through this we're
+very happy to announce that our
+indicator on indicator feature now
+supports multiple external inputs up
+from the previous limit of one these
+multiple external inputs can even
+originate from different indicators so
+here's a sample strategy script with two
+input source calls and the default
+inputs are the low and high of price
+action but you could for example link
+this strategy with sources from the
+session volume profile so let's copy
+this code and I'll show you what that
+means so let's apply this code to my
+chart so with the default settings we're
+just entering long and short after price
+crosses the low and high but what we can
+do now is if I throw on the volume
+profile which is here session volume
+profile let me drop down to say a five
+minute chart we can now come up to the
+settings menu of this strategy script
+and change our sources to to the session
+volume profile developing high and
+developing low and now I can hide the
+session volume profile and we can see
+that we have a script that is entering
+long and short whenever price action
+closes above or below the volume
+profiles high and low here's a good
+example price close below the volume
+profile low for that session and we
+entered short so this is a really cool
+and really powerful feature now you can
+see I can use the price Source or the
+the number value from any indicator that
+I have added onto my chart including
+closed Source indicators so that's where
+things get really interesting so what I
+mean is if you find a script on the
+trading view script library that is
+closed Source you can't actually see the
+source code you can actually use this
+feature to reference values that that
+closed Source indicator generates now at
+the end of this video I'll demonstrate
+how that works but before we do that let
+me cover another really valuable use
+case of this new feature which is adding
+alert functionality to scripts that
+don't have it so let's get rid of this
+strategy for a moment and for this
+example I'm going to use my Dynamic
+structure indicator now this indicator
+automatically detects or attempts to
+detect support resistance zones in the
+markets major swing lows and swing highs
+that create levels of structure this
+script happens to be open source so if I
+add this to my chart here you can see
+the script is detecting the most recent
+support and resistance zones now in this
+case my script is open source and it
+also has alert functionality so if I
+select my alerts I can detect when
+resistance is touched or Price breaks
+through it but what if this script was
+closed source and didn't have alerts
+that's where this new indicator on
+indicator or indicator value sources
+comes into play so for this example I'm
+going to copy this source code create a
+new script paste that source code in and
+I'm going to delete all of these alerts
+conditions save the script remove the
+original script and add this one to my
+chart now if I come up to the alert
+dialog and select the script
+there is no option to select the inbuilt
+alerts and now let's say I wanted to
+detect when price is rejected from this
+resistance Zone
+let me open up the pine editor open a
+new script I'll call this TSI rejection
+alerts
+and what I can do here is add a add to
+price sources
+input.source I'll give it a default
+value of close and a title of Source One
+copy this and name this source2
+and now let's say let's create a new
+Boolean value here called signal and
+signal is going to be true if the
+current bar is high is greater than
+Source One and the current bars highs
+lower than Source 2 and the current bars
+close is lower than Source One now what
+this should detect is a bar that's High
+Falls Within These two red lines but its
+closing price Falls below this bottom
+line and that will detect a rejection
+from this Zone and so now I can plot
+shape signal I'll give it a title of
+cell style of shape dot triangle down
+location of location dot above bar and a
+color of color dot red and we'll give it
+text of
+cell and now if I save my code hopefully
+this compiles I need to set overlay to
+true
+um actually before we continue let me
+also plot
+Source one with the color of color.red
+and Source two with a color of red as
+well
+save that code let's hide the original
+script the dynamic structure indicator
+and now if I come up to the settings of
+this new script I can actually select
+from this drop down box any indicator
+value that I have added to my chart I
+can reference any of these values in my
+script regardless of whether I have
+access to the source code of that script
+so let me select R1 and R2 here so I've
+actually got these around the wrong way
+I need this to be R2 and this to be R1
+and now you can see that we're detecting
+rejections
+from within this
+automatic Dynamic resistance Zone that's
+being detected by my DSI script and I
+can do this regardless of whether I have
+access to the indicator source code or
+not which is really powerful let me show
+you another example so here I've just
+gone on to the tradingview script
+library and found a random script that
+is closed source so here you can see
+it's a protected script it's closed
+source so we can use it freely but I
+can't see the source code to the script
+I can't see how these moving averages
+zones are being calculated so let's add
+this script to my chart moving average
+Zone indicator here it is now notice I
+can't see the source code to the script
+but if I bring up my Pine editor and
+paste in some code I wrote up earlier
+add this to my chart and hide the Mazzy
+indicator now if I come up into the
+settings menu of my script here I can
+select moving average Zone indicator
+bottom and indicator top and now you can
+see that my script is drawing the exact
+same moving average values of this
+closed Source script and also detecting
+Hammer candles within that zone so I'll
+quickly go over the source code here
+we've just got a standard indicator
+script I'm importing my zen Library just
+because it makes it really easy to
+detect Hammer candles without having to
+write out a bunch of Candlestick pattern
+checks here we've got two price inputs
+they're set to close by default but we
+need to override these to the Mazzy
+indicator here which I've already done
+then we're detecting Hammer candles so
+is the current bar a hammer candle so a
+candle that looks like this with a large
+Wick to the downside and a small body on
+top
+and is the open of this candle Above
+This lower band and is the open below
+this upper band so we need the bar to
+have opened within the band in order to
+be detected as a valid Hammer signal
+then we're just drawing the Mazzy low
+and high
+and drawing a shape below any Hammer
+signals and we're also adding alert
+conditions to this signal so if I come
+up to my alerts dialog I can select
+Mazzy signals this is my script and here
+we have Buy Signal and so this will
+trigger an alert whenever a hammer
+signal is detected again all based on a
+script that I don't have the source code
+to now in order to do this I need to
+keep the original script on my chart The
+Source script on my chart at all times
+you can hide it so that you don't see
+its values being plotted but you need to
+have it added onto your chart so that
+this script can reference that script
+now notice if I remove this Mazzy script
+it'll say do you really want to delete
+study and all of its children this
+script is now a child of the Mazzy
+script if I click yes we lose our script
+from our chart now that's just a couple
+of somewhat useful applications of this
+new indicator on indicator feature but
+one really cool ability of this new
+feature is being able to create strategy
+scripts based on other people's closed
+Source indicators so again using the
+Mazzy script let me copy over some code
+that I wrote earlier now this code is
+identical to the code I just showed you
+with one major difference it is now a
+strategy script that buys the market
+whenever a hammer is detected within
+that Mazzy zone so now if I save this
+script and add it to my chart and I add
+back on the Mazzy indicator I can hide
+the Mazzy indicator come up to my
+settings select bottom and top and now
+we have a strategy script that is buying
+these Hammer candles and selling
+whenever price closes Above This upper
+band so it's somewhat of a mean
+reversion system that we've written here
+and now it's not very profitable but
+that's not the point but if you took the
+time to code out a proper system based
+on a closed Source script that you like
+it is possible to create a profitable
+system out of this so this was just a
+really quick example script I threw
+together here you can see that over the
+past 48 trades on the daily chart it has
+been profitable slightly if we go over
+to a stock market and cycle through a
+few we're unlikely to find any to be
+very profitable because this is such a
+simple script but here we go 107 return
+over 59 trades with a 33 Max drawdown
+now this is completely random because
+the script is so simple but hopefully
+you get the idea I have created a
+strategy script here based on a
+completely different indicator that is
+buying based on indicated conditions on
+that other indicator and selling
+whenever price closes Above This upper
+band or below this lower band which is
+why this trade exited here now there's a
+few other random applications of this
+new feature so for example I could
+create an RSI indicator that is based on
+volume for example so now we have an RSI
+that is calculating its values based on
+volume which is not necessarily an
+unreasonable method for detecting spikes
+in volume now I think this particular
+feature has been in punscript for a
+while but the real Improvement of this
+latest update is the fact that we can
+reference multiple indicator values now
+as Source inputs in our scripts in my
+opinion the most useful application of
+this new feature is being able to
+reference the indicator values of closed
+Source scripts now this also means that
+for those of you who like to automate
+your scripts through a tool like Pine
+connector for example you can now do so
+even if you don't have access to the
+source code of the script so if it's a
+closed Source script but it's publicly
+available to add to your chart with this
+new feature you can actually add
+automation through the use of a
+secondary script that references the
+values that the first script generates
+now depending on the script this could
+be quite a simple thing to do or it
+could be very complex but theoretically
+this should be possible to achieve with
+any closed Source script so if you know
+of a closed Source script or strategy
+that interests you that you've wanted to
+automate let me know in the comments
+section below and if I find time maybe
+I'll do a video showing how to add Pine
+connector automation capabilities to a
+closed source script now this method
+will only work on public scripts that
+are closed Source private scripts that
+require
+authorization to access will not work
+with this method but there are quite a
+number of closed Source scripts on the
+tradingview script library that are very
+useful for certain use cases and many
+students in the Mastery course have
+reached out to ask me how they can
+reference closed Source values in the
+past this was impossible but now it is
+possible so anyway with all that said
+I'll wrap this video up here I'll speak
+with you next week where we will be
+breaking down the source code to this
+performance table that I mentioned at
+the beginning of this video make sure to
+subscribe if you haven't already because
+I think you're going to love next week's
+lesson with all that said take care best
+of luck with your trading I'll speak
+with you then

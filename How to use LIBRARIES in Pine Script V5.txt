@@ -1,0 +1,988 @@
+hey traders welcome back to another
+panscript lesson sorry it's been a
+little while i've been extremely busy
+trying to re-record and edit and prepare
+the version 5 mastery course content
+hopefully i'll have all of that done
+within the next few weeks for those of
+you who are interested in diving deep
+into version 5 of panscript there's a
+lot of cool features that tradingview
+have added to this language i'm excited
+to explore them with you guys so make
+sure to hit the subscribe button if you
+haven't already because i promise to
+come back real soon with more content
+covering version 5 of panscript and all
+the new features and functionalities and
+syntax in great detail but for today's
+lesson i thought it might be interesting
+to explore the new library feature of
+panscript version 5. so today's lesson
+is going to be taken from my indicators
+and strategies course where i explained
+to students of that course how i wrote
+this library and what it all does
+because it's a public library and i had
+to publish this publicly so it is an
+open source script i figured i might as
+well throw this video up on youtube as
+well because i'm sure a lot of you are
+very interested in finding out how
+libraries work i know why i was when
+this feature was first released so as
+always there will be links in the video
+description to this script so that you
+can go and get the source code if you
+want um and any information resources i
+mentioned in today's lesson will be
+there and without further ado let's get
+into today's lesson it's going to be a
+longer one because there is a lot to
+cover here so grab yourself a coffee or
+a beer or whatever it is you need in
+order to take this information in today
+and let's get started
+this script is a library which means it
+is
+basically a reusable script a script
+that can be referenced by other scripts
+now it behaves a little bit differently
+to indicators
+but that is what it is most similar to
+you can use most of the features of
+indicator scripts in libraries but there
+are a few important differences which
+we'll go over in this lesson and in
+other lessons so the zen library is just
+a collection of custom tools and utility
+functions commonly used with my scripts
+so i wrote this library to assist in my
+own scripts so all of the functions you
+see here are just functions that i
+commonly use across multiple scripts and
+so i can keep all of this code in one
+place
+reference it in my other scripts and if
+i need to make an adjustment to anything
+if there's a bug with one of these
+functions or i need to
+add a feature to one of the functions i
+can do so in one place and that will
+work across all of my scripts now before
+we begin
+breaking down this script we should
+probably go over the core fundamental
+basics of what a library is and how
+libraries work so here i am on the blog
+post that announced the new version 5 of
+pinescript so libraries are a new type
+of publication that allows you to create
+custom functions to be reused in other
+scripts once a library is published
+other scripts be it indicators
+strategies or even other libraries can
+import it and use its functions so this
+is a great new addition to pine scripts
+if you're familiar with other
+programming languages
+libraries can be thought of as modules
+or classes in java basically it's a
+self-contained script that can be
+exported to other scripts so we can
+reference whatever our libraries do in
+other scripts so before we move on let's
+have a quick look at the user manual
+page on libraries and we can go over
+some of the features and limitations of
+libraries so here is the official
+documentation for libraries i'll leave a
+link to this in the video description
+some important things i should mention
+up front is that a library must be
+published privately or publicly before
+it can be used in another script and you
+cannot use private libraries in public
+scripts so you can use private libraries
+in private scripts but not public
+scripts if your script is published
+publicly you cannot reference a private
+library now to create a library is very
+simple we just use the library keyword
+or annotation function when creating our
+script so normally this would say
+indicator or strategy now we have a
+third
+script type to work with and that is
+library so if you define your script as
+a library it gives you access to all the
+features of library scripts now another
+important thing to mention are all of
+these annotation comments or compiler
+directives which are all optional
+but they do help document your library's
+code and populates the default library
+description
+which authors can use when publishing
+the library so basically when you're
+creating your functions you can explain
+it using these comments what your
+function does what parameters it takes
+and what your function returns and then
+when you publish your library all of
+this information will be put into your
+script description so for example here
+is my trading view profile if i scroll
+down to my scripts list and i click on
+zen library if i scroll down here you
+can see that all of my functions have
+detailed descriptions in the script
+website description i didn't need to
+write any of this
+when i published the script it was all
+taken out of my script code so by now if
+you've been following my channel for a
+while or you're a student of one of my
+courses you should know that i always
+highly encourage you to heavily comment
+your code it makes it easier to read
+both for yourself and for others if you
+share your code and in libraries that is
+extremely encouraged because libraries
+are obviously designed to be used by
+other traders or coders so i would
+encourage you to get into a habit of
+using these comments even though they
+are technically optional what is not
+optional is the export keyword
+now i'll cover this in the lesson today
+but
+it's important to mention that
+if you want your function to be
+accessible by other scripts when they
+import your library you need to use the
+export keyword to tell panscript that
+this function you are creating is
+intended to be exported to other scripts
+if you don't use the export keyword then
+your library function will not be
+accessible by other scripts the next
+important thing to mention is that you
+need to explicitly define the data types
+you are using in your exported functions
+so normally you could just create a
+function
+with a parameter variable name and you
+wouldn't need to explicitly tell
+panscript what type that variable is in
+libraries things are a little bit
+different we now have to say explicitly
+what data type the parameter is that we
+work within our function this makes it
+so that when people use our library code
+they can't pass in an invalid data type
+there are a lot of new answers to
+the data types we can use in libraries
+i'm not going to go into that in too
+much detail in today's lesson because
+it'll just make the lesson far too long
+but i will be covering this information
+in great detail in the upcoming version
+five of the pine script mastery course
+which will hopefully be ready within the
+next month or two finally the last
+important thing to mention is
+that there are certain things we cannot
+do with libraries we cannot use the
+request library
+inbuilt library so we cannot use the
+security function to reference other
+markets we cannot get user inputs and we
+cannot use plots fills or background
+color calls in our script aside from
+that let's wrap up this introduction to
+libraries by showing you how you import
+libraries so once you've publicly
+published your library or privately
+published your library like i have here
+the way you import this code into your
+script is using this
+little link here
+so if i copy this and jump over into the
+pine editor here we are with a blank
+script
+if i add in at the start of my code this
+or if i paste in this little import link
+that i just copied we can now reference
+the functions from this library
+one important thing to note is that we
+can also import this with an alias so i
+can say here import my zen library
+version two so i had to update the
+library since creating this video
+originally because i had to fix a minor
+bug in the code so i'm working with
+version two of my library now and i can
+import this as
+zen
+and now when i type in zen and then a
+full stop and then hit control space or
+command space on a mac
+we get my list of functions from my
+library so for example if i want to
+detect a bullish engulfing candle i can
+say
+bullish engulfing candle equals zen dot
+is bullish ec or engulfing candle and i
+can plot a shape i can say is bc true
+then plot a shape otherwise plot nothing
+now if i set overlay to true
+save the script and add it to my chart
+we're now getting a shape plotting above
+engulfing candles all of that with one
+line of code instead of having to write
+out my candlestick pattern detection
+which is usually multiple lines of code
+and requires user inputs and all that
+sort of thing
+if i hover over this function you can
+see that i do have a bunch of optional
+parameters here we can work with and if
+you go and read the documentation
+that was publicly published along with
+this library you can find out exactly
+what all of those parameters do anyway
+that's it for the introduction to
+libraries how they work some of their
+limitations let's get into today's
+lesson where i break down my source code
+to my zen library public script i hope
+you find it interesting and i will be
+back soon with more version 5 pan script
+content once i get done with recording
+and editing more of the mastery course
+content let's get started with today's
+lesson so let's get started with the
+utility functions
+so here are just a handful of simple
+basic utility functions and now this
+script is heavily commented because when
+you publish library scripts
+all of this information here gets
+converted into your script description
+so that other traders when they
+scroll through the
+script library they'll see exactly what
+your script does
+i'll show you that really quickly so
+here is my publicly published library
+script and if you scroll down a bit you
+can see all of the information all of
+those comments in the script get
+converted into the script description
+here
+and so anyone who comes across this
+library in the trading view public
+script library we'll see
+exactly what my script does so they can
+just read through the documentation here
+and understand what each function does
+without needing to
+read through the code to work that out
+so let's go over some of these utility
+functions the first one we have here is
+get decimals now notice that you need to
+use the export keyword
+or prefix to declare functions that will
+be available from other scripts
+importing the library so you can have
+a
+function in here like my function whoops
+that was not
+even close to correct
+and this function could return x and i
+could call this function
+in my script so i could call
+my function down here
+and now if i say the script
+uh we'll get an error because this x
+doesn't do anything let's just say x
+equals one
+and save the script
+and that compiles just fine now
+the main difference here is that we
+cannot reference my function in a
+different script so if i throw on a new
+blank
+indicator here and i go to my
+library link copy that go back to my
+blank script and paste that at the top
+here now i can import this with an alias
+so let's say as zen
+so now i can reference the library by
+saying zen dot control space and that
+will give me all of the functions in
+my library now if i were to publish this
+script this function exists within the
+local scope of our library no other
+script could reference this function
+because it is not exported so in order
+to reference
+functions within this library we need to
+use the export keyword to make sure that
+pinescript knows that this function
+needs to be exported and able to be
+referenced by other scripts now the
+reason we do this is because there are
+certain rules with exportable functions
+that we need to respect
+for example we cannot use the security
+function with libraries
+now if you want to read about all the
+nuances and limitations of libraries
+come to the user manual panscript
+version 5 user manual there'll be a link
+in the video description they explain
+exactly how functions work i'll be
+recording a lesson on
+libraries in detail in the mastery
+course but the main important things to
+note is this
+section here
+we cannot
+use
+request so we can't reference the
+security function um or anything else
+that falls under the request library we
+cannot get user inputs we cannot plot
+fill or
+use background color calls i'm not sure
+why but that's just the rules for
+library scripts but anyway that's
+outside the scope of today's lesson
+let's just break down the functions that
+do exist in my library script um so i
+already mentioned get decimals get
+decimals gets the decimal places after
+the quote price on your chart so in this
+case i'm on bitcoin and there are two
+decimal places after the quote price so
+using this function would return two
+this is useful for things like
+truncating a number down to the same
+number of decimal places on your chart
+so some scripts maybe you're sending a
+web hook alert to a third-party api and
+you send an indicator value or stop-loss
+price or something like that and the
+price might look like something like
+five-point and then like
+seven or eight decimal places after the
+uh
+number and maybe you only want to send
+the same number of decimal places as the
+market you're on
+that is what this is useful for and this
+function the truncate function the get
+decimals can be used with the truncate
+function to cut the excess decimal
+places off numbers in your script then
+we have the two-hole function which just
+converts pips into whole numbers so if
+you've got
+for example if we're on euro yen
+and we want to calculate a
+50 pip stop loss 0.52 would be converted
+into 52 as a whole number and then we
+have our two pips function which just
+converts whole numbers back into pips
+next we have our auto view get position
+size function so this calculates our
+orlando forex position size for order
+view based on the given parameters in
+the
+function arguments so we have balance
+risk stop points and conversion rate
+so if you pass in your account balance
+your risk per trade as a percentage
+you'll stop loss size in points not pips
+so
+if your stop-loss size is 10 pips then
+you would put 100 points into this
+argument
+and then we have our conversion rate
+which is the conversion rate of your
+account balance currency against
+whatever you're trading or whatever
+you've set your alerts on and this
+function will return your position size
+i put it in this library because i try
+to automate all of my scripts that
+detect profitable signals and this just
+makes it a little bit easier to do that
+without having to copy this code into
+every script that i write now moving on
+we have our technical analysis functions
+so these just get various
+values relating to technical analysis so
+the first one is get ma
+this gets a moving average
+based on the given type so you could
+pass in ema sma hma a weighted moving
+average wma vwma vwap or a dema that's
+what this last one returns so in my
+scripts i usually let me throw on the
+ultimate pullback indicator really
+quickly
+and open up the source code
+if i come up to our moving average
+settings
+i usually have my ma type as a user
+input and then we have our list of
+potential options here and then i can
+call this library getma function to
+return a moving average based on that
+setting i use moving averages in a lot
+of my scripts and so it's helpful handy
+to be able to get those moving averages
+using this library really easily without
+having to have all of this code in my
+script next up we have get eap this
+returns a stop loss size based on the
+eap
+stop-loss sort of algorithm or formula
+that stephen hart from the trading
+channel uses in his strategies basically
+this is just a way
+to round down your stop loss based on
+certain brackets so that you can have a
+slightly tighter stop on average and
+therefore a slightly larger position
+size on average leading to slightly
+improved profitability on most
+markets at least or most strategies
+while not affecting your stop-out rate
+too much or your loss rate too much so
+first of all you pass in your current
+atr then the script converts that number
+into a whole number using the two-hole
+function from
+up here
+so it's referencing its own library
+function here and then we declare our
+eap stop whole number variable
+and then
+all of these if statements just check if
+the atr falls between 20 pips and 30
+pips then it sets our eap stop loss to
+20 pips so if we had a
+29 pip stop loss this function would
+return 20 and our stop loss would be 20
+pips above the high instead of 29 pips
+and so on 30
+between 30 and 50 it gets rounded down
+to 30. between 50 and 100 it gets
+rounded down to 50 and anything over 100
+gets
+capped at 100 pips so that's what this
+function does now i use this in my
+scripts a lot but if you're not a
+student of stephen hart and you're not
+familiar with the eap
+stop-loss sort of algorithm and why he
+uses it maybe don't use this in your own
+scripts
+unless you understand the concept here
+so moving on we have our bars above
+moving average
+so this simply counts how many candles
+are above the given moving average so we
+give a look back and a moving average
+and this little for loop will just count
+how many bars closed above
+this moving average over that look back
+period and then return that number same
+with bars below m a does the same thing
+just for bars below it
+bars crossed m a does the same thing as
+these two functions except that it
+checks how many times
+price action
+crossed the moving average so for
+example over this period here we had one
+two three
+four crosses over this period of price
+action here
+and so this function if i gave it let's
+say a 10 bar look back
+it would return how many times price
+action crossed above and below the
+moving average over that look back
+period
+this is useful for
+detecting potential periods of
+consolidation if price action has
+crossed the moving average too many
+times of your look back period then
+price is likely
+consolidating going sideways and then
+moving on we have our get pullback bar
+count so this counts how many green and
+red bars have printed recently
+ie our pullback bar count and by green
+and red i mean based on whatever
+direction you pass in so if you pass in
+one
+then this function will count how many
+green bars printed over our look back
+period if you pass in negative one it
+will count how many bearish or red bars
+printed over our look back period
+so this is useful
+for counting
+how many bars we've had pulled back
+against a certain direction so if we set
+our look back period to let's say 10
+bars
+you can see that we've had one two three
+four
+five green bars over this
+period of price action and we do this
+just using a simple for loop that just
+loops our look back and it just checks
+if the closing price of that bar over
+our little historical look back for loop
+closed above or below it's open very
+simple function here
+i use this in the ultimate pullback
+indicator to count how many bars have
+pulled back since a new low because the
+rules of the pullback strategy require
+at least
+two green bars since price makes a new
+low
+and so i can use this function to
+verify that we have had a pullback now
+moving on we have a bunch of candle
+functions here this one gets the body
+size
+this one gets the top wick size so
+that's
+in pips how big the wick was on top of
+the bar so all of these are in pips
+get body size returns the current body
+size in points sorry not pips returns it
+in points you need to divide it by 10 to
+get pips on the forex market so we have
+get body size we have get top wick size
+we have get bottom wick size and get
+body percent so get body percent will
+return
+the candle body size as a percentage of
+the entire candle size so all of these
+functions are used for detecting certain
+candlestick patterns for example
+shooting star and hammer candles doji
+candles
+that sort of thing so for a doji candle
+i'd want to compare the top wick to the
+bottom wick to make sure they're of a
+similar size
+and then i'd want to compare the body
+percentage to the total size of the
+candle
+and if the body percentage of
+this candle is below a certain number
+usually i go with five percent
+so if this candle body is five percent
+or less of the entire candle size
+and
+both top and bottom wick are a similar
+size to each other then it's likely that
+we have a doji candle so that's what i
+use these for
+um moving on we then have our candle
+setup detection code so here we have our
+hammer detection so
+this function takes a couple of
+parameters here it takes the fib fib
+level and color match so color match
+simply means does the hammer need to be
+bullish green by default this is turned
+off so if you don't pass anything
+into
+this parameter
+then color match will be turned off and
+so a hammer could be red
+so an example of a red hammer would be
+this bar here
+it meets the criteria of a
+hema candle but it closed bearish it
+closed lower than it opened
+[Music]
+but it's still a sign of buying pressure
+same with the shooting star if color
+match is turned off which it is by
+default then this bar here would be
+considered a valid shooting star because
+it is still a sign of selling pressure
+due to the large wick and the tiny body
+which is below our fib level so if i
+open this up the default fib level is
+382.
+um so what that means is the script is
+getting the fibonacci level of this bar
+and checking the 382 retracement so
+that's this red line here if the bar's
+body
+is contained below this number
+so it opened below
+this red line and close below this red
+line
+then we have a valid shooting star
+candle and same for hammer candles the
+candle must close above the 382
+retracement so this would be an example
+of an invalid hammer candle because the
+bar open below our 382 enclosed above it
+we need both the open and the close to
+be above
+this number
+or this ratio
+this percentage of the candle size
+total size in order to be considered a
+valid hammer
+candle so that's what our hammer
+function does it just calculates our
+bull fib which is the 382 percentage
+mark of the total candle size
+then we check if the
+candle opened and closed above that
+level and then we check our color filter
+so if color
+color matches false
+which it is by default then this check
+will be ignored
+otherwise it will just check if the
+candle closed greater than opened and
+then it's the same thing for us shooting
+star candles exactly the same code
+except that we're checking our highest
+body closed above our fib level in order
+to be considered a valid shooting star
+moving on to the next candle which is a
+doji candle pattern which i just
+explained when we're going over the um
+get top width size get bottom width size
+and get body percentage
+i use all of those functions here to
+check the criteria of a doji candle so
+the first thing we do is make sure that
+the top and bottom wick size is within
+two times the size of the other wick so
+if we had a candle that looked like this
+um first of all you'd be asking yourself
+why you're using children's drawings to
+analyze price but if it did look like
+this this would not be a valid doji
+because the bottom wick
+is not within
+two
+times the size of the top wick the top
+wick is much larger than the bottom wick
+so this is more like a shooting star
+candle
+than a doji candle
+for doji candles we want this to be a
+sign of indecision so we want the candle
+to look more like this we want the body
+to be in the middle of the total candle
+size and the bottom wick and the top
+wick to be of a similar size this is a
+sign of stalling momentum
+or indecision in the market which can be
+a valuable entry pattern or an accurate
+entry pattern under certain market
+conditions
+especially if it's a swing high or swing
+low so this can make a great
+pullback entry pattern and a great
+counter trend pattern after price has
+exhausted itself so that's why i include
+that in my library i use this entry
+pattern in some of my scripts and that's
+what this code does it just checks those
+rules so we check the wix sizes and then
+we check our body percent is our candle
+body percent less than or equal to the
+given body size so by default the body
+size is set to 0.05 so you can call this
+function in your script without giving
+it any parameters and it will just use
+the default which is what i use in my
+scripts so default wick size of 2.0 and
+a default body size of 5
+and that will return our doji
+candlestick patterns um this will return
+true if the current bar
+meets the rules of a doji then next up
+we have our bullish and bearish
+engulfing candle patterns so for these
+patterns we have a bunch of
+inputs to give the function the first is
+allowance point allowance
+so let me go to a market where i can
+demonstrate this issue and here is the
+example in question
+this candle here is a valid
+engulfing candle according to my
+discretionary rules i would count this
+as an engulfing cattle
+the problem is
+that the candle does not quite open
+below the previous candles close
+if you zoom right in
+enhance
+enhance
+enhance
+just print the damn thing you can see
+that it's one point
+off
+opening below or equal to the previous
+candles close
+so i included a parameter in this
+engulfing candle function
+called point allowance by default it's
+disabled it's set to zero but you can
+override this default by giving this
+value
+in the when you call this function so
+for example in the ultimate pullback
+indicator there is a setting down here
+under miscellaneous i believe
+yes point allowance
+if i set this to 1 and click ok
+now this candlestick pattern is being
+detected as a valid bullish engulfing
+candle because the point allowance is
+allowing for
+one point to be off so that is the
+purpose of point allowance this
+allowance parameter then we have
+rejection wick size this is just the
+rejection wick of the candle to the
+upside um so let me find an engulfing
+candle uh here's one here's a good
+example
+you can see that this candle here has a
+large rejection wick to the downside
+a bearish engulfing candle should be a
+sign that price momentum is shifting to
+the downside but if we have buying
+pressure here on the same candle that
+pushes price back up
+even though this engulfs the previous
+candle and is a swing high it could be
+argued this is a lower quality entry
+pattern because of the buying pressure
+we see here what we really want to see
+is a very small wick to the top or no
+wick at all like on this bar here
+which was a more reliable
+indication that price was becoming
+bullish now on most markets and time
+frames
+this
+check is is not necessary
+or this filter is not necessary because
+it doesn't really affect the win rate
+too much
+but i did find that on some markets and
+time frames having a rejection week too
+large to the downside like two times a
+body or greater
+is definitely not a good
+entry pattern and so i included an
+option here
+to set the maximum rejection width size
+now this is the maximum rejection week
+size compared to the body as a
+percentage
+so if you set this to 1
+that would mean that
+a rejection width size of 100 percent of
+the candle body would be ignored so
+let me show you that in practice
+if i come down to my
+candle settings here
+max rejection width size is our
+rejection width setting if i set that to
+one
+this setup will go away there we go it's
+gone now because this rejection wick is
+greater than one times the size of the
+body and then finally we have engulf
+wick as a parameter
+so this just means the bar must engulf
+the previous candle's wick
+by default it's turned off um in this
+function but you can override this if
+you want to
+again that does affect the accuracy of
+this pattern on some markets some
+markets perform better if you make
+the bar
+engulf the wick so that's this setting
+here if i turn that on
+and turn this off
+you can see that our win rate has
+improved by a few percent just by making
+sure that the
+um candle
+engulfs the previous candles wick and
+that's it for our bullish and bearish
+engulfing candles apart from that we
+just checked the simple candlestick
+pattern
+does the candle engulf the previous
+candle
+and then we check our filters
+and obviously the same for bearish just
+in the opposite direction
+and so that's it for our candlestick
+patterns
+for now at least i'll probably add to
+these in the future but for now these
+are the candlestick patterns that this
+script detects
+moving on we now have our filter
+functions so we have a time filter here
+this
+just returns true if the current bar
+falls
+inside the specified session so this is
+used in a lot of my indicators to tell
+the script not to take setups during
+certain times of day and so i can use
+this time filter in this library across
+all of my scripts same with the date
+filter this just checks if the current
+bar's
+time falls within these two dates
+and then we have day filter this returns
+true if the current bar's day
+is equal to
+the given parameters so if you pass in
+true for monday
+and the current bar's day of week is
+equal to monday
+then
+this day filter will return true so this
+filter
+checks if the current bar's day is in
+the list of given days to analyze
+and then based on whichever day boolean
+you pass in true or false
+will tell the script should the script
+analyze this day so some scripts do not
+perform well on mondays for me
+some strategies and so i like to include
+a day filter in my scripts and having
+this as a library function is really
+cool because it just means i don't have
+to have all of this code this big block
+of code in all of my scripts i can just
+reference the library so moving on we
+have our atr filter
+so this function checks the current bar
+size against the given atr and the max
+size that you've specified so you can
+either pass in
+a custom atr value so for example maybe
+you want to check a 7 period rsi
+with your filter you can pass that in as
+your atr otherwise if you don't pass in
+anything
+the atr will be set to 1 1 1 1 by
+default and then over here
+the script checks if atr is 1 1 1 1 that
+means the user hasn't
+overwritten this atr value and so we
+just reference the standard 14 period
+atr otherwise we use the given atr
+to analyze the maximum size so the
+reason i did this i use this default
+value is so that you can simply call
+atr filter and then pass in a max size
+so for example
+atr 3.0 will return true if the current
+bar's size
+is less than three times the 14 period
+atr
+this is a useful filter for ignoring
+giant set up candles so sometimes the
+script will detect a setup candle that
+is just too big to trade
+for example this
+bearish bar here or this bearish bar
+here if these were valid entry patterns
+you wouldn't want to trade them because
+your stop loss and take profit are going
+to be massive compared to recent price
+action at least and so that's what i use
+the atr filter for and so this function
+just checks if the current bar's total
+size so the high minus the low
+is less than or equal to the atr value
+multiplied by our max size parameter and
+that's it for our filters
+now the final section in the script is
+our display functions i only have one
+function here at the moment and that is
+the fill cell function
+which just updates the given table cell
+with the given values so we pass in a
+table id
+we pass in the column and the row
+and then we can pass in a title
+a value
+a background color and a text color so
+you can see up here
+i have a table drawing onto the chart
+this script the upi script
+uses this custom function to update
+this table
+with the values you see there and so i
+put this function in the library because
+i like to display information on using
+tables in my scripts
+and so having this custom function here
+in the library just means less code that
+i need to put into all of my scripts
+anyway that is it for the zen library
+script i will be adding features and
+functionalities to the script in the
+future but for now
+this is the first version of the zen
+library or technically the second
+version because i did have to fix a bug
+with the time session filter
+this function here was doing the
+opposite it was determining if the
+current bar falls outside the specified
+session so i needed to fix that bug
+but technically
+this is the second version of the zen
+library but this is the first lesson i'm
+recording on the script and so any
+future updates any future versions i
+will record separate lessons on what i
+add to the script so i hope you found
+that interesting
+feel free to use this library in your
+own scripts or steal the code and do
+whatever you want with it
+and that's it i'll wrap this lesson up
+here and i will speak with you in the
+next lesson take care and good luck with
+your trading

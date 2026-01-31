@@ -1,0 +1,506 @@
+hi traders in this video i'm going to
+show you how to create
+an ema confluence filter for your
+scripts
+so basically what that means is here i
+have two emas plotting onto my chart
+we have a 50 ema here
+and 100 ema below it and for this
+particular script it doesn't matter what
+entry reasons
+you detect in your script you can be
+detecting any candlestick pattern that
+you like
+but for today's example i'm keeping it
+very simple and the entry reason we're
+detecting is just simple engulfing
+candles they don't have to be swing lows
+they just need to engulf the previous
+candle and
+what this script is doing is first of
+all
+price must be above this 50 ema before a
+valid
+signal will be detected but the
+50 ema must also be above the 100 ema
+before a valid signal is detected and so
+in today's
+video i'm going to show you how i
+created this script so first of all
+let's remove the script
+reset the chart and create a new blank
+script so here i am with a blank script
+let's get started first thing i'm going
+to
+do is always is get user input and for
+today's video we're just going to get
+two
+uh inputs two ema length inputs so here
+we have two inputs ema length one
+ema length two of type integer and we're
+just going to set it to 50 and 100 by
+default
+and the next thing we're going to do is
+get the actual ema's
+so we need ema1 is set to ema close
+with the length of ema length 1 this
+input here
+and then we'll just copy this paste it
+down here and change these to
+two so there's our emas now we can draw
+them to make sure that they're working
+properly
+so the first one i'm going to plot as
+ema1
+and i'm going to change the color based
+on where the price is above or below it
+so we're going to say
+is the close above ema 1 if so set the
+color to color.green
+otherwise set it to color.red and we're
+going to give it a line width of two
+let's thicken it up a little bit now
+copy this line of code paste it in there
+change this to ema2 and we'll just get
+rid of this because
+it'll be confusing to have both ema's
+changing color we'll
+just set this second ema to color.blue
+and we'll just thicken it up a little
+bit change the line width to three
+save the script we shouldn't have two
+emas drawing there perfect
+and so now in order to get the filter
+and detect whether these ema's are above
+or below
+each other we need to detect some entry
+reasons
+so here i'm going to say detect entry
+reasons and again this could be any
+entry reason you want
+i'm just using engulfing candles today
+because they're an easy example
+so i'm going to create two variables
+here long entry and short
+entry long entry is going to be set to
+whether the
+current candle close is greater than or
+equal to the previous candles
+open and did the previous candle
+close as a bearish candle
+or a doji was a previous candles closing
+price less than or equal to the previous
+candles opening price
+and then it's just the opposite for a
+bearish engulfing candle
+so there's our long entries and short
+entries now we can plot these
+to the chart so create a new section of
+code
+here call this plot entry signals
+and we'll just use plot shape for this
+not plute
+shape plot shape uh long entry
+i like to do it this way if you don't do
+it this way
+i'll show you what happens in a second
+but what we're doing we're saying
+if we have a long entry then set plot
+shape to 1 which means it will plot
+a shape otherwise plot n a and we'll
+give it a style of shape dot
+pro up for a bullish candle and the
+color will be color.green
+and the location will be location dot
+below
+bar so just really quickly let me save
+the script make sure that's working
+there we go so now the reason why
+i like to do it this way
+because we could just get rid of this
+code here and this will still compile if
+i save the script
+you can see it's doing exactly the same
+thing the difference is
+up here so when we have a signal
+you can see that this plots 1.0000
+or however many decimals are on your
+price chart but now if i go to
+any candle that does not have a signal
+we're also getting 0.000
+this is obviously a long number and if
+you've got a lot of plots
+in your script these numbers can add up
+quickly
+if you have six digits plotting for
+every single shape on your chart
+whenever there's a no signal
+it'll just really clutter up your chart
+so i like
+to add this little bit of code in here
+so what we're saying is we're saying
+if we have a long entry detected then
+set this plot shape to 1 which means
+true it'll just draw the
+shape otherwise plot n a so now if i
+save the script
+you'll see that when we hover over any
+candle that does not have a signal
+we're just plotting n a it's much
+shorter than a six digit number
+so that's why i do that here let's move
+on
+copy this line of code paste it in here
+get rid of blow bar because by default
+this plot shape plots above the bar and
+for
+bearish signals that's just fine
+so we're going to plot shape for every
+short entry
+and the color of color.red now if i say
+the script we'll be getting
+bearish engulfing candles plotting to
+our chart as well
+but we're not taking into account our
+ema filters yet
+so for that let's add a new section up
+here
+called get filters we're going to have a
+long filter
+and a short filter now our long filter
+is going to be there's a couple of ways
+we can do this first of all
+we could just check if the emas are in
+confluence so we could just say here
+is ema1 greater than ema2
+or is ema1 less than ema2 for a short
+filter
+then if we add this boolean into our
+entry reason detection down here so
+short
+filter and long filter combined with our
+long entry and short entry conditions
+now if i save the script we'll only be
+getting long
+bullish engulfing candles plotting if
+this 50 ema
+is above the 100 ema
+and vice versa for shorts we'll only be
+plotting
+bearish signals if the 100 ema is above
+the 50
+ema so that's the first part of an ema
+compliments filter
+and this works just pretty pretty good
+works pretty fine actually
+uh but if you want to take it one step
+further you can also detect
+if price action is below this 50 ema
+for shorts or above for longs so if we
+wanted to we could add into this long
+filter
+is the current close greater than ema 1
+and is the ema 1 above
+our ema2 and vice versa for short so we
+could say
+is the price of the current candle below
+ama1
+and is ema1 below ema2
+so when i save the script here this
+entry pattern here is going to go away
+as is this one here and this one up here
+so now if i save the script so there we
+have it so now we're only plotting
+signals
+if the 50 ema is below the 100 ema and
+price action is below the 50 ema
+and the opposite for long trades so
+that's one way to apply
+an ema filter uh but before i end this
+lesson i thought it might be interesting
+to show you guys how you can
+disable your ema 2 in your script in
+case
+you have a script that has this
+functionality in it
+but you want to allow both options for
+your users so you want to allow
+the user to disable ema2 and only use
+the ema1 as your filter the easiest way
+to do that is to just set ema
+2 to 0 ema2length to 0
+and detect that in your script so i'll
+show you what i mean right now
+so down here we can change our filter to
+say
+is the closing price above our ema 1
+and is ema1 above ema2 or
+is ema length two equal to zero
+and copy that down into there and so now
+our filter
+will return true if price is above the
+ema
+and our emas are in confluence or we've
+disabled
+ema2 by setting its length to zero now
+the problem is if i say the script will
+get an error
+whenever i come up and set this to zero
+because
+you cannot have if i click on that it'll
+tell me the error
+we cannot have a length of 0 passed to
+the ema function
+must be above 0. so what we need to do
+here
+is say ema length 2
+equal to 0 question mark then set it to
+1
+otherwise set it to ema length 2. so
+what we're saying here is we're saying
+for our second ema
+if the user has set ema length 2 to 0
+then we just want to get an ema with a
+length of 1
+otherwise we do want to use our ema
+length 2 parameter
+because it's set to something other than
+0.
+so now if i say the script that will
+work just fine
+if we come up here and we set email
+length 2 to 0
+we'll be getting any signal that closes
+above or below this 50 ema but you can
+see we're also plotting
+our second ema with a length of one so
+if we come down to where we plot our
+emas
+and we check here if our ema length two
+is set to zero
+so ema length two equals zero question
+mark
+then we want to draw n a
+otherwise we actually do wanna draw our
+ema
+two so now let's save the script
+minimize that come up to the settings
+menu and set ema length two to zero
+our second ema goes away and it is now
+no longer being considered
+in our filter check uh if you didn't
+understand anything in this video just
+rewatch it it'll make sense i'm
+sure but basically what we're doing here
+is we now have two emas
+if our first ema is
+above our second ema and price action
+is above our first ema
+then the script will be looking for long
+trades
+otherwise if our first ema is below
+our second ema and price action is below
+the first dma then the script will look
+for
+short trades and if you want to you can
+come into the settings menu here
+set ema length two to zero hit ok
+and now this script is only using the
+first ema as the filter this is a
+very simple filter very simple method
+but it works very well but finally
+one last thing that i have found useful
+in my own scripts
+is to detect how many candles
+are above or below the ema preceding the
+setup
+so for example in this case you can see
+we have
+two candles that closed above the ema
+immediately preceding
+our setup what happens if you want to
+invalidate the setup
+based on this condition as well i'll
+show you how to do that really quickly
+so here we come up here and above our
+filters
+let's add in ema breach check
+and what we're going to do here is we're
+going to create two new variables we're
+going to say
+bars above ema and bars below
+ema and this is going to be set to 0
+by default then we're going to use two
+for loops here we're going to say 4
+i equals 0 2 and
+let's create a new input variable up
+here i will say
+e may look back and this is just going
+to be another input
+with a title of ema lookback a type of
+integer and a default value of
+three so we're going to look back three
+bars and count
+how many bars are above or below the ema
+and incorporate that into our filter
+so here i can change this through to ema
+look back
+and now we can check if the close
+of our current iteration we can just put
+i in here
+which is this guy here so if the current
+adoration of our loop
+our for loop looking back if the closing
+price of that candle
+is above the ema one then we want to set
+bars above ema to bars
+above ema plus one and we can also check
+in the same for loop we can also count
+how many bars close below the eme
+so here we'll say if the closing price
+of the current
+iteration of this loop so you know we're
+looking back
+one two three candles if the current
+candle
+is below the ema or the previous candle
+or the one before that then that will
+increment our bars below
+variable by one so this is how we
+count candles beyond the
+ema so now if i save the script should
+compile without any errors
+there we go now all that's left to do is
+add these checks
+into our filters so i'm going to create
+one more user input here it's going to
+be called max bars beyond ema
+it's going to have a title of max bars
+beyond ema
+it's going to be of type input.integer
+and have a default value of one so we're
+only allowed one bar
+to close beyond the ema over the past
+three candles by default for a signal to
+be considered
+valid so now if i come down to our long
+filter and short filter
+we can add on the end here and bars
+for a long trade where checking bars
+below ema
+is less than or equal to max bars beyond
+ema and the opposite for short trades
+we're checking
+and bars above ema is less than or equal
+to max bars
+beyond ema so now if i save the script
+we come up to the settings menu and we
+turn off our second ema that will bring
+back this example here
+and look at that we are now invalidating
+this setup here because we have had more
+than one candle
+close above this 50 ema over the past
+three bars
+so now if i come up to the settings menu
+here if we change this max bars
+beyond ema variable to 2
+let me click ok this setup will come
+back
+because it's now considered valid
+because we can have a max of two candles
+closing above the ema for short trades
+and obviously for long trades
+it is the opposite so back here if i set
+this back to
+one ah sorry if i set this to zero
+that will invalidate this setup here
+because we've had one candle close below
+the ema
+so this is a great way to avoid taking
+signals
+around the ema when price is
+consolidating
+around it so typically speaking when
+the ema is tested as support or
+resistance
+and price responds from it it's often
+likely that we only have a maximum of
+one candle closed
+below it if we have more than one candle
+close below it preceding a setup
+then that usually means that the ema is
+being ignored
+so that i found in my personal trading
+that the optimal setting for this filter
+is one bar
+beyond the ema over the past three bars
+preceding
+our setup so if we zoom out a little bit
+look for some examples so you notice
+we're working off closing prices here
+not wix because any wix test in the ema
+is a good sign that's a bullish sign
+that this ema is acting
+as support and pushing price up but
+if price hovers around the ema
+for a little bit too long such as in
+here
+we do not want to be going short on any
+short signals
+if price is consolidating around the ema
+because that means we're either entering
+a period of consolidation
+or price wants to reverse so i hope you
+found this lesson interesting i'm going
+to leave it there
+i don't want it to get too long we
+covered a lot of subjects here we've
+covered how to create a single
+ema filter we've covered how to
+create two ema filters in confluence
+with each other we've covered how to
+create a filter with an ema breach look
+back
+so we're searching back three bars
+counting how many bars close beyond the
+ema
+so above the ema for short trades below
+the ema for long trades
+and if we have too many bars closing
+beyond the ema
+then we're adding that filter in our
+script as well
+and there's just a few ideas for you to
+play around with in your own scripts
+to add some ema filters to potentially
+optimize your strategy scripts
+or your setup detection indicators if
+you have any questions
+shoot them to me otherwise i will see
+you in the next lesson good luck with
+your trading good luck with your coding
+speak to you soon have a great day
+if you found this video helpful and you
+want to learn more about pinescript head
+over to panscriptmastery.com
+i have an advanced course there with 70
+plus lessons
+covering pinescript from the basics all
+the way up to more advanced topics such
+as strategy scripts
+and complex indicators and if you don't
+want to pay for anything that's fine
+i've got a free course there as well
+that goes into great detail about the
+core fundamental
+concepts you need to know in order to
+use pine script effectively
+so i'd love to see you there go and
+check that out if you're interested in
+that otherwise hang around
+hit that subscribe button and i'll be
+back with more free content
+really soon thanks for watching i'll see
+you next time
+you

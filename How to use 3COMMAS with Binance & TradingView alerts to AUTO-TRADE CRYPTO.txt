@@ -1,0 +1,1009 @@
+hi traders welcome back to another
+pinescript lesson my name is matt from
+the art of trading
+and today's video is going to be
+covering how to use the
+three commas third-party api with
+binance
+using trading view alerts now that's a
+bit of a mouthful i know but stick with
+me
+and i'll guide you through this today
+don't worry it's not as hard as it
+sounds
+so before we begin here is a quick
+script i knocked up
+um over the past couple of days playing
+around with three commas
+and trying to get a profitable strategy
+so i have a profitable strategy here
+um technically speaking this is
+profitable to return to 43
+with a 9 drawdown and has a profit
+factor of 1.6
+but this strategy is not ideal you would
+have theoretically made a lot more money
+just buying and holding
+this market instead of running the
+strategy but it is a profitable strategy
+and the strategy itself is not
+necessarily relevant for today's lesson
+because it's all about
+connecting your scripts your strategies
+with the
+three commas api and i'm just using this
+strategy script as an example
+so before we continue this lesson isn't
+going to be too heavy on the
+coding side of things i'm not going to
+spend too much time running over what
+this script does
+i'm just going to walk you through how
+to connect your binance account to your
+three commas account
+and then how to set up alerts on the
+training view platform to
+communicate with three commas to execute
+entries and exits
+on binance so before we continue uh this
+script here is very simple it's just a
+standard strategy script
+the only thing i've changed here is
+initial capital and default quantity
+value that's my position
+size so by default this strategy is
+testing
+using 10 000 us dollars and my
+position size is 10 000 us dollars so
+i'm using all of my account 100 of my
+account on each trade
+i'm not using margin in this example so
+i'm basically just profiting off the
+actual percentage
+increases and declines in the market so
+the market goes up
+like this trade for example we entered
+long at the open of this bar we exited
+at the close of this bar
+and that returned 28 or 78 dollars on my
+account
+i'll just quickly run you through what
+the script is actually doing and then
+we'll head over to
+binance and three commas and set up our
+api connection
+so this script is extremely simple in
+fact it's too simple
+i wouldn't trade this if i were you i
+would make this a little more
+complicated add a few more filters
+even though it is profitable and it's
+decently profitable
+it only has a 43 win rate but it has a
+1.6 average risk reward
+and so uh it is profitable we had a nine
+percent drawdown with a 42
+gain on the one minute chart over the
+past 14 or 15 days
+so that's just decently profitable
+however
+that's only because of the current
+market conditions in crypto you see
+we're in a bull market right now if we
+weren't in a bull market i doubt that
+this strategy would be as profitable as
+it is
+so just keep that in mind this is just
+for example our purposes
+but anyway what this script is doing is
+when the rsi goes oversold
+at 30 the script waits for that bar to
+print uh to close to confirm that signal
+and then we enter
+at the close of that bar so in this
+example here the rsi went oversold
+this bar closed as oversold the script
+entered long on the next bar on the open
+of the next bar
+with a 180r stop loss below the entry
+and so the script entered long waited
+until price action
+retraced got back above this 50 line on
+the rsi
+and then when that bar closed to confirm
+that 50 line
+that price had reclaimed the 50 mark on
+the rsi we exited
+our position for a profit so this is a
+long only strategy
+we're not using margin we're not using
+leverage we're not going short
+just buying dips in the market and then
+selling on retracements
+extremely simple script but if there's
+one thing i've learned in the past five
+years of trading
+it's that simple works so that's why
+i've kept the script simple
+you don't need to have a million
+indicators and a million different
+entry and exit reasons in order to
+create a profitable strategy so here we
+are
+on the three commas dashboard
+3commas.com
+now i'm not going to go over how to
+create an account hopefully you can work
+that part out on your own
+but here we are on the dashboard and
+this is kind of what your account will
+look like
+before you set anything up so today's
+lesson is going to be covering how to
+use binance if you don't have a binance
+account you can create an account here
+using their
+affiliate link and then you get a free
+30 day
+three comments pro subscription but i'm
+assuming that most of you will already
+have a binance account
+so i'm not going to go over that today
+we're just going to jump over to binance
+and get our api key to connect to three
+commas
+but before we do that we need to come
+down here to
+my exchanges so click on that
+and then for today's lesson we're
+obviously doing binance but there are
+dozens
+of other markers here you can choose
+from it's pretty much
+the same process for all of them the
+only thing that will be different is the
+interface and where you need to go to
+get your api key and all of that
+but today we're just going to work with
+binance i'm just going to call this
+uh binance test and now we need to go
+and get our api key and our
+api secret oh secrets i'm such a dork
+hang on so here we are on binance i've
+hidden my millions of dollars worth of
+bitcoin
+i'm just kidding i don't have that much
+but i wish i did so here we are on the
+binance
+homepage log in your account here and
+then where you need to go to get your
+api key
+is this guy up here so
+hover your mouse over this icon come
+down to api management
+click on that let your crappy australian
+internet load
+and then you need to give your api key a
+label so i'm just going to call this
+three commas
+and then i'm going to click create api
+so to generate an api
+key if you've set up two-factor
+authentication like i have you'll need
+to get an email code
+and type in your google verification
+code so i'm going to do that now
+there we go my api key is being created
+i'm going to leave these
+this information on the screen normally
+you would blur this information do not
+give this information out to anyone else
+or they have full access to your account
+and they can trade on your behalf and
+cause all kinds of mischief
+but i'm going to delete this api key
+after i'm done so it doesn't matter
+in my case what we need to do here is
+copy the api
+key you don't need to change any of
+these settings here we just need to copy
+these two
+api key and api secret over into three
+commas
+so paste the api key in the api key box
+and then paste your api secret into the
+api secret
+text box and click connect and exchange
+that simple
+if you've got your api keys correctly
+copied
+three commas do its thing and pretty
+soon you will be connected
+there we go we are now connected to
+binance and we can set up our first
+trading bot but before we do that it's a
+good idea to create a paper account on
+three commas so that you can do some
+testing make sure everything's set up
+properly without risking
+your real money or cryptocurrency so
+come up to
+this drop down box here click on
+settings
+and then scroll down until you see
+paper trading so when i created my
+account initially this was turned off by
+default
+so yours probably will be too you need
+to click on this show button
+to create a paper account and a paper
+account is basically a demo trading
+account like any other exchange
+or forex broker or stockbroker would
+give you and this is just pretend money
+to play around with
+to make sure you've got everything set
+up correctly so in order to tell three
+commas you want to trade on your paper
+account and not your real account you
+need to click up here on paper trading
+account
+and that will make any bots you create
+operate based on this paper trading
+balance so that's it we are connected to
+binance we have everything ready to go
+so last but not least we need to set up
+our trading bot so let's come over here
+to dca bot
+there are dozens of different ways to
+trade automatically
+through three commas you don't need to
+use trading view you can use their
+inbuilt
+indicators and trading conditions and
+smart bots
+but today's lesson we're just going to
+cover trading view bots so come over to
+dca bot
+click on that and if you haven't created
+a three commas bot before
+your interface should look like this it
+should just be blank you need to come
+over here
+click create bot and by default you will
+get this
+interface here set on gordon this gordon
+tab
+i guess that's what three commas named
+their default bot
+we want to go to advanced so click on
+the advanced tab here
+and that will give you access to modify
+all of these advanced
+settings here and don't worry it's a bit
+overwhelming at first even i was like
+what is all of this when i first
+logged in it's a bit weird i'm not sure
+why they set it up this way
+but we're not going to use most of these
+settings so we we're basically just
+going to go through and turn them off
+we're going to let our trading view
+script determine
+most of these parameters so first things
+first
+let's start with the main settings panel
+first thing we need to do is name our
+bot so i'm going to name my bot
+binance test and you can choose which
+account
+you're going to set this to just leave
+it as paper account for now
+now there's two different types of bots
+we can use here we can use simple
+which i believe only trades one currency
+pair one crypto market
+or you can choose composite which will
+trade multiple
+currency pairs today's lesson is just
+going to focus on
+simple so make sure you've set your bot
+type to simple
+next up we have our pairs these are the
+pairs we can choose to trade
+there's quite a few of them here and you
+can trade pretty much all of these coins
+against binance coin
+bitcoin ethereum and us tether
+so today's example i'm just going to
+focus on ada
+usd tether we could set this to bitcoin
+if we wanted to
+but i'll leave it as us tether for now
+because that makes our position sizing
+just a little bit easier so next up we
+have our strategy section
+so first up we have strategy type do we
+want to
+be a long bot or a short bot today's bot
+is going to be just a long bot we're
+just buying the market
+and selling for profit we're not going
+to be short selling
+the profit currency is going to be left
+as usd tether
+and if you're not sure what any of these
+settings do they have a pretty helpful
+little question mark here that will give
+you a tool tip and
+links to more information on these
+settings so if i don't do a good job of
+explaining them make sure you click on
+these little question marks and go and
+read up on what these settings do
+but we're going to leave all of this
+here as it is
+the one thing i will do is just increase
+my position size i'll just go to 100 us
+dollars
+for now and then finally you have your
+start order type you can either use a
+market order which will just enter at
+the current
+market price or a limit order which will
+obviously place a limit order
+at a certain price and your order must
+be filled at the price you tell
+the bot to fill it at depending on what
+market you're trading and the liquidity
+of that market
+it's probably a good idea to leave it on
+limit but because i'm trading a
+top 10 crypto i'm not too worried about
+limit i can
+feel pretty safe trading the market
+price i'm unlikely to be
+too affected by slippage especially with
+a small order size like this if i was
+trading 10
+000 or more i probably set it to limit
+so that's our strategy settings
+um your base order size is your
+actual position size so when your trade
+is first executed
+this is the initial position size that
+the bot will enter
+safety order size is for averaging
+your position so basically if you're
+using limit for example
+and you set your buy price at let's say
+a dollar
+you can set the bot up using the safety
+orders
+so that you first buy x
+amount of percentage of your position at
+a dollar and then the bot will set limit
+orders
+up to whatever you set here so you can
+have five
+different se i don't know why they call
+them safety trades that put me off at
+first but basically this is averaging
+into your position so you could set your
+first position
+entry at a dollar and then your second
+at 95 cents and then your third at 90
+cents
+your fourth at 80 cents and your fifth
+at 75 cents for examples that way
+if the market continues lower after
+filling you on your first initial order
+you can average your position down and
+get your dollar cost average down
+as the market goes lower which
+theoretically
+means you can make more money if the
+trade goes in your favor
+but to be honest with you this is just a
+bit convoluted to me i'm not sure
+why you would really want to do this
+certain strategies obviously
+would call for this but in our case in
+today's example
+i'm turning all of this off so i'm just
+going to set everything to zero
+i'm going to set my safety order size to
+the minimum which is actually 10 us
+dollars you can't go lower than 10
+and we're not actually going to use our
+safety orders we're not going to use any
+averaging we're just going to have a one
+in one out approach
+so our script is going to enter our
+trades at market
+based on whatever price our signal is
+generated at and we're going to exit our
+position at market as well
+when our take profit signal is detected
+so this is how i'm setting up my bot
+my strategy is long only my profit
+currency is us tether
+my base order size my position size is
+100 us dollars
+i'm not using safety orders so this is
+irrelevant and
+my start order type is going to be a
+market order next up we have our deal
+start condition so there are a lot of
+different
+conditions here inbuilt conditions based
+on
+the three commas signals that they've
+created
+today we're just going to use training
+view custom
+signal so we are going to send our
+signals
+from our trading view alerts to three
+commas api
+and the three comma system is going to
+enter and exit our trades for us based
+on our trading view signals
+so make sure to set your deal start
+condition to tradingview custom signal
+uh next up we have our take profit and
+our stop loss
+so our script has an inbuilt stop loss
+so we're not going to turn stop loss on
+for this lesson
+and you can't turn take profit off for
+some reason
+so how this works is when we enter our
+position
+in this example say we enter it at
+market if you leave this as it is and
+you leave this as one percent
+then your position will be exited if the
+market moves one percent into profit
+now because our script is going to
+determine when to enter exit
+our trades we don't want to use a target
+profit percentage
+now because there's no way to actually
+turn this off i just set this to 100
+so if the coin goes up 100 our position
+will be liquidated
+but the odds of that are pretty slim
+unless you're trading a very illiquid
+coin
+or elon musk comes along and buys up the
+entire market
+in one market order this isn't going to
+happen
+so by setting our target profit to 100
+that ensures that our target profit
+percent is never hit
+and that lets our script determine when
+we enter or exit our trade
+so because we've set our take profit to
+such a high number take profit type
+doesn't matter
+so you can come and play around with
+these click these question marks and
+read up on these
+settings if you want to use these
+settings in your bot
+you also have a trailing stop which
+trails your stop-loss based on
+a percentage of price from your entry
+the reason i'm not using any of this is
+because i can't back-test it i don't
+know if it's profitable so i want to
+rely on my trading view script to make
+all these decisions
+so we're not using take profit we're not
+using loss because our script also has a
+stop loss built in
+and we're not using safety orders so all
+of these are turned
+down to their minimum value so this
+whole section here is perhaps something
+we could cover in another lesson if you
+guys are interested in that
+but i doubt many of you are if you're
+using custom trading view scripts
+to manage your trades and then finally
+we have the advanced
+settings section i don't touch any of
+this but you can
+make your bot only enter trades if the
+daily volume
+is above a certain number uh in bitcoin
+so bitcoin traded so i guess you could
+use this as a filter to not trade
+this script on low volume days when
+there isn't much liquidity
+and then we have minimum price to open
+deal and maximum price to open deal
+they're pretty self-explanatory these
+are just price filters
+and then you have cool down between
+deals i'd probably set this just because
+we're trading a one minute chart
+strategy i'm going to set this to 60
+seconds
+that way if something goes wrong with
+our script and it pumps out a bunch of
+signals in a row
+we don't get a flood of orders going
+into the market so this will only allow
+the script
+to send orders to binance once every 60
+seconds
+and then we have open deals and stop you
+can use this to limit how many trades
+your bot can take before the bot stops
+i'm not going to touch anything here
+except for cool down between
+deals or trades so that's it our trading
+bot is now set up and ready to receive
+signals from our script so i'm going to
+click create bot here
+and i've got an error here this setting
+must be greater than 0.2 so i don't know
+why it lets me set it to that let me set
+it to 0.21
+create bot and this should work now
+there we go
+so there's so much building going on
+around my house at the moment it's
+trucks driving past
+every 10 minutes so there we go we have
+our bot successfully
+set up and saved let's click start bot
+and the bot is now turned on so let's
+click ok
+and the bot is running so now there's
+just a couple more things we need to do
+in order to get our script
+to communicate with three commas the
+first thing we need to do is go and get
+the webhook
+url i'll leave a link to this article in
+the video description but this article
+here
+will explain exactly what we need to do
+in order to
+set up our tradingview custom signals
+and it also contains the webhook url so
+if we scroll down here
+should be here somewhere there it is so
+we need to copy this url
+and i'm just going to open notepad real
+quick and i'm going to paste this url
+into notepad
+because now we need to go and get the
+actual alert commands
+to add to our alerts to tell the bot
+what to do so this is our webhook url
+which receives our trading signals and
+relays that to our trading bot on three
+commas
+next up we need to go and get the actual
+commands we're going to use to manage
+our trades so if we come back to our
+three commas bot information screen here
+and if you lose this screen you can get
+back to it by just clicking on dca bot
+over here and then scrolling down to
+find your bot and just click on the name
+of your bot and that will take you back
+to the bot
+information screen and if you scroll
+down to the bottom of this screen
+there's a whole list here of trading
+messages
+that we can send to our webhook url
+which will manage our trades for us so
+the only two messages we're going to be
+using today
+are these two so we're going to use
+message
+for deal start signal so this is the
+message to initiate your trade
+remember we set the bot up to initiate
+our trades at market price so when the
+bot receives this message
+we'll just open a trade with 100 us
+dollars
+which is what we set our base order size
+to
+so when it receives this start signal
+this deal star signal it will buy
+100 us tether worth of ada
+and if it receives the message to close
+order at market price
+it will liquidate our position at the
+current market price
+so we're going to use both of these
+signals here so i'm going to copy
+this signal into my notepad and also
+this message here
+and that's all we need to wrap up this
+lesson so let's jump over to the trading
+view charts and set up our alerts
+so in order to confirm that our bot is
+set up properly i'm going to get
+our messages here i'm going to put this
+on my second screen
+and i'm going to create a alert at the
+current market price
+i'm going to turn on webhook url now
+i've already got it saved here because
+i've used it in the past but you can
+copy and paste that url
+into this web hook input here i'm going
+to turn send email off and notify an app
+because i don't want to be getting a
+message
+700 times a day whenever my bot takes a
+trade
+i'm going to title this alert just three
+commas
+and the message here is where we input
+our commands to our bot
+so the message to open a trade is this
+one here so paste that command in there
+and
+if this alert gets triggered it should
+open a trade
+on the bot so let's create that alert
+wait and see what happens
+i may need to move this alert to the
+current price 8368
+save the alert there we go the alert has
+been triggered let's go and check our
+bot
+so here's our events messages we're on
+our paper trading account so
+it should have opened a paper trading
+position let me refresh the page and see
+what happens there we go
+so our trade has been initialized we've
+bought
+120 ada at the market price
+perfect there we go so now let's test
+the uh close trade command
+come back here set a new alert
+everything is all right make sure your
+webhook url is inputted there
+paste our exit command into here and
+click create
+now that alerts been triggered let's go
+back to three commas refresh the page
+and there we go we have closed our trade
+at market
+for a four cent loss and so our bot is
+working
+perfect the last thing we need to do is
+set up our trading view script alerts so
+let's go over to the pine editor and do
+that
+and then we can wrap up this lesson so
+you'll notice on my screen that i have
+all these messages
+drawing these text messages drawing all
+over
+my charts so these are strategy comments
+that occur within my pine code
+so i'm not going to go over what this
+script does
+because this lesson will be too long i
+may cover this in a future lesson if i
+get time
+but i'll definitely be putting this
+script up in the mastery course if you
+want to check that out just head to
+pinescriptmastery.com
+and i have a bunch of profitable
+strategies over there strategy scripts
+that you could use uh these command
+functions
+with three commas to trade crypto
+automatically and profitably so the way
+i've set up my
+three commas trading strategy script my
+trading view strategy script
+is i'm using the strategy.entry and exit
+functions like you normally would
+but i'm also including a comment here
+and this comment
+contains my bot command
+so whenever a trade is entered or exited
+i can use this strategy comment this
+order comment
+to tell my bot what to do and the way
+this would work is i'd come up here
+i'd select my script from this condition
+drop down box
+and whenever a order
+is triggered by this script i can use
+one of these special placeholder tags to
+reference
+my order comment so if i click on this
+little
+question mark here trading view has a
+list of special placeholders we can use
+to reference
+in our alerts if i come down to strategy
+what we want to reference here is our
+strategy.order.comment
+special placeholder and this returns the
+comment of the executed order
+the string used in the comment parameter
+in one of the function calls generating
+orders
+so strategy.entry exit or order so
+normally this placeholder would be
+useless but because we are
+specifying our strategy order comment
+here
+the parameter in our function call
+we can reference that in our alert
+message
+so by pasting that special placeholder
+in here that is the equivalent
+of pasting in my bot
+entry or exit command like this now
+there is one thing i had to do
+in order to make this comment work and
+that's use a bunch of
+what's called escape characters string
+escape characters
+so you can see in this message here my
+alert command
+is on one line but i've had to use a
+bunch of special escape characters
+in order to make this string compile so
+if i remove this message here
+and this one down here and i paste in
+my bot command into this comment
+parameter
+if i just try to save the script now
+i'll get a bunch of errors
+because the script won't compile because
+of the way pinescript interprets or
+compiles
+our code you can see that all of these
+messages here
+have quotation marks and in pine script
+you can only write out a string
+so this comment parameter can only be
+one single string
+and that string must be contained
+between two
+of these quotation marks but this
+message has multiple quotation marks
+so the way we fix that is using the
+backslash
+escape character so by putting a
+backslash in front of
+all of these quotation marks this is
+telling panscript that we want these
+quotation marks to be included
+in the string and you can see that as i
+add these
+backslashes in front of our quotation
+marks
+the color coding of this line changes as
+we are turning this into
+one single string uh by using this
+escape character on our quotation marks
+so in order to make our command compile
+let me just delete all this again
+paste in our entry command and just
+add all of these backslashes
+in front of all of these quotation marks
+like so and then i'm also going to add
+the new line
+character that's represented by a
+backslash and then the character n
+that tells pine script to create a new
+line
+or like that just like pressing enter if
+you were typing this message out
+so by adding a new line to the end of
+each line here
+and then removing all of the spaces here
+to turn this into a single line of code
+pull that back as well now if i copy
+this
+line of code or cut that line of code
+and paste it in between
+these two quotation marks we have
+our alert message our bot command
+written out on a single line of code
+that will compile
+when we hit save there we have it just
+like magic
+so i'm going to do the same thing for
+our exit order i'm going to copy my exit
+command
+paste that underneath this command here
+put
+my backslashes in in front of every
+quotation mark
+like so and bear with me here
+there we go then i'm going to add new
+line characters
+i'll just copy this and paste it on the
+end of every line
+and then backspace all of my
+spaces like that
+and then cut this whole line of code
+paste it into the comment
+parameter of my strategy.exit function
+now if i save the script whenever a long
+signal is detected or a exit signal is
+detected
+the script is going to include our bot
+message that's this long string here
+as our strategy order comment and now if
+i come up here and i set an alert
+select my script make sure you've got
+your web hook inputted here
+and all we need to do here is change
+this to
+strategy dot order dot comment
+with two curly brackets on either side
+and there we have
+our bot command alert message so if i
+change this to three commas
+entry create that alert now repainting
+is not an issue
+because my code handles that we use the
+bar state
+dot is confirmed so the script even
+though it repaints it doesn't affect our
+trading signals that's something i cover
+in the mastery course as well
+if you're unfamiliar with repainting or
+you struggle with repainting
+but that's it we're done so these
+strategy scripts when you set alerts on
+them
+an alert will be triggered for both of
+these entry and exit functions
+so if an entry is detected an alert will
+trigger and if an exit is detected and a
+low will also trigger
+so we only need to set one alert for the
+script and as long as you set the alert
+to open ended or
+have a long expiry on it depending on
+what trading view plan you're on
+then every time an order is detected on
+your chart
+uh that command will be sent to the bot
+and your positions will be
+entered or exited accordingly so that's
+it i hope you found this lesson
+interesting
+i know it's quite an advanced one i hope
+i didn't lose you there
+i know this is a bit advanced compared
+to what we've covered in the past
+but i've had a lot of requests for this
+material and so i thought it was about
+time i created a lesson
+on it and now you can take this
+information and go and play with it
+with your own scripts and just really
+quickly before i wrap up the lesson
+if you're not using a strategy script
+you can still use indicator scripts
+to send your bot commands all you need
+to do
+is instead of this strategy.entry
+function if you're using this on an
+indicator script a regular study script
+you can just add the new alert function
+under wherever your
+entry signals or exit signals are
+detected you can just paste this command
+straight into this new alert function so
+you can set your message
+and your frequency so i'm going to set
+my frequency to alert dot
+frequency once per bar and i'm going to
+paste
+my command in there get rid of these
+extra
+quotation marks and
+now if i save the script that will also
+compile without any errors
+and if you were using this on an
+indicator script say i wanted to change
+this to study
+and you remove all of your strategy
+references so all of these
+strategy.position sizes
+and all of that you can use this alert
+function to do exactly the same thing on
+a study script
+so this is how you would trigger
+commands to your bot
+in your code instead of having to come
+up here
+and write the message out in your
+alert message text box and finally after
+you've played around with your paper
+trading account and you've got your bot
+working how you would like it to to flip
+it over to real
+money trading it's really simple all you
+do is click
+on this button up here and now the
+bot will execute your trades with your
+actual
+real binance trading balance pretty
+simple
+but make sure you've got everything set
+up and working properly on your paper
+trading account first to avoid
+any nasty problems so there we have it
+that brings me to the end of the lesson
+we have a profitable trading view
+strategy script entering and exiting
+trades
+through three commas third-party api
+using alert commands
+and we've had a 43 return
+using this script between the
+1st of february and the 17th of february
+so 43
+return over 17 days
+it's not bad although as i said at the
+start of the video i
+would have made more money just buying
+and holding this market at the moment
+but anyway that's it for this lesson i
+hope you found it interesting and
+helpful
+if you want to learn more about strategy
+scripts and
+pine script in general then head over to
+panscriptmastery.com
+where i have a bunch of lessons here
+courses
+there's a free course here on the
+absolute basics of pinescript
+there's my flagship mastery course with
+85 lessons
+and dozens of hours of content covering
+pinescript in detail including strategy
+scripts
+i also have my indicators here every
+indicator i've ever created including my
+private ones all my profitable strategy
+scripts
+and then recently i released the
+pinescript mentorship program where i'm
+helping
+traders with their own scripts by
+creating lessons on subjects that they
+are struggling with
+so if you want to learn more about
+pinescript head over here
+otherwise i'll be back real soon with
+another free lesson thanks for watching
+thank you for your time and best of luck
+with your trading
+take care i'll see you in the next video
+what's wrong you don't want to be on
+youtube
+what's this thing oh it's scary huh
+it's bright and green
+my god man get out of here
+a little turkey
+you

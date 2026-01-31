@@ -1,0 +1,401 @@
+hello everyone and welcome to Simply
+Lear in today's tutorial we are going to
+learn how to install Kali Linux on
+Virtual box and discuss various other
+ways through which you can install K
+Linux on your desktop operating system
+and various kinds of operating systems
+and I should mention that that Kali
+Linux is a powerful tool for cyber
+Security Professionals and Enthusiast so
+today I will guide you through the inst
+ination process step by step so let's
+get straight into it and so first we
+will install K Linux in Virtual box and
+I will tell you other ways also from
+that you can do that but today as it is
+convenient way to install in Virtual box
+using Windows simultaneously so we'll be
+using virtual box and in between while
+downloading the virtual box and the Kali
+Linux while it would be downloading I
+will tell you guys all the ways through
+which we can install Kali Linux so if
+you want to jump start to the
+installation part you can watch the time
+stamp to install it in the virtual box
+and jump to it and if you want to see
+other ways also just carry on with us
+craving a career upgrade subscribe like
+and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back and before commencing guys just a
+quick info for you if you are an
+aspiring cyber security professional
+looking for online training and
+certification from prestigious
+universities and in collaboration with
+leading experts to enhance your
+credibility then search no more simply
+learns postgraduate program in cyber
+security from MIT University in
+collaboration with EC Council should be
+a right choice for more details use the
+link in the description box below so now
+we'll move to setting up virtual box so
+first thing we need to watch is
+considerations and first we'll move to
+virtual box
+website so this is Oracle VM virtual box
+we'll move to the download section and
+here we have Windows host option so
+we'll click on that and get this
+application
+downloaded so as it is downloading we'll
+move to K Linux website
+and we'll download the ISO file so that
+we can install it in the virtual
+box so here you can see that this is
+64-bit version so we'll download the ISO
+file and it is around
+4GB so it would be taking time to
+download and with this process we will
+discuss the various ways with that you
+can install Kali Linux in your system so
+till then it gets downloaded so let's
+discuss the ways with which you can
+download the file and install on your
+system so the number one ways direct
+installation that is bare metal so this
+involves installing Kali Linux directly
+on the hardware as the primary operating
+system so this method is straightforward
+but erases all existing data on the disk
+if not partition correctly then comes
+the dual booting so dual booting allows
+you to install Kali Linux alongside
+another operating system such as Windows
+or Mac OS this setup lets you choose
+which OS to boot into at startup but it
+requires careful disk partitioning and
+boot loader configuration to ensure both
+systems work without interference then
+comes virtual machines so running Kali
+Linux inside a virtual machine is a
+popular choice for those who use
+operating systems like Windows Mac OS or
+other Linux distribution so tools like
+vmw virtual box and parallel desktop
+enable users to run K Linux in an
+isolated environment we are using
+virtual box here so this method is safe
+as it doesn't affect the host operating
+system and is ideal for testing and
+educational purposes then comes live
+boot so Kali Linux can be booted from a
+USB stick or dvd without installation on
+the hard drive so this live mode is
+useful for temporary task and leaves no
+Trace on the host computer once the USB
+or dvd is removed it's also a good way
+to test Khali without making any changes
+to your system then comes persistent USB
+similar to a live boot a persistent USB
+installation allows you to save changes
+and retain additional software
+installations across reboots which the
+standard live USB does not support then
+comes windows subsystem for Linux that
+is WSL for users on Windows 10 or
+Windows 11 Kali Linux can be installed
+as an application Through the Windows
+subsystem for Linux that is WSL so this
+allows you to run a Linux environment
+directly in Windows without the need for
+a dual boot setup or virtual machine
+then comes doer containers so Kali Linux
+can also run inside a doer container on
+any system that supports Docker this is
+a lightweight option that is
+particularly useful for those who need
+to run specific tools rather than the
+whole K Linux environment then comes
+Cloud deployment Ki Linux can be
+deployed on a cloud platform such as AWS
+Azure or Google Cloud this is beneficial
+for performing security testing with
+scalable resources now you'll see the
+download option and first install
+the virtual
+box so here we have the virtual
+box click on
+that and follow the
+process as Ive already installed the V
+box on my system so we don't need to get
+all the processes done here so guys you
+can see that now we are installing the
+virtual box as I will show you guys our
+Kali Linux setup has also been
+downloaded now moving back to Virtual
+box so first thing we need to watch is
+considerations for this number one would
+be Hardware requirements that ensure
+your system meets the hardware
+requirements for the installation method
+you choose and then comes the security
+that is consider the security
+implications especially for dual booting
+and direct
+installations this I'm talking about the
+ways to install Kali Linux and the
+purpose choose the installation method
+based on your purpose example testing
+learning professional and use and each
+method suits different needs and setups
+ranging from temporary use and learning
+scenarios to Professional Security
+testing environments so first we have to
+make sure that virtual box is installed
+on our system and if not we can download
+it from the virtual box website as we
+have downloaded it and to install
+virtual box we need to have some enable
+hardware virtualization I will show you
+guys but before this we will install it
+we don't need to alter anything so it's
+showing that installing it will reset
+your network connection and temporarily
+disconnect you from the network proceed
+with the installation now we'll proceed
+with that and if there are missing
+dependencies we can install that also
+and then comes the ready ready to
+install section so this is the final
+step you can click on that and and get
+the things installed but as I already
+installed the virtual box on my system
+so I won't be installing it again so I
+will cancel this process and open the
+virtual box for you guys and what I was
+telling you guys is you need to have
+enabled hardware
+virtualization and what you can do that
+is just open the task manager by
+clicking control or delete so here's the
+task manager moving here you could see
+here that virtualization is enabled so
+if it is not enabled you can go to the
+Bio Section and enable it and now we
+have the virtual box here and we have
+downloaded the Kali Linux ISO file and
+now we'll see the direct installation so
+first you need to click on new and name
+your
+VM so we will name name it as K
+Linux and we don't need to select any
+ISO image type is Linux and the version
+will select is 64bit Debian so Debian 11
+16
+64bit and once we check here also what
+we have
+downloaded so that's
+64bit 20
+24.2 change log
+so here we will select da 11 bull size
+64bit then click on next and here you
+have to allocate around 1,000 MB of ram
+I would be allocating around 248 MB and
+the processor I would be dedicating
+would be around
+three so three processor I have
+dedicated and now we'll click on the
+next section and here we have the dis
+size so how much disk size you want to
+allocate this so I would allocate around
+35 GB that is 38 GB then click on
+next and here you can find the summary
+that you have set up a new system named
+Kali Linux and that is running guest to
+type that is dean1 buze 64bit then we
+have the base memory processor and the
+dis size then we'll click on finish now
+we'll click on the settings
+we'll configure some of the settings for
+the
+wmware and now in the general section
+only we'll click on Advanced and here we
+have the shared clipboard and here we
+will turn it to B directional so what it
+does is we can Now operate The Mouse and
+the keyboard option both in Windows and
+this virtual box so after this we will
+move to display section and make the
+video memory to to Max so what this does
+is this is the graphic
+controller and we'll set here as VMS
+VGA and click on the enable 3D
+acceleration so this will allow virtual
+machine to use host machine
+gpus now we'll click on
+storage and click on
+empty and then select the DVD icon and
+here we will choose the file
+that is what we have downloaded Kali
+Linux and after that we will move to
+network we will go to settings again
+we'll move to
+network and under Network we'll switch
+to attach to option to bridged
+adapter so this will allow access
+similar to your main system via SSH
+connection now I'll click okay and now
+we'll click on the
+start as you could see that it is
+powering VM
+up so you could see the installation sa
+here we'll click on
+install and now the system is asking for
+the language we'll select
+English then the area that would be
+United States or you could choose
+accordingly what you have and then the
+key map to use we'll use the American
+English only
+you could see the process is moving
+on as we have already discussed the ways
+to install Linux on our systems number
+one was direct installation then we had
+the Dual boting and then we had the
+virtual machines that we are currently
+doing and after that we have the live
+boot so what it's doing is configure the
+network your network is probably not
+using the DHCP protocol Al natively the
+DCB server may be slow or some Network
+Hardware is not working properly okay
+we'll click
+continue and we won't configure this at
+this time now he's asking about the host
+name and we'll set it as Kali only and
+now he's asking for the full name
+so we'll click on that that would be the
+username of our account and now is
+asking for the
+password so I will blur this
+out so he's asking about the clock
+select your time zone will select this
+only
+and for beginners we'll select guided
+use entire disk and confirm all changes
+to the disk and choose allinone
+partition and finish
+partitioning write the changes to
+disk yes
+now we have the softwares to
+install and we'll
+select the genome
+to and replace
+XF and move to continue
+and you can choose a software you want
+to install for new users the default
+section is typically fine or you can use
+genome and unselect the
+xfc now you can see that we have
+installed the GRUB boot loader on our
+virtual disk when prompted and now we
+have finished the installation and now
+we'll reboot it and now we'll reboot the
+system and make sure to remove the
+installation media which is the case
+means that is unmounting the ISO from
+the virtual box
+settings so you can see that our Ki
+Linux has been
+installed and while booting it has
+removed all the installation
+processes and you could find here the
+username and with password we'll move
+on so this is how we install K Linux on
+Virtual
+box and I will show you guys
+some of the
+commands that you can run here we'll
+open the
+terminal and first thing we need to do
+is update the system we have opened the
+terminal and write a command that would
+be sud
+sudo apt update and
+and sudo app
+upgrade and now it's asking for password
+I will write the password
+here now you can see it has started
+working on the updation and upgradation
+of all the directories present in Kali
+Linux so you could see that the summary
+is upgrading Z installing Zer and
+removing Zer and not upgrading zero as
+we don't have any installed dependencies
+here as we have just installed the Kali
+Linux and if you want we can run other
+commands also so to display the current
+directory in which directory you are
+just write PWD so you are in home aisar
+and if you want to know all the files
+here you could just write LS so it will
+list all the files and directories in
+the current directory so you could see
+that in absar we have desktop documents
+downloads music pictures public
+templates and videos and if you want to
+navigate into something or navigate to
+the home directory what you can write as
+CD and this
+sign now you are in the home directory
+you check it you could just write PWD
+here you are in the home directory that
+is PWD abar now if you want to create a
+new directory so for that you can write
+the command mkd that is make directory
+and name the folder as testore
+directory and now you could write LS to
+list all the files and check if the
+folder is created or not so you could
+see that testore D is here and we have
+created the new folder if you want to
+move into this folder you just need to
+write the folder name that is testore D
+so now you are in the folder to check
+that you can write the command PWD and
+here you are home abisa test directory
+and with that guys we have known how to
+install K Linux on on Virtual box if you
+guys have any doubt or comments comment
+down in the comment section below and if
+you like this video please like share
+and subscribe with your friends till
+then stay safe and keep learning staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

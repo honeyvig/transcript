@@ -1,0 +1,462 @@
+g'day Traders welcome back to another
+video in this video I'm going to be
+building on the previous YouTube video
+where we built out a Bitcoin regime
+filter strategy and in this video I'm
+going to share with you an answer to a
+student question from the Mastery course
+the student wants to know how to Pyramid
+multiple trades in a single strategy so
+opening multiple positions in the same
+direction as an initial position they
+also wanted an example of how to use a
+trailing stop loss while this script
+does both of those things and so I
+thought I might just share this answer
+with you guys because I'm sure there's
+plenty of you out there who would like
+to know how to Pyramid trades in a
+strategy script so with that intro out
+of the way it's time to let you know
+about this video's sponsor which is you
+guys
+I don't have any sponsors uh just hit
+the Subscribe button hit the like button
+if you enjoyed the video uh that's all
+the sponsorship I need thanks for
+watching enjoy the video and I'll speak
+with you next week
+in this lesson I'm going to be answering
+another student question which is could
+you please do a video on the strategy
+section with pyramiding more than one
+trade at a time as well as an example of
+changing a stop or trailing
+I'm not sure how to do this well today I
+will show you how to do both I've
+already
+covered how to to a trailing stop in
+several of the scripts here and in the
+indicators section there is a ATR
+trailing stop tool lesson so if you want
+to check them out if you're not sure how
+to go about creating a trailing stop but
+in today's lesson I'm going to be
+building on the previous strategy lesson
+I released recently my Bitcoin regime
+filter strategy this strategy includes a
+trailing stop and what I'm going to do
+in this lesson is we're going to add
+pyramiding to this strategy so if we
+come down to the source code and copy
+all of this jump over to the pane editor
+so here we are with the script applied
+to my chart now I'm not going to explain
+how this script works because I've
+already done a lesson on this script but
+basically if you haven't watched that
+lesson yet what this does is it checks
+if price in this case Bitcoin if Bitcoin
+is trading above its 20-week EMA and we
+have several other price conditions
+being met we're not other words this
+regime ribbon color down here is green
+when this turns green if we are not
+involved in a trade the script enters
+long but it only trades one position
+with a trailing stop as you can see
+that's what our red line is and when
+price closes below that trailing stop we
+exit our position so a couple of things
+I want to do here the first thing I'm
+going to do is change my inputs I'm
+going to change the date to start
+trading at 2017. that just gives a
+slightly more accurate or more realistic
+results because I don't I doubt many of
+us have been trading Bitcoin since its
+Inception but I started in 2017 so I'm
+going to do that to start with I'll also
+turn on our RSI momentum filter that
+simplifies the script a little bit
+instead of having so much green and
+orange now the only time the ribbon
+turns green is if Bitcoin is trading
+above 70 RSI so momentum must be strong
+now let's modify the script to allow for
+pyramiding so to start with I'm going to
+add 2 two new user inputs to the script
+I'm going to add a pyramid option this
+will just be a bull Boolean option on
+off I'll just call it pyramid question
+mark and the default value will be false
+next I'm going to set an amount that
+Bitcoin or any whatever Market we're
+trading must rise from our first entry
+before we are allowed to Pyramid I don't
+want to Pyramid immediately just because
+this is still green I want to only
+pyramid when price has moved into my
+favor by a decent margin so by default
+let's make it 10 so the market must rise
+10 percent
+before we are permitting the script to
+enter a second pyramid long position to
+do that I'll create another input here
+called pyramid AMT short for amount this
+will be a float input and I'll title it
+pyramid after X percent rise
+and the default value will be 10 save
+that script and that gives us our two
+user inputs to start pyramiding let's
+scroll down to where the script enters
+our positions first of all here is our
+trailing stop code all of our trailing
+stop code is handled here we declare it
+up here and in fact I can change this
+code a little bit this will reset the
+trailing stop whenever a new position is
+entered I can move this to where our
+exit happens so when our script exits
+our open trades so when the closing
+price is below our trailing stop or
+below the 20 week EMA but this is our
+trailing stop code here you don't need
+this if you don't want it if the closing
+price is below our trailing stop we exit
+our position now if you wanted to use an
+actual trailing stop that exits the
+trade when price touches that trailer
+stop rather than closes below it you
+need to input this Trail stop into the
+strategy dot exit function and what you
+would do is you would put in all of the
+regular parameters so ID equals exit
+from entry equals buy we want to exit
+our Buy trade and you would need to put
+in stop equals Trail stop and that would
+exit your trade whenever price touches
+this red line but for today's lesson I'm
+going to leave it as it was so we're
+only going to exit our trades when price
+closes below that red line and when that
+happens we will reset our trailing stop
+our red line here will be set to an a or
+nothing and it won't draw again until we
+enter a new position and once we enter a
+new position this code gets executed and
+we start updating our trailing stop to
+lock in more profit so let me save the
+code make sure there's no problems there
+there we go everything's working just
+fine bringing this to the front as well
+so now there's several ways we can
+pyramid this script we could just get
+rid of this check here that would just
+enable pyramiding that's all you need to
+do is just not check if a position is
+open there's a little bit more to it but
+that's essentially what we need to do in
+order to allow the script to take
+multiple entries and then what you would
+do is you can control your pyramiding
+here in the properties settings of the
+strategy script but we'll get to this in
+a moment for now what I'm going to do is
+rather than change this code I'm going
+to add a second entry block of code
+and this will be called handle scale in
+pyramiding so this form of pyramiding is
+scaling into a trend following position
+essentially or momentum system whatever
+you want to call it we are trading with
+momentum and we're only pyramiding while
+prices moving into our favor
+um you could make a DCA a dollar cost
+averaging system that pyramids this
+price moves a little lower I personally
+that's not how I like to trade but it is
+possible to do that in pain all of these
+techniques should work no matter how you
+want to trade so what I'm going to do
+here is I'm going to check if our
+strategy dot position size is greater
+than zero that means we have a long
+trade open and our date filter is met so
+we are trading within this start time
+and end time then we are going to check
+if we should pyramid so what I'm going
+to do here is declare a new variable
+called dist short for distance and this
+will be set to
+the current bars closing price
+minus our entry price so to get the
+entry price I will just use the entry
+average price
+divided by our entry price
+this will give us the distance price has
+moved from our entry as a percentage so
+for example if I minimize this and look
+at this trade here if I scale up 10 here
+this bar here is the first bar to exceed
+our entry price by 10 which is our
+default pyramid amount
+so on this bar here when we enable
+pyramiding this will be the first bar to
+enter a new position
+and we'd start stacking long trades on
+top of each other in the same direction
+utilizing the same trailing stop as well
+so to do this I need to check if
+we are bullish so first of all are our
+regular entry conditions Matt so the
+market is bullish we're trading above
+the 20-week EMA and our filters are met
+so our RSI momentum filter is met or
+we're not using the RSI momentum filter
+if either of those conditions are true
+either this is turned off or the current
+RSI value is above this then we are
+bullish and we want to not trade when
+the script is in caution mode caution
+mode means that volatility is picked up
+see this orange bar here orange colored
+thing
+that's saying that the current bars low
+is greater than 1.5 times the ATR
+from the recent swing high so when price
+action drops greater than one and a half
+ATR from the recent swing High it
+happens again here that means volatility
+is picking up to the downside and we
+want to go into defense mode and what
+happens is the script raises the stop
+loss even higher to lock in more profit
+it's more aggressive with its protection
+when the market turns to caution mode
+when or in other words when momentum is
+waning we tighten our stop loss that's
+what these two conditions will do
+finally we just need to check and is the
+distance on the current Bar's closing
+price from our entry price greater than
+this percentage to do that we just check
+is dist greater than or equal to our
+pyramid amount input divided by 100. now
+if you wanted to you could just change
+this to 0.1 and not divided by 100 and
+that will give us 10 but to make it more
+intuitive I'm going to go with a whole
+number here so 10 to get 10 we need to
+divide 10 by 100 that will give us our
+distance as a decimal so 1.0 would be
+100
+0.1 would be 10 so if dist is greater
+than or equal to 0.1
+then we want to enter a new position now
+this is where things can get as
+complicated as you want them to be for
+today's lesson I'm just going to keep it
+simple and I'm just going to keep my buy
+ID the same as this by ID and what that
+will do is when our trailing stop is
+triggered this call here will exit all
+open trades that have this buy ID if I
+wanted to have a different exit reason
+for each pyramided trade I would need to
+change this ID to something unique and
+change or add a new strategy Dot close
+call for that second pyramided trade but
+just for now I'm going to keep this the
+same as this initial entry and all we
+need to do now is set the direction so
+the direction will be the same as this
+one strategy.long and now when I save my
+code hopefully it compiles there we go
+it's fine but it's not doing anything
+it's not taking any extra trades that's
+because we now need to come up into the
+settings menu click on properties and
+increase our pyramiding Max limit so
+this is the maximum amount of open
+trades we can have in any given
+Direction so in this case the script
+only trades to the long side to the
+upside we are only allowing one position
+at a time and we are investing 100 of
+our account balance in the each each
+trade what we need to do in order to
+enable pyramiding is increase this
+number but unless we are using leverage
+we cannot invest a hundred percent of
+our account balance into two trades if
+you're using leverage I could increase
+this to whatever I wanted so 100 margin
+for long positions I believe this allows
+me to open twice as much as as my
+account balance I'd have to double check
+that I don't use margin in my back
+testing on trading view but we can
+perhaps cover that in a future lesson
+but now I'm going to leave that at zero
+and what I need to do since I'm not
+using leverage in this backtest is I
+need to reduce this
+my order size since I'm using a
+percentage of My Equity
+I need to reduce this so that it reaches
+100 when we're fully invested if it
+exceeds 100 then that's unrealistic we
+can't actually open that many positions
+um one way around this would be to
+change this to contracts or let's change
+it to us tether and set this to fire uh
+let's set one thousand and set
+pyramiding to 10. so now we can open up
+to 10 trades in our long Direction while
+we are trading up as soon as our stop
+loss is hit is triggered as it is here
+all of these open trades get closed at
+the same time I'm not going to cover
+multiple exit reasons in this script
+because that will just get too
+complicated hopefully by now with the
+amount of content in the Mastery course
+and all the different examples you
+should be able to build a pyramiding
+script as complex as you like by just
+building on the examples in the course
+all you need to do is either create a
+second entry block of code for your
+pyramiding that does not check if the
+strategy.position size is equal to zero
+or simply get rid of this and and
+control your pyramiding through the
+properties tab here so because we're
+only investing a thousand USD or us
+tether in this case stablecoin in each
+trade and we have a starting balance of
+10 000. um let's drop this a little bit
+lower let's drop it to 500. we should be
+unless we take a massive loss early on
+in the script and we lose most of our
+account balance we should be able to
+open 10 positions worth 500 us tether
+each quite easily but if we're using
+percentage of equity we need to set this
+to whatever adds up to 100 based on how
+many positions we are allowing the
+script to open so if I change this to
+four now I need to set my order size to
+25 so each time we open a new position
+we will increase our position size by 25
+of our account balance now if we click
+ok now you can see we are opening one
+two three four trades in the long
+Direction before the script stops taking
+new trades and and we wait until that
+trailing stop is hit and now this will
+affect the performance it will um in
+this case it reduces the drawdown
+significantly but also reduces our
+profit since we're not fully invested
+early on in the in the trend
+so that's one pro and con with
+pyramiding is it can increase your
+profitability in some cases but more
+often than not it will reduce your
+volatility by reducing your profit a bit
+but also reducing your max drawdown
+which is depending on how you like to
+trade how conservative you are maybe
+this is more important to you than
+maximizing your profit if I turn
+pyramiding off you see our drawdown more
+than doubles but our profit is
+significantly more so again just a
+matter of preference in how you like to
+trade but this is how you enable
+pyramiding anyway that will about do it
+for this lesson just before I wrap it up
+I'll show you really quickly how to have
+two separate exit reasons for your
+pyramid trades let's change this to buy
+two this is our ID for our pyramiding
+entries and let's add a new exit reason
+down here called strategy.exit
+give it an ID of pyramid exit and we're
+going to exit from the entry ID of by 2
+which is our second Buy trade here and
+what I'll do here is I will pass in our
+stop equals Trail stop
+and now when I click save what this
+should do theoretically is when I enable
+pyramiding here so if I set this to 50
+and set pyramiding to two contracts or
+two trades now you can see we have two
+exits so we're entering our first long
+trade then we're pyramiding our second
+long trade and then our first long trade
+exits when price closes below our
+trailing stop but our second buyer trade
+our pyramid trade exits when the
+trailing stop is hit by Price action so
+that gives us two exits here and we are
+controlling the exit reasons for our two
+pyramided trades uh here you can see we
+entered long on this trade here our
+first buy was open but we never got a
+second trade opening and so when price
+closed just below this red line here we
+exited this trade but we never had a
+second position open but yeah here we
+have a second position open it gets
+stopped out but our original position
+continues trading and in fact we open a
+second pyramid position so here is a
+good example of of how complex things
+you can get when you start pyramiding
+you need to track obviously a lot of
+moving Parts but what we have here is we
+have our initial trade opening
+price moves up by at least 10 percent we
+open our second pyramiding trade our
+trailing stop keeps Rising the lock in
+profit then here price it triggers our
+trailing stop then exits our pyramid
+trade on this red line but then price
+does not close below the red line and
+doesn't exit our position entirely and
+in fact it reverses keeps trading higher
+now we're obviously trading well above
+10 from our entry
+our ribbon is green so our Market is
+bullish
+the script is allowed two maximum open
+trades and so here we open reopen our
+second pyramid trade and again that
+pyramid trade gets stopped out here for
+a microscopic profit and then price
+closes below our trailing stop uh you
+can't see it here but it would have
+risen slightly on this bar here and we
+get a closed below and we exit our
+entire position here and that actually
+increased our profitability a little bit
+but it also doubled our drawdown so a
+lot of things to consider here obviously
+this is not trading advice it's not
+investment advice it's just pure example
+I'll leave the source code below for you
+to play around with what I'll do is I'll
+comment this out and I'll comment that
+out and I'll just leave the original
+code in there and I'll leave that as it
+is and you guys can play around with
+this if you want to a couple of examples
+there I hope you found this interesting
+and most importantly valuable in your
+trading process your coding process and
+uh yeah I'll speak with you in the next
+lesson take care and good luck with your
+Trading

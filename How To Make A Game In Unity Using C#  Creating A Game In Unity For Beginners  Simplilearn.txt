@@ -1,0 +1,985 @@
+hey everyone i am viva khandelwal and i
+welcome you all to our simply learns
+youtube channel today we will be
+creating a unity 3d game project but
+first let me tell you that we have daily
+updates on numerous technologies
+so if you are a tech enthusiast looking
+for the latest technological innovation
+then try subscribing to our youtube
+channel and don't forget to hit the bell
+icon so you never miss an update on
+simply learns youtube channel
+let's talk about our game
+since no matter how huge the globe in a
+video game is it always has an end
+however some games attempt to imitate an
+unlimited world these games are
+classified as endless runners
+this 3d runner scheme is basically an
+iteration of that in a typical endless
+runner a game
+where the player moves forward
+constantly while earning points and
+avoiding obstacles
+the basic goal is to finish the level
+without falling into or clashing with
+the obstacles
+still the level frequently repeats
+itself indefinitely
+gradually increasing the difficulty
+until the player collides with an
+obstacle
+an example for an obstacle as you can
+see in the picture is that black bar
+that yellow obstacle and the purple
+obstacle
+now essentially to create a game like
+that we will start with creating a
+platform and some obstacles
+then we will be writing a script to
+activate those obstacles randomly
+after that we will write a script to
+infinitely generate that ground to
+create an illusion of an endless
+platform
+we will also program game mechanics and
+ui like score calculation score display
+etc
+then we will create a player object
+finally we will write up a script to
+control the player object
+so without any further ado let's get
+started and launch our unity software
+let's start by creating a new project
+this will be a 3d project
+we'll name it
+3d
+runner
+for the location we will choose
+3d runner as
+a game location
+then we will hit create project
+let's wait until it initializes the game
+let's start by creating some folders
+so we'll go here folder we'll name it
+prefab
+then
+we will have
+script
+we will also be using
+folder name material
+and i guess that's it
+if you'll need more then we will create
+more
+we can start by building a tile platform
+that will be saved in a prefab
+so we will make a game object here
+so we will create empty
+we will name it
+a tile
+prefab
+we will be saving this game object in
+the prefab at later
+now we will
+select this and create a cube inside
+this
+let's name this cube as platform
+let's set the
+reset the position for it
+and let's scale it
+to 8
+maybe around 0.4
+and then there should be around
+30
+on the second let's make it 20 so it
+should be neat and clean when we can
+work around it
+now
+i'll be having
+six obstacles modification
+but you can make as many as you need
+so we will have to first make six game
+object inside the tile prevent object
+so we will select this
+and we will create
+empty
+we will name it
+obstacle
+one
+let's copy it
+so that we can increase the process
+then again create empty
+copy paste and change the number two
+let's screen first
+one more
+now that we have made six obstacles
+let's take one by one and create
+something on them
+so we will create a new cube
+inside this
+now we will scale this cube
+as
+same width as the platform
+and reduce its height
+so let's
+take the same dimensions
+this is it this was around 0.4 so let's
+take
+something different 0.5
+so it should be a little bit
+bigger than the
+platform and for the z let's take a
+three
+now this looks a little confusing
+so
+first
+let's
+bring this little bit up
+and go to our material
+and
+let's create a material
+material
+let's give it a black color
+so
+black matte
+then
+let's select color
+this is black
+and
+drop it
+and this is our first obstacle
+let's
+name them as well so that we don't
+mistake them for something else so
+ospressd
+dash
+cube1
+obstacle
+1 coupon
+now since our work with this obstacle is
+done so we will just hide it
+and we will go to the
+obstacle 2 so that
+we don't confuse items with different
+titles
+now for
+this
+obstacle we will need a couple of cubes
+for the obstacle too
+we will be leaving one free spot at the
+bottom so that player is used to crouch
+to avoid this obstacle
+so
+we will
+insert a cube
+let's get its height as
+one then
+five
+eight
+then
+the right is two
+now this
+it should be easy to for us to
+understand
+there's still some gap
+now there is not
+but let's just do
+a little bit
+okay
+then
+we'll take this
+and
+now we will create the same duplicate of
+this one
+and put it
+just adjusting to it
+you
+okay
+and
+now we will create a cube that will
+cover this
+so
+we can just duplicate another one
+and we'll change its dimensions
+so
+this one will have dimensions like
+6
+then y will be a little shorter so that
+we have a space in the bottom
+and
+uh it looks fine
+right now
+at least for the normal eye let's add a
+color so we can understand differentiate
+between the
+others
+so let's create another material
+let's give it a yellow color
+i want
+a little darker yellow
+just look at this
+now it's a little different from the
+bottom
+oh i can see the difference a little bit
+yeah
+now
+settle up
+you
+okay
+this looks fine
+let's see it from all the angles from
+top from bottom
+there's an ample space for a ball to go
+off if there would not then we will just
+increase its size a little bit
+let's name them as well
+so these were
+obstacle to part so obstacle to cube
+one
+and we'll name this one as we 3
+now
+let's remove this one
+for the obstacle 3 now
+now for this one we will have
+we will basically have a copy of this
+but there will be a hole in the middle
+so the player will have an option to
+either crouch or jump over it
+so we will add
+some cubes
+cube
+this
+here's the cube
+we will give it the dimensions of
+the previous one so one
+then this will get eight
+this will get two
+and here
+yep it's all fine
+we will make a copy of this obstacle
+so we will duplicate it
+and basically
+on the other end of this
+okay
+now
+let's have another cube
+let's have a copy of this one
+for the downside and we will give this
+one
+the scaling as
+one
+to decrease it and we will give
+one
+think a little bit
+let's see what we have given for this
+one
+i think you can't compare this let's
+increase it a little bit
+you
+now it looks a little
+tighter and
+thicker
+you
+okay now this one works
+for this we have one high appropriate
+height all right
+let's give it a color as well
+so we will be creating a new material
+this one we will name it as
+purple
+matte
+and let's give this some colors
+purple
+okay this one as it works
+and now
+this obstacle is also complete
+let's give them name as well
+so this is obstacle 3
+so it will be given an obstacle 3 name
+then we will have this one
+we will give it obstacle 3 cube 2.
+this nomenclature is important in a
+sense if we have to
+do some kind of debugging or
+rectifying some error so we know which
+cube
+which cube is represent which obstacle
+now for the obstacle 4
+we will have a little bit
+of
+every obstacles so basically obstacle
+four five six will be the combos made
+from the obstacle one and obstacle two
+so let's say for obstacle four we have
+a duplicate of this
+and we will add it to obstacle four
+we can have another duplicate and we can
+have
+same in this one as well
+so now let's hide this one for now
+and for this one
+let's name this one as obstacle 4
+and cube1 and we will delete this part
+now
+for the combo let's take obstacle 2
+first
+so we will basically select each of them
+we will duplicate them
+and we will
+pull all the duplicates and put it with
+them
+loop two
+cube 3
+and for this one we have q4
+that's how we have obstacle now how will
+this work so we will first select this
+obstacle
+and we will basically take this one here
+around here
+and then we will take the rest of the
+cubes we'll select all three of them
+together
+and drag it here
+so basically now this is a combo of
+these two
+so basically first black will come then
+yellow will come
+similarly
+let's close this obstacle
+for obstacle 5 we'll bring back this
+she'll rename this one as well and give
+it obstacle 5
+q1
+and
+we will have all of the obstacle 3 part
+we will duplicate it
+we put it in obstacle 5.
+two
+three
+q4
+q5
+now we will separate these as well
+so we will send black one to here
+further
+and we will just select all four
+different five of them and put it
+let's not put it at the end so that the
+next one which will come will have some
+space between them
+now we will close this one
+and for this one this will be a bigger
+one so we will
+basically have these these these
+we will duplicate these we'll put it
+inside this
+okay close this one then we will take
+obstacle three these these
+and we will
+copy it
+like duplicate it
+and we will put it inside obstacle 6.
+let's change the name
+so obstacle 5 obstacle this will be
+obstacle 6
+q1
+obstacle six
+cube two
+obstacle six
+cube three
+cycle 6
+cube 4
+obstacle 6
+cube 5
+obstacle 6
+cube 6
+and
+obstacle six cube seven
+now we will take this one we will put it
+here
+and we will take this one
+and we will put it slightly here
+and here
+the whole cube
+now let's have all the obstacles
+enabled
+and that's how you make obstacles
+now what we will do is we will basically
+select each and every obstacle one by
+one
+and we will change its stack to finish
+this is very important because
+this will basically
+dictate
+if these obstacles are finished
+otherwise
+the player will when will go right
+through them
+so
+basically they need to be finished
+three
+select all of them at once
+and then finish it
+we'll do the same with the obstacle four
+will select all of them together
+and we will put a finish
+cycle 5
+select all of them as together
+finish them
+then obstacle six
+we will take all of them together
+and tag them as finished
+we can also select all of them together
+and then we can tag them as finishers
+this is basically
+important because to detect the
+collision between them between the
+player and the obstacles
+if
+it will not detect a collision then it
+will never finish
+the game
+now we will need a few scripts to manage
+object pooling and obstacle
+activation to create infinite platform
+so we'll go to our scripts
+and we will create
+a c-sharp script and we will name it
+synth
+underscore
+platform
+now let's go and check the code
+here is the code
+for object pooling and obstacle
+activation
+now here we will start with creating two
+game object transform points start and
+end these will signify where the
+platform is starting and ending
+now here is an obstacle array
+to contain all the obstacle in the later
+on
+so this game object array will have all
+the obstacles stored
+now let's go to our first function which
+is at random obstacle
+basically this will be the function
+which will activate all the obstacles
+we will first call deactivate all
+obstacles so that
+from the start we don't start with an
+obstacle right in front of us so that we
+get a little bit of chance to start
+getting warm up
+then in the next line we have a random
+generator so basically this is creating
+a brand object and basically this random
+number is generated
+randomly between the length of the
+object since we have six obstacles so it
+will basically give random number will
+get a random number between zero to five
+because
+obstacle array length will be from zero
+to five
+it will start from zero to five let's
+say it select a 4 so basically obstacle
+random number 4 will get activated and
+that of that platform will come
+this deactivate all obstacles function
+will be responsible
+for deactivating all the obstacles for
+the first 3-4 seconds so that
+the player can get warm up and play the
+game
+and have a fun
+now
+let's go back and make another script to
+generate infinite platform
+now let's create another script
+we'll name this one
+as simple
+underscore
+ground
+now let's go and check the code for the
+simple ground
+generator
+here we will start by creating a mean
+camera
+variable for the camera
+another start point this will be where
+we'll mark the location where ground
+types will begin
+then we will call tile prefab from the
+platform from the other script
+we have a moving speed
+12 which will be the moving speed for
+the
+for our
+platform
+then
+the types to respawn which will be
+basically
+before the platform ends how many times
+it should pre-spawn it will be 15
+which is basically equal to the one and
+a half platform
+then
+how many times at the beginning should
+not have obstacles this is the part
+where i was saying we will have
+we should have a little bit time to warm
+up
+then we will create a list
+for the
+platform for the spawn tiles
+we will give next style to activate
+variable as -1
+at the start we will have the game over
+as false and game started as false
+basically our game is neither over and
+neither started it
+and the score will be started at zero
+now we are creating here a constructor
+for our simple co
+ground gen script
+we will go into our start function this
+will be the first frame update which
+will happen so basically when we press
+play the first thing what will happen
+will be from this entire function
+so we will have a spawn position that
+will be the start position so there will
+be that
+start pointer will be at
+then we will have types with no
+obstacles temporary
+a temporary variable which will have
+the value of tyres without obstruct
+obstacles which we have like 5
+then we will run a for loop
+till the tiles to pre-spawn so basically
+it will run for 15 seconds
+15 tiles
+then we will have our spawn position
+keep decreasing according to tile free
+prefab start location so basically tile
+prefab will have its own start point
+and
+the camera will have its own start point
+then here we are basically saying
+till
+this tile with no obstacle temp which
+will have a value of 5
+goes to 0 less than 0
+it should deactivate all obstacles
+or else
+let's say when it goes below zero
+then
+it will activate the random obstacle
+then the spawn position will spawn spawn
+tile at the end position
+and then the endless group will keep go
+on
+keep on going on and it will be randomly
+activating a different obstacle each
+time
+then we will go to our update function
+basically this will all happen only once
+then this update function will work
+this will work
+once per frame so basically once this
+whole function work
+then it will again reiterate this
+function
+as long as all the conditions are
+satisfied
+so let's take our first one
+it's saying if
+the game is not over and it started
+then we will move the object upward in
+the word space by x unit per second
+basically we will be increasing the
+speed of highest the score we get
+so longer we run
+the more our score will be
+then we have our camera which will be
+running as fast as the platform is
+running
+so basically it will create an illusion
+that the platform is still there only
+the player is moving but instead it will
+be the camera and the platform which
+will be moving and the player will be on
+the same spot
+then we have game over
+now game is over
+or the game is not starter
+it's an or function so basically there
+is two position either the game is over
+or the game is not started yet
+so basically we are at the post date
+so in this
+if get key down key code speed it's an
+input statement so basically it is
+saying that when we will press space the
+game will start
+so now
+when we will press space what would
+happen
+let's say it's a game over situation
+then it will restart the game so we are
+setting the scene
+to active scene again so it will go back
+to that start point and it will just
+reload this scene
+else if the game is not started yet so
+that then we will game started will put
+it as true
+now it comes as our gui mechanics
+let's say the game is over
+so
+it will print the text in a red color
+and the label
+the label is something is like a text
+box where the text will be stored so we
+are giving
+the this width to that label
+then we will be printing your game is
+over and yours you scored
+and after that we will just print the
+score
+then in the next line we will just say
+that press space to start
+to restart the game
+now in case the game is not started then
+we will another again
+give the instruction in the red
+and
+the label
+will have the same size as this
+and it will say you can press space to
+start the game
+then we have
+gui color as green
+this will show this
+our score
+at the
+top most corner
+now let's go back to our game
+and run few more things
+now we will attach the sim platform
+script to the tile prefab object
+so we will drag it and put it on tile
+prefab
+so now if you click tile prefab
+we have something called obstacle here
+now we will select
+we will go to tile prefab and click this
+button so it will lock this screen
+now we will select each of them
+and we will drag it to the obstacle
+so now it has all the obstacles
+now we need to construct two game object
+for the start point and the end point
+which will be placed at the start and
+end
+at the end of the platform
+so
+we will have
+an empty object
+as
+start
+p
+we will place it here
+and
+another object
+this game object will be named s
+and b
+they're in the middle
+let's tag them as finish as well
+i think i make by mistake i've named it
+tile prefab
+let's end b
+uh
+now the
+all of them are assigned
+so now we will
+assign the start point
+start p
+and end point
+now we will save this style prefab
+object into a prefab and remove it from
+the scene
+so
+we will go to our
+prefab folder
+we'll drag the style prefab and put it
+here
+and we will delete this
+now we will create another game object
+and we will call it a simp ground
+generator
+so click create empty
+and you'll name it
+simp
+ground
+chain
+and to this
+i will attach
+the sim concentrator script
+then
+i will change the main camera location
+so
+i will give it the position
+as
+10
+one
+minus nine
+and the rotation
+has
+y as minus 55
+now we will create a new game object
+and we will call it start point
+so
+we'll create another game object
+this time it will be known as
+start
+point
+and we will give
+and we will change its position
+to zero
+then minus two
+then
+minus fifteen
+now
+we will select the sim ground generator
+object
+and
+in this
+we will assign
+main camera to this
+then
+start
+start point
+and the tile prefab
+put it here
+now
+let's press play and watch
+now
+let's play space as you can see it is
+giving us still some kind of issues from
+the platform so what we will do is we
+will again get our platform and then do
+some changes
+so we will just drag it here
+we will delete it here
+now the what could be the problem
+so
+usually the problem is with
+either this and object it should be a
+little higher
+so this will be a
+try and test try and test
+it kind of deal
+now we will go here we will give it a
+and
+then we will delete it
+let's play it again
+it's slightly work
+just little bit more
+so we'll close this again
+we'll put it here
+we will take this
+point and we will just slightly increase
+this
+then we will delete
+this
+data back put it here back
+delete from here
+and then go to some content and put it
+back here
+and let's play again
+now if you look at closely it is
+completely smoother than before
+okay
+now our platform is created
+our obstacles are created and they are
+randomly activated as well
+now we will create our player object
+this will be a simple sphere which has
+the ability to either jump or crouch
+so let's create
+a
+game object and let's call it
+player
+object
+and
+we'll
+have sphere inside it
+let's call it
+player sphere
+now
+i want to increase the size of this
+sphere
+let's increase it by 1.1 that would be
+better
+so it's not too small but not too bad so
+that
+even after crouching we have problem
+let's give it a color so let's go to the
+materials
+let's create another material
+we can have
+a blue
+matte
+here
+and remove this sphere
+now let's create a script
+we'll name it
+simp
+underscore
+player
+let's check this code
+now here's the code
+this boxed command basically says that
+we will be requiring a component rigid
+body for this sphere
+we will give a gravity of
+20f
+and
+a jump height of 2f
+we will give
+rigid body an r variable
+and
+grounded as false
+we will have a vector default scale and
+crouch as false
+so in the start operation we will be
+only running it once
+so
+basically a rigid body is given to our
+object so that it follows the laws of
+gravity
+then in update we will give the ability
+to the player
+like jump and crouch
+in the first if statement we are giving
+the key code w as input
+so
+and grounded so basically the ground
+that will work as
+when it jumps it should always go down
+and the r velocity will calculate the
+score for the time it stays in the air
+and goes back down
+then in the case of crouch
+we will have s as a key chord
+to crouch
+basically when we will crouch the sphere
+will puncture
+and slide through the gap
+and when we will lose that button it
+will again pre deform
+then we have fixed update in this it
+will always be working
+whether the update for its start
+function that's working or its update
+function that's working so basically we
+will be
+applying the gravity manually for more
+tuning control
+void on collision stay so basically if a
+collision occur then it will basically
+stop
+the ball
+now the plot
+to calculate the jump vertical speed
+basically when we will jump it will
+create this calculate the score for that
+period of time
+and
+on collision enter will basically detect
+all the object for which i have tagged
+them as finished
+as soon as they cache that it will
+finish the
+game
+and it will print game over
+now
+let's go back to our game
+now if you see the player object it all
+already has the rigid body because we
+specified that
+in this
+now
+let's add another component to the
+player object
+let's add
+we'll add a box collider
+now we will put the sphere in front of
+the camera
+directly above the start point
+so let's have
+two views
+let's make it a little simple and add
+our prefab back to our screen
+now that's a game screen
+so
+our player object is here and we want it
+here
+let's reset the player object and
+sphere and
+have the player object
+it should be here
+you
+now this works
+let's see the game view yes it's there
+on the first screen
+now let's delete the style fab
+now finally let's add a canvas
+we will
+have a ui add canvas
+and in this canvas
+we'll have a row image
+you
+let's run it
+and see if it's at the right side
+yep it's at the right side
+let's increase its size little bit more
+now let's run it
+here we have our scheme
+let's place
+space
+as you can see we can go this this
+we have a simple problem with the
+placement of the
+object
+so player object
+needs to be a little bit down
+let's run it again
+you
+have a jump
+shot
+as you can see our game is working
+flawlessly
+we can do some minor changes
+to rectify a little bit of bugs
+from with the obstacles we need we can
+decrease its size
+you can let your imagination run well
+and you can create more obstacles like
+this
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
