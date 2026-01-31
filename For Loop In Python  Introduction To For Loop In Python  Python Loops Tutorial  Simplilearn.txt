@@ -1,0 +1,569 @@
+hi everyone welcome to another video
+tutorial on Python Programming by simply
+learn in this video we are going to
+learn about for Loops in python in the
+previous video we learned about if
+statements in Python but today we will
+focus on for Loop in Python and look at
+different code
+examples so what is a for Loop in
+Python a for Loop in Python is used to
+iterate over the items or elements
+present in a sequence the items present
+in a sequence can be in the form of a
+list tle dictionary or even a string a
+for Loop in Python uses the range
+function to iterate over a specific
+number of
+times now let's have a look at the
+syntax of for Loop so here on the left
+you can see the syntax of the for Loop
+so we have the for keyword followed by
+the iterator variable then we have the
+keyword followed by the sequence it can
+be a list you can use the range function
+it can be a dictionary a tle anything
+and after that you have your colon
+followed by the statements that you want
+to execute in the for
+Loop and Below you have the rest of the
+code and here on the right you can see
+this is the flow chart of a for Loop so
+you have for each item in sequence then
+we check the condition if you have
+reached the last item if that is true
+you exit out of the loop but if it is
+false you keep on running or executing
+the statements that are present inside
+the for Loop this will continue until
+and unless you have reached the last
+item in your
+sequence
+okay now let's head over to our jupyter
+notebook where we'll see for Loop in
+detail and we'll explore a lot of code
+examples okay so here I am on my jupyter
+notebook let's start by writing a simple
+for Loop suppose I have a variable say s
+and it has a value which is a string
+let's say simply
+loan okay
+now the way to write a for Loop is I'll
+say for I which is my iterator variable
+it can be any valid variable name in
+Python
+in my variable that is
+s so here s becomes my
+sequence I'll say
+print I so what this for Loop is going
+to do is it will iterate over all the
+characters that are present in my string
+and print them one by one let me run it
+by hitting shift enter you see here
+using this for Loop we have iterated
+over all the letters that were present
+in my string that is simply learn and we
+have printed them one by one okay
+now the print function in Python
+provides a parameter called end so by
+default the value of the parameter is
+back sln that is the new line character
+now you can end a print statement with
+any character or string using this
+parameter which is end let me show you
+what I meant so I'll again have my same
+string simply
+loan I'll say for I in
+my variable or my sequence s I'll say
+print I comma then I'll use my end
+parameter equal to
+and my end parameter will have a value
+of
+asteris now let me run this you can see
+here this is sort of a pattern that we
+have printed so between each letter in
+my string simply learn we have an
+ASX
+okay moving
+ahead let's see how to use for
+Loop in a
+list all
+right I'll declare a list called
+programming and this list will
+contain a few programming languages
+let's say we have Java and
+then the next item we have in the list
+is
+python next we have Ruby and then we'll
+have
+HTML okay so I'm going to
+print all the individual items that are
+present in my list using the for Loop so
+I'll use the same syntax I'll write for
+this time I'll use my iterator variable
+name as R which means
+iterator for iterator or iter in my
+sequence which is
+programming I'll say
+print
+iter let's run it you see here we have
+printed all the items in my list one by
+one Java python Ruby and
+HTML all right now let's see an example
+how you can find the average of a list
+of numbers using for Loop so I'll give
+a comment saying find the average of
+a list of
+numbers okay so here first of all we'll
+declare a list of numbers with variable
+listor num equal to it will have a few
+numbers let's say 20 25 10 50 and 40
+let's make it
+45 now to find the average of a list of
+numbers first I'll declare a variable
+called sum that will have a value of
+zero so we have initialized the sum
+variable to zero then I'll start my for
+Loop for I in my sequence that is listor
+num which is this
+variable give a colon I'll write sum
+equal to sum +
+I so here just give a space to make it
+more
+readable so I'm adding all the numbers
+in my list and we are storing the result
+in the variable
+sum then we'll say
+print sum equal to
+I'll pass in my variable that is sum
+then I'll say
+print
+average equal
+to now our average will be my variable
+sum divided by the
+length of my list that has all the
+numbers let's run this you see here so a
+total sum of all the numbers present
+inside the list is
+150 and the average of all this numbers
+is 30 so 150 divided by 5 is
+30 all
+right now let's see how you can use a
+for Loop using a
+topple so let's declare a variable
+called
+num is going to a tle of
+numbers and we have 30 45 60 50 and
+let's say 70 as the numbers inside the
+Tuple I'll say sum equal to
+0 then we'll have our for Loop for I in
+my sequence that is
+num I'll say sum equal to sum plus I so
+here we are just adding the the values
+that are present inside the tle I'll say
+print
+sum so here you can see we
+have
+printed all the values present inside
+the Tuple one below the other now if I
+shift my print statement to here you can
+see here this is my sum of all the
+numbers that are present inside the
+topple so make sure you have the current
+indentation
+now let's see how you can use the range
+function in
+Python okay so you can use the range
+function to iterate over a range of
+values or numbers using a for Loop the
+way to do is I'll say for I in my
+function range I'll give my first index
+at one and my second index at or my end
+index at 10 so this will go from 1 till
+9 and exclude the 10th
+index I'll say print I you see here for
+I equal to range 1 to 10 we have printed
+all the numbers starting from 1 till 9
+so the last index that is 10 is
+exclusive in the range
+function now in the range function you
+can also give a third parameter that
+stands for step so that you can skip a
+few steps and print the next value let
+me show you what I mean say I write for
+I in
+range 0er which is my starting index 10
+which is my end index and I'll have a
+step size of
+two give a colon I'll
+say
+print display
+values with
+uh
+step size
+of
+two give a comma here and my variable
+that is I let's print it there you go so
+we have printed the values with
+a gap of two so it starts from zero
+then we are jumping two steps and then
+we are printing two then again two steps
+we have four 6 and 8 so we are skipping
+one value and printing the next value in
+my sequence ranging from 0 to
+10 all right
+now let's write a program to print a
+table of a given number so I'll give a
+comment
+as program
+to
+print table of a given number all right
+so I'll pass
+my variable n which is going to be a
+user input so I'm using the int function
+and inside the int function I'll use the
+input function to take the user input
+I'll give my message as enter the number
+I'll say for I in
+range from 1 till
+11 I'll
+say multiply which is mul
+here n ASX I so basically what I'm doing
+here
+is I'll take a user input of the number
+let's say we want to print the table of
+five so from
+1 till 10 will have the product of the
+numbers let me print it I'll say print n
+comma within double quotes I'll give my
+asteris comma
+I
+comma within double codes I'll say equal
+to and then we'll have our
+variable
+mul let's run this enter the number I'll
+give five and hit enter there you go so
+here we have the multiplication table of
+my number five so you say 5 into 1 which
+is 5 5 into 2 is 10 then we have 5 into
+7 35 5 into 9 is 45 then our last index
+which ends at 10 so we have 5 into 10
+that is 15
+all
+right this is how you can create a
+simple multiplication table using for
+Loop in
+Python now we can also use the range
+function with a sequence of items the
+Len function can be combined with the
+range function to iterate through a
+sequence using indexing I'll show you an
+example here let's say we have a list
+called list two and here we have a list
+of programming languages let's say
+C++ you can either use a single quote or
+a double code to represent the text
+values in a list the next programming
+language I have is
+Java then let's say I have Python and we
+have
+R okay so I can write for I in range
+here I can use the length function and
+I'll say list two
+give a colon then we'll
+print
+hello and I'll say list two of
+I so what it does is my iterator will
+iterate over the list of programming
+languages I have here and it will keep
+on iterating till the length of the list
+and then I'm printing my message M as
+hello and it will take each item from
+the list using the index
+number if I run it you can see here it
+says hello C++ hello Java hello Python
+and hello R
+cool now let's see how you can use
+nested for Loops in
+Python I'll say nested for
+loop as my comment let's say I have a
+list of company name
+my first company I have in my list is
+Google let's say
+apple
+PWC and then we have
+Uber so here I'll write for I
+in
+companies I'll say
+print we will
+display
+each letter
+of I'll say plus
+I now I'll use my second for Loop sync
+for letter in
+I will print the
+letter let's run it and see our result
+there you go so here we have used two
+for Loops so that becomes a nested for
+Loop we have my outer for Loop and then
+we have our inner for Loop so in the
+outer for Loop we are just printing the
+name of the company so here we see we
+will display each letter of plus I which
+stands for a company name Google so you
+can see below we have displayed each
+letter of Google using the inner for
+Loop similarly we have for Apple you can
+see a p e we have PWC and then we have
+Uber so this is how you can
+use multiple for Loops in
+Python now let's see how you can use a
+for loop with else Clause so I'll give a
+comment for loop with else
+Clause so I'll write for I in range 0a
+10 comma I'll give a step size of
+three I'll say print I and after this
+python gives you the flexibility to use
+an else
+Clause after the for Loop so I'll write
+else
+print the loop
+has
+completed execution
+so this is my message that we are going
+to print after we have printed all
+the elements that are present inside
+this range function let's run it you can
+see here we have
+printed the value starting from zero
+with a step size of three so we have 0 3
+6 until 9 and then after that we have
+our else block printed which has the
+message the loop has completed
+execution
+cool now let me show you two
+more important feature that you can use
+while writing a for Loop one is called
+the break statement the other one is
+called the continue
+statement so in Python you can break the
+for Loop and end it before it has
+actually run all the elements in the
+itable using the break
+statement so let me show you a simple
+example if I write for just give a space
+here I
+in
+range let's say from 1 to
+10 I'll use an if condition saying if I
+equal to equal to
+6 then break and come out of the loop
+next we'll print I so here what we are
+doing essentially is we are iterating
+over
+all the values from 1 to 10 and whenever
+the I value becomes six we come out of
+the loop and
+print all the values we have iterated so
+far let me run it and we'll see the
+result there you go so here our I value
+started from 1 we printed 1 2 3 4 5 and
+then our I value reached six then we use
+the break statement to come out of the
+loop all
+right now you can also skip the
+execution of further statements in the
+for Loop during that iteration using the
+Contin statement in Python so when a
+continu statement is executed the for
+Loop continues with the execution of the
+next element in the iterable it does not
+complete all the statements in the for
+Loop body so again
+we'll I'll give a
+comment say
+continue okay so I'll write for I in
+range again from 1 to
+10 give a colon I'll say
+if my I
+value is equal to equal to 6 then I'll
+say
+continue then we'll print
+I let me run it and we'll see the result
+okay so if you notice this output so we
+have printed values from 1 to 5 and when
+my I value became six we skipped
+printing six and we moved on to the next
+element in the itable which was seven
+then we printed eight and nine so this
+is how you can use the break and
+continue statements in
+Python all
+right now we'll see a program to display
+the total goals a player has scored so
+here we are going to iterate over a
+dictionary so I'll give a comment
+program to
+display the total goals uh player has
+scored all right so first of all I'll
+declare a variable saying player name
+and let's see we have the player name as
+Carmelo all
+right I'll declare a dictionary called
+goals and within curly braces I'll have
+my
+first player name
+addition let's see addition has
+scored 14 goals then we have let's
+say
+Burnet so Burnet is my key here and then
+we'll have value in terms of goals let's
+say three and then we have our third
+player let's say
+Carmelo and and Carmelo has scored let's
+say seven
+goals now I'm going to write my for Loop
+so I'll write
+for my itable name here is player in my
+sequence name is goals so I'll
+say
+Goals I'm going to check
+if my
+player is equal to equal to player name
+I'll say
+print the goals scored by the player so
+I'll pass my dictionary name and within
+square brackets I'll say
+player let's use the break
+statement and then I'll say
+else will print
+my message would be no player
+with that
+name
+found let's run and see the
+result all right so here what we did was
+initially I declared a variable called
+player name that had the value Carmelo
+and since Carmelo was present inside my
+dictionary named ghouls you can see here
+we have Carmelo who had SC seven goals
+so I iterated
+over my sequence goals and I checked if
+my I trator that is player is equal to
+equal to the player name which is
+Carmelo since this carelo is present
+inside my dictionary name so we printed
+the goals that were scored by Carmelo
+that is seven now let's say I changeed
+this player name to we have let's say
+Messi now since Messi is not present
+inside my my dictionary goals if I run
+this it will print no player with that
+name found the reason being message is
+not present
+inside my dictionary called
+goals
+cool
+now we'll see two more
+examples this time we are going to print
+the cube
+of numbers using for Loop
+all right so first of all I declare a
+list which will have a list of numbers
+let's say 2 5 7 4 8 and let's say
+six
+then I'll pass in a empty list so I'll
+declare within empty square brackets
+I'll say for I
+in my sequence name that is num
+I'm going to use my empty list Cube and
+Then followed by the append
+function and inside the append function
+we'll have
+our cubes of the number so I'll write
+I I'll use the double asteris
+operator and then I'll say
+three after that we are going to
+print my list name that is
+Cube let's run it there you go so you
+can see
+here first we
+have the list of the numbers here and
+then we have printed the cubes of these
+numbers in a pattern let's say
+I bring this print statement here and
+I'll run it again now this is much more
+readable you have 2 Cub is 8 5 cube is
+125 7 cube is
+343 the and 4 cube is 64 8 Cub is 512 6
+Cub is
+216 all
+right now coming to the last example in
+our demo section of this for Loops in
+Python video we'll write a program to
+print a pattern I'll say pattern
+printing all
+right so we are going to
+print a right angle
+triangle for that I'm going to take my
+first variable called n which is going
+to
+be a user input to enter the number of
+rows so using the input function I am
+passing the message enter
+the number
+of
+rows I'll say for I
+in range zero till my user input
+[Music]
+n give a
+colon I'll use my inner for
+Loop this is going to be the number of
+columns so I'll say for J in
+range 0
+comma I +
+1 give a
+colon and
+and I'll
+print my star pattern so I'm using
+asteris and I'll use my end
+parameter I'll have my double
+quotations and
+then we'll
+say
+print the
+pattern so here what I'm doing is I'm
+taking the number of rows from the
+user and I'm
+iterating from zero till n which is my
+user input and then we are assigning
+another for Loop for the number of rows
+so that ranges from 0 till I + 1 then
+I'm printing my
+star let's run it and see the output
+let's say I'll enter the number of rows
+as six if I hit enter you can see here
+we have our right angle triangle printed
+here so initially
+my I value is zero so here my J value
+becomes from 0 till 1 so we have just
+one star
+printed in the next iteration my I value
+becomes 1 so
+from 0 to 1 + 1 that is we have two
+stars printed the next iteration my I
+value becomes 2 so 2 + 1 is 3 again so
+we have three columns here so three
+stars printed so on and so forth all
+right so with that we have come to the
+end of this video tutorial on for Loops
+in Python I hope it was useful and
+informative if you have any queries then
+please feel free to put them in the
+comment section of the video thank you
+for watching and keep
+load hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

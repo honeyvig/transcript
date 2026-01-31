@@ -1,0 +1,1004 @@
+welcome to this video tutorial on golang
+rest api by simply learn in this session
+you will learn to develop a rest api and
+then we will perform crud operations on
+it
+so hey everyone i am abhisaruja from
+simply learn and welcome to this video
+on golang rest api but before we begin
+if you love watching tech videos
+subscribe to our channel and hit the
+bell icon to never miss an update so
+first we will create a folder
+we will name the folder as rest api new
+just underscore api underscore new
+and inside will open the visual studio
+code
+for that first we'll open the command
+prompt
+and write the command
+code space period and press enter
+make sure the visual studio code has
+cooling support
+for that you can go to the extensions
+and search for go
+install the go extension i've already
+done that
+now once you have done this go extension
+installed
+now click on the view and open the
+command palette
+and
+write the command go colon install slash
+update tools
+it will open all the tools of the go
+you can select them all
+and click on the ok
+so all the go tools will be installed
+now
+you can see all the tools have been
+successfully installed now we'll create
+a new file
+that would be main.com
+and we'll start with writing the package
+main
+we will run a command
+go
+mode
+init
+rest underscore
+api underscore
+new and press enter
+now we will run another command
+here it's showing that code mode file
+already exists
+it has already been created now we'll
+run another command that is
+go mode
+tidy
+and press enter
+now
+we'll create the function main
+and save the file
+and now we will import the modules
+for that we'll write the command
+import
+around brackets and inside round
+brackets
+we will
+write the modules
+that is
+encoding slash
+json
+the next is
+net
+slash
+http
+the next is string conversion
+str conv
+and
+another we will
+import would be the gorilla mux for that
+we will
+open the browser
+and search gorilla mux in the web
+browser
+we'll open the website that is
+gorilla mugs github.com
+and copy the command go get minus you
+github dot com slash gorilla slash max
+and will
+paste the command in the terminal
+press enter
+and now we'll import the gorilla mugs
+module
+for that we'll write github.com
+slash
+gorilla
+slash max
+now in the main function we'll write the
+command
+router
+we will initialize it
+mux
+dot
+new router
+this function will be executed when we
+call our goal application
+here we will set up our routers
+here we will create the rest api for
+employees for that we will create a
+struct with the name profile for that
+we'll write type
+profile
+struct
+and inside the struct we will
+hold information for the employee
+profiles
+that would be department
+it will be of string type
+and in json
+we use the
+backticks
+json
+and
+it would be represented as
+department
+the next field would be designation
+it would also be of the type string
+and in json
+it would be represented as
+designation
+and the next field we would get would be
+employ
+and we will
+make it a complex field
+for that we will create another struct
+that would be
+type
+user
+struct
+and inside the struct we would hold the
+first name last name and email of the
+employee
+and in the json format we'll use the
+backtext
+json
+first
+name and the next field would be last
+name
+it would also be of the type string
+and in json format
+it would be represented as the last name
+only
+the next field would be email
+it would also be of the same type string
+and in the json format
+we will represent
+it is email only
+now in the profile struct
+we will define the employee field as of
+the type user
+that would be of the type user
+struct and in the json format
+we will represent it as employee
+we will start the web server in the
+function main
+for that we will write the command
+http
+dot listen and serve
+in the round brackets
+first we will pass the
+local host port number and second thing
+will pass the mux router
+so we will define our
+port number as 5000
+so colon
+5000
+and the next thing we will pass is the
+mux router
+we'll set up the new routes so that we
+can
+operate and perform operations on it
+so in the function main only
+we'll set a new route
+that would be router
+dot
+handle function
+and inside
+first we will declare the path
+that is
+profiles
+and next the function name we would name
+the function as add item
+and set the http methods as post
+you can see that the handle function has
+taken the path and the name of the
+function
+as parameters
+now we will declare the
+add item function
+this add item function is a route
+handler and therefore it will take two
+parameters
+first will be response writer
+that would be of the type http
+dot response writer and the second
+parameter would be the request variable
+so let's start with the function add
+item
+we'll write func
+the name of the function that is add
+item
+and we will pass
+the response writer
+that would be
+the variable q
+http
+dot
+response writer
+and the next variable
+that would be the pointer that will
+point to the http dot request
+so we will declare with the variable r
+set up the rest api where we can send
+the json data in the request body for
+that
+we will declare
+a new variable in the body of this
+function that would be add item
+will declare the variable new profile
+of type profile
+choose new decoder
+that would be json
+dot
+new decoder
+and in the parameter it would take iodo
+trader
+that would be
+r dot body
+and nd code
+we will pass the variable where the json
+document should be decoded to
+that would be the new profile
+now we'll send a json object in the
+function
+that will write
+json dot
+new encoder
+and inside will pass
+q dot encode
+and will pass profiles in the input this
+takes the variable that satisfies the
+interface io dot writer
+the response writer here satisfies the
+io.writer interface we can pass queue
+and then encode in encode we can pass a
+value that can be converted to json we
+can do this by using a struct
+and we have used the struct profiles
+we will set up a content type header on
+the response
+for that we will write the command
+w dot header
+dot
+set
+and in the set will pass the key and the
+value the key will be the content type
+and the value will be the application
+slash json
+because of content type postman will
+know the data is of json type here we'll
+be using postman to send the request
+so in the set
+we will make the key the content type
+and the value is application slash json
+now let's create a slice and route to
+add items in slice
+will create a slice
+that would be
+variable
+profiles
+profile
+equal to
+square brackets
+profile
+curly braces
+now we can add the data to the slice we
+can do that by using the append function
+which is an inbuilt function
+so we will get back to the add item
+function
+and we'll use the append function here
+that would be
+profiles
+equal to
+append
+and will pass profiles
+and a new profile
+let's try and make some requests to our
+api here we will be using postman to
+make these requests
+so
+we'll start the postman
+so we'll create a new request
+and set the request
+as post
+as we have declared the method as post
+and the url we will
+enter would be localhost
+colon
+the port number that is 5000
+slash
+profiles
+now click on the body and select row
+now here in this body we'll enter the
+structs in the json format
+for that
+first we will define the curly braces
+and our first struct was
+the property in the stopwatch department
+set the department as marketing
+coma
+the next was designation
+colon
+designation would be to search
+marketer
+comma
+and the next was
+to confirm that
+employee
+and that is of the user type
+so employ
+and it has
+some fields inside it
+so we'll declare those
+that was first name
+we'll make it as
+adam
+oma
+last name
+we'll make it as
+atom heater
+and that would be in the inverted commas
+comma
+and every left inverted comma
+and the next thing was email
+and that would be adam
+peter
+66 at the rate
+she gmail.com
+we forgot to build and run our port so
+first we will return to visual studio
+code
+and save the file
+and run the command go build
+so it's showing an error that is
+undefined http dot listen and serve
+okay so
+a will be kept up for the end
+so we'll save the file
+and run the command again go build
+that dot exe file that is executable
+file has been created now we will run
+this file
+for that we'll write the command
+period slash
+and the name of the exe file
+that is rest underscore
+api underscore
+new
+and press enter
+now the
+file is running
+we will go back to postman
+and click on the send button
+here you can see that we got the output
+that is department marketing designation
+research marketer and the details of the
+employee
+so it has been posted
+so our rest api is working and the
+connection has been connected with the
+localhost server 5000
+now we will be creating
+more functions so that we can perform
+current operations
+the current operations are create read
+update and delete
+so we'll move back to the visual studio
+code
+and create more functions
+create route handler
+in the function main
+that would be
+router
+note
+handle function
+and inside the
+circle
+brackets
+we will write the path
+that is profiles
+and the name of the function um we'll
+set it as get all profiles
+and the method would set it as get
+the h would be capital for the handle
+function and f would be capital
+so in this function get all profiles we
+would be fetching all the profiles we
+would be adding
+in a rest api
+and we have set the method as get
+so that we can get all the profiles we
+can fetch all the profiles so now we
+will declare the function
+get all the profiles
+so write
+function function name that is
+get
+all profiles
+and inside
+this is also route handler function so
+it would be taking two parameters the
+first one would be the response writer
+that would be represented by the
+variable queue and the second parameter
+would be http request variable
+that would be the r pointer that would
+be pointing to the http dot request
+so
+we will
+start with
+q variable that
+would represent http.responsewriter
+comma
+r
+now the pointer
+that would point at http.request
+now inside the function we will send a
+json object in the function
+for that
+we would write this command new encoder
+for that we'll write json dot
+new encoder
+and inside
+we would pass the queue that would be
+the response writer
+dot encode
+and in code we can pass a value that can
+be converted to json
+that would be profiles
+now we'll set up a content type header
+on the response
+for that would write the command
+w dot header
+sorry that would be q dot header because
+the variable is q here
+dot set
+and inside the set will pass the key and
+the value that will be the content type
+and the application slash json
+so
+we would write that
+the key would be content
+type
+and the value would be application slide
+json
+now we'll save the file
+and we will
+enter the command control plus c in the
+terminal to stop the execution
+now save the file again
+and run the command go build
+and
+now we will execute and run the file
+rest underscore ap underscore new dot
+exe for that we'll write the command
+period slash the name of the executive
+file now we'll turn to postman
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit skill up by simply learn click on
+the link in the description to know more
+we will create a new request
+and inside the new request
+we'll set the http dot request as get
+only
+and inside the url
+we will copy the same url
+and click on the send button
+here we go that the array is empty
+so we will again go to the post http
+request we have to run this request
+again because we have stopped the
+execution with the command control plus
+seen the visual studio code terminal
+so
+we will click on the send button again
+and we can see that the array has been
+passed
+into the request body
+and we have seen that it has been
+successfully passed now we'll
+go to the
+get
+http request
+that would be following the function
+get all profiles
+now we'll click on the send button
+we can see that it has fetched us all
+the profiles that has been entered till
+now
+we will post another profile
+so we would be
+making some changes
+that would be
+sales
+sale said
+and then point name would be
+henry
+casey it
+and hit
+schedule would be
+hendrick is
+99 gmail.com
+and now we will pass this request
+you can see that it has been
+successfully entered
+we have passed the request in the
+request body and
+you can see the output now we'll go to
+the get http request
+and click on the send button
+see that
+it has shown all the profiles we have
+entered till now
+to see in the json format we just have
+to change it to json
+we can see that
+we have entered
+the profiles
+here
+so now we will be creating another
+function that would be get the profile
+by a particular id here we are getting
+all the profiles now we'll be
+creating a function that would fetch us
+a single
+profile with a particular id
+for that
+first we would be creating the route in
+the function main
+router dot
+handle
+function
+main inside first we'll pass the path
+that would be profiles
+coma
+the name of the function we'll set it as
+get profile
+and we'll set the method here as get
+only because we are fetching
+the profiles
+now
+we will add id in this that would
+that would be just beside the path
+for that we will write
+slash
+in the curly braces we would write the
+particular id
+the id we would be searching to get the
+profile
+close it in inverted commas
+and put the function name also
+now we would be declaring the function
+for that
+i'll write the command
+function
+and then the name of the
+function that would be the great profile
+that would be function
+and side will pass the same response
+writer and the pointer to http dot
+request
+that would be the variable queue
+http dot response writer
+comma r
+the pointer to http dot request
+in the function body first we will get
+the id of the post or the profile from
+the route parameter
+for that we'll declare a variable
+that would be variable
+id
+parameter
+of the type string
+that would be equal to max
+dot
+vrs function and we'll pass the pointer
+r
+in that that would return us a map
+and inside the square bracket
+would
+make it the id
+the next thing we have to do is to
+convert the string to an integer we can
+do this by using the function
+ati that is part of the string
+conversion package
+so we have to import the string
+conversion package
+that would be str
+co and v
+now we'll get back to the
+function
+that is get profile
+i will convert the string to integer
+so it returns two values one is the
+integer and another is error
+we'll see
+id comma
+error
+we will define two variables
+and use string conversion
+and the function that would be adoi
+and pass the variable that is id param
+which you have to convert into integer
+now
+we'll check if error is not equal to nil
+if we do not have any error so what we
+can do because
+the function is returning two values one
+is integer and another is error
+if it's the error
+then it won't pin it so we have to
+define that
+now we'll check the error
+for that
+will write the statement if
+error is not equal to nil
+so inside this
+we would be
+writing a command q road
+right header
+so it would be representing
+a number that would be 400
+if the error would not be nil means that
+it has error it would be showing the
+error
+now w dot
+write
+inside we will pass the slice
+of byte
+and inside we would write
+id could not be converted to integer
+now we'll also do the error checking
+but before that we'll write the
+statement return
+so if there's a error
+the
+next statements won't get executed
+after the error
+and we have the w capital for the right
+okay
+now we will be checking for the errors
+if
+id is
+greater than equal to
+length of profiles
+here id corresponds to the position in
+the slice if it's greater than length
+then it's invalid
+here we will write no post found in
+return so that code below doesn't
+get executed
+so for that we'll write the statement
+if id is greater than equal to
+length of profiles
+inside
+will write two dot right header
+it would display the header as 404
+and next statement we would write would
+be q dot right
+with the capital w
+and inside the round braces
+will pass the slice
+of white
+and inside
+we will write no profile found with
+specify id
+and now let's get the post at index or
+profile at index
+for that we'll write
+profile
+profiles
+id
+and
+write it as
+en value and the key would be content
+type
+and now
+set the encoder
+and pass the response writer queue
+dot
+import
+the variable name
+profiles
+profile
+oh
+all right
+but
+it won't be in inverted commas
+i'll
+get them cleared out
+now we'll save the file
+and write the command ctrl c
+now
+we'll build the file
+now the executable
+file has been created
+i will run the executable file
+now we'll move to postman
+and now we'll
+enter all the profiles again
+then we'll fetch them
+we have to enter them again because we
+have created and executed the exe file
+again
+so we have one profile here we will
+click on the send button
+and we can see that it has been
+successfully passed
+now
+we will get the second profile
+and we'll click on the send button
+we can see that
+we have passed
+two profiles
+now
+we will get on the get http request
+so it if we click on the send button it
+will get us
+both the profiles and if you want to see
+them in the json format
+you can see that
+we have
+got both profiles
+now we will create another
+request that would be get
+and the same http url
+and
+after
+profiles you have to
+make it slash and make it as id 0
+to get the id 0 and we'll click on the
+send button
+and we can see that
+the first
+profile we have entered was marketing
+about the marketer
+research marketer
+and we have bought that
+if you want to fetch this next profile
+that would be the
+index one
+you click on the send button
+we got that profile that is sales head
+in the sales department
+that was the second profile
+so now
+we would move to another function that
+would be update
+for that we would create another route
+and that you would be creating in the
+function main only
+that will
+copy
+and paste it
+will get the function name as update
+profile
+and the method
+that would be put
+in capital letters
+now
+we will declare the function
+you will copy the same function that
+would be
+function get profile
+and make some changes in that only
+and paste the function
+first will
+change the name of the function that
+would be
+update profile
+and we'll be passing the same parameters
+here
+we would delete
+this part
+and now we'll create a variable
+updated profile to hold the decoded data
+we will pass the json document
+that would be r dot body and in the code
+we will pass the address we want to
+store the recorded data
+so for that
+first we will declare the variable that
+would be update profile
+it would be of the type profile
+and
+you will be doing json dot new decoder
+and inside we will be passing the
+io dot writer that would be
+r dot body
+dot
+the code
+and here we will be passing the address
+we want to store the decoded data
+that would be ampersand
+update profiles
+now to update the profile value we will
+do
+files
+id equal to updated profile
+that is update profile
+now we'll send it to response
+that would be
+first we will set the header q dot
+header
+dot set
+and inside we will be passing the key
+and the value
+that would be content type
+and the value would be application slash
+json
+now
+we would be
+send it to response for that we will
+write the command json dot
+new encoder
+and inside will be passing the response
+writer that is q
+dot encode
+e would be capital of the code
+and inside would be passing the variable
+where you want to store the updated data
+that is update profile
+now i'll save the file
+and in the terminal we will write the
+command control c to stop the execution
+now we will build the file
+now the executable file has been created
+now we'll run the executable file
+and move to postman
+here we will create a new request
+that would be of the type put
+but before proceeding with that
+we have to again enter the profiles
+we have one profile already in the
+request bodies
+click on the send button here we can see
+that it has been passed successfully
+now we'll also run again
+the get all profiles you can see that we
+have one profile and in the json format
+now
+we will come to the request that would
+be of the port type
+and copy the url
+and paste it here and it also has a
+parameter id so for that we will
+write the id as zero because we only
+have
+one profile that is at the index of zero
+and we'll
+copy the request body
+and click on body click on draw
+of the type json
+and
+paste the profile here now we will
+update the department here and update it
+as
+content marketing
+and click on the send button
+here we can see that the profile has
+been updated the department has been
+updated to content marketing
+so now
+we would be declaring another function
+that would be delete
+for that we would be creating another
+route for that would move to the main
+dot co file
+and the function main
+will create another route
+that would be delete profile
+and the function name we would keep it
+as delete profile only and the method
+would be delete
+now
+we will declare the function delete
+profile
+we will copy the function that would be
+update profile
+and
+paste it
+and make the changes in that only
+first would make the change in the name
+that would be delete profile
+now we will send the response
+and we don't have anything to send it in
+the response body
+so
+we will delete this
+and we will send a 200 okay status so
+we could confirm that the profile has
+been deleted
+so for that
+we will write
+q dot
+right header
+and it would shows the status 200
+and
+to delete that
+we will run a command
+that would be profiles
+equal to append
+and inside the circle brackets we would
+write
+profiles
+set colon
+id
+coma
+profiles
+square brackets colon
+id
+plus one
+and period period period
+so now we'll save the file
+and move to postman
+and test the delete function
+now we'll save the file and in the
+terminal we will
+enter the command control plus c to stop
+the execution
+now build the file again
+and run the freshly built
+executable file
+now we'll move to postman
+and
+first we will
+post the profiles as we have created the
+executive file crash
+now we have to click on the send button
+as you can see that it has been sent to
+the
+request
+body and we have
+get the response
+now
+just run the get all profiles function
+it is showing that it has quote a
+profile in the json format
+we will post another profile
+that would be of the department
+sales
+and it will be sales ad
+so we have click on the send button
+and the profile has been posted
+now click on the
+get
+request and click on the send button
+here we can see that there are two
+profiles in the json format
+now
+we will create a http request that would
+be of the type delete
+and copy the url
+and paste it here
+and it has the ids parameter
+so we will
+delete
+the profile with id1
+and click on the send
+it is showing http header 200 as okay so
+it has deleted that profile
+move to get request
+and click on the send button
+here we can see
+that we have only one profile left it
+has deleted the profile
+with the index 0.
+we have come to the end of this session
+i hope it was interesting and
+informative if you liked it please let
+us know in the comment section below
+also do subscribe to our channel and
+stay tuned for more from simply now
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

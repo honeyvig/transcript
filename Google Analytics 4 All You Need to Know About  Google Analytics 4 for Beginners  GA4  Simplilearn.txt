@@ -1,0 +1,350 @@
+hello everyone welcome back to this new
+session by simply learn
+today in this video let's get to know in
+detail about google analytics for
+google analytics is a web analytics
+service offered by google
+it was launched back in 2005
+it tracks and reports website traffic
+from the information through wikipedia
+google analytics is the most used web
+analytics service as per the sources in
+april 2022
+google analytics was used by 73 percent
+of the 10 000 most popular website
+across the globe
+however as per the reports from
+beltway.com
+two crore 81 lakh 52
+477 live websites use google analytics
+so now this is the time to understand
+what has been changed in google
+analytics over the years
+if you are new to google analytics it's
+even better
+before moving forward
+do subscribe to simply learn and hit the
+bell icon to never miss any updates from
+simply learn so what makes google
+analytics so important
+google analytics generates various types
+of reports and helps to track bounce
+rates identify the best content
+of your website record user behavior
+flow on your site and many other
+metrics thereby allowing you to
+understand and build your business
+strategies
+thereby growing your business
+now that you have understood why google
+analytics is essential
+let's check what we have for you in this
+video
+first we will understand what is google
+analytics for
+then we will move forward with
+identifying google analytics version for
+your website
+next we will have a detailed look at
+universal analytics and google analytics
+4.
+we will continue by understanding
+success stories from google analytics
+for users
+and finally we will end this session by
+understanding the future of google
+analytics poll
+so allow me to introduce the next
+generation of google analytics
+google analytics for
+also known as ga4 initially google
+analytics 4 was known as apple's web
+google analytics 4 is the latest
+analytics property with several
+advantages over the old google analytics
+also known as universal analytics
+understanding more clearly google
+analytics sport can measure and keep
+track of website traffic as well as app
+usage so now you can imagine that google
+analytics 4 is the one-stop solution for
+all your analytics needs
+if you are still using universal
+analytics we recommend you to get
+familiar with google analytics for as
+well
+as this is the new future of analytics
+we will understand creating and setting
+up google analytics for account in
+detail in the upcoming videos
+let's first identify
+which google analytics property is
+associated with your website
+in order to identify which google
+analytics property you have
+login to your google analytics account
+now
+go to analytics account
+and then open properties and apps
+here you can see properties for your
+website
+now below the properties and apps
+several properties are listed
+where
+you can see different ids
+if the id starts with ua
+and ends with a number
+then you have a universal analytics
+property
+however if id only has numbers
+like here
+then you have google analytics for
+property
+we will learn how to switch the
+universal analytics account to google
+analytics 4 in the upcoming videos
+now that you have understood how to
+identify google analytics property
+let's take a detailed look at the
+comparison of universal analytics data
+and google analytics 4 data
+the major difference between universal
+analytics and google analytics spore is
+the measurement model
+universal analytics uses sessions and
+page views as the measurement model
+whereas google analytics 4 uses events
+and parameters as the measurement model
+therefore any hit type from universal
+analytics property say a page view user
+timing etc are captured as event in
+google analytics for property
+let's see the detailed comparison
+of every aspect of universal analytics
+and google analytics sport
+first we go with events
+in analytics every measurable action for
+example page load form completion
+scrolls app installs etc is measured as
+event
+an event has category
+label
+and action in universal analytics
+moreover it has its own hit type
+in case of google analytics 4 there is
+no categorization all the hit types from
+universal analytics are considered as
+events
+now let's find the comparison of
+universal analytics and google analytics
+4 in terms of page views
+page views is a metric defined that
+calculates total number of pages viewed
+on your website
+now let's get a better understanding of
+page views
+for instance when user lands on the web
+page of your site
+the page loads
+this is considered to be a page view
+now suppose if user reloads the page
+google analytics tracks it as another
+page view
+if the user navigates to another page of
+your website and returns to the same
+page
+this adds another page view to your site
+now that you have understood page views
+let's see how page views differs
+in universal analytics and google
+analytics sport
+from universal analytics page view are
+translated to google analytics for
+property
+as page view event
+this page view event
+automatically gets triggered in google
+tag manager
+the next metric we have
+is sessions
+session is a time duration for which
+user is active on your website
+a universal analytics session may
+consist of multiple page views
+events
+e-commerce transactions etc
+the session is considered to be ended if
+the user has 30 minutes of inactivity or
+any other event for which session end is
+triggered
+in google analytics 4 session metrics
+are tracked from session start event
+which automatically gets triggered with
+the basic interaction on your website
+however the session duration depends on
+the period between the first and the
+last event
+now let's check our next metric which is
+custom dimension
+in universal analytics custom dimension
+add the information to the collected
+data
+whereas in google analytics 4
+information is added through the event
+parameters
+moving ahead
+the next metric we have is content
+grouping
+content grouping in universal analytics
+allows to group content into a logical
+structure
+after which one can view and compare
+metrics by the group name
+now talking about google analytics 4 it
+has predefined event parameter for
+content group this parameter fills the
+data into content group moving ahead
+the next metric we have is client id
+client id is a unique string generated
+randomly and acts as a pseudonomous
+identifier
+client id identifies the browser
+instance and then it gets stored in the
+browser cookies
+and therefore subsequent visits to the
+same site are associated with that user
+in both
+universal analytics and google analytics
+for
+client id serves the same purpose
+that is the client id is responsible for
+providing the identifier
+now let's move ahead with our next
+metric
+parameters
+parameters are associated with google
+analytics for properties
+understanding in detail about parameters
+parameters are the chunk of information
+that specifies the user action
+for example parameters can be passed
+to describe the value of the purchase
+next we have is user property
+user properties provide information like
+preferred language or geographical
+location of the users that interact with
+your website or app
+now that we have seen difference between
+universal analytics and google analytics
+four properties
+the question definitely arises
+can google analytics really bring
+success to your business
+well if you have a good understanding of
+your audience and have extraordinary
+strategies to work on the google
+analytics is your best companion
+here are some success stories by google
+analytics for users
+we all know about mcdonald's the leading
+fast food cooperation with huge number
+of outlets across the globe
+recently a case study has been shared by
+mcdonald's hong kong
+which suggests that the company has
+experienced growth in conversions by 550
+through the in-app orders
+and what made them achieve such a great
+growth
+yes you guessed it right it's google
+analytics 4.
+let's have a look on their success story
+the major goal for the company was to
+redesign the strategy to increase in-app
+food orders
+predict the behavior of in-app audiences
+and reach the right customers with
+mcdonald's mobile order campaigns to
+achieve the goals mcdonald used a simple
+yet smart approach and implemented
+google analytics pool properties with
+the help of predictive audiences in
+google analytics pool properties they
+tried converting audiences into
+customers
+moreover with the help of google ads
+they were able to manage the campaigns
+as a result of the smart efforts
+mcdonald was able to gain increase in
+conversions by 550 percent for the users
+who are likely to purchase in next seven
+days
+isn't it amazing
+moreover for the same audience
+mcdonald's had noticed a visible
+decrease in cost per action by 63
+percent
+and an increase in revenue by 560
+percent
+some other companies that have seen
+growth in their business through google
+analytics sport includes pepsico
+claroshop etc
+with the proven success of top brands in
+the world let us know what the future of
+google analytics 4 holds as per the
+reports on bildewood.com
+there are two crore 81 lakh 52
+477 live websites that are using google
+analytics
+out of which there are one crore 21 lakh
+seventy three thousand four hundred and
+thirteen live websites from usa
+and four lakh sixty eight thousand five
+hundred thirty eight live websites from
+india
+who are using google analytics if we
+look in detail
+we have a list of big names like bank of
+america
+blogger.com
+cisco
+netflix
+coursera
+flipkart
+icici bank
+tesla india
+irctc
+myntra etc that are using google
+analytics for their growth
+however we are all well aware of the
+success stories of all the biggies on
+the list
+thus google analytics will continue to
+be an important part of new business
+strategies
+things you should know before we end
+this session are
+google analytics 4 will be soon
+replacing universal analytics
+from 1 july 2023
+the universal analytics platform will be
+no longer in action
+however you will be able to access the
+reports for some period of time
+google analytics 4 will be the new
+future of analytics so here i would like
+to end this video with a hearty promise
+to come back with another interesting
+topic related to seo
+if you like this video do subscribe to
+our channel simply learn and press the
+bell icon to never miss any updates from
+simplyland thanks for watching this
+video and stay tuned with us
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

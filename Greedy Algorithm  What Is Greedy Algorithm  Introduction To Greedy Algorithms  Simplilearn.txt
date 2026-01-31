@@ -1,0 +1,294 @@
+hello everyone welcome to simply learn's
+youtube channel today we will be
+discussing about greedy algorithms in
+data structure but before we begin let
+me tell you guys that we have daily
+updates on multiple technologies if you
+are a tech geek in a continuous hunt for
+the latest technological advancements
+then consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simplylearn
+now without any further delay let's get
+started with the agenda for today's
+discussion
+we will start this discussion by
+understanding the real life example of
+greedy algorithm
+following which we will deal with the
+introduction to greedy algorithm
+advancing ahead we will understand
+example of the greedy algorithm once we
+are done with that we will look into the
+demerits of using greedy algorithms
+and finally we will cover the
+applications of greedy algorithm to
+understand how we utilize it in our
+daily lives
+now let's get started with our first
+topic
+here we will look into the real life
+example of greedy algorithm in order to
+understand it better this is alex he's
+quite wealthy and intelligent as he
+works for one of the most reputed it
+firms
+and this is alex's best friend rachel
+rachel is in dire need of 85 right now
+however she needs money in such a
+quantity that the number of coins is
+kept to a minimum so rachel shared this
+issue with alex and asked him for help
+now alex is thinking about rachel's
+issue which he can easily fix because he
+has a limitless supply of fifty dollars
+twenty dollars ten dollars and five
+dollar coins stashed in various bags
+although this being said alex needed to
+think about the constraint rachel told
+him about he needed to give her money
+such that the number of coins utilized
+must be minimal to do so alex began
+making a list of the various coin
+combinations in which he could present
+money to rachel however after a while he
+became confused due to the vast number
+of conceivable combinations
+so he decided to use his programming
+ability to solve real life problems
+alex developed a program that will
+provide him with the optimal number of
+coins that he can present to rachel this
+generated program was iterating through
+the different possibilities to choose
+the best solution
+at each iteration the program added the
+coin of the largest value that was not
+taking aleks past the amount to be paid
+which is 85 dollars in this case
+for 85 dollars the largest denomination
+id can start giving is 50
+now id is still short of 35 to reach the
+amount so that the next largest coin
+program can take in as twenty dollars
+but since the program still requires
+fifteen dollars to meet the threshold
+the next highest denomination it can
+accept is ten dollars followed by five
+dollars
+the best part about this program was
+that it allowed alex to present 85
+dollars in just four coins which is
+fairly incredible
+the vital thing to note here is that
+after each loop the program makes a
+greedy choice providing the coin with
+the highest potential value what i mean
+here by greedy is that locally optimal
+choice is picked at every step to reach
+the global optimum solution now moving
+ahead we will formulate the idea of
+greedy algorithms
+basically a greedy algorithm is based on
+a problem-solving method that involves
+making locally optimal decisions at each
+stage in the hopes of achieving a global
+optimum
+that means at each stage we choose a
+locally optimal value in the hopes of
+arriving at the optimum possible end
+result
+furthermore this algorithm is an
+optimization technique that can find
+either minimum optimum result or maximum
+optimum result
+the best part about this algorithm is
+that it is simple to understand and
+implement as well additionally the
+runtime complexity for this algorithm is
+pretty reasonable
+however the fundamental disadvantage of
+this strategy is that we only receive
+the globally optimum value in a small
+percentage of cases
+having said that you must be thinking
+about when to implement this algorithm
+for solving particular problems as it
+does not always produce globally optimum
+results
+well let me tell you guys that we have
+two conditions to judge our problem for
+implementing greedy algorithms
+the first condition is the greedy choice
+property this notion states that making
+locally optimal judgments can lead to
+the global optimum solution for a given
+problem
+the second condition is about optimal
+substructure
+the problem has an optimal substructure
+only if an optimal solution to the
+entire problem comprises the optimal
+solutions to the subproblems
+in simpler words that means the problem
+can be split down into multiple
+sub-problems and the solutions to these
+sub-problems can collectively lead to a
+solution for the entire problem if both
+the above-mentioned properties are
+satisfied by the problem then we can
+create a greedy solution for that
+particular problem
+moving forward we will look into the
+steps for constructing a greedy solution
+finding the substructure or sub problem
+that can lead us to the final answer is
+the first step in building a greedy
+algorithm
+because in this algorithm we are just
+trying to operate with local optima to
+reach the global optimum solution
+the second step is about determining the
+type of solution the given problem can
+result into that can be either the
+largest sum or minimum path
+the final step for creating the greedy
+solution is about creating an iterative
+process for traversing through local
+stages and making decisions to reach a
+globally optimum solution
+now you might be confused about how we
+can do that
+well let's go through an example to
+understand the approach to implement a
+greedy solution
+the example that we are going to deal
+with is called the traveling salesman
+problem in which a salesman is supposed
+to reach the destination from a given
+current location
+the representation of cities and parts
+connecting them is done using graph
+structure where each node is considered
+as a city and edges connecting them as
+parts having edge weight as the distance
+between the two cities
+now in this case we are supposed to find
+the minimum path between two cities so
+to do that we will begin from the
+current arbitrary position from this
+node called as starting location there
+are three possible paths but the path
+towards city b has less distance hence
+we will traverse this edge primarily as
+it is an optimal local route
+we have reached city b now and from this
+node we have two possible parts out of
+which one part directly leads us towards
+the destination city having distance 20
+but the other path leading towards the
+city f has edge weight value or distance
+value as 2.
+hence according to the local optimal
+decision we will choose the edge
+connecting cities b and f for traversal
+we have reached the city f now from this
+node of city there is only one path
+leading us to our destination
+hence we will traverse it now we have
+reached the destination city the path
+highlighted in the green shade is the
+global optimum for this tsp problem you
+can verify that by calculating the edge
+weights for all other possible parts
+since the solution allows us to reach
+the global optimum by making optimal
+decisions at the local stage this
+strategy to solve the problem will be
+considered a greedy approach
+now moving ahead we will look into the
+demerits of using greedy algorithm
+we have learnt that the greedy algorithm
+makes decisions based on local optimum
+instead of analyzing the broader picture
+of the whole data hence there is a
+possibility that the greedy solution
+might not be the best optimal solution
+for some problems
+for example consider this travelling
+salesman problem
+in this problem the highlighted part is
+a created solution to reach the
+destination city from the current
+location using a greedy algorithm
+but if you observe this graph the
+selected solution is not the global
+optimal solution for this problem in
+contrast it is the worst generated
+solution to reach the destination
+that is why the greedy algorithm is
+considered to be prone to correctness
+issues
+even if the algorithm is correct proving
+why it is correct is difficult thus it
+is deemed to be trickier to solve
+specific issues
+now we will discuss about applications
+of greedy algorithms to understand their
+importance
+the first application of a greedy
+algorithm is its use for constructing
+minimum spanning trees
+the coring approaches that we use to
+generate msds is based on the greedy
+algorithm
+both prim's algorithm and crystal's
+algorithm are known as greedy algorithms
+as they make decisions based on locally
+optimal decisions
+the next application of the greedy
+algorithm is it's used to implement
+huffman encoding and decoding algorithms
+the huffman coding technique is a
+lossless data compression method
+the concept is to give variable length
+codes to input characters the lengths of
+which are determined by the frequency of
+the related characters
+the smallest code is assigned to the
+most frequently occurring character
+whereas the largest code is assigned to
+the least frequently occurring character
+this process is carried out by making
+local optimum decisions
+hence it is also considered to be a
+greedy algorithm
+the final application of the greedy
+algorithm is its use for developing
+solutions to well-known coding problems
+those problems are the activity
+selection problem job selection problem
+and fractional knapsack problem
+all these problems generate solutions by
+making decisions at each local stage so
+the solutions for these problems can be
+developed quite easily using the greedy
+approach
+so with this we have come to the end of
+this video i hope this video on greedy
+algorithm was informative and
+interesting if you have any queries
+regarding the topics covered in this
+video then let us know them in the
+comment section below and our team of
+experts will get back to you thank you
+so much for being here and do watch out
+for more videos from us until then keep
+learning and stay tuned to simply learn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

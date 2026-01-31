@@ -1,0 +1,482 @@
+hi everyone welcome to Simply learn
+today we will learn data analysis and
+how to build a dashboard with Google
+looker studio for better understanding
+let's go through a simple use case on
+analyzing sales performance so that we
+can come up with a report to assess
+improvisation in overall sales
+performance now let's go through a
+simple context here's the one let's
+consider a simple case for our realtime
+sales dashboard for business growth
+let's imagine there's a client and the
+client owns a business operating across
+various regions and product categories
+with goals to grow and improve
+performance now let's discuss the
+challenge the client struggles with
+limited visibility into sales data
+traffic to lead ratios and lead to order
+conversion rates this lack of
+information leads to missed
+opportunities and inefficient resource
+allocation now let's plan the solution
+with our sales dashboard a real-time
+sales dashboard provides a client with a
+very clear view of critical business
+metrics including sales by region and
+state product category performance
+traffic to lead ratio lead to order
+conversion rate impact on business
+strategy and much more let's discuss
+that one after the other first one sales
+by region and state the dashboard will
+show realtime sales across regions and
+states allowing client to identify where
+which areas are performing well and
+which needs more attention now the
+second one product category performance
+sales breakdowns by product category
+will help the client determine which
+products are driving revenue and which
+may need more Focus this allows for
+targeted marketing and inventory
+management third one traffic to lead
+ratio the dashboard will display the
+percentage of web visitors converting
+into leads if this ratio is low the
+client can improve we usability and
+promotional strategies lead to order
+conversion rate tracking lead to order
+conversions reveals how many leads
+become customers a low conversion rate
+signals the need for changes in the
+sales process for improved checkouts
+next ahead we have impact on the
+business strategy the dashboard gives
+the client actionable insights to focus
+resources where they are needed the most
+understanding which regions and product
+categories are underperforming allows
+for timely adjustments so in inclusion a
+realtime sales dashboard enables the
+client to monitor critical metrics
+address inefficiencies and make
+datadriven decisions that said if these
+are the type of videos you'd like to
+watch then hit that like And subscribe
+buttons and the bell icon to get
+notified whenever we host just for a
+quick info if you want to upskill
+yourself master data science and data
+analytics skills and land your dream job
+or grow in your carrier then you must
+explore simply learn scode of various
+data science and data analytics programs
+simply learn offers various
+certifications and postgraduate programs
+in collaboration with some of the
+world's leading universities like
+Caltech berue IIT kour and many more
+through our courses you will gain
+knowledge and work ready expertise in
+skills like Advanced Excel python
+machine learning data visualization
+generative Ai and over a dozen others
+that's not all you also get the
+opportunity to work on multiple projects
+and learn from industry experts working
+in Top Tire data and product compan
+compies and also academic from top
+universities after completing these
+courses thousands of Learners have
+transitioned into a data science or data
+analytics role as a pressure or moved on
+to a higher paying job profile if you
+are passionate about making your career
+in this field then make sure to check
+out the link in the pin comment and
+description box below to find a data
+science and data analytics program that
+fits your experience and areas of
+Interest now without further delay let's
+get started with our Lookers dashboard
+project so what are we covering in list
+so we will be understanding what exactly
+is looker or looker studio and then we
+will learn how to create an account for
+Looker Studio it's really simple it
+takes just a couple of steps and
+followed by that we will have a brief
+introduction to Lucas Studio once we log
+in once we have a web page which
+displays a Locus Studio we will go
+through the measures and dimensions and
+also all the types of charts and cards
+that we have in our inventory and
+followed by that we'll get started with
+check checking all the data sources
+whether we can import data from a studio
+like uh SS SMB which is Microsoft SQL
+server or MySQL or if you can take data
+from your Google Sheets or Excel file or
+if you have any other website or
+anything else do you need any extra
+plugins so we will have a brief Lookout
+on that and lastly once we have a brief
+understanding about all the ins and outs
+of Google Luca Studio we will get
+started with building one of the real
+real time looker dashboard for SES
+performance I hope I made myself clear
+with the agenda now let's get started
+firstly what exactly is looker or what
+exactly is looker Studio from Google so
+just like powerbi and tblo looker is
+also an online business intelligence
+platform from Google that helps you
+access analyze and visualize your
+business data now proceeding ahead let's
+understand how to create an account in
+looka so to login or create a new
+account account in Locus studio just
+Google Locus studio and you will be
+redirected to this particular search
+results go to sign in options and here
+just click on that and here you can see
+a new uh web page and here you have the
+Account Details so here I've logged in
+with this user ID here uh I can see I
+have logged in as my user id here and
+here we have uh recent reports data
+sources Explorer so if you have already
+created a report let's say you have
+already used lucus studio and created a
+dashboard then you will have all the
+reasons in here but if you have not
+worked on any of the recent reports
+you'll have nothing here so by default
+um you will have these reports on your
+lookus studio Google analytics for
+report Acme marketing search console
+report just for a demo purpose just so
+that you have a brief understanding or
+you can use this as a template and add
+your data and if you want to create a
+new uh blank report just click on here
+and you can create a blank report and
+here you can choose your
+country and
+Company so um let's type simply
+Lear look
+demo and agree to all the service terms
+and
+continue there you go you have success y
+created all and here you have step two
+and if you want um updates from looker
+on a daily basis you can choose yes to
+all but I don't want any of the updates
+you can go with
+no enter so you have a continue button
+in the bottom right corner just click on
+continue and you must be redirected to a
+new page there you go now you can
+continue with your actions
+and if you check the data sources we
+have a wide variety of data sources here
+just click on create a new report or you
+can click on data source to check the
+data sources first there you go now you
+can see we have resources from Google
+analytics Google ads Google spreadsheets
+you can also upload a file if you have
+something in your computer or if you you
+can also add some Microsoft Excel files
+you can connect it back you can get
+connected with Amazon red shift and a
+few other
+in case if you are having any other
+third party databases then you can use
+some of these connectors and get
+connected to the source right now we
+will use Microsoft Excel or you can also
+upload a
+file click here to upload files I have
+something in my
+downloads this is about the orders and
+sales data so it's processing it's
+uploaded
+processing now the file has been
+successfully uploaded now here you have
+a few more settings that you can proceed
+with let's say you don't want to keep
+the column header or something like that
+you can uh select those column headers
+or specific r that you want to include
+and eliminate them but I want to include
+the entire sheet so let's go with that
+option here and add and before that here
+you might have this is the data set name
+and here you have just one sheet let's
+say your workbook had m multiple sheets
+maybe 10 15 and here you can have an
+option to select a specific sheet that
+you want to work on and then add since I
+have just one sheet in this workbook I
+just proceed with ADD and shortly your
+data should be added and you can also
+have an option of renaming this
+report so now you'll get a small window
+which tells you you're about to add this
+data to report so if you want this popup
+to come every time you're trying to load
+a data you can keep it but if not you
+can just mark it as don't show this to
+me again and just add it to the
+report and here you go now let's try to
+cancel let's try to rename this Untitled
+report as sales performance sales
+performance report now looker has
+already started to create some of the
+tables on its own so if you want to
+continue with them you can but if not if
+you can just eliminate or delete them
+and here you have the data and these are
+all your columns so uh the ones
+mentioned as or noted as 1 to 3 are your
+measures and the ones mentioned or noted
+as ABC are your dimensions and the ones
+uh you know indicated with a calendar
+symbol are your dates right now these
+are the columns you have and if you come
+here you can see add a control where you
+can select some dropdown slider slicers
+and everything and if you select this
+particular option you you have a wide
+variety of charts and graphs that you
+can make use of right and if you want to
+add a text window or some text block you
+can choose that from here if you want to
+add some lines or shapes you can do that
+right you have shapes right here and
+lines right here and if you want to add
+anything else than that like data or
+build a chart here you go now these are
+the few things that you need to focus on
+correct and now you have all the
+information related to the charts that
+you can work on the data dimensions and
+measures that you can work on and also
+the shapes that you can include in your
+dashboard now let's continue or try
+start building the dashbo that you're
+looking for now let me add a background
+or a template where I want to have my
+dashboard so you can do that by just
+selecting add an image from my computer
+and here you have um yes here you go
+this would be my dashboard template or
+the background for my dashboard where we
+have some already existing names and uh
+sections where we want to add some
+charts right so if you could extract or
+drag this around to fit the sheet you
+have ear traffic leads orders Revenue
+State product region category status all
+states month- on Monon sales right so
+there there you go now let's start by
+adding a few filters add a control and I
+want the drop down right place the drop
+down where you want it I want it right
+here and uh forget about the size we can
+minimize or maximize the size and here
+in the control field I want the odd date
+so drag and drop it in the
+field select the a date there you go now
+you can expand or contract this
+particular one to fit your required size
+and here you have the audit date right
+now you you can select the dates and if
+you could expand this particular one you
+can also select uh ear types
+right so here you have yearly quarter
+right just select year and you'll have
+year wise dates here
+or if you want a specific date you can
+just add a specific date there and now
+comes the traffic you can just simply
+copy paste this one or you can let's
+have a habit of creating uh that
+particular one now let's go with the
+kpis so you choose the add chart symbol
+here you can go with the scorecard right
+just select the scorecard and drop it
+right
+here and we can you know change
+the size of it and in place of uh metric
+we have a count so instead of that we
+will go with the traffic which is right
+here just click on traffic and the
+aggregation should be U sum so you can
+see the aggregation is sum if you want
+to change you can change it by selecting
+that edit icon right there now this is
+your traffic and uh
+apart from that you have leads here so
+just go to chart again add a
+card and drop it right
+here so once you've dropped it right
+here you can change the
+size and in the dimension you have to
+select
+leads there you go and make sure that it
+is sum so you have sum of leads and you
+can even copy and paste it
+so let's do that once
+again for
+Revenue so here you will be selecting
+orders and for Revenue you will be
+selecting revenue and make sure the
+aggregation is
+sum so we have the kpis we have traffic
+leads orders and revenu set right right
+there and you can select or copy the
+drop- down option
+here or you can add a new
+one so we have copy pasted the state
+here so instead of customer name we
+might have to select the state name here
+which should be right
+here select the state and for product
+you can select the your you can replace
+the customer name with the product
+name there you go and you're done now
+let's have region wise sales here uh I
+would like to add a chart maybe a byy
+chart drop it right here so in dimension
+you might have to select the region and
+here you might have to select the yeah
+it automatically selected so we have the
+order numbers and it already segregated
+in in terms of percentage right now I
+can also decrease the size so that you
+can fit it right here and each and every
+color has a different region and now
+let's proceed with the category now you
+can copy and paste the same one or you
+can go with a new chart now let's say we
+go with
+u a bar graph and d drop it right over
+here now in instead of Dimension region
+you go with category and instead of uh
+any other thing okay it automatically
+selected the categories and Order
+accounts now you can minimize the size a
+little
+bit so that it fits the region we have
+allocated for that and now we have
+status now let's go with a different
+type of chart we will go with the donut
+chart here and let's drop it right there
+and instead of category we will select
+the order
+status where which is right here now we
+have the details for the orders
+delivered in transit and cancel you can
+minimize the size so that it fits
+properly in the block we have created
+for it now we will try the map chart
+which will show us the sales happening
+in overall American states so this is
+where we will be going to including it
+now add a chart and here you can select
+uh okay add a chart and here you will be
+selecting the map
+chart let's go with the filled map
+chart and drop it right
+here and now here instead of order date
+and delivery date we will add a
+dimension
+here and before that let's select the
+orders order ID some of order ID and the
+Tool Tech we will use the state
+all here it is there you
+go okay there is some data type issue
+not a
+problem let's try to change it to Geo
+chart let's delete this
+one and here let's add GE Dimensions
+estate and Order IDE your orders to
+Matrix
+we will be having a map shortly it's
+loading now you
+can fit the dimension
+to
+map it's loading but not an issue let it
+load slowly keep it over here and lastly
+we have month-on-month sales so whenever
+you're considering month on month or
+whenever you're considering a calendar
+which has date data type always consider
+uh a line graph okay now record count in
+instead of metric here let's say let's
+go with
+the drill down should
+be
+order
+dat and here if you want you can drill
+down and make it look like uh you have
+uh the month on month sale you can
+specifically select a date over here and
+you can get it over here this
+configuration data source improperly
+configured let's try to reconfigure
+that so Dimension should be ordered date
+and breakdown should be
+orders so okay it's loading so there is
+some configuration error slowly loading
+not to worry so there you
+go so we have a fully functional
+dashboard here now you can select any
+specific State and you will be having a
+completely interactive dashboard right
+there or you can select only here so
+that you can have only Washington data
+so this is how it works it's completely
+interactive now that's how you use
+Google's looker Studio to create an
+interactive dashboard for sales
+performance and with that we have come
+to an end of this session on dashboard
+using looker studio and if you have any
+queries regarding any of the topics
+covered in this session then please feel
+free to let us know in the comment
+section below and our team of experts
+we'll be happy to resolve all your
+queries at the earliest until next time
+thank you for watching and stay tuned
+for more from Simply learn staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+[Music]
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn ner up and get certified
+click here

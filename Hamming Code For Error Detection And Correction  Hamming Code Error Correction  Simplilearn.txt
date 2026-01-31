@@ -1,0 +1,254 @@
+with the increasing data transmission
+and exchange between multiple network
+devices for information purposes the
+probability of an error or damage
+occurring to the original datab bit is
+highly possible to overcome this
+situation we use certain networking
+techniques to detect and correct the
+damage to the data one of which we'll be
+discussing in today's
+session hi guys and welcome to yet
+another interesting video by simply
+learn but before we begin if you are
+watching Tech videos subscribe to our
+Channel and hit the Bell icon to never
+miss an update from us now without
+further Ado let's take a look at the
+agenda for today's
+session to begin with we will look into
+what is Hamming
+Cod then we will look into terms related
+to the humming
+code and in the end we will look at a
+working exam example of Hamming
+code let's
+begin the haming code method is a
+network technique that is designed to
+detect errors and corrects datab belits
+which are transmitted during data
+exchange it was first implemented by RW
+Hamming hence the name Hamming
+code this network technique is
+implemented because during data
+transmission there are often cases where
+data loss or data damage occurs to
+recover or detect the damage in the
+original data we use Hamming
+cod in the next slide we will look into
+some terms that are related to the
+working of Hamming cord the first one
+being redundant
+bits these are the extra binary bits
+that are added explicitly to the
+original datab bit to prevent damage to
+the transmitted data and also to recover
+the original data in case of a damage at
+the receiver
+end in the next point we will look into
+some formula related to redundant fits
+and how to add them in the Hamming
+code the formula related to redundant
+widths is 2 R more than equal to m l r +
+1 where M refers to the datab bits in
+the data and R refers to the Redundant
+bits let's take an
+example in case m is equal to 4 that
+means the data bits used are four we
+need to find the value of R using the
+above formula let's deduce the value of
+redundant
+bits 2 R is more than equal to 4 + r + 1
+2 ^ R is more than equal to r + 5 so so
+using this let's use r equal to 0 if we
+use that we will get a value 1 that is
+more than equal to r + 5 but that is
+wrong then using r equal to 3 that is 8
+is more than equal to
+8 this way we conclude that the Hamming
+code would be 7 bit data because the
+value of R is 3 and M is 4
+now let's move on to the next term
+related to Hamming code that is par bits
+the par bit is the method to append
+binary bits to secure that the total
+number of counts of one in the original
+data is either even number or an odd
+number let's take a look why do we
+exactly use parity bits they are used to
+detect error in the original data which
+occurs during the transmission of data
+through this method we can detect the
+error at the receiver end and also
+correct
+it let's take a look at different types
+of parity bits
+available first one is even parity bit
+in this case of parity type the total
+number of ones counted is to be even in
+the
+count in case the count is odd then the
+value of parity is one
+otherwise the value should be
+zero similarly the other parity bit is
+known as odd parity bit for this par bit
+the total number of ones counted in the
+original data should be
+odd if that is the case the value of
+parity bit should be zero and in case
+the value of once in the original data
+comes out to be odd then the parity
+value would be one
+now let's move on to the next setting
+that is the working example of the
+Hamming code let's take a
+look let's begin with the steps to be
+followed to solve a Hamming Cod
+issue the first point being the position
+of the parity WID is determined using 2
+to the^ n term where n represents the
+number series 0 to n assigning the
+position for parity bit using this
+method would be more clear during an
+example for the second point we have the
+remaining positions represents the datab
+bit now let's try using the value of
+parity bit for n is equal to 0 that
+means 2 to the^ 0 is equal to 1 so all
+the bits with one in the last position
+are used to determine the
+value of the parity bit to better
+understand the assignment value of par
+bit please focus on this mentioned
+table in this table we can take a look
+at the last position that is n is equal
+to0 and see the mentioned
+number for P1 we can use a value 1
+because n is equal to Z and the last
+position value is 1 then is number three
+because the last position bit is one
+then and similarly for number five
+because n is equal to 0 and the bit
+value is
+1 so these three parity value can be
+used for n is equal
+to0 similarly let's take a look when the
+N is equal to 1 that means 2 ^ 1 is
+equal to 2 so all the bits with one in
+the second position are used to
+determine the value of par
+bit now let's take a look at the table
+to identif ify the numbers related to
+this parity bit value the first one
+being two due to the presence of one bit
+in the second position then we have P3
+presence of one bit in the second
+position similarly the next would be
+number six due to the presence of one
+bit in the second
+position similarly let's take a look at
+when n is equal to 2 that means 2 to
+the^ 2 is equal to 4 so all the bits
+with one in the third position are used
+to determine the value of parity
+bit and this would be four five and six
+number please read the points very
+carefully because next we will solve an
+example to better clarify all the
+concepts let's move
+on the given example is the datab bit to
+be transmitted is
+1011 and we have to solve this using the
+Hamming code method so the first step
+would be applying the Hamming code
+method and identify the given number of
+data bits that would be four according
+to the question so the number of parity
+bit would be three where the value would
+be 1 2 and four according to the part of
+P
+expression that means we will get
+something similar to this this
+representation is in datab bits
+format where the first position is for
+P1 parity bit the second for 2 to the
+power 1 that is 2 P2 and the third one
+is for 2 to the^ 4 that is P4
+parity and let's put the value that is
+to be transmitted in the remaining
+positions that would be P1 P2 1 P4 1 0
+and
+1 using this bit value we will deduce
+the value of P1 P2 and P4 for data
+transmission in this case we are using
+even parity for the example that means
+the number of ones should be
+even let's take a look for P1 we have D1
+D3 D5 and
+D7 as mentioned in the earlier
+slide so the value would be P1 comma 1
+comma 1 and comma 1 according to the
+datab bits Available To Us by the
+question that means the value would be
+one because the number of ones for P1 is
+odd so to make it even the value of P1
+would be one
+similarly for P2 we have D2 D3 D6 and
+D7 using the same method we will
+get P2 1 0 1 so the number of ones for
+P2 is even so the P2 value would be
+zero next is for P4 the value is D4 D5
+D6 and
+D7 where P4 4 has 1 0 and 1 that means
+the number of ones is even so again P4
+is equal to
+0 now using this we get the new bit that
+is to be
+transmitted that is 1 1 0 1
+01 after Transmission in case let's say
+at position five an error Ur and the
+value of one is converted to
+zero to detect this error at the
+receiver side we will use the Hamming
+code to begin with we will use the
+parity value to cross check the original
+data bit that means let's do the parity
+bit method for this received data so for
+P1 we have D1 D3 D5 and D7 so the number
+of ones is odd that means the value of
+P1 should be one to make it even then
+for P2 we have D2
+D3 D6 and
+D7 so the number of ones is even that
+means the P2 value would be zero now
+let's move on for
+P4 that would be 4 D5 D6 and D7 number
+of ones is one that means odd so the
+value of P4 would be
+one now let's take a look at the results
+that we obtained using this
+method foremost this shows that the data
+transmitted is damaged and we can detect
+the error position using this method
+that is using the value of parity BDS
+obtained where this will lead to 2 to
+the power expression that means 2 ^ 0 +
+0 + 2 ^ 2 that means
+five that matches with the Assumption we
+took now to correct this error we can
+use the position that we obtained that
+is five and replace the zero value with
+one
+bit by doing this we will obtain the
+original
+data with this we have completed all the
+topics to understand the hemming code
+method if you have any questions
+regarding the topic you can ask them in
+the comment section thank you for
+watching
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

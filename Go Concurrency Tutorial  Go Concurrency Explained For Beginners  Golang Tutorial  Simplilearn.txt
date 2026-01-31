@@ -1,0 +1,228 @@
+hello everyone welcome to this tutorial
+on go concurrency by simply learn
+in this session you will learn about
+what concordance is
+and how parallelism is different from
+concurrency
+after this you will learn about
+concurrency in go
+you will get to know go supports
+concurrency with core routines and
+channels here we will take a day get
+knowing go routines
+and their properties
+further we will learn about channels so
+hey everyone i am abhisaruja from simply
+learn and welcome to this video on goku
+currency but before we begin if you love
+watching tech videos subscribe to our
+channel and hit the bell icon to never
+miss an update let's start with what is
+concurrency
+concurrency is a process that deals with
+loads of activities operating
+simultaneously
+let's understand the concept with the
+help of an example
+let's consider a person driving a car
+while driving he feels hungry and
+reaches a drive-through and collects a
+food parcel
+he holds his car into a parking lot eats
+the food and heads to his home here the
+person is capable of performing both the
+action simultaneously that is having his
+food while driving but he performs
+actions in a sequence this is
+concurrency
+moving on we will understand how
+parallelism is different from
+concurrency
+both parallelism and concurrency produce
+the same result but with different
+approaches
+parallelism is the process to perform
+various sections simultaneously
+particularly not in sequential order
+let's understand parallelism with the
+help of an example discussed during
+concurrency
+let's assume the person is driving the
+car and simultaneously eating the food
+in this scenario the person performs
+both actions simultaneously that is
+parallelly
+this is parallelism
+parallelism doesn't always result in
+faster execution time in parallelism
+actions are performed parallelly in
+multiple course creating the need for
+components to communicate with each
+other
+where concurrent systems have a low
+communication overhead
+now understanding the differences we
+will had to understand concurrency in go
+programming languages like python and
+java use thread pools to execute
+concurrency
+whereas go has built-in features go
+routines and channels to achieve
+concurrency
+go routines are much easier to manage
+than thread pools that are purely
+operated by the operating system
+go works on the communicating sequential
+processes csp concurrency model
+now we will understand how go routines
+and channels operate in concurrency
+model
+first we'll head with go routines
+a go routine is a function that executes
+concurrently with other functions or
+core routines
+go routines work in the background while
+the main part of your program goes on to
+do something else
+go routines are not os threats
+to work with go routine you have to
+prefix the go keyword to the function or
+method a go routine is a lightweight
+thread managed by the go runtime
+now we'll understand the usage of co
+routine with the help of an example
+first we will go through the properties
+of go routines
+every program consists of at least one
+go routine and that go routine is known
+as the main core routine
+go routines are deeply integrated with
+go's runtime course runtime monitors go
+routine behavior suspends them when they
+become blocked and then presumes as they
+are unblocked
+go routines are inexpensive compared to
+threads they possess only a few kb in
+stack size and the stack can expand and
+contract according to the application
+whereas the stack size is fixed in the
+case of threads
+now we'll understand the go routines
+with the help of an example
+here in this example we would be
+passing 11 and 77 as a string to the
+function number
+and then printing it
+with the loop seven times
+so here inside the package main we will
+declare a function number
+and pass a string to it
+inside the function number will run a
+loop seven times and print the path
+string
+to print we have imported fmt package
+now in the function main we will call
+number function and pass 11 and 77 as
+string
+we will save the file
+here i have saved the file with the name
+concurrency.com
+and we'll open the terminal
+and run the file with the command go run
+and then the file name
+we have to make sure to perform this
+operation in the same directory where
+the go file is saved
+here
+we will write the command go
+run and then the file name that is
+concurrency
+dot go and press enter
+we can see
+that we got the output as 11 and 77
+seven times each
+in the main function first the control
+will be shifted to the
+number function
+where be pass 11 it will get executed
+and then the control will come back to
+the main function
+and then the control will be shifted to
+the function number
+when we pass
+77 to it it will get executed and print
+77 seven times now the control will be
+shifted to the main function
+and the program terminates as there are
+no other lines of code to execute in
+main function now we will be
+implementing go routine
+for that we will use the prefix go
+before the function number
+we will write the go keyword before the
+function number we will pass the string
+11
+and we will save the file
+and run the command in the terminal go
+run concurrency.go and press enter
+here we can see
+only 77 as the output would get printed
+seven times
+we have released a thread
+go
+but never waited for it to come back
+that's why we have only voted
+the output as 77
+to get the go thread executed we'll use
+the sleep method in a program
+for that we will write
+time
+dot sleep
+and inside the
+circle brackets
+we will
+mention the time for one second
+for that we have to import the package
+time
+now we will save the file
+and
+run it
+here we have used the sleep method in a
+program through time package that will
+help the main go routine sleep for one
+second
+and in between one second the new go
+routine executes the space 11 as output
+and then terminates
+after one second the main core routine
+reschedules and performs its operation
+we can see the output
+1177 11 77 77 11 77 and goes on
+now we are done with the example let's
+move to channels
+go routines communicate with other
+elements through channels
+channels can be thought of as a passage
+through which go routines communicate
+the channel is defined using the make
+function and the chain keyword
+each channel has a specified type
+defined with it
+this type of data is only allowed to be
+transported by the channel
+the zero value of a channel is nil
+and they are not of any use until
+defined channels are designed to prevent
+race conditions when assessing shared
+memory using code routines
+with that we have come to the end of
+this session i hope it was interesting
+and informative if you liked it please
+let us know in the comment section below
+also subscribe to our channel and stay
+tuned for more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

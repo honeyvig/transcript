@@ -1,0 +1,355 @@
+in this session on go back in our key
+protocol we will apply the application
+of sliding window method which we did in
+the last session
+hi guys and welcome to yet another
+interesting video by simply learn
+but before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to miss an update from
+us
+now without further ado let's begin with
+the agenda for today's session
+to start with we will look into a quick
+recap for the sliding window protocol
+moving on we will look into what is the
+go back nar q protocol
+continuing with some important points
+regarding the protocol
+and then we will also look into the
+working steps of the protocol
+i am continuing with some advantages and
+disadvantages of applying the protocol
+at the end of the session we will also
+solve an example using the go back and
+air q protocol
+let's begin with the sliding window
+protocol
+sliding window protocol is a method to
+share multiple data frames at a time in
+a network channel
+the frames shared in the network are
+based on the window size assigned
+beforehand in the network model
+as for the last point we have
+each of the frames are assigned a
+sequence number for frame transmission
+and also to achieve more efficiency in
+the network channel
+now let's look into some information
+about the go back narq protocol
+this protocol applies the sliding window
+method for transmission of data in the
+network channel
+where n in the protocol refers to the
+window size assigned in the network
+model
+as for the term arq in the protocol
+refers to the automatic repeat request
+which means the sender side will send
+multiple data frames to the receiver
+side according to the assigned window
+size
+and only after it receives an
+acknowledgement from the receiver site
+will it continue to send the frames from
+the sender side
+moving on let's look into some important
+points regarding the protocol
+as to begin with the method applied to
+share multiple frames from the sender
+side to the receiver side is known as
+the protocol pipelining
+where each frame is assigned a sequence
+number for proper transmission of data
+in the network channel
+now let's move on to some other
+important points
+as we already know
+the n in the protocol refers to the
+window size that is the maximum limit of
+frames that can be transmitted from the
+sender to the receiver side before
+reaching the acknowledgement
+for the previous frame
+and in case if the transmission of the
+acknowledgement of a frame is not
+received within a certain time period
+then all the frames from that sequence
+number are to be retransmitted in the
+channel
+this point is to be remembered properly
+because this will be the key point in
+solving a question related to go back in
+arq protocol
+now let's move on to the working of the
+protocol
+to begin with we have a sender side and
+a receiver side
+along with the sequence number
+the window size for the network channel
+and the number of frames will already be
+assigned in the network
+now by applying the sliding window
+protocol we will send the first three
+frames from the sequence continuously
+which will be frame number zero
+frame number one and two
+this is assigned according to the window
+size
+after sending the frames we will have a
+sliding window over the sequence numbers
+that are 0 1 and 2.
+after the frames are sent to the
+receiver side it will use the frames and
+send an acknowledgement signal to the
+sender side
+that would be zero for the first time
+after which we can share the next frame
+that will be frame number three
+from the sender side to the receiver
+side
+after sending frame three
+the sliding window from sequence number
+zero one to two will shift over to one
+two and three
+and similarly
+for frame number one we will receive the
+acknowledgement signal from the receiver
+side to the sender side
+and then we can share the next frame
+that is frame number four from the
+center side to the receiver side
+and the sliding window will shift over
+from
+sequence number one two and 3 2 over 2 3
+and 4.
+as for the next frame that is frame
+number 2 when we receive the
+acknowledgement from the receiver side
+there is a catch
+for any network issues
+the acknowledgement is not received by
+the sender side
+so in this case as discussed earlier in
+one of the important points the sender
+side will not transmit
+frame number
+5
+instead it will retransmit frame number
+2 3 and 4
+where the second frame is the one which
+did not receive the acknowledgement and
+all the frames sent after second frame
+is to be retransmitted along with it
+that is three and four
+to much better understand the solution
+for the example we'll be solving later
+in the video it is suggested that you
+watch the steps involved in the working
+of the go back and air q protocol again
+now moving forward let's take a look at
+some of the advantages and disadvantages
+of using the protocol in a network
+channel
+for advantages we have it increases the
+efficiency of transmission of frames
+it also allows multiple frames to be
+sent at once
+and the time delay is low for sharing
+the packets
+as for disadvantages we have
+the tree transmission of frames in case
+of an error in the network channel is a
+very difficult work
+and it also requires the storing of
+frames on the receiver side that it
+receives from the center side
+now that we have learned everything
+about the go back and airq protocol
+let's take a look at the much awaited
+working example for the same
+let's take a look at the problem
+statement
+in a given network the number of frames
+provided is 10
+with the window size assigned as three
+and for every fourth packet is lost
+find the total number of messages
+or frames sent from the sender side to
+the receiver side
+from this question
+we can get
+three main parts that are the number of
+frames that are given is 10
+as for the window size is three
+and every fourth packet is lost
+let's take a look at the options
+option a27 option b25
+option c 22 and option d29
+i'll give you guys a moment to take a
+look at the question again
+now let's move on to the solution
+as usual we have the sender side and the
+receiver side
+and according to the question we have 10
+frames
+numbering the frames sequentially we
+have frame 1 to frame 10
+and then according to the question we
+have window size as three
+now using the sliding window method
+we'll send the first three frames that
+is frame number one two and three from
+the sender side to the receiver side
+that will be
+like this
+after sending the frames we'll wait for
+the
+receiver side to send the
+acknowledgement
+and the sliding window will appear on
+frame number 1 2 and 3.
+now the receiver side will send the
+acknowledgement for frame 1 to the
+sender side
+and using this we can send frame number
+4 from the sender side to the receiver
+side
+and a sliding window appear on 2 3 and 4
+sequence number
+and similarly for frame number two we'll
+send the acknowledgement from receiver
+side to the sender side
+and send frame number five from sender
+to the receiver side
+and a sliding window appears on sequence
+number three four and five
+then again for frame number three we'll
+send the acknowledgement from the
+receiver side to the sender side
+and send frame number six from the
+sender to the receiver side
+and the sliding window appear on frame
+number four five and six now let's move
+on for the next frame for
+acknowledgement that is frame number
+four
+for this frame according to the given
+question every fourth frame is lost
+during transmission from the sender side
+to the receiver side
+that means
+no acknowledgement will be sent from the
+receiver side to the sender side for
+frame number four
+in that regards or any other frame that
+are sent after frame number four that is
+frame number five and frame number six
+similarly frame number five and frame
+number 6 will also get discarded
+now let's re-transmit according to the
+go back narq protocol
+frame number 4
+frame number 5
+and frame number 6. after retransmission
+frame number four will get acknowledged
+by the receiver side to the sender side
+that means we can send next frame that
+is frame number seven from the sequence
+order
+and the sliding window appears on frame
+number five six and seven
+similarly let's move on to frame number
+five
+but before we do that let's count the
+position of fifth frame in the
+transmission order
+one
+two
+three
+four
+five
+six
+seven and eight
+that's correct
+when we count the position number for
+any of the frames from the beginning we
+use sequence
+not the sequence number given by the
+question
+that means
+fifth
+frame is at the position number eight
+from the beginning that means according
+to the question it will get lost during
+the transmission from sender to the
+receiver side
+similarly
+frame number six and frame number seven
+that was sent after fifth frame will
+also get discarded
+according to the go back in a rq
+protocol again we will retransmit five
+six and seven frame number to receive a
+site from the sender side
+after re-transmission frame number five
+will get acknowledged by the receiver
+side and then we can share frame number
+eight
+from the sender to the receiver side
+and the positioning of the sliding
+window shift from
+five six seven frame to six seven and
+eight sequence number
+now let's move on to the sixth frame
+but according to the positioning order
+position of the sixth transmitted frame
+is number 12
+that means
+it will get lost during transmission
+from sender to the receiver side
+and similarly
+frame number 7 and 8 will also get
+discarded by the receiver side
+and again applying go back in our queue
+protocol we will retransmit frame
+numbers 6
+7 and 8.
+on re-transmission frame number 6 will
+get acknowledged by the receiver side
+and we can share frame number 9 from the
+sender to the receiver side
+and the sliding window will shift from
+sequence number six seven eight to seven
+eight and nine
+now let's recount the position of the
+next frame that is frame number seven
+from the beginning
+and that would be
+16 that means
+frame number 7 will get lost during
+transmission from the sender to the
+receiver side
+and similarly frame number 7 8 and 9 is
+to be retransmitted
+according to the go back narq protocol
+now similarly following all the previous
+steps we can complete this network model
+using go back in our q protocol but this
+is a work you guys have to complete
+and find out the total number of packets
+that were transmitted from the sender to
+the receiver side
+and give your answers in the comment
+section
+with this we have reached the end of the
+session
+if you have any questions regarding the
+topic you can ask them in the comments
+section thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

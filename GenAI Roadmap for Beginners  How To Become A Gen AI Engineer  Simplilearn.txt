@@ -1,0 +1,278 @@
+hello everyone welcome to Simply learns
+YouTube channel today I'm excited to
+share a comprehensive 8we road map that
+will take you from a complete beginner
+to someone who is ready to dive into
+generative AI if you have ever wondered
+how AI creates realistic images music or
+text then this road map is perfect for
+you so basically generative AI refers to
+a branch of artificial intelligence that
+can create new content we whether it's
+image music text or even video so unlike
+traditional AI which focuses on
+identifying patterns and making
+predictions based on existing data
+generative AI uses models like
+generative adversarial networks and
+variational auto encoders to generate
+entirely new content so these models
+learn from large data sets and produce
+creative outputs that mimic the patterns
+Styles and structure they were trained
+on so in this video we will break down
+the learning process step by step so
+that by the end you'll know exactly how
+to get started on your AI Journey
+craving a career upgrade subscribe like
+and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back so before that if you're interested
+to make a career in machine learning and
+AI unlock your potential in Ai and
+machine learning with simply learns
+professional certificate course in
+generative Ai and machine learning in
+collaboration with IIT conut designed
+for aspiring AI professionals this
+program offers hands-on experience with
+machine learning algorithms deep
+learning and NLP Guided by industry
+experts and IIT kpur faculty gain
+essential AI skills through interactive
+live classes self-based videos and
+network with the community of Learners
+and professionals enroll now to take the
+first step towards your future you can
+find the course Link in the description
+box and pin comments so let's get
+started all right so in the first two
+weeks we'll focus on building a strong
+Foundation whether you are starting from
+scratch or brushing up on the basics
+this phase is all about learning the
+essentials that you'll rely on
+throughout your AI journey and the first
+thing we need to talk about is Python
+Programming python is the backbone of
+artificial intelligence it's the
+language most widely used in AI because
+of its Simplicity and Powerful libraries
+so if you new to coding python is a
+great place to start so in these two
+weeks you'll want to get comfortable
+with its syntax and structure Python's
+readability is what makes it ideal for
+beginners so you'll be working with
+variables data types and Loops the
+building blocks of programming for
+example you'll use Loops to repeat tasks
+which is super helpful when dealing with
+large data sets a common scenario in AI
+another key concept is functions think
+of them like recipes once you define a
+function you can reuse it without
+rewriting the same code this keeps your
+code clean and efficient next we move on
+to the math now I know math can feel
+intimidate dating but don't worry AI
+doesn't require deep math knowledge for
+beginners just the basics to get started
+two areas to focus on are linear algebra
+and calculus linear algebra is essential
+because data in AI is represented as
+metrices essentially gits of numbers so
+these metries hold the data that we feed
+into AI models for example an image is
+nothing more than a metric of pixel
+values understanding how to manipulate
+these matrices like how to multiply them
+add them and transform them is cral when
+trading models
+then there's calculus particularly
+derivatives in machine learning
+derivatives help us optimize models when
+training an AI we want to minimize
+errors and derivatives are what guide
+the model in the right direction making
+it better at predictions or generating
+content over time think of derivatives
+as the compass that points towards the
+best possible solution now with python
+and some basic math under your belt it's
+time to introduce machine learning so
+machine learning is a type of AI that
+learns from data improving its
+prediction or classifications as it
+processes more information so in these
+two weeks we'll focus on understanding
+key Concepts that form the basis of how
+AI learns now let's start by breaking
+down the two main types of machine
+learning which is supervised and
+unsupervised machine learning in
+supervised learning the AI is trained
+using label data think of it like
+teaching a kid to recognize animals you
+show it pictures of cats and dogs
+labeling each one so it learns to
+identify them on its own this method is
+common when you already know the outcome
+you want now unsupervised learning is a
+little different it works with data that
+isn't labeled instead the AI tries to
+find the pattern on its own like
+grouping similar items together a good
+example of this is Market segmentation
+where AI groups customers with similar
+Behavior without being told in advance
+what those groups are so in machine
+learning we also use algorithms like
+linear regression which predicts a
+continuous outcome or decision trees
+which are like flow charts that splits
+data on specific criteria to make
+decisions so learning these fundamentals
+is crucial because these algorithms are
+the Stepping Stones towards more complex
+AI systems now as you start diving into
+actual machine learning projects you'll
+need a deep learning framework to help
+you build and train your models so two
+of the most popular Frameworks are
+tensor flow and P torch so these
+Frameworks are powerful tools that
+provide pre-built libraries for building
+neural networks and other AI models the
+idea here is to make it easier for you
+to implement complex algorithms without
+having to code everything from scratch
+so tensorflow is known for its
+flexibility and scalability making it
+ideal for production level projects
+while py toor is often praised for its
+Simplicity and ease of debugging making
+it great for research and
+experimentation now with a basic
+understanding of machine learning you
+are ready to dive into deep learning
+this is where AI really starts to shine
+deep learning is a subset of machine
+learning and it uses structures called
+nudle networks to mimic how the human
+brain processes information so at the
+heart of deep learning on neural
+networks think of these networks as a
+series of interconnect Ed layers with
+each layer processing data and passing
+it on to the next it starts with an
+input layer where the data first enters
+the network followed by the hidden
+layers and finally the output layer
+which gives us the prediction or result
+so in each hidden layer the network
+learns to recognize increasingly complex
+patterns the process is similar to how
+human brain works when neurons fire in
+response to stimuli gradually learning
+and refining the understanding the goal
+of training a neural network is to
+adjust its connections or weights so
+that it produces accurate results nud
+networks come in different flavors and
+depending on the task you'll use
+specialized types like CNN which are
+convolutional noodle networks so CNN are
+designed specifically for analyzing
+visual data like images or videos
+they're used in tasks like image
+recognition where the network learns to
+identify features like edges textures
+and shapes eventually recognizing entire
+objects like cars animals or even phases
+CNN works by applying filters to the
+image data breaking it down into smaller
+more manageable pieces and recognizing
+patterns that are critical for tasks
+like image classification now on the
+other hand ents are used for processing
+sequential data such as text or time
+series data they have a unique structure
+that allows them to remember information
+from previous input which is key for
+tasks like language translation or
+speech recognition in arance the network
+retains information from earlier in the
+sequence making it ideal for
+understanding context over time and now
+the final stage of your 8we journey
+generate cretive AI this is where AI
+becomes creative generating new data
+like realistic images videos music or
+even text so these last two weeks are
+dedicated to understanding and working
+with generative AI models so there are
+two main types of generative models
+you'll want to explore generative
+adversarial networks or Gans and
+variational Auto encoders or vaes so
+let's start with G it consists of two
+noodle networks that play a game with
+each other one network called the
+generator creates fake data like images
+the second Network the discriminator
+tries to figure out which images are
+real and which are fake over time the
+generator gets better at producing
+realistic images because it's constantly
+being trained by the discriminator
+feedback Gans are responsible for much
+of the groundbreaking work in AI
+generated art deep fix and even game
+design now Vees on the other hand
+compress data into a simpler form and
+then try to reconstruct it this process
+helps the model learn how to generate
+new unique output based on the patterns
+it has learned from the data so they are
+great for generating variations of data
+like new phases or styles of artwork
+that doesn't exist but still resemble
+the input data both models are
+incredibly powerful and open up exciting
+possibilities for Creative AI projects
+so that's your complete generative AI
+roadmap for beginners by following this
+step-by-step guide you will build a
+solid foundation in Python machine
+learning deep learning and generative
+models so if you found this video
+helpful make sure to like subscribe and
+drop any questions or thoughts in the
+comment section thanks for watching
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+[Music]
+more hi there if you like this video
+subscribe to the simplylearn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here here

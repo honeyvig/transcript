@@ -1,0 +1,3807 @@
+hello everyone welcome to this full
+course video on git and github by simply
+learn in this video you will learn about
+one of the most popular version control
+systems in detail we have our
+experienced instructors matthew anjali
+jadanand ishan and anuj who will take
+you through this course and help you
+learn everything in under 3 hours first
+matthew will help you understand the
+basics of get and then anjali will help
+you with installing git on windows you
+will learn about github and look at the
+difference between git and github
+chidanand will help you learn about some
+of the essential git commands then anuj
+will make you understand git merge
+conflict and how to resolve it finally
+we have some critical interview
+questions on git over to matthew now
+hello this is matthew from simply learn
+and today we're going to delve into git
+and what it actually is and how it fits
+within your devops stack so a little
+scenario before using gets one of the
+challenges that a lot of developers and
+development teams would have had is
+developers would be working on different
+types of code whether it was database
+code whether it was a python or whether
+it's java or net and they would have a
+central server that they'd be pushing
+all of their source code in but there
+was little or no communication that was
+actually going on in between all the
+developers you know the challenge you
+had with that scenario is that when
+people would be checking in code you
+could be like you know there'll be
+conflicts and you'd have to roll back
+different code versions and this is
+really kind of the challenge that git
+addresses git is a tool that allows all
+of the developers no matter what stack
+they're working in to have access to all
+of the code and it makes it much more
+effective at being able to have
+development teams work on small medium
+or even massive applications and some of
+the biggest applications out there are
+managed through a get distributed server
+environment
+so let's jump into what we'll be
+covering so you have a clear
+understanding of the value that you're
+going to get out of watching this
+presentation so we're going to go
+through devops and the tools have
+available for devops we'll talk about
+what version control means within the
+devops environment and cover the two
+different types of version control
+centralized and distributed and then
+we're going to zero in on git which is a
+really fantastic distributed version
+control system and we're going to go
+through understand the features workflow
+branches and commands in git we can give
+you a demo and then summarize all the
+activities at the end of the the
+presentation so what is devops well this
+is one of my favorite questions i love
+the idea of what devops is so devops
+really is a culture of being able to
+deliver solutions faster where your
+development teams and your operation
+teams work effectively together the idea
+is to be able to continuously build out
+solutions and have testing codes that's
+built into your solutions so that no
+matter where they are in the stage of
+the integration and deployment life
+cycle they're always being tested and
+you can always have code being ready to
+be released out the idea is that instead
+of having big releases that you would
+have maybe once every two weeks or once
+a month that you would actually have a
+continuous stream of releases because
+you always have code that is being
+tested you have your network that's been
+tested you have your environment being
+tested and you'll be able to provide
+feedback directly to the appropriate
+person whether they're in devs or
+whether they're in ops to be able to be
+successful at being able to deliver
+solutions faster the bottom line your
+dev team things like operations and your
+operations team begin to feel like think
+like developers it's really a fantastic
+way of being able to speed up delivery
+and have your team just think and feel
+and act in a different cultural
+environment so let's have a look at some
+of the tools that are available to you
+in devops environments if we look at
+devops it's really kind of split into
+two areas the dev side you have building
+code planning and testing and then on
+your upside you have release deployment
+operating and monitoring but the tools
+really all interact with each other and
+what's really great is that the tools
+are either open source or very very low
+in cost in fact most of the tools you're
+seeing in front of you right now are
+open source tools which means there's no
+licensing to you and you can actually
+effectively manage them and implement
+them within your team right now so let's
+have a look at some of the dev tools
+that you have for doing code versioning
+and so some of the tools that you may
+have used in the past include subversion
+team foundation service um and git these
+are all different types of version
+control software you have out there one
+of the oldest ones is subversion it's a
+centralized version control system it's
+one of the tools i used years ago it
+really is good at doing what it's
+supposed to do which is just a very
+simple version controlled solution it's
+open source so it's free and there's no
+licensing there are challenges with
+working with it because it is a
+centralized tool rather than a
+distributed tool we'll get into that in
+a little bit but for a very basic
+virtual control system you know it does
+what you wanted to do team foundation
+service solutions something that many of
+you in microsoft world may be using for
+a long time and the thing that's great
+about tfs is it's built right into the
+microsoft environment it's the server
+side the services side of building out
+your solutions with microsoft um just
+recently in the last couple of weeks at
+the beginning of september 2018
+microsoft actually just rebranded tfs as
+azure devops and so you have azure
+pipelines and there are five now azure
+tools as you replace tfs but these are
+all tools that are very similar in
+concept the old tfs tools are very
+similar to the centralized svn tools
+whereas the new tools that are part of
+azure are actually much more aligned
+with git so what you're seeing is
+microsoft moving from the centralized
+server to a distributed server with
+their new azure devops tools which is
+fantastic news for every developer
+listening to this and then we have get
+and git is a distributed version control
+system it is again open source which
+means that you can start using it right
+now without fear of having to have any
+costs or any penalties and the thing
+that's really good about it is that it's
+really you can use it for almost any
+kind of digital project and what it's
+good at is being able to create that
+historical record and versioning of your
+source code whether you're doing a web
+application a mobile application or
+you're actually building a python script
+for a machine learning solution so let's
+dig into what version control systems
+are and how they can be of value to you
+so the role of version control system is
+to allow developers to be able to check
+in their files into a repository and
+here you can actually see how we can
+check in three files into a repository
+and that repository then becomes a
+snapshot or a historical record of the
+files that we're working on and you want
+to be able to have it so that the
+repository is flexible enough so that as
+you want to be able to scale and add in
+new files or new versions of a file that
+you can actually do that easily within
+your vcs environment and the goal is to
+be able to constantly have each of these
+versions available so that anybody wants
+to be able to check out the file can
+actually have the latest version or see
+a history of how that file became what
+it is today let's look at centralized
+version control systems and then we'll
+compare it against distributed version
+control systems so a centralized version
+control system has a central server
+where all the files are stored and
+everybody has to check in and check out
+from that centralized server
+and all of the versions are managed
+within that server environment
+the problem is is that if that central
+server crashes which doesn't happen but
+very often but it can happen you end up
+losing all of your files and i was
+actually on a project where that
+actually happened to us and we lost six
+months of history of how the application
+was created fortunately for us we
+actually had a backup but it didn't have
+all the historical data so we were able
+to at least continue working but we just
+lost a lot of files and it took a while
+to get back into place so let's now look
+at and compare this to a distributed
+version control system with a
+distributed version control system you
+still have a centralized server that
+manages the files but the difference is
+is that as a developer you check out all
+of the files for a project so you can
+actually manage the whole project
+locally on your develop machine and make
+your changes and then you can just check
+in and out the changes that you've made
+to the centralized server the
+opportunity you have here is that the
+server itself if it goes down you're not
+going to be in a situation where you
+lose all the history because everybody
+that's working on the actual application
+has all of the versions of the code
+locally on their machine
+now one of the more popular distributed
+version control systems that out there
+is git i mean it really is probably the
+most popular buyer margin compared to a
+system out there so you know let's dig
+into you know what actually is git so
+git is a version control system for
+managing files and as a developer you
+have a git client on your machine and
+you're able to make changes and create
+local repositories of a program on your
+computer and then you can sync up with a
+remote service such as github or git lab
+or the new azure
+labs environment where you can actually
+store files remotely and then allow
+remote teams to have access to
+those changes in the actual application
+you made so you can track your changes
+easily you have it's the the tool is
+inherently distributed so it makes it
+very easy to manage the code for large
+teams and you can bring people in very
+quickly and you can have people come in
+as specialists and spin them up quickly
+and have them work on a piece of the
+code and then drop them out of the
+project if you want to have a check on
+how this works go and start contributing
+to um any of the the many thousands of
+open source projects at github where you
+can go in with your get tools and just
+contribute to those projects and then
+finally one of the things that i really
+like with git is that it's not a linear
+development approach it's not starting
+from a and going to z it's a non-linear
+approach which allows you to have
+branches that people are working on in
+parallel to your master branch where
+people are actually doing the delivery
+of the production code so let's step
+through some of these features
+so git as you can imagine the first
+thing it does is track history that's
+probably the most important part of
+having a version control system it's a
+free open source you can actually go and
+use it right now there are no costs of
+actually using it it is a non-linear
+environment that allows people to be
+able to build out new features in
+parallel to the master branch so that
+you can be constantly having the master
+code out there without and adding in new
+features without breaking the code and
+you can automatically create backups by
+because each developer has a version of
+the code remotely it's incredibly
+scalable some of the biggest projects
+out there now are being managed through
+git and because of this scale the
+collaboration becomes a byproduct of
+teams working together and branching
+just is so much easier within git so as
+you can see this whole thing leads to a
+very effective distributed environment
+so let's step through some of the the
+workflow that we have available for git
+so the way that git works is that you as
+an operator as a developer you have the
+get client on your local develop machine
+whether it's a linux machine a mac or a
+pc and you connect to a remote server
+and you pull down the latest working
+copy and then you're able to make all of
+your changes locally and you can modify
+the codes you can review changes and you
+can commit those codes to your git
+repository that you have locally and
+then you can push those changes back up
+to the remote server and as soon as you
+push them into the remote server those
+changes then become available to
+everybody else working on the project so
+they can be constantly keeping everybody
+updated on all the work that is
+happening so you know typically the way
+that it would work is you know you would
+start off with having the working file
+working directory that you have locally
+then you would stage those files into a
+staging area and then you get those
+files ready to be committed to your git
+repository and these are all actions
+that you would do locally and then
+connect to a remote server and then
+later when you go back into work on your
+project the first thing you should
+always do is check out that code so you
+always have the latest version of the
+code and everybody is kept in sync so
+let's talk about branching in git so the
+way that branches work is that if you
+imagine you're working on a project and
+projects always have a tendency of
+getting bigger than you imagine and what
+you want to be able to do is keep that
+main product working and keeping it
+working effectively but if you want to
+be able to add a feature to that product
+you may have two or three different
+groups that are working on multiple
+features
+simultaneously and what you want to be
+able to do is give them the freedom to
+work on those individual features and
+the way you do it in git is that you can
+create branches off the master and while
+you're off the the main branch which is
+called the master and so each person can
+be working on their own separate branch
+and then when they want to they can then
+later merge those branches back into the
+main master and all this time the main
+master still works and still able to
+produce the right code for the customer
+but at the same time it allows the
+developers the freedom to be able to
+write in their new features and so we
+can look at this in a little bit more
+visually with the master branch and we
+can put in small features of large
+features and we can then merge them back
+as we need to so this kind of covers
+some of the commands that we have in git
+so the first command you'd want to use
+is called git init and that's allow you
+to go into a folder on your local pc and
+or your local mac and convert that file
+that folder into a local git repository
+and that creates that repository then
+you want to be able to make changes to
+that repository and the commands you'd
+be using in this instance would be add
+commit or status and you want to be able
+to sync your repositories with the
+remote server so be able to put the code
+that you have on your computer on the
+remote server you just push you know get
+the code from the remote server you use
+pull and then add origin and then if you
+want to do parallel development from the
+master branch the main branch you would
+use branch merge or rebase as ways to be
+able to do parallel development
+a very warm welcome to all our viewers
+i'm anjali from simply learn and today
+i'll be showing you the installation for
+git on windows so we'll start by
+downloading and installing git on our
+system we'll then have a look at the git
+bash interface we'll type in some basic
+git commands next we'll create a local
+repository that is we'll create a
+repository on a local machine we'll then
+connect to a remote repository and
+finally we'll push the file onto github
+first things first we need to download
+and install git so download git for
+windows and i'll select the second link
+so 2.19 2.19.1 which is the most latest
+version of kit that's the one we want
+for windows system choose your version
+so mine is a 64-bit system and it's
+downloading so this will take a while so
+git is finally downloaded now we need to
+install this on our system
+click here
+run
+so go to next we don't have to change
+this path
+uh just so just click on in quick launch
+and on desktop
+next
+next again next nothing to change here
+either
+and install
+so now git is getting installed on our
+system
+so we don't need to view the release
+notes we just want to launch the git
+bash
+so let's just tick that and then click
+on finish
+and your git bash interface appears here
+so we are on the master branch the first
+thing we do is we'll check the version
+for our git so the command is git dash
+dash version
+and as you can see version 2.19.1
+on our windows system which is exactly
+what we just downloaded we'll now
+explore the help command so let's just
+type git help config so config is
+another command and as i hit enter the
+manual page for the second command
+opened up which is config so what help
+command does is that it provides the
+manual or the help page for the command
+just following it
+so in case you have any doubts regarding
+how a command is used what a command is
+used for or the various syntax of the
+command you can always use the help
+command now there's another syntax for
+using the help command itself which is
+git config dash dash help enter this
+does the exact same thing as you can see
+now that we looked at the help command
+let's begin by creating a local
+directory so mkdir
+test
+now test is my new directory i'll move
+into this directory so cd test
+great so now that we are inside our test
+directory let's initialize this
+directory so git
+init is the command for initializing the
+directory and as you can see as you can
+see the path here this is the local path
+where a directory is created so i'll
+just show you the directory test and
+it's completely empty
+what we do now is we'll create a text
+file within this new directory that we
+created so new text document and i'll
+just name this demo i'll open this and
+just put in some dummy content so hello
+simply done
+save this file and go back to your bash
+interface
+let's just check the status now so git
+status and as you can see our file has
+appeared it's visible but nothing is
+committed yet so this means that we have
+not made any change to a file through
+the get tool itself so the next thing
+that we are going to do is we'll be
+adding demo to our current directory the
+next command that we'll be applying is
+the commit command and when you add
+certain files to the current directory
+the comment command is applied on all
+the above directories so git commit
+minus m and a message that will appear
+once the file is committed
+so as you can see one file is changed
+and one insertion
+i'll just clear the screen next thing we
+need to do is we need to link our git to
+our github account so the command for
+doing that is git config
+global
+user dot username
+and this will be followed by our
+username so let me just show you my
+github account so this is my github
+profile and my username is
+simplylearn.github so guys before you
+begin this procedure just make a github
+account type in my username here simply
+learn github and enter and there you go
+a git is successfully linked with github
+next thing we do is we'll just open our
+github
+and we'll create a new repository give a
+repository name so i'll name it test
+underscore demo and create repository
+great so our repository is created this
+is our remote repository what we do next
+is just copy the link and then go back
+to your bash interface
+we need to link our remote and our local
+repository
+so get remote origin and then paste
+the http link and now that our local
+repository and our remote repository are
+linked we can push our local file onto
+our remote repository so the command for
+doing that is git
+push origin master as we are on the
+master branch
+and that's done so now let's move back
+to github i'll just click on test demo
+and as you can see here our local file
+has been pushed to our remote repository
+with that we have successfully completed
+our demo if you have any queries
+regarding this please post them in the
+comment section below and we'll get back
+to you as soon as possible and now we're
+going to go through and do a demo on git
+so we're going to do a demo on git so
+you can feel comfortable running the
+commands in the interface and you're
+able to get get running correctly in
+your environment so the first thing
+we're going to do is we're going to set
+up which version of git that you have
+and then we're going to see if we can
+establish some global configurations
+within your git environment and we're
+going to do sandeep.dash as the name the
+email address is sandeep.simplyline and
+then we're going to do a list of the
+different configuration settings we have
+so to check the version of git that we
+have we do
+get dash dash version in our terminal or
+command line window you can also use
+powershell that'll actually get you
+running in the same environment as well
+all of these tools are going to be
+command line tools and then the next
+thing we're going to do is we're going
+to assign some global usernames and a
+global email address and so that we can
+actually access the get account itself
+locally on the device and so we're going
+to dash and we're going to put in config
+dash dash global user dot name sandeep
+and then a git config
+global globaluser.email
+and
+sandeep.d at simplylearn.net
+and now we're going to check the list of
+usernames and email ids in our
+configuration environment with dash list
+and you'll see that we have everything
+in there correctly here is our username
+right here and our name and our email id
+so if you need any help when you're
+actually doing any of your work in get
+all you have to do is to get help config
+or git config dash help and this will
+allow you to actually get access to the
+help screens so let's just go and type
+that in get help config return and this
+takes us to the help page that's running
+locally on your device and here we have
+a breakdown of all the different
+commands and what those commands
+actually do within a git configuration
+and we can go ahead and we can do git
+config dash dash help and that will
+actually take us to the same page so two
+ways of doing the same thing so we're
+going to go ahead and we're going to
+create a test repository on our local
+system and we're going to do that with
+make directory called test and then
+we're going to move our cursor within
+command window terminal window to the
+test folder and then we're going to
+initialize that folder to become a get
+repository so let's go ahead and do that
+so we're going to make a new directory
+and we're going to call it test and
+we're going to move the cursor so it's
+actually in the test folder we do cd
+change directory to test and you can see
+now we're actually in the test folder
+and now what you have to do is
+initialize this folder as a git
+repository and so we're going to do this
+as git init and it's now a new git
+instance that we can actually now use
+for managing our git environment so
+we're going to create a new file and
+we're going to call it info.txt and
+we're going to put some content in it
+and we're actually going to put it in
+the folder that we've just created so
+you can actually see what it's like to
+test out the get environment with a file
+that hasn't been checked into it yet so
+let's go ahead and do that so we open up
+our folder directory and here you can
+see we have the test folder and we're
+just going to go ahead and create a
+default test file so right click text
+new document info.txt open that and
+we'll just you can put really whatever
+you want in here we're just going to put
+in this information right now name
+equals sam registration number uh one
+two
+four seven nine and save that file close
+it out now if we actually go ahead and
+run a get status command you'll see that
+the info.txt file is in red that's
+because that file has not actually been
+checked into the project it's a new file
+that we've added but hasn't been
+committed yet into the git repository so
+let's go ahead and see what it takes to
+actually add the file to the git
+repository that we just created so we're
+going to do that by doing get add
+info.txt and then we're going to commit
+that into the history of that git
+repository so we can do so it now has a
+version control and we can start doing
+uh forking and other kind of similar
+activities when we connect later to our
+github git environment so we do get add
+info.txt and remember we're actually
+still in the test folder so it's going
+to look for that file in that folder and
+just add it in and now if we go ahead
+and do git status we'll actually be able
+to see that the info.txt file is in
+an active color first of all we have to
+commit it so we go get commit dash m and
+then we're going to commit and we add in
+some quick text you can write whatever
+you want committing the text file it's
+now actually committed into the git
+repository and it's all running locally
+on your pc so we're gonna go make some
+changes to the file and we're gonna save
+it and we want to be able to see how we
+can use git to compare the differences
+between the two files so let's go over
+and we're gonna make some changes to the
+info.txt file here we are here's
+info.txt which is going to add in a new
+line we're going to add in the line
+address and we're going to save that
+file and now when we go over to get
+we're going to be able to review the
+difference so we're going to do git def
+and here you actually see that we've
+added in a new address file so now you
+can actually see this is the difference
+and the difference between the two
+documents now as you can imagine when
+you have code this would become more
+elaborate where you will show you code
+that's been pulled out if you've reduced
+any of eliminating code or if you added
+a new code really useful so we're going
+to go ahead and add our get username to
+a remote location so we can actually
+start testing out the
+file that we've created into a remote
+repository in this case we're going to
+use github and you'll be able to see how
+we can actually then save that file into
+a git repository that somebody else
+could then access and be able to make
+edits to so let's just go ahead and make
+those changes so get config dash global
+user dot username and we'll do simply
+learn and that will associate it with
+this
+git repository that we've just created
+locally so simply on github so simply
+learn github is the username that we use
+on github so we're going to go over to
+github here we are in github and then
+correct new repository
+and then as you can see with simp so
+we're in simplylearn.github and we're
+going to call the new proprietary test
+we're going to make it public so anybody
+can access it and you'll see that it
+automatically adds a readme file and we
+have our test environment set up
+correctly so we'll go ahead and copy the
+url link which is github.com simply
+learn dash github forward slash test.get
+copy that and we'll go back over to our
+command line window and so now we're
+going to add the username to the github
+configuration so what we're doing is
+we're connecting the local repository to
+the remote repository so we type get
+remote add origin and then we'll paste
+in the address and this then allows us
+to connect the local repository that we
+created in the test folder with the
+remote repository and now we're
+connected so now that we've connected we
+can actually push the file that you have
+in the local repository on your pc or
+mac to the remote repository in the
+github server environment so let's go
+ahead and do that so we do get push and
+push is the command to push the
+documents from the origin which is the
+local file to master and master the
+remote file hey and there we are success
+so what we have now is the file that we
+just created in our local get repository
+is actually now in the remote repository
+as well so anybody can access it so
+let's go have a look at that so we're
+going to refresh the github page and hey
+there we are there's info.txt
+has been uploaded and we're ready to go
+that's great that's uh that's what you
+should be seeing so refreshing your web
+page on the remote github folder and it
+could be any get service but just happen
+to be using github because it's free to
+use you'll be able to see that the local
+file has been installed and is now part
+of the get repository in the remote
+server so what we're going to do now is
+we're going to create three more files
+and we're just going to call them
+info.txt info 2 and info 3. and then
+we're going to push them out to the
+remote server and we're going to merge
+everything together into a single
+environment so let's go ahead and create
+those three files and we're just going
+to add those into the folder so let's go
+ahead create new text document info 1
+and then we're going to create info 2
+and then info
+three look at my typing right here okay
+here we go there we are
+okay i'm opening info three and i'm just
+gonna enter some text in here and what
+we're gonna do is illustrate how we can
+do branching and each of these files i'm
+gonna save and then close out and now i
+can go over and so let's create a new
+branch and we're going to call this one
+first underscore branch there we go git
+branch first underscore branch and this
+will be a new branch of the code
+environment that we're creating and so
+hit return and that allows us to create
+a new branch and so what we do is we're
+going to move to the new branch so we're
+going to do git checkout first
+underscore branch and that allows us to
+move into that branch and you see that
+info.txt is already there which is good
+that's what we want to see now what we
+need to do is
+add in the new documents so here we have
+the different steps we've taken we
+created a branch we moved to the new
+branch and now we're going to go ahead
+and add the info 3 txt to that branch so
+you can actually see everything coming
+together and we're going to go at get
+add info three dot txt so we're just
+adding a file like we were previously
+with our initialization our first
+initial git folder and that file has now
+been added to the first branch so we're
+going to go ahead and commit the file to
+the first branch and then we're going to
+merge the documents into the master
+branch so we have everything together so
+let's go ahead and do those steps we're
+going to do the commit first and then
+we're going to merge everything together
+all right so we do get commit dash m and
+we just put in we're just going to say
+uh made changes to
+first branch and that's just uh
+documentation so that we know what we've
+done and there we are we've uh committed
+the file so we had
+that file info 3 txt committed and now
+we're going to go ahead and merge the
+files into the
+main master and so we can actually have
+everything together as one consistent
+environment and we do that by typing in
+so this lists out what we have in our
+master file so we just do ls and that
+shows everything in the folder and we
+have info.txt
+info 1 txt info 2 txt and info 3 txt are
+now all in the first branch so let's go
+ahead and we're going to merge okay so
+actually before we merge we have to
+check out the master branch so we do get
+checkout master so it gets us into the
+master branch and you'll see that we
+have just one file there info.txt so
+we're going to list out the files in the
+master branch and so so what you'll see
+is info.txt info one text and info two
+texts are there but info dot info three
+text isn't there because that was
+created in a separate bunch so let's go
+ahead and merge the first branch into
+the master branch so we do get merge and
+we do first underscore branch and there
+we are we've merged it in and
+excellent that looks good so let's go
+ahead and list out the files that we
+have in the master branch and we do ls
+and then you'll see that we have four
+files including the info three dot text
+that we had in a separate branch now all
+in the master branch in this session we
+will have a look at the basics of github
+before diving deep into the subject
+let's first have a look at a use case
+the used case we will consider today is
+that the world's largest sporting goods
+retail brand decathlon
+decathlon has 1600 stores spread in 52
+countries with around 100 000 employees
+the iit team of github consists of 1000
+members that helps decathlon to bring
+its shoppers journey to their devices
+so here we will first see the problems
+that they faced and then we shall see
+how did they sort out that problem
+in the beginning decathlon worked on the
+data center with the help of a vpn
+and using a vpn was a huge challenge in
+terms of workflow visibility and
+avoiding redundancies
+so the first problem is
+how to maintain workflow visibility and
+avoid redundancies
+then since there are so many stores
+located at so many different places
+hiring of developers seemed to be a
+difficult task as a physical workplace
+was always needed so the second problem
+is how would they hire developers
+now let's see how did decathlon solve
+these two problems one after the other
+in the first case the entire decathlon
+shifted from any other remote repository
+to github
+github turned out to be an amazing open
+source community as the code became more
+visible across the organization and now
+anybody could contribute to it
+then
+let's talk about the second case for
+hiring the developers
+as we know github is an open source
+community so it helped in collaboration
+with any developer all over the world
+the potential developers could now
+contribute to benefit the global
+community
+now the question arises what made this
+contribution possible
+so the major contribution role was
+played by the version control system
+this was just a single case amongst many
+others
+there are many organizations that have
+benefited from github
+now when we have realized how github has
+revolutionized the market let's start
+learning more and more about github it
+is time for us to jump on the topic what
+is github
+github is a service hosted on the web
+where all the projects are stored
+every project on github has its own
+repository and its unique url
+git provides a graphical interface to
+store the files and helps team members
+to coordinate on the project from
+anywhere
+github provides several access control
+and collaboration features like wikis
+and basic task management tools for
+every project
+let's now have a look at the features of
+github
+the first feature we will see is easy
+project management
+github help project managers and
+developers to coordinate better on the
+project
+the work can be easily tracked and
+updated which makes sure that the
+project is on schedule and as entitled
+second feature is increased safety with
+packages
+the packages on github can be published
+as desired
+they can be published privately or
+within a community or can also be
+published publicly
+the packages can be easily downloaded
+from the github to use and reuse them
+next feature is the effective team
+management
+now as all the team members can stay
+updated with all that's happening on the
+project
+so this helps them in staying organized
+and well coordinated the pull request
+and other modification tools make sure
+that the team focuses on the code
+moving on the next feature is improved
+code writing
+with the help of github the quality of
+code has significantly increased
+now with the help of gitpull command one
+can review improve and propose new codes
+along with that suggestions or
+modifications may be discussed before
+changing the original code
+the next feature is increased code
+safety
+github uses codeql which is the
+industry's leading semantic code
+analysis engine
+this tends to find risks in the code
+which other tools tend to miss
+the last feature we shall see
+is easy code hosting
+as the name suggests the codes and
+documentations are hosted in one place
+we also know that there are thousands of
+repositories on github so each
+repository has their own set of tools to
+release and host the code
+finally let's have a look at the
+competitors of github there are several
+competitors in the market
+here we have just put the most common
+ones first is atlassian bitbucket
+then comes first bugs
+followed by surround scm and gitlab
+then we have buddy and finally followed
+by beanstalk let's see the differences
+between git and github
+git is a software that can be installed
+directly onto our systems whereas
+github as we saw in the demo is hosted
+on the cloud then
+git can be used offline we don't
+typically need an internet connection
+unless we need to access the github
+whereas github can only be operated when
+we have an internet connection next
+difference is git is something
+independent and can be used without
+github whereas github has nothing to do
+unless we make repositories in git which
+means it cannot be used without git then
+git is a version control system that
+helps in source code management
+whereas github provides centralized
+hosting of the code on the cloud next
+difference is git does not work
+according to a graphical user interface
+while github is a simple graphical
+interface
+next difference is git is a command line
+so it operates on several commands like
+commit merge push pull etc whereas
+github is a web-based service so it has
+nothing to do with command line then
+git is released under the gnu general
+public license which is an open source
+license it ensures that the software is
+free for all its users whereas in the
+case of github there are two tyres a
+free tire and a paid tie
+in the end let's have a look at the
+competitors of the two as a competition
+git has mercurial supervision ibm
+relational team concert and clearcase
+while for github the competition is
+bitbucket and gitlab hello and welcome
+to git commands my name is chidanand and
+i am with the simply learn team today i
+am going to cover few essential git
+commands and walk you through a
+demonstration for most of it i begin by
+installing a git bash on the git client
+and configuring it for its first time
+usage once i'm done with configuring the
+git client i'm going to spin up few
+repositories locally and work on these
+repositories using git commands once i'm
+happy with my local changes i'm going to
+commit few of them and then push these
+changes to a git server of my choice for
+today's demonstration i plan to use
+github.com which is a cloud hosted free
+service and it provides free account
+registrations for anyone eventually i
+will cover few topics regarding git
+branching and merging because these two
+in my opinion are the killer features of
+the git distributed version control tool
+kit is one of the most popular
+distributed version control tools of
+recent times and like any other
+distributed version control tool it
+allows us to perform various version
+control tasks without really needing a
+network connection before i jump into my
+demonstration let me spend some time
+explaining to you the git client server
+working model what does it take for a
+couple of users to collaborate and start
+working with git the bare minimal thing
+that any user would need in order to
+start working with kit is something
+called as git bash or the git client
+this comes as an installer for all
+popular operating systems like windows
+all flavors of windows linux mac os and
+other operating systems so once you
+install git bash you get a command line
+utility using which you can fire up your
+git commands and ensure that you can
+bring up repositories you can work with
+these repositories by adding files to it
+committing changes to it and all those
+git commands would work perfectly well
+so you can bring up a small repository
+and you can work with your repository
+using this git bash but what does it
+take for you to share this repository
+with another user who has also got git
+bash installed on his system this is
+where you would need something called as
+a git server
+so for user one or one user to share his
+repository with another user he would
+need to collaborate using something
+called as a git server so in the present
+market there are a bunch of git servers
+which are popularly available some of
+them are free some of them come with
+cost because they are licensed a bunch
+of these servers that i can think of are
+github which is one of the most popular
+kit servers that is around in the market
+for a long time now it comes with two
+variants one is the cloud hosted one
+which is the github.com and then the
+other one is an enterprise server which
+comes as a black box that can be
+installed into your data centers so
+typically organizations who don't want
+their source code to be put up on the
+cloud but go for this github enterprise
+servers wherein they buy these servers
+and these servers are hosted on their
+data centers other popular variant of
+the git server is bitbucket this is from
+the famous atlassian products and it
+integrates very well with all other
+atlassian products like jira in recent
+times there's one other variant of the
+git server called gitlab which is
+getting very very popular these days
+because gitlab not just provides a git
+server it also provides something called
+as a runner
+this is a part of the continuous
+integration strategy where as soon as
+you have a source code check-in that is
+going in you have this runner that kicks
+up and builds your particular project so
+all these are bundled together in a git
+lab and gitlab also provides you with a
+community edition which is almost free
+of cost having said that there are a
+bunch of these tools available for my
+demonstration what i'm going to do is
+i've already registered myself on the
+github.com by providing my username and
+my password and i'm going to use a free
+account so whatever repositories that
+i'm going to put up on this server is
+all public by default so i want to
+register myself by using my username or
+my email id and my password so this set
+of authentication is also referred to as
+https authentication
+so in order for me to share my
+repository with say user2 the first
+thing that i got to do was have an
+access to a git server where both user 1
+and user 2 are set up so once i have
+that i can push my repository onto this
+server and provide right kind of access
+so that user 2 or the other developer
+over wishes to collaborate with me on
+this repository can use his credentials
+as long as he's registered properly on
+the git server he can use his
+credentials and pull down this
+repository and work with this repository
+so this is the https way of
+authenticating and sharing repositories
+another popular way of sharing
+repositories or working with each other
+is called as ssh authentication as many
+of you would know ssh means nothing but
+creation of a private and a public key a
+bunch of keys public and private are
+created on the client machine while i
+create a keys i will be asked for a
+passphrase i need to type in a
+passphrase and remember my passphrase
+and then i take this public key and kind
+of post it onto my account within my git
+server so that whenever i'm going to
+connect next time using my command
+prompt or any of the tools it's going to
+challenge me for my passphrase as long
+as i remember my phrase correctly i can
+authenticate myself and get into the
+server so both https and ssh are popular
+ways of communicating with the git
+server having said this let me just get
+started by installing the git bash on my
+local system and then fire up some of
+these git commands and build up some
+repositories make some changes in my
+repository commit these changes and
+later use my github credential to
+connect to my github server and push my
+repositories out there
+let me now go ahead and find my git bash
+for my windows so that i can go ahead
+and install it so i just type in get
+client for windows open up a browser and
+type in for this the first one that i
+find as a gui tool i don't need this gui
+client i need this one
+so this is the git client or the git
+bash that i was referring to it's about
+40 megs and let me just download this
+pause this video for some time so that
+the download happens and come back to
+you once i have the download the
+download seems to be complete when i'm
+recording this video the version that i
+have the latest version that is there is
+2.19.0 and this is a 64-bit version for
+windows so i've got that downloaded let
+me go ahead and find it and install this
+exe
+all right i go ahead choosing all the
+default options i want it to be
+installed in c colon program files under
+the git folder
+everything looks good for me i'm not
+going to make any changes here
+get bash from windows yes i may want to
+use git from windows command prompt that
+sounds good for me open ssh that's fine
+looks good looks good
+no i don't want any of these new
+features
+so what i'm doing is installing the git
+bash or the git client so that i can
+start using my git commands
+the version that i'm using is 2.19.0
+which as i record this video this
+happens to be the latest version
+all right so looks good i don't want to
+see the release notes i'll say launch
+git bash
+so what i get is this window so this is
+the git command prompt so let me check
+if everything is looking good say get
+version it sounds good say get
+help all right a lot of git help
+commands
+everything looks good so
+i ended up installing the git bash i can
+go ahead with all other commands
+now that i have git bash installed on my
+system let me open up a git bash prompt
+and start using it but before i do
+anything i just need to configure it for
+the first time stating what would be the
+username and the email id with which i
+want the git bash to be configured with
+the command to do that is get config
+hyphen iphone global which means that
+this setting that i'm going to set would
+be a global setting user dot name
+and this the name of the user would need
+to be specified within a double quote in
+my case i am using the simply learn
+account which is the official account
+and this is the particular user name of
+this account the other setting is
+nothing but git config hyphen f1 global
+this is also global setting
+and this would be the email id
+the email id need not contain a double
+quote
+so in my case this is the email id that
+i would be setting up git to work with
+all right let me check if the
+configurations were set correctly or not
+all right if you see this the username
+and the email id has been picked up the
+way i wanted it to be picked up looks
+good so far all right so what do we do
+next by default whenever you open up the
+git prompt you are placed into your home
+directory let me create a folder here
+which would be a repository folder from
+where i'm going to create all my
+multiple git repositories so i will
+create a folder called let's say git
+underscore demo
+all right
+there's already a folder called git demo
+so let me just delete that in the first
+place and let me create this git demo
+again
+all right let me navigate to this
+particular folder
+so this is the folder let me open up
+that folder using a command prompt
+this is my git demo
+so this would be a folder so i would use
+this folder as a base folder for
+creating all other repositories as a
+part of this demo so let me create my
+first repository a repository is nothing
+but a folder so let me create my first
+folder called first
+repo
+and let me
+get into this repo all right as of now
+this is just an empty folder
+if at all i navigate to this if you see
+that this folder is empty there's
+nothing much in this folder at all at
+this moment
+okay so let me create a repository out
+of this how do i create a repository of
+this it's pretty simple i just run and
+get init command
+when i say git init it means it's going
+to initialize a repository as of now
+the folder contained nothing on it was
+an empty repository so it initialized an
+empty repository in this particular
+folder if at all i look at my content
+you would see that there's a hidden
+folder this would be a hidden folder
+since i've configured my explorer to
+view all hidden folders i see it
+otherwise you wouldn't see it so a
+folder by name dot get is created within
+this first repo and this was created
+because we ran the command git init
+if i get into this folder i see a bunch
+of directories and other configurations
+if you see there's something called as a
+hooks directory a couple of
+configuration files that are here in
+this directory all these relate to one
+or the other type of a client hook that
+can be enabled and there's info this
+objects
+this references a bunch of stuff that is
+there
+so what is this folder this is a magical
+git folder and this is created whenever
+a repository is initialized so by
+default if at all you get into any git
+folder or any git repository you would
+see this dot get folder a word of
+caution do not get into this folder and
+try to modify anything because if you
+fiddle around with this and corrupt this
+particular folder your whole repository
+will go for a toss so let me come out of
+this
+and let me show you another thing
+now if you notice here
+when i was in the folder the repository
+did not have anything after this now
+when i say git in it there is something
+called as a master that shows up so
+typically what happens is whenever a git
+repository is created for the first time
+it creates a default branch the name of
+the branch is called master and that is
+why you would see master within braces
+this doesn't mean anything else other
+than we have a repository out in this
+particular folder and by default there
+is a
+branch called master and we are
+currently on that branch if at all i
+create multiple branches in this folder
+whenever i navigate to different
+branches the branch name within these
+brackets would change
+all right so far so good so we created a
+folder we made it a git repository by
+initializing that with the git init and
+then i'm not put anything yet in the
+repository so let me try to do that let
+me create a few files within this
+particular repository so i use a touch
+command
+touch is a linux command it kind of
+creates this particular folder if you're
+not comfortable with the file
+creation by this way you can always use
+a file explorer and create some files in
+this so i create a file called
+touchmaster.txt i'll open up in the
+notepad
+okay so this is my first file that's
+what i'm going to write inside this
+i save this and i come out of this all
+right now let me do a git status command
+so what does this
+tell you there's no commit set you're on
+the master branch there is an untracked
+file and this shows up in red it also
+gives you all the commands that is
+supposed to be run so if at all you want
+to add this file you would say git add
+and the name of the file and then you're
+going to commit it
+so what happened is that when the
+repository was initialized it was an
+empty repository
+now that a git notices that there is a
+new file in this repository called
+master.txt if at all you want you want
+us to let git know that you want to
+track this file we need to add this to
+the repository so the command to add
+that is called git add i can specify
+either the name of the file or i can
+give a while character saying git add
+dot now if i run the git status command
+again
+it says there's no commits yet
+added a file and the file which was
+earlier in red now shows up in green and
+it says it's a new file master dot text
+all right it also gives you something
+called git remove command if at all you
+want to unstage or undo your changes so
+what has happened is the file which was
+earlier untracked has been added into
+the git index or it is ready for staging
+or it's in the staged state now i can go
+ahead and commit this file if at all
+that's what i want to do so let me do
+that i'll do a git commit minus m and i
+give a message that i want i would say
+this is my
+first get commit
+all right i run the git status command
+again
+and see it says on the branch master
+nothing to commit it's all nice and
+clean so typically what happened was i
+created the empty directory made it into
+a git folder by doing a git init i put a
+file into it i made some changes to the
+file i added that file into the
+repository and i committed to the
+repository if it error i run the git log
+command
+it says this was the commit id or the
+commit
+number or the commit hashtag and this is
+the author if you notice this is the
+email id and the username that we set
+earlier this was done on this date and
+this is the
+commit message that is there all of it
+looks so good let me do one more commit
+into this repository so i will touch
+master one dot text i'll put in another
+file
+i'll open up this particular file
+write something into this
+all right i save this change
+let me also open up the older
+file make some more change into this
+all right so what i did i modified the
+older file that existed i also added a
+new file to my repository now if i run
+the git status command
+it says modified this file which is
+showing in red and it says you have one
+more file which is an untracked file
+all right now let me add both these
+files because these are the changes that
+i want to
+incorporate i would say git add dot i
+run the git status command again
+and it says now this is a modified file
+this is a new file looks good to me let
+me go ahead and commit this so git
+commit with the message that says this
+is my second commit
+all right
+if i do a git log now it shows both the
+commits the first command is the one
+that that shows up at the bottom and the
+topmost one is the latest commit that is
+there so far so good if at all you
+notice
+i'm doing all these git commands without
+really connecting it to any git server i
+don't need any network connection for
+doing any of these things i can keep on
+doing more and more git commands and run
+git commands the way i want to
+without really having any connections to
+the git server
+now that i have my changes the way i
+wanted and i've checked in all the code
+changes into my local repository i may
+want to share my repository with
+somebody else
+and work in a collaborative way so the
+way to do that is as i mentioned earlier
+to host this repository or to push this
+repository onto a kit server
+i already have a github account wherein
+i've registered myself using my username
+and password so i log into my github
+account using my username and
+credentials and let me go ahead and
+create a new repository
+my repository is already there on the
+local system so what i essentially need
+is just a placeholder for my repository
+so that i can link them together and
+push the content from my local
+repository to the server
+if you notice the name of my repository
+is this first repo
+so let me copy this i will create a
+folder structure or a repository
+structure on the server with the same
+name
+so that
+when i pushed my repository from my
+local box it will go ahead and get
+created in the server
+so the repository name should be the
+same as what i created on my local box
+description i would say this is my first
+git
+hub
+repository
+on the server
+this is just an optional description
+that will show up
+and if you notice
+i can't have any private repositories so
+whatever repositories that i'm going to
+create here would be a public repository
+so i choose public and i don't want to
+initialize this with a readme file or
+anything of that because i already have
+a repository with some content with some
+code checked in all that i need is a
+placeholder for my repository on the
+server
+so with this option with just the name
+and with an optional description and the
+repository being public i go and click
+on the create repository button
+so if you notice it gives me a bunch of
+commands that i would need to run in
+order to create a repository and pushed
+onto the server
+and also important point it shows me two
+urls one is the https url and the other
+one is the ssh url as of now we do not
+have any ssh keys that is set up so let
+me use this https url to connect my
+local repository with the repository on
+the server
+so i've done all these things i already
+have the repository set up all that i
+need is a placeholder for me to connect
+my local repository with the server url
+so this would be the command that i need
+to copy
+which essentially links or adds an
+origin with the url of the git server i
+just copy this command
+and run it here
+get remote add the name of the remote is
+called origin and it points to an https
+url which is nothing but the placeholder
+that i've created on the server
+all right so let me check if it's added
+correctly
+okay the url looks good i'm all set i've
+got two comments in my repository i'm
+done with all the changes so let me try
+to push my repository onto the server
+the command for doing it for the first
+time is git push hyphen u this is for
+linking the upstream
+origin
+master
+so git push hyphen u upstream linking
+origin master link the master
+branch of my local repository with the
+master branch on the server repository
+and where is it going to push it is
+going to push by default to an origin
+and the origin points to this url
+all right let me try doing this
+so it essentially opens up an url asking
+me the credentials with which i need to
+log into my github server so let me just
+copy and paste
+the username
+and the password with which i have
+registered
+i would say login
+okay success
+so i'm able to create a repository on
+the server and the content seems to be
+pushed and it created a new branch
+called master it has linked the master
+branch from the local repository with
+the master branch on the server so let
+me go back to my server and refresh this
+page
+and see if all my commits have come in
+master
+master1.txt if at all i see the commits
+there seem to be two comments this is my
+first comment this is my second comment
+and if at all you notice each of this
+commit comes with a hash key or a hash
+id which contains the details of my
+commits in this commit the files were
+added this was a line that was added if
+you look at the second commit
+i added these lines
+i made this you know one line chain that
+was there i also added this new file
+which was not existing these are the two
+commits that existed
+and if you see
+the timestamp of the commit this is the
+commit which was committed for 15
+minutes ago so what does this mean is
+that the commit is the timestamp when we
+actually commented the code in the
+client the pushing is just after we
+committed the chain we pushed it so
+there's no timestamp of the push that
+happened
+this completes the first part of the
+tutorial wherein i create a repository
+on the client and then i pushed it to
+the server after creating a repository
+skeleton on the server
+now let me demonstrate to you the ssh
+configuration that is required for
+creating a pair of ssh keys and ensuring
+that i connect to the github server
+using the ssh mechanism so for doing
+that i need to first create a pair of
+private and public key the command to do
+that is ssh keygen
+hyphen t i will use the rsa mechanism
+for creating my keys capital c and i
+need to specify the email id using which
+i'm going to connect to or i need to
+create the keys for
+all right so generating a private and
+public key pair it says let me know what
+folder should i create the keys in so by
+default the keys are created in the user
+home directory under a dot ssh folder so
+this is pretty good for me so let me go
+ahead and say that that's fine enter a
+passphrase
+so let me enter some passphrase
+keep in mind that i would need to
+remember my passphrase because when i'm
+going to authenticate myself using ssh
+mechanism it will challenge me for this
+particular passphrase i need to enter
+the right passphrase so that i get
+authenticated
+so the key is generated and by default
+it is created in this particular folder
+so let me go over to that particular
+folder
+and this is the folder where the keys is
+generated you would see a public key and
+a private key that is created let me
+open up the public key with
+a notepad
+and then copy the contents of the whole
+file
+and now i would need to stick it in
+on the server so that i can get myself
+authenticated using ssh keys
+so i have logged in to github using my
+credentials and go to my settings
+and you will see an ssh and gpg keys let
+me click on that as of now there are no
+ssh key or gpg keys so i will click on
+new ssh key and let me paste my
+public key that i've copied
+and i would say add ssh key
+it prompts me for my password just to
+make sure that
+i've got the right kind of
+authentication to be adding a new key so
+this one looks good that means the keys
+were added successfully let me check if
+my ssh keys are working well
+so i do ssh hyphen capital t
+i would say get
+at
+github.com
+this is just to double check if my ssh
+keys
+are authenticated correctly are you sure
+you want the connection yes you want to
+continue yes
+all right now
+a check for my passphrase let me enter
+my passphrase
+i hope i remember it correctly
+all right
+pretty good i have been successfully
+authenticated so that means now my ssh
+keys are good and just by using my
+passphrase i can connect to my github
+server using ssh all right so for the
+second use case what i would do is
+create a repository on the server with
+some content in it and then clone that
+repository cloning is nothing but making
+a copy of that repository
+linking the origin so that i create an
+exact replica of the repository which is
+there on the server on my local drive so
+let me first create a repository on the
+server i will create a new repository
+let me give a name for my repository and
+let me kind of initialize that with the
+readme file i would call this my second
+repo
+give some description
+this is my
+second repo
+that is created
+straight
+on the git server on the github server
+to be precise
+it's a public repository this time i'm
+going to choose this option
+the reason being that i don't want to
+create just a skeleton as of now i want
+to create a repository with some readme
+file in it a random readme file with no
+content in it but then i want a
+repository to be created on the server
+all right i say create a repository
+so
+a random readme file with some content
+in it gets created and i can see there
+are two urls to this repository https
+and ssh so this time let me copy the ssh
+url so that i will use this url to clone
+this repository on the server
+rather from the server to my local box
+all right so let me navigate to my root
+folder the folder that i created for
+making all my repositories git
+repositories if you see my first deposit
+is already here so let me clone my
+repository the second repo that i
+created on the server the command to do
+that is get clone the url of the
+repository that i want to clone
+oops
+looks like i didn't copy the url
+correctly let me copy that again
+copy this url
+all right so if you notice there is no
+https to it i'm just cloning the url
+that is ssh url of the repository
+it asks for my passphrase again
+okay
+so i just had first repository earlier
+now i have something called a second
+repo this is an exact replica of
+whatever was the repository content that
+was created on the server so if i get
+into
+the repository there's just a simple
+readme file that is there let me try to
+add a new file out here i would say
+notepad
+second.txt some text file i'm going to
+put in here yes definitely you will not
+find that file there
+this is my second
+file that
+i will push onto the server
+i'm going to put in some content out
+there
+i'm going to save this
+and if i do get status
+it says this this is a new untracked
+file do you want to add this file
+onto the repository you want to track
+this file yes i definitely want to track
+this file let me also commit my change
+to the file
+with the message
+this is my first
+commit for the second repo
+i'm giving some particular message
+and this time around since i cloned my
+repository from a server the origin is
+already set for me i don't really need
+to
+add the origin and all that stuff
+because what happened in the first case
+was that i was creating a repository
+from my local box and then pushing
+another server which is why i had to set
+up the upstream branches and stuff like
+that in this case i have cloned an
+existing repository from the server so
+when i clone i get the replica along
+with all references to my repository so
+i don't need to do anything more other
+than push the content i'll just say git
+push to be on the safer side i would say
+origin and master
+ask me for the passphrase
+okay it pushed the content onto the
+server let me see if the contents have
+come in here
+okay wonderful i had only one comment
+now i see my second comment so what was
+added as a part of the second comment it
+says a new file was added all this line
+that never existed got added this is the
+second file the content exactly what i
+pushed onto the server
+now this completes the tutorial when i
+create a repository on the server cloned
+it made some changes to the repository
+and pushed it to the server using ssh
+a quick recap of all the git commands
+that we ran till now
+git init is used to initialize the
+repository so if at all you are creating
+a local repository you can get into any
+of the folder which is not a git
+repository and run this command whenever
+you run this command a magical folder by
+name dot kit gets created in the folder
+and from that time onwards git will
+start tracking any changes that happen
+to that particular folder it also
+creates a new repository and a branch by
+default the branch that is created is
+called the master branch
+git add dot is a wildcard character for
+adding any number of new files into your
+git repository if you have a bunch of
+files one file two file ten files a
+folder containing multiple files in it
+all of them could be added into the
+repository using this command so once
+you add any number of files into the
+repository you can keep on adding more
+and more files into the repository once
+you're done with that you want to commit
+the changes that has happened in the
+repository you use the git commit
+command git commit hyphen m with a
+meaningful message
+this will commit all the work items that
+you have done in terms of the files that
+got changed the files that got added all
+this with one particular message git
+status will give you the status of all
+the files and folders any file that got
+added any file that got created any file
+that was deleted all status of the files
+will be obtained using the git status
+command git log will show you all the
+commit history with the latest history
+or the latest commit showing up on top
+git add remote origin this command is
+used whenever you want to link any local
+repository to a server and this is when
+you want to really push a repository
+from the local to the server for the
+first time git push hyphen u origin and
+master this is the command that you
+would use whenever you want to push
+contents from the local repository to
+the server git clone and the url of the
+server this is the command that you will
+run whenever you have an existing
+repository on the server and you want to
+make a fresh clone or a fresh copy of
+that particular repository onto your
+local box
+more than often many developers or gate
+users find themselves in situations
+where they would want to go back in
+history and modify
+or change some of the files that they
+recently committed or checked into the
+repository now from a perspective of get
+this is a very very simple activity
+however from a perspective version
+control tool you will have to be really
+cautious about the chain that you're
+going to do in case the changes are
+pretty local none of the developers or
+none of the other users who are
+collaborating with you would be affected
+by this change you're good to go ahead
+and make this change however if your
+repository has been pushed to the server
+and you're trying to modify something
+from history this would have a very bad
+or adverse effect on all the other users
+who will be using it you need to be
+really cautious while running these
+commands in case your repository
+contents are local you have not pushed
+your changes to your repository and if
+at all you made some changes to the
+repository maybe to fix a defect or to
+include a new feature and you missed few
+things you can go ahead and modify this
+with some of these commands
+let's say i have this simple repository
+called undo undo repo and if at all i
+look at the logs of these i have the
+commit histories which are like this
+i have about five commits that is there
+in my repository and in c1 i've added a
+file in c2 i've added another file in c3
+i've also added some file in c4 i made
+some changes to m1 and m3 and in c5 i've
+added another file called m4 now this is
+my commit history now let's say i made
+these two comments but possibly i want
+to club them together along with some
+other changes because whatever changes i
+did did not really fix things the way i
+expected it to fix so there is a git
+command called git reset this would
+allow me to go back in history to go
+back to any of the snapshot get rid of
+all this commit history on the commit
+messages but retain the changes that
+were made as a part of these comments so
+if at all i need to go back in history
+and go back to this particular commit
+and however i just want to get rid of
+these commits that are there in terms of
+the commit messages but i want the
+changes that were there as a part of
+these commits to still exist i would do
+command called get reset
+hyphen iphone soft
+now this would go back or unwind my
+changes back to this particular snapshot
+getting rid of all the commit messages
+that were there as a part of these two
+commits but a soft would ensure that the
+file changes that were done as a part of
+these two commits would still exist a
+full remain so the command for that is
+git reset hyphen fn soft which is the
+snapshot that i want to get back to if
+this is the commit that i want to get
+back to i just copy this
+and i paste this
+all right it doesn't give me any message
+but if at all i do a git log pretty one
+line what it says is c1 c2 now the head
+which is nothing but the current pointer
+which is earlier pointing to c5 it's
+gone back to c3 now what happened to the
+changes that were there as a part of c4
+and c5
+if at all you do a git status if you see
+the changes that were part of c4 were
+some changes to m1 and m2 and c5 a new
+file got m4 got added if what i do a git
+status
+you would see those changes still exist
+however from the git history or the git
+commit history c3 is the topmost commit
+that exists as of now c4 and c5 have
+been gotten rid of but the changes that
+were there still exist
+all right now i can make some more
+changes that i want if as a part of my
+commit and possibly go ahead and commit
+this whole thing as a new commit
+altogether maybe i'll open up a notepad
+and possibly create a new file called
+m6.txt
+and say
+one
+new file
+that was missed out
+i make this change
+i go to a get status
+all these files are still there i would
+say git add dot
+also get
+commit hyphen m
+c4
+rewriting history
+and i do a get
+log
+pretty
+there you go
+so c1 c2 c3 still existed and whatever
+was a part of c4 and c5 the older ones
+i've gotten rid of this along with those
+old changes i also added a new file i
+made some changes and it was able to
+commit it now if you look at my gate
+history it's all nice and clean however
+do this activity only when you don't
+push your git repository to the server
+one other most powerful and useful
+command while undoing or resetting the
+history is something called as revert
+this is a safe way of undoing some
+things remember what i talked about when
+exactly you can do a reset it's only
+when your changes are local and is not
+being pushed to the repository take this
+scenario wherein let's say i have a git
+server
+and i have the changes
+which are c1
+c2
+c3
+and possibly c4
+all right so this is a bunch of comments
+that has happened this was the oldest
+comment and this is the newest comment
+and if at all developer 1 is the one
+who's responsible for pushing these
+contents
+in the first place so he has got c1 to
+c4 on his history
+i'm going to jump all this c2 and c3 and
+get into c4 and he's pushed all these
+contents out here
+and there are a bunch of people from the
+server who has pulled this repository
+and all of them are at the same level
+now imagine a use case where developer 1
+then figures out that by mistake he put
+in the c3 which was the wrong thing to
+do and possibly you know he could have
+done a better job of fixing this in a
+different way so he wants to get rid of
+the c3 or c4 or any one of these
+comments
+if he's going to do that and push to the
+server first of all the git server would
+not allow him to go back in history but
+assuming that he forcibly pushed
+something
+what would happen to all these people
+who are looking to work ahead from c4
+all of them would be affected in adverse
+way so
+in short never go back in history if at
+all you need to undo something go ahead
+and put in a new commit to undo
+something
+let's take this example maybe if at all
+a developer 1 wants to get rid of c3
+better way to do that is by adding a new
+commit which is ahead
+say let's say c5 and what does this
+commit do
+this commit possibly gets rid of c3
+instead of going back in history it
+actually is taking your git history
+ahead but as a part of this commit
+you're undoing some part of the work
+that was done as a part of c3
+in short you're removing a commit but to
+remove a commit you're adding a new
+commit and this is why you're doing it
+because there are a bunch of other
+people who are
+you're using this repository
+collaboratively and were planning to get
+ahead in terms of history they cannot
+afford to go back in history and modify
+something in history all right the
+command to do this is called the git
+revert command
+so let me take up this repository which
+has got a bunch of commits in it and if
+at all i do a git log
+pretty one line
+i have these bunch of comments
+and c1 i've added a file in c2 hour
+another file in c3 i've added one more
+file
+and in c4 i made some changes and this
+is the latest commit and this is the
+oldest comment so if at all i see the
+contents of the git
+folder it contains m1 m2 m3 and m4
+and
+let's say looking at the previous use
+case that i mentioned i may want to get
+rid of this particular commit
+i want to get rid of the c3 which is
+nothing but i've added a file called
+m3.txt but i added it by mistake
+i need a better way of fixing it
+possibly i look at it later on but for
+now i don't want this particular commit
+and the changes that were made as a part
+of that commit to exist so the better
+way to do that is using the git revert
+command so git revert
+and the commit id whatever i want to
+revert so if i want to revert this
+i copy this particular commit id and
+bear in mind that considering reset
+revert works on one commit at a time so
+i can do
+one commit revert at a time i can club a
+bunch of them together and do one commit
+but otherwise the revert always works on
+one commit at a time so get revert
+paste this
+essentially what i'm trying to do i'm
+trying to undo this particular commit
+while i'm undoing this commit what does
+git do it safely adds a new commit and a
+part of this new commit it unders
+whatever changes that were done as a
+part of this command so if i say git
+revert this
+all right i forgot to mention the
+message which is why this window is
+showing up but that message is good for
+me i say write and quit
+all right and if i do a git log
+all right if you see this c1 still is
+there in history and our history is
+going ahead from c5 i see another commit
+but what was it as a part of this commit
+actually is getting rid of this commit
+c3 so if at all i see my files here
+there's only m1 m2 and m4
+m3 was added as a part of c3 now i've
+gotten rid of m3
+by getting rid of the revert command for
+c3 so this is a better way of undoing
+things
+now that we have acquainted ourselves
+with few of those basic git commands let
+me get into a very very interesting
+topic regarding git which is about
+branching the topic is interesting
+because kit deals with branches in a
+completely different way compared to any
+other version control tool
+in most of the version control tools
+whenever you create a new branch a
+complete copy or a subset of the whole
+repository is created which in my
+opinion is very very cost inefficient
+because it is a very very expensive
+operation both in times of time and the
+disk space
+however in git you just create a very
+very lightweight mobile pointer whenever
+you create a branch there is no folder
+or no copy of the repository that is
+created in short the branches are very
+very inexpensive and great so go ahead
+and create any number of branches that
+you need however once you create your
+branches do all the work relating to
+that branch in that specific branch and
+once you've completed your task go ahead
+and merge your branches back into your
+base branch and then delete the branch
+let me go ahead and create a repository
+with some branches in this and give you
+a demonstration of that
+so let me go back to my base directory
+which is git demo and then i'm going to
+create a new folder here
+i'll create a folder called arc details
+all right this is my folder here
+all right i navigate into this folder
+and let me create a repository here
+i initialize a repository and dot git
+folder is created without any files in
+it so let me create a few files in it
+say notepad name.txt
+organization name
+i create a name.text within this maybe
+i'll create one more file in this
+notepad
+employees.txt
+simply learn
+has
+over
+3k employees
+i just put in some content in this save
+this content
+all right
+so if i try to look at status i just
+see two files in it so let me go ahead
+and
+add these two files and let me commit my
+changes so okay
+commit iphone am or iphone m
+first command
+so if i do a git log
+i see only one commit and there are two
+files and you can see those two files
+that is here all right so at this stage
+let me go ahead and create a new branch
+and the command for creating new branch
+is get
+branch name of the branch
+so let me name my branch as bangalore
+branch blr branch
+and this created a branch
+but i don't see any changes in the
+folder structure or in the file that
+exists here i've just created this
+branch so if at all i do a git
+branch i see these two branches
+and whatever star means i'm currently in
+this master branch so let me go ahead
+and get into the blr branch at this
+moment the number of files that exist in
+this repository is same there's
+absolutely no change in any of the
+branches both master and blr branch
+point to the same snapshot
+so let me get into
+the other branch and the command to do
+that is gate checkout
+plr branch
+i've actually switched into bangalore
+branch if you see the content of the
+files there's exactly two files the way
+it was earlier because i've created a
+branch from my base branch which is a
+master branch and when i created a
+branch there were two files existing
+here if you see the content of these
+files they would all be the same
+all right so let me create a
+file that is specific to panel branch
+so i would just say notepad
+maybe i want to put down the address of
+this organization specific to bangalore
+in this address dot text so i say
+notepad address.txt
+also simply learn
+angular office
+say located in
+some address
+i would say bangalore
+that is the content of this file
+and i'm creating all this new file in
+this blr branch so i would say git add
+dot
+and i would say git commit hyphen m
+bangalore
+branch
+commit
+all right if you see this now i have an
+address.text which is there only in the
+bangalore branch that i'm presently on
+now let me switch back to my master
+branch the command to do that is gate
+check out
+master branch
+if you remember when i forged out or
+when i created a new branch from the
+master branch i didn't have this address
+or text in it so let me go back to git
+git check out master branch
+and keep noticing this
+particular what happened to the
+address.txt
+it kind of disappeared now how did that
+happen it's all because of this magical
+git folder so what happened is now git
+knows that when you are in the master
+branch the file that was there in the
+bangalore branch which was called the
+address dot text didn't exist
+so
+git is playing around with the file
+system snapshot so if i come back let's
+say i come back to get check out
+bangalore branch
+if you see this the address.txt file
+appears
+so this particular file is only present
+in the branch and git is playing around
+with the file system snapshot by moving
+the pointers across and ensuring that
+whenever i'm switching to bangalore
+branch i see this address dot text when
+i go back to my master branch i don't
+see this bangalore branch
+contents which is the address dot text
+all right now that i created this branch
+maybe i may need to push this onto the
+server so let me go ahead and create a
+particular repository structure on the
+server similar to whatever we did in our
+previous exercise
+so
+the name of the folder needs to be
+exactly this one so let me copy this
+and let me create a repository very
+quickly
+go here and say new repository
+all right this
+is the name of the repository
+get
+branch demo this is what i'm going to
+put in as a description i would say
+public i don't want any readme files in
+it because i already have a repository i
+will just say create a repository
+all right
+let me use
+the ssh url yeah this is the ssh url
+this is good for me so let me copy this
+url
+let me add it here
+i'm linking my local repository with the
+server
+and i would let me come back to my
+master branch
+let me first push my master branch so i
+would say git
+push iphone u origin
+master
+it asks for my passphrase
+all right
+i pushed my master branch looks good it
+says new branch master is created so if
+i go back to my server and i do a
+refresh
+if you see it says only one branch
+and it says what is the name of the
+branch master
+if you see the contents there is
+employees.txt and name.txt
+now
+let's try to push the other branch that
+is there the command to do that is a
+little different compared to
+the way we created it on the client
+because on the client we created the
+branch with a git branch command now
+this branch doesn't exist on the server
+and i need to push this new branch onto
+the server so the command would be
+gate
+push hyphen u
+origin
+and the name of the branch that i want
+to specifically push
+all right now it created a branch out
+here
+let me do a refresh of this
+all right it says two branches
+if i get into this bankrupt branch i
+would see the address dot text if at all
+i go back into master branch i would not
+see this address.txt
+wonderful
+now let me do one thing let me try to
+get the changes from the branch that i
+created back into the master branch that
+is what i would mean by merging i would
+want the changes that is there as a part
+of the bangalore branch to come back
+into my master branch so if i go to
+click checkout
+bankroll branch i see this attached to
+this is there only as a part of
+bangalore branch now assuming that i'm
+done with the changes from the banner
+branch i want to get those changes back
+into my master so let me come back
+to my master branch
+and the way to merge in the changes is
+get merge
+so what is that you want to merge i want
+to merge the bangalore branch changes
+and where will it merge it'll merge it
+into the current branch that i'm on
+presently i'm in the master branch so
+this command would merge the changes
+from the bangalore branch into your
+master branch so with this if you'll
+keep looking here the content that was
+there that was added as a part of
+bangalore branch which was nothing but
+the dot text this file should appear as
+soon as we do a merge
+all right so it happened quickly and you
+would see this address dot text that is
+here so if you see let's check the
+contents in terms of the git log
+all right so there was only one branch
+that we had earlier which had only one
+commit right now we are at this
+bangalore branch commit which was there
+as a part of the bangalore branch commit
+so with this change let me push this
+change onto the server as well
+gate push
+origin
+master
+okay those changes were pushed to the
+server and now
+if at all i do a refresh out here
+okay i mean two branches
+the francis master even if i'm in master
+brands i should see this address dot
+text that is there even if i'm in the
+bangalore branch the content is all same
+because we have merged these two
+branches now that i've merged this
+branch i don't need this branch anymore
+so i would go ahead and delete this
+locally as well as push it onto the
+server so that it gets deleted from the
+server as well so delete branch locally
+the command is get
+branch
+hyphen d and the name of the branch
+only thing you need to ensure is that
+you should not be currently on that
+branch which you're trying to delete so
+i would say get branch
+and i'm presently in the master branch
+so i can go ahead and delete the other
+branch so get branch hyphen d bandwidth
+branch
+all right this got rid of our bandwidth
+branch locally
+if at all i don't get branch hyphen wii
+it shows there's only one branch as of
+now however this branch would still
+exist on the server because server
+doesn't know anything about the changes
+that we have done
+we need to specifically push our changes
+onto the server
+okay there are two branches still here
+so let me go ahead and push these
+changes so that the branch gets deleted
+from the server as well the command to
+do that is get
+push
+origin
+hyphen iphone delete and the name of the
+branch
+all right
+so this went ahead and deleted the
+branch from the server let's check that
+okay if you see now there's only one
+branch
+these are the basic steps that you would
+need to know before you work with any of
+the branches within git and as i said
+before the branches are very very
+inexpensive and good go ahead and create
+any number of branches that you want but
+just ensure that once you create your
+branch finish off your task and once you
+finish off your task go ahead and delete
+the branch and before you delete the
+brands please ensure that you merge in
+the branches so that you get in or take
+in the work that was done as a part of
+that particular branch
+to summarize the gate branching commands
+are as follows to create a new branch
+you issue a command git branch the name
+of the branch and this would
+automatically spin off or create a new
+branch from the existing branch from
+where you issue this command
+if you are on the master branch and if
+you execute this command git branch new
+underscored branch it creates a new
+underscore branch from the master branch
+once you create a new branch in order to
+get into this branch you would type in
+git check out the name of the branch
+this would automatically switch the file
+system snapshot between different
+branches now the branches that are
+created are by default created on the
+local repository in case you want to
+push any specific branch onto the server
+you would have to issue a command get
+push hyphen u origin and the name of the
+branch so this will ensure that the
+contents of the new branch are pushed
+onto the server at any time if you want
+to list out all existing branches on
+your local repositories the command
+would be get branch hyphen av assuming
+that you did all your work in a new
+branch and you're happy with the changes
+you would want to bring back those
+changes into the master branch the
+command to merge the contents of any new
+branch into a master branch would be git
+merge and the name of the branch this
+would automatically merge the branch
+contents that you specified into the
+branch on which you currently reside if
+at all you're on the master branch and
+if you issue a command git merge new
+underscore branch this would merge the
+contents of the new branch onto the
+master branch so once you merge the
+contents of any branch you would
+possibly want to go ahead and delete
+this branch so the command to delete
+those branch locally is get branch
+hyphen capital d and the name of the
+branch this again would delete the
+branch locally in order to make this
+change on the server which is in order
+to remove this branch from the server
+the command to do that is get push
+origin hyphen iphone delete and the name
+of the branch this would also delete the
+branch that you created on the server
+welcome everyone to this lesson by
+simply over here in which we are going
+to talk about the git merge conflict of
+this one now we all have worked on gate
+and we know that git is a very good
+version control system which we have all
+together
+but how to resolve a problem which is
+known as git merge because during the
+developers check-in or do any kind of
+merge activity this is uncommon problem
+which they face on daily basis now this
+isn't something which we are going to
+talk about in this so that we can give
+and kind of an insight to all those
+developers and to other particular
+different people who are using the git
+version control system here now what
+exactly we are going to talk about here
+we are going to talk about what exactly
+is git version control system we are
+also going to talk about what exactly is
+the
+basic git commands used in git
+and then we are going to talk about that
+what exactly is a merge conflict all
+about
+and then the different type of merge
+conflicts which we encounter while doing
+any kind of merging or any kind of
+modifications
+and then how to resolve these merge
+conflicts
+faced by a particular individual or a
+particular developer
+and then the last one is that the
+various git commands which is involved
+in resolving these conflicts
+and then we will be going on with a
+small demo to better understand that how
+these conflicts can be resolved all
+together
+right so let's first of all talk about
+that what exactly is a git version
+control system
+now git is a kind of a version control
+system which we basically used for
+storing a kind of source code there
+which
+can be
+used for storing a source code of
+java.net
+android node.js different kind of
+programming languages can be stored all
+together in this version control system
+so in an organization you will be having
+a full-fledged version control system
+known as git now you may be having
+different projects different
+repositories multiple developers
+multiple collaborators working on
+different different projects so it's a
+very extensive tool which is used by
+different developers and
+in fact it is not only limited to
+developers a lot of other people also
+exactly use this specific tool now the
+main task of using this tool is to
+perform a better coordination of the
+work here among the different people
+among the different developers and also
+to have a proper track of the particular
+progress of the specific project so
+using the repository you can see that
+over the period of time you can do the
+tracking that how the different commits
+are happening here how the different
+source code modifications are being done
+so the complete status and the complete
+stats you will be able to get from this
+a kind of a version control system here
+now it's mainly used for source code
+management here in any particular
+software uh development process or a
+particular team here so it's a very
+important and in fact a key tool for any
+kind of development project so the
+development cannot survive without
+having a get version control system
+now
+git favors both programmers and
+non-technical users now if you are a
+programmer definitely you will be using
+it for
+storing the source code and having those
+particular files having some
+dotnet source code java or some
+particular source code present there but
+in fact if you're not a particular
+developer if you're not a programmer you
+are working as a non-technical job so in
+that case also you can store it for
+keeping your project files
+best example a particular devops
+engineer can also use these repositories
+to store their version control systems
+uh to have these scripts python scripts
+shell scripts configuration management
+tool scripts any kind of automation
+scripts they can store they want to have
+it they can keep use of these particular
+version control system here so it's not
+a dedicated tool for a particular
+developers anyone who wants to utilize
+the features of version control system
+can make use of this specific tool
+in fact it allows a multiple users also
+to work together so different people and
+different programmers can collaborate
+with each other with the help of this
+particular specific tool here
+and it can also handle large projects if
+you feel that you are working on a
+particular big project which is having
+multiple repositories
+multiple
+projects are there so in that situation
+git version control system will survive
+and will provide you a better
+performance in different different
+aspects so it's a very good tool for you
+to handle which big projects where you
+are involved with multiple changes
+multiple programmers multiple
+collaborators and different kind of
+source codes
+now what are the different basic
+commands which we use in git to manage a
+git repository now first of all the a
+very basic command of a gate over here
+is git config
+whenever we work with any kind of git
+repository locally when we do a git
+clone and we
+manage or we do the modification to the
+git repository locally there so in that
+situation we often have to provide some
+details like the username email id so
+that whenever we provide whenever we do
+some kind of commits the author details
+should be submitted
+according to that so in that situation
+we have the particular command called
+git config which will definitely help us
+to do some configurations so that we
+will be able to have some configurations
+configured and we will be able to have
+some author details or some additional
+parameters so all those things we can
+configure using this git config command
+here
+now
+if you want to initialize a
+local repository now you're not working
+on a remote repository
+and you want to initialize a local
+repository in that case you can use the
+git init command in a specific folder so
+that you can convert that a simple
+folder in a full-fledged git version
+control repository so init command is
+used to initialize a local empty bare
+git repository
+next command is git add now git add
+command is used whenever we do any kind
+of modifications or into my local
+repository so that file will be present
+into the working area into the working
+copy over there now the moment you run
+the git add command on couple of files
+or on an individual file so what will
+really happen that all those files will
+be added to the staging area now why
+these files are adding to the staging
+area so that at any moment of time when
+you run the git commit command these
+files will be picked up from the staging
+area and will be preserved permanently
+into the git repository so when you do
+get add command it moves the files from
+your working copy to the staging area
+and it will remain there itself unless
+and until you don't do any kind of git
+commit command further so that these
+files from staging area will be
+permanently written off into the local
+repository so it's a very important part
+that you run git add command before
+running any kind of git commit command
+now git commit command will only pick up
+those files which is present in the
+staging area so if you have done
+modifications to 200 files or 20 30
+those kind of files there if you do the
+git add command only for five six files
+so only those five six files will be
+taken care in case of a particular
+commit so you need to make sure that you
+select the desired amount of files
+before doing any kind of git commit
+activity
+right now next command which we have
+here is git diff command now git div
+command is a kind of base tool which we
+have here which really helps us to
+understand that how we can check the
+difference between two files and in fact
+this git diff command can also be used
+to see the difference between two
+different branches also
+so if you feel that if you have done
+some changes to the file to a specific
+content here now if you want to see the
+difference between your particular
+head revision number and whatever the
+modifications do you have done right now
+so in that situation you can run get
+tiff command it will let you know that
+what the different kind of changes and
+modifications you have done so if at any
+moment of time before doing any kind of
+comments you want to do some kind of
+review you want to see that what
+different changes you have done so in
+that case you can go for the git diff
+command so get div command use to see
+the content the difference or the
+modifications which you have done
+recently to the specific file
+right and the last one we have already
+discussed the git commit command which
+commits the changes to the head revision
+number and this comments are something
+which is stored locally and you will not
+be doing the direct comments to the
+remote repository so commit is something
+which is done into your local repository
+only but yes this is the last stage of
+doing a modifications here once the
+comment is done it will directly modify
+your history your git repository history
+there and the changes will be
+permanently preserved into the
+repository so git command is primarily
+used for permanently preserving the
+changes into your local
+repository right so these were some of
+the commands there now there are some
+further commands also let's discuss
+about them now next command is git reset
+command at any moment of time you want
+to do some undo activity for some local
+changes done to your local repository
+into your git repository in that case we
+can use the git reset command
+then next command is git status now git
+status command will show you the state
+of the working directory and the staging
+area so both these area will be shown
+when you run the git status command if
+you have done any kind of modifications
+to the working area that will also be
+visible to you and if you add some files
+to the staging area that also will be
+displayed using the git status command
+so git status command is very important
+because ultimately it let us know that
+how the different things and then how
+the different files are modified over
+here
+right the next thing is get merge here
+now git merge is a very specific command
+which is used to move the changes from
+one branch to another now
+at any moment of time if you feel that
+you are working on some other branch
+like develop branch or some other
+feature branch and you want to move the
+changes from this feature branch to the
+master branch so in that case
+you don't have to do the commits all
+together again in the master branch all
+you can do is that you can go to the
+master branch and trigger the merge
+activity so this merge activity will
+check what is the difference between the
+two branches and whatever commits is
+missed out it will also be synced back
+into the master branch so git merge
+actively helps us to move the changes
+from one branch to another one
+next one is the git push command here
+now git push command will eventually
+help you to move the changes from your
+local uh to move the different comments
+from your local repository to the remote
+repository now in this case what happens
+that if you are working in offline mode
+if you have done some couple of commits
+now get push will help you to sync those
+comments back to the share to the remote
+repository now these remote repository
+can be github bitbucket or gitlab that
+is a different story but yes all your
+changes will be synced or will be moved
+from your local repository to the remote
+repository right and the last one is the
+git pull get pull is an opposite
+activity of push here now you might have
+seen that some other developers are also
+doing some check-ins or some push
+activity to the remote repository now if
+you still work on an old version of your
+source code it may cause a lot of
+problem for you so at
+frequent intervals you may have to
+pull the changes or you may have to
+download some changes from the
+particular network or from the remote
+repository now once that is done you
+will be able to see that those
+particular changes will be pulled down
+and you will be pretty much able to do
+the uh you will be able to fetch and
+download the changes from the remote
+repository to your local repository here
+so this is an activity which really
+helps us to understand that how we can
+pull some changes from the remote
+repository to your local repository so
+that you can have the latest source code
+which might be uh pushed by some other
+developers or by some other
+collaborators so that you can always
+work on the latest source code into your
+local system so this is again a
+mechanism in which we are trying to see
+that what are the different git commands
+we can explore and we can utilize here
+to interact with the git repository so
+this was some of the basic commands
+which we can use for managing the gate
+repositories here now let's talk about
+that what exactly is a merge conflicts
+now merge conflict is something which
+gets originated the moment we do some
+kind of merging activity now merging is
+an process in which we move some source
+code from one branch to another now all
+the developers cannot work on the same
+piece of branch there so what really
+happens that in that situation all the
+developers mainly work on some couple of
+branches and then they all collaborate
+to some other branch or different
+developers try to push their changes
+from the local repository to the remote
+repository so in all these situations
+the source code gets moved from one
+location to another now what happens in
+as for this diagram we have a remote
+repository over here now all we are
+trying to do is that we are trying to
+push some source code over here from a
+particular developer here now he is
+doing the pull and push activity and uh
+this another developer is there who is
+also doing the pull activity here so
+merge conflicts uh basically happens
+then for example this uh particular
+developer a is trying to do some push
+right so that push is almost done here
+and when the particular developer v is
+trying to
+push the particular results or try to
+push its own content to the remote
+repository he got a merge conflict which
+means that his particular developer b
+merge activity is cancelled is deferred
+here now it could be a possibility
+because of the changes on the difference
+on the two piece of source code there so
+let's talk about that
+now in order to prevent such kind of
+conflicts developers usually provide it
+with the isolated branches so that they
+can work on their branches and once the
+development is done they can do a single
+merge and they can sync their changes
+into a single branch so the git merge
+command combines separate branches and
+resolves any conflicting edits over
+there so once the developers are done
+with the specific changes with the
+modifications to the source code later
+on they can combine those things they
+can work on these components and they
+can resolve all these conflicting
+modifications
+right so a merge conflict is an event
+that takes place when git is unable to
+resolve the differences in the source
+code between the two commits
+automatically
+normally the git is having the
+capability to understand that okay these
+are the two different piece of source
+code which is getting pushed to a remote
+repository but in any case it does not
+happens automatically there is any kind
+of conflict which arises over there and
+git is not able to take any kind of
+decisions so in that situation we will
+be able to get a merge conflict now it
+could be a possibility that one merge
+can happen successfully then the next
+merge will be
+cancelled and will be deferred due to
+this merge conflicts so git can
+automatically merge the changes only if
+the commits are on different lines or
+the branches here so if at any moment of
+time you are diverting from the process
+you are having some different lines of
+source code so that is where the merge
+completes comes into the picture
+now what are the different kind of merge
+conflicts which we normally face
+uh the main types of words conflict is
+first of all uh there are two points
+where we can say that a merge can uh
+happen or can come into a conflicted
+state the very first one is the started
+the merge process now if at any moment
+of time there are changes in the working
+area or working directory and we are
+moving or these changes are getting
+moved to the
+particular working area of the stage
+area of the current project so during
+the merge activity itself the particular
+merge will fail because there are some
+changes or there are some kind of
+modifications which is right now present
+over here in the working area so in this
+case conflicts happen due to pending
+changes
+now for instance you have done some
+modification to the changes now you were
+planning to do the commit but before
+that you felt that i want to do some
+kind of merge now since there are some
+pending changes which is available there
+into your working area so what will
+happen that your merge will definitely
+will there itself so before even
+starting before even initializing the
+merge
+as in particular pre-check your merge
+activity will fail there itself so in
+that situation you have to either remove
+those pending changes or you have to
+resolve those pending changes before
+even going for the merge activity
+second
+during the merge process definitely if
+you are getting some conflict so the
+merge conflicts gets originated so the
+failure during the merge process uh
+indicates that there is an conflict
+between your local branch and the branch
+being merged right so you're trying to
+move the changes from one branch to
+another so it means that there are some
+particular conflicts which is coming up
+in the
+particular branch in which you are
+trying to do the merge so in this case
+get results as much as possible so if
+there is any kind of difference in the
+source code in the comments and the
+different line of source code there so
+git automatically try to resolve it as
+much as possible but at any moment of
+time it's not able to do it's not able
+to manage in that case a particular
+human interruption is required so that
+we can merge or we can
+resolve this particular conflicts
+manually there so these are the two
+types of situations in which a
+particular merge can enter a particular
+conflicted area
+now how to resolve these merge conflicts
+now what happens that in order to
+resolve this merge conflicts the simple
+way to do this is that we open the file
+which is in conflicted uh
+status now once that is done you do the
+required changes
+whatever source code you feel you want
+to proceed
+you will select that source code you
+will use that source code and once the
+edition or editing of the file is done
+so what you can do is that you can run
+the pretty much straightforward command
+called git add to add that file to the
+staging area and then what you can do is
+that you can do the git commit activity
+so that the particular merge completes
+can be resolved and you will be able to
+see a merge here now this is a something
+which is known as one of the best
+approach for resolving the merge
+conflicts because even if it comes up if
+git is not able to handle it
+automatically and it requires for you to
+manage it manually here so definitely in
+that situation we have to open the
+source we have to select that which
+portion of a source code we want to keep
+do the modifications manually and then
+follow the traditional approach to
+perform a custom commit so git add and
+get commit command you will be doing
+there in that situation to have a
+particular final merge executed all
+together so this is the steps which we
+can follow to perform a custom uh to
+resolve a particular custom merge
+conflicts over here
+right now the various git commands which
+we can use to resolve the conflicts here
+now get log hyphen event merges and
+command which helps us to list down all
+the commits that are causing the
+particular conflict here if at any
+moment of time your mergers fail down
+and you want to see that what are the
+different commits which is causing the
+issue here probably you might be you
+know ignoring some comments which is not
+that much important or you can manually
+overwrite the content so that those
+conflicts data can also be added and
+whatever the changes you are trying to
+add that also should be modified
+second command get diff command you can
+always use the uh to check the
+difference between the particular files
+between the repository
+git checkout is something which you can
+use to particularly check out a file so
+that if you want to check out the latest
+content of a specific file or a folder
+so in that case you can make use of this
+git checkout command here so git
+checkout command will definitely help
+you to understand that how we can go for
+or how we can do the checkout of this
+particular repository or a particular
+file here
+right so then we have a command called
+git reset hyphen f and mixed so git
+reset hyphen fn makes is then command to
+undo the changes of to the working
+directory and whatever the particular
+changes you have so that will be undo
+there and it will be
+able to do the undo changes to the
+working area and the staging area here
+now then we have git merge iphone iphone
+award which will be used in order to
+exit the merge process and return back
+to the state before the merchant began
+if you're not able to resolve the merge
+conflicts manually also so in that
+situation we will be aborting the merge
+situation or a git merge over here
+and the last one is get reset so get
+reset command is used at in time to of
+merge conflicts to reset the conflicted
+file so that what we can happen that we
+can go back to the previous situation
+before even starting or the state before
+the merge activity was started there so
+git reset will eventually help me to
+reset all the files which is in
+conflicted area and all latest files
+will be checked out and will be replaced
+so these are some couple of commands
+which we can actually use in order to
+resolve the merge conflicts into a git
+repository now that was something which
+we were trying to understand that what
+exactly the git merge was there and how
+the git merge originated and how they
+get particular merge conflicts gets
+created and how we can resolve it now
+let's go for a proper demo on this one
+so that we can understand it properly
+that how exactly get merge conflicts
+really work and how we can resolve it
+now this is the git bash which we have
+installed to run some git commands now
+in this one first of all i'm going to
+create uh two repositories so i'm going
+to run the command call git init
+a
+that will initialize a repository
+get init b that will initialize a b
+repository here so to repository i have
+got a and b now in uh basis a what i'm
+going to do is that i'm going to add the
+little mode so get remote
+add origin so i'm just trying to add the
+origin over here so the origin over here
+in this one is the maven build so this
+is a repository which i have got into my
+github account the moment you do this
+what next you can do over here is that
+you can run the particular
+next git pull command to fetch the
+latest updates here
+right so next move to the particular
+next command here
+now when you do this what will happen
+that all the changes which is present in
+the remote repository or central
+repository will be available here also
+right so you will be able to see some
+couple of files all together here now
+the same activity you have to do in the
+particular
+b directory also or in the particular b
+repository also so you have to add the
+url the remote url here
+and in this case also we are trying to
+fetch the particular values here now
+what will happen that uh we will be
+doing some modification in the
+particular a repository and then we will
+be pushing that uh change to the remote
+repository and then through the b when
+we try to push the changes so in that
+situation we will try to see that what
+really happens do we really get the
+merge conflicts because both of them
+although is trying to do the changes to
+the central repository but these two
+repository represents two different uh
+local repositories probably in two
+different developers
+machines over here so that's what we are
+trying to replicate here so i'm going
+back to the a directory here so that i
+would be able to do some changes all
+together so i'm just opening readme.md
+file here so pretty much i'm just trying
+to add some vertical changes over here
+to this uh particular file so this is
+what we are trying to do here
+now let me add some particular
+additional and a particular new line
+over here in the file and then save the
+content now once this is done i will be
+able to see that yes there is an
+particular change which is done all
+together here so you will be running git
+add command
+and then get commit command to save the
+commits all together
+so we are giving a particular commit
+here so that we will be able to identify
+that this is something which we have
+committed from repo a now once this is
+done i will be doing the push activity
+so that i can push these changes to the
+particular remote or the central
+repository here so exactly what we did
+over here so far we have a particular
+downloaded remote repository in a
+repository a and then we are doing some
+changes some modifications and once
+those modifications are done we are
+pretty much changing or putting up that
+new commit all together to the github
+repository so this is what we are trying
+to do so far over here in this one so
+this git push activity will uh take the
+particular access
+right so when i do the particular push
+activity here so if the credentials are
+saved then that's fine otherwise it will
+ask for the particular username and
+password all together here so that will
+be asked by the particular activity here
+so it will ask for the password so all
+you have to do is that you have to just
+share that password and your git push
+activity should be passed on or should
+be you know
+done there and as you can see that
+changes really got moved to the github
+repository now sometimes the credentials
+get expired so you may get some
+particular message saying that you have
+to put some password there a particular
+interactive window will be open there
+and you have to prompt or you have to
+provide that password and according to
+that it will proceed further
+right so this will eventually help you
+to move the changes into the github
+repository altogether so all of your
+changes will be pushed to the github
+central repository
+right after some time it really pushes
+my comments to the remote repository it
+will take some time depending on the
+network connectivity and the kind of
+changes you are trying to upload so now
+since uh my particular repository is
+done so what i can do is that i can
+further go back to the uh particular
+directory here now what we can do is
+that we can go back to the beat
+repository over here and in this case
+also i'm just trying to do some
+modifications so for instance that uh
+i'm just trying to
+do the changes here to the readme file
+again of kind of for changes in this one
+now in this case i'm trying to delete
+this line the last line i'm trying to
+delete here or a couple of modifications
+i want to do over here like
+added data
+from
+repo
+and then for the most i want to have let
+me do some arrangement like let me have
+this
+data added all together over here
+or i can add it
+yes so data is added and this data is
+removed so the idea is that we can do
+different kind of reshuffling of the
+data up and down so that we can
+understand that how it really works so i
+have shuffled the data i have removed a
+couple of lines and let's see that how
+it works right so i have even added some
+couple of lines of volte here in this
+new line i have added one line i have
+removed from the last and this
+particular line i have shifted 5 6 line
+up over here now let's me save this file
+and then run the git add command
+after this we are going to run the
+particular comment here saying
+commit
+from
+repo b
+once commit is done same activity
+pushing it to the remote repository now
+let's see what really happens now when
+we are trying to push uh this particular
+change to the remote repository after
+the change was pushed from repo a it
+will throw an error saying that uh the
+particular due to the conflicts the
+updates are simply rejected here right
+so in this case what really happens that
+because
+we are having a different stream of
+source code in a remote repository and
+from local repository you are trying to
+push some different line of source code
+so what next you need to do is that
+first of all you need to do the activity
+called get pull
+hyphen hyphen release or agent master so
+you're going to pull the changes from
+the remote repository so that you should
+be able to get some particular content
+all together in this particular ripple b
+over here now the moment you run this
+let's wait for this activity
+now once that is done you will be able
+to see that you are seeing a message
+saying that conflicts are there so first
+of all you have to resolve this
+conflicts and then it will be proceed
+further you have some couple of options
+like you have to resolve the conflicts
+manually and uh because git is not able
+to handle it otherwise once the gate
+conflicts is resolved you can run git
+reverse or iphone iphone continue if you
+want to escape this commit so you can
+say get rebase hyphen iphone skip and if
+you want to abort the particular this
+rebase here so in that case you can run
+git rebase hyphen iphone abort
+now uh since we want to manage or we
+want to resolve this conflict manually
+over here so what we need to do is that
+we need to open the merge tool on this
+one so once you open the merge tool from
+there you will be able to resolve those
+changes manually and then continue with
+the array base so let's go with the get
+merge tool here so we are going to use
+the command called git merge tool now
+when you run this so what will happen
+that uh it will process it will open the
+normal vi command line over here and all
+the files will be processed all together
+now uh this is the modifications right
+which is uh you know which is done over
+here uh so we are just trying to see
+that which particular file or what
+resultant file we want to configure here
+right now in this case
+since you are able to see that this is
+the final file which is present and uh
+here exactly the merge conflict comes up
+because you can see that three different
+files are given to you in this site so
+you have some files in which you added
+new two lines and here you added this
+line there this artifact will be there
+now here you also added this particular
+new line instead of having this line
+default here
+so what exactly happens when you scroll
+down you will be able to see that where
+exactly is the particular issue or
+whatever the different modifications you
+stand there so in this one if you scroll
+up and down you will be able to see that
+what exactly it happens so the main area
+of conflict is first of all this area
+so this should not be there as per git
+as per the normal file but yes if it is
+there so we have to see whether we want
+to continue or we want to proceed uh
+with this particular specific file or
+not so yes so i will say that okay uh
+let's remove
+this line let's not uh
+just copy this line
+let's delete this line here
+and
+add the line over here in this one
+and uh
+please this line also from here so this
+is what i'm just trying to make use of
+case now here i just want to have
+the particular
+line
+pasted okay delete it
+so this line i will
+okay so i have added this line in the
+final i'm just trying to resolve this
+conflicts manually i'm just editing this
+file here
+trying to remove this one this one this
+one
+and uh this one so this is how my
+particular
+final file looks like and i'm good to go
+to this one now you have resolved the
+conflicts manually by uh doing the
+modification to the file now just press
+colon wq save the file okay and then
+close the other files also
+right
+so this is how i have done the
+modifications and i should be
+able to continue further now so what i'm
+going to do is like i'm going to run
+command git previous i will even
+continue now once that is done so
+the particular commit which
+or the modifications which you have got
+over here so that is something which is
+totally done and yes the reverse is
+finalized over here now again this is
+the manual modifications which you have
+done so you should be good to go to push
+to remote repository so again in this
+case what you're going to do is they're
+going to run like git push
+before that if you want to check the
+particular git log so you can check the
+particular git log over here so the last
+commit which we will try to doing like
+commit from repo b is also available
+over here right so a and b both changes
+are present now so we should be able to
+push the changes to remote repository
+so it will take some time to do the push
+and as you can see it's trying to uh put
+some content so we'll still wait for the
+final confirmation so that we can assure
+that yes all the conflicts is resolved
+and yes that's correct all the
+particular conflicts are resolved and we
+should be able to see both commit a and
+commit b into the repository so let's go
+back to the github portal and see that
+if we really got those particular
+comments in that
+so let's when we access our particular
+repository on github so we should be
+able to see that uh we have got an
+activity that uh the commit is checked
+in there so if you go to the comments
+part you should be able to see that you
+have got these commits gun process all
+together if you click on any one of the
+commit you will be further able to see
+also that what different changes you
+actually moved so this is the way that
+how you can resolve the conflicts and
+you can take care of the changes from
+two different developers or for two
+different push activity so that's it for
+this particular demo i hope you liked it
+thanks everyone
+so we are done with the demo and we have
+understood that how we can resolve the
+merge conflicts with the help of some
+couple of commands now in this we really
+have got an understanding that how the
+different ways of merge conflicts really
+gets originated and how we can
+help or we can make use of some git
+commands to resolve those things now get
+into the next section which is source
+code management and we're going to focus
+specifically on git the reason being is
+that get is really the most popular
+source code management solution right
+now there are other technologies out
+there but for the types of distributed
+environments that we have uh source code
+management with git is probably the most
+effective so the first question you'll
+be asked when it comes to git is to talk
+about the difference between centralized
+and distributed version control and if
+we look at the way that the two are set
+up older technologies such as older
+versions of team foundation server
+though the current version does actually
+have git in it but older versions
+required a centralized server for you to
+check in and check out of code the
+developer in the centralized system does
+not have all the files uh for the
+application and if the centralized
+server crashes then you actually lose
+all of the history of your code now in
+contrast a distributed model actually we
+do check in our code to a server however
+for you to be effective and building out
+your solution you actually check out all
+of the code for the solution directly
+onto your local development machine so
+you can actually have a copy of the
+entire solution running on your local
+machine this allows you to be able to
+work effectively offline it really
+allows
+for scalability when it comes to
+building out your team so if you have a
+team that may be in europe you can
+actually then scale that team with
+people from asia from north america or
+south america very easily and not have
+to worry about whether or not they have
+the right code or the wrong code and in
+addition to that if the actual main
+server where you're checking in your
+code does crash it's not a big deal
+because you actually have each person
+has a copy of the code so as soon as the
+server comes back up be able to check
+back in and everybody's running back as
+if there was nothing that happened at
+all so one of the questions you'll be
+asked is to give the answer to some of
+the commands you use for working with
+git so if you were to be asked the
+question is what is the git command that
+downloads any repository from github to
+your computer on the screen we have four
+options we have git push git fork get
+clone and get commit the answer in this
+instance would be git clone now if you
+want to be able to push code from your
+local system to a github repository
+using git then first of all you want to
+be able to do is connect the local
+repository to a remote repository and in
+the example you may want to talk about
+using the command get remote add origin
+and then the actual path to a github
+repository you could if you wanted to
+actually at this point also talk about
+other repositories such as get lab that
+you can also work with or a private git
+repository that would be used just for
+the development team once you've
+actually then added the local repository
+into your local computer then the second
+action you want to use is a push which
+is to actually push your local files out
+to the master environment so you use the
+command git push origin master so one
+question you may be asked is what is the
+difference between a bare repository and
+a standard way of initializing a git
+repository so let's look through what is
+the standard way so the standard way
+using git init allows you to create a
+working directory using the command git
+in it and then the folder that creates
+is the folder that creates all the
+revision history related to the work
+that you're doing in contrast using the
+bear way you have a different commands
+for setting that up so it would be git
+init dash dash bear and it does not
+contain any working or checked out
+source files locally on your machine in
+addition the revision history is
+actually stored in the root folder
+versus a subfolder that you'd have with
+the normal git init initialization so
+which of the following cli commands
+would you be used to rename a file so we
+have git rm git mv get rm-r or none of
+the above well in this instance it would
+be get mv a question that you'll be
+asked around commit is going to be what
+is the process to revert a commit that
+has already been pushed and made public
+and there are two ways you can address
+this the first is to actually
+address the bad file in the new commit
+and you can use the command git commit
+dash m and then put in a comment for why
+that file is being removed the second is
+to actually create a new commit that
+actually undoes all the changes that
+were made with the bad commit and then
+to do that you would use git revert and
+then the commit id and the commit id and
+it could be something such as 560e
+0938f but you'd have to find that from
+the the commit that you had made but
+that would allow you to revert any bad
+files that you had submitted so there
+are two ways of being able to get files
+from a get repository and you're going
+to be asked to explain the difference
+between git fetch and get paul so get
+fetch allows you to fetch and download
+only new data from a new repository it
+does not integrate any of the new data
+into your working files and it can be
+undone at any time if you want to
+break out the remote tracking branches
+in contrast get pull updates the current
+head branch with the latest changes from
+the remote server so you get all of the
+files and downloaded it downloads new
+data and integrates it with the current
+working files you have on your system
+and it tries to merge remote changes
+with your local ones so one of the
+questions you'll get asked about git is
+what is a good stash so as a developer
+you will be working on the current
+branch within a solution but what
+happens if you come up with an idea
+where it's something that will take a
+different amount of time for you to be
+able to complete but you don't want to
+interrupt the mainline branch so what
+you can actually do is you can actually
+create a branch that allows you to start
+working on your own work outside of the
+main line branch and this is called get
+stash allows you to be able to modify
+your files without interrupting the
+mainline branch so you once you start
+talking about branching and git be
+prepared to answer and explain the
+concept of branching so essentially what
+it allows you to do is
+have a mainline master branch that has
+all the code that the team is checking
+in and checking out against but allows
+you to have an indefinite number of
+branches that allows for new features to
+be built in parallel to the mainline
+branch and then at some point be
+reintroduced to the mainline branch to
+allow the team to add in new features
+and so if we look through the merge and
+get rebase these are the two features
+that you'd be using continuously to be
+able to talk about how you take a branch
+and merge it back into the mainline
+branch so on the left hand side we have
+git merge which allows you to take the
+code that you're creating and merge it
+back into the master on the right hand
+side what you have is a slightly
+different approach this is for projects
+where you reach a point in a project
+where you go okay we're going to
+effectively restart the project at this
+point in time and we want to ignore the
+complete history that's happened before
+that and that's called git rebase and
+that would allow you to rewrite the
+project history by creating a brand new
+mainline branch that ignores all other
+previous branches that have happened
+before it you can if you want to very
+quickly and easily find out all the
+files that have been used to make a
+particular commit so when somebody asks
+you the question how do you find a list
+of files has been changed in a
+particular commit you can actually say
+that all you have to go is find the
+command get diff dash tree dash r and
+then the hash that you would use for the
+commit and that would actually then give
+you a breakdown of all the files that
+have been made with that particular
+commit a question you'll be asked when
+you're talking about merging files is
+what is a merge conflict in git and how
+can it be resolved so essentially a
+merge conflict is when you have uh two
+or more branches that are competing with
+commits in git and you have to be able
+to determine which is the appropriate
+files that need to be submitted and this
+is where you would go in and to actually
+help resolve this issue you'd actually
+go in and manually edit the conflicted
+files to select the changes you want to
+keep in the final merge so let me go
+through the steps that you would take to
+be able to illustrate this when you're
+talking about this particular question
+in your interview now there are
+essentially four stages the first would
+be under the repository name you want to
+select a pull request and you want to be
+able to show how that pull request would
+be demonstrated inside of github so
+within the pull request there's going to
+be a highlight of conflict markers and
+you'll be able to select which conflicts
+you want to keep on which you want to
+merge and which ones you want to change
+so it's a step through how you would
+actually resolve a merge conflict and
+the first step would be under github you
+want to be able to pull the repository
+name and then the pull request around
+that repository in the pull request list
+click the pull request with a merge
+conflict and that you'd like to be able
+to resolve they'll pull up a file that
+will list out all of the conflicts for
+you near the bottom of that file will be
+a list of the requests that need to be
+resolved and then if you need to make a
+decision on which branches you want to
+keep or which ones you want to change
+that will have to be something you have
+to put in instructions inside of the
+file you'll actually see that there are
+conflict markers within the instructions
+which are going to ask you which files
+you want to change which ones you want
+to keep if you have more than one merge
+conflict in your file scroll down to the
+next set of conflict markers and repeat
+steps four and five until you resolve
+all of the conflicts you will want to
+mark your file as resolved in github so
+that the repository knows that you are
+having everything resolved if you have
+more than one file with a conflict then
+you want to go then onto the next file
+and start working on those files and
+just keep repeating the steps we've done
+up to this point until you have all the
+conflicts resolved and then once you
+have all of the resolutions created then
+you want to select the button which is
+commit merge and then merge all your
+files back into github and this will
+take care and manage the resolution of
+the merge conflict within github so you
+can also do this through command line
+and with the command line you want to
+use get bash and so you want to as a
+first step open up get bash and then
+navigate to the local git repository in
+command line by using the cd change
+directory and then list out the the
+actual folder where you actually are
+putting all of your code and then uh you
+want to be able to generate a list of
+the files that are affected with the
+merge conflict and in this instance here
+you can actually see the file style
+filestyleguy.md has a merge conflict in
+it and as before with working with
+github you actually go through and use a
+text address and use any text editor but
+as you go through and edit out what you
+want to keep and what you want to
+manage in your conflict so you actually
+have a resolution that's been created so
+that you'll be able to then once you
+you're using the conflict markers you
+can actually merge your files together
+so that the solution itself will allow
+you to incorporate your commits
+effectively into the resolution once
+you've gone through and applied your
+changes you're able to then merge the
+conflicted commits into a single commit
+and able to push that up to your remote
+repository and with that we have come to
+the end of this video tutorial on git
+and github full course i hope you
+enjoyed watching this video please
+subscribe to the simple one channel and
+don't forget to hit the bell icon thank
+you for watching and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

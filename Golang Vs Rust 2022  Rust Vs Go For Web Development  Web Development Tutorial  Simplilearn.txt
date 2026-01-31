@@ -1,0 +1,277 @@
+hello everyone
+welcome to this video tutorial on golang
+vs rest by simply learn
+in this session you will go through a
+brief introduction to both languages
+colang and trust
+both languages provide high performance
+and efficient hardware capacity making
+them considerable for various projects
+by the developers
+after knowing the basics you will learn
+about the differences between them
+and further you will learn about the
+cones of golang and trust
+so hey everyone i am abhisaruja from
+simplylearn and welcome to this video on
+golang vs rust but before we begin if
+you love watching tech videos subscribe
+to our channel and hit the bell icon to
+never miss an update
+let's start with the introduction to
+golank
+golenk
+it's an open source statically typed
+compiled language developed by google it
+has a stronger focus on building web
+apis and small services that can scale
+endlessly
+it was designed by robert christmer rob
+pike and ken thompson to reduce the
+complexity of managing the
+infrastructure and code bases within
+google
+it comes with go routines
+strong security and some standard
+libraries
+which we'll discuss further now we will
+get introduced to rust
+rust is a multi-paradigm general purpose
+and a high level programming language
+works well for processing large amounts
+of data and other cpu intensive
+operations such as executing algorithms
+credon hori along with dave herman
+brendan h and others introduced the
+language at mozilla research
+it
+got its 1.0 version on may 15 2015.
+rusty is focused on safety stability
+performance and safe concurrency
+now you will drive to compare them
+starting with performance
+go and rust are both compile languages
+and they directly translate the code to
+executable machine code
+both machines produce efficient code
+many big menses use rust to boost speed
+whereas co is famous for reducing the
+number of responsible servers to almost
+a tenth of the original capacity
+rust has the upper hand in delivering
+output over go due to its great runtime
+speed but it lacks at compilation time
+on the other hand go is better in
+compilation time but lacks at run time
+speed
+let's do a comparison of the two from
+concurrency perspective
+go was designed to use cpus efficiently
+and handle multiple tasks simultaneously
+the purpose was accomplished with the
+introduction of go routines these are
+lightweight call fewer resources and are
+executed independently
+they run concurrently with other
+functions and have eliminated the need
+to create new threads
+on the other hand dust was recently
+introduced with the native syntax in the
+form of async await and guarantees
+memory stability
+developers prefer to work with go in the
+case of concurrency now we will move
+ahead and compare the two on memory
+management and security
+go and rust practice safe access and
+memory management with different
+approaches making them the choice for
+cloud computing go offers various
+paradigms such as memory allocation and
+automatic garbage collection to handle
+possible threats
+go gets automated during the run time
+and makes developers do not bother to
+assign or remove the memory
+on the other hand rest ensures no memory
+leakage during the compile time moreover
+the code won't be compiled until its
+memory safe which requires developers to
+be attentive and be aware of memory
+allocation
+let's see the easiness to code and learn
+these languages
+rest comes with a much steeper learning
+curve than go why go is relatively
+easier than rust
+it has a steeper learning curve than
+other languages
+like javascript and python go was
+designed with a relatively simpler
+syntax than rust and was adopted as an
+easier alternative to c
+on the other hand people find trust
+a little hard with syntax as the
+language is new and passing pointers
+make the codes more complex now it's
+time to get to the next point of
+comparison
+that is development speed
+development speed is far more crucial
+than performance that is how quest it is
+to write software with the language than
+to run it
+go with its simplicity set some
+benchmarks by quicker build speed than a
+range of languages in the market
+but it has to sacrifice its runtime
+performance for it
+on the other hand
+rust memory safety feature compromises
+compilation time and its features take
+time to understand
+making the developer compensate with
+both compilation and development time
+now we will move to scalability
+both programming languages are used to
+develop large scale applications with
+their ability to handle multiple
+concurrent functions
+go is designed for large software
+development involving large code bases
+and teams
+handling enormous amounts of data in
+real time it's a great solution for
+dynamic organizations where scale and
+speed define the development workflow
+on the other hand rest has a stronger
+inclination toward applications
+that favor speed such as game
+development web browser components or
+real-time control systems
+now we'll see companies hiring for golem
+and rest
+first we'll start with golem
+first is american express the american
+express company is an american
+multinational corporation
+primarily known for its credit cards and
+payment processing
+their payments and rewards platform team
+adopted go in 2016.
+they focused mainly on microservices
+transaction routing and load balancing
+use cases and they needed to modernize
+their architecture they also published a
+case study
+american express uses go for payments
+and rewards
+next is paypal
+paypal holdings incorporation is an
+american multinational financial
+technology company majorly dominant in
+operating online payments
+their senior director of engineering
+developer experience at paypal
+bala netrogen said that go provides
+channels and routines to deal with
+complexity
+they were able to structure the code to
+meet our requirements
+go is a first class language at paypal
+and there are currently over 100 go
+developers at paper
+uber
+uber technology's incorporation is
+american mobility as a service provider
+uber has now preferred go for building
+many of uber engineering new services
+formerly they were mainly based on
+node.js and python
+golang helps uber to handle a majority
+of high queries per second services at
+uber
+recently they have written geo-based
+services in golang
+next is alibaba
+alibaba group holding limited
+it also known as alibaba is a chinese
+multinational technology company
+specializing in e-commerce retail
+internet and technology
+alibaba group container engine
+pouch container has written in calling
+it can pack deliver and run any
+application
+it helped all online transactions of
+alibaba's smoothly on millions of
+containers
+now we'll see some companies that are
+using rust and they hire developers for
+rest
+first is dropbox it is a file hosting
+service operated by an american company
+that uses rust for parts of its file
+synchronization engine since the engine
+is highly concurrent they choose rust
+over any other language
+cloudflare incorporation it's an
+american web infrastructure and website
+security company
+that uses just as a core language and
+replace c
+with rust for its memory and safety
+feature
+figma it's a collaborative web-based
+design
+tool for vector graphics and interface
+prototyping
+due to the rapid growth they chose rust
+to rewrite their multiplayer
+synchronization engine
+trust has helped them drop off the load
+from their servers
+discord is an instant messaging and
+digital distribution platform
+users communicate with voice calls video
+calls text messaging media and files in
+private chats or as part of communities
+called servers
+discord uses rest in multiple places of
+the code base
+both on the client and server side
+now we will move to learn some cons of
+calling
+first there is a lack of manual memory
+management in goal line
+and sometimes it becomes difficult to
+handle errors
+while using golang
+and there are few libraries and
+frameworks
+there are no major frameworks for golang
+developers other languages such as ruby
+they have ruby on rails python have
+django and php has larval
+now we'll move to learn some cones of
+trust
+learning rest is not easy when compared
+to other languages that's why it has a
+higher learning curve
+low level of monkey patching support
+then python and bird here monkey
+patching refers to modifying a class or
+module at a rental
+the next one is the compiler is slow as
+compared to some scripting languages
+with that we have come to the end of
+this session i hope it was interesting
+and informative if you liked it please
+let us know in the comment section below
+also do subscribe to our channel and
+stay tuned for more from simplylearn
+hi there if you like this video
+subscribe to the simplylearn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

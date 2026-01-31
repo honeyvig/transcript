@@ -1,0 +1,1072 @@
+Welcome to The Ultimate Guide to
+mastering G and GitHub this course is
+your step-by-step journey to becoming
+adapt at managing and collaborating on
+coding projects using the world's
+leading Version Control System G is more
+than just a tool for saving your code
+iterations it's about mastering the flow
+of changes protecting your work and
+enhancing how you collaborate with
+others combine git with GitHub and you
+open up a whole new world of team
+collaboration project management and
+contributions to open-source
+projects we will begin with the
+fundamentals setting up GD creating your
+first repository and mastering essential
+commands from there we delve into more
+complex topics like managing branches
+resolving merge conflicts and mastering
+the art of merging we won't stop at the
+basics get ready to dive into
+GitHub actions you will also get Insider
+tips and strategies from industry
+professionals and by the end of this
+course you will gain both the technical
+skills and strategic insights needed to
+leverage git and GitHub for seamless
+team collaboration and impactful project
+contributions so are you ready to take
+control of your coding projects and
+collaborate like a pro so let's dive in
+and just a quick info for you guys
+craving a career upgrade subscribe like
+and comment
+below dive into to the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back if you are a professional who wants
+to switch careers with software
+engineering by learning from the experts
+then try giving a short to Simply learns
+postgraduate program in fullstack web
+development accelerate your career as a
+software developer through this
+postgraduate program in fullstack web
+development course in collaboration with
+ctech ctme in just a few months you will
+learn more in coding techniques with
+boot camp level intensity and gain all
+you need to be a fullstack technologist
+the course link is mentioned in the
+description box below and pin comment so
+let's get started so hi guys today we'll
+see the difference and what is git and
+GitHub and we'll use some of the basic
+commands so starting with GitHub so it's
+a web based platform that leverages git
+so G is a tool I will move to the
+website so here it's the git it's a tool
+and that's the Version Control System
+and it provides a space where developers
+can collaborate on projects while G it's
+a command line tool so git is a command
+line tool and GitHub provides a
+graphical interface along with
+additional features that help manage the
+projects hosted on the platform so now
+we'll see what is get and
+GitHub so a
+little understanding of both the
+softwares and the tools would be good
+before starting it so think of get as a
+tool that helps you keep track of
+changes made to your files it's like
+having a detailed history book that
+captures every change to your documents
+allowing you to revisit any version at
+any time that if you commit any changes
+or do any change to your project you
+could move on to that change at any time
+so this is especially useful for coding
+projects where you want to see old
+versions of your code or work on
+different features simultaneously
+without interfering with the main
+project
+so git operates primarily through the
+command line and allows for local
+Version Control that is storing all
+version history of files locally on your
+computer and then it has branching and
+merging creating branches to work on
+different versions of a project
+simultaneously then combining them back
+together and then we have the
+collaboration coordinating work among
+multiple people and then we have the
+GitHub so GitHub is where you take
+projects online using git tool tool so
+it acts like a cloud-based service for
+git repositories in addition to all the
+Version Control capabilities of git
+GitHub lets you share your repositories
+with others collaborate on projects and
+even track issues it's a hub where
+millions of developers and companies
+build ship and maintain their software
+so what does gup provides it provides
+project management tools it track issues
+add project notes and manage P requests
+to improve your project manage
+management process then it has the
+collaboration features it discuss
+changes request reviews and manage
+contributions from other developers
+easily and it is open source networking
+so you can explore projects that other
+people have made public contribute to
+others projects and learn from the
+global Community now we will discuss how
+they work together so while get help to
+manage your projects history locally
+GitHub takes this a step further by
+hosting your get repositories in a
+centralized location this means you can
+access your projects from anywhere
+collaborate with others and benefit from
+the robust ecosystem of integration and
+tools that GitHub offers so using git
+with GitHub enhances visibility
+collaboration and project tracking in
+ways that are not possible with get
+alone so now we will introduce G and
+GitHub in the way that helps clarify the
+distinct between complimentary roles
+that each plays in the software
+development
+landscape so moving to the
+website you could
+see so this is the website for the
+GitHub and here if you are new you just
+have to sign up for
+this so he's asking an email address
+here so enter your email address
+if you have the student ID you can get
+some of the more features of the GitHub
+but I will recommend don't use your
+student ID as it will get deactivated in
+the upcoming years so use your personal
+ID
+only so here we will log in from a new
+ID for you guys to let the process know
+how to log
+in and here we have to create a password
+and new
+username I
+would so it's
+saying this one is
+available7 we will continue with that
+only then and email preference receive
+occasion and product updates no we don't
+want and here you could see that the
+GitHub is verifying our
+account uh so he's asking us to solve
+the puzzle but I have my dark background
+on so I'm not able to see the puzzle
+here option
+one option two
+option
+three so you could see he's asking what
+is what option is the sounds of C so
+it's the second
+option and it has got us the right
+answer and now he's asking for the code
+on my mail
+address so we'll get back and check our
+code so I go a code here
+so here you could answer these questions
+that how many team members will be
+working with you you could say just me
+or if you want to collaborate on a
+project you could tell them that would
+be 2 to 5 5 to 10 and are you a student
+or teacher so you could select
+accordingly so we will go for the
+teacher one and what specific features
+are you interested in using that would
+be collaborative coding automated and
+cicd security Client app project
+management team Administration or
+Community for currently we will take on
+collaborative coding Automation and
+cicd and you could choose others
+also now you could see that there are
+free options and the paid options also
+in the paid option you will get the
+additional teacher benefits that would
+be GI up team draft P request required
+reviews what else I will select student
+for you guys okay so we'll select
+student as you guys will be creating
+your account so we will go with that
+option only and here you could see both
+the options and here we will continue
+for free only so this is the dashboard
+of GitHub uh it's a bit confusing but
+you don't have to dig in that you could
+just reach out on the top right section
+and here your profile select all account
+add account and your repositories you'll
+go to your
+repositories and here is what we will
+create our
+repositories So currently we don't have
+any public
+repository now what we'll do is we will
+get back and install git
+tool now uh we are on our git website
+and here we have to download it for
+Windows because it's a tool and we have
+to get it downloaded so we'll click here
+to download the latest version and that
+is 64bit version for G for Windows so
+you could select like if you are using
+Mac OS or doing the Windows setup so you
+can choose accordingly so we have the
+other G for Windows download and that
+would be 64bit for Windows setup so you
+could see that the download has started
+and it has started twice so pause one oh
+sorry it has started twice or more than
+twice I think so getting back here so
+after downloading you can install the
+git and it will ask you some
+straightforward questions uh you don't
+have to check box any check box
+accordingly just the information it
+provides just move on with that and
+install the G on your system so now we
+are coming back to a GitHub
+and we have log into a GitHub and we are
+at the repository section so now to make
+a new repository we just have to click
+on the new button here and you would see
+here this is the repository name what
+you will provide here so what we'll
+write is first
+project let's see if it's available it's
+available and Below there is so
+repository names are unique to your
+account only and can include letters
+numbers hyph and underscores because
+there's an owner here so you are the
+owner here and then there's a repository
+name and then comes the description that
+is optional and this provides a short
+description of your repository this is
+not mandatory but helps others
+understand the purpose of your project
+and after description you could choose
+out the visibility option that is choose
+whether the repository will be public
+that will be visible to anyone or
+private only visible to you and those
+you invite and then there's the read me
+file and initialize this repository with
+optionally you can add a read me file
+and a g ignore file and choose a license
+so if you add a read me file what this
+does is it's a text file that introduces
+and explains your project and it often
+includes information on how to use the
+repository or what the reposit is four
+and the git ignore this file tells git
+which files or folders to ignore in a
+project you can choose a template that
+suits the language or framework you are
+working and then it's the license adding
+a license determines how others can use
+modify or distribute your code so if you
+want to create a readme file you can
+create it so this is how you create a
+repository and if you want a description
+you can add your description
+also and we're making it public
+and getting here we will create the
+repository and after filling out all the
+options you could create the
+repository and you can clone or setup in
+desktop also so after creating a
+repository you can either clone it to
+your local machine using git or set it
+up in GitHub desktop for easy access and
+management so we'll see how we can copy
+it so what we'll do is we will use an ID
+for all the things
+else you can use get bash also so
+there's an option with the name get bash
+and after installing it it will most
+probably appear on your desktop if you
+will choose the option
+else we have the option that is get bash
+so this is get bash and you could see
+there that it is you would see here that
+it's available at the root directory uh
+this bavy symbol
+it appears that we are in the root
+directory if you want to move to another
+directory you could move or if you want
+to create or clone the repository you
+could do that for that you just have to
+use the command get clone and after that
+you have to paste the GitHub link that
+is this link so you you can use https
+you could use SSH also and the GitHub
+CLI also but what we recommend is in
+starting you should use https just copy
+this and coming here paste
+it and you could see that the link has
+been based it so you could clone the
+repository on your system using G but we
+won't be copying it in the root
+directory we will move in another folder
+and you can do all these commands in the
+visual studio code also so let's let's
+see I will show you guys how to download
+vs
+code we will start with all the commands
+and the vs code only so you could
+download for Windows from here that is
+the visual studio.com
+and you could download it and what
+version you want and for what OS you
+want go for it and after downloading
+we'll open our Vis Studio
+code so here what we'll create is we
+will create a new one that is you could
+see welcome here we create a new file we
+will just open the terminal here so this
+is our
+terminal So currently we are in DEA
+folder we
+will get back from here and we are here
+in C users
+abja and here we will create another
+folder and name it as first project
+one that is first project
+and you would see that it has created
+the directory and now we'll move to this
+directory only that is first
+project and now our location is C user
+service first project so inside this we
+will create a new file over here only we
+will copy the Clone so moving back to
+our
+GitHub so you could see here that
+there's an initial commit that when we
+have created we have created the file
+readme.md
+and there's only one commit and this is
+the main file from here you could see
+that this is the main file here and it
+has only one
+branch so this is the first project
+and if you want you could add or use the
+edit option here and edit your read me
+file so I'll will show you guys how we
+could edit this so this is a read me
+file and what we have written here is
+only first
+project so we could write we will be
+creating our first project today
+okay and after this you could commit the
+changes and here you could see that he's
+asking for commit
+messages that you could name it when we
+are committing anything we can add a
+description to it so this is where we
+could add a commit message so it's okay
+that it has written update read me. MD
+file similarly you could write for your
+commit so you could see that it has
+updated
+it and here we could see the history
+also who has edited a repository so
+before you could see that there was
+initial commit so initial commit is the
+first change and we can add it read me.
+MD file what we have done and we can add
+and then click on the commit changes and
+we have also named the commit also and
+we can use the HTML here in the read me
+file if you get back here and write BR
+tag so BR is the for the next line tag
+if we write BR
+tag and then commit the
+changes you could see that the line has
+shifted to the next line so the HTML is
+very basic only you could use HTML also
+here or you could just use the simple
+English
+here okay so as we have discussed so
+GitHub is a web portal and get is on the
+system so we have downloaded the git
+also we have set up the git and the vs
+code also so to verify we can
+check here open the G
+bash so first thing we will do here is
+we will
+verify what version we have so get minus
+minus
+version so you could see that the get
+version installed is 2.
+44.0 Windows
+do1 and after installing the Git You
+Could See the icon on the desktop or you
+could search on your windows search part
+about the G bash so this is the G bash
+only and if you want to know all the
+files here just click on LS and you will
+get all the files that are in the RO
+directory and if you click on PWD you
+could see what is your working
+directory okay now moving on we will
+configure the G here and so for that we
+will we can either move to visual studio
+code or we can do in the get bash only
+so what we'll do we will choose Vis
+Studio
+code and start here so we'll open on the
+folder that we have created it was on
+the users
+only and what we have created was first
+project so this is the folder we'll open
+this and now we'll get a
+terminal okay so now what we have to do
+is we have to configure our G here
+so what we'll
+write
+get
+configure config minus minus and we'll
+write Global here so it will be done
+globally and here we'll write our
+username user do
+name and that will be my name here
+that
+Isis and after that we will configure
+our email
+ID for that we'll
+write get config minus-
+Global user.
+email and here we will configure our
+email
+ID and after configuring we will get a
+list out here for that we'll write the
+command get
+config minus minus list so you could get
+all the list so these are the commands
+that you can
+use and if you want to clear your
+terminal you could do that also like I
+have the option here to kill the
+terminal or you could use the clear
+command also so now what we'll do is we
+will kill the terminal and here we will
+clone a
+repository so we'll use the command G
+clone and getting back to a get
+repository we will clone it and for that
+you could see here
+that he has provided us the full chart
+of the calendar and he will keep the
+track of our activities here and you
+could see there
+are one repository created and there
+were three
+commits now moving back in the
+repository section we'll open a
+repository and from here we will copy
+the link and getting back to a vs code
+we'll clone a repository in a local
+system so this is the command get clone
+and then the link of the repository as
+we have done it you could see that the
+Clone has been updated and inside the
+Clone there is only readme.md file so
+you could see that we are in the uh
+directory of first project Now we move
+to the repository so for that we'll
+write CD first
+project so now we are in the directly
+only so to clear it if we want to clear
+the terminal we could just write the
+command clear and our whole terminal
+would be cleared and you would see we
+are in the repository first we are in
+the
+directory that is first project and
+after that a repository but we have
+cloned it in the
+system and if you want to get all the
+files in your reposit you could just
+choose the command LS and what we we
+have is currently only me. MD file else
+we don't have any file here and if you
+want to know all the hidden files also
+for that you could use the command LS
+minus a okay it didn't
+work so if we create another file here
+that would be the new file if we create
+index. HTML file so this is a new
+file and we are in the repository now
+we'll ask ask him LS and let's see what
+it respond to us so when we create a new
+file it is untracked by the GitHub so we
+get back to GitHub it won't update it
+here there will be only read me file so
+you could see that we updated the file
+here and you could see the U symbol that
+is untracked and when we get back to our
+GitHub you could see there is no index.
+HTML file and when we add or change new
+file then we have have to add it and
+then it gets staged that is we have to
+use the command get add and then it gets
+stag and then we have to use the commit
+command then it will get changed in the
+GitHub also or we could write anything
+that would be
+HTML and inside we could write a heading
+so after changing the file you could see
+that there's a modification here that is
+the m sign now we will add it or if the
+file is that is modified then we have to
+use the commands so guys as you can
+see repeat so guys as you can see that
+we will do some changes
+here and after that we will add and
+commit and push the same in the
+repository so what we'll do here is we
+will create it or we will create a
+paragraph here and write how are
+you and after this what we'll do is we
+will add these
+changes that would be a snapshot to a
+stage
+so we will use the command get Space add
+or you could use the file name which you
+want to Stage it or you could just press
+period and press
+enter that would
+be get add
+period or it's showing an
+error we will
+use get add and the name of the file
+that is index
+dot okay uh the thing is we are not in
+the current folder I don't know how
+but we are out
+of the directory now we are in the
+directory and you would see that in
+index.html there's a modification here
+so what we'll write here
+is get Space add or in the inverted Comm
+you would write index. HTML that would
+be the file
+name and you would
+see that it has done and we can also use
+another command that is get add space
+period so we could use both the commands
+and that modification sign has turned
+into orange now now after the add
+command what we should do is we should
+commit
+so for commit we'll write the command
+get commit minus M and after that what
+message you want to store as a
+commit so we have we'll write a message
+update index.
+HTML
+okay and now the commit is done after
+commit we can check the G status
+whether there are any pending files that
+are there to be committed or
+added so he's saying that there are your
+branches ahead of origin that is by
+three commits so we are done here that
+is we here we have done three commits
+and now we can use the G push to commit
+it to our repository so for that we'll
+use the
+command get push
+origin
+main so you could see that it has pushed
+the command here and the guys who are
+using this the first time so it will ask
+you to authorize it and it will ask you
+to sign in with your password so do sign
+in and after that this command will
+execute now move back to our
+GitHub and this is our first project
+you could see the index. HTML file here
+that is 1 minute ago
+only and here you could see that we have
+done the changes to the repository and
+if you want you could also check the
+status here now what we have done is we
+have created a repository and then we
+have cloned it and make the changes in
+the local repository and then we have
+executed the push command
+so for instance if you want
+to create something on the local
+repository and after that you want to
+push it to the GitHub so how you can do
+it uh for that what you can do is first
+we'll create a folder okay let's go
+out
+CD space period period and we are in the
+first project will so get out from here
+and here we will create
+a new folder and we will name it
+as and we will name it
+as and we'll name it as new
+project okay now we'll move into the new
+project folder new project directory
+and inside this what we can do
+is first we'll open that folder in the
+visual studio code also open folder and
+what we have created is new project so
+this is the
+folder and for this we'll open the
+terminal here is our
+terminal and we are in the new project
+folder only so here we will create a get
+repo so first we'll check all the files
+if you want you could check the files
+here so there's only new project or else
+we could add the files here also so
+let's start with the index. HTML file
+but before that what we'll do is we will
+use the command git in it to initialize
+it initialize this folder from git
+and that we have done here and now if
+you write
+LS so this is our file now we have
+created a repository on the local
+system now we can add a file and index.
+HTML file we have added now if you want
+to add more files you can add them that
+could be CSS files or any file you want
+to add and similarly you have to create
+a new repository in the GitHub also
+so for that we will go to our GitHub
+click on profile section and here are
+our
+repositories click on
+new and here we will name the repository
+we will name it same only that is new
+project
+now so we'll name it same only new
+project and we will not add a readme
+file here as we have not created on the
+local system also so we'll create it and
+this is our repository
+link so what we can do here is so what
+we can do here is and before doing it
+like before adding the link in the local
+repository we will create some content
+here that would
+be let's say first we
+create and then in the body
+only we will have some par
+and we'll write new
+changes okay now we have created the
+files and now we want to upload it to
+GitHub and we have made a new repo in
+the GitHub now what we'll do is we will
+us a command get remote add origin and
+add this link so we'll copy this link
+moving
+back here in our
+terminal will write a
+command get
+remote add
+origin and now you can paste the link
+here so it has pasted the link now you
+if you want to verify what you can do is
+write the
+command get remote minus v as you could
+see that it has integrated our local
+repository to the remote rep
+osit now get now you could also check in
+which branch you are so you could just
+write the command get branch and you
+could see that you are in the main
+branch only so what we have done here is
+we have created a local repository and
+then we have inserted some files here
+and then we have created a repository in
+our remote that is on GitHub and after
+that we have used the command
+that is get remote add origin and then
+the link of the repository so it has
+connected with it now we have some
+modified files or the new files that we
+can push them so for that we
+will first use the command get add space
+period it will push all the files and
+after that what we can do is get space
+commit minus M and we can write the
+message that is initial
+files as you could see that one file
+changed five
+insertions and you could see here that
+the sign has changed now what we can do
+is we can push the files so for that we
+could use the command get push
+and if you want to just use the command
+get push in the upcoming sessions so you
+could use minus U also if you use minus
+U what it will do it will allow you to
+use kit push command every time if you
+are working on the same directory so one
+time you have to use get origin minus U
+Get push minus U origin mean so there's
+an error here resource resp mean does
+not match
+any so let's see first in which branch
+we
+are that is we are in master
+Branch so you could see that uh we are
+in the master branch and we want to make
+it a main branch so what we will do is
+we'll rename it get
+Branch minus m main we will rename it as
+Main and now we'll check in which branch
+we are get Branch we are in the main
+branch now we can push the code or the
+files what we have created get push
+minus
+U origin main okay now it has pushed all
+the files inside it now what we will do
+is we will get back to GitHub
+and here we can
+see our new
+project so these are the initial files
+that is the commit that has been created
+and moving back here we are so we have
+now we will create a readme MD file
+here readme.md file and we can write
+anything here that this is our
+second
+project and after that we can just push
+it that is you could use get add space
+period get
+commit minus M and you could write read
+me 5
+and here we go to error okay we wrote
+code
+commit so get commit minus M read me
+file and now what we can write this get
+push and it will push the file
+to our remote
+repository now as you can see here this
+is our second project and it has been
+pushed here so this is how we use the
+init commands to create a local
+repository and then move it to the
+remote repository and now you have seen
+that you could see in which branch you
+are with the command git branch and if
+you want to rename it you could use the
+command git branch minus M
+meain okay and if you want to create a
+new branch that is if some of the guys
+are working with you and you want to
+create a new Branch you could create a
+new Branch also I will tell you how you
+can create a new Branch or if you alone
+are working on a repo and you want to
+create a feature for that also you could
+use a
+branch for the feature branch and let's
+see how you could create it get
+check
+out minus
+B and after that just name the new
+Branch uh we will name it as feature one
+so we have created a new branch and
+let's
+see we write the command get Branch you
+could see that there are two branches
+feature one and Main and the green one
+is in which we are currently in feature
+one similarly you could make other
+branches also with the same command that
+is get checkout minus B feature one
+you'll create another branch that is
+feature 2 now if you want to see how
+many branches are there you could just
+type get branch and here are the three
+branches feature one feature two and
+Main so we are currently in feature two
+that is the green
+branch and if you want to delete some
+Branch or if you want to navigate first
+we'll see how you can navigate so you
+could just write get
+checkout and then the branch name that
+is currently we are in feature 2 that is
+green so we'll move to feature one and
+okay I pressed space
+also check out feature one now we have
+switched to Branch feature one for that
+you can check also with the command get
+Branch So currently we are in feature
+one branch and if you want to delete any
+branch you could do that get
+Branch minus D and the branch name that
+could be feature 2 and the branch has
+been deleted to check out you could just
+write get Branch So currently we are in
+feature one and then there's the main
+branch and now we'll see some other
+commands that is get add or if you just
+write get add Dot and press enter it
+will help you that is get add space
+period and it will help you to get all
+the files staged so as we have already
+staged the file we won't be able to do
+it again now what we'll do is we will
+create a new project or new directory on
+the system and then get it to the GitHub
+so for that we will start with the
+origins command now what we'll do is is
+we will work in the local repository and
+we will create a new file with the new
+repository and get it to or get it
+uploaded to the GitHub for that we'll
+use the command get in it so this
+command g in it is used to create an
+empty git repository and after the git
+init command it's used there will be a
+do git folder that will be created in
+the directory with some of the subd
+directories so once the repository is
+initialized the process of creating
+other files begin so for that I
+will take you
+guys first what we'll do is we will
+initialize or configure the files again
+that will be the username and the mail
+address so for that we'll write the
+commands that is
+get
+config minus
+minus global user.name
+and our username
+was abar
+ahuja7 we have done it and we will
+configure globally that is our email
+address minus minus
+Global user.
+email we7 at theate gmail
+and it has been configured now moving
+back to our Visual Studio code here we
+will get back from this
+directory and inside the abis only we
+will create a new directory and use the
+get init command to initialize
+it so for that what will do we will
+create a folder first
+and name it as
+project and now we'll move inside the
+project now we are in the folder or the
+directory of the project now we'll use
+the command get in
+it so it has added or created an empty G
+repository so to check it we'll use the
+ls command first we'll move to the
+repository that would be CD
+and the name of the repository that is
+project um but we have we don't have
+created
+it so what we'll do we'll open the
+folder here that is
+C
+users
+abja and then we have the project folder
+you could see that we have created that
+a dogit is created when we have
+initialized git in it it has created the
+dogit folder in
+[Music]
+it and getting our terminal back
+here and in this project we will create
+a file and name it as index. HTML
+and in this
+file if we use the command get add so
+similarly the git add command is used to
+like after checking the status of the
+files to add those files to the staging
+area and before running the git command
+git add is used to add any new or
+modified file so as we have created a
+new file that is
+index.html and we could write anything
+here that would be HTML
+and inside we could create a
+heading and name as project only so we
+could use the get add command to add it
+to the staging area so nothing specified
+or it's saying nothing added as you
+could see V are so similarly we will use
+or check other
+commands that is first there is get add
+command so what it does
+is it will move changes from the working
+directly to the staging area and this
+gives you the opportunity to prepare a
+snapshot before committing it to the
+official history and then we have
+other that is K Branch so this command
+is your Journal purpose Branch
+Administration tool it lets you create
+isolated development environments within
+a single repository only and then we
+have other command that is get check out
+so in addition to checking out all
+commits and old file revisions get
+checkout is also the means to navigate
+existing branches that is combined with
+the basic git command it's a way to work
+on a particular line of development and
+then we have get clean
+command so it removes untracked files
+from the working directory this is The
+Logical counterpart to get reset which
+typically only operates on track files
+so this is about the get clean file or
+the get clean command and you have
+already seen the git clone command that
+is it creates a copy of an existing git
+repository that is after it we will
+paste the link of the git repository and
+it will create a copy of an existing git
+repository and cloning is the most
+common way for developers to obtain a
+working copy of a central repository and
+there's an get commit
+command so it takes a stage snapshot
+that is after we have used the get add
+command we can use the get commit
+command as it will take the stage
+snapshot and commit it to the project
+history and it will not reflect in the
+GitHub but it will come into the project
+history and combined with Git add this
+defines the basic workflow for all G
+users and there's one more command that
+is g commit minus
+minus
+amend and what this does is passing the
+minus minus amend flag to get commit it
+lets you amend the most recent commit
+and this is very useful when you forget
+to Stage a file or omit important
+information from the commit message and
+then comes the command get
+config so what does this so it's a
+convenient way to set configuration
+options for your G installation you will
+typically only need to use this
+immediately after installing it on a new
+development machine and there's a g
+fetch command
+that fetch downloads of a branch from
+another repository along with all of its
+Associated commits and files but it
+doesn't change or doesn't try to
+integrate anything into your local
+repository and this gives you a chance
+to inspect changes before merging them
+with your project as we have already
+discussed about the G init command that
+it
+initializes a g repository that will be
+a new G repository and if you want to to
+place a project under revision control
+this is the first command you need to
+learn and then comes the Get Low
+command so it lets to explore the
+previous revisions of a project it
+provides several formatting options for
+displaying committed
+snapshots and then we have get merge
+command so it's a powerful way to
+integrate changes from Divergent
+branches after folking the project
+history with Git Branch G lets you put
+it back together
+again so I
+will have you a little understanding
+that would be merging and rebasing so
+the G rebase command has a reputation
+for get magical G hocus fcus that
+beginners should stay away from but it
+can actually make life much easier for
+development team when used with care so
+get rebase is the and get merge command
+and identify all of the potential
+opportunities to incorporate B basing
+into the typical git
+workflow and then there's a git pull
+command so pulling is the automated
+version of get fetch it downloads a
+branch from a report repository then
+immediately merges it into the current
+Branch so this is the g equivalent of SN
+update and then we have get push command
+so pushing is the opposite of fetching
+that is with a few Cates it lets you
+move a local branch to another
+depository which serves as a convenient
+way to publish contributions this is
+like SVN commit but it sends a series of
+commits instead of a single chain sheet
+and then we have the G
+rebase so rebasing lets you move
+branches around which helps you avoid
+unnecessary merge commits the resulting
+linear history is often much easier to
+understand and explore and then we have
+the G rebase minus I
+command so the minus I flag is used to
+begin an interactive rebasing session
+this provides all the benefits of a
+normal rebase but gives you the
+opportunity to add edit or delete
+commits along the way and with that guys
+we have come to the end of this session
+I hope you find it informative and
+helpful if you like this session please
+please like share and subscribe if you
+have any doubts you can comment down in
+the comment section below thanks for
+watching and stay tuned for more from
+Simply learn staying ahead in your
+career requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

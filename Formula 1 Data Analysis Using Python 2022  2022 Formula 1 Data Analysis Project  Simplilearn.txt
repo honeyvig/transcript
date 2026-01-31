@@ -1,0 +1,1105 @@
+hello everyone and welcome to this
+interesting video tutorial on formula
+one data analysis using python
+in this video we'll be using four
+publicly available data sets about
+formula one that has information from
+1950 to the 2019 f1 season
+we'll see how using the python libraries
+you can perform explority data analysis
+and draw valuable insights
+so let's begin by understanding what
+formula one is
+formula one also known as f1 is a
+motorsport defined by open wheeled
+single sheet race cars
+it features the best drivers in the most
+powerful and technically advanced cars
+the sport is governed by the fia that is
+international automobile federation
+here 10 teams comprising of two drivers
+each compete in a series of races over a
+period of one year to find out the
+ultimate driver and a constructor
+champion
+in our demonstration we'll be using four
+data sets let me show them one by one
+these are all csv files
+now this is the first data set that
+we'll be using in our demo
+so if you notice the data set does not
+have column
+names in fact none of the data sets have
+column names so while importing the data
+set we will assign the column names
+using the names parameter i'll show that
+in a
+while
+now this is the results data set
+the results data set has information
+about
+the result id
+then we have the race id driver id
+we have
+the constructor id
+grid position
+then we also have information about the
+fastest
+lap then we also have information about
+rank
+the fastest lap speed
+and the status id
+now moving on to the second data set
+which is about
+racers
+now this is the second data set which is
+about races so
+it has information about the race id
+the year in which the race was held then
+we have
+the round number circuit id
+then the name of the
+grand prix so you can see here
+australian malaysian chinese spanish
+monaco turkish british german
+and others
+then we have the
+date on which the gp was held or the
+grand prix was
+held
+we have the time
+and a url which basically leads to the
+wikipedia page of that particular
+grand prix for that year
+now moving on to our third data set
+so this is our third data set which is
+about drivers
+now it has the driver id the name of the
+driver you can see here hamilton
+rossberg alonso
+reichen
+then we have sato
+masa
+button weber and all
+after that we have the
+number code
+then we have the
+phone name of the driver the surname of
+the driver
+and then we have the date of birth of
+that particular driver we have the
+nationality as well
+we have the wikipedia page
+for the
+driver
+now moving on to the last data set which
+is about
+constructors
+so this is the fourth and the final data
+set that we'll be using in our data
+analysis project so here we have the
+constructor id
+then the constructor reference
+in formula one
+and this is the actual name of the
+constructor so we have mclaren
+we have
+bmw sauber williams then we have ferrari
+toyota red bull force india
+we also have jordan jaguar and all
+next we have the
+nationality and the url
+that is the wikipedia page of
+that particular constructor
+now let's head over to our jupiter
+notebook and we'll start with our
+analysis
+here is my jupyter notebook that i'll be
+using for this demo you can see some of
+the cells are already filled this is
+just to make sure we save some time
+so using these data sets that we just
+saw and our libraries such as numpy
+pandas matplotlib and cbon
+we'll answer specific questions such as
+the drivers and constructors who have
+been the
+most successful throughout the history
+of f1 sport
+then we'll explore the impact of
+starting and finishing positions and if
+the speed of the cars has changed over
+the years
+so let's begin with our analysis
+first and foremost we are going to
+import all the necessary libraries so
+here i am importing numpy pandas
+matplotlib and cbon
+and after that i am writing percentage
+matplotlib inline that is to ensure that
+all the plots are embedded in line i'll
+hit shift enter to run it
+take some time there you go so we have
+successfully imported all the libraries
+now the next step is to
+load the data and assign
+column names
+so
+i load my
+first data which is results i'll say pd
+dot
+read underscore
+csv
+i'll give my
+file name which is results dot
+csv
+and then using the
+names parameter
+i'll pass in the
+column names so actually i have written
+the column names in a notepad let me
+open that
+so i have this f1
+notepad created which has the column
+names i'll just start copying
+the column names
+within the names parameter i'll paste it
+if i scroll to the right you can see the
+different column names that
+have been assigned
+and
+that
+i'm going to say
+comma and i'll write
+header equal to
+none
+i'll close the bracket
+cool
+similarly let's
+import the second data set which is
+about
+races i'll say
+pd dot
+read underscore csv
+i'll give my
+file name which is racist.csv
+and then
+i'll give the
+names parameter this is actually names
+and not name
+okay
+i'm going to
+copy the
+second line
+and i'll paste it here
+and again
+i'll say
+header
+equal to
+none
+next
+we'll import our third data set which is
+about
+drivers
+so i'll say pd dot read underscore csv
+i'll say
+drivers dot csv
+then
+again use the
+names parameter
+and i'll copy the
+third line now which has the column
+names for the
+drivers data set
+here
+i
+need to give
+another parameter which is header
+equal to
+none
+finally we are going to import our
+constructors data set
+it's a constructors equal to pd dot
+read underscore csv which is the
+function present in the pandas library
+i'll say
+constructors.csv which is my file name
+and then again i'll use the names
+parameter
+i'll go to my notepad and this time i'll
+copy the
+fourth line which has the column names
+for the constructors dataset
+i'll paste it
+and
+here i'll give my
+final parameter that is header equal to
+none
+all right
+now
+let me hit shift enter to
+run it
+okay we see some error here let's debug
+the error it says
+no such file or directory drivers dot
+csv
+let's see
+where was the issue
+this should be
+driver.csv
+cool now we have successfully loaded the
+data and assigned the columns to the
+various data sets
+now the
+next
+analysis
+is to merge all the data set
+so here i'll create a data frame called
+df and i'll use
+pd dot
+merge function
+first i'll use the
+results data frame that we just
+imported above this one
+and
+i'm going to
+merge it with
+racist data frame
+and from the resist data frame i am
+going to take
+specific columns like the
+race id
+then
+i need the
+year
+after that i need
+name
+next
+i'm going to take
+the round column as well
+and
+i'm going to use
+on parameter so
+on parameter
+is actually
+the column that is common to both the
+data frames that is results and races so
+here my common column
+is going to be the race id because it is
+present in both the data sets
+and i would like to merge
+so for that i am going to use how so i
+am going to use a left join
+so
+if you know sql you will be aware of
+left join it takes all the rows from the
+left table and only the matching rows
+from the right table
+again going to use the merge function so
+i'll write
+df equal to pd dot
+merge
+i'll say
+df comma and now i'm going to
+merge the
+ivor's data set
+and
+i'm going to select
+specific columns so i'll say driver id
+make sure there are no spelling mistakes
+in the
+column names
+then i'll say
+driver
+ref which is the name of the driver or
+reference
+comma
+and then i want the
+nationality of the
+driver
+all right
+we'll give a comma i'll say on
+which column i want to merge so here the
+common column
+is going to be the driver id
+again
+how is going to be a left join
+into the final
+merge part i'll say again df equal to pd
+dot
+merge
+i'll pass in my data frame and my final
+data set which i have is about
+constructors
+from constructors we are going to choose
+specific columns so i'll take the
+constructor
+id
+then i'll take
+the name column
+and again the
+nationality column of the
+manufacturer
+okay
+here i'll say
+on
+equal to
+the common column i'll use this
+constructor id
+you give a comma and say how
+equal to
+left again
+make sure
+you're merging it with the
+right column names so let's run this
+cell to merge
+all the four data sets
+i'll hit
+enter oops there is some error let's see
+it says constructor
+id index
+okay there's a spelling mistake this
+should be
+constructor id cool
+let's run it
+there you go
+now
+the next thing we want to do is to drop
+the unnecessary columns
+so i'll say df dot
+drop
+within the drop function
+we are going to pass in the
+column names i'll say
+number
+then we also don't want the
+position column
+next we have
+position underscore
+text
+after that we have
+labs
+next we are going to drop
+fastest
+lap
+then we will also drop the
+status id
+comma
+we drop the result underscore id column
+then
+going to drop the race underscore id
+column
+we'll also
+drop driver underscore id column
+and finally we are going to drop
+the
+constructor underscore id column
+and
+i'll say access equal to
+1
+and in place i'll see equal to true
+because i want to remove it from my
+original data frame that is df
+there you go
+now the next
+thing i want to do is i want to rename
+some of the columns so i'll say df dot
+rename
+i'll say
+columns equal to
+now we are going to pass in a dictionary
+i'm going to change the
+rank
+to
+test
+underscore lab underscore rank
+let me give a comma
+now i'll say
+name underscore x
+equal to
+i'll say the
+grand prix name so i'll say gp
+underscore name
+next column i'm going to focus is
+the nationality column so i'll say
+nationality underscore
+x
+i'll give a colon the value i'm going to
+pass in is
+driver nationality
+all right
+up next
+we have one column called
+underscore
+y
+and that i'm going to change it to
+constructor name
+another comma
+we want to say
+nationality
+underscore
+y
+colon
+change it to
+constructor nationality
+underscore nationality
+finally we have
+driver
+underscore ref column
+and that i am going to replace with
+just
+driver
+finally i'll say
+in place
+equal to
+true
+will
+just verify if all the column names are
+correct
+let's run it
+all right so now we have
+successfully renamed
+the columns
+after that
+in the next cell i'm going to
+rearrange the columns so here i'm
+using the same data frame and we have
+just renamed the columns so starting
+with your
+grand pre name round driver
+nationality and others
+let's run this
+up next
+we're going to drop the
+2019 season data because
+it is incomplete so i'll say df equal to
+df
+then i'll say
+here
+not
+equal to
+2090
+let's see how to
+sort the values so i'll say df equal to
+df dot
+sort underscore values which is the
+function name
+i'm going to sort it by
+year
+followed by
+round
+followed by
+the
+position
+underscore
+order
+comma i'll say
+ascending
+equal to
+first let's say is false
+next i have true
+and then
+i'll have true
+all right
+moving ahead
+now we are going to see how to replace
+the
+put slash
+n values in
+the time column with something called
+nan because the time column was not
+registered when a driver did not finish
+a race or was lagged by another driver
+so to do this i am going to say
+df dot
+time dot i'm going to use the replace
+function
+and here i'll say
+forward slash or backward slash
+n and i'm going to replace with
+numpies nan
+i'll say
+in place equal to true
+let me just copy this because we are
+going to use the same
+emitters
+next i am going to replace the
+milliseconds value
+milliseconds dot
+replace i'll paste it here
+then i'll say df dot
+fastest
+underscore
+lab underscore
+rank dot
+replace
+paste it
+next i have
+df dot
+fastest dot
+lab
+dot
+time
+they replace
+to that i have
+the next column which is
+speed so i'll say fastest
+underscore
+lap underscore
+speed dot
+replace
+i'll paste it
+so here
+i'm going to replace
+this particular value
+the
+backward slash
+n with
+nan
+let me run it
+cool
+step i'm going to
+change the data types for
+fastest underscore lab underscore speed
+to float then fastest underscore lab
+underscore rank to float again
+now
+problem here is we cannot convert it
+into an integer because there are
+missing values so we are going to change
+it to float
+again for milliseconds also we are
+changing it to float values
+let me run it
+now
+i'll reset the index
+let me show you how to reset the index
+i'll say df dot
+reset
+underscore
+index
+i'll say
+drop
+equal to true
+i'll give a comma and say
+in place equal to true
+all right
+that we have
+done our initial
+processing step of the data set
+now we'll check the shape of the data
+set then we see
+all the data sets the
+total number of normal values the memory
+usage and we'll
+check the head of the data set
+now to see the total number of
+rows and columns i'll say
+print
+df dot shape
+you can see here there are total 24
+197 rows in my data set and there are
+total of 15 columns
+now let's use
+df dot
+info function
+so it gives me the
+year the grand prix name
+the round number
+driver constructor name grid
+position order total number of points
+time
+then time in milliseconds the fastest
+lap rank
+the fastest lap speed
+the nationality of the driver
+nationality of the constructor
+then here we have the
+total number of non-null objects
+and then you also have the memory usage
+at the bottom
+finally let's see the
+head of the data frame so i'll say
+df dot
+head let's say i want to check the first
+10 rows
+where you go
+if i scroll down you can see here we
+have the top 10 rows printed
+and you have the year the grand prix
+name round driver constructor name and
+other columns now let me just
+brief you about what these column names
+stand for
+so the year column that you see here is
+the season that the grand prix took
+place and then we have the
+name of the grand prix
+now the round column is the number of
+the race in each season for example one
+means it was the first race of the
+season
+and then
+two means it was the second race of the
+season so so on and so forth
+then we have the name of the driver
+that we have the
+name of the car constructor so you can
+see ferrari mercedes red bull renault
+then we have the grid that is the
+starting position before the race
+actually this depends on the
+qualifications which occur one day
+before the race
+then we have the position underscore
+order column this means the final
+position at the end of the race then we
+have the points column that is the total
+number of points scored in the race
+next we have the time that is the amount
+of time that took to finish the race
+only the winners time is displayed and
+drivers behind the winner are shown how
+far behind the winner they are
+then we have the milliseconds column
+that is the amount of time that took to
+finish the race in milliseconds
+if i just scroll down i'll just move to
+the
+right
+go to the top
+then we have the fastest underscore lab
+underscore rank that is the order of the
+fastest lab during race
+next we have
+fastest lap time that is the shortest
+amount of time that took to complete a
+lap in the release
+then we have the lap speed that is the
+average speed of the
+fastest lap
+then we have the
+country to which the driver belongs to
+and then we have the
+constructor nationality that is the
+country where the car constructor is
+based out of
+okay
+now
+here i am going to set my figure size to
+10 comma 6 this is going to be for all
+the
+plots that we are going to create
+afterwards
+cool
+we'll create a data frame that will have
+all the grand prix winners
+so here i'm going to say
+driver
+underscore
+winner equal to
+use my data frame
+df dot i'll say loc
+then i'll say
+df
+i want
+the position underscore
+order
+and that should be equal to 1 so which
+means
+the driver
+1 degrees
+and then
+i am going to
+use the
+group by function
+i'm going to group it by
+driver
+and
+for values i'll say
+position underscore
+order
+use the
+count function
+followed by
+sort underscore
+values
+i'll say
+ascending equal to
+false
+we change it to
+to underscore
+frame
+dot
+reset underscore
+index
+what essentially i'm doing here is i am
+finding out
+all the drivers that have participated
+and
+won a grand prix
+next
+i'm going to create a
+bar plot so this is going to be the
+first visualization of our analysis
+so i'll say
+sb
+which we have taken in our
+analysis ideally it should be sns but sb
+also will work
+so i'll say sb
+dot
+bar plot
+i'm going to say data equal to
+driver underscore
+winner
+the y-axis i'll have
+driver
+in the x-axis i'll have
+position
+underscore
+order
+then i have
+color equal to
+green
+that i'll set my
+alpha value
+to
+0.5
+or let's say
+0.8
+then
+we are going to
+give a title to our plot so i'll say plt
+dot
+title
+let's say most
+grand prix
+winners in f1
+then we are going to label our access so
+for y label i will have
+driver
+name
+we have
+the x label
+that will have
+number of
+grand prix wins
+and i'll say
+plt dot
+y
+text
+let's run it
+and you can see we have our first
+bar plot here now the bar plot
+shows that there are
+a large distribution of
+grand prix wins
+only a few drivers in history of f1 have
+won over 20 grand prairie in their
+careers and there are some drivers who
+completely dominated the f1 racing and
+have won over
+50 grand priest in their careers so we
+are going to focus on those
+top five or top 10
+drivers
+in the next section so what i am doing
+here is
+from the
+above
+result that we just got i'm going to
+filter out only the
+top 10 so i'm going to use the head
+function
+and
+inside that i passed in 10 if i print it
+you can see here
+as per the data that we have
+we have michael schumacher who
+is the position
+order leader with
+gp events then we have hamilton vettel
+frost senna alonso
+then we have stevert clerk and lauda
+the data that we have is
+not the most recent one so if you check
+the actual stats hamilton has actually
+overtaken michael sumacre and has
+won over
+103 close to 103 races as of now
+and
+next we have michaelson macker so this
+is not the most recent data
+cool
+now using this data we'll create another
+bar plot for the top 10
+drivers so i'll say sb dot
+bar plot
+i'll say data equal to
+the
+name that we have used that is top 10
+drivers so i'll say top 10
+drivers
+in the y axis we'll have
+the
+driver name in the x-axis we'll have
+position
+underscore
+order
+for the bars i'm going to use a color
+equal to
+let's say blue this time
+i'll set my alpha value
+to be
+0.8
+and
+i'll say let's say
+line
+width
+equal to
+0.8
+and i'll also give
+an edge color of let's say
+black
+follow the same drill i'm going to give
+a title to my plot so i'll say plt dot
+title
+most
+gp
+winners in a phone
+give a y label
+that says
+driver
+name
+and then i'll have x label which will
+have
+number of
+on pre
+bins
+cool
+let me see if everything is fine
+and then we'll
+run this there you go
+you can see we have a very nice
+horizontal
+bar plot that shows the
+top drivers in f1 so as per our data
+that we have we have michael schumacher
+who has won over 91 or close to
+91
+races then we have hamilton vettel
+alonso
+all right
+in the same way we are going to create
+bar plot for the top constructors that
+have participated in f1
+so here i'm finding out
+all the
+constructor winners so here
+i'm using my position underscore order
+equal to equal to 1 and then i'm using
+the group by
+based on the constructor name
+and then i'm finding the count of
+position order and sorting the values
+in
+descending order and i'm changing it to
+frame or to a data frame
+and to create my bar plot i'm using the
+bar plot function the data which is
+constructor underscore winner
+in the y-axis i'll have the constructor
+name on the x-axis i'll have the
+position order
+so
+you can see here i've used color as pink
+and i've given a title x label by label
+and vertex
+let's run it
+there you go so here you can see again
+the data is
+widely
+spread
+so we have a lot of constructor names
+now
+our next task is to
+check the
+top 10 gpa constructor windows so here
+i'm using the head function and finding
+out the top 10
+if i run it
+you can see here
+the manufacturing companies or the
+constructors who have won the most
+number of
+races
+are ferrari
+mclaren
+williams then we have mercedes
+red bull tim lotus renault
+and others
+okay
+now we'll convert this data into a
+horizontal
+bar graph or a bar chart
+so that will show the bar plot for the
+top 10
+constructors
+now let me show you how to do it
+so i'll say
+sb which is for c bond dot
+bar plot
+i'm going to say data equal to
+top 10 let me just confirm
+the name we have top 10 constructors
+scroll down i'll say constructors
+y-axis i'll have
+constructor
+on the x-axis i'll have
+position underscore order
+then
+i'll say
+color
+equal to let's say we'll use the
+red color for the bars
+then i'll set my alpha to
+0.8
+i'll say
+line width equal to
+0.8
+and my
+edge color i'll say
+black
+that i'll say plt dot
+title
+say
+top 10
+most
+gp
+wins
+lt dot
+by label would be
+constructor
+name
+and i'll have plt dot
+x label
+as
+number of
+gp
+bins
+cool
+let's run it
+there you go so here you can see we have
+ferrari at the top then we have mclaren
+williams more cities i'm pretty certain
+by
+the end of 2021 season mercedes would
+have gained a lot of wins since hamilton
+has been on the top
+for mercedes for quite some time now
+all right
+now
+finally we are going to
+create a
+regression plot that will
+show how
+two variables that is the starting
+position and finishing
+position
+vary
+so to do that i'm going to exclude the
+data points with grid 0 because it skews
+the data so 0 means that the driver
+started from the
+pit lane
+so i'm using this function called reg
+plot
+to plot my
+regression line
+let me run it and show you the result
+there you go
+so if you see here
+we can easily see there's a linear
+relationship between the starting and
+finishing position so on the x-axis we
+have the starting position on the y-axis
+we have the
+finishing or the finished place
+so which is what is actually expected
+right now we can also see that
+most races had up to
+25 drivers you can see the density of
+the points here
+but
+some of the recess also had over 30
+drivers you can see the
+light color blue dots
+next
+we are going to
+check whether the speed of the cars
+changed over the years since this data
+is only available from 2004 onwards so
+we have
+we have taken
+years that start from 2004 onwards
+now let me show you the result
+of this data
+so essentially we are plotting the
+average speed among
+all teams during the fastest lap at
+individual grand prix and here on the
+y axis you have the average fastest
+speed in kilometer per hour and then you
+have the different
+gps
+and
+you can see here the year values
+now
+in general what we see is there's a
+decrease in the average fastest lap from
+2004
+till around
+2015
+for almost all these circuits
+and again from 2015 onward the speed
+started
+to increase
+you can see here there's an increase
+after 2015 there's an increase there's
+an increase here as well
+you can also notice that
+the speed is very different on each
+track for instance if you check the
+italian grand prix which is here
+italian gp has the
+fastest race in the calendar with
+average speed exceeding over
+240 kilometers per hour on the other
+hand if you
+talk about the
+monaco grand prix let me show you if you
+see here
+the monaco gp is the slowest race with
+average speed below
+160 kilometer per hour now this is
+actually expected because the monaco
+grand prix
+has very narrow streets and hence the
+drivers cannot
+drive fast in this circuit
+all right
+so
+that brings us to the end of our
+explorative data analysis on the formula
+one datasets
+i hope it was useful and informative
+if you have any queries please feel free
+to put them in the comments section of
+the video thanks again stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

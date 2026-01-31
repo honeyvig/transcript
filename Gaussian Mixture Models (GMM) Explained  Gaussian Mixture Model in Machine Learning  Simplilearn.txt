@@ -1,0 +1,399 @@
+a gajan mixture model also known as GMM
+is a statistical model used to describe
+data distribution it assumes that the
+data can be represented as a combination
+of multiple gajin distribution models
+each with its own mean and variance in
+practice this means we can model complex
+distributions such as the distribution
+of test scores or income by combining
+multiple simple distributions such as a
+distribution of test scores for boys and
+for girls using GMM to model
+distribution allows us to capture the
+complexity of the data and describe it
+more accurately this can be particularly
+useful in machine learning applications
+where we often deal with complex and
+high-dimensional data sets so let's gain
+a deeper understanding of gajan mixture
+model and gajan mixture distributions so
+without further Ado let's get onto our
+topic craving a career upgrade subscribe
+like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back first to succeed in this rapidly
+expanding field you need to develop the
+right skill set if you want to boost
+your career in the field of ML and take
+our Caltech postgraduate program in
+partnership with IBM that will help you
+become an expert in Ai and ml this
+course covers the latest tools and
+Technologies and features master classes
+by cowtech faculty and IBM experts
+hackathon and ask me session are also
+there these are just a few reasons you
+should consider learning machine
+learning with this program don't waste
+any time enroll in our Caltech
+postgraduate program in Ai and ML and
+become an ml engineer the link will be
+in the description
+below now let's get to our video and
+learn just what a God mixture model
+is a gajan mixture model is a
+probabilistic model representing data as
+a mixture of multiple gajan
+distributions it it's a mixture model
+because it assumes that data points are
+generated from a mix of gajan
+distribution each associated with a
+certain
+probability in GMM each gajan
+distribution represents a component or
+cluster within the data the model
+assumes that the data points within each
+cluster are erated from a gajin
+distribution with its mean and
+co-variance the GMM which is known as
+gajin mixture model combines these
+component distributions with mixture
+weight to form the overall probability
+distribution of the data so now let's
+see the key components of gajan mixture
+model number one is the number of
+components also known as clusters the
+GMM assumes that the data is a mixture
+of a specific number of G distributions
+also known as components or clusters the
+number of components is typically
+determined in advance or estimated by
+using techniques such as model
+selection next we have gajan
+distribution each component in the GMM
+is represented by a gajan distribution a
+gajian distribution also known as normal
+distribution is a bell-shaped curve
+fully described by its mean and
+co-variance the represents the center of
+the distribution and the covariance
+determines the spread or
+shape third is mixtures weights the GMM
+assigns mixtures weights to each
+component representing the probability
+of selecting that component when
+generating a data point these weights
+must sum up to one the mixture will
+determine the collaboration of each
+component to the overall distribution so
+using a gaj and mixture model involves
+estimating the model parameters
+including the means covariant and
+mixture weights this is typically done
+through an interactive optimization
+algorithm like the expectation
+maximization algorithm the EM algorithm
+alternates between estimating the
+responsibilities of each component for
+each data point and updating the model
+parameters based on the
+responsibilities the algorithm continues
+until convergence where the parameters
+reach a stable State once the GMM is
+trained it can be used for various tasks
+for example it could be applied to
+clustering by assigning data points to
+the most likely component or cluster it
+can also be used for density estimation
+where it estimates the underlying
+probability distribution of the data now
+let's see some real world examples where
+gajan mixture models can be used gajan
+mixture models also known as gmms are
+versatile tools that find applications
+in various world world scenarios they're
+particularly useful when dealing with
+large data sets where identifying
+clusters is challenging gmms excel at
+efficiently discovering clusters of
+gajan outperforming testing algorithms
+like K
+means now here are some practical
+examples of how gajian mixture models
+can be applied the first one is medical
+data set analysis gajan mixture models
+can single out medical images or
+identify patterns within data sets by
+clustering patients based on similar
+symptoms gmms can assist in detecting
+diseases subtypes predicting outcomes
+and revealing correlations and
+previously unknown patterns in large
+scale patient
+records next we have modeling natural
+phenomena gmms are suitable for modeling
+natural phenomena where gajan
+distribution are observed in the noise
+this modeling approach assumes an
+underlining unobserved entities or
+attributes which measurements are taken
+at Central points across multiple
+observation sessions next we have
+customer Behavior Analysis gin mixture
+models are valuable in marketing for
+analyzing customer behavior and by
+leveraging historical data gmms can
+predict future purchases enabling
+businesses to tailor the market
+strategies and become more
+efficient next is stock price prediction
+bu mixture models find applications in
+finance especially in analyzing stock
+price time series they can identify
+challenge points within the data helping
+detect turning points in stock prices or
+other Market movements that might be
+obscured by vulnerability and
+noise next we have gene expression data
+analysis gmms are employed in gene
+expression data analysis they can be
+utilized to identify differentially
+expressed genes between two conditions
+and determine which genes make you
+susceptible to specific phenomena types
+or disease
+States now let's see the implementation
+of a gajan mixture model to do this we
+have a small demo I've have taken the
+iris data set okay in Python there's a
+gajan mixture class to implement
+gmn load that Iris data set and then we
+are all good to go so the first thing
+we're going to do is import our number
+NP which is a library of python okay so
+we'll write import
+numpy as
+NP in the next line then we have to
+import uh Panda so we'll write
+import
+Panda
+as
+PD and after that we'll import map plot
+lib we right
+import and
+plot
+lib do
+py
+LT as BL
+T
+okay all right that looks good
+now we'll write uh
+[Music]
+from
+andas and we'll import
+Port data
+[Music]
+frame
+okay after that from psyit learn which
+is sklearn we will
+import data sets so from sklearn
+do import data set
+okay and then from SK
+learn Dot
+[Music]
+mixture and
+import caution
+mixture now we'll load the iris data set
+so for that we'll write Iris
+equals and then data set that we just
+now imported from sklearn we'll write
+data sets do
+load because we need to load that data
+and we'll write this
+uh function
+sign after that we'll give
+it variable X and
+iris.
+data
+brackets so the semicolon we just wrote
+is for everything like like all the data
+when we have to show all the data we'll
+write this imagine there is an array of
+seven things 0 1 2 3 4 5 6
+okay and you want everything of that
+array so if we use this
+keyword and if you want to say out of
+that seven if you only want five we'll
+write that here comma then we'll write
+two so what this will show is only five
+0 1 2 3 4 okay now we'll
+write uh D which is which is pd. data
+frame and you'll see we get the data
+frame from
+X it will just declare so this is for
+the uh to turn the data frame for like
+turning my data into a data frame okay
+now we have to plot the data for that
+we'll write uh plot.
+scatter and then we'll write d
+of
+zero of
+one okay then we'll
+say plot
+Jo so now let's see if this works or
+not okay so it's showing me one error
+let's see okay I got it my
+mistake now let's run it again shows mat
+plot lib error
+again let's
+see uh
+like spelling mistake here okay let's
+give it a try again and another
+error
+okay gosh and mixture should be a
+capital everything looks fine this time
+so now you can see the data now you see
+the data of these flowers iris flowers
+you can see it's like everything is
+mixed and you can't identify which one
+is which and you can't identif the exact
+things that you want to see in this
+data so for that gajin mixture model
+comes in so with this method we'll see
+the difference between the things that
+we want to see in the
+data okay so we'll click on the plus
+sign and we write GMM equals caution
+mixture the sign and soon yeah soon it's
+showing us again in
+then components equals
+three so we'll find the GMM model for
+this data set and with three gajan
+distributions so that we can see the
+different colors for every data set in
+this so we'll give
+gm. fit and the data
+frame all the
+data and now we will just assign a label
+to each sample okay so for that we'll
+write label
+equals
+GMM dot
+predict the DAT data now give this data
+a
+label and we'll make that
+D
+label
+equals okay
+and going write
+D
+zero and we'll give this d0
+label so we can identify it later and
+know which one is our
+data
+so we'll again right labels
+equals 0
+okay this one is for
+zero and we'll just copy this and paste
+it three times yeah so because we have
+said three components if if we wanted it
+to do more than that we could as well so
+we would just have to change these
+values now to D1 and
+D2 and then here also we have to change
+the values or the output will not look
+like we want the output
+to okay so now that we've assigned the
+labels we'll move uh
+forward and we'll plot three clusters in
+the same
+plot okay so for that we'll write plot
+do
+scatter from
+d0 comma d0 and then
+one we'll make
+this red
+you have to write this so the color will
+be shown on the
+screen okay so then we can just copy
+this
+line and paste it one two and three so
+we'll change the value here of D to D1
+and
+D2 and then we'll change the color too
+so let's make
+it uh
+blue and green okay everything looks
+good now let's execute
+this
+and you'll see what I missed
+here have to change color of this so
+let's make it
+yellow now we'll execute
+it
+okay there you go
+and then just take a look here now you
+can see we have the output and you can
+clearly see the difference in the data
+which was previously shown like this
+where we can't see the data for what it
+is but now with the gge and mixture
+method we can see all the outputs in
+different colors so we can say that this
+method helps us very much and then we
+could print the coverage log like hold
+value and number of iterations needed
+for the model
+okay so we need to execute a little more
+code to get the value of
+that so for that we'll write print gajan
+mixture model
+lower
+bound and then we'll
+write uh
+print
+GMM do iter
+yeah okay now let's run this and now you
+have the output data and it's the value
+of that output so hence there are like
+uh seven iterations for the log like
+hold to cover it so in summary uh the
+gajan mixture model represents data as a
+mixture of gajan distribution model the
+model parameters including the number of
+components mean covariant and mixture
+weights are estimated using techniques
+like the expectation maximization
+algorithm uh the mixture model can be
+used for clustering data in two groups
+and estimating the probability density
+function of the data so with this we've
+reached the end of this video make sure
+to like and share this video And
+subscribe to Simply learned YouTube
+channel thank you staying ahead in your
+career requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our PR programs and set yourself on
+the path to Career Success click the
+link in the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

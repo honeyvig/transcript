@@ -1,0 +1,588 @@
+hello everyone welcome to this video
+tutorial on basics of goang by simply
+learn in this session we will go through
+a brief introduction to the goang
+language after knowing the basics you
+will get to know about variables data
+types and operators in the language
+further you will learn about loops
+supported by the goang and you will know
+how to declare the functions and
+pointers in goang finally you'll learn
+about the
+packages so hey everyone I'm abisara
+from Simply learn and welcome to this
+video tutorial on the basics of goink
+but before we begin if you love watching
+Tech videos subscribe to our Channel and
+hit the Bell icon to never miss an
+update now we look into what is
+goang go is a strong and statically
+typed compiled language strong language
+depicts that the type of variable cannot
+change in a code it will remain the same
+throughout the code here statically
+typed means all the variables must be
+declared at compile time and compile
+language states that you only have to
+compile the code and it will be
+converted to machine code directly it is
+same as C or
+C++ go doesn't have a virtual machine
+like Java language
+which takes time to convert the script
+into machine code moreover Co supports
+concurrent programming that is it allows
+running multiple processes
+simultaneously this is achieved using
+channels go routines Etc these features
+help go to improve its performance
+companies such as Google twitch and Uber
+use go for their
+microservices Technologies like toer
+kubernetes are in the go
+language we'll go to the official
+website of go for that we'll move to
+Google Chrome and search for go
+lank this is the official website for go
+that is
+go.d here we can see the mascot of go
+language this is the blue
+mascot as you scroll down we can see the
+companies using go language go is called
+the min istic language as it has very
+little
+documentation it is easy to learn as it
+has fewer features and less confusing
+Parts as compared to
+Java here you can run your first code
+without any setup on the
+playground we will run hello world here
+you'll write
+hello world and click on the Run button
+it will send the code to the server for
+compilation and we will get the output
+that is hello
+world we can download the
+goang from here we will click on the
+download
+button and here we can see we have
+download options for Microsoft Windows
+Apple Mac OS Linux and we have the
+source file Ive downloaded for the
+windows as I have the windows
+system from downloading go we also have
+to download an idle to run the code for
+that I have downloaded and installed vs
+code it's up to you what ideally you
+want to
+choose now we will learn about variables
+in go
+lank a variable is a storage area
+defined to store temporary data and
+perform operations on them moreover
+variable values can further be changed
+according to program needs variables
+declared without any corresponding value
+are considered zero valued there are
+mainly two ways to declare variables in
+goang that is using where keyword and
+using short variable declaration let's
+move to vs code and see the Declarations
+life now we will open a new file and see
+how to declare variables in
+goang and we'll use the inbuilt terminal
+of vs
+code here we'll select the language as
+go and press enter the first thing we
+will do is import
+fmt for that we'll write
+import and in invert is comma we will
+write
+fmt that is a formatting package and it
+contains the print function everything
+in goang is inside packages whether it
+is a print function or any other
+function
+use packages by using import and writing
+the package name in inverted commer that
+is import inverted commas
+fmt if someone wants to use your script
+he can by importing your go file or your
+go package so it becomes mandatory in
+goang to put the code in a package here
+we will put a code under the package
+main so we will write
+package
+main we'll declare a main function in
+which we will write a code we will write
+Funk fnc and the name of the function is
+mean round
+brackets and we'll start the curly
+braces and inside these curly braces
+we'll write a
+code we will declare a variable to
+declare a variable first we need to
+write the name of the variable second
+type of the variable and then the data
+assigned to the variable for that we
+will
+write where
+keyword name of the variable we will
+keep it as a and then the type of the
+variable that would be int and we'll
+assign the value
+7 we will declare another variable that
+is B where keyword name of the variable
+as B and the data type int and we'll
+assign the value
+96 now we want to print these variables
+for that we have imported the fmt
+package for that we will write the
+command fmt
+dot print
+Ln a
+comma B
+and for that first we'll save the
+file we will name the file as
+demo demo.
+go and now we will run the command in
+the terminal
+go run demo. go and press
+enter here we can see the the output
+that is 7 and
+996 that is we have successfully printed
+both the variables that is a and
+b we can also declare the variables in
+different
+form
+like we can
+write variable keyword and if we want to
+declare two variables we can declare
+them in the same line for that we will
+write variable T comma e and the data
+type that would be
+int and in the next
+line we will assign the values to them D
+comma
+e equal to 7 comma
+21 now we will print these variables for
+that we'll write the command
+we'll save the
+file and run the same command in the
+terminal that is corun demo doco and
+press
+enter we can see the output that is
+796 and
+721 now we'll see another method that is
+short variable declaration
+method for that we'll just write the
+name of the variable that is
+V colon equal
+to and the value that we want to assign
+to this variable we will assign
+76 it is same as the previous method
+that is variable the name of the
+variable data type and the assigned
+value now we'll also get this variable
+printed for that we will write the
+command fmt
+dot print
+ton in circular brackets we will write
+the name of the variable we will save
+the file and then the same command in
+the terminal that is go run demo.
+go we'll Traverse to the next topic that
+is data types in
+goling data types specify the type and
+space allotted to variables or functions
+there are four categories of data types
+in goang that is Bull type it represents
+a Boolean value and is either true or
+false the next is numeric type it
+represents integer types plotting Point
+values and complex types the next is
+string it represents a string value and
+we have the derived types it includes
+pointer types array types structure
+types and many more see some
+demonstrations in the vs
+code first we will see the float type we
+have seen the integer type in the
+previous example of
+variables now we will add two fla
+numbers and print the output for that
+first we will declare the float
+number that would
+be
+9628 and we will declare another Val
+variable that is float
+variable and assign a value that would
+be 18
+09
+now we will declare another
+variable as the output
+variable and we'll store both the
+variables by adding
+them now
+we'll print the C
+variable that is the output
+variable we'll save the
+file and run the command in the terminal
+that is cor and demo
+doco we can see the output that is
+11437 it shows that both the float
+values have been
+added now we'll see another data
+type that would be
+string first we'll clear all the code
+that you have return now we will declare
+a string
+variable Str Str colon equal to and we
+will write simply learn as a
+string and we'll print this string fmt
+dot print Len
+St Str now we'll save the
+file and run the command in the terminal
+that is cor and demo do
+go here we can see that the simply learn
+string has been
+printed now we will move to the Boolean
+data types for that we will use the same
+code
+only and we will declare another
+string that would be string one
+and we will store string learn in
+it and now we will compare both the
+strings we'll declare another
+variable that is
+out and in this we will compare both the
+strings and we'll print the variable out
+we will save the file and run the same
+command that is go andun Dem go in the
+terminal here we can find that the
+output is false because the string Str
+Str it contains the string simply learn
+and the string Str str1 it contains the
+string learn so we are comparing both
+the strings and they do not fall same so
+it gives the output as
+false now we will Traverse to the next
+topic that is operators and
+goang an operator is a specified
+operation that is performed on the op
+print the following list describe the
+different operators used in goang first
+is arithmetic
+operators it includes addition
+subtraction multiplication division and
+modulus let's see some example in the vs
+code
+first we will erase all the previous
+code and we will declare two variables
+to perform operations on them we will
+declare variable
+a and assign the value 96 to8 and
+another variable
+sorry declare another variable that is
+p colon equal to that is 18 and now
+we'll perform different operations on
+them first we'll perform
+addition we will declare another
+variable that is
+out and we will store both the variables
+by adding
+them and print the out variable
+we'll save the
+file here we C the output as 114 that is
+addition of both the
+variables we will perform next operation
+that is
+subtraction for that we will declare
+another variable that is out
+one and perform the operation as a minus
+B
+and we'll print the variable out
+one we'll save the
+file and then the same
+command go run demo do go and we can see
+the output as 78 that is 96 - 18 now
+we'll perform another operation that is
+multiplication on both the variables for
+that that will declare another variable
+that is
+out2 and print the variable out
+to we'll save the
+file and then the same command in the
+terminal and we have find out that the
+output we got is 1728 that is the
+multiplication of both the numbers 96
+and 18
+I will perform another operation that is
+division and for that we will declare
+another variable that is out
+three and we'll perform
+a divide by
+B and we'll print the variable fmt
+dot print
+Ln the variable is out three we'll save
+the file
+and the same command in the
+terminal and we would find five that is
+the output of the variable out three
+that is we have divided 96 by
+18 now we'll see the last operation in
+the arithmetic
+operators that is modulus operator for
+that we'll declare another variable that
+is out
+for and we'll perform the operation a
+modulus p
+and
+[Music]
+we'll print the variable out
+for we'll save the
+file and run the command in the
+terminal we got to our output
+S6 now we'll see some relational
+operators that would be equal to not
+equal to greater than less than greater
+than equal to or less than than equal
+to for that first we will clear the
+variable out and we'll perform an
+operation that would be a is it equal to
+equal to B we'll save the
+file and run the command go run demo.
+go what we find is false because both
+the variables have been assigned
+different values that is 96 and 18 so
+they're not
+equal we'll perform another
+operation that would be
+a not equal to B we save the
+file and run the command in the
+terminal here we got true as the output
+because both the variables have been
+assigned different values and they're
+not
+equal we will perform another operation
+that is less
+than for that we'll clear the previous
+operation and we will write the
+operation
+whether a is less than b or not we'll
+save the
+file and run the same command go and Dem
+go we have come across the output as
+false as the operation is a less than b
+but a holds the value 996 which is
+greater than b so it gives the output as
+false now we will move to logical
+operators logical operators consist of
+logical and logical or and logical not
+we'll see the example of logical
+and for
+that we will write the
+statement
+if a is not equal to B logical and a is
+greater than equal to
+B and if the statement is true we would
+print
+out fmt do print
+Ln
+yes we'll save the
+file run the command in the
+terminal here you can see that we got
+the output as yes it means
+that a is not equal to B that is 96 is
+not equal to 18 and 96 is greater than
+equal to 18 so this is the logical and
+operator now we will see bitwise
+operators bitwise operators consist of
+bitwise and bitwise or bitwise Z left
+shift right shift and
+note we'll see an example of bitwise and
+for that we will declare a variable that
+would be a r
+o and we will perform bitwise
+end on a and
+b and we will print the result that is a
+variable we'll save the file
+and run the command go run demo. go here
+we have find out that it gives the
+output as zero so what does bitwise and
+operator do it takes both the numbers 96
+and 18 and perform and on every bit of
+both the
+numbers and the result of end is one
+only if both bits are
+one now we'll move to another operator
+that is assignment operator it consists
+of various operations that is single
+assignment add assignment subtract
+assignment multiply assignment division
+assignment modulus assignment bitwise
+end assignment bitwise exclusive or
+bitwise inclusive or we will see an
+example of simple assignment for that we
+will just write the St
+statement
+a simple assignment that is equal
+to
+B and print the variable here we's save
+the
+file and run the command in the terminal
+here we can see that the value of the
+variable a has changed and it has turned
+out to be 18 because we have used the
+simple assignment
+operator now we will Traverse to the
+next topic that is Loops in
+go a loop is the repetition of a block
+of code that executes a control
+statement specific number of times go
+language works with a single Loop that
+is for Loop and moreover go language
+uses four Loop in various forms such as
+infinite Loops four loop as y Loop and
+using four Loops for Strings and
+Maps we will see a simple example to
+print simply L string seven times for
+that we'll move to vs code and clear all
+the previous
+data and start with the for Loop
+four and initializing the variable
+I that is I equal to0
+semicolon I less than
+7 I ++ Curly
+braces and now we will write the
+statement to print simply
+learn now we'll save this
+code and run the
+command the terminal go run demo. go
+here we can see that we have printed
+simply learn
+seven
+times we will Traverse to the next topic
+that is function in
+goaling a function is defined to execute
+tasks by writing blocks of gold it
+reduces the excessive use of memory with
+the ReUse of the code in goang we
+declare a function by Fun keyword
+followed by the name of the function
+with parenthesis and then a block
+containing the
+code now we'll see the syntax of the
+function first we'll write the fun
+keyword then we'll write the function
+name and the parameters for the function
+after that we'll write the return type
+and in curly bra we'll write the
+function
+body goang also contains a special
+feature that is anonymous
+function we will see a simple example of
+multiplication function that would be
+defined by us and it would get two
+arguments in that for that we'll move to
+vs
+code and we'll erase this for
+Loop now we'll declare a multiplication
+function outside the main
+function
+here first we'll write the funk keyword
+then the name of the function
+and that we will write
+multi and then we'll pass the
+arguments T comma e and assign the data
+type and the return type of the
+function and then we'll start with
+the curly
+braces and here we will declare a
+variable that would be
+out and it will perform the operation of
+multiplication and we will
+return the variable
+out and inside the main
+function we will
+declare two
+variables a = to
+76 and B =
+91 and now we'll declare another
+variable that would be
+D and in D we would call the function
+that is
+multi and pass both A and B as arguments
+into
+it and
+print the variable D we will save the
+file and run the command g demo. go we
+have got the output as
+6916 as the multiplication of 76 and
+91 now we'll move to the next topic that
+is pointers in
+goang pointers are considered as special
+variables in goang pointers are used to
+store the memory address of another
+variable the memory address is stored in
+a hexadecimal format starting with 0x
+like 0x FF a a f Etc now we'll see an
+example of pointers in goang for that
+we'll move to vs code and clear out the
+previous code
+now we will declare a variable
+value and assign value 96 to
+it and now we will declare another
+variable mainly a pointer
+variable and now in this
+variable we will store the address of
+variable
+value now we will
+print the
+value that is stored in the variable
+value and the next we would be
+displaying is the address of value
+that is
+m% of
+value and
+now we will display the value stored in
+variable a
+now we will save the
+program and run the command go run demo.
+go in the terminal here we have got the
+output value equal to 96 that is we have
+printed the value stored in the variable
+value and the next we have displayed is
+the address of the variable value that
+is m% value and we have stored the
+address in variable a
+also and that's also been
+displayed in The Next
+Step so now we will Traverse to the next
+topic that is packages in
+goang as we have already discussed
+packages in the beginning now we'll
+overview about it a bit packages are
+directory containing various methods
+functions and large number of programs
+related to particular functionality it
+makes these large programs easy to
+maintain and understand and help in
+distinguishing them of the other package
+programs to import package in a go
+program we can use import path as we
+have seen in the examples we have done
+so far with that we have come to the end
+of this session I hope it was
+interesting and informative if you liked
+it please let us know in the comment
+section below also subscribe to our
+Channel and stay tuned for more from
+simply
+[Music]
+know hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

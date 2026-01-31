@@ -1,0 +1,1323 @@
+foreign
+YouTube channel in today's video we will
+be talking about Google analytics 4. I'm
+going to share with you what is the
+difference with universal analytics why
+you should go on to Google analytics for
+as soon as possible how do you migrate
+from Universal analytics to Google
+analytics 4 and what are the key
+features of Google analytics for also
+known as ga4 so I am Mark campman I am
+your digital navigator for this video
+and as usual like the video and if you
+want to subscribe to our Channel click
+the Subscribe button below but before we
+start let me share with you something
+new we have a new course a professional
+certificate program in digital marketing
+which is a number one digital marketing
+course together with marketing lens and
+search engine Journal which we have put
+together with Purdue University T where
+you can learn the top digital marketing
+tools with online marketing course
+featuring master classes from meta and
+Purdue and Harvard publishing case
+studies so this course will set you up
+for the meta blueprint certification as
+well which is Facebook's leading digital
+marketing and Facebook marketing course
+where you learn how to use Facebook
+advertising and managing your Facebook
+page so click on this link if you want
+to know more about this program but I
+would really recommend you have a look
+at this and sign up for this course
+which is very good value for money but
+before we go on let's move on to talk
+about Google analytics 4. so Google
+analytics was originally launched in
+November 2005 as a free web service it
+was based on technology from urgent
+software corporation which Google had
+acquired in April 2005. now the initial
+version of Google analytics was a simple
+tool for tracking website traffic
+tracking page views and basic user
+Behavior
+in 2007 Google released a major update
+to Google analytics known as Google
+analytics 2 which introduced new
+features like custom reporting and
+advanced segmentation
+in 2009 Google acquired odometry a
+company that specialized in online
+attribution and advertising analytics
+and it integrated its technology into
+Google analytics in 2011 Google released
+Google analytics premium in 2012 Google
+did a very important announcement which
+was the Google Universal analytics which
+was a major overhaul of the Google
+analytics as we knew then and it
+introduced new tracking methods and
+cross-device measurement capabilities
+Google also in that year introduced a
+Google analytics 360 Suite a suite of
+Enterprise analytics tools that included
+Google analytics premium as well as
+other products for data management and
+optimization
+in 2019 with the growth in Mobile yeah
+Google launched Google analytics app and
+web a new version of analytics that
+combined web and app tracking into one
+platform and then in 2020 Google
+launched Google analytics for the
+successor to Universal analytics which
+introduced new features such as
+Predictive Analytics AI powered insights
+and improved privacy control and to be
+precise the launch date was October 14
+2020.
+so here is what we're going to be
+talking about but before I go into that
+let me give you a warning Google
+analytics 4 is Google's next Generation
+measurement solution and it is replacing
+Universal Analytics
+and it's very important to understand
+that on July the 1st
+2023 yeah Google will stop processing
+data from Universal analytics properties
+which basically means it will no longer
+track data from websites that run on
+universal analytics Google strongly
+encourages you to make the switch to
+Google analytics 4 as soon as possible
+why because you will then start building
+up a history of data and you don't start
+completely from scratch yeah in 20 in
+July 2023 so what's going to happen
+beginning in March 2023 if you haven't
+already migrated to Google analytics 4
+Google will create one for you unless
+you opt out this new property will be
+based on the settings in your Universal
+analytics property
+yeah if you have already created a ga4
+property and the property is connected
+to a universal analytics property then
+Google will copy over any configurations
+like goals and audiences from your UA
+property that you have not marked as
+complete in your ga4 property unless
+again you opt out
+until July the 1st 2023 you can continue
+to use and collect data and new data in
+your Universal analytics property but
+after July 2023 you'll be able to access
+your previous process data in your
+Universal analytics for at least another
+six months
+yes so bear in mind that it's only
+um tracking it for another six months so
+it's very important that if your
+historic data is important for you that
+you export your historic data during
+that time otherwise it'll be gone yeah
+so Google will provide a future date
+when existing Universal analytics
+properties will no longer be available
+yeah so after that future date you'll no
+longer be able to see your Universal
+analytics reports in the analytics
+interface or access your Universal
+analytics data via an API
+okay so it is very important that you
+start setting up your Google analytics
+as soon as possible and that's what
+we're going to be talking about in this
+video so here is the agenda we're going
+to be talking about what is Google
+Analytics
+we'll talk about what is Google
+analytics for we show you some of the
+differences between Google analytics 4
+and Universal analytics we'll look at
+the June of Google analytics for data
+model will give you a demo of Google
+analytics 4 I'm going to give you the
+top 10 tips and tricks and we're going
+to close with a case study and for
+convenience sake I'm now going to be
+talking about ga4 for Google analytics 4
+and UA for Google Universal Analytics
+okay so before we go into Google
+analytics let's talk about web analytics
+for a second what is web analytics now
+with web analytics refers to the process
+of collecting measuring analyzing and
+Reporting data related to your website
+and the behavior of the people that
+visit your website this data can be used
+to gain insights into how your visitors
+are interacting with your website which
+pages are most popular how long visitors
+are staying on your website or on a page
+which channels are driving the most
+traffic and a lot more data that you can
+get from this
+they typically provide a wide range of
+metrics like page views unique visitors
+bound rates conversion rates average
+time on the page yeah and by analyzing
+these metrics you can make Market driven
+decisions yeah and data-driven decisions
+about how to optimize your website for
+better performance better user
+engagement better user experience and
+increased conversions and increase
+revenues
+it can also be used to track the
+effectiveness of your advertising
+campaigns of your marketing campaigns of
+your website design the functionality
+yeah and the impact of changes that you
+make on your website over time so
+overall website analytics is an
+essential tool for a business or an
+organization that has a website because
+it provides valuable insights on how
+visitors are interacting with your
+website and it helps you drive the
+improvements that you have to make to be
+more successful with your website so
+it's very important that you understand
+that yes so now then what is Google
+Analytics
+yeah so
+um now Google analytics is a free web
+analytics servers that's offered by
+Google and that helps you to track and
+analyze website traffic and user
+Behavior
+now it's important to know that to use
+Google analytics you must install a
+tracking code on your website on every
+page of your website which allows Google
+to collect data on that particular page
+yeah on usage and on usual Behavior
+this data is then aggregated and
+presented in a user-friendly dashboard
+in Google and lytics where users can
+access a wide range of reports and
+analytics tools to gain insights into
+the website performance and user
+Behavior
+so Google analytics is a powerful web
+Analytics tool that provides a wealth of
+insights into how users find and use
+your website it gives a fantastic deep
+understanding of the visitors of your
+website including their demographics
+their behavior their interests and other
+metrics that you're getting
+it provides a wide range of data and
+insights like number of visitors to the
+website where visitors are coming from
+which pages are most popular how long
+are visitors staying on a page which
+channels are driving the most traffic
+it also provides insights on visitor
+demographics like age like gender like
+location and interest which is
+information that can be used to to
+Target your audience and tailor content
+to um and optimize your marketing
+efforts
+so the current version of Google
+analytics is called Universal analytics
+or Google UA
+this data model is designed to help
+website owners and marketeers understand
+how users interact with your website
+the data model is built around a
+hierarchical structure that allows
+website owners to collect and analyze
+data from various user interactions on
+the website at the top of the hierarchy
+are the accounts
+yeah they represent a collection of
+websites or mobile apps owned by you by
+a single entity by a user when each each
+within each account there can be
+multiple properties
+they represent individual websites or
+mobile apps
+yes so each property has a unique
+tracking ID that is used to collect data
+on user interactions
+within each property there can be
+multiple views which represents
+different perspectives on the data
+collected for that property
+yeah they can be used to segment data
+based on specific criteria such as
+geography device type or user Behavior
+at the lowest level of the hierarchy are
+the data collection objects which
+represents the individual interactions
+that user have with a website or a
+mobile app
+yeah so these objects they include page
+views they include events transactions
+and other user interactions that are
+tracked using Google Analytics
+overall the universal analytics data
+model provides a very flexible and
+scalable framework for collecting and
+analyzing data from user interactions on
+websites and mobile devices
+so Google analytics provides a wealth of
+information about how visitors interact
+with your website which is crucial for
+marketing people to optimize their
+website
+yeah so the information can be used to
+identify areas where the website is
+performing well and where it isn't
+performing well where it needs
+Improvement for example if a website has
+a very high bounce rate on certain pages
+this may include that the content on
+those pages is not engaging enough or
+that there are technical issues
+preventing users from accessing the
+content
+by identifying these issues you can make
+data driven decisions to optimize the
+website and improve the engagement so by
+using Google analytics you can gain
+insights into key metrics such as
+traffic sources bounce rates time spents
+on the site and conversion rates
+it helps you to make informed decision
+that lead to increased traffic
+engagement increase conversion and
+ultimately Drive business growth
+now then what is Google analytics 4 or
+ga4
+ga4 represents a major update to the
+Google analytics platform and addresses
+many of the limitations of UA
+while UA provided very valuable insights
+into website performance and user
+Behavior there were various limitations
+to it that led Google to use ga4 one of
+the main limitations of UA
+was that it relied heavily on cookies to
+track user Behavior
+and with the right of privacy concerns
+and the increasing use of ad blockers
+cookies became less reliable as a
+tracking mechanism leading to gaps in
+data collection
+also UA was not designed to track user
+Behavior across multiple devices making
+it difficult to gain a holistic view of
+user interactions
+GA has been designed to address these
+limitations by providing a more flexible
+and privacy friendly tracking mechanism
+it uses a new tracking code that relies
+of a combination of cookies and
+server-side tracking to collect data on
+user Behavior
+and this approach provides you more
+accurate and reliable data collection
+while also addressing privacy concerns
+so let's dig a bit deeper in Google
+Analytics 4.
+so ga4 is the new version of Google's
+web analytics platform and it decides to
+provide you more advanced features and
+capabilities
+as I mentioned at the beginning of
+today's session it is set to replace UA
+by July 2023
+now there are three groundbreaking
+features in ga4 that you need to be
+aware of
+first of all ga4 is an event driven data
+model it uses an event-driven data model
+which means that it tracks user
+interactions as discrete events rather
+than page views as we saw in using in
+Universal Analytics
+this gives you more flexibility it gives
+you more detail in trekking usual
+Behavior as you can stretch specific
+actions that users can take on your site
+or your app it also allows for more
+cross device and more accurate
+cross-device and cross-platform
+measurements as events can be tracked
+across different devices and different
+channels
+the second major Improvement is the AI
+powered insights ga4 includes Advanced
+artificial intelligence and machine
+learning capabilities such as Predictive
+Analytics and user life cycle analytics
+it helps you better understand your
+users and therefore make better
+data-driven decisions for example it can
+provide insights on which users are more
+likely to convert or churn and offer
+recommendations on how to optimize your
+website or app for better performance
+the third major Improvement is the
+improved privacy controls ga4 includes
+new privacy controls and data retention
+settings which give users more control
+over their data and allow website owners
+to comply with regulations such as the
+gdpr and CCPA
+for example you can choose to
+automatically delete user data after a
+certain period of time or provide
+opt-out options for users who do not
+want their data to be tracked which of
+course helps to build trust with users
+and this demonstrates a commitment to
+responsible data use
+so let's expand on this event-based Data
+Tracking a key feature of ga4
+in UA website owners and marketeers
+could track user Behavior by tracking
+page views which provided a high level
+view of how users were engaging with a
+website
+however this approach had limitations in
+terms of tracking more specific user
+interactions such as clicks on a
+particular button or filling out a form
+ga4's event-driven data model allows you
+to track a wide range of user
+interactions and discrete events it
+provides more flexibility in tracking
+user behavior and allows for more
+granular insights into how users are
+engaging with your website for example
+website owners and marketeers can track
+user interactions such as clicks form
+submissions video plays and downloads
+among many other interactions
+by tracking user interactions as events
+ga4 allows you to Define custom events
+and parameters there are a number of
+default events that come with ga4 but
+you can specify your own events as well
+so you can track specific user behaviors
+that are unique to your website and your
+business goals
+for example an e-commerce site could
+Define custom events to track user
+interactions with their shopping cart or
+checkout process providing valuable
+insights into how users are progressing
+through the conversion funnel
+through this events-based trekking ga4
+provides more accurate and more
+comprehensive views of user behavior and
+allow you for better cross-device and
+cross-platform measurement
+ga4 also provides new privacy control
+and retention settings which give users
+more control over their data
+it allows website owners to comply with
+regulations such as to gdpr and the CCPA
+for example you can choose to
+automatically delete user data over a
+certain period of time or provide opt
+out of options for users who do not want
+their data to be tracked
+one of the key privacy features of ga4
+is the ability for website owners to
+Define their own data retention policies
+this allows you to specify how long you
+want to retain user Data before it's
+automatically deleted
+yep and that helps you with complying to
+gdpr regulations which require data to
+be kept for a limited period of time
+and another key privacy feature is ga4's
+ability to use server-side tagging this
+approach to tracking user behavior in
+false sending data directly from the
+server to Google analytics rather than
+relying on client-side tracking via
+cookies
+yes so it reduces your Reliance on
+cookies which is a really important part
+of the Privacy regulations
+so Google analytics 4 also integrates
+seamlessly with Google's other marketing
+and advertising platforms such as Google
+ads and Google's marketing platform
+by integrating with Google ads ga4
+allows you to track the performance of
+your ads directly within the ga4
+interface it makes it easier to measure
+the effectiveness of your ad campaigns
+and to optimize your campaigns for
+better performance yeah so you can for
+example use ga4 to track the key metrics
+such as ADD clicks conversions and
+revenues generated from your ads
+by integrated with Google's marketing
+platform ga4 allows you to gain a more
+comprehensive view of your marketing
+performance across multiple channels
+this integration allows you to track
+user Behavior across a range of
+marketing channels including search
+display social media and video
+it allows for more seamless data sharing
+between the platforms yes so website
+owners can use the data collected in ga4
+to inform their Google ads campaign or
+use data from the Google ads to inform
+their ga4 reporting
+right so having that done as an
+introduction of ga4 let's look at some
+of the differences between Google
+analytics the universal the Google UA
+and the ga4
+so let's summarize these difference the
+first one of course that we talked about
+was the event-based tracking yeah so the
+main focus of universal analytics is on
+tracking page views and sessions which
+may not provide enough detailed
+information and can limit the depths of
+insights that websites owners can obtain
+with ga4 there is greater emphasis on
+event-based tracking which enables you
+to Monitor and track specific user
+actions and events on your website or
+app such as clicks form submissions or
+video plays
+the next one was the data model
+yeah so the hierarchy data model used by
+Universal analytics is based on
+dimensions and metrics
+and this can be less flexible and it's
+more rigid in nature where ga4 uses
+events and parameters to closely Monitor
+and analyze user Behavior across various
+touch points and devices
+the soga4 allows for more precise and
+flexible Data Tracking giving you the
+ability to collect and analyze data from
+a wider range of touch points and more
+devices
+the next big difference was in the cross
+device tracking
+so the cross device tracking
+capabilities on UA are limited which
+primarily relies on cookies for this
+purpose where in ga4 its Advanced
+tracking capabilities ga4 greatly
+enhances cross-device tracking enabling
+you to gain valuable insights into user
+Behavior across various devices and
+platforms
+and then there were the Privacy features
+one of the key differentiators of ga4
+universal analytics does not offer some
+data privacy features however they are
+and those that they that they do offer
+they are not as advanced as the privacy
+and data retention settings available in
+ga4
+yeah ga4 provides automatic data Erasure
+and built-in data controls which helps
+you to comply with data privacy laws and
+also gives users more control over their
+data
+and the next one was the integration
+with Google ads and other Google
+products yeah but particularly the
+Google ads integration is important so
+the universal analytics has a very
+limited integration with Google's other
+marketing products like Google ads while
+there is some integration yes such as
+the ability to link Google ads and
+analytics accounts the level of
+integration is not as seamless as you
+will get in ga4
+ga4 Works a much deeper as a much deeper
+integration with Google ads the
+data-driven model allows for more
+granular tracking of AD performance yeah
+enabling you to understand the best
+um the the the results that you're
+getting from your campaigns
+so those are the key differences between
+ga4 and UA and then let's have a look at
+the ga4 data model in a bit more detail
+because the data model ish
+is fundamentally different than on UA
+where in UA you had the um the
+hierarchical model GA force model is
+based on the event tracking
+yes so the ga Force data model focuses
+on tracking user interactions with a
+website or an app as events
+and therefore you get more granular and
+flexible tracking of user Behavior
+you can customize your tracking by
+defining custom events parameters and
+user properties enabling you to spec to
+track specific actions and behaviors
+yeah so the ga4 data model is designed
+to provide insights into individual user
+Behavior across multiple touch points
+and devices
+allowing you to give a better
+understanding of your audience
+so in the ga4 data model events are
+specific actions that users take while
+interacting with your website
+these actions can be tracked as discrete
+events providing owners website owners
+with more granular and actionable data
+events can be like clicks on a button a
+form submission video plays and other
+types of user interactions by tracking
+events you gain a better understanding
+of user Behavior user preferences and it
+makes you in a much better position to
+make decisions on improving website
+performance and user experience
+the parameters they provide additional
+context and information about the event
+such as the value of a transaction the
+category of a product Feud or the name
+of a button clicked by leveraging
+parameters you can get an even better
+Insight you can get better segments in
+your audience and you get more detailed
+insights into user behaviors
+so together events and parameters
+provide you with granular understanding
+of the user behavior of people visiting
+your website
+okay so enough about the theory let's go
+and have a look at Google analytics 4 in
+more detail by giving you a demo of the
+most important functionality of it
+so the best way to access Google
+analytics 4 is through the marketing
+platform.google.com about
+and if you scroll down here you can see
+that there is Advanced solutions for
+large Enterprises and here you see
+analytics for Integrated Solutions for
+every Market here
+so learn more about analytics that's
+where we're going and here you accept
+all the details that you need for your
+Google Analytics
+so there's two ways that you can go and
+get your Google analytics setup you can
+if you have already got a website on
+universal Analytics
+then what you do you sign in to
+Analytics
+that takes you to your existing
+Universal analytics account and then you
+will see how to upgrade to Google
+analytics 4 or you can just start from
+scratch with get started today but let's
+go the route of signing to analytics so
+if we sign into Analytics
+it takes you to your existing website
+and in my case this is my own website
+yeah here you see it's already on ga4
+because I've already created a ga4
+account so I'm going to change this and
+I'm going to take this to my UA account
+okay so this is my Universal analytics
+account
+here when I go there you see immediately
+because it is a UA account at the top an
+important message that Google says on
+the 1st of July 23 we will stop
+processing data
+Etc yeah and then here you can go to
+manage the ga4 migration that's where I
+click and now it takes me to my either
+the process of turning my UA into a ga4
+but since I've already done that it just
+says go to your ga4 property
+hmm
+and by going to my ga4 property I now go
+into the setup assistant and the setup
+assistant will talk you through all the
+steps like data collection the property
+settings integration with Google ads
+linked to Google ads Etc and there's an
+advanced setup as well but these are the
+basic steps that we need to go through
+and the first very important part that I
+need to do is to need to collect
+websites and app data so I haven't
+started that yet yeah so I am going to
+manage the data streams
+so here you see my ga4 property but I
+need an I can add another app stream if
+I want to or another website but I only
+have my website so here I just click on
+the details
+and this is where I have my stream name
+my stream URL My Stream ID my
+measurement ID yep and here I see the
+enhanced measurements which are the
+events that I'm tracking yeah I can
+modify event I can create custom events
+and here I see my Google tag
+instructions
+so here I can view the tag instructions
+yeah and here I can go
+let me have a look
+so here you see install your Google tag
+and here I can get the installation
+instructions I can install it with my
+CMS
+if that's on the list where I can just
+copy the tag ID
+so when I have WordPress for instance
+there is a ga4 plugin and the only thing
+I need to do is to add plugin code yep
+and that is this the tag ID or I can
+install manually and that is the piece
+of code that I need to install on my
+website using Google tag manager now I'm
+not going to demo that I'm just making
+you aware of this yeah in the next
+module next video we're going to be
+talking about Google tag manager so
+that's watch that video if you want to
+know how to take this piece of code and
+add it to your website
+okay so that gives me all the data I
+need to connect my my website to Google
+analytics so it starts tracking the data
+all right so that is how I can set up
+the website for ga4 if I don't want that
+I want to start from scratch yeah if I
+go back to this site I said get started
+today it will again take you to your
+existing property
+but it will then actually
+show you here at the bottom continue
+setting up your property try the
+analytics demo account yeah or learn
+more about data analytics
+um yeah and get started with the Google
+analytics four so lots of things that
+you can get here and it makes it very
+easy for you to migrate to your to
+Google analytics for okay now
+let's look into Google analytics for
+itself I don't want to do that on my
+website I actually want to go to the
+Google analytics demo account Google has
+a merchandise store and in this
+merchandise store they have made the
+analytics data available for people to
+learn about Google analytics so that's
+why we're going to have a look at we're
+going to use the Google merchandise
+store data to look at Google analytics
+for
+okay so when you go to Google analytics
+for the home page as it were you see
+this screen
+yeah here you see your menu where you
+have your home
+yeah that is kind of your dashboards
+it's top level reports personalized it
+shows reports that you recently viewed
+automated insights Etc
+you don't have your reports
+in the reports they show you
+pre-configured reports dedicated reports
+how people find your website the pages
+they viewed if they convert it to
+demographics details about the devices
+they use and so on there is the explore
+in Explorer you can create your own
+reports and visualize data in different
+ways like simple tables funnel
+visualizations
+Etc
+then you have your integration with
+advertising it lets you if you dedicated
+attribution reports see the
+relationships between different channels
+and how they lead to conversions on your
+website and then there is the admin and
+in the admin you can access additional
+settings for accounts and for your your
+property and this is also where you can
+create your events your parameters and
+your conversions
+yeah so there are many reports in Google
+analytics 4 which you don't have to use
+them all yeah so
+um but let's give you some of the
+highlights yes so the home is your
+dashboard so it gives you the last seven
+days by default you can change that of
+course you can change it last 28 last 19
+you can do comparisons as well yes so
+you can also see a trend line
+for the selected item yeah so and then
+here you see the last sort of the last
+the users in the last 30 minutes
+your report you've recently viewed and
+here it shows you some suggested reports
+and here you have to Google AI the
+insights and the recommendations yes so
+this is very useful information you can
+get from Google in
+um additional knowledge about what's
+happening in your Google analytics so
+then let's look at the reports there are
+multiple reports the most important one
+to start with is your report snapshots
+your report snapshot is similar to your
+home report it gives you users new users
+total revenue yeah users in the last 30
+minutes it gives you insights yeah so
+basic reporting that you get here it's
+your top campaigns users by country how
+active users are active users trending
+how well do you retain your users
+Etc so lots of data that you can get on
+this page
+okay so that is your report snapshot it
+then goes into real time real time we
+saw that in Google Universal analytics
+as well here you see it actually in a
+much more extended version yep so it
+shows the people that are currently
+viewing your website so it's very useful
+to check where people are lending on
+your website for instance when you run
+an email campaign check if people do get
+to the associated pages with your email
+campaign each card include a bar chart
+yeah and of course read the users per
+minutes from right to left yes so
+because this is now yeah and this is
+sort of 30 minutes ago
+okay so we can see the content people
+are viewing you can see the pages they
+are viewing the events that are being
+collected you can also see the
+conversions and the user properties that
+people have been collecting you can also
+see the granular details of people so
+which is the view the user snapshots
+yeah that is a nice little gimmick but
+it can also be very useful
+it gives a breakdown of the actual
+session in events
+yeah so here you see uh on a Huawei
+phone in Riyadh yeah so you see the
+exact sort of event what is happening
+they're scrolling they're viewing a
+promotion yeah so and if you click on
+there's the user engagement if I click
+on that then that gives me all the
+parameters and the user properties that
+you want from that that session so very
+useful to get
+nitty-gritty data about user engagement
+if you want another user just click on
+this Arrow yep and if you want to close
+this here is the exit snapshots so those
+are the real-time overviews and then
+here you have on the kind of the life
+cycle yeah the reports from acquisition
+to engagement to monetization and
+retention four categories of reports
+kind of following the buyer life cycle
+first of all is the acquisition reports
+so if we go to the overview it gives you
+information about how people are finding
+your website it gives you information
+about the users it gives you information
+about the traffic
+so here you see the number of users the
+users in the last 30 minutes here you
+see users by default Channel grouping
+like user analytics I can add an
+additional Dimension as well for
+instance first user source and medium so
+you can say how they were communicated
+to and where they were communicated yes
+so really useful breakdown of the
+information and here you see the
+lifetime value that you get from a user
+yeah so that's very useful information
+so you can also change the date of
+course of the report and you can again
+compare with previous periods as well
+which is stem similar like what we saw
+in user Universal analytics as well the
+user analytics shows you metrics how
+users fund your website at their first
+visit
+yes so the different channels that they
+used hereby
+um by bars and by line yeah here you see
+the different
+um the different channels that they they
+use you see a number of new users engage
+session engagement rate engage sessions
+per user the average engagement time
+it's a very useful data that you can see
+here and of course you can add a second
+dimension as well for instance if you
+want to see the way people found your
+website combined with the landing page I
+can pay put here for instance with the
+page and Landing Page Plus query string
+so then it gives you where they landed
+on your website as well
+so very useful the next one is the
+traffic acquisition
+the traffic acquisition shows you how
+people found your website to start each
+of their sessions it goes beyond the
+very first time they found your website
+it's based on sessions so we can see
+session based metrics in the table again
+you can change the dimension here and
+add a second dimension using the plus
+sign
+we then go to the second category which
+are the engagement reports yeah they
+show you what people are doing on your
+website the pages people are viewing and
+the events that are automatically
+collected using the enhanced measurement
+feature and any other event you are
+tracking yes so if we select pages and
+screens it shows you the pages people
+are viewing on your website
+yeah based Pages reported based on page
+title ordered by a number of views
+number of page huge number of users
+change the default setting as well yeah
+so I can add here more information so
+page title and screen name I can add if
+I want to so different things that I can
+I can add yeah so here's the page title
+and Screen class and I can add a
+dimension for instance I can say page
+cream landing page and query screen
+so I can get more detail here yes or you
+can also get to the top level summary in
+the overview report so events shows you
+all of the events that have been
+collected
+yeah and you can get click on the name
+of the event to get more details on the
+event
+and the conversion report
+yeah yeah so you see the the details of
+the event
+okay the conversions
+is the total number of conversions for
+the date range based on the events that
+have been marked as a conversion
+okay we then have the monetization
+so in the monetization reports you have
+e-commerce reports and reports for
+in-app purchase and publisher ads these
+two reports are to measure purchases and
+add Revenue in mobile apps
+yes so the total revenue from all the
+events and the e-commerce revenue is
+from transactions
+yeah then you see the total number of
+people who made a purchase and the total
+who made the first time purchase
+both are user-based metrics next to that
+we see the average purchase Revenue per
+year and the top items being sold
+remaining cards are blank yeah because
+Google decided not to implement
+e-commerce tracking for item lists and
+item promotions and coupons
+okay so that is your
+monetization you have e-commerce
+purchases and you also have your in-app
+purchases but we haven't got any uh app
+integration here so there's nothing
+there and then we have your retention
+this group shows users in cohorts based
+on when users view your websites shows
+new and returning but this is all based
+on Go words that you've that you've set
+and then there is your demographics
+report as well
+yes so if I go to the user reports there
+are your demographic and your Tech
+reports demographic is where people are
+coming from their location their age
+their gender and what have you pretty
+standards there's demographic details as
+well and then you have your users by
+country or by City
+yeah and you have your Tech reports
+yeah and the tech report shows you the
+devices that they use and everything
+else in relation to devices and
+operating systems
+okay so those are the standard reports
+in
+um Google analytics four yeah so let's
+go to the next section and that is the
+explore section
+in the explore section you can create
+additional reports
+yep there is a library of reports
+already available in here that you can
+get yeah but you can create your own
+reports as well there are blank reports
+by clicking on plus there are free form
+reports they can create any type of
+chart that you would like there's funnel
+exploration reports they let you
+visualize particular steps you want
+people to travel through like steps to
+complete a lead form or steps to
+complete a an e-commerce checkout you
+can do path exploration reports they let
+you visualize the path that people take
+through your pages or other actions they
+take on your website there is your
+segment overlap lets you apply multiple
+segments to see if users are included in
+one or more of your segments there's
+cohort exploration that lets you group
+users based on the days weeks or visit
+your website and then there is the user
+lifetime reports they let you view
+additional lifetime user metrics
+yes so in your own property you will
+also find user Explorer which lets you
+drill down on the individual users that
+isn't available in the Google demo
+property yeah so click on any of these
+options we'll pre-load a
+um we'll load a pre-configured template
+and then here of course you see the
+reports that are used by other people so
+if you want to create a report from
+scratch you just go to the beginning and
+you click on the plus
+yep and that is basically it is the
+Google data studio interface is very
+familiar that you you get here yeah so
+you can specify your segments your
+dimensions and your metrics and by doing
+that that is how you can create your
+your report now I'm not going to show
+you how to create a report yeah but at
+least now you have the the route where
+to go to create your own reports
+okay then we have the advertising
+options yeah that is the last section
+here in your reports it shows the
+relationship between your different
+marketing channels
+yeah so and they let you apply
+attribution models so the snapshot
+shows the top level summary of your
+marketing channels you can see which
+channels drove the most conversions and
+it gives you automated insights based on
+the Google machine learning
+we can also see that be the most
+important touch points that people take
+leading to conversions there is the
+model comparison report it shows you the
+marketing channels on the left and on
+the right we see the revenue and the
+conversions per Channel
+yeah so first is based on the
+last click attribution model and the
+second one is based on the the data
+driven the cross-channel data-driven
+attribution model so two different
+models you can change those if you want
+to yes so but this is where you want to
+look for significant changes in the
+report changes that have a positive
+percentage means that we may be
+undervaluing the marketing channel when
+we use the last click model
+changes they have a negative percent
+means that they may be overvaluing the
+marketing channel when we use the last
+click Channel
+yes so that is the um the model
+comparison and then there is your
+conversion path report that provides a
+visual representation of the marketing
+touch points people engage with before
+converting here we can see how some
+wrote shows that some users are engaged
+with our organic search listing multiple
+times before converting
+yeah people can go through multiple
+touch points yeah this helps you to
+understand the relationship between your
+channels and how they drive conversions
+on your websites
+yeah you can customize the reports by
+changing the dimension used for the pass
+and you can change the attribution model
+as well
+okay so that is everything there is on
+the reports as it were in the admin you
+can configure your Google analytics for
+and you see that here on the right you
+can configure your data streams you can
+configure your events your conversions
+and your audiences
+yeah so here you see the events that
+have been created for the Google
+merchandise store
+and here you can add additional events
+here you can say whether you want to
+mark them as a conversion or not of
+course I can't edit this because I
+haven't got edit right if I go to the
+conversions then here you see the
+conversion settings
+yeah that you can
+and the conversions that you have set
+you can specify your audiences
+audiences is very important
+yeah so you can create all the interest
+to report on particular groups of users
+this is your segmentation as we knew it
+in Google Universal analytics yes so you
+can for instance users who have made
+purchases on the website or users who
+haven't converted yet
+or you can use it audiences to focus on
+reporting you can also use them for
+remarketing in your linked Google ads
+account
+okay so here are your audiences then
+here you have your debug View
+yeah so that is where you can test your
+uh your events here you can have your
+product links yeah so you have your
+Google ads links ad manager links and
+big query link
+yes so bigquery is important
+yeah where you can actually link to
+Google bigquery where you can import
+your data to get more
+um reports more visualizations on your
+data as well as the links with the
+display and the video 360 links so lots
+of Integrations
+um in Google analytics four and that
+concludes the Google analytics 4 demo
+yeah so in next week's video you will
+see we're going to talk about the Google
+tag manager and that is where I will
+show you how to add the code the the the
+tagging code to every page of your
+website using the the Google tech
+manager but for now this is all I want
+to share with you on the Google
+analytics demo
+so I hope that gave you a better
+understanding of how to use Google
+analytics for and now let's close
+today's session with giving you some
+tips and tricks and share with you a
+case study of a company that very
+successfully used ga4 to achieve their
+business objectives so let's start with
+my tips and tricks number one use
+conversion tracking conversion tracking
+is vital in your digital marketing yep
+and we're in Universal analytics you
+could set up goals in um to to track
+conversions in Google analytics for you
+can track to set them up as events and
+they enable you to measure the
+effectiveness of your marketing
+campaigns and optimize your websites
+accordingly so very important to set up
+the conversion tracking
+Google analytics comes with a number of
+standard events and parameters but I
+urge you to use custom events impairment
+parameters as well set up your own track
+your own events yeah that will give you
+additional insights in how your users
+are acting on your specific website so
+very important to um to do that tip
+number three set up audience targeting
+yeah ga4 allows you to set up
+specialized audiences depending on user
+Behavior yeah so thereby you can tailor
+your message messaging and offering to
+certain audience categories yeah so
+they're very Advanced audience targeting
+capabilities in ga4 so use those
+tip number four use machine learning
+insights don't overlook those in
+Universal analytics they were kind of
+Hidden Away in ga4 they are very clear
+start using those yes they give you
+insights into user behaviors and Trends
+and you can really use that intelligence
+to optimize your website and your
+marketing campaigns
+then set up custom reports the reporting
+functionality in ga4 is really good very
+extensive yeah lots of standard reports
+already in there but create your own
+reports thereby you gain a more granular
+understanding of user behavior and of
+course thereby you can optimize your
+website accordingly
+so use the data layer yeah that's an
+important element of Google analytics
+for it allows you to use a data layer to
+track custom events and parameters and
+gain more detailed insights into user
+Behavior
+setup data streams
+don't limit your data to just your
+website yeah so set up a stream for your
+website for mobiles for apps yes so you
+can then track data from different
+streams giving you a more granular
+overview of how people are in engaging
+and interacting with your various
+platforms
+use data import yes so ga4 allows you to
+import data from other sources like
+Google ads to better understand user
+behavior and preferences
+tip number nine is to use the big query
+integration
+ga4 integrates with Google's bigquery
+data warehouse allowing you to export
+your data for further and deeper
+analysis and visualization
+and then finally monitor your data
+privacy yes so website owners can
+monitor your data data provide privacy
+settings to make sure that they are
+compliant with privacy regulations like
+gdpr and CCPA
+good finally let's close today's video
+but looking at a case study of how
+McDonald's in Hong Kong use ga4 to grow
+their business
+show McDonald's Hong Kong were facing
+challenges with its online ordering
+system which resulted in low conversion
+rates and the high bound rates they
+adopted ga4 to get a better insight into
+user behavior and preferences
+and by using ga4's tracking capabilities
+they were able to identify the specific
+points where customers were dropping off
+the ordering process with this
+information they made several
+improvements to the order flow including
+simplifying the menu and making it
+easier to customize orders
+also they used a ga4s machine learning
+capabilities to identify user patterns
+and preferences and personalize the
+ordering experience for each user
+so they use ga4 to improve their mobile
+apps performance and increase in-app
+orders
+by using the event-based tracking and
+data analysis they were able to gain
+insights into user behavior and make
+data-driven decision to improve the user
+behavior and as a result they saw a
+significant increase in in-app orders as
+well as improvements in user engagement
+and retention
+as I said they use predictive audiences
+in ga4 to identify users who were more
+likely to purchase within the app they
+use machine learning models to analyze
+user behaviors such as in-app purchases
+time spent on the app and menu item
+preferences to create these predictive
+audiences and once these audiences were
+created they used them to Target their
+advertising efforts to these high value
+users with personalized offers and
+promotions
+so as a result of all these changes
+McDonald's Hong Kong saw a 550 increase
+in app orders yeah as well as an
+increase in customer satisfaction and
+customer loyalty
+the success of this case study
+demonstrates the power of ga4 in
+providing insights and actionable data
+for improving customer experiences and
+driving business growth
+yeah so the link to this article of this
+case study you will find in the um in
+the
+the the the notes by in the video yeah
+and I highly recommend you read this
+article to get more insights in how
+McDonald's in Hong Kong use ga4 to grow
+their their business so that concludes
+today's session as we say it's a wrap a
+short introduction to Google analytics
+four if you want to know more check out
+the simply learn courses and if you like
+the video click the like button or the
+share button and of course if you want
+to subscribe to our Channel click on the
+Subscribe button below so thereby you
+can join our Learners community on
+YouTube thank you very much and I'll see
+you at the next video
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

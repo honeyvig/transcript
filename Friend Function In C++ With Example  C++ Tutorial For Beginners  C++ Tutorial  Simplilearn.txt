@@ -1,0 +1,544 @@
+hey everyone welcome back to another
+video by simply learn in this session we
+will learn about friend functions in c
+plus so let's go ahead and have a look
+at what we'll be covering today in this
+session we will cover topics like why do
+we need a friend function what is a
+friend function in c plus plus then the
+declaration of friend function and after
+that we will learn what is a friend
+class then we will understand features
+of friend function and its advantages
+but before we begin make sure to
+subscribe to our channel and hit the
+bell icon to never miss an update so
+first is why do we need a friend
+function friend functions are used when
+we want to access the private or
+protected members of the class but
+without the help of the objects it helps
+us in avoiding the case where the
+functions must be a member of both the
+classes in order to access them or in
+other words a function doesn't have to
+be a member of both the classes in order
+to access the class data a friend
+function is also used to perform
+operator overloading like functions
+operators can also be overloaded and
+because of the friend function it is
+possible now let's understand what is a
+friend function a friend function is not
+a member function of the class and it is
+defined outside the class
+and we know outside members cannot
+access the class data but the friend
+function can access those private public
+and protected class data because the
+friend function is friendly with the
+class
+now let's move to declaration of friend
+function the declaration of friend
+function must be done inside the class
+the friend function is declared using
+the friend keyword then the return type
+then the name of the function that is
+made a friend of the class its
+definition is done outside the class and
+we don't use the friend keyword while
+defining it but while declaring it
+inside the class we use the friend
+keyword now coming to the next topic
+that is what is a friend class
+exactly like a friend function a class
+can also be a friend of another class a
+friend class is that class that can
+access the data members and member
+functions of a class to which it is a
+friend
+we need to pass the objects of the class
+to a member function of the friend class
+if we want to access those private and
+protected members
+also if the classes are declared friends
+then all the member functions of the
+class will be a friend function to the
+friend class
+now let's have a look at the syntax here
+we have done the forward declaration of
+class table this will allow the access
+of the objects of the class table
+in the class club inside the class club
+we have declared friend class table that
+means the class table is a friend of
+class club and it can access members of
+that class after that we have defined
+the class table without the friend
+keyword as we can see
+now coming to features of friend
+function so here are some features of
+friend functions so let's start with the
+first one that is a friend function
+can be easily invoked just like a normal
+function it doesn't require any object
+or so to invoke next is the scope of a
+friend function is not limited it can be
+a member of another class as well third
+is a friend function can be declared in
+any part that is private protected or
+public parts of the class
+fourth is the object of the class can be
+used as an argument for the function and
+the last is a friend function can access
+the members by using the object name and
+dot operator along with the member's
+name
+now coming to advantages of friend
+function the first advantage is with the
+help of friend function we are able to
+access the known public members of the
+class that is the private members the
+second advantage is friend function
+helps in operator overloading and the
+third advantage is because of the friend
+function we are able to share the
+private information by a known member
+function as friend function is not a
+member function
+last advantage is
+fan function allows us to generate more
+efficient code so these were some
+advantages of friend function so now
+let's go ahead and do some examples on
+friend functions to understand it in a
+better way so let's open our visual
+studio code and do some examples
+so first of all let's make a new file
+let's name it friend one
+dot
+cpb
+all right so now here we'll do a simple
+program of friend function so let's
+start
+with including the header file has
+include iostream
+now we will write using namespace
+standard
+all right
+and
+inside the main function
+first of all we will create an object of
+a class let's say the name of the class
+is salary and the name of the object is
+s
+all right after that we will
+simply write return 0
+and we will do the rest of this after
+creating the class
+so we need to first create the class now
+we'll write
+class
+salary which is the name of the class
+and inside this class first of all we'll
+write private
+access modifier and
+here we will write
+or declare
+a variable named cell
+after that now we will write or declare
+the friend function so we know how to
+declare a front function we'll write
+friend keyword
+then the return type that is int
+and then the name of the
+function let's say increment
+and then the objects as we know we have
+to pass
+the name of the class with the object
+because we want to access the private
+member of the class
+so salary s which is the object
+and after the class we'll write the
+semicolon
+now we have to create or define this
+increment friend function we'll write
+int
+increment
+here we haven't used the front keyword
+because this is the definition
+now inside the arguments will pass the
+the object
+all right
+now inside the main function
+we will call this friend function so
+first of all we will display a message
+saying that
+increment
+is
+that the increment in the salary is
+and then we will call this
+function
+and we will pass this object
+all right now inside this increment
+function which is a friend function we
+will use object as
+dot operator and then
+the name of the variable which is
+private
+now all we need to do is to
+increment this salary variable
+we'll write s dot cell plus
+7000
+which is the increment and then we will
+return
+s dot cell
+all right now as we can see this
+increment function which is not a member
+function of this class
+is accessing this private variable of
+salary class and is incrementing 7000 to
+the salary so now let's save it first
+and let's try to run this
+there is some error
+let's have a look at that
+um all right
+yeah there is some spelling mistake
+increment
+now let's save it
+and run it
+so as we can see
+increment is 7000
+so this is the correct output
+so this was a simple example of friend
+function let's do another example
+so here we will do an example of friend
+class and we know friend class is a
+class that can access the data members
+and member functions of a class to which
+it is a friend
+so let's start first of all we'll
+include the header files
+hash include iostream
+and then the namespace standard
+and we forgot to name this file so let's
+do it
+let's name it friend
+2 dot cpp
+all right now let's proceed
+into main inside the main function first
+of all we will create an object of a
+class
+let's say the class name is
+num2
+and its object is obj2 object2 now for
+now let's say we'll write only return 0
+we'll do this part later onwards
+now
+let's create the class
+all right so the class name would be
+num2
+num1 actually
+but we know
+in front class we have to do the forward
+declaration so we will write
+class
+num
+2
+so this is a forward declaration of
+class num2 now
+inside class num1 first of all we will
+declare a variable in private
+so let's say the name of the variable is
+n1 and is the data type and one is the
+name of the variable
+now we have to
+do the declaration of friend class
+so we'll write friend keyword
+after that
+class
+num2
+which is the name of the class
+all right
+after this
+let's create this
+first of all we have to put the
+semicolon all right now let's write this
+class
+num2
+so this is our friend class num2 we
+haven't used friend keyword over here as
+we can see
+all right in this class we'll use a
+private access specifier and
+we'll create another variable n2
+and
+then we will write the public access
+specifier and we will create a
+constructor of num2 as this is the
+name of the class and this is object we
+have created so now we will create the
+constructor of this class
+num2
+and now in this constructor we will
+initialize
+n2 with 65 or whatsoever number we want
+because in the end we have to find the
+average of
+two variables
+so this is the second variable n2
+and we have assigned the value 65 so now
+let's make the function of average
+because we want to find the average of
+both the numbers
+so
+enters the data type
+avg is the name of the function let's
+say
+and inside this function we will
+make an object of num1 class
+and object name is obj1 now as we have
+created the
+object
+by mistake we have wrote i
+obj one so as we have created the object
+of num1 class which its constructor
+would be invoked which we will create
+now but first of all
+here we will write return
+the average so we'll write obj one dot
+n1
+plus
+n2
+divided by
+two
+so as we know that obj one is the
+object of num1 class so that is why we
+have used obj one dot operator n1 that
+is the name of the variable plus n2
+divided by 2
+from here we can find the average and
+before that we have to create the
+constructor of this class so
+now all we need to do is
+write public access modifier
+now
+num1
+and inside this num1 we will assign the
+value to n1 variable which is let's say
+11
+all right so
+now in the main function
+we have to call this function avj that
+is the average function
+and
+we forgot to put semicolon over here all
+right
+now
+we'll
+display a message
+average is
+and now we will call the function
+obj
+2
+dot
+avg
+which is a function
+so here we are calling this function so
+let's save this
+so we have saved this now let's try to
+run this one
+as you can see the average is 38. so
+65 plus 11
+6
+and 76
+divided by 2 which is 38 so this is the
+correct output so this is a fine example
+of friend class
+as we know class
+num2 is a friend of class num1 so it can
+access all the members of class num1
+in class num2 we have created the
+function avg
+over here
+this is the function avg
+here we are doing the average of both
+the numbers
+and as class num2 is a friend of num1 so
+we can create objects of num1 in
+num2class
+and after doing this
+this is our output that is average is
+38.
+so this is an example of friend class
+now let's do another example so here we
+will do an example of friend function in
+which a friend function is a friend to
+two classes
+and this would be an example in which we
+have to do the product of two numbers so
+let's start
+first of all let's include the header
+files as we have done previously
+iostream
+namespace standard
+now let's save it
+friend3.cpp
+and
+spelling is wrong
+now
+let's start with the main function
+inside the int main first of all we will
+create the object of class a that is a
+and class b
+object would be small b
+and we will use these objects to call
+the functions
+but we will do that part later onwards
+first of all we'll simply write return
+zero over here
+and now we will create the classes
+all right so here we will create a class
+but before that we have to do the
+forward declaration of another class so
+this is the forward declaration of class
+p and now we can create the class a
+and
+inside the a class
+we will declare the variable x let's say
+now
+we will use this public scope
+and we will create a function within
+this class let's say void
+assign
+now inside this function we will pass
+the
+variable i beca because we have to
+assign the value of this variable i
+to the variable x
+so
+we will assign the value of i to x
+like this
+and before that we have to do the
+calling from the main function
+so we will do that later first of all we
+will create the friend function and here
+we are declaring this friend function
+void is the return type product let's
+say is the name of this friend function
+and a
+comma b
+are the arguments
+now
+let's call this
+sine function
+first of all so all we need to do is
+we will make a call from this main
+function
+a dot assign
+which is the name of the function and
+let's say we have
+passed the value
+45 now here we will create the class b
+inside the b class we'll similarly
+create another variable y
+and now
+inside the public scope we will create
+function
+of the same name that is assign now in
+this assign function we will pass
+i as the argument
+as we have done in class a similarly we
+will do it over here we will assign the
+value of i to this variable y once we
+have done this
+then
+we will declare friend function as we
+know that the front function is friend
+of both of these classes so we have to
+do it inside both of these classes we
+have to declare the friend function and
+now
+we will declare the friend function in
+this class as well
+product
+all right after the class we will use
+the semicolon
+now
+we will create the friend function
+so here we are defining the friend
+function we use void product which is
+the name of the function
+um data type object name
+all right now all we need to do is
+we'll do the sum a dot x into
+b
+dot
+y
+and now we'll use semicolon so here a
+dot x
+will hold the value which have been
+assigned that is 45 and now
+b dot x
+b dot y will hold the value which we
+will call from here b dot
+assign
+here we are calling and we are assigning
+the value let's say 20 you're passing
+the value 20 and this 20 value
+will be assigned to this y and
+45 into 20 would be the product
+so everything is done now all we need to
+do is to call the
+product function and as we know that the
+product function that is the friend
+function is the friend of both of the
+classes so it can access the private
+variables so we'll do that
+product
+a
+comma b here we are calling this
+now let's save this one and let's try to
+run this
+there are some errors
+let's check them
+class a all right
+so we forgot to
+make some space over here now let's save
+it again
+and let's try to run this
+as we can see
+the output is
+900 so 45 into 20 is equal to 900 which
+is the correct answer
+and
+it means the program is working fine so
+this is a fine example in which a
+function that is this product function
+is a friend of both the classes that is
+class b and this class a here we have
+done the forward declaration and we have
+made the friend of class a and here we
+have declared the
+friend function in class b
+and as we can see that this product
+function can use or access the private
+variables of both the classes and so
+this is by using the private variables
+we we have done the product of both of
+these numbers and its answer is 900
+so these were some few examples of
+friend functions you can try some more
+examples on it it will enhance your
+knowledge in c plus plus as it is an
+interesting topic all right guys with
+that we have come to the end of this
+video if you like this video please give
+it a thumbs up i hope it really helped
+you all thanks for watching stay safe
+and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

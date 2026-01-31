@@ -1,0 +1,368 @@
+hi everyone welcome to simply learns
+youtube channel and in this particular
+session we will understand breadth first
+search or bfs and depth first search or
+dfs algorithms in data structures but
+before we begin make sure that you have
+subscribed to our youtube channel and
+don't forget to hit that bell icon to
+never miss an update from simply learn
+now without further ado let's get
+started with the agenda for today's
+discussion
+so we will begin with understanding what
+exactly is breadth first search
+algorithm then we will look into an
+example based on breadth first search
+algorithm followed by that we will learn
+what is depth first search algorithm and
+we will look into an example for
+depth-first search algorithm after that
+we will discuss the fundamental
+differences between dfs and bfs and
+finally we will go through some major
+applications of dfs and bfs
+at first we will discuss breadth first
+search algorithm
+so what exactly is breadth first search
+algorithm so breadth first search
+algorithm visits every node efficiently
+and marks all the nodes which are
+adjacent to that particular node the
+critical nodes in the graph are in a
+breath wise manner
+breadth first search starts traversing
+from root node and then selects all the
+unvisited adjacent nodes of the selected
+node
+queue data structure is used to
+implement bfs algorithm so here you can
+see a gif which is explaining about bfs
+algorithm so let us consider that we
+have selected the root node as 1 then it
+will check for all possible adjacent
+nodes so it will traverse to 2 then it
+will traverse to 3. after that it
+doesn't have any adjacent nodes so the
+control moves to either one of the child
+nodes that is 2 or 3 so let us consider
+that we go to 2 and from 2 it will check
+for all the adjacent nodes that is 4 and
+5 and there are no other adjacent nodes
+from 2 then it will go to 4 it can also
+go to 5 but here let us consider that it
+goes to 4 so from 4 it does not have
+anything to traverse so it get backs to
+2 then it goes to 5 and from 5 it checks
+for the traversal there is only one
+possibility that is seven and no other
+explorations then it goes to seven and
+there is no other possibility for seven
+as well so it comes back to five then to
+two then to one and then it enters the
+second child node that is the three from
+the three it moves to another
+possibility that is 6 and it checks for
+another possibility but there is no
+possibility so now the control moves
+from 3 to 6. from 6 it tries to visit
+the adjacent nodes so 6 has only one
+adjacent node that is 8 and no other
+adjacent nodes and now from 6 it goes to
+8 and from 8 it checks for any other
+adjacent nodes but there is no other
+adjacent node so it gets back to 6 then
+3 then to 1 back
+so this is how the control traverses
+when you are implementing breadth first
+search algorithm
+now here let us look into an example for
+breadth first search algorithm as
+discussed in the previous example here
+the root node is selected first then it
+goes to b
+then it goes to c and it checks for any
+other adjacent node but there is no
+other adjacent node other than b and c
+so the control moves to b and from b it
+starts traversing to all its addition
+nodes first it traverses to d then to e
+and it checks for any other possibility
+but there is no other possibility so the
+control goes back to b then to a and
+from a it traverses to c
+and from c it checks for all the
+adjacent nodes that is f and g
+so it checks for other possibilities
+since there is no other possibility it
+goes through f and from f it checks for
+other possibilities but there are no
+other possibilities from f so the
+control gets backs to c and then finally
+to g and in g it checks for any adjacent
+nodes since there is no adjacent node
+from g it stops there and we have the q
+output here that is a b c d e f and g so
+this is how the breadth first search
+algorithm works now to understand this
+in a practical way let us try to execute
+a program in dev c plus plus
+so now we are on dev c plus plus and the
+program on my screen is an example for
+bfs algorithm
+in this program we have a queue first as
+bfs is executed using queue data
+structure
+and there are two variables that is rear
+and front and there is one array named
+as size and the size is defined here as
+50.
+next we created some functions first
+there is a queue function to create a
+queue then we have nq and dq to insert
+and delete the element from the queue
+so this is the enqueue function and this
+is the dq function to insert and delete
+the elements from the queue
+then we have a function to display and
+after that we have the empty function to
+check whether a queue is empty or not
+so this particular code segment is to
+check whether the queue is empty or not
+and this particular function is the
+print function which is used to print
+the elements inside the queue
+after that we defined node and made a
+function as creating a node and in node
+there is a one variable named as vertex
+and one pointer next to it
+so this is the structure for creating
+the node
+and followed by the node we have created
+another structure called graph and
+inside graph we have the create graph
+function to create the graphs and we
+have number of vertices adjacent lists
+and visited
+and next we have the add edge where we
+will add edges in between the vertices
+and finally we have the bfs algorithm
+so here we will check if the queue is
+empty or not first then we will call the
+dq function and we will execute
+the bfs algorithm
+and now finally we have the main
+function where we will add all the edges
+to the graph and call the bfs algorithm
+now let's try to run this program and
+see the output
+so there you go the program got
+successfully executed and the output is
+displayed on the screen
+so q contains
+the values that is 0q reset node is
+visited to 0
+and then queue contains values 2 and 1
+now the node is visited to 2 followed by
+that the queue has values 1 and 4 and
+node has visited 1 and then q contains
+values 4 and 3 and node has visited the
+value of vertex 4 and finally q contains
+value 3 and the queue is reset and the
+node is currently visited at node number
+3.
+now with that let's move ahead into the
+next type of algorithm that is the depth
+first search algorithm so what is depth
+first search algorithm
+so dfs algorithm is used for traversing
+trees using the depth twice direction
+the execution of this algorithm begins
+with the root node and explores each
+branch before backtracking
+next dfs uses stack data structure to
+remember to get a subsequent vertex and
+start a search whenever a dead node
+appears or the dead end appears at any
+iteration
+now we used to have cues in bfs
+algorithm but in dfs algorithm we will
+be using stacks
+now to understand the working of depth
+first search let's go a bit more detail
+so here we have a graph so how depth
+first search algorithm works now here
+we can choose the root node first so
+once the root node is chosen it sees the
+possibilities of traversal it starts
+from the left side tree first it first
+visits b and now it will not stop at b
+in bfs it used to stop at b and used to
+check all the possibilities but here it
+is not like that it will first visit b
+then it will not stop at b it directly
+sees the depth of the b that is it has
+another child node so it will enter the
+left child node and checks d and now
+here it will not stop at d it will check
+for possibilities id so since there are
+no possibilities from the left or right
+side of d it will get back to b and now
+it will check for another possibility
+from b that is right side first it
+finishes the left subtree on completion
+of left subtree only then it will enter
+the right subtree so here it checks for
+the possibility it found e and from e it
+will check for another depth search so
+there is no depth search from e and not
+on left and not on right so it comes
+back to b
+from b it visits the root node again
+from here it checks for the right
+subtree now here we have c so it will
+not stop at c it will go to the next sub
+tree that is f
+and now it will not stop at f it will
+search for other opportunities now since
+there is no other opportunity or other
+vertex from f it gets backs to c and
+after that it checks for next right
+subtree that is g
+so from g it looks for another
+opportunity or vertex since there is no
+other vertex it gets back to c then to a
+so to keep the traversal in order
+it uses stack data structure
+now for a better understanding let us go
+through a practical demo on devc plus
+plus and now we are on dev c plus plus
+and this particular cone is an example
+for dfs algorithm in this particular
+code we have defined the structure that
+is node and inside the node structure we
+have this vertex and node reference
+which points to the next node in the
+graph
+followed by that we have the graph
+structure and inside graph structure we
+have the number of vertices and visited
+and referenced to each node
+followed by that we have the depth first
+search algorithm
+and this particular code segment is the
+logic for depth first search algorithm
+then we have the structure
+of node reference and followed by that
+we have the structure of graph reference
+that is the number of vertices visited
+and the adjacent vertex list and then
+the reference if that particular node is
+visited or not now we are using dynamic
+memory allocation here and followed by
+that we have add edge function where we
+will add edges between the vertices and
+followed by that we have the print graph
+function so here we will be printing the
+stack data structure which has the
+vertex after visiting all the vertices
+in the graph and finally we have our
+main function where we will assign the
+edges to the graph then we will call the
+depth first search algorithm
+now let's try to execute this code and
+see the output
+there you go you can see that the code
+got successfully executed and we have
+our list here that is we have visited
+the
+vertex 2 3 1 and 0.
+now followed by this let us look into
+the differences between breadth
+breadth-first search and depth-first
+search algorithms
+so some of the fundamental differences
+are breadth-first search finds the
+shortest path to the destination whereas
+depth first search goes to the bottom of
+the subtree and then backtracks
+the next difference is bfs algorithm
+uses a queue to keep track of the
+following locations to visit whereas dfs
+algorithm uses stack now we have gone
+through that in the examples for both
+dfs and bfs
+followed by that the next difference is
+the bfs uses fifo that is first in first
+out order of implementation because we
+are using queue data structure here
+whereas dfs uses lost in first out order
+of implementation because we are using
+stack data structure
+the next difference is bfs requires more
+memory as compared to dfs and depth
+first search requires less memory
+compared to that of bfs
+followed by that
+we have bfs algorithm which gives the
+shallowest path to the solution next
+compared to bfs dfs algorithm does not
+guarantee for shallowest path as the
+solution
+the next difference is in bfs algorithm
+if you do not find any goal then you may
+need to expand to the other nodes before
+the solution is found whereas in dfs if
+you do not find any goals then the
+backtracking will start from the leaf
+node now we will discuss some of the
+major applications of bfs algorithms
+so bfs algorithm can be easily used to
+create the shortest path and the minimum
+spanning tree to visit the graph
+vertices in the shortest time possibly
+with high accuracy
+bfs algorithm is implemented to locate
+all the neighboring nodes in
+peer-to-peer network and this will find
+the required data faster
+search engine or web trawlers can
+quickly build multiple levels of indexes
+by employing bfs algorithm and start
+implementing from the source and then it
+visits all the links from the source
+the bfs algorithm guides the broadcast
+packet to find and reach all the node it
+has for the address
+now we will look into the applications
+of dfs
+the next application of dfs is it is
+primarily used for scheduling jobs for
+the given dependencies among the group
+of jobs in computer science it is used
+for instruction scheduling data
+serialization and compilation task
+ordering
+next the dfs algorithm can be easily
+adapted to search all solutions to a
+maze including nodes in an existing path
+in the visited set
+now with that we have come to an end of
+this session on bfs and dfs algorithms
+if you need the course executed in this
+particular session then please feel free
+to let us know in the comment section
+below with your email ids and we will
+have it sent to your email ids if you
+have any queries regarding the topics
+covered in this session then please feel
+free to let us know in the comment
+section below and our team of experts
+will be happy to resolve all your
+queries until next time thank you stay
+safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

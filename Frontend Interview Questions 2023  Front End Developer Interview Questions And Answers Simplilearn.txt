@@ -1,0 +1,3564 @@
+hello everyone and welcome you all
+so today we have a very interesting
+topic coming up and that's called our
+fronted interview questions
+as we know it very well
+in today's scenario especially for the
+front end
+we have multiple topics aligned
+and interviewers ask and expect lot many
+common questions to be answered
+by the participants
+so we have brought some very common
+questions which are usually asked in
+interviews
+in web development front as we know it
+very well in our web development we have
+a multiple technologies are involved
+especially when it comes to
+html
+css
+javascript angular and many more so we
+have brought some really very nice
+questions along with the answers to help
+you to clear those interview questions
+so let's get started
+so
+here
+what is there inside for you so we have
+one very common topic for the version
+control system that is called a git
+second we have a called html5
+third it's all about css3 then we talk
+about javascript
+then we have a react.js
+followed by angular
+and generic interview questions
+these
+six
+very important topics
+are used
+in web development
+so
+people expect that you are aware about
+some very common questions which they
+usually ask so let's get started
+so we are going to talk about version
+control system first what do you
+understand with version control system
+so as we know it very well today when we
+talk about call
+a kind of team which work in different
+environment different computers so they
+want to store
+their work in a centralized repository
+system
+okay so that they can keep track of what
+they have done so that they can
+understand who have made the updates and
+when to roll back
+in case if some problem comes up
+so you would like to push
+all the necessary repositories to the
+centralized system that is conversion
+control system so it is telling you
+it is a system that keeps track all the
+necessary changes
+made to a file or a set of data
+okay so it ensures that everyone work on
+a most recent system
+okay
+while taking care about
+your
+necessary updates
+next what is the difference between a
+centralized and distributed version
+control system
+so as we know it very well
+when we talk about call a centralized
+system
+okay so in central system what happens
+like here it uses the centralized server
+to store all different versions of files
+usually we always commit those changes
+to our local system but in centralized
+system it helps to protect in case of
+any failure happens in your local
+environment so it can easily protect
+okay so developer doesn't need to save
+any file local to their system
+okay so the main idea is to basically
+avoid
+single point failover and keep
+everything under the single location
+now when it comes to the second option
+called distributed version control
+system so what they're trying to say
+that every developer has a copy of all
+the versions
+while developing a code so it actually
+improves the ability to work offline
+and does not rely on the single
+locations for the backup
+okay so there is no even threat for
+server crashes
+that's the benefit of centralized
+version system
+now my next question is like just
+explain me the get push and get pulled
+how they're different
+and how they are differentiated from
+each other
+so we know it very well when we talk
+about like a git push so push is trying
+to commit
+okay some changes whichever are made
+into the local file system to the
+centralized repository
+okay so whichever cloud environment you
+will be using it it could be either
+github or else you talk about bitbucket
+or if you talk about gitlab
+so you would like to push
+all those necessary changes to that
+location
+and pull on the other hand is
+responsible to pull to retrieve all
+those version controlling to your local
+environment
+clear that's the benefit and that's the
+difference which comes
+okay
+now
+going ahead
+and talk about
+the git pull as i said that you try to
+fetch
+the real data from your local repository
+okay towards your local repository
+whichever is there available in your
+cloud environment
+so we say the git pull is a combinations
+of two command
+git fetch followed by the get merge
+okay so now
+next question
+give us a few git commands and their
+functions
+okay so there are few commands which are
+there the first command is like in gate
+config
+so in git config you basically configure
+your username and email address that is
+really helpful whenever you would like
+to push
+the repositories in your cloud
+environment
+get in is to
+initialize a git repository hit add is
+to basically add
+the files to the staging
+areas get diff to view the changes made
+to this particular file and we have
+called git commit
+okay commit means water changes
+to the head but not to the reporter or
+to the remote repositories
+now the other commands are also
+available i can get reset which is
+designed to undo all the changes
+whichever we have made to the git
+repository
+we also have a git status to know about
+the current state of the working
+directory and staging area
+we talk about like and get merge
+okay so that means that you want to
+merge a branch
+okay
+into a active branch
+so get push so this is the command
+through which you will be upload the
+content from the local repository to the
+remote repository gitpull is to
+basically fetch and download the content
+from the remote repositories
+now next thing
+the difference between git pull and the
+gate fetch so when we talk about like in
+git fetch so git fetch is only downloads
+new data from the report remote
+repository okay so it does not integrate
+any of its new data into your working
+files
+okay so get command or get fetch can be
+done at any point of time to update the
+remote tracking branches
+clear that is a gate fetch on the other
+side when we talk about called gate pull
+so git pull updates the current head
+branch with the latest changes from the
+remote servers
+okay so the git pull downloads the new
+data and integrates with the current
+working directory files so it actually
+tries to
+merge the remote changes with your local
+ones
+so that's the difference between get
+get fetch and the get pull
+but the next question comes here is what
+is the merge conflict in git and how it
+can be resolved see the merge conflict
+is very very common when you have the
+common data is available
+between the branches and at that point
+of time
+which one to take which one to avoid so
+in such kind of scenario the conflict
+automatically comes in
+clear now so you actually does what you
+go back and manually edit the file and
+decide which particular portion you
+would like to keep and which of the
+portion you would like to discard
+so that how the git merge merged
+conflict you try to utilize it
+now when we talk about the git merge
+conflict how it can be resolved so we
+have a call pull request which is
+available under the repository name when
+you click it there
+so in pull request actually you click to
+pull the request with a merge conflict
+which you would like to resolve so it
+need so in the near bottom of your pull
+request the click resolve actually
+conflicts so you decide which one to
+keep which one to basically
+avoid so that something which really
+make your life even more simple
+to avoid the conflict or in case in
+confliction comes how to basically fix
+that up
+okay so you can see now
+this kind of
+messages like in greater than less than
+and hyphen equal to sign this would be
+shown
+at a time of resolve
+okay so you basically decide which one
+you want to take it so if you have more
+than one merge conflict in your file you
+just scroll down to the next set of
+conflict markers and repeat the steps
+okay for four
+point five resolve the merge conflict
+will be taken care and once it is
+resolved it will click as a result which
+will be ready to get
+update to your existing branch
+that's how exactly the merge conflict is
+really
+made up
+now so once you have resolved all the
+merge you can see the green color signal
+that says like okay there is no
+confliction available or no more
+conflict in your program so you can
+simply
+merge the entire base branch into the
+head branch okay so to merge your pull
+request you click merge pull request
+okay
+so get much conflict it arises when you
+have a multiple branches when they are
+trying to merge with each other so there
+are some common set of data or files
+which will be available in both the side
+so at that point of time it needs to be
+avoid confliction so that's how it
+really works
+so
+how you can resolve it so you can also
+resolve the merge conflict using command
+line so you simply open a git bash
+and never go
+to this particular repository where the
+merge conflict is actually occurred
+and then
+it generates the list of files which are
+actually affected by the conflict so in
+this particular example you can see
+there is a one style guide dot md file
+which has a god merge conflict
+so you basically shoot up some command
+okay so you open it in any editor like
+in vs code editor atom so you go to that
+location open this particular file
+and manipulate and decide which one you
+really want
+and likewise you'll be in position
+to resolve all the conflict and
+discard all those changes whichever
+you're not interested in
+okay so that's how the merge conflict is
+already taken care of
+okay so what you're doing it right now
+you are adding
+your files to the stages by saying git
+add dot
+and after that you're committing it by
+using this commit so now you can merge
+all the branches with using push so
+those changes
+okay to your remote repository on your
+github and merge your command in a pull
+request
+okay so that was the quick idea about
+how you can try to resolve the issue of
+get
+conflict
+okay so the next question comes here
+that is called what is git stash
+so what is a git stash so imagine we are
+a developer and he's working with the
+current branch and wants to switch the
+branch
+okay to the another branch
+okay to work on something else
+just imagine and after that what happens
+but you don't want to commit changes to
+your unfinished work
+because the changes are not yet decided
+so you really don't want to commit those
+changes to your unfinished work okay so
+the solution is called what is git stash
+okay so it basically try to takes your
+modified tracked files
+and saves it on your stack
+of unfinished changes that means these
+are not committed properly so that you
+can reapply at any point of time that is
+called git stash
+so what is the difference between get
+merge and get rebase these are very
+common question see suppose it says you
+are working on a new feature of your
+project and in a dedicated branch and
+another team members updates the master
+branch with some new commits
+okay
+and
+what is happening now so to incorporate
+the new commits into your feature branch
+like you have already initiated one job
+and your team members have already
+initiated the job in a parallel
+branch and you feel okay you want to
+merge both the features together
+okay so what you will do so you're going
+to create a extra merge commit every
+time you need to incorporate changes so
+to pollute your feature branch histories
+so here what is happening now is an
+alternative to merging
+see as an alternate native to merging
+you can rebase the feature branch into
+the master
+so it incorporates or whatever the
+changes you want to incorporate all the
+new commits in a master branch number
+one and it rewrites the project history
+by creating the brand new commits
+for each commit in the original branch
+that's the difference
+between
+a gate merge and the get rebase
+so
+git is as you know it very well it is
+designed for the centralized repository
+system
+and
+from the remote repository or from the
+local repository you can basically try
+to update
+or retrieve
+whatever number of records you want
+okay so to make it possible
+about the get we have some
+i would say commands available like
+i talk about like in push we talk about
+like in pull
+so what is the difference see when you
+talk about like and push you sense the
+commit and ask them to update their
+branch
+this actually requires that things to be
+right on their end
+are we clear and the pull command on the
+other hand it is nothing but a call
+retry which is called a kind of fetch
+which gets the commit and has
+your git update to your report or remote
+tracking
+and get you there all latest updates
+i'll be clear now so
+let's go ahead and talk about how we
+gonna be implementing this
+okay so first of all i will be going and
+creating a new empty repository by
+saying get space
+in it
+so you can see it is initializing the
+empty git repository inside this
+and now i would like to create the new
+file and keep it inside
+okay so if i have
+this file with me
+okay
+i'll put it under this or any file
+whichever i want suppose if i have this
+call
+just
+okay and i put it under my get demo
+okay it is there under my git demo now
+now what i can do
+i can just use this statement like
+get
+space
+status i can see by one file and i'm
+saying git space add space start
+and once again i'm saying git status all
+files are now tracked
+and now i talk about
+git space commit space hyphen m
+are we clear now all changed and now i
+would like to push this
+to my
+remain repository so i have this command
+with me called
+you know git branch hyphen main as you
+can see now
+so
+just see the commands here which we have
+it because i have a repository available
+in my remote locations i can say
+get space branch
+okay space hyphen
+m space main that means i want to
+put it in our main branch
+okay
+so now it is done and i'll be talking
+about git remote where i want to add it
+so this is the remote location
+so
+i need to make this remote location
+available
+paste it
+okay and i can say git space push
+okay hyphen u
+space
+main
+now you can see it is uploading and it's
+saying writing object and the records
+has been successfully
+taken
+okay
+so this is how you're able to
+get all those into your application now
+you can see
+we have this react case study.docx is
+now available to us
+now we have an option called pull
+request
+are we clear so what it is saying now
+we're going to pull this request
+okay so i can just a new pull request
+okay so it is telling you
+compare and changes the branches across
+you want
+okay so let me go back and change
+first of all i go back to my
+code which is
+get the em
+and here
+whichever the name i have it
+i just use
+the file which i have it now
+i say
+git space
+pull
+okay
+and now you can see
+it is taking it up
+okay now you can see the word is being
+taken and that's what the poll is so
+pull actually calls the gate fetch which
+gets
+a commits and has your get updates
+your remote tracking name and then runs
+the second command to update your branch
+so the second command can combine the
+parallel development so this is how the
+difference between
+push and the pull
+everyone so now we're going to talk
+about some of the very very common and
+useful commands
+provided by the gate and their practical
+usage
+okay
+now the first command which we always
+use it with the kit
+okay that is called git config
+we talk about like git
+config so this config is basically
+provide
+the configuration because if you want to
+push
+or pull the repository so it should know
+about on which username and watch email
+so we talk about the set the author name
+and email address
+okay
+with your commits it is very very
+essential
+okay so
+whenever you try to perform a commit it
+basically keep all the names and email
+associated so we say git config hyphen
+global
+and you provide user name
+and then you provide the user name and
+in a similar way you provide the email i
+just copy
+and here you provide what user dot
+and now in space you can give the
+username and here you provide what email
+second command which we know it very
+well that is called git space what init
+that is for initializing the repository
+as you have already seen
+next we talk about like a git space
+clone
+okay which is responsible to obtain the
+repository repository from the existing
+url the one which you have already taken
+it up
+then you have recently seen the command
+in my previous example that is called
+git space add
+okay space file name
+okay
+or you can use asterisk astrix means add
+all the files and file name will be the
+specific file you want to talk about
+you've already seen one command name
+called what git space
+commit
+which is to commit the records
+into your repository we have also seen
+git space what
+status to know about the current status
+of my repository or my
+you know the statement like
+in which particular position it is it is
+untracked it is dragged it is committed
+so those status i want to know that
+clear now so
+you talk about another command that is
+known as call git space reset
+what this command does so this git reset
+is basically unstate the file
+okay and stage means earlier your file
+was staged now it is unstaged but
+prevents
+okay or the preserve the file contains
+it doesn't delete those contents but
+reset means what it does reset unstaged
+when you say talk about add it staged
+when you say
+reset it unstaged but it basically
+keep all the necessary data within that
+are we clear now see these are some
+necessary commands are there
+comes along with your get point
+hello everyone so now we're going to
+talk about our next very interesting
+area of the gate that is called
+what is the merge conflict and how to
+basically resolve that
+okay see in every situation where the
+work can be paralyzed
+in every situation
+where the work can be paralyzed will
+work will eventually overlap
+sometimes two developers will change the
+same line of code in two different ways
+in such cases git can't tell which
+version is correct that time you have to
+decide
+okay so to work with the merge conflict
+okay so git gives you the clue like say
+like i have got two updates which one
+you want to keep it so that you would
+like to make it now so to make this
+possible we will be using the system
+now to make it possible i would like to
+create one simple example of
+avoiding the gate merge or sorry the git
+conflict so first of all i will say
+that is hyphen l nothing is there so we
+are saying get space
+in it it will be initializing the
+repository ls iphone l it would not be
+showing any
+you know the
+hidden repository which is created but
+certainly in my vs code editor i can see
+it is created for me that's perfectly
+fine
+let me go back and create the new file
+here
+okay and
+i just create using
+echo
+this is new redmi file
+okay
+and the file name will be what
+dot md
+okay you can see this new file has been
+created now
+okay so what i'll be doing now
+i can go back and change
+some
+content inside this
+okay so
+first of all let me check
+cad space
+redmi dot md i can see this is a new
+file with me now i can say get space
+add space
+redmi dot md
+okay
+and after that i can say
+get space
+space hyphen m
+i can say redmi
+add it
+okay
+we can see now one file changed and then
+all all done
+so we just talk about git space
+status it says on branch master it is
+the
+okay so
+that's it it is there now let's go back
+and create a new branch now so to create
+a new branch what i'll be saying i'll be
+saying git space
+checkout i'm going to create a new
+branch space hyphen b
+okay and i'm going to give the name
+called
+okay plans to create
+conflict
+okay so we're saying git space checkout
+okay space hyphen b and we're just
+giving that name here
+okay so we're just saying
+so let's check about
+what is there
+okay so we've created
+status
+conflict
+and the branch will be created and it'll
+be shifting out there
+so you see like we're saying switch to
+the new branch branch to conflict
+and if i want to check
+by saying get space
+branch so i can say my current position
+is branch to conflict
+okay and below this we have this
+statement to me
+now what i can say i can create
+uh the changes inside my readme dot file
+okay so
+what we can do now here
+in this readme.md file i can go back and
+change
+by saying
+on the
+branch
+okay this is an edit on the branch
+and
+what we can do now
+we can once again just check
+get space
+get space status
+we can see the file has been modified
+now
+and i can just use git space commit
+okay space hyphen m
+space we can give a value call
+on branch
+okay
+now you can see
+this is telling you
+the change
+okay
+so
+we are saying one file change to
+modifications
+modified but yes we haven't
+add those to make those changes so we
+just need to secure space
+add space
+okay and then
+commit it and now you can see one file
+change to insertions
+not is working because i did not add
+those
+and once it is done then it will be
+switching back
+to our master branch so
+right now readme.md have those changes
+i'll go back to my master branch we say
+get
+checkout
+master
+now you can see if i say get checkout
+master it is having the older data which
+is available to us
+okay and now i can just make the changes
+once again here i can say this
+is
+master
+okay now i can call get space
+status and i can call
+git space add space
+readme.md
+and we can just say
+get space
+commit space hyphen
+m
+updated again in master
+okay
+and
+you can see it's done but now when you
+talk about like in merging
+that the challenge will come
+now if i just talk about git space
+branch
+so it is in master branch right now so
+if i want to merge
+the
+master branch with this branch so what
+i'll be doing now
+i will just use this option like in what
+git space
+merge
+okay and we have a call
+branch
+okay underscore two
+underscore
+conflict
+you can see now conflict came up are we
+clear now it is saying auto merging it's
+a conflict content
+and you can see immediate it is telling
+you they say accept correct changes this
+is the master and this is an edit
+i'll be clear so at this point of time
+you have to decide
+which one you want to keep and which one
+you want to avoid so if you want to keep
+the which one
+that
+on edit which is done in a child branch
+what you can do
+you can basically keep those
+okay and let those changes will be done
+by your application
+okay so now when i say
+you can say
+okay and that's it so this is how
+exactly the merge conflict is taking
+place
+okay everyone so now you can tell which
+of the file you want to make
+so that's how the final file which is
+available to you and that's the beauty
+of what
+the conflict changes i hope you're all
+clear
+okay so the get interview questions are
+over now we are heading towards
+html interview questions
+now here are a few questions like what
+is an attribute in html so you can
+consider the attribute are the
+properties that can be added into the
+html tag and that changes the way the
+tag behaves or it is displayed
+okay so you can see here you have a call
+button
+okay so attributes are added right after
+the name of the html tag so button is an
+element for me it's not an attribute
+okay
+so what is the marquee in html file so
+mark is something which keep on rotating
+okay they
+say for scrolling down the text page or
+the text on the web page mark is used
+sometimes you might have seen when you
+want to display some very important
+information
+okay which needs to scroll at the bottom
+or else the right after a specific
+period of time you always use marquee it
+is one of the very very old
+element available under the html page so
+it scrolls the image
+top left right center automatically
+everywhere so you always use marquee
+tags for rotating it
+so the next is what is the semantic and
+html see semantics are htmls are nothing
+but a call another coding style
+okay so
+when we talk about a semantics so they
+are basically reinforcing the meaning of
+the contents like typically you have
+seen we are using div and span tag but a
+given span tag really don't make sense
+to us as an edge table reviewer
+unless i go inside those and get to know
+about what they're really doing it so
+semantics are nothing
+but
+these are the standard tags
+i'll be clear so you can see like here
+like bold tag is not useful for the bold
+statement
+as well as the italic tag is useful for
+what for the italic tag so instead of we
+are using
+strong and em tags
+are we clear now so this makes more
+sense to us
+now the next thing is how do you display
+a table in an html web page so obviously
+we have a got table tag
+and under the table tag i can
+align the complete layout of my web page
+because of table head table body table
+row table columns there are multiple
+different type of elements which are
+available
+okay which are the part of table it's
+just to basically align the content in a
+proper format
+what is svg
+okay so svg is basically known as a kind
+of a graphic which is written in a
+typical xml language the svgs are the
+high quality graphics which doesn't tear
+off when you basically grow
+and increase
+or zoom so normally what happens gif
+image
+you talk about
+jpeg images
+after beyond certain point that pixel
+get deteriorated but here in svg it
+never happens so you go to any level
+when you want to zoom and you're gonna
+get accurate contents at any point of
+time
+okay so these vector graphics
+are really typically 2d base diagrams
+and give you the x and y coordinates in
+a regular systems
+next how do you separate a section of
+text in html to
+separate the sections of text in html we
+always use what either br
+or else we use block code or else we use
+what a paragraph type
+so br means anyways it separate out a
+text
+and break the current line
+paragraph is used to again write a
+paragraph of text and the block codes is
+used to define the large quotations
+okay
+next is how do you create the nested web
+page in html
+so obviously we have a different type of
+options that are available like an
+iframe
+okay you need to say page within a web
+page
+okay so we can create a page within a
+web page with using iframe this is a
+very very common questions we used to
+receive at the time of interview
+okay the difference between ordered list
+and unordered list
+so ordered list will give you the
+different
+ways to display the data
+in roman format in numeric digits or
+else you can talk about like an
+alphabetical order but the unordered
+list is completely unordered you don't
+get any options like an order list
+okay so the ordered list start with
+ol and
+unordered list starts with
+ul
+in our html demos i'm gonna start with
+very first file that is known as called
+table demo
+like how we can offer you
+the table
+related tags inside the html so table as
+we know it very well it is designed to
+organize
+your contents or give you the proper
+layout
+so it is a very old technique we are
+using
+to align
+or to pro define a proper layout
+so this html page
+will start working with the very first
+tag that is called table
+within this table we will be using tr
+that is called table row under this
+table row we will be using th call table
+heading
+and inside this table heading we are
+going gonna give call
+name
+like this i copy
+and here we say
+uh employee name i say
+city
+or i can say name city
+and we can say
+department
+three parameters i have it now so called
+three different headings
+and these headings are getting closed
+and we're going to start working with
+another table row
+and here we'll be providing the data
+so again another tr again we'll be
+having this td in this 3d we can say
+admin this will be the first
+attribute we're going to use it's called
+admin
+followed by another properties
+we say
+admin
+mail.com
+department i can say hr
+or
+we'll try to copy this again
+and have
+few more rows
+i can say
+now i can say admin i can say atul
+here we say
+okay so
+here we can say
+finance
+so this
+is going to give me
+the data so called what table data so
+we're giving td
+so here let me see how the outcome will
+be
+so
+in finder
+there we go now you can see it's going
+to give me
+the proper look and feel for how
+the table really looks like in
+so that's a quick example of table but
+yes if you want to organize a table
+little bit more better very clear so
+this you can apply some of the styles on
+the top of that like as you can see here
+we have a call table
+so we can just use
+inline style that is called style equal
+to
+float
+colon light
+if i do so
+i will see some difference you can see
+it is on right hand side by default it
+will be on left or
+there's no center
+no nothing it'll be either left
+float left
+okay so like this you are going to offer
+the table so this is a very simple
+example of like how the table can be
+created within your html
+next after this table
+we gonna go ahead
+uh with some new ideas well if in case
+if you want to make this table even more
+attractive we have some options with us
+by offering some styles this example
+will be seeing it in our upcoming demos
+in a css
+so that is the table demo which we have
+recently seen
+going ahead we'll be talking about like
+and how we can offer you the svg scalar
+vector graphics that is there a feature
+under added under the html 5.0
+so how you'll be adding it let's take a
+look
+let me add a new file called svg
+demo
+dot html
+here let me add a template
+and here onwards
+we'll be adding this svg so svg itself
+is a tag
+okay so we're using this svg here
+and this svg we have to provide
+some
+standard
+width and height so we say
+width equal to
+100 and we just say height
+equal to
+100 that we are providing with the svg
+here if i try to see the outcome
+because it would not show right now but
+certainly we can add it and see what we
+can apply over here so we have a called
+svg
+let me add the first property called
+circle
+okay
+so
+in this circle
+we'll be offering
+the
+x and y coordinates so we can say cx
+equal to
+i can say 50
+x
+okay and
+we also use cy
+equal to
+once again
+50
+and uh followed by our radius equal to
+the way you want
+so within this i'll be offering the
+stroke the surrounding part but let's
+see
+you can see it automatically came the
+best part is like if you
+expand or zoom at whatever level it
+won't go down and that's the beauty
+okay and here we can attach
+the
+some color strokes whichever you want to
+give it here that we can give it so
+here
+we say stroke
+okay
+and
+this is a circle
+so
+we would like to offer
+the other properties so this will be the
+stroke for me
+so
+rather than writing this separate
+i can better attach it here
+stroke equal to you can just say
+black and we can use this option
+like any stroke width
+stroke hyphen
+width equal to you can give three
+and followed by you can use fill
+color which you would like to make it so
+i can just say pink
+like this
+okay that's it let's check
+awesome this looks beautiful
+that is one of the basic example of like
+how you can use this svg
+okay so now we're going to talk about
+our next feature in a same continuation
+to the html i'm going to talk about
+something called how you will be
+separating it out the sections
+of html page see html page comes with
+loads and loads of data now how you'll
+be separating it out now how you'll be
+arranging it properly to tell like okay
+this particular section contains this
+related data so in html5 we have one
+beautiful feature comes that is known as
+called semantics it is a feature of
+html5 that not only helps
+the
+google that is which we talk about
+called search engine optimization that's
+called seo but also
+to
+make the developers life even more
+easier to
+understand the contents what is their
+belief so
+let's go ahead and talk about our next
+feature called how you're gonna be
+separating it out so this one's called
+semantics so we're gonna talk about call
+okay semantics.html
+here we will start working with the same
+html
+tags with us so here we will start
+working with the data so we always have
+some predefined tags called
+we will call header
+okay i can say this is
+header
+and after this we have a call
+footer you can say this is
+photo so this is how you can see more
+meaningful we talk about like a nav
+you see like it is a nav we can say this
+is menu
+nav
+okay along with this navigation we can
+also offer call section
+okay so under the sections you can have
+an articles
+okay so
+we can say
+uh
+under the sections let's talk about call
+article so article we can say this is
+article
+1
+okay and
+we can say this is article 2
+and we can create n number of sections
+in my code
+okay and
+after that we can have
+summary
+okay
+which can defines the
+for details elements so like there are
+lot many available are
+lot many are available
+so if you can just take a look through
+the semantics you really won't find any
+difference but yes
+it is a separators
+okay so used heavily inside html based
+applications so that's how you are
+defining the separators into your code
+so
+it looks more even
+uh easy to understand what is there
+under
+so that's how we define this
+layouts
+well
+coming to the next area of our html
+we're going to talk about something
+called how you're going to be defining
+okay a nested html page
+so nested html page we have a feature
+that means page under page
+so
+that's
+called
+iframe iframe is a feature
+okay that helps the user
+to define
+the page under the page and how do we
+use that let's take a look so under the
+body section
+okay i will be offering
+iframe
+okay so i can just use h3
+i say
+iframe demo
+and within this i'll be using
+iframe tag you can say iframe src
+equal to i can just give
+the name of simply learn so you can just
+go ahead
+sorry spelling wrong so you can just see
+the simplylearn.com that is the website
+so i can just copy this
+okay and uh offer this iframe src equal
+to
+https simplylearn.com
+okay and
+that's it so we have a call frame border
+i really do not want to frame border if
+you want you can just add the initial
+value
+clear and you can talk about call style
+in a same level
+okay so
+you can just say
+style in style you can also offer some
+other type of details too
+okay let's see how we use it
+so here we are talking about our style
+part so style you can just say height
+so height you can define how much height
+you want so i can just say
+uh 300 pixels
+okay and also we can offer the width so
+width i can say again
+300 pixels
+so these are the properties are there
+let's check
+how it really looks like it so here in
+our
+nested
+now you can see we have got this uh
+simply run refuse to connect because of
+some you know
+connection issues so it works but you
+can see like how
+it is showing you uh in your application
+to have a quick look
+okay so that's an idea like how the
+iframes are used inside your code okay
+so you can also offer some other type of
+tools like you can say
+here
+if i say google.com
+see it gonna show you like this
+okay because of security issues it is
+not
+if i you just go to the inspect area
+you can see console they say cross
+origin
+same origin so this issues normally
+comes
+okay but anyways that is how i told you
+to use
+this frame into your code
+well going to the next area
+of this html that's called defining the
+list now this is once again a very
+interesting area of
+html
+okay where it you're going to get the
+different set of
+uh display if you want to display the
+data in the form of list so if you have
+a form of array you want to display this
+in a form of list you can certainly get
+it so html has got inbuilt
+tags available for the list two
+different type of tags are available one
+is called ordered listed taken for
+unordered list
+ordered list always starts with ol
+yeah it always starts with ol call order
+list under this will be using li that
+stand for list items
+you can give the items like i'm talking
+about like in soap
+okay and another one i can just take is
+called
+mobiles
+next we are talking about
+machines
+so that is called
+ordered list so this
+ordered list
+gonna give you
+the idea of like how the
+data really looks like and you can see
+now
+okay and this also you can change
+look okay while using this
+type equal to options are there like you
+want to have a numbering which is a by
+default option if you want to use
+alphabetical you can see it is showing
+the alphabetical roman numbers that is
+called ordered list the other hand we
+have this option like it you will call
+unordered list and in this unordered
+list you won't get any kind of sequences
+but yes the data would be available to
+us but there will be no sequence
+captain so here
+this is called ul
+um
+yeah
+unordered list let's check
+now you can see it's only disks are
+coming up but there's no exactly
+on the
+types okay so that is a quick difference
+between the ordered list and unordered
+list provided by html tools
+okay so we have already seen the
+difference between ordered list and
+unordered list now it's time to talk
+about our another type of type of
+interview questions which is regards to
+your css
+now
+in css interview the first question they
+always ask you like
+how do you add css styling in html
+so we have different ways to include
+number one
+we have a call inline css where we use
+the element and within that we try to
+add the css content that is called
+inline css second is called external
+style sheet
+okay where you can just use as a
+secondary or the
+you know external css file and just
+include it into your existing html page
+okay that is the additional file which
+you write it in the css and you include
+it in html and third is called which is
+the internal style sheet which you write
+it within your html but the only
+difference happens when you talk about
+external it is reusable across multiple
+web pages
+now the different type of css selectors
+which are available so we have a
+different selectors like an universal
+selector which is available where you
+use the asterisk sign and select all the
+elements and offer the common style
+second we talk about element type
+selector where you have the specific
+element name into your mind and you
+offer that particular type of selector
+id selector is responsible to
+select the particular element within
+having the proper id
+class selector which starts with a dot
+class
+okay and having the class name
+we talk about deciding selector so in
+descriptor you basically try to select
+all the elements which are the part of
+that
+okay so you are selecting this container
+and under that all the child elements of
+the box
+okay so we're talking about like in what
+of your
+decision selector we talk about called
+child combinator so in this case you are
+basically trying to select all those
+which is a child of this
+container so you are using this
+greater than symbol of container.box
+okay so selecting all those which is
+having the child name called box
+available
+then you're talking about a general
+sibling selectors
+with this tinder sign and finally we
+talk about like an attribute selector
+where you have a proper attribute
+available to you
+okay so these are known as call a
+general css selectors
+followed by we have a next question like
+in what is sas less and stylus
+friends these are the advanced level of
+theses
+used in the industry so we talk about
+like it what is the sas which we talk
+about like in systematically awesome
+style sheet so we also have a similar
+type of option like in less and many
+more
+okay so it says about the sas
+saying that it is a systactically
+awesome style sheet it is
+basically taking the complete css to the
+next level
+so that is a third-party website but
+once again it is very
+awesome
+css which can
+offer you the mathematical functions
+as well as the reusability
+you talk about less
+okay so we talk about linear style sheet
+where you can see all statements which
+starts with add the read sign
+there in sas every single variable start
+with the dollar sign
+then we talk about stylus it is also
+flexible css so it doesn't use add the
+rate or dollar for any defining
+variables we can just directly use this
+with the name okay and use it at any
+point of time so these are the three
+very popular
+new or next generation css
+so explain box sizing property like how
+you can offer
+the property for the box sizing
+so here so
+box sizing property actually defines how
+to basically define
+height and the width of the box which
+are calculated
+so you talk about a term name called
+content box you talk about padding box
+and you talk about border box typically
+we use three different type of box
+content padding and border box
+in a content box these are the default
+width and the height which can apply to
+the elements
+content which are there under the
+content box
+okay padding box are here you talk about
+the dimensions which are added to the
+box elements of the content padding
+third which is available called border
+box so here the dimensions added to the
+content padding and the border
+now what are the different way to hide
+the element in a css
+so we have a different way either we can
+use display none
+that means whatever is there inside a
+dom it won't be visible to you
+second option is visibility hidden that
+is another property through which you
+can
+eliminate
+the visibility but the thing is like it
+is not visible to the user but this
+element is added to the dom and takes up
+the space
+but in display none it doesn't load in a
+dom so somewhere to
+when you want to talk about performance
+display none is anytime better
+and second called position absolute so
+this can be made to appear
+outside the screen so three different
+options are available
+next option
+what does that important css mean so the
+important keyword actually indicates
+that the highest precedence and it
+overrides the cascade properties
+okay so like as you can see here we have
+a call paragraph where we have a color
+call important and there's someone id
+name called think color called green so
+when we talk about pid equal to what
+thing
+so it automatically tried to override
+the highest precedence
+okay
+now what are the css sprites css sprites
+is a technique where you can basically
+take
+a
+larger image
+okay
+download in a single shot and try to cut
+down into the pieces and utilize the way
+you always want
+okay so if you're using this small small
+images
+separately
+okay so to load those images
+independently you would be making
+multiple http calls which can be an
+overhead so it is good to basically
+download this lengthy image in a single
+shot
+clear and utilize them as per your
+convenience within your application
+so it is used to minimize the loading
+time of your webpage by combining
+multiple smaller picture into the single
+image
+okay that's what the css sprites are
+so which property is used to underline
+and strike through and the overline text
+so we have this option
+text style
+text type text decoration
+text transform
+okay so the text decorations the text
+decoration is the one which will be
+helping you to achieve this
+so i would like to demonstrate some of
+the css related features the very first
+feature is
+like how many ways are there to add css
+inside your code so
+here i'll be creating a new file name
+called
+index
+html
+okay how many ways are there to add
+a css into your code
+so there are
+three different ways are there okay the
+number one which is known as call
+external css internal css and inline css
+external css means you have some css
+features externally used and that you
+want to make it available locally
+okay let's take a look here i'm going to
+create the new file
+under the css demo that is known as call
+style start
+css and here we can write some normal
+styles like you can talk about body
+in this body we can just say background
+color
+equal to let's say pink
+okay and i want to include this inside
+my local environment so here in my head
+section
+i would like to use
+link
+okay so you can see we have an options
+available name called
+link rl equal to stylesheet hrf equal to
+style but my class name is styles
+let's say styles.css and check how it
+works
+so
+here
+you can see now the background color is
+changed to what
+to
+pink that is called external css the
+best part of the external css is to give
+you the reusability factor so if any
+other html file want to use the same
+style it can be easily used
+second is called internal style sheet
+internal style sheet means you will be
+having or some some of them say it is a
+kind of embedded style sheet where you
+have the styles available locally
+and that starts with
+style tag here you defined suppose h1
+and in this h1 suppose if i say
+color
+i'm saying
+suppose
+blue and here we're defining the h1
+okay i'm saying
+welcome to
+heading
+and if i just try
+you can see now this internal style
+sheet is utilized here that is known as
+call
+internal or embedded style sheet and the
+third which is known as call
+inline style sheet where
+you offer the style
+okay to the element itself which is
+uh
+i say try to avoid uh it is not
+recommended to use because it you know
+you lose out the meaning of elements
+completely so we just use this statement
+like in what text
+suppose we talk about text so with this
+we will be using this style tag equal to
+text align and if i just use center
+so you will see here
+so all three styles are applicable in
+the same page that is called internal
+style sheet that is called inline style
+sheet and this is known as external
+style sheet
+so i'm sure we got the idea about how
+these three style sheets are utilized
+together
+well going ahead and taking you towards
+another very interesting area of our css
+called different type of css selectors
+see ultimate goal of css is what
+to apply the style on your target
+elements
+okay
+so in css we have a multiple type of
+ways
+to select your elements
+in css it is known as called css
+selectors
+okay so css selectors are used to select
+the content where you want the style to
+be applied
+okay so there are multiple type of
+selectors are available first type of
+selector you've already seen that is
+called element selector
+that is called what element selector
+another type of option which is
+available that is known as call id
+selector
+that means if i have a one h3
+content with me and i can say this
+is
+heading three
+and if i want to utilize here
+call
+s3 and i say what class equal to
+give the name i can just say
+um
+s3
+demo
+just a name you can give any name here
+if i just use with dot keyword i say h3
+demo
+and here if i want to apply the style i
+can say color
+echo
+that means it will be applicable only on
+those particular classes which color
+equal to what echo let's take a look
+there you go
+okay so you got to know this is those
+called what
+css selector
+another option which is available called
+id selector that means similar elements
+can be now accessed for help of ids like
+if i remove this class and if i use id
+equal to s3 demo so you don't use
+dot you rather use what hash
+okay and give the color the way you want
+suppose if i want to talk about like an
+blue eyelid so now
+you will see it looks like this
+okay so
+that's called id selector so element
+selector we have seen class selector we
+have seen
+id selector we have seen now we talk
+about universal selector universal
+selector means what that means all
+elements will be selected like it starts
+with asterisk and i say
+align
+text align
+center if i see that means all the
+elements will be aligned to the center
+as you can see now all our elements are
+aligned to the center that means
+whichever element we declare it even if
+i declare paragraph tag here i say
+this is
+para it will equally applicable to this
+paragraph too you can see now it is also
+coming into the center that is called
+universal selectors
+last which is called group selector
+where you can have
+elements which can be grouped together
+like i guess i can see h1 and if you
+want to apply the similar style for
+h1 as well as for the h4 so we can just
+use what h1
+h4
+okay they'll be sharing the same feature
+now
+so if i just use this
+h4
+this is
+heading 4
+now
+well
+now you can see
+both headings are now sharing the common
+feature this concept is known as call
+group selectors where you can select the
+group of elements together which you
+want so we have told you about
+element selector where you target the
+specific element id selector with the id
+attribute class means you always use
+with the id class
+id we'll talk about universally talk
+about aztec you talk about group
+selector that you're trying to tell
+the group of elements which you want to
+utilize it together so these are the
+quick benefits and the ways how we
+define it
+okay thank you
+okay so now we will be talking about our
+next feature okay in this css that is
+known as call what is the difference
+between or how many ways are there to
+hide the elements
+okay how many ways are there to hide
+elements so the two options are
+available in css
+to hide the elements number one is
+called display none and second is called
+visibility hidden
+okay
+now
+let me try to show you this examples so
+as of now i'm removing this uh all
+records whichever is there under the
+style
+and removing it all okay now let's make
+it very simple so it is called like uh
+hiding the elements we have two options
+either we can use display none or else
+we can use visibility hidden so display
+none removes the element from the normal
+flow of the page
+are we clear and
+visibility hidden
+leaves the element in the normal flow
+are we clear but occupies a space in a
+dom
+that means it would not be showing the
+elements in your browser but behind the
+scene it will take the space
+so it will be quite heavy so display
+none is a better option compared to the
+visibility hidden
+both options are designed to hide
+elements let me show you very simple
+example here
+so first statement what i'm trying to do
+is
+here
+i'm defining this
+ex1 and this ex1 we are using this
+a
+space href
+equal to
+hash
+okay and we're using
+style
+okay in style we are saying
+display
+colon
+none so i won't be displaying it okay
+and
+here after that i close this
+and i say
+unseen
+okay after this i am breaking it
+here
+fine and copy the same
+and pasting it below
+you say like ex2
+well ex1 is saying what display none
+and style here we are not using this
+rather will be saying
+visibility which option we are using
+this visibility and this visibility will
+be checking visibility hidden
+in such case when i try to run the
+example
+you see like both the options are not
+visible but when i say inspect
+you can see here
+it is saying display none visibility
+hidden so you can see here in this
+example both options are not showing
+okay so the answer is very clear to us
+none of the hyperlinks are showing to us
+because that's where
+the conditions are
+okay so we understood about the
+way how to basically hide the elements
+from the browser
+there is another feature friends coming
+up
+in
+the css front and that is called a
+feature called property called important
+so important is again a type of property
+it is a rule in css to add more
+importance
+to a particular property than like a
+normal value
+so important will try to override all
+the previous stylings and give
+the next available value to your element
+now let me show you how it really works
+so just imagine i have got
+this
+body tag and in this body type we ever
+got h1
+we can say this is
+heading one
+okay like this i can copy
+and
+paste
+okay so this is heading one heading one
+three times i'm playing it now now in
+this case uh i may have multiple classes
+are also available this is like normal i
+can say
+equal to
+i can use
+head one
+okay and here also i'm saying
+rather than using class
+okay i can use what id
+equal to
+head to you can change the name as you
+want
+and here what i can do is in my style i
+can use this first option
+for id that is called
+head to
+okay
+i can use one more that is called
+head one
+so two properties i have it head one and
+head two
+and we can also use h1
+as like a normal property
+head to we can give this
+for id i can say
+background color
+i say
+pink
+head one
+i can just use background color
+red
+and here what i can do i can override
+the properties
+so what i can do here in my application
+i can zip h1
+here i say background
+okay color
+and here we can just use as a what
+as i call brown so if i say brown in
+that case and if i make it as an
+important
+like i say
+important by saying accelerometer mark
+important so what would happen just take
+a look here
+you will see it basically replacing all
+the colors with what
+with
+brown because i'm making it as a what as
+a
+important as i said overrides or
+overrule all the previous property if i
+remove it
+okay so it will be changing it
+to the different color
+and here
+i just use what dot
+and here i use what
+hash
+head to
+is the id so i can just use hash here
+and here we use what
+dot now
+you see they will be having their own
+dedicated colors okay i say like this
+but if i just make it as a what
+important
+and i use it as a cold water
+green yellow so you can see
+it will apply the green yellow to
+everywhere
+okay so that is an important prop let's
+override all the previous rules that's
+how the css is
+okay everyone so our next example
+is towards
+focus on javascript interference
+now here we have few questions that are
+available like what are the various data
+types in javascript
+so javascript contains different type of
+javascript data types like if you think
+about
+all different types which are there
+generally
+by short int long
+float double character boolean these are
+all different type of
+data types are supported inside a
+javascript
+okay
+now
+going ahead what is the callback in
+javascript so the callback means is a
+function
+okay that is passed with another
+function as an argument on a parameter
+okay so what is the callback callback
+means don't call me i will call you
+clear so the idea is like you are
+passing
+the function itself isn't parameter to
+the another function because the
+javascript is known to be called
+non-blocking which never wait for the
+code to finish it continues to move on
+and due to some reason if your
+function it's taking some time
+to
+you know
+execute so javascript won't wait for
+that particular function to finish so
+you use callback to prevent such
+behavior
+okay that's called a javascript callback
+now what is the difference between
+function declaration and function
+expression see this is called
+function declaration
+and you talk about a function expression
+function declaration is just to declare
+a
+separate statement within a main
+javascript code and
+you can be called before the function is
+defined
+okay it gives you the better readability
+where the function expression are always
+created inside the expression
+okay and
+it is created when the execution point
+reaches it
+are we clear and it is used when there
+is a need of for a conditional
+declaration of a particular function
+now what do you understand about the
+cookies in a javascript so it is one of
+the very very common question cookies
+are the one which is created by the
+server stored in a client side which is
+responsible to store all the necessary
+client activities so that the browser or
+the application give the better
+recommendation to the user
+okay so it is just a
+a small
+text file
+which is stored in a browser itself
+okay it want
+to record something about a user
+activity you always put it like that
+and you can also define
+the expiry time for the cookies
+okay as per your convenience to decide
+how long the cookie wants to be there
+inside your browser if you do not offer
+any time span by default the cookie will
+get lost immediately the moment the
+browser closed
+next what are the clauses in javascript
+so closures are the javascript is a
+feature where the inner function has an
+access to outer functions variables
+and the properties
+okay so you can consider a closure has a
+three scope change number one it has an
+access to its own scope
+that is defined within its curly braces
+second it has an access to the variable
+of the outer function and also has an
+access to the global variables
+now the closure is the javascript
+features as i told you like which has
+hannah has an access to the outer
+functions variable simple example i can
+give it to you is
+a function which is known as called
+inner function
+and there's a function defined on the
+top is an outer function so it is having
+all the functionalities access of the
+outer function inside it
+now
+what are the imports and exporting
+javascript so import and exports in
+javascript is a very very common way how
+in java you use the term name call
+import a package
+but in javascript it is little different
+unless you export something you can't
+import it
+okay so if you want to access any of
+your files properties or methods outside
+of your file you always use the
+statement of import
+and export so here you can see you have
+got
+one property like an sqrt which you are
+exporting it and you have one function
+which is called square there is another
+function called
+you can say diag which you are exporting
+it and importing it just the way you
+always want so that is how
+it is importing and exporting
+what is the difference between undefined
+undeclared and null in a javascript
+see undefined means a variable that is
+declared but the value has not been
+assigned yet that is called undefined
+undeclared means
+like it is a null
+first of all we talk about null null
+means it is an assignment value that we
+can assign to any variable that is meant
+to contain no value and undeclared means
+the variables are not declared and do
+not exist in the program
+okay that is called what un
+declared
+how to remove the duplication from the
+javascript array so you basically needs
+to use
+the standard filter methods
+okay this is basically responsible to
+help you to analyze whether we have some
+duplicates available or not
+so we'll be using using filter methods
+okay so these are basically known is
+called array and the current element and
+the index of current element
+and by using the for loop it is an empty
+array is used for the storing all the
+repeated elements
+okay so these are known as call a
+typical javascript discussion which we
+have taken place
+multiple questions are there which we
+have already answered
+it's time to basically talk about
+javascript so i'm going to create a new
+folder now the name called jsdemos
+and in this js demo we would like to
+explain you
+the different concepts the first let me
+go and create
+index
+dot html and i will be creating another
+file here called
+demo.js well my first concept towards
+this javascript is like working with
+callbacks like what are the callbacks
+are see the ideally as we know callbacks
+are the function which you pass it
+okay to the another function as in
+parameter so we'll be seeing how this
+callbacks really works
+with showing you one very small
+demonstration let me have this
+html5 here and
+here
+we would like to use script
+src equal to
+demo.js
+and in my demo.js i'd like to create
+const
+okay
+get
+blogs
+okay equal to
+now
+this function call
+get
+blogs
+let me have this arrow sign here so now
+here i would like to provide one
+function called set timeout
+this set timeout as you know there's the
+javascript function which delays the
+response time i'm dealing it for
+2000 millisecond and here in set timeout
+we are saying return
+and here we will provide
+property called title
+colon
+welcome to
+js
+so this get blocks is a function having
+one
+uh it is returning on an object of
+having property called title and sync
+welcome to js delaying for 2000
+here i'm saying
+const
+bp is just a variable equal to
+get blocks
+okay and here we'll be using
+console.log
+and here we'll be providing the property
+like a what bp
+dot
+title so that's the property for me
+now
+ideally if i just check if i try to run
+my code i want to see what outcome i'm
+gonna receive while try to running this
+i'll go back to my browser and
+just check
+what works
+nothing is displaying but when i go to
+the inspect
+i'll see it is saying like cannot read
+property title got undefined
+yeah now white it happens because
+javascript is non-blocking it doesn't
+wait for the function or
+the
+i would say the block of code to get
+over if it is delaying for 2000
+millisecond then title property will be
+available only after the 2000
+milliseconds are lapsed but here the
+output is displaying title immediately
+due to that it is saying like hey title
+is not available because it is delaying
+for 2000 milliseconds
+now this is the concept where the
+closure sorry this callback comes where
+you're passing the function itself as in
+parameter to another function which will
+wait till the time the job get over
+so here what i'll be doing i'll be
+removing this i'll be using this as a
+function called cb
+sorry
+cb and uh
+this
+enclose it it here now we have a one
+function name called cb
+okay which is having property called
+title and i'm passing this cb as a what
+as a parameter here
+now this is called callback your passing
+function itself is and what is in
+parameter to another function
+and here in get blocks what i'll be
+doing it
+i'll be using
+get blocks here we are passing
+bps and parameter
+and now
+let me take this
+to back to my code bp.title and let me
+see
+how it works
+okay so
+that's where
+the concept really comes in so now after
+two second melee two thousand
+milliseconds are over respond is
+available response is available let me
+refresh
+two second two milliseconds oh sorry two
+thousand milliseconds the response is
+available
+that's the concept of callback where you
+are passing the function itself as a
+parameter with another function
+okay everyone so after this we're gonna
+start working with our next area of
+discussion
+that is called what is the difference
+between a function expression and
+function declaration
+okay see ideally if you check
+there are actually
+really similar
+okay how you call them is exactly the
+same
+the difference is how the browser loads
+them into the execution context
+again i'm telling you
+the
+concept of let me try to create a new
+file and give the name call
+declaration versus
+expression
+so what i'm trying to tell you is
+they are actually really simple or
+similar
+how you call them is exactly the same
+the only difference lies here is how the
+browser load them into the execution
+context
+so function declaration loads before any
+code is executed
+again i'm repeating function declaration
+loads before any code is executed but
+the function expression load only when
+the interpreter reaches at the end of
+the code
+okay
+so as i said the function expression
+loads only when the interpreter reaches
+that line of code
+okay so once again i repeat the
+difference function declaration loads
+before any code is executed however the
+function expression loads only when the
+interpreter reaches that line of code
+if you try to call function expression
+before it is loaded you will get an
+error for sure
+if you call a function declaration
+instead it will work because no code can
+be called until all declarations are
+loaded like again i'm telling you this
+example if i say
+alert
+demo
+i'm using this
+okay and i'm coming down
+okay and i'm using this work
+demo
+equal to
+function
+which says
+return
+hello
+are we clear
+so you see it is an error
+why it is an error you can see the error
+carefully they say
+whatever the reason is okay suppose even
+if i put semicolon here so there will be
+no difference here because they're
+telling you very clearly
+like this example
+is an error because the demo function
+was not found it is an example of
+function expression
+function declaration however what would
+happen
+in the other side
+okay
+it will run
+i'll be clear it will run without having
+any issue the way you call it's gonna
+work
+without having any issue
+okay that is the alert demo
+okay here we have a call
+object which is returning here and
+that's it
+this is called function expression and
+if i just show you about
+another way around so we're just going
+to say
+alert
+demo 2.
+here
+suppose when we are saying this alert
+demo two here let me
+try to close this
+okay it is an actually error here in our
+elliott demo when i say the same example
+alert demo two
+okay and i'm using it here by saying
+function
+okay and i'm using this call
+demo two
+okay and here
+we're just saying return
+is it gonna work for you
+okay this is gonna work for you
+that's the difference between function
+expression
+and function declaration so this is a
+function expression and this is a
+function
+declaration hope you're all clear about
+this
+well another example which i'm trying to
+show to you that is called working with
+the closures
+so i'm going to create a new file here
+call
+now what are the closure see the idea
+behind the closure is very important
+because it is a core concept of
+javascript
+the idea behind of closure means that
+the inner function
+okay you have a outer function you call
+inner function inner function always
+have an access to the variables and the
+parameter of its outer function
+even after the outer function has
+returned
+okay
+now let's see how we gonna declare this
+in this example if i define a one
+function
+okay this function is called
+outer
+okay and here defining one variable
+called
+oe
+okay equal to 100
+is a variable declaration and after that
+we are declaring the nested function
+inside this by saying
+function
+inner
+okay
+and now inside this i'm gonna declare
+a simple alert
+sorry
+a simple alert where we are displaying
+the
+outer variable the one which is defined
+okay after this a function we're just
+saying what
+return
+you know see inner function is already
+written
+and
+after this what i'll be doing i'm just
+going to create the object of war
+inner function
+equal to
+outer the object we are creating it now
+okay and after that we are calling
+inner
+function
+and ideally it should work because that
+is what i said the
+implementation is very simple the inner
+function will have the access of what
+come on outer function variable even it
+has been returned and that's what we're
+doing it now and if i just check
+how it is
+so here
+i have a call closuredemo.js let me
+invoke the closure demo
+now
+you can see
+it is working
+that's the beauty of
+the closure okay so we understand like
+closure example is very simple
+where it is giving you the access of
+external
+variables can be accessed by the inner
+variables
+okay very easily
+now i'm gonna tell you about the
+difference between
+okay the difference between
+the null
+undefined and undeclared
+again i'm repeating my word three
+options
+undefined
+null and undeclared what is the
+difference so here
+i'm gonna define a new file called
+in this different.js undefined means
+what undefined means a variable that has
+been declared but not has
+assigned a value
+okay like if i just say var a
+and defining this log
+okay let me say a so that is called
+undefined
+that's called undefined you're using it
+the value hasn't been defined
+i'll be clear that means the value is
+undefined null means it can be assigned
+to a variable to a
+represent no value again null means what
+it can be assigned to a variable to a
+represent no value like
+you think about a situation
+var b equal to what
+null
+are we clear and if i say log
+okay and i'm defining the beak
+this will be null it can be assigned to
+a variable
+to represent no value that is called
+null and undeclared means what
+undeclared means if a variable is not
+declared then the browser throws an
+error here at least to define declare a
+variable but you haven't defined the
+value
+and here i'll be showing what
+log
+and here if i just say
+demo
+so this is certainly a what
+come on undeclared this is called what
+your application will be throwing the
+error saying like hey what you are
+trying to access it doesn't even exist
+so here the type is undefined
+okay that's the differences
+okay so we are clear about what you mean
+by
+undefined undeclared versus the null
+values
+now the next thing is
+how to basically try
+to eliminate
+the
+arrays
+duplicate values from the arrays so if
+you are planning to remove the duplicate
+values from where from the array you
+have options with you
+what options very simple to remove the
+duplicate elements in an array let me
+declare one simple
+let
+data equal to here let's define a value
+like an a
+like in b
+okay
+like on c
+and once again we are defining what a so
+a is a duplicate it should not be
+repeated while displaying so we can just
+use what let
+let unique equal to we're using what
+data it contains one function called
+what
+filter
+inside this filter we are passing two
+properties here
+number one
+is just a character like in c and second
+we are passing what index
+okay
+and here
+here we are defining return
+okay the property called what
+data okay dot
+index of
+okay here we are passing the first
+character like in what c
+index
+that's it
+that's how we're defining and let's
+close this
+and use
+log
+what
+the unique
+okay and this demo.js we are including
+in our index.js
+okay and let's check this out
+now you can see it is having abc
+it doesn't have any duplicate elements
+which we have defined
+now let me add another one that is
+called b
+again but here
+you see it's really having what
+the same value so this is how the way
+you remove
+the duplicate elements from there
+from the area very simple and
+straightforward utilization of the
+filter function okay thank you
+well let's go ahead with the next area
+that is called working with react.js
+interview questions
+now as we know it react.js is as
+important as like in other
+tools which you've already seen
+so what is the jsx here jsx called
+javascript syntax extension
+okay
+so this syntax extension to the
+javascript in react.js isn't the way
+how you express
+to bind js and html together to result a
+jsx
+content
+so by using jsx you can write the html
+structure in the same file that contains
+the javascript code that is something
+more innovative way because of that
+react js is creating
+more buzz in a market
+so
+jsx actually helps the making code more
+easy to understand and debug and avoid
+lot of boilerplate code okay inside the
+dom structure
+now the next thing what is the virtual
+dom so the virtual dom is representing a
+dom in a memory
+okay that is called virtual dom so
+manipulating the real dom is much more
+slower and costly affair
+okay because you need to repaint the dom
+over and over the period of time
+when the user changes few things
+so
+when the state change virtual dom
+changes and only the objects which are
+in real dom
+okay
+update instead of updating the entire
+object so that makes your page to be
+load far more faster
+okay so in virtual dom what happens this
+is the real dom this is a virtual dom so
+the orange color portions which you are
+seeing that is basically the changes
+which has been made
+okay these are called changed object
+okay so virtual
+dom is basically compare it's to the
+previous state and understand which area
+it needs to send for the updates and
+avoid the other areas
+okay that's what this
+virtual dom really works
+so what a react extension react
+extensions are many like you talk about
+like in flux it is a third party tool
+which is responsible to attach
+the state management feature you talk
+about react native which is responsible
+to develop the hybrid mobile
+applications
+in javascript so these are two very
+popular and there are many more which
+are available
+okay so
+like you talk about
+architectural support you talk about
+server side rendering
+okay so redux and there are lot many
+other tools are also available so what
+is an event in react and how you're
+going to create that so react is
+basically offering
+the ideas of handling the event very
+fairly easy so that you talk about
+clicking anything
+you talk about taking your mouse
+somewhere so these kind of options
+generate an event so for that we
+typically say
+alert and you click on this render you
+click on this button in a curly braces
+you call the function to trigger
+to event
+now what are the components in react
+so friends react components are nothing
+but a call view
+okay like a complex view can be divided
+into the smaller portions
+a complex ui can be
+distributed further to create more
+better and reusable views
+clear so it splits the user interface
+into the independent pieces of code
+which can be developed and joins
+later on okay so that's how you define
+the component in and react so in angular
+and react
+in both the areas the word component is
+very much used so the component meaning
+is very simple you talk about a view
+so what is the state in a react so state
+is a react is nothing but
+is
+the one which identify
+what was and what is now
+okay which stores the value for the
+specific period of time which changes
+and react is basically detecting those
+so it is changing because of some
+actions either taken by the users or by
+the applications
+okay so it keep tracking about all those
+states what it was there like in i'm
+talking about an incrementing encounter
+so that is also the state available
+there okay so the state object is always
+initializing the constructor so it can
+contain the multiple properties so this
+dot set state is used to change
+the value of the state object and set
+state is responsible
+to
+perform the shallow merge between the
+new state and the previous state
+now the state holds the data that a
+component renders to the web page
+certainly because every time the state
+changes so it needs to be stored
+somewhere so this is how the state is
+accessed as you can see this example
+here
+in the constructor we are defining the
+super props and the states being
+initialized and you're rendering the
+states there are three different steps
+are involved initialize the state render
+the state and update the states
+what is a higher order component and
+pure component react higher components
+are the component which are typically a
+function okay that takes a component and
+return a new component to you by
+manipulating few things
+they're basically designed for the
+reusing
+okay so the higher the components are
+typically a function that takes a
+component and return a new component
+okay so to in order to perform some
+reusability a pure components
+are the components okay is a
+variation of react component that
+doesn't
+that does a shallow comparison of props
+and state
+okay shallow comparison basically checks
+what the equality
+are we clear now so that's what the main
+job
+going ahead what do we implement and how
+do you implement react routing so to the
+implemented react routing react routing
+also comes with inbuilt
+react
+modules and that particular module need
+to import it
+so
+here we define the react modules by
+offering the route path
+where you have a call left hand side is
+the name and the right hand side is a
+component which you would like to
+deliver it now
+okay that's how you define it so we'll
+be discussing about some of the
+important aspects of react
+so the very first question is what is
+the component in
+react see we know it very well the react
+is known to be called component centric
+library where the word component playing
+a very important role especially when it
+comes to the representation part
+so in a nutshell i will say whatever you
+see
+in your
+browser
+in a modern days applications they are
+nothing but a called what
+there's so called typically a
+component and how to use those
+components let's take a look at my code
+so in a very complex applications
+the view can be distributed to the
+smaller portions and every single
+portion will be treated as a what is a
+component so how to create a component
+in react let's take a look
+so to create a component what i will be
+doing it i will just go back and create
+a new folder
+called
+components you can give any name and
+inside these components i'm going to
+create a new file with the name called
+main
+app.js
+so here i have to import one package
+called import
+react
+from
+react
+and here i will be giving
+component
+in a curly braces now here let's go and
+create a component by saying export
+default
+plus
+main app
+extends component and the moment you do
+so immediately you have to
+create a one function called render
+which
+have a return
+and
+this return will return you the jsx
+and here i write a very simple message
+under the div tag
+and say
+welcome to
+let's put it under the paragraph tag
+okay that's it the component is ready
+let me include it under the app.js which
+is already created component provided by
+your react
+and here
+let's include it
+and
+start it by saying npm space start
+and it will launch in port number 3000
+it is saying like
+srthintex.js is not found
+okay so there are some
+previous components are written
+so we haven't used it
+oh you can see the message called
+welcome to main app
+so you can see this is a very simple
+example of how the components are
+created
+in your application
+that's the one thing
+now the next thing is like how to
+basically go and create an event how to
+gonna launch or trigger any event in
+react application
+your friends triggering an event in
+react is very very simple
+what i will do is here i'm going to
+write one very simple function called
+call
+app
+let me put it under
+here call up
+and here we can say alert
+app is called and to trigger the event
+i'll be creating one very simple button
+and i say
+call
+let me have an even call
+on click
+equal to and here in curly braces
+i'll be calling this
+method which is called call up
+okay and once it is ready let's go
+and there we go you see how easy it is
+for you
+in react to create an event and launch
+an event
+okay everyone so our next example in the
+same continuation
+is like what do you mean by higher order
+components
+okay so you need to understand like uh
+when we talk about uh higher order
+components they are the just like in
+javascript function
+are used for adding additional
+functionalities to the existing
+component
+it is basically designed for reusability
+okay so they're designed for adding the
+additional functionality to the existing
+components these
+functions are pure this which means like
+they are receiving the data and
+receiving value according to the data
+okay so if the data changes higher order
+function rerun with a different input
+okay so
+the idea is like higher order function
+is wrapped around the normal components
+and provide additional data of it
+and that's how this works let me try to
+give you a very simple example of how
+the react
+react offers a higher order function for
+you so let me go back and create a new
+file
+and uh get the name call
+hock
+okay so as usual i'll be importing the
+same
+in hoc i'll copy and paste the same
+and
+give the name call
+extends component i'll remove this call
+app
+and
+render return whatever we have it i'll
+just remove these two also
+so this turns to be very very normal
+function
+for the normal component
+now what i do is in a very first step in
+my application
+i'll remove all those i really don't
+need those first
+i'll say const
+info
+okay equal to
+props
+it is a stateless function component
+okay now here i'm defining a div tag
+okay within this div tag i'm saying h1
+or h2
+and within this i am saying message
+called
+info
+after this i am starting with another
+tag called paragraph tag
+and will say
+the info is
+something whatever it is but what data i
+really don't know but i can just use
+something here
+now
+here if i just say suppose
+props
+dot info so you might be thinking like
+what exactly the info is so don't worry
+i'll help you how to achieve this
+i'm going to create one more called
+const
+with
+admin warning
+okay equal to
+now here we're going to create
+a very simple
+okay now here i'm just going to give the
+name called wrap component
+wrapped
+it's just the name wrapped component
+okay
+here we are saying return
+with prop
+okay and here
+within this props i will use again
+another div tag here
+within this div tag i can use the
+paragraph
+and i will say
+this is private info
+message we have written
+and what i'll be doing
+within this application i'll create
+what wrap component
+and within this
+i'm saying
+okay so we are basically printing what
+drops
+once it is over
+that's it so you can say const
+admin
+info
+const admin info equal to
+i'm just gonna give the name call what
+with
+admin warning and passing what
+the another component inside this that
+is an info
+that's it
+so that is what we wanted
+okay and i'll be saying what
+export
+default
+which option admin info
+and that's the example of typical
+higher order component so you can see
+this higher order components are the
+components which are taking the input in
+the form of component and returning what
+the another component which changed
+value
+and that's how we're returning another
+component
+with
+and passing what a component inside so
+this info is passed choose another
+component to the wrap
+with admin warning and returning this so
+this is a typical example of like how
+your higher auto components are actually
+used
+our next example is all about state
+management
+how to define and display the states
+inside a react as we know it very well
+react takes care about the state pretty
+well and that is one of the beauty of
+react so let's see how we can use this
+estate management inside your
+application
+so to maintain the state what i'll be
+doing it uh
+here i'll just try to create one
+function called uh inc
+increment
+okay or
+whichever you want to make it so i
+better use inc
+for increment okay
+i remove this alert
+so to define the state inside your
+component you always use one line
+that is known as call
+constructor
+inside this you define props
+and here you use
+super
+number one and after that you initialize
+the state the way you want so to
+initialize the state you always say this
+dot
+state because the state is in an object
+so you define this state with the value
+called count
+colon zero so count is just a variable
+which are initializing the initial state
+with the value zero
+and you'll be displaying this value
+right over here and say
+counter
+and here
+to display this will be using this start
+state dot count
+initial value is actually zero so let me
+check
+here you can see the value is so zero
+now i want
+to
+increment it value so how you're going
+to be incrementing it now so to
+increment this what i'll be doing is
+i'll be calling this
+okay this and calling the set state
+function by saying this dot
+that state
+okay
+and in the set state i would like to
+check what are my previous values and
+what is my current values accordingly
+i'll try to make it so here i will say
+this starts that state
+here i will take one parameter call
+ps that is called previous state and
+here
+i would like to say return
+and here i will say count
+colon
+ps dot
+count plus 1. ps means previous state is
+just a variable to confirm what was the
+previous state
+of my application whether it was 0 1 2
+or whatever
+and we have to call this inc function
+right over here
+that's it let's check
+there we go
+okay very simple that is called state
+management very simple example you
+initialize the state
+and after that you render the state and
+after that when the state changes while
+calling this inc function
+this set state function will render the
+updated state to the dom
+due to that you are able to see this
+value
+now our next step is like how you're
+going to be performing this navigation
+inside the react application
+so friends when we talk about like a
+navigation we have a very
+straightforward demonstrations
+first of all in case if you want to
+perform the navigation you need to have
+the new dependencies to be get added by
+saying npm space i space
+react hyphen
+router hyphen dawn
+that's the first dependence you need to
+have it
+okay
+and
+once the dependency is ready
+you have to go back and start
+importing
+some of the portions of your code like
+suppose if i create another component
+here
+give the name call
+login dot js
+okay that's my component name
+and i'm gonna create one more component
+here called
+landing page
+dot js
+okay
+so
+once these two components are ready
+so you'll be creating a routes
+so in our main app.js or
+the previous component what we have
+created
+okay i would like to go back and create
+some data right over here
+support class constructor super i am
+removing it all
+render return
+i'll remove everything give the name
+call
+landing page
+okay extends component and everything
+and what i'll be doing is to provide the
+routing on navigation
+here in my applications i will try to
+say
+how to provide so i will say const
+okay
+routes equal to
+now here
+i would like to make one dependency
+called browser router there's some
+dependency i would like to use
+so here i'll say import
+from
+you can see react router down this
+dependency came and now i'd like to
+bring the first dependency here that is
+known as call browser router
+that is the location from where your
+navigation will pick up
+and within this i'm using this div tag
+within this div tag i'm using
+route
+okay i'm saying
+path
+equal to
+if i say
+login
+okay so which component should load so
+i'm saying component
+equal to
+which component i have it here i've
+recently created call login
+but i didn't write anything there
+so here
+so let me go back and create it
+remove this all
+okay and writing
+welcome to login and here in my landing
+page when i go
+i say component
+i say
+login
+okay that means when i will be clicking
+on this
+i'll be getting what the login so that
+is the path i've given
+okay and this particular routes i'll be
+putting it right over here
+so that's it and this is my landing page
+and i will be making it landing page
+available under my main app
+or if you want to make it app.js you can
+make it
+okay say say ng space
+sorry npm space start
+now the navigation is taking place
+now nothing is coming up because landing
+page is blank but yes i know one thing
+if i try to click on login something
+will come
+there we go welcome to login
+that's a very simple and straightforward
+behavior of like how the navigation
+takes place in react applications
+okay everyone so we will go ahead with
+the next set of interviews which is
+related to your angular
+so angular is as popular like in react
+okay so there are some questions which
+are usually asked like what is the data
+binding okay so the data binding is
+actually the process which allows
+the
+application
+okay to have some data associated with
+your
+html page from your typescript classes
+or the vice versa
+okay
+so the data binding is the one through
+which you bind the data okay
+so you can see here it says like angular
+uses two data binding when the changes
+happens in a model it will be affected
+in a view and whether changes happens in
+review it will affect the
+model also so it is used to
+typically keep the model and view in
+sync with each other to have the data
+interchange
+what is a typescript typescript is a
+typical
+i would say
+a language which is used
+by angular okay to develop angular
+component services pipes decorators and
+multiple things it is a superset of
+javascript and it supports
+javascript libraries and apis it is a
+pure object oriented in nature
+uses object-oriented principles better
+development time fast to load and
+additional features to the javascript
+for sure
+okay
+what is an aot compilation how it is
+different from jit aut stand for ahead
+of time compiler which is converting all
+angular and html and typescript code
+into the javascript code during the
+build phase before the browser downloads
+and run the code
+okay so aot
+is far more faster and light weighted in
+the size just in time compiler is a by
+default compiler
+okay so
+it is a process where the compiling
+computer go to the machine code during
+the execution of runtime
+so this ensures the faster rendering the
+browser it also known as called dynamic
+compilation
+are we clear so when you want to develop
+this aot compiler you always use hyphen
+hyphen
+aot
+okay so here you always use
+jit compiler because it is a by default
+compiler you used when you say ng build
+next what are the pipes in angular so
+pipes means that they are the decorators
+they
+never change their default value but
+just for the representation purpose they
+change the values
+okay
+to look more better the way they always
+want
+okay
+so pipes are ready made or else it can
+be customized created angular also comes
+with lot many predefined pipes
+okay like it comes with the pipe symbol
+here
+okay so you can chain the pipes together
+it can be provided with some arguments
+at the run time with the colon sign
+okay
+now you pass the input you put the pipe
+and get some result
+with some decorated outcome now you can
+see the pure pipes uses the pure
+functions
+clear so this pipe doesn't use any
+internal state and the output remains
+the same as long as the parameters
+passed to stay
+the same angle calls the pipe only when
+it detects the changes in the parameters
+being passed
+a single instance of the pure pipe is
+used throughout the all
+components
+okay so this is how
+you see how the pipes are being used so
+we have defined the pipe
+okay which is the value called truen
+falls for the pure and giving the class
+by implementing pipe transform
+so
+you can see here the impure pipes for
+the say for every change detection
+actually happens in an angular and
+impure is called
+are we clear with regards to the changes
+in the input fields
+okay they will be calling every time so
+multiple pipe instances are created for
+the same for these pipes and push pass
+to these pipes can be mutable by default
+all pipes are pure only if you want to
+make it impure you always say like pure
+colon true
+or
+pure colon false
+now what are the promises and
+observables in angular see
+promises it is a typical javascript
+object okay it it emits a single values
+at a time they execute immediately after
+the creation and not cancelable
+they are pushed error to the child
+promises
+okay where the observables are only
+executable when subscribed to them
+they won't call unless you subscribe to
+them using subscribe methods so they
+help perform operations like for each
+filter and retreat and everything
+when you unsubscribe this they won't get
+called and won't listen anymore
+what are the form control center form
+groups see the form controls and form
+groups these are two predefined objects
+comes with your
+angular
+so these all text boxes
+from you take the input it may be radio
+buttons it may be the drop down it may
+be the check boxes are called form
+controls
+okay so form controls is a class that
+enables the validation for every single
+input class
+whichever you are creating it now
+so they check
+the values which are touched untouched
+or the dirty
+clear
+now we talk about call form group they
+are basically forming a group
+which
+under which you have a call relevant
+fields joined together are called what a
+form group
+okay so form group class represents a
+group of controls like you talk about
+address contain city state and pin code
+these all three can be together called
+as a form group
+okay so the form group class basically
+return true if all controls are
+basically what
+the valid
+okay and they are
+designed to provide all the necessary
+validation errors
+what is eager and what is the lazy
+loading
+okay so eager loading means what it is a
+default module loading strategy followed
+in an angular
+eagle loadings are used before the
+application starts
+these are typically useful for the small
+scale applications
+lazy loading however is designed
+for dynamic loads of features
+only on demand
+this makes your application far more
+faster so in a bigger application we
+really don't make easy eager loading
+because it hampered the performance and
+you want only when the client asks you
+want to use lazy loading
+what is the string interpolation in
+angular see string interpolation is
+written under the double curly braces it
+is typically one way binding where you
+get the data from the typescript classes
+and display directly over your browser
+it denotes with the curly braces and it
+always display the data comes from the
+component to the view in angular we have
+two very important areas to discuss like
+number one
+what do you mean by
+string interpolation say string
+interpolation is very very simple
+statement like you are
+talking about a one way binding
+string interpolation is a one way
+binding technique which is used to
+output the data from a typescript code
+which is a ts file
+so whatever data you keep it on your
+typescript if you want to make it
+available to the browser for the
+representation purpose you always use
+double curly braces
+as you can see right now we have one
+property called company name and we have
+a call
+my company and if i go back to the html
+i can say this company name right now so
+this company name is written in double
+curly braces and here it contains that
+value
+now if i just give one more option here
+call
+my city
+okay equal to if i say pune
+and if i go here if i want to display
+the city
+so i can use
+my
+city
+okay if i go to the browser you can see
+it is showing me this
+so that option is known as call what in
+string interpolation you can basically
+perform
+some other activities to like in case if
+you want to perform some calculations
+that also you can do like you can see
+here we have got
+number 1
+okay equal to
+10
+and you say
+num 2 equal to 20 so if you want to do
+that here you can say
+and that you can put it
+num plus to num2
+and you can see now it is giving me the
+calculation
+so that is something which is known as
+called string interpolation
+that means whatever you would like to
+make it you want to display over your
+browser from the ts5
+the next activity which comes in an
+angular that is known scholar how you're
+going to be dealing with and how you
+will be dealing with another concept
+here called
+pipes
+see the pipes are basically designed for
+the formatting purpose so whenever you
+would like to perform the formatting you
+always use pipes without changing the
+core values
+okay so in case if i'm planning to
+display some records or some data
+okay without compromising the original
+value i'll always talk about what
+pipes
+so pipes are always designed to give you
+some more meaningful messages like you
+can see
+predefined pipes different type of pipes
+are available
+here we talk about predefined pipes
+which start with this pipe symbol
+and you put
+uppercase so if you put an uppercase you
+can see
+all letters
+mean
+okay
+here let me terminate the server and the
+other properties are also two
+like in component if i go and put
+okay and we talk about
+rating
+okay we say
+doj
+equal to
+date and if you put it in
+like this if you put it
+and those well if i want to format it as
+usual
+they'll be showing in a normal format
+so formatting can really change the way
+they should look
+like just imagine here
+embedding it as an upper case
+in a similar one i can display
+some other details too like i copy this
+and i'm using
+one more property here called income
+and this i put it in a number
+or currency
+which will be showing me the values
+where in a currency
+again
+i talk about
+this rating
+okay i can
+change it to number
+and also i can perform what
+some basic
+customized calculations like suppose
+rating is 4.9867 i want to
+trim the post decimal values to 2. so i
+can say 2.2 minus 2
+it will be going like that we could talk
+about date of joining so if i just go
+here
+we say doj and i put what
+date it is a predefined pipe it really
+make a difference
+in your existing applications
+let's check
+here
+let me refresh my browser
+you can see now how the codes are
+looking like it
+so they are basically different set of
+pipes which are provided by the
+angular to make a difference in your
+application hope you are clear
+and some generic interview questions
+like you can see about what are the
+advantages of typescript over the
+javascript so certainly we know that
+typescript is a superset and give you
+the better benefits over the javascript
+it is fast super loaded features
+better understanding code looks like in
+typical c plus plus and java and offer
+lot many features like interface
+generics and many more
+how a web developer different from a web
+designer certainly the web developer
+build a web application using html
+css and javascript web designer
+basically use all the other tools like
+an adobe photoshop and other tools
+so
+frequently you use javascript framework
+for developing a web-based application
+which may be client-side and server-side
+you really require good coding skills
+and you have to keep yourself updated
+with your latest frameworks which can
+create a better effects into your code
+where in a web designer is focused only
+on talking about trends color patterns
+and all
+so webbed is a developer having much
+more better hand over the web designer
+so what is the back-end developers
+back-end developments you talk about
+developing a server-side applications
+like in java jsp php
+you're writing and developing the apis
+where the front-end application can
+communicate with and it ensures the data
+integrity and consistency and involve
+writing a lot of scripting where you can
+communicate with your backend
+application in the databases
+okay
+what is the coffee script it is a once
+again a type of scripting available
+okay which is not used further but yes
+it is a type of
+a language
+okay where you can write the javascript
+code into so it attempts to demonstrate
+the positive points of javascript in
+very very straightforward manner
+so you can write a consistent javascript
+code
+and getting much more better advantage
+over the traditional coding
+how would you ensure that a web designer
+is a web design is a user friendly there
+are certain parameters are there you
+talk about
+a front-end developer should work
+closely with the user experience team
+so it gives the same design what the
+user is actually expect
+they should test the application
+regularly while taking the inputs
+so the application developed
+should be compatible with the different
+platforms and the different screen sizes
+would you recommend a web designer role
+or a web developer role certainly we
+talk about call web developer role
+but it really a matter of preferences
+okay if you are
+more inclined towards creating the end
+user experience
+i would suggest to go with the web or ux
+designer role if you focus on writing
+everything together
+okay towards more into the coding you
+will certainly step into
+web developer
+how you would increase the page
+performance there are certain parameters
+you need to consider html document
+should clean up
+external http request could be minimized
+sprites compressed images and the
+smaller image would be included at the
+bottom of the page you should put
+javascript rather than on a head tag
+css javascript and html
+caching on cdn
+okay so everyone thank you very much so
+these are the quick interview questions
+we have defined for you
+okay i wish you all the best and thank
+you very much
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,601 @@
+hello everyone welcome to this video
+tutorial on go interface by simply learn
+in this session you will learn what an
+interfaces and how to create an
+interface
+after this you will learn about empty
+interface
+further you will get to know about type
+assertion and type switch
+so hey everyone i am amisa ruja from
+simplyrun and welcome to this video on
+go interface but before we begin if you
+love watching tech videos subscribe to
+our channel and hit the bell icon to
+never miss an update
+let's start with what is an interface
+key principle open interface in go is to
+provide method signatures for similar
+types of objects
+go does not have classes and inheritance
+to implement object orientation
+go has the interface and abstract type
+to fulfill this purpose
+for example
+motor vehicle can be an interface with
+method signature mileage
+any type which provides definition for
+mileage method is said to implement the
+motor vehicle interface
+let's learn how to create an interface
+in go you can create an interface using
+the type keyword
+followed by the name of the interface
+and the keyword interface and you can
+specify method signatures inside curly
+braces
+you will get to understand the creation
+of interfaces with example let's move to
+visual studio code and create an
+interface
+i have opened and filed and named it
+interface dot co
+here we will just create the interface
+for that we will first type the keyword
+type
+then the interface name
+we will
+name it as moto vehicle
+and then type the keyword interface
+we will start the curly braces
+and inside we can define method
+signatures
+we will define
+mileage
+as a method and it would be a
+return type plot
+and we will declare another method
+that would be average speed
+and
+that would be your type string
+now we will see how to implement an
+interface in go
+to implement an interface in go you need
+to implement all the methods declared in
+the interface go interfaces are
+implemented implicitly
+unlike java you don't need to explicitly
+specify
+using the implements keyword
+in the previous program we have defined
+the moto vehicle interface which has two
+methods mileage and average speed that
+return float64 value
+any type that implements these methods
+will also implement the motor vehicle
+interface
+now let's look at a practical use of the
+interface
+we will write a simple program in the
+visual studio code
+that would calculate the total mileage
+for a person based on the individual
+mileage of his cars
+for gravity we have assumed that
+distance covered is in kilometer and
+fuel used will be later
+so let's move to visual studio code
+and start writing the program
+first we'll write package main
+then we will import fmt
+and now
+we will declare our interface that would
+be
+type
+the name of the interface that is motor
+vehicle
+and the keyword interface
+we'll start the curly braces and declare
+our first method that would be mileage
+and it has
+a return type
+load
+64.
+we have two cars owned by the person bmw
+and od defined by struck pins
+so first we will define the structs
+for the card
+bmw and od
+for that we will write type
+bmw
+and it is struct type
+inside the curly braces
+we will define distance
+that would be of type
+plot
+64
+and that is average speed
+and that would be of the type
+string
+now we have declared
+let's declare and the struct type that
+is od
+for that we'll write type
+od
+struct and inside the curly braces we
+will define distance
+as the return type float64
+and the fuel consumed
+with the same type float64
+now
+to implement the motor vehicle interface
+we need that the bmw struct and the od
+struct should implement the method
+mileage for that we will define the
+method mileage for both of them
+first we will declare the method mileage
+for
+bmw for that we'll write function
+bmw
+that would return the type as
+float
+64.
+and we have to declare the method that
+is mileage
+and inside the curly braces we will
+define this function that would return
+e ether distance
+divided by
+b dot
+fuel consumed
+so we have declared the method mileage
+for bmw
+now we will declare for the type
+od struct
+for that we'll write function
+od
+method name that is
+mileage
+and it would also return
+float 64.
+so this would be small
+and inside the curly braces
+it would also return
+distance travelled by the od that would
+be a distance
+divided by the fuel consumed by od
+now we'll also define a function that
+would calculate total mileage like both
+the mileages of bmw and od in a month
+for that we will declare method total
+mileage
+for that we'll write
+funk
+total mileage
+and this the total mileage function will
+take a slice of motor vehicle interface
+as a parameter
+so for
+that inside the
+circle brackets
+we will pass
+a struct
+of the interface motor vehicle
+and inside the curry braces first we
+will define a variable
+in which we will store the total mileage
+so that will declare tm as the variable
+and is its initial value would be 0.0 as
+it would return the type float 64.
+now
+we'll run our loop
+and pass a slice that contains both bmw
+and od types to the total mileage
+function
+the total mileage function will
+calculate the total mileage in the
+variable tm by calling the mileage
+method of both the corresponding types
+so we will define
+range
+m
+and inside the curly braces
+we will
+add up the mileage
+and we will get it print
+out
+that would be fmt dot
+print
+f
+total mileage
+per month
+that is a float type
+and it is in kilometer per liter
+and it is stored in the value
+tm
+now we will define the function main
+so first we will
+assign the values for the struct type
+bmw
+for that
+we will
+assign the values in the variable
+b1
+distance would be
+167.9 kilometers covered
+coma
+fuel consumed
+would be
+36 liters
+coma
+and the average speed
+for bmw would
+be would be 58
+and we have declared the average speed
+as the type string so
+we will
+make 58 in the inverted commas
+now
+we will declare a variable
+a1
+for the type body
+and store the values for the type struct
+od
+distance covered would be
+152.9 kilometers
+and the fuel consumption
+would be 30 liters
+for good to put the chroma here
+yeah
+so now we will declare a person
+variable
+who possess this both the cars and he
+wants to calculate the mileage of both
+the cars in a month
+so here we will pass the slice
+motor vehicle
+and inside the curly braces we will pass
+both the variables p1 and a1
+call the method
+total mileage
+and pass
+the person variable in it
+we'll save the code and run the code in
+the terminal
+for that will open the new terminal
+and write the command
+go run and the file name that is
+interface
+dot go
+press enter
+here we can find the output that is
+total mileage per month is nine point
+seven six zero five five six kilometer
+per liter
+now we have learned how to implement the
+go interface
+let's move to another branch that is
+empty interface
+when an interface has zero methods it is
+called an empty interface
+this is represented by interface and the
+curly braces
+since the empty interface has zero
+methods all types implement this
+interface implicitly
+better understanding we will understand
+the empty interface with the help of an
+example
+we'll move to visual studio code and
+create another file and name it as empty
+interface
+dot go
+and in this file
+we would see an example
+how to implement an empty interface
+for that we'll write
+package main
+and import the package
+fmt
+now we will declare a variable
+i for the interface
+and just
+make the curly braces
+now we will declare a function
+found
+and
+pass the interface
+and inside the curly braces we will find
+the type and the value of different
+types
+which
+would be implementing the empty
+interface
+for that we'll write
+fmt dot
+printf
+that type
+equal to percent t
+comma
+and the value of the type
+percent v
+slash n
+in function main we would declare the
+types which would implement the
+interface
+that is an empty interface
+for that we will write
+function main starting of the curly
+braces and first we'll declare a
+variable s
+and inside we'll store a string that
+would be simply learn
+and call the method found
+and will pass the variable s in it
+we will run this code for that
+first we'll save the file that is ctrl s
+and now we'll run the command go run
+empty interface dot go
+press enter
+here we can see that the output is type
+equal to string and the value stored in
+it is simply learned instead the string
+type has implemented the empty interface
+now we can declare more types
+that can implement the empty interface
+we will declare a variable that would be
+i and it would
+store an integer value that would be 7
+and will pass this variable into the
+method found
+now we'll save the program
+and run the file again
+here we can find
+that the type equal to end and the value
+stored
+as the end type is 7 so it's clear that
+as many types can implement the empty
+interface
+we'll move to the next topic that is
+type assertion
+type assertion you can find the dynamic
+value of an interface using the syntax i
+dot type where i is a variable of type
+interface and type is a type that
+implements the interface
+understand the type insertion with the
+help of an example for that we will move
+to the visual studio code and
+see the interface dot co file
+here we have the average speed
+declared in the struct bmw
+we will declare a method
+that would be average speed
+for that we'll write
+function
+b bmw
+the method name
+that would be average
+speed
+and it has the return type string
+that would come in front of the function
+name
+and inside the curly braces
+we will define the function
+it would return the value average speed
+now if we want to get the average speed
+of bmw
+printed we won't be able to do that
+we can see in the total mileage function
+we would print fmt dot
+printf
+m dot
+average speed
+as the interface motor vehicle it has
+only a single method that is mileage
+it can't access the average speed of the
+struct type bmw
+so it won't be able to
+print the average speed
+this is where type assertion comes into
+play
+type assertion lets us extract the value
+of the underlying type that is bmw here
+and then it will call the methods on the
+return value that is m
+in order to do that we have to make a
+type assertion of the underlying type
+that is bmw of that interface
+once we are able to do this
+we can extract the value and store it in
+a variable and then we can call the
+methods on that variable because now
+that variable has type and value equal
+to underlying type
+and value of the interface
+for that
+first we will
+copy this code
+and create a new file type
+assertion dot co
+and
+paste the code in the new file
+now
+now we will clear the function total
+mileage
+and declare a variable a u
+we will extract out the value in the
+variable a u only
+for that we will write m dot and in the
+parenthesis we we'll write bmw here m is
+the variable at which we are making an
+assertion about
+it would be followed by the period and
+in parenthesis
+we will place the underlying type of
+that interface
+the go program does not see this
+parameter
+as bmw
+it sees it as a motor vehicle interface
+now the underlying value has been
+extracted in the variable au we can call
+all of the methods of bmw by simply
+putting in the print line function first
+we will declare the print line function
+for that we will write fmt dot printf
+and we will call the average method
+that is a u dot average
+speed
+and now
+we will pass the bmw struct
+that would be declared in the variable
+b1 so we will erase
+this
+we don't
+need the slice here
+and in total mileage we would be passing
+the b1 variable
+we will save the file
+and
+run in the terminal
+here we've got 58 as the output
+that is we have passed average speed
+as a string and that has the value 58.
+now we have understood the
+implementation of type assertion
+we will move to learn the next topic
+that is type switch
+in type switch you get the dynamic type
+of the interface instead of the dynamic
+value with syntax like
+type assertion that is idol type
+where i is a variable of type interface
+and type is a type that implements the
+interface
+type switch is similar to creating
+multiple lc statements in code
+we would understand this with the help
+of an example
+for that we will create a new file
+that would be
+type switch
+dot go
+in this type switch example we would
+define an empty interface and
+we would declare different types that
+would be implementing this empty
+interface
+with the help of type switch
+for that we will write
+package
+main
+we will import the fmt package
+we will declare a function
+named like
+we'll write function
+like
+and pass the empty interface with the
+variable i
+now we will write
+switch i dot type
+in the curly braces
+and it specifies a type switch
+switch
+i dot
+in the parenthesis
+type
+and now we will define different case
+statements and compare the concrete type
+of i to a specific type if any case
+matches the corresponding statement will
+be printed first
+we will define a case
+that would have string as a type
+and
+if the value matches with the type
+string it would print the statement
+i
+learn at
+percent s
+for the next line we would write slash n
+and the variable
+i dot
+string type
+we will pass different types in the
+function like in the function main if
+any case matches the corresponding
+statement would be printed the next case
+would be
+it will have the integer type
+and
+it would print
+so p would be capital
+okay
+fmt period printf
+and in the
+circle brackets we would write
+about the age
+i am
+percent d
+years
+old
+for the next line we have
+inserted slash n
+and will pass the variable i dot
+int
+now
+if
+the value doesn't matches with these
+cases we would define a default
+print statement
+that would be of empty dot printf
+in the circle brackets would write
+unknown type
+now we will come to the function main
+in the function like
+first we'll pass a string value
+that would be simply learn
+and we'll call the like function again
+and pass an integer value
+and we will pass
+and float value that would be 12.89
+now
+oh sorry 12.89
+now i'll save the code
+it's showing an error
+okay we didn't
+define the curly braces here
+okay
+p is more of printf
+okay now we'll save the file
+and run in the terminal go run
+type switch dot go
+in the output we can see that we have
+printed the statement i learned at
+simply learn and i am 27 year olds and
+the unknown type so we have first pass
+the value that is simply learned it
+matches with the
+value string and it printed the
+statement i learned it simply learn the
+next value we passed is in type and it
+matches with the case end and it print
+it i am 27 year old
+and next we have passed a float value
+and we didn't have any case for the
+float value so it printed the unknown
+type
+now we are clear with the type switch
+with that we have come to the end of
+this session i hope it was interesting
+and informative if you liked it please
+let us know in the comment section below
+and also subscribe to our channel and
+stay tuned for more from simplylearn
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

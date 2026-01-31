@@ -1,0 +1,172 @@
+hey everyone welcome back to another
+video by simply learn this is anubhav
+and in this video we will be learning
+about expressjs get and post methods
+but before we begin if you haven't
+subscribed to our channel already make
+sure to hit the subscribe button and
+press the bell icon so you will never
+miss any update from simply learn
+so without further ado
+let's begin and see what's in it for you
+first we will get the overview of
+express js get and post methods
+after that
+we will see the expressjs get method
+moving ahead we will discuss what is
+post method
+and then we will see how the get in post
+methods works
+let's begin
+get in post method are the standard http
+request used to create rest apis
+get imposed methods are used to send and
+receive significant amount of data
+the client sends a request in the form
+of json file and with the help of http
+requests which are get post and other
+methods it will go to the server and
+then the server sends back the response
+to the client in the form of a message
+to tell what happened to the request
+that was sent to the server
+now
+expressjs get method
+get is a method that is used to request
+data from the server but mainly this
+method is used to read data
+to handle get request in express is
+pretty straightforward
+get requests are to be cached and
+remains in the browser history and
+that's why the get method is not used
+for sensitive data
+to get the data we add parameters in the
+url and get data in response
+get method is more efficient in popular
+than the post method
+now we'll see expressjs post method
+host method is used to create new or to
+edit already existing data
+this method is used to communicate with
+large amount of data
+the post method is secure because the
+data is passed in a request body and not
+visible in the url and the user is not
+able to bookmark it mostly we use get
+method only but when we want to send a
+sensitive data we use post method
+now we will see how to get the post and
+get methods work
+now open your visual studio code
+i have already installed node and
+express if you haven't install it then
+you can click on the right corner of
+this video to get the setup done
+coming back to express get and post
+methods
+now what i have done here is i have
+created a basic express js app
+const app
+require express this will install all
+our express modules
+now
+first we will write our gate method
+so let's start
+first we will write get method
+then we will initialize
+how it will be called
+will i get
+this
+quest
+we'll create
+function request parameters
+request and response
+then we'll write the arrow function
+in this
+we will send a response
+to the server
+hello
+this is
+get
+request
+let's
+i have not initialized the brackets
+let's see what i have not done oh
+forgot to write this
+now let's just save this file
+we will run this file open your terminal
+and write node
+dot
+and
+i think i have done something wrong
+let's again open the terminal
+write node
+dot
+so it is showing server is successfully
+running on port 4000
+now we will open our chrome
+and write localhost
+enter
+as i have told you earlier
+this needs a parameter so we'll
+initialize here
+get
+request
+hello this is successful get request
+so a request method is working fine
+now
+we'll go back to the post method and see
+how it goes
+app
+dot post
+request
+response
+response send
+just like this only
+just
+post
+hello
+this is
+successful
+post
+first
+now we'll run save this first
+and then run it in the terminal
+yes
+node
+dot server is running on 4000
+we have to write this
+so first copy from here only
+open your terminal
+and here we can write
+post quest enter
+so what you can see here is it can't get
+post request
+for this to see
+we need to have the
+postman i'm using postman here
+here i will write post method
+and here i will write the
+localhost 4000 and the post request
+method
+then we'll press
+send
+here
+in the body part
+we will see hello this is successful
+post request
+how this is working is because post
+method is secure and data is passed in
+the request body and it cannot be fixed
+in the url
+so with this
+we have reached the end of this video
+make sure to like and share it thank you
+for watching and stay tuned for more
+from simplyland
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

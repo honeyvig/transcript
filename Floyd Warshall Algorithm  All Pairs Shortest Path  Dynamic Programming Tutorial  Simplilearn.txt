@@ -1,0 +1,238 @@
+hey everyone i am bravo khandalwal and i
+welcome you all to simply learns youtube
+channel in this session we will discuss
+floyd warshall algorithm then we will
+discuss algorithmic solution to all
+pairs shortcut path problem
+finally we will implement the floyd
+warshall algorithm to solve all pairs
+shortest path problem in the code editor
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simplylearn's
+youtube channel
+so without any further ado let's get
+started with the topic what is floyd
+warshall algorithm the floyd washer
+algorithm is for solving the all pair
+shorted path problem
+the problem is to find the shortest
+distance between every pair of vertices
+in the given edge weighted directive
+graph
+now let's discuss the algorithmic
+solution to the all pairs shortest path
+problem
+first we will initialize the solution
+matrix the same as the input graph
+matrix
+then the solution matrix is then updated
+by treating all vertices as intermediate
+vertices
+our main goal is to pick all vertices
+one by one and update all shortest paths
+that involves the picked vertex as
+intermediate vertex
+we have now discussed the fluid partial
+algorithm
+and the algorithmic solution to all
+pairs shortest path problem
+now let's implement the solution in the
+code editor choose from over 300 in
+demand skills and get access to 1000
+plus hours of video content for free
+visit skill up by simply learn click on
+the link in the description to know more
+we will start by defining vertices we
+will have four vertices so
+hashtag define inf which will be equal
+to 9999
+now let's write a function to print the
+solution matrix
+so void
+print
+solution
+with the argument as
+and
+a two dimensional array
+test
+with its y as v
+we will come back to its definition
+later on
+now we will write a function to solve
+all pair shortest path problem using
+floyd varshall algorithm so void
+floyd warshall
+and graph
+this will also be the 2d array
+which has y as v
+now we will define dist 2d array
+it will be the output matrix that will
+finally have the shortest distances
+between every pair of vertices
+so end
+test
+its x and y will be
+v
+comma i comma j comma k
+now we will initialize the solution
+matrix same as input graph matrix
+or we can say that the initial value of
+shortest distance are based on shortest
+paths considering no intermediate vertex
+so for
+i is equal to zero
+i less than capital v
+i plus plus
+another nested loop
+for
+j is equals to zero
+j less than v
+j plus plus
+so distance
+at i comma j
+will be equals to
+graph
+at i
+comma j
+now we will add all vertices one by one
+to the set of intermediate vertices so
+before start of an iteration we will
+have the shortest distances between all
+pairs or vertices such that the shortest
+distance considering all the vertices is
+set from 0 to k minus 1 as intermediate
+vertices
+and after the end of an iteration vertex
+number
+k is added to the set of intermediate
+vertices
+and the set becomes from 0 to k
+so for loop
+k is equals to
+0
+k less than v
+k plus plus
+now we will pick all vertices as source
+per one by one
+i is equals to zero
+i less than v
+i plus plus
+now we will pick all vertices as a
+destination for the above picture source
+so for
+j is equals to zero
+j less than capital v j
+plus plus
+now if vertex k is on the shortest path
+from i to j
+then we will update the value of
+distance i comma j
+so if
+distance
+at i comma j
+is greater than
+distance
+at i
+comma k
+plus
+distance at
+k
+comma j
+and
+distance
+at
+k
+comma j
+is not
+equals to inf
+and
+distance
+at
+i
+comma k
+is also not equals to
+inf
+then
+distance
+at i
+comma j
+will be equals
+to distance
+at
+i
+comma k
+plus
+distance
+at
+k
+comma j
+now we will call the print solution
+function
+for test
+now let's write the utility function to
+print solution so void print solution
+and
+test we will start with c out the
+following matrix will show
+the
+shortest distance
+between
+every
+pairs
+of vertices for loop and i is equal to 0
+i less than capital v
+i plus plus for loop
+and
+j is equal to 0
+j less than v
+j plus plus
+if
+distance
+at i
+comma j
+is equals to inf
+then we will see out
+inf
+else
+we will see out
+the distance
+at i
+comma j
+now we will see out
+and l
+this will change the row for the matrix
+now let's write the main block so we
+will define the matrix as int
+graph
+v comma v
+which will be equals to
+zero comma 5
+comma
+inf
+comma 10
+next row
+inf
+comma
+0 comma 3
+comma inf next row inf comma inf comma 0
+comma 1
+last row inf comma inf
+comma inf comma zero
+now we will call the floyd warsaw
+function so floyd
+warshall for argument graph let's
+execute this as you can see we are
+getting an updated matrix which shows
+the shortest distance between every pair
+of vertices and this was all for today's
+session hope you guys found it
+informative and helpful if you liked
+this session then like share and
+subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simply learn
+[Music]

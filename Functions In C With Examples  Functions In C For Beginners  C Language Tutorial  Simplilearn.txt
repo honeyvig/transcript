@@ -1,0 +1,152 @@
+hey guys welcome back to another video
+by simply learn in today's video we're
+gonna be learning all about functions in
+c but before we begin if you haven't
+subscribed to our channel already make
+sure to hit the subscribe button and the
+bell icon to never miss an update so now
+without any further delay let's begin
+this session will help you to understand
+what functions are in c
+next function definition and declaration
+later types of functions in c and
+finally different categories of a
+function
+now let's get started with what
+functions in cr
+a function is a set of statements that
+perform a certain task to generate an
+output
+we use functions to avoid the repetition
+of coding c programs
+functions can be called n number of
+times and c allows multiple functions in
+a program
+now let's look at the structure of a
+function
+in a function header we have written
+type function name and a list of
+arguments and the body of a function
+inside the curly brackets
+now let's have a look at the function
+definition in c
+in the even below function definition
+example we have int as a data type
+product as a function name followed by
+parameters ca and v
+next the body of a function consists set
+of statements to perform certain
+operation so in this particular example
+we gonna perform a product of two
+numbers
+up next we have function declaration in
+c
+a function declaration is also known as
+a function prototype in c
+there are some important things to know
+about function declaration and the first
+thing is that the function prototype
+must be placed before the main function
+and if the function definition is placed
+before the main function then the
+function prototype is unnecessary in the
+program next function declaration may or
+may not contain parameters rather it may
+have only data types of variables
+then the function header must match the
+function
+declaration syntax of a function
+declaration is return type function name
+and parameter list
+for example
+int product and data types if required
+we can also specify variables along with
+the data type like int ea comma int b
+now that we know function definition and
+declaration in c language let's move
+ahead and understand the types of
+functions in c
+c has two types of functions and they
+are
+library functions and user defined
+functions
+library functions are built in functions
+or we can also see predefined functions
+in the header file for example functions
+like square root string length printf
+scanf etc are predefined functions in c
+to use library functions in dc program
+we include a header file corresponding
+to that function
+functions that the user defines are
+called user defined functions
+let's consider the below given example
+we have three important features
+function prototype function call and
+function definition
+a function prototype is declared before
+the main function next calling a
+function is done inside the main
+function and then comes the function
+definition in which we have a set of
+statements to be executed
+let's now look at some different
+categories of functions in c
+first functions with no argument and no
+returning value
+next function with arguments but no
+returning value
+then functions with no argument and
+returning value
+and last functions with arguments and
+returning value
+let us understand them with the help of
+our programs
+if getting your learning started is half
+the battle what if you could do that for
+free
+visit skill up by simply learn click on
+the link in the description to know more
+so this program is function with no
+argument and no written value as you can
+see we have declared function prototype
+function call and function definition
+in which we have function with no
+argument and no written value
+and we're going to perform
+multiplication operation using user
+defined function
+now let's run the program
+according to the values of a variable 5
+and 10 we got an output 5 into 10 is
+equal to 50.
+now let's run the program using a
+function with arguments
+and no written value
+and let's perform the same operation
+that is multiplication
+as you can see product of two numbers is
+equal to 50 and we got an output
+next program is using a function with no
+argument and with written value
+to get a written value we have a data
+type int
+let's run it
+as you all can see we got an output
+product of two numbers is equal to 50.
+last program to execute is function with
+arguments
+and written value let's run it
+so the output is product of two numbers
+is equal to 50.
+so with this we have come to the end of
+this session on the functions in c
+programming i hope this session was
+informative and interesting until next
+time thank you stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

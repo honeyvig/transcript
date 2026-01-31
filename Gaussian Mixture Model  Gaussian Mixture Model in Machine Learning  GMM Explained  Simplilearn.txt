@@ -1,0 +1,380 @@
+a gaussian mixture model also known as
+GMM is a statical model used to describe
+data distribution it assumes that the
+data can be represented as a combination
+of multiple gaussian distributed models
+each with its own mean and variance in
+practice this means that we can model
+complex distributions such as the
+distribution of test scores or income by
+combining multiple simple distributions
+such as distribution of a test score of
+girls and for boys using GMM to model a
+distribution allows us to capture the
+complexity of the data and described it
+more accurately this can be particularly
+used in machine learning application
+where we often deal with complex and
+high dimensional data sets let's now
+deeply understand the gazian mixture
+model and gaussian mixture distribution
+so without any further Ado let's jump on
+to our topic but wait to succeed in this
+rapidly expanding field you need to
+develop the right skill if you want to
+boost your career in the field of ml
+then take up our Celtic postgraduate
+program in aimml partnership with IBM
+that will help you become an expert in
+Ai and ml this course covers the latest
+tools and Technologies and features
+master classes by Celtic facility and
+IBM experts hackathon and ask me session
+are also there these are a few reasons
+you should consider learning machine
+learning now enroll in Celtic
+postgraduate program in Ai and ML and
+become an ml engineer the link will be
+in the description and pin comment now
+let's start this video and see what is
+gaussian mixture Model A gaussian
+mixture model is a probiotic model
+representing data as a mixture of
+multiple gaussian distributions it is
+mixture model because it assumes that a
+data points are generated from a mix of
+gaussian distribution a is associated
+with a certain probability in GMM each
+gaussian distribution represent a
+component or cluster within the data the
+model assumes that the data points
+within each cluster are generated from a
+gaussian distribution with its mean and
+covariance the GMM which is known as
+gaussian mixture model combine these
+component distribution with mixture
+weight to form the overall probability
+distribution of the data so now let's
+see the key components of gaussian
+mixture model so the number one is
+number of components also known as
+clusters the GMM assumes that the data
+is a mixture of specific number of
+gaussian distributions also known as
+components or clusters the number of
+components is typically determined in
+advance or estimated by using techniques
+such as model selection
+next we have gaussian distribution each
+component in the GMM is represented by a
+gaussian distribution a gaussian
+distribution also known as normal
+distribution is a bell-shaped curve
+fully described by its mean and
+covariance
+the mean represents the center of the
+distribution and the covariance
+determines the spread or shape the third
+one is mixtures weight the GMM assigns
+mixtures weight to each component
+representing the probability of
+selecting that component when generating
+a data point these weight must sum up to
+1 the mixture will determine the
+collaboration of each component to the
+overall distribution so by using a
+gaussian mixture model involves
+estimating the model parameters
+including the means covariance and
+mixture waves this is typically done
+through an interactive optimization
+algorithm like the exceptional
+maximization algorithm the EM algorithm
+alternates between the estimating the
+sensibilities of each component for each
+data point and updating the model
+parameters based on the responsibilities
+the algorithm continues until
+convergence where the parameters reach a
+stable State once the G is trained it
+can be for various tasks for example it
+can be applied to clustering by
+assigning data points to the most likely
+component or cluster it can also be used
+for density estimation where it
+estimates the underlining probability
+distribution of the data now let's see
+what are some real world examples where
+gaussian mixture model can be used as in
+mixture model also known as gmms are
+versatile tool that find application in
+various real world scenarios they are
+particularly useful when dealing with
+large data sets where identifying
+clusters is challenging gmms excel at
+efficiently discovering clusters of
+gaussian outperforming testing
+algorithms like k-means now here are
+some practical examples of how gaussian
+mixture model can be applied the first
+one is medical data set analysis
+medical images or identify patterns
+within message by clustering patients
+based on similar symptoms gmms can
+assist in detecting diseases subtypes
+predicting outcomes and reliving
+creations and revealing previously
+unknown patterns in large scale patient
+records
+next we have modeling natural phenomena
+MMS are suitable for modeling natural
+phenomena with gaussian distribution are
+observed in the noise this modeling
+approach assumes an underlining
+unobserved entities or attributes which
+measurements taken at central point
+across multiple observation sessions
+next we have customer Behavior Analysis
+gaussian mixture model are valuable in
+marketing for analyzing customer
+Behavior by leveraging historical data
+gmms can predict future purchases
+enabling businesses to tailor the market
+strategies and get more efficiently next
+one is stock price prediction gaussian
+mixture model find applications in
+finance especially in analyzing stock
+price time series they can identify
+challenge points within the data helping
+detect turning point in stock price or
+other Market movements that might be
+obstacle by vulnerability and noise next
+we have gene expression data analysis
+a model are employed in gene expression
+data analysis they can be utilized to
+identify differentially expression genes
+between two conditions and determine
+which genes make you to specific
+phenomenal type or disease States now
+let's see the implementation of the
+gaussian mixture model now to do this
+small demo I have taken Iris data set
+okay in Python there is gaussian mixture
+class to implement GMM load that Iris
+data set and then we'll are good to go
+first thing we're gonna import is our
+numpy which is a library of python okay
+so we'll write import
+numpy
+as
+and B
+in the next line
+we have to import Panda so we'll write
+import
+panda
+as
+DD and after that we'll import mat plot
+live we'll write report
+Lord
+then Dot
+p y l o t
+as
+PLT okay
+okay till then I guess it's fine for you
+guys yeah so now we'll write from pandas
+and we will import
+data frame
+okay after that from scientific learn
+which is sk1 we write it we'll Chrome is
+okay
+we're done really bold
+data set
+okay and then again from
+Escalon
+mixture
+and import
+since
+now we'll load the Irish data set so
+that will write Irish the name
+and then
+data set that we just now imported from
+sk1 we'll write data sets dot load
+because we need to load that data and
+we'll write this
+this function sign after that
+we'll give it a variable X and Irish Dot
+data
+Chrome
+so the semicolon we just wrote is for
+everything like all the data when we
+have to show all the data we'll write
+this a imagine there is a array of seven
+things zero one two three four five six
+okay and you want everything of that
+array so if we'll use this keyword and
+if you want only out of that seven if
+you want only five so we'll write here
+comma and then we'll write 2 so what it
+this will show is only five zero one two
+three four okay yeah
+now we'll write d
+which is PD dot data frame
+you will see we'll get the data named
+from X
+it will just declare so this is for the
+turn into a data frame for like turning
+into my data into a data frame okay
+now we have to plot the data for that
+we'll write
+plot dot scatter
+and then we'll write D of
+0
+of 1 okay and then we'll say
+Plot show
+and now let's see if it works or not
+okay
+it's showing me one error so let's see
+okay got it
+stick now let's run it again it shows
+error again let's see
+any spelling mistakes here okay let's
+give it a chance again and then some
+error is there oh yeah
+potassium mixture should be in capital
+everything looks fine this time yeah so
+you can see the data now you will see
+the data of these flowers Irish flowers
+it's like everything is mixed you can
+identify which one is which and you
+can't identify the exact things that you
+want to see in this data so for that
+cache and mixture comes in so with this
+method we'll see the difference between
+the things that we want to see in the
+data okay so we'll click on the plus
+sign and we will write mm Plus in
+maximum model equals to sign and
+yeah soon it's showing us
+again and
+two
+components equals to three
+so we will find the GMM model for the
+this data set and if the three gaussian
+distribution so that we can see the
+different colors for every data set in
+this so we'll give GMM dot fit and the
+data frame all the data and now we will
+just assign a label to each sample okay
+for that we'll write label
+equals to
+GMM
+dot predict
+the date data
+now we'll give this data a label
+that will write the
+label
+labels equals
+labeled
+okay and
+explain and write d0
+and we'll give this d0
+label
+so that we can identify it later and
+which one is
+the date of ours okay
+so we'll again write labels
+equals to
+0.
+0 okay this one is for 0 and we'll copy
+this and we'll paste it three times yeah
+so because we have taken the components
+three if it's more we can use more also
+so we have to change the value of T1 D2
+and here also we have to change the
+values or the output will be not come
+like what we want the output to be okay
+till now we have assign the label
+okay now we'll move forward we'll plot
+three clusters in same plot okay so for
+that we'll write plot dot scatter
+from d0 to comma
+d0 and then one and
+we'll make this as red you have to write
+this straight in the
+column so the color should be shown on
+the screen
+okay
+so we can just copy this line and paste
+it one two and three okay so we'll
+change the value here of d
+from
+the color too
+make it as green okay now as you can see
+everything looks good now we'll execute
+this code and you will see okay what I
+have missed here check again okay we
+have to change the color of this
+let's make it as
+yellow
+okay now let's execute this it's again
+showing us one error but the fit TMM dot
+red D let me check again now as you can
+see we have the output and in this
+output you can clearly see that this
+data which was previously like this
+where we can't see which data is For
+What and now with this gaussian mixture
+method we can see all the output in
+different colors so we can say that this
+method helps us very much and print the
+coverage log like uh hold value and
+number of iteration needed for the model
+to coverage okay so we need liquid a
+little more code to get the value of
+that so for that we'll write print
+lower
+bound
+again here and we'll write
+print
+gnm dot in
+yes
+okay now let's run this and now you have
+the output date and it's the value of
+that output okay hence there are seven
+iterations for the log like hold to
+cover it so in summary gaussian mixture
+model represents data as a mixture of
+gaussian distribution model the model
+parameters including the number of
+components mean covariance and mixture
+weight are estimated using techniques
+like the Expedition maximization
+algorithm in mixture model can be used
+for clustering data in two groups and
+estimating the probability density
+function of the data so with this we
+have read the end of this video make
+sure to like and share this video And
+subscribe to Simply learns YouTube
+channel thank you staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

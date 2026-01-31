@@ -1,0 +1,329 @@
+everyone
+welcome to this video tutorial on golang
+vs python by simply learn in this
+session
+we will go through a brief introduction
+to both the languages golang and python
+after knowing both the languages we will
+compare them on various parameters
+further we will discuss disadvantages of
+both the languages so hey everyone i am
+abhisar auja from simply learn and
+welcome to this video on golang versus
+python but before we begin if you love
+watching tech videos subscribe to our
+channel and hit the bell icon to never
+miss an update
+now we will look into what is co-link
+go also known as golang is an open
+source programming language developed by
+google co-programming language was born
+due to the complexity of managing the
+infrastructure and code bases within
+google
+go was designed by robert grissmer rope
+pike and ken thompson
+it is a statically typed compiled
+language
+not only that
+go supports concurrent programming that
+is it allows running multiple processes
+simultaneously
+this is achieved using channels go
+routines etc
+and moreover you can run your first code
+without any setup on the playground
+provided at golang.org
+now let's get an introduction about what
+is python
+python
+it is a popular in-demand general
+purpose programming language with
+straightforward syntax
+python was developed by guido van rossum
+in 1989
+and was released in 1991
+python's name was taken from the popular
+bbc comedy show
+monty python's flying circus
+now
+we are familiar with both the languages
+let's get down to comparing them
+we will compare both the languages on
+various parameters
+firstly we will compare on the parameter
+paradigm
+go is a multi-paradigm programming
+language it is procedural functional and
+concurrent language
+whereas python supports four main
+programming paradigms that is imperative
+functional procedural and object
+oriented
+let's compare the two on the topic of
+performance
+when we talk about performance go is
+fast the performance is similar to that
+of java or c
+go is 40 times faster than python
+to have a check we will compare the
+performance of the languages by solving
+three complex problems that is the
+mandelbrot equation and body problem and
+binary
+it is to evaluate memory usage and time
+spent to solve the problem
+we have chosen these three problems as
+they are considered the best way to test
+the memory management and performance of
+the language
+here you can see the stats of both the
+languages
+you can see that co lang takes 6.23
+seconds and uses 30 108 units of memory
+whereas the python takes 253
+point 19 seconds
+and 60
+410 units of memory to solve the
+mandelbrot problem
+binary tree problem go takes
+29.02 seconds and uses 4 lakh 98
+160 units of memory
+whereas the python takes
+79.03 seconds and uses 4 lakh 47
+324 units of memory to solve the problem
+for n-body problem go takes 23.5 seconds
+and uses
+1641 units of memory
+whereas the python takes 765.3
+seconds
+and uses
+7944 units of memory to solve this
+problem
+this clearly shows
+that golang has outperformed python when
+it comes to performance let's compare
+the two on the topic of scalability
+the whole purpose of developing golang
+was scalability
+this is why golang has
+inbuilt support for concurrent process
+channeling that is concurrency
+on the other hand python has a hard time
+with concurrency but it can execute
+parallelism through threats
+let's understand the concept of
+concurrency and parallelism
+concurrency means that an application
+runs more than one task simultaneously
+but only one upfront and rest in the
+background if the computer possesses one
+cpu
+the application may not progress on
+multiple tasks simultaneously but more
+than one task is processed inside the
+application
+it does not finish one task before it
+begins the next
+you can see the plot of concurrency here
+here different tasks are running but
+only one is running at the front and
+others are running in the background
+now we move to parallelism
+parallelism means that an application
+runs its task into smaller tasks
+that can be processed in parallel that
+is on multiple cpu simultaneously
+let's see an example of a team of
+technicians building a monitor
+concurrency allows multiple technicians
+building different parts of the monitor
+but they share one common workbench for
+assembling the parts
+only one technician can assemble at the
+workbench at a time and other
+technicians operate on their parts in
+the background
+with parallelism
+you can have multiple workbenches
+where technicians can be building parts
+simultaneously
+so it's obvious that a language has
+support for concurrency it is perfect
+for big and scalable programs
+let's move ahead and compare these two
+languages based on their applications
+golang is mostly used for systems
+programming
+due to its inherent support for
+concurrency golang has also found ample
+use and acceptance in cloud computing
+and cluster computing
+golang has also seen a lot of
+recognition
+and use in artificial intelligence and
+data science
+due to its powerful and easy to use
+libraries go can set up a web server in
+a matter of seconds
+go is also used in microcontroller
+programming robotics and games
+on the other hand python is widely used
+in web development data analytics
+artificial intelligence and deep
+learning
+this can be mostly accredited to the
+insane libraries available in python
+that make the life in the set fields a
+lot easier
+let's compare the two on the topic of
+execution
+now let's understand how go and python
+are executed
+golang is a statically typed language
+whereas python is a dynamically typed
+language both python and golang use
+interpreter and compiler respectively
+now we will understand what is
+statically typed language and
+dynamically typed language
+in a statically typed language variable
+types are declared explicitly for the
+compiler so that even trivial bugs are
+caught easily
+whereas in a dynamically typed language
+the interpreter implements type
+inference hence some bugs may remain
+because the interpreter interprets
+something incorrectly
+it implies that python a dynamically
+typed language limits the programmer
+when he intends to build a really big
+program at the same time go can handle
+both types of programs
+let's get on to the libraries in both
+the languages
+in golank you would have to write your
+code to search through data tables
+and if you want to implement machine
+learning it would be a huge short to
+develop in go but this doesn't mean
+golem falls short in any terms while
+developing go google choose the most
+important libraries as a part of their
+inbuilt co-libraries
+we can see here that gom library
+it helps in converting data between
+incompatible type systems we can see
+another library that is cli
+it was developed for building command
+line apps for go
+gokut
+it is github's popular library for go
+related microservices
+authorization boards
+it is an easy way to implement
+authentication and authorization in your
+web systems
+while the number may not be as
+boisterous as pythons the covered usage
+fields are almost identical
+they have built-in libraries for web
+development database handling concurrent
+programming and encryption
+yes python is almost 16 years older than
+go
+which results in much larger community
+and online support
+the python libraries in particular are
+vast exploring data tables can be easily
+done with pandas and machine learning is
+simple with tensorflow and pytorch
+this type of support can get anyone
+writing code from the day one now let's
+get to the next point of comparison that
+is readability
+while developing software you will
+generally work as a team with tens or
+even hundreds of other developers at
+such time code readability is the major
+factor to consider
+golang has strict programming rules it
+doesn't allow unnecessary variables to
+be defined or unnecessary libraries to
+be imported
+this implies a definite way to perform a
+task leading to a better understanding
+of code while working in a team
+golem syntax is not friendly to
+beginners but it's not as unforgiving as
+c or c plus plus
+on the other hand
+python sure has fantastic readability
+but there are probably 10 different ways
+to say the same thing in python
+which mostly leads to confusion whenever
+the script is big while working in a
+team
+so we can see a simple example of
+finding two numbers that is 7 and 9 in
+both the languages
+in golang there's a definite way to
+write a code whereas in python you can
+write in different forms but the
+readability is really fantastic
+now we will consider memory management
+as a next comparison
+olen provides with great memory
+management whereas python offers no
+memory management
+which comes in handy while running the
+complex problems which we have seen
+above while comparing performances
+that's it for this comparison for now
+now we will look into few drawbacks of
+go language
+firstly it is not a generic language
+till now go does not have any generic
+support
+this is due to the repetition of codes
+for the same type of operations but with
+different data types moreover some data
+structures cannot be implemented due to
+lack of generic support
+next is fewer libraries and frameworks
+there are no major frameworks for
+goal-link developers
+other languages such as ruby has ruby on
+rails python has django and php has
+larval
+the next drawback is it is still in the
+development stage
+being in the development stage golem
+developers are finding it hard to make
+out of its libraries in case of doubt
+there isn't much assistance through the
+go community or online support
+we have looked upon the drawbacks of go
+language now we will look into the
+drawbacks of python language
+here you can see that it is weak in
+mobile computing hence it is not used in
+app development
+the python uses the underdeveloped and
+primitive database access layer
+you can also see that there's a absence
+of commercial support for python
+and as python is dynamic language it
+shows more errors at runtime
+with that we have come to the end of
+this session i hope it was interesting
+and informative if you liked it please
+let us know in the comment section below
+also do subscribe to our channel and
+stay tuned for more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
