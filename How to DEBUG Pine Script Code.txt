@@ -1,0 +1,782 @@
+good day Traders welcome back to another
+video on our favorite language Pine
+script in today's video we're going to
+be dealing with a subject that's not
+particularly sexy but it is very
+important for us to understand and that
+is the subject of debugging our scripts
+for those who aren't aware of the term
+debugging it basically just means
+looking under the hood of our script and
+seeing what the script is actually doing
+for example if we're working with a for
+Loop and our script is giving us
+incorrect output then we may want to
+look inside the for Loop and see what
+each Loop is doing and that's what I
+have on my chart here we have two labels
+here that is essentially debugging a for
+Loop now there are multiple ways to
+debug our scripts there are multiple
+reasons why we might want to and in
+today's lesson we're going to cover all
+of those but before we do that I just
+want to really quickly make you guys
+aware of our free Weekly Newsletter that
+I send out every Wednesday where I share
+a technique a book a podcast a YouTube
+channel a Himalayan chant anything that
+I found to help with my own trading
+there's no catch no strings attached
+it's completely free in fact this week
+I'm even giving away a free book in this
+week's newsletter newsletter number 10
+which I haven't sent out yet as of
+recording this I'm covering the book
+Pitbull which is one of the best trading
+books I've ever read and I love it so
+much that I want to make sure that at
+least one person out there gets their
+hands on it so I'm going to send a free
+copy to a random person who opens the
+email so if you're interested in that
+and you want to get more insight into
+where I get my information from and the
+types of people and information sources
+I allow to inform my own trading process
+as a consistently profitable Trader then
+go to the artof trading.com where you'll
+find links to all my social media and U
+courses Blog podcast pinescript Forum
+all my trading view scripts and at the
+bottom here you can uh sign up to the
+email newsletter if that's something
+you're interested in without out of the
+way let's get into today's lesson all
+right so to get started here I just have
+a simple script that's plotting the
+closing price of the market that we're
+on Market is irrelevant but we're on
+bitcoin for now and we're plotting a
+horizontal line at 20,000 this is just
+to set the chart scale and I'll explain
+why in a moment so I open up my code
+here we're just plotting the close price
+and we're giving the plot a title um you
+could also specify this um but if you're
+not aware in pin script you need to put
+the parameters in order of their
+appearance in the documentation so the
+first thing we're plotting is a series
+in this case it's the closing price
+series the second parameter is a title
+so I can have a string Title Here the
+third parameter is a color so if I put
+them in order I don't need to specify
+what the parameter is but if they're not
+in order like
+this then the script won't compile
+because these parameters are not in the
+correct position and so what I would
+need to do here if I
+wanted to put the parameters in any
+order I need to specify what the
+parameters are so we have a plot here
+that's plotting the closing price color
+of blue and the title closing price so
+now if I come up to the data window
+which is this button here and I click on
+that here is the date and time of the
+market we're on here is the uh Market's
+price data volume and um open high low
+close and then here is our script that
+we've added to the Chart so this data
+window will list all of the indicators
+you have added to your chart and when
+we're developing a script this is where
+we can start to debug our values so if I
+hover my mouse over past bars here
+you'll see this closing price data value
+updating so this is the first
+introduction to debugging your scripts
+obviously you can also just look at the
+plot here but if you've got several
+plots drawing out on your indicator it
+can get really confusing knowing which
+one's which so that's where the data
+window comes in handy we can see the
+title of each value that we're drawing
+so now that we have our chart scale set
+let's create some debugging values some
+values we can work with so for today's
+video I'm going to just work with volume
+average volume so what we're doing here
+is we're getting the average volume over
+the past 50 bars using an SMA simple
+moving average or smooth moving average
+so we're calculating the 50 period SMA
+of volume and that gives us our average
+volume then we have a Boolean value here
+a true false value that checks if the
+the current bars volume is greater than
+the average volume over the past 50 bars
+so now if we wanted to debug the raised
+volume Boolean value and see if it's
+true or false on each bar on our chart
+we can use the plot function for this
+however if I just try to plot raised uh
+volume as a plot like this my script
+won't compile because this is a Boolean
+value not a number and plot can only
+plot numbers so what we would need to do
+here instead is use a conditional
+operator so we can say is raised volume
+true question mark If if so plot one
+otherwise plot zero now when I save my
+script we'll be getting ones and zeros
+drawing up here to let us know whether
+or not volume is raised above the moving
+average I can also title this uh raised
+volume and now this plot is showing up
+in my data window however if I minimize
+this uh script you can see that our
+chart scaling is now all screwed up so
+we're plotting 0 and one all the way
+down here we're also plotting the price
+value and because we're plotting one or
+zero the chart will automatically scale
+to show all the plots in your script and
+so that screws up our our chart scaling
+the way we can get around this and still
+plot this one and zero debug value to
+the data window is using the plot Char
+function or car plot character this is
+short for plot character to the chart
+and it's similar to the plot function in
+that it takes a series however it also
+takes a character and so what we can do
+here is I can just get rid of title
+since we're inputting all these
+parameters in order I can plot our
+series our title the character is just
+going to be blank and we can leave it as
+that and if I save my code the chart
+scale here will be corrected see now it
+is um automatically scaling because I'm
+on auto here if you look really closely
+it's hard to see but there's these
+little blue dots all over the place
+those are our plot character functions
+plotting a blank character I don't know
+why it plots a DOT instead of a blank
+character which is what we wanted but
+it's an easy thing to fix all we need to
+do is specify the color of our uh plot
+Char function and it doesn't matter what
+color you set this to because we're
+going to set the colors transparency to
+100% so I could set this to color. new
+color. red 100 and now what you'll see
+is this number here will turn red and
+all of those little blue dots on my
+chart will disappear so keep an eye on
+these two things there we go our raise
+volume is now red and we are not getting
+anything drawing on the chart you can do
+the same thing with regular plots but
+again remember that will screw up your
+chart scaling in many circumstances so
+that's one way to debug Boolean values
+another way my preferred method when I'm
+developing a script just because it's
+really quick and easy um and very I'm a
+very visual Trader so just staring at a
+bunch of numbers will often just make my
+brain switch off so I like to use things
+like changing the background color of my
+chart based on a condition when I'm
+developing my script once I've built my
+script maybe I'll change that background
+color into a plot shape something that
+looks a little bit better a little bit
+more tidy but when I'm developing and I
+want to get my code written quickly I'll
+just use the BG color function to check
+is raise volume true if so set the
+background color of my chart to color do
+green with 50% transparency otherwise
+set my background color to nothing now
+if I save my code I can close a data
+window and I can just see when volume is
+raised by this background color here now
+it looks terrible obviously so when you
+finish your script as I said you might
+want to turn this into a plot shape
+function that draws boxes at the bottom
+of your indicator or something like that
+but for now this will do it's a very
+quick method for debugging uh
+particularly market conditions and just
+general true false values so that's the
+beginning of debugging now the next
+thing I was going to show you which I
+already have shown you is the plot Char
+difference so let me copy some code over
+here and explain what's happening
+displaying data in the data window is
+achieved using plots so plots do work
+plot shapes also work uh that will show
+up in the in the data window however the
+preferred option is plot Char as I
+mentioned because it will not affect
+your chart scale so now if I save my
+code we won't be drawing raise volume
+anymore but now we're plotting out
+average volume so we can actually see
+what our average volume is and if I copy
+this code uh and paste underneath here
+volume I can say current
+volume now we can compare the average
+volume to the current volume and so if
+you look at when I hover over a green
+bar current volume is going to be higher
+than average volume that's the condition
+that sets our background color of our
+chart to Green but just to reiterate for
+those who are new to Pine scripts if I
+were to plot the number one onto my
+chart that's going to jack up my chart
+scaling cuz now we're plotting one all
+the way up to the current uh market
+price price which is 22,000 so the
+correct method is to use plot so that
+covers the majority of circumstances
+where you might want to debug your
+script obviously this is a super simple
+script but if you're working with dozens
+of different values you can use the plot
+Shar function to see what they're all
+doing and sort of break down the inner
+workings of your script and see under
+the hood see what all of your uh
+variables are by hovering over each bar
+on your chart and you can double check
+and confirm that your script is doing
+what you think it's doing however when
+we're working with for Loops things get
+a little bit more complicated because if
+I write out a simple for Loop here we
+can't say plot Char uh the current bars
+volume in our for Loop uh say
+volume with a blank character if I save
+my code here we're going to get an error
+because we cannot use any plot functions
+inside a local scope so that means we
+cannot use it in an if statement uh
+anything that's tabbed this is a local
+scope of our for Loop we cannot use any
+plots anything to draw to the Chart
+inside a scope so we can't draw in for
+Loops we can't draw an if statements we
+can't draw in functions we can only draw
+in the main scope of our script so if we
+want to see what our for Loop is doing
+on each Loop things are a little bit
+more complicated for today's example to
+keep things really simple let's just add
+up the bar size of the past 10 bars uh
+technically this would be the past 11
+bars cuz we're starting from Z counting
+up to 10 if you wanted to do the past 10
+bars this would be 0 to 9 and that would
+start counting from the current bar zero
+back 0 1 2 3 4 5 6 7 8 9 which would be
+10 bars so I'll leave it as that for now
+let's count back the pass 10 bars and
+what we're going to do is we're going to
+add up the total bar size over that look
+back period to do that I just need to
+add or or update the total bar size to
+whatever its current value is on it on
+this current Loop plus the current bars
+High the current bar in our Loop so I is
+the bar index of our Loop so the high
+minus the low of this current Loop and
+then I can use a plot Char to plot what
+our total bar size is so now if I saved
+my code uh this is incorrect let me
+change that to Total bar size so now we
+can see that the total bar size adding
+up the bar size of past 10 bars on our
+chart gives us 26 132 and now if I were
+to divide this number by 10 that would
+give us the average bar size over the
+past 10 bars let's do that next I can
+say average bar size equals total bar
+size / 10 now if I wanted to turn this
+into a user input I could say uh loop
+length equals input.
+integer uh look back we give it a
+default value of 10 and I I've been
+getting into a new habit of declaring
+what my data type type is when I declare
+a variable you don't have to do this
+pinescript will automatically detect
+what type of uh what data type you're
+working with but I've started to do this
+because with the new latest Pine editor
+the color coding makes it a lot easier
+to read your code and see what each
+variable is so anyway here's that Loop
+length um When We're looping remember
+zero counts as one so what we need to do
+here is subtract one from our uh Lo back
+length and then when I'm dividing my
+average bar size I need to paste that
+Loop length in there with subtracting
+one from it and now we're looping from 0
+to 9 technically 10 bars and then
+dividing the total bar size by our look
+back length now if I save my code well
+actually I forgot to plot this hang on
+um let's plot the average bar size I'll
+put this under our bar size I think
+that'll make it more intuitive to read
+the data window so now when my script
+compiles we have the total bar size over
+the past 10 bars and we have the average
+bar size over those 10 bars and if I
+wanted to I could also uh add in our
+look back length and paste that in there
+and so now all these red numbers are
+showing us our look back period the
+total bar size over that look back
+period and the average bar size over
+that look back period however what if we
+were doing something more complicated
+within this for Loop and our script was
+giving incorrect output and we didn't
+know why that's where debugging the for
+Loop comes into play and the best way to
+do this there are multiple ways you
+could create an array and you could feed
+each value into into the array and plot
+them all individually using plot chars
+that's an option but it's a little bit
+convoluted my preferred option is to
+Simply do what's referred to as building
+a string so we can build a string a
+string of text that adds the for Loop
+values to the text and then at the end
+of our for Loop we can draw a label onto
+our chart that shows what happened
+within the for Loop during each Loop so
+to do that I'm going to create a new
+variable here called string debug string
+and it's going to start out as just a
+blank string with nothing in it and then
+what we're going to do is we're going to
+build our string so the same way we add
+up our total bar size by assigning total
+bar size to Total bar size plus the
+latest Loop value we do the same thing
+with our debug
+string so we're going to set debug
+string to whatever it currently is plus
+and then I'm going to uh this is going
+to get a little bit complicated to read
+but it's really quite simple what we're
+going to do here is we're going to open
+a square bracket and then add the
+current Loop index I to this string so
+that we know what this string is
+referring to but remember when we're
+dealing with pin script we cannot add a
+number to a string directly we need to
+use the Str str. TW string function to
+convert the number into text so that our
+script will compile and now if I closed
+that bracket off and I add a back sln
+this back sln will create a new line and
+then when we draw this string onto a
+label uh each Loop value will be on its
+own line and it'll make it easy to read
+so now that we have our debug string
+we'll expand on this in a moment but
+just so that we are all on the same page
+let's first simply draw this debug
+string to the chart using a label so to
+do that I'm going to check if the
+current bar state is the last last bar
+on my chart if I don't do this and we
+just draw label on every bar then we'll
+have labels all over the place and it
+will be really hard to read so what we
+want to do is only draw the label on the
+final bar and then we can debug the
+latest 10 bars to make sure that our
+script is doing what we hope it is so to
+create a new label I can say label. new
+and then we need to pass in the bar
+index and a price value so for this
+label I'll set it to the current bars
+high now we need to specify the text for
+the label that's just going to be our
+debug
+string and I'm also going to set the
+color to color. Black and the text color
+to color. white and one final thing I'm
+going to do to make our label easy to
+read is set the text align to left cuz I
+think by default it's centered and so if
+we have an inconsistent string length um
+it'll Center everything and it's just
+not ideal we want everything to be
+aligned to the left that that'll make it
+easy to read so I can set text align
+equals text. align left and let's hide
+the data window so we can see more code
+here so now when I save my code keep an
+eye on this label here there we have
+it so we are now building a string and
+each string starts with the loop index
+and then what we can do here is we can
+start adding uh values from within our
+Loop so for example uh we could say here
+total bar size equals plus Str str2
+string total bar size and then I need to
+finish that string and now if I save my
+code we'll be getting more information
+on this label there we go so on the very
+first loop on the very first bar on our
+chart the total bar size is 155 and we
+can verify that by measuring the bar and
+close enough 155 so this is an accurate
+value then we can check Loop number one
+which is this uh next bar back the bar
+size there is 312 so now if I measure
+from the high down to the low uh 155 +
+169 is approximately 312 so remember
+we're adding up the bar sizes as we loop
+back if we wanted to see what the bar
+size of each bar is on our Loop we need
+to change our code a little bit here and
+to make this easier to read this isn't
+necessary you can just keep writing the
+string off the screen if you want to but
+since I'm doing this for YouTube uh I'm
+going to start a new line here and to
+start a new line when you're dealing
+with a single uh expression in pin
+script this here is an expression if I
+want to extend this expression to
+multiple lines then I need to press
+enter here then tab and then one space I
+don't know why but that's how Pine
+script works if I don't have this space
+here my script will not compile but if I
+add a space after that tab it will
+compile I think you can also just have
+one space here that works too so
+whatever makes more sense to you
+personally I find the tab in one space
+makes more sense to me because it's more
+obvious that I'm extending this line um
+sometimes it might be hard to see this
+single space but it's just a matter of
+preference just make sure that you have
+one space after you start your new line
+and you're at least on the same scope as
+our expression so now what I can do is
+uh I'll actually bring this one back and
+we'll start a new string here uh we need
+to have a space here because otherwise
+this will add on to the end of this
+number so one space and then I can say
+bar size equals and then Str str2 string
+High minus low of our current
+Loop and then now if I Sav my code we
+should be getting more information so
+now it's showing the bar size of each
+bar as we loop back and it's showing the
+total bar size as that is being
+accumulated so you can see now how this
+can really help us get an insight into
+what our for Loops are doing and that's
+really it I mean we could add more
+information here if we want to so for
+example I could start a third line here
+and I could specify or
+display the current bars high price and
+the current bars low price and when I
+say current bar I mean the current bar
+in our Loop uh so when I save my code
+now we're getting a lot more information
+we're getting the total bar size the
+current bar size the current bars High
+the current bars low and the
+corresponding looping index for that
+information and so now we can double
+check that our script is actually
+working with the same data that we want
+it to and it's outputting the correct
+information and that's it that's really
+it for pinescript debugging
+unfortunately there's no better way to
+do this sort of thing I wish the data
+window had an option for plotting things
+that do not draw onto your indicator
+values uh any plots even plot chars that
+are blank and aren't drawn onto your
+indicator we'll have a number here in
+the indicator values list I wish there
+was a way to hide these so that you
+could only see them in the data window
+that would make some scripts a lot
+tidier especially ones that have tons of
+plots like my ultimate pullback
+indicator that I showed you guys in the
+previous video that has tons of plots
+and these numbers just go off the chart
+and it just clutters up your screen
+obviously you can come into the settings
+menu and you can turn off indicator
+values and then they're all gone uh but
+sometimes you want to know what those
+indicator values are without opening the
+data window but anyway I digress I also
+wish there was a way to um send text
+directly to the console here that would
+make things so much easier for us as
+Pines scrips if we could just say um
+print and
+then some sort of text and that would
+come into the console that would be a
+super useful feature in pinescript but
+unfortunately for whatever reason we do
+not have that capability yet and so the
+next best thing is just using labels and
+so before I wrap up this lesson let's
+first of all set overl to True here and
+I'll remove this script and add it back
+to my chart so that we're drawing over
+actual price action and the final thing
+I want to show you guys is how to debug
+a specific bar so this is debugging the
+latest bar the last bar on our chart but
+what if we wanted to go back around here
+somewhere and analyze this bar here well
+there is one method for doing this that
+is pretty convenient and that is using a
+user input that sets a bar time and then
+if you set that user input to confirm uh
+I'll show you what that means in a
+moment if confirm is true on that user
+input then you can click on the bar
+itself and tell your script where to
+start drawing something like a label
+from so to wrap up this lesson let me
+show you how to do this I'll just paste
+over some code to save time so this time
+we're using a confirm time input to
+display a label on the selected bar so
+we're getting an in integer bar type
+time which is a Unix timestamp you don't
+need to know what that means but it's
+basically just a timestamp it allows you
+to specify a time as an integer simple
+integer that will tell our script where
+we want to draw something so in this
+case we're using the input. time
+function the default value will be NE -1
+and we have set confirm equals true and
+what this will mean is when we um add
+the script to our chart for the first
+time we will need to use our Mouse to
+select a bar so now I can pretty much
+copy this line of code here to check if
+we're on the last bar on our chart and
+then I can say and bar time is not equal
+to -1 that means that the user has
+selected a bar time if a user has
+selected a bar time then we want to draw
+our label on the selected bar so to do
+that we just need to change our bar
+index to Bar time however we also need
+to inform or tell the label function
+that we are working with bar time and
+not a bar index so by default the label
+function uh the x value the first value
+in this label function is a bar index so
+the very first bar on our chart will be
+bar index zero and then the latest bar
+on our chart will be however many bars
+are drawing on our chart in this case we
+don't want to use bar indexes or indices
+we want to use bar time so to do that I
+need to tell my label function that the
+x loock value is supposed to be xlock
+bar time instead of bar index so we're
+overwriting the default value for xlock
+from bar index to Bar time we're getting
+the bar time as a user input the user
+must select the bar with their Mouse and
+then if we're on the final bar on our
+chart and the user has selected a bar
+time then we'll draw a new label on that
+bar can save my code here now nothing's
+going to change because we've already
+added the script to our chart so when I
+come up to the settings menu and go to
+input uh the select bar input is going
+to be set to the default value which is
+1970 1st of January 1970 which is when
+the Unix Tim stamp begins calculating
+from but again that's not information
+you need to know about what you do need
+to know is that if you want to be able
+to just select a bar without coming in
+here and setting your year and date and
+time and all of that which is annoying
+and clunky what we want to do is remove
+our script from our chart and then add
+it back onto the chart and now you'll
+see this pop up
+select the select bar time for this
+script so my script is named after my
+website but here would be your script
+title and now you'll see that my script
+has a vertical line and whichever bar I
+click on will be the bar that we draw
+our label on so you can hold control or
+command on a Mac to tell pinescript
+where you want to zoom in so if I hold
+down control and I go all the way back
+let's do a bar in here let's do this uh
+this top bar here when I click on this
+bar like so we are getting a label
+drawing now the label is all the way
+down here I'm not exactly sure why
+that's happening it should be drawing on
+the bars high so maybe I need to specify
+my y loock value here y loock do above
+bar let's try that save my code there we
+go that's better so now the label is
+drawing above the bar that I selected
+which was this swing High bar here and
+we're getting our for Loop data drawing
+into a label over the past 10 bars
+starting from this bar and we can do our
+debugging across those bars to make sure
+and confirm that all of these values
+here are accurate I should mention that
+you can also debug custom functions as
+well in order to do that uh this is a
+custom function defined the very last
+line in your function is what the
+function returns and so if you wanted to
+debug um what your custom function is
+doing you could do something like this
+test two and test one so test one is
+going to be a local variable created
+within our custom function and it's
+going to be set to this value that's
+inputed into our custom function * 2.5
+and then test two is going to be this
+same value Time 4 and now if I create a
+new value here called custom fun is set
+to FN um let's set it to one that way we
+can very easily see that this value is
+2.5 and this value is four and now if I
+plot
+Char our custom fun function value and I
+give it a title let's just title it
+custom function number one and I save my
+code and open the data window you'll
+notice that this number here is four so
+what's happening is our custom function
+is doing whatever it does here executing
+this code and then the function outputs
+the final line of code here so whatever
+this final line of code is is the
+function's output so in this case that's
+test * 4 so what if we wanted to um
+multiply Test 2 by test one uh so test
+one multiplied by four let me save my
+code now keep an eye on this number that
+should be 2.5 * 4 which gives us 10 but
+what if we wanted to know what test one
+was inside of our function this is where
+things get a bit complicated those of
+you in the Mastery course will probably
+be more familiar with custom functions
+as we cover a whole module in there on
+this subject as well as what I'm about
+to show you which is tups so if your
+head is spinning right now don't worry
+that's normal this stuff is bit
+complicated takes a while to wrap your
+head around uh but basically what we
+need to do with our custom function is
+return two values to do that we use the
+square brackets and I can put test one
+and test two in here and now this line
+of code will not compile because we're
+returning a tple this function is
+returning two values now so what we
+would need to do here is open some
+square
+brackets and and we need to specify the
+two values from our function and now I
+actually need to get rid of this data
+type because pinescript will
+automatically detect what these two
+values should be and so our function is
+now outputting two values test one and
+test two and if I want to plot the first
+value that'll be this value here so
+custom fun one and if I paste this down
+here and change this to two and that to
+two save my code we'll now be getting
+two values down here here the first one
+is test one which is going to be this
+value *
+2.5 and the second value here is going
+to be test two which is test 1
+multiplied by 4 which gives us 10 so
+hopefully that makes sense if it doesn't
+just re-watch this last part of the
+video a few times and eventually it will
+click so that'll do for today's video
+I'll leave the source code to this below
+um a link to the source code below for
+those of you who want to dive into the
+code and actually play around with it
+yourself I know this lesson wasn't as
+exciting as some of our other lessons
+creating strategies and indicators and
+tools but this is an important subject
+that I get asked about pretty often and
+it's something we all need to be aware
+of as Pine scripts there will come times
+when your script is not doing what you
+want it to do and depending on the
+complexity of your script that can be a
+little difficult to pin down what's
+going wrong these are a few methods you
+can use to figure that out with all that
+said I'll leave this video here thanks
+for watching as always make sure to
+subscribe if you haven't already cuz
+I'll be back real soon with a new
+pinescript video if you want to level up
+your PIN scripting make sure to check
+out our courses at pinescript
+mastery.com there's a free basic course
+there with several hours of content for
+those of you who are new to pinescript
+if this lesson went way over your head
+then you might want to start there but
+anyway thanks for watching I love you
+guys best of luck with your trading and
+I'll speak with you soon take care

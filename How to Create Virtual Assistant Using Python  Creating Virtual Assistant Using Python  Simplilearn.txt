@@ -1,0 +1,548 @@
+foreign
+welcome to the simply learn YouTube
+channel in this session we will create a
+virtual assistant using Python and name
+him Jarvis he will be capable of telling
+us the current date and time playing any
+video on YouTube and searching
+information through Wikipedia and do
+many more tasks but before we begin if
+you love watching Tech videos subscribe
+to our Channel and hit the Bell icon to
+now miss an update before starting let
+us have a simple question to pressure
+upon our knowledge and please answer in
+the comment section below and we'll
+update the correct answer in the paint
+comment so our first question is which
+is one of the most popular python
+library for WhatsApp and YouTube
+Automation and the options are buy vote
+kit tensorflow by torch or open ceiling
+you can pause the video give it a
+thought and answer in the comment
+section
+so let us start with our virtual
+assistant
+for that first we'll create a folder
+and name it as creating
+virtual assistant
+and inside
+we will open the python editor you can
+use any editor
+I am using the virtual Studio code for
+our project for that I will be opening
+the command prompt and writing the
+command code space period
+and press enter this will open the
+visual studio code
+and here we will create a file and name
+it as Jarvis
+Dot py
+and now we can start our code
+before starting let's have a basic
+understanding of our virtual assistant
+the basic function of the virtual
+assistant is to listen and respond to
+our instructions for that we will
+install three simple python packages
+we will open the Chrome browser
+and search for the first package that
+would be speech recognition
+you could see that this is the website
+for the speech recognition package we
+will copy the command
+and open a command prompt and we'll
+paste the command here
+and press enter to install it
+as you can see that it states the
+requirement is already satisfied as I
+have already installed the speech
+recognition package and you can also
+write this command in your ideally in
+the terminal there also you can install
+that
+so our first package is installed now we
+will move to our second package there
+could be
+text to speech
+Python and that is the version 3.
+and this is the website for that we will
+copy the command and
+again move back to our Command Prompt
+and paste a command and press enter
+as you can see that the requirement is
+already satisfied I have already
+installed this module also
+and our last module would be Pi audio
+so this is the website for pi audio
+package we'll copy the command and move
+back to our Command Prompt
+foreign and
+press enter
+as you can see I have already installed
+all the packages and if you face any
+issues while installing just comment
+down in the comment section and we will
+get back to you
+so let's start
+with a code and first we'll import our
+packages
+for the virtual assistant to understand
+us we will import speech recognition
+module and give it a name as AA for that
+we'll write the command import
+speech underscore
+recognition
+and name it as
+a
+now we'll create a listener and this
+listener will hold a recognizer which
+will recognize our voice
+for that we will write the command oh
+sorry because the name
+just
+okay
+now we'll create a lesson
+for that
+we'll write the command list now equal
+to a
+dot recognizer
+now we will place a try block it will be
+a question if a microphone doesn't work
+but if we Face any other app
+for that
+we will introduce the try block
+spray
+and an accept block
+and just write a command pass here
+so this means that python will do
+nothing if an exception occurs
+and inside the try block we'll use the
+microphone for that we will type the
+command and give it a name as origin
+which will be the origin of our audio
+for that we'll write the command
+with
+a a DOT
+microphone
+as origin
+now we will create a new variable and
+name it as speech and add a listener to
+listen to this origin
+for that we'll write the command
+now we'll create a variable instruction
+and recognize the origin voice and using
+Google API we'll convert it to text for
+that we'll write the command instruction
+equal to
+listener
+don't recognize
+underscore using the Google API for that
+we'll write
+Google
+and inside will pass the speech
+now we'll print the instruction given by
+us the instruction is what we are
+speaking to our assistant so we will
+print that
+and now we will write a command print
+listening so that it would show
+our assistant is ready to hear to us
+when we will run the command or we will
+run our whole project so it will take
+some time to process all the code and
+then it would print the statement
+listening after that we could speak so
+that our assistant could listen to us
+and respond to us
+for that
+we'll write a command
+print listening
+so if there is an indentation mistake
+now we will check whether a code is
+working or not so this part of code
+first we'll save it
+and click on the Run button
+okay so we got an error okay so there's
+an indentation error
+okay now we'll save it
+and run it again yeah we can see that uh
+our assistant responded as listening
+so our code is working
+as it can listen to us but it can't
+respond to a size we have not imported
+the text to speech module
+so we'll work on that
+now
+we'll write a command to detect the word
+Jarvis in the instruction as we are
+giving the instruction and storing in in
+the variable instruction
+so as we are naming our assistant as job
+is
+let us detect the word Jarvis in it
+for that
+we'll use a conditional statement
+first we will make a pole instruction in
+lower case so that we won't get any
+error
+and we can detect it easily
+now we have made it to lower case and
+now we will use a conditional statement
+to detect the word Jarvis
+so for that we'll use the conditional
+statement if
+Jarvis
+is present in an instruction
+then
+we'll print the instruction simply
+so now if we give any instruction that
+would be H always how is you so it would
+detect the word Jarvis in it and it
+would print the instruction and if it
+doesn't contain the word Jarvis it won't
+respond to an instruction it would just
+listen to it and ignore that
+now to respond back
+we will import another package that
+would be python text to speech
+so this is the package
+with the use of this package our
+assistant can respond to us
+now we'll create a variable
+and name it as machine
+and initialize with our python text to
+speech module
+for that we'll write
+okay
+there's a small mistake
+now now we have initialized a python
+text to speech audio
+now we will Define a function
+and name it as stock and we'll pass some
+parameter that we want to hear
+for that
+Define the function and inside to pass
+the parameter as text
+and write the command machine dot C is
+the function that would pass the
+parameter and repeat it
+repeat it mean it would could it would
+give the output
+so machine don't
+run and wait
+so every time we call the talk function
+it will say the parameter will pass now
+we will Define the function input
+instruction it will manage all that we
+say as an instruction to Jarvis
+so
+and we'll keep this drive block inside
+the function only
+now we'll Define
+I mean we keep all this inside this
+function
+now we'll create another function for
+Jarvis to include all the
+functionalities the functionalities that
+would be to play any video on YouTube to
+talk back to
+respond us back the date and time for
+that
+we will create another function
+and name it as please have this
+play underscore
+Jarvis
+now
+inside this we'll create a variable and
+name it as instruction
+and we'll get it then other function
+that is input instruction
+in it
+now
+we will print this instruction
+and make the instruction AS Global
+variable
+now we will add the functionalities and
+the function play Javas
+for that we will use the conditional
+statements
+and for that we'll write if
+is present in our instruction
+we will add some functionality to it
+let me show
+instruction okay so if play is mentioned
+in an instruction or the speech we give
+to our assistant it would do some
+functionalities
+mostly like it would play the videos on
+YouTube
+for that first we'll import the package
+that would be pivot kit that makes the
+automation of YouTube and WhatsApp
+easily
+I have already installed this packet so
+you just need to enter the command paper
+installed pivotkit in your terminal or
+in the command Pro you can easily get it
+installed and then you can import it
+now
+we will add the functionality and that
+would be to talk back
+the song name and it could say that it
+was playing this song
+so for that we'll call The Talk function
+and inside
+you can pass the word playing and plus
+the instruction given by us you can
+store it in the variable song
+okay so that will create the variable
+song
+and side we will get our instruction
+and
+if we don't want to just get it written
+or print the song name so that will
+reduce the replace function
+how does it work I will show you that
+so it would just replace the keyword
+play
+and write all the other words that is if
+I say Play Maroon 5 so it would just
+print the Maroon 5 and won't print the
+wordplay
+and instead of play it would just print
+an empty string
+now we have imported the pivot kit
+package
+so we'll use it here
+we will play on YouTube
+and inside will pass the instruction
+that is the song
+and now to check this first where Kohler
+function that is
+playing it underscore
+Jarvis
+okay here and return the instruction
+as the function is called in talk Jarvis
+also that is Page always
+and we're painting instruction two times
+okay and get that over time
+okay
+yeah
+and now we will add other
+functionalities
+okay now we will add more
+functionalities to our assistant
+it's real ID
+now to add more functionalities
+let's start with the command LF and
+the next functionality we could add is
+to
+get current date and time from an
+assistant
+so for that first we need to import the
+package date and time
+as I am already installed it
+you need to get it installed
+so that you can use the command pip
+space install space date time indoor
+terminal or
+in your command prompt
+so here we will add the functionality
+that is LF
+time
+so if time is present in our instruction
+or the speech we are giving to our
+assistant so it will just give us the
+current time
+so for that we'll write the command
+instruction and now
+time equal to
+date time
+Dot
+date
+time
+dot now
+dot strf time
+foreign
+which format we wanted we will write
+that
+that would be
+percent I
+sent
+um
+same p
+no spaces in between
+yeah
+and we want to talk back our assistant
+so for that better call The Talk
+function
+and inside we will ask him to talk back
+that would be
+current time
+Plus
+what would be the current time
+okay so we have added the functionality
+for the time and we will check it
+before we will add the date also so we
+should get the today's date also for
+that we'll write the command else if if
+date is present in our instruction
+so update Android date time
+to indeed
+time dot now
+let's try
+and in which format you want it
+that would be question d
+percent M that would be the month
+and at last would get it here
+yeah that's where I read the
+functionality and we won't as tend to
+talk back to us
+and what it would say that would be
+today's date
+that's a good
+talk back that it to us
+from now we'll add more functionalities
+option after that we will check whether
+it's working or not or if we have any
+other error you will get it sorted after
+that so
+we could just add more functionality
+that would be the basic grid
+what are the suggests Trend could do to
+us or make to respond to how are you
+for that we will write LF
+and if he listens how are you in an
+instruction
+so it would talk back to us and we're
+going to be saying is
+that I am fine and we would ask us also
+like how about you
+so
+I am fine
+how about you
+foreign
+like what's your name and his name is
+Java so he should respond to that
+so for that
+we'll write another command that would
+be as if
+and
+if
+what is your name
+is present in our instruction
+it would talk back
+foreign
+yeah and
+if there is an error move if somewhat
+Jarvis doesn't hear
+or we doesn't include Jarvis in our
+instruction so he would say something to
+us to please repeat the instruction or
+something so for that
+we'll write the command
+and it would talk back to us
+please repeat
+these are the functionalities
+[Music]
+yeah okay we are left with the Wikipedia
+we like
+search information through Wikipedia so
+for that we will import Wikipedia
+and for that you need to install the
+Wikipedia package for that you can
+search on the Chrome Wikipedia Python
+and copy the command from there and you
+can paste it in your terminal or command
+prompt and install it and then import it
+so for that
+write the command else if
+and what should it look like who is or
+what is
+so when I put OS
+and instruction
+and that people
+you know that
+human
+equal to
+instruction
+Dot
+replace
+first we are replacing who is from the
+instruction like it shouldn't be printed
+so for that
+we are replacing it
+and instead
+we'll just get a string that is empty
+string
+information
+Wikipedia dots somebody
+and inside will pass the human
+only
+and then we will print time for
+you will get all the information printed
+about that command
+and ask the assistant to talk back
+all that information
+okay
+School
+okay we are calling the function here
+okay
+yeah
+and if we don't want Jarvis to be
+included in our statement
+so
+you could write the command
+that would be instruction
+equal to instruction
+dot replace
+and what it should replace Jarvis from
+the instruction it shouldn't print the
+instruction
+like it should print that section but
+not the Jarvis in it
+and instead of that
+it will print just an empty string
+now we'll save the file
+and run a project
+Jarvis what's the date today
+so you can see that uh the date
+function is working fine so we can check
+all the other functions and we can check
+it one by one
+Jarvis what's the time now
+current time is 11 37 am
+Jarvis play simply learn
+playing simple learn
+Javas play Coldplay
+plain cold
+Jarvis who is Mahatma Gandhi
+mohandis Karim John Gandhi Gandhi
+October 2nd 1869 to January 30 1948 was
+an Indian lawyer anti-colonial
+Nationalist and political ethicist who
+employed non-violent resistance to lead
+the successful campaign for India's
+independence from British rule and to
+later Inspire movements for civil rights
+and freedom across the world
+so guys you can see that all the
+functionalities are working with a
+virtual assistant that is Jarvis
+so
+with that we have come to the end of
+this session and I hope it was
+interesting and informative if you liked
+it please let us know in the comment
+section below also do subscribe to our
+Channel hit the Bell icon for more
+updates
+thank you
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+thank you

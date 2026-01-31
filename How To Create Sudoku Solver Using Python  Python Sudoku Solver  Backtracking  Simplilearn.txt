@@ -1,0 +1,668 @@
+foreign
+python is one of the emerging
+programming languages according to the
+most recent figures python is the most
+used coding language for about 80
+percent of developers in the syntax of
+this high-level programming language is
+simple to understand and Python's large
+Library System makes it a best choice
+for data science machine learning and
+artificial intelligence projects
+so hello Learners welcome to Simply
+learns YouTube channel and today we will
+be writing code to solve Sudoku using
+python
+but before we begin if you love watching
+Tech videos subscribe to our Channel
+like the tutorial and hit the Bell icon
+to now miss an update
+and before starting let us have a simple
+quiz question to brush upon our
+knowledge
+and your question is which one of the
+following has the highest precedence in
+the expression and your options are
+division subtraction power or
+parenthesis
+please answer in the comment section
+below and we'll update the correct
+answer in the pin comment you can pause
+the video give it a thought and answer
+in the comment section
+and I have an insightful for you guys
+that is if you are focused on building
+strong foundational skills for career
+growth in that case you can check out a
+free course to Learn Python Basics with
+a completion certification from scale up
+by simply learn you can check the scores
+with the link in the description box
+below
+and from here we'll start the tutorial
+first I will show you
+Sudoku we will be solving the Sudoku
+that would be the 9 cross 9
+metrics
+so the objective of Sudoku game is to
+fill a 9 cross 9 grid with digits so
+that each column each row and each of
+the line that is three cross three
+subgrids that is the Three cross three
+sub boxes that compose the grid they
+should contain all the digits from 1 to
+9. and the puzzle Setter provides a
+partially completed grid which for a
+well post puzzle has a single solution
+so you can see on your screen
+this is the Sudoku puzzle that we're
+gonna solve
+so I will
+tell you
+what are the rules to solve a Sudoku
+so this is a 9 cross 9 grid that is 9
+rows and 9 columns 1 2 3 4 5 6 7 8 9 and
+9 columns that is one two three four
+five six seven eight nine
+so what are the rules if we pick a
+number that is 9.
+we have to fill one to nine digits that
+is in the row in the column and in this
+grid
+you can see this grid
+so in this box so we pick a number nine
+so this should be single present in the
+row
+in the column and in this grid
+you can't repeat this number in row in
+column or in this grid you have to
+complete this grid that is you have to
+complete one we have one two three we
+have to complete four we have five six
+and we have to complete seven and eight
+if we see we can't fill it here as we
+have the number eight in this row
+so it won't come here it would come here
+so you can see that we have filled 8
+here similarly we will fill four and
+seven to complete one to nine digits in
+this box and similarly we should have
+one two nine digits in a row and in a
+column and there should be no repetition
+and to solve this we would be using the
+recursive algorithm
+so telling about recursive algorithm
+it's a problem solving technique in
+which problems are solved by reducing
+them to smaller problems of the same
+form
+in programming recursion simply means
+that a function will iteratively cool
+itself
+so
+to play the game you could visit a
+website that is sudoku.com and you can
+set your difficulty level that could be
+easy medium hard expert and Evil so they
+would just change the numbers and reduce
+the numbers and they will increase their
+difficulty level
+as you choose it
+you could easily play the game here
+and if you write a wrong like
+2 is present in this small subgrade that
+is three cross three and I have entered
+the number two so it's showing me in the
+red
+color
+it states that this number won't be
+placed here it's a wrong number
+so backspace it
+you can see how to play a Sudoku game
+I think you are clear with the rules now
+moving on
+we'll start with the project to solve a
+Sudoku with recursive algorithm so write
+a code in Python to solve the Sudoku
+puzzle we just have to enter the Grid in
+the code only and you can see how it
+will solve
+so the first thing would be
+we will create a folder for our project
+and we'll create
+in Python projects
+we will create a new folder
+and name it as Sudoku solver
+and inside we will call the command
+prompt
+and
+we will run a command that is called
+space period to open our Visual Studio
+code you can choose any ideally that you
+have hand shown
+I would be using the visual studio code
+you could use anyone
+so here comes our widget Studio code and
+here we'll create a file and name it as
+Sudoku Dot py
+and here we will start our code to solve
+our Sudoku and we would be using the
+recursive algorithm here
+so first we will import numpy Library
+to
+get a Sudoku in a grid
+and numpy helps us with that
+so for that we'll import numpy
+and we'll use Lis that would be SNP
+so we could just use NP
+for using the numpy library functions or
+classes
+so here we will create a grid for Sudoku
+puzzle
+for that we will write a variable name
+Sudoku puzzle and inside we will pass
+the Sudoku puzzle
+that is we will write
+all the numbers
+we want to get sold
+so we'll be using this Sudoku puzzle
+only
+this is the easy level Sudoku and we
+would be writing the code for the same
+and our code will work for all the
+Sudoku that would be the easy medium
+hard any level
+So currently we'll use this Sudoku and
+these rows and column and these numbers
+with the same pattern and
+we would represent the blank boxes with
+zero so we will create a grid variable
+in Python and the blank cells they would
+be represented with 0.
+so we will start
+filling our Sudoku here that would be
+9 comma 6 comma 2
+and for blank spaces we would write 0
+8
+comma 5
+comma 0 comma zero
+now here
+I have all the
+all the numbers in the Sudoku I have
+copied them
+and now I will directly paste it for you
+guys
+so we don't waste time just writing or
+creating the Sudoku puzzles we will move
+further and see how we can solve this
+Sudoku with the help of recursive
+backtracking
+and to solve this first we'll create a
+function and name it as possibility and
+we'll pass three parameters in that that
+would be row column and the number that
+we would be entering
+so this function will check if a
+particular cell can be filled with a
+number n
+there will be three checkpoints in this
+function
+that would check in the vertical
+Direction in the horizontal Direction
+and in the local 3 cross 3 grid as I
+have stated you the rules of the Sudoku
+so we'll check if this number is present
+in the row in the column with the three
+closed three grid then it would return
+false and if the number is already
+existed in any checkpoint
+and if it's not present in any
+checkpoint it would return true and the
+number would be accepted there this mean
+it is possible to fill n in that y comma
+X cell that is rho comma XL
+the grid
+so moving on we will create the function
+and
+to create a function we will write
+daf and the name of the function that
+would be possibility
+and in that we'll pass three arguments
+that is row
+column
+and the number
+which we would be entering in the
+particular cell
+so here
+first we will set
+this variable in which we have inserted
+the Sudoku puzzle will
+set it as Global so we could use
+globally in the whole code
+Sudoku underscore puzzle
+and now
+we will run a for Loop to check if the
+number we are entering is appearing in
+the given row if it appears we'll return
+false and if it not we will return true
+so we will run a loop and for that we'll
+write for I
+in range
+and the range would be from
+0 to 9
+and if
+Sudoku underscore puzzle
+that is
+here we will enter row
+so what we are doing is
+if we
+see the Sudoku puzzle we will get the
+first row
+and then
+just adjacent to it we will pass the I
+that would be ranging from 0 to 9 so it
+will check in the whole row that is 0th
+1 second third fourth fifth sixth
+seventh eighth it would check in the
+whole row if the number is present so it
+would return false
+is equal to equal to number that we
+would be entering in the empty cell
+so
+if the number matches we would return
+false
+and similarly
+we will run a loop for column
+for that we'll write
+o i
+in range
+that is range would be from 0 to 9 only
+and we will run a conditional statement
+that would be if
+Sudoku puzzle
+and here
+first we'll write I and then the column
+and if it's
+equal to equal to
+so we have written column with the
+capital c
+that is equal to num
+that the number we would be entering in
+the particular cell
+if it's
+equal then we'll return false
+so we have would be writing the colon
+we would return false
+and now I will tell you what we have
+done here
+so
+we have written I and the column is
+fixed here
+so in this column
+we will check if the number we gonna
+enter
+is
+already present in the particular column
+then it would return false so if we take
+any column as
+we pass any column in the argument that
+is we have passed the second third
+fourth column and
+there we would run the loop to check all
+the columns there that would be
+per second third fourth fifth sixth
+seventh eighth ninth and if there's the
+number present that we are entering it's
+both are equal then we'll return false
+so we have covered
+two rules here for the Sudoku puzzle
+that is row and column now we will be
+discussing about the grid part that is
+the Three cross three grid if the number
+is present in the grid then we'll also
+return false there
+so for that
+first we will create a variable
+that would be X
+and that would be equal to
+column
+load division
+by 3
+and into three
+and Y
+that is equal to
+rho
+division
+by 3.
+into 3.
+so what I am trying to insert in this
+variable that is we would be passing the
+column
+in the parameter so that column would be
+4 divided by 3 and then it would be
+multiplied by 3.
+so if I will tell you if we
+pass a row that would be
+the first row so one floor division by
+three so what it will give us it will
+give us 0.
+because flow division gives us the
+nearest
+integer
+so for two also it would give us 0. and
+for 3 it would give us 1.
+and for 4
+it would give us 1 that would be four
+low division three
+that would be one
+and after that we are multiplying by
+three so it will give us
+t
+and similarly you can see for all the
+rows and the column
+so I will tell you here
+but we are going to do
+that is in a variable
+that is X inside that
+we are just entering the column which we
+are passing in the function and we are
+doing four division with three
+and multiplying it with
+3
+so what we are getting
+if we just take the column one
+that is
+one
+row division with three
+so what will it give us it would give us
+0.
+and if we take another column that is
+the next column that would be the second
+column
+and if we flow divided by 3 it would
+give us 0.
+so these are the column what we would be
+passing in a function
+similarly
+third column it would give us one
+and for the fourth column
+it will also give us 1 and for the fifth
+column
+it will
+give us one and now here for the sixth
+column
+it would give us
+2
+and similarly for the others it would
+give us 2 and for the ninth column it
+would give us three
+so if I tell you 7 slow division 3
+that would be 2
+8 row division three
+it would give us 2
+and 9 for division three
+it would give us three
+so
+I will
+tell you what we are going to do here
+and
+after that you would
+understand
+for what purpose we are just creating
+this variable and inside we are passing
+column with the flow division three and
+multiplying it with 3.
+so if you can see this we'll just clear
+it out
+so if you see here
+if we take the rows here
+it would
+give
+one for this 0 for this
+and
+one for this
+and two for this
+now we will
+run a loop here
+double Loop that would be the nested
+loops that would be 4 I in range
+that would be from 0 to 3.
+and another loop that would be the
+nested Loop
+o j
+n range that is
+0 to 3
+so inside we'll pass a conditional
+statement that would be if
+Sudoku puzzle
+and here these variables would be
+counted that would be y
+plus 1
+and X
+plus one
+if it's equal equal to number
+then we would return
+poles
+okay now I will tell you what we have
+done here
+so
+we have to check if we are what the
+number we are entering if it's present
+in this three cross three grid then our
+output would be false
+so what we have done here we have taken
+the X and if we pass column 0 and it
+would be 4 divided by 3 and multiply by
+3 it would give us 0 and we have run the
+loop for this
+and we have given the row also zero
+so you will got 0 plus 1 and X would be
+also 0 that would be plus 1 and if this
+cell is equal to the number then we
+would return false
+so if we take the row 0
+and column 0
+that we have already
+a number here so we want Row 2 and
+column 2.
+so for that if we just
+get at the
+so here as we have
+two nested loops
+what it states that
+if we pass rho equal to 0 and column
+equal to 0 that is this
+so it will run the loop and it will just
+iterate y plus 1 and X Plus 1
+will check if it's equal to the number
+what we are going to pass if it's the
+same
+in this grid that is 3 cross 3 grid then
+it will return Folds
+and similarly
+when
+will pass column as 1 and row as one
+then also the flow division will
+and give us 0
+and
+moving on
+it will take us to the next
+cell
+so this is how we're going to check the
+Three cross three grid
+so
+these three are the rules that we have
+covered in the function possibility
+and now
+we will return true
+that is
+if these conditions
+don't fulfill then we get the true and
+that is the number we gonna enter in
+that cell
+and now
+we will create another function that
+would be solution and inside that
+solution we would be calling this
+function
+so
+that we will
+create the function and name it as
+solution
+and inside
+we will make the Sudoku puzzle AS Global
+variable
+and here
+we will run the loop
+now we will run the loop for row and
+column so that will pass all the rows
+and column and we could enter the values
+and pass those row and column values
+into the function
+that is possibility
+so I will show you how we're gonna do
+that
+first we'll run a loop four rows
+for Row in range
+that is 0 to 9.
+and now for column that is
+four column
+in range
+that is
+0 to 9
+now we have
+two nested Loops that is for row and
+column they would be covering the rows
+and the column and now here we will pass
+a conditional statement
+that is if the particular cell if it's
+equal to 0 then only we gonna get the
+enter the number
+so for that we would write the
+conditional statement that is if
+Sudoku underscore puzzle
+and the particular row column
+that would be fetched by
+these loops and if it's equal to 0
+then we will run another loop
+that is
+4
+that would be the numbers that would be
+in the range one two nine
+there is one is included in this when we
+use the range function one is included
+in this and we have entered the second
+digit that is 10 so it would count the
+numbers till 9.
+and here we would get another
+conditional statement that is if we will
+call our function that we have created
+that is possibility
+and past arguments that is row column
+and num
+that is will pass
+row column
+and number
+and
+we will write a condition for that
+that is we will get the number entered
+in the cell
+row column
+and that is equal to
+number
+and this number has been entered and now
+we'll call
+this function that is the solution
+function again
+so that
+the process goes on
+and
+when we are at the end of the row or
+column or just at the end when we don't
+have any cells left so what we will do
+foreign
+that is we would start the backtracking
+again
+we will get that cell entered as 0 and
+we'll start the backtracking again
+okay
+and here we will return the function
+no
+now we want our metrics to be printed
+and to print that we'll use the numpy
+library that would be NP and its metric
+class that is the metric function and
+inside would pass the variable
+in which we have stored our
+puzzle that is Sudoku puzzle
+it would get printed and if there are
+some more solutions like if you
+play the easy level of the Sudoku game
+there could be more solutions
+so for that
+we could get the input that is
+we'll get the input from the users if
+there are some possible solutions
+will just
+enter
+in the terminal and we can get those
+solution and if it's
+and if there are no solutions that is no
+more possible solutions other than the
+one single solution
+then
+it would end the program
+so this is our program
+for the Sudoku solver
+we'll save it and run it
+so you could see that
+there is some issue in the code so we
+will see what is
+so
+these are
+inside this functions it's maybe the
+indentation can be wrong
+so we'll save this and run it again
+and yeah
+you can see that our Sudoku has been
+sold
+and it's asking for more possible
+solutions if we press enter
+so it has giveness one more solution
+we press again enter that's it there are
+two solutions for this Sudoku
+and it has provided us both the
+solutions
+so
+this is here we have completed our code
+that is for the Sudoku solver using
+backtracking or the recursion recursion
+algorithm
+and with that we have come to the end of
+this session and I have an insightful
+for you guys that is
+I have a course for you guys
+that is if you are aiming to get
+certified in Python Programming and want
+to build a python software development
+career in that case you can check this
+python certification course by simply
+learn that will open the doors for the
+best career opportunities and to find
+these details you can check the
+description box below I will give you
+the link there and I will also give you
+the code link that would be as our get
+Library so I will provide you with the
+source code files link also in the
+description box below and I hope the
+session was interesting and informative
+if you liked it please let us know in
+the comment section below and also do
+subscribe to our Channel and stay tuned
+for more from Simply learn
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

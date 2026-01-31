@@ -1,0 +1,225 @@
+hi everyone welcome to the simply L
+YouTube channel in this session we will
+create a QR code scanner using python
+but before we begin if you love watching
+Tech videos subscribe to our Channel
+like the tutorial and hit the Bell icon
+to never miss an
+update and before starting our project
+let us have a simple question to brush
+up on our notes
+and please answer in the comment section
+below and we'll update the correct
+answer in the pain comment and your
+question is what is the minimum
+decodable size for a QR code
+scanner that is QR code only and your
+options
+are
+1.5 by 1.5 CM or 1X 1 cm or 1.75x 1.75
+CM or 2x 2 cm
+you can pause the video give it a
+thought and answer in the comment
+section and moving on now we'll start a
+project that is create a QR code
+scanner for that first we'll create a
+folder
+and name it
+as creating QR code
+scanner and inside we
+will open the command
+prompt and write a command code space
+period and press enter to open our ideal
+that is I am using the visual studio
+code you can use any idle
+as you comfortable
+with and we'll create a file and name it
+as QR Scanner
+dopy and now the first thing we will do
+is install the modules that we will
+require for the project for that we will
+open the command
+prompt uh the first module we will
+install is open CV and and you can
+search for the command in the web or if
+you know you can just write it down and
+press enter for that I'll show you how
+to get for the
+command you can just type open
+CV Python and press
+enter you will see the first link that
+is open CV
+python that is the original
+documentation and you can see the
+command here just copy it
+direct to the command
+promp and paste the command here and
+just press
+enter as you can see that it states that
+the requirement is already satisfied I
+have already installed the open CV
+module you can just type in the command
+and press enter it will just install it
+for
+you and the second one module we will
+install is P
+bar just open the official
+link and you can see the command here
+pip install pbar just copy it and
+redirect back to the command pront and
+paste your command here and just press
+enter it will do the work for you as it
+is stating that it's the requirement is
+already satisfied I already installed
+the asbar module you can do that just
+writing the command and press
+enter now moving to our Visual Studio
+code now we'll start with our code and
+we first we will import the packages the
+first package will import is that is the
+CV2 that is the open CV
+the next we will import the decode class
+from the pisar module so for that we'll
+write the
+command for de
+code now the first thing we will do is
+uh we will create a variable and ask the
+open C module to make the video capture
+function work for us for that we will
+create the variable and name it
+as
+cm and the command would be CV2
+dot video capture
+now we will set the window this is the
+window that would be reflected when we
+just make our camera equal to true that
+is camera is always defaulted as false
+you have to make it true to get it pop
+it on your windows
+screen and for that we will set the
+size cam do
+set and first we'll set the width and
+we'll set the width as
+five and set the pixels as
+640 and now we'll set the
+height cam do
+set and height as six and pixel as same
+um or
+480 as you wish you can set it as and
+now we will make the camera equal to
+true as it is a button for a camera and
+it's being defaulted set as false we
+have to make it
+true now while
+camera is equal to equal to true
+we will read the QR code scanner we will
+read the QR code that we will show in
+our front
+camera so for that we will write the
+command when camera equal to equal to
+true that is when the camera is
+open we would get two things that is
+success and the frame
+and that would be equal
+to cam do
+read it will read the frame that would
+be shown into our camera and the success
+is it will return the Boolean value that
+is one or Zer and the frame is it would
+read the frame as captured by a front
+camera and decode
+it now to decode it we will run a r
+for
+I we will make it as
+decode and inside we will pass the
+frame that is the frame captured by our
+camera
+and print the
+type that is uh which type it is that is
+it's QR code or it's barcode or it's uh
+any other code so it will just capture
+the frame and it will return or print it
+as which type it
+is
+now we will
+print what we will decode from the QR
+code for that we'll write the command
+code do data what data is stored in
+it and we'll use the function
+decode and the memory we would be using
+is new
+have8 oh sorry uh we have taken it as I
+and now after we have read the frame and
+recorded it we want it to sleep for some
+time for that we will just import the
+time module and you can install the time
+module from the datetime module you can
+just write the command pip install date
+time or you can just search on the
+Chrome or any browser about the datetime
+module and python you can just write
+datetime space python and space module
+you will be just directed to the main
+documentation and you will get the
+command there and you can just copy and
+paste it in the command prompt and the
+rest would be done for you as I already
+installed it I will import the time
+module and now make this Frame
+sleep for about 6 seconds
+and
+now we
+want to make or show the
+camera uh on a window it should be
+popped up and we should be able to see
+it for that we will use the open C
+module and write the
+command I'm sure and we will name the
+camera window with our QR code scanner
+you can name it anything as you
+want so I will name it as
+R Ur
+underscore code underscore
+scanner and the next thing we will do is
+pass the frame in
+it
+and we will just write another command
+that would
+be weight key
+function that would be we using the open
+save module and the weight key
+function and this would be used to
+capture the frame after the 3
+seconds so this is our code we'll save
+it and make it run
+okay we C an
+error okay this is due to as I was using
+the front camera for recording and it
+was not able to capture the
+frames so I
+have switch off the front camera the
+webcam and now we will again save the
+file and run
+it now you can see that the webcam has
+open up and now we will show it a QR
+code and you can see that it has
+concluded it data as
+https ww. simply.com I have created the
+code in my mobile
+phone and made it available to the
+webcam and it has showed us the output
+as HTTP wwl.com we can
+just press on click
+and click on the right button of the
+mouse we can we will be directed to the
+link
+and with that we have come to the end of
+this session I hope it was interesting
+and informative if you liked it please
+let us know in the comment section below
+and do subscribe for more from Simply
+learn hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

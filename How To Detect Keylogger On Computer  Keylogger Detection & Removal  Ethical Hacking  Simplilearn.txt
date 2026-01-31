@@ -1,0 +1,163 @@
+hi guys and welcome to yet another
+interesting video by simply learn
+for today's topic we will understand how
+to detect key logging activity in our
+system of computer devices and if you
+want to know more about the topic you
+can watch our video on what are key
+loggers
+but before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to never miss an
+update from us
+for today's agenda we'll understand what
+are key loggers
+after that see some points regarding
+detecting key logging activity in our
+system
+and in the end we'll see the demo
+regarding key logging detection methods
+let's begin with what exactly is a
+keylogger
+as the name suggests
+keylogger program is a malicious program
+or a tool that is designed to secretly
+record the data that we type on a
+keyboard
+the program that is the keylogger
+program gets installed into a system
+secretly after that
+it targets the system when the user is
+working on it and records the key
+strokes in a text file
+then the text file is sent by the
+keylogger program to the cyber criminal
+that is the creator of the keylogger
+program
+where the recorded data can be used by
+the hacker or a criminal to do malicious
+acts
+let's take a look at some of the
+detection methods for keylogger in a
+system
+first one is
+the keystrokes that we make become
+sluggish that is the reaction speed from
+the hardware keyboard which is slower
+than usual
+then we have instances where our system
+gets hanged or freezes in between the
+work
+there are also cases when there is
+suspicious unusual activity in the
+internet
+and lastly there are some unknown
+programs that are running in the
+background of the system
+these four are general cases where we
+can observe whether the system is
+infected with a keylogger program or not
+to better understand key logging
+activity in a system let's take a look
+at the demo for the same
+for the first step let's execute the key
+logging program in a system
+over here i am using
+a python key logging program
+and if you want to know more about the
+key logging program in python you can
+watch our previous video on what are key
+loggers
+let's begin now
+let's execute the program
+and wait for a second or two for the
+program to continue execution
+okay let's take a look whether the
+program is working properly
+we can see that the key logging program
+would create a text file named key
+underscore log let's take a look
+key underscore log seems like the
+program is working fine
+let's try typing something on the
+notepad
+hello world
+now let's see whether the recorded data
+comes
+seems like the program is working fine
+the data is recorded hello world
+with exclamation marks
+along with the time
+now let's try detecting the keylogger
+program using different detection
+methods
+for the first step
+you can access your settings
+where you should go for windows update
+over here you would often see some of
+the
+updates regarding security measures that
+is the very basic step if you want to
+detect key logging activity in your
+system
+let's take a look at the second
+detection method for this you can use a
+start option
+and type
+task manager
+using the task manager app you can see
+some of the programs that are displayed
+these programs are the ones that are
+currently working or executed
+in my system right now if you see any
+unusual program that has been executed
+without your knowledge
+may refer to a key logger program
+and if you find any unusual program that
+has been executed on your system right
+now
+you should
+right click on the
+program and choose option in task this
+will immediately end the task that is
+being executed which might protect your
+data from being recorded
+let's take a look at the third option
+how we can detect the key loggers
+in the task manager use the option
+startup
+in startup option represents the
+softwares or programs that get executed
+when the system is turned on
+if you see any unusual program or
+software mentioned in any of these in
+your system you might have to
+disable that
+this represents there's an
+unusual program or a malicious tool that
+has been executed when you start up your
+system
+which may relate to a keylogger problem
+and the last method to detect keylogger
+activity is
+to type something
+if you feel there is some restrictions
+or there is a gap between when you type
+the key on your keyboard and the
+reaction speed becomes
+slow even by a millisecond this might
+represent there is a program that is
+interfering with the keyboard
+if you use the following detection
+methods you might save yourselves from
+being spied on or getting your data
+recorded that you type on your system
+with this we have reached the end of the
+module if you have any questions
+regarding topic you can ask them in the
+comment section thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

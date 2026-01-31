@@ -1,0 +1,473 @@
+machine learning has revolutionized the
+business world and is helping us
+building sophisticated application to
+solve challenging business problem using
+supervised and unsupervised machine
+learning models you can solve problems
+using classification and regression and
+clustering algorithm in this video we
+will discuss a supervised machine
+learning algorithm in Python called
+logistic regression logistic regression
+can be used to solve both classification
+and regression problem just a quick info
+for you if you want to upskill yourself
+master Ai and machine learning skills
+and landar your dream job or grow in
+your career then you must explore simply
+learn's cohort of various Ai and ml
+programs simply learn offers various
+certification and post-graduate program
+in collaboration with some of the world
+leading universities like Von perdu
+ctech I Cano and many more through our
+courses you will gain knowledge and work
+ready expertise in skills like
+generative AI prompt engineering
+explainable AI machine learning
+algorithms and over a dozen others
+that's not all you also get the
+opportunity to work on multiple project
+and learn from industry experts working
+in Top Tire Product Company and
+academicians from top university after
+completing these courses thousand of
+Learners have transitioned into an AI or
+ml role as a fresher or moved onto a
+higher paying job Ro and profile if you
+are a passionate about making your
+career in this field then make sure to
+check out the link in the print comand
+and the description box to find an AIML
+program that fits your experience and
+areas of Interest so moving forward
+let's take a quick look at supervised
+learning what is supervised learning in
+supervised machine learning machines are
+trained using label data also known as
+training data to predict results here
+label data refers to a group of data
+have been tagged with one or more names
+and the data is already known to the
+machine in the real world supervised
+machine learning can be used for image
+object detection Predictive Analytics
+spam detection and customer sentiment
+analysis and many more supervised
+learning problems can be further
+classified into regression and
+classification problem in classification
+problem that output variable is a
+category such as red or blue disease or
+no disease true or false and many other
+in regression in regression problem the
+output variable is the real continuous
+value such as dollars or F so now let's
+move forward and have a look on what is
+logistic regression logistic regression
+is a statical technique for creating
+machine learning models with a binary of
+dependent variable it describes the
+relationship between two variable
+dependent variable and or independent
+variable which can be nominal ordinal or
+interval types this method employs the
+logistic function also called the
+sigmoid function with output values
+constraint between 0o or 1 let's take an
+example of logistic function so we can
+use to find the prob ility of a vle
+breaking down depending on how many
+years it has been used since it was
+service last so here is how you can
+interpret the result from the graph to
+decide whether the vehicle will break
+down or not so moving forward let's see
+advantages of logistic regression
+algorithm the first one is logistic
+regression performs better when the data
+is linearly separable the second one is
+it does not require too many
+computational resources as it's highly
+interpretable the Third third one is
+there is no problem scaling in the input
+features it does not require tuning the
+fourth one is it is easy to implement
+and train a model using logistic
+regression now moving forward let's see
+how does a logistic regression
+algorithms Works let's take an example
+an organization wants to determine an
+employee salary increase based on their
+performance for this purpose a logistic
+regation algorithm will help them decide
+plotting a regression line by
+considering the employee performance as
+the independent variable and the Sal
+increase as the dependent variable will
+make their task easier so now what if
+the organization wants to know whether
+an employer would get a promotion based
+or not so the linear graph won't be
+suitable in this case as such as we clip
+at the line at zero and one and convert
+it into a sigmoid curve S curve So based
+on threshold values the organization can
+decide whether an employee will get an
+salary increase or not so there are some
+mathematical function which can help you
+on finding logistic regression analysis
+so these are some mathematical functions
+you can use in logistic regression
+analysis so LR function logistic
+regression is statical model that uses
+the logistic function or logic function
+in mathematics as the equation between X
+and Y so the logic function Maps y as a
+sigmoid function logic regression with
+multiple independent variable in many
+cases multiple explanatory variables
+affect the value of the dependent
+variable so to model such input data set
+logistic regression formulas assume a
+linear relationship between a different
+independent variables so you can modify
+the S function and compute the final
+output and the last one is the logic
+function the logic function you can also
+s the log odds the logic model can also
+determine the ratio of success to
+failure or log odds so moving forward
+let's see some application of logistic
+function I repeat so moving forward
+let's see some application of logistic
+regression the first one is banking
+using the logistic regression algorithms
+Banks can predict whether a customer
+would default on loans or or not the
+second one is to predict the weather
+condition or a certain place sunny windy
+rainy or humid You can predict from
+logistic regression the third one is
+e-commerce e-commerce companies can
+identify buyers if they are likely to
+purchase a certain product the fourth
+one is companies can predict whether
+they will gain or lose money in the next
+quarter year or month based on their
+current performance so now moving
+forward let's jump into our Jupiter
+notebook to implement logistic
+regression demo so now here we will do
+loan prediction using uh logistic
+regression so first I will change the
+name loan
+prediction using logistic regression
+right so we will import some major
+libraries like numpy import numpy as NP
+and
+import pandas s
+PD then import M plot lip
+do p
+plot as PLT for the graphs and all then
+we will import
+cbon as SNS so moving forward we will
+import one data set ed. read uncore
+CSV
+and Loan
+file.
+CSV
+okay spelling
+mistake
+yeah
+okay loan file. CSC okay let me check
+the file name
+first so here file name is loan file
+just loan file only so moving forward we
+will do
+some
+function let's check so this is our data
+set so in this there are like multiple
+columns name loan ID gender marry
+dependence education this this then
+let's check the info of the data
+set BF
+doino so as you can see so we have 13
+columns right total 13 columns and the
+column type is this object object float
+and object okay the memory usage and all
+once again let's check how many rows
+DF do shape so as you can see we have
+614 rows and 13 columns present in our
+data set okay
+we'll
+check using describe as
+well yes so this is the count of the
+particular column then mean then
+standard deviation minimum that 25% of
+particular column okay the maximum Val
+value the 75% of that particular column
+value okay let's check how many null
+values are there so for that we'll write
+is
+null because first we have to sort our
+data set for the better
+predictions okay so loan ID don't have
+any null value gender have married
+have okay right so now let's do some
+data cleaning here for data cleaning
+we'll run right
+DF
+loan amount equal to
+DF loan
+amount do fill
+na okay
+DF loan amount
+dot mean okay
+PF right so for credit history we'll
+check
+DF then
+credit
+history to
+DF credit
+history do filler
+name so I'm filling the particular cells
+with the median or mean values
+okay then
+DF credit history
+again history.
+median right so now again let's check is
+n
+do okay fine credit history now zero as
+you can see here you can see the credit
+history is 50 50 N values were there now
+zero and one more loan amount okay 22
+now loan amount is zero so DF do
+drop
+na
+Place equals to
+true then now DF do
+shape so now as you can see we have
+dropped the all
+the uh you null values rows as you can
+see the 542 here before it was 614 right
+so now let's moving forward we will do
+some Eda okay some data
+representation so here what we will do
+we will plot some graphs right so I will
+write a PLT do figure then figure
+size equals to 100 comma 50 then SNS do
+set font
+scale = to
+5 and PLT do
+subplot
+331 SNS dot count
+plot then DF where I need
+gender then Hue will
+be
+DF then loan
+status right so I will do the same for
+the Merit and the education then the
+self-employed then the property area
+right so I can copy
+this and paste it
+here right one more I need
+okay then I will change the name but I
+need
+Merit C32 333 for
+Education 34 for
+self-employed
+self
+employed the and for property
+area right here I will
+write okay let's run it it's loading
+some error is there okay g capital
+here so now as you can see these are
+some bar graph like how many married are
+there loan status yes or no the blue one
+is yes okay for the education for the
+self-employed so these are some warnings
+you can ignore them right so moving
+forward we will check some loan status
+so I will write
+here I want only loan
+status do
+replace y to 1 and N to zero okay so
+later it will be good to check comma 1
+in place equals to true
+okay same for
+no no
+status dot
+replace n comma Z comma in place equ to
+True okay loan status S capital
+here
+cancel it is nothing just a typo mistake
+okay so here I will write DF the
+loan
+status then value count
+value
+counts okay so yes are 376 and the no
+are 166 right so we'll check with the
+gender marriage and the dependent okay
+so for that I will write DF do
+gender equals to DF
+dot
+gender g capital
+here
+dot map then male is one
+comma
+female is
+zero
+right then I will write DF
+gender dot value
+counts okay so now I gave male to one
+and female to zero okay so this is the
+gender count right so I will do this for
+Mary as well as the dependents okay for
+all the education s employed property
+area okay so what we can do we can just
+copy it paste it here and we can
+change right for the
+mar
+Merit
+for yes to
+one and no to zero so let me do it fast
+for you and then I I will get back to
+you so as you can see we have done with
+the all the value counts here like
+property area self-employed education
+dependence married okay we have all the
+accounts so now let's see the loan
+amount value count loan
+amount dot
+value
+accounts okay so this is the loan amount
+value account that and we'll check the
+loan amount value
+term for that I will write
+loan
+amount
+to the dot
+value
+counts right then let's check the credit
+history which is very important factor
+for the
+loan
+credit
+history do
+value
+counts
+okay right so now let's check DF do
+head so now as you can see we have this
+see one means
+male here you can see
+we gave married the gender male equals
+to one then female is zero so this is
+this ID is male ID right then 01 we have
+all gave here like 0 1 01 right if the
+guys graduate so one not graduate so
+zero same employed is yes or no like
+that right so now we'll do the train
+test split okay for that I will write
+from SK SK learn
+do model
+selection
+import
+train
+test split then from
+Escalon dot
+linear model
+import logistic
+regression okay then I will write
+fromal done
+import Matrix
+okay run
+it so here I will assign X = to DF do
+iog then 1 ratio 542
+rows then from 1 to 12 columns dot
+values then y equals to DF do iog that
+same
+okay 1 to
+542 row then col dot
+values okay so here I will do X train
+comma
+X test comma
+y train comma y test equ
+to
+train
+test
+split then X comma y
+comma test size equals to 0.3 0.3 means
+70% will be the training data and the
+30% will be the testing data right
+random State equals to Z got it so now
+let's do the logistic regression let's
+apply models to
+logistic
+degression then model dot
+fit X train comma y
+train then
+LR _
+prediction equals to model do predict
+then X test right then print logistic
+regression accuracy equals
+to comma
+metrix dot
+accuracy
+underscore score then I will write here
+L
+predictions comma
+y test right so as you can see we have
+the accuracy of almost 79% or you can
+say 78% right so now let's see the
+prediced values so for that
+print y prediction predicted
+value values comma LR
+prediction okay then
+print y
+test
+comma Yore
+test so as you can can see so these are
+some predicting values like one means
+that guy or girl have the loan okay loan
+status is yes loan prediction status is
+yes then zero means no right and the
+testing we did the here zero okay the
+predictor value is one right so these
+are some prediction values and the
+testing values so this is how you can do
+loan prediction using logistic
+regression okay so we have come to end
+of this video if you want this full code
+you can comment down below and if you
+want this file loan file so you can
+check out from the description box
+below and if you have any queries so
+please comment down in the Box we will
+reach out to you as soon as possible
+thank you for watching the video please
+do like share and subscribe thank you
+and keep learning with simply Lear
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

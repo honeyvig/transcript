@@ -1,0 +1,589 @@
+hey traders this is matthew from
+pinescript mastery welcome back to
+another pinescript video lesson
+in today's video i'll be showing you how
+to detect candlestick patterns while the
+rsi is overbought or oversold
+now the techniques shown in this video
+can be used with any type of market
+condition
+so you could use stochastics emas
+bollinger bands you name it
+so i hope you find it helpful and let's
+get started so first things first
+all i've done here is add the rsi to my
+chart so that we can see what the value
+is when we're working with our script
+and all i'm going to do here is open up
+the panscript editor and we just have a
+blank script here all i've done is
+change the title and short title
+and we've set overlay to true because we
+want this script to draw over the top of
+price action
+not into its own box like the rsi does
+here
+so let's get started the first thing i
+like to do as always
+is get user input
+and in today's video we need three
+different values from the user
+we need to get the rsi length that they
+desire uh the next value we need is rsi
+overbought and i'm going to use an input
+type
+of float here because that just gives
+the user a little bit more
+flexibility and control over the value
+so instead of just setting it to 80 or
+70
+let's set it to 70 by default uh they
+could set it to 70.5
+70.1 you get the idea so that i like to
+just give my users as much control as
+possible over
+my scripts but of course you could hard
+code these values if you wanted to
+and just put a 70 there instead it's up
+to you
+but it's always good practice to give
+your user as much control as possible
+next up is rsi oversold level and i can
+just copy this line of code here
+paste it in there change this to
+oversold
+change this to 30. and that's all the
+user inputs we need
+for this particular script the next
+thing we need to do is get our actual
+rsi values and our
+trading conditions so in this case we're
+just checking if the rsi is overbought
+or oversold
+or in other words if the rsi value
+exceeds 70 or 30.
+so that's quite easy to do all we need
+to do first of all is get the rsi value
+so we use the inbuilt function rsi and
+we pass
+it a price source so in this case we're
+just going to calculate the rsi based on
+closing price
+like the normal rsi would and we're
+going to pass it our rsi length
+from the settings menu so that our users
+can adjust this if they
+desire next up we need to check
+our rsi value against our rsi
+overbought and oversold levels so first
+of all let's create a new
+boolean variable called rsi bullish
+and this is going to be set to true only
+if the rsi
+value that we just got here
+is less than or equal to our rsi
+oversold level because we want to be
+buying
+when price is overextended to the
+downside and selling when it's
+overextended to the upside
+so this will check the current candles
+rsi value
+but we also need to check the previous
+candles rsi value
+because there will be occasions such as
+in here
+where notice the rsi goes overbought
+on this bar but if the next bar was a
+bearish engulfing candle for example
+and that's the setup we were looking for
+then the script will not detect it as
+valid because the rsi is no longer
+overbought so we need to check is the
+current candle's rsi value
+oversold or was the previous
+candles rsi value oversold
+if either of these two conditions are
+met then
+we can begin looking for our entry
+candlestick
+setup pattern and in today's example
+we're just going to be detecting bullish
+and bearish engulfing candles just
+because they're
+relatively simple to detect and the
+concept can be applied to any
+candlestick pattern
+so it really doesn't matter what we
+detect here and at the end of this video
+i'll show you where you can get the code
+for detecting other candlestick patterns
+if you want to use different candlestick
+patterns
+but first of all let's copy this line of
+code here paste it
+in there rename this to rsi bearish
+and we need to flip these operators
+around so now we're checking
+is the rsi greater than or equal to our
+rsi
+overbought threshold
+and that's it we are now detecting the
+rsi value
+and our trading conditions the next
+thing we need to do
+is detect our candlestick
+so as i said we're detecting bullish
+engulfing candles and bearish engulfing
+candles
+so in the case of a bearish engulfing
+candle we want to detect if the current
+closing price is less than or equal to
+the previous candle's
+opening price and did the previous
+candle
+close as a bullish candle that's all we
+need to know in order to detect
+bearish engulfing candles so let's go
+back to the editor and we'll write that
+out in code
+so for a bearish engulfing candle we
+need to check is the current
+closing price less than or equal to
+the previous candles open price and
+did the previous candle close greater
+than
+its opening price or in other words did
+it close green
+or bullish and then we need to do the
+same thing for bearish candles
+so it's just the opposite here we want
+to detect
+if the current candle closed
+higher than the previous candles open
+and did the previous candle
+close bearish so we need to know so
+did the current candle close greater
+than or equal to the previous candles
+open
+and did the previous candle close lower
+than it's open
+done so we need to do in order to detect
+bullish and bearish engulfing candles
+now obviously you could optimize this
+you could
+only search for swing low engulfing
+candles
+or swing high bearish engulfing candles
+you could take the size of the candle
+into consideration
+you could check if it closes above the
+previous candles wick
+or below in a bearish example and this
+will affect
+the efficacy and accuracy of your script
+if you're using it to trade so there's
+just some ideas to play around with we
+won't do that in this video because it
+just takes too long to go over
+and i want to keep this video as short
+and to the point as possible
+and if you need help with this i have a
+free basics course over at
+panscriptmastery.com
+where i go into great detail about how
+to do this sort of thing
+but anyway let's get back to our code
+and now that we have our candlestick
+patterns detected
+we need to detect valid trading
+setups so we need to combine these two
+conditions we need to check is our rsi
+overbought or oversold
+and did we get a bullish or bearish
+golfing candle
+so i'm going to create a new section
+code here and i'm going to call this
+section
+detect trading setups we're going to
+have a bullish
+setup and a bearish setup
+now the bullish setup is simply going to
+be is
+our rsi bullish condition met
+so is rsi oversold and
+did we get a bullish engulfing
+candlestick pattern simple same with the
+bearish setup was our rsi bearish
+set to true and did we get a bearish
+engulfing candle stick pattern and
+that's it
+we're pretty much done now we just need
+to draw this information to our chart
+so let's do that now draw data
+not dara draw data to chart
+so we're going to use the plot shape
+function here we're just going to draw a
+down arrow a red down arrow above
+bearish setups and a green up arrow
+below
+bullish setups so we're going to use a
+plot shape function
+and now you could just pass bullish
+setup
+into here and that would work just fine
+but i prefer to do it a little bit
+differently i like to use a conditional
+statement in here
+and i like to say do we have a bullish
+setup
+question mark if so then i want to plot
+one
+otherwise i want to plot n a or not a
+number
+not applicable and this will make
+more sense when we finish writing this
+code i'll show you exactly why i do this
+in here but you don't have to if you're
+not used to conditional statements you
+don't understand them you don't want to
+use them
+just get rid of this part here next up
+we need to give it a style
+which is a shape so if you type shape
+dot
+control space or command space if you're
+on a mac
+this will give you your list of shapes
+you can choose from
+so in this particular case i want to
+just go with arrow up and arrow down
+so for bullish setup we want to use
+arrow up
+i want to give it a color of color dot
+green since it's a bullish
+setup we need to set the location
+to location dot below bar
+because we want this arrow drawing
+underneath the bars not on top of them
+otherwise it won't
+look right then finally it's a it's good
+practice
+to title your plots you don't have to do
+this this is
+completely optional but it'll make sense
+why
+this is a good idea when we're finished
+writing out these two plot shape
+functions
+so let's paste that down there
+and change this to bearish setup change
+our shape to arrow
+down our color to color.red
+our location to above bar since it's a
+bearish setup we want it above the bar
+pointing down
+change our title to bearish now we can
+get rid of our plot close function
+every script needs at least one plot
+call in it
+and now that we have our plot shape
+functions written out we don't need this
+anymore
+so now i can save the script should
+compile without any errors there we go
+i can click add to chart and we'll now
+be detecting
+candlestick patterns bearish and bullish
+engulfing candles
+whenever the rsi goes overbought
+or oversold very simple but extremely
+effective
+and this is just the beginning once you
+master these techniques you can apply
+them to any indicator
+any candlestick pattern you can layer
+them on top of each other
+you could compare multiple time frames
+you could look for divergences
+in price action versus your indicator
+values
+you could draw your stops and targets
+using the atr
+indicator and automatically calculate
+all that information
+for you basically the possibilities are
+limitless within
+the pine script framework once you
+master these techniques
+so i'm just showing you the basics today
+if you want to take this stuff to the
+next level then again head over to
+pinescriptmastery.com where i have a
+bunch of lessons covering
+how to make profitable strategy scripts
+and how to create your own trading tools
+to assist in your trading process
+and before we finish this video i'll
+show you how to add alert functionality
+to this script
+so you can get an sms or push
+notification alert whenever these
+types of setups are detected by your
+script and then it's like having a
+second pair of eyes on the markets
+at all times you can leave your computer
+and rest assured that you'll get an
+alert sent to your phone
+whenever a trading setup is detected it
+can save an immense amount of time in
+your trading process
+once you write a script to assist in
+your own trading but before we continue
+let me demonstrate why i put this
+conditional statement in here
+if you hover over a candle that does not
+have
+a signal on it you can see here it has n
+a
+in red this is our bearish setup
+plot so when the script does not detect
+a trading setup it just draws n a up
+here
+if i remove this conditional statement
+and i save the script
+now you see when i hover over any candle
+that does not have a bearish setup
+we get 0.000
+drawing to our chart and this will draw
+as many zeros
+as there are decimal places on your
+price scale
+and now for a small script like this
+that's not a that's not an issue
+doesn't really matter but if you're
+writing a long and complex script that
+has
+dozens of plots you can have numbers
+stretching across your entire chart
+which obstructs your chart it just looks
+messy
+of course you can come up into the
+settings menu and go to status line and
+turn off
+indicator values and that will remove
+those numbers
+but i like to leave them on because
+quite often i rely on these numbers
+to inform my trading process so that's a
+little trick that i learned
+to do is just using this conditional
+statement if i save the script now
+you'll notice that when we hover over a
+candle that has a
+setup detected we're drawing 1.000
+but when we're over a candle that
+doesn't we're just drawing n
+a and as i just mentioned if you have
+over a dozen plots
+on your chart which some scripts do this
+can save a lot of space
+in your indicator values section now
+finally
+let's add alert functionality to this
+script
+so i'm just going to create a new little
+section a new
+single line of code here and we're just
+going to call the alert
+condition function now you can only call
+this once per script
+so we need to combine our setups into
+our alert condition
+but that's really easy to do all we need
+to do is type in here
+bullish setup or bearish
+setup comma
+so this is our condition so you could
+also write here condition
+equals condition is set to bullish setup
+or bearish setup if either of these
+variables are true
+then an alert will be triggered and then
+finally this
+condition this alert condition requires
+a title
+so we'll just call this rsi setup alert
+and it requires a message so i'm just
+going to say rsi
+trading setup detected for
+and then i'm going to stick in here my
+ticker
+so this ticker placeholder will be
+replaced with whatever symbol
+i'm on when i set the alert so that's it
+save the script
+we now have a functioning rsi
+exhaustion detection script that is
+detecting bullish
+and bearish engulfing candles
+whenever the rsi exceeds 30
+or 70 and we get a bullish or bearish
+engulfing candle
+you can come up to the settings menu you
+can change these values so i could
+change this rsi
+length and these rsi
+thresholds and that will adjust how many
+setups are detected
+and accuracy of those setups obviously
+and if we come up to the settings menu
+we go to style
+because we named our plots in our script
+we can change the color
+of these symbols that are drawing onto
+our chart
+we can change the shape of them and
+where they are placed so that's why i
+always recommend
+to title your plots whenever possible
+so that's it for today's lesson finally
+before i let you go i just want to
+quickly show you
+how you can quickly and easily get the
+source code
+to detect other candlestick patterns if
+you want to replace this bullish
+and bearish engulfing candlestick
+pattern with a different candlestick
+pattern
+so if you come up here to your
+indicators
+and strategies button click on that
+you'll see a new section that was added
+here recently
+called candlestick patterns and this is
+created by the trading view team
+and if you click on this there's a list
+here a long list
+quite a long list of various candlestick
+patterns
+so i've actually never heard of an
+abandoned baby candlestick pattern
+but hey if it works it works
+so let's go with doji let's keep it
+simple i mean you could
+check any of these candlestick patterns
+here but just for this example we're
+going to go with doji so if i click
+on that script it'll add it to my chart
+and now it's detecting
+doji candles all over my chart
+so if i wanted to use these candlestick
+patterns
+in my rsi script all i need to do is
+come up here
+click on the source code button of this
+candlestick pattern script and that will
+open up the source code
+of that candlestick pattern now some of
+these candlestick patterns are way more
+complicated than they need to be
+but this can help you learn how to
+detect some of these
+candlesticks now to be honest with you
+these scripts are insanely over
+complicated
+you do not need this much code in order
+to detect
+a doji candle i'm not entirely sure
+why the trading view team went and made
+these
+scripts so convoluted but i guess
+they're just showing off
+various ways you can use pinescript in
+order to detect
+certain patterns in the market but if
+you go through these scripts and you
+analyze what they're doing here
+you should be able to find a simple way
+to convert this
+into a couple of lines of code and then
+you come up to
+the source code of this rsi script and
+you just paste that code into here
+and rename your candlestick patterns and
+then all you need to do is check
+the rsi conditions and then check if
+you are detecting your various
+candlestick patterns now if you want
+help with this
+i have a course where i go into quite a
+lot of detail about how to detect
+various candlestick patterns
+and they're a lot a lot lot simpler
+than these inbuilt trading view scripts
+so here's
+my password mastery course here
+we come down to the candlestick patterns
+section there's a
+couple of very basic candlestick
+patterns in here but they're so much
+more simple
+than the inbuilt training view scripts
+and let's go with
+let's say hammer and shooting star
+candlestick patterns
+so here's a video lesson on how to
+detect these patterns but if i just come
+down here
+and i just copy this section of code
+here we go back to
+our rsi script and now we can remove
+this ridiculously
+complex doji script open up our script
+come down to our candlestick patterns
+section and here i'm going to just add a
+new section just
+so that we don't need to delete this
+i'm going to say detect hammers and
+stars
+paste that code in there and now i can
+copy
+hammer candle over our bullish engulfing
+candles
+and star candle over our bearish
+engulfing candle pattern
+save the script and now the script will
+only be detecting
+bearish shooting star candles and
+bullish
+hammer candles whenever the rsi is
+overbought or oversold
+such as in here so you can see there
+long wick to the downside and
+a smaller body on top than the wick
+you can obviously adjust these uh
+parameters
+for your candlestick patterns in the
+codes quite easy to do
+but that's the end of this lesson i hope
+you enjoyed that i hope you found that
+interesting and informative i'll be back
+soon with new
+free instructional videos but if you
+can't wait for that head over to my
+website
+and check out the free course because
+there's a few things i cover in there
+that i haven't covered on youtube
+and if you're new to pinescript then i'm
+sure you'll find that information
+really valuable and helpful in your
+coding journey
+that's it for today thanks for watching
+thanks for your time
+and i'll see in the next video have a
+great week and good luck with your
+training
+take care goodbye

@@ -1,0 +1,478 @@
+High trade is back with another part
+script video in today's video we're
+going to be revisiting debugging in
+pinescript so today's video is going to
+be a bit of a recap on the previous
+debugging video but I still think you'll
+find it extremely valuable so stick
+around even if you watched the previous
+video we're going to cover some new
+things that I didn't cover in the
+previous video and the script I'm going
+to show you today is really really cool
+it's an extremely valuable tool so a
+couple of weeks ago I released a video
+on my channel exploring various methods
+for debugging your scripts and one of
+these subscribers to my mailing list
+sent me an email thank you Justin making
+me aware of this really incredibly
+valuable tool created by a plan script
+coder who goes by the name he who must
+not be named and obviously a Harry
+Potter fan and he's written this script
+that creates a logging feature so what
+you see down here is a print log and
+this is printing text onto my screen
+much like the pinescript editor does
+down here now if you haven't watched my
+previous video on debugging I highly
+recommend it because we do cover some
+interesting and useful techniques in
+that video as well but in this video I'm
+showing you a much quicker way to go
+about debugging things such as for loops
+and using this new script that Justin
+sent me or made me aware of we can now
+much more easily debug things like for
+Loops now before we begin I want to
+address something that I said
+incorrectly in the previous debugging
+video I mentioned how it wasn't possible
+to plot data onto the chart without it
+showing up in the status line so this is
+the status lineup here and I mentioned
+that if you want to display things in
+the data window here you have to plot
+the numbers onto your chart with a title
+but the plot will show up on your status
+line which is annoying when you have a
+lot of plots because these status line
+numbers can plot right off your chart
+well a subscriber to the channel waldus
+I hope I pronounced that correctly made
+me aware of this feature that I somehow
+missed last year it's been in PostScript
+for a year so I apologize for that I had
+I some now missed this these release
+notes from July last year where you can
+actually specify where you want your
+plots to display which is really cool so
+let's just quickly cover this before we
+move on because this is uh important on
+the subject of debugging so let's say we
+want to display our plots everywhere
+except on the status line so now we can
+use this new display.all minus the
+display dot status line and this will
+display the plots information every
+everywhere except in the scripts status
+line which is amazing so let's go do
+this really quick let's open up the
+source code if you're not familiar with
+this script this is the script I worked
+with in the previous lesson where I
+introduced you guys to a brand new
+feature of panscript called Methods so
+go and check out how to use methods in
+pinescript that video there'll be a link
+in the top right here somewhere to that
+video If you haven't seen it but the
+script we used for today's lesson is not
+important you can use any of your
+scripts and code along if you want to
+but anyway let's scroll up to where I
+plot my information let's say we want to
+see this data in the data window but we
+don't want it drawing onto our chart
+which in this case we don't because this
+is drawing EMA values from different
+markets and we want to see these EMA
+values in the data window but we don't
+want them plotting onto our price chart
+so we can now use the new display equals
+if I paste that code in there I copy
+that and paste it on the rest of these
+plots save my code this is the first
+time I'm doing this I hope it works
+there we go it's no longer drawing in
+the status window so that's how we plot
+data onto the chart without it
+displaying in the status line but also
+displaying in the data window if we only
+want the data to display in the data
+Windows such as in this case where we
+have these EMAs we don't want them
+plotting on our chart we don't want them
+plotting into the status line but we do
+want them plotting here to achieve that
+we can change this to display equals
+display dot data window and now if I
+copy this and paste it down here save my
+script these plots should disappear from
+here and here but still remain in the
+data window there we go amazing thank
+you so much welders for making me making
+me aware of this feature I'll be using
+this a lot in the future for sure one
+final thing I also want to mention
+before we move on is that when you're
+debugging scripts you can also use alert
+functionality so just add alerts to your
+script that send a string either to your
+email or just in the alert window and
+then you can actually copy and paste
+that string if you need to do something
+with the data outside of trading View
+and finally one other thing you can do
+that I forgot to mention in the previous
+debugging video is export your chart
+data to an Excel spreadsheet that will
+include all of your plot values for each
+candle now this feature is only
+available for premium subscribers to
+trading views platform but if you open
+up this menu here and come down to
+export chart data and click export there
+you go you have an Excel spreadsheet
+with all of our different EMA values
+this is another tool we can use for
+debugging what our script is doing on
+each candle so with all that out of the
+way let's get to the core of today's
+lesson where I will introduce you to
+this new logging library that was
+created by he who must not be named so
+here is the published script on
+tradingview leave a link below in the
+video description to this script it's
+really easy to use you can see down here
+that it's got several different levels
+for each message so you have just
+general info you have warnings errors
+fatal errors there's also trace and to
+use this script is really really easy we
+just need to copy this code here jump
+into our script and then I like to do
+this at the top of my script you don't
+have to you can paste this in anywhere
+but I recommend doing it at the top of
+your script just so you know
+uh what libraries your script is working
+with now I've covered libraries before
+on the channel but not for quite some
+time so I'll quickly explain what we're
+doing here we're importing he who must
+not be names logger library and the
+version is one now he's updated the
+script to version two so I'll change
+that one to two and he's giving this
+Library an alias of L that's not a one
+that looks like a one but it's Ashley L
+short for logger so I'll just change
+this to log real quick so it's a little
+bit easier to read and then he's
+creating a VAR persistent variable
+called logger and this logger is set to
+log Library Alias dot logger type dot
+new so we're creating a new logger type
+and then this logger type has some
+methods included in it the first one is
+init so we need to call this before we
+do anything with this logger and this
+will initialize our logo window that
+we'll draw down here in the bottom right
+and we're good to go so before we start
+logging things onto the chart I'll just
+go over the different parameters we have
+to work with with this script or Library
+so the first parameter here is position
+this is where to draw the table or the
+log they may have page size so that's
+how many strings or lines of text draw
+in this table then we have Max entries
+that's the maximum number of entries we
+can have in our logger then we have page
+number I'll go over what that is once
+we're logging things onto the chart then
+we have text size text color show only
+last means do you want to display the
+logger only if we're on the final bar
+about chart then we have minimum level
+so this specifies the minimum level of
+log to show on our chart so you can see
+here in this example we're setting the
+minimum level to debug so the logo will
+only show messages that have a priority
+of debug or higher so if we go back to
+the page here we have Trace debug info
+warn error and fatal so if we set the
+minimum level to debug then we're not
+going to see any messages that were
+using the trace method we're only going
+to see these ones and if I set it to
+infos the minimum level then we'd only
+see info and down so that one's pretty
+self-explanatory then we have real time
+which means is the logo being drawn on a
+real-time bar or not this should be set
+to true if we're dealing with an
+indicator like in our case and it should
+be set to false if you're working with a
+strategy script and these final two
+parameters here we don't need to touch
+these will be created by the library
+script when we call them our new
+function here or method so let me get
+rid of this for now and let me show you
+how to log something so I'll just right
+here test log
+logo Dot and now when you import a
+library and you use the dot notation so
+you write out your type here and then at
+Full Stop control space this gives you
+the list of methods we have to work with
+and there aren't that many it's a really
+nice lean efficient Library script it's
+no wonder that he who must not be named
+is in the Pines script is Hall of Fame
+he's a great scripter right it's really
+clean really efficient code that is
+really powerful now for some reason it
+doesn't list the different methods here
+we have for actually logging so let me
+copy this and paste this in here and
+I'll save my script let's have a look at
+what happens down here there we go we're
+getting some test logs drawing now for
+the most part I doubt you're going to
+need to use all of these different Trace
+levels it's a great feature to have most
+integrated development environments most
+advanced scripting environments will
+have these different levels to work with
+I imagine that's why the author included
+all of these but you don't need to use
+them all you could just use info if you
+wanted to or whichever one you find
+easiest to read color otherwise so if I
+get these get rid of these and I just
+say this is a test log save my code now
+you can see this message down here so
+the First Column here this first number
+is the index of the log string so it'll
+start from zero and count upwards from
+there the second number here is your bar
+index the bar index to this table is
+drawing on or this log message was made
+on then we have the date and time if
+you're on a lower time frame so if we go
+down to a one hour chart it will also
+show the bar time the open time of the
+bar that we're on and then we have our
+Trace level here and then the message
+the string that we want to write onto
+the chart so you can already see just
+how powerful this is with four lines of
+code we are drawing whatever text we
+want onto the chart from anywhere in our
+script we could be using this function
+inside our for Loop to print out what
+our for Loop's doing we could have it
+inside a method a custom function inside
+if statements and conditional statements
+it's a really versatile and Powerful
+feature to have in your scripts
+especially complex scripts that have a
+lot of moving parts and you want to
+track what your script is doing and
+ensure that it's doing what you intend
+it to do and if it's not you can use
+this logo to isolate the problem and
+reverse engineer what the bug is so
+before we continue let's try something
+really quickly Let's uh log
+logo.info bar index equals uh actually
+we already know the buyer index on the
+logger let's say bar open equals and now
+we still need to use the string.to
+string Library method to convert numbers
+into text when when using this logger so
+keep that in mind now when I save this
+code let's have a look at what the
+logger does so what's happening here is
+the logger is only running on the last
+bar on our chart on the current
+real-time bar or the final historical
+bar if the market is closed and so we're
+only printing One log to the logger but
+if I change this parameter here the show
+only last equals false now we're not
+using the logger only on the final bar
+now chart if I save my code now with
+this parameter set to false this logger
+dot info method will be called on every
+bar on my chart and so when I save my
+code now we should be getting a fully
+populated logger array full of text from
+every bar on my chart there we go so by
+default we have 10 is our page size so I
+can change that if I want to let me
+change this to page size equals 20. now
+we should have 20 messages drawing into
+our logo like so counting from 0 all the
+way to 19. now the logo will show the
+most recent message that went in first
+so 0 will be the most recent bar open if
+you want to see a few bars back you can
+specify the page number so if I set page
+number equals 10. now we'll be
+displaying the logger from 10 pages ago
+so 200 bars ago until the 219th bar so
+if you're debugging a bar you know 200
+bars ago that's a count back 200 bars
+200 if I put a vertical line there and I
+hover my mouse over this bar you can see
+the open price there zero six two four
+two zero six two four two so this is how
+you can debug information in the past so
+if your script's doing something funky
+200 bars ago you can just do some quick
+math to figure out how many pages back
+you need to go with this logger and you
+can see what your script was doing then
+so just a couple more things before I
+wrap up this lesson let's demonstrate
+how to display an error message so let's
+say our script let's say this EMA array
+should have seven elements in it and if
+it doesn't we want to be notified that
+there's a problem this is just an
+arbitrary example but let's say that if
+EMA array dot size is not equal to 7
+then we want to print an error
+that says EMA size not equals seven size
+equals and then I can copy that into
+here save my code and now we'll be
+getting an error message
+um on every bar on our chart because
+this if statement will be true on every
+bar in our chart but if it wasn't then
+we'd get our message in here so let's
+say and bar state DOT is last and let's
+add in a couple of uh regular info
+messages test info
+save my code let me get also get rid of
+these two parameters here and now you
+can see that on the last bar in our
+chart we got an error message drawing
+and you can see these two bar indexes
+are the same so we're drawing test info
+or logging text info on every bar in our
+chart but if there's an error on the
+last bar on our chart that also draws
+into the log and yeah hopefully you can
+see how powerful and useful this feature
+is a couple more things let's do a debug
+message so let's come down to our for
+Loop so inside this for Loop let's say
+we want to check what this for Loops
+doing so first of all let's get the I
+index from our first for Loop so I can
+say I plus string dot two string I
+and then let's also get the J index of
+our second for Loop so J plus string dot
+two string J
+um and I'll change this to debug just to
+demonstrate the different levels and
+then I'm going to split this onto a new
+line here
+and I'll say Swap and let's just put in
+some values here let's say we're
+swapping I with the element at J now
+this for Loop if you're not aware is
+sorting our array so we need two for
+Loops to cycle through all of the
+elements in our array and swap whichever
+ones are not if we're sorting in
+ascending order we want to swap all the
+elements so that the smallest values are
+at the top and the largest values are at
+the bottom so here I can say we are
+swapping Source array dot get whoops
+I dot ticker with
+Source array dot get
+J dot ticker and now I need to move this
+debug message above the part where our
+script actually swaps these elements
+otherwise this information will be
+incorrect so before we swap the elements
+we log this to our logger so now if I
+save my code this should compile there
+we go and now the debug message isn't
+displaying here so I think I might need
+to change minimum
+level equals trace and there we go so by
+default the debug message level is
+hidden so you need to set minimum level
+to trace if you want to see all of the
+different log levels and now we can see
+what our for Loop is doing um let me get
+rid of show only last because right now
+this is logging every for Loop for all
+the bars on our chart and this looks a
+bit messy so let's just see what it's
+doing on the final bar on our chart
+let's get rid of that let's also add in
+some EMA values here so that we can
+actually see what values are getting
+swapped around so I'll put in Brackets
+here string dot two string
+Source array I dot EMA value with and
+then let's swap this onto a new line and
+close that off and then add on this and
+I'll just copy this code here and change
+this to J
+save my code and now we should be
+getting less information because we're
+only debugging the final burnout chart
+and we're getting the EMA values as well
+now we're getting a lot of decimal
+places too I'm not going to show you how
+to format strings in today's lesson
+because I've covered that in previous
+lessons and it's not important for today
+but anyway you can now see that the for
+loop I index 0 and the for Loop J index
+3 has swapped euro dollar with this EMA
+value here with New Zealand dollar and
+this is a lower number so it's swapped
+the position in the array of euro dollar
+1.06 as the EMA value with a smaller EMA
+value and has done that for all of the
+elements in our for Loop and so our for
+Loop was doing something we didn't want
+it to we could read this text here and
+see what's going on anyway I'm trying to
+keep this video short because this isn't
+exactly rocket science you can go and
+play around with the script yourself
+it's very easy to use as you can see
+only three lines in order to get it into
+your script and then once it's in your
+script you can just use the logo.info or
+whatever other level you want to write
+write some debug text and see what's
+going on under the hood of your script
+so I hope you found this video helpful
+and valuable and interesting if you did
+please hit the Subscribe button it
+really helps the channel out a lot if
+you're not subscribed if you are
+subscribed thank you so much for being
+part of this family I really appreciate
+it I love you guys uh I wish you all the
+best with your trading and your coding
+and I'll speak with you in the next
+lesson as I said links to this script
+will be below take care

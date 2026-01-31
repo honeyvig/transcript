@@ -1,0 +1,398 @@
+hey traders in this lesson i want to
+show you guys how to create a regime
+filter
+in pine script
+so the concept of a regime filter is
+that you get a key moving average from a
+key index
+so in this case i have alphabet inc or
+google the google stock loaded onto my
+chart from the nasdaq exchange and down
+here this colored indicator you see is
+telling me whenever the 20 period
+daily chart
+ema is above or below price action so
+when the nasdaq index is trading below
+its 20-day moving average this turns red
+and basically what this means is if
+you're trading any stock within the
+universe of the nasdaq index perhaps
+it's a time to be cautious because
+the index is not looking healthy right
+now so maybe if you are a long only
+trader you want to stand aside when this
+turns red or if you're a short trader
+you like trading stocks to the short
+side waiting for this to turn red could
+be a good indication
+that perhaps there is a pullback
+imminent in the market this is a popular
+trading filter for investors
+particularly but it can be used for
+traders and day traders as well but for
+today's lesson i'm going to stick to the
+higher time frames and treat this as
+something of a
+investment filter this is something i
+use and employ my own investment
+strategies in some of them especially in
+the stock market and i'm excited to show
+you guys how to code this in pine so
+let's get started so here i am with
+almost a blank script all i've done is
+add some user inputs here to save time
+we're only getting three inputs here
+we're getting a time frame to base our
+regime filter on we're getting a moving
+average length 20 by default and the
+time frame is daily by default and then
+a market or symbol
+in this case we're just loading the
+nasdaq index by default and to do this i
+use the time frame input the integer
+input and the symbol input if you're not
+familiar with these make sure to go back
+and watch the user input lesson earlier
+in the course material because now i'm
+just going to move on
+and start building out our regime filter
+so the first thing i do in this
+particular script is i actually create a
+custom function
+a custom security function just to save
+a little bit of time and make our code a
+little more readable and my function
+looks something like this i started with
+an f underscore so that we know it's a
+function and then i just call this one f
+underscore sec which is short for
+security
+and this is going to be a
+abbreviation
+of the security function which will make
+it a little bit faster and easier and
+more readable when we reference our
+security function in this particular
+script
+so this custom function is going to take
+three parameters
+a market a time frame resolution
+and an expression
+so i need to define the function using
+our operator here the equals right arrow
+and then this function is going to pass
+these three values into our request dot
+security function and we need to pass in
+our market first and then our time frame
+and then our expression
+but for our expression i'm also going to
+pass in our
+anti-repainting code the code that stops
+our script from repainting on the
+current bar
+on the current real time bar
+and that is our bar state
+dot is real time question mark
+1 otherwise 0.
+so this expression will reference the
+previous bar
+the previous higher time frame bar so in
+this case if we would use this function
+to reference the daily chart on this
+index
+and the current bar happened to be a
+real-time bar that was actively moving
+then we would reference yesterday's
+nasdaq closing price or whatever
+expression we put in here otherwise if
+it is not a real-time bar and it is a
+historical bar then we just reference
+the current um expression or closing
+price
+indicator value whatever
+on that historical bar
+and this stops repainting this stops the
+script from
+drawing from updating our expression on
+the current real-time bar we always want
+to reference yesterday's price action on
+a real-time bar because whatever
+expression we are passing in has not
+been confirmed until today's bar closes
+obviously there are exceptions to this
+sometimes you do want to reference the
+current days high or low or closed
+but for this script we do not want that
+so that's what this code does moving on
+we need to get our ema value to do that
+i just create a new variable called ema
+and i'll set this to ta.ema
+with a default source of the closing
+price and our length input as our period
+length for this moving average
+and then next up we need to get our ema
+value from the higher time frame to do
+that i use my custom function here the f
+underscore sec
+open up my parentheses and then i need
+to pass in the current market
+or the market setting that we have
+and the time frame so res
+and then an expression so in this case
+we need to pass in our ema value
+and now because i've already included
+this
+historical operation here this ternary
+condition that checks if we are dealing
+with a real-time borrower or a
+historical bar i don't need to do that
+here i can just pass in the ema value
+that's why i created this custom
+function it makes our code a little bit
+tidier and now the next thing we need to
+do is check if price is above or below
+our ema filter
+on the
+market that we are referencing as our
+regime filter
+so the first thing i need to do is get
+the current market price
+for that we are going to use the f
+underscore sec function again pass in
+our market our resolution but this time
+we want to pass in the closing price
+so this will get the closing price of
+the given market on the given time frame
+then we need to create a new boolean
+value here or variable called filter
+and this will be set to
+is the market price greater than our ema
+value
+so is the closing price on our given
+market on our given time frame trading
+above our ema value for that same market
+and time frame if that's true then our
+regime filter will be set to true
+and now the final thing that is left to
+do is to change the background color of
+our chart based on our regime filter so
+if price is above our given moving
+average we want the background to be
+green otherwise we want it to be red so
+let me change our plot to a bg color
+function then we simply need to check is
+regime fill to true
+if so set the background color of our
+chart to green
+otherwise if our regime filter is not
+true then we want to set it to red now
+when i save my script we should be
+getting
+the colors changing on the background of
+our indicator
+based on whether the current index
+filter is met
+so if i go over to
+nasdaq
+ndx
+and open that up
+here is our nasdaq index if i throw on
+an ema
+and set it to our 20 period you can see
+that the filter changes color based on
+where the price is trading below this
+moving average
+or above this moving average and this
+applies to any market we load so
+if we load google
+it's not checking if google's price is
+above the 20 period moving average it's
+checking if the index the overall index
+is above its average so this can be a
+great indication of impending trouble so
+you can see here that
+our indicator went red right on this bar
+here and soon after this happened
+price consolidated for a while and then
+we started to get green printing back on
+so the index started to look a little
+bit more healthy on this bar right here
+so that could be a key sign to start
+paying attention for a potential
+breakout of this consolidation
+then we get more green here you could
+start accumulating a position here
+expecting
+google which is a major player in the
+nasdaq obviously you could use this
+filter to inform your investment
+decisions you could start accumulating
+here so long as this stays green most of
+the time and then eventually we start to
+get the breakout so if you're aggressive
+you could start buying in here as the
+indicator starts turning green
+and price is holding the lows
+or you could simply wait for
+the breakout which happens right here on
+this gap up our filter regime filter is
+nice and green meaning the nasdaq is
+looking healthy overall google has
+broken out of this consolidation can
+start buying on this day here
+in anticipation of a nice run
+in price action and our regime stays
+green all the way up until this bar
+right here so notice that price action
+is still trading above its
+20 period moving average on this market
+so google is looking good
+but suddenly the nasdaq the overall
+health of the market turns a little bit
+sour this could be a great position to
+trail your stop-loss up nice and tight
+just in case the market does roll over
+or you can start scaling out of your
+position however you like to invest or
+trade and then you can see that soon
+after this turns red we enter a pullback
+period
+and then we get another green
+regime change here on this gap up above
+the moving average on this time frame
+and then a couple of days later we get
+signs of health coming back into the
+market if you wanted to you could buy a
+breakout of this high if the regime
+filter stays green
+which it does here we get the breakout
+the close above this previous high
+and then our filter is green and it
+stays green for quite some time now of
+course you are going to get the
+occasional false signal there are ways
+to improve this filter
+for example just because one bar closes
+below the moving average doesn't mean
+that the market has turned sour i could
+simply be testing the moving average so
+one way you could improve this filter
+and get rid of some of these false
+signals is you could open up the source
+code here we could say here is the
+current market price trading above its
+20 period moving average
+or
+was the market price
+on the previous bar trading above its
+key moving average now when i save my
+code these false signals should go away
+there we go we have a little bit of a
+cleaner filter here so now the color
+will only turn red if we've had more
+than one bar so we've had two or more
+bars
+close below the moving average on our
+regime filter market
+and that is pretty much it for this
+script and this lesson uh just before we
+go i'll quickly show you how you could
+apply this to crypto so let's jump over
+to
+one of my favorite projects kedano
+open this up
+and change our market
+wrong indicator this one change our
+market to
+uh bitcoin index which is i believe blx
+yeah bitcoin liquid index and let's
+change the time frame to the 20 week
+moving average that's a filter i like to
+use in my own trading and click ok if i
+zoom out a bit
+you can see that during this entire
+period bitcoin was trading above its 20
+period weekly moving average and the
+market was healthy pretty much through
+this whole period it was a little bit
+slow through here but this was just an
+accumulation phase
+and then eventually we turned red
+right here
+now it is obviously a little bit late
+it's a little bit of a lagging signal
+but the point of this is you'll never
+know when the top is going to come in
+the markets so maybe you scale out as
+price starts to
+get a bit exponential you sell some of
+your position up here and then after the
+crash
+we go red
+you don't buy any more of your favorite
+cryptocurrency until
+bitcoin starts trading above its 20-week
+moving average again so you can see here
+that
+cardano got back above its own 20-day
+period moving average but when we zoom
+in here a bit
+bitcoin didn't start looking healthy
+until right here
+and so if you didn't start buying kadano
+until around here
+sure you missed out on the bottom down
+here but if you started buying
+aggressively once bitcoin started to
+look healthy you could have caught
+this immense rally here from a dollar 30
+up to around
+three bucks just using a simple regime
+filter and then there were signs of
+trouble coming in around here when
+bitcoin started to struggle to trade
+above its 20-week period moving average
+and of course you could play around with
+this you could change this to the 20-day
+period moving average and it might be a
+little bit more responsive a little bit
+more accurate and quick to pick up
+changes in the market you could change
+the period let's try a 10 period moving
+average a 10 period moving average would
+have gotten you in a lot lower in this
+particular rally let's have a look at a
+different market let's have a look at
+ethereum
+see how this would have affected
+ethereum change this back to 20 and this
+back to the 20 week and here you can see
+a similar story all throughout 2020 uh
+the regime was green and price just kept
+rallying then when we had a bit of
+trouble in here if you waited until the
+filter changed you could have safely
+bought aetherium right before this nice
+rally
+same with around here we started to have
+some trouble
+and then the regime filter turned green
+and then we had a nice rally from there
+now regime filters are a great way to
+stay out of trouble when price is
+struggling and you don't know what's
+going to happen maybe it'll go lower
+maybe it won't but you don't want to be
+buying when there's a chance that the
+whole market could tank any moment
+whereas when our regime filter turns
+green as kind of like a traffic light it
+means the market overall is healthy and
+it's a good time to be trading to the
+long side and that is the purpose of a
+regime filter and this is how you create
+one i'll leave the source code below for
+you to play around with and i'll speak
+with you in the next lesson
+[Music]
+you

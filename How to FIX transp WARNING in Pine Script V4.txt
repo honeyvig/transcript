@@ -1,0 +1,248 @@
+hi traders and welcome back to another
+pine script lesson
+today's lesson is going to be a short
+one as i'm extremely busy this week but
+i wanted to put
+something out because it's been a few
+weeks since my last video i'm working on
+a new series that will show you how to
+auto trade
+using trading view alerts through
+metatrader using an expert advisor
+which behaves very similar to autoview
+but i'll start releasing the lessons for
+that series next week as i'm still
+getting familiar with it myself
+so today's lesson is focusing on a bit
+of
+code refactoring now that's just coding
+jargon for rewriting my older code
+and the reason i'm doing this is because
+the trading view team have changed how a
+particular feature in pinescript works
+specifically they have made the transp
+or transparency parameter in our plots
+a deprecated feature of pine script now
+deprecated is another coding jargon word
+that
+basically just means unsupported they
+don't want us to use it anymore
+so if i open up the tradingview blog
+here you can see
+i'll leave a link to this in the video
+description but you can see that they
+have added
+a new color function a couple of new
+color functions to pine
+and now instead of using the trans
+parameter
+to specify transparency or opacity
+in our visual plots we now need to use
+this
+new color.rgb or color.new
+function which i'll be explaining in
+today's video
+so basically what i have to do is i need
+to go back
+through every public script that i've
+ever released
+and change the trans parameter the use
+of the trans parameter to use this new
+color function
+i've been meaning to get around to doing
+this for a couple of weeks now and given
+that i wanted to release a video today
+that doesn't require hours of editing
+and coding
+i thought this was a perfect opportunity
+to show you guys
+how this works while i go through this
+process in my own scripts
+so let's jump into the pine editor and
+get started so if i open up the pine
+editor and i paste in one of my scripts
+you can see all of these trance
+parameters here in these plots
+when i save this script you'll see that
+the compiler
+pops up with all of these warnings this
+yellow writing which says the trans
+argument or parameter will be deprecated
+soon
+or unsupported removed
+we recommend using color.new or
+color.rgb functions to specify
+the transparency of the plots instead
+so what does that mean i will show you
+first of all what this script is doing
+is just plotting the zones between
+two different moving averages and you
+can see that i've set the
+transparency to 50 on the lines and
+75 on the zones between the lines
+what i need to do in order to fix this
+error is get rid of this
+trans line of code change this line of
+code
+to say color.new open bracket
+color.lime comma
+50. so now this is telling
+pinescript that i want to plot this zone
+or this value
+in the color of lime with 50
+transparency
+and if i do this for all of the plots in
+the script
+all these yellow warnings will go away
+so that's the easiest way to do this if
+you
+are using the inbuilt color constants
+one other way to achieve this is to use
+the color.rgb
+function so the easiest way to
+demonstrate this would be to
+change this color.red so let me get rid
+of i'll do it to the bottom one so it's
+easier to
+read i'm going to get rid of red and i'm
+going to write color dot rgb
+now this stands for red green blue and
+so each
+series of numbers we give this function
+or each
+parameter we pass into this function
+will correspond to red
+green blue and then there's an optional
+transparency parameter at the end
+so the rgb method of generating colors
+in coding is different to the
+hexadecimal
+version so if you're not familiar with
+hexadecimal
+coloring let me just quickly show you
+what that looks like
+that would look like this you'd start
+with a hashtag and then
+there's six characters corresponding to
+red green blue
+so in the hexadecimal format ff is
+the maximum color so ff means
+full red zero zero zero zero means
+no green no blue if i save that you can
+see that this
+upper line is still red so that's a
+hexadecimal
+red color if we want to use this new rgb
+function to change the color of our
+plots
+it's a little bit different instead of
+using letters and numbers
+we just use a integer a whole number
+between
+0 and 255 0 being
+no red or no green no blue and 255 being
+maximum red
+maximum green maximum blue so to achieve
+the
+same thing here i would just write 255
+comma
+zero comma zero so full red
+no green no blue save the script and we
+should get a red line
+on the bottom here there you go but
+notice that it does not have any
+transparency applied to it
+it's full opacity or zero percent
+transparent
+if i wanted to add transparency using
+this rgb function
+all i need to do is add a another
+parameter here
+comma 50 would set this color
+to 50 percent transparent so now if i
+save the script
+we will go back to how it originally
+looked now obviously
+when you're using a plain color like red
+green or blue
+this is not a very efficient way to do
+this we could just use the color.red
+like i did up here but this is more for
+when you want to use
+more complex colors so for example we
+could set these to
+random numbers save that script and
+this line will now be some random colors
+sort of pink or purple now so the rgb
+function gives you a little bit more
+control
+over your colors and perhaps in a
+slightly more intuitive way than
+hexadecimal code
+or hexadecimal syntax but anyway let me
+get rid of this line of code because
+this plot is just a simple red color so
+again i just need to write here
+color.new
+open bracket color.red comma 50.
+and this will generate a new rgb color
+of red with 50 transparency
+and so now i need to basically go
+through all of my scripts and do this
+go through this process get rid of the
+trans parameter
+and change everything to look like this
+so i can just get rid of
+the trans argument
+and close off these parentheses
+now if i go through my entire script and
+do this we will get rid of
+all of those annoying orange warnings
+so i'll do that now and i'll come back
+in a second
+all right that should be all of my plots
+uh fixed or refactored to
+account for this new change in the
+password language if i save the script
+we should get no
+warnings there we go fixed so now i need
+to publish this update to the training
+view platform
+and then go through every single script
+i've ever written
+and there's over 20 or 30 or so
+so this will be my next hour or so just
+updating my old
+script source code this is the new way
+we need to specify transparency going
+forward in our scripts
+so it's important to get into a habit of
+doing this now and if you have any old
+scripts that use this trans parameter or
+argument
+in your plots or shapes this is how you
+fix it
+make sure you go back and do that
+because i'm not sure what will happen
+when the trading view team finally
+officially deprecate
+the trans argument so that'll do it
+thanks for watching
+and i'll see you in the next lesson
+which will be out next week
+where we will learn how to automate
+trading scripts through metatrader
+which unlike autoview unlocks the whole
+world of possibility
+insofar as the different brokers
+that support metatrader autoview only
+supports oanda
+where metatrader obviously is supported
+by most brokers
+anyway that will do it for today's
+lesson thanks for your time thanks for
+watching
+take care best of luck with your trading
+and coding and i'll speak to you
+next week
+you

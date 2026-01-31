@@ -1,0 +1,412 @@
+hey traders in today's video we're going
+to be covering a commonly requested
+subject which is how to detect RSI
+Divergence in pinescript now this is a
+complex subject to cover in code because
+RSI Divergence and other forms of
+Divergence are quite a subjective
+pattern you'll see what I mean as we go
+through the lesson and I explain the
+code but before we begin I should Define
+what RSI Divergence is and how we're
+defining it in today's lesson so RSI
+Divergence is when
+price makes a low and then a lower low
+but the RSI oscillator makes a higher
+low this is what is referred to as
+bullish RSI Divergence now whenever this
+occurs we generally see price move in
+the opposite direction obviously the
+catch is we don't know that this has
+happened until after the fact because
+there's nothing stopping price action
+from when we're here
+from continuing lower and the RSI making
+a lower low so that's what I mean by
+this is a subjective pattern that is
+difficult to detect in code because we
+often don't really know this is RSI
+Divergence until after the fact but as
+you can see here on the handful of
+examples on this chart it can be a
+pretty effective signal for counter
+Trend or mean reversion opportunities
+let's jump into the source code for this
+script as always the source code will be
+below check the video description and
+the pin comment below for a link to the
+source code if you want to just go and
+copy it right now and start playing
+around with it but for those of you who
+want to understand the code I'll break
+it down in sections so let me cut out
+most of this code and I'll paste it in
+block by block and explain what each
+line of code is doing so first of all
+we're just creating a regular indicator
+here this is not a strategy script
+although we could convert this into a
+strategy in the future once we've built
+out the tool but as always the first
+thing I do here is get some user inputs
+so if I open up the settings menu here
+we have the Max Bar distance which is
+going to be the maximum number of bars
+we can consider a valid RSI Divergence
+signaled to have occurred so for example
+here we have the RSI go overboard and
+then price made a low and then we made a
+higher high but the RSI printed a lower
+hi however my script will not detect
+this as RSI Divergence because there are
+too many bars in between so there comes
+a point when enough time is passed
+between the initial RSI high that the
+Divergence isn't really Divergence
+because price has moved on where in a
+new phase of price action and so again
+that's a matter of subjectivity it's a
+matter of preference how many bars do
+you consider the maximum distance in
+which you no longer are looking for RSI
+Divergence so that's what this setting
+is for next we have this stop detecting
+after first signal I'll explain what
+this does later on when we've pasted in
+most of the code for the tool then we
+just have our RSI settings here default
+14 period RSI default overbought and
+oversold levels of 70 and 30. so of
+course if we're detecting RSI Divergence
+we need the RSI value you could replace
+this line of code with any oscillator
+indicator first of all this will work on
+any time frame in any Market but it will
+also work on any oscillator type such as
+the macd stochastics and even something
+like on balance volume but for today to
+keep things simple we're just going to
+work with the RSI so to begin with let's
+detect bullish RSI Divergence to do this
+we are going to need a bunch of
+variables to work with so I'll explain
+what all of these variables are as we
+work through our Divergence detection
+code so there's a lot of code here but
+don't worry I'll break it down line by
+line so this is the RSA this is my
+childish version of a RSI and what we're
+looking for is the RSI value to go below
+30. once this occurs and we have an
+oversold condition then we want to track
+the lowest low that price action makes
+while this condition is met so here as
+soon as the RSI gets below 30 we want to
+keep tracking each candle's low
+and save the lowest low over that period
+while this condition is met and that's
+what this code here does so first we're
+checking is the RSI value the indicator
+value below our oversold threshold which
+is 30 or as the previous Bar's RSI value
+below 30. if the current bar of the
+previous bar has an RSI value below 30
+then this code gets run and this code is
+checking if our initial low price is not
+an a then that means we are tracking a
+new occurrence of bullish Divergence and
+we need to reset the existing initial
+low price so again if the RSI has gone
+oversold we want to reset our initial
+load price and then begin tracking the
+most recent low while the RSI was
+oversold so first we detect the RSI
+being oversold then we reset our tracked
+initial low price and then we check here
+if check first low is n a or the current
+Bar's low is lower than check first low
+then we set check for first low to the
+current Bar's low price we check the
+initial low index the bar index to the
+current bar index and then we set the
+initial low RSI value to swing low RSI
+swing low RSI is this float value
+which is getting the lowest RSI value
+over the past five bars so visually what
+is happening here is when the RSI is
+oversold our script is tracking the
+lowest bar low
+while this condition is met and so the
+lowest bar would be this bar here and
+when this bar is low is saved as our
+initial low in terms of price action we
+also check the past five bars and save
+the lowest RSI value over that little
+look back period and then in the future
+what we're going to do is detect the
+next low and check if the RSA is higher
+than that initial RSI low value and that
+this price low is lower than our initial
+saved low so that'll be the next block
+of code so now that we're tracking and
+saving the initial low whenever the RSI
+is oversold let me paste this code over
+so the next step is to check for a
+second load that is lower than the first
+low and with a higher RSI value and also
+within our maximum distance which is 50
+Bars by default so what this code is
+doing is first we're detecting an
+initial low so the relevant information
+is saved here so we've got the lowest
+price value and the lowest RSI value we
+save that information and then if I
+throw on a horizontal array here the
+next thing that our script is looking
+for is a bar where the previous bar is
+low is lower than the current bars low
+so we have like a one two three fractal
+move so this low is lower than the next
+Bar's low and the RSI value is higher
+than our initial lowest RSI value that's
+what this code here does so it checks is
+the previous bars low
+lower than our initial saved low press
+which is this bar here
+and is the current bars low higher than
+the previous parslow
+if that condition is met then we also
+check is our most recent swing low RSI
+value so the lowest RSI value over the
+past five bars higher than our initial
+lowest RSI value and is the current bar
+index minus the initial low index less
+than or equal to our maximum bar
+distance if this condition is met then
+we do have bullish RSI Divergence
+occurring so we set this to true and in
+fact this Boolean input here in the
+settings menu stopped detecting after
+first signal was a debug parameter that
+I was using to develop the script so I
+can actually get rid of that now I'm
+just realizing so we can get rid of this
+input altogether and so now if I save my
+code What's Happening Here is when we
+detect our second load that is lower
+than the first so the second low in
+price action
+needs to be lower than the first low and
+the RSI value needs to be higher than
+the first RSI value if that condition is
+met and it occurs within the maximum bar
+distance that we've set in the settings
+menu then bullish Divergence is set to
+true
+we create a new line that connects our
+initial price low with our Divergence
+low and then after the line is drawn we
+set initial low price to n a and that
+will stop the script from detecting any
+new
+occurrences of RSI Divergence whenever a
+swing low is detected at one two three
+fractal move is detected while the RSI
+value is higher than the initial low
+value so this tool will only detect the
+very first occurrence of RSI Divergence
+just as you would if you were using it
+to trade live price action so what this
+means is when you're back testing
+historically there may be occurrences
+when the script detects there was an
+example here here we have detected RSI
+Divergence but the Divergence wasn't
+really confirmed until this low here but
+when you're trading in real time you
+don't know
+that this isn't a true occurrence of RSI
+Divergence so normally a Trader that
+would use RSI Divergence in their
+trading toolbox would wait for a price
+action pattern to confirm the RSI
+Divergence
+um so maybe you wait for a higher close
+for example to keep this script simple I
+didn't include a Candlestick pattern
+confirmation in this RSI Divergence
+detection just to keep the script as
+simple as possible we didn't add that
+extra step into the script perhaps I'll
+do that in a future lesson but what this
+means is the script will sometimes
+detect our side Divergence on historical
+price action that was not confirmed so
+this was not really confirmed until we
+got our price Action Moving higher and
+so keep that in mind the script can
+definitely be improved it's just a
+foundation to begin working with if I
+were to add in all the bells and
+whistles that I would typically include
+in an RSI Divergent script this script
+would be probably hundreds of lines long
+so for today's lesson I just wanted to
+create a foundation for you guys to go
+out and play with and expand on but
+anyway so far so good the last thing to
+do is to draw a little triangle
+triangle up green triangle will be drawn
+when the RSI Divergence is confirmed so
+this bar right here is the bar in which
+this condition was confirmed if you had
+alerts set this bar is when the alert
+would fire and if I were to trade this
+pattern I would go long on the open of
+the next bar with my stop loss below the
+low and my target would typically be
+pretty close considering this is a mean
+reversion type trade it's counter Trend
+so I'm not really expecting price to
+Rocket into new highs I'm just expecting
+a short-term bounce but anyway this
+isn't a trading lesson this is not
+Financial advice always do your own
+research do your own back testing make
+your own decisions seek your own
+professional advice this is just for
+educational purposes and we are pretty
+much done the script is detecting
+bullish RSI Divergence so this code is
+relatively simple it could definitely be
+expanded upon as I said we could add
+price action confirmation using
+Candlestick patterns and one of the
+issues with this script is that if price
+action let me see if I can finding an
+example here's an example if price
+action
+goes oversold on the RSI and then price
+makes a lower low that also goes
+oversold on the RSI this will not be
+detected as RSI Divergence because
+whenever the RSI goes below 30 all of
+our Divergence tracking variables get
+reset our initial low price gets reset
+and we begin looking for a new low so
+once the RSI goes oversold now we're
+looking for another low that does not go
+oversold so that is one minor limitation
+of the script it will only detect major
+Divergence where the RSI goes oversold
+price may say lower low and the RSI
+makes a significant higher low now in
+this particular case you can see the
+lower low is very marginal so another
+thing you could add to the script is
+maybe a minimum pip or percentage
+distance that the second low must be
+from the previous low but again I wanted
+to keep the script as simple as possible
+so I haven't added any of those features
+in perhaps if you guys are interested we
+could explore this subject in further
+detail and I could expand on this script
+and add some of these features I'm
+talking about but for now that will do
+it for today's lesson let's finish it up
+by including our bearish Divergence code
+it's identical to our bullish Divergence
+code except everything is obviously
+detecting things in the opposite
+direction for bearish Divergence we're
+going to be detecting when the RSI goes
+overbought and then price action makes a
+higher high but the RSI makes a lower
+low so if I get rid of this debug check
+this code is now identical to the
+bullish Divergence but opposite
+direction and now we're detecting the
+RSI going overboard then price actually
+making a higher high while the RSI makes
+a lower low again we could add more
+filters in here for example we could add
+a minimum distance the price must move
+down before a new high is considered to
+be a Divergence high but that adds more
+and more complexity to the script that I
+don't want to go into otherwise this
+lesson will be like two hours long so
+we'll wrap it up here let's just finally
+copy in our alerts code so this will
+trigger alerts when we have bearish or
+bullish Divergence the reason why we
+have four alert calls here
+is because these two are for selecting
+our script and selecting the any alert
+function call
+this option will trigger these two
+alerts so bullish and bearish Divergence
+however if we only want to detect
+bullish Divergence or bearish Divergence
+we can select these two alert conditions
+the biggest advantage of the any alert
+function call is that you can input
+Dynamic information into the alert
+string so here we are
+including the distance between the RSI
+into the alert message whereas alert
+conditions cannot do this they need to
+have a static string that never changes
+just thought I'd point that out at the
+end of the script a little bit of a
+bonus tip for those of you who are
+unaware that the alert function behaves
+slightly differently to the alert
+condition alert condition is only
+triggered when this condition is true
+whereas alert is only triggered within
+this if statement so for me if I were to
+use a tool like this the challenge is
+that I can't fully automate my price
+action detection without significant
+complexity in the code but I think the
+main advantage of this sort of process
+session pattern is using your discretion
+as a Trader to determine whether or not
+the trading opportunity is a valid
+trading opportunity and a high quality
+trading opportunity so for me the way I
+would use this tool would be to set
+alerts and whenever RSI Divergence is
+detected by the script I could load up
+the chart analyze the price action
+perhaps wait for Price action
+confirmation with some sort of
+Candlestick pattern that confirms that
+price is likely to reverse and I would
+go from there this is not a trading
+technique that I would recommend
+automating it's not something I'm
+interested in trying to automate because
+of the fact that there is so much
+subjectivity in determining what a valid
+Divergence trading opportunity is and of
+course there are so many different forms
+of Divergence there's hidden Divergence
+where the RSI makes a low and then it
+makes a lower low but price action may
+say higher high that form of Divergence
+is quite rare but it does happen and it
+can be an interesting trading
+opportunity but for today's lesson I
+just wanted to keep things as simple as
+possible so we're just detecting vanilla
+Divergence thank you for watching as
+always I hope you found this lesson
+interesting if you did make sure to hit
+the Subscribe button check out our
+courses at Pine streetmastery.com and
+I'll speak with you in the next lesson
+good luck with your trading and your
+coding take care

@@ -1,0 +1,99 @@
+hey everyone welcome to simply launch
+youtube channel in this session we will
+be learning how to convert numbers to
+words but before we begin let me tell
+you guys that we have daily updates on
+multiple technologies so if you're a
+tech geek in a continuous hunt for
+latest technological trends then
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn now without further
+ado let's get started with our one point
+agenda that is how to convert numbers to
+words
+now here on my sheet you can see we have
+some numbers that is ten dollars or ten
+point two zero dollars twenty two
+dollars fifty three point one two
+dollars twelve dollars and hundred and
+ten dollars now the task is to convert
+these numbers into word format that is
+representing the numbers alphabetically
+right this might be a little curious and
+we also might end up searching for a
+predefined method which is not readily
+available in excel but there is a way
+where you can create a function using
+excel vba or macros now again creating a
+macro is completely complex now
+identifying the trouble microsoft has
+already come up with a readily available
+macro code on their official website
+which will support the various versions
+of microsoft excel starting from
+microsoft excel 365 to all the way up to
+the older excel version that is 2010.
+now you can scroll down and use this
+particular macro function which
+microsoft has readily made us available
+and use this to create our own macro in
+excel vba now let's get back to excel
+and you can create a macro using the
+developer option now developer options
+will not be readily available in
+microsoft excel to activate developer
+option go to home and
+go to the options menu in the last
+and here go to customize ribbon and here
+in the second drop down menu you can see
+developer option by default it will not
+be checked click on the check option to
+activate developer options and press ok
+now you have your developer options
+ready click on developer options click
+on visual basic and here to insert a new
+macro click on the insert button click
+on module and a new
+macro window is readily available for
+you now ctrl v to paste your code and
+your function is with the name
+number to text right now close the macro
+and here your function will be readily
+available
+equals to and the function name was
+number
+to text press tab to select the function
+and select the cell where you have the
+data close the function press enter now
+drag the same formula across all the
+cells
+and here you have the text converted
+from numbers so here we have ten dollars
+twenty cents and you have ten dollars
+twenty cents twenty two dollars and no
+cents fifty three dollars and twelve
+cents twelve dollars and no sense and
+hundred and ten dollars with no sense
+now that's how you can convert numbers
+to words using the macro which is
+predefined for excel in the microsoft
+website now with that we have come to an
+end of this session on how to convert
+numbers to words if you have any queries
+regarding any of the topics covered in
+the session or if you require the
+resources that we used in this session
+or the link which we used that is the
+microsoft official website then please
+do let us know in the comment section
+below and our team of experts will be
+more than happy to resolve all your
+queries at the earliest until next time
+thank you stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

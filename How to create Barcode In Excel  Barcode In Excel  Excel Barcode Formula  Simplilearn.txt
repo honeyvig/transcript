@@ -1,0 +1,118 @@
+hey everyone welcome to yet another
+exciting video from central in this
+session we will be discussing about how
+to create a barcode in excel but before
+we begin let me tell you guys that we
+have daily updates on multiple
+technologies if you're a tech geek in a
+continuous hunt for latest technological
+trends then consider getting subscribed
+to our youtube channel and don't forget
+to hit that bell icon to never miss an
+update from simply learn now without
+further ado let's get started with our
+one point agenda that is how to create a
+barcode in excel
+now for this let's get on to the
+practical mode by starting our microsoft
+excel now we're on the practical mode
+that is mfxl
+now you can see that we have the first
+column that is a column and the first
+set of that is text and all the other
+cells are
+numbers
+but as a whole excel considers the whole
+column as a general data format so why
+are we discussing about this so to
+create a barcode in excel you have to
+make sure that all the elements in the
+column are of text data type so the
+first step is to convert this general
+data type to
+text data type so you can do that by
+going into the data type and selecting
+text and now all the elements in your
+first column a are type text
+now the next step is
+to convert these elements into barcode
+now for that let's create a new column
+called barcode
+now our new column that is barcode has
+been created
+now the next step would be is to check
+for the barcode font so the barcode font
+looks something like this
+but let me remind you the barcode font
+in excel is not available by default
+don't worry if it's not available we can
+download it from open source
+so let's go back to google
+so on the google you want to search
+for barcode font for excel
+so the one that i would recommend is
+three of nine barcode font
+now you can download this font by just
+clicking on the download button over
+here
+now i've already downloaded this font on
+my local system let's now try to install
+that
+now the 309 barcode folder will come in
+the form of zip folder you have to unzip
+that
+and after unzipping you'll get the setup
+file which looks something like this
+which is three of nine new
+select that and you'll be having the
+installer file over here you can install
+by selecting the install button over
+here
+so i have already installed it in my
+local system so it is readily available
+for me on my microsoft excel
+now we might want to create the barcode
+for this particular cell in a2 so let's
+create that so to create a barcode we
+need to write in a formula that is
+equals to
+double quotes
+star
+double quotes and
+ampersand symbol address of the cell
+that is a2 another ampersand symbol
+again double quotes
+star symbol and double quotes
+so you can either use this or instead of
+star you can use brackets as well
+so let's try brackets
+now select enter
+now this will generate another type of
+code in your resultant cell
+now we will change the font for this
+particular resultant cell and we will
+get our barcode
+now you can just drag all these cells so
+that you can apply the formula to all
+the codes and i got all the codes over
+here
+now select all the cells get into the
+fonts and here select the barcode font
+and there you go you have the barcode
+for all the numbers you have in your
+column a so that's how you create
+barcode in excel so with that we have
+come to an end of this session on
+barcode in excel if you have any queries
+regarding any of the topics discussed in
+this particular session then please feel
+free to let us know in the comment
+section below and our team of experts
+will be happy to resolve all your
+queries until next time thank you stay
+safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

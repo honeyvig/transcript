@@ -1,0 +1,154 @@
+hey Traders today we're making a script
+to detect overbought and oversold
+conditions on the relative strength
+index and drawing those signals onto the
+chart when they happen in this series I
+answer questions from students as
+briefly as possible I have much longer
+lessons on the channel but these are
+intended to get straight to the point
+let's go the source code to the script
+will be in the pin comment below but
+let's get started with a brand new blank
+template script here now the first thing
+we want to do with this particular
+script is we want to draw over the top
+of price action so we're going to set
+overlay equals true on our indicator
+next we need to get our user input so
+this will be the RSI length the
+overboard and oversold thresholds so I
+like to put an I underscore before my
+inputs just to differentiate them from
+my other variables you can call this
+whatever you want the first one will be
+RSI length and that will be an INT input
+a whole number input we'll set it to 14
+by default and give it a title of RSI
+length and then our other inputs will be
+the overbo and oversold I like to make
+these float inputs because that allows
+us to put decimal places in the setting
+gives us a bit more fine control those
+are the only inputs we need right now
+the next thing to do is get the RSI
+value itself RSI value equals and then
+for this we use the technical analysis
+Library ta. RSI will get us the RSI
+value based on the closing price and our
+RSI length input so a 14 period RSI
+based on the close using the inbuilt
+trading view formula for RSI saves us a
+lot of trouble next we need to check for
+our overbought and oversold conditions
+so RSI overbought is going to be true
+when the RSI value is greater than iore
+RSI overbought and RSI oversold will be
+true when the RSI value is less than our
+oversold input you could set these to
+greater than or equal to but I'll leave
+mine as greater than and less than next
+we need to draw our actual signals onto
+the chart for that we will use the plot
+shape function this can take a Boolean
+true or false value so we'll paste in
+our overbought condition we'll give it a
+title of overbought a shape of triangle
+down since this is a cell signal
+traditionally we'll set the location to
+location. above bar we'll set the color
+to red and if you leave it like this
+then the size will be automatically
+adjusted based on your your zoom level
+on your chart or you can specify a size
+if you want to I'll set minus small for
+now just so it's easy to see as you'll
+see in a moment small is actually quite
+big on my chart but now I can copy this
+line of code paste it in change
+overboard to
+oversold change triangle down to
+Triangle up the location to below bar
+the color to green and now this is
+optional but I like to format everything
+so that it lines
+up and each parameter is easy to read
+and adjust and then that's it we are
+done now if I Sav my code minimize the
+editor here are our signals so whenever
+the RSI goes overbought we get a red
+triangle whenever it goes oversold we
+get a green triangle now this isn't a
+trading lesson but as you can see these
+can be quite good buying and selling
+opportunities but I'd be careful just
+buying or selling simply because
+something is overbought or oversold
+because as you can see markets can stay
+overbought and oversold for long periods
+of time so it's always is best to
+combine these indicator conditions with
+other technical factors price action
+patterns that sort of thing to increase
+the accuracy of this reversal signal it
+can also make an interesting Trend
+continuation signal where you buy in the
+direction or sell in the direction of
+the RSI overboard or oversold but for
+that I would recommend making the um
+inputs a bit looser our overbought and
+oversold levels are a little bit looser
+and our RSI period is a bit shorter so
+we're getting more of a read on momentum
+rather rather than a reversal condition
+per se and if you wanted to add alerts
+to this script all we would need to do
+is come down to the bottom here
+somewhere say fire alerts if RSI
+overbought alert Market overbought with
+a frequency of whatever you prefer I'll
+select once per bar close and copy that
+and
+oversold done now if we come up and hit
+this we can select our script and we can
+select any alert function call click
+create and then whenever the market goes
+overbought or oversold we will be
+notified and finally if you wanted to
+add some sort of Candlestick pattern
+detection to this we could add on the
+end here uh RSI overb and close under
+previous bars low or close above
+previous bars high for a bullish
+reversal now if I save my code we will
+only get signals and alerts when we get
+a lower close after the RSI goes
+overbought or oversold which gives us
+much better signals as you can see here
+combining these sorts of indicated
+conditions with candlestick patterns is
+a great way to create potentially
+profitable trading systems for veterans
+of the channel this might seem like a
+simple lesson that's because it's
+intended to be in this series I answer
+questions from students as briefly as
+possible but if you want to see those
+longer lessons where I go into much more
+detail about the Practical
+implementations of some of these
+techniques into actual systems trading
+strategies and trading tools check out
+this playlist in the middle of your
+screen right now or check out our
+website pinescript mastery.com where
+there is a 6-hour long free pinescript
+Basics course that will teach you all of
+the fundamentals or a 50 plus hour long
+premium course where I go into much more
+detail about applying these techniques
+to make profitable and valuable trading
+tools with that said I hope you enjoyed
+this lesson take care good luck with
+your trading and have a great day
+goodbye

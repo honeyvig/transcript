@@ -1,0 +1,122 @@
+hey everyone welcome to simply launch
+youtube channel and in this session we
+will be learning about how to highlight
+duplicate cells in excel but before we
+begin i would like to tell you guys that
+we have daily updates on multiple
+technologies so if you're a tech geek in
+a continuous handful it is technological
+trends then consider getting subscribed
+to our youtube channel and don't forget
+to hit that bell icon to never miss an
+update from simply learn now without
+further ado let's get started with our
+one point agenda that is how to
+highlight duplicate values in excel
+now for that let's get started with the
+practical mode
+now we are on our excel spreadsheet and
+this spreadsheet has some values of
+employees that is their employee id name
+designation department salary date of
+birth and date of journaling
+now our concern is to highlight some
+cells which are duplicate in this or
+some rows which are duplicate so for
+example here you can see on row number
+seven we have the details of martha
+and you can see the same details of
+martha in the row number 14 as well
+right so you need to eliminate those
+cells or you need to eliminate those
+rules now you can say there is a quick
+way just few clicks and those will be
+eliminated that is conditional
+formatting yes that is also one way but
+i'll show you what's the problem with
+that okay so let us select the entire
+table and get into conditional
+formatting and here you have duplicate
+values highlight cell rules with
+duplicate values and there you go the
+problem so here we have designation
+which is duplicated in certain ways
+department and salary state of joining
+right so there are certain conditions or
+scenarios where you cannot directly
+identify which is the duplicate row
+again you can use the same for this
+right so you can select the entire
+column of employee id and you can
+identify the duplicate cells here since
+the employee ids are unique for everyone
+so this is a way but let's take a little
+deeper and understand the
+way of highlighting duplicates with an
+advanced technique so let me cancel this
+and for that let's create a new uh
+column
+and let's name this as duplicate
+flag
+e flag
+so the new column has been created which
+is d flag so here we will be using a
+simple formula that is
+count f and here press tab to select the
+formula and here we will be adding our
+range that is which range are you
+considering so the range will be the
+employee id since employee ids are
+unique for every employee
+and
+and let's press function f4 to fix it
+and now
+again the criteria and the criteria will
+be the same cell that is a2 and now
+close the bracket and press enter
+now let's track the same formula to all
+the rows
+okay
+now here we have
+now what you can do is uh sort it in an
+advanced way go to sorting filter
+and custom sort
+and here you will be sorting by
+the d flag
+and it will be smallest to largest
+so now
+you can apply the conditional formatting
+to highlight it you can select the
+column h or the d flag go to conditional
+formatting highlight cell rules and here
+you can get into greater than
+and
+give the value as one
+okay
+so all the cells which are
+you know repeated multiple times will be
+selected here and they will be
+highlighted with a selected color what
+you have given so i've given red so now
+you can select these cells and
+i let them or delete them from your
+spreadsheet
+and now all your data in the spreadsheet
+is unique and clean so that's how you
+highlight duplicate cells in excel and
+with that we have come to an end of this
+session and if you have any queries
+regarding any of the topics covered in
+this session or if you require the
+resources that we used in this session
+then please do let us know in the
+comment section below and our team of
+experts will be more than happy to
+resolve all your queries at the earliest
+until next time thank you stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

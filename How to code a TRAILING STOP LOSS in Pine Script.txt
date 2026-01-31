@@ -1,0 +1,706 @@
+hey Traders thanks for tuning in
+spending some time with me today we are
+going to be exploring various methods
+for creating trailing stops in Pine
+script so for today's example we're not
+going to actually work with a strategy
+script per se this is a strategy script
+but it doesn't actually have entry
+criteria or exit criteria other than the
+trailing stop and we need to click on a
+candle in order to enter the trade so
+today's lesson is purely about trailing
+stops now I did this for a reason that's
+because the code for this script is not
+exactly short and so it's going to take
+some time to break down the various
+methods we can use for trailing our stop
+loss in Pine script so without any
+further Ado let's get started now what
+you see on my chart right now is a ATR
+based trailing stop that is trailing our
+stop-loss one ATR below swing lows and
+so long as price continues moving in our
+favor the stop loss will only ever move
+up to lock in profits until it gets hit
+by Price action and exits our trade for
+hopefully a profit now that's not the
+only method we could use we could use
+percentage-based trailing stops we can
+use trailing stops based on candle
+closes or candle opens and in today's
+lesson I'm going to show you all those
+different methods so to begin with here
+is my script template we've got a bunch
+of user inputs here I'll show them in
+the settings menu that might be easier
+we just have a few drop down boxes and
+some parameter inputs so we have the
+direction we want to trade long or short
+we have the trailing price source so
+This is Swing Low swing highs the
+closing price for the open price we have
+our trailing stop method so that's going
+to be either an ATR bass stop or a
+percentage based up there are many many
+other different variations of trailing
+stops but these are the two most common
+and perhaps we'll cover future ones in
+future videos like the parabolic SAR and
+there's so many different trailing
+methods standard deviations it's crazy
+how many different methods there are so
+for today we'll stick with the basics
+and in future videos maybe we'll
+elaborate on the different methods
+because the principles are all the same
+this script can be adapted to work with
+pretty much any trailing stop method
+next up we have our trailing percent so
+this is the percentage value to Trail
+above below the price action after we
+enter a trade then we have our look back
+period for swing highs and swing lows
+then we have our ATR period for
+calculating the ETR and then we have an
+ATR multiplier so by default this is set
+to one but if I set this to three then
+we would be trailing three atrs above or
+below price action and then the final
+input here isn't one we should really be
+touching you can if you want to but this
+is just here because if you set confirm
+to True with a parameter a user input
+parameter then when you add the script
+to your chart for a Time input in
+particular training view makes you
+select a bar at bar time so I'll show
+you what I mean if I click add to chart
+you see this vertical line here this is
+allowing me to set the bar we want to
+enter our trade on so that's just a
+matter of convenience here just for
+demonstration purposes it makes it
+really easy and quick for us to select
+the bar to start trailing our stop-loss
+from if you were to add the code we're
+going to build in the script to your
+scripts you would ignore this input
+and simply use whatever strategy entry
+criteria your strategy uses so anyway
+that's our user inputs you'll notice
+they all have confirmed set to true so
+that when we add the script to our chart
+for the first time the user has to
+select each value for each parameter so
+I'll show you again if I click add to
+chart and I click on something this pops
+up and I can simply click apply and that
+will apply with all the default values
+or I can select short I can change my
+trailing Source price My Method my
+percentage Etc finally the last thing to
+mention with the user inputs that is a
+little bit out of the ordinary that you
+might not have seen before if you're new
+to the channel or new to Pine scripts is
+this here these options parameters allow
+us to specify a list of options so again
+if I add this to my chart and come up to
+the settings you can see these drop down
+boxes with the options in order to use
+these you need to specify a list of
+options we use the square brackets to
+add identify the list or encapsulate the
+list we use commas in between each list
+item each list item must be in
+quotations and your default value must
+be one of the options you can't have a
+default value that is not selectable
+from your options so with all that out
+of the way let's get into the trailing
+stop code so the first thing we need to
+do is enter a trade so that I can
+demonstrate how to use this method with
+strategy scripts because that's probably
+the most common use case for this you
+can make indicators that can help you
+manage open positions but most of you
+will want to backtest trailing stop
+methods in your strategy script so
+that's what we're doing today so to do
+that we just enter a trade
+if the bar time is greater than or equal
+to the bar time we select when we add
+the script to our chart and our position
+size must be zero so we must be flat no
+open trades and we must have not closed
+any trades otherwise when our training
+stop gets hit the script will
+immediately open a new trade and we'll
+just have lines all over our chart which
+makes it harder to demonstrate my point
+today so no trades can be open and the
+bar must be the bar we clicked on and
+then if that's if that condition is met
+we enter a trade with a trade ID of
+trade a direction now our direction is
+set to is trade type equal to long if so
+we set our direction to strategy.long
+otherwise if it's not long it can only
+be short so we set it to short and trade
+type is this user input here trade
+Direction all right so now we've entered
+our trade let's start calculating our
+trailing stock so I'm going to copy and
+paste code over to save time and explain
+it as I go first block of code here is
+just decl layering our trailing price
+variables which stores our trailing stop
+value so this first value here is a VAR
+keyword float type and it's going to be
+the price value that our actual trailing
+stop is now it's set to VAR because we
+want it to be persistent across all the
+bars on our chart we don't want this to
+reset on every bar that prints onto our
+chart we want to save this value because
+that's the point of having a trailing
+stop that this next value however is the
+next trailing price that we calculate
+and we want to check if this next Trail
+price is higher than this Trail price in
+the case of a long trade because we only
+want to Trail our stop loss up we don't
+want it going down because that defeats
+the purpose of a trailing stop and it
+will never be hit
+so in the case of a long trade we want
+to evaluate our next potential trailing
+stop so that might be one ATR below a
+swing low and if that value is higher
+than our save value then we want to
+update our saved value and so this
+variable we want to reset on every new
+bar because it's a new calculation on
+each bar this one we don't so that's why
+it's a VAR variable so next up let's get
+the required trailing stop variables so
+the first thing we get is our ATR value
+and that's just getting the inbuilt ATR
+value from the technical analysis
+Library ta dot ATR we pass in our ATR
+period setting and we multiply it by our
+ATR multiplier setting and this is the
+value we will subtract or add to our
+trailing price Source the next two
+variables we get here are just our swing
+lows and swing highs so to keep things
+simple we're just using the TA dot
+lowest low over our look back period so
+that is seven Bars by default so we will
+be looking back seven bars to find the
+lowest low and seven bars to find the
+highest high and then we can use these
+values to calculate our trending stop if
+we are using swing low and swing highs
+as our price Source all right so now is
+where things get a little bit
+complicated so if you haven't been
+following this up until now and you're
+new to Pine script and this was already
+complicated for you I highly highly
+encourage you to check out my free Pine
+script Basics course at
+pinescriptmastery.com that will help you
+help show you the ropes because
+um this is all pretty basic stuff when
+it comes to plan script if you're brand
+new this is probably going to make your
+head explode but I promise you if you go
+through the basics course by the end of
+that course you'll have a much much
+better understanding of what's Happening
+Here but anyway for those of you who
+have been following along so far here we
+go
+this block of code here is getting our
+trailing stock price now I might have
+been able to make this code more
+readable if I'd used if statements but I
+thought this was a good opportunity to
+show you guys how to use switch
+statements or switch operators and so
+don't worry if this looks like gibberish
+to you and you haven't used the switch
+before I'll break it all down it's
+actually quite simple so the first thing
+we're doing is we're checking if our
+trailing method is equal to ATR so that
+is this setting here
+so if this is selected as ATR then this
+code gets run or executed and what we're
+doing is we're setting our next Trail
+price this is the one we want to
+evaluate against our existing trailing
+price this is being set to a switch
+operation and how this works is
+we start with the switch keyword and
+then we pass in a value we want to
+switch through and so this is like a
+bunch of nested if statements so an
+easier way to explain this might be to
+open this up so in this case we're using
+Trail source so that's this user input
+here and if I click on this drop down
+box what our switch statement is doing
+or switch operation is doing is it's
+switching through each of these so it's
+called a switch because it's literally
+like
+switching from one to two to three and
+we're evaluating Trail Source whatever
+this value is against
+these values here
+and so if Trail source is equal to close
+then this line of code is run if it's
+not equal to close then it moves down to
+the next switch which is open so if
+Trail source is equal to open then this
+code is run
+and then finally the default switch is
+this here where you can see we don't
+have any text
+preceding this equals right arrow sign
+which means if this value the value of
+Trail source is not equal to close or
+open then this line gets executed and
+the reason this works is because we only
+have three options we have lows highs
+close and open and so if our Trail
+Source value
+is not closed and it's not open it can
+only be lows and highs that's the last
+option remaining and so this line of
+code here calculates our next trailing
+price based on swing lows and swing
+highs now remember this first switch
+operation is occurring under this if
+statement so this is all calculating ATR
+trailing stop values and so the first
+one is a closing price so what we do
+here if we have selected close as our
+trailing Source price then we check is
+our strategy.position size greater than
+zero that means we are long if we have a
+positive position size we are in a long
+trade and so we want to subtract our ATR
+value
+from the closing price otherwise if our
+position size is not greater than zero
+then if we're using a trailing stop that
+means that our position size must be
+negative it could also be zero but to
+keep things simple it doesn't really
+matter because our trailing price only
+comes into effect if our position size
+is not equal to zero we'll get to that
+later so if our position size is greater
+than zero we subtract our ATR value from
+the close otherwise we're in a short
+trade which means we want to Trail our
+stop loss down which means we need to
+add the trailing stop to our bar close
+and then we do exactly the same thing
+for our opening price exactly the same
+code except we're adding the ATR value
+to the open instead of the close and
+remember our ATR values already
+calculated and taking into account our
+ATR period and our ACR multiplier so
+this line of code really simplifies
+things makes our code more readable so
+that's the close and the open the final
+default switch
+output here is the same check are we in
+a long trade if so
+we want to subtract the ATR value from
+our swing low
+value which is the lowest low over our
+look back period otherwise if we're not
+in a long trade then we're in a short
+trade and we want to add the ATR value
+to our swing high so that's it for our
+ATR trailing stop price later on we need
+to compare our next Trail price to our
+existing Trail price and then set trail
+price to this if it is moving up or down
+in the case of a short trade so that's
+our ETR values out of the way the next
+if statement here we have an else if so
+if our Trail method is not ATR then else
+gets executed and what we say here is if
+Trail method is not ATR if Trail method
+is percent
+so if we haven't selected ATR have we
+selected percent now I could get rid of
+this entirely it's a kind of a redundant
+check because we only have two options
+here it can only be 80 or percent but
+I'm going to leave this in here because
+it makes it easier to just copy and
+paste this block of code if you want to
+add other Trail methods to this list so
+I'll leave this in for now and so this
+next if statement here what I've
+highlighted is exactly the same as this
+except that instead of using the ATR
+value we're using a percentage value and
+so this is a little bit different
+for our percentage trailing stop I'm
+checking again are we in a long trade is
+our position size positive greater than
+zero if so then we do some quick math we
+check this is what the math will look
+like if I open up the settings menu here
+by default we have a trail percent of
+10. so this is 10 so to make this more
+intuitive I made this a whole number
+this is calculating our trailing
+percentage multiplier for long trades
+and the math looks like this I need to
+open a parenthesis 100 minus 10 is our
+default value divided by 100 gives us
+0.9 and so in the case of trailing a
+long trade from the closing price we
+would set next Trail price to the
+closing price multiplied by 0.9 that
+would give us a 10 trailing stop from
+the close now if we're in a short trade
+this is exactly the same formula except
+we're adding 100 to our Trail percent
+instead of subtracting and that will
+give us 110 divided by 100 equals 1.1
+and the closing price multiplied by 1.1
+would add 10 to the closing price now
+I'm on a Forex market so 10 move in the
+Forex markets means Armageddon has
+happened you will never see a 10 move in
+the major currencies at least in any
+reasonable period of time so this is
+more for stocks or crypto
+pretty unlikely that you would ever use
+a percentage trailing stop for Forex
+which is why I included two options here
+because I know there's all kinds of
+traders that watch my channel and I
+wanted to show you guys both methods and
+so hopefully I've achieved that here we
+haven't finished the script but we're
+very close so this block of code is
+doing exactly the same thing as this
+except instead of subtracting the ATR
+but multiplying price values by our
+percentage multiplier and the final
+default parameter here is doing the same
+thing if we're in a long trade we
+multiply the Swing Low by our percentage
+multiplier otherwise we multiply the
+swing high and that's it we now have our
+trailing stop price the theoretical
+temporary trailing stock price has now
+been calculated all that's left to do is
+check if uh either trailing price has
+not been set to but still n a then we
+want to immediately set it to this value
+or this value whichever setting we've
+selected otherwise if we already have a
+trailing price saved then we need to
+check if this new trailing price is
+greater than in the case of a long trade
+or less than in the case of a short
+trade in order to override our saved
+trailing stock so I'll paste some more
+code in here and this is it this is the
+final block of code but the final
+complex block of code that we need to
+evaluate so let's break it down it's
+actually quite simple first we check if
+our position size is not equal to zero
+that means we are in a long trade or a
+sure trade if it's zero we're flat if
+it's one or higher then we're in a long
+trade if it's a negative one or lower
+we're in a short trade and if the bar
+state is confirmed now you don't need
+this check necessarily but I would
+obviously recommend it in the case of a
+trailing stop because until a candle
+closes or a bar closes we don't know the
+values yet we don't know this bar still
+has 16 minutes to go there's a very good
+chance that a new high or a new low will
+be created before this bar closes and so
+if we are updating our trailing stop
+without taking into account whether or
+not the bar has finished is confirmed
+then we're going to be updating our
+trailing stop based on a real-time bar
+that's not ideal you really want it to
+be based on the previous bar that's
+confirmed and this check pretty much
+does that bar state is confirmed is only
+true on the last closing update of the
+current bar so what that means is if
+we're on a real-time bar like we are now
+bar state DOT is confirmed will be false
+on this bar but true on this bar
+preceding it however when this gets to
+its final tick its final update on the
+very last nanosecond of this bars Time
+bar state DOT is confirmed will be set
+to true and so the moment this bar
+closes this code gets executed and we
+update our trailing stop you can
+probably set this to is new as well that
+would probably achieve the same thing
+the problem is with is new is that if
+there's a gap in price action that will
+be factored into this code as well so
+I'd recommend just leaving it as is
+confirmed you could also do is confirmed
+history is last confirmed history that
+will be true on the last bar that closed
+um that's almost the same thing almost
+except that it doesn't take into account
+this Buzz high and low on that final
+tick so anyway that's a long way of
+saying I recommend using bar state that
+is confirmed when dealing with things
+like updating a trailing stop or
+anything that requires a bar to be
+finished you don't want to be
+calculating certain things on real-time
+bars this is how you stop that now let's
+finish up this lesson let's wrap it up
+by breaking down how we update our Trail
+stop these two lines of code are
+identical or these two blocks of code
+are identical except ones for long ones
+for short and so here we check is our
+next Trail price greater than our saved
+trailing price or is our saved trailing
+Price N A so it hasn't been set yet and
+is our position size greater than zero
+meaning we're on a long trade if all
+these conditions are met that means
+we're moving our stop loss up and so we
+override Trail price with our next Trail
+price the temporary Trail price we
+calculated then finally just a little
+bonus feature we add an alert to our
+script so that we know that if we're
+managing our position manually we need
+to go and update our trailing stock and
+so this alert will inform us that our
+training stop has been updated for the
+current symbol and it will also include
+the price the trailing price formatted
+to five decimal places and this will
+only occur once per bar close and then
+here we do the same thing but we're
+obviously checking the opposite
+direction and whether or not we're in a
+short trade and that's it that's uh I
+know it's not super simple you could
+obviously significantly simplify the
+script if you only wanted to use one of
+these methods if you only wanted to use
+a trailing stop method you don't need
+these switch statements if you only
+wanted to use swing highs and lows then
+you don't need to check the closing
+price and opening price so you could
+significantly simplify this script
+depending on your trading preferences
+but if you're making a script and you
+want to test various different options
+then this is a really good template to
+work with you can copy most of this code
+into any strategy script and it should
+work with almost any script a few
+settings here you won't need you won't
+need bar time and that's about the only
+one you won't need all of these you will
+probably need but if you're going to
+copy this into an existing strategy
+script you would copy all of these
+inputs to the top of your script and
+then all of this code below where we
+enter all of this code up into where we
+exit you would copy into your strategy
+script and then finally you would make
+sure that your stop parameter in your
+strategy.exit function is set to Trail
+price so this will update our trailing
+stock price in the backtest engine
+and make sure you also specify your from
+entry to be the same ID
+as your entry ID if you have multiple
+entry IDs you'll need to copy this line
+of code multiple times and update those
+IDs accordingly and probably these ones
+as well anyway last thing to do let's
+draw our trailing stop onto the chart
+let's save our code make sure I haven't
+made any mistakes and misled you guys
+everything appears to be fine let's
+remove the script from the chart and
+then add it back on and we can select
+any bar let's select this one here and
+change it to Short change the trailing
+source to closing prices I'll leave it
+as ATR for the moment let's change our
+ATR period to 7 and I look back to five
+bars and our ETR multiplier to two click
+apply and there we go I have made a
+mistake
+our trade is not exiting I know why it's
+because I did a typo here I left that
+one in there and uh training view does
+not know which trade to exit so let me
+get rid of that one that was a very
+underwhelming finale save my code and
+the parameters should remain there we go
+so the parameters stayed the same
+now you can see the stop loss is pretty
+tight to price action remember we set
+the trailing stop the closing price so
+even though it looks like it would have
+been hit here it actually wasn't updated
+until this closing price here so it was
+this bar here that our stop came down
+and then when this bar closed our stop
+came down to two atrs above the close if
+I set this back to lows and highs then
+we have a more traditional trailing stop
+above above swing highs let's jump over
+to
+Apple why not go to the daily chart it's
+a little Annoying we need to remove our
+script and add it back on in order to
+get this to pop up again I wish training
+view would add an option to just really
+quickly select this but anyway let's do
+a long trade from down here so long I
+will set the trail price to opened and
+we'll set the trail method to percent
+and I don't know what the ATR is on
+Apple
+let's set the trailing price to five
+percent
+I need to re-add it
+um so open long percent five percent
+these parameters are ignored when we're
+using a trailing uh trailing stop of a
+percentage type so we can ignore these
+settings click apply and there we go
+that was a little bit tight because
+we're operating from opens so when this
+red bar here closed and was confirmed a
+new trailing stop was calculated from
+its open
+of five percent
+and I got hit here hey it's Matt from
+the future editing Matt I forgot to
+mention for you traders who like to exit
+when a market closes below your trailing
+stop this is particularly popular in
+stock trading strategies it's really
+simple to implement that adjustment to
+the script however you need to use a
+different strategy exit function so let
+me show you what I mean so down the
+bottom here we have our strategy.exit
+that passes in our trailing stop as a
+stop limit order if we comment this out
+if you wanted to exit if the market
+closes below our Trail price we can just
+simply say if close less than Trail
+price then use the strategy Dot close
+function and this function also requires
+an ID to exit so our trade ID is just
+trade so now I've saved my script
+minimize this
+see that our stop loss was hit here but
+it didn't exit the trade because we
+didn't close below the stop loss we
+closed up here however if I reduce my
+trail percent to one percent now the
+script exits as soon as this bar closes
+below our stop loss on the next bar is
+open we exit our trade
+now obviously this is only going to work
+for long trades so if you wanted to make
+this work for both we would just simply
+say uh it's probably better to put it
+here we can say if strategy dot position
+size greater than zero and the closes
+below our trailing price we want to exit
+or
+you can copy this flip out operator
+for short trades
+and flipper operator for our training
+stop save my code and this will also
+work for short trades now as well so if
+I remove the script add it to my chart
+and let's say we entered short here
+short percent let's go three percent
+apply there we go now you can see we're
+exiting when we get a bar close above
+our trailing stop anyway thought I
+better mention that to make this video
+comprehensive let's go back to the past
+recording map so that's it for today's
+lesson I hope you found this interesting
+as always the source code will be below
+so you can go and play around with this
+and modify it to your heart's content I
+hope you found the lesson interesting if
+you did make sure to hit the Subscribe
+button and the like button and comment
+and all the YouTube crap only if you
+want to I do appreciate it and I do read
+all the comments but I know how annoying
+it is when YouTube is done talking like
+this uh finally if you do like my
+content and you want to learn more about
+my thought process the various
+influences and Inspirations I've had in
+my trading Journey over the past five
+plus years go and check out My Weekly
+Newsletter it's completely free there's
+no strings attached I don't try to sell
+you anything sometimes there's affiliate
+links to Amazon books and stuff like
+that but it's completely free it's just
+a way for me to share my thoughts with
+you guys and I enjoy writing so I like
+to spend an hour a week just writing out
+an email explaining a book or a podcast
+or something I watched something I've
+got value out of a trading technique
+pretty much anything that I found
+valuable I share that with you each week
+so if you're interested in that go to
+the art of trading.com if you want to
+learn more about paint script there's
+pinescriptmastery.com I've got a bunch
+of courses on there and with all that
+said I hope you have a fantastic weekend
+if you're watching this as I release it
+if not have a fantastic day whenever you
+are and wherever you are in the future I
+love you guys best of luck with your
+trading and I'll speak with you soon
+goodbye

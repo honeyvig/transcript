@@ -1,0 +1,296 @@
+hey traders i've got a really
+interesting lesson for you guys today
+covering a new feature that was recently
+added to pinescript
+this morning i woke up and saw a post on
+the panscripters network
+forum over at pinescripters.net where
+someone asked hlf asked
+how to calculate the cumulative total
+count of tick movements
+in a real-time bar in pinescript
+now this wasn't possible until recently
+but today i found out a way to do this
+and it's actually quite interesting
+and a pretty important feature that most
+traders probably don't know about
+at least not yet since it's a new
+feature but it is quite powerful i
+answered this question basically his
+question was hi everyone i'm a bit stuck
+and looking for some help i'm working on
+a script where i'm trying to count every
+tick movement
+whether up or down and show the
+cumulative total movement in a bar as a
+count
+and he's stuck because every time
+pinescript
+detects a new tick on a
+real-time bar whatever your script is
+doing is basically reset
+so when we're using a var variable
+that variable is saved across all of the
+bars
+on our chart now these are terrible bars
+i'm drawing but you get the idea
+if you don't use var then every time a
+new bar starts printing whatever was
+saved on this previous bar
+gets deleted in your variables but if
+you use the var
+keyword then on the next bar that starts
+that variable will be saved from the
+previous bar however
+these variables are only updated once on
+a real-time bar so even though you're
+using the var
+keyword if you're trying to count price
+movements on a bar
+the highest you can count to is one
+because as soon as
+the price change is detected and your
+var variable your counter is
+incremented by one it will never be
+incremented again even though
+new ticks have been detected on the
+real-time bar but
+tradingview have recently added a new
+feature
+and this was on their blog that i read a
+couple of weeks ago but didn't think
+much of it until i read this
+person's question the most important
+improvement that
+certainly slipped under my radar is the
+var ip
+keyword which is useful for when you
+want to keep track of some
+some data and how it changes inside the
+real real-time bar
+all regular pine variables are subject
+to what is known as a rollback where on
+each new data tick
+the state of the variable is reset back
+to its value on the previous bar
+before evaluating the new data the var
+keyword escapes this and enables you to
+compare the current value of a variable
+with its value on the previous
+tick as opposed to the previous bar
+which opens up a whole new world of
+possibilities such as counting how many
+ticks have occurred on the current bar
+so let's jump over to the charts and i
+will show you what this looks like in
+practice so here i am on a real-time
+chart and we're on the five-minute chart
+here and what you see down here is this
+script that i've written which is
+counting
+the ticks in price action so remember
+that every time
+pine script detects a change in price
+your script is iterated so your script
+is reevaluated all the code is executed
+on every price change on
+a real-time bar i behave slightly
+differently on historical bars so in
+historical bars there are no tick data
+you just have the open high low and
+close so on each
+historical bar your script is run once
+but on the real time bar it's executed
+every time
+price changes or volume changes
+so we have price tick movement and
+volume tick
+movement so this script down here is
+calculating both the blue
+number here is how many times price
+changed on the current bar that's
+price ticks the purple number here is
+how many times
+volume changed on the current bar so
+that basically means how many orders are
+executed
+doesn't tell you the quantity of the
+position size just tells you that a
+trade was executed
+through the this broker at least through
+orlando so every time this purple
+number changes that means a trade has
+been executed at market
+on this market and every time the blue
+number changes that means that an order
+was executed at a different price
+to where price currently is so hopefully
+that makes sense
+let's open up the source code of the
+script it's actually quite a simple
+script
+and i'll break down what each line of
+code here is doing so
+first we need to prepare our tick
+counter variables
+so for this we use the new var ip
+keyword and each variable here is saved
+across each
+real-time tick so every time price moves
+or volume moves
+these var ip variables are not
+rolled back or cleared that allows us to
+use a couple of if statements here
+to count the tick changes so
+our first if statement here checks is
+the current bar a real-time bar
+and is the last price not equal to the
+current price
+and last price is just the closing price
+and
+every time this condition is met so
+we're on a real-time bar and the current
+price
+changes we add one to our ticks counter
+and we reset our last price to the
+current market price
+so that we can detect the next change in
+price and this just loops over and over
+and over again
+until a new bar is detected which is
+this if statement here
+so if the bar state is new which means
+this is the first tick on a brand new
+bar then all of our variables are reset
+we reset our ticks to zero we reset
+reset our volume changes to zero
+and we we reset our last price to the
+current closing price
+and this middle if statement here simply
+counts the volume changes
+so every time price changes this if
+statement is
+um this code is executed however if
+we're on a real-time bar
+and price has not changed so the last
+price is equal to the current closing
+price
+remember that our script is executed on
+each new tick
+so we can safely assume that this
+code here is only being executed if this
+price hasn't changed
+if volume has changed so we can just
+increment our volume counter here you
+could also
+add another var ip here and call it last
+volume and set it to the volume and do
+the same thing we did with the closing
+price
+but because our script is executed on
+every tick
+be it a price tick or a volume tick we
+can safely assume that if the price is
+the same as it was on the previous tick
+then we just have a volume change not a
+price change
+and that's it it's really quite a simple
+script now obviously
+you can do a lot more with this than
+just simply count this information
+so for example you could use this
+approach to objectively
+determine or analyze the volatility of a
+real-time bar
+so just because a bar is large
+doesn't necessarily mean that there was
+a lot of volatility in that bar
+so for example we have this bar here
+this green bar here
+it doesn't look that volatile when
+you're just looking at it
+but actually over the past five bars
+five five minute bars so the past 25
+minutes
+this middle bar here this green bar was
+actually the most volatile bar
+over the past five bars so this red bar
+here looks quite volatile but not quite
+as many orders were executed
+on that red bar as the one before it so
+that's some very interesting information
+to have especially for day traders
+people who trade the five minute one
+minute chart
+i imagine this approach would be much
+more effective on crypto and stocks
+or maybe even futures markets than
+necessarily forex
+but it's still quite interesting even on
+the forex markets it is quite
+interesting to see how
+how many times price changed on the
+current real-time bar that's quite
+interesting information have
+and let's turn on the volume here so you
+can see that the volume here
+was higher than the past five bars
+looking left from the current bar so if
+i put in a horizontal line here
+you can see that i started running the
+script on this bar here
+the script cannot calculate tick
+movements on historical bars because
+that bar is printed to the chart
+it can only count it while the script is
+running on the current real time bar
+so keep that in mind as soon as we
+refresh the page
+or change to a different market this
+will all reset back to zero
+but for now we've left this script
+running on this market for the past half
+hour or so
+and you can see now even this big green
+bar right here didn't have nearly as
+many volume changes or price changes
+as the past three bars preceding it here
+so that's really interesting information
+of course we've still got a minute to go
+so i imagine it will creep up there but
+anyway i thought this would just be a
+cool
+demonstration of how to use this new var
+ip variable
+and there are infinite use cases for
+this
+if you get creative but obviously the
+most useful one is just counting
+tick changes to determine volatility on
+the current bar so yeah just to recap
+the
+purple line here is how often volume
+changed on the current bar so right now
+we've had roughly 80
+nearly 90 trades executed on the current
+bar on this five minute bar
+through oanda on this market and it is a
+quiet time of day
+so i imagine during a highly volatile
+time of day this number would be much
+higher and we've had 75
+price changes in that time or 75 price
+ticks
+on this five minute bar since it began
+and of course as always the source code
+to this script will be
+underneath this video if you want to
+play around with this code
+there we have a new bar just started and
+you can see our count is reset to zero
+and the whole process just starts again
+anyway that's it for today's video
+i hope you found that interesting and
+useful in your scripting good luck with
+your trading
+and i will see you in the next lesson

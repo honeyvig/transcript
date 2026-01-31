@@ -1,0 +1,550 @@
+foreign
+do you know which technology is used to
+classify the movie queries a search for
+a movie will restore a web page that is
+arranged into a category such as reviews
+trailers stars and theater we can
+classify this queries using clustering
+which divides them into a subclusters or
+subcategories creating an hierarchical
+structure that allows you to analyze
+Aquarius outcomes on that note welcome
+to Simply on YouTube channel
+today we are here within fantastic video
+on hierarchical clustering using Matlab
+which will help you to perform
+hierarchical clustering on various data
+sets before we begin are you aiming to
+get certified as a data analyst and want
+to build your career in data analytics
+in that case you can check the data
+analyst certification course by simply
+learn which will open the doors for the
+best career opportunities to find more
+details about the data analyst
+certification course check the link
+below in the description it could be an
+ideal solution to help you build your
+career in the right direction as we have
+a special discount to our YouTube
+members to Avail the deal use the coupon
+code ytb 15 and if you haven't
+subscribed yet please subscribe to our
+simple learn YouTube channel and hit the
+Bell icon to never miss an update from
+us before we get started here is a
+question for you which type of analysis
+is not done by the Matlab software
+let me know your answer in the comment
+section below
+just quickly go through the agenda for
+today's session
+first we'll understand what is
+clustering then we'll understand what is
+hierarchical clustering after that we
+will understand the difference between
+clustering and hierarchical clustering
+then we will understand the what are the
+different types of hierarchical
+clustering
+followed by we'll see how to use them in
+the real world then we'll understand how
+to implement clustering in Matlab
+followed by will learn how to create
+hierarchical clustering at last we will
+Implement both clustering and clustering
+in platform
+let's try to understand what exactly
+clustering is clustering is a technique
+used to group a similar data points
+together based on their characteristics
+or features in simple words grouping
+unlabeled examples is called clustering
+then what is hierarchical clustering
+well
+clustering is a method of clustering
+data points into groups based on their
+similarities or dissimilarities
+in this method there is a tree like
+structure created it is also called as
+dendogram
+where each data points is represent as a
+leaf node and the cluster are
+represented as a branches the tree is
+not a single set of cluster but rather a
+multi-level hierarchy where the
+clustering is done one level and joined
+as a clustered at the next level
+have gotten basic understanding of
+clustering an oracle clustering now
+let's see the difference between
+clustering and aortical clustering
+clustering is a technique that involves
+in the grouping of set of data points
+into a cluster based on their similar
+characteristics
+hierarchical clustering specify
+clustering algorithm that creates a
+hierarchy of a clusters clustering does
+not create an hierarchy of a cluster
+instead it is a simple group of data
+points into a fixed number of clusters
+hierarchical clustering is used in a
+dendogram showing the IRA
+calculationship between the Clusters
+clustering needs the number of clusters
+to be specified ahead of time
+hierarchical clustering does not
+requires the number of clusters to be
+determined
+now it's time to understand the types of
+hierarchical clustering there are two
+types of hierarchical cluster algorithm
+and devices
+clustering is a clustering where each
+object start its own clusters and its
+progressively merge with its nearest
+neighbor until all objects are in a
+single cluster in divisive clustering
+all the objects starts in a single
+clusters and are progressively split
+into a similar casters until each object
+is in Old cluster moving further
+let's know the use of clustering and
+hierarchical clustering in real world
+clustering in hierarchical clustering
+are the popular techniques used in
+various fields of data analysis pattern
+recognization data visualization and
+many more for example let's first
+consider email segmentation clustering
+is also used image processing to
+separate the image into a multiple
+segments or regions this is useful for
+tasks such as object detection image
+compression and image segmentation and
+the second usage is medical research
+clustering is used in medical research
+to analyze the patient data and identify
+the subgroups of the patients with
+similar medical conditions this helps
+the researchers to identify the risk
+factors develop treatment plans and
+personalize a treatment for individual
+patients and the one more popular usage
+of clustering is social networking
+analysis hierarchical clustering is also
+used in social networking analysis to
+identify the communities or groups of
+individuals with a similar interest or
+behavior this helps the resources to
+understand the social dynamics identify
+the key influences and analyze the
+information diffusion now let's
+understand how to create clustering in
+Matlab the basic step to create
+clustering in Matlab first is to load
+your data load your data into a Matlab
+using any of the supported file formats
+such as CSV matte or txt or any other
+the next step is to pre-process your
+data previous the data by removing any
+missing or irrelevant values and
+normalize your data if required and the
+third step is to choose the clustering
+algorithm choose a suitable clustering
+algorithm based on the characteristics
+of your data and the objects that you
+are analyzing the common clustering
+algorithms includes k-means hierarchical
+clustering and many more and the fourth
+step is to set a parameter set a
+parameter of a chosen clustering
+algorithm such as the number of clusters
+distance Matrix and the clustering
+method and the last step is to perform
+clustering and visualize the result use
+the clustering functions in the Matlab
+to perform the clustering on your data
+and visualize the result of clustering
+using the plots and the graphs and helps
+them to interpret the results now let's
+understand how to create a radical
+clustering the first step is to load
+your data
+you need to load your data into a matrix
+format where the rows represent the
+observation and the column represent the
+variables and the second step is to
+choose the distance Matrix and the
+leakage method
+select the distance Matrix and the
+leakage method that suits your data and
+the analysis that you want to perform
+the next is to calculate the distance
+Matrix
+use the predest functions to calculate
+the distance Matrix between the all the
+observation in your data
+the fourth is to create the clickage
+Matrix
+use the leakage functions to create a
+leakage Matrix that defines the
+hierarchical clustering the inputs to
+the functions that are distance Matrix
+and the chosen leakage method and the
+last one is to plot the dental graph use
+the dendrogram functions to visualize
+the hierarchical clustering as a dental
+graph now let's Implement clustering and
+hierarchical clustering in the platform
+first let's Implement clustering in
+Matlab for that first I'll load a data
+set
+I'll use an function called load and
+data set nav
+I am using fissure
+Iris
+dataset
+you can see we have means and species
+which is of 150 plus 4 Double Matrix and
+species is a 150 cross one cell Matrix
+now what I'll do I'll
+take a variable called Data
+and
+normalize means
+into entire column
+and the second row till
+the end
+close the bracket end with the semicolon
+now we have a data of 150 cross three
+double Matrix
+now what I'll do I'll normalize this
+data data is equal to I'll use a
+function called normalization
+or normalize within the square brackets
+I'll pass the variable called
+data
+into the semicolon
+now
+I'll take a variable K and Define the
+number of clusters as we know in
+clustering we have to define the number
+of clusters before we perform clustering
+next
+we can see we have a variable K which as
+a 3 as we have defined the number of
+clusters is
+3.
+now I'll take one more variable called
+outputs and in that I will Define a
+static
+set
+static step set which will create the
+statistic operations of a structure I'll
+give a two variable called
+display
+and final and I'll just close the
+bracket and it will semicolon
+now to perform clustering we are using K
+means algorithm in this for this data
+set
+to take the values or two variable
+called index and a c
+which is equal to I am calling K means
+algorithm using and
+variable called K means
+and within the bracket I'll give data K
+clustering
+[Music]
+element and then I'll give the
+distance
+after that I'll give the distance
+and I'll just also mention the
+replicates
+and I want five replicates within the
+code Square Dimension and I want the
+fire application and I'll mention it as
+Phi and then it codes I'll give the
+options and at last I'll call off
+variable which I have created the static
+set of operations or structures
+and we can see as we have already told
+we have fire replicas replicate one two
+three four five and respective
+iterations we have total number of
+distance between the replicants and
+regulations and we can also see the best
+total sum of the distances is
+94.6833 we also got the best total sum
+of the distance now it's time to
+visualize this data in the form of
+graphs before that I'll just clear my
+screen
+now we will visualize this data first of
+all call a function called
+figure then
+after getting back to the command prompt
+I'll just keep I'll use scatter plot
+I'll use scatter off
+data
+with the respect to the first
+row and again data
+with respect to this second
+close
+and this size is 10
+with respect to ideas and I want my
+scatter plot to be filled
+and and close the semicolon
+and
+enter now I'll just say
+hold on
+please hold on
+foreign
+I will also plot C
+that is C
+C of
+entire row
+comma 1
+and same it as C or at least Capital C
+of
+entire thing comma second one
+and I'll mention all the parameters
+Marcus oh sorry I just forgot to
+mention the marker size
+and give it as
+markers size
+and I'll specify it
+it should be inside the quotes specify
+the marker size as 15.
+comma
+and I'll just specify the line
+width
+should be
+three
+floors with a semicolon
+and using Legend function
+I am labeling them as
+cluster 1
+again same
+cluster 2
+comma
+cluster 3 close the brackets let these
+CB caps
+to maintain the uniformity
+and then I'll
+so create the center
+rods
+close the codes and the comma
+Mark the location
+through the codes comma
+and last end of the semicolon
+oh I just made a mistake in the spelling
+of Legend I just run it once again
+as you can see we have got this graph in
+our data set we have a three different
+flowers of different characteristics one
+flower is represented as in blue color
+one is represented in yellow color one
+is representing purple color as we can
+see the into marks are the Clusters that
+are the similar characteristics that
+three flowers which has and cluster one
+is a similar characteristics that the
+flower one has
+like this you can perform clustering to
+any different data set that you want
+using Matlab now let's see how to
+perform hierarchical clustering
+first we'll perform ironical clustering
+by creating our own data set before we
+move on I'll just quickly clear my
+screen
+and clear all the variables using clcn
+clear option
+as I said earlier we will perform Oracle
+clustering for two different data sets
+first we will create our own data set to
+create or to load our own data set we
+will take a variable called Data
+which is equal to
+Rand of 50
+cross 5 Rand is in variable which will
+create a random integers from 50 to 5.
+as we can see we have variable data
+which has 50 cross 5 elements
+now we have to choose the distance
+Matrix and the leakage method
+for that what I will do is I will take a
+variable name as
+distance
+metric
+and we will use the famous distance
+metric that is euclidean
+semicolon
+and for leakage
+underscore
+method
+[Music]
+compete
+copyright copy and with the semicolon
+now we have to calculate the distance
+method and the calc and then I will
+calculate the leakage metric for first
+we will calculate the distance metric
+that is
+again I'll use the keyword called
+distance which is equal to we will use
+the function called pdist
+inside that will pass a data
+comma
+and also will pass the
+distance Matrix function and then width
+bracket and semicolon
+now again I will do the same for the
+leakage Matrix that is we will do again
+we'll take the
+keyword variable called linkage and we
+will just use a function
+linkage
+within the bracket will will pass the
+distance
+and the
+linkage
+method function and close into the
+semicolon
+as we have see you can see we have
+calculated both linkage and distance
+Matrix now
+at last we'll just plot the dendrogram
+using the function called
+dentogram
+which in that will just pass the
+h
+yeah this is
+you can see we have got the diagram as
+we discussed hierarchical clustering
+forms a tree like structure which is
+called endogram we can see this graph
+looks like a tree and this sub graphs
+look like its branches
+like this you can perform Oracle
+clustering for your own data sets now
+it's time to see how to perform anorical
+clustering for data set or loading the
+other data set from a Google or kaggle
+anywhere before that let me clear all
+the figures
+and clear my screen and workspace
+to perform hierarchical clustering for
+loading data set I have already
+downloaded the data set called digit.csv
+and imported using the import option
+you can also download any data set that
+you want and use the import option to
+import your data set and it will be
+saved in the file section
+first we will load a data set using load
+digit.csv
+semicolon as we can see we have a
+variable called digits created with the
+data set of
+1797 cross 65 Matrix
+now we will just calculate the distance
+using the variable as we used before
+called distance
+which is equals to we use the function
+called pdist inside that we will
+pass the our data set that is digits
+and
+call our
+famous distance calculator that is
+utility using
+[Music]
+and just close the brackets and the
+semicolon and press enter
+as we you can see we have a distance
+variable created here next again the
+same way we will calculate
+the leakage
+which is equal to
+foreign
+function
+inside that we will pass the distance
+[Music]
+and
+here we will give the average
+Now using the dendrogram we will just
+plot
+see leakage
+or just
+close and in semicolon and Justice enter
+as you can see we have got an endogram
+graph as we know the article clustering
+forms a tree like structure which is
+called a diagram this is the
+gendrendogram which has been created for
+data set now getting back to the command
+prompt now we will Define the cluster
+number and then plot this using the
+scatter plot
+before that I'll just clear my screen
+and now I'll give num underscore
+cluster is equal to 3 into semicolon
+inter
+now we have the number of clusters which
+has been defined now we will Define the
+cluster assignments
+which is equal to
+cluster function within that
+I'll pass the
+leakage
+and then the
+Max cluster
+and the number of clusters that we have
+defined
+and run
+now I have to plot this for that I am
+calling
+figure
+function
+and then scatter plot
+do some scatter
+off
+first one is a cluster assignments
+versus the num clusters
+the size should be of 20 and
+it should be
+I want it should be filled
+mention it as failed
+underneath the semicolon net
+as you can see the graph we have got our
+scatter plot as per the our cluster
+assignments and the num cluster that is
+the number of clusters we have specified
+as three and we have got a maximum
+clustering points of our data set
+like this you can perform hierarchical
+clustering and clustering for any
+desired data set that you want
+with this we have reached the end of
+this session today we have learned what
+is clustering understood what is
+hierarchical clustering what are the
+real world uses of clustering analytical
+clustering we also learned steps to
+implement clustering and analytic
+clustering at last we implemented
+clustering analytical clustering for
+different data sets
+please like this video and share with
+your friends for more such videos please
+visit our simple learn YouTube channel
+for any query regarding this topic
+mention it in the comment section
+thank you keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

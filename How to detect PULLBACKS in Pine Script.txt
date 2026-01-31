@@ -1,0 +1,589 @@
+hey Traders hope you're doing well in
+today's video I want to break down the
+source code to a script I wrote a long
+time ago that script is called the
+aggressive pullback indicator and it's
+designed to detect pullbacks in the uh
+Forex markets that was its original
+intent but of course it works on any
+Market um this was actually the very
+first script I ever published so if we
+come to my trading view profile and
+scroll to the bottom of my script list
+this is the very first script I ever
+published my aggressive pullback
+indicator back in June of 2018 A lot's
+happened since 2018 uh but the markets
+haven't changed pullbacks are still an
+effective way to trade and so in today's
+video we're going to take the script
+update it to version five syntax with
+the latest Pine script features
+including uh importing libraries so
+you'll get to see a lot of different
+techniques in today's video so if you're
+interested in that stick around and
+after the disclaimer we will get
+[Music]
+coding
+none of the material in this video is
+financial advice I'm experienced in
+managing my own finances but I'm not
+qualified to give anyone advice on what
+to buy or sell everything I do in these
+videos is purely to demonstrate coding
+techniques and the code I write is
+purely for example purposes you should
+always do your own research and due
+diligence before engaging in trading or
+investing and please seek professional
+guidance if you need it with that said
+let's look at some code all right so as
+mentioned the purpose of this script the
+reason I created it in the first place
+was to help me trade a pullback System
+created by one of my very first trading
+coaches or mentors Steven Hart from the
+trading Channel Steven has come a long
+way since then he's got 2.5 million
+subscribers when I first found his
+channel he had about 100,000 he's one of
+the biggest um trading YouTubers on the
+planet uh but anyway this system he
+created called the pullback strategy he
+has changed rules over the years but
+this is the original incarnation of my
+tool I created to help me trade this
+pullback system now this isn't a trading
+lesson so I'm not going to tell you the
+rules you can use all kinds of rules
+effectively to trade pullbacks um the
+way I used to trade it was basically
+this script will sometimes pick up false
+positives so I wouldn't trade every
+signal that detected but this signal
+here would meet my rules we've got a 1
+two 3 Move break above uh the EMA and
+then a pullback that does not break the
+prior low and we get a valid pullback
+signal here I would back in 2018 when
+when I started learning systematic
+trading and rules based trading this is
+the very first system I learned to trade
+that made me a consistently profitable
+Trader and how I used to trade it was
+I'd enter long stop loss here one target
+here once that was hit I would Trail my
+stop loss on my open position until it
+got hit by a price action so it was a
+two target system very simple I traded
+the 4-Hour time frame on the major Pairs
+and it was quite effective back in 2018
+it's probably changed now I don't trade
+the system the same way anymore so so
+again this is not a trading video this
+is not trading advice this this is just
+what I did back in the day so this
+particular tool is an indicator so it's
+not a strategy script what I would
+normally do is Select my script it would
+say API alert or aggressive pullback
+indicator alert I would create my alert
+and then whenever a signal was uh
+generated I would get a push
+notification to my phone and I would
+come and check the charts and uh enter
+my trades manually so today's lesson is
+an indicator script it's a market
+analysis tool um just a good example a
+good template for you guys to work with
+if you're interested in analyzing
+pullbacks so with all that said let's
+jump into the pine editor and get coding
+all right so I've already written out
+the code to the script but I'll delete
+all that code so that I can build out
+each section one by one and explain what
+I'm doing the full source code as always
+will be in the pin comment below in the
+video description if you want to um Jump
+Ahead copy it and and play around with
+it but if you're interested in
+understanding the code stick around and
+I'll explain everything so first of all
+uh I need overlay the TR so so that I
+can draw over price action I'm importing
+my zen Library so my zen
+Library um I'll go over that later but
+basically it's just a um it's basically
+just a a script Library it contains a
+bunch of code that I reuse in a lot of
+my uh scripts like Candlestick detection
+and certain um Market condition uh
+filters it's all included in my library
+and I can simply access them by typing
+zen. control space and here is the list
+of functions included in my library and
+I'll use a couple of these in today's
+script
+so I'm going to copy over some code here
+we'll start with some user inputs as
+always now I could have added a lot more
+um indicator uh settings here but I've
+kept it really simple for today's lesson
+so we've only got an EMA length a stop
+size multiplier of the ATR a risk risk
+reward profile and a signal type EMA is
+just the EMA period stop distance is a
+multiplier of the ATR so by default it's
+a one ATR stoploss and the risk reward
+is by default a one:1 risk reward so
+very simple settings here next up uh I'm
+just going to check create two
+persistent variables here or constant
+variables um these variables will never
+change these are two Boolean variables I
+can add Bull on the end here just to
+make it clear what they are so this will
+dictate whether or not this uh script
+generates long and or short signals so
+we're just checking is signal type set
+to both or long if that's true true then
+we are taking long trades and the same
+for short trades so if I save my code
+open up the
+settings this would only detect long
+trades this would only detect short
+trades and both would detect both um
+this is how I manag that setting here
+and we reference these values later the
+next thing I need to do is just get some
+indicator values all so we're getting
+our EMA value using the standard method
+we pass in our EMA length and we're
+generating it based on the closing price
+uh our ATR is hard-coded as a 14 period
+ATR again you could change these into
+user inputs if you wanted to tweak them
+um but since this isn't a system script
+it's not a strategy script it's not
+generating trades it's not a lot of
+benefit to um adjusting that unless it
+it suits um your trading uh rules and
+system normally I just hardcode a lot of
+these indicator values when I'm dealing
+with an indicator um but with strategy
+scripts you obviously want to see the
+effective tweaking these values so yeah
+that's just a matter of preference for
+you guys if you want to expand the
+script to add user inputs next we have
+uh stop size so this is what generates
+our stop loss size in Pips or points in
+the in the stock market um so this value
+is going to be the current ATR value
+multiplied by our stop size or stop
+distance input so if I set this to two
+we'll have a 2 ATR stop loss you get the
+idea
+next up we need to calculate our
+stop-loss and Target prices now because
+this isn't a strategy script this is
+very simple for an indicator script this
+is a lot um less complicated than it
+would be for a strategy script for this
+I just need a single Trade Stop price
+and a single trade Target price this
+script doesn't take long and short
+trades at the same time so we can just
+store one stop and one Target price for
+every traded uh detects however for our
+long and short uh stop losses they
+obviously need to be different because a
+long stop is below price a short stop is
+above price so the formula is a little
+bit different for that long entry size
+is actually in Pips so this should
+probably say distance that's a little
+bit confusing because I associate size
+with position sizing so I'll change that
+to distance and we'll have to tweak the
+script as we go and this should say stop
+really not entry I don't don't know what
+I was thinking there
+um to be fully honest with you when I
+first started trading I was a stoner
+musician so I was probably smoking weed
+when I wrote the script I don't do that
+anymore because uh it did not help me uh
+with Focus as a Trader so that's a habit
+I've dropped since I became a Trader you
+have to make a lot of sacrifices as a uh
+professional Trader so long stop
+distance Short Stop distance now because
+I'm calculating my long stop and short
+stop distances Pips
+um things are a little bit different
+here this is subtracting the lowest low
+from the closing price so let's say uh
+this was an entry reason
+here entry signal so I'm taking my
+closing price and I'm subtracting the
+low the lowest low that gives me this
+distance here and then I add my stoploss
+distance which is uh this multiplied by
+the ATR so a 2 ATR stop would be down
+here somewhere so I'm adding on that
+extra
+stop- loss distance and this gives me my
+stop loss distance in Pips not a price
+stop- loss A pip based stop- loss and
+then I can use that to calculate my
+stops and Targets later after we've
+quote unquote entered the trade or or um
+generated the entry signal I can use
+this information to generate my
+stop-loss and then I can use my
+stop-loss distance to generate my
+takeprofit distance so we we'll get to
+that in a minute so next up I need my
+signal rules so I've just written a few
+comments here to explain the rules each
+entry only has three rules or some of
+these are merged together I simplify
+this script a bit there used to be six
+rules but I've Consolidated them down
+into our three so the first rule is that
+we need an engulfing candle that
+engulfing candle must be above the EMA
+for long trades or below for short
+trades rule number two is that the entry
+candle must be the current swing low or
+high for a short trade so we're only
+looking for Extremes in price action
+we're looking for a swing low and then
+an engulfing candle to occur or in the
+case of a short trade uh we're looking
+for a uh we're looking for a swing high
+and then an engulfing candle below the
+EMA so the EMA Keeps Us in the right
+direction trend-wise and momentum wise
+the engulfing candle is our entry signal
+um the engulfing candle must be a
+current swing high or swing low and the
+engulfing candle must not be massive so
+sometimes you'll see um situations like
+this where maybe this was the swing low
+and then you have a gigantic engulfing
+candle which is clearly not tradable I
+wouldn't I would never when I was
+trading this system I would never enter
+a candle this big and so I do have a
+filter in this pullback detection to
+eliminate detecting giant um engulfing
+candles so with all that said let's copy
+over my actual entry code and I'll
+explain what's happening
+so here I'm validating long trades and
+short trades we're combining our three
+rules which are listed here so to keep
+things simple I'll just focus on Long
+trades for now so that we can easily
+wrap our head around What's Happening
+Here the short trade is identical it's
+just flipped so we're checking if the
+closing price is above the EMA and I'm
+using my zen Library here to use a
+function I created to count how many
+bars have closed below the given ma
+value over the given look back period
+this function call here is checking how
+many bars closed below the EMA over the
+past three bars that number needs to be
+less than equal to or less than one so
+we can only have one bar closed below
+the EMA over the past three bars if we
+have more than that it's an invalid
+trade because we're whip soring around
+the
+EMA and I'm detecting my bullish
+engulfing Candlestick pattern using my
+zen Library as well that simplifies my
+code quite a bit um both both of these
+two functions cut out I don't know maybe
+20 lines of code maybe not quite that
+many but um it cuts out a bit of
+complexity um and I use these filters
+quite often in a lot of my scripts so
+that's why I created my zen Library if
+you're interested in the source code to
+this I already have a a lesson on the
+channel um breaking down the source code
+to the Zen Library script it's
+completely open source um but if you
+want to quickly see what this is doing
+you can hold down control click on that
+function here is the uh Zen light
+Library script um here's the
+documentation is a loose word for it
+here's the description of each um each
+function and what it does what
+parameters it takes what it spits out or
+returns it's more technical word for
+that if I scroll down here um and expand
+my source code if I find bullish
+engulfing candle here is all the checks
+for a bullish engulfing candle there are
+some optional parameters that I'm not
+going to touch in today's uh video you
+can read through this documentation if
+you're interested there are also other
+Candlestick patterns we could detect
+dois we could detect hammer and star
+candles instead of engulfing candles
+which look like this uh that would be a
+hammer candle and a star candle the
+opposite way you could uh these are
+great entry reasons as well in pullbacks
+they also make for good u mean reversion
+Candlestick patterns but anyway back to
+the scripts the next rule was that we
+need to be a swing high or low so here
+we're just checking is the current bar
+the lowest low over for the past seven
+bars or was the previous bar the lowest
+low so in the case of this trade here or
+this signal here the previous bar was
+the the lowest low over the past seven
+bars in the case of this bar here the
+signal candle was the lowest low over
+the past seven bars so we need to check
+for both in order to accurately detect a
+swing low next we have Ure and golfing
+candle is not massive so we're making
+sure that the closing price is lower
+than the highest
+opening price over the past five bars so
+here we have 1 2 3 4 5 this is our
+opening price over that five bar period
+the highest opening price our close must
+be below that this stops the script from
+detecting candles like the one I showed
+you earlier here this definitely closed
+well above the highest open over the
+past five bars so this doesn't count as
+a pullback trade this is more of a
+breakout trade at this stage because
+we've broken highs um I'm not looking
+for that with this particular signal
+script I'm looking for pullbacks that I
+can enter on and uh a candle that closes
+above the pullback that's not a pullback
+anymore that's a breakout so that's not
+what the script is looking for the
+second check here is that the current
+bars true range is less than the ATR the
+current ATR multiplied by two so the uh
+candle size must be less than this value
+time 2 so if I hover over that bar
+that's 26 so we're looking at about a 52
+53 pip um candle size so if the candle
+size was any bigger than that uh we
+would not enter it either because again
+we need our stop loss um below the swing
+low and this script shoots for pretty
+tight targets so if the targets are way
+up here it becomes more of a trend
+following system rather than a uh
+pullback system so or or strategy so
+it's a matter of preference but that's
+how I wrote the script because I didn't
+want to capture signals that had really
+wide stops and targets and that's it
+those are our rules the conditions for
+entry it's quite simple really if you
+think about it the code looks
+complicated if you're new to pin script
+but it's really not that complicated
+we're just combining a few indicated
+conditions um and a few press action
+conditions with a Candlestick pattern to
+generate an entry and it's surprisingly
+effective as I always say on my channel
+uh I think simple is better when it
+comes to systems and that's still true I
+mean I started trading in
+2018 about 7 years ago I now trade over
+half a million I still keep it simple
+I'm still keeping my uh my trading
+simple and so that hasn't changed since
+I began trading even as a broke
+University Dropout um I've always kept
+my trading simple to this day and it
+works for me that's how I like to trade
+again the short signals are the same but
+just uh flipped so let's move on to our
+entry or or signal generation code so if
+I copied this
+over here we're checking are all our
+long and short conditions met these two
+here combine all of our rules uh if all
+of our rules are met for either trade
+then we save our stop price and our
+Target price our stop price is
+calculated by subtracting our longstop
+distance from the closing price so so I
+would typically enter on the closing
+price of the signal back when I traded
+this system so my stop loss would be the
+distance from the closing price of the
+signal candle down to um below the swing
+low subtracting our long stop distance
+in Pips from the entry price and for our
+Target price we simply add our long-
+stop distance multiplied by our risk
+reward so if we've got a 10 pip stop
+loss from our entry we would have a 10
+pip Target from our entry um I change
+this to two then we would have a 20 pip
+Target and a 10 pip stop anyway we're
+nearly done the last thing to do is draw
+all of this information onto the chart
+so let's do that next I can get rid of
+this placeholder
+plot um I'll scroll over for a second
+and just show you guys you're not
+missing out anything the fact that this
+is cut off uh this is just descriptions
+tool tips for the uh inputs and this is
+just plot code I'm using plot style line
+break yeah this looks a bit complicated
+I'll break it down the first thing we're
+doing is plotting our EMA then we're
+using plot shape to plot triangles above
+and below our entries and then we're
+drawing our stops and targets the reason
+this is so complicated this formula is
+that because I'm not using persistent
+variables to track our our Trade Stop
+price and trade Target price these
+variables reset on every bar that is not
+a valid long or short trade so you don't
+have to understand what's happening here
+there's a lot of tary operators these
+are called so all we're checking here is
+do we have a valid trade on the current
+bar or the previous bar if so then we
+check is it on the current bar if it's
+on the current bar we can just draw the
+Trade Stop price because that was just
+calculated on this tick on this bar
+otherwise if we are not currently a
+valid long trade that means that we must
+have been valid on the previous bar and
+so we draw the previous Bar's Trade Stop
+price that way we get a slightly longer
+stop loss drawing if I don't have this
+then our stop loss if I don't have the
+code written this way then I'll stop
+loss and targeted is these tiny little
+dashes which are really hard to see so I
+made this plot code just a little bit
+more complicated purely for visual
+purposes so that we get a slightly
+longer um stop and Target drawing um but
+anyway I could consolidate all of these
+down into just trade stop price and
+trade uh Target price but I did choose
+to separate all of these into long stop
+Short Stop um and so over in the data
+window here or wherever that is here
+data window um
+they're all separated into their own
+boxes here anyway that's it for the
+script the final thing I did was
+generate alerts so let's copy that code
+over and wrap this up um I'm using the
+alert condition function I could have
+also used the um if valid long then
+generate an alert this
+way I opted for this version because it
+was simpler and also because back in uh
+2018 the alert function didn't exist
+test so I just left that in the way it
+is um for this video so now have I saved
+my
+code we have an API alert for our alert
+title and our message is pullback signal
+4 and then this is a placeholder tag
+that will be replaced with the symbol
+that we set the alert on very simple
+Let's uh zoom out and have a look at
+some signals um it's a it's a pretty
+effective pullback system let me make
+sure all my settings a default as you
+can see it uh detects some some decent
+opportunities here uh again this is not
+a trading video this is not a trading
+lesson this is not Financial advice um
+but this is worth exploring if you're
+researching systems it's worth playing
+around with have a look try try your own
+um entry criteria market conditions
+Candlestick patterns um but as you can
+see this is Cherry pi picking just the
+past dozen or so trades but we've had
+more winners here than losers it's not a
+complete waste of time to investigate
+this type of system and again depending
+how you trailed your stop- loss um or
+managed your profit uh could have been a
+lot more profitable than just one to one
+if you'd like to learn more about
+pinescript check out our website I have
+a completely free 6-hour pin script
+Basics course there which explains the
+core fundamentals of Pine and if you
+want to take your coding skills to the
+next level check out my Mastery course
+we have over 50 hours of content and 50
+plus five star reviews and growing the
+pinescript Mastery course also comes
+with support where I can help answer any
+questions you have about pinescript
+coding and of course there's tons of
+free content on my YouTube channel so if
+you're new to pinescript go and check
+that out too anyway that'll do it for
+today's video I hope you found this
+interesting if you did make sure to
+please subscribe to the channel I'd love
+to have you as part of our community as
+part of our uh followers I appreciate
+every single one of you I read every
+single comment I can't always reply um
+but I do read them all and I appreciate
+every single one of you even those of
+you who are who don't always have
+positive things to say but most of you
+do and I love that I'm really grateful
+for that uh you're all amazing I wish
+you the best of luck with your trading
+and I'll speak with you in the next
+video I don't think there'll be a video
+next week cuz my fiance and I Jade will
+be going away on holiday she runs our
+support team so there will be a little
+bit of a blackout with support next week
+unfortunately but we'll be back hitting
+the ground running when we return from
+our holiday so make sure to subscribe
+check out our resources the website
+theut trading.com we've got tons of
+stuff there tons of free stuff and
+premium paid stuff that goes to the next
+level if you're wanting to take this
+stuff to the next level yourself um
+anyway that's all take care I love you
+all
+goodbye

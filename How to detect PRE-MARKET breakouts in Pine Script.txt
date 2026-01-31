@@ -1,0 +1,125 @@
+good day Traders just a quick one for
+you guys today about the inbuilt session
+variables and how to use them to analyze
+pre-market price
+[Music]
+action none of the material in this
+video is financial advice you should
+always do your own research and due
+diligence before engaging in trading or
+investing and please seek professional
+guidance if you need it so this is a
+question from a student of our
+pinescript Mastery course they asked if
+I've written WR a script to detect when
+the pre-market opens above the previous
+day's high or low and get alerted when
+this happens I haven't written a script
+like this before but I knocked one
+together really quickly for this video
+Lesson because I thought it was an
+interesting question and a good way to
+display some session based analysis
+techniques so here we can see that uh
+this green background is the pre-market
+before the official Stock Market trading
+begins this red line is our previous
+day's high this bar opened above that
+previous day's High in the pre-market
+and we are generating a signal here
+which will trigger an alert if we come
+up here and select our script and select
+um the corresponding alert condition and
+then the way the script is written is it
+will only detect a breakout on the very
+first bar of the pre-market so if you
+select that setting in this script then
+every day that trading begins on this uh
+markets you're trading the watch list
+you have this alert will fire whenever
+the Market opens above the previous
+day's high in the pre-market or below
+the previous day's low in the pre-market
+so this bar open below we get this red
+symbol and we trigger an alert so let's
+have a quick look at the code to break
+down the script it's pretty simple
+there's um a few lines here but but it's
+actually quite simple so what we're
+doing is just a regular indicator here
+we get the previous day high and low
+using our non- repainting security
+function I don't know if repainting
+matters in this particular case but I'm
+just in a habit of using this non-
+repainting code um I simply copy and
+pasted this code from this lesson here U
+my uh daily breakout indicator lesson if
+we come down here um the code was
+already written out here so I just
+copied this code over here and then um
+here is where we detect our breakouts so
+we're just checking is this the first
+bar of a new trading session and is this
+bar in the pre-market so session do is
+premarket will return true if the
+current bar is of the pre-market trading
+and is first bar will return true if
+this is the first bar of the day's
+trading session now this will return
+true even if we're not in the pre-market
+so if I if I turn premarket trading off
+in my settings here if I change this to
+regular trading hours um the very first
+bar would be true this condition would
+be true so that's why we need to check
+both that this is the first bar of a new
+trading session and we are in the
+pre-market and the current bars open is
+greater than the previous day's High
+pretty simple uh same for the bearish
+we're checking are we in the pre-market
+is this the very first bar of the uh new
+day's trading and are we opening below
+the previous day's low that's it and
+then we have some code here to trigger
+alerts so this one will fire an alert
+for both this will only fire an alert
+for bullish breakouts this one will only
+fire for bearish breakouts so you can
+differentiate between the two if you
+need to if you want to trigger for both
+you just click this one and click create
+and then we have some drawing code we're
+just plotting the pr previous days high
+and low um these red and green lines and
+we are plotting a shape when the signal
+is detected and we're highlighting the
+pre-market this you don't really need
+this I was just doing this to make it
+clear what the pre-market color was the
+pre-market color by default is this
+orangey color um and there you have it
+there's a script that is detecting a
+open in the pre-market above the
+previous day's high or low uh to give
+you a heads up that today might be a
+breakout Day if you'd like to learn more
+about pinescript check out our website I
+have a completely free 6-hour pinescript
+Basics course there which explains the
+core fundamentals of Pine and if you
+want to take your coding skills to the
+next level check out my Mastery course
+we have over 50 hours of content and 50
+plus fstar reviews and growing the pin
+script Mastery course also comes with
+support where I can help answer any
+questions you have about pinescript
+coding and of course there's tons of
+free content on my YouTube channel so if
+you're new to pinescript go and check
+that out too too I hope you found this
+lesson interesting good luck with your
+trading and I'll speak with you in the
+next one take care guys

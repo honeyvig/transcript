@@ -1,0 +1,128 @@
+foreign
+'s YouTube channel in this session we
+will learn how to find the second
+highest salary in a SQL table but before
+we begin let me tell you guys that we
+have daily updates on multiple
+Technologies if you're a tech geek in a
+continuous hunt the latest technological
+Trends then consider getting subscribed
+to our YouTube channel and don't forget
+to hit that Bell icon to never miss an
+update from Simply learn now without
+further Ado let's get started with the
+one point agenda that is how to find the
+second highest salary in SQL so this
+particular type of questions will be
+most frequently Asked in data analytics
+interview questions so let's try to
+understand the syntax of how to find the
+not just second but any number of
+salaries given in a SQL table let's say
+your interviewer asked you to find the
+top third salary or top fourth salary
+you can find that using the same syntax
+so the syntax is something similar to
+this as shown now but before we begin if
+you are an aspiring data analyst then I
+have the perfect cause for you we have
+the professional certificate program in
+data analytics boast your career over
+this data analytics program in
+partnership with Purdue University and
+in collaboration with IBM which features
+master classes and follows an applied
+learning model with real-time projects
+and business case studies now that we
+have a clear understanding of the pgp
+data analytics certification with simply
+learn in collaboration with IBM from
+Purdue University we will get started
+with our tutorial for today's session
+so here you can see select star you can
+also use these specific columns you want
+that is name and salary but I'm
+selecting star that is every single
+column in my table that is Select Staff
+from employee table Group by salary so
+you'll be grouping by salary here and
+order by salary descending since we
+wanted to find the highest we will be
+choosing the descending order that is
+increased number that is the highest
+number to the lowest number in case if
+your employer or if your interviewer
+asks you to find the lowest salary then
+you will be using the ascending order
+right so since we are given the
+condition that we have to find the
+highest we will use the descending order
+then limit n minus 1 let's say You're
+supposed to find the fifth highest
+salary then the formula will be 5 minus
+1 and the limit one that is you just
+want one single row to be displayed on
+your output right so that's the reason
+we'll be giving limit as one right so
+this is the simple syntax you will be
+following now let's quickly execute this
+on MySQL workbench and try to get our
+results
+back to the Microsoft SQL workbench so
+now we are on the MySQL workbench let's
+quickly use the database and get access
+to our all tables now we have access to
+the tables and the employee table which
+we were working on
+so let's quickly have the show tables
+here and
+we have employee and employee table 2 we
+will be accessing the employee table
+which has the salary details so there
+you go we have Rakesh Jack Regina Etc
+right so here you can see Karen has the
+highest salary and the next second
+highest salary is Rakesh so we need to
+fetch this particular column here right
+since our expectation is to find the
+second highest salary let's try to
+write the following code that is Select
+star from employee
+Group by
+salary
+earned by salary
+descending order since we want highest
+salary and the limit
+n minus 1 that is 2 minus 1 or you can
+also write as 1 comma 1. and done
+let's quickly execute this code and
+there you go now let's say we want to
+find the third highest salary so here n
+minus 1 3 minus 1 is 2
+and execute this
+and there you go you have Regina so
+that's how you can extract second
+highest salary or any number of highest
+salary or the lowest salary based on the
+query changes you're doing let's say if
+you want the highest salary then you
+should be using descending order let's
+say you want the lowest salary should be
+using the ascending order so that's how
+you can extract the second highest
+salary from SQL tables and with that we
+have come to an end of this session and
+if you have any queries or if you
+require the resources that we used in
+the session maybe the sample codes
+syntax or the PPT then do let us know in
+our team of experts will be more than
+happy to resolve all your queries are
+the earliest until next time thank you
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
+foreign

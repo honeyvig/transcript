@@ -1,0 +1,252 @@
+hey everyone welcome to simply learns
+youtube channel in this session we will
+be discussing about mis reports in excel
+before we begin make sure that you have
+subscribed to our youtube channel and
+don't forget to hit that bell icon to
+never miss an update from simply learn
+so without further ado let's get started
+with our one point agenda that is mis
+reports in excel
+so first let's understand what exactly
+is mis report in excel
+so mis stands for management information
+system mis reports provide data on
+different categories for accurate
+decision making
+so mis in excel is a procedure to create
+interactive report using microsoft excel
+so mis reports help management to access
+the performance of organization and
+allow faster decision making so if you
+know to create the mis reports using
+various business intelligence tools such
+as excel then you might find a very good
+job opportunity in a well established
+company now let us try to learn how to
+create mis report using excel in a
+practical mode so let's get back to the
+microsoft excel if getting your learning
+started is half the battle what if you
+could do that for free
+visit scale up by simply learn click on
+the link in the description to know more
+so here you can see that i've got some
+sales data of various car manufacturing
+companies and i've also got some slices
+so using these slices i can get the
+real-time information from the dashboard
+so i'll select an ear from the first
+slicer and i'll go into the second
+slicer and i'll select a company
+now i'll select bmw and suv type so we
+have the data of all the suv types cars
+manufactured by bmw car manufacturing
+company in the year 2018. now let's
+start and create something similar to
+this one
+so how did i create this mis report
+let's go through this in a step-by-step
+way
+so on my screen you can see that we have
+created a completely new excel workbook
+and we have some sample data
+with 5 rows and 20 columns
+so this particular data is based on the
+manufacturer year and the car
+manufacturing company and the type of
+the car manufactured and number of cars
+manufactured in that particular year and
+also the price of that particular car
+now to create mis reports we need to
+play around favorite tables so we also
+have tutorials on pivot tables and you
+can go through that in our simply learn
+youtube channel and also we will try to
+link those in the description box below
+now let's select the entire data
+and go into the insert ribbon
+and there you can see the first option
+that is pivot table
+so after selecting the pivot table
+option it will show this particular
+dialog box where it will ask you for the
+range of cells you need to select and
+the next one is to
+create the pivot table in this same
+sheet or a new sheet so we'll take a new
+sheet here
+now select ok and there you have the
+pivot table here so first you have an
+empty pivot table and on the right side
+you can see we have pivot table fields
+now you can either drag these options
+into the rows and columns or you can
+also click it so now let's drag and drop
+these
+first we will select year
+and
+card
+followed by that we will take type
+quantity and price to columns
+so there you go we have our pivot table
+now
+let's select all the data in the pivot
+table
+and again let's get back to the insert
+option
+and here you can see an option called
+pivot chart select that
+and you will have various pivot chart
+options here now you can select any one
+which you can prefer or which you like
+or whichever you think can represent
+your data in a best way possible so now
+let's go with column chart first
+let's select okay and we have our column
+chart over here
+now this happens to be our first chart
+now let's create a few more charts
+so to create few more charts we will go
+back to the same original data
+select again insert and pivot table
+now again a new worksheet
+so here we have another empty pivot
+table
+in the similar way let's drag the same
+data into rows and columns
+there you go and again we will select
+all the data and create a pivot chart
+go to insert option favorite chat and
+now let's try to select pie chart
+select ok
+and we have our pie chart over here
+now let's try to create one more
+same procedure select table select pivot
+table then create new worksheet for the
+new pivot table
+and now drag and drop the data
+now let's go to insert again
+let's select all the data
+go to insert option and pivot chat
+now let's try to select the bar chart
+select ok and there we have our bar
+chart
+now
+remember the first chart we created that
+is in sheet 2 this one so we will try to
+move all the charts to this particular
+table or this particular worksheet
+so let's get back to the sheet number
+three right click
+and you can see an option called pivot
+chart analyze so from here
+you can move the chart select the option
+of moving the chart and don't select the
+first one select the object in option
+and select the sheet number to which you
+want to move this chart for now we want
+to move this chart to sheet number two
+select that press ok
+now we have the chart move to the sheet
+number two
+and in the same way let's go to the
+sheet number four
+and let's move this particular chart to
+sheet number two
+there you go the chart got moved to
+sheet number two
+now
+you can insert the slices
+so we have selected the third sheet or
+third chart and inside the pivot chart
+analyze option we have an option of
+inserting the slicer now
+we will insert the slices for year
+car
+and
+type
+now select ok and you will have all the
+three slices onto your sheet
+now let's rearrange them
+so i'm just organizing them in a
+neat way
+there you go
+and you can also customize your designs
+for all the charts
+so that they look a little more better
+now
+if you see
+if i make some changes only one chart
+will be interacting for this
+right so if i select ferrari and year
+2020 and
+option as sports you can see only one
+chart is interacting to these particular
+slices why because all these slices are
+connected to just one chart here so you
+need to make sure that all the slices
+are connected to all the three charts
+what we created so let's erase all the
+filters and select one slicer at a time
+right click and you will see an option
+of report connections
+select that and you see that the
+connections are only connected to the
+pivot table 3. so select the remaining
+pivot tables as well select ok and in
+the same way select the second slicer
+select the report connection option
+connect pivot table 1 and 2 and select
+ok and in the same way the third one
+so now all the slices are connected to
+all the pivot charts now if you make
+some changes here they will respond
+automatically in the same way
+now let's select the fourth company the
+year 2019 and hatchback option and you
+have all the cars which were made in the
+year 2019 from ford company in the
+segment of hatchback
+so this was the sample data set that we
+worked on now you can also work on some
+complex data sets such as this
+superstore data set
+now one thing you need to make sure that
+when you're working with excel mis they
+need to make sure that all the macros
+are disabled on your data set and you
+convert the entire data into the regular
+table format of excel right now excel is
+considering this particular data as a
+database so for that you need to select
+all the data press ctrl t and then
+convert the entire data in the form of
+tabular data and also don't forget to
+click this icon which reads my table has
+headers so the first row is the headers
+now let's select ok and your entire data
+will be converted into tabular form
+now let's reset this to the normal
+type which has the clear color not all
+the fancy colors now the entire data is
+converted from the dbms to the tabular
+form and now he can start implementing
+the mis reports and pivot tables so
+that's how you work on mis report in
+excel with that we have come to an end
+of this tutorial on mis report in excel
+if you have any queries regarding the
+topics covered in this session or if you
+need the data set that we used in this
+particular tutorial then please feel
+free to write us down in the comment
+section below and our team of experts
+will be happy to resolve all your
+queries until next time thank you stay
+safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,415 @@
+foreign
+welcome to Simply learns YouTube channel
+in this session we will learn how to
+eliminate duplicate rows in SQL but
+before we begin let me tell you guys
+that we have daily updates on multiple
+Technologies if your attack geek in a
+continuous hunt for latest technological
+Trends then consider getting subscribed
+to our YouTube channel and don't forget
+to hit that Bell icon to never miss an
+update from Simply learn now without
+further Ado let's get started with a one
+point agenda that is how to eliminate
+duplicate records in SQL table now we
+can eliminate the duplicate records in
+SQL by a few methods so we will use the
+most simplest ones the first one is
+using the inner join along with a whack
+loss and the second one is a sample and
+the humble distant command now we have a
+brief idea on the methods let's
+understand them in a much more detailed
+way through a practical demonstration
+now let's get back to the MySQL
+workbench to understand the codes in a
+much better way so now now we are on the
+MySQL workbench and we will get access
+to our simply learn database and we are
+in the simply learn database so
+previously we used to work on our
+employee table so let's not work on the
+same employee table since we have actual
+data there let's try to duplicate that
+table so that we will have some
+duplicate entries in between so we will
+be changing the employee ID numbers and
+we will also be using the same employee
+ID numbers so the employee ID has some
+detail to it so we'll be understanding
+that in a much more detail while we are
+executing the commands and we will also
+try to remove the primary key from the
+table so I'll also explain why we are
+going to include the primary table and
+also will explain the usage of
+eliminating it so when you have the
+primary key in the table SQL workbench
+or any SQL will automatically stop you
+from adding duplicated values but let's
+say if you add a duplicate entry with a
+new primary key right then it will not
+stop you so we'll also have a
+demonstration about what to do in such
+scenarios so now let's try to quickly
+create a duplicate employee table which
+will be employee table 2 and then we
+will try to add some duplicate entries
+into it remember we will not use the
+primary key here so the code will be
+create
+table
+emply
+ee table
+two
+and everything will be same which is
+from the previous table which will be
+the employee ID integer type employee
+name character type this character type
+pen code will be integer and normally we
+include the primary key in this way
+primary key brackets open
+em
+so this is the way how we add the
+primary key but we are not going to add
+it since we want to know what happens if
+we enter data which also has the
+duplication of the primary key right so
+we will not give any primary key over
+here
+let's quickly run this
+there you got the new duplicated table
+of employee table has been created let's
+try to insert the same values with some
+duplication
+there you go I have pasted the command
+for inserting the values and if You
+observe clearly at the end I have
+repeated the values of Tony KT summer
+June and Gloria so these five will be
+the duplicate values and also we are
+trying to enter the duplicated primary
+key since we did not declare the ID as
+the primary key it will accept all these
+values let's quickly run this and there
+you go the values have been successfully
+entered into the table let's quickly see
+if we have the duplication
+select star
+from
+employee
+table
+enter there you go so you can see the
+duplicate values are also added onto the
+table now how do you remove these
+duplications remember we discussed the
+distinct one distinct method which is
+the second one so that happens to be the
+most simplest one let's see how it works
+so here we will write a simple select
+command
+select
+distinct
+star
+from the employee table 2.
+now this will give us the distinctive
+values
+right but again when you run this
+particular command which is Select star
+you will have all the details back again
+right our job is to eliminate them so
+what we will do is we'll create a
+duplicate table
+so let's name it as the up table
+so create table
+duplicate table will be the name
+now
+quickly execute this command
+and there you go now we have
+the
+data
+which we obtained from the distant
+command is stored into the table named
+as duplicate table
+now let's quickly drop the employee
+table 2.
+okay the table has been successfully
+dropped
+so when we run the same command once
+again it says simply learn DB did not
+find any table by the name employee
+table 2 that means it's been eliminated
+now the next thing we need to do is
+rename it
+so what we're trying to do is we are
+trying to use the altar table and we are
+trying to rename duplicate copy to
+employee table 2 so that we have the
+actual table here after eliminating the
+duplicated values let's not do copy it's
+actually Duke table
+right
+there you go
+now let's execute this
+successfully done now if we execute this
+particular select command you can see we
+have the cleaned data without any
+duplicate entries this was one of the
+simplest ways of eliminating duplicates
+in a SQL table now let's try to get a
+step ahead and try to use some join
+commands and
+where commands and where conditions and
+using those we will try to eliminate the
+duplications in a table now we are
+talking about a table which does have
+the you know primary key
+and the data's will be duplicated let me
+explain you how now let us declare
+the
+primary key as employee ID
+e
+s e m p ID
+right now we do have a primary key now
+there is no way okay let's try to create
+this uh before that let's try to
+truncate employee table 2
+so we can use the
+not the drop table we can use the
+truncate so let's replace drop with
+runki so that the data which we have an
+employee table will be removed there you
+go now
+we will or let's quickly drop the table
+because we are trying to create the new
+table right so let's create the new
+table
+so once we have executed the drop table
+command the table has been successfully
+removed now let's try to create this
+particular table
+enter there you go 3 will get
+successfully created now let's try to
+duplicate the same entries remember I'm
+not changing the primary key here
+now when I run this command I will get
+an error which says primary key cannot
+be duplicated
+so here you can see duplicate entry for
+9 and you cannot have the duplicate
+entries right this is one way to avoid
+duplications but what if someone comes
+up with a brilliant idea to replace the
+primary key now if I change the primary
+key
+as
+17 18.
+let's say we also
+have this data copy
+let's duplicate
+right this will be our 19 and this will
+be R20 now we have unique
+primary keys for Ola data and we also
+know there are some duplications let's
+try to execute this command and see the
+output
+so somewhere something is not correct
+yet
+look at this one
+so Tony has been repeated so we can have
+a different ID for Tony
+let's say we have Tony as 21
+try to execute the command once again
+it should be clear now
+okay it still has some duplication
+somewhere
+yes it's right here
+let's keep this as 22.
+okay I think we made a lot of
+duplications somehow
+let's quickly take a look at all the
+major keywords are duplicated or not so
+we copied from Gloria
+so after Gloria we
+we will remove these
+so Gloria so we just make sure we're
+trying to make sure that the primary
+keys are unique here so 10 11 12 13 14
+15 16 17 18 19 20.
+20
+.
+22
+there you go so now we believe that all
+the primary keys are unique let's try to
+run this command and see if we get the
+same error or not no so now all the data
+has been inserted into the duplicate
+table which is employee table 2 and we
+also have some duplicate entries now how
+would you recognize that we don't have
+any duplicates or how would you
+recognize which data has been exactly
+duplicated and how do you even remove it
+now the old distinct command is not
+going to work
+anyhow let's see if it works by any
+chance so when I try to run the distinct
+command it will give me all 22 rows with
+all the duplicate entries right in this
+case we can use the first method which
+was the join and where condition method
+right let's try to do that so we are
+going to use the delete command
+delete T1
+from employee
+table
+to
+T1
+in a joint
+in a join employee table 2 as T2 so we
+are declaring two different tables so we
+are
+considering T1 as one table and T2 as
+the next or second table so T1 and T2
+are the copies of the same existing
+employee table 2 right now we are
+joining these two tables and we are
+having a back condition over here so
+from table T1 we're going to eliminate
+table one from table 2 where we have an
+intersection and where we have the
+employee IDs greater than employee ID in
+employee
+okay let's not confuse so
+let's execute the command first okay
+let's
+execute this to understand what I mean
+here so here when we go a little down
+you can see
+14 for Tony right actual employee ID of
+Tony is nine but we have 14 for Tony and
+Gloria we have 18 19 20 and again for KT
+we have 22 the actual number of KT is
+10 right so now it will try to recognize
+the highest number of employee ID so it
+will recognize the highest employee ID
+number and it will retain it and rest
+all the numbers will be eliminated so
+this is the first where condition and
+we're also giving a string comparison
+function where SQL will try to identify
+if there is a similarity between the
+employee name of the first table and the
+employee name of the second table and we
+know that when you give the string
+comparison operation if it results in 0
+it means the strings are equal if it
+results in 1 it means the strings are
+not matching now that we understood the
+logic of this particular statement let's
+try to execute it
+so there you go so we have executed the
+command now let's try to see what's left
+in the table there you go now we should
+be having the usual 13 number of
+employees in our table and you can see
+that the records are retained where the
+employee ID number is the highest
+remember we had the number 10 as
+employee ID for KT and we have that over
+here in case if you want the actual
+numbers to be placed however they were
+you can make a small change to your
+command all you need to do is keep this
+particular or change this particularly
+greater than symbol to lower than symbol
+and you will retain the actual numbers
+of the employee records so that's how
+you can eliminate the
+duplicate entries in the table
+and if you ask me
+hey only two conditions are enough don't
+you think the PIN code and you know we
+also have PIN code and the address of
+the employees don't you think that is
+also important yes you can also do that
+you can make some minor modifications to
+your code and try to include all those
+remaining things and again you can do
+the same right now let's try to
+eliminate the data in our table let's
+truncate it and we should be having no
+data left in our table and let's try to
+insert the duplicate entries once again
+and okay before that let's try to do
+this particular execution remember we
+try to keep the employee ID let's try to
+execute that and try to print it and we
+should be having the actual numbers over
+here right as expected
+now let's again truncate the data and
+try to compare the conditions or we will
+be using the where condition and we'll
+have all the parameters included in our
+condition let's truncate the table and
+let's try to add the duplicate entry so
+once again
+there you go we have all the duplicate
+entries enter now what we will be doing
+is we will be using the same command but
+the only change will be the string
+comparison or the where condition right
+so you can keep this string comparison
+if you want or if you can change that
+let me change that actually
+so instead of
+this we will use this particular command
+where we are trying to compare the
+employee ID so let's keep the employee
+ID as
+lesser than so that we have the actual
+employee ID numbers and we are using an
+and condition over here so that uh this
+particular condition should be valid and
+the employee name should be equal to the
+employee name in T1 and T2
+and the next one is here we have the
+employee address so the employee address
+in T1 and T2 should also be same and pin
+code from both the table should also be
+seen so what we are trying to compare
+here is we are trying to keep the
+employee ID with the least number or the
+least value and the names of the
+employee should be same the address of
+the employee should be same and the PIN
+code of the employer should be seen in
+that particular condition you can try to
+delete the record let's try to execute
+this and there you go the command got
+executed and now let's try to execute
+the select command which should give us
+the final result
+so here you go control enter and you
+have the data here so now we have
+successfully eliminated all the
+duplicates by comparing the values in
+each and every single column and we also
+have reading the original ID of each and
+every employee now that's how you try to
+eliminate duplicates in SQL tables and
+if you have any queries regarding any of
+the topics covered in this session or if
+you require the resources like PPT and
+code executed then do let us know in the
+comment section below and RTM effects
+password will be more than happy to
+resolve all your queries at the earliest
+until next time thank you stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

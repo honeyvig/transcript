@@ -1,0 +1,221 @@
+hey everyone welcome to Simply La
+YouTube channel today we will learn
+about how to import PBI so basically you
+can import data from data sources a
+website Excel and many more so clearly
+you will be working on Excel data sets
+so we will be dealing with how to import
+data or Excel data to public that said
+if these are the type of videos you like
+to watch then hit that like And
+subscribe buttons and the bell icon to
+get notified craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back just for a quick Ino if you want to
+upskale yourself to master data
+analytics and landar your dream job or
+grow in your career the newest explore
+simply learns CAD of various data
+analytics programs simply learn offers
+postgraduate programs from per
+University in collaboration with IBM
+through this program you will gain
+knowledge and work ready expertise in
+skills like prescriptive and Predictive
+Analytics regression classification and
+over a dozen others that's not all you
+also get the opportunity to work on
+multiple projects and learn from
+industry experts in top Tha Product
+companies and Academy from top
+universities after completing these
+courses thousands of Learners have
+transition into a data analytics role as
+a fresher or moved on to a higher paying
+job profile if you are passionate about
+making your career in this field then
+make sure to check out the link in the
+print comment and description box to
+find the data analytics program that
+fits your experience and areas of
+Interest now without further delay let's
+get started with how to import Excel
+data into Power Pi okay let's switch to
+powerp first let's deal with the type of
+sources and then switch to excel so now
+uh we have landed to the power VI
+desktop so here we have a wide variety
+of options Excel workbook you can get
+the data from hubs you can get data from
+SQL servers and you can also enter the
+data manually we have another option
+called Data verse it's it's another
+story for another day and you can also
+customize your inputs here you can get
+some data from web page just you can do
+some data you know website crawling and
+get the data so apart from that coming
+back to today's uh subject which is
+about importing data from an Excel sheet
+so Excel can be a little tricky
+sometimes so here we can see an Excel
+data file so here we have sales data for
+four years 2020 21 22 23 and uh let's
+say we wanted to import all these four
+files into one desktop powerbi desktop
+can you do that yes we can do that and
+another way here we have is Excel data
+sets and a combined Excel sheet where we
+have multiple tabs the same four years
+of data which looks something like this
+2020 21 22 and 23 correct so four years
+of uh data separated by four different
+tabs so can you combine this yes can
+also combine that so we will check out
+two possibilities so let's quickly go
+back to powerbi window and go to get
+data and here we'll try the first one so
+going to more and here select uh the
+folder option so
+file and uh open Connect Now browse the
+folder so we have the browse option here
+go to downloads where we have that
+folder go to excel select that and press
+okay and another okay and we should be
+getting the data shortly now now uh here
+we have combine load and transform you
+can just go with combine and load but we
+don't want to have any errors in our
+data sets so for saf as side we will go
+to transform data and we will shape our
+data manually and for more tutorials on
+explanation on transform data we have a
+exclusive video on transform data in P
+you can check out that so here go to the
+first one you know the binary one where
+you have the binary just right click it
+and make sure that you remove any other
+columns than binary we don't want them
+right so uh an extra column is the
+custom column and uh here you go and let
+the name be custom name need the name
+for that so Excel we need a function
+where we can import Excel workbook so
+this is the one Excel workbook and open
+a bracket then just double click on this
+content or you can use insert close the
+bracket and just press okay there you go
+now you have the table over here you can
+just expand
+it this prefix
+okay now again just select the name of
+the sheet and of the sheet rest
+everything you can delete we don't need
+any of
+those you have it now expand the
+data you can use the original columns as
+prefix or not you will not choose to do
+that press okay and your data should be
+loaded shortly you can see we don't have
+the names of the columns as the column
+headers you find them in the First
+Column I in the first row you can okay
+let's remove this column we don't need
+the name column we need the row ID first
+there you go now you can click on this
+option over here where you can find a
+small table and second option use first
+R headers and that's how you get the dat
+data imported from all the different
+sheets into your data set you can once
+check the filters just make just to make
+sure that we don't have any of the
+column headers from four different dat
+sets as one of the element right so we
+don't have it so okay now this is one
+way of importing data and another one
+let's say go back to home and we wanted
+to import few more data sets uh like the
+other one where we had the combined one
+right so you have the applied steps
+right you can just go on eliminating
+them just for demo purposes so that we
+go back to the homepage where we didn't
+have any of the data set right now let's
+go back to the source level we can also
+run the source level over have so you
+can even close the source
+level close the query
+settings data or you can completely C
+close the power query editor yes now
+let's import the Excel so this might
+take a little while worry
+not go to excel Excel workbook and here
+just select the Excel data sets and here
+we have the combined data set remember
+where we had four different tabs so
+press
+okay automatically it will give us the
+power
+a query option where we can load or
+transform the data now you have four
+different tabs now powerbi or power
+query will give you an option of
+choosing which particular years you want
+to work with let's say I want to work
+with only the latest two years that is
+2022 and 2023 then I can directly go to
+load or transform let's go with
+transform as we did previously and here
+you can combine the data sets all
+together you can just uh use the
+data merging option and combine these
+two data sets so here we have the merge
+queries option and you can just
+merge here we have the first table which
+is 2023 here you just have to select
+2022 from the
+dropdown the data here and just press on
+okay and you will have the data sets
+March for more explanation on how to
+March data in powerbi we have a
+dedicated tutorial on how to use merge
+in PBI and that's how you can import
+data to PBI and with that we have come
+to an end of this session on how to
+import Excel data to PBI desktop and
+should you have any queries regarding
+any of the topics covered in this
+session or if you require the sample
+data that St used in this session or any
+other resources please feel free to let
+us know in the comment section below and
+that te of experts we'll be Happ to
+resolve all your queries at the earliest
+until next time thank you for watching
+and for more from Simply staying ahead
+in your career requires continuous
+learning and upscaling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,149 @@
+hello and welcome to this session on
+python projects
+and today we are going to discuss about
+how we can leverage python as a
+programming language
+in order to automate downloading of
+images
+from a web page or google search
+so we will see what all python libraries
+and utilities are required in order to
+perform that activity
+so this is primarily an automation
+activity which you can perform in python
+where you want to download
+certain amount of data certain images we
+are taking images as an example over
+here so how can you scrap
+a web page download the images
+automatically in a particular folder
+now
+what we are going to do is we are using
+the selenium utility the selenium
+package
+in python in order to perform this
+activity
+so what we are going to do is we do we
+are going to import selenium package
+and then
+from selenium
+we are going to import these libraries
+web driver
+by then we are going to import request
+io
+import image and time
+okay so these are the relevant libraries
+which we are going to use in this
+particular example
+now for executing this example you need
+a particular chrome driver as we're
+going to use
+chrome
+we're going to download this chrome
+driver so in order to download the
+chrome driver
+you need to go to this url of
+chromedriver.chromium.org
+downloads
+and please download the latest version
+if you respect
+depending on what operating system
+you're operating on so i'm using chrome
+driver win32 so i'll download the
+windows driver
+and unzip it at the relevant folder so
+wherever you're going to unzip the
+chromedriver.exe 5 please give the path
+over here
+and then initialize that
+using the web driver utility which you
+have imported
+okay
+this is the initialization and you can
+see a chrome browser has got open
+now we are going to create a function
+called
+get images from google
+and
+we are going to write a
+internal function which will scroll down
+which will scroll through that
+particular browser to a particular
+position and
+at a particular delay it will start
+downloading the data
+now
+as a sample what we have done is we have
+embedded a tree search a tree image
+search google search in my url
+so this
+so this search will automatically get
+opened from my python script
+automatically so you'll see that
+and
+then
+i'm going to run that in a loop and put
+that
+image urls as a set
+now i'm right i'm going to write a loop
+how many images i want to download by
+that i'm gonna run a while loop on the
+particular function
+and
+write the piece of code in order to
+download
+till the time my max images have been
+reached
+now
+i will
+find elements by class name q4 luwd
+okay
+now for images in thumbnails i'll start
+clicking that image so i'm using the
+selenium utility over here i'm clicking
+the image and then i'm getting the
+source attribute of the image urls and
+then downloading it so this entire
+function actually allows you to download
+the
+image
+and then i have a function which is the
+download function
+now i'm going to download images
+from the web page i want four images
+now
+please make sure
+that
+you have
+provided a path
+so i have created a folder called c
+drive
+images folder
+in which i am gonna download my
+images
+now my script is running it is
+downloading the images
+and if i go into the images folder
+see the images have started to get
+download and four images the parameters
+which i have passed are getting utilized
+and if i want to quit it
+now my program has got quit so if you
+see this
+the
+browser
+from where
+the uh images were starting to get
+downloaded
+got opened automatically and now as i
+have quit the program it got closed
+and here are the four images randomly
+which has been picked from that
+particular search and added
+so i've killed the connection so this
+way that's why this error is coming
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

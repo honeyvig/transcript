@@ -1,0 +1,151 @@
+hey everyone welcome to Simply learns
+YouTube channel in the session we will
+learn about the temp tables in SQL but
+before we begin let me tell you guys
+that we have daily updates on multiple
+Technologies if you're a tech geek in a
+continuous hunt for latest technological
+Trends then consider getting subscribed
+to our YouTube channel and don't forget
+to hit that Bell icon to never miss an
+update from Simply learn now now without
+further Ado let's get started with our
+onepoint agenda that is temp tables in
+SQL so what exactly are temp tables in
+SQL so temp table is a temporary table
+so the term temporary is
+self-explanatory you know that every
+database in SQL has tables right now
+let's say you created 10 tables in your
+database and you close your MySQL
+workbench you you close your database
+and you restart it after a while and
+then you will have all your 10 tables
+intact in your database but temporary
+table is not like that it is something
+different which has its existence until
+the session of the database is running
+let's say you open the database now you
+have the session of the database running
+you created the 11th table as a
+temporary table and that particular 11th
+temporary table will be existing in the
+database only until the current database
+is running and active once you close it
+once you turn it off or once you
+restarted the temporary 11th table that
+you created will die or it will be
+eliminated so that is the meaning of
+temp table now let's see how we can
+create a temporary
+table so the syntax is completely
+similar to the temporary or to the table
+what we usually create right it is
+similar to the table what we regularly
+create but the only catches we will be
+using the keyword temporary create
+temporary table table name which is US
+defined name and inside that the
+parameters may be the employe ID student
+ID employee name student ready name Etc
+right so this is how we create the
+temporary table now let's quickly get
+back to the cql workbench and try to
+create a temporary table add some data
+into it and try to display the temporary
+table if getting your learning started
+is half the battle what if you could do
+that for free visit scaleup by simply
+learn click on the link in the
+description to know more now we are back
+on the SQL
+workbench and meanwhile we are logging
+in you might have a question right when
+you say that the temp table will be
+existing or running only until the
+database is active then why create those
+temporary tables in the workbench right
+the sole purpose of using temporary
+tables is in a few cases the
+intermediate results of the data
+analytics process are important and you
+can have a quick reference on the
+intermediate results and you don't want
+them to be existing in your database in
+a permanent basis right for such
+scenarios you can use a temporary
+database now here on my workbench we
+have a simple code for creating a
+temporary table so I'll be creating the
+temporary table on the name of student
+and we have student ID integer data type
+student name workare and uh department
+and student ID will be the primary key
+now let's use the database that is use
+simply learn database to get access and
+uh we have the access now let's quickly
+see what and all tables we have using
+the show command
+show
+tables
+enter and we have two tables employee
+and employee table two but not
+student right now let's quickly execute
+this control
+enter and now let's use the insert
+command same like we inserted in the
+previous tables insert into table name
+student parameters ID name department
+and values comma separated values
+student ID name and department or group
+whatever he took in college right now
+let's execute this
+code control enter there you go the data
+has been successfully included now let's
+Select Staff from St that is view the
+contents in this particular table we
+have the values in this particular table
+and let's also see if we have that
+particular data included in the database
+or not let us show
+tables there you go it's not included in
+the database but it is active when you
+try to you know print the values in that
+particular table which is in the
+database it will show you but when you
+try to fetch that particular existence
+or the permanent existence of that
+particular table it will not be present
+and this particular table will be active
+only until the database is active now
+let's restart this particular work pitch
+I'm closing
+it restarting
+it now if I run this I will not get it
+you can see the error the
+database right okay let's have the
+database selected
+and let's try to run the
+command there you go table simply learn
+DB do student does not exist right
+previously when you try to execute the
+table was giving us values now we have
+the error saying the table does not
+exist right that is how temporary
+database runs now with that we have come
+to an end of this session on temp tables
+in SQL if you have any qu regarding any
+of the topics covered in this session or
+if you require the resources that we
+used maybe PP or demo code then do let
+us know in the comment section below and
+our team of experts we'll be more than
+happy to resolve all your queries at the
+earliest until next time thank you stay
+safe and keep
+learning hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
+oh

@@ -1,0 +1,178 @@
+foreign
+'s YouTube channel in this session we
+will learn how to count colored cells in
+Excel but before we begin let me tell
+you guys that we have daily updates on
+multiple Technologies so if you're a
+tech geek in a continuous hunt for
+latest technological Trends then
+consider getting subscribed to our
+YouTube channel and don't forget to hit
+that Bell icon to never miss an update
+from Simply learn now without further
+Ado let's get started with our one point
+agenda that is how to count colored
+cells in Excel now here on my
+spreadsheet you can see some data so
+this particular data has some color
+markings so we have used color codes to
+Mark the designations of all the
+employees with different colors so for
+example blue for manager purple for
+senior and so on right now our duty is
+to count the total number of employees
+present in a company based on the color
+code this can be done using filters but
+let's try with color tools now we don't
+have a readily available function in
+Excel to count cells please run their
+colors but we can make inclusive micro
+now to make use of macro you might want
+to enable the developer options so by
+default these will be disabled in Excel
+to enable them right click on the
+toolbar
+and you can see this particular option
+click on the customize ribbon option and
+you will be provided with various set of
+options
+now on the right side you can see
+developer options
+so make sure the check box is clicked to
+enable developer options and press on OK
+to completely enable developer window
+right now when you click on developer
+options you can see various options here
+visual Basics macro Etc now click on the
+macro to create a macro now just give a
+name to the macro function so I'll give
+simply learn
+and press on create to create that
+particular macro function
+so we have already created a macro that
+is Count colored says which we will be
+using in our current spreadsheet for
+counting the colored cells now let us
+erase the newly created function now
+getting back to the original code so how
+does this particular count colored cells
+works so let us understand the function
+first then we will try to make use of it
+in this spreadsheet so the function name
+is Count colored cells as you can see
+and this particular function will have
+two parameters current cell and
+spreadsheet area so the current cell
+will be the cell address where the color
+you want to count is present and then
+the spreadsheet area so what is the
+range of cells where you want to locate
+that particular color and count the
+number of repetitions that is the
+spreadsheet area
+and then comes the variables used
+colored cell range color code and color
+cell count so the colored cell which
+particular cell is having that
+particular color and what color code is
+involved in that colored cell and
+colored cell count so what is the total
+count what is the total number of
+colored cells you have in that
+particular range that is colored cell
+count
+now let us consider color code is equals
+to current cell interior color that is
+current cell dot interior dot color so
+this is the function which will identify
+the interior color of a selected cell
+let us imagine that initially color code
+is equals to the current cells color
+code okay now we will have the for Loop
+and that for Loop will include colored
+cell which is the current cell in the
+spreadsheet area and if the colored cell
+the currently selected colored cell dot
+interior dot color is equals to the
+color code that we have selected then
+colored cell count the variable which is
+used to count the number of colored
+cells is equals to plus one initially by
+default it will be 0 in case if this
+particular if condition is true that is
+the current cell color and the color
+code given is equals to same then the
+value of colored cell will increase by
+1. and this particular if Loop will run
+as many number of times the condition is
+true so let us imagine that the
+condition will remain true for five
+times then we have obtained five
+similarly colored cells in the given
+range of cells in a spreadsheet and once
+the condition fails then the latest
+value present in color cell count
+variable will be displayed which will be
+a final result so this is how the macro
+function works now let's close the macro
+window and get back to our spreadsheet
+now let us try to make use of the macro
+function that we just created so that is
+equals to count colored cells press tab
+to select the macro function and the
+first one is the current cell so this is
+the current cell where the current color
+has been provided comma this cell range
+so our cell range will be from c 2 to
+c31
+right so this is the range where we want
+to count the similarly colored cells
+that is sky blue colored cells close the
+function and press enter now you can see
+the function has identified six
+repetitions of sky blue color in this
+particular range of cells now you can
+drag the same formula across all the
+cells and it will be
+providing the results of the scene so
+six senior colors that is pink or purple
+color then two repetitions of this
+particular color two repetitions of
+trainee color five for dark blue and six
+for green right so this is how the macro
+function works and the key point to
+remember here is this particular macro
+will work only for manually colored
+cells so there are situations where we
+have used conditional formatting to
+color a single cell let us imagine that
+we have used conditional formatting to
+recognize the employees with salary
+above 30 000 as green color and if we
+try to use that particular green color
+to be counted by the color count cells
+function now it will not happen it will
+not consider that color as a feedback or
+an input now in future we will also try
+to design a macro which can recognize
+the colors made by conditional
+formatting as well but this particular
+function will be exclusively used for
+manually colored cells only with that we
+have comprehendent of this session on
+how to count colored cells in Excel if
+you have any queries regarding any of
+the topics covered in this session or if
+you require the resources that we used
+in the session like the data set macro
+code or the pbd then do let us know in
+the comment section below and our team
+of experts will be more than happy to
+resolve all your queries at the earliest
+until next time thank you stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

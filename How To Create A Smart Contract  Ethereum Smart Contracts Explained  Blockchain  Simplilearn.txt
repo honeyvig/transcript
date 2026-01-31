@@ -1,0 +1,565 @@
+hey everyone
+ever since ethereum was introduced in
+the blockchain space with its presence
+in 2015 new decentralized applications
+have been developed by vitalik buterin
+however smart contracts are a big part
+of ethereum's success
+these new contracts are referred to be
+smart contracts since they're
+significantly more functional than their
+paper-based predecessors
+there is no mention of ai a smart
+contract is a set of digital agreements
+that include protocols for the parties
+to fulfill
+those promises
+so considering its popularity and
+uniqueness i from simply learn have
+brought you a new video on how to create
+an ethereum smart contract
+so without any further delay let's get
+started with video
+but before starting please do subscribe
+to our youtube channel and hit the bell
+icon to never miss an update from
+simplyr
+so let's start with the coding journey
+to our first ethereum smart contract
+but before diving into the development
+and deployment of ethereum smart
+contracts it's critical to first grasp
+the ethereum platform and how it
+functions
+so the first thing that we learn is what
+is smart contract in the first place
+so smart contracts are essentially
+programs that run when criteria are
+fulfilled
+and are stored on a blockchain they are
+usually used to automate the execution
+of an agreement
+so that all parties can be certain of
+the results right away
+so without the need of any
+intermediaries or time waste they can
+also automate a workflow starting the
+following step when certain
+circumstances are satisfied
+so now that we know what this smart
+contract let's move ahead and see how it
+works
+so
+step one
+smart contracts are made up of basic if
+when
+then phrases encoded in code on a
+blockchain
+step 2 when preset conditions are
+satisfied and validated the activities
+are carried out by a network of
+computers
+these measures could include sending
+notifications releasing funds to the
+proper persons or issuing a ticket
+step 3 when the transaction is completed
+the blockchain is updated
+that means the transaction can't be
+modified
+and the results are only visible to
+those who have been granted access
+there can be as many stipulations as
+needed
+convince the participants that the task
+will be executed correctly participants
+must agree on how transactions
+and associated data are represented on
+the blockchain
+agree on the if when then rules
+actually govern those transactions
+investigate all conceivable exceptions
+and design framework for resolving
+disputes in order to set the terms
+the smart contract can then be coded by
+a developer the firms that use
+blockchain or business are increasingly
+providing templates web interfaces and
+other online tools to make smart
+contract construction even more easier
+and here also we will be using one such
+tool to create our very first ethereum
+smart contract
+so now that we know all the required
+knowledge about smart contract let's
+start with how to create
+our very first ethereum smart contract
+so let's get started now let's start
+with the first smart contract so the
+first thing that we need to do is to
+navigate to this website which is
+remix.ethereum.org
+so this is going to lead us to a remix
+ide
+as you can see which is an integrated
+development environment for solidity
+programming
+and it runs from the browser itself so
+it does not need to be installed or
+and you can access it in any operating
+system
+so it's a lot more convenient and you
+can also use it to interact with the
+ganache or test net over rpc port
+so basically rpc or remote procedure
+call interface is provided by the
+blockchains for the execution of the
+functions that you will store or that
+you'll
+insert as a criteria in your solidarity
+smart contracts
+so here we will be using ganache to
+deploy our smart contracts
+so let me give you a quick introduction
+to ganache basically it's a personal
+blockchain
+that enables the building of ethereum
+and coda distributed applications
+quickly
+and it may be used throughout the
+development cycle allowing you to
+develop deploy and test your
+decentralized applications
+in a secure and a very predictable
+environment
+but before uh deploying our smart
+contract on ganache we will deploy a
+smart contract on the default blockchain
+provided by the remix itself
+so
+let's get started with the code
+so the first thing that we need to do is
+to create a file with dot sol extension
+so
+let's
+you can see here i have already created
+my workspace with the name of demo smart
+contract workspace
+now i just need to create a file
+you can click on this icon
+and
+you can give it a name according to your
+convenience or whatever program you're
+gonna
+store in your
+smart contract
+so
+basically dot sol is the extension to a
+smart contract since we are using
+solidity programming
+to create our smart contract
+so
+i'll just
+give it a name
+so here i have given it a
+name called democontract.sol
+and that is it now you can see here
+you have directed to a
+section where you have to actually write
+your code
+so basically in this video we will be
+creating a smart contract
+for the implementation of cryptocurrency
+in its most basic form
+so this smart contract will allow you to
+create or mint new coins and send them
+to other blockchain addresses
+so
+let's start with our code so the first
+thing that we will write is
+fragma directive
+so let's
+write
+pragma
+solidity
+0.5.1
+so this is basically a
+range of our minimum margin for our
+solidity server
+then we will declare the
+contract
+so let's just write contract
+so basically the core contract code
+starts with a keyword
+the contract followed by the name of the
+contract according to your convenience
+so here i am giving it a name
+mint
+your
+coins
+and
+then the braces which employ the entire
+contract state and its functions
+so now that we have declared our
+contract scope let's start with the
+variables and functions that we need to
+declare in our smart contract
+as per our need
+so here i am declaring our variables
+so the first variable is for addresses
+first one is
+mentor
+and
+second is
+balance
+so these are known as state variables or
+this mapping can be thought of as hash
+tables that are virtually uh initialized
+so that every potential key exists
+right away and is mapped to a value with
+a
+byte representation
+of all zeros
+so this map will store every address
+with its balance
+so now that we are done with the
+declaration of our variables let's
+create a constructor
+that that will be the address for
+creating
+new coins
+so
+instructor
+we will
+make it
+public
+minister
+dot
+ms
+g dot
+sender
+so
+this line ensures that only the creator
+can mint new coins
+next we will set a condition for
+creating new point
+and
+storing them in the
+hash table
+so
+now to store our created new coins into
+a hash table we'll declare a function
+mint
+so let's start with the code
+function
+address of
+the receiver
+and the
+amount
+to be
+received
+we'll also declare this public
+and we just need to uh
+mention our
+conditions here
+so this is our first condition second
+we'll mention
+the limit
+for the maximum number of coins to be
+created
+or
+for the maximum number of
+you know the amount to be
+received or sent
+this system
+so
+the next function is going
+to be sent which simply examines the
+transactions feasibility so let's
+declare that function as well
+so
+again
+let's
+input our parameters
+address of the receiver
+and
+the amount
+will make this function public as well
+mention our
+criterias
+so
+the first one is
+so this is for you to check if
+there's sufficient balance or
+insufficient balance
+in the account
+so if the transaction is possible the
+function will generate a send sent event
+so we also need to mention
+an
+event here
+to know
+all the details like
+who has the address of the sender and
+the receiver as well as the
+amount
+so here we have created the event
+now let's get back to the criteria in
+our send function
+so
+as i was saying uh if the transaction is
+possible the function will generate a
+sent event
+which is a declaration for the
+transactions to be
+broadcasted so let's just
+get done with our
+criteria here
+a month
+so the clients
+using ethereum can listen to these
+events on the blockchain for free the
+listener receives the arguments from
+from
+or to
+an amount as soon as the event is
+emitted right
+here in the
+sent function
+sorry i forgot to mention too yeah
+so
+as soon as the event is emitted
+uh the transactions is
+dragged and then
+the next function is executed which is
+to get the balance of the address
+also when the transaction is completed
+the transaction is then added to the
+blockchain itself with all the details
+of who has
+sent those
+coins and who has received it according
+along with their addresses
+so let's
+create one more function to know the
+balance
+so that will be
+let's
+give it
+the argument
+external view returns
+for the return value
+that will be integer
+return
+balances
+on the argument we just
+mentioned
+so this function is to
+get the balance off
+of our account
+so this was our code now we need to
+compile this code
+see if there is any error or not so
+to compile this you need to click on
+this icon
+and just click
+on compile
+so here you can see that there is no
+error and it's successfully compiled
+so once it's compiled you need to deploy
+this code
+so click on this uh icon
+here you can see this is the by default
+environment uh
+environments provided by remix itself so
+we will just
+select the default one javascript
+virtual machine
+so like we discussed before before or
+deploying our smart contract
+over ganache blockchain we will be
+deploying it over the blockchain that is
+by default provided by remix itself
+so
+here we have selected the environment
+these are the accounts
+with the dummy coins already stored
+obviously you can't
+use them for your actual purposes but
+these are the dummy accounts provided by
+the remix
+for
+analyzing your smart contracts and
+keeping the track of the transactions
+so you can simply select any of
+these accounts according to your choice
+and
+as you can see there is
+currently no contract
+deployed here so simply we will just
+click on deploy
+so here you can see it's successfully
+uh deployed we'll just click on this
+drop down menu
+and
+after scrolling it down we can see all
+the options with the functions like
+mint send balance balances and the mento
+so when you click on mentor
+it will generate an address
+current users address so just copy it
+so once you have copied you can just
+click on balance
+so here you can see
+you're getting error because right now
+you have not
+transacted any amount of coins yet so
+we just
+paste the address here
+and
+then provide the second argument which
+is the
+amount
+that you want to mint
+just click on mint and here you can see
+it's success you have successfully
+minted
+uh
+500 coins so now when you
+check the balances
+uh we are still getting errors sorry i
+forgot to provide the address so we will
+just provide the address and click on
+balance
+here you can see
+the function is already called
+and here you can see the amount you just
+minted
+same as for here
+click on it the amount you just minted
+now to send
+you can just click the dress
+comma
+250 so for demonstration i have provided
+the address of obviously
+the sender right now because i don't
+know the address of the receiver but
+what you can do is you can provide any
+other address and just
+put the amount and
+click on send and when you will check
+the balance there will be a
+change in it right now there is no
+change because both the dresses are
+already same
+so this was all this was
+the code and this is how you can
+just compile and deploy your code on any
+blockchain so now that we have checked
+it over the default blockchain provided
+by remix
+let's have a look at the ganache one
+so to use ganache you need to first
+download it
+so by clicking here you can just
+download it for windows
+so i have already installed this so
+we'll just
+jump to that step directly
+so once you're done with the
+installation of ganache you can you'll
+get
+a
+page like this and then you have to
+create a workspace so
+you don't need to create a workspace
+here you can simply click on quick start
+and it will
+give you a list of accounts and all the
+details of the blockchain that you can
+simply connect with your ide and
+to which you can simply deploy your
+smart contract into so let's just wait
+for it to download all the information
+so now here you can see all the default
+accounts provided by the balance
+information
+by the ganache itself
+what we need to focus on is our pc
+server
+so basically this is uh
+this is the address
+provided to every
+ganache
+account or blockchain by defaults itself
+so we just need to copy this
+and click on ethereum ide
+and go to the environment and select
+web3
+provider so
+when you will click on it you will get
+this popup and
+at the end point
+you have to paste the address you copied
+from your ganache
+portal and
+just click on
+ok
+so now you can see again uh
+there is no contract deployed to it
+because now you are simply connected to
+the custom network which is your ganache
+network
+now
+these are the accounts provided by you
+provided to you by ganache itself the
+list of accounts that you saw on the
+portal now
+the same process you need to repeat here
+just click on any account of your choice
+select it
+and
+click on
+deploy
+so here you can see it's successfully
+deployed
+and again we're going to repeat the same
+process
+so you can see the address is completely
+different from the previous one
+just copy this
+paste it here
+let's have a different amount this time
+or let's put it
+750.
+so and just click on mint
+you can see it's successfully minted and
+when you
+will paste the address here and
+click on balance you can see it's
+showing 750 same you can
+do for balances
+it's 7.50
+and the same you can do with the sent
+also as i'm using the same address there
+will be no change
+in the balance
+but obviously it's not popping any error
+and showing it successfully done
+so
+you can use it with somebody else's
+address too
+so this was all about your first own
+created smart contracts
+i hope you enjoyed this video and
+learned something new from it please do
+like this video and if you have any
+queries related to this topic or this
+video you can simply comment down in our
+comment section our experts will
+reach you out as soon as possible thank
+you
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,183 @@
+hey everyone welcome to Simply learn
+today we have another tutorial in the
+series of Excel data analytics today we
+will learn about filters in Excel that's
+said if these are the type of videos
+you'd like to watch then hit that like
+And subscribe button and the bell icon
+to get notified whenever we host just a
+quick info for you if you want to
+upskill master business analytics skills
+and landar your dream job or grow your
+career then you must explore simply
+learns goad of various business
+analytics programs simply learn offers
+various certification and post gratuate
+programs in collaboration with some of
+the world's leading universities like
+IIT RI Vue and cab through our courses
+you will gain knowledge and work ready
+expertise in skills like prescriptive
+and Predictive Analytics regression and
+classification and over a dozen others
+that's not all you will also get the
+opportunity to work on multiple project
+projects and learn from industry experts
+working in Top Tire product companies
+and academic from top universities after
+completing these courses thousands of
+Learners have transitioned into a
+business analytics rule as a fresher or
+moved onto a higher paying job profile
+if you are passionate about making your
+career in this field then make sure to
+check out the link in the pin comment
+and description box to find a business
+analytics program that fits your
+experience and areas of Interest rest
+now to get started with filters in Excel
+we might have to switch to the Practical
+mode so we are on the Excel spreadsheet
+right now so we have some employe table
+and we have some another table in here
+which is about department and
+designation and we also have and or
+right so remember the symbols and is for
+star and or is for plus now we have
+converted our data set into a table by
+control V option and now just select all
+the data and by default table will give
+you the filter option here but let's say
+let's try to remove this filter and now
+let's say we just have a simple table
+now we want to add the filter option so
+the shortcut way is just selecting the
+entire table going to the Home tab and
+selecting the editing group and inside
+that you have the filter and sort option
+just select that and done you also have
+the functionalities where you can select
+your own departments let's say I want
+only admin analytics and development I
+have this table the result here or if
+say I wanted some other filter and I can
+get it but what if you wanted to filter
+your data based on formula without using
+any kind of tools let's say it's your
+interview question and your interviewer
+asks you give me a filter data set
+without using the filter tool how can
+you do that now here comes a tricky part
+it's simple just use equal to filter and
+there you go you have selected the
+filter and now you have three param
+parameters array include fmt so these
+particular parameters stay for a
+different meaning array is the return
+array what values you want to return so
+your your uh manager ask or your
+interviewer asked you to give you only
+the employee names which are working in
+Department then your return value will
+be employee column which is B which is
+employee need right and if you wanted
+the entire table Give me the give me all
+the details of all the employees who
+working in development team then you'll
+be selecting the ENT ire table right now
+let's select the entire table let's go
+with the Second Use case I'll select the
+entire hidden are as the entire table
+now include this is the condition
+include parameters for condition now I
+wanted employees working in development
+team right so I'll select the department
+table and Department I mean Department
+column and the department column value
+should be equals to what this develop
+right so get me the values of Department
+table where the value is equals to
+development this is my condition and the
+last one is ifm this is just a written
+value in case if the values are not
+found right so I'll give it as not found
+itself and now close the bracket enter
+now you have all the employee details
+who are working in development team now
+let's say you wanted employees who are
+working in a development team as well as
+testing team now it is similar to an or
+condition right so that's when you use
+the or condition over here and you get
+the values it's like you're giving
+multiple parameters now it's not
+possible to add a comma and add another
+condition because this particular filter
+function goes with only three parameters
+now if you are adding a comma and adding
+another condition it will be considered
+as a fourth parameter now we won't uh
+now we won't uh want that to be
+happening right so we don't want that to
+be happening so how do you modify the
+existing condition that is the second
+parameter it's really simple just use
+make use you know you can just make use
+of some brackets so close the bracket
+and now we are looking for employees who
+are working in both I mean who are
+either in development or in testing
+right so it's like an or condition so
+for or condition The Logical symbol is
+plus right so similarly again you will
+be selecting the department and the
+value should be equal to let's say
+testing so I'll add that testing part
+over here in L2 and close the bracket
+there you go you have added the second
+condition now next copy this testing
+value and add it in cell L2 which was
+our second condition I mean second part
+of the condition there you go now you
+have all the employees for are working
+in development or testing right and
+that's how you use filters in Excel
+let's say you wanted to extract details
+of employees who working in both uh you
+know there are there might be situations
+where you want uh to use and condition
+so in those particular situation just
+replace that plus with the and symbol
+that is star symbol and that should work
+and that's how you use filters in Excel
+and that's how we got to the end of this
+tutorial on filters in Excel if you have
+any queries or if you want any resources
+used in this session please feel let us
+know in the comment section below and
+our team of experts we'll be more than
+happy to help you as soon as possible at
+the next time thank you for watching and
+St for more from Simply done staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

@@ -1,0 +1,209 @@
+hey everyone welcome to simply learn's
+youtube channel in today's session we
+will be learning how to compare two
+different columns in excel but before we
+begin let me tell you guys that we have
+daily updates on multiple technologies
+so if you're a tech gig in a continuous
+hunt for latest technological trends
+then consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn
+now comparing two different columns or
+multiple columns happens to be an
+important job when you're working in
+data analytics as you have to come up
+with some decisive decisions based on
+the data
+now if you had to do it manually then
+you might end up taking hours or even
+days based on the data set you're
+working with but if i say that you can
+do it within minutes then it would be
+interesting to work with right now we'll
+be doing the same now we'll work on a
+sample data set right on my screen
+so here we have column one and column
+two now our job is to compare the column
+one and column two and come up with the
+result now the first and the simplest
+way to do it is use the built-in
+condition formatting which comes with
+excel by default now all you have to do
+is
+select all the data
+and navigate to home and in the home go
+to styles group and select conditional
+formatting
+and in conditional formatting you can
+see highlight cells
+so in that you can use duplicate values
+when you click on duplicate values a
+small pop-up window will come on your
+screen and here you have an option of
+choosing whether duplicate or unique so
+duplicate means you're comparing the
+cells and you can see there are some
+duplicate cells which are present in
+column one are also present in column
+two now you can also check how to uh you
+know find out the unique values which
+are only present in column one but not
+in column two so you can just press
+unique and there you go you can find it
+now you can also try to you know change
+the color by filling with green for the
+unique columns and duplicate cells with
+color red
+now this was the first method and you
+can also work out some different ones
+like you can just directly
+press equal to and select the cell and
+equals to and the next cell
+press enter and if there is a match it
+will give you true if there is no match
+then it will give you false now you can
+drag it down and see which all are
+matching and whichever or not
+now you can also make some minute
+modifications to this
+so uh
+if in case you didn't find the data then
+you can say not found so for that uh you
+can try if and inside brackets
+and then
+you can give the value as not found
+if true it's found first you have to
+give the true values so for true you can
+write as found and in case if it's not
+found then you can write it down as not
+found
+there you go close the bracket press
+enter
+and there you go if there is a perfect
+match you will have found and if there
+is no match then you'll get not found
+now so far we have discussed uh
+comparing two cells using conditional
+formatting and also by using equals to
+operator and trying to uh add some
+tweaks to the equals to operator by
+involving with f operator and apart from
+those we also have another way to
+compare two columns in excel so another
+way is using the lookup functions so
+we'll use a simple vlookup function to
+compare both the cells
+so for that let's type in equals to
+vlookup
+space and
+select the cell you want to
+check for and then
+the
+range of elements you want to
+compare and then i'll press f4 to log
+them
+now
+uh you want the data from column one
+and now you want the exact match so zero
+press enter
+so there you go
+so the elements which are present in
+column one and column two are been
+displayed here so but in case if the
+elements are not found you'll get an
+error so let's look at that simply drag
+the
+formula to all the cells and there you
+go so the elements which are matching
+will give you the proper result but the
+ones which are not matching will give
+you not applicable or error message this
+can be fixed we can make some minor
+tweaks to the same formula
+so
+we can add if error
+comma
+simply write in as not found
+and close the bracket so that should do
+so we have closed the bracket and press
+enter there you go now simply drag this
+and
+soon you can see the data which is
+having no match is shown as not found
+now
+uh there is another possibility okay
+let's get back to
+another different sheet so this should
+work
+so uh we already have the formula so
+let's erase that first
+i'll erase the whole data
+and even this one
+yeah now we have the clear column four
+so here you can see we have for india
+and here you can see we have just four
+and similarly here you have mahendra and
+mahindra and here you have mahendra
+right so in some situations you might
+have to compare
+two different columns
+but the names might be a little
+different right so for example
+uh if you're working with oracle and if
+you're working with oracle america and
+you have in the first case is oracle and
+then the second column is oracle america
+then those are one and same but you have
+some minor text changes right just like
+here you have for india and here you
+have four
+so what if you had such kind of issues
+so you can also make some minor tweaks
+to it so using the same lookup formula
+you can add equals to
+vlookup
+and
+also the comparison cell which is this
+one
+and you're not you're not stopping there
+you're trying to add
+the wildcard here so the wildcard is
+hashtag which means if there is anything
+like
+if you get the comparison between the
+first cell and the second cell which
+matches and if there is anything extra
+rather than the actual cell please try
+to consider it so that's what we are
+going to do so after ending entering the
+wildcard symbol you'll select the range
+of columns which you have to
+you know fetch the data from
+and then
+try to fix them using function key f4
+you're looking from the column number
+one and then you're finding the exact
+match now you can close it and enter
+now let's try to drag it
+there you go
+so you have the data mahindra and
+mahindra
+hyundai india honda india so that's how
+you try to use uh comparing cells in
+excel and if you have any queries
+regarding any of the topics covered in
+this session or if you need the data set
+that we have used in this session then
+please feel free to let us know in the
+comment section below and our team of
+experts will be more than happy to
+resolve all your queries at the earliest
+until next time thank you stay safe and
+keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

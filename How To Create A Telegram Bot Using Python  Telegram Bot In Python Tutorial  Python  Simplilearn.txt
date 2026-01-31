@@ -1,0 +1,444 @@
+hi everyone welcome to the simply line
+youtube channel this session will be
+about creating a telecom board using
+python but before we begin if you love
+watching tech videos subscribe to our
+channel and hit the bell icon to never
+miss an update
+in this session we will create a simply
+learn board that will help that soothers
+to choose from various courses offered
+by simpler
+now let's understand the uses of boards
+the first use of bot is
+to get customized notifications and news
+a board can act as a
+smart newspaper sending relevant content
+to its subscribers as soon as it's
+published
+the next use
+is accept payments a board can offer
+paid services or work as a virtual
+storefront
+and other users create custom tools
+a board may provide with alerts whether
+forecasts translations formatting or
+other services
+and
+another uses build social services
+a board could connect people looking for
+conversation partners based on common
+interest or proximity
+with the understanding of uses of bots
+now let's create our own word
+you will have to follow the steps to
+create a telegram board
+and the first requirement to create a
+port is you should have a telegram
+account
+now let's move to telegram
+and using the telegram we will interact
+with the telegram portfolio which is
+going to provide us with the port and
+the token which will act as a password
+for that port
+and then we will create a python program
+to do all these interactions
+so you need to get the telegram app
+whether on the desktop or in your mobile
+phone i am going to use desktop versions
+you can download the desktop app from
+desktop.telegram.org
+i will show you how to download it
+desktop.telegram
+dot org
+here you can see that windows bit 64
+version is available
+and you can see all the platforms
+and you can choose according to your
+needs
+i have installed the windows 64-bit
+version
+and
+the telegram app
+i will search for the board further
+and be careful and click on the verified
+one with the blue deck this is the one
+just click on it
+and you can click on the start to start
+the conversation with the board further
+you can see the various commands
+here
+and board further is again a bot which
+telegram has created in order to do
+automation of all the board creations
+and now to create a new board we'll
+start with the command slash new board
+here you can see this is the command you
+can click on that or just right here
+slash
+new bot
+now the father board has replied all
+right a new bot
+how are we going to call it please
+choose a name for a bot so here you have
+to choose a name for your board
+i will go with the name of skill by
+simply learn for my board
+now the fatherboard has replied good now
+let's choose a username for your word it
+must end in both like this for example
+tetrisport or tetris underscoreboard
+you need to make sure that the username
+is unique and it ends with underscore
+port
+or it should have bought at the end of
+the username
+but further will inform you if your
+username is already taken so i would be
+going with the username
+upscale underscore one one two two
+just simply learn
+underscore
+both
+and the board for the replied done
+congratulations on your new board you
+will find it at
+this is the link hey if you click it you
+will just
+get to your board
+and we have received the token for our
+board
+here you can see use this token to
+access the http api this is your token
+and the board further said keep your
+token secure and store it safely it can
+be used by anyone to control your board
+as soon as you receive that open you
+have to write another command that is
+slash
+set privacy
+and press enter
+it will change the privacy settings for
+a board so no one can misuse your port
+token
+and now you have to choose the port you
+want to change the privacy settings
+so we are currently working on the
+upscale underscore 112 underscore simply
+learn
+we'll choose this
+and here you can see that the security
+is enabled you have to write disable or
+choose disable from here
+now success the new status is disabled
+so your bot is now secure and your token
+can't misused by anyone else
+this is how we created a port and now
+we'll use this in python program
+first we will see the external packages
+we need to install for this project
+for that
+we will move to command prompt
+and install the packages
+the first package is prep
+install
+python
+hyphen telegram python board
+as you can see the package is already
+installed on my system so you have to
+install the package
+and then open your idle
+for that i will create a folder
+and i will name it as telegram board
+and inside i will open my id id for that
+i'll write the command cmd
+and
+open my visual studio board
+now i will create a new file and name it
+as
+telegram
+dot py
+and now
+first thing i will do is import
+telegram.ext
+now we are going to load the token
+provided by the board further so we will
+move to
+telegram
+and copy the token provided by the board
+further
+so this is our token
+we'll copy it and move back to our
+ideally
+and create a new variable
+that would be token
+a token
+in it
+now we will create the updater object
+this object will be used to perform
+actions with our board
+so we are going to write the command
+updater
+equal to telegram
+dot ext
+dot
+updater
+and
+will pass the token and use context
+equal to true in it
+first we will copy our
+token and
+pass another variable
+that is use underscore context
+and that would be equal to true
+and now we're going to get the
+dispatcher we will create a variable
+with the name
+dispatcher
+and that would hold
+updater
+load dispatcher
+now we'll add the functions to give our
+board some functionalities
+we will start with the start command if
+the first command usually given to the
+board
+for that we will write
+define that would be defining the
+function
+with the name start
+and inside we will pass update
+and context
+as we have used the use underscore
+context as true we will use the context
+for some information
+and when someone starts the conversation
+with a board what should be a first
+message
+we'll set the first message as welcome
+to simply learn for that you will write
+update dot
+message
+dot
+reply
+underscore text
+and inside will store a message
+that would be hello
+welcome to simply learn
+next we will define another function
+that is help
+and for that we will write the command
+india
+help
+and will pass the same update and
+context
+and inside this function
+we will send the message with the
+commands
+that would be start help content and the
+python playlist or sql playlist
+java pages that the user wants to
+persuade or which course he want to
+persuade
+so we will start with
+date
+dot
+message dot reply
+underscore text
+and inside
+we will define all the commands
+we'll go with the triple columns
+so our first one would be start
+and it would symbolize
+welcome to the channel
+and our next one would be help only
+and it would indicate
+this particular message
+the next command will define as content
+and this would be about various
+playlists of simpler
+the next will start with the python
+playlist
+and
+if the user
+write this command to a board he will
+just direct it to the first video from
+the python playlist
+and next command we will write about sql
+and it would also direct it
+to the first video
+from sequel playlist
+and the next up command would be about
+java
+and it would also direct to the first
+video from the java playlist
+and we would also set another command
+that would be contact
+and that would hold the contact
+information if someone wants to contact
+to simply learn from further information
+and now
+we will define all these commands
+for that
+we'll
+write the function
+and content and will pass
+update
+and
+context
+and
+inside
+will just uh output
+to the users
+with the command update dot message
+dot reply underscore text
+and the output that what users will see
+is we have various playlists and
+articles available
+and now similarly we will
+update the next function
+we will copy this
+token would paste it
+here we will
+copy the function
+and
+next function would be python
+so
+if the user type python in the chat bot
+so he will just direct it to the first
+video from python playlist
+for that
+copy the link of the
+first video from the playlist
+python
+and paste in the message dot reply
+underscore text
+and for that we'll write
+tutorial link
+and paste the link of the video
+and now we'll do the same
+for sql and java
+we will copy the function
+and change the name to the sql
+and copy the link
+of the first video sequel from the
+playlist
+and now we will do the same for the java
+for that we will copy the function
+and paste here and name it as java
+now we will move to the java playlist
+and copy the link of the first video
+from playlist
+and paste it here
+now we are done with the functions
+python sql java and we are left with
+contact so we will declare another
+function
+for that also we will
+copy the same function
+and name it as contact
+and inside
+you can contact
+the registered mail id
+provide it on the website
+so these are some functions which we can
+add to the dispatcher we will create a
+command handler to handle the certain
+command and map the function to it and
+then add the command handler to the
+dispatcher
+so first we will write the command
+that is
+dispatcher
+dot add underscore handler
+and inside
+we will write telegram
+dot ext dot command handler
+and inside we will pass
+the name of the command that will be
+inputted by the user and the function
+name
+for that
+all right
+first we'll write the command
+that is
+start and the function defined
+by us for the command start
+is also with the name start
+now we'll copy this command
+and
+do the needful for all the functions
+so here we will
+change the command
+that would be python
+and the function name
+and the same for sql
+and simple java
+and we're left with the last
+command that is contact
+and in the end
+we'll write
+command updated dot start
+underscore polling
+so it will check
+if our code is working or not
+and updater
+dot idle
+it is used when the user just enters the
+first command
+so it will not exit the program it will
+wait for user to enter other commands
+always forgot to write a command for
+help
+for that we'll copy the command
+right help will save the program
+and
+click on the run button
+here we can see that the program is
+running fine
+now we'll move to the telegram
+and
+click on our port username you can also
+search the for our board username here
+it's globally searchable
+now we'll click on the start
+so
+the start command
+we have got the output hello welcome to
+simply learn
+now we will
+put slash help
+and here we have got all the commands
+that is lets start
+slash help and this particular message
+will appear when we click on the slash
+help or just write it here
+when you click on slash python you will
+get the first video from the python
+playlist and when we click on the slash
+sql
+will get the first
+video from the sql playlist
+and similar with the java
+we'll get the first video from the job
+playlist
+and when we
+click on the command slash contact we
+get the output you can contact on the
+registered main id provided on the
+website
+so we have done with our telegram board
+we have created this telecom board
+successfully that we have come to the
+end of this session
+i hope it was interesting and
+informative if you liked it please let
+us know in the comment section below
+also do subscribe to our channel and hit
+the bell icon to never miss an update
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

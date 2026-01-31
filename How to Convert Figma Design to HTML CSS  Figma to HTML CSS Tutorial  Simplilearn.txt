@@ -1,0 +1,409 @@
+hello everyone welcome back to Simply
+learns YouTube channel in today's video
+we are going to talk about a really
+helpful topic how to convert your figma
+designs into HTML and CSS with just a
+few clicks without writing any code
+yourself now if you're a designer or a
+developer you're probably already
+familiar with figma it's one of the best
+tools out there for creating website and
+app designs but here's one thing once
+your design is ready the next step is
+turning that design into actual code so
+it can go live on a website now this is
+where things can get a little tricky
+figma does offer a developer mode that
+allows you to see the code behind your
+designs but there's a catch it's the
+part of figma's paid plan which not
+everyone may want to invest in
+especially if you're working on personal
+projects or you are just starting out
+but don't worry in today's video we'll
+show you a much easier and more
+importantly free way to convert your
+figmma designs into HTML and CSS code
+using some amazing tools these tools
+will help you take your designs and turn
+them into clean working code without
+having to manually write anything
+yourself this can save you hours of
+effort we'll be focusing on two great
+tools DWI and teleport HQ both tools are
+designed to make the process as smooth
+as possible you can take your figma
+designs and turn them into fully
+functioning websites with responsive
+layouts meaning your site will look good
+on both mobile and desktop screens so
+whether you are a designer who wants to
+bring your ideas to life or a developer
+looking to save time these tools have
+got you covered so let's dive in and get
+started so first we'll start with theis
+so theis is an awesome tool for those of
+you who are looking for more
+customization and control over the code
+so it's great for developers who want to
+go deeper and tweak the output to make
+sure the code fits their exact needs now
+theice not only generates HTML and CSS
+but also supports more advanced
+Frameworks like react or view making it
+perfect for developers working on
+complex web
+pages so let's get started first let's
+go to figma so usually you will be
+having a figma design to be converted so
+for this demo I'm using a web page which
+is available in our figma community so
+let's open this in figma so this is
+basically a website with three pages so
+let's just zoom in yeah first we have
+the main page then we have a page for
+pricing then we have a page for sign up
+so our aim is to a code for this
+particular website so for using the the
+there are two options either you can use
+the plug-in go to plugin go to manage
+plugin and here you have the device
+plugin so either you can do it this way
+or you can go to the D's website so in
+this demo we'll be going to D's website
+you can sign up for free yes so now what
+you have to do is you have to create a
+web app choose this option start
+building building so now you have to
+name your application so let's just name
+it as demo 1 for
+now and then as you can see you can
+select a framework you have HTML nextjs
+react Shopify liquid so right now we'll
+be working on HTML and then again you
+have design system you can select
+between CSS or Tailwind CSS so in this
+project we'll be selecting CSS yes and
+now you have to give the URL the figma
+URL
+okay so before you give the URL make
+sure to do a quick run through of your
+projects to make sure that everything is
+in place and it's all right so that you
+don't have to spend much time debugging
+and fixing your code because that is
+such a tedious job right so just check
+if everything is in place and make sure
+the pages and elements and it are framed
+properly and the elements are grouped so
+as you can see here these elements are
+non grouped so let's just group it group
+selection yes now it's
+grouped so let's just frame this so
+select
+everything just a second yes right click
+frame
+selection yeah so now you can copy this
+URL and paste it over here and then
+press start building so as you can see
+the device has recognized all our three
+pages so either you can work in one of
+the pages or you can select all the
+screens so right now we'll be selecting
+all the screens confirm the selection we
+also they have also given the thumbnail
+over here so right now we are not
+working on it we're just working on the
+screen so confirm selection and then you
+can check these boxes like whether you
+have to retain figma text Styles and the
+code whether you want to keep layer
+names as defined in figman and
+everything so let's just click all these
+apply and continue now again here you
+can you know change the title we are
+going to keep it the same save and
+continue and here you can configure your
+applications elements like if you want
+to merge CSS files you know the
+typography unit whether you need in
+pixel or RM I'll just keep it in pixel
+we want a responsive design so I have
+picked it so let's save and continue so
+device is downloading everything you
+know extracting theme downloading
+category assets optimizing groups
+everything it'll take some time and
+finally we have it here as you can see
+it has recognized everything it has
+recognized the auto identified UI
+components and Custom UI components so
+we have header you can even view it
+three headers because we have three
+pages in the main page sorry main page
+pricing page and sign up and we have 19
+columns we have images we have rows
+header menu we have texts
+footer link input everything and here
+even it has recognized the buttons so
+now let's just press the let's start
+button yes so let's just preview this
+first so as you can see we have to make
+some changes because as you can see you
+know the start to take has to come here
+yeah so once you preview you know you'll
+get an idea of what to change because
+before generating the code we have to
+make necessary changes in the design and
+here also this is the default one you
+can also you know check it in Mobile
+resolution so this is how it comes in
+the mobile resolution this is how it
+will be seen in the laptop see as you
+can see in the laptop it's fine you know
+the laptop view is fine it's properly
+aligned so I don't think we have to make
+much changes in the laptop View and this
+is the tablet view tablet view also
+seems to be
+fine now there's a problem over here so
+once you see this you can go back and
+make the changes in the design so let's
+just close this for now so after the
+preview you can make the necessary
+changes in the design over here so so as
+you can see you can make the necessary
+changes over
+here okay you can change the
+display you can change the spacing you
+can add
+padding you can add the margin again the
+sizing you can change the width the
+height everything again you can browse
+through this you can change the position
+you can change the typography the font
+of the text that you have
+selected also you can give borders you
+can change borders give effects and once
+you're done with this you just have to
+save the changes over here so again you
+can go into each each of the section
+here is the layout Tree on the left side
+so in the div column we have the header
+under the header we have the image this
+image we have the header
+menu we have the buttons here we have
+the footer so after you have made the
+necessary changes you can actually view
+the code here yes so this is the main
+HTML code also what you can do is you
+can go to a specific division like uh
+you can generate code for that
+particular section alone to
+so how easy was that you even did not
+have to write a single line of Code by
+yourself so there is everything you know
+it's divided into classes so basically
+device works on bem methodology now bem
+means block element and modifier so
+block means it's an independent entity
+it can be a button an element will be
+inside the block like an arrow sign for
+the button or anything and then comes a
+modifier the modifier it consists of the
+color like you know the buttons color
+the shade whether it's transparent
+whether it's in dark mode light mode Etc
+so as you can see here this is the block
+inside the class this is the element and
+this is the modifier now after that you
+can download the code so for downloading
+the code you need to select a plan so
+right now we'll just view the code so
+let's just press here let's go to build
+the app so this is our code after
+building the app as you can see we have
+the folder structure we have a public
+it's a static C it's holder inside which
+inside the public we have the images
+fonts and then we have the CSS inside
+that we have the Styles you know the
+stylesheet and then we have the index
+HTML file so you can check the code one
+by one over here so this code is of the
+main page the first page this code is of
+the pricing page and then this is of the
+sign up page the third page so as you
+can see you have got a complete you know
+a complete set of code complete HTML CSS
+code for the website without writing a
+single line of code now what you can do
+is you know you can refer from this and
+you can work on vs code or if you have
+you know if you're ready to pay you can
+actually you know download your code now
+before going to the next tool if you are
+interested in a career in uiux Kickstart
+Your Design career with a Caltech uiux
+booty camp and immersive gen power
+program designed to equip you with hands
+and experience in Cutting Edge design
+tools and techniques this boot offers a
+prestigious certificate from calch CME
+along with up to 10 continuing education
+units you will build a professional
+design portfolio through cap projects
+get end to end Mentor support and master
+21 essential uiux tools like figma
+notion and Maze the program also
+includes master classes by CTIC
+instructors and Industry experts with
+simply loarn job assist gain visibility
+from Top hiring companies and take your
+first step towards becoming a uiux
+design expert enroll now to transform
+your career and showcase your expertise
+you can find the course Link in the
+description box and pin comments so the
+next tool that we'll be talking about is
+teleport HQ so teleport HQ is perfect if
+you want something quick easy and
+beginner friendly so with teleport HQ
+you can go from FMA design to a
+responsive website with almost no effort
+and it's great for those who just want
+to get a site up without diving too deep
+into the code so let's go and install
+the plug-in the PPO touchkey plugin I've
+already installed it so basically you
+have to go to manage plugin and search
+for teleport HQ plug in and install it I
+already installed it so let me run it so
+now I have selected this particular
+frame you can select even multiple
+frames right now I'm working in this
+particular frame so there are two
+options either you can copy the objects
+to your clipboard then go to you know to
+teleport HQ and paste it over there or
+you can export it as a new project which
+will directly take you to the teleport
+HQ site so let's just export as a new
+project it's copying the elements one by
+one so once you reach here you can edit
+you can just zoom out and you can edit
+your design again you can check the
+resolutions over here whether it's
+responsive or not yes so first you can
+make the necessary changes for example
+if we selected this text you can change
+you know it's alignment let's just keep
+it middle aligned you can change the
+text style you can change the size you
+can change the position you can you know
+like in in device you can also you know
+change the margin you can add margin
+padding you can change the text color
+yeah you can add border you can change
+the background and everything and
+similarly not only on text you can do it
+everywhere you can you know work on your
+logo so you just have to go to your left
+hand side and click the elements that
+you want to edit so this is of this
+particular text we're expanding to 100
+Place countries so you know you can
+select element by element from your left
+side and edit it accordingly so here
+also you can you know create new
+components like you can create custom
+components of your choice or also you
+can add the pre-built Elements which you
+can find in the library now while
+editing the design you can also add
+sections like in case while designing in
+figma if you have forgot to add some
+sections or layers you can add it over
+here so for that you can go to sections
+and as you can see you know there are a
+variety of sections variety of templates
+for each sections for example you can
+add Banner blog post contact forms call
+to action FAQ you can even add the whole
+hero section they not found page the
+pricing page sign in sign up page
+anything and they have even in one
+section a single section they have a
+variety of templates for example let's
+just try the team So Meta team is
+generating the content for the section
+see as you can see this is the template
+that we have received for Te this is
+pretty cool right so now you can just
+you know these are the plays holders and
+you can change the images so this is how
+you can add sections now once everything
+is done our next step is to view the
+code and download the code we have a
+publish option over here we can publish
+the project but for publishing the
+project we actually need a professional
+plan so what you can do is we can view
+and download the code now in the free
+plan we can view and download the code
+10 times so let's just view the code
+first so here we have the
+HTML code and here we have the CSS code
+now let's just download it we want it in
+HTML download the zip file once it's
+downloaded extract all the files okay
+now what you can do is let's just see
+this in the browser you can open it in
+Google Chrome now for making Necessary
+edits in the code we have to export the
+code to vs code you know the downloaded
+code so for that we can just like first
+vs code must be installed in your device
+and then just open it with vs code so as
+you can see you have the index.html file
+which is the HTML code and also you have
+the CSS code so as you can see you just
+designed a website using figma and here
+you have the code you know without
+putting any effort and without writing a
+single line of code this is pretty cool
+isn't it so now you can make necessary
+changes in the vs code and then publish
+it so that's a wrap of our video I hope
+you found this video helpful in learning
+how to convert your figma designs into
+HTML and CSS codes using theis and
+teleport HQ so whether you need
+customization or a quick simple solution
+these two tools have got you covered so
+if you enjoyed the video don't forget to
+like comment and subscribe for more
+tutorials thanks for watching and I'll
+see you in the next one staying ahead in
+your career requires continuous learning
+and upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+[Music]
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

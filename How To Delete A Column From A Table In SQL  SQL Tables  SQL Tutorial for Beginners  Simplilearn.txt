@@ -1,0 +1,79 @@
+foreign
+'s YouTube channel and today we will
+learn how to delete a column and SQL but
+before we begin let me tell you guys
+that we have daily updates on multiple
+Technologies and if you're a tech geek
+in a continuous hunt for latest
+technological friends then consider
+getting subscribed to our YouTube
+channel and don't forget to hit that
+Bell icon to never miss an update from
+Simply turn now without further Ado
+let's get started so how do you delete a
+column in SQL now let's quickly take a
+look on the syntax we will be using
+today so we will be using the alter
+table keyword then the table name the
+dropkeeper to drop a particular column
+name and followed by the drop keyword we
+have the column name which we are
+supposed to be dropping off now that we
+have a clear idea about the syntax let's
+get back to the MySQL workbench to
+execute this particular command so far
+we try to create a database create a
+table add some data onto the table using
+the insert command and update a
+particular Tuple and try to eliminate a
+single row now we are trying to
+eliminate a complete column here so
+let's not eliminate the existing columns
+let's try to create a new column and
+then try to eliminate it so for that we
+will be using the alter table command so
+this is the alter table command and the
+employee table which is the employee
+table name then we are trying to use the
+add keyword and we are trying to add a
+new column that is the PIN code which is
+a worker or character data type and not
+null we're not keeping it as null and in
+case if we did not add any value into
+the PIN code the default value will be n
+a which is a text type so we are
+encoding it using single quotes now
+let's try to run this code
+and let's quickly try to check the table
+um
+apply table
+and there you go now we have pin code
+here and the null values in the PIN code
+so we don't want the spin code over here
+so we will eliminate this pin code
+column using the same alter command so
+Alt
+table
+then the table name
+and then the column we want to drop
+using the drop keyword which is pin code
+so let's execute this command and see
+the output
+so there you go the PIN code column has
+been successfully eliminated so so
+that's how you completely eliminate a
+column in SQL and with that we have come
+to an end of the session on how to
+delete a column in SQL if you have any
+queries regarding any of the topics
+covered in this session then do let us
+know in the comment section below and
+our team of experts will be more than
+happy to resolve all your queries at the
+earliest until next time thank you stay
+safe and keep learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

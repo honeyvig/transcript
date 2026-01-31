@@ -1,0 +1,2246 @@
+foreign
+welcome back to another video by simply
+learn this is a new verb and in this
+video we are going to create Instagram
+clone using react.js but before we begin
+if you haven't subscribed to our Channel
+already make sure to hit the Subscribe
+button and press the Bell icon so you
+will never miss any update from Simply
+learn so without further Ado let's begin
+and see what's in it for you but first
+let me tell you what react is so what is
+react.js react is a JavaScript library
+that is used to build mobile and web
+applications fast and Interactive it's
+an open source reusable component based
+front-end library of JavaScript react is
+a combination of HTML and JavaScript it
+provides a reverse and opinionated way
+to build modern applications
+so let's see how we're going to create
+the Instagram clone if getting your
+learning started is half the battle what
+if you could do that for free visit
+skillup by simply learn click on the
+link in the description to know more
+let's open the Chrome
+and I'm going to write Instagram
+and this is how at the end of this
+tutorial you will see your Instagram
+clone okay
+so
+let's jump to the coding part open your
+Visual Studio code
+now let's create a react project
+for that open your terminal
+new terminal
+you can also open your terminal by just
+pressing Ctrl plus back type okay
+here I am going to write a command to
+create react project is
+npx
+create
+react app now the folder name I'm going
+to create as insta
+Instagram clone
+okay
+it'll take a couple of minutes to
+install all the files in libraries
+so let's wait a minute
+as you can see it's installing react
+react Dom and react Scripts
+so let's create a couple of minutes more
+I'm sure at the end of this tutorial you
+will love the output as you are going to
+create a straight sample and fascinating
+Instagram clue
+okay let's wait a minute more
+okay
+now
+okay it's taking a minute more that's
+fine
+we'll wait a minute more with this
+after that
+we're going to open half folder here
+I'm going to create a react project
+like in this Instagram clone I'm also
+going to create the login page inside
+the login page I'm also going to create
+the sign up page when the user enters
+they are the uid and password
+they will be redirected to the home page
+now
+let's see how our application is looking
+first we are going to go inside the
+folder that we have created so I'm going
+to write
+Instagram
+clone
+now we are inside the Instagram clone
+let's open our folder
+where all the files are
+so inside the C
+users SLP
+here is my folder let's open it
+and see
+now we'll open the terminal by just
+clicking on control back tag
+here I'm going to write
+npm start to see whether our project is
+working fine or not
+so
+let's wait and see the magic of react
+react is a beautiful library of
+JavaScript
+okay you'll love the output in the end
+I'm sure
+let's see
+so here it is the beautiful logo of
+react
+now coming back to visual studio code
+let's install the material UI component
+of react for that I am going to write a
+command
+let me just search here
+you icon we need core
+powder
+open this npm
+you want to open this one
+but let's copy this command from here
+it's copied coming back to a code let's
+paste it enter
+let's move to install all the files
+okay fine let's sing
+the other root folder
+okay let's just see in this Json file
+comes has been installed or not
+okay
+so there are so many packages here the
+react is all dependencies react even to
+your Dom your script
+and
+this score is not installed let me just
+again
+file them
+okay
+let's write npm
+install
+just a minute
+yeah right
+4.11.2 okay
+so it will install automatically
+here I'm going to open this app.js file
+and as you can see just let's run this
+file now npm start
+let's say it's working fine or not
+okay it's working completely fine
+now coming back to our code
+let's delete this logo we don't need
+that
+and let's delete this header
+here we'll write H1
+inside this H1 I'm going to write hello
+from Simply learn
+let's save it let's see what's the
+output
+isn't it looking cool
+at the end you will see in complete
+full-fledged Instagram clone it'll be
+awesome let's see Instagram clone okay
+fine
+let's delete this one we need
+to move forward
+and
+delete this one
+because we don't need it
+also I'm going to delete this file also
+let's delete this image
+okay
+here
+now I'm going to create component as
+react is a component based Library here
+I'm going to create different components
+for this project
+let's create a folder called compo
+Nance
+inside this components folder I'm going
+to create a folder called
+login
+page
+inside this login page I'm going to do
+files as login
+Dot login page dot Js
+and
+inside this login page only
+let's create another file called login
+page.css
+now
+instead let's just save it for now
+okay
+open your login page to us CSS not Js
+port
+react
+or we can also write
+import react
+comma
+here I am going to write
+component
+yeah
+from react yes
+I'm going to create a class of login
+page
+inside this login with extends I'm going
+to use
+state in this
+component
+let's create a Constructor
+inside this let's write a prop
+this let's write a keyword super
+props
+after this let's
+this dot state
+get the state inside this okay
+now render
+this function
+to return
+div
+hello
+world
+let's save it
+okay we need to export
+export
+to export each file you need to write
+export
+default
+and then the file name
+like login page let's close this one
+let's save it
+now
+come back to app.js
+here I'm going to write
+login
+login
+page and as you can see
+it automatically
+imported the
+login page from components login
+okay
+let's just save this one and see the
+output
+so
+it's working fine
+come back to our code
+let's
+this part
+okay it's fine
+let's import react
+come after this
+I'm going to
+we're also going to use the credit
+system here okay
+code
+four minutes
+let's add upgrade here so what I'm going
+to do is I'm going to make this screen
+into three parts like three
+to the left side three to the right side
+and 6 to the middle
+okay
+no
+so the screen is of 12
+so I am going to use this 12 okay
+let's
+open our login page
+and pieces
+and let's create a div now I'm going to
+show you how to create the
+in a screen
+firstly I am going to take one div
+inside this div I'm going to write
+create
+container
+inside this grid container
+to add one grid
+item
+of exercise
+3.
+okay
+should not come under this it's
+it's okay fine
+yeah
+here I'm going to write some demo data
+hello
+to just let you know how the build
+system works
+now
+to create one another let's
+run
+proper
+hello
+here I'm going to write from
+here I'm going to write
+simply
+let's save it's showing an error
+okay
+let's find out the theater
+everything is looking fine to me
+let's see what's the issue here
+okay
+the grid is not defined okay it's fine
+got to add the grid
+okay I have added one command for the
+grid yarn add material UI code
+as this was not working
+so I'm again going to add the material
+UI
+so let's see is it working fine now or
+not
+wait a couple of minutes to see
+if it work that will be great
+so let's just see the Instagram
+login page for now let's just log out
+from here
+okay
+let's just open this
+open the Instagram yeah
+this is how
+I'm going to create the login page
+so I have these pictures this one this
+one and this one
+so inside this
+sign up page I'm also going to
+create this signup page and this login
+page okay
+so it'll be very great if you
+understand the process
+the react is a very beautiful language I
+love react
+so if you love react
+to our Channel
+post
+amazing videos on a daily basis
+so this is almost done
+yes
+yes now I'm going to start this project
+will not work within previous but let's
+just
+see is it working or not
+okay fine it's working
+so as you can see it's saying okay let
+me just delete this part
+index.tss let's delete this save it
+coming back to our page
+let's just save it
+now as you can see this is taking what
+this piece which is
+from here to here
+okay
+and this from is taking
+space from here to here this Big Grid
+and this simple learn is taking this
+much space only three
+so we have distributed this 363 inside
+this 6 we are going to work
+so coming back to the code
+now we are going to create the login
+page
+so let's
+hear
+inside the login P dot GSS
+JS let's
+uh here yeah
+inside this let's cut it and let's
+create a Dev class
+okay
+inside this let's create another div
+with this div I'm going to add one image
+let's write the source of that image
+it's
+insta
+website inst image
+okay this is not necessary
+okay that's why it's not fetching we
+have to import the image in the top
+so let's write import
+instead
+remember whatever you are eating inside
+this
+you have to write it here also so
+this is inside the source
+inside the
+folder dot okay
+first it is inside the Instagram clone
+then source then inside that images
+now inside that
+I have added one image folder here I
+have added some images they'll be
+important and useful in this tutorial
+okay
+I'll give the link in the description
+box for this project you can just get it
+from there okay you'll get all the code
+don't worry just see how everything
+works okay
+so here I'm going to write the code of
+that image it was 9 3
+6 4 6
+okay it was seven five f
+two six
+Dot s3g
+now let's save it and see the output
+okay
+it's saying we have packed come by with
+one warning it's nothing image element
+must have an old okay it's fine we can
+do it in the CSS part
+oh and boom you can see the output here
+isn't it amazing we can just adjust
+everything don't worry about that
+but it's working
+let's
+you can add here like alter this image
+hide width we can give
+okay
+now let's move forward
+and add the width
+let's give it width as
+okay we can give the width as
+and pixels let's write okay
+450 would be fine
+yeah let's
+share
+okay yeah
+it's completely working fine
+I wouldn't give the padding and all
+for now
+it's looking beautiful yeah
+let's open that page with that
+yeah it's already down let's again login
+we'll face this login page okay yeah
+it's up so let's make it
+up only okay
+yeah it's looking very beautiful
+coming back to the code
+after this let's create another div
+let's inside this let's write
+okay we have to make the Box
+so let's
+okay let's you can also add the image
+here
+yeah
+now we need what let me just see once
+okay we need one container inside the
+window we need that image
+of Instagram okay fine it's easy
+no big issues
+okay
+let's
+right here again this
+copy okay it's copy
+and now let's paste it
+so the name
+so the name of this is not insta image
+it's in
+install logo
+so what we are giving not right now
+let's not go let's find if we can
+okay we have to include this
+inside here
+okay
+let's
+copy this import
+paste it here
+and install logo
+from images
+75b 206a
+yeah it's fine
+let's add the name
+insta
+logo
+dot PNG let's save it coming back to the
+code it's showing an error can't resolve
+it okay
+let's Okay okay fine
+I understood
+so
+it's not it's done it's insta
+let's save it
+now is it the same issue
+it's the same issue
+let's search for its time with DOT PNG
+okay fine
+now coming back to a code
+we'll see
+install logo dot PNG
+okay fine everything
+it's logo install
+in just a minute
+it's not this one
+it's the
+okay let me just find
+lower things as here
+let me just
+there
+let's write here
+save it
+yeah
+it is working but the image quality is
+very bad
+moving ahead let's find the another logo
+is there any low Bond size here
+we can use this logo insta
+let's try this one logo insta here
+let's look
+let's save it
+let's see that yeah this is also working
+fine
+okay
+go with this one only
+hmm
+the code
+okay this one is fine we don't need this
+width
+this one
+now let's give this first as a class
+so we can also give the CSS properties
+okay
+so for that I'm going to give it a name
+as login page
+and Main
+let's just save it
+and inside this let's just delete this
+one
+this is this I'm dot yes no no
+I'm going to write
+login
+page
+inside this
+I'm going to write display
+then it should be
+Flex
+let's do it
+coming back to the code let's see
+okay it's fine
+now again I'm going to write login
+we need for log only
+because it's coming
+the next line let's give it to width
+already given it over it so
+cut it from there
+let's
+cases in different page
+let's not mix it here
+okay
+let's see it's so coming very big
+tit I guess
+but no issues we will make it work
+yeah
+login page
+over the Cs is not working okay
+I forgot to add the CSS in this login
+we also have two
+at this CSS so I'm gonna import
+Dot
+login
+page Dot
+CSS let's save it now and see the magic
+of CSS with
+react
+okay
+this looks good
+okay
+back to the code
+it's looking very slow
+no issues evaluate a couple of seconds
+because
+okay it's not working
+look it's
+let's move forward
+we can add new features inside this
+so
+we're going to add this logo here
+what is coming
+here
+you want this
+set there so let's
+login
+page
+right
+opponent
+say this
+is going to write
+okay everything is looking good
+height we're going to give eight
+let's give it a height of three three
+eighty as
+it is as Instagram login page
+[Music]
+it's 350
+border of that box which is one pixel
+solid
+let's give the exact color that
+Instagram have
+okay let's just save it now
+see everything is attached
+okay
+let's just see
+Instagram one is looking very big here
+let's reduce this size
+I'm going 155
+let's see the warnings here
+still compiling okay let's kill this
+terminal
+delete this one
+inside this creating new terminal
+let's write and then start and see
+whether it is working
+fine or not
+let's just delete this
+okay
+it's coming inside that the only
+let's see whether it is fetching the
+login page
+right
+we have to add the
+files here to fetch it okay
+let's just copy this one
+let's add it inside here
+weather
+first let's write them
+please write component
+here
+paste
+class name as login
+s they were
+login
+right
+let's just save it
+here also
+for this image let's give it the class
+name
+login
+page
+logo
+save it now and see whether it is
+working fine
+okay let's hope it's working fine yeah
+we have created one box and this is what
+our Instagram logo
+move it up
+let's open our
+terminal
+so
+it's fine
+you don't need this one
+one for the main
+or one for the script container
+and I'm going to add one
+two
+[Music]
+three
+you have created one div here
+yeah it's fine
+now it's looking
+up
+like here earlier it was looking down
+now let's remove this
+till now I'm sure you have
+gotten the idea
+for why we have taken this
+okay let's make it like
+systematic
+yeah let's save it now
+as you can see
+in our app
+and in Instagram
+there is this one
+margin on the top
+so let's open our CSS
+that I'm going to write margin
+25 pixels let's save it
+yeah
+our app is also looking like the
+Instagram login page
+right
+and then it started looking cool
+right okay
+let's make it as here as it is showing
+inside there
+yeah you have to give bad thing to this
+Instagram
+you have to create this also
+so let's
+give it some space here
+let's
+let's give it marching top to everything
+so it should align C
+uh inside the mean also
+I'm going to give margin
+25 pixels okay
+now in this right
+I'm going to give it a border which is
+fine margin is fine
+margin is what from Top we need
+so
+let's save it
+this text line is
+Center so our Instagram will
+be inside this container which is Center
+isn't it looking very similar to The
+Original Part
+now let's move forward
+with the next step inside this container
+I am going to create
+these phone number and all okay
+let's work on this container open your
+login.jss
+JS file
+after this
+let's create
+a div
+inside this let's create another div
+so
+yeah
+there are two divs
+there's some space in between these in
+this
+so
+it's fine
+I'm going
+to
+open this
+let's write
+class of login
+page
+i g i n
+written the wrong spelling
+now let's write input text
+inside the you have to use the play cell
+you have to use that placeholder
+like you also have to write these things
+now
+okay
+let's write
+similar input for password also
+type
+okay
+it's not
+type
+which is
+I'm asking
+let's type
+and the type of this is password
+let's move forward
+see
+yeah
+it's for username password we can just
+make it
+looks similar to the original one
+with the help of
+what CSS right
+let's create a button
+let's write sign
+okay
+let's just save it
+you'll see one sign button yeah like
+this
+coming back to the code
+let's write
+let's
+okay here we are
+let's make it with CSS you have to OK a
+class name
+last name we are going to give
+let's name it simple only login page
+text
+type this let's copy it from here
+and let's paste it here
+for button I'm
+going to add another class
+as login
+button
+let's just save it and see the magic
+it's not showing let's see what's the
+issue woman
+oh there we are
+added the CSS and why we are expecting
+so many other things okay
+first we are going to add the
+for login text
+and I'm going to write this tree
+open page width
+let's write 258
+what is the exact same
+height
+which is 36 pixel same again
+I've inspected these things so I'm
+pretty sure of that
+login
+button
+inside this let's give it a width
+off
+70 only
+press the button should be
+small
+now let's see
+yeah
+okay we need to do some
+changes here also well it's coming
+outside of this container let's see
+is we have added here inside the
+container
+and I have done few changes in the dev
+now
+as you can see
+it's coming inside the container now
+we're gonna give some space
+so for that
+let's give them some margin within your
+piece.css
+and here
+I'm going to give it a margin
+of 5 pixels
+okay
+also I'm going to give it a border
+because color is very dark there
+I'm gonna change that solid
+and
+DB DB DPS
+and this is looking good
+and we have to create one more
+which is
+login
+page
+sign in
+yeah
+inside this let's give it a margin from
+Top as
+25 pixels let's save it
+and see the changes yeah
+so
+now the color of this is looking exactly
+like the
+this one now coming back to the button
+part
+let's just
+add
+yeah
+we'll be creative field added here
+huh
+as you can see here
+it's not coming inside this because we
+have
+open this one in the
+let's close this
+let's first add the placeholder or let's
+work on the button bar okay let's
+first add the placeholder which is phone
+number user name or email
+so inside this text now
+we have to add this
+placeholder
+after this I am going to add one
+placeholder
+which is going to tell us what's
+comes inside this
+number email
+or
+usually
+okay
+and inside here let's create another
+placeholder
+select this let's write password
+save it
+okay it's called
+the email is coming
+username
+or
+save it yeah
+it's looking amazing
+right
+now coming back to the CSS file
+let's give it a background
+after the Border we are going to give it
+a background color which is a little mix
+of white
+so I'm gonna write hash
+f a f a f a let's save it
+now it's a little bit
+dark white okay
+same as
+this original one
+yeah
+moving forward
+let's now
+yeah
+coming back to the code
+let's
+cut this one
+let's write this
+okay
+we're going to give
+padding left too
+10 pixel
+yeah this is coming fine
+let's just
+add one more which is
+border radius here
+which is 5 pixels is fine yeah
+no
+okay let's go
+this button some height
+after the height you're going to give it
+border radius for five pixels
+after that font weight
+let's give the font weight bold
+and then we will order for this
+which is one pixel solid
+and the color would be
+okay let's see the color here
+in the original one sky blue okay
+the sky blue color is zero three nine
+five F six let's just save it
+okay
+it's coming
+great
+but let's just
+because we need background color of this
+as blue so
+3956 yeah it's a little dark
+okay
+and the color of the button should be
+White
+so
+you can just
+let's see yeah it's coming beautifully
+right
+whenever we hide the ID password Here
+yeah
+okay
+forward
+let's
+work on itself let's give
+to minimize this
+let's
+add here body
+we need to fetch this we need to add the
+DOT
+background
+color
+and the background color of this would
+be
+a little
+you just see the original one
+okay it's it's fine
+okay
+it's right only so we write FFA
+yeah this one is great
+okay
+coming back to the right one
+the center we're going to give it
+back around
+color which is white save it
+now let's give this button a margin
+margin from Top
+because we need to add some space here
+so we are going to give with the margin
+of 5 pixels yeah this is the line now
+now
+let's see whether it is looking fine or
+not
+so
+it's looking completely fine
+so now we are going to split the screen
+as power and all
+so coming back to app.js
+now we'll work on this part
+this or
+log in with Facebook in this everything
+coming back to code
+here
+I am going to create one div
+minimize this we can see the output
+okay
+let's create one Dev
+inside the step I'm going to create one
+div
+modif
+inside here we're going to write r
+okay
+looking cool I guess
+save it okay with all is coming but we
+need to add some CSS here
+so we can just
+make some space here so let's
+write this class name as
+login
+space
+divider
+let's save it
+okay
+let's give this one also class name
+as login
+or
+here also we need to get some
+class name as
+login
+okay
+now
+you should also get this one last name
+because
+we need to I did this also in the CSS
+I'm going to give it as
+if
+let's save it yeah
+let's open our CSS file
+let me just add the CSS here now
+here I have added some CSS properties
+you can see it
+okay
+so let's just save it and see
+this is the r
+now
+let's work on this one
+though
+login with Facebook forget password okay
+let's move
+okay
+so I have added one class of log in
+Facebook here I am adding the image
+where this is the keyword FB which is
+can fetch in the import
+login with Facebook and then another div
+of class name login forget
+or with password
+and
+here
+till this FP
+from the image folder
+let's just save it and see
+this is how it is looking we need to
+shrink the size of this image
+let's see the original one first okay
+it's coming very small but in our case
+it's coming very big so what we can do
+is you can go to our CSS file and reduce
+the size of this
+login Facebook
+so I have added here
+margin top is let's add 10.
+and see changes
+nothing is here
+so let's wait
+okay let's not
+d
+here we can also
+add the margin
+right
+so why can't we give the width here
+it's right width
+15 pixels
+and let's see
+yeah it's coming beautifully
+right
+now
+coming to this password
+you can make this as a hyperlink also
+okay
+but let's just give some styling to this
+lock and see let's
+a little less
+okay let's just do it now
+give it margin right
+let's save it
+all the image got lost
+okay we just have to give
+the exact
+number which is
+5 pixel now
+what it is saying it's saying this okay
+okay
+this can't be fixed from here
+and it's again
+okay we have Kevin
+now it will be fine
+yeah
+yes it's looking good
+now
+will work on this
+sign in and sign up button
+let's just
+go to our
+project
+there we are going to add
+because we need to come out of that main
+container
+okay
+so here I'm going to create one another
+container
+let's give it a class name of
+login
+page
+okay
+sign
+up
+options
+okay
+inside this let's create another div
+class name
+login
+page
+sign in
+let's close this now here we are going
+to write
+don't have any account sign up
+it's copied
+and here we're going to paste that
+right
+now
+we are going to create another div
+let's give it a class name as
+login
+page
+sign up
+it is
+the trade
+on
+sign
+let's just save this one and see
+our page
+yeah it's coming
+up
+what we can do is
+let's see what's the mistake here
+it's coming inside the container but
+it's not fetching inside this
+okay
+this one is fine
+okay the sign up for 10 sign and it's
+fine
+this one is looking good
+add it here yeah
+now it's working fine
+yeah
+now what we can do is
+you have to give this a little padding
+so it comes under this
+so coming back to
+line up
+the top base
+you don't have an account sign up
+you don't have any account sign up
+and then oh we need to add
+get app
+let's first
+from this now
+get the app
+let's minimize this this one also
+refresh and it's coming perfectly fine
+as I'm not going to add these data we
+can do that
+but I'm not going to do that
+so
+let's add some images like this one
+here
+for that
+let's write here open your
+clone get the app after that
+I'm going to
+create one another div
+at this I'm going to add these images
+okay
+images source
+door
+let's close this one
+to that again
+image
+source
+Play Store
+let's save it
+okay
+we have to
+add the images imported
+second
+okay let's import this app store and
+Play Store images
+let's copy this one
+copy
+paste
+that I'm going to write
+App Store
+and here I'm going to write Play Store
+and the image name is
+app
+and this one is play
+let's just save it
+and see
+okay
+it's going very big we need to give it
+the width also
+let's
+open our code
+errone here we are going to give it some
+width
+let's give this one
+136
+pixels
+yeah and let's copy this
+yeah let's paste it and
+yeah you can see the output
+we have to make some padding and all
+okay let's coming back to our code
+let's give this one
+sign up page oh let's
+let's give it another
+option
+okay
+so let this one only
+let's fix this
+let's skip this images
+class name
+as login page
+this one
+engines
+yeah
+now let's copy this
+and
+to this image
+I'm going to paste this one
+let's rename this option as
+and here also
+you are going to let's say we can see
+it's still changes
+get them
+it's coming really
+get the app yes
+with this only so let's do something for
+that
+and here as
+load
+section
+okay
+let's
+this one inside this div
+this one
+let's see it's still in the background
+okay
+let's just do one thing here
+now it's looking fine yeah
+so we need to give some padding here
+let's give it some adding
+Here Also let's just copy this property
+only
+paste it
+save
+now it's coming beautifully
+there is some Gap here so let's
+add this
+watching motion
+okay
+edit this dwing part
+okay this is a mistake
+I thought it's not fetching the right
+margin
+it's not fetching the right margin
+let's just
+open the CSS
+right here
+top save it
+watching is fine
+okay we need to give some margin in
+between the
+container and get the app okay
+so let's just see
+in download section
+say the download section we took gif
+maximum betting
+from here we have given some padding
+buds
+and things which fine so let's right
+here
+40
+the login page option is also 40.
+but it's not getting the space I want
+so let's open this one again
+it's a login option
+login
+with this one
+Martin
+top
+fetching this one
+okay it's fine it's not that big deal
+so
+login pages
+done
+so this is our login page
+and this one
+is Instagram login page
+so
+whose login page is looking more
+beautiful guys
+I understand
+so let's move on to the home page
+code
+here inside this Source component
+I'm going to create one folder
+inside this component folder
+holder
+emat
+of home
+page
+inside this home page component I am
+going to create two files
+let's name each of them as
+om dot Js
+and the other one is
+Dot
+CSS
+yeah
+save it
+just
+let things look fine now let's open
+let's delete this
+Delta
+you have fetched the login video
+everything looks good
+let's create
+la
+Port reaction
+yeah but I am importing component
+okay
+let's import the CSS file of this
+old
+home dot CSS
+okay
+let's create a class of home
+now we'll see whether it is working or
+Not by giving it up dummy text okay
+let's maybe use our props again
+keyword
+it will fetch props
+and this date will show us the
+state of the program okay
+now the main thing
+friend of
+whenever you are calling the
+class you need to declare the render
+function
+so
+let's let's give it
+hello
+from simpler
+let's close this
+again
+need to export
+for all
+file name which is
+home
+let's save it and let's import it this
+page inside the app.js
+now
+as you can see
+portrait login page
+now I'm going to import
+home page
+now
+go home from
+components
+on each
+okay
+let's have it
+see is this in the browser
+errors
+let's see
+it's inside let's see the structure of
+this
+okay let's open this
+source
+component
+wait okay
+this folder is created let's
+cut this one
+paste it here
+okay let's cut it now
+now it should be working fine
+let's cut these files
+seven
+now it will be fine
+where it is showing
+hello from simple learn right
+coming back to our code
+to the Instagram page let's
+so this is how the Instagram page is
+looking
+what I'm going to do is
+create one nav bar in the top
+nav bar component which will
+use these icons so we'll get plenty of
+space to add the
+uh stories in the vector and this box
+part
+then we'll follow the same let's
+code
+inside this component folder
+another folder
+does
+Dot
+now in this I'm going to create
+JS and
+the cssful
+yeah
+nav bar dot Js
+2
+CSS okay
+now coming back to
+let's do this
+coming back to
+let's
+copy this
+this
+and paste it inside member.js
+edit the
+like nav bar
+or GSS component
+render
+here
+port
+okay
+never
+let's save it let's bring an error let's
+see what's it is
+what should
+okay everything
+to invites just here
+okay
+it's right here as
+member
+so we can just
+get what it is showing little
+page take this
+delete the whole thing we don't need
+this
+inside this I'm going to declare the
+net bar
+we faced in the single page
+okay
+let's set this div
+okay let's
+let's start now
+let's
+okay let's save it now
+okay it's fine let's save it
+let's create one more
+components only
+let's
+main component
+should go with bank
+thank you
+okay
+inside this main content will create
+again two files
+then
+Js
+and mean content dot CSS yes
+okay
+now
+again we'll go to home copy this text
+going back to main content
+let's delete this right
+Main
+content
+let's delete this also from here
+in 10th
+and also this
+yes
+let's get
+the plug here
+content
+inside the page everything fine
+let's save it now
+it's done
+see
+let's go to homepage
+here call
+this mean content
+let's save it and in app.js
+let's comment it down for a while
+browser which
+here
+okay
+now.js my body
+page
+board
+save it now let's see the
+YouTube
+ever
+and mean content okay
+so
+as you can see
+that's these files okay
+let's
+component like a button mean component
+now
+inside this nav power.ts
+let's
+let's bar
+create one there
+class as
+okay let's
+close it
+now here
+I'm going to use
+grid
+from Material UI
+okay let's save it
+okay
+as you can see
+a one component has been created
+beautiful
+let's create now
+create hit this
+let's give it a name
+great
+container
+inside this container I'm going to call
+for
+it's
+victim
+and one is access
+let's do
+let's just copy this from here
+well let's just save it
+okay
+let's
+okay
+let's see
+good see
+there is this issue that was coming
+integrated
+so I checked and the grid was not
+properly installed in our system
+now I have again called what this
+command npm install
+slash four
+this F is denoted as forcefully
+and again it is installing material UI
+core
+it will take a couple of minutes install
+all the properties occurred
+it's sweet
+let's
+analyze the
+this will be resolved by
+so we have to import the sales number
+also
+and these icons we can get it from the
+material UI
+icon and one company for the pictures
+and one component for this one
+go back to our code
+it's still installing
+shoes
+let's just add some text
+so you
+get
+now
+and that is never only
+let's import
+logo
+that we needed
+logo
+as you can see
+you can see this
+installed all the packages
+cool
+for that
+let's add here
+inside the images folder there is a
+picture called
+and stop
+e m g
+and let's
+let's
+create
+this part
+okay just cut this yep
+okay let's first just see no whether it
+is working or not
+okay let's open this one
+see you
+in the editor
+let's find out
+so we have
+finally compiled this program
+successfully main problem was that
+I was declaring it
+should not come under
+module so we have to import it like this
+so
+output of this program is like this
+this is the component which is
+the main goal okay the things
+which will come under this as Story part
+profile back upload that part in here
+recitation part
+the Never
+declare the Instagram logo
+okay inside this
+let's add it here only in the center
+go ahead and the image we have already
+imported the
+image on the top
+let's write
+install logo
+with this one
+save it
+showing the big Instagram logo we don't
+need that we can
+change it in The Styling bar
+happen
+let's
+give it a width
+let's write
+pixels
+save it
+okay
+so I can add The Styling CSS
+bar
+logo
+okay
+now let's see it's coming very beautiful
+but let's just delete this part
+space
+yeah
+this looks good
+back to this
+let's
+all right
+input
+text
+search
+please
+holder is what you know guys
+let me
+it
+just come on that box
+with the implementation of this search
+box yes
+yes okay
+let's create
+here
+come
+inside
+three three six seven eight
+minutes
+let's go and train you know
+Style
+set this I'm going to add
+display
+which should be
+Flex
+okay
+it's this
+and let her import some
+image
+everyone fine
+other ways
+let's give it a width of 25 pixels
+save it
+copy this one
+fine
+yeah let's
+go back
+so one is home one is
+Siege
+other one was
+that trying button
+now
+as you can see
+it comes the grid of the screen is 12.
+so we have used 11. now I am going to
+create a new grid here
+let's give it size of
+one
+and that would be empty
+okay
+now let's import the images on the top
+again
+that
+is
+and move that is
+pasted
+both
+yeah
+let's
+find
+also the name of the images
+save it
+I can't switch this 3.3 G
+let's see
+let's see
+now let's check
+okay
+it's coming beautifully
+so
+yeah
+it had to get Instagram icons we can
+also write these names but it will take
+much space so
+as you have noticed there is one
+file
+portion also
+which is round and inside that
+is a picture
+what we can do
+that let's go to a code
+let's see
+okay
+yeah
+let's give
+class name
+does
+bar
+search
+bar
+yeah
+save it
+it's
+into this
+everything which looks fine to me
+let's create this screen
+no
+this is the time we can
+add the
+logo the
+page like this one okay
+come back to the code
+what we can do is we can import
+Avatar
+UI core let's say this is
+which is this one
+head
+yeah now
+you have to declare this inside this
+so what we can do is
+star source of the image
+DB
+what this image
+the
+let's first
+image
+Style
+okay
+and inside the style
+um
+Max height
+okay
+Max High
+let's try it
+sign us
+25 pixels
+then
+with
+let's give it does
+now it's looking good
+excited again
+five pixels
+just close this one
+as it is showing you letters because we
+have been imported the
+each
+so let's write DP for
+the name of the image
+save this one
+still showing two errors let's
+read them
+parts
+inside this network.js
+what's together
+up let's just put one more terminal
+let's kill this one
+okay
+set the network only I understood
+but let's just run this one
+right
+this
+problem so what we can do is
+actually okay this
+this weekend remove only
+with the probing problem was without
+CC can do
+not found
+the function
+which is
+good
+so looking
+picture
+let's see
+let's see what it's
+so whenever we find any error just copy
+that and paste that inside the
+Chrome
+on stack Overflow you'll find plenty of
+answers of that
+so our main issue is with the avatar
+maybe it's not installed or what
+words
+at this point
+okay
+let's read something
+similar here
+okay
+it's fine now
+again it's the same issue
+with that
+it's working fine
+yeah
+it's just coming a little
+in that properties no it shows that
+let's give a little more sense to it
+and let's see now
+here on this one is looking
+okay
+yeah
+coming back to the code
+now
+let's style them properly
+image I'm going to give the class name
+as
+limit
+or we don't need
+this
+image
+okay
+yeah
+let's just copy this
+and paste it here
+here
+and here let's save it now and see the
+module
+yeah it's coming beautifully now right
+everything is aligned
+and you can see the nav bar very
+beautifully aligned
+is not looking very good this main
+content let's move that first
+okay
+yeah
+let's remove this one let's
+now you see this is how the nav bar is
+looking isn't it beautiful
+right
+forward
+coming back to
+God
+it's fine I have added the CSS
+properties you
+can
+and
+I'll I'll upload all the code in the
+description box you can just copy that
+from here
+okay
+let's
+move ahead
+now let's close this
+is never
+main content will
+be fine first thing first what we are
+going to do is
+I'm going to import grid here
+sure
+let's remove this
+and let's
+add the proper location of the grid
+fine
+let's right here
+grid
+container
+inside the script container
+I'm going to add two grids
+is
+size them as
+to
+six first
+okay let's
+close
+let's right here
+great
+item
+six
+the main thing what we're going to do is
+inside this
+Okay so
+space
+let's create here
+okay
+create one
+and put it here also let's complete this
+structure okay
+this is looking final
+now
+where we can just
+add the size here
+it's fine everything is look good now
+start booking this
+so let's
+add here
+on dev
+and take this
+let's
+add
+let's first here you can
+yeah
+in the components part
+let's create two folders or components
+State this bar
+okay
+and then status bar again we are going
+to
+create
+to files Js
+CS
+status bar
+CSS yeah
+right now
+we are going to create one another
+component
+which is main page
+in in this main page folder
+folder
+it's deleted
+okay okay fine yeah
+okay let's create
+in page
+and select this main page let's
+go again
+base dot Js
+Main
+the dot CSS okay
+that's the
+page
+and the status page which will come up
+because data should come
+okay
+let's just
+capitalize this
+okay let's save it
+yeah everything's look fine now
+let's import these files inside this
+first we'll import the
+status bar
+um
+status bar
+again we are going to import this
+page
+from
+you can
+yeah let's save it
+now
+if you can see here
+declare anything inside this
+switching it
+now let's just
+do last part
+with the class name
+as me
+attend
+container
+let's save it
+to status
+I'm going to import
+okay let me just cut this part
+copy it from
+the place
+cut this one
+if
+it's
+beat this
+just put the
+react
+component
+from
+you react
+yeah
+let's just save it
+in trial
+it is important this is a status bar
+so it is bar dot CSS
+seven
+eight
+Theta Square
+cylinder function
+say also
+default
+if the status bar
+let's just
+we don't need this
+status bar
+okay
+let's just copy it from here and set
+this
+let's paste it
+stood some
+motions here
+mean page
+okay
+let's save it
+here also
+and page
+and
+when it comes to exporting the file
+save it
+set the tab
+yeah
+now I will see the output
+so
+this is our nav bar this is the status
+bar this is the space that we are giving
+to this
+status bar and this is the space which
+is the main page which
+yeah coming back to the code
+in class name
+of status
+bar
+where all the stories will come okay
+right
+so let's create another div
+ided
+speed status
+okay let's close this
+R again
+foreign
+let's save it
+on top
+ICS
+but
+status
+meters
+straight source
+status image will clear the image
+casting
+status
+status
+yeah okay yeah
+let's just copy this few times
+it's just
+foreign
+status image
+from
+methods
+while food
+okay it was
+zero
+yeah
+isn't it looking amazing yeah we have to
+align it but
+you can see the status bar let's add
+more
+status let's copy this
+and add two three more here
+save it now let's see
+yeah
+this is looking really very good okay
+you have to align it into the center
+okay
+yeah
+let's
+come back to the code
+let's see
+now what you have to do is you have to
+make this container that status part
+into the center of this mean page
+you can do it right
+okay fine
+I'm going to add the status or the
+pictures here you have to add the
+container into the center on your own if
+you need any help you can just comment
+it down I'll help you out okay but now
+you have to do some things
+so that you can learn about this
+technology more
+now we'll work on this main page okay
+now
+let's create a folder here in the
+components
+as post where we'll add the pictures
+inside this again I am going to create
+two files
+JS and the CSS for The Styling yeah
+os.css okay fine
+now what we'll do is
+let's copy this
+and paste it inside this yeah
+and
+here
+we are going to give the right path
+post
+let's get the lastly post and then
+what we are exporting here is post yeah
+save it
+now
+let's import this into the main page
+okay
+let's show you an adder let's see
+what's the
+in there
+okay
+let me put we will imported it
+the reason it's showing this error
+post
+from
+post
+and then post
+let's save it now
+let's say this
+okay this is
+import this file
+maybe let's cut it from here yeah
+paste it here now save it let's save
+this also
+everything looks fine now yeah
+now
+how we can check this is working or not
+is
+you have to add here
+hello
+save it
+this would be fine yeah it should be
+fine
+now we can add the pictures here
+okay
+let's remove this through map yeah
+let's start working on this component
+let's read this hello
+inside this first div let's create
+class here
+and let's see matters
+until
+yeah
+now
+let's leave it as
+you have to remove it after that but
+let's just now
+the better Clarity of this program
+to
+read this okay
+okay I'm creating another div
+in like this you have to create file
+okay
+let's
+do it
+yeah
+okay
+let's delete this
+next thing
+we get three like this
+yeah
+okay
+it's fine
+one component we have to create there
+okay fine
+inside this first header
+what I'm going to do is
+let's see the Instagram component
+okay
+so there is one image
+and the username okay
+let's
+okay
+inside this tab let's create
+a post
+and Taylor
+okay
+after that
+inside the another container
+let's right here of that because we need
+to add the
+Loop
+okay so let's get a class name
+of post
+images
+and let's write the source which is
+the
+that I will
+send
+okay
+yeah
+now one thing more we have to add is
+that you have to add the username as we
+discussed
+you have to add the username so I'm
+gonna write post
+username
+and then inside this
+okay it's not necessary but let's write
+the username
+okay
+in this component
+I'm going to write the
+image okay
+so the reference like this
+names and all okay fine let's move
+forward
+imported
+let's save it
+we use it okay you can just
+change it after a while it's not an
+issue
+now
+let's move to the image component let's
+inside this div I'm going to create the
+image
+source of the image would be
+post image
+let's add the width here
+width is
+that's right 600
+thanks
+and pixels
+let's just save it
+you have to add the English for now but
+it's fine
+okay
+now let's see the
+import the image
+Dot
+post
+image
+from
+images
+photos I'm using this picture so many
+times
+okay
+let's save it now it should be
+completely fine
+yeah
+so with this
+we have created
+are simple
+for beginners
+Instagram clone
+so with this we have reached the end of
+this video make sure to like and share
+it
+let me just show you in the last how the
+login page was looking
+okay let's just
+show this
+save it
+you will find the code in the
+description box don't worry if you have
+any questions you can just ping me down
+and I will also add this part in the
+code
+in those sections part
+no worries you will be good to go thank
+you so much for watching this video
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+thank you

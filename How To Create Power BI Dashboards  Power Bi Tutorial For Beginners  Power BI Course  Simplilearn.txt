@@ -1,0 +1,648 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn how
+to build a project in powerbi that's
+said if these are the type of videos
+you'd like to watch then hit that like
+And subscribe buttons and the bell icon
+to get notified craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back just for a quick info if you want
+to upskill yourself master powerb skills
+and land your dream job or grow in your
+career then you must explore simply
+learn's pl300 PBI certification training
+simply learn offers extensive PBI
+training this program enables you to
+solve business problems and improve
+operations this course helps you master
+the development of dashboards from
+publish reports discover better insights
+from the data and practical recipes from
+various tasks that you can do using
+Microsoft powerbi that's not all you
+also get 30 plus hours of Blended
+learning industry based projects for
+experimental learning dedicated live
+sessions by faculty of Industry experts
+industry recognized course completion
+certificate and many more after
+completion of the certification
+thousands of Learners have transitioned
+into a data analytics role as a fresher
+or moved onto a Higher being job profile
+if you are passionate about making your
+career in data analytics then make sure
+to check out the link in the pin comment
+and description box below about pl300
+Microsoft PBI certification training now
+without further delay let's get started
+now let us imagine that you work with a
+banking organization which is a really
+Elite or Superior one and you want to
+give loans to your customers and apart
+from having that credit score of 95 and
+above you don't want to take any risk
+with your C customer so you want to make
+sure that your customers have a good
+credit score of 105 or above and if
+anyone is not matching that criteria and
+you're not contacting them you're not
+giving them loan right now let's say we
+have the list of customers here and you
+just click on the customer name and you
+get the credit score of the customer the
+average DTI average credit score weight
+average credit utility score and average
+employment weight right and you can also
+see how their credit score is
+fluctuating is it growing or is it
+dropping in one single dashboard and it
+is also visually aesthetic now how to
+create such beautiful dashboards in real
+time using PP so that's exactly what we
+going to do here and before we get
+started with actually creating this
+particular dashboard let's understand
+the banking terms what is DTI what is
+credit score what is average utility
+what is employment weight and everything
+and after that let's create create a
+perfect template a beautiful template
+like the background what we have right
+now here and after that let's create our
+own data set so this particular data set
+is not related to any of the official
+banking sectors this is a virtually
+created completely different data set
+which is not related to any banks in
+real time right so let's also create our
+own data set using chat GPT 4 and let's
+also create our sample data set using
+chat GPT 4.0 and then get started with
+building our dashboard now that's it
+let's quickly go back to PPD so now
+let's begin with the agenda for today's
+session how do banks lend the loan and
+after that we will check into how to
+prepare data and template and followed
+by that we will build the final
+dashboard now let's get started with how
+to Banks lend the loan so if you want to
+take a loan from any bank they take care
+of four different parameters utility DTI
+two years job and credit score let's
+understand all these four so the first
+parameter is utility now let's say you
+have a credit card and your credit card
+Bank limit is
+$10,000 and you're supposed to use only
+30% of that particular credit card which
+means if you are under $3,000 which if
+you're using $3,000 or less then your
+utility is 25% so this particular
+criteria will carry 25% of the FED right
+remember the four parameters so all
+these four parameters are based on your
+uh utilization right so if you uh are in
+the parameter given let's say your
+utility is less than $33,000 per month
+based on your I mean 30% of your credit
+card balance then you will gain the
+credit score weight of 25% from here if
+you are um you know spending more than
+that let's say your limit is for uh
+10,000 and you're spending 4,000 then
+this particular weight will drop but if
+you're just spending ,000 or anything
+less than 25 or 30% of your credit card
+then you'll get the entire full weight
+of 25% and not more than that but if you
+are spending more than the provided
+utility limit then your weight might go
+down from 25 to 23 22 and around that
+right now the next U requirement or the
+parameter is DTI so this is based on
+your uh monthly income right so how much
+uh income you're getting cross monthly
+income and it will be divided by uh the
+total monthly emis so the rent the bike
+emis car emis everything sum of that
+divided by your gross monthly income
+into 100 so this again carries 25% of
+your weight and the next third parameter
+is two years of job so to get a loan you
+should have minimum of two years of job
+right and if you're having anything
+above uh two years like three years or
+anything then you'll get full weight of
+20% and if you are having less uh
+experience or less job like maybe uh 1.5
+years of uh job period less which is
+compared to the uh compared to the
+actual requirement it is less right so
+in that scenario your weight might go a
+little too down right maybe around 15%
+or 18% and lastly you will have the
+credit score so many people call it
+civil score or credit score this is also
+uh based on your credit score and
+threshold so your threshold should be uh
+750 which is not changeable and your
+crate score is something which is
+variable right it can be 600 it can be
+anything so the threshold if you're
+getting anything above 750 then that's a
+good good sub score or credit score so
+here you will find if you have a good
+credit score then you will again have
+30% of the weight and if you're having a
+bad civil score then the weight might go
+down to 25 29 based on the result you're
+getting so these are the formulas for it
+so ultimately summing up all the weights
+utility weight DTI weight minimum two
+years job requirement weit and the
+credit score weight it should be equal
+to 100% so mostly the banks give away
+loans if you have anything above 90 or
+95% so in our situation we are focusing
+a little more so we are targeting 105%
+if you're getting 105% weight only then
+uh the bank will be giving your a loan
+to be on the safest side so that your
+loan amount for will be fully recovered
+so this is how the banks lend loan now
+for this requirement we will will be
+creating a dashboard now firstly let's
+start by creating a perfect template for
+our dashboard so let's quickly jump to a
+PowerPoint window and create a blank
+PowerPoint and here let's try to add in
+some shapes to
+your
+template and take care of the rounded
+Corners if you want to have custom uh uh
+size for this you can also do that so
+let's go with 30
+and
+17.5 that should be fine you can also
+take care of orders if you want to
+increase or decrease now shape F you can
+choose any of the colors I'll go
+with uh slighter shade of
+gray 45
+47 this could be fine and I don't want
+any of the
+visual outlines no
+outline and maybe you can add some shape
+fex as well so go to shadow that
+shadow and if you really want to
+highlight that shadow you can also do
+that go to Shadow andbe we can
+increase the blow
+perspectives and distance perspectives
+to 15 that looks fine and now you can
+also add in some more uh visuals to your
+dashboard so let's add
+another take care of the C there you go
+now you can
+sort of arrange
+the
+visual and then you can also change the
+color and you can also add an effect to
+this
+you can also have a gradient fill for
+this that go with this particular
+direction let's make it look something
+like this
+that looks
+perfect now let's proceed on adding a
+few more shapes to our dashboard so I'll
+go with this particular one over here
+remember the four parameters that we
+discussed
+so three could be the worth
+and five could
+be there you go
+now I will go with the similar shade for
+this and I don't want any specific
+backgrounds and I want
+shape shadows and I would like to
+increase is the BL perspective to
+15 and distance perspective
+to 15 and I'd like to quickly copy paste
+this particular one and now I would like
+to change the shadow to the opposite
+direction which gives a little more
+depth so again this could
+be the same 15 and this could be again
+the same 15
+this will be my top layer and this will
+be my bottom
+layer there you
+go select all and go to alignment
+and
+up perfect
+let's also add uh the percentage over
+here that and you can have a text box
+Che
+that looks perfect and uh you can also
+add a few more details like the four
+parameters what we discussed right
+now the utility
+weight weight percentage so that should
+be Center
+aligned
+and there you have it now let's quickly
+copy paste these to here and this will
+be our
+interest
+ratio and this will be our utility
+percentage if we have already added
+credit score okay not credit score you
+can have employment
+and the last one will be the credit
+score the Civil
+score now we need another similar one
+which will show the graph of our uh
+customers
+percentages right so this one and uh you
+can close this
+and take care of the
+go there you
+go so so good so if you want you can
+also add another
+tag it's
+performance have it
+what you can do is quickly save this
+PowerPoint presentation
+as dashboard
+template use this particular as uh file
+as gpg PNG or any of the one that you
+feel like so you can when it can add a
+gpg so let's go with that I would
+actually go with SVG so that that it can
+automatically adjust to my
+dashboard scroll a little and here
+you'll find it scalable back to graphics
+and sa and fine so far so good now what
+we have to do is proceed with um The
+Next Step where we will prepare the data
+for our uh project now we will be using
+uh chbd only so we will be writing a
+prompt for that
+so our Char bd4 oh9 has been
+successfully booted started and here we
+have the pr so you're telling your chat
+GPD that you want to create a small data
+set for your uh virtual bank so that
+particular virtual bank will have the
+data set of all the customer customers
+majorly 50 customers so you'll be having
+the name of the customer customer ID
+minimum uh threshold credit score
+minimum credit score of the customer in
+that month and maximum credit score
+average of that credit score and
+similarly uh minimum uh credit card
+utilization maximum credit card
+utilization and average of that and
+employment in es how many years of
+employment does this particular
+candidate has and after that you have
+the last one which is debit to income
+ratio so the debit to income ratio is
+also it can vary it can change right but
+the Threshers it should be uh not
+greater than
+40% and here you're providing the credit
+card you're providing the details over
+here right Ure you create a
+month-on-month data set and the credit
+score should be varying from month- on
+month and apart from that you're
+providing some more minute details the
+credit utilization could be 30 in some
+month and exceed 50 in some months so it
+looks a little more realistic and lastly
+you also adding uh another statement
+make it look realistic so this is the
+prom so this prom will be copied and
+pasted onto your chat GPT
+omline now don't worry this prom will be
+available for you too as well in the
+description box below just fire the
+command and shortly you will be seeing
+that Omni will create a data set for you
+which is downloadable
+there you go the data set is ready so it
+has provided U customers customer ID
+they are thresholded with this and the
+minimum credit score what they had the
+maximum credit score what they had and
+the average of that and here you have
+the credit score percentage so we've
+already included the formulas here so if
+you can see we have provided the formula
+credit credit card score percentage uh
+threshold credit score divided by
+average credit score into 100 and and
+here you also have the formulas for rest
+of the parameters and the data set is
+completely ready you can just click on
+this button and download the data set
+right now let's start creating the uh
+dashboard for that let's have a quick
+look on the uh data set that we
+have so this is our data set these are
+the employees or customers not not
+employees these are the customers that
+we will be dealing with and their IDs
+their month- on- Monon D set their
+threshold credit score minimum maximum
+average credit scores and the credit
+score we here and apart from that here
+we have the threshold credit utilization
+minimum credit utilization and maximum
+credit utilization average of that and
+uh employment in years so if you have an
+employment above two years let's say
+here we have 10 years so you have full
+weight which is two right so 20% full
+weight
+and uh debit to income ratio here we
+have it so the threshold is 40 and the
+numbers which you have earned is 49 19
+right so these are some realistic real
+time numbers that we created using chat
+gbd omline so we will be utilizing this
+particular data set to build the
+dashboard now let's quickly switch to
+power Pi so this was the early PBI
+windows we created now let's try to
+create a new one so go to file and click
+on new so that you have a fresh
+template so here we have the fresh
+template uh we don't have to take care
+of this so now uh before we get started
+you can uh go to the visual section and
+add a canvas background and here browse
+the
+images dashboard template this is the
+one which we created
+recently and reduce the transparency see
+from 100 to anywhere between 5 to four
+so I'll go with five and your background
+template is ready now let's import the
+data set from our local file system
+updated candidate data open and it will
+be loading the data
+shortly so there you go now click on the
+data set have a quick preview of your
+data and if you're set side you can just
+upload the data but uh let's go to the
+transformation phase okay uh we will do
+that later now you have your dat set
+ready there you go now we ready to build
+the visuals now before we uh build the
+visual just quickly check the
+data so here we have average okay let me
+expand this section here we have average
+credit score average credit utilization
+weight okay some extra columns which we
+never needed so we will clean that and
+DTI weight employment weight employment
+in years ID and also we have the month U
+and date and everything great great so
+fine now uh let's have a view of the
+data so we had something called as
+column number 18 which we never needed
+so you can just delete this particular
+column
+we have average credit
+score crit go
+wait fine so now let's go to the
+visualization part and let's start
+building the uh visualization now let's
+go with the line graph so I'll go with
+the line graph over here so line graph
+has been successful successfully
+imported uh let's add it here and we
+might also need a slicer for employees
+so let's select the slicer and let's
+place it somewhere here and uh yeah so
+we will be changing this visual okay
+let's add the data first so it is asking
+for the data now where is the name of
+the employee here is the employee name
+drag and drop that into the field now
+now go to visuals and slice settings if
+we don't want a vertical list we want to
+drop down for that and uh uh we will
+will be doing this in parallel right so
+the modification or any sort of
+aesthetic uh changes we will be doing it
+in
+parallel so let's expand this a little
+and now let's change the vises of this
+particular slice now
+now I have selected a drop down slicer
+heading and I want this to be bold and
+I don't want a b so I don't want a
+background as well now let's go to
+General uh header icons FX go to FX and
+transparency should be maximum okay UMX
+visual
+border shant
+let's have a shadow for this so it looks
+better and visual border color could be
+okay let me add a visual border as well
+and let's choose the visual border to
+be
+slightly uh
+black Curren see maybe a little 50 or
+something or a little about
+F okay that's fine
+and
+uh let's also have rounded edges just
+like uh the other ones maybe 15 is
+good there you go now let's go back to
+the canvas there now this is how it
+looks like okay we can also maybe
+improve the way the names
+look go to values and I want them to be
+bold so whenever I click on this so I
+have bold name sections there done now
+the first part is done so far so good
+now coming back to the line graph which
+we had okay it should have been
+somewhere maybe it's it went
+missing okay no problem we can select
+another
+time click on the line graph drag and
+drop to this particular
+position there you go now we will be
+adding the uh prompts here month will be
+in the by AIS and
+uh credit score uh we will be analyzing
+the credit score right so we will be
+dragging average credit utilization weit
+to xais and we will be changing the
+uh so there you go we have the chart
+over here we can expand this and make
+sure that it fits the visualization or
+template that we
+created there you go now let's add the
+data so in x-axis we want months month
+on month performance so go to uh month
+and drag this to x-axis and here we
+would don't want year we don't want
+quarter we just want month and now now
+the maximum credit score or credit okay
+we wanted average credit utilization
+here and credit score maximum credit
+score so here it is so just drag and
+drop it to Y AIS so that you can see how
+is the performance now go to
+visuals and
+here you can add markers to have points
+over there and uh go
+to General and go to to FX and here you
+can eliminate the background we don't
+want the background and maybe you can
+have a visual
+border okay we don't want the visual B
+because we actually have it already and
+uh Shadow maybe you can have the
+shadow okay that's fine now go to the
+visual again go to the format and here
+you can change the terms of the uh
+chart you can
+R score
+report it's not changing for some reason
+but we can try once
+again there you go I was supposed to
+press
+enter want to add few
+cards so click anywhere on the template
+select
+card and add it to here
+so that we need the utility
+weight Vision we don't want the
+background as well and uh go to visuals
+and here category label you don't want
+the category label and maybe you can
+decrease the size as
+well go to this and here instead of sum
+we want
+average and
+go now you can just simply copy and
+paste it to other fields as well
+the
+DTI the
+employment and finally we have the
+credit now go to the
+parameters do DDI weight add
+it change the aggregation from sum to
+average here employment
+weight change the aggregation from sum
+to average and here the
+credit there you go now we were supposed
+to have one last parameter which is
+eligibility percentage right now we need
+to mathematically calculate that so for
+that we might need an extra
+column let's create that extra column
+let's close
+this two
+modeling or you can go
+to add a new
+column and this particular column will
+be eligibility
+eligibility is equals to updated
+data of credit card utilization we
+select that
+plus I'll take it
+uh credit
+score
+plus table
+name DTI we
+plus name The Last One Employment
+weight
+enter and there you go so you have the
+percentages here now go to the
+visualization
+again copy paste the visualization or
+cut and here you will be having uh let's
+go to data instead
+of utility you will change that to
+eligibility that we just created
+drag and drop change the aggregation to
+average now there you go so according to
+the requirement you can just process the
+dashboard and find the employees or
+candidates uh with highest credits SC
+and try to call now I would uh try to
+call Alex Brown and I'll see if he's
+eligible I can see his credit percentage
+is per credit month on Mon performance
+is good so in May there is some high
+performance maybe due to uh appraisals
+okay and he is crossing 105
+requirement and let's see another one9
+is also eligible so you might have to
+call him and this man is also El so
+there are a few which are having a
+lighter lesser score and you can just
+ignore them so that's how you can create
+a real time Interactive banking
+dashboard so if you are creating such
+dashboards and if you have knowledge on
+financial sector and marketing sector
+this is a good add-on weight to your
+resume that you know some real time
+business terms so that's good so here
+you have the uh hover over feature as
+well so it'll give you what was the
+credit score report so here he has 89
+748 was the lowest year in the June and
+His Highest was 1,500 so that's how it
+goes and with that we have come to an
+end of the session on PBI project and if
+you have any queries regarding any of
+the topics covered in this session or if
+you require the resources that used in
+the session like the data set template
+or the dashboard and if you have any
+queries apart from that then please feel
+free to let us know in the comment
+section below and our team of experts
+will be happy to resolve all your
+queries at the earliest until next time
+thank you for watching and stay tuned
+for more from Simply Lear staying ahead
+in your career requires continuous
+learning and upscaling whether you're
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

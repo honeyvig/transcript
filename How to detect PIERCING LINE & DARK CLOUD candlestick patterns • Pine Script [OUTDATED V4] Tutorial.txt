@@ -1,0 +1,801 @@
+hi traders welcome back to another
+lesson this lesson is going to cover
+another candlestick pattern so this was
+a question i received from
+lucas so lucas is trying to detect this
+candlestick pattern here
+so this is a bearish example this is
+called a dark cloud cover candle
+so what he's looking for is i'm guessing
+this is an rsi he's looking for the rsi
+to go overbought and then for this
+candlestick pattern to
+print onto his chart so the way we
+identify this candlestick pattern
+is the open price of the bearish candle
+is above the bullish candles
+closed price so you can see that here
+and then
+this red candle this bearish candle
+closes within
+the candle body of the bullish candle
+preceding it
+so this would have closed as a bullet
+bearish engulfing candle that wouldn't
+count
+and if it were to close higher than the
+previous candles
+closing price then that would make this
+candle a gap candle
+and that is not what we want either so
+we're looking for a candle
+that opens higher than the previous
+bullish candle and then closes back
+within
+that previous candles range and then
+obviously for our bullish example
+this is called a bullish piercing line
+and we just do pretty much the opposite
+so we're looking for a bullish candle
+that opens lower than the previous
+bearish candles close and then this
+bullish candle must close
+within the previous bearish candles body
+and
+all of this must happen while the rsi is
+oversold so this is very similar to some
+of the other candlestick patterns that
+i've shown
+in the course the main difference is
+that we're trying to detect a closing
+price within
+the previous candles range which means
+we need to do things a little bit
+differently
+so let's hop over to the pine script
+editor and get our hands dirty with some
+code
+so here i am with a blank script nothing
+has been changed except these comments
+in the
+study title all i've got on my chart is
+the rsi indicator because we're going to
+be using that as a filter or a condition
+so we want to detect
+these bearish dark cloud cover candles
+and bullish piercing
+line candles whenever the rsi is
+overbought or oversold
+so let's get into it let's open up the
+source code here
+and start typing so as always the first
+thing i like to do is get user input
+assuming i know what user input i need
+and for this particular script i do know
+i need an rsi length
+and an rsi overbought and oversold
+threshold
+so get user input the first one is an
+rsi length
+using the input function we'll give it a
+title of rsi
+length a type of
+input.integer so it's a whole number the
+default value is going to be
+7 for this example normally you would
+probably make this 14
+that would be a standard rsi length but
+for demonstration purposes
+in this lesson i want to detect more
+signals
+than a 14 length period rs i normally
+would
+so you can set this to whatever you want
+that's the point of making user input
+but today we're just going to leave it
+as seven next thing we need is an rsi
+overbought and rsi oversold threshold so
+input title rsi overbought
+the type of this is going to be
+input.float the reason i like to do that
+is because the rsi value
+is actually a float floating point value
+it's not an integer
+and so by making the rsi overboard and
+oversold
+threshold values afloat that gives the
+user a lot more control
+over what their overbought and oversold
+level is for example you could set it to
+23.62 instead of just 23
+and you get the idea so this one is
+going to be a default
+value of 70.0 just a standard rsi
+overbought level there i'm going to copy
+this line of code flip this to os and
+this
+230. so now we have our rsi values let's
+move on
+to detecting our candlestick patterns
+but before we do that we should probably
+get the current rsi value
+so that's easy we just declare a new
+variable called in this case rsi
+we use the inbuilt rsi function you need
+to pass it a price source to calculate
+the rsi on
+by default you would use a closing price
+and we pass our rsi length
+parameter into this function that will
+give us the current rsi
+for the current candle and we can use
+that later on to
+check our filter to make sure that rsi
+conditions are met
+so the first candlestick pattern i want
+to detect here
+is the bullish piercing line
+so i'm going to declare this variable as
+just bpc
+and what we need to do now is we need to
+check did the current candle open
+lower than the previous candles close so
+let's
+open this up a bit this kennel stick
+pattern here is not
+actually a bullish piercing line because
+this candle
+if you look really closely closed higher
+than the previous candles open
+but this candle here is a bullish
+piercing line
+so we'll focus on this one while we're
+coding so what we're looking for
+is did the current candle open
+lower than the previous candles close
+and
+did the current candles closing price
+close higher
+than the previous candles close so this
+is our
+current candles closing price did it
+close higher than the candles
+previous candles close and did the
+current candles closing price
+close lower than the previous candles
+open
+sorry i'm making a lot of typos today
+because i've got a giant microphone in
+front of my face while i'm trying to
+type
+but this uh what we have here will
+detect a bullish piercing line
+because the current candles close is
+within
+the previous candles open and the
+previous candles close
+and the current candle opened lower
+than the previous candles closed the
+last thing we should probably do
+with this candlestick pattern check is
+just confirm that the previous candle
+was indeed
+bearish so let's add on one last
+condition here
+we want to check did the previous candle
+close
+lower than the previous candles open so
+just to confirm that we are indeed
+detecting this candlestick pattern let's
+quickly add in a plot shape function
+to draw these signals to the chart so
+i'm going to use the inbuilt plot shape
+function
+we're going to check our bpc condition
+if that's true it'll draw a shape if
+it's false it will draw nothing
+we're going to give it a style of style
+shape.triangle
+up since it's a long signal
+set the location to location.below bar
+we'll set the color to color.green
+and we'll give it some text too we'll
+just write long underneath this shape
+and we'll also title it so that we can
+modify this all these style settings
+in the settings menu so now we can get
+rid of our plot close because
+every script needs at least one plot
+call needs to draw something to the
+chart
+or output something uh but we're doing
+that now with our plot shape function so
+we get rid of that
+now if i save the script we are
+detecting our bullish
+piercing line candles and just before i
+continue i should set overlay to true
+here
+i forgot to do that at the start of the
+script i'm not sure why it just
+automatically drew onto the chart but
+anyway if you're following along and
+your script is not doing this just make
+sure you've said overlay to true
+and there we have it we are detecting
+bullish piercing line candles
+so before we start checking our rsi
+conditions let's do the same
+for the bearish dark cloud cover candle
+so here i'm going to write a new comment
+detect bearish dark cloud
+cover and i'm going to call this
+variable dc
+c short for dark cloud cover and we
+basically have to do
+everything we did here but in reverse
+like we're flipping these operators
+around
+and our price sources as well so what we
+need to do here to check
+for a bearish uh dark cloud cover which
+is this candlestick pattern right here
+this red candle here meets our
+conditions for a bearish dark cloud
+cover
+so as i'm writing this code out just use
+this
+candlestick right here as your reference
+so what we need to do is we need to
+check did the current candle
+open greater than the previous candles
+closing price
+so that's the first condition met and
+did the current candles closing price
+close
+greater than the previous candles
+opening price
+that condition is also met and did the
+current
+candles closing price close lower
+than the previous candles closing price
+because the previous candles closing
+price is a bullish candle
+we need to change our price source from
+an open to a close
+and that condition is also met the
+closing price of our red candle
+is less than the previous candles
+closing price
+but greater than the previous candles
+opening price and it opened higher than
+the previous candles closing price
+so that's our bearish dark cloud cover
+candlestick right there the last thing i
+like to do just to make sure that we are
+definitely
+only detecting the candlestick patterns
+we want is i'm going to check
+did the previous candle close bullish or
+in other words
+did the previous candles closing price
+close greater than its opening
+price that's a green candle and that's
+the candlestick pattern we want to find
+so now i can copy this plot shape
+function paste it in there change this
+to dark cloud cover
+change the triangle to triangle down
+since this is a short we're selling this
+market
+change the location to above bar and the
+color to red
+and obviously our text too short
+and there we go now if i save the script
+we should be detecting this candlestick
+pattern
+yep as well as our bullish piercing
+lines
+so far so good the final thing we need
+to do here
+is check our rsi conditions because we
+don't want to be detecting these
+candlestick patterns in the middle
+of a rally in regards to the bearish
+dark cloud cover
+and we don't want to detect these
+candlestick patterns in the middle of a
+sell-off
+in the case of bullish piercing alliance
+we want to detect these candlestick
+patterns
+when price is at an extreme since this
+is a reversal
+candlestick pattern so let's open up the
+editor again
+and what i'm going to do here to keep
+things
+sort of clean and simple so that we can
+keep our code in sections i feel like
+this will just make it easy to
+understand what we're doing
+we're going to split our candlestick
+patterns
+from our long and short signals so i'll
+show you what i mean
+i'm going to create a new couple of
+variables here and this
+comment is going to say determine if the
+current bar
+meets our conditions so we're already
+detecting our candlestick patterns now
+we need to combine our
+candlestick patterns with our market
+conditions in this case the rsi
+at an extreme so the first one i'm going
+to detect is a long signal
+and what we need to happen for in order
+for a long signal to be considered valid
+is we need to check if the rsi value is
+less than or
+equal to our rsi oversold threshold so
+in this case
+30 if the rsi is less than or equal to
+30
+and we have detected a bullish piercing
+line candlestick pattern
+then our long signal will be set to true
+and paste that over to our plot shape
+function
+and now if i save the script this long
+candlestick pattern here will go away
+since the rsi is not oversold
+on that bar so let's save the script and
+there we go
+but before i continue i should really
+change this to
+the previous candle being oversold so
+put a historical operator here
+square brackets and then a one that will
+check if the previous
+candles bar was oversold
+before our bullish piercing line
+occurred now the reason you want to do
+that with this candlestick pattern
+and most overbought and oversold
+patterns
+is that sometimes like this for example
+if we check if the
+current bar's rsi value was overbought
+that condition would fail because this
+bearish candle has closed back
+below our over bought threshold
+so we want to check the previous bar's
+rsi value not the current bar
+for our candlestick pattern this is true
+of bullish engulfing and bearish
+engulfing candlestick patterns too when
+using the rsi
+and even hammer candles so any reversal
+candlestick pattern
+often will take the rsi from overbought
+back below our overbought threshold or
+oversold threshold
+so keep that in mind when using these
+sort of
+indicator values as your conditions and
+you'd want to do the same thing if
+you're using a stochastic or any other
+oscillator
+so that's our long signal let's detect
+our short signals and we're going to do
+exactly the same thing here but flip our
+operator around
+was the previous bars rsi greater than
+or equal to our rsi
+overbought threshold and do we have a
+dark cloud cover candle
+let's paste that into our plot shape
+function here
+save the script and this signal will go
+away
+that signal will go away and all we're
+left with is our candlestick pattern
+at an extreme price rally and
+we are detecting pretty pretty decent
+reversal
+candlestick patterns obviously this one
+here would have been a losing trade
+but that's why we created user settings
+so the user
+can adjust these rsi values
+and maybe that will increase the
+accuracy
+of these candlestick patterns depending
+on how the user
+wants to trade this and of course this
+is not an invitation to trade this
+indicator i have no idea if this is
+profitable or not you'd have to go and
+back test it this is obviously just for
+examples and demonstration purposes
+if it were me trading a strategy like
+this i would be combining
+this sort of price action pattern with
+more conditions than just an rsi a
+perfect example of this would be support
+and resistance
+so look for a previous support or
+consolidation level
+wait for price to come up into
+that level wait for the rsi to go
+overbought and then wait for our
+candlestick pattern
+to use this candlestick pattern for
+trend continuation
+a candlestick pattern like this i
+haven't back tested it but i would
+imagine it would be
+more effective as a trend continuation
+pattern rather than
+a mean reversion or counter trend
+pattern that's just how i would
+personally trade it
+but anyway that's pretty much it for
+this script
+this will detect bullish piercing lion
+kennels
+and bearish dark cloud cover candles
+when our rsi conditions are met
+so that's mission accomplished right
+there but i want to show you one last
+little detail that i was playing around
+with when i was trying to write this
+script
+sometimes these candlestick patterns
+don't quite look right for example
+here's a good example
+this candlestick pattern technically
+meets our conditions
+it opened higher than the previous bars
+close and it closed back within the
+previous bar's body
+but it's clearly not ideal what you
+really want to see with this candlestick
+pattern
+is a noticeable gap between the previous
+candles closing price and the
+candlestick pattern itself
+so the best way i could think of to do
+this was to add in a
+pip margin check so we want a minimum
+distance between the previous candles
+closing price
+and our entry candles opening price so
+let me show you how i achieved that
+now this is all optional what i'm about
+to show you now is slightly more
+advanced
+but i figure while we're here we might
+as well so what i want to do here is add
+one more user variable called
+margin
+and i'm going to call this pip margin
+i'm going to give it a type of input dot
+float
+and i'm going to set the default value
+to 0.0 so by default this is
+disabled this condition will be ignored
+but if the user wants to
+turn this on they can come up into the
+settings menu and increase this number
+and i'll show you what this number will
+do in a second so after we've detected
+our candlestick patterns
+we then want to check
+the pip distance between the candle
+bodies
+so that's easy enough to do all we're
+going to do here is i'll
+create two new variables the first one
+will be bpc
+margin and that's going to be set to
+this expression here we're going to get
+the previous candles closing price
+so this is for bullish candles so we're
+looking for bullish candles here so
+we're getting the previous candles
+closing price
+so we're minusing or subtracting that
+closing price
+from the current candles opening price
+and that will give us the distance
+in pips between our two candles
+we're going to do the same for our
+bearish candles our dark cloud cover
+except this time we're going to get the
+current candles
+opening price and subtract it from the
+previous candles closing price
+and that will give us the distance from
+our
+entry candlestick pattern to the
+previous candlestick pattern
+once we have those two values the last
+thing we need to do
+is just check in our long signal this is
+why i like to separate our candlestick
+patterns from our
+actual market conditions just makes the
+code a little bit easier to read
+especially much later on if you come
+back to the script after a few months of
+not working on it it's just much easier
+to see at a glance what you're doing
+with your code
+when you separate all these conditions
+you could of course combine all of these
+conditions into one variable
+and we could just check on this bpc if
+the rsi is overbought and oversold and
+if our margin
+requirement is met but i find that it's
+bet it's a better practice to expand
+your code this way
+there's no penalties for it you know
+pine script allows you to do this so you
+might as well take advantage of it to
+keep your code tidy
+so the final thing we need to do here is
+check is our b
+c margin a bullish piercing candle is
+the
+margin the pip distance between those
+two candles
+greater than or equal to our margin
+input
+up here then we need to do exactly the
+same thing for our
+dark cloud cover margin
+is that also greater than or equal to
+our margin
+input variable now if i save the script
+that won't change
+anything we'll still be detecting all of
+these candlestick patterns
+but now we can come up into the settings
+menu and
+increase this pip margin in this case a
+pip would be 0.1
+price units so let's just set it to that
+to begin with
+click ok and that hasn't changed much at
+all
+but this is the candlestick pattern that
+we don't really want to detect so let's
+use this as our example
+zoom in a little bit and so the distance
+between this is about 0.2 so let's set
+this to 0.3
+there we go now that candlestick pattern
+has gone away
+and so have our other ones so let's try
+0.2
+there we go that's a bit better so now
+this
+um i can't even see it anymore where was
+it
+so that's why we don't want to detect
+this candlestick pattern oh there it is
+this one here
+now that pattern has gone away but we
+are still detecting
+this pattern down here which is
+beautiful because that was a pretty good
+reversal signal and again remember you
+wouldn't want to trade this just in the
+middle of nowhere
+the best thing to do would be to confirm
+that this is at some sort of structure
+level
+so if you zoom out the chart yeah we
+definitely are
+look at this major swing low
+price had a major rally from there on
+this time frame at least
+and then when it got back down here our
+conditions were met
+our rsi was oversold we had our bullish
+piercing line and we had a very nice
+rally out of here so this is a great
+signal this is what we want to detect
+this in here
+this i'd probably trade as well since we
+were at a previous
+swing low so obviously these candlestick
+patterns
+you'll never find one that is 100
+accurate and never loses trades
+the whole idea is to find good setups
+that offer
+a really nice risk reward profile
+so with an average reward of around
+three to one
+you can calculate your minimum win rate
+here if you're risking one percent per
+trade
+then you want to divide one by one
+plus your risk reward that equals 0.25
+so with an average risk reward of 3 to 1
+you only need to win
+25 of your trades
+in order to break even if you win any
+higher than that
+then you're starting to make money so
+this isn't a trading course i'm not
+teaching you guys how to trade
+hopefully you already know most of the
+basics are regarding trading if you're
+learning pine script i would imagine
+most of you
+would be experienced traders by now if
+you're looking into this language and if
+not that's even better because
+learning this stuff will definitely
+improve your trading
+understanding price action on an
+intimate level a very detailed level so
+that you can actually
+code scripts to detect these candlestick
+patterns that will really help you with
+your analysis
+in your trading especially if you're an
+objective rules-based trader
+which a lot of traders are and for good
+reason makes it a lot easier to develop
+strategies that are easy to execute
+consistently but anyway that's it for
+this lesson let's just
+quickly jump back over to apple and
+we'll play around with this
+this new filter we made and set it back
+to 0.1
+and that's actually too high on this
+market because if you look at this here
+our pip is uh two decimal places so
+0.03 so let's set this to 0.01
+and there we are we're now detecting our
+candlestick patterns
+if we set it back to zero let's see if
+there's any patterns that don't look
+right
+this is one here i mean this technically
+meets our conditions but maybe you
+don't want to detect that so let's try
+setting this to 0.02
+that goes away but how more accurate
+candlestick patterns
+are still being detected perfect and
+that is a successful pip margin filter
+added to the script
+and that brings me to the end of this
+lesson this was a little bit longer than
+i
+expected it to be but i hope you found
+this interesting
+i hope that this inspired some ideas for
+you to go out and pursue
+maybe you want to combine this with
+other market conditions you could try
+using a stochastic instead of an rsi or
+you could throw in an ema
+you could check to make sure that the
+entry candle
+is the lowest candle over the past x
+amount of bars
+there's all sorts of filters you could
+add to improve the accuracy of this
+script and one very important thing i
+forgot to mention about this candlestick
+pattern is that a lot of traders
+define it as a bullish candle in the
+case of a bullish piercing candle
+closing above the 50 mark of the
+previous candle
+or for a bearish candle closing below
+the previous
+50 mark so just before i wrap this
+lesson up i should probably really
+quickly show you how to add
+that filter to the script so this is
+actually really
+simple to do i'll just quickly add in a
+new section of code here below our
+pip margin filter i'm going to say here
+piercing line filter and now what we
+need to do before we can determine
+whether or not the current bar closes
+beyond the previous
+bars 50 mark is we need to calculate the
+50
+mark so i'm going to create a new
+variable here called piercing line
+that's going to be set to the previous
+low
+minus the previous high multiplied by
+0.5 or 50 percent and then we need to
+add
+the previous high back on onto this
+result this value and that will give us
+the 50 percent price
+of the previous candle so if we're
+looking at this candle for example
+it will calculate what the 50
+mark in terms of price is for that
+candle
+and this is from the high to the low
+so now that we have that value it's very
+easy to check now if the current candle
+closes beyond that value so for our long
+pierce
+filter i'm just going to call this long
+pierce and it's going to be set to
+is the closing price greater than or
+equal to the piercing line
+and for short pierce it's going to be
+the opposite
+does the current bar close less than or
+equal to
+the piercing line and then finally all
+we need to do is add
+this filter onto the end of our long and
+short signal checks so i'll just copy
+and paste those over
+and now if i save the script we will
+only be detecting
+bullish piercing line candles or bearish
+dark
+cloud candles that close below
+the 50 mark of the preceding candle
+so quite a simple filter there but i'm
+sure it will dramatically increase
+accuracy of this pattern since it is
+intended to be used as a reversal
+pattern
+so you want the momentum to be confirmed
+by a strong close on that reversal
+candle
+but that's it for today good luck with
+your trading
+and i will see you in the next lesson so
+that's it for this lesson
+i hope you found that interesting and
+helpful and if you did and you want to
+learn more about panscript
+head over to panscriptmastery.com
+you'll find my free basics course it's
+completely free
+18 lessons in there that will introduce
+you to the absolute basics of pine
+scripts
+and for those traders who want to take
+their trading and scripting to the next
+level then i have the pinescript mastery
+course
+which has 84 lessons and over a dozen
+hours
+of content and these lessons go into
+great detail about the pan scripting
+language
+and will really help you take your
+trading game to the next level
+otherwise if you don't want to pay for
+this course that's fine
+stick around on this youtube channel hit
+the subscribe button and i'll be back
+real soon
+with some more free content in the
+meantime
+good luck with your trading and i'll see
+you in the next video
+you

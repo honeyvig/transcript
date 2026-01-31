@@ -1,0 +1,429 @@
+foreign
+hello and welcome to this session on how
+to connect different data sources with
+power bi so in this session today we
+will see how can you connect different
+type of data types data sets like Excel
+PDF CSV Etc to import in power bi for
+your data visualization needs so what's
+in it for us today we will be learning
+how to connect to data different data
+types data files like Excel PDF then
+what are the different data importing
+modes and then I will also show you
+practically different sets how to import
+them in power bi and use it for your
+visualization purpose now what are the
+steps to connect to data so now we will
+go directly into Power bi and try to
+import one by one few most commonly and
+popularly used data sets which are most
+commonly used in a day-to-day activity
+rest of course there are are the power
+bi supports n number of data sources but
+we will do something practical on the
+most popular ones so let's let's open
+our power bi
+now this is my power bi and first I want
+to show you that how can I import data
+directly from a web page and import the
+data now it is asking for a URL in order
+to import data
+so what I have done is I have created a
+Google Excel sheet with simple data with
+rows and columns and what I have done is
+I have shared this sheet as published to
+web
+okay so you just need to say publish to
+the web the link as web page and
+say done it's it's automatically
+published and say link so copy the link
+which you have published on the web copy
+this link
+and then go back to your tableau
+paste that link over here and click ok
+Now power bi will try to establish a
+connection with this Google doc sheet
+because it's published on the web
+foreign
+you need to wait for a while while it is
+reading
+okay now it has read one of the HTML
+tables I'll select this one now you can
+see it has it is showing me a preview of
+the table which is there on my
+Google sheet right it has 11 rows so it
+has all showed all the 11 rows so now I
+can go and transform this data because I
+can see my headers are there starting
+from the second row so there is an
+opportunity for me to transform the data
+so I'll go and transform it so that it
+looks clean
+okay so first is I need to remove the
+first row which is the
+null row remove the top rows
+okay and then I need to use the first
+row now as a header so you just click
+this option use first row as headers
+that's it so now if you see my row ID
+order ID order date shifted all my data
+is now ready so I can say close and
+apply
+click apply changes
+now this is an example of web data
+import you can go and preview your data
+right now the biggest advantage of this
+data connection is that it's a live data
+so for example I insert another row
+let me change the order ID
+some some I've Subs changed some basic
+stuff and I
+it's Auto saved
+Ctrl s now I'll go to my tableau and
+I'll refresh
+now you can see as I refreshed my
+power query editor I click refresh all
+and I got my new row which is there in
+the live data I got that fetched from my
+okay I got that row the row number ID
+number 12 so I have to say close and
+apply
+now you can see the new row the row
+number 12 is now available in my new
+data set in the data set because it's a
+live connection it's a live connection
+with the web based Google sheet okay so
+this is one important way in which you
+can import data
+now let's try to import data from a text
+file
+now I have already prepared our text
+file called
+sub categories Dot txt
+now let me just open it in a notepad now
+it's a very plain simple file tab
+separated file in which you have product
+subcategory ID subcategory name and
+product category key so basically to
+which product category this particular
+sub product belongs to right so what I'm
+going to do is I'm gonna go back to my
+get data option
+and I'm gonna select text slash CSV
+option
+and I'm gonna select option mod product
+subcategories.txt
+okay so now power bi has identified that
+it's a tab delimited file it has
+recognized the headers
+Etc right and I can now directly load
+this file
+okay so now once the data is imported in
+power bi it is like
+irrelevant to me it's a composite data
+in import I'm doing right so in my
+presentation when I'm talking about
+importing data there are different
+importing modes right import our data
+import can happen through different ways
+okay
+one is direct query mode in which I
+create a live connection to the database
+which I'll also show you uh using MySQL
+and Ms SQL server and also you can do a
+composite mode in which you can have
+data imported from Excel plus you can
+have direct query modes so you can have
+multiple uh modes to connect and create
+a composite data model and that's what
+we are doing right now in our practical
+so what we are doing over here is one we
+have imported data from the web second
+we have imported data from a text table
+now after doing text now our next task
+is to import from CSV let's try another
+one so now I have imported product
+subcategory
+now I'll import
+a CSV file so again I'll choose the
+option Text slash CSV and now in this
+CSV file let me open this CSV file and
+show you what it is it
+so this is a list of all my products
+product key product sub category Key
+Products uh stock keeping unit Etc a
+simple CSV file and I'm gonna import
+that
+okay so now it is identified the
+delimiter is comma rather than a tab and
+it has already recognized the headers
+correctly so I load it
+okay so now my products are there
+product subcategories are there for
+product categories now what I have done
+is I have created as Excel mode now so
+now Excel I am using to import my
+product category
+so now I have to click on the option of
+import data from Excel and I'll say
+product categories
+select the sheet load
+and now so my products product
+categories product subcategories do with
+different uh data storage types but
+still now the data is imported into
+Power bi is a composite data model now
+another very important data type which
+you can import is the PDF also right so
+what I have done is I have created a PDF
+called customers my customers data is
+lying in a PDF so what I've done is I've
+created a PDF
+which has data for some columns are
+there like you know customer key prefix
+first name last name birthdate marital
+status gender email address annual
+income total children etc etc so this is
+the data set
+which I have created in PDF so what I'm
+gonna do is
+I'm going to select PDF now
+and import customers.pdf and see it has
+recognized my table on page one which
+I'm gonna load
+okay
+you can rename this as PDF
+table
+so this basically these are the
+different type of
+data
+types we have imported PDF Excel text
+CSV and web page
+now let's take a look at another
+interesting data set which you want to
+import is the my SQL Server data set
+so what I have done is I've already
+installed MySQL server on my local
+instance and there's already a schema of
+SQL live tutorial over there and I have
+certain tables already
+prepared over there like Department
+employee Etc so my goal is now to import
+this data or create a live connection
+with this data set
+now in order to import
+my SQL database Connection in power bi
+you need to First
+download a
+connector MySQL power bi connector so
+you need to go to this link
+and then click on download and install
+the MySQL connector based on the
+operating system you have you click on
+download and install it
+after you have done this go back to
+Power bi
+and then give
+the IP address of the database in my
+case it's there in this local machine
+and the schema which I want to import is
+SQL live tutorial so I'll give the name
+click connect
+okay now it's connected so now it is
+asking me which particular tables you
+want to create a connection with I am
+choosing department and employee
+and I'm just loading them
+okay so now this is the exact data which
+is there in the employee and Department
+in MySQL okay so this is one example of
+how to create connectivity between power
+bi and MySQL
+now I want to do the same thing using
+SQL Server Microsoft SQL Server so I
+have also installed Microsoft SQL server
+on my machine
+and I have used the SQL Express so this
+is the name of my server so which I'll
+copy the server name
+and
+go to get data
+select SQL Server
+and for now database is optional I can
+say direct query click ok
+okay now it is showing me what all
+tables I can import so in my SQL Server
+tutorial
+in my SQL Server I have
+I have these three tables customers
+employee tuition Olympic events so I can
+use probably the customers one which is
+now you can see this is the data the
+customer's data which is lying in my SQL
+Server okay so I can preview it and load
+it
+so now you can you can preview the data
+in uh
+power bi that is this is the data so I
+can rename his customers from
+mssql
+and this is from
+my sequel
+and
+okay so now
+this is not the only data
+sets you can import now if you take a
+look at the options which power bi gave
+what different type and variations of
+data it can it has compatibility to
+import from
+foreign
+okay so we can just take a look at the
+categorization on the left hand side
+first there are five ways like Excel
+text XML Json is also possible you can
+evenly directly import entire folder and
+within the folder whatever uh data types
+of files are there it will detect it PDF
+power key or even SharePoint folder
+which is itself a Microsoft uh
+technology then different kind of
+databases SQL server and MySQL we just
+saw but it's not only limited to this
+you can connect to Microsoft Access
+ssas Oracle database IBM db2 postgres
+SCI base teradata and then sap
+databases Amazon redshift Impala vertica
+Snowflake and N number of databases
+which are there in the market today
+Amazon
+Etc
+then it also allows you to connect with
+its own power platforms power bi
+platforms data mods power bi data flows
+dataverse Etc Azure there are different
+kind of storage
+mechanisms in Azure and Azure itself is
+a Microsoft Technology so it has a
+compatibility of a lot of azure uh based
+data storages like Azure SQL database
+blob storage uh Azure data breaks right
+Azure HD insights path so if you have
+those kind of services running on your
+observed cloud services you can even
+import them over here
+now online services like you know you
+have erps running uh or some data which
+is shared on the internet if you want to
+import it uh that is also possible
+through certain products uh Dynamics 365
+Microsoft Exchange online Salesforce
+Google analytics Adobe analytics GitHub
+LinkedIn sales if you want to do some
+analysis of some social networking uh
+you know feeds that also you can import
+then other miscellaneous are also their
+web-based hive R script python script if
+there's something to import get data
+from uh Google Sheets like we store one
+example in our video right now so there
+are multiple options available
+now once you have imported the data
+which is relevant to you
+um in hours of sequence sessions we will
+see how to create relationships but just
+giving you a glimpse that whatever data
+you are importing power bi Auto detects
+certain relationships and it will create
+for you but then you can go and manually
+also change so this is the composite
+data model which is getting created in
+the back end while you are importing the
+data you can easily go and manage these
+relationships either keep them as is you
+can delete and create new ones manually
+so there is no limitation in that
+so this is what we have witnessed we
+have imported data from different files
+types data types and then you know we
+have tried once it is imported into uh
+Power bi then there is no limitation of
+how you use it you can create
+visualization across different data sets
+and then create your
+standard reports
+so this is the example of importing data
+from web importing data from a database
+from a PDF
+and then once you have data you can
+shape and combine data you can basically
+do whatever whatever transformation you
+want to do you want to uh make joins
+merge the data so for example if we go
+back to our power bi and if I go back to
+my transform data section
+now as I have now different data sets
+available with me I have I can do any
+kind of uh you know operation
+transformation on the data right uh
+so like I showed you I uh upgraded the
+header row because one of the imported
+data was not showing the header
+correctly uh or this columns like this
+exact one column is extra I can remove
+the column
+right all those Transformations whatever
+I do in the back end gets captured in
+the applied steps section right
+this is the customer data you can create
+uh you can merge it you can append it uh
+you know with other data sets right
+let's for example I want to create a
+merge data set of my categories and
+subcategories so I can say mer selectors
+two data sets and say merge queries as
+new
+and
+I can select product categories and
+products are categories select
+product category key on both the sides
+and then they do a left Auto join so
+whatever product categories are there
+I'll get the subcategories associated
+with it and I'll create a new
+table
+which will have
+now I have the table which has the
+category and the subcategory and
+subcategory in one table itself so I can
+rename it now to as
+category
+sub category
+table it's a it's a merge basically it's
+a join between category and subcategory
+now I have a common table right and I
+can close and apply
+so imagine I have created a new table
+which is imported created from one data
+set is which is Excel page another data
+set which is text based
+see this category subcategory table so
+now I can use it
+the way I want in my visualization
+reports so that's what the presentation
+says right that once you have uh the
+imported data you can shape you can
+combine you can adjust you can do
+whatever transformation you want to do
+and create your visualization okay I
+hope you guys had a great learning
+session in this and I'll see you in my
+next session
+thank you
+thank you
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

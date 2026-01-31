@@ -1,0 +1,184 @@
+hello everyone welcome to Simply La
+YouTube channel today we will learn how
+to load Excel data to mySQL workbench
+that's it if these are the type of
+videos you'd like to watch then hit that
+like And subscribe buttons and the bell
+icon to get notified just for a quick
+info if you want to upskill yourself to
+master SQL for data analytics and land
+your dream job or grow your carrier then
+you must explore simply learns SQL
+certific ification course simply learn
+offers an industry recognize the SQL
+training and certification program for
+aspiring SQL developers and data
+analysts through this program you will
+gain knowledge and work ready expertise
+in skills like real world problem
+solving data analytics my SQL workbench
+and much more that's not all you also
+get the opportunity to gain an engaging
+learning experience featuring demo
+sessions in real world examples you will
+gain dedicated love sessions by faculty
+of Industry experts from Top Tire
+product companies along with the
+academic from top universities after
+completing this course many of our
+Learners have either transitioned into a
+data analyst or a SQL Developer as a
+fresher or moved on a higher paying job
+profile if you are passionate about
+making your career in this field then
+make sure to check out the link in the
+pinned comment and description box below
+without further delay let's get started
+so how to load spreadsheet data or Excel
+data to SQL let's quickly get back to my
+SQL workbench so here let's say you
+wanted to create a table and load the
+data so if the data is minimalistic
+maybe the data about 10 rows or 15 rows
+you can manually create a table and
+insert the elements into your table
+using such insert commands but this set
+like mine which is in the Excel
+spreadsheet and has about 10,000 rows
+would you like to you know write 10,000
+insert commands no right it would be
+really time consuming so for situations
+like this my SQL workbench has enabled
+developers to load the data from
+spreadsheets within a few steps but
+before we get started let's check our
+column headers so here you can see uh it
+is not compatible with the MySQL
+workbench or SQL commands right so it
+has a space and it has a word row and it
+is a keyword in my SQL right so we don't
+want that confusion so for that reason
+we will try to modify this maybe using
+an underscore right similarly for the
+row ID you can eliminate space and use
+an underscore and when it comes to order
+ID the same so just let us quickly
+change all the column headers so that
+they are SQL
+compatible there you go so we have
+replaced all the row headers with
+underscores and made them SQL compatible
+so let is save it and when you're saving
+it just make sure that your Excel file
+data is also having the uh you know SQL
+compatible uh name so here we have load
+CSV to my SQL so here we have the name
+with space right so let's try to change
+that to lowercase Excel data and there
+right now it is SQL compatible Now
+quickly let's go back to my SQL
+workbench here we have it now you can
+just create a new table just right click
+here or you can also do it from here
+create a new database and the new schema
+will be the name of your data set so
+let's type it as Excel data or just
+Excel and apply now this is the schema
+apply now you have uh Excel right here
+just drop down on here you can see the
+tables right click the tables and here
+you have the option of uh import data
+Vis it right just click on that now
+browse your folders and have it so yeah
+another notification for you guys so you
+need to save your Excel spreadsheet in
+the form of comma separated file right
+let's quickly go back and do that open
+your spreadsheet go to file save as
+comma separated file save there you go
+now let's get back to workbench and now
+I think you will be able to find it just
+open next drop table of exist make sure
+you do that to be on the safest side and
+check all the names here so we have a
+problem with row ID but that is
+something which you can fix down the
+line and before you go to the next step
+check all the other names as well every
+other name on the column header is fine
+just the first one we can just Al to the
+table not a big deal and uh next it
+should start
+importing there you go the data file got
+imported of course it took a little
+while because it's 10,000 that's normal
+now let's quickly go to the next step
+and here you can see
+9,987 records imported successfully just
+click on finish and I think it should be
+shortly done let's close the schema go
+to the query table and yeah so you can
+quickly refresh so that you will have
+have the Excel data over here now let's
+use the database that is
+Excel on it now we are in Excel database
+now the table we looking for is
+Select St from the data name the data
+table name is Excel data without a space
+semicolon just quickly run it and I
+think we should be shortly able to see
+all the data sets right over here yeah
+about the First Column IDE
+we can simply use the alter table um
+function or query to change the name
+let's quickly do that with the table
+name alter
+table
+rename okay what was this copy that copy
+field name rename row ID
+to so um a small syntax are there so I
+think they should be sorted yeah and now
+let's quickly run this and I guess it
+should be done now let's quickly run the
+select command again there you go so we
+have the row ID order ID uh order dates
+ship date shipment mode customer ID
+customer name Etc and everything is as
+per the
+expectations and that's how you can load
+Excel data to mySQL workbench and that
+brings us to the end of this session on
+how to load Excel data to mySQL work
+bench thanks for watching if you have
+any queries regarding any of the topics
+covered in this session or if you requir
+resources like PPD and the data set that
+we used in this session then please feel
+free to let us know in the comment
+section below and our team of experts
+we'll be happy to resolve all your
+queries at the earliest until next time
+thank you for watching and stay tuned
+for more from Simply learn staying ahead
+in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success
+click the link in the description to
+know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

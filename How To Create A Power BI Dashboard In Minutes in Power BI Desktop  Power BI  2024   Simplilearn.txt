@@ -1,0 +1,367 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn how
+to create a powerbi dashboard in minutes
+that said if these are the type of
+videos you'd like to watch then hit that
+like And subscribe buttons and the bell
+icon to get notified craving a career
+upgrade subscribe like and comment
+below dive into the link in the
+description to FastTrack your ambition
+whether you're making a switch or aiming
+higher simply learn has your
+back just for a quick info if you want
+to upscale yourself master data science
+and analytics skills and land your dream
+job or growing your career then you must
+explore simply learns code of various
+data science and data analytics programs
+simply learn offers various
+certification and post-graduate programs
+in collaboration with World leading
+universities like Altech puru IIT conour
+and many more through these courses you
+will gain knowledge and work expertise
+and skills like Advanced Excel python
+machine learning data visualization
+generative Ai and over a dozen others
+that's not all you also get the
+opportunity to work on multiple projects
+and learn from industry experts working
+in Top Tire data and product companies
+and also the academic from the top
+universities after completing these
+courses thousands of Learners a
+transition into a data science or data
+analytics role as a fresher or moved
+onto a higher paying job profile if you
+are passionate about making your career
+in this field then make sure to check
+out the link in the pin comment and
+description box below to find the data
+science and data analytics program that
+fits your experience and areas of
+Interest now without further delay let's
+get started with today's topic which is
+about how to create powerbi dashboard in
+a few minutes yes you heard me right you
+can create a complete powerbi dashboard
+or also known as a report in just a few
+clicks and a few minutes now in this
+particular video we are minimizing the
+time in creating dashboard because
+sometimes data cleaning process you
+already know if you're an expert or if
+you are a beginner in data analytics you
+already know there are steps in data
+report or a dashboard right first you
+load the data from a source it can be
+Cloud PDF Excel work CSV or anything and
+after that you do some data cleaning
+right you split the columns or you
+eliminate some blank rows blank columns
+and some irrelevant data which does not
+fit or some um for more reference on
+data cleaning you can also refer to the
+video which is linked in the description
+box below and so right that's the
+process so basically you import the data
+from The Source clean it transform it
+and then load it and then create a
+dashboard right so in this particular
+video we have the completely cleaned
+data set which is really available for
+creating report which will be also
+linked in the description box below if
+you want to follow us along so um with
+that uh let's get started right so
+that's how it goes now let's have a look
+at our data so our data has um some row
+ID order ID a date ship date so
+basically you can totally understand
+this particular data set is about sales
+report right let's say I'm working with
+XYZ company which is based on data
+analytics and I get an email from my
+client that he or she wants to know how
+exactly the sales are performing in what
+exact States or countries and uh what
+exact regions and what category of
+products or subcategory of products and
+what's the sales quantity ordered profit
+right so let's say you have a one uh
+category or subcategory or a product
+which is giving you High number of sales
+and profit right you want to improve
+more you can increase the price or let's
+say you have some product which is not
+performing so well right so you can uh
+offer some uh discounts let's say like
+50% off so that you can move out the
+product from your store right so some uh
+basically if you analyze the data and
+you come up to a decision where which
+product is performing in which region or
+state or country and which product is
+performing and not performing in which
+region state or country right you can
+come up with a strategy for sales and
+improve your Revenue so that's the
+entire process right so with that said
+so this is the data we have and let's
+quickly jump onto powerbi and get going
+with creating a report or dashboard
+within a few minutes right so here we
+are on the powerbi desktop so here
+absolutely you can see you can import
+data from Excel you can import data from
+SQL Sero you can import data from a
+blank table or use some sample data AP
+from that you can also get data from a
+different sources as well right see uh
+we will be trying to do some automation
+right so regarding the automation we can
+also uh go through another video from
+Simply learn which will help you
+understand how to automate the process
+of data transformation cleaning and
+uploading so uh you can just give the
+file location here the folder so I'm
+going going to the folder here so it
+will give me a new window uh you can go
+to browse and I think I have my folder
+in
+downloads and uh Excel data sets um
+Excel I think I'll be having that named
+as sales report yes just click okay and
+you have the sales report
+here you can have a quick preview of the
+data so here you have the options
+combine load transform data right you
+can just directly load because I've said
+you that this particular data set is
+completely clean and is ready for
+reports right so you can just select the
+data you want and just load right I'm
+doing it this way because let's say uh
+for let's not not let's say uh we have
+uh the data here and a form in in such a
+form that the data is from last 3 to
+four years right so let me select it
+this
+way so in this case as well it will take
+the Excel file and uh even if you add
+some more data to it it will uh apply
+the changes to it right so let's say uh
+we have the data for the last four years
+2020
+209 2021 2 and 3 and since 2024 is not
+complet completed yet we are not taking
+that data let's say we enter into 2025
+then the new data for 2024 gets updated
+and loaded onto the same data table and
+you don't have to uh you know process
+the data once again clean it transform
+it load it no that's not going to happen
+you can just load the data you can just
+drop the data on the Excel spreadsheet
+and your dashboard or report will
+reflect the new changes automatically
+just by refreshing your dashboard right
+that's the automation you can do so what
+exactly automation is the process where
+human effort is not involved and the
+computer or your any uh tool that's the
+job for you is called as automation
+which reduces a lot of time of yours and
+you can use that valuable time to plan
+on the strategies to improve your
+Revenue right that's the overall Moto of
+data analytics now that's the uh preview
+of the data I'm just going to directly
+load it I'm not going to transform it
+because uh it's completely clean and
+transform data and ready for reports so
+here you go and uh you can close if
+there are my n errors you can just close
+it and uh if you want to check your data
+you can go to your data here and you can
+have the sample data right here right if
+you check the r date not ship date sorry
+uh ship date can enter into uh 2023 as
+well right so here you have 2020 and uh
+the other dates right so you will have
+okay let's go to the data filter so you
+basically have four years not 2024 right
+so uh that's the way if you just add the
+2024 data it will automatically reflect
+in the visualization now uh all that we
+need is create a dashboard or report
+which will help us analy some data right
+so uh let's get started just double
+click on the report section and here you
+will have icon or visit which will ask
+you what exactly you're looking for
+preparing Q&A so I
+want region wise sales and I want it in
+a bar
+graph there you go you have the region
+wi sales and bar graph press on okay and
+you have it and you can place it
+somewhere in the corner then if you want
+another one double click and you want
+category
+wise category
+sales and let's take that in pie
+chart category sales p and here you have
+it press on agree and accept and you
+have it over here and ear on-ear sales
+in aine
+graph sales
+by date or sales
+by sales by date line graph
+here you have it accept that so that you
+can identify which is the peak uh
+performance ER or Peak Performance date
+for us which gave us the highest number
+of sales in a certain region right so
+here we have it you can place it can
+customize it right and now let's go for
+subcategory double click and uh
+subcategory I think we have a hph a
+space there
+sales uh the type of chart you want you
+can go with the donut
+one select that and
+it so you have subcategory voice sale
+and now let's go with uh region voice I
+mean the country voice right so let's go
+to the data again here so here we have
+segment City State country okay let's go
+with country now
+right
+country country
+sales map chart so whenever you
+have a region or state or a country
+involved go with map charts it's the
+best way to represent right so we have
+considered European nations over here so
+for that reason we have the European
+States here and and uh now we can go
+with let's go with the data once again
+and have a look what else we can do and
+shipment mode right so you have the
+shipment mode as well so uh you can
+identify what type of shipment mode
+customers are majorly
+preferring shipment mode bar
+graph a so basically I think we have uh
+three types of shipment mode
+let's check the column name of shipment
+mode properly ship mode it's not
+shipment mode it's ship mode right so
+let's type again ship
+mode
+bar
+graph okay shipment mode
+sales bar graph there you go so agree
+accepted so you have standard shipment
+is the most preferred one now now we
+have this so let's add some kpis here so
+uh kpi of
+sales you will adjust that agree there
+you go and let's add a kpi
+for
+profit and you have it
+agree kpi for Revenue double click
+let's check if we have a column called
+Revenue quantity discount profit right
+so let's go with
+quantity and
+discount so revenue is not added so it's
+okay so you can identify which uh uh
+product or subcategory is highly selling
+in in number of quantities so you have
+you'll have the Su of profit some of
+sales sum of quantity and what else we
+left the last one discount and rate
+singles discount profit so let's
+identify if we have offered
+any okay so let's add a kpi or rate as
+well if we are completely focusing on a
+single product a single category we must
+be having uh kpi for rate as well double
+click somewhere kpi on
+rate there you go accept it and you have
+the
+completely
+formatted dashboard or sales report
+ready for a meeting let's close all
+these so that we have a better
+visualization and you can just go to the
+uh SlideShare mode or fit to the page
+mode where you can have
+it that's good so uh this is how you
+create a completely functional fully
+functional sales report or sales
+dashboard just within a few clicks and
+just within a few minutes let's say uh I
+want the sales report only for central
+region click that and it's completely
+interactive and let's say we don't want
+that click outside and you will have
+everything back to the normal right and
+let's say I wanted to focus on a
+particular category technology category
+alone they have these sales happening
+and the subcategory of sales and what
+are the products over here right you'll
+have that and which is the country uh
+happening to ship the most of them and
+what's the shipment more preferred by
+them and highest performing date or year
+so here you can see 2022 June was the
+highest performance for sales and uh the
+lowest one is somewhere here in March
+2020 or something right so that's how
+you can create a fully interactive
+dashboard or report based on sales data
+in a few minutes and in a few clicks and
+that brings us to the end of this
+tutorial on the topic how to create a
+completely functional sales report or
+sales dashboard in a few clicks and in a
+few minutes and that's it thank you for
+watching and stay tun for more from
+Simply learn and should you have any
+queries regarding any of the topic
+covered in this session or if you're are
+the data set or any resources that be
+used in the session during the entire
+tutorial then please feel free to let us
+know in the comment section below and
+our of experts should be very happy to
+help you at the earliest until next time
+thank you for watching and stay tuned
+for more from Simply learn staying ahead
+in your career requires continuous
+learning and upscaling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

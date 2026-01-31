@@ -1,0 +1,210 @@
+hi traders this is Matthew from pine
+script mastery comm and today I have a
+lesson for you regarding bar colors so I
+received a question from one of the
+students in the pan script mastery
+course regarding how to change the color
+of bar wicks and borders so let's open
+up the pine editor and I'll explain the
+problem that he was facing so here we
+are with the blank script I'm going to
+call this script B SMC - bar wick and
+border color then I'm going to set the
+overlay to true so that this script
+rolls over our price action chart I'm
+gonna save the scripts and now we can
+add it to our chart and we'll be
+plotting the closing price to the child
+so the problem with changing bar colors
+in pan scripts is we do have access to
+this bar color function and I could set
+the color here for example to black if I
+save these scripts it'll change all of
+my bars to black but if i zoom right in
+here probably really hard to see over
+YouTube but the border color of each
+candle is green and red so bullish
+candles have a green border and bearish
+candles have a red border and the wicks
+are gray colored so the bar color
+function if I hover my mouse over this
+you can see the inputs it takes under
+the word that says syntax there so it
+takes a color input parameter an offset
+parameter and an editable parameter a
+show last parameter and a title
+parameter but no border or wicked color
+parameter which means that we cannot
+change the bars wick or border color
+using this function which begs the
+question how then do we change the
+candles border color or wood color so
+today I'll show you a workaround for
+this problem the best solution I found
+was that instead of using the bar color
+function we will use our own custom plot
+candle function so this will plot a
+custom candle to the chart and if you
+notice down here at the bottom we have
+our wick color and our border color
+function parameters so this function
+does allow us to change the wick color
+and the border color but the problem
+we're going to run into which I'll show
+you in a second is that those colors
+must be a constant variable which means
+we cannot change them based on
+conditions boolean conditions which is a
+problem I'll show you why we put in our
+open high low and closed price into this
+plot candle function so that we're just
+copying price action candles on our
+chart now if we set the color to let's
+say if the close is greater than the
+open meaning it's a bullish candle
+we'll use a conditional operator here a
+question mark so we're saying if this
+candle closed bullish then set the color
+to color dark green otherwise set it to
+colored red now this will compile and we
+can't see it on our chart I'll have to
+come up to the settings menu and turn
+off our body's borders and wicks
+settings in the settings settings menu
+if I hit OK now we are drawing our
+custom candles and they drawing green
+when the price closes bullish and red
+when it closes bearish but the problem
+we now have is if we wanted to copy this
+line of code and change the wick color
+based on the same information now if I
+save the script we're going to get an
+error so you can see down here and the
+reason we're getting an error is because
+this color this wood color parameter
+needs to be a constant variable meaning
+that it never changes in our script so
+if I were to change this back to say
+color red and save these scripts it'll
+compile without any issues and we now
+have a red wick on every candle so what
+if you wanted to change the wick color
+and the border color of your candle
+based on some sort of boolean condition
+such as the candle closing bullish or
+bearish well the only way that I could
+think of to achieve this was to use to
+plot candle functions one the plots the
+data if the candle is bullish and one
+that plots the data if the candle is
+bearish both with different constant
+wick color and border color variables so
+I'll show you what I mean if we just
+copy this entire line of code and paste
+it below here and we can extract this
+boolean condition here and then create a
+new variable called bulk candle and
+paste that in there so now this bull
+candle variable will be set to true if
+the closing price is higher than the
+open price so there
+will detect bullish candles and now
+let's just remove these really quickly
+before I move on to the next step so now
+we have to plot candle functions that
+are identical and what we're going to do
+is we're only going to plot this one if
+the candle is bullish and then we're
+only going to plot this one if it's not
+bullish and because we can't use if
+statements with plots we need to use
+conditional statements on the data
+itself so what we can do here is say if
+this was a bullish candle then plot the
+open otherwise plot n/a or nothing and
+we can do this for all of these candle
+variables the open high low and close
+and I'll drop this down to a new line so
+that we can see what we're doing here we
+can do the same for the second plot
+candle so here we'll say was this a
+bullish candle if so then we want to
+plot n/a otherwise we want to plot the
+open so this will put our bearish candle
+data and this will plot our bullish
+candle data so if we have bullish
+candles we will plot the open high low
+and close if we have a bearish candle
+we'll put na na-na-na and this candle
+function will plot nothing to the chart
+and then this one on the other hand if
+we have a bearish candle will plot open
+high low and close so let's write that
+out here and put that on a new line
+change this to say green leave that as
+red change this to say colored green and
+color dot red and we can change many the
+color of this to be lime a little bit
+brighter green so now if I save these
+scripts
+notice that our bullish candles have
+green wicks and our bearish candles have
+red wicks and now if we wanted to change
+the border color of these candles we can
+just use the border color function
+parameter so here if I say for bullish
+candles we'll set the border to color
+that lame as well and for bearish
+candles we'll set the border color to
+colored red so now if I saved these
+scripts our border colors will be
+changing the bright green and bright red
+and the candles themselves will be
+changing as well and let's change the
+bearish candles to a darker red so that
+we can actually see what's going on
+there so now you can see we're plotting
+a darker red here more of a purple color
+and the wick and border is bright red
+and we could change the wick separately
+if we wanted to we could change this to
+blue and this to orange and we can start
+turning our charts into some sort of
+children's painting but of course there
+are many reasons why you might want to
+use this functionality in your scripts
+perhaps to detect certain candlestick
+patterns perhaps you want to change the
+color of the wicks based on how large
+they are or small they are that sort of
+thing and of course this is a bit of a
+mess around because we have to turn off
+our candles and normal candles on here
+return these back on they will draw over
+the top of our custom candles and only
+when you hover your mouse over certain
+areas on the chart with our custom
+candles show up so it's not the ideal
+solution for this problem but it's the
+only solution I could think of given the
+fact that what color and border color
+require constant color variables so the
+only workaround for this is to use n/a
+for your price data in the plot candle
+function and just separate your plot
+candles to address each condition that
+you want to in this case bullish candles
+or bearish candles so that's it for this
+lesson I hope you found that helpful if
+you did and you want to learn more about
+pine scripts head over to pine script
+mastery com here you'll find my advanced
+pine script courses and my basics course
+which is free so if you want to learn
+more about pine script head over here
+and you'll find out a little bit more
+about me and a little bit more about
+pine scripts I hope you found this
+lesson interesting and helpful I'll see
+you in the next one
+[Music]

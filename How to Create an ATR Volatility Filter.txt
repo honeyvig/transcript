@@ -1,0 +1,595 @@
+hey Traders welcome back to another
+video thanks for coming back to the
+channel if you're new uh welcome in
+today's video I'm going to be answering
+a question from a student in the
+pinescript Mastery course ah it's a
+question slash suggestion and the
+question basically is uh this Trader
+wants to develop a indicator that gauges
+relative volatility or momentum and so
+I've written out a script here this
+script you see down here looks like a
+volume indicator but it's actually
+calculating all of its values based on
+the average true range and so when these
+bars turn blue or aqua colored whatever
+this color is that means that volatility
+is picked up in the markets now
+volatility doesn't discriminate between
+bullish or bearish it just means candles
+have gotten larger doesn't mean that
+momentum is picking up to the upside in
+this case it meant that but there was
+also this candle here which counts as a
+high volatility candle and this was a
+bearish candle uh it closed bullish like
+a pin bar candle but the swing in this
+candle is quite wild and so volatility
+doesn't necessarily indicate strong
+momentum but it can mean that and so
+what this other indicator here you see
+is is my ultimate pullback indicator now
+the ultimate pullback indicator or UPI
+is a script that I wrote a few years ago
+now that I use to trade the Forex and
+crypto markets primarily it does work on
+other markets but those are the two
+markets it was specifically designed to
+trade now this indicator is a
+proprietary indicator I don't have the
+source code public you can access it
+through my indicators and strategies
+course but for today's example we don't
+need to worry about that all we're
+worrying about is aligning strong
+momentum or pickup and volatility with
+buying pullbacks in a trend continuation
+strategy and the student wants to
+combine this sort of indicator with the
+UPI to identify higher quality higher
+conviction signals trading this trend
+continuation system so this trend
+continuation system doesn't necessarily
+require strong momentum to the upside to
+win trades but that does definitely help
+when you're Trading and continuation
+system having the wind at your back
+having momentum picking up in the
+direction of your trade is obviously
+helpful if you're trading a
+consolidation based system you probably
+don't want momentum to pick up but
+anyway for today's example what we've
+what I've done here is create a script
+that meets this students sort of
+requirements and if I turn off this
+indicator and turn this one on this
+indicator here is my UPI with the
+default settings and if I bring it to
+front here you'll notice that its win
+rate is only 52 percent it's trading a
+one-to-one risk reward profile and so we
+have a 25 return and a 23 Max drawdown
+over the past 491 trades this version of
+the script is taking every signal on my
+chart so here's a losing trade example
+you'll notice that this trade was taken
+while volatility was low while the ATR
+was Contracting now this looks like a
+volume indicator but these columns are
+actually the ATR value so this blue line
+here is a long-term ETR being plotted
+onto my art and these columns is a
+short-term ATR being plotted onto my
+chart so it looks like a volume
+indicator but it's actually a ATR based
+volatility indicator and what this other
+version of the script is doing is taking
+the same exact signals except it's only
+taking them when these bars are blue or
+volatility has picked up and you can see
+the difference here is pretty massive
+we've got now a 57 win rate instead of
+52 and our Max drawdown is now 8 and our
+return is 36 percent now I did cherry
+pick this example the results were not
+as spectacular on other markets or other
+time frames but this just goes to show
+that with a bit of creative thinking
+there is potential in some of these
+filters that you can develop in this
+case we're developing a volatility
+filter and so before we continue let me
+break down the question from the student
+and we'll move over to the Pine editor
+and start coding out this script so the
+question is
+I was thinking that it would be nice to
+have an indicator a histogram or a
+ribbon of bars to complement the UPI
+ultimate pullback strategy and this
+indicator will measure the sum of the
+last X number of bars the student wants
+to add up the range of these candles and
+then compare that range the sum of that
+range to the recent ATR value and if
+that range is less than the ATR value
+then that would typically mean that the
+uh the price is in consolidation doesn't
+always mean that but it can mean that
+and it often does especially after we've
+had a period of time where the ATR was
+significantly above average if that ATR
+begins to shrink that typically means
+that price is consolidating after an
+impulsive move and so the student wants
+an indicator that will print a dull
+color on the histogram suggesting that
+it is not a good time to trade and if
+the sum is equal to or larger than the
+ATR it will print a brighter color like
+blue suggesting that it is a good time
+to trade now when the student says it is
+a good time to trade they mean in the
+context of trading a pullback system at
+continuation system in this case the UPI
+and then they also mentioned my volume
+my oval relative volume indicate a
+lesson in the Mastery course and they
+tried to adapt that script to suit their
+purposes but they did not succeed so in
+today's lesson I'm going to show you
+guys how I went about this so this is
+the lesson they're talking about the
+aval lesson and in this lesson I do
+exactly what they mentioned in that
+question except instead of using
+volatility or the ATR value to calculate
+these spikes in volatility I used
+relative volume so these colored bars
+down here are comparing the volume of
+the current bar to a moving average of
+the past in this case I'm guessing 100
+bars that would be this lower moving
+average and then we apply a threshold in
+this case 2.5 so if a bar prints 2.5
+times the 100 period moving average of
+volume that's considered a spike in
+relative volume and that's what these
+colored bars are doing so in today's
+video we are going to be doing this
+exact same thing but with the ATR value
+instead of volume now the first thing to
+note is that there's a problem with this
+theory of um comparing recent price
+action to the ATR value this way the
+problem is if we're adding up and
+getting the sum of the past four bars
+and we're including negative numbers so
+counting a red bar of two Pips is
+negative two and we try to compare that
+to the ATR it's not going to work
+because the ATR is always a positive
+number so what we need to do instead is
+compare the true range of each bar to
+the ATR it's almost the same thing but a
+slight difference if we don't do this
+then what we'll be doing instead if we
+do it this way is we'll be gauging
+bullish and bearish momentum instead of
+just general momentum now there's a time
+and place for that you might want to do
+that with your script but in this
+student's example this is not what they
+really want to happen we just want to
+get a gauge of volatility we don't care
+if it's bullish or bearish because
+comparing a non-absolute atrial value or
+a negative number to a positive number
+we'll only give an indication of the
+strength of bullish and bearish
+volatility not relative volatility so in
+this case we need to compare apples to
+apples not apples to oranges so that
+means comparing the true range of recent
+bars to a longer term ATR value so in
+other words what I think the best way to
+achieve this is to Simply compare a
+short-term ETR indicator value to a
+longer term ATR indicator value and if
+the short term ATR value is larger than
+the long-term value then that means we
+have strong volatility relative to
+recent volatility regardless of whether
+that volatility is bullet or bearish so
+let's jump into the pine editor and I'll
+show you what I mean so before we
+continue I should break down the formula
+for calculating the ATR because it's
+important to know so the ATR the true
+range is a moving average of each bar on
+our charts true range and the way we
+calculate a candle's true range is not
+simply just subtracting the high from
+the low that will usually be its true
+range but there's two other values that
+are taken in into consideration and so
+what we're doing is we're getting the
+maximum value out of these three
+different values the first is the high
+minus the low and because we're
+subtracting the high from the low this
+will always be a positive number and so
+that means the next two values also need
+to be positive numbers and so that's why
+we use the ABS function the ABS function
+doesn't mean that we have a six pack it
+means that we are comparing an absolute
+value a positive number to a positive
+number and so the next value we check is
+the current bars High minus the previous
+Bar's closing price and then finally we
+also compare the current bars low to the
+previous Bar's closing price whichever
+of these three values is the maximum
+value is our true range for that bar and
+so that's why if we just simply add up
+the past five bars and we get a and uh
+in this example we would have a negative
+number and comparing that to the ATR
+will not give us the information we need
+or want in this particular context so
+what I'm going to do instead is compare
+a short-term age here to the long-term
+ATR and that should give us a pretty
+sound indication on recent volatility
+there are other methods for doing this
+which we may cover in future lessons we
+could compare the rate of change we
+could compare standard deviations from
+Bollinger Bands things like that but for
+today's example we're just going to
+compare the raw ATR values so to do that
+what I need to do first is get some user
+input and I'm going to get three values
+here the first one is going to be our
+short term length and that will be set
+to input dot integer I'll give it a
+title of short term ATR length
+and a default value of five I can copy
+this paste it then we're also going to
+be getting a long term ATR which will be
+14 by default these are the values I'm
+going to start working with the final
+input I'm going to get is an R Vol
+threshold a relative volume threshold
+and this is going to be a float input
+and I'll just call it our vault
+threshold and the default value for this
+is just going to be one and I'll explain
+what this does once we have our code
+written so now that we have our user
+inputs the next thing we need to do is
+get our indicator values
+in this case we need two ATR values so
+atr1 is going to be set to ta.atr and
+we'll pass in our first length input
+and then the second ATR value requires a
+second length input now we just need to
+Simply compare these two inputs to each
+other so here I'll just say generate our
+Vol alert
+slash signal and I'll create a new
+variable here called R volt alert equals
+and then we're going to check if the
+short-term ATR value atr1 is greater
+than atr2 but I'm also going to multiply
+atr2 by our rival threshold so by
+default this will just be one so one
+times the 14 period ATR but we can
+change that in the settings menu if we
+want to detect higher volatility candles
+so the next thing I'm going to do is get
+our
+um volatility color
+and that will be set too do we have an
+rival alert if so we want to set the
+color.color.aqua otherwise if we do not
+have an arvel alert we need to set this
+to a dull color that's what the student
+wanted the script to do now in the
+example I showed at the beginning of
+this video I actually changed the color
+based on the candle whether it was
+bullish or bearish so my code originally
+looked like this
+if the close is above the open we set
+the bar to Green otherwise we set it to
+Red now because we're not necessarily
+analyzing the bars themselves we can
+just set this to color.gray and keep the
+script a bit simpler so I'll do that for
+now the final thing we need to do here
+well almost the final thing the final
+thing would be to generate alerts but
+before we do that we need to draw the
+data to the Chart so I'm going to use
+three plot functions here the first one
+is going to just plot the short-term APR
+value so I'll title this plot short term
+ATR
+but I'm going to style this plot as a
+column I think it makes this indicator a
+bit more intuitive to read so I need to
+set the style to plot dot style
+underscore columns and I'll set the
+color to our Vol color variable this guy
+here the next plot is going to be our
+longer term ATR value so I'll title this
+long term ATR
+the style is just going to be a regular
+plot so we don't need to specify the
+style but we do need to give it a color
+I'll set the color in this case the
+color.black the final plot we're going
+to draw here is the ATR the long-term
+ATR multiplied by our aval threshold
+and I'll title this uh ball threshold
+and I'll give this one a color of color
+dot blue and get rid of this plot n a
+and now I can get rid of this and when I
+save my script we should be getting our
+volatility indicator plotting onto the
+chart and as I mentioned at the
+beginning of this lesson what this
+script is doing is These Bars here is
+actually the short-term ATR value so the
+five period ATR value being compared to
+our blue line which is just a regular 14
+period ATR value and whenever the
+short-term ETR is greater than the
+long-term ATR we have volatility picking
+up and we can obviously tweak these
+values here if we want to I could set
+that to three in this 220 and we'll get
+a more sensitive volatility detector or
+I could set this to 14 and this to 100
+and now we're getting a more sustained
+longer term indication of relative
+volatility and the final thing before I
+wrap up this script is let's generate
+alerts so for this I'm just going to use
+the old school alert condition function
+and the condition for this alert is just
+going to be our oval alert Boolean value
+the title is going to be our alert and
+the message will be momentum has
+increased on
+and then I'll pass in the ticker
+placeholder this will be replaced with
+whatever Market we're on in this case
+euro dollar save my code and now if we
+come up to the alert box and I select my
+script I can select the oval alert set
+up my alert settings how I want the next
+time the chart prints a candle that has
+greater volatility than the recent
+longer term volatility I'll get an alert
+sent to my phone or whatever and that's
+pretty much it for this script it
+doesn't do exactly what the student was
+trying to do but I think in my personal
+opinion as a Trader encoder this I think
+is a better way to do the same thing now
+there's ways we could improve this
+indicator we could add Confluence to it
+we could check rate of change values we
+could check volume as well we could
+incorporate volume if volume is elevated
+as well as volatility that's often an
+indication of an impending reversal most
+of the time but in this case we want to
+combine this with the UPI and if I set
+this back to its default values it would
+mean that we only take trades that the
+system generates when volatility is
+elevated so we would not take this
+losing trade because volatility was
+Contracting
+or in other words price was
+consolidating and if I keep going back
+here this warning label here just means
+that this trade hit its take profit and
+its stop loss on the same bar so if I
+zoom in you can see that we entered long
+on the on this bar is open and then this
+Wick hit our stop loss but the bar also
+hit our take profit now in this case I
+would assume the price hit our stop loss
+and then went up to hit our take profit
+so this was a losing trade but you never
+really know it's possible this opened
+came up hit our take profit came back
+down
+we were already out of our trade or our
+stop-loss was a break even if we were
+trading two positions which is typically
+how I trade this strategy
+um and this would have been a winning
+trade or a one target winning trade the
+only way to know for sure would be to
+drop down to a lower time frame and see
+how this bar unfolded but that's outside
+the scope of today's lesson I just
+wanted to point that out in case you're
+wondering what this giant yellow warning
+label is but if we go back here
+'s another trade we wouldn't take this
+trade happened to win but it occurred
+during Contracting volatility
+same with this trade so you are going to
+give up winning trades or that's always
+the case whenever you introduce a filter
+to a system it's also going to eliminate
+winning trades that's just the nature of
+the game but as we saw at the start of
+the lesson when I compared this
+indicator's default settings to this
+version of the indicator which has
+exactly the same settings except I copy
+and pasted this code here into the
+source code of the original EPI and all
+I did was add one more check to our
+Market condition filters that checks if
+volatility is elevated and to show you
+that that was the case to be fully
+transparent let's copy this code I'll
+just paste it into a notepad then I'll
+delete this test indicator off my chart
+open up the source code to the UPI and
+then copy all of this code it's about
+800 lines of code create a new indicator
+save this and I'll just call this our
+volt test I'll add
+arvol to the end of
+my indicator label save that code add it
+to my chart hide the original script it
+does take a moment to compile because
+it's such a large script but it should
+be done soon there we go now if we come
+into the settings menu and I turn on the
+drawback tester results
+uh we'll have our back test results
+being drawn down here and our trade win
+metrics win rate metrics and so on the
+stats of the of the system and now if I
+hide both scripts you can see the return
+metrics are identical because they are
+exactly the same script code but now if
+I open up the source code to the script
+we just created and I copy just this
+code this is all we need just need our
+user inputs our indicator values and
+then to compare that indicator value to
+our rival threshold if I come up to the
+Rival script and I scroll down to where
+the script detects market conditions
+which is here
+if I paste this in and I simply add this
+check here so we only have a valid long
+entry of all of these conditions and met
+and there's a lot of them
+so if our rival alert condition that we
+just created if this bar is blue or aqua
+and I'll add it to the short trades as
+well that's literally the only changes
+I've made to the script now when I save
+our code watch our win rate metrics and
+our simulated back testing return
+metrics bam
+we have significantly changed the
+metrics of this strategy we've reduced
+our trade quantity quite a bit more than
+half I believe we had nearly 500 trades
+with this version so we've halved our
+trade frequency which means we've halved
+our commission costs we've also halved
+our drawdown over halved I think the
+drawdown was 25
+23 so we've significantly reduced our
+drawdown we've modestly increased our
+return so we had a 25 return we have an
+extra 10 or 11 with this version of the
+script and we achieve this jump in
+performance simply by introducing a new
+filter to the system that only takes
+trades when volatility is increase and
+the filter couldn't be more simple I
+mean we're just comparing a short-term
+ATR value to a long-term ATR value we
+could do that manually all we'd need to
+do is add two average true range
+indicators to our chart I can merge
+these together set one of them to five
+and one of them to 14 and I need to
+merge the scales to the right
+there we go and basically the script is
+doing exactly what this script is doing
+uh whenever this red line is above the
+Blue Line uh we aren't permitted to take
+trades all we've done is pretty it up a
+little bit make it look a little more
+interesting a little bit more intuitive
+but anyway that will do it for today's
+lesson I hope you found this interesting
+as always the source code will be below
+uh the source code to the ultimate
+pullback indicator will not be below
+because I've spent hundreds and hundreds
+of hours working on that script so
+that's a private script unfortunately
+you can get the source code for that
+script on my website in my strategies
+and indicators course it's not a cheap
+course because it includes the source
+code to every script I've ever created
+including detailed lessons breaking down
+the code so I put a lot of work into
+that lots of hours were sunk into that
+but if you can't afford that or you're
+not interested in that course I do have
+a public indicator called the aggressive
+pullback indicator
+which is what the UPI was originally
+based on and the source code to this
+indicator is actually public uh it's not
+public on trading view but it is up on
+my blog so I'll leave a link to my blog
+below and this is a very very simplified
+version the original incarnation of the
+ultimate pullback indicator so if you're
+curious about how to create a script
+that detects simple pullbacks above or
+below a moving average using moving
+average as a trend filter go and check
+this script out there'll be a link in
+the video description and in the pinned
+comment below and with all that out of
+the way I wish you the absolute best
+with your trading have a fantastic
+weekend if you're watching this when
+this releases don't forget to join our
+free mailing list below I send out an
+email every Wednesday giving you a new
+tip a new book I've read a new podcast
+I've discovered or a YouTube channel
+that I like and I just share with you
+guys anything that I found valuable in
+my own trading every Wednesday no
+marketing no BS just pure value for you
+guys so go and check that out if you're
+interested if you want to learn Pine
+script obviously you can check out my
+courses there at pinescriptmastery.com
+we have the free basis course as well so
+plenty of free stuff out there to sink
+your teeth into if you're a beginner or
+you can't currently afford the courses
+or you're just not interested at least
+go and check out the free stuff there's
+tons of it out there hours and hours and
+hours of free content on my website my
+blog my podcast you know I get pretty
+bored I'm trading I trade the daily
+chart these days uh primarily I do
+discretionary trade and trade some
+shorter term systems but the bulk of my
+trading now is done on the daily time
+frame so I have a lot of free time
+between bar closes so I I tend to pump
+out a lot of content so go and check
+that out I'll speak with you in the next
+video take care I love you thank you for
+being here and I'll speak with you soon
+goodbye

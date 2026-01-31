@@ -1,0 +1,3969 @@
+hello everyone and welcome back to
+another video by simply learn in this
+video I will guide you through creating
+a movie downloading website using HTML
+CSS and jQuery we will build a visually
+appealing and user-friendly platform
+where movie and toast can easily search
+and download their favorite films with
+responsive design and interactive
+features we will make sure the website
+looks great on all devices and provides
+an enjoyable browsing experience so
+let's get started and create this movie
+downloading website but wait let me tell
+you about this amazing Caltech post
+graduate program in full stack web
+development with this program you will
+be equipped with the necessary skills to
+develop full stack web development using
+Java starting from the fundamentals of
+JavaScript you will dive into exciting
+advancement Concepts such as angular
+string root hibernate JSP and MVC which
+is model view controller whether you are
+just starting out or looking to level up
+your career there has never been a
+better time to Unleash Your Inner web
+developer get ready to take your skill
+to the next level and build awesome apps
+that will blow users mind the link in
+the description box below check this out
+so without further Ado let's get started
+so far we have seen various different
+topics related to jQuery in this
+particular playlist we came across
+jQuery effects animations callbacks and
+then we moved on to jQuery UI wherein we
+covered topics like widgets interactions
+theme customization and many more
+let's use some of the concepts in a
+website today let's move ahead and we'll
+take an overview of what we are doing
+today the task is simple we'll create a
+movie downloading website from scratch
+using HTML CSS and jQuery only
+so here we are in the website wherein
+you can see we have the front page of
+our website here we have some text which
+says download your favorite movie in
+just a click and then we have welcome
+written over here right
+the page seems simple the first thing we
+have here is the navigation bar which
+will navigate us to different sections
+of the website we have home about
+categories top rating and contact away
+click on any of them and it will take us
+to that particular section in a website
+if you see here we have two arrows
+present at the bottom of a home page if
+we click on it it will take us to the
+about section right here we have some
+more text present we have the contact us
+button present over here and it will
+take us to that particular section click
+on it and here we are at the contact us
+section of our website
+the next section contains categories of
+movies we have in our website we have
+six different categories present over
+here over your mouse cursor over any and
+you can see the animation in that
+particular category
+the next thing we have are the top rated
+movies the HOA effect you can see here
+as well but if you click on any image
+you can see the image size is larger now
+and we can also use these arrows to
+change the movie right you can check all
+the top rated movies over here now in
+the last part we have the contact us
+page wherein if we write our name email
+and message and then if we click on send
+message button a dialog box will appear
+on your screen and it will say something
+so let's try to do it here we'll write
+here caution
+then let's say we have a email ID over
+here we'll write here question at the
+gmail.com
+and then let's say we are writing
+something over here now click on the
+send message button you can see we have
+a dialog box which says thank you for
+contacting us we'll get back to you soon
+don't forget to check your email
+fine the task is simple right I hope you
+guys must have got the task by now all
+we have to do is to recreate this whole
+thing from scratch on
+so let's get back to the programming
+part without wasting any more time here
+we are in the vs code and we have all
+the required files present in our system
+already if I show you once you can see
+we have this whole folder present in our
+system where we have all the files
+images and everything we need to create
+this website we have the jQuery file the
+jQuery UI file and almost everything we
+need right you can see it over here we
+have images over here we have icons we
+have the jQuery UI file we have project
+content and many more things right
+so let's minimize this for now
+now let's move on to the HTML file first
+and we'll start by designing the layout
+of our web page or we can say website we
+have to create a preloader thing before
+we create the body of our website so
+we'll keep these small things in mind
+and later we'll see what vital part
+these small things play in making a
+website more interactive to the user so
+we'll start The Code by writing over
+here inside the body tag so let's use
+comments for different sections so we'll
+write here
+preloader fine so this is a comment now
+we'll start writing the code for Prelude
+so first thing first we'll write here
+dip we'll take a div tag
+we'll write a class so let's say the
+class name is
+preload now we'll close this div tag and
+inside this we'll create another div tag
+so we'll write here div
+class is equals to let's say
+loader
+file so we are done with preload we'll
+comment it out once again we'll write
+here
+reloader ends fine so our preloader ends
+over here
+now the next thing we have to do is we
+have to start writing the code for the
+head section of a website so we'll write
+here
+at section starts
+so now we'll write the code over here
+for the head section so the first thing
+we have to write here is we have to take
+the header tag we'll write a header
+class is going to be
+header for this and then we'll close
+this header Tag Away now inside this
+we'll write div
+class is equals to let's say
+container
+so we have to take so many div tags so
+keep these things in mind
+so the next thing we are going to write
+here is we are going to write here
+div
+now class is going to be let's say
+row justify
+content between fine and then we'll
+write here a line
+items at the
+Center
+fine so we have taken this class name as
+row justify content between and align
+items Center
+so now inside this what we'll do is
+we'll write here
+div
+class is equals to branding so we'll
+write your brand
+name fine now we'll close this div tag
+and inside this will take an anchor text
+so we'll write here a href is going to
+be
+index dot HTML so this is the link now
+what we'll do is we'll write here
+movie
+fine
+now after this div tag what we'll do is
+we'll write here
+if
+class is equals to
+nav toggle fine
+so this is the class for a navigation
+bar now inside this will write here
+pen we'll close this pen tag will keep
+it empty for now now after this Dev tag
+we have to write here
+nav class is equals to let's say nav
+we'll close this div tag now inside this
+we'll Define a
+items we'll write here home about
+categories top rated and contact find
+now inside this nav tag we'll write here
+un will take an unordered list now
+inside this unordered list we have to
+use the litec so we'll write a li anchor
+tag now inside this anchor tag we are
+going to write href is equals to
+home so this is the ID for home page so
+we'll write here
+home
+now we'll do the same for every category
+or we can say every item in the menu so
+we'll copy it from here
+we'll paste it
+five times fine so here we are now the
+next thing we have to do is we have to
+change the names so instead of home
+after we have about so we'll write about
+then we have the categories so we'll
+write here categories
+we have to change the ID as well so
+we'll write here
+category
+then after categories we have
+top rated movies so we'll write here top
+rated and the ID is going to be let's
+say
+so then we have the contactors fine so
+we'll write here
+contact and instead of home will right
+here
+fine so we are done with it we are done
+with the
+header so the next thing we have to do
+is we have to write here after this
+header
+we have to mention it over here that the
+header ends over here so we'll write a
+header and
+now we have to start the next section so
+the next section is going to be
+home section so we'll write here home
+section
+dots
+and after this we'll write the code for
+home section
+so the home section starts with the
+section tag we'll write your section
+class is going to be home
+so let's name it as home section this
+class we'll write here ID as well so
+let's say the ID is home
+now we have to create a shape over here
+if we move back to our website and if
+you go to the home page you can see we
+have a shape over here the shape is
+rotating 360 degrees so we'll create the
+shape first now for that what we have to
+do is we have to write here
+we have to close this section tag first
+now inside this section tag we'll
+mention a comment again so let's say
+we'll write here shape for this
+particular ship now what we'll do is
+we'll write here div
+class is going to be
+shape
+0 1
+so this is the class name now we'll
+close this div tag
+the next thing we are going to do is we
+are going to take another Dev tag we'll
+write here div
+class is equals
+container
+now we have to take another div tag over
+here we'll write here if class is equals
+to
+oh
+align items
+okay
+Center fine
+we have to close this depth tag over
+here now inside this we have to write
+another div tag so we have to take
+another div tag we'll write here div
+class is equals
+to home content
+and now over here what we'll do is we'll
+take another H4 Tech so we'll write it
+over here H4 and we'll write over here
+this thing we'll write download your
+favorite movie in just a click copy it
+from here we'll paste it inside the H4
+Tech
+now we are done with the heading so
+after this what we'll do is we'll take
+another heading we'll take H2 Tech we'll
+write here H2 and we'll write here
+welcome to
+Movie Mania fine
+so we are done with it now the next
+thing we have to do is we have to make
+these arrows over here so if we move
+back to our website you can see we have
+two arrows over here which takes us to
+the about a section so we have to write
+the code for these two arrows as well so
+after this we'll write over here
+inside commit so we'll write over here
+scroll down
+now we have to write the code over here
+so we'll write here a
+href is equals to
+about
+and then we'll write here class is
+equals to
+scroll down fine
+now we have to
+use icons so what we are going to do is
+we have already have these icons present
+in our system so we'll mention them over
+here we'll write here IMG
+SRC is going to be inside the images
+folder what we'll do is we'll move
+inside the icons and inside the icons we
+have this file over here arrowdown dot
+SVG so this is basically an icon so
+we'll write your Alt
+and inside this will write
+scroll down fine
+so this thing is done
+now the anchor tag is done so we'll move
+back from here now the home section ends
+over here so we'll write here
+inside the comments we'll write home
+section
+and fine
+so we are done with the home section
+let's check it out once save the program
+open it with live server and you can see
+we have all these things over here we
+have home about categories top rated
+contact and then we have two headings as
+well fine so we are not able to see the
+icon as of now we'll style it later on
+now let's move back to the programming
+part so the home section we are done
+with the home section the next section
+we have to work on is the about section
+so we'll write here about section start
+now the about section what we have to do
+is we have to write a section we have we
+are going to take the section tag again
+so we will write a class is equals to
+about section
+now the class is done we have to write
+the ID as well the ID is going to be
+about fine now inside the section tag we
+have to take another div tag so we'll
+write a div
+class is going to be container for this
+one as well
+and now inside this div tag what we are
+going to do is we are going to take some
+more div text we'll write here div class
+is equals to row
+so this is the class name
+now what we have to do is we have to
+write some more things about the image
+so we have an image already over here
+you can see if we move back to our
+website so we have this image over here
+as well now what we'll do is we'll write
+some code for this image as well so
+let's move back to the HTML file and
+we'll write here div
+class is equals to IMG box
+so this is going to be the name of her
+class
+and inside this we'll take another div
+tag and we'll write here
+plus is equals to shape
+zero so why we are doing here so because
+is because if you move back to our
+website you can see we have this shape
+over here as well so we'll style this
+shape as well later on in the CSS file
+for that we need to mention the class so
+that's why we are using here classes
+shape
+fine now after this what we are going to
+do is we are going to write here
+IMG so we are going to add the image now
+we will write here IMG SRC is going to
+be
+inside the IMG folder
+we have about.png and we have to mention
+the alternate here as well so we'll
+write here alternate
+as about this fine close the IMG tag
+and we are done with it now inside this
+div tag what we have to do is we have to
+write here div
+class is equals to about
+content
+and then we have this
+div is
+class row
+now inside this what we have to do is we
+have to mention the section title so the
+section title is about us so we'll write
+some code for that as well we'll write
+here div
+class is going to be
+section title
+now inside this what we are going to do
+is we are going to take the H1 tag and
+we'll write here
+about us fine
+after these two div tags what we have to
+do is we have to mention a paragraph
+here
+so the paragraph is this one over here
+so this is the paragraph This is nothing
+but a paragraph which most of the
+prototypes of any websites use so what
+we'll do is we'll copy it from here
+and what we are going to do is we are
+going to use the P tag inside the
+paragraph tag we are going to paste this
+fine
+so this is a paragraph now we are done
+with the paragraph tag as well
+after the paragraph tag what we have to
+do is we have to write here
+if
+we are going to take another div we will
+write here class so class is going to be
+stats for all the stats we have for our
+website now inside this div tag we are
+going to take another Dev tag we'll
+write here div class is equals to row
+and over here we'll write div
+class is equals to
+stat box fine so we are writing the code
+for these stats over here we have daily
+downloads movies available and happy
+clients right so we are writing the code
+for this only
+now after this what we have to do is we
+have to close this div tag and inside
+over here we have to write
+H2
+and inside H2 we'll write 150k
+plus fine now we have to write it over
+here H5 so let's say we are writing over
+here daily downloads
+so we are done with it the next thing we
+have to write here is div
+class is going to be stat box again
+now inside this div tag we'll write H2
+The Heading is going to be 2500 Plus
+and then we'll write H 5 fine for H5
+what we'll write here is movies
+available
+so we have to do this thing for
+more time we'll copy this piece of code
+from here we'll paste it here
+the class will remain the same now
+instead of 2500 we have to mention the
+happy clients over here so we'll write
+here
+1 million plus and instead of movies
+available we'll write
+happy clients fine
+so we are done with it now after this
+particular div tag what we have to do is
+we have to mention the contact Button as
+well so we will mention the heading over
+here we'll write here
+contact button and we'll write the code
+over here so the code starts with a
+href is equals to Hash contact this is
+the contact this is the ID basically for
+the contact page for the contact Section
+so then we'll write a class as
+button button one
+and we'll write here
+contact
+fine
+so the anchor tag is closed we are done
+with the section so
+we are done with this particular section
+as well so what we'll do is we'll write
+here
+about us ends over here so we'll write
+about this and or we can save the about
+section n
+so we are done with the about section as
+well save the program for now move to
+the browser and
+here you can see it's not
+okay it's working so here you can see if
+I increase the size of a browser you can
+see this is a about section we have an
+image over here we have about us we have
+all the stats we have daily downloads of
+150 000 and plus we have movies
+available over 2500 and we have 1
+million plus happy clients then we have
+a link over here for the contact us so
+we'll create a button later on in the
+CSS part for this
+so let's move on to the programming part
+again
+now the next section we have to mention
+over here is the category section so if
+I take you to this website you can see
+we have categories over here we have six
+different categories
+so we have to write the code for this
+part as well so let's move ahead and
+write the code for categories as well
+so we'll write here
+categories
+and we'll write here section
+DOT fine
+so the category section starts over here
+what we'll do is we'll take a section
+tag again so we'll write a section
+class is equals to let's say service
+section
+and then we have ID fine so ID is going
+to be
+will close the section tag now inside
+this section tag we'll take a div tag
+div class is going to be
+container
+and inside this will take another div
+tag we'll write here div class is true
+and inside this will take another div
+tag so we'll write here div class is
+equals to
+section title so we are using all these
+classes because we'll need them in the
+CSS part so what we'll do is we'll write
+here
+H1
+now inside H1 we'll write
+categories
+fine now over here what we'll do is we
+are going to take div class is going to
+be row
+and what we'll do is we'll write here
+the code for all the category items so
+basically we have six different category
+items we have six different categories
+of our movies so if you can see it over
+here we have Western mystery drama
+animation comedian fantasy so we'll
+write the code for them now inside here
+what we'll do is we'll write over here
+first we have to mention let's mention
+it over here what we are doing here so
+we'll write here
+categories
+start fine
+so what we'll do is we'll start writing
+the code over here we'll take a div tag
+class is going to be
+service item
+so we'll write here service item
+as the class name and inside this we are
+going to take another Dev tag we are
+going to name it as
+service item
+inner so this is going to be another
+class now inside this what we are going
+to do is we are going to write here the
+image code right we are going to add the
+image over here so we'll write a IMG
+SRC is going to be
+IMG slash
+so we have service folder so we'll write
+a service now inside the service we have
+one dot PNG as a image so we'll write
+here alternate as
+category one
+now close this after this we have to
+take another div tag we'll write a div
+plus is overlay so we'll write here
+class is overly
+now inside this what we'll do is we'll
+write the heading so basically we are
+going to mention the category name over
+here so we'll write here
+H3
+and inside H3 we'll write
+Western fine so this is going to be the
+first category
+now so the first service item or we can
+say the first category ends over here
+now after this what we have to do is we
+have to add five or six more categories
+right we have to add six categories to
+our website so what we are going to do
+is we are going to write the code for
+second category of a movie so we are
+going to copy this from here
+and we are going to paste it over here
+so the class name will remain the same
+the class name will remain remain as
+service item then we have the inner
+class name as service item inner then
+inside this image source what we have to
+do is we have to change the image over
+here we'll write 2 dot PNG over here the
+overlay class will remain the same now
+instead of Western we have to write here
+mystery so we'll write you a mystery
+so this is a second category now what we
+have to do is we have to copy this piece
+of code again so we have to do it for
+six categories right so we are we are
+already done with two so we'll paste it
+four times
+fine now what we have to do is we have
+to
+change the image name over here so we
+have three and then instead of mystery
+we have
+Drama Fantasy comedy and lastly we have
+animation so this one will be from fine
+so we'll write your drama then we have
+here is
+full dot PNG then instead of mystery
+what we have here is
+fantasy
+so we'll write your fantasy and after
+fantasy we have this image name as Five
+Dot PNG and
+the category name is going to be comedy
+fine so we'll write here
+comedy at number Fifth and lastly we
+have animation so for animation the
+image is 6 dot PNG and instead of
+mystery we'll write here
+animation
+fine
+so we are done with it now the
+categories ends over here so
+we have to close the section tag as well
+so basically what we are going to do is
+we are going to write here
+categories section ends so we'll write a
+category section ends over here
+now what we have to do is we have to
+save this program move back to the
+browser and you can see it over here we
+have Western we have mystery we have
+Drama Fantasy comedy and animation we
+have all the six categories right we'll
+style them later according to our needs
+in the CSS part so for now what we are
+doing is we are creating the layout of
+our website so this will remain the same
+now let's move ahead and we'll write the
+code for next section so the next
+section we have is the top rated section
+so we'll write here
+top rated section
+start
+now what we have to do is we have to
+take the section tag again so we'll
+write a section
+class is equals to let's say work
+section so this is going to be the name
+of our class for top rated section so
+we'll write here IDs top now fine
+now the next thing we have to do is we
+have to write a div class is equals to
+container
+and then we have
+div class is equals to row here fine now
+inside this div with class as row what
+we have to do is we have to mention the
+section title the section title is top
+rated movies so this part will remain
+the same for all the sections so we'll
+write here div
+class is equals to
+section title so we'll write here
+section title
+and after this we'll write here
+H1 and then we'll write here
+to operate it
+movies
+fine
+so we are done with the heading now
+inside this what we have to do is we
+have to mention all the six different
+top rated movies we have right so what
+we are going to do is we are going to
+write here
+if class is going to be row again now
+inside this div tag what we have to do
+is we have to mention
+all the six top rated movies fine so
+we'll write here
+top rated movies
+start
+now after this what we are going to do
+is we are going to take another div
+class is going to be work item
+and now inside this div tag we have to
+write here div
+class is going to be work item inner
+fine
+now inside this we have to add images so
+we'll write here IMG we are going to add
+two images basically so we'll discuss it
+later why we are doing so
+so we'll write a IMG SRC and SRC is
+going to be
+IMG slash
+works
+and inside the works folder we have
+another folder as thumb now we'll add
+one dot jpg from here this is the base
+file we'll write here data large
+and inside the data large what we are
+going to do is we are going to write
+here IMG
+slash
+works
+slash large
+and we have this one dot PNG over so
+these two files are basically same files
+so they are saved with different names
+one is a PNG file and another one is the
+JPG file we'll write here Alt
+will write here
+movie one fine
+now close this and
+after this what we have to do is we have
+to create a div tag with class s
+overlay and we have to write something
+over here we have to write the heading
+so the heading is going to be
+doctors
+strange fine so this is the heading of
+our first movie now what we have to do
+is we are done with the first item so
+what we'll do is we'll copy this piece
+of code from here we'll paste it here
+for
+the second movie the second movie we
+have the image is
+2.jpgn2.png now instead of Doctor
+Strange the second movie name is
+Captain Marvel
+fine so we'll write here Captain Marvel
+then we'll
+copy this and we'll do the same for
+almost all the movies right for all the
+top rated movies
+so we are done with this part we are
+done with Doctor Strange and Captain
+Marvel then we have three dot PNG and
+jpg as the file name or as the image
+name so instead of Captain Marvel we
+have Aquaman
+so we have all the movies from repeat so
+we have movies from Marvel Universe and
+from DC Universe I believe that you guys
+might be a fan of any of these universe
+so let's move ahead and instead of
+Aquaman we have 4.jpg and 4. PNG as our
+next file name and instead of this
+Captain Marvel what we have here is
+X-Men fine
+then
+over here we have to mention the file
+name is five
+and instead of movie name but we have to
+write here after X-Men is
+guardians of the
+then the last movie we have is
+the argument so we'll write here the
+Dark Knight
+and we are done with the
+top rated movie part as well so the work
+section ends over here or we can say the
+top rated movie section ends over here
+so we'll mention it over here we'll
+write here
+top rated end so we are done with the
+top rated section as well save the
+program once move to the browser
+and if we check it over here you can see
+we have all the movies we have dark
+knight Guardians of the Galaxy X-Men
+Aquaman Captain Marvel and Doctor
+Strange so it looks
+really simple for now right we'll change
+them in the CSS part as I've mentioned
+it earlier as well we'll do it in the
+CSS part so don't be so stressed for now
+let's move ahead and we'll write the
+code for contact us section so we'll
+mention it over here
+we'll write here
+contact sections dots
+and now we'll start writing code for
+contact Section
+so the first few things will remain the
+same we'll write your section now inside
+section we'll mention class is
+contact Section
+now the ID is going to be
+contact
+and we'll write here inside the section
+tag
+if class is going to be
+container
+and inside this div tick we have another
+div tag with class is through
+now inside this we have div with classes
+IMG box so we'll write a IMG box as
+class name
+now inside this we'll write
+div class is
+section title
+so this is the section title so section
+title is contact us so we'll write here
+inside H1 tag
+contact us
+over here
+now what we have to do is we have to add
+a form over here so what we'll do is
+we'll write it after this div tag so we
+are done with the heading part basically
+now after this we are going to write
+here
+div class is going to be row for the
+form
+will write here div
+class is
+contact form
+now inside this div tag we have to
+create a form so we'll use the form tag
+for it we'll write your form class is
+going to be form
+and then we have to write here div class
+is row
+inside this div tag we have to take
+another div tag so we'll write here div
+class is
+left
+input
+group
+this is a class name then we have label
+as
+name
+will write here
+input
+type is going to be text
+then we'll write here placeholder
+placeholder is going to be
+your name here
+and then we have classes input
+control
+fine this is a class name
+so we have added a placeholder over here
+for name now similarly what we have to
+do is we have to add these placeholders
+for email or phone and for your message
+so we'll write here
+div class is equals to write this is
+going to be present at the right side so
+we'll write here input
+group
+now we'll write here label label is
+going to be email or
+phone
+so this is the label for a second
+placeholder
+now we are going to write here the same
+thing we'll write here input
+type is going to be text
+placeholder is going to be email or
+phone here so we'll write here your
+email or
+phone here
+and we'll write here classes
+input control
+and that's it so we are done with this
+placeholder as well
+now we have to write some code for the
+text area basically for the message box
+we are going to write here
+div class is going to be row again so
+we'll write a div classes row
+now inside this we are going to write
+here div
+class is input group so we'll write here
+input
+group
+now we are going to mention the label
+over here so we'll write here label and
+the label is going to be message
+fine then we are going to write here
+text area the text area
+class is going to be
+put control once again so we'll write a
+input control and then we have
+placeholder which says your
+message here
+and we'll close this text area
+fine so we are done with this part as
+well now what we have to do is we have
+to create the form button for send
+message so for that what we'll do is
+we'll write here
+div class is
+form button
+and inside this div tag we have to take
+a button so we'll write here button type
+is going to be
+button and then we have class is
+return button one
+ID is going to be
+button again then we have the button
+name so the button name is going to be
+send message
+now after this div tag what we have to
+do is we have to add a dialog box over
+here so we'll write here
+div
+ID as let's say dialog for this dialog
+box
+then we'll write here thank you for
+foreign
+will get
+back to you soon
+don't forget
+check your email
+fine
+so this is the text that will be present
+inside the
+dialog box fine
+so we are done with it we are done with
+the form tag now inside the section tag
+we have to mention some more things so
+we are going to mention the things
+present after this form so if we move
+back to this website over here you can
+see we have this form over here we have
+the send message button now we have to
+mention these three things we have to
+mention address phone email and then we
+have some icons for Facebook Twitter
+LinkedIn and Instagram
+fine so we'll write the code for this
+thing only now
+so let's move back and now after this
+particular Dev tag what we have to do is
+he have to create another Dev tag we'll
+write here div class is
+row
+now inside this div tag we have to write
+here div class is
+contact info this is going to be the
+class for this particular div tag now
+inside this we have to take another Dev
+tag we have to mention the class is row
+over here
+now what we'll do is we'll write over
+here
+if
+class is equals
+info item and we have to mention address
+over here so we'll write a H5
+address and
+we have to write here address now after
+this address we have to mention our
+address so we'll mention it inside the
+paragraph tag so we'll write a p now
+mention the address over here we'll
+write here sector
+let's say
+XYZ
+and
+website is present in USA so we'll write
+a USA then we'll write here
+some number so let's say this is our
+address now after this Dev type we have
+to mention the phone number here so what
+we'll do is we'll copy this from here
+we'll paste it here the class name will
+remain the same The Heading will change
+too
+phone and we have to mention the phone
+number over here so we'll write here
+nine one and then we'll mention
+some number fine
+so this is the number and then we'll
+copy it from here and we'll do the same
+thing for
+email as so we'll write here email in
+place of phone
+now we have to mention the email of our
+website so we'll write here
+Movie Mania at the rate
+movie.com
+fine
+so this thing ends over here we have all
+our Dev text ending over here we have
+the section tag
+but before we close the section tag so
+what we have to do is we have to include
+the icons for Facebook Twitter LinkedIn
+and Instagram
+fine so we have to add them as well
+so what we'll do here is we'll write
+here if
+class is going to be row again
+now inside this we'll write div
+class is going to be Social Links so
+we'll write here
+social
+links
+now inside this we have to mention them
+we have to write a anchor tag we'll
+write here hdf
+href is say hash for now we'll write a
+title title is going to be
+Facebook
+and then we have to add the image or we
+can say the icon so we'll write here IMG
+SRC is going to be inside the IMG folder
+we have this
+icons so we'll write a icons and inside
+this we have
+facebook.svg fine so this is the icon we
+have already downloaded we'll write here
+Alt
+alt we have to mention here is
+Facebook
+we have to close the IMG tag and that's
+it we are done with the Facebook part
+so what we'll do next is we'll copy it
+from here
+we'll paste it here again four times we
+have Facebook then we have
+Twitter LinkedIn and Instagram right so
+we'll write a title as
+Twitter and we have this file name here
+as
+twitter.svg will change the alternate as
+well we'll write here
+Twitter then we have the same thing for
+LinkedIn so we'll write a link in
+the icon name we have here is LinkedIn
+dot SVG will change the alternate as
+well will right here
+LinkedIn
+and finally we have Instagram as well so
+we'll write Instagram
+the icon name is
+instagram.svg then we have
+Instagram over here as well
+so we have added all the icons over here
+we are done with the contact Section as
+well so this is a contact Section if you
+can see it starts from here we have
+added a form wherein we have to put name
+email and a message then we have a send
+message button over here and finally we
+have
+these addresses and social media links
+fine
+so we are done with this part save the
+program now
+and we'll move back to uh browser so
+here you can see
+at the bottom we have these
+icons so the icons are pretty large in
+size
+will
+style them later according to a need in
+the CSS part so for now we have these
+four icons we have Facebook Twitter
+LinkedIn and Instagram so you can see we
+have everything over here we have
+address we have phone email and we have
+the form we have to write a name message
+we have to write a message over here we
+have to write a email and then we have a
+button for send message
+you can see we have written over here
+thank you for contacting us we'll get
+back to you soon don't forget to check
+your email so everything is working
+totally fine till now let's move ahead
+and we'll write some more code over here
+after this particular section we have to
+mention the copyright section as well so
+for that we have to write here
+p
+class is going to be
+copyright so we'll write your copyright
+and inside this we'll write
+copy
+then we have semicolon it says 2022
+fine so we'll write here Movie Mania in
+capitals
+and that's it we are done with the
+footer part as well we are we have
+mentioned the copyright as well now the
+last thing we have to do is to we have
+to mention the light box so the light
+box is basically we move back to our
+website and here you can see if we click
+on any of these images from the top
+rated movies you can see that particular
+image getting larger in size and we can
+change it right so we have to write the
+code for this particular light box as
+well so we'll move back to our HTML part
+and we'll mention it over here we'll
+write here
+light box
+thought
+and we'll write here
+diff class is going to be light box for
+this particular light box and then we'll
+write here
+div class is
+IMG box so inside this div tag what we
+have to do is we have to take another
+div tag we'll write here Dev class is
+light box close
+we'll do most of these things in the
+jQuery part so for that we are taking
+all these classes and all so we'll write
+here 10 times
+now we have to write it over here like
+this then we have
+the image source so we'll write the AMG
+SRC is going to be IMG inside the works
+folder we have this
+large files so we'll write a large then
+we'll write here
+2 dot jpg
+then we have the class is
+lightbox IMG so we'll write a lightbox
+IMG and we have to mention the
+alternators also available at IMG one
+and then we have to mention the caption
+as well so we'll write here
+div class is equals to
+lightbox caption so we'll write a light
+box caption
+and we have to close this tip tag now we
+have to write here
+div class is
+light box
+category
+we have to close this div tag and we'll
+keep this empty for now
+fine we have to do this for all the
+images so what we have to do is we have
+to write here after this particular div
+tag we have to mention it inside over
+here we have to take another div tag
+we'll write here diff
+class is going to be
+lightbox counter
+so we'll write a lightbox counter we
+will close the zip tag
+now again what we have to do is we have
+to take another div tag over here we'll
+write a class is
+lightbox controls
+now we have two icons over here we have
+the previous icon and next icon fine so
+we'll write here div class is going to
+be
+trip for this particular
+previous icon
+will write IMG
+SRC is going to be inside the images
+folder we have this
+icons folder now inside the icons folder
+we have this file named
+Trev dot SVG and we have the alternate
+to this is
+previous
+we'll close this image tag over here
+we'll
+Define another div tag will write here
+div class is equals to next
+and we'll write here IMG
+SRC is going to be inside the images
+folder we have icons
+then we have
+next dot SVG fine we'll write here
+alternate as
+next
+and we are almost done with the light
+box as well so the light box ends over
+here
+will write here
+this is slide box end and that's it
+we are done with the HTML part now save
+the program and you can see here on the
+web page we have all the website data
+present over here we have all the images
+and everything present over here the
+next thing we have to do is to style our
+website using CSS for that we have to
+move to a CSS file now and you guys know
+the drill so here you can see we are
+using some fonts for our website you
+guys can use the CDN link from the web
+and you can use any font of your choice
+so let's start styling our website now
+what we'll do is we'll write here
+firstly we'll write the code for body
+Tech so we'll write a body
+then inside this what we'll do is we'll
+write here
+margin
+so margin is going to be 0 initially now
+we'll write you over here line height so
+we'll write here line height line height
+is going to be 1.5
+now after this we are going to write
+here background color so we have some
+predefined background colors with us you
+guys can use any of your choice for now
+we'll write here F3
+if
+2 f 1 so this is the code this is some
+sort of white color we can see now the
+next thing we are going to write here is
+we are going to write the code for body
+then we have the code for input
+and we have the code for text area as
+well so we'll write a text area
+and then we have the code for button so
+we'll write a button now inside this
+what we'll do is we'll write your font
+family so font family is going to be
+foreign
+the next thing we are going to do is we
+are going to write here font weight so
+we'll write your phone to it and the
+font weight is going to be 400
+now moving ahead what we'll do next is
+we'll write over here
+we are done with these three different
+tags so the next thing we are going to
+write here is we are going to write a
+asterisk and
+will write here border
+okay so we'll write here box
+sizing so we are writing here box sizing
+and the Box sizing is going to be border
+box then we have the margin again and
+the margin is going to be zero fine
+so we'll write here 0 the next thing we
+have to write here is the code for the
+container class so we'll write a
+container
+then we'll write your max width Max
+width is going to be
+1170 pixels and then we have margin over
+here so margin is going to be Auto
+now we are done with the container class
+as well the next thing we have to
+mention here is the row class so if we
+move back to our HTML file you can see
+we have used the class as Row for almost
+everywhere you can see we have the class
+results row over here we have classes
+row almost everywhere in a HTML file
+right so we'll write the code for row
+now so the class row is going to be
+display as flex and then we have Flex
+rep so we'll write your Flex strap and
+flex wrap is going to be wrap again
+now after this we'll write here
+the code for Align items class so we'll
+write a DOT align item
+and the class name is align item Center
+so we'll write here align items at the
+Center for this particular class
+then we have
+justify
+content between so we'll write here
+justify content between so basically we
+have used these classes in HTML part so
+we'll write here
+inside the justify content between we'll
+write a justify content at
+Pace between not space around we'll
+write a space between
+then after this justify content between
+class we have the animation for our box
+so we are talking about this particular
+box over here you can see in the website
+we are talking about this particular box
+which is rotating
+so for that we'll write here at the rate
+keyframes so we'll write here keyframes
+then we'll write a Ani 0 1
+and we'll write here inside this at zero
+percent what will happen is it will
+transform itself and it will rotate so
+we'll write here rotate it
+0 degree fine
+we have to mention here hundred percent
+as well so we'll write here at hundred
+percent we want to transform it
+and what we want to do is we want to
+write a rotate at 360 degrees so we'll
+write here 360 degree
+now the next thing we have to do is to
+style the section title so for that we
+have the section title class so we'll
+write your section
+title and inside here what we'll do is
+we'll write
+Flex so Flex is going to be 0 comma
+zero space hundred percent then we have
+Max width so we'll write your max weight
+at
+as hundred percent
+and then we have margin bottom so we'll
+write a margin bottom is
+60 pixels and we have adding as 0 and 50
+pixels fine
+now what we have to do is we have to
+mention the section title for H1 so if
+we move back here you can see so inside
+here what we have to do is we are going
+to
+style the H1 heading so H1 heading is
+present inside the section title so you
+can see we have the section title class
+over here
+in a HTML file so if we move down to the
+about section you can see it over here
+we have this class as section title and
+we have the heading is about similarly
+we have this thing for categories for
+top rated movies and for contactors so
+we'll style all of them so what we are
+going to do is we are going to write
+here dot section title space H1 we are
+going to style The Heading one so we'll
+write here this play as inline block
+so we'll write a display as inline block
+then we have font size as 40 pixels and
+color
+so color is going to be
+black so we'll write here
+this
+and then we have font to it so font
+weight is going to be
+700 for the section title then we have
+margin as
+0 for the section title and we have
+position s
+relative fine so we are done with the
+section title as well now what we have
+to do is we have to write here some more
+code so we'll write here Dot
+section title space H1 then we'll write
+here
+before
+now what we are going to do is we are
+going to write here content
+and we are going to write here nothing
+then we have box sizing so we have box
+sizing as
+border box then we have
+position as
+absolute so we'll write here absolute
+then we have left so for left we have
+the value as 0 then we have bottom
+then bottom value is going to be minus 5
+pixels
+we have width as well so we'll mention
+the width here width is going to be 80
+pixels now
+now the next thing we are going to do is
+we are going to write here height
+height is going to be 3 pixels
+then we have background color as well so
+background color is
+hash FF
+9800 so this is the background color
+now the next thing we have to mention is
+for the button
+so we have the class as button
+0 1 now inside this what we are going to
+do is we are going to write here
+background color as
+the same will write here 9 is 0 0 then
+we have color the font color basically
+so the font color is going to be
+white or we can say off white so then we
+have border border is going to be 2
+pixels
+solid
+and
+transparent fine
+we are done with the Border we have to
+mention the padding as well padding is
+going to be 10 pixel and 35 pixels
+then we have border radius as well so
+we'll write your border radius and the
+Border radius is going to be 30 pixels
+so next up we have
+line height
+and line height is going to be 1.5
+then we have cursor as
+point
+so what we are doing here is we are
+basically styling the button so the
+button with class is button 0 1 will be
+styled after this particular piece of
+code save it now
+move back to the website and
+if you can see here if we move back to
+the top section you can see our Button
+as
+orange in color and the text inside it
+is white in color so if you can see here
+we have this button all over here we
+have this contact us Button as well so
+the buttons are ready to use
+now the next thing we have to mention
+here is the text decoration so we'll
+write here text decoration is going to
+be none then we have font size
+font size is
+going to be 16 pixels
+then we have font weight as well
+so font fit is going to be 600 then we
+have display
+so we'll write here display as inline
+block
+we'll write inline block then we have
+transition
+transition is going to be all
+0.5 second
+fine and then we have if
+so we are done with it the next thing we
+are going to do is we are going to write
+here button 0 1 over but if we hover
+over this particular button now on
+hovering the background color is going
+to be
+transparent
+so we'll write a background color as
+transparent border color
+border color is going to be the same so
+we'll write here ff980
+then we have the color as well so we'll
+write a color as hashed ff9800
+so we are done with this save it now
+move back to the website and
+look for the button over here you can
+see we have this button and on hovering
+you can see nothing is happening as of
+now so let's
+see what's wrong over here so
+we have forgot to put the colon over
+here and now I think it will work fine
+save it and you can see it's working
+totally fine now on hovering the button
+is changing and similar thing will
+happen with this particular button is
+you can see it's working totally fine
+moving ahead the next thing we have to
+mention over here is on Focus so we'll
+write here button 0 1
+then we'll write your focus
+and we'll change the outline to none
+fine
+so we are done with basic CSS part you
+can see the buttons are working fine now
+the next thing we have to do is to write
+the code for preload so we'll write over
+here
+reloader so that it will be easy for you
+guys to understand now for preloader
+what we have to do is we have to access
+the preloader class fine so we'll write
+a preloader this is the class name now
+we'll write your position
+as fixed
+then we have left
+as 0
+top as zero then we have right and
+bottom as well so we'll write here right
+as 0 and
+bottom is zero fine background color so
+we'll write your background color we'll
+write here hash
+this is the background color so we have
+to mention here this it's sort of black
+then we have the Z index so we'll write
+here Z index and the Z index is going to
+be one zero nine nine
+then we have the display as
+flex and we have to align the items at
+this Center fine
+now we have to justify content so we'll
+write a justify content at the center
+then we have transition again so we'll
+write here transition
+and the transition is going to be all at
+0.6 seconds and it will be ease fine
+the next thing we have to write here is
+Dot
+preloader
+Dot
+loaded
+then we have to write here
+visibility as hidden
+and we have the opacity as 0
+then we have Z index again so we'll
+write here Z index as minus 99
+fine so then we'll write here
+tree loader
+Dot
+load so here what we'll do is we'll
+mention the height
+height is going to be 30 pixels then we
+have
+width width is going to be 30 pixels
+again and we have border so we'll write
+your border
+border is going to be 2 pixels solid in
+color
+and transparent
+no it's not going to be transparent we
+have to write here ff9800
+then we have border right
+borderite is going to be
+two pixels
+solid and
+transparent so we'll write a transparent
+then we have
+border radius
+and Border radius is going to be 50
+percent
+then we have animation animation is
+going to be a and I 0 1
+then we have two seconds and it is going
+to be linear and
+infinite fine
+so we are done with this as well now the
+next thing we have to do is
+we have
+to style the header partner so save it
+now we'll move back to the web page and
+here you can see the website is working
+the loader is working right now
+so let's
+start trading code again over here
+will write here
+again so
+you'll get your header then we'll write
+your dot header and
+we are going to style the head attack
+now we are going to write your position
+as absolute
+then we have left
+left is going to be zero then we have
+right
+right is going to be nothing because we
+have to write here top
+so we'll write a top as 0 then we have
+width
+width is going to be 100 percent
+and
+we have Z index again so we'll write
+here Z index as
+99
+fine then we have transition transition
+is going to be all
+0.5 second and
+ease fine
+then we have to write the code for fixed
+Adder so we'll write here Dot
+header
+dot fixed
+so inside this we'll write background
+color is
+white so we'll write here
+this then we have position and position
+is going to be fixed
+fine then we have the header brand name
+so we have to style the brand name as
+well so we'll write here Dot header Dot
+brand name
+and we have to write here
+padding padding is going to be 0 and 50.
+fine so this thing is working fine now
+the next thing we are going to write
+here is we are going to write here dot
+header dot brand name dot anchor Tech
+so we'll write it a now what we are
+going to do is we are going to write a
+text decoration as
+none then we have font size font size is
+going to be
+30 pixels then we have color so we'll
+write here color
+then we'll mention this particular color
+white color
+and we have text transform as well so
+we'll write a text transform as
+uppercase
+then we have onto it so we'll write your
+phone to it font weight is going to be
+900 then we have
+letter spacing letter spacing is going
+to be 2 pixels and
+and will write your transition as all
+0.5 second and ease
+fine next thing we have to do is we have
+to write here
+color so we'll write here Dot
+header
+Dot
+fixed Dot
+brand name and then we have to write
+here a and we have to write here
+color is
+black fine now we have to write some
+more code over here we'll write here
+header
+Dot
+nav toggle
+and we have to write here inside this is
+width width is going to be 40 pixels
+then we have height
+it is going to be 34 pixels
+we have the Border as well we'll write a
+border
+one pixel
+solid and
+white in color fine
+then we have
+border radius as 3 pixels and
+cursor as pointer
+then we have display as well we'll write
+your display as flex and
+will align items at the center so we'll
+write here align items at the center
+then we have justify content at this
+enter
+finally we have transition here as well
+we'll write a transition all 0.5 seconds
+and ease
+then we have display as
+none
+fine so let's finish the header part
+first we'll write a DOT header
+Dot
+fixed
+dot nav toggle
+and inside this we'll write border color
+and the Border color is going to be
+black
+then we have to write here
+Dot
+header
+dot nav toggle space pen we are going to
+write the code for span tag which we
+kept empty in the HTML part we'll write
+here height
+is going to be 1 pixel and then we have
+display
+is going to be block then we have width
+width is going to be 16 pixels
+then we have background color so we'll
+write a background color as
+White then we have position as
+a relative and
+transition as
+all 0.5 second and ease
+fine lastly we'll write here Dot header
+space
+dot nav toggle space
+pen
+and we have to write the code for before
+and
+after find so we'll copy this from here
+we'll paste it here and instead of
+before we'll write here after
+we'll remove this comma and now we'll
+write the code now what we have to do is
+we have to write here content
+content is going to be
+this then we have position as
+absolute
+then we have left
+we will write your left as 0 then we
+have top as zero
+we have height we will write here height
+is 1 pixel and
+width
+hundred percent
+fine it will take hundred percent of the
+width then we have background color as
+white again
+so we'll write here this and we have
+transition again so we will write here
+transition and transition is going to be
+all at 0.5 seconds and is over here
+then we have Dot
+add a DOT
+fixed
+dot nav toggle and span
+fine then we'll write here dot header
+Dot
+fixed
+dot nav toggle
+then we have to mention it for before
+and the same thing for after so we'll
+write here header
+then we have
+fixed then we have snap toggle then we
+have this thing for
+after
+fine so we have to remove the space from
+here and now inside this what we have to
+do is we have to write here
+background color as
+black then we have to write here Dot
+header
+Dot
+nav toggle
+paste pen
+we have to write here before
+and after this we have to write here
+transform
+transform and will translate it to minus
+6 pixels we will write here Translate
+it to minus 6 pixels fine the same thing
+goes for after we have to
+copy this from here paste it here again
+instead of before we'll mention after
+over here we'll write here after
+and after this we'll write a six pixel
+instead of
+-6 fine the next thing we have to
+mention over here is
+dot header then we have dot nav
+and inside this will mention
+adding as zero space 15 pixels
+fine
+now we have to mention the UL tag as
+well so we'll write here dot header
+again
+then we'll write your dot nav and we
+have the
+UL tag so we'll write a un for the
+unordered list list style is going to be
+none
+and we have the margin as
+0 and we have
+heading as 0 and after this we will
+write here Dot
+header space Dot
+net
+inside the UL tag we have to access the
+list as well so we'll write the code for
+that now we'll write here display as
+inline block so we'll write inline block
+and we have the margin left
+as 30 pixels
+for the list now the next thing we have
+to mention over here is
+for the anchor tag present inside the
+list tag so we'll write your Dot
+nav
+space
+UL space Li
+sa now after this we have to write here
+text decoration text decoration is going
+to be none
+then we have font size so we'll write
+your font size as
+16 pixels and we have this
+font weight is 600
+we have color
+as
+white so we'll write here this then we
+have padding
+and padding is going to be 25 pixels and
+zero fine then we have display is
+block and we have transition as
+all 0.5 second
+easily
+find well right here dot header
+paste dot fixed
+page dot nav
+u l l i e
+then we have color is
+black and after this what we have to do
+is we have to write here dot header
+dot fixed then we have dot nav
+we have UL we have Li
+a and then we have to write here Hoover
+after this we have to write here Dot
+header
+Uli a on Hover
+so we'll write here hover
+we have to remove the space from here as
+well so we are done
+with this now after this what we have to
+do is we have
+to write here inside this color is going
+to be
+this one so we are done with this part
+as well save the program and let's check
+back at the web browser if it's working
+or not you can see it over here we are
+not able to find all these elements for
+now
+so what we are going to do is we are
+going to reduce the size over here and
+you can see we have all the icons
+present we have home about categories to
+operated in contact so it's working
+totally fine as of now let's move ahead
+and now we'll do the styling part for
+header section or we can say for the
+home section sorry so we'll write here
+home section
+and we'll comment this out fine now
+let's write the code over here we'll
+write your home section first so we'll
+write here dollar dot home
+section and we have inside this
+Min height Min height is going to be
+100 viewport height so we'll write here
+100 VH then we have background image so
+we'll write your background image as
+URL and
+will mention the URL here we'll write
+you node dot slash IMG inside this we
+have this
+movie bg.png and we have the background
+image now so we will write your
+background
+size and we'll write here cover then we
+have background position so we'll write
+a background
+position so we'll write a background
+position as Center fine
+the next thing we have to do is we have
+to write a position as relative then we
+have
+the Z index so we'll write here Z index
+as 1 then we have padding so we'll write
+a padding as 0 and 15 pixels
+and then we have
+section will write your home section
+before
+then we'll write your content so we'll
+write a content
+and content is going to be this again
+then we have position
+position is going to be absolute then we
+have box sizing so we'll write a box
+sizing we'll write in our border box
+then we have left as 0
+we have to write a 0 and here we have
+left as 0 then we have top right and
+bottom as well so we'll write your top
+as 0
+right as 0 and
+bottom is a zero fine then we have
+background color and background color is
+going to be black
+then we have opacity opacity is going to
+be 0.7 then we have Z index again
+so we'll write here Z index as minus 1
+and that's it the next thing we are
+going to do is we are going to write
+here dot home section space Dot
+shape 0 1
+so we have that shape present which is
+rotating so we'll write your position as
+absolute
+then we have height so we'll write a
+height as 30 pixels
+we have width again as 30 pixels so
+we'll write your width as 30 pixels
+then we have
+border so we'll write your border as
+2 pixels
+solid and
+of this particular color fine now we'll
+write here right right is going to be
+5 percent
+then we have top as well so we'll write
+here top top is going to be 20 percent
+so we'll write a top as 20 percent and
+we have the animation so the animation
+name is ani01
+we have five seconds we have linear
+and we have infinite
+fine
+so the next thing we have to style is
+going to be the home section and then we
+have the row class so we'll write here
+dot row
+we'll write your main height and when
+height is going to be 100 Cube Port
+height so we'll write here 100 VH
+then we have
+dot home section dot home content so
+we'll write your home section home
+content
+and we have this thing over here and
+we'll write your Flex
+Flex is going to be zeros to zero speeds
+hundred percent
+so we'll write you a hundred percent
+then we have Max width Max width is
+going to be 100 percent
+and then we have text align at the
+Center fine
+the next thing we have is the
+heading so we'll write here home
+section so we'll write your home
+sections please
+home content so we'll write your home
+content
+then we'll write here the heading so HP
+is the heading we'll write here H4 will
+write your font size and font size is
+going to be
+60 pixels then we have okay the font
+size is going to be 20 pixels not 60.
+then we have the color so color is going
+to be
+white so we'll
+reduce this then we have margin so we'll
+write a margin is zero
+then we have
+to style the h2 tag as well so we'll
+write here dot home sections paste dot
+home content space H2
+then we have the font size so we will
+write your font
+size and font size is going to be 60
+pixels for this then we have
+margin so margin we have to write here
+as 0 and
+color we also have to mention over here
+color is going to be white again
+then we have text transform
+text transform is going to be uppercase
+then we have font weight so font weight
+is going to be 900
+then we have letter spacing
+and lattice spacing is going to be 10
+pixels fine
+then we have
+to write the code for scroll down if you
+guys remember those two arrows so we'll
+write the code for that as well so we'll
+write your home section Dot
+scroll down
+then we have inside this we have
+position as
+absolute fine we have left
+as 50 percent
+now we have bottom as well so we have
+bottom as
+30 pixels
+then we have height
+and width as well so we'll write here
+height as 30 pixels and width is
+30 pixels fine then we have margin left
+as well so we'll write a margin left as
+minus 15 pixels and we have animation
+again so we'll write animation
+scroll down okay we have to write this
+scroll down
+then we have two seconds and we have
+East we have infinite
+fine so we'll write here infinite again
+now we have to define the keyframes as
+well so we'll write a keyframes then we
+have scroll down
+so we'll write a scroll down we have
+to write here zero percent then we have
+20 50 80 and 100 so we'll write here 20
+50
+80 percent
+and
+hundred percent fine we have to separate
+them with commas right here
+comma after every
+number so we'll write here inside this
+Translate
+it okay we have to write here transform
+transform and translate it
+to y-axis
+and we have to write here 0 fine then we
+have to write this same thing for
+40 and 60 so we'll write here 40 percent
+for 40 percent we have to write here
+transform
+Translate
+Y and then we have to write here minus
+30
+pixels and we have to write here 60
+percent and inside this we have to write
+transform
+Translate
+Y and we have to write here
+minus 15 pixels fine the next thing we
+have to do is we have to write here
+Dot home section
+dot scroll down space IMG
+then we have to write here width inside
+this so the width is going to be 25
+pixels then we have display display is
+going to be block
+then we have margin so we'll write a
+margin
+margin is going to be 2 pixels Auto
+then we have this for the home section
+only so we are done with the home
+section save the program move back to
+the website and you can see it looks
+more like the original website now so
+you can see we have home about
+we have categories
+we have
+top rated and contact over you can see
+this animation for this particular block
+is also working fine we have this as
+well over here and it's working totally
+fine
+right
+so you can see over here that this
+animation is working on hovering the
+mouse over it so we have to write some
+code for that as well but it's not
+working as of now in the original
+website of us
+so you can see nothing is happening on
+hovering the mouse over it
+now what we have to do is we'll see it
+later on we'll see why this part is not
+working the next thing we have to
+mention here is the about section so
+we'll write here about
+section
+and we have to write here this
+now we'll
+access this about section so we'll write
+here about section
+then we have inside this as padding
+padding is going to be 80 pixels
+and
+0 space 0 so the next thing we have to
+do is to write here about section
+about
+image so we have to add the image over
+here so we are basically
+trying to edit that particular image
+that particular image inside the about
+section right so we'll write here dot
+IMG
+or we can say dot about time so inside
+this we'll write
+Flex
+Flex is going to be 0 space 0 space
+33.33
+percent
+then we have Max width so we'll write
+here Max width as
+33.33 percent
+and then we have
+padding so we'll write your padding as 0
+and 15 pixels
+and we are done with the image now the
+next thing we have to do is to style
+image box so we'll write here dot about
+section dot about image
+then we'll write a DOT
+IMG box fine so we'll write here dot IMG
+box
+inside this will mention the position as
+relative fine now after this what we
+have to do is we have to copy this piece
+of code from here
+we have to paste it here then we have to
+write here Dot
+shape 0 2.
+so basically what we are doing is we are
+trying to style the second shape so
+we'll write a position as absolute then
+we have height
+so will I write height as 30 pixels we
+will write here width as
+30 pixels then we have border so we'll
+write a border as
+2 pixels
+solid and we'll write here
+ff980 then we'll write your left left is
+going to be 30 pixel then we have
+top which is again going to be 30 pixels
+and then we have animation animation is
+going to be a901
+5 seconds and then we have linear
+and infinite
+fine
+so we are done with this as well next
+thing up we have to write here dot about
+section
+dot about IMG
+then we'll write your dot IMG box then
+we'll write a DOT IMG
+so we'll write here width width is going
+to be 100 percent
+then we have display display is going to
+be block
+and then we have to write here dot about
+section
+dot about
+content
+fine we have to write your Flex Flex is
+going to be
+0 0
+66.66 percent
+and then we have
+Max width Max width is going to be
+66.66 percent again
+then we have padding padding is going to
+be 0 and 15 pixels
+next thing up we have to write here dot
+about section
+dot section title so
+will write here margin as
+margin bottom as 30 pixels then we have
+padding as
+zero
+and then we'll write here dot about
+section and we'll write here Dot
+about content so we'll write a DOT about
+content
+then we have to write a piece for the
+paragraph tag we'll write your font size
+is
+16 pixels then we have color so we'll
+write a color as its sort of gray then
+we'll write a line height as
+26 pixels and we have margin
+margin is going to be 0 again
+then we'll write your dot about section
+not about content
+dot stats
+Dot
+chat box fine
+now inside this we'll write Flex Flex is
+going to be 0 space 0 space 25 percent
+then we have Max width Max width is
+going to be 25 percent again
+then we have padding padding is going to
+be
+0 and 15 pixels again
+then we have
+to align the text at the center
+and we have margin top so we'll write a
+margin top as 30 pixels
+fine the next thing we have to do is we
+have to write a DOT about
+section
+about content then we have
+pets then we have stat box
+and we have to mention the heading as
+well we'll write your font size as
+40 pixels then we have
+color as black
+then we have margin margin is going to
+be 0 0 and 5 pixels
+so we have to copy this from here now
+we have to do the same thing for H5
+adding text so we'll write here H5
+instead of H2
+so we'll write your font
+size so font size is going to be 16
+pixels then we have color
+is going to be great and we have font
+weight
+font weight is going to be 600 then we
+have text transform
+so we'll write a text transform and text
+transform is going to be uppercase
+for this particular heading
+then we have to style the button as well
+so we'll write your dot about section
+about content then we have dot BTN
+so now inside this we have to write here
+margin top margin top is going to be 30
+pixels for this particular button
+save the program because we are done
+with the about section save the program
+now move back to the browser and you can
+see the about a section over here
+so there's something wrong with this
+particular section we'll move back to
+the CSS file and we'll see what's wrong
+over here
+so nothing seems to be wrong over here
+inside the CSS file let's check back at
+the index file and here you can see
+we have to write a about IMG save this
+HTML file save the CSS file as well move
+back to the browser and
+you can see it looks fine now the about
+a section looks exactly like this
+particular section so we are done with
+about a section as well now moving
+further we have to style the service
+section now the service section means
+this particular section in the HTML file
+is related to the categories section so
+we have to style this particular section
+now so for that what we'll do is we'll
+write here categories
+comment this out and now we'll write the
+code for categories
+we have used the class four categories
+as service section so first of all we'll
+write here
+dot service
+section
+and now we'll write code inside this so
+we'll write here padding
+padding is going to be 80 pixels
+and
+zero fine
+we are done with this now the next thing
+we have to write here is for the service
+item or we can say for the category item
+so we'll write your service
+section then we'll put a space and we'll
+write your dot service
+item
+so inside this we'll write Flex Flex is
+going to be 0 space 0 space 33.33
+percent
+then we have after Flex we have Max
+width so we'll write here Max width as
+33.33 percent again
+and then we have padding as well so
+we'll write here padding padding is
+going to be 15 pixels
+and after this we have to mention the
+inner class as well so we'll write a
+service section space
+service item Dash
+you know fine this is another class so
+we'll write here position position is
+going to be relative and then we have
+overflow as well so we'll write here
+overflow overflow is going to be hidden
+and that's it the next thing we have to
+write here is service
+section
+so we'll write your service sections pay
+service item in a base IMG we are going
+to style the image as well so we will
+write a IMG width is going to be
+100 percent
+and then we have display as well so
+we'll write here display as block then
+we have filter so we'll write a filter
+as grayscale
+then we have passed the value for
+grayscale as hundred percent and we have
+transition so we'll write here
+transition transition is going to be all
+at 0.5 second
+and it's going to be is fine
+then we have
+service section
+so we have to mention
+that we are so what we are doing is we
+are going to mention the hover thing
+over here so if we have a mouse scale
+over any category or over any image so
+what we want is we want to change that
+image to gray so we'll write the code
+for that we'll write a service section
+Dot
+service item in a then we'll write here
+over
+and will hover over image so we'll write
+a IMG we'll write a filter as grayscale
+we have to pass the value as 0 over here
+then we have transform
+so we'll write here transform we'll
+write a scale and we are going to pass
+the value as 1.1
+fine then we have
+service section
+service item inner
+and we have overlay as well so we'll
+write here overlay
+for the overlay class we have used in
+the HTML part so inside here we'll write
+position as absolute
+and we have to mention left over here so
+we'll write here left as 0 then we have
+top as well we'll write top as zero then
+we have height so height is going to be
+100 percent so we'll write a hundred
+percent then we have width which is
+again going to be hundred percent
+now we are done with height and width we
+have to mention the background color as
+well so we'll write your background
+color as
+RGB so we are going to pass the rgba
+value rgba value is 0 comma 0 comma zero
+comma six
+so it's 0.6 over here it's sort of black
+in color then we have display as Flex
+and we have to align these items at the
+center
+after this we have to justify content so
+we'll write here justify content at the
+center
+then we have transition transition is
+going to be all at 0.5 seconds and
+is fine
+now inside here what we'll do is we'll
+write service section please service
+item inner
+then we'll write here
+hover
+and we are going to write here
+dot overlay
+fine now we'll write the code inside
+curly braces we'll write your background
+color as
+transparent
+so we'll write your background color as
+transparent we are done with this part
+next up we'll write your dot service
+section
+page service item in a
+then we have good idea dot overlay we
+are going to use the overlay cross
+present inside service item and that
+service item in a class is present
+inside service section so we'll write a
+H3 for heading 3
+then we have to write here color color
+is going to be white then we have font
+size so we'll write your font size as 30
+pixels and then we have margin margin is
+going to be 0 then we have
+text align so we'll align this text at
+this Center
+and then we have transition so we'll
+write here transition
+transition is going to be all at 0.5
+seconds and ease fine then we have to
+transform the text we'll write your text
+transform and we'll write a capitalize
+next up we'll write a service section
+space
+service item in a and then we have
+overlay so we'll write here overlay and
+this time we are going to write it for
+H4 heading so we'll write here H4
+and we have to write here Translate
+so we'll write here Translate
+okay we have to write a transform
+actually so we'll write here transform
+and inside this we have to translate it
+to x axis and we'll write here
+30 pixels fine
+next up what we have to do is we have to
+mention the opacity as well so we'll
+write a opacity as zero
+fine so we are done with this categories
+as well save the program move back to
+the browser and
+here you can see our categories so
+the whoring effect is still not working
+over here we'll see why this is not
+working so let's do one thing what we'll
+do is we'll remove the space before
+whole over here
+we'll do the same for this over as well
+and if we have any effect again
+we'll do it for that so save it now move
+back to the website and you can see it's
+working now
+so it's working totally fine
+if we move back to our original website
+you can see we have all these images
+over here inside the categories section
+so it's working totally fine in our
+website now
+now the next section we have to style is
+the top rated movie section so here are
+our top rated movies so we have to style
+this section now what we'll do is we'll
+write here
+after this
+will write here
+in comments we'll write here
+top rated
+I will write the code for top rated
+section so the classes work section so
+we'll write here dot work
+section and now we have to write the
+code for this we'll write your padding
+padding is going to be 80 pixels and 0
+and 0. fine
+now we have to write here dot work
+section space dot work item so we'll
+write here dot work item as well and
+then we'll write the code inside curly
+braces we'll write your Flex
+Flex is going to be 0 0 and 33.33
+percent then we have Max width so we'll
+write here Max width as
+33.33 percent again
+and now we have padding as well so we'll
+write your padding as 15 pixels fine the
+next thing we have to mention over here
+is we'll write your work section Space
+Walk item
+so we'll write here work item inner now
+so we'll write a work item inner then we
+have to style the images so we'll write
+here IMG we'll write a width width is
+going to be
+100 percent
+then we have display display is going to
+be block
+so we'll write a display as block then
+we have transform transform is going to
+be scaled and the value is going to be
+1.1 then we have transition transition
+is going to be all at 0.5 second and is
+fine
+then we have Dot work section
+we'll write here Dot
+work item in a
+so after this we'll write your hover and
+on hooring over the image we have to
+style it so we'll write a filter
+is going to be grayscale again so we'll
+write a grayscale the value is going to
+be 100
+we'll write here transform and transform
+what we are going to write here is scale
+as one fine now after this what we have
+to do is we have to write here dot work
+section is
+work item in a and now what we have to
+do is we have to write inside it
+position position is going to be
+relative then we have cursor cursor is
+going to be
+okay then we have cursor cursor is going
+to be pointer and
+overflow as well so we are going to
+write here overflow as hidden fine the
+next thing we have to write here is dot
+work section inside the work section
+class we have this works work item in a
+class and we have to write the code for
+overlay classes
+so we'll write here overlay then we'll
+write your position as absolute
+and left is going to be 0 so we'll write
+here left as 0
+then we have top as 0 so we'll write a
+top as zero height
+is going to be 100 percent
+then we have
+width as well so we'll write your width
+as hundred percent
+and then we have padding so padding is
+going to be
+15 pixels again so we'll write here 15
+pixels display is going to be flex and
+then we have a line items so we'll write
+a align items at the flex end then we
+have transition so we'll write a
+transition as all
+0.5 second and
+is fine then after transition we have
+the background color so we'll write your
+background color and the background
+color is going to be
+0 comma 0 comma 0 comma zero point
+six fine
+then we have the opacity so we'll write
+here opacity and opacity is going to be
+0.
+we are done with this section as well
+then we'll write here Dot work section
+then we have dot work item in a then we
+have
+over so we'll write your hover
+and what we are going to do is we are
+going to write here overlay so on
+holding the overlay section what we want
+is we want the opacity to change to one
+so we'll write opacity as one
+then we'll write here dot work section
+again then we have dot work item in a
+and we'll write here dot overlay now we
+are writing the code for headings so
+we'll write here H4 now inside this we
+are going to define the color as white
+then we have font size so font size is
+going to be 20 pixels for this and then
+we have margin so margin is going to be
+0 again
+then we have transformed so we'll write
+here transform and we'll write here
+translate X so inside translate X we
+have to write a 30 pixels
+then we have to mention the transition
+again so we'll write here transition all
+at 0.5 seconds and
+is fine
+now we are good to go the next thing we
+have to write here is the work section
+so the work section is
+here then we have to write here work
+item inner then we have to write here
+hover and after hover we have to write
+the code for overlay inside overlay we
+have to write the code for H4 ready fine
+so we have to write here transform
+translate X to 0
+and we are done with the work section as
+well save the program move back to the
+browser and here you can see we have all
+the top rated movies working totally
+fine we have all these movies over here
+the whole effect is working fine click
+on any and it's not responsive as of now
+because we need to go to the jQuery part
+for that so we'll do it later on now
+let's style the light box first now so
+we'll write here light box
+and we'll write here Dot light box
+so we'll write a DOT light box then we
+have to write your position position is
+going to be fixed and after position we
+have to mention the Z index Z index is
+going to be one zero nine nine and then
+we have left left is going to be
+left is going to be 0 again then we have
+top as well top is going to be 0 then we
+have right as well right is going to be
+0 again and we have
+bottom is zero fine
+we have to mention the background color
+background color is going to be a little
+bit dark so we'll write here RGB a
+instead of 0.6 we'll write a 0.7
+fine then we have to mention the display
+as Flex over here
+and we have to align the items at the
+center so we'll write here align items
+at this Center justify content at the
+center then we have cursor so we'll
+write here cursor
+we have to write here zoom out
+and then we have display display is
+going to be none
+then we have dot light box
+dot open so we'll write here the code
+when the light box will open we'll write
+here display as
+flex and after this we have to write the
+image write the code for images present
+inside the lightbox so we'll write here
+light box and then we have to write here
+light box
+IMG so we'll write here lightbox dot IMG
+and then we have
+okay so we have to put a dash over here
+now inside this we'll write display as
+Flex
+and then we have width width is going to
+be Auto
+then we have height height again is
+going to be Auto according to the height
+of the image we have so we'll write a
+height as Auto then we have Max width
+Max width is going to be 100 percent
+and we have padding as well we'll write
+a padding as 40 pixels and 0
+now what we have to do next is we have
+to write here dot lightbox Dot
+image box so we'll write here dot image
+box then we have to write here position
+as relative and cursor s
+Auto
+fine so we'll write here Auto
+now we are moving ahead and we'll write
+a light box
+so we'll write a lightbox Dot
+light box close we have to write here so
+we'll write here light box close
+okay so let's check it once if we have
+to write here lightbox
+open now we have to write here light box
+close so
+inside this what we are going to do is
+we are going to write here height height
+is going to be 30 pixels then we have
+width width is going to be 30 pixels
+again
+and after this we have the display as
+block
+now the next thing we have is the
+position as absolute so we'll write a
+position as absolute right is going to
+be 0 again then we have
+top as 10 pixels
+after top we have the font size so we'll
+write your font size as
+30 pixels and we have the color as white
+so we'll write here hash FFF six times
+so we'll write a text align at the
+Center and we have
+line height so we'll write here line
+height as 26 pixels
+and after this we have to write here
+cursor as
+zoom out fine
+now the next thing we have to mention
+here is
+light box caption so we'll use the
+lightbox caption class
+so we'll write a light box
+caption
+now we'll write inside here color is
+going to be white again then we have the
+font size
+so we'll write here font size font size
+is going to be 16 pixels and we have
+font weight as 600 so we'll write a font
+weight as 600
+then we have position as absolute
+and after this we have left as 0 so
+we'll write here left as 0 then we have
+bottom as
+10 pixels
+so we have the bottom as 10 pixels and
+we have the display as Flex
+then we have justify content we'll
+justify content as paste between
+fine so we'll write a space between then
+we have the width as hundred percent
+fine
+now we'll write here dot lightbox dot
+lightbox caption and we'll write a DOT
+light box
+category so we'll write here category
+and now inside this we'll write
+padding right padding right is going to
+be 50 pixels
+so after this what we have to do is we
+have to write the code for previous and
+next so we'll write here dot light box
+then we'll write here dot lightbox
+controls so we'll write here lightbox
+controls
+then we'll write here Dot
+print
+so this is another class we'll copy it
+we'll paste it again instead of prep
+will right here after and we'll remove
+this comma so not after we have the
+class name is next over here we'll write
+here next position is going to be
+absolute
+then we have height
+height is going to be calc so we are
+calling a function over here 100 percent
+minus 80 pixels fine so we'll write a
+hundred percent minus 80 pixels then we
+have top as 40 pixels and we have cursor
+as pointer
+then we have display as Flex
+and after display we have to align items
+at this Center
+we are good with it we'll write here
+light box
+dot light box controls so we'll write
+your controls then we'll use the priv
+class again now we'll write here left
+left is going to be 0 then we have width
+width is going to be 50 then we have to
+justify
+content as Flex start
+now after this we have to write the code
+for next as well so we'll write here dot
+lightbox space dot lightbox controls
+then we have to write here next dot next
+we have to write actually then we'll
+write the code inside curly braces for
+next we'll write here right right is
+going to be 0 then we have width width
+is going to be 50 percent again
+and after which we have to justify the
+content as
+flex and we have the padding over here
+padding is going to be for padding right
+so we'll write a padding right as
+5 pixels fine
+next up we have to set the controls
+again for previous image and for next
+image so we'll write here dot lightbox
+dot lightbox controls
+then we have dot trip so we'll write
+here hover on
+Prevail right here IMG comma we'll write
+the same piece of code for next as well
+now instead of prevail right here next
+and we'll remove this comma from here
+we'll put curly braces we'll write your
+background color background color is
+rgba and instead of 0.6 we have 0.5 over
+here
+and I think we are good to go but we
+forgot to mention over here some more
+controls so we'll write here Dot
+lightbox space dot lightbox controls
+then we'll write here dot ref then we'll
+write a IMG fine we'll put a comma we'll
+copy this from here
+we'll paste it here
+and now what we'll do is instead of dot
+Prim we'll write your dot next again and
+we'll remove this comma or from here and
+we'll put curly braces over here we'll
+write your width width is going to be 30
+pixels
+then we have height
+height is going to be 30 pixels again
+then we have padding so we'll write a
+padding padding is going to be 5 pixel
+and we have to mention the Border radius
+as well so we'll write your border
+radius as 2 pixels and we have to write
+here transition so transition is going
+to be all
+0.5 seconds fine so we are done with the
+light box as well save the program move
+back to the browser and you can see the
+light boxes isn't available at the
+moment because we have to write the
+jQuery part for that so for now it looks
+fine now the next section we have to
+work on is the contact Section so we'll
+write here
+contact
+and now we'll write the code for contact
+Section
+now for contact Section we'll first
+access the contact Section class so
+we'll write your contact
+section and what we'll do is we'll write
+here padding so padding is going to be
+80 pixels
+and we'll write here 80 0 and 80 pixels
+again
+fine
+then after this what we'll do is we'll
+write here the code for contact Section
+image so we'll write here dot contact
+Section Dot
+contact IMG
+now we'll write your Flex
+so Flex is going to be 0 comma 0 space
+100 percent
+then after Flex we have the max width so
+max width is going to be 100 again
+then we have padding so we'll write your
+padding padding is going to be 0 and 15
+pixels
+we are done with the image part as well
+next thing up we'll write here Dot
+contact
+section
+dot contact image then we'll write it
+dot IMG box so
+we are writing the code for image box
+now we'll add the image for contact us
+page inside this particular
+box so what we'll do is we'll write here
+padding as 200 pixels and
+zero fine next up we'll write your
+background image background image we
+have to provide the url url is we have
+to write here dot dot then we have to
+access the images folder so we'll write
+here images then after images we have
+this contact dot PNG over here so we'll
+click on it and here we have the contact
+image
+now we'll write over here
+background size background size is going
+to be cover so we'll write here
+background sizes cover then we have the
+background position background position
+is at the center so we are done with
+adding the image now we'll write here
+dot contact Section then we have to
+write here Dot section title now we have
+to write here
+text align so we'll write a text align
+at the center
+so we have to write here Center
+now after this we have to style H1 tag
+so we'll write your Dot contact Section
+space
+section title space
+H1
+so we'll write inside here color as
+white so we'll write here this then we
+have to write here contact
+section so we have to write a contact
+Section space
+dot section title
+then we have to write here H1 before
+now after this we have to write here
+inside background color is going to be
+white
+then we have left as 50 so we'll write
+here left as 50 percent
+and after left we have the margin left
+as minus 40 so we'll write a margin left
+as minus 40
+pixels and
+now we'll write the code for contact
+form so we'll write your contact Section
+space dot contact form
+so we'll write a contact form
+now we'll write inside it Flex as
+then we have Max width so we'll write
+here Max width as hundred percent
+and we have padding as well so we'll
+write your padding as 0 pixel and
+65 pixels
+now we'll write the code for form tag so
+we'll write here Dot contact Section
+page dot contact form
+space dot form
+fine so we'll write here
+background color is going to be hash F3
+F2 and F1
+then we have the padding over here we'll
+write your padding as 55 pixels and
+40 pixels fine
+now we'll write here margin top so we'll
+write a margin top as minus 150 pixels
+and we are done with this part again so
+next up we'll write the code for labels
+so we'll write here dot contact Section
+then we have dot contact form then we
+have Dot form now we have to style the
+label tag so we'll write here label
+and inside this we'll write color color
+is going to be black
+then we have font weight so we'll write
+your font weight as 500
+now
+the display is going to be block
+and the margin is going to be
+0 0 and
+5 pixels fine next up we'll write here
+dot contact Section
+then we'll write here dot contact form
+then we'll write here dot form
+and after this we'll write here dot
+input group
+so we'll write a input
+group
+and inside this we have to write Flex
+Flex is going to be
+0 space 0 space 100 percent then we have
+Max width so max width is going to be
+100 percent
+and we have padding as well so we'll
+write your padding as 0 and 15 pixels
+and then we have to mention the margin
+bottom margin bottom is going to be 30
+pixels
+then we have dot contact Section Dot
+contact form
+phase dot form
+dot input group
+then we have to write here left fine
+we'll put a comma over here we'll do the
+same thing for right group as well
+so we'll paste it over here now we'll
+write here right
+instead of left now we'll put curly
+braces and inside here we'll write
+Flex Flex is going to be 0 space 0 space
+50 then we have maxed width Max width is
+going to be 50 percent
+now we'll write here
+dot contact Section
+dot contact form
+and then we have dot form
+then we have input control so we'll
+write here input
+control
+will write here width
+width is going to be 100 percent
+and after which we have the height over
+here so we'll write here height as 45
+pixels we have padding over here we'll
+write a padding as
+6 pixels space 0 pixels
+then we have color is going to be
+black
+then we have the font size so font size
+is going to be 16 pixels
+and we have background color s
+transparent so we'll write here
+background color is transparent then we
+have border is none
+and we have border bottom as well so
+we'll write your border bottom as 1
+pixels
+solid and the color is going to be hash
+offite kind of
+then we'll write here Dot
+contact Section
+Dot contact form Dot
+form Dot input control then we have to
+write your focus
+we have to write here outline outline is
+going to be none then we have
+to write here
+again so we'll write a DOT contact
+section
+dot contact form then we have to write
+your form space
+form button so we are writing the code
+form
+so we are writing the code for form
+button now so we'll write your form
+button
+and we have to align the text at the
+center for this fine
+next up we have to write the code for
+contact info so we'll write your contact
+section Dot
+contact info now we have to write the
+code for this we'll write your Flex as 0
+0 and 100 percent
+fine we'll write Max width over here so
+max width is going to be 100 percent
+then we have Dot
+contact Section and we have contact info
+so we'll write your contact info then we
+have info item fine so we'll write info
+item
+and now inside curly braces we have to
+write here Flex Flex is going to be 0
+space 0 space 33.33 percent
+and then we have Max width Max width is
+going to be
+33.33 percent again
+then we have to write here text align
+text align at the center
+then we have to write here padding
+padding is going to be 0 and 15 pixels
+then we have margin bottom margin bottom
+is going to be 40 pixels
+then we'll write here Dot
+contact Section
+dot contact info then we'll write here
+dot info item
+and we have to write here H5 fine we'll
+write your font size
+is 16 pixels
+we have to write your font weight
+font weight is going to be 600 then we
+have to write a margin margin is going
+to be 0 again
+now what we'll do is we'll write here
+Dot
+contact Section
+we have to write your dot Social Links
+so we'll write here dot Social Links we
+have to mention Flex over here as well
+we'll write your Flex as 0 0 and 100
+percent
+then we have Max width Max width is
+going to be 100 percent
+then we have
+padding so we'll write here
+padding padding is going to be 0 and 15
+pixels then we have text align text
+align at the center
+now we'll write here Dot
+contact Section then we have to write
+here dot Social Links then we have to
+write here a and IMG fine
+so we are basically accessing
+the anchor tag first so we'll access the
+anchor attack first then we'll access
+the IMG text so we'll write here a for
+now we'll write here text decoration
+so we'll write a text decoration text
+decoration is going to be none display
+is going to be inline block
+so we'll write a inline block then we
+have margin margin is going to be
+0 pixel and 5 pixels fine
+then we have to write here Dot
+contact Section
+dot Social Links space a space IMG now
+we are accessing the image present
+inside the anchor Tech we'll write a
+width as 28 pixels reducing the size of
+our images we'll write a display as
+block
+so we'll write a display as block we'll
+write here transition transition is
+going to be all at 0.5
+seconds and is fine
+now we have to write here Dot
+contact Section then we have to write
+here dot Social Links then we have to
+write here a on hovering over the image
+basically so we'll write here hover IMG
+and we'll change the opacity now we'll
+write a opacity as 0.5
+and we are done with this contact
+Section as well now we are left with the
+copyright section and the responsiveness
+of a website so let's check it once save
+the program move back to the browser and
+here you can see it looks fine now right
+so the contactors
+thing is working fine
+now if we move back to the actual
+website
+you can see the image is not present
+over here properly
+so the image is not over here what we
+have to do is we have to move back and
+we have to check
+what mistake we did over here so nothing
+seems to be wrong here but there's a
+mistake in our program let's move back
+to the HTML part and we'll see
+okay we have mentioned the class name
+wrong here so we have to write a contact
+IMG save the program now save the CSS
+file as well once again
+move back here and you can see it's
+working fine now so this is our website
+the contact us is working totally fine
+we have three placeholders over here we
+have a text area basically for message
+we have a name
+email and phone number so these icons
+are also working fine on hovering over
+them you can see them working
+the address phone and email is also fine
+now we have to work on this footer part
+we have to work on this 2022 Movie Mania
+copyright part
+so we'll move back to the CSS file and
+we'll write here Dot
+copyright
+and we'll write the code for copyright
+as well we'll write your border
+top so what the top is going to be one
+pixel
+solid end of this color will write here
+C5 C5 C5
+fine gray color sort of then we'll write
+your padding padding is going to be 25
+pixels and
+15 pixels then we have text align at the
+center we'll write your text align at
+this Center
+and we have color as well color is going
+to be black
+or gray wait great is so we'll write
+your font size font size is going to be
+16 pixels again
+save the program move back to the
+browser and you can see it's working
+fine now you can see it over here the
+copyright area is working fine now
+so we are done with the website
+basically now the only thing left here
+is for the responsiveness
+now the only thing left here is the
+responsiveness of our website so we have
+to write the code for that as well so
+we'll mention it over here first we'll
+write here
+responsiveness
+and will comment it out now we'll start
+with at the rate media
+and then we'll Define the width so we'll
+write here Min width
+Min width is
+768 pixels so we'll write here 768
+pixels
+and now we have to write here Dot header
+Dot
+nav
+and we have to write here inside this
+display
+is going to be block
+important we have to mention it over
+here
+now the next thing we have to do is
+we have to write after this at the rate
+media and the Min width is going to be
+and width is going to be
+767 pixels
+we have to write here
+dot header
+then we'll write here padding padding is
+going to be 7 pixels and 0 then we'll
+write your position position is going to
+be fixed
+then we'll write here Dot header
+Dot
+nav toggle and we'll write here display
+display is going to be Flex
+we'll write your margin right margin
+right is going to be 15 pixels
+now we have to write here after this Dot
+header dot nav
+now inside this we have to write Flex
+Flex is going to be
+0 0 and 100 percent
+we are done with flex we have to write a
+Max width Max width is going to be 100
+percent
+then we have background color background
+color is going to be white so we'll
+write here this then we have padding so
+we'll write your padding as 0 and then
+we have display as none
+and then we'll write here Dot header
+again then we'll write your dot fixed
+then we'll write your dot nav
+fine now we'll Define the Border top so
+we'll write your board at top as one
+pixel
+solid in nature and of
+this color gray color basically right
+then we have Dot
+header we have to write the code for
+ul and Li now so we'll write here dot
+header dot net then we'll write a UL Li
+and now we'll style them so we'll write
+a display
+display is going to be block
+then we'll write here margin right so
+we'll write your margin right margin
+right is going to be 25 pixels
+and we have to mention here dot header
+space dot fixed space Dot
+nav then we have
+UL Li a
+then we'll put a comma and we'll write
+here Dot header
+then we'll write here dot nav
+UL
+Li and a now inside here we'll write
+color so we'll write here color and
+color is going to be black
+then we'll write your padding padding is
+going to be 15 pixels and 0
+so we are done with this as well now we
+have to style the home section for this
+particular screen size so we'll write
+here Dot
+home section
+and we'll write here dot home content
+then we have to write here H1
+heading is going to change the font size
+is going to change to 40 pixels now
+then we have to do the same thing for
+about section so we'll write a about
+section then we'll write here about
+image image is also going to change
+we'll write here margin bottom margin
+bottom is going to be 30 pixels
+then we have to write here
+about
+section
+dot about content then we'll put a comma
+we'll write your dot about section again
+then we'll write a DOT about IMG so
+we'll write you about IMG
+we have to mention Flex over here Flex
+is going to be 0 0 and 100 percent
+then we have the max width Max width is
+going to be 100 percent
+and after this we have to write here dot
+work section so we'll write your work
+section then we'll write your dot work
+item
+will do the same for service section and
+service item as well we'll write your
+service section Dot
+service item and we'll change the flex
+over here we'll write your flex and
+we'll write here 0 0 and
+50 fine
+we'll change the width as well we'll
+write here Max width and the max width
+is going to be 50 percent now
+and we are good to go with that now we
+have to do the same thing for 575 pixels
+as well
+so we'll do it for 575 we'll write here
+at the rate media
+and we'll write here inside this
+Max width Max width is going to be
+575 pixels
+and we'll put curly braces over here
+we'll write here dot home section
+then we have dot home content so we'll
+write your home content then we have the
+H1 tag so we'll write H1 variety of font
+size font size is going to be 25 pixels
+and then we have letter spacing so we'll
+write a letter spacing as 5 pixels
+then we have the about section so we'll
+write here about section space
+about content space pets then we have
+Ted box as well so we'll write a stats
+and Stat box booth we'll write here Flex
+Flex is going to be 0 0 and 50 percent
+then we have to write here Max width Max
+width is going to be 50 percent
+and after this we have to do the same
+thing for contact Section work section
+and service section so basically for
+contact Section categories and top rated
+movies so we'll write your contact
+Section
+then we'll write here contact info
+then we'll write here info item
+now after a comma we'll write here
+dot contact Section again then we'll
+access dot contact form
+then we'll access dot form then we'll
+access input group left fine we'll write
+a input group left
+and we'll do the same thing for right
+input group as well so we'll write here
+input group right
+then we'll write here Dot
+work section and we'll write here Dot
+work item
+then we have to do the same thing for
+service section as well we'll write your
+dot service section dot service item
+now we'll write inside
+curly braces we'll Define the flex over
+here Flex is going to be 0 0 and 100
+percent
+and Max width as well Max width is going
+to be 100 again
+and then we have
+contact Section again will
+use contact form from here
+and we'll Define the padding for this
+part we'll write your padding as 0
+pixels and 35 pixels
+fine
+then we'll write here dot contact
+Section
+dot contact form
+then we'll write a DOT form
+and we'll Define the padding for this
+one as well padding is going to be 55
+pixels and 5 pixels for this one
+now we are done with this
+styling of the website is done now
+save the program move back to the
+browser and you can see
+The Styling is almost done there's
+something which is not correct over here
+so it's not working correctly as of now
+we'll see what wrong we did over here
+there's nothing wrong over here so let's
+save it once again and we'll see if this
+thing works again or not
+move back to the website so the website
+is doing good over here
+and reduce the size and it's working
+fine now you can see we have this
+website and it's working totally fine as
+of now
+so we are done with styling a website
+that's all what we need to do with
+styling now the last remaining thing
+here is to add responsiveness to this
+website that we'll do with the help of
+jQuery and jQuery UI you can see the
+website seems beautiful as of now and
+let's do the remaining part quickly as
+well let's move on to the Javascript
+file so this is a JavaScript file and
+we'll write the remaining code here only
+so here we are in the Javascript file
+before we move on further let's discuss
+all things we need to do on a website to
+make it look more interactive to the
+user the first thing we need to do is to
+add the preloader to our website a small
+animation will take place before the
+website opens the next thing we have to
+do is to make the web page workable for
+smaller Windows here if I show you this
+thing in the website itself if we move
+back to the original website you can see
+on zooming out the Chrome browser you
+can see the website adjusts itself
+according to the size of the browser the
+navigation menu is changed to Burger
+menu and the layout of the whole website
+is changed accordingly
+some more changes we need to make are
+related to fixed header smooth strolling
+to all the links light box and the
+dialog box on button click that's all
+we'll do for this particular website
+let's start the code for the preload
+so what we'll do is we'll write here
+let
+index is equals to zero
+and we'll write here
+const
+total
+work items
+fine so we'll write here total work
+items and we'll access them so we'll
+write here dollar
+will write here the class name so the
+class name is work item so we'll write
+your work item
+dot length fine
+will need this part of code later on so
+the next thing we are going to do is we
+are going to write here dollar
+none will write your window
+Dot on
+we are going to use the load event so
+we'll write a load
+comma function so we'll create a
+function now inside this function what
+we'll do is inside the body of this
+function we'll write dollar we'll access
+the preloader class so we'll write here
+Dot
+preload
+then we'll write here add class so we'll
+add a class over here
+we'll add classes loaded we have already
+written the CSS part for this loaded
+class
+now we are done with this part save the
+program and
+will open this website with live server
+again and you can see the preloader is
+not here as of now we'll move back to
+the CSS part we have commented it out so
+that it will be easy for us to work on
+the
+other CSS parts so we'll remove this
+comment from here
+will paste it here fine save the program
+now
+save the JS file as well so here you can
+see we have the preloader over here
+now the next thing we need to do is we
+need to write the code for
+nav toggle so we'll write here dollar
+again we'll write here document
+then we'll use the ready function so
+we'll write here ready
+then we'll write your function
+so what we'll do is we'll keep all this
+code inside document dot ready function
+so we'll paste it over here first save
+it now
+let's see if
+this thing works or not
+so here you can see the preloader is we
+are getting it again and again so it's
+not stopping as of now what we'll do
+next is we'll
+move back to the Javascript file and
+we'll write the code again here
+now
+what we'll do here is we'll write here
+the code for nav toggle so we'll write
+here dollar then we are going to access
+the nav toggle class we'll write in nav
+toggle
+then we'll write a click
+then we'll write your function
+and inside the body of this function
+we'll write dollar
+we'll write Dot
+header space dot next we are going to
+access two different classes then we'll
+write a slide
+toggle fine so we'll use the slide
+toggle function from jQuery
+then after this what we'll do is we'll
+write here
+dollar and then we'll again access these
+two classes along with the anchor tag so
+we'll write here Dot
+header then we have Dot
+nav then we'll access the anchor tag
+then we'll write here dot click
+will create a function for this we'll
+write your function
+and now what we'll do is we'll write a
+if
+we'll write here
+dollar then we'll write inside this
+window
+dot width
+and if the width is going to be less
+than
+768
+what will happen is
+the
+header and the navigation bar will
+toggle they will slide toggle again so
+we'll write here dot header Dot
+nav
+then we'll write your dot slide toggle
+again we'll call the slide toggle method
+once again here
+so we are done with this part save the
+program
+for now what we'll do is we'll
+save the CSS file and the index file as
+well
+access this with live server again and
+here we are in the website
+reduce the size and
+you can see the slide toggle method is
+working totally fine we have about
+we have this category section over here
+we have top rated and we have contact so
+each section is working according to our
+need
+so the website is working totally fine
+as of now
+the next thing we have to write here
+inside
+a Javascript file is for the fixed
+header so what we'll do is we'll
+write a comment over here we'll write
+fixed header because we are going to
+write the code for fixed header now so
+we'll write here dollar
+then we'll use the whole window then
+we'll write here scroll
+will create a function over here now
+inside this function now inside the body
+of this function basically what we'll do
+is we'll write a if
+dollar then we will use this
+Dot
+crawl top
+so we have to write a scroll top
+and this is a method so we'll write here
+if scroll top is greater than 100
+what will happen is we'll write here
+dollar
+then we'll again access the header so
+we'll write here header
+and we'll right here add
+class so we are going to add the fixed
+class over here we'll write your fixed
+and we'll write the code for else part
+as well fine so we'll write here else
+what happened inside the else block is
+going to be dollar
+then we have to write here
+inside this Dot
+header
+then we have to write here
+Dot
+remove class
+and we have to remove the fixed class
+fine
+so we are done with this part as we are
+done with the fixed header part move
+back to the website and you can see the
+header is fixed now
+so you can see
+the header is over here in all the pages
+so it's working totally fine as of now
+now let's move ahead and now we'll write
+the code for smooth scrolling to all the
+links fine so we'll write here dollar
+will access the anchor tag so we'll
+write here a inside double inverted
+commas then we'll write here on we are
+going to use the click event we'll write
+a click will create a function again
+we'll write your function now inside the
+body of this function
+what we have to do is we have to make
+sure that this dot hash has a value
+before overriding default Behavior so if
+we write here if
+then we have to write here this dot hash
+not equals to
+and we have to put a space over here
+then inside this we have to prevent the
+default anchor click Behavior we'll
+write here event
+Dot
+prevent default so this is a predefined
+function
+now what we'll do is we'll store the
+value of hash inside a variable so let's
+say we are using the where hash
+now we'll write here is equals to this
+dot hash
+now we have the
+hash variable present inside hash so we
+have the value of hash basically present
+inside the hash variable now we'll use
+jquery's animate method to add smooth
+page scroll so the optional number which
+is 800 it specifies the number of
+milliseconds it takes to scroll to the
+specified area
+so for that what we'll do is we'll write
+here
+dollar
+will write here HTML
+comma body so we are going to use these
+two text then we'll write here animate
+so inside this animate function what we
+have to do is we have to define the
+properties as well so we'll write here
+scroll top scroll top is going to be
+dollar then we have to access hash over
+here then we'll write here offset
+we have to call this offset method we'll
+write a DOT
+fine
+now we have to pass the timer as well so
+we'll write here 800 in milliseconds and
+we have to create another function over
+here inside this function now inside
+this function we'll have use
+hash to URL when done scrolling so
+default click Behavior basically so
+we'll write here
+window
+dot location
+dot hash fine is equals to hash
+okay so we have to write here function
+so the spelling mistake we have over
+here so we are done with this the if
+statement ends over here now what we
+have to do next is we have to set light
+box image Max site so for that what
+we'll do is we'll write here
+will take a constant we'll write a const
+W height so let's say this is a variable
+we'll write here dollar
+then we'll access the whole window we'll
+write a DOT window then we'll write here
+dot height
+and we'll call this method then we'll
+write here dollar
+will access the lightbox image class so
+we'll write here Dot light box
+image so we'll write here lightbox dot
+image we'll use the CSS property so
+we'll I write yes dot CSS then we'll
+write your max height
+so we'll write your max height
+and we'll write here
+W height
+Plus
+pixels fine so we'll write a pixels
+inside double inverted commas
+now we have to do this for light box as
+well so we'll write here
+after this
+dollar again well right here
+dot work item
+so basically we are taking the top rated
+movies
+the inner part from the so we'll write a
+DOT inner then we'll write here Dot
+click we'll create a function for this
+so we'll write your function now inside
+the body of this function what we have
+to do is we have to write here index
+index is going to be dollar
+this
+Dot parent
+and inside here we'll mention the work
+item class so we'll write your work
+item
+then we'll write here dot index
+X and in the next line we'll write here
+dollar
+light box again
+so we'll write here dollar dot lightbox
+then we'll write here dot add class so
+we'll
+add the open class over here
+so we'll write here dot open
+and we have to call a method now so
+we'll write here tallest slide box
+slideshow
+and we are good to go with it in the
+next slide what we have to do is we have
+to write the code for previous and next
+button so we'll write here
+dollar
+we are going to access
+the light box
+ref class so we'll write here dot
+lightbox dot prep
+then we'll write here dot click on
+clicking the button what we have to do
+is we have to call a function we'll
+write your function now inside the body
+of this function we'll write here if
+index
+is equals to 0.
+then what will happen is we'll write
+here
+index
+is equals to Total work items minus 1 so
+we'll write here total work items
+minus 1 so we have taken this variable
+initially if you can see here the
+initial value of this items was the
+length of the work item
+so we'll mention it over here now we
+have to mention the else part as well
+we'll write it else
+and inside this will write index minus
+minus fine
+now after this what we have to do is we
+have to call the light box
+slideshow method again
+and we are done with the previous part
+now we have to do the same thing for the
+next part so we'll write here dollar
+Dot
+light box
+and then we'll access the next class
+then we'll write here dot click
+will call a function we'll create this
+function now inside the body of this
+function we'll write if
+index is equals to is equals to Total
+work items
+minus 1
+then index is going to be
+0
+and we'll write the else part as well
+we'll write here else
+and inside else will increase the value
+of index we'll write here index plus
+plus and once again we are going to call
+this light box slideshow method
+over here fine now we are done with
+these two parts what we have to do is we
+have to close the light boxes so we are
+going to write the code for that now
+we'll write here dollar
+will write here
+lightbox
+then we'll
+use the lightbox close class over here
+we'll write here dot click
+will create a function for this
+and inside here we'll write
+dollar
+we are going to remove this class
+basically we are going to remove this
+open class so we'll write here Dot
+light box
+Dot
+remove class
+which class we are going to remove is
+the Open Class fine
+so what we want to do next is we want to
+close the light box when clicked outside
+of the image box as well so I'll write
+the code for that part as well we'll
+write your dollar
+and we'll write here light box
+we'll write here dot click
+will write here function
+we are going to create an event now so
+we'll write here event
+now inside the body of this function
+we'll write if
+dollar
+event
+Dot Target
+dot has class
+so we'll write here Dot
+lightbox
+we have to create the body so we'll
+write here dollar
+this
+Dot
+remove class we are again going to
+remove the class as open
+so we are done with this as well
+now the next part is to create the
+function lightbox slideshow fine so for
+that we'll write here
+function
+lightbox slideshow this is going to be a
+function and we are going to create it
+we'll write here const
+IMG SRC
+is equals to
+dollar will write here
+Dot
+work item so we'll write your work item
+then we'll write a DOT EQ
+index
+so basically we are taking the index we
+are going to find the image we'll write
+here dot find
+we'll write IMG inside this and then
+we'll write attribute over here so we'll
+write attribute attribute is data launch
+fine so we'll write here data large
+and
+then we have to take another constant so
+we'll write here const
+category
+category is going to be dollar
+then we have to access the work item
+class again so we'll write your work
+item
+then we'll do the same thing again we'll
+write here dot EQ index
+then we'll write here dot find
+now inside find we have to mention H4
+over here
+then we have to write HTML
+fine
+now after this what we have to do is
+we have to write here dollar
+then we have to write a DOT lightbox
+IMG
+dot attribute so we'll write here dot
+attr then we are going to write here SRC
+comma
+images so we'll write here IMG SRC now
+fine the next thing we have to do is we
+have to write here dollar
+we are again going to access the
+lightbox category so we'll write here
+lightbox
+category
+then we'll write here dot HTML
+category
+and after this we have to write here
+dollar
+Dot lightbox
+counter
+fine
+we'll write here dot HTML
+now inside this we'll write here total
+work items
+Plus
+and we are going to write here Plus
+index Plus
+one fine
+so we are done with this part as well we
+are done with the light box part now the
+last thing remaining is the dialog box
+on button click so let's check it out if
+this thing is working or not save the
+program move back to the website
+click on any movie and you can see the
+top rated movie section is working fine
+the light box is working fine basically
+click on out of it and you can see it's
+working
+fine
+click on the image you can see the image
+changing click on the cross over here
+you can see the light box closing it's
+working totally fine
+one thing which is not working over here
+is unclicking outside of this image the
+light box is not closing
+so what we have to do is we have to
+remove this Dot from here save it now
+move back to the website click on an
+image click of outside damage and you
+can see it's working totally fine now
+fine we are done with the light box now
+the last thing remaining is the dialog
+box fine so let's write the code for
+dialog box as well will write here after
+this
+dollar
+so we have to access the button so the
+button ID is button then we'll write
+here Dot
+click we are going to create a function
+we are going to use jQuery UI for this
+you can add more interactions or we can
+say more widgets to this but for now we
+are going to use the dialog box widget
+so we are going to write here
+dollar then we are going to write here
+hash
+dialog and
+then we'll write here Dot
+dialog
+will pass open over here then
+that's it fine now the next thing we
+have to do is
+to write here dollar then we are going
+to access the dialog box again we are
+going to write a DOT dialog
+again so we are going to write your dot
+dialog now we have to define the
+properties of this dialog box widget so
+we are going to write here title
+title is going to be
+thank you for
+contacting
+then we have
+close on Escape property so we'll write
+here close
+on Escape
+well right here false
+for close on Escape then we have model
+as well so we'll write here model as
+true fine
+we'll do one more thing we'll set the
+auto open property to false for now
+we'll write your auto open and we'll
+write here fonts fine so here we are
+done with the website save the program
+and let's do one thing let's open this
+whole thing again with live server and
+we'll see if our website is working so
+you can see the preloader thing is
+working now fine
+and we have this about a section we have
+in the category section for our movies
+it's all working totally fine then we
+have the top rated movies over here it's
+working fine as well
+then we have the contact us section over
+here we'll write a name over here again
+we'll write a question email is going to
+be causal at the rate
+gmail.com then we'll write some message
+over here we'll write thank you
+send message and you can see it says
+thank you for contacting we'll get back
+to you soon don't forget to check your
+email
+so this thing is also working fine the
+title is thank you for contacting if we
+try to click on any of these
+placeholders now you can see we are not
+able to do it because of the model
+property
+so the website is working totally fine
+all the icons and everything is working
+fine
+reduce the size of our browser you can
+see the burger menu as well it's working
+fine as well
+and it looks good right
+so I hope you guys understood what we
+learned in today's tutorial I want you
+guys to add some more functionality to
+this website on your own using jQuery
+and jQuery UI what you guys can do is
+you guys can add widgets interactions
+theme customizations and many more
+things right let us know in the comments
+if you have any questions and with this
+we have read the end of this video make
+sure to like and share it thank you for
+watching and stay tuned for more from
+Simply learn
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign
