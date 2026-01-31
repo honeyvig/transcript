@@ -1,0 +1,628 @@
+hi traders and welcome back to another
+pine connector
+pan script lesson in today's video we
+are going to be automating
+another profitable trading strategy
+script using trading view alerts
+i hope you're as excited as i am to get
+this script going
+so the script we are automating today is
+one that i wrote
+or created in a previous lesson during
+my auto view series there will be a link
+in the video description to that lesson
+if you want to go back and watch how and
+why i created the script the way i did
+i'm not going to be going into too much
+detail about the actual
+code behind how we detect our
+signals as i already went over that
+during the autoview lesson so if you
+want to learn how this script works make
+sure to go back and watch that lesson
+in today's lesson we're just going to be
+adding pi connector functionality
+to this script so it already is
+automated through autoview
+today we're going to be adding pi
+connector automation
+and as always there will be a link in
+the video description to the pine
+connector website where you can start
+your seven day free trial
+and seven days should be plenty of time
+for you to get this script automated
+and the previous follow the bear
+strategy script that we wrote in the
+previous lesson
+automated through pine connector and
+then you can decide whether or not you
+want to
+subscribe to the service which is really
+cheap it's only 15 bucks a month which
+considering what it does for your
+trading is
+quite remarkable if you're an active
+trader you're almost certainly paying
+more than that
+in commission costs it's a very
+justifiable expense
+if you're interested in automating your
+forex trading
+but anyway that's enough about that
+let's get started with the lesson
+before we begin adding the pi connector
+code to this script there's a little bit
+of housekeeping we need to do
+first of all i've tidied up the settings
+code a little bit
+i've added these var variables and if
+you're not familiar with the var
+operator this basically just means that
+this variable
+gets initialized on the very first bar
+on my chart and then
+so long as i don't change it it stays as
+this string
+if i were to get rid of the var operator
+then this variable would be regenerated
+on every single bar on my chart
+which is unnecessary it's good practice
+to use the var variable
+when dealing with variables in your
+script that do not change
+as well as obviously when you need them
+to be persistent across
+multiple bars such as our stops and
+targets here you can see that these
+lines draw across all the bars in our
+chart until they are hit
+by price action we achieve that using
+var variables as well
+so anyway i've tidied up the settings
+menu i haven't added any new settings
+since the previous lesson when we
+initially wrote the script
+the final thing i need to do before we
+can go ahead and start adding
+our pi connector code is to fix all
+these warnings so the first warning here
+says the function two whole should be
+called on each calculation for
+consistency
+the reason we're getting that error is
+because this function is being called
+within the scope of an if statement
+and obviously this if statement isn't
+going to be true on every single bar in
+our chart
+and so pinescript is warning us that
+whatever this function does
+could be inconsistent or generating
+inconsistent results i wish there was a
+way to suppress this warning because
+this particular function we wrote it
+doesn't matter that it's
+inconsistently executed it doesn't need
+to be executed on every single bar
+if this was an atr function or an rsi
+function or something like that
+you do need it to be calculated on every
+single bar
+but for this function we don't need that
+but anyway just because i don't like
+seeing warnings
+in our script i'm going to extract this
+whole
+function call here and create a
+temporary variable here called temp
+underscore position size
+and i'm just going to set that to this
+custom function and then i'm going to
+paste
+the temp position size variable into our
+trade position size
+var variable so basically we've just
+extracted
+the function from the scope which is
+what it says here it is recommended to
+extract the call from the scope
+that's what we just did there now if i
+save the script we'll get one less
+warning but before we do that let's come
+down to our valid short
+here and do the same thing so i'm going
+to put temp position size and then i'm
+just going to overwrite this
+variable we created up here with the
+same code
+so paste that in there copy that down
+there
+and that will fix our function warnings
+here so if i say the script
+you can see those warnings are gone but
+we still have three more warnings here
+regarding the trans
+argument which is the transparency
+parameter in our plots
+since writing the script and releasing
+the previous video regarding the script
+the trading view team have changed how
+pine script works and we can no longer
+or we should no longer use the trans
+argument as it will be deprecated soon
+meaning
+unsupported so we need to use the
+color.new function
+instead and that's easy enough to fix
+let me come down to where we use
+transfer i have to scroll a bit here
+and we need to get rid of this trans
+parameter and change our color
+parameter to look like this color dot
+new open bracket
+color dot red comma zero
+and then close off that parenthesis so
+now we're generating a new
+red color with a zero percent
+transparency if i do this to all of our
+plots here
+get rid of that change this to color.new
+color.green comma zero
+and then we also have one on line 62 our
+filter color we have to do the same
+thing here get rid of transf
+change this to color.new color.red
+comma 70 for 70 transparent
+now if i say the script will have no
+errors and we can move on to
+writing out our pine connector code
+there we go
+the script has reprocessed with no
+errors so
+let's move on to writing our pi
+connector code
+now if you haven't watched the previous
+videos in this power connector series i
+would suggest you go back and do that
+because i have designed this series to
+build on each lesson so each lesson
+builds on the previous lesson and so if
+you get lost at all during this lesson
+make sure you go back and watch those
+videos
+for example for today's video i'm
+basically just going to copy and paste
+all the code i wrote in the previous
+lesson where we automated
+the follow the bear profitable forex
+strategy i'm going to copy and paste
+that code into this script
+and then adapt it to make sure that it's
+compatible with the way that this script
+detects
+its entry patterns because remember the
+previous script only traded to the short
+side
+this script trades both short
+and long so short trades long trades
+so we need to make sure the script can
+handle that but first let's
+copy the code from that script so for
+this i'm just going to write ftb
+strategy whoops and
+this one here on the public library is
+one that i published
+to trading view we can just click on
+that that will always contain the
+up-to-date code
+sorry if you can hear that my cat is
+whinging in the background wants to go
+outside but he can't because i'm busy
+um so all we need is
+all of this code here so from pi
+connector settings down to where we
+generate our pi connector alert
+string we want to copy all of this code
+and then paste this into this script
+so probably the best way let me hide
+this strategy first of all
+probably the best way to manage this
+would be to move our awanda settings
+our auto view settings below our filter
+settings
+and then i think that'll be a little bit
+more intuitive so what i'm going to do
+here is just paste this code in here
+our pi connector code is now in the
+script and i'm going to cut
+the order view settings code and paste
+that in above the pi connector code
+so now if i save the script this should
+compile without any issues
+there we go and if i open up the
+settings menu here
+we now have our order view settings
+and our pi connector settings so this
+script can be automated through autoview
+or through pi connector so whichever
+service third-party api system that the
+trader
+who uses this script prefers they can
+use either of them
+but before they can do that we need to
+add our pi connector alert code to this
+script so
+let's uh open up the source code to the
+ftb
+script come down here to where we
+generate our alert string
+i'm going to copy this code here go
+back to our hammers and stars strategy
+and scroll down to where our signals are
+detected
+under valid long and valid short and now
+we need to do a little bit of
+formatting our alerts based on what the
+user has selected
+so first of all i'm going to comment out
+this code just for now because we should
+first add a setting for the user to
+select which version or which api that
+they want to use
+so um i'll do it like this i'm going to
+just copy this line of code here and
+paste that in there
+and change this to say use auto view
+and i'll leave it off by default let's
+change the tool tip
+to say turn this
+on to use auto view alerts
+then we need to change the variable name
+to let's just call it auto view
+and then i'm going to copy this line of
+code down
+underneath our pine connector settings
+change this to say
+pine connector and
+change this to say pine connector and
+change
+this to say pine connector
+and this needs to be underscore pc
+so now we have two new settings here use
+auto
+view or use pan connector and we'll use
+these
+booleans in order to determine which
+alert string to generate to send to the
+web hook
+so let's open up the settings come down
+here
+and now we have this setting here use
+order view
+and use pine connector
+now obviously you can't use both at the
+same time because you can only specify
+one web hook you could set up two alerts
+to use both at the same time but the
+script needs to prioritize one of these
+over the other when our signals are
+detected so let's come back down to
+where
+valid long and valid short is and let's
+write out
+our code for generating the string
+to send to the webhook so i'm going to
+cut
+all of this autoview code out here
+i'm going to move that down i'm going to
+say
+generate auto view
+alert syntax and then i'm going to paste
+that string in here and we'll just call
+this
+av underscore alert equals and then
+let's add this
+down here and i can move that there now
+let's save the script to make sure this
+works there we go that's working fine
+so now we also need to generate
+pine connector alert syntax
+now that's going to be a lot simpler
+since we generated a custom
+function for doing this so for this i'm
+going to say pc underscore alert
+equals and then just cut this code down
+there
+and there we go so now we are generating
+both order view and pi connector alerts
+obviously i need to change this to say
+buy since this is our long trade
+detection
+and now we're good to go let me just
+bring all of this code up
+and all we need to do now is
+tell this alert function which string to
+use so for this i'm going to say
+uh auto view question mark
+if auto view is turned on then we want
+to send the av alert
+otherwise we will check pine connector
+question mark if pi connector is turned
+on then we'll use pc underscore alert
+and then if neither pi connector or auto
+view is turned on we'll just send a
+blank
+string or we'll put in here
+hss long alert
+so if the user doesn't want to use
+either
+apis and they want to manually trade
+this system
+or this strategy if i save the script
+here this should compile hopefully
+without any issues
+there we go so if the user comes up to
+the settings menu
+and selects hss i can remove this
+ftb script now yeah if the user comes up
+here and selects hss
+and then selects alert function calls
+only
+if they haven't turned on pi connector
+or order view
+then when this alert generates the text
+will say
+hss long alert if however they have
+turned on
+one of these so let's say they want to
+use pi connector
+they need to tick this box click ok then
+set their alert up as alert function
+calls only
+and then set up the web hook to send
+this alert to pi connector if i were to
+create this alert now
+whenever a long setup is detected on the
+daily chart here on euro yen
+our pi connector alert syntax would be
+sent to pine connector
+and it would automatically place a long
+trade with our stops and targets and
+position size as we've set it up in the
+settings
+and metatrader if we have it running and
+pi connector
+correctly set up will automatically
+handle that trade execution for us so
+that's pretty much it all we need to do
+now is copy all of this code
+down into our short setup detection
+code so first of all i'm just going to
+comment this to say
+send alert to webhook
+and then i'm going to copy all of this
+code here
+and paste it over the top of this code
+here
+change this to say short and this to say
+cell
+and we're done obviously i need to
+change this as well
+to say short alert and now the script
+will be fully automated both on autoview
+and pine connector
+so whenever a setup is detected if we've
+set up our alerts correctly
+and selected alert function calls only
+and put the correct webhook url in here
+either for pi connector or autoview
+actually orderview doesn't use a webhook
+url
+it is a browser plugin that
+detects the alert text in the alerts log
+so you can see here that i actually had
+an alert generate this morning
+on euro yen for this script that i have
+running on autoview
+the script that i have up doesn't have
+the
+ema filter on it so if i remove that ema
+filter we did have a valid hammer set up
+here
+on euro yen i'm still optimizing this
+strategy
+and i think i'm going to change the way
+i trade it i've been playing around with
+the various filters that we have here
+and i think that the 20 ema
+filter is ideal for many of these forex
+pairs it works on
+over half a dozen of them on this daily
+chart so again if you want to understand
+how this
+strategy works and why it's profitable
+and how i personally trade it
+and the story behind it make sure to go
+back and watch the order view
+version of this lesson where i actually
+write out all of this code
+in real time for you and explain in
+detail
+what it all does today's lesson is just
+about adding power connector
+functionality to this script
+and we have now achieved that quite
+simple once you've written out the code
+it's pretty much
+just a matter of copy and pasting it and
+adapting it to your
+personal strategy code and as you can
+see this
+is quite a profitable strategy over the
+long term
+this has taken 153 trades with the 20
+ema filter
+and had a 61 win rate uh with a one to
+one target
+1.2 also works quite well on this
+strategy
+we still have nearly a 60 win rate even
+with that slightly higher reward
+to risk profile so i would encourage you
+to play around
+with all of these filters
+your stop-loss atr and your filter
+settings can dramatically
+change the dynamics of this script it's
+profitability it's win rate it's max
+drawdown
+all of that so if we change
+our stop loss to half an atr you can see
+we generate more trades
+but our win rate goes down slightly and
+don't forget to back test
+this strategy before you trade it if you
+do decide to trade it this is all to be
+used at your own risk
+i'm not a financial advisor i don't know
+your financial situation
+and so it is up to you as always to do
+your own due diligence
+back test this script to see how it
+performed over the past
+um however many years if i go back
+this script has back tested since
+technically may of 2002 but
+back then for whatever reason oanda
+doesn't have wicks on their candles
+so really it didn't start back testing
+until
+january of 2005. but considering that is
+16
+years worth of price data i am very
+comfortable trading this
+script on these markets even though
+historical performance
+is not indicative of future performance
+obviously
+we don't know the future i think that
+the odds of this
+particular strategy losing its edge over
+the markets
+anytime soon are pretty slim i think
+this
+particular approach to trading these
+markets will work
+into the future at least for the next
+few years
+obviously over time most edges
+deteriorate but this one has done quite
+well
+over the past 16 years and if you want
+to you can play around with the start
+date and end date filter
+to see how performed in recent years so
+let's change this to 2000
+and let's say january of 2015
+till now you can see that it's still
+profitable even in recent times
+anyway i'll leave that with you to go
+and test there's a lot of markets that
+this is profitable on
+i won't tell you them all because it
+will take me too long
+it is profitable on gold as well so keep
+that in mind it may be
+even profitable on some of the other
+commodity markets i haven't tested them
+myself
+so i don't trade those markets at the
+moment uh it was also profitable on
+bitcoin
+as well but awanda doesn't have a lot of
+bitcoin data
+i hope you enjoy using this script it's
+a great strategy it's super low
+maintenance
+it doesn't generate a lot of signals but
+being a daily chart strategy
+you only need to check your charts once
+per day and it's completely automated as
+well which is pretty cool
+you could just set this up on metatrader
+set up a virtual private server which i
+will show you
+how to do in one of my next videos if
+you don't want to leave metatrader
+running 24 7 on your
+home computer you can rent a private
+server from amazon
+it's very cheap in fact it's free for
+the first year i believe
+i'll leave a link in the video
+description to my order view
+version of setting up the virtual
+private server because the steps to get
+the server running
+are identical the only difference
+obviously is that for pi connector you
+will need to have metatrader running
+on that server whereas for auto view you
+need to have your chrome browser open
+for it to work anyway that'll do it for
+today's lesson thanks for watching guys
+thanks for your time i hope you found
+this valuable
+if you did make sure to hit the
+subscribe button i will be back
+very soon with a new video in the
+meantime if you want to learn more about
+panscript i have my panscript mastery
+website at panscriptmastery.com there's
+a free course over there and a couple of
+other paid courses that
+go into a lot more detail about this
+awesome scripting language
+if you're new to pinescript the mastery
+course is perfect
+for you it will teach you everything you
+need to know in order to write scripts
+like this one here and if you're an
+experienced
+pan scripter you might be more
+interested in my
+indicators and strategies course which
+is a bit more expensive but it
+does have a lot more valuable content in
+here
+in terms of just straight up value you
+can copy and paste
+the source code to all of my profitable
+strategy scripts
+and every indicator i've ever written i
+have video lessons
+breaking down the source code to every
+single script here
+including a bunch of profitable
+strategies and a few more that i'm
+working on
+so if your experience with panscript
+this
+course might be more valuable to you
+than the mastery course i have sunk
+thousands of hours of coding into these
+scripts
+so that you don't have to you can just
+copy and paste the source code and if
+you're curious about how
+i wrote the script or why i did what i
+did in the code there are video lessons
+explaining each line of code in these
+scripts anyway i'll leave it there
+thanks for watching guys and girls
+take care and i'll see you in the next
+video i hope you have a great week in
+the meantime
+goodbye
+you

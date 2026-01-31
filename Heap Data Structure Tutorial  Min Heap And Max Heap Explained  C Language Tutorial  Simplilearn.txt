@@ -1,0 +1,212 @@
+hey guys welcome to yet another
+interesting and informative video by
+simply learn in today's video we're
+gonna be learning all about heap data
+structure in c but before we begin if
+you haven't subscribed to our channel
+already make sure to hit the subscribe
+button and the bell icon to never miss
+an update so now without any further
+delay let's begin
+this session will help you understand
+what heap data structure is in c
+after that let us know the types of heap
+data structure followed by heap
+insertion and deletion operation
+now let's begin by understanding what
+heap data structure in c is
+the first thing to know is what is a hip
+hip is a free pull or memory storage
+space to store data dynamically
+in program memory the memory is divided
+into code data stack and hip
+so when program variables are allocated
+dynamically it is stored in the heap
+memory storage we quickly store the
+elements in a hip to access the maximum
+or minimum elements of the data
+structure
+and
+in c programming heap is a complete tree
+based data structure following a
+specific order a heap consists of a root
+node parent node and a child node
+the way roots are necessary for a tree
+similarly a root node is very important
+in a hip
+the element of a root node is always
+greater than or equal to the other tree
+nodes or it can be smaller than or equal
+to its child node
+suppose we have an array of elements 7 5
+6 2 and 3
+and the index starts from 0 up to 4. so
+with this let's implement a tree based
+data structure
+as you can see the highest element is
+our root node followed by the children
+nodes
+node element 5 and 6 are the child nodes
+of node 7 whereas note 5 is a parent
+node of 2 and 3 and if it is required to
+insert a few more elements in a hip it
+starts inserting from left to right
+and let the root node index be 0 and
+goes up to the elements present in a hip
+now we know what a heap data structure
+is and why heap is used in c programming
+let's move ahead and understand the
+types of heap data structure in c
+there are two types of heaps maxip and
+min hip
+in a max heap
+the elements of the root node must be
+greater than or equal to the elements of
+its children's node
+now let's see its example
+in this particular example 7 is the
+largest element than other elements in
+the node so when you see towards down
+the hip parent node element is greater
+than its children node for example root
+node 7 is greater than 5 and 6 and 5 is
+greater than its children node 2 and 3.
+minip is just opposite of max hip
+the root node element of a min hip is
+lesser than or equal to its children
+node for example
+2 is lesser than all other nodes in a
+hip the parent node 3 is lesser than its
+children node 6 and 7.
+so i think you understood maxip and min
+hip well
+ok so let us move on to the max hip
+implementation
+here we have an example
+the hip elements are 7 2 6 5 and 3.
+now look at the steps to implement a hip
+let the root node index be i the current
+element and set the current element i to
+be the largest
+in this given example a parent node of 5
+and 3 which is 2 is lesser than its
+children node so happify the hip
+the left child index is given in terms
+of 2 i plus 1 and the right child index
+is 2 i plus 2.
+by considering this example the index of
+node 2 is 1
+so by calculating the left child index
+2i plus 1 whereas i is equal to 1 so 2
+into 1 is equal to 2 plus 1 is equal to
+3
+swap the element with the index node 3
+that is swap the elements 2 and 5. so
+now the parent node is greater than is
+children node
+and finally the tree is hepified
+now let's have a look at the hip
+insertion operation
+let's insert one new element into the
+hip
+for example if the element is 7 to be
+inserted then it will be inserted from
+left to right at the bottom of the hip
+since the parent node element is less
+than its child node that is 6 is less
+than 7 so we must happify
+so the next step is to happify the tree
+by swapping the elements
+and finally the element is added to the
+hip
+next is a hip deletion
+operation suppose we want to delete one
+element from the hip
+so let's consider element 5 to be
+deleted and to delete element 5 swap the
+element with the last node element 7
+and finally remove the last element from
+the hip
+now let's run this simple program using
+hip data structure
+so in this program we are going to
+insert and apply the heap elements to
+organize the data of a heap max we have
+swap function in which we are going to
+swap the elements between parent node
+and child node
+following we have a heap function
+it first checks whether the size is
+equal to 1 it means there is only one
+element in the hip
+else it will set the current element i
+to be largest
+as i discussed before the left node
+index is given in terms of 2 into i plus
+1 and right node is 2 into i plus 2
+and if left node is less than the size
+of hip and greater than the largest then
+it will set the left node to be largest
+similarly we do for the right node
+and then we have an insertion function
+to insert the elements in the hip
+using if condition it will first check
+the size of it if it is 0
+then array index of 0 will be the new
+element
+and then increase the size by 1.
+else array size is new element so once
+we insert the element into the hip we
+are calling a heap function to organize
+the data that means to happify
+and once the data is happified
+we have a print function it will print
+all the array elements
+and then inside the main function
+we are giving the values to insert the
+elements and they are 10
+3
+4
+2 and 6
+and finally it will print the hepifed
+maxhip elements
+so now let's run the program and see the
+output
+as you can see the happy find maxip
+elements are 10 6 4 2 and 3.
+so now let's try to insert one more
+element and see the output
+so let's insert the element 8
+save the program and run
+and here we go
+the element 8 is successfully inserted
+in our next program let's try to perform
+deletion operation
+so let's try to delete one element from
+the hip so for that we have a deletion
+function
+if number to be deleted is equal to the
+array of index
+then swap the element with the last node
+so
+calling the heap function to helpify the
+elements and display it
+and inside the main function
+we are going to mention
+the element to be deleted that is 6
+so now let's run it
+as you can see the element 6 is deleted
+successfully
+and the elements after deleting are 10 4
+8 2 and 3.
+and with this we have come to the end of
+the session on the hip data structure in
+c
+i hope this session was informative and
+interesting until next time thank you
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

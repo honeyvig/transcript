@@ -1,0 +1,528 @@
+hi what's up Traders welcome back to the
+channel in today's video I'm going to be
+going over some changes I made to the
+previous video script which was a pine
+connector template so Pine connector is
+a tool we can use to automate our
+trading view scripts and in the previous
+video on the channel I showed you guys a
+advanced template script that comes with
+a lot of inbuilt options some example
+strategy settings but also a whole bunch
+of pine connector settings for relaying
+trade management commands to our
+metatrader accounts however that script
+had a couple of problems it had a few
+bugs in it um as with most complex first
+drafts of any script there are a couple
+of things I missed and overlooked but
+now I've fixed them so if you go to our
+website pinescript mastery.com uh you
+can find the updated source code there
+for today's lesson now before we start
+today's video I just want to go over
+some of my personal trading metrics
+through Pine connector um since starting
+this new series I've been running my
+ultimate pullback indicator through Pine
+connector and metatrader um so it's been
+running for about 2 months now I think
+I'll double check in a moment um but
+here are my metrics so you can see we
+have a 12% gain which is pretty solid
+for a couple of months that's you know
+don't let the uh charlatans out there
+fool you a 12% gain in a couple of
+months is actually pretty impressive if
+we could keep this up for the whole year
+I could potentially double my count over
+the course of 12 months but I don't
+expect that to happen but it's just goes
+to show that it is possible to
+profitably trade a pine connector script
+through trading View and uh Pine
+connector through metatrader so we only
+have $373 profit which isn't you know
+I'm not going to quit my day job for
+that but 12% if I had 100 Grand in this
+account uh this would be a $122,000
+profit so well not quite it' be a
+different commission structure so I'd
+probably be paying a lot more in
+commission but it would still be a
+decent sum of money here over the past
+couple of months so that's pretty
+impressive let's click on this uh system
+so this is a real money account through
+pepperstone um through metatrader using
+pine connector This Is My Equity curve
+so I've been pretty lucky the past
+couple of months uh we haven't really
+encountered a losing streak a
+significant losing streak so that's pure
+luck this in timing there's nothing I
+could have done to um avoid a draw down
+if it had happened but it just so
+happens that I've started trading the
+system at a good time um in the markets
+good market conditions um we scroll down
+here it's taken 50 trades so that's a
+half decent sample size there and yeah
+it's doing pretty well so I started
+trading at the end of October it took I
+think one trade in October and then the
+past two months have been pretty solid
+this month's obviously only just begun
+but uh yeah really cool stuff here just
+goes to show that it is possible to
+trade a trading view script through Pine
+connector profitably if you have a good
+system if you're curious about the
+ultimate pullback indicator you can get
+the source code on my uh website it's
+not cheap because it comes in a course
+including the source code and lessons to
+every script I've ever created for
+pinescript um so go check out my
+indicators and strategies of course if
+you're interested in that um otherwise
+you can get access to this script itself
+which comes with pine connector
+functionality inbuilt and you can just
+slap it onto your chart and start auto
+trading pretty quickly um but again not
+trading advice this is just a tool that
+I use in my own trading if you're
+curious about it go and check that out
+this is what it's capable of this is
+using the default settings too
+um so we're just using a default UPI
+settings on about six or seven markets
+let's have a quick look at the pine
+connected dashboard here here's my uh
+dashboard here so I'll zoom in on this
+for a second just to show you guys the
+numbers so we've taken $400 in profit
+but we've also taking a um hit on
+commission so yeah not a bad um little
+test here I'm actually really stoked
+that this is profitable I didn't expect
+it to be profitable to be honest because
+it's such a short time window um there's
+no you know there's there's a lot of
+luck involved in a short period of time
+like a month or two so just really lucky
+that this played out profitably it's
+paid for my Pine connector subscription
+which is really nice to see anyway just
+thought I'd mention this to excite you
+guys get you guys motivated about Pine
+connect to show you what's possible show
+you that it is possible to make a profit
+out of this uh tool obviously you need a
+good system to do that the system is the
+important part but if you have a good
+system why not automate It Anyway let's
+get on with today's video let's take an
+example script and apply it to our
+template code so to start with you'll
+need to go to our website at pinescript
+mastery.com if you come up to free
+resources and come down to YouTube
+scripts there will be a list of all of
+the scripts I've published on the
+channel for pin script version 5 if we
+scroll all the way to the bottom here is
+the advanced Pine connector template
+click on this I haven't updated this
+page yet with the new script but I will
+by the time this video is released um
+you want to click copy code
+jump back over into the pine editor and
+create a new script there we go paste
+that code in here there's our template
+code this isn't the updated version but
+it will be by the time I publish this
+video I'm going to call this delete
+because I'm going to delete this later
+but you call this whatever you want now
+that we have the template code for this
+Pine connector script um the next thing
+I'm going to do is jump into the Mastery
+course so for those of you with access
+to the Mastery course there are a whole
+bunch of strategy uh scripts here that
+are not on YouTube um on my channel
+pretty much any of these would work for
+today's example if you um want to follow
+along with a different script but for
+today I'm going to work with the pin bar
+strategy so if I click on this video
+scroll down here's the source code to
+this script so I'm going to copy this
+code for now I'll paste it into um
+notepad++ and let's rip out everything
+we don't need cuz we're going to copy
+the bulk of the logic of the script into
+our template script so let's take out
+what I don't need so I don't need this I
+will use my zen library for detecting
+Candlestick patterns the latest version
+of this library is five so I'll change
+that to five we're going to need our
+strategy settings but we don't need our
+stoploss multiplier since that's built
+into the template and we don't need our
+risk reward input since that's also
+built into the template I will need this
+FIB level input so let's delete these
+two
+inputs
+um so there's our one unique strategy
+input that I need to add to the template
+then we have our filter settings I will
+also need all of these so I'll leave
+this whole block here and we'll go over
+these in the pine editor it's a bit hard
+to read right now but we're just
+stripping out the stuff we don't need
+from the script the date filter we will
+need I'll move that down into here we'll
+merge all of our filter
+code into one block I will need these
+indicator values so I'll leave that and
+get rid of that comment and then finally
+here are our entry conditions the rest
+of the script can go so the rest of the
+script is already included in the
+template this is all just the entry code
+the um stoploss calculation Target
+calculation the drawing code all of
+that's included in the template so I can
+delete all of that and what we're left
+with is the guts of our system we have
+the important inputs we need we have the
+indicators we require we have the
+filters we we need and we also have our
+entry conditions so let's cut all of
+this and jump back into the charts and
+let's start adding this code to our
+script so I'll paste all of our code out
+the top here the first thing we need is
+our library so let's cut that and paste
+that in here above our user inputs the
+next thing we need is our FIB level user
+input so I'll add that to the bottom
+here and you can change this if you want
+I'll change this to say pinbar system
+settings and at the the end of this uh
+video we'll come back and refactor all
+of these names to to be more consistent
+with the rest of the script but for now
+let's just leave it as it is uh we need
+our filter settings so let's cut all of
+that we'll paste that below our system
+settings then we need to get our
+indicator values so let's cut that and
+come down to here let's paste that in
+here get indicator values we already
+have the ATR value and the new template
+so I can get rid of that I'll leave this
+as it is we'll come back as I said and
+we'll refactor all of these variable
+names to better suit the style of the
+script but for
+now um let's cut our filter code we can
+place that in right here underneath our
+indicator values and right before we
+detect our entry conditions so check
+system
+filters um and then finally here are our
+entry conditions so we paste them over
+our simple example strategy entry entry
+code so I paste that in here I can cut
+all of this all of these conditions and
+paste them over our entry conditions
+here so paste that in there now we're
+detecting Hammer candles and we're
+checking our system filters so this
+system has an ATR filter the ATR needs
+to be between two specific values it
+can't be to small and it can't be too
+large the um EMA filter means that price
+must be trading above or below a
+specific EMA and the date filter is just
+um what it sounds like it stops taking
+trades outside of a certain date range
+and the uh close must not be equal to
+its open so it can't be a dogee so for
+short trades it's exactly the same
+except we're detecting shooting star
+candles instead of hammer candles so
+let's paste that over our short entry
+conditions and we're done if I save this
+code here that should be it that should
+we we got some errors hang on uh I've
+got
+some variables here that aren't in our
+main script ATR needs to be changed to
+ATR
+value now we should be done but save
+this
+script it's compiling there we go so now
+we
+have this system um need some
+adjustments these uh the Max draw down
+of 90% is not great but if we go um uh
+out a bit and have a look make sure
+everything's working make sure we're
+detecting the right Candlestick patterns
+so here's here's a shooting star we went
+short with our stop loss and take profit
+very close to price so we need to adjust
+some things here uh we have a zero pip
+stop loss at our high or low so let's
+change this to 1 ATR so now we should
+have a 1 ATR now that's changed the
+system completely now we are detecting a
+hammer candle we're going long with a 1
+ATR stop loss with a 1 ATR stop loss
+below the end entry candle low I can
+change this look back let's set it to a
+five bar look back now it's detecting
+this low and calculating a 180r stop
+loss from there and that should improve
+our metrics a little bit there we go yep
+that's a bit better 60% draw down um
+still not great but obviously this is
+using a fixed um contract size of one
+standard lot on a $10,000 US dollar
+account so you'd want to play around
+with these values to get it to
+uh be giving more reasonable metrics uh
+but that's outside the scope of today's
+video the back testing process for for
+developing a system is um obviously a
+lot more complicated than than what I'm
+doing today uh but this is about the
+script template if you want to learn how
+to back test um trading view scripts I
+have a ton of videos on the channel um
+and there's plenty of information out
+there at some point in the future I'll
+do a video series on how I go about back
+testing um these days things are a bit
+different for for me cuz I'm a much more
+experienced Trader than I was a few
+years ago when I recorded some of those
+videos but the principles still apply so
+go back and watch those videos if you're
+curious about my process for back
+testing and some of the tips and hacks I
+have for for back testing especially
+multiple um markets uh but anyway the
+script appears to be working fine so
+let's just recap what I did here I
+copied in the template code directly
+from the website just as it is I copied
+in the extra setting input that I needed
+so if you've got a complex system you
+may need to go through and adjust all of
+these inputs to suit that system um
+let's do the refactoring as we go here
+so I've copied in first we copied in my
+library so I I have a library here it's
+open source you can go and check it out
+if you're curious it has just some
+helper methods in there just some things
+to help me write scripts quicker um for
+example it has a whole bunch of
+Candlestick detection code in there that
+I use in a lot of my scripts um among
+other things so we're importing my zen
+Library as Zen so the Alias Zen means we
+can just type zen. control space and
+here is the list of functions included
+in that library in this script we're
+only using um Hammers and star candles
+but there are other candles here if you
+want to play around with them bearish ec
+is bearish engulfing candle bullish
+engulfing candle dogee Hammer inside bar
+outside bars and shooting star candles
+they're the only candles I believe that
+I detect in the script
+but anyway import my library add this
+user input filters let's change these to
+say filter ATR Min
+size um I'll fast forward this I'm just
+going to rename all of these variables
+to suit the style of the script and then
+I'll um continue on with explaining what
+we've
+done all right there we go that took
+about 5 minutes so we have um refracted
+the whole script to look consistent um
+so all my user inputs are in capital
+letters to differentiate them from
+regular variables so and they all start
+with a prefix so we've added our one
+unique system input we've added all of
+our filter
+inputs and then down here we have
+retrieved our indicator values so ATR
+value is included in the template NZ
+just makees sure that on the first bar
+on our chart the first 13 bars on our
+chart um this will be na because it
+needs 14 bars to calculate its value and
+if we open a trade with a stop loss
+that's NA um the trade will never close
+because it has no stop loss or take
+profit so this is just a cheap way to
+prevent that issue a better way would be
+to add this check um to your entry
+criteria so here you could say not na a
+ATR value and blah blah blah ideally
+you'd probably want to check that all of
+your indicator values are not Na and add
+that to your entry conditions but I
+won't do that for today's lesson it's
+not that important because we're on a
+daily chart here so the amount of Trades
+it would have taken in the first 14 bars
+on my price data is probably negligible
+so it's not important for today's
+example but that's something I feel I
+should mention um if you have code that
+analyzes indicator values that are na
+early on in price action that can lead
+to all sorts of weird bugs with your
+script so just thought I'd mention that
+it's worth checking that these values
+are not na but anyway we're getting an
+extra indicator value here which is an
+EMA we're checking all of our filters um
+so we're checking the date filter we're
+checking the long and short EMA filter
+we're checking that the current bars
+size is within our ATR filter um
+thresholds all and you can see here that
+with this original script I actually do
+have this this check in here so this
+original script from the Mastery course
+does check that the ATR is not na um and
+then for our entry conditions we're just
+combining all of these filters so this
+system trades Hammers and stars so we're
+checking is the current bar our Hammer
+candle for long trades and are all our
+filters met and do we not have a trade
+open this script does not pyramid trades
+if all of these conditions are met then
+the rest of our template code runs as it
+is and the cool thing about this
+template is in the original script I did
+not include exit reasons I did not
+include uh trailing stops I did not
+include um Break Even functionality
+there was a bunch of things that the
+original version of this pinbar system
+did not include uh but with this
+template we can actually play around
+with some of these things so we could
+see how using a trailing stop would
+affect the system uh now when I'm using
+a trailing stop the script is still
+still using our fixed take profit so
+I'll need to amend this um script one
+more time down here use exit reason what
+we need to do here is check if strategy
+trailing stop is greater than zero and
+add that to our exit
+reasons if this is true then that counts
+as an exit reason we're not exiting with
+a fixed take profit we're using a
+trailing stop is our exit reason so let
+me save that code see what happens there
+we go that's fixed it so now if I turn
+off my trailing stop we're using a fixed
+take profit so this trade should exit
+there there we go uh but now if I turn
+on our trailing stop so if price reaches
+a one to one from our entry so if if
+price moves the same amount of distance
+as our stop loss from our entry uh then
+the script will begin trailing our stop
+loss in the original script that wasn't
+a feature the original script did not
+include a trailing stop so now we can
+check
+if that increases the profitability it
+does a little bit um it does improve our
+metrics a bit on this particular daily
+chart system but anyway that will do it
+for today's video I hope you found this
+interesting I will include the source
+code to this script even though it is
+basically just a slightly modified
+version of the original template just to
+give you guys a comparison so you can
+copy both of these scripts into your um
+editor and see what I did for those of
+you who are new at a pine script you
+might want to compare the scripts to see
+exactly what I did um so this is a
+pretty good General template to work
+with um with scripts but also obviously
+Pine connector which is its um intended
+purpose so let's just have a quick look
+here make sure everything is right
+before I sign off on this video so let's
+look at our Pine connector syntax we're
+using a b limit order um that's correct
+if I turn that off now we'll be entering
+at Market our stop loss is using a price
+value so 1.04
+56 that's looks right to me a risk is
+one so one standard lot or 1% of our
+account balance depending on our Pine
+connector settings we're not sending a
+fixed take profit that's correct because
+we are using a trailing stop and here is
+our debug label for our trailing stop so
+see here that our trailing stop
+flatlined um so the very last time our
+stop- loss was updated was on this bar
+here this red bar and this is the
+command that was sent to PC connector so
+we send the new stoploss takeprofit long
+command for this symbol um and then we
+send our updated stop-loss price if we
+wanted to be uh sending pip values
+instead then we would click uh this
+option here and now we're sending our
+stop- loss as Pips so 155 pip distance
+all right so everything seems to be
+working if you notice a bug with this
+script please send an email to support
+at the art of trade trading.com and I
+will try to update the um source code
+template on the website as soon as
+possible but so far so good the script
+looks pretty good to me um I've been
+using it on my UPI for a couple weeks
+now without any issues but obviously
+this script comes with a whole bunch of
+different setting options so um so I may
+have overlooked something here make sure
+to run this on a demo account before you
+do anything with it uh make sure that
+it's working as expected and intended
+and with all that said thank you for
+watching guys I love all of you please
+subscribe if you haven't already uh good
+luck with your trading and I'll speak
+with you in the next
+video take
+care

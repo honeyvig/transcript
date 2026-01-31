@@ -1,0 +1,793 @@
+foreign
+[Music]
+Ty so many times so today's video we
+will create a website with the help of
+chart GPT and we will not add a single
+line of code on our own we'll ask jar
+GPT to do all the work and then let's
+see whether it can create a website
+independently so let's begin but before
+that if you haven't subscribed to our
+Channel already make sure to hit the
+Subscribe button and press the Bell icon
+so you will get all the updates from
+Simply learn
+now if you want to become a software
+developer consider this course on full
+stack developer mean stack by simply
+learn and master those necessary skills
+check out the link in the description
+box for more details call on the number
+that are given below and they will guide
+you to get the best course that can
+upskill you okay now now let's open the
+chart GPT and check let's refresh this I
+have already opened my chat gbt you can
+just login it and then you are good to
+go so let's say hello and see
+so and so again completely fine right
+now okay
+so what will we do today is
+we'll open our Visual Studio code I have
+created one folder which is Tailwind
+it's an empty folder you can just see
+that
+so in that folder we'll add the Tailwind
+so first let's ask the chat DBT to help
+us install or set up the Tailwind
+so I'll write
+please
+set up
+the
+Railway
+let's see
+okay
+so asking us to install node.js first
+and then it's asking us to
+check the origin of that
+okay
+it's saying to install these
+new Pro pixel JavaScript module
+to add these components in the CSS file
+so this is saying to add this in the CSS
+file okay
+so
+let's check whether it is telling us
+something useful or not
+post class Contour fixer
+okay
+now
+simultaneously let's check
+the table website
+how to install this
+so here
+it's saying to install this command
+CSS and then in it in that project then
+it's saying to configure the template
+part
+to add this to your delivery
+configure.file then it's saying to
+create a folder input.gss
+and then just start the process
+so as of now
+charge GPT has not given us the correct
+answer it's correct but not up to the
+mark as you can clearly see the commands
+that are given on the delvin.css
+official website
+uh so according to me many people think
+that because of Charity the uh so many
+jobs of the developers are in the risk
+because chargpt can create websites all
+of this stuff so I don't think so
+according to me it's not that good it's
+very good for the uh helping any
+developer purpose
+but it's not that good but let's see we
+are in this together
+so let's just open the video Studio code
+and install our Tailwind now we'll ask
+it to create so many other things so
+let's see whether it can create that or
+not so I have opened my terminal so many
+people also comment us that how you
+could open the terminal so I just used
+one shortcut Control Plus tactic
+to open the terminal you can also go
+here
+and create one terminal
+okay
+now I'll paste the line to install
+Kelvin CSS in my system
+so let's wait a couple of minutes
+as you can see it's installed in our
+system all the packages and modules are
+installed now it will tell us to init
+this project so let's do that
+okay
+it has successfully created the
+configure file now inside the content
+we'll copy paste this one
+as it is saying to add these line
+configure your template path add the
+path to all your template file in the
+file okay so let's just
+copy this thing
+and paste in the content
+now let's save it
+okay
+so now next step is add the Tailwind
+directives to your CSS
+now
+what will we do here is
+let's go back to visual studio code and
+create a folder
+inside this
+that
+SRC okay and set this SRC we'll create
+the file
+beautiful.jss
+hair will place the good okay we haven't
+copied that code on yet
+so let God be
+let's paste it here
+so I don't think so again that this can
+replace the Developers because this is
+not the correct we do
+tell although it has given us all the
+steps but
+any developer can do the task in a very
+short period of time it can just help
+any developer but not
+take the job of the developer okay
+so let's move ahead
+and
+step would be
+to go back next step to fill the process
+let's copy this one and start the
+Tailwind CLI build process okay
+let's copy and paste it here
+right
+as you can see it's done in 273
+milliseconds
+the output.css is generated in this
+file folder right
+now we just have to use this file
+output.css okay
+let's see now
+let's create a
+file here
+and name it as index dot HTML
+okay
+and inside that I'll write my Boiler
+code just pressing shift N1 for the
+exclamation mark and then the Boiler
+code is done so we can change the name
+of this
+and let's write here as
+side
+using charging
+okay
+now
+one main thing that I wanted to tell you
+that I have installed one extension in
+my system which is the live server this
+extension you can download
+and this is very helpful okay
+let's open this one
+now what we'll do is we'll link the
+output.jss file in our gmail.css
+for that so I'll write here link
+okay
+and inside this ring I will curve or you
+can just write link and then click and
+then right
+here
+style sheet
+mobile
+okay
+good
+what we'll do is we'll give the path of
+the output.js for that dot dot slash
+list
+foreign
+okay
+let's close this link tag and let's save
+it and let's just
+right click and here you'll see open
+with live server when you will install
+the extension live server so let's open
+this one
+so this is working completely fine it's
+showing that the title which side is in
+20 minutes
+okay or something
+I'll write here
+welcome
+to Simply learn
+and then
+let's save it and you'll see it's
+showing
+welcome to Central okay
+now the next step would be to create
+now let's open our
+charging Beauty
+and
+and we'll ride
+create a
+concept
+header
+using
+let's just copy this one
+in there
+that's usually
+okay
+so
+let's see whether it can give us a right
+answer this time
+it can
+let's see
+okay
+it's giving us the code now for the
+header
+[Music]
+okay
+so it is showing us in the above code we
+use Tailwind CSS classes to style the
+header we set the background color to
+Gray and this one is the property of
+green color and then the text color
+would be a white color in that name bar
+inside the header we have a nav element
+with the flex and justify between okay
+classes to horizontal Center the element
+space them out evenly okay fine we also
+use PX4 and py3 to add padding to the
+navigation bar cool
+for the mobile menu we use the button
+with the MD hidden class to hide it on
+okay let's see
+the code now
+okay
+now let's copy this HTML file let it
+write everything shown here we don't
+need this one so let's delete this
+and let's here write header
+and let's comment it down
+yes okay let's
+raise the code and check
+whether it's
+let's save it and let's go back to our
+file so this is what charging created
+for us it's looking very good actually
+so let's inspect it
+and let's see is it responsive or not so
+this is completely responsive guys
+okay very good
+yeah
+so
+this is really very good okay
+on Surface Dio
+sl20 Ultra this is what will show on the
+mobiles okay now we'll go back to the
+chat CPT and let's
+clone this one and
+stops generating and let's say right
+create
+a
+section using
+Kevin
+CSS now let's see something
+okay
+let's see let's first copy this one and
+we press this
+and let's see how it will create the
+hero section using tell messages
+so it has created this never really very
+good
+I didn't expect this from the activity
+but it's really really looking really
+good it's simple and you can add these
+to another Pages just using the anchor
+okay we can just fill the path so I'll
+show you www dot
+[Music]
+dot com
+so this one is okay
+so whenever I click on this one it will
+redirect us to the simpler but the URL
+is wrong so you can just go back to
+simplylearn.com
+and let's copy the
+and let's go back to code
+and let's write
+the URL okay save it and let's see
+yeah this is how this works
+let's close this one okay now let's see
+what is the code
+okay let's copy this code and let's see
+how this is working so it is also giving
+us the complete code how it's working
+how this step is working and all as you
+can see it's giving us the max W with
+seven into one utility sets as Max
+weight for the container
+7xl which is 120 112 Ram or 1792 pixels
+it's giving us all the explanation for
+the gold it has written for us so let's
+check it
+and after the header I'll paste that
+code and let's save it and see
+okay
+this is really really good guys
+yeah I didn't expect this from chargpt
+but it's looking very good
+so
+till if I am a developer so if I had to
+write this much of code it'll take me
+around
+two three hours at least but with the
+help of charge GPT it only created in
+5-10 minutes
+so this is very good actually now let's
+open the charge DPT again and here we'll
+create a
+in publishing section
+s
+information
+using
+impairment
+let's see now
+till now it's working really very good
+now it is writing a code for us so as
+you can see
+let's see
+again very good
+now let's copy this one and paste it
+under this
+David
+and let's check
+so this is the information section this
+has created for us
+right important information location
+office hours contact us and all right we
+can also regenerate it for something
+else okay now we it will create
+something else for us
+right
+if you don't like something we can just
+regenerate and create another one for
+just
+let's copy this one
+now it's
+telling us everything about the gold
+and here after that I'll write this save
+it
+let's check what's this okay this is the
+information section it has created for
+us that this is something change data
+and if you don't like this one also you
+can again regenerate the response this
+is really an amazing feature of Cat DVD
+okay so now it's creating the third
+option we can countlessly ask him to
+create again and again for us
+the response
+let's copy this one
+okay
+and let's remove all of it because
+it's looking very
+now let's see okay
+this information section is information
+section Welcome to our website this is
+what it's written
+okay
+now let's ask him to create something
+else okay
+let's copy this text create information
+same and paste it using Tailwind with
+one image I'll
+check whether it can a response to my
+things if I want to create one image on
+the left or right side and then the text
+on the other side let's see whether it
+can create it for us or not okay
+create informative section using charge
+Duty with one image on the
+right
+and
+text on the
+left
+side
+now let's see
+where it can create that or not for us
+right just in simple
+command so we will check whether you can
+create or add the image
+okay assuming the process called
+text
+okay
+which class also
+and it's taking the source from
+an API called unsplash I have covered
+this unsplashed API on my previous
+videos okay okay now let's copy this and
+paste it on our code let's delete this
+one and
+paste this one on the website
+okay
+so the image is quite large we can
+reduce the sizes but in the starting
+only I have told you I will not add
+anything in the code so I'm not doing
+anything in the code right so we can
+change the size it's really good as I
+have told him to add the image on the
+right side and the text on the left side
+it's doing the same for the user so this
+is really very helpful for the developer
+but as I have already told you it cannot
+replace the developers because I'm the
+developer I only knows how to do things
+as I have showed you that it has given
+me so many wrong answers before that
+report this one
+this I have given me three answers but
+it was not up to the mark so I had to
+told him that took uh create like this
+image on the right and I've explained it
+to the HR GPT then it created this one
+for us okay and whenever I'll we refresh
+this page the image will get changed
+this is the
+unflash API how this works okay we can
+change the images also
+this is random just right here
+coding okay
+now you will see the images that will
+come here okay
+let's see
+let's check it
+that's not taking any other name
+but let's not waste time on this
+random is also fine
+till now it's looking really very good
+okay
+now the next step would be to add the
+service section okay so let's uh charge
+the video to create service section okay
+foreign
+now let's see
+it's coming
+okay
+during the class for the side of the
+water
+really good
+look how beautifully it has been created
+right
+yeah
+okay
+let's see
+it's done now let's copy the code and go
+to our location
+and here
+will write this code and let's paste it
+now let's check
+okay
+so it's not a line straight but we can
+align it
+so it's showing us that the services
+that this website is providing what we
+offer and this is some junk data we have
+designed by marketing and all
+so let's check whether it is
+yeah
+okay
+so
+what this one is doing here is it's
+using only
+between classes until using
+and the center Center
+we all are using the same class but
+let's find out why the
+image
+is coming
+like that
+right
+you can align it
+you were guys you want me to align this
+we can align this right
+okay
+so
+that's just a length one it's just one
+line okay we can align that
+so let's dig deep into this quote
+okay
+this image classes
+okay
+same this device enter and then it's
+using the flex shrink function
+towards round and large
+okay
+sex
+check
+[Music]
+and let's go back to the chord
+strictly the size of this because
+okay
+go back to the Chart again
+we generate the new response and let's
+see how the second response is looking
+right
+that's a couple of seconds more
+okay let's see the response that it is
+creating
+we need a minimalist design okay I will
+just observing the code
+and
+you
+you okay
+you can also change the color of the
+customizable this website on our own but
+it's really very good I'm really
+impressed with this this really will
+help developers creating websites
+okay
+let's go back
+still creating
+after that we'll create the about
+section for the page okay
+[Music]
+so again giving us that
+design and all part
+if I'll tell charge UT to create this
+service action and this is my
+requirement and all it will definitely
+create that I guess now I'm always
+really impressed with the code clean
+code it's writing
+and it's also responsive I haven't told
+it to create the responsive code but
+it's really really good it's a
+responsive and I'll show you
+and inspect I will just fill that only
+whether it is responsive or not if you
+will see I will have been test cut this
+card
+it's just
+yeah so this is how we'll check the
+responsive click and let's
+see
+that these three
+uh home about contacts are managed
+and
+this is the header bar that we created
+and then out one is the navbar this is
+the information section
+and services section is also there
+this is all responsive
+okay
+so we will check how it's looking
+this is how it's
+it's really good yeah let's move on to
+the code copy this code and coming back
+to the code editor let's delete this
+section
+okay
+now let's paste it and see
+okay
+it's killing us
+you know this is what it created for us
+and I guess
+a little less
+or
+it was already writing the code and it
+stopped
+it's fine it's not its mistake then stop
+and
+regenerate the response
+let's copy this again
+coming back to the
+chart
+or things
+refreshed rgbt again
+service section let's see
+it's really fast now
+okay
+let's observe this one first
+Services what we offer
+we have design here must some lines
+about digital marketing and I'm thinking
+there is also
+ah one part which I cut down
+not something charging mistake it was
+mine because I stopped generating the
+response
+okay
+really good let's copy this text now and
+paste it under
+and let's delete this and paste it
+let's check this time
+so
+this is how this one is looking now
+this is also really looking very good we
+can decrease the size of this image do
+not worry about that
+this is the service our services and
+some junk data here we can write this
+website is providing this and that okay
+service one that we provide this service
+we provide this service and we provide
+this service okay this is all about that
+right really very good really very good
+it's really really good
+okay you can change everything from it
+customize it on our R means thing
+let's just go back okay
+this one is looking good okay now let's
+ask Jr GPD to create the about page for
+us so we'll write create
+so I think
+um meanwhile it's writing the code for
+us I wanted to tell you that strategy is
+great from for everyone
+but as I know the code how this code is
+working I know what is section what is
+their class and what are the function in
+this grid system that's using max weight
+it's using the Excel function and I know
+everything about it and if you are a
+fresher or you don't know about anything
+about the coding uh I think you should
+first know about the language or the
+framework then only ask this to charge
+gbt or take help from the chat Unity
+right if you don't know about the
+language or the framework and you'll
+just tell that activity to create this
+and this for us it's easy it will create
+for you but it will not
+help you in your future
+so according to me just
+yeah
+use it to learn not to
+work okay
+so
+let's move ahead
+and the path is given
+okay
+it was again managed oh let's ask it
+again
+responsive
+about
+section
+using
+table
+okay I just mentioned but it
+is very intelligent
+I misspelled the Tailwind spelling and
+then it corrected it
+very good
+so this is not the complete code for the
+about page I'll ask to
+and T and then it will take this command
+or not
+right right so let's see
+after this about section we'll create
+this contact page and then we'll
+create find this website right
+so this is really really helpful for the
+developers I must say
+so
+let's copy this and
+code and paste it under this
+section
+okay
+this is how the about page is looking
+really very good the image in size is
+500 into 500 it's really really big so
+we can change the size of the image
+let's see
+that is that
+type 250
+to 50
+and then it will not come again
+let's just delete the source
+of in the unsplash
+for the random image
+right
+that command is really useful
+okay to add that
+this is how like this about this looking
+really very good guys really very good
+if I tell a chargeable to create this on
+the right side or this image I want on
+the left hand side or right hand side it
+will definitely look for us as I have
+given him the
+uh task in this section information
+section it definitely worked
+so I must say it's really really good
+so
+now let's move on to the
+contact page okay
+let's here write create
+a responsive
+contact
+section
+using
+L1
+and I'll ask him to do add some sections
+for us so let's see whether it can take
+up that or not
+okay let's do it in a second shot let's
+first and see how is the contact Section
+is looking then we'll tell him to
+improvise that
+so it's just taking a section class
+inside that section class and choosing
+some classes which is legs wrap and all
+and it's giving us
+it's really important
+let's copy this text again and paste it
+here
+so the contact us is also looking very
+good get in touch and then it will
+redirect us to the
+button really good
+the images sizes are
+[Music]
+large but we can reduce it it's not a
+big deal but it's all looking very good
+right
+so one thing is left is the footer part
+let's ask it to create a filter for us
+no
+okay this is the last and final step for
+this
+create
+so put
+the section
+using
+and
+thank you
+this is really very good looking very
+good let's add the
+splash
+and then
+use it here
+so this is
+how
+it's looking down
+so overall if I see it really given us a
+good good output really
+so I will say charge GPT can only help
+us that's it
+as this code that is created by charity
+for us we can't use it directly this
+structure that charity created for us is
+good but we need to add so many things
+before deploying it right if I'll see
+this one we need to add this services in
+the center and we need to uh
+arrange the text and these Services we
+need to change the size of the services
+if the client wants it
+horizontally then we have to change that
+we need to change this image size as in
+front of you I changes email sizes I use
+the different apis
+so overall it's very good but there are
+so many things that we have to do okay
+and for that developers are needed
+so with this we have read the end of
+this video I'm sure you will like this
+video please give it a thumbs up
+subscribe to simply done thank you
+thank you
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

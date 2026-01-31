@@ -1,0 +1,72 @@
+foreign
+'s YouTube channel in this session we
+will learn how to add a column to an
+existing table in SQL but before we
+begin let me tell you guys that we have
+daily updates on multiple Technologies
+if you're a tech geek in a continuous
+hunt for latest technological Trends
+then consider getting subscribed to our
+YouTube channel and don't forget to hit
+that Bell icon to never miss an update
+from simpler now without further Ado
+let's get started with a one point
+agenda that is how to add a new column
+to an existing table in SQL let's
+quickly take a look at the syntax that
+we will be using today so we will be
+using the alter keyword and the table
+keyword followed by that we will be
+specifying the table name in which we
+want to add a new column then we have
+the add keyword and name the column
+which you want to add to your existing
+table then the data type of that
+particular column with constraints if
+you have any now that we are clear with
+the syntax let's get back to the SQL
+workbench where we can execute this
+particular command now we are on the SQL
+workbench and let us execute this
+particular command and see what we have
+in our existing table okay I think we
+might have to use this particular
+command first you need to get the access
+to your database then you can get access
+to your tables in your database right so
+we we have this particular data let's
+try to add a new column which explains
+about the phone number of a employee
+working in your organization
+okay now we can use this particular
+command which is called the table
+there you go so we have added the column
+phone number data type and the
+constraint not null and if anything is
+not added in that particular column the
+default value should be n a right let's
+quickly execute this particular command
+there you go now let's check if the new
+column is added or Not by running the
+cell command
+there you go the new phone number has
+been successfully added and by default
+since we did not add any number we have
+N A in that particular column so that's
+how you add a new column to your
+existing table in SQL if you have any
+queries regarding any of the topics
+covered in this session or if we require
+the resources like PPT or data or the
+commands we used in this tutorial then
+do let us know in the comment section
+below and our team of experts will be
+more than happy to resolve all the
+queries at the earliest until next time
+thank you stay safe and keep learning
+thank you
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

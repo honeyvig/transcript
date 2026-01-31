@@ -1,0 +1,598 @@
+hi Traders and welcome to my Pine
+connector beginner
+guide first things first what is Pine
+connector Pine connector is an expert
+advisor script which was recently
+developed for the metatrader platform
+and it allows you to execute trades
+automatically based on trading view
+alerts this allows you to fully automate
+trading view scripts and strategies
+written in pinescript as you know by now
+if you've watched any of my pinescript
+lessons pinescript is an incredibly easy
+and simple language to learn at least
+compared to python or mql or other
+higher level languages that are commonly
+used to automate trading scripts and if
+you're a subscriber to my channel which
+you should be if you want to enhance
+your Edge over the markets through
+scripting then you know that I recently
+finished an entire series demonstrating
+how to use the auto view plug-in for the
+Chrome browser which does exactly the
+the same thing as Pine connector the
+main differences with pine connector is
+that it's cheaper than auto view nearly
+half the price it runs in the popular
+Advanced metatrader trading platform
+which most Brokers offer support for
+it's more powerful than auto view at
+least for Forex Traders and the reason
+is more powerful is because metatrader
+scripts can read your account balance
+and various other account details and
+open position information where auto
+view does not for example if you want to
+open open a trade with a position size
+and risk equating to just 1% of your
+account balance achieving this in auto
+view is far more difficult as you need
+to manually calculate your position size
+in your Pine scripts Pine connector on
+the other hand can achieve this with a
+single alert parameter that specifies
+how many percentage points to risk of
+your account balance you just add the
+parameter to your alert message and pine
+connector calculates your position size
+for crypto and stock Traders this may
+not be applicable to your Trading style
+but for Forex Traders this is an
+industry standard way of operating in
+the markets by using pine connector you
+can always be sure that your Forex
+position size is appropriate when
+executing automated strategies and as
+any experienced Trader knows having a
+consistent position size is Paramount to
+maintaining consistent results and plays
+a massive role in your Edge over the
+markets there's always a trade off when
+automating pinescript code the benefit
+of automating pinescript code is that
+PIN code is extremely easy to write and
+it's an easy language to learn the
+limitations of pinescript on the other
+hand when it comes to automating
+strategies is too long to list but Pine
+connector bridges that Gap significantly
+and as far as I can tell in all the
+research I've done when it comes to
+automating Pine script strategies on the
+Forex markets Pine connector is the best
+solution out there and in this video
+series I'm going to introduce you to
+Pine connector and show you how to get
+started today's video focuses on getting
+the platform set up starting your 7day
+free trial and executing your first test
+trade on a demo account you can find a
+link in the video description to the
+Pine connector website to sign up and
+create your account and in future videos
+I'll cover the pine connector alert
+commands and syntax in great detail as
+well as how to automate your trading
+view scripts and send the relevant
+alerts within your Pine code and finally
+I'll show you how to set up metatrader
+on a virtual private server so that you
+can have your automated scripts running
+24/7 with as little downtime as possible
+welcome to the most comprehensive guide
+to Pine connector on the internet let's
+get
+started so here we are on the pine
+connector homepage the very first thing
+you need to do obviously is create your
+account so to do that come up here and
+click on
+login and then click on create account
+you need to fill out these details and
+then log to your account once you've
+signed into your account this is the
+page you'll be taken to so this number
+here is your license ID and you will
+need this in order to initiate your
+trial your 7-Day free trial and you'll
+also need it if you purchase access to
+this expert advisor in order to validate
+your account on metatrader so once
+you've logged in you have two options
+you can either download the metatrader 4
+expert advisor or the metat trader five
+expert advisor both of these expert
+advisor scripts behave pretty much
+identically so it doesn't matter which
+one you pick as long as you pick the one
+that's compatible with your version of
+metatrader so for me personally my main
+broker is oanda and they only support
+metatrader 4 as of recording this video
+so today's video is going to show you
+how to set up the metatrader 4 version
+but the steps should be pretty similar
+for the metatrader 5 version and if you
+get stuck on any of the steps that I
+show you today make sure to come to this
+web page and click on the setup guide
+relevant to whichever version you're
+trying to set up so if I open this in a
+new tab you can see that the pine
+connector team have written out a list
+of instructions step by step on what you
+need to do in order to get this expert
+advisor set up and running in today's
+video I'm going to take you through each
+of these steps for metatrader 4 and then
+we're going to test a command to make
+sure everything works and in the next
+video I'll show you the various alert
+command and syntax that we have to work
+with so let me go back to my main
+account page and I'm going to click on
+download mt4 EA now it doesn't matter
+where you download this just so long as
+you remember where you put it so that we
+can copy it into the metatrader
+directory later so I'm going to click
+save here and just save it to my
+downloads folder so on this computer I
+do not have metatrader set up currently
+so I need to go and download the
+metatrader platform now this EA should
+work with any version of metatrader 4
+whether it be the vanilla version or
+whichever version your broker gives you
+to download I'm going to go to the oanda
+website log into my account and then
+download their version of metatrader 4
+if you're familiar with metatrader and
+you've used it before you might want to
+skip ahead in this video to where I
+install the pine connector expert
+advisor but for those of you who are new
+to metatrader or haven't used it before
+the next few minutes will show you how
+to download metatrader create an account
+and log in to your broker there will be
+time stamps in the video description to
+help you skip ahead if you need to so
+here I am on the oanda account homepage
+to download the oanda version of
+metatrader 4 I just need to click on
+this link here so I'm going to click on
+that and I'm going to save it into my
+downloads folder now that I have the
+installation file I just need to click
+on this little drop down box and click
+open and I'm going to install metatrader
+just into the default directory now I'm
+going to click finish and we can close
+this page we don't need to make a
+metatrader account so the next thing we
+need to do if you haven't already is is
+create a metatrader for compatible sub
+account at least that's what I need to
+do through my broker oanda so to do that
+I have switched to My Demo account cuz I
+want to practice these commands on my
+demo account before I move to my Live
+account and to create a compatible
+account I need to click on this add sub
+account link here now just ignore this
+primary account with 89 quadrillion
+million dollar in it that was an account
+I created for my girlfriend's uh little
+nephew to play around with and he did
+quite well to be honest he made a few
+hundred million trading corn which is uh
+pretty impressive for a 7-year-old
+anyway I've already got a metatrader
+account set up and if I want to log into
+metatrader this is the information I
+need to pay attention to or at least my
+metatrader login and server if you don't
+have this account and you're using oanda
+then to create a metatrader 4 account
+all you need to do is click on add new
+sub account and then select metatrader 4
+here and then once you've done that you
+should have this information here when
+you click on your relevant account and
+now this is the info I need to log in to
+metatrader so let me open up metatrader
+here it is click on that now if I go
+back to my oanda account my server is
+oanda demo 1 and I need to copy this
+account login number so oanda demo 1
+will be this server here this practice
+server if I click next and then I click
+existing trade account paste in my login
+number and then type in my password
+Here my account is now logged in and
+just to verify that I'm going to come up
+and click on New Order and just see if I
+have the option to and I do so I am now
+so I am now logged in to my account
+you'll have to ignore all these silly
+sounds that metat trator makes it's
+quite annoying I'm sure you can turn it
+off in the settings but I'll leave it as
+it is for now and we'll just move on to
+the next step in setting up a pine
+connector which is opening up your data
+folder so the quickest way to do this is
+just click file and then click on open
+data folder and here it is now we need
+to open up the mql4 folder just double
+click on that and then we need to open
+up our experts folder at the top here
+any of you who have used expert advisors
+before knows how this works but for
+those of you who don't we need to copy
+in the pine connector expert advisor
+file or script into this folder so for
+me I downloaded my file to my downloads
+folder so I'm going to click on that I
+need to copy this file or cut this file
+right click cut and click back and I'm
+going to paste that file into this
+folder here and now the expert advisor
+script is installed all we have to do
+now is close this folder close
+metatrader and then reopen metatrader so
+that it can load the script that we just
+added so I'm going to relaunch
+metatrader and we're back in if I click
+on this plus symbol under expert
+advisors we should see the pine
+connector script installed so the next
+step is to adjust some of the metatrader
+default settings to enable um the
+permissions that the script needs in
+order to do that we need to go up to
+tools here and click on options or hit
+crol O next we need to click on the
+expert advisor Tab and then enable or
+allow dll Imports it says potentially
+dangerous enable only for trusted
+applications Pine connector is a trusted
+application it's a legitimate script and
+we're on a demo account anyway so it's
+perfectly safe to click allow on this
+option while we're here we should also
+click allow automated trading which will
+allow Pine connector to trade on our
+behalf when the time comes and I'm going
+to untick these two options here now we
+can click okay and the next step is to
+attach Pine connector to a chart it can
+be any chart it doesn't need to be the
+chart or the market that you want to
+trade
+as long as this script is attached to
+any chart in the platform then when we
+send our alerts to Pine connector to the
+Pine connector web hook our script will
+receive that alert and will trade any
+Market that we tell it to the only
+requirement is that we leave metatrader
+running on our computer now that could
+be a problem for some of you but don't
+worry at the end of this series I'll
+show you how to set up a free virtual
+private server to run this 24/7 on a
+virtual server I've already created a
+lesson on how to do that for auto view
+the link will be in the video
+description and should be popping up on
+the top right hand corner of your screen
+right now the steps are extremely
+similar to that video if you want to set
+up a virtual private server to run
+metatrader but we'll come back to that
+later first of all let's just get this
+script working so the next step is to
+attach Pine connector to a chart if this
+window is not open for you press crln to
+open it up now I'm just going to close
+three of these charts s and maximize
+this middle one and I'm going to right
+click this and click attach to a chart
+the next step is to come to the common
+tab make sure allow dll Imports is
+selected and make sure that allow live
+trading is enabled the next step is to
+click on inputs and now we need to paste
+our license ID into this value column so
+to get your license ID go back to the
+Pine connector account web page which is
+this page here we need to copy this
+number here so you can click on that or
+just copy the text go back to metat
+trator and then paste that number in
+here now we just click okay and that
+should add the script to the Chart now
+if the script was successfully added to
+your chart and you were successfully
+authorized to use the script then you
+should see in your top left corner your
+free trial expiry date if you see this
+text up here then you have success
+successfully installed and added the
+script to your metatrader platform and
+that's pretty much it all we have left
+to do is test the command make sure that
+the script is working and then we'll
+wrap up this video and I'll come back in
+the next video and we'll go over all of
+the command syntax that we have to work
+with when using this script all right so
+before we set a test alert on the
+trading view platform we need to adjust
+a few settings in the pine connector
+expert advisor so to do that I'm going
+to right click on my chart come down to
+expert advisors and click
+properties now here is our Pine
+connector input settings I want to
+adjust a couple of these I want my take
+profit and stop- loss to be based on
+price so I'm going to double click on
+this setting here click on the drop-
+down box and change this to TP and SL
+based on price if you leave this on Pips
+and you send your alert with a whole
+number for your takeprofit or stop loss
+then the script will treat that number
+as Pips but if you want to set it based
+on price you need to change your setting
+here in the pine connector interface the
+next setting is our volume type I'm
+going to leave mine on a percentage of
+my account balance but you could change
+this to a specified volume or lot size
+if you wanted to depending on your
+strategy you might need to change this
+but it's generally considered best
+practice in trading to base your
+position size as a percentage of your
+account balance rather than some
+arbitrary uh lot size unless of course
+you're using a complex money management
+technique but for but today I'm going to
+leave mine on percentage of balance I
+don't need to worry about pyramiding
+this just means if it's set to true then
+the pine connector script can open more
+than one trade in a given Direction and
+hedging means that you can open multiple
+trades in multiple directions I'm going
+to leave that with the default setting
+of false and I'm going to leave
+pyramiding on for now so now I need to
+click okay so now let's jump over to the
+trading view charting platform and we
+can set up a test alert uh I'm just
+going to scroll to a blank chart here we
+go um and actually let's open up euro
+dollar since that is the market we're
+going to send a test command to so now
+to send a test alert all we need to do
+is right click on our chart and click
+ADD alert now we want this alert to be
+guaranteed to trigger since it's a test
+command so to do that we're going to
+click on the condition here and change
+this to greater than and then just set
+the value to zero so that will guarantee
+that this alert fires as soon as it's
+created next up we don't need to be
+notified about this alert unless you
+want to be and I don't want it playing
+any sounds when it fires so the first
+thing we need to do to make sure that
+this alert will fire is input the web
+hook URL to Pine connector so to do that
+enable the web hook URL text box and you
+can see I've already got mine saved here
+but I'll show you where to go and get
+this URL if you need to in the future if
+you go to your Pine connector account
+and click on configure alerts to our
+server alerts guide here and you scroll
+down to number two here step number two
+you can see the web hook URL right here
+so just copy this web hook URL and paste
+that into this web hook URL text box in
+your alert interface and now whenever
+this alert triggers whatever we put in
+our message will be sent to this web
+hook URL and then Pine connector will
+relay this information to metatrader so
+if you want more information on how to
+set up your alerts through pinec
+connector make sure to go through this
+uh alerts setup guide but in today's
+video I'm going to walk you through this
+first section here so the first thing we
+need to do is get the right symbol
+ticker ID from metatrader If the symbol
+you want to trade isn't listed in this
+list here press contrl U and then click
+on these groups to locate the instrument
+you'd like to trade these groups will
+look different depending on your broker
+or wer have kindly named these groups in
+a manner that's extremely easy to
+understand and that's sarcasm obviously
+but if the symbol you want to trade is
+in Gray uh for example let's say I
+wanted to trade the Aussie 200 asx2 200
+I need to double click on this
+instrument to turn it yellow and then
+this is the ticket ID that I would need
+to send to Pine connector in my alert
+message to trade it so make sure to come
+into your symbols list and activate the
+symbols you want to trade make sure that
+the symbols are yellow the ones that you
+want to trade through Pine connector
+it's going to be different based on
+whatever platform you're using or what
+whatever broker you're using it's not as
+simple as just sending the market you
+want to trade if I open up my metatrader
+account here and make sure to pull out
+this window a little bit further so that
+you can read the entire ticker ID you
+can see here that all of my markets end
+with a dash2 so if I want to send a
+command to open a trade on euro dollar I
+need to add-2 to the end of my ticker ID
+it's a little bit annoying I know
+especially when it comes to sending
+these commands based on your PIN script
+code but when we get to the lesson where
+I show you how to send commands to Pine
+connector through your Pine script code
+I'll show you a solution to this issue
+but for now just remember that when
+we're sending our test command I need to
+write out my ticker ID is
+euro-2 so before we write out our
+Command let's go to the alert setup and
+just read the example message here so
+you can see that the parameters of our
+Command or our alert syntax is separated
+by commas and the first parameter we
+need to send to Pine connector is our
+license ID so if I come up to my account
+here scroll to the top that's this
+number here again so if I right click
+this and click copy and we go back to
+trading view I can paste that ID in here
+hit comma and now now the next parameter
+is which direction I want to trade in so
+you can see here we have our license ID
+buy or sell if you write sell in here
+then that will sell this Market short uh
+but today I want to buy this
+Market next up we need our ticker ID and
+then we can specify our stop- loss take
+profit and risk Etc so to specify the
+market I want to trade remember that we
+need to put in our ticker ID remember
+that the ticker ID ended with a -2 so I
+need to write it out like this this will
+send a Buy command to the euro dollar
+market on metatrader next up we need to
+specify our risk remember that we set
+our risk to a percentage of our account
+balance in the pine connector settings
+so I can use any number here one would
+be
+1% um 2 would be 2% so let's go with 2%
+for today's example next up I'm also
+going to specify a stop-loss price and a
+takeprofit price now if you had set up
+your Pine connector settings to be based
+on Pips then you could use a whole
+number here in order to uh specify your
+stop- loss and Pips so 25 for example
+would set up a 25 pip stop- loss below
+our entry in the case of a buy order but
+for today we're dealing with price so
+I'm going to write in here let's just go
+with
+1.84 to keep it simple so when this
+command gets executed we will have a
+stop loss placed right here and and for
+our takeprofit let's set that to
+1.94 just to keep today's example as
+simple as possible so now this should be
+all we need in order to execute a test
+trade on euro dollar so when I click
+create this alert should fire
+instantaneously and open a buy order at
+Market on euro dollar with our 2% risk
+based on our stop-loss price so let's
+click create and then jump over to
+metatrader and see what happens there we
+go it just fired off and here here we
+have our Euro doll trade opened so you
+can see that our trade was opened at 1.1
+1909 our stop loss is at 1.84 and our
+take profit is at
+1.94 and our position size is
+0.21 of a lot or around 21,000 units so
+there we have it we've successfully set
+up Pine connector and fired our first
+test trade so if you want to see your
+orders in real time just right click on
+the symbol we're trading and click start
+window and you can see where our buy
+order was executed and our take profit
+and stop loss so that will do it for
+today's introduction video in the next
+video I will go over the various
+commands we have to work with with pine
+connector and in the video after that
+we'll get our hands dirty with some Pine
+script code and start sending these
+commands to metatrader from within our
+scripts the same way we did with auto
+view in my auto view series if you've
+watched any of those lessons now the
+concepts here between auto view and pine
+connector are very similar the main
+difference is obviously we're working
+with metatrader here and the coolest
+difference in my opinion is that we can
+set our risk as a percentage of our
+account balance through metatrader which
+takes into account our actual account
+balance as opposed to auto view where we
+need to artificially calculate our
+position size in pinescript since auto
+view doesn't allow you to set your
+position size based on on a percentage
+of your account balance the other cool
+thing is that Pine connector is quite a
+bit cheaper than auto view nearly half
+the price so not only is Pine connector
+more powerful than auto view at least
+when it comes to Forex Trading it is
+also significantly cheaper and now if
+you decide that you like Pine connector
+and you want to subscribe to the
+platform if you also want to support my
+YouTube channel there'll be an affiliate
+Link in the video description that you
+can use to create your account over here
+on Pine connector and I will get a
+commission based on your purchase at no
+extra cost to you so if you do use my
+affiliate link I am extremely grateful
+and even if you don't thanks for
+watching I'm really appreciative of your
+time and I hope today's video at least
+helped you get started with this awesome
+service anyway that'll do it for today's
+video I need to go and manage my own
+trades thanks for watching take care and
+I will see you very soon in the next
+lesson for

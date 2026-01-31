@@ -1,0 +1,318 @@
+hello everyone and welcome to today's
+video on building task manager app using
+HTML CSS and JavaScript in this web
+application what we are going to do we
+will be able to add a task using you
+know any task which you want to do
+suppose say you have to study around at
+10: p.m. so you can add that task and a
+new dashboard will be created for you
+where you can see on what time you have
+created your task you can delete the
+task and you can click on the completed
+button if you have completed that
+required task if you want to learn how
+to create a simple and elegant
+application like this watch this video
+till the end but before that I request
+you guys that do not forget to hit the
+Subscribe button and click the Bell
+icon just a quick info guys simply learn
+has got a post-graduate program in full
+stack web development in collaboration
+with the Caltech University in this
+course you're going to learn the modern
+coding techniques with the boot cam
+level intensity and gain all you need to
+be a full stack Technologies so guys you
+can check out the link in the
+description box so guys let us see how
+our application looks like so you can
+see all over here that we have a task
+manager app where we can add a task okay
+suppose say I have a
+music
+classes at 900 p.m. and if I want to add
+this task you can see it shows on the
+dashboard that I have a music class at
+9:00 p.m. now I have two actions to
+perform the first one is a complete
+button and the second one is a delete
+button suppose for God's sake I have
+completed this task I can click on the
+complete button and you can see all over
+here that a line has been created all
+over here and it shows that this task
+has been completed we can also remove
+this task from our dashboard by clicking
+on the delete button you can add n
+number of tasks suppose say
+music
+study okay
+[Music]
+gaming and say
+coding okay now this is a very elegant
+application a very simple one but
+instead you'll get to learn how to apply
+the JavaScript functionality how you
+going to create the UI using HTML and
+how most importantly you're going to
+style this web application so we will be
+using vs code as our IDE and from there
+we can see how the manipulations what we
+are doing is affecting on the user
+interface let us go into our code part
+so guys as you can see all over here we
+have two folders the first one is a
+starter folder and third one is a
+complete file so in the starter folder
+we have index.html script.js and
+style.css so in the index.html guys what
+we are going to do so let us see our
+code first okay so in the starter if I
+just click on we could see that there is
+a head written all over here we have
+given a link to our style.css which is
+completely empty right now except we
+have defined root all the way here now
+moving ahead we are going to populate
+this file so that our UI looks like that
+now let us go to our index.html and let
+us write our HTML code so guys as you
+can see all over here first we have to
+create the body and inside the body I
+have to create a container okay and
+inside the container what I'm going to
+do guys I'm going to put the heading so
+as you can see the UI all over here so
+in the UI it says a task manager there's
+a container first you have to analyze
+this and this container has a heading
+which says task manager then there is a
+label inside where basically a text
+field where you can add a task and there
+will be a button so let us create in our
+index.html so guys as you can see here I
+have created the container first div
+class container and here I have given
+the heading as task manager H1 so if I
+just change something like this you
+would see that it's still like this
+thing will be gone so guys as you can
+see all over here I have an H1 heading
+with the H1 tag as task manager then
+there is a text field which I've shown
+you then there is a text field all over
+here guys with the input type text ID
+task input and there's a placeholder
+which says add a new task then there's a
+button on click which says that add a
+task okay now the functionality of this
+button is mentioned in the Java script
+code and here it is add task so if I
+take you to the UI you could see all
+over here let us delete everything okay
+so H1 tag is for the task manager then
+there is a input text field which is
+given all over here okay there's a ID
+task input and I have applied a
+placeholder also which says add a new
+task so placeholder means something like
+which is visible all over here so you
+can overwrite this and if it's empty it
+says add a new task so so that's what
+placeholder means now guys let us see
+what's the next thing we have created
+the button now on clicking the button
+okay there's a functionality added okay
+and this functionality or this function
+like adding a task it's been mentioned
+in the Javascript file which is
+script.js so we have to complete this
+function okay now then I have created a
+task list with the given unorder list
+with his ID as task list so suppose if
+I'm adding
+uh suppose say let me show you so
+suppose I have added a task
+music okay now I have created
+Sports okay so all these files are
+getting updated one by one so the
+unordered list is keeping adding as we
+are adding up the task so that's what
+logic I have written all over here that
+with a particular ID of the task which
+we are adding okay so this should be
+added in the unordered list now so this
+is our front end part and it's complete
+just few four or five lines of code okay
+now you can see all over here there's a
+script.js file which is basically for
+styling so let us look how we have
+styled our components okay now for
+styling purposes what I have targeted
+with the class name see how our
+container is going to look like
+container means guys the this end part
+the white end part is called container
+okay so let us see how we can add the
+code or how we can style it using C CSS
+so guys all over here we have style. CSS
+okay now it's completely empty let's
+populate this file so in the style. CSS
+I have something called container okay
+so there's a body okay let's add first
+about the body which is a default code
+only so let's copy
+this and paste it all over
+here
+okay now the next code should be of
+container so if I see the container we
+have the maximum width we have the
+margin we have the background color we
+have the Border radius the Box Shadow
+and the padding these are the various
+attributes that I've applied to my
+container so that my container looks
+like this okay now similarly I have
+applied my H1 tag and you can see my H1
+tag is kind of blue color so see the
+primary color dark color is mentioned
+now this is a variable which I've used
+as a variable and this variable has been
+declared all over here which is blue
+primary color is given the blue color
+with RGB coding 1976 D2 okay very easy
+now similarly for the input types how I
+have styled so input types means this
+one okay this how we have uh you can say
+styled our label so let us see so for
+styling the label I have put out that
+input type should be text okay the width
+I have calculated using the caly
+function and it range is around 100%
+which say is approximately to 80 pixels
+now I have Mar margin bottom which is 10
+pixels the Border radius is 5 pixels and
+the font size is 16 pixels now if I talk
+about the button guys let us see how we
+have styled our button so you can see
+the button has a padding the background
+color which is a blue color then the
+color is white okay the border is none
+cursor is pointer the Border radius they
+have given something like 5 pixels and
+the transition color is 0.3 seconds with
+the background color
+okay so let's see how this effect is
+being applied so when we are hovering it
+you can see the color is changing okay
+now when I'm clicking on this it says
+please enter a task okay now when you
+click on this it's it's a kind of a
+responsive styling we have given all
+over here so which includes like
+say the transition most importantly and
+then we have given what could be the
+font size which I have been written it's
+16 pixels little bit of Border radius
+and the background color we have given
+as blue very easy now for hovering it I
+have changed this to primary dark color
+okay this is the primary color primary
+color that means blue the dark primary
+color is a dark version of this which
+means this color now for the UL you can
+see the unorder list which is something
+like the list stle type so you can see
+the unordered list style type is none
+the padding is zero okay then for the
+Ali part align means the list okay for
+the list we have given the padding the
+margin bottom okay the background color
+the display how to justify the content
+so we want the content in the center
+okay so and similarly the font size has
+been given as 16 pixels so this is all
+the attributes that we have styled for
+our Alli component or Alli element now
+when your task is completed okay suppose
+let me show you so suppose this task is
+completed so there's a button all over
+here okay and I have added this logic
+with the help of JavaScript okay this is
+an interactive logic it's not mentioned
+in the index.html part okay because this
+is coming dynamically and as you add the
+task this button pops up now let us see
+the completed so you can see the text
+decoration is line through the color is
+you can say the color is uh this shows
+this type of color do add uh the hexa
+value is 88888 and something like this
+NE you can say a dark gray color
+then there's a delete button with an
+accent color so accent color is this we
+have initialized our accent color
+primary dark color this is the accent
+dark color this is accent light color
+so here you have the accent color also
+then for the delete button H so when you
+hover over it it will become dark color
+similarly the for the completion button
+it's been shown to the green and for the
+button to hold it's been added as you
+can say green color
+but we have not added all these
+functionalities uh we have not added
+this style this is for your external if
+you want to improve the UI you can add
+these functionalities also so let me
+show you what I mean to say suppose if I
+H all over here the color is changing
+now when I'm clicking this the UI should
+be green okay so the button changes
+color to Green now that logic is about
+uh you can improve on this UI and you
+can take this small project and uh build
+your skills in HTML ncss now the most
+and the foremost important part that
+comes the JavaScript now how we are
+going to add the interactivity now we
+have created a UI but it doesn't adds up
+the new task right now since two files
+we have only created the first one is
+HTML and second one is the CSS part now
+when we are going to write our
+Javascript file which means that we are
+going to add the interactivity so guys
+in the part two video we are going to
+create the interactive file how we can
+make our application Interactive with
+the help of JavaScript so guys watch
+this second part also if you want to
+learn how we can complete this task
+manager application thank you for
+watching this video staying ahead in
+your career requires continuous learning
+and upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn ner up and get certified
+click
+here

@@ -1,0 +1,661 @@
+hey traders my name is matthew from the
+art of trading and in this video series
+i'm going to be showing you
+how to automate your forex trading
+through trading view
+but before we begin let me explain the
+journey it took me to get here
+many years ago when i was a teenager i
+used to play an online game called
+runescape
+this game required a lot of clicking
+with the mouse to play
+and by a lot of clicking i mean a lot of
+clicking you had to click on everything
+to move around or perform actions it was
+kind of like pokemon or zelda
+but instead of a controller you used a
+mouse well being a teenager it didn't
+take me long to get bored of all the
+clicking
+i still wanted to play the game but i
+only wanted to do the fun stuff and skip
+the boring mundane repetitive stuff
+and so i learned how to code and i
+created a robot
+i made a bunch of automated scripts that
+did all the repetitive work for me
+i'd mined rocks fish lobsters it killed
+monsters did everything i didn't want to
+do or didn't have time to do
+since i was in school of course this was
+considered cheating in the game and i
+eventually got banned for it but i'd
+been caught by the bug
+writing those scripts was some of the
+most fun i'd ever had in many cases it
+was even more fun than playing the game
+itself
+now what does all this have to do with
+trading well it's been 17 years since i
+wrote my first script
+and after trading the financial markets
+for over four years with the past two
+being consistently profitable
+i finally discovered a way to fully
+automate my trading scripts through
+trading view
+so that i don't need to lift a finger in
+order to enter manage and exit my
+positions
+basically i found a way to cheat at
+trading in today's video i'm going to be
+showing you how to connect
+your order view account to your oanda
+brokerage account
+and test your very first command and in
+the lessons to come i'm going to show
+you how to achieve various things with
+autoview now if you're not sure what
+autoview is i'll explain that throughout
+this lesson but basically
+it's a chrome browser plugin that reacts
+to your trading view alerts and manages
+your trades automatically based on the
+commands you've given
+throughout this video series we're going
+to automatically manage trading
+positions and move our stop loss to
+break even
+after a certain price is hit we're going
+to create an atr based trailing stop
+script that automatically locks in
+profits
+below price action as your trade goes
+into profit
+we're going to create a position size
+calculator that can be used to
+automatically adjust your position
+sizing based on a percentage of your
+account
+allowing you to essentially automate
+entire strategies and at the end i'm
+going to give you one of my personal
+trading scripts that i've been using to
+profitably auto trade the forex markets
+for the past few months
+welcome to the most comprehensive auto
+view guide on the internet
+let's get started auto view if you
+haven't heard of it and you probably
+haven't because
+it's not a very well known plugin but
+it's a chrome browser plugin
+that allows you to automatically execute
+trades and turn
+any trading view script into an
+automated
+trading algo it's pretty amazing pretty
+incredible stuff
+now of course you could do this on your
+own if you know a programming language
+or there's other services that allow you
+to automate your trading but this
+plugin basically allows you to turn any
+trading view script
+into an automatic trading bot and in
+today's video i'm going to be
+focusing exclusively on how to get it
+working with oanda
+specifically for forex trading but this
+plugin works on crypto markets as well
+and supports over a dozen
+exchanges and brokers the way it works
+is it uses
+trading view alerts to manage and
+execute trades
+as of recording this video the only
+forex broker that autoview supports is
+oanda
+but that works fine for me since that's
+my main forex broker anyway
+now this is not a broker recommendation
+and you should always do your own
+research before choosing a broker
+but if you want to play around with
+autoview then you must create an awanda
+practice account
+for forex trading autoview is free to
+use on a demo account for testing
+purposes
+and oanda allows you to create a free
+demo account but if you want to use it
+on a live account with real money you
+need to upgrade
+it's 25 us dollars per month which is
+actually pretty cheap if you have a
+profitable trading script and more than
+one thousand dollars to play with if you
+don't have more than one thousand
+dollars then i'll
+probably stay clear of using this plugin
+because
+the fee is going to eat into your
+profits and i'll leave a link to this
+autoview website and plug-in in the
+video description
+but keep in mind that i do not accept
+any responsibility if anything goes
+wrong
+and use of this plugin is completely at
+your own risk
+all i'm doing today is explaining how to
+connect autoview to tradingview and
+oanda
+and how to place demo trades if you lose
+money with this plugin then that's on
+you
+make sure you thoroughly understand how
+the plugin works before using real money
+with it
+so let's get started so the first thing
+you want to do is go to google
+and just google search auto view and
+it'll be the first two links that pop up
+the second link is the chrome
+extension the first link is the website
+that this
+plugin creators made for more
+information about the plugin
+so for this video we're going to click
+on auto view the first link
+autoview.width.pink and this was created
+by a cryptocurrency team
+so pink is their cryptocurrency and you
+can pay for the
+plug-in using the pink cryptocurrency
+you can also pay with paypal
+and bitcoin i believe but anyway that's
+not important for today's
+video now there's a whole bunch of
+information here on this website i
+really do encourage you to come and read
+all of this before you get started
+but i'm going to skip that and we're
+going to go straight to get auto view
+up here at the top click on that that'll
+take you to the plugin page
+you need to click add to chrome click
+add extension
+and the plugin will be installed so next
+up i would
+suggest clicking on your extensions icon
+and pinning this plugin to your plugin
+hotbar and then you need to click on
+autoview
+and there'll be a whole bunch of
+information here so these are the
+40 exchanges you can use this plugin on
+but really this is more like 20 because
+most of these are doubles or you know
+binance here has like several
+exchanges here some of them are demo
+exchanges and test nets
+and so awanda down the bottom here you
+have the real live
+money brokerage integration and the
+practice account
+integration so before we get started you
+need to connect
+trading view to this plugin the the way
+you do that is
+click on this trading view link and
+login to your trading view account
+once you're logged in the extension
+should be
+automatically enabled for trading view
+now all you need to do is connect your
+brokerage account
+so to do that we need to click change
+settings
+here is a list of the alert syntax and
+we'll go over this later
+but these are the commands you use to
+send to autoview
+and autoview will pass these commands
+and send them to your
+broker to execute trades based on
+whatever you tell it to do
+but first of all we need to connect our
+broker so let's come up to
+permissions and we're dealing with our
+lander today so we're going to scroll
+all the way
+down here to around towards the bottom
+and here
+are our oanda brokerage accounts so we
+need to click
+on the little tab here which will give
+autoview permission
+to use oanda practice api which is short
+for application programming interface
+and that's basically an online service
+that speaks to
+auto view so all of you can speak to
+your awanda practice account and tell it
+what to do
+so we need to enable the link between
+autoview and your awanda practice
+account
+so click on this little tab here
+click allow when it says it requests
+additional permissions click allow and
+it will turn both
+oanda and oanda practice on that's okay
+we'll only be using the joanna practice
+integration today so the next step is to
+create an awanda practice account if you
+haven't already
+so if you click on this link here that
+will take you to the oanda
+login page if you have an account just
+log in here
+otherwise if you don't have an account
+you need to sign up
+to oanda it's completely free to create
+a demo account
+make sure you're creating a practice
+account and once you're done with that
+uh
+log in to your account and you can do
+the next step which i'll explain
+now so now that we've enabled our oanda
+api
+in the auto view plugin settings we need
+to scroll down this
+uh list of exchanges on the left here we
+need to scroll down
+until you see oanda click on oanda
+practice
+then you need to scroll back up to the
+top of the page and you'll see this
+button up here
+add account we need to click on this
+button here so click on that
+now you don't need to change any of this
+up here this account
+later on you might want to play around
+with this when you learn how to use
+the plugin basically this allows you to
+connect multiple accounts with this
+plugin
+but if you're only using one account
+which we will be today you can leave
+this
+with the default setting of an asterisk
+there of a star
+now what we need to do here is put in
+our account id
+and our access api token
+so to do that you need to go over to
+your owander account your practice
+demo awander account right here and then
+you need to go to
+add sub account now here's a list of my
+demo accounts for this particular
+account that i'm logged into
+i just ignored this two quadrillion
+billion zillion account
+i created that for my girlfriend's
+nephew to play around with when he was
+over
+he had a lot of fun trading corn and
+pretty much cornered the entire global
+markets
+with this account balance but anyway
+what you need to do here
+is either create a new account so you
+can just put in a name here select a
+currency and a leverage
+multiplier a ratio so i'll show you how
+to do that right now first of all
+click this top option v20fx trade
+do not enable hedging on this account if
+you enable that that means that
+you'll be allowed to open long and short
+trades on the same market and that will
+mess with the autoview plugin so we
+don't want that
+and now here you can just put in
+whatever you want i would recommend
+at least setting leverage to 100 to one
+for since we're testing we want maximum
+leverage
+and for our name put in anything here
+for this one i'm going to say
+auto view youtube i'm going to select
+the currency
+i'm going to select us dollars for this
+example and i'm going to hit save
+now i've got a new account down here
+it's got zero dollars in it so i need to
+click deposit here
+and now this is mimicking the live
+account normally you would see this on
+your live account and you'd select
+a bank or a credit card and then
+deposit money but today we're depositing
+fake money so you can put whatever you
+want in here
+i would recommend anywhere between a
+thousand to ten thousand dollars
+would be a good place to start and you
+can change this later you can withdraw
+and deposit fake money
+at any time so now i'll hit proceed and
+we'll have a ten thousand dollar
+ten thousand us dollar oanda demo
+account to play around with
+and we're good to go so the next thing
+we need to do is
+copy this number here this is your
+account number
+so you wanna copy this number here
+copy and then before i continue let me
+close some of these tabs because we
+don't need them open
+but now let's come up to our auto view
+plugin settings page here and we need to
+paste
+the account id into this
+box here so we're halfway done now
+we need to click on my practice account
+up here click on that you'll be taken to
+your
+sort of home page for your demo account
+and the next thing you need to do is
+come down here to my services
+and click on manage api access
+so click on that link there and if you
+haven't created an oanda api key yet
+then you'll see something different here
+you'll see create
+token or something like that i've
+already created a token so in order to
+get
+a new api token i need to click revoke
+so i'm going to do that now i'm going to
+click
+revoke and now i can click generate to
+generate
+a new api key it's important you don't
+share
+this api key with anyone else especially
+on a live account because then they can
+access your account
+using the api but because i'm using a
+demo account today it doesn't really
+matter to me
+but this is your key you need right here
+you need to copy
+this key in this box here and you can do
+that by just triple clicking
+on the text here right click and copy go
+back
+to your auto view settings page here and
+paste it
+into your access token box text box here
+once you've done that you need to click
+on test account and if the test
+works then you are good to go so now you
+need to click
+add account and now we have successfully
+added an awanda practice account to auto
+view and we can begin
+executing trades so the next step is to
+go
+over to your trading view chart so the
+way this works is you need to
+keep your browser open because
+this plugin basically monitors your
+trading view alerts
+and when an alert is received it will
+execute trades
+on your behalf based on whatever
+information you put in the alert message
+so if you close your browser or you turn
+off your computer this
+plugin will not work and it will not be
+placing any trades for you
+so that's the main limitation of this
+plugin you know there's always a
+trade-off
+and the trade-off here is that this
+plug-in is extremely easy to use and set
+up
+but the drawback is you need to keep
+your computer on at all times and keep
+your browser open
+now i personally have a computer that i
+keep in my kitchen that's on
+all the time with a chart open so that i
+can manage my trades throughout the day
+without having to go into my office
+all the time you may have to leave your
+computer on if you're going to be
+using this plugin or you need to buy a
+vpn
+or vps virtual private server and
+install this plugin into a browser on
+there and leave it running
+i'm not going to teach you how to do
+that in this video because it's just way
+too complicated way too long
+for today we're just going to focus on
+how to get order view set up
+all right so the past 10 minutes has
+been a video from last year that i did
+detailing the steps on how to set up
+your oanda practice account
+i reused that video to save time in the
+editing process because nothing has
+changed since recording
+the first part of that video but since
+recording that video i've learned
+a lot about autoview i am much more
+familiar with it
+and i've learned how to do some quite
+advanced things with it so the whole
+purpose of this new video series is to
+break down step by step the various
+things that i've learned over the past
+year or so of playing around with
+autoview so to wrap this video up we're
+just going to test
+our practice account to make sure that
+auto view is in fact
+working the way we're going to do that
+is by creating an alert
+on wherever price action currently is
+and pass it a command
+an auto view command to make sure that
+it places the order for us
+first of all make sure you are logged
+into your demo account so that we can
+confirm
+that these commands are in fact working
+then the next thing you need to do
+is just right click on wherever price it
+currently is and click add alert
+don't worry about any of the indicators
+i have on my chart right now
+in fact i'll hide them all just so this
+is less confusing
+right click on wherever price currently
+is scroll down to the bottom here
+and we're going to create a new alert to
+create an alert
+that tells awanda demo or the oanda
+practice account to initiate a trade we
+need to type
+e equals oanda practice
+so e stands for exchange this plugin is
+mostly used for crypto exchanges but
+it is integrated with oanda so we can
+use awand to practice here if you're
+using a live account you would just
+write
+oanda without the practice but we'll get
+to that in a future video for now we're
+going to stick on the practice account
+so that we can make sure we know what
+we're doing before we start
+playing around with the real money the
+next thing we need to do is specify
+which
+side of the book we want to trade so b
+stands for book
+and here you can write long or short i'm
+just going to write long here
+next up we need to specify our position
+size or our quantity
+using q so q equals i'm just going to
+put 1 here
+one unit that's all we need to confirm
+that it's working
+the next thing we need to do is s which
+stands for symbol
+we're on australian dollar right now
+aussie dollar
+so oanda requires you to
+either put in a forward slash or an
+underscore between the two
+currency pairs that you are telling it
+to trade on this symbol parameter
+if you were to just write aud usd the
+alert will not work oando
+will not process this currency pair it
+needs
+a slash in between so keep that in mind
+when it comes to writing our scripts we
+will need to add the slash because when
+you reference
+the current ticker on trading view it
+just gives you the ticker without the
+slash in between so we'll fix that in
+our scripts later that's not important
+for now
+and then the final thing we need to do
+here is specify whether we
+are using a limit order or a market
+order
+so to do that we need to write t equals
+and i'm just going to do a market order
+today
+this is all we need in order to
+initialize our first trade we're not
+going to put a stop loss or a take
+profit in we're just
+proving that the api connection is
+working so now that you've written out
+your command we need to make sure that
+the alert
+is on current price action it's around 3
+p.m currently in the middle of an
+australian trading day so price action
+is not moving at all
+for me as usual so i don't even need to
+update this
+don't worry about any of your settings
+they don't really matter as long as this
+alert fires then the command will be
+triggered
+now we need to click create and we wait
+i will actually move this up
+just a little bit so now we wait for
+price action to trigger our alert you'll
+know if it was triggered
+by whatever happens down here in the
+alerts log and this will flash as well
+when the alert is triggered so now we're
+just going to wait until price action
+triggers this alert and see if it opens
+a market order for one unit going along
+on aussie dollar here we go
+and it worked we have opened our first
+oanda demo trade one unit on aussie
+dollar
+without a stop loss or a take profit
+at market on this forex market
+so our awanda api connection is working
+if however yours does not work for some
+reason uh you can come up to the order
+view
+browser plugin come down to change
+settings
+and over here there is a log setting
+that you can click on
+a log page and this will tell you what
+went wrong
+if something failed and it will also
+tell you what the plugin is doing
+basically congratulations strap
+in this is just the beginning we're
+going to have a lot of fun working with
+this
+if you're anything like me especially if
+you're a nerd like me you are going to
+love this stuff it's really really fun
+and even if you're not a nerd even if
+this is all new to you
+you will be blown away by how simple
+this is once you wrap your head around
+all the different various commands we
+have to work with
+and i will be recording this series as
+if you are a complete beginner
+to this stuff so don't worry if this is
+all new to you
+you will be able to follow along and by
+the end of this series
+you will be able to automate any scripts
+that you've either written
+or any scripts that you have the source
+code to so that's it for today's video
+this was a successful mission in the
+next video we will be going
+over the various commands that autoview
+requires in order to manage forex trades
+through orlando
+at least the main ones like stop loss
+placement take profit placement expiry
+time and day
+limit and market orders which price to
+put your limit order at
+all that kind of stuff we'll cover in
+the next video if you found this video
+interesting or especially if you found
+it helpful
+make sure to hit the subscribe button
+because i will be back really soon
+with the rest of this series and we are
+going to do some cool
+cool stuff and while you're down there
+please hit the like button if you don't
+mind it helps support the channel
+and leave a comment too if you've found
+this interesting if you've run into any
+issues
+if you have any questions or even any
+suggestions please leave them in the
+comments section
+and i'll try to find time to respond to
+everyone but if not
+i'm very blessed to have a really great
+trading community following this channel
+and maybe someone else will answer your
+question if i can't
+anyway i'll see you in the next video
+good luck with your training in the
+meantime
+and take care

@@ -1,0 +1,1201 @@
+the ability to process and analyze
+digital images has become more crucial
+as their use has increased the
+capability to automatically recognize
+and classify images allow programmer to
+create models with various users
+including self-driving cars and facial
+recognization among many others Because
+deep learning makes it possible to
+create highly accurate models it has
+completely changed how image
+classification is done the relevant
+features in an image can be easily
+learned and extracted using a deep
+learning algorithm overall deep learning
+based image classification has grown to
+be hugely popular framework because of
+its Precision adaptability and because
+it has the potential to build extremely
+powerful models for various applications
+hey everyone you're watching simply
+learn and in today's video we're going
+to be learning all about pyot and how to
+build a neural network using Pyon if you
+love watching videos like this do hit
+the Subscribe button to never miss any
+updates from Simply learn so now without
+any further delay let's start with the
+Pyon installation if you want to become
+a machine learning expert consider calch
+postgraduate program in Ai and machine
+learning by simply learn and master
+those necessary skills check out the
+link in the description for more details
+but before we dive into the installation
+process directly let me explain you what
+is pyo and why pyo is popular machine
+learning framework well Pyon is a
+machine learning framework used for
+image classification and neural net
+Network processing it is a py toch based
+open source machine learning
+implementation based on the torch
+Library it is the most popular AI
+Library it is the most popular AI
+Library among industry and academic
+researchers worldwide it increases the
+machine learning framework adaptability
+it will also offer High implementation
+speed for deep neural networks therefore
+a well-liked machine learning framework
+is byed because of its AE of use
+adaptability and Powerful capability it
+also provides a wide set of tools and
+libraries for build machine learning
+models and additionally py enables the
+modification of computational graphs
+making it simple to test out various
+models and architectures as well as to
+debug and improve existing models so now
+to install Pyon first make sure that
+python is installed in your system and
+to install python for programming visit
+the link python.org so you can just type
+python so you can click on the first
+link go to downloads from the menu bar
+and click on python do 11.2 to download
+for Windows so just click run Python and
+install it so once installing python
+check if it is successfully installed
+using the following command in the
+comment prompt so to check just open
+comment
+prompt hope my screen is visible so here
+you can just type python uncore
+version and it must display python
+version and if you get the python
+version then we are good to go the next
+step is unac
+installation so open new tab type
+anakonda okay so to install anakonda
+visit the link anaconda.com
+and here you can just scroll down and
+you can see here green button download
+for Windows just
+click so as you can see it will be
+downloaded here
+so once the anakonda is downloaded open
+the file and click on
+next okay so click on
+next and then next click on I
+agree select just me
+recommended and click on next
+next choose the installation uh
+location click on
+next and then just click on install or
+you can select add uh Ana 3 to my path
+environment variable yes this is
+important and then click on install so
+once you click on install it will be
+installed
+successfully uh I'm not going to install
+since I have already installed in my
+system and to check whether the anakonda
+has been installed successfully check
+anakonda version in the comment prompt
+or with the command like Kore version
+you can also check in uh anakonda
+prompt so first let's check python
+version for version
+okay so it has displayed the counter
+version that is ready
+3.1.0 so we have now install an AA and
+use the command prompt to check its
+version and once you get the cond
+version the following step is to install
+pyot for that open the new tab and to
+install pyo just type your
+pyo and click on this first link that is
+p.org and here just scroll down
+and here you can see this so select uh
+according to our systems requirement so
+suppose you want to select this py to
+belt so click on Staple and then uh your
+OS so as per your system if it is Linux
+or Max or windows so this is Windows so
+I'll click on Windows and then package
+go with the K or pip so I'll go with the
+condom and then language Python and
+compute platform so if your system is
+having GPU then you can go with Koda
+else you can click on uh CPU okay and
+whatever command here you got run this
+command on the prompt so you can just
+copy
+this you can just
+copy and paste it
+here so I have already installed
+it I'll just show you how to P yeah you
+can paste and give enter so all the
+required uh files will be
+downloaded and to check whether the pyto
+has been installed successfully run the
+following command that is
+condam
+listor f
+pytorch and give
+enter so here if you get the pyo version
+after running the command that means pyo
+is successfully running and you got your
+pyo name version build and channel so
+now we have learned to install Python
+and pyou following this let's build a
+neural network for beginners so hope
+you're clear with how to install python
+anakonda py to and now we are good to
+get started with building neural network
+so using fashion M data set we are going
+to create a convolutional neural network
+to predict data set classes you may be
+wondering why we are using the M data
+set rather than any other so let me tell
+you that the M data set is the first one
+on which the researchers attempt to
+develop and test deep learning models
+for image classification task using crn
+the fashion M data set can be used to
+train image classification models and
+has grown in popularity as a way to
+evaluate how well Machine learning
+algorithms and models perform and the
+fashion mem data set is commonly used in
+CNN or convolutional neural network it
+is a type of deep neural network that
+perform image classification and
+processing task it consists of several
+convolutional layers that are designed
+to automatically extract useful
+information features from the input
+image data and the first step is to
+input all necessary libraries so let's
+input them One By
+One
+Import
+nump as
+NP then
+import
+pandas as
+PD just import
+Matt
+plot
+Li dot p p l
+o as
+PLT so this is to show the
+image next
+import torch
+Vision first let's import torch and then
+import torch vision
+tor. NN as
+NN this is
+from torch
+dot
+autograde import
+variable
+Tor
+Vision import torch
+Vision
+dot
+transform transforms as
+transforms from
+to do
+utils do
+data
+import data set comma data loader
+from SK
+La
+dot
+matrix
+import confusion
+Matrix okay once we are done just
+execute
+this as you can see it's running so wait
+for
+it
+okay so next step device configuration
+so use the GPU for the computation if
+available otherwise you can go with the
+CPU so to check that you can just type
+device is equal to torch do device
+if
+available Cuda if torch
+Cuda dot e
+available let's go with the CPU
+so let me give this in the double
+quotes let's
+enter so next using the Paras Library we
+will now read the two CS uh CSV files
+that is fashion M train. CSV and fashion
+m is test. CSV and then store the data
+in the train CSV and test CSV
+respectively so for that you can type
+Trainor
+CSV is equal to pandas that is
+pd. read uncore
+CSV and said that you can give
+fashion
+mnist train.
+CSV and same goes with the
+test testore CSV is equal to PD do read
+uncore
+CSV
+leave
+fashion
+Mist
+test. CSV
+okay next type um Trainor CSV it will
+display the train CSV files so to to
+display the files train
+underscore
+CSV and same goes with the test
+underscore
+CSV okay and you got the output
+so now let me brief you on the fashion
+mess data set so it is a collection of
+images of clothing items such as dresses
+quods t-shirt Etc so the fashion MNS
+data set of gray scale images is divided
+into test and train data set where the
+train data set consists of 60,000
+examples and test data set consists of
+10,000 examples along with that the data
+set consists of 10 classes representing
+different type of clothing items like
+t-shirt tops trousers pullovers dresses
+CS sandals shirts sneakers bags and
+Ankle boards in which each grayscale
+image is of size 28 into 28 pixel a
+total of 784 pixels so here you can see
+in train data set we have
+60,000 and in test data set we have
+10,000
+examples so as shown on the screen this
+is what each pixel has a single Pixel
+value that indicates the lightness or
+darkness of the each pixel value with
+higher number indicating darker pixel
+okay so the training and test data set
+consists of 785 columns here you can see
+785 columns so with the integer for the
+uh this pixel value ranging from 0 to
+255 so the class label make up the First
+Column so this is the class
+label so which represents the piece of
+clothing and the remaining column
+contain the pixel values for the
+associated
+image so I I hope it's
+clear you can see here we have 10,000
+rows into 785 columns and here we have
+60,000 rows into 785
+columns so in Next Step create a user
+defined class with the name fashion data
+set for creating a data
+set class
+fashion data
+set and inside data
+set next create a method to initialize
+the variables so let's give
+Devore underscore in
+it
+self comma
+data comma
+transform is equal to
+none so initially it's none then
+self
+dot fashion
+mist is equal
+to
+list of data do
+values self
+dot
+transform equal to trans
+transform next let's give
+label and
+images and then using
+for I in self.
+fashion underscore mest
+table do
+append
+of I of
+zero then same for
+image do
+upend I of one
+here uh this iterates over a data set
+called fashion name list and appends the
+labels and images to two separate list
+called label and image
+respectively and next we can give
+cell do
+labels is equal to NP that is numi do as
+arrays label
+s do images is equal to MP do as
+array of
+image dot we are reshaping the image
+reshape
+-1 28 by
+28 comma
+1 do S
+Type float
+so here dimension of image is given that
+is 28 by
+28 and whereas 28 and 28 is height and
+width and the color channel is one so
+here we got the color Channel as well as
+the size of the image so we are going to
+reshape the size of the
+image and then next create cre U Get
+item method to written the images and
+labels
+diff underscore
+get
+item self comma
+index then
+label is equal to
+self do
+labels of
+index then
+image is equal to self.
+image so images of
+index then
+if self do
+transform is not
+done is not
+none image is equal to self
+dot
+transform
+image it should
+return image and comma
+label so and then create the length
+method to return the number of items in
+a data set so once it Returns the image
+and labels next create the length
+method so give
+depore
+length of
+cell return
+return length of self.
+image image is length so let's execute
+uted then load the data set so for that
+train
+data is equal
+to F transform okay it's a fashion data
+set train
+comma
+transform is equal Al to
+transform transforms.
+compos
+of
+transform transforms.
+to
+tensor and same with the test data test
+data is equal
+to data
+fashion data
+set give test it be the same so you can
+just copy the same thing here give comma
+and paste it here and with that let's
+give um train
+loader is equal to data
+loader of train
+data comma bat
+size is equal to
+100 and next test
+loader is equal to data
+loader
+train
+data comma bat size is equal to 100 so
+here the transform argument here as you
+can see the transform argument is used
+to apply transformation to the input
+data and then the train loader and test
+loader are data loader objects that are
+used to load data in batches during
+training and testing so whereas this
+batch size specifies the number of
+samples to load in each batch so here I
+guess we have given Trainor
+CSV and here also testore
+CSV so now let's run it and next
+download the data set from Fashion Mist
+so Trainor set we are downloading the
+data
+set
+dot
+Vision do data
+set data sets.
+fashion
+mest double column dot this is
+the root path folder
+data
+comma download
+is equal to
+two comma train is equal to
+false comma
+transform is equal to
+transforms dot
+compose transform
+transforms. to
+tensor so let's copy the whole sentence
+here copy the whole code
+and we'll do the same for test set so
+test data set so here maybe you can
+remove
+this yes and here we have test
+data set so we have given test
+data and
+then a torch vision. datas set.
+fashionist data download true and here
+train false transform is equal to
+transforms.
+compose okay let's give
+enter true is not
+defined okay let's give it in caps
+compost
+so here we had made maybe spelling
+mistake okay here give
+s and now let's run
+it yes okay all right next let's give uh
+train loader
+train loader is equal to
+torch do
+U do
+data do data
+loader train
+data
+comma bat
+size is equal to
+100 same thing let's do it for the test
+loader as
+well paste it and change this to test
+loader is equal to torch utils do data
+do data loader and here let's give test
+data and then B size is equal to 100 run
+it
+next give the function def output
+undor
+label of
+label output
+mapping is equal
+to enter all the labels
+here from 0 to 9 so totally we have 10
+so we are giving from index 0 to till 9
+so in the place of zero
+give t-shirt first we can give anything
+let me give
+t-shirt or
+top
+comma
+one croser
+comma in the place of two give
+pullover three let's give
+trust four
+quote fifth let's give sandals
+then
+six
+short comma
+7
+sneakers after sneaker let's give back
+and
+n9th anle
+vot let's make it capital
+P all right
+and
+then give
+input input is equal
+to label
+dot item
+of
+if
+type
+label is equal equal
+to torch dot
+tensor else
+label then
+return output
+mapping of
+input okay
+so this function converts the label that
+is inputed into a text label that
+corresponding to it and either a tensor
+or a scalar label may be used as a input
+parameter and
+then we are giving
+a is equal to
+next
+iter frame
+loader of Z
+do
+size so here it must give the output of
+tensor
+size so let's give so we got tenser dot
+size 100a 1A 28a
+28 and
+then uh let's bring the length of the
+train data so for that let's give length
+of train
+data and it is
+60,000 so then let's display the image
+using the method imp show for that let's
+give image comma
+label is equal
+to
+next of
+Itor
+rain
+set then TT plot do imow method
+image
+dot color mapping is equal
+to
+GRE
+Print Lab
+so let's run
+it and here as I discussed before the
+image Dimension is given 28 by 28 and
+the color is gray so here you can see 28
+by 28 so if you want to try different
+color maybe you can go with Autumn here
+I can
+type
+Au t mnore r let's check which
+color so yeah this color and you can
+also go with another
+color you can just type v i r
+i d i
+s so yeah so for now let's give
+G and let's run
+it okay next print the torch size so for
+that give demo loading
+is equal
+to torch dot
+utils
+do data
+dot data
+loader Trainor
+set
+comma bad size
+is equal to
+10
+patch equal to
+next
+wrer demo
+loader images comma
+label labels is equal
+to patch
+print type of
+image images
+common type of
+labels again
+print
+images dot
+shape comma
+labels dot shape
+so here we got torch
+size okay here let's give bad size to be
+100 also
+yeah so you got
+it and then uh the code prints the type
+and the shape of the image and label
+tensor and next let's print the
+image not one image let's print the all
+the images so for that you can give
+grade is equal to torch
+Vision dot
+utils
+dot make
+cre
+images comma
+n
+row is equal to
+10 then plot.
+fer pick
+size let's
+give 15 Comm
+20 then
+plot using M
+show
+method in that NP
+dot
+transpose
+read
+comma 1 comma 2 comma
+0 Let's print the
+labels and is equal
+to
+space using for I comma
+labels in
+enumerate
+labels so finally
+print
+output underscore
+label
+of labels
+and is equal
+to comma so here I remove this and give
+it
+here so now let's run
+it okay here let's give it
+10 run
+it also run this piece of code yeah so
+here you
+got all the 10 uh rows so here you have
+ankle boot t-shirt top t-shirt or top
+and then we have uh again uh top dress
+t-shirt pullover sneaker pullover sandal
+and
+sandal so uh here you can change the uh
+size of the figure maybe if you want you
+can give 5 by
+10 so it become smaller in size
+yeah so let's let's keep it 15 by
+20 and let's run
+it so every training and testing example
+is given one of the labels listed below
+it can be any one from here so next make
+a model class that inherits the pyo nn.
+module class for
+that give
+class
+fashion
+CNN of nn.
+module next
+diff in
+it of
+self
+super
+fashion
+CNN comma
+self
+do
+inate
+method then give self do layer
+one is equal equal
+to NN
+dot
+sequential NN Dot
+convolution
+2D in
+channel in channels is equal to
+1
+comma about
+Channel channels is equal to
+32 comma C kernel size let's keep it
+three and then pading is equal to
+1 n then
+batch
+nor
+B of 32
+comma NN do re
+e
+l
+u function this is activation function
+and then we
+have n do Max
+pool
+2D of Kernel
+size is equal to 2 comma strip is equal
+to
+two and then let's give self do layer
+two equal equal
+to NN
+dot
+sequential
+of and
+N do
+cono let's SK it capital c
+here 2
+in do
+Channel channels is equal to 32
+comma
+output
+channels is equal to
+64
+kernel size is equal to 3
+comma
+NN batch
+Norm 2D of
+64
+comma
+NN dot
+[Music]
+r e l u this is the activation
+function n then do
+Max of
+two make sure you're giving the correct
+spacing because spacing is very
+important when you're working in Jupiter
+notebook
+so let's give underscore here
+so here this piece of code defines a
+convolutional neural network that is CNN
+with two convolutional layers followed
+by a batch normalization here we have a
+batch normalization so the first
+convolutional layer that is here this
+one is the first convolutional
+layer uh so here it it takes a gray
+scale image with one input Channel here
+we have the one input Channel and
+applies 32 filters of size 3x3 with a
+padding of one so keep the input image
+spatel Dimensions so finally a Max
+pulling layer so here we have also a Max
+pulling
+layer with a kernel size of 2 2x two and
+this stride is two uh this is applied to
+reduce the spat resolution of the output
+by half this reducing the number of
+parameters in the sequen subsequential
+layers so here in the second layer
+so this is a second convolutional layer
+here uh it takes the output so what
+happened here is takes the output of the
+first layer as input and apply 64
+filters of the size 3x3 and there are no
+pading so in short I must say that it
+makes a model class that inherits the
+Pyon NN module so this is the NN module
+class so it is actually a super class
+for all neural networks so in our case
+we have taken the fashion CNN so our
+neural network is composed of the
+following two layers so this is one
+layer and this is the second layer so uh
+there are two subsequential layers Each
+of which is having the following layers
+a convolutional layer with a kernel
+again I'm repeating the kernel of 3x3
+and padding is one in the first layer
+and there is no padding in the second
+layer so padding is zero in the second
+layer and there's a one stri is shaped
+by both the layers and we have the ru is
+acation function and then we have a Max
+pulling layer with kernel size 2x two
+and stride is two and then also a layer
+for batch
+normalization I hope it's
+clear so
+next type
+self do
+FC
+1 is equal to NN
+dot linear
+linear in
+feature in features is equal to
+64 into 6 into
+6
+comma out
+feature equal to
+600 then self
+drop is equal to NN
+do drop
+out
+2D
+0
+25 then
+self.
+fc2 is equal equal to NN Dot
+in
+feature in features is equal to
+600 out
+feature is equal to
+120 then again self
+dot fc3 is equal equal to
+nn.
+linear in
+feature is equal to
+120
+comma out
+feature is equal to
+10 then we have def forward
+method self comma X
+out is equal
+to
+sell dot layer
+1 of
+X then
+out is equal
+to self dot Layer Two
+out then out is equal to out.
+view out
+size size of
+zero
+comma
+minus1 then out is equal to
+self do
+fc1 out
+and then out is equal
+to self of
+Rob so here it should be
+out
+sell.
+drop then out is equal
+to
+cell.
+fc2 of
+out equal
+to self do
+fc3 of
+out return
+out so
+here this code defines a neural network
+model with three fully connected layers
+these are the fully connected layers
+three fc1 fc2 and fc3 and two
+convolutional layers that is layer one
+and layer two here we have layer one and
+Layer Two and the forward method
+specifies the order in which the input X
+is passed through the layers of the
+network here we have the input X so the
+input X is first passed through the
+layer one and then uh Layer Two after
+passing through the convolutional layers
+the output is flatten using the view
+method this is the view method here uh
+this is uh to be compatible with the
+fully connected layers and finally the
+output of
+fc2 um is obtained and then pass through
+the fc3 to obtain the final
+output so we have run this
+code next create an instance of the
+fashion CNN model so let's give it here
+itself model
+Al to
+Fashion
+CNN
+Mod Dot to
+device error is equal equal equal to NN
+Dot
+Cross androp
+by
+loss and then
+learning underscore
+rate is equal to
+0.1 and then
+Optimizer is equal to
+optim
+dot
+Adam model
+dot
+parameter parameters
+of LR is equal
+to rate
+then print
+model so here we got the
+output and
+next let's give number
+of
+eort is equal to five so an OS means
+training the neural network with all the
+training data for once so we have given
+here
+five and then count is equal to
+0 then
+L then we have
+itation
+list next accuracy
+list you also take prediction
+list followed by
+labels
+for
+eort in
+range
+of eorts
+for
+image for images
+comma
+labels
+in train
+loader
+images comma
+labels in train
+loader sorry
+images comma labels
+do
+images let's give equal
+to images dot to device we are moving it
+to the device all the labels and
+images
+comma labels. two
+device next train
+is equal to
+variables images
+dot comma 1 comma 28 by
+28 so this means that there are 100
+images in the batch each with a single
+color channel that is one that is gray
+scale and each image is 28 by 28
+pixels and a
+label labels is equal
+to
+variable
+labels then
+output output is equal to model of
+train loss is equal
+to error of
+output outputs comma
+labels so here initialize
+um next is to initializing a gradient
+for that let's use
+Optimizer do
+Z
+create so what we doing is here
+initializing a gradient as zero so there
+is no mixing of gradient among the
+batches
+then so next step is propagating the
+error backward so we are giving loss
+dot
+backward and then optimizing the
+parameters
+Optimizer dot
+step then
+count
+plus equal 1 it also means count is
+equal to count +
+1 if
+not
+count percentage
+50 so it's same as if count per in 50 is
+equal equal to zero so to
+Total = to
+Z correct is equal to
+Z and then testing the model for that
+we'll take for image
+images comma
+labels in
+test
+loer images comma
+labels is equal to images do to device
+again moving
+out moving to the
+device labels
+do to
+device label
+list dot
+append
+labels
+test is equal
+to
+variable images
+dot view of
+100 comma 1 comma 28 comma
+28 then
+outputs is equal to model
+test
+prediction is equ Al to torch dot
+Max
+outputs comma
+1
+of 1.2 device
+prediction prediction list
+dot
+print
+prediction correct plus equal to
+predict
+predictions is equal equal to
+labels dot
+sum
+plus
+equal length of
+labels accuracy
+is equal to correct into
+100 divide by
+total loss
+list
+append
+data
+iteration list
+dot
+append
+count then
+accuracy list dot
+append
+accuracy if not
+count percentage
+500
+print iteration
+accuracy
+format format of
+count comma l. data comma accuracy
+in The Next Step let's visualize laws
+and accuracy with
+iterations so plot Dot
+Plot
+HRA list comma loss
+list lot PLT dox Lael
+first mentioning number
+of
+iteration then PLT lot.
+viable X and Y uh in place of Y we are
+giving
+loss and plot now we are supposed to
+give title for this the graph
+title it should be first let's do
+iteration versus loss next iteration ver
+versus accuracy so for that let's give
+iteration versus
+loss and then plot finally plot do show
+wait for it to
+run so let's run
+it so as you can see we got iteration
+versus loss graph and here also even
+this piece of code is executed and here
+we got the output iteration 5 loss and
+accuracy percentage we got so we got the
+highest accuracy is
+92%
+next so now let's plot for iteration
+versus accuracy for that PLT dot lot
+plot
+iteration comma
+accuracy
+list then give
+PLT do X
+label so X label will be our number
+of
+accuracy then plot for y label y label
+and here will be the
+accuracy then plot the
+title our title will be
+hydration versus
+accuracy finally plot
+the show that is in
+or give iteration
+list okay and here we got
+the
+output so when you compare this here we
+have 500 to 3,000 iterations right so
+here you can see from 500 to 3,000 we
+have and then
+loss when we take the last iteration you
+can see here the loss is
+0.24 so when you can see here the loss
+that is
+0.24 so here almost here it will be like
+0.24 so then what we have accuracy is 92
+so you can see here
+accuracy 92 92 is somewhere here so you
+can see accuracy is 92 so the same way
+it's showing all the iteration loss and
+accuracy of the label
+check the first also so suppose uh take
+iteration 1,500 so somewhere here
+1,500 the loss is
+0.25 right so loss we will check in this
+graph iteration versus loss so 0 was
+0.25 so 0.25 will be somewhere here so
+you can see here 0.25
+and
+then okay here
+0.25 and then accuracy is
+90 so yeah this point is the 90 so this
+is how it is giving us iteration versus
+loss and iteration versus
+accuracy
+plotting and in the next step
+so now we will examine the accuracy in
+each fashion M data set class so for
+that
+class underscore
+correct is equal to
+0
+for underscore in
+range in range of
+10 then
+total 0
+point underscore
+in range of
+10 with
+t Dot number of
+grade for
+images comma
+labels in test
+loader images
+comma
+labels is equal
+to images do2
+device comma
+labels dot two
+device then say test is equal
+to
+variables of
+images then
+output outputs is equal
+to model
+model of
+test then we give
+prediction
+predicted is equal to torch
+dot
+Max Max of
+outputs of
+one c equal
+to is equal equal
+to
+read
+for I in
+range of
+100 then is equal to labels of
+I then class underscore
+correct of
+label Plus or equal to C of
+I do
+item and
+total underscore
+correct of
+label Plus or equal to
+1 for I in r
+often
+print
+accuracy
+of column dot 2 f
+of
+percent then give dot
+format
+output underscore
+label of
+I then
+[Music]
+class I
+into 100 /
+by total
+corrent so now run
+it so as you can see the output each
+label accuracy is checked so so we got
+the accuracy of each and every label
+that is t-shirt trouser pullover dress
+coat sandal shirt sneaker bag and ankle
+boot and the accuracy of ankle boot is
+98.2% so this is my deep learning
+implementation in the fashion Ms data
+set using pyo and I got
+98.2% on the test and to improve it
+modify the layer architecture or
+parameters and with that we come to the
+end of this video on pyos tutorial
+if you like this video share it with
+your friends before I sign off make sure
+you subscribe to our Channel and hit the
+Bell icon to get all the updates we'll
+be back with more such interesting
+videos until then keep learning and stay
+tuned to Simply
+learn hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

@@ -1,0 +1,183 @@
+with the increased exchange of multiple
+information and data units across
+distinct network models
+the need for hdlc protocols arises in
+the network channel
+these protocols are used by the data
+link layer to apply a efficient and
+secure channel between multiple network
+devices
+hi guys and welcome to year 10 and
+untrusting video by simply learn
+but before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to remiss an update
+from us now without further ado let's
+take a look at the agenda for today's
+session
+to begin with we will look into what is
+hdlc
+moving on with different hdlc stations
+available
+different hdlc transfer models
+and then looking into hdlc frame model
+and types
+now let's move on to the first heading
+that is
+what is hdlc
+let's take a look
+the hdlc stands for high level data link
+control
+refers to the bit oriented network
+protocol design to connect multiple
+network system according to the
+communication requirement
+the hdlc model applies the airq protocol
+for application and establishes a full
+duplex communication channel between the
+network devices
+moving on we have the different types of
+hdlc stations available
+hdlc stations can efficiently be
+differentiated into three different
+types where the first type is primary
+station
+in this station it handles the
+establishing and de-establishing of the
+primary data channel to share different
+frames in the network channel
+known as commands
+it also performs the data management for
+the network
+moving on we have the secondary station
+this station work under the command of
+the primary station and the frames
+issued by the stations are known as
+responses
+as for the last station we have combined
+station as the name suggests this type
+of station is available for both
+commands and response value
+next we will look into hdlc transfer
+models
+the hdlc protocol supports two types of
+transfer models which are applied
+according to the need of communication
+channel where the first type is known as
+normal response model or in short nrm
+this transfer model combines the primary
+station and the secondary station in a
+point-to-point or multi-point
+configuration
+to exchange commands from primary
+station and responses from the secondary
+station
+and response to the multi-connection
+moving on we have the second type of
+transfer model which is asynchronous
+balanced model
+in this transfer model the combined
+stations are installed in a
+point-to-point configuration for
+exchange of command or responses from
+either of the node
+moving on let's take a look at the hdlc
+frame model and types
+the data unit for sharing information in
+the hdlc protocol is known as frames
+the hdlc frame consists of multiple
+frame fields which may vary according to
+the frame type
+in general the hdlc frame consists of
+five different frame fields where the
+first field is flag field
+in hdlc each frame starts with the flag
+field in the configuration and is
+defined by an 8-bit octet sequence which
+is 0 1 1 1 1 1
+0 in the flag field
+moving on we have the address field it
+encapsulates the receiver's address in
+the field for example if the frame is
+sent from the primary station it
+contains the secondary station's address
+and vice versa
+next we have the control field this
+field contains the flow and error
+control information in byte format
+next we have payload or the information
+field it carries the actual information
+from the upper layer of the osi model
+and the last field is known as fcs field
+this field stands for frame sequence
+check
+and acts as an error detection field in
+the hdlc protocol which includes a 6-bit
+crc check
+given is a frame format for an hdlc
+protocol
+with flag
+in the both ending and the starting
+point followed by address field control
+field
+information field and fcs view
+now let's take up a quiz
+to understand all the things we have
+learned so far
+the question is
+the hdlc protocol functions under which
+network layer in the osm model
+and the options are
+application layer
+data link layer
+physical layer
+and the network layer
+you can give your answers in the
+comments section
+now let's move on to different types of
+frame models available in hdlc
+the frame models in hdlc can be
+classified of following three types
+depending upon the control field value
+of the frame
+where the first frame is known as iframe
+the iframe stands for information frame
+and is applied to encapsulate the user
+information from the upper layer in the
+model
+and then transmit it to the network
+channel
+note the first bit of the control field
+in this frame is always 0
+which also acts as an identification
+point for iframe
+moving on we have the s frame
+the s frame stands for supervisory frame
+and is used for error and data flow
+control and does not contain any
+information regarding the information
+field in the format
+note for the s frame s the first two
+bits of the control field is one and
+zero
+which acts as an identification point
+for s frame
+as for the last type of frame model we
+have
+u-frame
+the u-frame stands for unnumbered frame
+used for system management and
+exchanging information between connected
+network devices
+with this we have covered all the
+relevant information regarding the hdlc
+protocol
+if you have any questions regarding the
+topic you can ask them in the comment
+section
+thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

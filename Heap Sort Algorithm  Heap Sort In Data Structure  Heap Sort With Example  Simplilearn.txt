@@ -1,0 +1,242 @@
+hey everyone i'm bebo khandelwal and i
+welcome you all to simply launch youtube
+channel
+in this session we will discuss heap
+salt
+we shall begin our session by
+introducing what is a binary heap
+then we will discuss the implementation
+of the heap sort
+after that we will check out various
+applications of heap soap
+finally we will sum up what we have
+learned from this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+click on the bell icon below so you
+never miss an update from simplyrun
+so without any further ado let's get
+started with what is a binary heap
+it's a complete binary tree with all
+levels completely filled except the last
+level where all leaves are to the left
+as far as possible
+a binary heap can be either min heap or
+maxi
+in a min binary heap the elements at
+root must be minimum among all elements
+present in the binary heap
+max binary heap is like min heap where
+root must be maximum among all elements
+now let's discuss implementation of heap
+sort
+first
+we will start with creating a max heap
+of elements present
+next up we will remove the elements at
+the root and put it at the end of the
+array and put the smallest element at
+the root
+after that we will reduce the height by
+1.
+finally we will repeat 5 the root
+element again and repeat the process
+from step 2.
+now let's try to implement this
+algorithm in the code editor we will
+start by creating a function to epify a
+subtree rooted with node i which is an
+index in array arr and n is the size of
+the heap
+so void
+heapify
+and
+arr
+comma
+end n
+comma
+end
+it
+now we will initialize largest as root
+so end
+largest
+is equals to i
+now we will define the left and the
+right subtree so end
+l is equals to
+2 into i
+plus 1
+and
+end r is equals to
+two multiply
+with i
+plus two
+now if the left child is larger than
+root
+then if
+l is less than n
+and
+arr
+at l
+error at l is greater than arr
+at largest
+so
+the largest
+will be equals to l
+now if
+right child is larger than the largest
+so far
+so if
+r is less than n
+and
+arr at r
+is greater than arr
+at largest
+so
+largest is equals to r
+now if largest is not root so if
+largest
+is not equals to i
+we will swap
+arr
+at i
+with
+a arr
+at largest
+and then we will recursively call ep5
+for the affected subtree
+here are comma
+and
+comma largest
+now we will write the main function to
+do heap sort
+so void
+deep sort
+and arr
+bracket comma
+and
+n
+now we will start by building heap so
+far
+and
+i is equals to
+n by 2
+minus 1
+where i is greater than equals to 0
+at i minus minus
+we will call heapify
+for arr comma n comma i
+now we will one by one extract an
+element from the heap
+so for
+and i
+is equals to n minus one
+where i is greater than zero
+at i minus minus
+now we will move current root to end so
+swap
+error
+at zero
+to arr
+at i
+and we will call max apify on the
+reduced heap so heapify
+error
+comma i
+comma
+0
+now we will write a function to print
+this array
+so void
+and array
+and
+arr
+comma and n
+so far
+and
+i is equals to zero
+i less than n
+plus plus i
+we will do c out
+arr
+bracket i
+face
+and a c out
+and l
+now let's write the code for the main
+block
+so
+and
+ar
+is equals to
+e comma
+18 comma 12
+comma
+14 comma
+5 comma 6
+comma
+2.
+now we will write a statement to find
+the size of this array
+so end
+and it's equals to
+size of
+arr
+divided by
+size of
+the first element of the array
+arr0
+now we will call heapsort function so
+heap sort
+for a r
+comma n
+now let's print this
+array
+so c out
+sorted array
+is
+print
+array
+now let's try and execute this program
+as you can see our sorting function is
+working flawlessly
+now let's get back to our slides
+till now we have discussed
+the binary heap and the algorithm of
+heapsort now let's discuss some
+applications of heave salt
+first up
+it can be used to sort a nearly sorted
+series of data
+next it can be used to find minimum or
+maximum elements of the series with ease
+also it can be used to solve problems
+which requires some sort of priority
+at last let's sum up what we have
+learned from this session
+first up
+the time complexity of heap sort is big
+o of
+n log n
+next heap sort is good at easily finding
+the smallest or largest element in a
+heap
+next there is no additional memory space
+required to execute this algorithm
+finally a heap sort is basically used
+for problems based on the priority
+queues
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe if you have any
+question then you can drop them in the
+comment section below
+thanks for watching and stay tuned for
+more from simpler
+[Music]
+hi there if you like this video
+subscribe to the simplylearn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

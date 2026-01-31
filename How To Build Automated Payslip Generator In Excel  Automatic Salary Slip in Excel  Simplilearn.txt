@@ -1,0 +1,413 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn how
+to build an automated pay slip generator
+in Excel so we will be using multiple
+formulas here we will be using some
+lookup functions we will be using some
+some ifs and a few more data validation
+methods so it's a combined project where
+you can build nhr plip generator using
+Excel so with that said if these are the
+type of videos you'd like to watch then
+hit that like And subscribe buttons and
+the bell icon to get notified whenever
+we host craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back also just for a quick info if you
+want to upsal yourself to master data
+analytics skills and land your dream job
+or grow in your career then you must
+explore simply learns Cod of various
+data analytics programs simply learn
+offers postgraduate programs from Puro
+University in collaboration with IBM
+through this program you will gain
+knowledge and work ready expertise in
+skills like prescriptive and Predictive
+Analytics regression classification and
+over a dozen other skills that's not all
+you also get the opportunity to work on
+multiple projects and learn from
+industry experts in top TI your product
+companies and academics from top
+universities after completing these
+courses thousands of Learners have
+transitioned into a data analytics role
+as a fresher or moved on to a higher
+paying job profile if you are passionate
+about making your career in this field
+then make sure to check out the link in
+the pinned comment and description box
+below to find a data analytics program
+that fits your experience and areas of
+Interest now without further delay let's
+quickly hop on to Microsoft Excel
+workbook so here I have already created
+a sample pay slip generator so here we
+have use some data validation methods to
+select the employee details let's say I
+want to go with Brian and here we have
+his employee ID his full name and the
+month March right and apart from that
+the number of hours worked you know and
+here the total number of hours he logged
+in was this and number of times his
+client call got cancelled or he was on a
+sick leave casual leave in the month of
+March and total rate for each and every
+event so if he logined he'll get about
+$45 and in case if he's on a leave due
+to a client call cancel he'll get $20
+for SI leave $30 casually $25 and public
+holiday is $30 and end of the day we can
+just you know multiply these two values
+to get his final salary right so if we
+drag this sross overall here so we'll
+get a salary for March right so this is
+real time so you just select the
+employee name and here you just select
+the month which is about present in this
+particular sheet here and you will get
+all the details right and here is the
+time sheet for the month of March and
+all the employees will logged in and
+what are the events happening right so
+this seems interesting but how did we
+create it and how come we have all the
+employees here without any duplications
+when you can see there is a complete
+duplicate entries or two times entries
+over here right how did we filter this
+out and how did we export this data into
+a baselp generator and how is it looking
+up at all those values and how is it
+summing up the salary right so we have
+multiple uh uh formulas and functions
+implemented in this particular P lip
+generator so without further delay let's
+try to recreate this particular pay list
+or P lip generator so firstly we will
+create a sorted and filtered list let's
+quickly rename this as sorted and
+filtered employee
+list so what we're going to do is
+firstly we will try to import entire
+list of all the employees present in
+this particular organization by using
+the unique function you guessed that
+right so we are just fetching the unique
+values one time only for once into this
+particular list and we will also if
+possible it's not mandatory but here I
+have sorted them in the alphabetical
+order right so that it is a little bit
+easier for you to track now let's try to
+name this as
+employee right and here I will use the
+unique function un and I QE Just Tab to
+select the function and the array is
+here so we have converted this
+particular you know table into an actual
+table using the controlt function in
+Excel and I'll select this particular
+you can see that highlighted downside
+Arrow right in the bold black color so
+that means it is pointing to select the
+entire column just click that line and
+there you go your entire column has been
+selected now this is one way of or one
+part of extracting unique functions now
+another one is to try to sort these
+employees list in the alphabetical order
+right so I'll be using the sort function
+over here press tab to select now close
+the bracket over here and press enter
+now you have the entire list of
+employees in the alphabetical order and
+there is no chance for any duplication
+in this particular list right so this is
+part one you can just quickly save your
+file so that you don't miss any track
+right and uh the next one is the
+activities so one they have logged in
+second one they have logged in and by
+some reason the client call or the
+business meeting has been cancelled so
+they're sitting idle or they don't have
+anything to do maybe they're logging off
+early right so that is the second
+situation third one is an actual sick
+leave fourth one is a planned casual
+leave and the fifth one is a public
+holiday so mostly many organization five
+events now we will copy and paste these
+uh activities or events into this
+particular sheet over here which has
+sorted and filtered list of employees
+now now we are going to calculate the
+month here so you can add month and here
+you can deal with the same MCH data that
+we have used here you can just copy and
+paste that value over here as well so
+you can also manually write it down as
+March 2024 March April 2024 anything
+correct now we're dealing with this
+particular March data so we will proceed
+with March data as well now the last one
+this can be named as pay
+slip
+generator right so if we check the B
+slip generator over here what we have
+here is the first one employee name
+right so you can first add that
+particular employee select option over
+here right select employee and here you
+will name or you will try to add the
+employee name so if you check this
+particular sheet too I have the data
+validation option enabled here I can
+just select the employees from the drop
+down so let's try to create a drop down
+over here equals to or you can just go
+to data option here just click the S and
+go to the data option over here and here
+you have columns click the drop- down
+option and go to data validation now
+here instead of any value go to list and
+here you can give the list of employees
+that you recently filtered this is one
+way of doing it but what's the downside
+of it let's say I add a new employee
+over here okay let's cancel this
+operation right away and let's say I add
+a new employee right over here maybe as
+Jonathan he's a new joiny he's an intern
+or you know he is a new joiny something
+like that so when I add Jonathan over
+here the data validation from this
+particular section would not be able to
+identify him as a new joiny the list
+will end at this place which is this one
+right so we don't want that to be Happ
+happening now we need to operate on a
+different approach for creating this
+particular data validation option so the
+approach is really simple if you just
+get into this particular sorted list
+over here and if you check this list you
+can see we have uh the First Column as
+employ starting from snooper to all the
+way to the last Jonathan right now what
+we need to do is create a new formula so
+just enter into the formula option right
+away here and use the defined name
+option so that you're defining a new
+formula Al together and here you can
+type it down as employee so you'll list
+of
+employees list of employees you can
+write an underscore so that the formula
+doesn't uh get confused so here we
+have so where it is referring to right
+so it is referring to this particular
+column so a to a so just add an #over
+here so that it will automatically
+update if there is any new addition to
+the list now here we'll create a data
+validation go to data and data tools
+data validation and instead of any value
+go to list and here you will type the
+source as equal to
+employee there you go uh maybe we have
+to do a light change over here okay now
+go to sort so here we generated a
+formula so okay let's try to review that
+formula over here list okay
+and so let's go to the employees list
+select the first cell over here there
+you go and Define a name so the name
+will be
+EMP list sorted and filtered employees
+so here you will be adding a hash
+so we have we have written the hash
+after this now we want that to go along
+with the entire spell from second cell
+to the entire existence of that
+particular list right in case if there
+is a new edition you can enter that new
+edition and consider that as an employee
+right so youve done that just press okay
+there you go now go to the pp generator
+and here create a data validation option
+let's clear this now go to data data
+validation and here you will be
+selecting a list and here you will be
+writing
+EMP list that you just created press
+okay now you have the employees list and
+in case if you add a new employe at the
+end he will also he or she will also be
+considered as an employee now part of
+the job is done the next is a few more
+details like uh the
+employee number and employee
+aim and let's check the yeah the month
+correct so now how would you generate
+the employee number so employee number
+is like fetching when it comes to
+fetching nothing is better than a lookup
+function or an index match let's proceed
+with a lookup function I'd go with v
+lookup since it's my favorite one so
+this B2 will be my lookup value and the
+lookup uh table is this particular a
+table go to a corner and give that this
+is the table you are looking at uh you
+want the second column which states to
+the payroll ID or employee ID and I want
+an exact match close the bracket and
+there you go now select the employee
+number or employee name here and you
+will have the employee number right here
+and here you want to add the employee
+name which is this particular cell
+whatever is present in that particular
+cell is your employee name and here you
+want to add the month which is this
+particular month which we currently
+correct so far so good now we want to
+create the fa lip generator so first if
+we take a look at this particular one
+here we have the
+activity and here we have the number of
+hours and salary now let's copy the same
+P it in our facelip generator right here
+some formatting if you feel
+like there you go we have a formatting
+ready and here as well and here we will
+add our hours and rate and
+salary there you go and I think we
+already predefined our rates so copy and
+paste the rates right
+here now we need to calculate the number
+of hours logged in and for that we will
+be using a simple sufs function equals
+to sufs so you need to pay a little
+attention to this particular sumus
+function because everything relies on
+how you are freezing the cell values so
+you might be a little confused so you
+can understand what I mean during the
+execution of the sums function so sums
+and now the sum range so the sum range
+is nothing but the hours table right
+over here just click on the hours comma
+so after hours we will be selecting the
+employee correct so to the person who is
+working which is this particular column
+just navigate your cursor to the
+location where the cell B2 and B3 are
+intersecting which is a black line over
+there so you can see that particular
+Mouse icon which is which looks like a
+lower pointing downward Arrow key just
+click that downward Arrow key and your
+column will be selected and that's next
+one now comes the critical part so you
+need to go back to the pel generator
+over here and select the employee name
+so employee name is existing in cell B5
+so select B5 try to freeze it function
+F4 so that this value doesn't change
+because we going to drag this formula
+across the next four activities so when
+you drag the formula the formula should
+be pointing to B5 but not succeed to B6
+B7 Etc right that's the major thing
+which you need to make sure and after
+that you need to find the activity right
+so go back to the time sheet data and
+here is the activity or status Point
+your mouse pointer to that particular
+location where G3 and G2 intersect so
+that you get the downward Arrow key just
+click that there you go comma Now comes
+another major part B Li generator sheet
+so now we are on the pp generator so we
+need an if condition so so it needs to
+identify if the activity is what's
+present in cell D3 or D4 D5 d67 based on
+the table what we have then print it the
+way it is and if not just the way it
+should be right so you will understand
+that more clearly when we start with the
+if condition just select the if
+condition press tab to select and cell
+location D3
+if D3 is equals to the activity which is
+logged in then it should be nothing just
+blank if not then it should have lugged
+in which is again
+D3 now close the brackets so close the
+functions there you go now press enter
+there you have it number of hours now
+just drag this formula across all the
+rows and you have it so now you have a
+real time fael generator just uh change
+some employ to check if our formula is
+working and it's working fine you can
+also eliminate the leading zeros but but
+let's keep it right every minute counts
+now the final one the salary slip
+generator so
+E3 Cross or star into the rate enter now
+you can drag the same formula across all
+the celles to find the total salary now
+you can also do a final customization
+over here just copy and paste the cell
+and drag this and uh you can
+merge total
+salary can even bold this here you can
+have sum of all this enter the final
+salary you can also do some formatting
+so there you go that's how you can
+create a realtime automated Basel
+generator in Excel and with that we have
+come to an end of this session on how to
+create an automated pay slip generator
+in Excel should you have any queries
+regarding any of the topics covered in
+this session or if you require the data
+set or the formulas or any resources
+that we used in this session please feel
+free to let us know in the comment
+section below and our team of experts
+we'll be happy to resolve all your
+queries at the earliest until next time
+thank you for watching and stay tuned
+for more from Simply learn staying ahead
+in your career requires continuous
+learning and upscaling whether you're a
+student aiming to learn today's top
+skills or you're a working professional
+looking to advance your career we've got
+you covered explore our impressive
+catalog of certification programs in
+cuttingedge domains including data
+science cloud computing cyber security
+AI machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+pack to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

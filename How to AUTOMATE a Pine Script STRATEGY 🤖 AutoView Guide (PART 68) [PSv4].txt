@@ -1,0 +1,1468 @@
+hi traders welcome back to another auto
+view video
+in today's video i'm going to be giving
+you the source code to this script you
+see on my chart right now
+this script trades hammers and shooting
+star candles
+it's intended to be traded on the daily
+chart so it doesn't take a lot of trades
+per month but it does work on several
+markets and has a pretty decent win rate
+and profit factor compared to
+the net profit and max drawdown and best
+of all this script is completely
+automated to trade through orlando using
+order view
+so every time a setup is detected on the
+chart autoview
+places a trade with stops and targets
+making this
+an extremely low maintenance strategy
+that can be traded by
+anyone with a nolander account and an
+orderview subscription
+so today we have to break down around
+100 lines of code
+so let's not waste any time and get
+started on the lesson so today's
+script is going to be a strategy script
+instead of a study script so
+i believe this is the first strategy
+script i've ever covered
+on my youtube channel so far i do cover
+these scripts in much more detail in the
+pan panscript mastery course
+and especially in my indicators and
+strategies course
+but today's lesson will be a crash
+course into strategies how to write them
+and basically the fundamental basics of
+these scripts how to place orders
+and how to convert the strategy alerts
+into a third party automation command
+in this case auto view but the theory
+behind this video will work
+for any third party you may just have to
+adjust how your alerts work
+so for example i did a lesson recently
+on how to use
+three commas with pinescript in that
+lesson i didn't really cover an actual
+strategy script but if you want to go
+back and watch that lesson you can
+use the theory i covered in that lesson
+to convert this script
+into a crypto trading script if you're
+interested in trying that but anyway
+let's move on
+and today's lesson is going to build on
+the previous few lessons
+so if you get lost during this lesson
+and you haven't watched the preceding
+videos in this autoview series make sure
+to go back and watch them
+these lessons are intended to build on
+each other so the source code to the
+script will be in the video description
+if you want to skip ahead and just copy
+and paste
+all of this code to follow along with
+the lesson but i'm going to follow the
+normal format i usually do for these
+videos and i'm going to start with a
+pretty much blank script all we have
+here is my user inputs
+and we're just plotting the closing
+price and i will break down
+each section of code and each line of
+code and write it out in real time with
+you
+so that you can understand exactly what
+everything does and why i've set up the
+script the way i have
+so let's start with the very first line
+of code here obviously i have a bunch of
+comments here which are
+not important except for our version
+annotation comment to target
+version 4 of pinescript but the first
+line of code here is our strategy
+annotation function with a long title
+and a short title so the short title is
+just this little
+bit of text here that shows up on the
+indicator and i've set overlaid
+true so this is drawing onto my actual
+chart over the top of price action the
+next thing i've done here is
+get a bunch of user input so i'll break
+down each user input one by one
+the first one is our stop loss
+multiplier which is just a float input
+and this adjusts the distance of our
+stop loss from our entry
+as a multiplier of the atr so in the
+case of a bullish example
+uh let's say we were entering at the
+close of this candle here
+the script is calculating the distance
+to the swing low and then adding on
+the atr and it is multiplying the atr
+by this setting here so by default it's
+set to one atr
+stop loss distance but you can adjust
+this
+in the settings menu here so you could
+have a half atr
+or a two atr stop and that will
+obviously impact your win rate the next
+input is our risk reward profile
+so this is also a multiplier but this is
+a multiplier of our stop loss distance
+so if we have a one atr stop loss from
+the entry to the swing low
+with a one to one risk reward our take
+profit is going to be the same amount of
+distance
+in pips as our stop-loss but you can
+change that in the settings menu
+by playing around with this setting here
+it is generally advised to shoot for at
+least a one-to-one risk reward profile
+in your trading setups because although
+having a lower risk reward profile could
+result in a higher win rate it does
+make it a little bit more difficult to
+turn a profit over the long term when
+you factor in trade costs commissions
+slippage
+all of that so i would recommend
+sticking to a minimum
+one-to-one risk reward profile the next
+setting here is our fib
+level our fibonacci level or candle
+percentage
+level so by default it's set to 0.333
+percent
+so this fib level input is used to
+determine
+whether or not the current candle meets
+our criteria
+for a shooting star or hammer candle and
+the technique i'm using
+to validate our hammers and shooting
+star candles is the same technique that
+i
+showed in a previous video on my channel
+called detecting hammers and shooting
+stars
+so there'll be a link to this video in
+the video description and up in your top
+right hand corner here
+if you want more information on the
+technique i'm using to detect these
+hammers and shooting stars
+so those are the only three inputs we
+need for our strategy script
+the rest of these inputs are parameters
+for adjusting how autoview behaves
+so the first order view parameter here
+is oandademo this is a boolean input
+if this is set to true then the script
+will use awanda demo account instead of
+your orlando live account
+for trade execution next up we have
+limit order this is also a boolean input
+if this
+is turned on then the script will use a
+limit order to enter your positions
+instead of a market order by default
+this is turned on
+and i would recommend using this setting
+in any of your scripts as well
+if you do use order view to auto trade
+because it does mitigate issues with
+spread affecting your order fills next
+up we have gtd
+order this is how many days to leave the
+limit order on our chart
+by default it's set to two days so if
+you are using limit order
+the script will tell order view to place
+the limit order with an expiry of two
+days
+from when the order is placed this is so
+your limit orders don't stay on your
+chart let's say we wanted to enter
+on this bar here but we never got filled
+you don't want your limit order staying
+active
+for too long since i'm trading this on
+the daily chart if my order doesn't get
+filled within a few days
+chances are it's not going to get filled
+and price is just going to take off and
+i've already missed
+that trade so that's the point of having
+an expiry on our limit order now these
+last three inputs should be familiar if
+you watched the previous video in this
+series where i showed you how to
+calculate your
+forex position size for trading through
+autoview our account balance is our
+owanda
+brokerage account balance so if you're
+trading this on a demo account which i
+would encourage you to do
+especially in the beginning then you
+want to set this account balance input
+to whatever your demo account balance is
+the next input is our account currency
+so by default it's set to us dollars but
+if you have your account denominated in
+a different currency
+you can select from any of the major
+pairs here so in my case i would select
+aud and this will convert my risk
+into the relevant account currency if
+you don't set this up properly
+then your position size will be
+calculated using the wrong exchange rate
+and your position size could be
+dramatically inaccurate
+depending on which currency pair you've
+selected here so make sure to set this
+to the correct currency
+and then finally we have risk per trade
+which is our risk
+per trade as a percentage of our account
+balance
+so by default this is set to two so two
+percent of a one thousand us dollar
+account would be two hundred us dollars
+so on each trade
+i would be risking 200 us dollars with
+the default settings so that's it for
+our user inputs
+obviously i've set up a bunch of tool
+tips as well and i've grouped these
+using the new
+group parameter for my user inputs
+that creates this little subtitle
+heading and the tooltips
+give the user just a little bit more
+information on what each
+setting here does so now that we've got
+our user inputs
+set up let's move on to detecting the
+setups that i want the script to trade
+the first thing i'm going to do is get
+my indicator values the indicators i
+need in order to
+perform the analysis i need to do in the
+script
+in today's lesson we're only using the
+atr indicator so i need to get the
+current atr
+which is easy we just use the inbuilt
+atr function
+if i can type properly so we're getting
+just the default
+14 period atr the next thing we need to
+do is calculate
+the 33.3 percent fibonacci level
+for the current candle to do that we
+need two
+different variables a bullfib and a bare
+fib so bullfib
+is going to be set to the low minus the
+high
+multiplied by our fib level which is
+this
+setting here oops just crossed it out
+this fib level setting here which is set
+to 0.333 by default which is 33.3
+percent
+uh the final thing we need to do to
+complete this calculation
+is add on the current bars high to
+this value the bare fib is exactly the
+same
+but just in the opposite direction so we
+need to minus the high from the low
+and multiply that number by the fib
+level
+and then add the low onto that value
+that gives us our bull and bare fibs
+now we can check to see if the current
+bar closes within
+this range but before we do that we need
+to determine
+which price source closes or opens
+highest lowest on the current bar
+to do that we need to create two new
+variables again the first one is lowest
+body
+and then highest body so lowest body is
+going to be set to
+is the current closing price less than
+the opening price
+if so then the lowest body is the close
+otherwise it is the open before i
+continue let me
+just write out the highest body code so
+that is going to be the same thing just
+the opposite direction
+is the current bar's closed greater than
+the current bars open
+if so then the current bar's close is
+the highest body
+otherwise the current bars open is the
+highest body
+and now let me explain what i'm doing
+here so in the case of a shooting star
+there are two shooting star candles here
+on this chart this one
+and this one one's green and one is red
+now i'm not going to spend too much time
+going over
+the theory behind this technique for
+detecting hammers and shooting stars
+because i already did that in the
+hammers and stars detection video which
+again i'll leave a link in the video
+description to that
+if you haven't seen that yet but i'll
+explain briefly what we're doing here
+so in order to validate a shooting star
+we are calculating the 33.3 percent
+fibonacci from the high to the low
+and for a bullish hammer candle it's
+from the low to the high
+and what we want to see on this candle
+is the open
+and the close must have occurred below
+this 33.3 percent mark so this is the
+lower third
+of this entire bar if the bar open and
+closed below this red line here
+this red fibonacci line then we have a
+valid shooting star set up
+however my script does not discriminate
+between bullish and bearish
+shooting stars all we need to see is the
+bar close and open in the lower third
+so in the case of this shooting star
+here if we do the same thing
+draw a fib from the high down to the low
+you can see this red line here
+is our lower third watermark line
+this bar opened and closed within this
+lower third
+33.3 percent so this is also a valid
+shooting star candle and the script will
+detect
+both of these as valid shooting star
+candles i
+have found in my own testing i did add a
+filter to only trade bearish
+shooting stars and it did not improve
+the accuracy of the script in fact it
+made it even
+less accurate so that is the reasoning
+behind why
+i detect both bullish and bearish
+shooting style candles
+because the story of these candles is
+exactly the same even though this candle
+closed bearish
+the fact that sellers were able to
+push this market from its high all the
+way down
+into the lower third by the close is a
+bearish
+story in relation to this price action
+pattern
+and it's the same for this bullish
+version price
+opened here rallied all the way up here
+and then sellers pushed it all the way
+down
+into the lower third so both of these
+bars
+both of these candlestick patterns are
+considered bearish
+at least in the context of this
+particular strategy that i'm
+coding the script as both of these
+candlestick patterns tell the same
+story and so we trade them both the
+reason why we
+calculate the highest body is so that we
+can just simply check
+to make sure that the highest can or
+body here
+closed in that lower third we could
+check if both the open and the close
+occurred below this
+33.3 mark but for whatever reason i
+found it more intuitive to go with the
+approach that i've chosen
+in this script which is to get the
+lowest body and highest body and compare
+them
+to our bull and bear fib it just makes
+the code look a little bit more readable
+i think personally so now that we've got
+all of the data we need
+in order to validate the candlestick
+patterns we're looking for
+that's the next step is to determine
+if we have a valid setup so for that we
+have valid
+hammer and valid star valid hammer
+is going to be set to a boolean
+condition
+and that is is the lowest body greater
+than or equal to our
+bull fibonacci so is the lowest body
+higher than
+our upper third of the bar and is the
+close
+not equal to the open so we don't want
+to trade doji's there needs to be a body
+to the candle we're not trading
+doji's with this strategy so if the open
+is equal to the close we don't want to
+trade that
+candle and we need to check is the
+atr not n a or null
+so in programming terms null means it's
+basically hasn't been set yet
+and in pine script terms na is used
+as the null data type the reason we need
+to do this
+is because we are using an indicator in
+this case the atr
+which requires previous price action
+data in order to calculate its value
+so we need 14 bars on our chart looking
+left
+to calculate the average true range of
+those bars but if we go all the way to
+the very first bar
+on my chart here let's say this here was
+a shooting star candle but
+we haven't had 14 bars print onto our
+chart since
+this price action history began we've
+only had one two three four five six
+seven
+eight including this bar that means that
+the atr
+for this bar this particular bar would
+be
+n a or null and so when it comes to
+calculating our stop loss and our
+targets
+our stop loss and our targets will also
+be n a and if the atr is n a
+then our stop loss will be n a and then
+we will be entering a
+setup without a stop loss or a take
+profit target
+and the trade will never be closed on
+historical data
+in the strategy tester so that is the
+purpose of checking
+if the atr is not n a and this applies
+to
+all indicators that you use in your
+strategy scripts
+so for example if your strategy relies
+on the rsi
+or a moving average or anything that
+requires previous
+price action data to have printed onto
+the chart in order to calculate its
+value
+if you do not add this check then there
+is the potential that when you load
+your script onto a market that had a
+valid setup a valid price action setup
+early on in its price history before
+these indicators could calculate their
+values
+then you will basically break your
+script and your script will enter the
+trade
+without a stop loss or a target and the
+trade will never be closed
+by the tester and let me just say i
+learned this the hard way but i will
+never forget it because it is extremely
+frustrating when you can't work out why
+your script is not
+taking trades if you find that one of
+your scripts is
+behaving that way make sure you've
+checked this
+because it doesn't occur on all markets
+it will only occur on markets that
+detect a valid price action pattern very
+early on in the price history anyway
+moving on to our valid star
+it is basically exactly the same except
+in this case we're checking
+is the highest body less than or equal
+to our bare fib
+or the lower third of the bar size
+and is the closed not equal to the open
+and is our atr
+not n a so now we've determined if we
+have a valid set up or not a price
+action setup
+the next thing we need to do is
+determine whether or not we should
+actually
+execute on this trade so to do that i'm
+going to
+check if we have confirmation for
+our setup and this is going to be two
+new
+boolean variables one is going to be
+valid long
+one will be valid short valid loan will
+be set to
+do we have a valid hammer candle pattern
+and
+is our strategy.position size equal to
+zero
+this means that we are not involved in a
+position
+on the tester system so the script does
+not allow for pyramiding
+because it just doesn't work with this
+particular strategy
+and so we don't want to be entering
+multiple positions while a
+existing position is open if we're
+already involved in a trade
+but we detect another valid hammer we
+don't want to trade that
+second hammer we want to wait until the
+first trade plays out and the final
+thing i want to check
+is is the bar state confirmed
+so bar state dot is confirmed is only
+true
+if the current bar is on its final tick
+so it's cl
+in the act of closing and it's confirmed
+or it's a historical bar that is already
+closed
+so we don't want valid long to be true
+if the bar is a real-time bar and it
+hasn't closed yet because
+pretty much every candle on your chart
+might have been
+a hammer candle at some point but ended
+up closing
+as a doji or a bearish
+golfing candle it might not have
+actually closed as a hammer
+or a shooting star candle so that's why
+we check to make sure that the
+candlestick pattern is
+confirmed and we do the same thing for
+our valid short so we check do we have a
+valid star
+and is the strategy.position size
+variable
+equal to zero and is the bar state
+confirmed bar state dot is confirmed
+so if all of these conditions are met
+then we have a valid short setup and the
+same for a long setup and this is a good
+place to mention that your position size
+is relative to the direction you're
+trading so if you have a long position
+open
+your position size will be a positive
+number
+so depending on what your position order
+size is set to in this case it's just
+set to one contract
+if we were to go long one contract then
+our position size would be
+one however if we were to place a short
+trade in the tester system
+then our position size would be negative
+one
+so that's why we check if it's equal to
+zero and not
+less than one or something like that so
+if
+our position size is zero that means
+we're flat if it's a positive number
+that means we're involved in a long
+trade and if it's a negative number that
+means we are involved in a short trade
+so that's all we need in order to detect
+our candlestick patterns that we're
+going to trade there are basically three
+more steps to completing the script the
+next step is to
+basically copy and paste our position
+size calculation code from the previous
+lesson
+into this script so that we can
+determine our position size for these
+setups
+the second step is to make the tester
+enter and exit our trades based on our
+stops and targets and entries and the
+third step is to use
+the inbuilt alert function to tell
+autoview
+how to manage our positions so i'm just
+going to skip over the position size
+code for a moment and we're just going
+to place
+our mock trades through the tester
+system just to make sure the script is
+working properly
+and before i do that let's save the
+script to make sure there's no compile
+errors
+everything seems okay so before we
+continue we need to calculate
+our stops and targets for the current
+bar
+and to do this we need several variables
+so the first one is our stop size
+that's going to be set to the atr
+multiplied by our stop
+multiplier which is this setting here
+the next thing we need to do is
+calculate our stop price
+for our long trades our long stop
+distance and our long
+target price and then the same for our
+short trades so this is all pretty
+easy the first thing we need to do is
+calculate our long stock price
+and for this i'm going to check if the
+current bar
+is the lowest bar or if the previous bar
+was the lowest bar of the two so for
+example
+let's say that this candle here is not a
+valid
+long trade but the next candle is the
+script is going to check
+is the entry candle of this hammer lower
+than the previous candle
+if so then we set our stop loss below
+the entry candle
+otherwise we set our stop loss below the
+candle preceding it
+this is how i learned the strategy from
+my trading mentor stephen hart and
+in order to do this we need to check is
+the current bars low
+lower than the previous bar's low if so
+then we want to
+subtract the stop size in
+pips from the current bar's low
+otherwise we want to subtract
+the stop size in pips from the previous
+bars low
+and this will give us a long stop price
+and from our long stop price we can
+determine our distance our stop loss
+distance in pips which we need in order
+to calculate our target
+our profit target so long stop distance
+is going to be set to because this is a
+long trade
+we will be entering above our stop loss
+so we need to subtract
+our stop loss price from our entry price
+so to do that
+that's simply the closing price minus
+the long
+stop price that gives our distance in
+pips
+now we need to calculate our long target
+price and that's going to be set to the
+closing price plus and then in brackets
+our long stop distance
+multiplied by our risk reward setting
+which is this guy here
+so we first get our long stop price we
+then calculate the distance in pips to
+that stop loss price
+then we multiply that distance by our
+risk reward profile
+and add it to our entry price in order
+to get our target price
+and then it's the same for shorts so
+short stop price
+is set to is the current bars high
+higher than the previous bars high
+if so now we need to add our stop
+size onto the current bar's high or if
+the previous bar was higher
+we need to add our stop size to that
+candle's high that gives us our short
+stop-loss price
+the next thing to do is calculate our
+short stop distance
+which is going to be our short stop
+price minus our entry price because we
+are entering on a short trade
+our entry will be below our stop loss
+and then finally we need to calculate
+our short
+target price and that is going to be set
+to our entry price
+minus our short stop
+distance multiplied by our risk reward
+profile
+so our target is below our entry so we
+minus
+our short stop distance multiplied by
+our risk reward instead of adding it
+like we did for our long target
+so that's it for our stops and targets
+we are now ready
+to set up our trade variables so now we
+need to save
+our stops and targets for the current
+trade
+and in order to achieve this we need to
+create two
+var variables the first one is going to
+be our trade
+stop price the second one is our trade
+target price
+and we're going to initialize both of
+these as 0.0
+when they are first created and then we
+will override these whenever a
+new trade is detected and these two
+variables will apply to long and short
+trades so the next thing we need to do
+is detect
+valid long setups and trigger
+our alerts for auto view and then we
+need to
+do the same thing for our short setups
+but first let's do our long setups so to
+do this we're going to use a
+if statement if we have a valid long
+setup
+then we want to set our trade stop price
+to whatever our long stock price
+currently is
+we want to set our target price to the
+long target price
+and then we're going to set our trade
+position size which we haven't created
+yet so i'm going to comment out this
+line of code but we'll come back to this
+one
+once we've finished uh entering and
+exiting our mock trades
+our trade position size is only for auto
+view so we don't need to cover that just
+yet we'll come back to that in a moment
+and then finally we need to trigger
+auto view long alert which we will also
+come back to in a moment and we need to
+do the same thing for our short trade so
+i'm just going to paste
+that in there change this to short
+change
+trade stock price to our short stop
+price and trade target price to our
+short
+target price flip that to short
+and now whenever a valid long or valid
+short setup is detected we are saving
+our
+stop loss and target price for the
+relevant setup
+and now we can use this information to
+use the tester system to enter and exit
+trades once we confirm that's working
+we'll come back and fill out our alert
+syntax
+and calculate our position size so
+before we continue let me save the
+script to make sure everything compiles
+okay
+there we go no problems so the first
+thing we need to do is
+enter trades whenever a valid
+setup is detected and to do that
+we simply use the strategy.entry
+function
+i'm not going to go into too much detail
+about the syntax
+for this function because this lesson
+will be far too long if i spend too much
+time on these functions
+again if you want to learn all of the
+nitty-gritty details of
+these functions make sure to go and
+check out the mastery course where i go
+into a huge amount of detail
+about these sorts of scripts and these
+functions but of course you could also
+just
+go and read the documentation by holding
+control and clicking
+on the function and there's plenty of
+information in the trading view
+documentation
+the only advantage of going through the
+mastery course is that i've broken all
+of this
+documentation down into video lessons
+for people who don't like
+spending their weekends reading through
+code documentation
+i can save you the time since i've
+already done that
+over the past few years but anyway let's
+enter our long trades first
+to do that we need to set our id to long
+so this is our trade
+id so this identifies this entry as a
+long entry so that we can exit our long
+entry later when we need to
+we need to set the long parameter to
+strategy.long
+or you could just set this to true this
+is just a true false parameter
+if you set it to true that means you are
+going long if you set it to false that
+means you are going short i like to use
+the inbuilt strategy.long constant
+boolean just because it makes the code a
+little more readable
+i'm not sure why they didn't name this
+parameter direction instead of
+long that gets a bit confusing when
+you're first learning how to write these
+scripts but
+hey it is what it is and the final
+parameter we need to specify here is
+when to enter this position this is a
+boolean variable
+and this is going to be set to our valid
+long
+boolean which we determine up here
+so if we have confirmation for our long
+setup then
+our stops and targets get saved and the
+tester will enter a long position
+we can copy this line of code and change
+everything to short
+and do the same thing for our short
+trades
+so when a valid short is detected we
+enter a short position with an id
+of short next up we need to exit
+our trades whenever our stop or target
+is hit so for that we use the
+strategy.exit function
+and this requires a few more parameters
+than our entry
+the first one is we need to specify an
+id for this order
+this is just going to be called long
+exit next up we need to tell
+this exit function which order to exit
+so for that we use our from
+entry parameter so this is from our
+long id entry so we put that
+id into this parameter and that will
+close our long
+position next up we need to specify our
+limit our
+take profit limit order that's going to
+be set to trade
+target price and that is why we had to
+create a var variable to save this
+information because this function is
+called on every new tick
+so if you don't save your target price
+then your profit limit order will
+change on every new bar depending on how
+you calculate your target but by saving
+the target whenever
+a valid long trade is entered we can
+tell the tester to exit our position
+if price action hits our tiger price and
+it's the same for our stop loss so stop
+is going to be set to trade stop price
+so whichever gets hit first will
+determine whether this is a winning or
+losing trade
+in the backtester system and finally we
+need to also specify a when parameter
+so in this case it's going to be when
+our strategy.position
+size is greater than zero so whenever
+our position size
+is greater than zero that means we're
+involved in a long trade
+and this exit function will constantly
+check has price hit our target
+or our stop loss and once either of
+these are hit the
+trade will exit and the data will be
+added to the tester system so now we can
+copy this line of code paste it in there
+change everything to short so we're
+exiting our short trade
+our limit and our stop can stay the same
+since we're using the same variables
+for long and short trades that does not
+need to change
+what we do need to change is the
+direction of our position size
+check so if our position size is less
+than zero that means we are currently
+involved in a short trade
+so when we're in a long trade we check
+our stops and targets
+for our long position and when we're in
+a short trade we are constantly checking
+our stops and targets
+for our short position if i save this
+script this should compile without any
+errors
+fingers crossed and now the strategy
+tester
+is taking trades for us and we're only
+trading one position so these numbers
+are a bit wacky
+but it doesn't really matter how many
+positions you're trading
+in the tester since we aren't going to
+be using a fixed position size anyway
+when it comes to auto view we're going
+to be adapting our position size
+based on our account balance as it grows
+or shrinks so far so good
+the last thing we're going to do before
+we move on to our auto view code
+is draw our trade data onto the chart so
+we want to draw our stops and targets
+and our signal detection so
+draw trade data for this i'm just going
+to use the plot
+function and we're going to check is our
+strategy.position
+size not equal to zero if that's the
+case
+then we are involved in a trade and we
+want to draw our stops and targets
+or if we currently have a valid long
+detected
+on the current bar or a valid short
+then we want to draw our trade stock
+price
+whoops otherwise we want to draw nothing
+so if we're involved in a trade
+currently or we have just detected a
+valid long or short trade
+we want to draw our stop loss price
+otherwise if we're not in a trade
+and we don't have a valid setup we want
+to draw nothing
+the next thing we will do here is title
+this trade
+stop price i will color this red
+color.red and i'll set the style to plot
+dot style unscore line
+break so that the stop loss will break
+between setups if we don't do this then
+we'll have a weird
+joining line between each setup and our
+chart will look something like this with
+lines
+connecting all over the place we don't
+want these connecting lines we just want
+the line to break
+and just draw the stop loss or target
+until it gets hit
+so that's what this plot style will do
+the final thing i will set here is the
+transparency to zero
+now i can copy this line of code and
+paste it in here
+twice and this is for all of our trade
+data so we're drawing our trade stop
+already we want to also draw our trade
+target price so let's change this to
+target price
+and we also want to draw our trade
+position
+size which we haven't calculated yet so
+i'll comment out this line of code
+but we'll come back to this in a moment
+let's set our trade target to green
+apart from that nothing else needs to
+change here and we'll set
+our position size to purple and for this
+we'll set our transparency to 100
+so when it comes time to drawing our
+position size we don't want it actually
+drawing under the chart as a line we
+just want the value to be drawing
+up here and then finally i want to draw
+price
+action setup arrows so we're going to
+use the plot shape function here we're
+going to check
+do we have a valid long trade if so we
+want to draw a shape
+otherwise we want to draw nothing we're
+going to set the style to
+shape dot triangle up we're going to set
+the location to location.below bar for
+long setups
+we're going to set the color to
+color.green and the title
+to bullish setup
+now i can copy this line of code paste
+it down here change this to short
+change this to triangle down change this
+to
+above bar change the color to red and
+change the text to bearish
+setup so now if i save the script
+this should compile without any errors
+hopefully there we go and now we are
+drawing our stops and our targets
+and our setup detection arrows for every
+setup that
+this script is taking and our stops and
+targets will draw
+until one of them is hit so in this case
+we entered long here
+price came close to the stop loss but
+did not hit it and then went on to hit
+our price target and then it stopped
+drawing and whenever a setup is detected
+we're drawing these red and green
+triangles
+above the entry candle so this was our
+setup candle
+we'd enter at the next bar open or at
+least that's where we would place our
+limit order
+so that is it for our strategy portion
+of the script the final thing to do
+before we wrap up this lesson
+is add our order view functionality and
+before we do that we need to add in
+our position size code so i'm literally
+just going to copy and paste the code
+from the previous videos lesson
+so if you haven't watched that lesson
+and you want to know what this code does
+make sure to go and watch that lesson
+the link will be in the video
+description and should pop up in your
+top right hand corner
+right about now so i'm going to paste my
+position size calculation code below
+where we determine if we have
+confirmation for our setup
+so paste that in there the only
+difference between this code and the
+code from
+the previous lesson is i've added three
+variables here
+the first is our broker this just checks
+if the user has turned on
+use oanda demo if they have then we set
+broker to owen to practice otherwise we
+set it to oanda
+live next up we have our trade position
+size is a var variable
+and then finally we have our current
+pair as a var variable
+so this is just a string to send to
+orderview to tell it which
+market we want to execute this trade on
+so let's save the script to make sure
+that that compiles
+no issues there now let's come down to
+where we were going to calculate our
+trade position size
+and let's fill out this code now so for
+this we simply use our get
+position size function that we have
+created in the previous lesson up in
+this position size code
+and that's this function here and for
+this we need to pass
+our long stop distance in points
+as a whole number so we need to convert
+our
+long stop distance to a whole number
+and then multiply that number by 10 in
+order to get that number
+as price points not pips we're dealing
+with points here
+so this was a 10 pip stop loss distance
+then we would be passing 100
+points into our get position size
+function now we can do the same thing
+for our short trades
+get position size two whole
+short stop distance multiplied by 10.
+now we can come down and uncomment this
+line of code here
+which draws our position size onto the
+chart let's save the script
+and see what happens now here you can
+see that
+whenever i hover over a setup the purple
+number up here
+is telling me how many units i should be
+trading
+in order to risk two percent
+of a one thousand us dollar account so
+on this particular short setup
+the order view command would have
+included this as
+our position size uh assuming we are
+trading a one thousand us dollar account
+so we would be trading 1 688 units
+and if our stop loss gets hit on this
+market we will only lose
+200 us dollars of our 1 000 us dollar
+account
+which is 2 percent risk and just to
+confirm that that's accurate
+let's measure from our entry up to our
+stop
+it's about 129.2 pips
+we're going short 129
+pips roughly speaking two percent risk
+would be
+sixteen thousand eight hundred and
+eighty five up here we have sixteen
+thousand eight hundred and seventy eight
+so very very accurate position size
+calculated there
+it's not one hundred percent because
+there are other factors that influence
+how
+trading your position size it's also
+taking into account the exchange rate
+at that time which has changed since
+then which is why the numbers are
+probably a little bit different now
+but it is very very close within 0.003
+or 99.9 percent accurate
+which is close enough for me now before
+we move on for some people
+for some reason whenever we draw a large
+number like this
+onto the chart even though we've set
+transparency to 100
+sometimes it can really skew their chart
+scaling so that their
+chart looks something like this if that
+happens to you
+just comment out this line of code
+because we don't need this anyway this
+is just for bug testing to make sure
+that our position size is accurate
+so if i say the script and get rid of
+that number the script will still work
+fine
+without plotting that info to the chart
+so i thought i'd better mention that
+because i know a lot of people do run
+into that issue
+and i still haven't worked out what
+chart setting
+leads to that happening but anyway
+that's pretty much it for the script the
+final thing we need to do is
+write out our auto view alerts so let's
+uncomment these two lines of code here
+and let's start writing out our
+auto view syntax so the first parameter
+we need to set for this alert
+is the message and this is a text
+parameter
+the next parameter is alert frequency
+so freq is short for frequency
+we're going to set the alert frequency
+for these alerts to alert
+dot frequency once per bar close and our
+message
+is going to be made up of all of our
+order view commands
+so the first one is our exchange or
+broker that's going to be set to
+our broker variable which we specify up
+here
+so it'll either be awanda practice or
+oanda live
+since this is a long setup the book or
+direction is going to be long
+and then we are going to split this onto
+a new line by
+just pressing enter and then indenting
+this next line by one
+space and we can also move our frequency
+down one and the reason i'm doing this
+is just because we have a very long
+alert message to write here that will
+write off the edge of my screen if i
+don't separate these onto new lines
+but the next parameter to specify is our
+quantity or position size
+and that is going to be set to then we
+need to convert
+our position size to a string and our
+position size variable is trade
+position size next up
+we want to set the symbol that we are
+currently trading
+that's going to be set to our pair
+variable which we again created up here
+so that's just the base currency in this
+case euro
+eur then a forward slash and then
+our counter currency so jpy
+next up we need to set our limit order
+if we are using a limit order
+and for this we need to check has the
+user turn limit order on in the settings
+if they have then we want to set
+our type our market order type to a
+limit and we want to set our limit order
+price
+our fixed price to our current
+closing price of the current price
+action pattern
+and i need to add a plus sign there and
+otherwise
+if the user has not turned limit order
+on in the settings menu
+then we just want to use a market order
+which will just enter at market
+regardless of the spread that we pay
+or how bad our fill could be so keep
+that in mind if you
+are using market orders next up we need
+to specify our stop loss
+so fsl is going to be set to and then we
+add
+tostring our trade stop price
+and before i continue i need to add a
+space in front of all of these commands
+since we don't add one at the end we
+need to have a space between each
+command that we add this alert message
+so there's our fixed stop loss price
+added as a string
+you need to convert any numbers two
+strings in order for this to compile
+next up we need to specify our take
+profit
+ftp and that is also going to be set to
+this
+two string function and then we pass in
+our trade target price
+and then the final thing i would
+normally add to this alert is
+our good till day or good till time
+expiry parameter but i'm not going to
+add that today because this lesson is
+already extremely long
+and that will add another 10 to 15
+minutes onto this lesson
+what i'm going to do instead is cover
+gtd's and good till time orders in the
+next video
+where we'll expand on this script and
+we'll add a bunch of filters
+to mitigate certain risks that we may
+encounter when auto trading the script
+so for now this is all we need to write
+in order to execute our trades
+but what this means is that our gtd our
+days to leave limit order
+setting will not work on the current
+script but we'll cover this setting in
+the next
+youtube lesson so make sure to hit that
+subscribe button if you haven't already
+and you want to learn more about
+how to manage your limit orders through
+order view now i just noticed i forgot
+to close off this bracket here
+so let's close that off and comment out
+this other alert function call
+and now this should be everything we
+need in order to send our commands to
+order view
+for long trades at least so let's save
+the script to make sure everything
+compiles
+before we move on there we go no
+problems there and we have our long
+order view syntax set up and ready to go
+next up let's copy this alert message
+for our short trades
+change the b the book direction to short
+and that's it these two commands are
+identical except for the b
+equals short and long part so now if i
+save the script
+we have completed our hammers and stars
+strategy script if you want to learn
+more about what parameters you can use
+in your order view alerts make sure to
+check out the syntax lesson that i did
+previously that will be in the video
+description along with all the other
+links
+so the tester is working so over 233
+trades from the beginning of price
+action on this market we have had nearly
+a 58
+win rate on euro yen on this daily chart
+with a one to one risk reward profile
+you can obviously adjust the risk reward
+profile and stop loss
+distance to tweak your win rate
+and max drawdown so let's increase the
+order size to
+1 000 units and change our risk reward
+to let's say 1.2
+now we suddenly have a slightly lower
+win rate but more profit
+and a shallower drawdown actually at
+least with a fixed position size
+so i would encourage you to go and
+manually back test
+this strategy over historical price
+action
+before using this on a demo account or
+especially on live money because the
+trading view strategy test
+is limited in that it cannot adjust your
+position size
+based on your account balance i'm not
+sure what this setting does but if you
+set
+the order size to a percentage of equity
+and this setting is not what it sounds
+like it's not
+a one percent of equity if i set this to
+one percent of my total equity
+you can see that my position size is
+tiny uh with an
+initial capital of one hundred thousand
+dollars
+one percent of my equity per trade
+should be much
+higher than eight contracts or eight
+units
+so if you want to get an accurate
+reading on how this
+strategy would perform on historical
+data you need to manually back test it
+if you need help with that
+i've got a video lesson on that as well
+which i'll leave a link to in the video
+description
+and you can go to backtestingfx.com for
+more information on how to back test and
+why you should backtest
+but that about does it for today's
+lesson the source code
+again will be in the video description
+if you want to play around with the auto
+view
+trade execution on your demo account
+make sure to set up an awanda demo
+account
+and when you set your alerts select the
+script as your condition
+and then select alert function calls
+only
+as your alert condition this will ensure
+that
+only these alerts will
+be triggered and these alerts contain
+all of the relevant commands to send
+to autoview in order to manage your
+positions
+now this is all to be used at your own
+risk make sure to do your due diligence
+practice with this on a demo account do
+not under any circumstances
+try to trade this with real money that
+you cannot afford to lose there's a high
+chance
+that you will lose some or all of your
+money when
+playing around with auto trading
+especially in the beginning so that's it
+have fun with this source code i'll be
+back soon with a new lesson
+where i will teach you how to add a
+bunch of different filters to this
+script
+such as telling the script not to trade
+during certain times of day
+not to trade when the atr is too large
+or too small
+and we'll make this days to leave limit
+order or the gtd
+parameter work in the script we'll add
+a days limit and a time limit to the
+script but we'll do that in the next
+lesson because this lesson is already
+long enough
+thanks for watching i appreciate your
+time i hope you found this lesson
+valuable
+if you did make sure to hit the
+subscribe button and if you want to
+learn more
+and shortcut your journey through
+pinescript make sure to head over to
+pinescriptmastery.com
+where you can find all of my courses on
+pinescript
+including a bunch of scripts that i've
+already written to be compatible with
+autoview
+and a whole section in the mastery
+course on how to write
+strategy scripts and covering the theory
+behind them
+in great detail and that will about do
+it for today
+thanks for watching i'll see you in the
+next lesson take care and best of luck
+with your trading

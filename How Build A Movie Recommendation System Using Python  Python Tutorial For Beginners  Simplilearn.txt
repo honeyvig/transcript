@@ -1,0 +1,1419 @@
+hello everyone i am and welcome to
+simply learn today we will take you
+through the hands-on lab demo of how you
+can implement the movie recommendation
+system before we start i hope the skin
+is clearly visible and the audio is fine
+if yes please type in yes if there are
+any shoes do let us know in the chat
+section so that we can resolve them
+i am repeating again before we start i
+hope the screen is clearly visible and
+the audio is fine if yes please type in
+yes if there are any issues do let us
+know in the chat section so that we can
+resolve them
+let's wait for some more minutes to let
+other people join
+yeah until then let me tell you guys
+that we have regular updates on multiple
+technologies if you are a tech geek on a
+continuous hunt for the latest
+technological trends then consider
+subscribing to our youtube channel and
+press that bell icon to never miss any
+update from simply learn
+i'm repeating again let me tell you guys
+that we have regular updates on multiple
+technologies if you are a tech geek on a
+continuous hunt for the latest
+technological trends then consider
+subscribing to our youtube channel and
+press that bell icon to never miss any
+update from simplylearn
+i can see the people start joining
+great i think we can get started in
+today's session we will go through what
+is movie recommendation system after
+that we will see how movie
+recommendation system work
+moving forward we will see filtering
+strategies for movie recommendation
+system and at the end we will see
+hands-on lab demo like how to create
+movie recommendation system using python
+in detail we already have data set with
+us we will perform different function
+and implement a movie recommendation
+system using python
+before we move on to the programming
+part let's discuss what is movie
+recommendation system actually is and
+proceed further for the same
+so
+renting cds and dvds reading local tv
+listening
+watching film strip projectors or
+recordings all of this is a thing of the
+past today all of the world's biggest
+film collection have been digitized and
+moved to the online streaming services
+like netflix hbo or youtube
+this platform can now help us with what
+is possibly the most difficult task of
+all choosing a movie
+they have been enhanced with ai-powered
+capabilities
+well that is no longer a concern for you
+it is finally time for machine learning
+to put its skills on display in the
+modern cinematic landscape
+to create advanced predictive system for
+true movie expert data scientists are
+prepared to investigate our behavioral
+patterns and those of movies
+a movie recommendation system also known
+as a movie recommended system uses
+machine learning to predict or filter
+user fill preferences based on their
+prior decision and actions
+it is an advanced filtration system that
+anticipate the consumer in question
+potential
+like selection for a domain specific
+item a movie
+so after seeing what is movie
+recommendation system let's move forward
+and see how movie recommendation system
+actually works a movie recommendation
+system fundamental idea is a pretty
+straightforward every recommended system
+primarily consists of two components
+users
+and items
+user receive more prediction from the
+system and the actual movies are the
+products filtering and predicting only
+the movies that a matching user is most
+likely to wish to see in the main
+objective of movie recommendation system
+the user information from the system
+database is used by the ml algorithm for
+these recommendation system
+based on information from the past
+this data is used to forecast the user
+in questions behavior in the future
+data should be handled by expert because
+it is so crucial to ml projects
+including the movie recommendation
+system
+after seeing how movie recommendation
+system works let's see some filtration
+strategies for the movie recommendation
+system
+to assist user in finding the most
+relevant films
+movie recommendation system employ a
+variety of filtration techniques and
+algorithm
+the content based filtering and the
+collaborative filtering system
+subcategories of the ml algorithm used
+for the movie recommendations
+are the most well liked ones
+filtering based on content or content
+based filtering a method of filtering
+movies in a movie recommendation system
+that makes advantage of the item's data
+this information which is taken from the
+just one user is quite important in this
+case
+this technique uses an ml algorithm to
+suggest movies that are comparable to
+the user's past choices
+therefore the information about the
+prior movie choices and likes just one
+person is used to generate similarity in
+content based filtering
+and the second one is collaborative
+filtering
+as the name implies this filtering
+technique is based on the interaction
+between the relevant person and the
+other user
+for the best outcomes the system
+contrasts and compare these behaviors
+it combines the film choices and uses
+patterns of several people
+like there are two types of
+collaborative filtering algorithm the
+first one is collaborative filtering
+based on users the goal is to find
+patterns in target users and other
+database users like movie preferences
+and the second one is collaborative item
+based filtering the fundamental idea
+behind this is to find comparable
+products products like movies that
+target users rate or interact with so
+after seeing the filtering strategies
+for movie recommendation system so here
+is one question for you guys
+i will give you one minute for this you
+can comment or you can give answer in
+chat section so i can see if the answers
+given by you are right or wrong
+i'm repeating again so here is one
+question for you guys i will give you
+one minute exactly one minute for this
+you can comment or you can give your
+answer in chat section so i can see if
+the answers given by you are right or
+wrong
+so the question is
+which is the best language for machine
+learning programming
+which is the best language for machine
+learning the first one is java the
+second one is python the third one is r
+language and the fourth one is c plus
+plus
+so this is the question i am repeating
+again which is the best language for
+machine learning
+though option one is java second python
+r language and c plus plus
+so i'm starting timer of one minute just
+type your answers in comment section or
+in a chat section do let me know your
+answers
+please i want that everyone should
+participate in this and make this live
+session interesting
+so i am starting timer
+oh your time starts now
+please guys do let me know your answers
+in chat section or in you can comment
+down
+42 seconds to go
+you can comment or you can give your
+answer in the chat section so i can see
+if the answers given by you are right or
+wrong
+30 seconds more
+which is the best language for machine
+learning
+you can give your answer in chat section
+or you can comment
+so i can see if the answers given by you
+are right or wrong
+guys come on please i want that everyone
+should participate in this and make this
+live section interesting
+come on guys five second more
+one
+yup time up
+so time is over we will give reply those
+who gave correct answer and those who
+didn't give correct answer we will give
+you a reply with the correct answer
+so now let's move to our programming
+part to perform movie recommendation
+system using python
+so first we will open command prompt to
+write command to open jupyter notebook
+so we will write jupyter
+notebook press enter
+so this is the landing page of jupiter
+notebook and select here new
+new python file
+so this is how jupyter notebook ui look
+like so at first we will import some
+major libraries of python which will
+help us in mathematical functioning so
+so the first one is numpy
+import numpy as np
+so numpy is a python library used for
+working with ares it also has a function
+for working in the domain of linear
+algebra and matrices it is an open
+source project and you can use it freely
+numpy stands for numerical python
+so
+here np np is denoting numpy
+so we will import the next library
+port
+pandas
+as
+pd
+this should be space yup
+so pandas is a software library written
+for the python programming language for
+data manipulation and analysis in
+particular it offers data structures and
+operation for manipulating numerical
+tables and time series
+so so after importing libraries we will
+move ahead and import data set so for
+importing data set we have to write
+like we have two data set with us
+let me show you the data set we have two
+data set with us the first one is
+credits
+this one
+and the second one is movies one
+movies one
+so don't worry you can get this data set
+link in the description box
+so let me write
+here
+credits
+let's go
+data frame
+equals to pd dot
+read
+underscore csv
+here you have to give your location of
+the data set
+edits
+dot csv
+the second one is
+movies
+let's go
+data frame
+this is for movie data frame pd.read
+psp
+so here you have to give the movie
+location
+movie data set location movies
+dot
+csv
+okay everything seems good
+let me run this
+yeah
+so then
+here pd is for the pandas
+library read is used for reading the
+data set from the machine and csv is
+used for the type of file which you want
+to read
+after this let's write code to see the
+data set so we will write here
+credits underscore df
+and we will run it so this is our so
+this is our credit data set
+and next one is movies
+underscore
+so this is our movie data set
+so this is how our
+both data set look like so here you can
+see
+three dots
+this one
+and here also
+this one
+so we are unable to see our full data
+set
+like what if we want
+like full a 4803 rows
+so at that case
+we can write
+here
+pd dot
+set
+underscore option
+okay
+and here we will write display
+dot max
+underscore columns
+this
+and here we will write none
+same for the rows pd dot set
+option
+display
+dot max
+underscore rows
+hey
+none
+let's run this
+so now if we will write
+credits
+underscore
+df
+it is running yeah
+so now you can see your full data set
+like full credit data set with
+four eight zero three rows or four eight
+zero two rows because there is
+this is starting from zero that's why so
+what about movies data set
+okay wait running
+it is still running you can see here
+so here you can see
+the
+full data set movie data set with 4802
+rows
+or if you want to see only five top rows
+so you can write here
+credits
+underscore df dot
+head
+so by this
+only five top rows so from head you we
+can see our five top rows and if we will
+use tail instead of head we can see our
+last five rows so here let me do with
+the movies one
+df
+dot
+tail
+yeah
+so here you can see four seven nine
+eight row four seven nine nine till four
+eight zero two
+so we tail we can see our last five rows
+so moving forward let's merge the credit
+data set to movie data set because if we
+will combine them the confusion will be
+less and at the end it will be better
+for us
+so we will write here movies
+underscored
+equals to movies
+underscore data frame and credits
+underscore df
+on
+it
+does okay t is small i guess
+yeah perfect
+title
+so let me do something something like
+this
+okay
+it is saying data frame object is not
+callable
+edits underscore df
+movies
+okay why because
+we haven't wrote merger
+now it will work
+yeah perfect it's working so data is
+merged let's see the number of rows and
+column using share function
+so now we have only one so movies
+underscore df
+dot shape
+okay let's run it 4 8 0 9 and 2 3 23 but
+if we see here like in movies data set
+so in movies data set here here yeah
+yeah there are 20
+and
+in here we are four columns in credit
+data set
+so
+like
+so you will be thinking that's why not
+24 why only 23 columns
+that is why on title you can see here on
+title the titles in both titles are same
+you can see here
+both titles are same
+in both
+okay let me show you like this
+okay after pirates of the caribbean
+spectre and so on
+here you can see after pirates of the
+academy inspector and so on
+so that is why on title
+written while merging so title are same
+so moving forward let's see our merged
+data set
+so we will write only
+movies
+underscore data frame dot head
+yeah
+so
+our data is merged you can see
+the last cast crew movie id yeah you can
+see here movie id title are the same
+they are must car screw
+okay guys
+let me give some more
+for the better view yeah
+so you can see all columns of credit
+data set are added to movies one so
+moving forward let's see another
+function like
+movies
+underscore df dot
+info
+so by this
+yes you can see
+so by this the data frame information is
+printed via the info method
+the data includes the total number of
+columns their labels data kinds memory
+use range index and the number of cells
+in each columns like normal values
+note that info method does indeed print
+the information
+so here you can see the all the
+information is printed
+okay
+like
+columns name and all null values count
+and data types too like this int object
+and
+in which we are working most so after
+this let's move forward and select some
+main column in which we are working most
+so we will write movies
+underscore df
+equals to movies
+underscore df
+score
+title
+comma and another one is overview
+y
+okay here we have to like this
+yeah
+so here we have to write genre
+journal is complete and we will work on
+what keywords keywords are the main
+keywords ok keywords then
+it will cast
+then
+we will
+we will do recommendation with the creo
+as well
+okay
+by running this let me see
+our data again with 7
+okay okay there is one error okay this
+is movie
+the movie the idea of jonathan yeah not
+index okay got it got it
+why not johnner
+it's jonah's i guess
+what it is it's jonah's
+that's why
+it's jonas okay
+yeah so let's see our data again with
+seven columns so i will write so i will
+write
+here movies underscore df
+dot head
+yeah
+so you can see only our we have like
+movies id same title overview joiners
+keywords cast and crew only
+so here you you can see the selected
+columns okay so let's move forward and
+once again let's see the info again like
+movies
+underscore tf dot
+info has come with selected columns
+and let's move forward and see how many
+missing values are present in particular
+column
+so like
+the columns is full we can see here but
+we don't know about that
+4803 values are filled or not
+so what we will do it we will see
+how many missing values are present
+there
+so
+here we will write
+like movies
+underscore df
+dot is null
+or some
+node like this
+yeah perfect
+so the function data frame is null this
+one is null
+dot sum dot sum returns the number of
+missing values in the data set so here
+you can see
+overview have three missing values
+so what we can do is we can write here
+movies
+underscore df
+df
+dot
+drop n a
+place
+equals to
+true
+okay
+we will run it it's sayings okay let's
+document dropping a
+person true okay fine
+third underscore drop in a and yeah it
+will not create an issue so if you set
+in place equals to true the drop any
+method will modify your data frame
+directly that means that if you set in
+place equals to true the drop n a will
+drop all missing values from your
+original data set let's move forward
+and see
+movies
+underscore
+df
+dot
+duplicated
+so the duplicate method returns a series
+with true on false
+values that describe which rows in the
+data frame are duplicated or not
+use the subset parameter to specify if
+any column should not be considered when
+looking for duplicates
+so
+here let me run this first
+so here we are we are getting 0
+y 0
+so if you are like thinking there is no
+true or false return so if you write it
+without sum like if i will write it
+without sum
+okay let me copy from here
+yeah and i will run this
+so
+here you can see
+false false false in whole data set
+so some will combine them and return you
+a value at the end zero represents false
+itself
+so we need
+to not need this so we will write
+something else
+so moving forward let me write first
+movies
+underscore df
+dot
+i location
+zero
+dot jonners
+let me run this
+so the i log function this one i log
+function
+first let me do something like this
+it will go up okay huh
+okay so
+from ilock function in python is defined
+in the pandas module that helps us to
+select a specific row or column from the
+data set
+using the ilok method in python we can
+easily retrieve any particular value
+from a row or column by using index
+value so here zeroth position line is
+coming
+which is here you can see
+so name action
+like name action name adventure name
+fantasy this side
+fiction
+this one science fiction yeah
+so this is because i'm giving here genre
+that is why you can see here
+see
+i did 28 name action name something
+something something like that
+okay
+so
+let's import something called ast
+abstract syntax for tree
+so this is one of the major library
+import
+ast
+let me run this
+import is a class defined is the ast
+module that is used to express the
+import statement in python in the form
+of abstract syntax tree so
+so an abstract syntax tree or just
+syntax tree is a tree representation of
+the of the abstract syntactic structure
+of text written in a formal language
+each node of the tree denotes a
+construct occurring in the text
+so
+let's convert some like literal to
+object and append them
+so
+here i will write def
+convert
+obj object
+like
+l
+equals to
+blank array
+for
+i in
+s t dot
+control
+bit
+eevee
+which
+object
+okay like l
+dot append
+return
+here we are converting is like
+here is a convert is a function and l is
+a array to append by using for loop we
+can append them to name
+so let me write code then i will explain
+like what is happening
+so let me write full code so movies
+underscore tf
+like
+donors
+okay
+goes to movies
+donuts
+and then dot apply
+what
+so then movies
+underscore df
+then i will write keywords
+let's do movies
+underscore df
+keywords
+apply
+df
+dot
+so if we will see our old data set in
+that
+like we will see old data set in that
+genre and that's keyword this keyword
+apps id name and so on like id that name
+like
+this type of things so it will create a
+message retrieving them so by using ast
+library we just convert them
+to the normal one like
+title
+so got it guys so i hope you guys
+understand till here
+if you have any question or any query
+regarding any code or question just put
+as in comment our team will shortly
+provide you the correct solution
+application again i hope you guys
+understand till here if you have any
+type of questions regarding any code or
+something
+so
+just put as in comments our team will
+shortly provide you the correct solution
+so moving forward let's convert cast to
+and like same as previous way like like
+this only
+so what we will do
+here we will write f convert
+yeah
+here i am using
+so
+l equals to
+counter equals to zero
+st
+dot literal
+if counter
+does not
+equals to 3
+then
+l
+dot
+l dot
+dot append
+okay then here i have to write i to name
+okay
+counter
+equals to one
+if you want to write like count as you
+also counter plus one it is like both
+the same
+else
+like
+done
+so let me run this
+let me run this
+okay so after this small code we have to
+assign the values like
+we are doing it for cost now so movies
+okay
+[Music]
+let's go df
+then cast
+those two movies
+underscore df
+fast
+dot
+live
+convert
+everything seems good
+so let's see the changes are visible or
+not so we will write here movies
+underscore tf
+dot head
+you can ignore this
+like this is nothing
+so here you can see cast is also
+same like keyword and joiner
+so
+like
+let's do for the creo 2
+so
+like we are converting you can say in a
+structured way
+so let's do for the crew one two
+so let me
+put some
+yeah
+so here we will add dev
+like
+fetch is nothing like
+a function name as director
+obj
+okay
+colon
+l equals to
+for i
+n s t dot
+literal
+object
+like we can say director
+so then
+l dot append
+and dot a pan
+um
+dot append to the same name
+put
+return
+capital l
+so we have to again write that movies
+video
+equals to movies
+in
+crew
+apply
+h
+just remember fetch director is a
+function name
+let's see changes
+so here i have to write movies
+then press enter
+so yeah crew is all set so
+changes are visible and data is looking
+good so what we
+like if i want to see the first movie
+after overview this like this dot dot
+dot
+so i have to write
+here
+like
+movies
+overview
+overview at
+jiroth
+place
+so yeah
+so this is a full overview of after
+movie like let me read for this in this
+2017 century
+paraplegic marine is dispatched and blah
+blah blah blah and civilization
+so moving forward that what we want to
+recommend movie in the basis of overview
+genre keyword cast so for that we need a
+separate separate words
+like in the
+then 22nd century along
+so if you will see in other columns all
+the words are separated but
+like here if you will see all the words
+are separated like action is separated
+adventure is separated fantasy it's
+separated
+so
+there is a long sentence in this this
+one in the
+overview one this is a long sentence
+so it's difficult to recommend from this
+so what we are going to do is well we
+will separate them like like other
+columns so here we will write
+movies
+overview
+let's do movies
+and
+overview
+and dot apply
+lie my bad sorry
+then lambda
+colon x
+dot
+split
+error
+so let's see the results
+so movies
+yeah you can see in the center
+so now you can see all the words are
+separated by comma so now it will easy
+to match overview to recommend a
+particular movie so moving forward so
+what we are going to do is if there
+is a two word and space
+between there
+so we are going to remove that space
+so here you can see science fiction are
+separate separate
+okay so we are going to re like remove
+this one this is space
+so let's write code for that
+so here i will write like
+overview is already done so we will do
+not do for that so let's write code for
+the rest columns
+so here i have to write
+movies
+like
+genres
+pursue movies
+and again
+jonas
+what apply
+lambda
+x
+i
+dot replace
+this
+mom
+to know space
+oh it seems
+good
+then i have to write for
+everywhere so for i in
+x
+it's four i in x for i in x
+movies genre is equal to movie journal
+dot apply lambda x
+i dot replace this to this one
+seems good
+so let's copy paste this
+see
+one for keywords and one for
+cast and crew
+fast
+first
+then you
+test the same so let me run this
+okay no error seems good
+so let's see the changes so movies
+so now you can see the science fiction
+space is gone like here is science
+fiction space is there
+now science fiction space is gone
+so
+like
+okay
+let's move forward and create one new
+column name as tag and put all the
+column data in a particular column
+okay let me do first
+yeah let me write
+movies
+this is a column one column name goes to
+movies
+then first we will put
+overview plus movies
+and genres
+and movies
+and
+what we have to give
+keywords
+keywords
+then again
+movies
+then
+fast
+we run this
+okay
+so let's see the data frame
+movies
+okay still coming so
+like there is one problem i guess
+yeah no no no
+so here you can see
+all the data is merged in a under tag
+column yes you can see like in the
+second century blah blah blah
+so
+i hope you guys understand till here if
+you have any question or any query
+regarding any code
+or anything just put as in comment or
+our team will shortly provide you the
+correct solution okay so i'm repeating
+again i hope you guys understand till
+here if you have any question or any
+query regarding any code
+or like any question just put as in
+comment our team will shortly provide
+you the correct solution
+so from here let's create a new data
+frame
+okay
+so let me create new data frame because
+now we don't need this overview cast
+crew journal
+like columns like this we have already
+merged into a one
+one column like tag column so we will
+write here
+new
+df equals to movies
+okay
+so
+like movies we need movie id
+new data frame we need movie id comma we
+need title
+and we have everything in tag column
+text column so we need text column
+okay
+let's run this let's see our new data
+frame
+so this is our new data look likes with
+only three columns like movie id title
+and tags
+so here you can see array brackets like
+this this arrow brackets
+so
+we are gonna remove them
+so we will do what we will write here we
+will write
+new
+data frame
+that intex
+equals to
+new
+data frame
+tags
+dot apply
+m
+x
+then i will give space
+dot
+join
+seems good everything is okay okay fine
+yeah
+so let's see the results
+so
+we will write a new underscore data
+frame
+so you can see the brackets are removed
+now let's see the data which is present
+in the zeroth index and tag column like
+this dot dot in this
+okay for that we have to write here
+uh a new
+data frame
+text
+we did it before like for the overviewer
+so
+yeah
+so this is the whole data in the first
+like first index zeroth index
+so
+some part of the overview like from
+civilization
+and some are you can see this action
+adventure fantasy science fiction
+these are some
+like genres
+and
+like here you can see
+like these are some crews members
+and
+yeah like sam worthington like there are
+some cast crew
+okay
+so like moving forward like what we are
+going to do is just make them in lower
+case for the better prediction like
+something in capital and something like
+smaller so let's make it to
+case so new underscore df
+tags
+equals to
+new
+underscore df
+tags
+dot apply
+scorm x
+dot lower
+okay
+so don't worry about this error
+let's see the result
+new underscore df
+dot
+yeah now all the data present attack
+column is in small case or you can say
+lowercase moving forward
+let's do some feature extraction using
+count vectorizer
+so
+let let me write first from
+sklearn
+dot
+feature
+extraction
+feature extraction okay cool
+dot text
+import
+count
+vectorizer
+tv equals to
+count
+riser
+underscore
+features
+features
+equals to
+like 5000
+top
+words
+equals to
+english
+and this
+yeah
+so count vectorizer
+okay there is a
+i cannot import count vectorizer from
+sql from user
+okay okay sorry sorry my bad here v is
+capital
+okay guys so he v is capital yeah
+so no error
+so count vectorizer is a great tool
+provided by the scikit learn library in
+python it is used to transform a given
+text into a vector on the basis of the
+frequency count
+of each word that occurs in the entire
+text
+so
+let me write something cv dot
+fit
+underscore
+transform
+yes
+x
+like dot to add a
+shape
+okay
+so the fit method like learns a
+vocabulary dictionary of all tokens in
+the raw documents that is it creates a
+dictionary of tokens by default the
+tokens are words separated by spaces and
+like punctuation
+so that maps each single token to a
+position in the output matrix so here cv
+is a like here cv is a counter
+vectorizer
+so let's convert into vector to array so
+for this we have to write vectors
+vectors equals to cv dot fit
+yeah then transform
+x
+syn
+so here we have to write
+dot
+to array
+yeah then we have to write
+vector
+its vectors
+yeah you can see vector 2 array all the
+zeros
+okay so moving forward let's get the
+feature name by writing
+okay so we will write here
+leonlan
+cv dot
+get
+feature
+names
+feature names okay then bracket
+yeah
+so okay we have like 500 feature names
+so
+i'm repeating i'm saying again like i
+hope you guys understand till here if
+you have any question or any query
+regarding any code whatever it is so
+just put as in comments our team will
+shortly provide you the correct solution
+okay guys like any code or you are not
+understand anything just put as in
+comment our team will shortly provide
+you the correct solution
+so let's import some major library which
+is import
+nltk
+so what is nltk
+the natural language toolkit nltk is a
+platform used for building python
+programs that work with human language
+for applying in statical natural
+language processing nlp it contain text
+processing libraries for tokenization
+parsing classification stemming tagging
+and semantic reasoning
+so moving forward like
+from let me write first from
+and
+nltk
+dot stem
+dot porter
+import
+porter
+yes equals to
+water
+timing is a process for reducing a word
+to its word stem
+that suffix and prefix or to the roots
+of words known as a lemma
+stemming is important in natural
+language understanding nlu and natural
+language processing nlp
+so
+here
+like i have to write
+so here i will write def
+stem
+to
+text
+y
+equals to
+or
+i in
+text dot split
+y dot
+append
+dot stem
+done
+what join
+why
+so let's apply stemming to our tag
+column so here we will write new
+df
+text
+equals to
+new
+f
+tag
+dot apply
+um
+so let's import cosine similarity from
+sklearn so here we will write from
+sklearn
+dot
+matrices
+dot pairwise
+import
+cosine
+underscore see me
+clarity
+it seem good from escalant mattresses
+matrix sorry matrix dot
+peerwise it is
+here wise
+pairwise import cosine similarity okay
+let's run this no error so cosine
+similarity measures the similarity
+between two factors
+i repeat cosine similarity measures the
+similarity between two vectors of an
+inner product space it is measured by
+the cosine of the angle between two
+vectors and determines whether two
+vectors are pointing in roughly the same
+direction
+it is often used to measure document
+similarity in text analysis
+so here we will write
+cosine
+underscore semi
+clarity
+vectors
+so these
+all are the vector present
+let's see the cosine similarity vector
+column and row using space
+so here i will write cosine
+similarity
+vectors
+dot shape
+so it's still running you can see here
+yeah
+so 4806 rows and 4806 columns are there
+let's assign variable similarity to this
+okay so let's similarity
+we'll write like this right equals to
+cosine
+similarity
+this underscore
+here why did this because we don't have
+to write always this long sentence
+a long keyword you can say
+so moving forward let's see first column
+like we will add similarity
+so this is our first column
+so let's see the rows only so we will
+write here
+clarity
+zero
+dot
+shape
+okay 4x06 okay
+so let's move forward and let's create
+some like sorted list
+so
+[Music]
+for that sorted
+test
+enumerate
+spelling is fine
+okay one more like semi larity
+similarity
+zero
+then i have to write reverse
+equals to true
+comma key
+equals to
+lambda colon
+x
+not capital x x
+have to write one
+one colon six
+seems good
+yeah
+so the enumerate function in python
+converts a data collection object into
+an enumerate object
+enumerate returns an object that
+contains a counter as a key for each
+value with an object making item within
+a collection easier to access so finally
+let's create the recommend function to
+check the movie recommendation system
+okay
+so
+[Music]
+so let's write here df
+recommend
+we
+yes
+so new
+df
+in the df
+title
+equals to
+movie
+x
+zero
+tenses
+versus similarity
+and movie
+yeah
+so movies
+list
+equals to sorted
+list
+numerate
+rate and rate
+distances
+comma reverse
+row
+keyword
+sorry key only k
+equals to
+lambda
+it's called colon x
+one
+and
+one six
+or i in movies
+list
+support
+df
+dot i lock
+i
+zero
+zero
+dot title we because we need title only
+so
+yeah it seems good okay
+so finally that like time is game
+so finally the time has come to check
+the recommendation of your favorite
+movies so you can comment
+in the chat section so i can check
+so let me write first recommend
+recommend for movie
+avatar
+okay
+so here you can see the recommendation
+system is working fine
+so titan a dot e small soldier
+independence they are the recommendation
+for the movie after
+so let me check for the another one
+recommend
+like for
+one of my favorite movie iron man
+so here you can see iron man 2 iron man
+3 avenger siege of ultron captain
+america and the avengers are the
+recommendations for the movie iron man
+so let me check for the one more
+recommend
+liars
+liar
+is going on 30 and the last one is
+last one i want to check is
+captain america civil war
+let me copy from here only
+yeah you can see the captain america the
+first avenger the winter soldier iron
+man 3 age of ultron the avengers
+so i hope you guys understand till here
+if you have any questions or any query
+regarding any code or question just put
+as in comments our team will shortly
+provide you the correct solution
+i hope you guys must have understood the
+concept of how movie recommendation work
+and how we can implement it using python
+if you have any queries you can ask in
+the comment section below our team will
+respond you as soon as possible and if
+you want this full code if you want this
+full code this full code if you want
+so just comment for the same
+thank you so much for being here if you
+enjoyed this live session please do
+subscribe to our youtube channel and
+give a like to this video thank you and
+keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

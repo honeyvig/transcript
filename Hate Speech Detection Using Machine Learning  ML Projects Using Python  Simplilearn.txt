@@ -1,0 +1,381 @@
+M and welcome to Simply learn today
+we'll take you through a hands-off lab
+demo of how you can detect hate speech
+using machine learning before we start I
+hope the screen is clearly visible and
+the audio is fine if yes please type in
+yes if there are are any issues to let
+us know in the chat section so that we
+can resolve them I'm repeating again
+before we start I hope the screen is
+clearly visible and the audio is fine if
+yes just type in yes if there are any
+issues to let us know in the chat
+section so that we can resolve
+them let's wait for some more minutes to
+let other people join until then let me
+tell you guys that we have regular
+updates on multiple Technologies if you
+are a teag geek on a continuous hunt for
+the latest technological Trends then
+consider getting subscribed to our
+YouTube channel and press that Bell icon
+to never miss any update from Simply
+Lear I'm repeating again let me tell you
+guys that we have regular updates on
+multiple
+Technologies if you are a tech gek in a
+continuous hunt for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply
+learn I think we can get started so in
+today's session we will go through what
+hate speech is after that a hands off L
+demo of how to to detect hate speech
+using machine learning we will perform
+different function and different python
+libraries before we move on to the
+programming part let's discuss hate
+speech and proceed further for the same
+so what is hate speech any speech that
+dispar a group of people because of
+their race religion nationality national
+origin sexual orientation or gender
+identity is considered as hate speech
+hate speech is frequently used to
+promote
+boty and hatred additionally it can be
+applied to threaten and intimidate
+others people may experience liness
+anxiety and fear as a result hate crimes
+may also result from it additionally
+hate speech can harm between various
+racial and ethnic groups it is crucial
+to identify hate speech using since
+doing so can assist in stopping these
+negative impacts dear Learners if you
+want to upskill your AI in machine
+learning skills so give yourself a
+chance to Simply learn professional
+certificate program in Ai and machine
+learning which comes with the completion
+certificate and in-depth knowledge of AI
+and machine learning check this course
+detail from the description box
+below here is one question for you guys
+I will give you exactly one minute for
+this you can comment or you can give
+your answer in the chat section so I can
+see if the anwers given by you are right
+or wrong I'm repeating again here is one
+question for you I will give you exactly
+one minute for this you can comment or
+you can give your answer in the chat
+section so I I can see if your answer is
+given by you are right or wrong so the
+question is all keywords in Python are
+capitalized
+lowercase uppercase and none let us know
+your answer in the comment section below
+so I'm starting the timer of 1 minute
+okay the time start now to let me know
+your answers
+please just type your answer in the
+comment section or in the chat
+section all python keywords are
+in capitalized lower case uppercase
+none let us know your answer in the
+comment section
+below 30 seconds remaining all keywords
+in Python are capitalized lower case
+upper case or
+none seconds
+more all keywords in Python are
+capitalized lower case upper case and
+none let us know your answer in the
+comment section below
+please 5 Seconds
+more after the lotted time has passed
+Those Who provided the currect response
+will receive a response and those Who
+provided the incorrect response will
+receive one so now let's move to our
+programming part first we will open
+command prom to write a command to open
+jupyter notebook so here we will write
+jupyter
+notebook
+Center this is the landing page of
+jupyter notebook and here you have to go
+new
+python this is the how the Jupiter
+kernel look lies so
+here first we will import some major
+libraries of python which will help in
+analyzing the data so here I will write
+import
+Hondas s PD
+Port
+numai as
+NP then
+from
+Escalon
+section or
+text counter vector
+then one more
+from let's
+learn model
+selection
+testore split
+then from
+Escalon
+three
+import okay
+then
+I okay counter
+vectorizer C vectorizer it
+is so napai is a python Library used for
+working with array it also has a
+function for working with the domain of
+linear algebra and matrices it is an
+open source project and you can use it
+freely numai stand for numerical
+Python and pandas pandas is a software
+Library written for the Python
+programming language for data
+manipulation and Analysis in particular
+it offers data structure and operation
+for manipulating numerical tables and
+time
+series this count vectorizer a fantastic
+utility offered by the python psychic
+learn module is count vectorizer it is
+used to convert a given text into a
+vector based on the number of times like
+count that each word appears across the
+full text train test
+split so our data is separated into
+train and testing data using the train
+test split Technique we must first
+separate our data into features X and
+label y divided into X train X Tex y
+train and Y test the data frame is the
+model is strained and fitted using X
+train and Y TR okay then decision tree a
+supervised machine learning algorithm
+called decision tree uses a set of
+principles to make judgments much like
+how people do okay forward let's simp
+import some more
+libraries so here I will write
+import R then
+import uh
+nltk then
+from ntk
+dot
+okay I will write here
+stemmer equals to NLT
+TK
+snowball
+St in
+English from nltk
+purpose
+upwards okay then we'll write
+import
+string and I will assign the stop
+word was to set
+words and
+English okay
+nltk
+okay the function in the module allow
+you to determine whether a given text
+fills a given regular expression which
+is known as a regular expression or re
+or if a regular expression matches a
+particular string which comes down to
+the same thing nltk the nltk toolkit was
+created for python users to deal with
+NLP it offers us numerous test data test
+data set and different text processing
+libraries using nltk a range of
+activities can be carried out including
+tokenizing and visualizing par trees
+Snowball stemmer the stemming algorithm
+also refers to as pter 2 stemming
+algorithm is an improv version of
+portter stammer because some of its
+shortcomings have been addressed okay so
+stop word a stop word is frequently used
+term that a search engine has been
+considered both while indexing items for
+searching and when retrieving them as a
+result of search
+query then import a string it is used to
+determine whether or not substring is
+part of the main string it gives back a
+pointer to the first instance of S2 in
+S1 I hope you guys understand till here
+okay if you have any queries any
+question regarding this please comment
+down below so after importing libraries
+let's import our data set so I will
+write here DF equals to PD do
+data set name
+Twitter
+data
+okay so
+print so this is the Twitter data set
+you can download it from the description
+box below and if you want to see the
+last five rows instead of top five rows
+you can use tail instead of head
+okay moving forward I will add a new
+column to this data set as labels which
+will contain the values as hate speech
+detected offensive language detected or
+no hait no offensive language detected
+okay for that I have to write here
+dfal to
+DF map
+DET thir one is
+okay column so here I will add DF dot
+head
+can see we have added
+labels okay offensive
+language moving forward now I will only
+select the tweet and the label column
+for the rest of the task obtaining a h
+spech detection model okay so here I
+will write dfal to DF
+have to write
+tweet I guess yeah you can see here
+tweet comma
+labels right here DF do
+head there you can
+see it okay so moving now I will create
+a function to clean the text in the
+Tweet column like
+this that at theate and this
+exclamation this type of
+words here I will add DF
+clean next
+WR
+text equals to
+Str text equals
+to read do
+substring das this do r question
+mark
+Thena and I will write here text equals
+to R do
+substring https
+plus
+then W
+ww
+plus okay
+comma
+text okay here I will write
+text to AR
+dot
+sub not
+start Plus
+here then let
+me here I will write text equals
+to R do substring
+do punctuation
+here again text equals
+to read.
+substring
+then for the next line comma
+no
+D all
+x equals
+to not in St
+x equal
+to done
+here I will write TF then column name
+tweet DF
+we have
+print everything will be clean like
+this let me run
+it okay so I hope you guys understand
+till here if you have any question or
+any query regarding any code so please
+comment down below so everything is
+sorted now everything is clear green
+okay so moving forward now let's split
+the data set into training and test set
+and train a machine learning model for
+the task of H page okay so here I will
+write x equals
+top do
+array then
+DF dot array
+then
+dfer here I will write x equals to cv.
+fit go transform
+X
+okay here I will write xcore
+train
+test
+inore test
+X comma y
+comma
+size
+to state will be
+5 equals
+to BC
+I will write classifier dot
+fit okay let me run
+it okay d f
+the season 3 classifier sorry my
+bad here input contains
+an okay there is one
+empty it's
+working so
+moving forward now let's test this
+machine learning model to see if it is
+detecting ha speech or not okay so here
+I will write
+test
+underscore okay so I will give one
+sentence here like
+uh
+I and DF equals to
+transform T underscore
+data
+three then here I write
+print class
+as you can see H spe is detected because
+I will kill you there is something hate
+on that so let me write another sentence
+here like
+you me run
+it so here you can see no hate and
+offensive speech you are awesome
+so try with another
+one like
+you okay press enter so here you can see
+it is not ha speech but offensive
+language okay I hope you guys must have
+understand how you can detect ha using
+machine learning if you have any queries
+you can ask in the comment section below
+our team will respond as soon as
+possible don't forget to check the
+course link from the description box
+below and don't forget to download the
+data set from the description box and if
+you want to this full code just comment
+for the same thank you so much for being
+here if you enjoyed this video please
+subscribe to our YouTube channel and
+press that Bell icon to never miss any
+update from Simply Lear and give like to
+this video thank you and keep
+looking hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

@@ -1,0 +1,852 @@
+if you're interested in setting up a
+virtual private server to auto trade on
+metatrader 24 7
+while you're asleep while you're at work
+while you're sitting by the pool
+drinking my ties
+then this one's for you
+in today's video i'm going to be
+demonstrating how to set up a vps
+or virtual private server through amazon
+web services
+specifically we're going to set up a
+windows server through amazon lightsail
+which is an extremely cheap solution for
+hosting private service
+once we have the server up and running
+we'll install metatrader and then
+install the pine connector expert
+advisor and execute a test trade to make
+sure everything's working
+after that as shakespeare once said the
+world is your oyster
+if you already have a profitable
+strategy set up and working through pi
+connector you can set up your trading
+view alerts and let the virtual server
+handle everything
+or if you already have a different
+expert advisor script that auto trades
+you can simply install that onto the
+virtual server and it'll work just the
+same
+so today's lesson isn't just specific to
+pi connector but that is what we'll be
+focusing on today
+as always there will be a link in the
+video description to pine connector it
+is a referral link so if you use
+my link i get a cut of your purchase
+just a few bucks
+at no extra cost to you so if you find
+this video helpful please consider using
+that link or just hit the thumbs up
+button that helps just as much
+with growing the channel thanks in
+advance and for those of you who have
+already used the link
+thank you so much you are legends anyway
+enough about that
+let's continue first of all what is
+light sale
+in my previous auto trading series on
+autoview i showed you guys how to set up
+a private server using a different
+amazon service
+in that lesson we set up an ec2 instance
+which was much more complicated than
+today's lesson
+the reason we did it differently for
+autoview is that autoview is a chrome
+browser plugin that doesn't require much
+computing power
+so we could get away with using the free
+plan on amazon web services
+metatrader is a little bit more resource
+intensive than a web browser so i
+thought lightsail would be a better
+solution
+plus i thought it might be interesting
+to explore an alternative to the ec2
+service in today's video
+if you want to try the ec2 approach
+which allows you 12 months of free
+access to the service
+you can check out my order view version
+of today's lesson in the video
+description
+all the steps are the same except
+instead of installing chrome you'd
+obviously install metatrader
+anyway the main difference with
+lightsail compared to ec2
+is that on ec2 you kind of pay as you go
+meaning
+that you only get charged for what
+resources you use this is great if you
+know what you're doing but if you're not
+experienced with
+server management it could also be a
+trap as you might accidentally use more
+resources than you expected to
+and you might end up with a bill that
+was higher than you were willing to pay
+with light sale however we pay a flat 8
+us dollars
+per month fee with that price we get a
+cheap virtual server that can handle
+everything we need in regards to running
+metatrader scripts
+24 7. we also get our first three months
+free
+which means you can play around with
+this and see if you want to go down this
+route without paying a cent
+before you need to commit to it the
+setup for light sale is also
+much simpler compared to the ec2
+approach anyway don't worry if you
+didn't understand any of what i just
+said today i'm going to walk you through
+everything step by step
+let's get into the lesson now first of
+all if you already have an amazon web
+services account
+from either my auto view series or
+you've just played around with this
+stuff
+before you can find the light sail
+control panel or whatever it's called
+uh by clicking on all services here and
+then click on the light
+sail link or you can just type light
+sail aws
+into google okay so here we are on the
+official amazon web services light sale
+guide i'm not going to go over how to
+create your amazon account because i did
+that in the auto view series if you want
+to go back and watch that video i go
+into more detail about
+that side of things but it's pretty
+self-explanatory
+so the first thing we need to do is
+create
+an amazon live sale account so i already
+have an account so i'm not going to do
+that
+i'm going to move on to step two which
+is create a windows server 2016 instance
+in amazon light sale so to do that i'm
+going to open this link in a new tab
+i'm going to click let's get started now
+you can set your instance location to
+any country you want
+i'm going to set it to where my oanda
+server is located
+so first of all you can right click on
+your
+account at least with awanda and select
+register a virtual server
+and you could set this up here directly
+through metatrader
+but the price here is nearly double what
+we can get on
+amazon light sale so i'm not going to
+show you how to set
+this up through metatrader today we're
+going to do it ourselves through amazon
+light sale
+and besides i'm pretty sure the
+metatrader hosting
+service doesn't allow dll imports for
+expert advisors which
+pi connector requires so we can't use
+that for power connector anyway
+but i might be mistaken about that let
+me know in the comments section if i am
+one thing worth noting here is that the
+server here
+is in new york and has a two millisecond
+ping to the oanda server
+so i'm going to change my light sail
+server location
+to try and get a better latency so here
+i am on the
+light sale create an instance page i'm
+going to click change aws region
+and i'm going to select one of these
+american servers i'm
+not good with american geography so i
+have no idea which one of these
+locations is closer to new york i'll
+just quickly google that and then select
+the right one
+now it's a shame they don't have a new
+york server here but i'm going to select
+the virginia one since that is the
+closest one about 400 miles from new
+york that will have to do for now
+next up we need to pick our instance
+image and platform
+so if you're experienced with unix or
+linux
+or you're feeling adventurous you can
+select this option and it is
+significantly cheaper it works out to be
+around 3.50 per month
+for the lowest tier option i'm going to
+go with windows because i'm more
+familiar with windows and i'm assuming
+most traders
+are so we're going to click windows here
+we're going to set
+os only and i'm going to leave it on
+windows server
+2019 then as we scroll down here we have
+add launch
+script i'm not going to do that we don't
+need to do that today
+all we need to do is select our settings
+here for our instance
+i believe we'll be okay just leaving
+this on the default
+settings we don't need a lot of hard
+drive space we don't really need a lot
+of
+cpu or ram and i'm assuming this
+transfer is our network
+bandwidth one terabyte will be far more
+than we'll ever need
+for what we're doing here with
+metatrader so i'm going to leave this on
+the minimum
+system specs and move on to uh the final
+steps here which is we need to
+name our instance i'm going to call mine
+metatrader server and you can't have
+spaces so i'm just going to leave that
+as one word next up you can apply
+tags to your instance i'm not going to
+bother with that i think it's optional
+and we don't we're only setting up one
+instance so we don't need to mess with
+that let's just
+click the giant create instance button
+and see what happens
+and here we go the instance is booting
+up and in a moment we should be able
+to connect remotely and start setting up
+metatrader okay our metatrader server
+instance is
+up and running we can now connect to it
+and start setting up the
+uh server to do that we just click on
+the server
+now for some reason i cannot use the
+browser-based
+remote desktop client
+so i'm just going to connect manually
+using my windows rdp client
+with just the information that we have
+here
+so i'm going to open up my rdp client
+now here we go
+now i just need to put in this ip
+address
+and then click connect now if your rdp
+client pops up like this with your
+actual current windows login information
+just click down here on use a different
+account and then we need to input this
+username and this password to in order
+to connect to this
+server so i'm going to do that now
+administrator
+i'm going to click on show default
+password
+copy this password and then paste it
+into here
+and click remember me then i'm going to
+click ok
+hopefully we can log in you can ignore
+this warning since this is a server
+we've
+set up so just click don't ask me again
+for connections to this computer
+and click yes and we're in so
+just give it a moment to boot up and
+configure the first
+startup the first startup takes a little
+bit longer than
+any subsequent connections we make all
+right so here we are
+we're into our server everything's
+working fine let's get this baby set up
+i'm gonna open up internet explorer here
+hours later
+close that close that close that
+close that close that in fact you know
+what screw this i'm not using
+internet explorer anymore it is too
+frustrating and
+it's going to be too difficult to
+install chrome or anything let's just
+download the metatrader installation
+file
+on our home computer and copy it over to
+this remote server
+i think that will be a lot quicker than
+dealing with this
+curse upon humanity which is internet
+explorer
+i'm going to navigate to the oanda login
+page login
+and then i'm going to download
+metatrader okay so here is my
+awanda metatrader4 setup file i'm going
+to
+right click on this and click copy and
+then open up my rdp client
+and i'm just going to paste this onto my
+desktop
+and now this file will copy over to our
+virtual server
+it may take a little while it does need
+to upload this to the internet in order
+to copy it over
+so depending on your internet connection
+it could take a minute and now here we
+go
+all i need to do is install metatrader
+there we go
+it is installed click finish and now i
+can double click
+on this shortcut to metatrader
+and it should open up here we go it's
+gonna be a little bit slow because this
+computer is pretty crappy
+so here's my server my live account is
+set up to
+live number four and as you can see we
+have an eight millisecond
+latency to that server on my home
+computer it's around 300 milliseconds
+so this is definitely a faster
+connection to the
+oanda servers which helps when
+automating systems
+the less latency we have when we're
+placing our orders because remember
+we're already dealing with
+latency from trading view alerts being
+sent
+to pine connector and then pine
+connector needs to relay that info to
+metatrader and then metatrader needs to
+send that to oanda
+so the less latency we have the better
+but anyway i'm going to click next
+and i'm going to log into an existing
+trade account click
+finish and there we go we're in here's
+my account balance i've only got a
+few hundred dollars in here for testing
+purposes but everything is working
+perfectly all we need to do now
+is install the pi connector expert
+advisor and get that set up properly
+so for that i'm going to go back to my
+home computer and download the file off
+the pi connector website so that we
+don't have to deal with internet
+explorer
+so here i am on the pi connector website
+remember to download the right
+expert advisor for your platform i'm on
+metatrader4 so i need this file
+i'm just going to save it to my
+downloads folder and then copy and paste
+that over
+to the remote server so here's my file
+right click copy
+back onto our virtual server we come up
+to file click open
+data folder open the mql4 folder
+open the experts folder and paste
+our pi connector script
+into here there we go now we can either
+close metatrader and reopen it or you
+can right click on expert advisors and
+click
+refresh now if we open up the folder pi
+connector should be in here
+now all we need to do is attach this
+script to a chart any chart
+and set up the pi connector settings and
+our credentials
+for using pi connector and we're done
+i'm going to close
+these charts here and just leave euro
+dollar open
+i'm going to maximize that and remember
+we need to go
+view and then symbols or press control u
+and depending on which markets you want
+to trade you may need to activate them
+here so the
+pi connector can actually send trade
+commands to those markets you can see
+all these markets are grayed out
+we need to find the markets we want to
+trade so in this case i'm just going to
+activate euro dollar
+so here we are on euro usd i'm going to
+double click
+on that close this window and then i'll
+bring this out a little bit i'm going to
+right click on euro dollar dash
+f and click chart window
+and then i'm going to close this
+other euro dollar market so before we
+attach
+pine connective to the chart we need to
+come up to tools and click options
+make sure that you have selected under
+expert advisors
+allow automated trading allow dll
+imports those are the only two settings
+we need turned on in order for
+pi connector to work so i'm going to
+click ok there then i'm going to click
+on the pan connector script or expert
+advisor
+right click it click attach to a chart
+and now we need to set up our settings
+how we
+need them to be and input our license id
+so for me i like to set my target type
+to
+take profit and stop plus based on price
+i'll leave this as
+specified volume and i'll leave this as
+pips from current market
+i'm also going to change my ea and
+license details to display
+only the license expiry date you don't
+need to do this i'm only doing it
+because i'm putting this video on
+youtube and it just makes editing a
+little easier because i don't need to
+blur out my license id
+so now i'm going to paste my license id
+in here and click ok and everything
+should work
+just fine there we go a little smiley
+face in the top right
+it shows my expiry date which is next
+year and we have successfully connected
+to pi connectors
+server so now we're almost done let's
+send a test alert on my home computer
+to see if our connection is working
+okay so here i am on eurodollar i'm just
+going to right click here and click add
+alert
+i'm going to set my condition to greater
+than
+zero to guarantee that this alert fires
+as soon as possible
+we don't need any of this turned on all
+we need is our web hook inputted
+and now we can write out a test command
+so first i need to paste in my license
+id
+then a comma and then the direction of
+our order since today
+is a little bearish i'll just go with
+sell and then another comma
+and then we need to specify the market
+we're trading so for me that's
+euro usd dash f and then
+another comma and then we need to
+specify our risk take profit and stop
+loss
+so i'm going to set my stop loss to
+let's just make it
+1.19 i'm going to set my take profit to
+let's just say 1.18 and my risk
+to 0.01 which is the smallest position
+size i can have through oanda through
+metatrader at least
+and this should be all we need in order
+to test an alert so let's click
+create and see what happens okay so the
+alert just fired let's go over to
+metatrader and see if a trade has been
+opened on euro dollar
+here we go everything worked just fine
+we have
+a 0.01 position going short on euro
+dollar with our stop loss at 119. take
+profit at 118.
+perfect but before you close out of your
+server make sure to come and delete any
+symbols
+out of your watch list that you are not
+trading through pine connector
+because we're on such a cheap plan we
+want to keep the cpu
+utilization as low as humanly possible
+you can see that by clicking on this
+little search icon down here
+and type in resource short for resource
+monitor and then click on this app here
+and now this app will tell you how much
+of your cpu
+you were using by deleting any market
+that we're not trading
+out of our watch list that means that
+metatrader just has a little bit less
+work to do
+because it doesn't need to update all of
+these quotes you only need to leave the
+markets you're actually going to trade
+active on this list so i'm going to
+click on us yen and hit delete
+delete delete delete delete and
+since i'm only testing euro dollar
+through meta trade at the moment i have
+a script running
+on euro dollar on trading view i only
+need euro dollar active so i'm going to
+leave euro dollar active
+if you were trading other markets you
+would need to include them here but any
+markets you are not trading
+get rid of them and then finally last
+but not least it's a good idea to
+minimize metatrader
+and minimize the console or command
+prompt before you exit out of your
+server
+i don't know if that makes a difference
+but i like to think it does that way the
+application doesn't need to run anything
+visual
+it's just running in the background
+minimized down to our taskbar that's
+pretty much it we now have a virtual
+server running metatrader connected to
+pine connector
+and now this server should run 24 7
+without you needing to do anything
+uh you might need to check on it
+occasionally just in case metatrader
+crashed
+or there was a windows update that
+restarted the computer or something like
+that
+there are a couple of things we can do
+to mitigate that downtime issue
+by making metatrader run on the system
+startup we can also create a batch file
+that will run
+constantly and check every few seconds
+if metatrader is open and if it's not
+open it will open it for us
+i did that with my order view lesson and
+while i'm at it while we're here i might
+as well show you how to do that for
+metatrader as well
+but if you're not interested in that you
+could end the lesson here
+and just make sure to check on your
+server periodically to make sure
+everything is running fine
+so i'm going to close metatrader for a
+moment i'm going to
+come down here and just type run
+and then i want to click on this app
+here
+and now in here we just need to type
+shell colon
+startup and hit enter and that opens up
+the startup folder here
+i'm going to create a batch file in here
+that's going to constantly check if
+metatrader is open and it's basically
+just a monitor that will
+start up when the server starts up and
+just constantly make sure that our
+platform is running
+so that if anything goes wrong and
+metatrader crashes
+or the server restarts for any reason
+whatsoever we can be certain that
+metatrader will reopen itself
+so i've already created this batch file
+for my order view version
+of this auto trading series so i'm going
+to copy and paste that
+file into here so i'm just going to
+right click here
+and click new and then click text
+document
+it doesn't matter what you name this
+just open it up
+then i'm going to copy this text into
+here now you don't need to understand
+what's going on here all we need to do
+is replace chrome with the metatrader
+process
+name so to change this from chrome to
+metatrader all we need to do is right
+click on the metatrader shortcut
+click properties and we want to see what
+the
+actual xe file is called here in this
+case it's called terminal
+and don't worry there'll be a link in
+the video description to this text file
+you can just copy and paste
+into your notepad and you don't need to
+write any of this but i need to
+change this to say terminal and then i
+need to get rid of this
+liner text here so now i need to
+write out two quotation marks and then a
+space
+and then i need to copy this target
+string
+and click ok now and paste that in there
+and i'll change this to say starting
+mt4 now this string will change
+depending on your broker
+and which version of metatrader you're
+using so you will need to replace this
+string
+with whatever your actual metatrader
+target file is in the shortcut the
+easiest way to get this is to just right
+click on the desktop shortcut and copy
+the target string
+so now let's save this batch file so i
+need to go file
+save as and then we want to click on the
+save as type
+change this to all files rename this to
+monitor
+dot bat click save and we're done
+i can close this text file we can delete
+this blank text document
+and now if i double click on monitor
+the script should check and realize
+metatrader is not open
+as it says there danger will robinson
+starting mt4
+and there we go so now if i was to close
+metatrader or metatrader crashed or the
+system rebooted
+we are guaranteed to every minute check
+if it's not running and if it's not
+running it will be started up
+so in a few seconds the script will
+check and realize that metatrader is not
+open
+and it will boot it back up
+there we go perfect now that we're all
+set up
+you can click on this close button
+whenever you're ready and metatrader
+will stay open on this remote server
+and you don't need to do anything other
+than check on it occasionally to make
+sure that it is still running
+one thing i should really mention before
+we finish today's video
+is that depending on which version of
+metatrader you are using
+and what you're using it to do for
+example if you're trading a lot of
+markets with pine connector or a lot of
+expert advisor scripts and accessing a
+lot of market data regularly
+this plan that we're on may not be
+enough this
+one virtual cpu with 500 megs of ram
+may not be enough to sustainably run
+your operation
+you can check how your instance is
+using as resources by clicking on this
+metrics tab under the
+amazon light sale account page if i
+click on this
+and we scroll down you can see here this
+is my average
+cpu utilization per 5 minute time frame
+i'm not going to go into explaining what
+burstable zones are
+and burst capacity because that's kind
+of outside the scope of today's video
+and to be perfectly honest i don't fully
+understand it myself
+it's a very convoluted system if you ask
+me
+but i'm not a network engineer i'm a
+trader and i only know the bare minimum
+to get this stuff operating to be honest
+with you but what you need to
+look out for is if this orange line is
+consistently above this
+green line that you see here if this
+orange line starts spiking up here
+that means that your instance is using
+more cpu power
+than your current plan can sustain in
+the long term
+so long as your cpu usage is operating
+above this green line
+this line down here will continue to
+decline
+until it hits zero i'm not sure what
+happens when it hits
+zero percent of remaining cpu burst
+capacity
+i'm guessing your instance just stops
+running which is obviously something you
+want to avoid
+if you have automated scripts running so
+basically as you can see here i've had
+my instance running
+for about oh a few days now three or
+four days
+starting around here and as you can see
+there were times where it was
+consistently
+operating above this green line now my
+configuration of metatrader is extremely
+simple i only have pine connector
+connected and i've only got one marker
+data feed linked up to it so i might be
+able to get away with this really cheap
+plan
+but if your configuration of metatrader
+is using a lot of cpu power you might
+need to upgrade to the 12
+a month plan instead of the eight dollar
+a month the easiest way to do that
+if you've already configured your server
+for the eight dollar plan
+and you notice that this orange line is
+constantly
+far above the screen line then if you
+come up to snapshots
+click on that and then if you stop your
+instance so if you click on this
+stop button that will stop your instance
+it'll basically turn off your virtual
+server
+now if you come down here name your
+server to something else like
+metatrader server 2 for example and then
+click on the create button
+that will create a snapshot or a copy of
+your current instance configuration so
+everything we just did in today's video
+will be saved
+and you can create a new instance on a
+different plan
+with exactly the same setup that we have
+already configured
+so you can see down here here's a
+snapshot i created to test the 12
+plan all i have to do is click on this
+little drop down box these are this
+whatever you call this
+hamburger icon or whatever it's called
+and then click
+create new instance and then you can set
+this new instance up as if it was
+a fresh instance so you can choose your
+location and you can choose a new
+instance plan so if you're just using
+pine connector but your metatrader
+platform seems to be consuming a lot of
+cpu
+resources you might want to upgrade to
+the 12 plan
+and if you're running a bunch of expert
+advisors
+or particularly complex scripts and
+you're using significantly more cpu
+power
+you might need to go for the 20 plan i
+don't think you'll need to exceed the 20
+plan to run metatrader no matter how
+complicated your scripts are
+but that's just something to keep in
+mind so if i click on that
+and scroll down we can name our instance
+so i'm going to call mine meta trader
+server
+20 for 20 a month and then i'm going to
+click create instance
+and now amazon light sale is going to
+boot up
+a new copy of my original instance
+under the new plan with extra cpu power
+and extra
+ram so if you need to upgrade your
+instance because
+it is consuming too much of your lower
+plans resources
+this is the easiest and quickest way to
+do it once this instance is up and
+running like this one is
+you'll be able to connect to it the same
+way we did to our original server
+and the password will be the same for
+this server as well
+as your original server so keep that in
+mind you'll connect to this new ip
+address
+with the same password as your original
+instance
+so make sure to save that password
+somewhere safe if you do
+need to copy your instance because once
+you've copied it you are going to need
+to delete
+the old instance otherwise you'll get
+charged for it even though you're not
+using it
+now i don't need this 20 a month plan so
+i'm just going to delete this now
+click yes delete and i'm going to
+restart
+my original instance all right so
+that'll do it for today's lesson i hope
+you found this interesting
+and most importantly helpful now keep in
+mind what we've done today
+applies to any expert advisor so if
+you're using
+any other expert advisor other than pi
+connector to auto trade
+through metatrader you can use the same
+steps we did today to set up amazon web
+services to auto trade
+24 7 on a remote server so that you
+don't need to leave your home computer
+running
+at all times so i'll wrap it up there
+thanks for watching if you haven't
+already make sure to hit the subscribe
+button because i will be back very soon
+with a new
+training education video to help you
+take your training to the next level
+take care good luck out there and i'll
+speak with you soon
+goodbye

@@ -1,0 +1,195 @@
+hey everyone welcome to simply learns
+youtube channel and in this session we
+will be learning how to calculate
+standard deviation using excel but
+before we begin let me tell you guys
+that we have daily updates on multiple
+technologies so if you're a tech geek in
+a continuous hunt for latest
+technological friends then consider
+getting subscribed to our youtube
+channel and don't forget to hit that
+bell icon to never miss an update from
+simply learn now without further ado
+let's get started with how to calculate
+standard deviation in excel
+so first we will understand what exactly
+is standard deviation so standard
+deviation is a calculated square of
+variance
+now what is variance
+okay nothing to worry let us also
+understand what is variance
+now the next part variance so what is
+variance variance is a measure of
+variability
+it is calculated by taking the average
+of squared deviations from the mean
+now what are deviations
+so slowly you can understand that we're
+getting into the topic of statistics and
+graphs so uh before getting deep into it
+let's understand what is deviation so
+the deviation is a measure that is used
+to find the difference between the
+observed value and the expected value of
+a variable in simple terms deviation is
+the distance from the center point so
+for example when you are going through a
+graph so you will be expecting some
+value right and if you get some
+difference that is above or below the
+expected point that is called the
+division what is the difference between
+the expected point and the obtained
+point so that is the deviation
+now
+next is the observed value so the
+observed value is the value that you get
+in real time unlike the predicted value
+so now you might be thinking to
+calculate standard deviation we might
+need a few more parameters and you're
+exactly right so to calculate standard
+deviation in excel you need variance and
+then you need a deviation and then you
+need mean
+right so all these parameters are
+supposed to be calculated first and then
+you will be having the final formula to
+calculate standard tv now that we
+understood the theoretical and
+formula based explanation about standard
+deviation it's time we calculate the
+standard deviation using one of the most
+popular business intelligence tool that
+is microsoft excel so let's get back to
+the practical mode
+so now we are on the practical mode and
+we have some sample data on my screen
+right now let me expand it a little bit
+yeah there you go
+so
+as discussed before to calculate
+standard deviation we might require the
+mean variance deviation and deviation
+squared and then we can calculate the
+standard deviation so let's go step by
+step so the first one is calculating sum
+right so to calculate average we might
+need a sum of all the scores so we have
+the index values that is 1 to 10 and
+scores of each index value that is 1 to
+10 right now let's calculate the sum of
+all values here press tab to select the
+function
+select and drag these cells press enter
+and then you have this course
+now you want number of indexes so
+clearly you can see we have 10 but still
+let's count them
+see you ent tab space to select and
+select the number of sales press enter
+and you have count
+now what's the main so mean is simply
+the average of all the numbers right so
+you can either divide the sum by count
+or you can simply use the average
+function so let's try to use the average
+function so that we also have an idea of
+how the average function works press tab
+to select it and select all the cells
+and press enter now you have the average
+or mean value
+now we have the mean value and now after
+finding the mean value we are supposed
+to find out the deviation so remember
+the deviation that is the difference
+between the obtained value and the
+predicted value right so the obtained
+value is this one which is here in c2
+and the predicted value is this one
+that is 82.6 that's our mean right
+according to formula we are supposed to
+eliminate the value of obtained minus
+the mean right so select uh the cell
+equals to c2
+minus the obtained value that is mean
+now press f4 to freeze the value and now
+press enter
+so that you can freeze the value and
+drag the formula across all the cells
+now you have the deviation
+right
+now the next step is to find the sum of
+all the deviation numbers so i either
+you can apply the sum formula to all
+these numbers or you can just drag this
+cell over here and the formula will be
+automatically copied now similarly the
+count function to count all the values
+that doesn't drag it and you'll have it
+over here right now the next step is to
+find out the square deviations or the
+square of the deviations which is really
+simple all you have to do is equals to
+select the cell and
+see that small hat kind of logo on the
+number six use that
+now into two press enter
+you have this query
+similarly drag the same formula across
+all the cells and you'll have your
+squared numbers similarly drag this
+summation function over here so you'll
+have the sum of this
+and the count number as well
+now
+comes the final formula
+now we have the mean value that is over
+here let's color it
+and we have
+the variation square
+now
+that is which is this one
+let's color it in a different shape
+and we have deviation as well let's
+color it in a different shape
+now we need to find the variance and
+after we find the variance the last step
+is to count the standard division or to
+calculate the standard deviation so what
+is the formula to calculate the variance
+so for variance
+you need the
+sum of deviation square
+divided by
+total number of values
+minus
+1
+the center and that's your variance
+now the standard deviation so the
+standard deviation is really simple you
+need to calculate
+the
+variance to the power of
+0.5
+and that's your standard deviation
+so that's how you calculate standard
+deviation in excel i hope all the
+formulas and the explanation was clear
+if you have any queries regarding any of
+the topics covered in the session or the
+formulas used in the session or you
+require the data set that we used during
+this session then please do let us know
+in the comment section below and our
+team of experts will be more than happy
+to resolve all your queries at the
+earliest until next time thank you stay
+safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
