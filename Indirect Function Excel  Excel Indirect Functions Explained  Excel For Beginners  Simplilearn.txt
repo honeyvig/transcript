@@ -1,0 +1,167 @@
+hey everyone welcome to simply learns
+youtube channel in this session we will
+be learning about indirect function in
+excel but before we begin let me tell
+you guys that we have daily updates on
+multiple technologies so if you're a
+tech geek in a continuous hunt for
+latest technological trends then
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn now without further
+ado let's get started with our one point
+agenda that is indirect function in
+excel now what is indirect function in
+excel so the name itself come repeat so
+the name itself conveys that it is
+something
+like a reference function right so it
+refers to a cell which is present in a
+particular sheet or the current sheet or
+it refers to a particular range in the
+current sheet or it can also refer to an
+entire workbook in a current window
+right so you can stay here on the sheet
+number one and you can refer something
+which is present on the sheet number 10
+or 11. you can stay in this current
+workbook and refer to something which is
+around in a different workbook
+altogether so that's exactly how the
+indirect function in excel works okay so
+i guess the definition was a little uh
+difficult to get let me show you a
+simple demo here so that it becomes a
+little easier for you
+so currently i'm in the cell number a
+two right now here i will implement the
+indirect function
+press tab to select it and now i'll
+refer to the cell
+c2
+and let's enter and there you go let me
+properly close the window it's there
+so let me implement the indirect
+function here so
+equals to indirect and press tab to
+select
+now i'll be selecting the cell c2 and
+inside c2 we have
+e2 address
+now the formula is fine i have
+implemented the indirect function and
+selected the cell e2 and now if i press
+enter see the magic
+there you go so in the cell e2 we have
+the text hello world so when i use the
+indirect function to refer which is
+something in c2 it is indirectly
+referring to another cell address that
+is e2 which has the text hello world
+now this one was a little pretty simpler
+now let's check some complicated ones
+and we'll move to sheet number one
+here we have some student names and
+their
+you know
+marks on the individual subjects that is
+math science english computer science
+and here and here you can see i'm
+selecting the student names and
+accordingly i'm getting their average
+score and the total marks obtained right
+seems interesting how did i do this so
+this is done exactly using the indirect
+function so let's do it again
+so this is how you do it now here i will
+be using
+okay before we get into this uh we need
+to do some fundamentals before we do it
+right so the fundamentals are you need
+to name your individual columns so here
+i have brian and his marks so i'll
+select entire marks of brian
+ranging from b2 to b4 right click and
+here you can see define name
+and i'll be naming it as brian
+it's already named we might get an error
+so it's already name okay let's add
+another one maybe
+uh
+jennifer
+let's cancel this
+so let's
+add
+jenny
+and her marks will be 96
+87 i'm selecting some random numbers
+here
+so 87
+so
+we have the new column here now we need
+to name this column define a name and
+it's general so excel has automatically
+selected the name for this column so
+let's press ok now we have our columns
+ready now here if you see the drop down
+we have amy banner brian brock emily
+jenny john everyone over here right so
+the columns are named the individual
+columns are named so now the student
+name so here you can use some simple
+trick called data validation here select
+the data option in the toolbar navigate
+to data tools here select data
+validation
+and in this instead of any value select
+list
+and here give the source as
+this particular set
+press okay so that you get the drop down
+menu over here you can also type the
+individual names again when you type the
+individual names you might go wrong with
+the case or spelling right so it's
+better always to use this kind of list
+options which will make things easier
+for you now getting into the average
+calculation so
+here the average will be
+equals to average
+press tab to select now the indirect
+function
+indirect of
+the cell address
+and close the bracket first you might
+get an error because currently it is
+empty so select some name and you will
+get your average score now same thing
+applies to
+you know total
+you can press the sum function select
+the sum function
+and
+type in the indirect function
+and
+the cell
+be 11 close the brackets
+and press enter so that's how you do it
+so that's how you can implement indirect
+function in excel with that we have come
+to an end of this session on indirect
+function in excel hope this session was
+interesting and informative if you have
+any queries regarding any of the topics
+covered in this session then please feel
+free to let us know in the comment
+section below and our team of experts
+will be more than happy to resolve all
+your queries at the earlier until next
+time thank you stay safe and keep
+learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

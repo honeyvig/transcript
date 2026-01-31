@@ -1,0 +1,134 @@
+hey everyone welcome to simply launch
+youtube channel in this session we will
+be learning about the match function in
+excel or also called as index match
+function in excel but before we begin
+let me tell you guys that we have daily
+updates on multiple technologies so if
+you are a tech geek in a continuous hunt
+for latest technological trends then
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn now without further
+ado let's get started with our one point
+agenda that is match function in excel
+for that let's get started with
+microsoft excel
+so you can see that we have got started
+with microsoft excel and on the left
+hand side we have a simple table with
+all the teams in an id industry starting
+from i.t admin testing development to
+client consultant support we have got
+everything in this particular table
+now our main idea is to find out the
+index of these particular elements for
+example if you wanted to find the index
+of the element marketing then how could
+you do it so here let's try to use the
+match function in excel for that we want
+lookup value and position so on the
+right hand side you can see that i have
+created two separate columns as lookup
+value and positions so in the lookup
+value column we will be inserting the
+value of which you want to find the
+index
+now
+for example let us consider that we want
+to find the index value of team
+marketing
+so i'll be writing marketing in this
+particular lookup value
+now how to find the index value of the
+element marketing for that we will be
+using the match function in excel
+now after writing the match function you
+can see that it is asking for three
+different parameters
+so the first one is the lookup value
+second is the lookup array and lastly we
+have match type so lookup value is the
+value of which you are trying to find
+the index that is marketing this
+particular cell so we have selected the
+lookup value which is the first one next
+we have to select the lookup array that
+is from which set of elements you want
+to find the index so the set of elements
+are
+this
+i admin testing the column which we have
+created the a column now we have
+selected the lookup array and lastly
+the match type is it you're looking for
+less than or is it you're looking for
+exact match or is it greater than match
+so for now i want exact match so i will
+be selecting the exact match that is
+zero
+now there you go you have the exact
+index of the element that is five
+now we have selected
+all the ten teams starting from it one
+admin two
+testing three development for marketing
+five so that's how you find the index of
+a selected element in excel
+now we just have like 10 elements so we
+have got the uh
+writing of the elements or you know uh
+choosing the elements in a easy way but
+what if if we had like 100 elements
+right could be a little different
+okay so let me put it simple
+now you wanted to find the index value
+of finance so right now we have
+marketing and you wanted to type in
+finance and
+you missed out a letter a
+okay
+now you're not finding the right index
+to avoid such problems you can always
+take the help of
+data validation in excel
+that is using the list in data
+validation in excel you can see a small
+drop down icon here right you can choose
+that and here you can see all the teams
+that we have created in the left column
+right so here i can scroll down and
+choose the finance
+and there you go i have the index value
+okay again we need to copy paste the
+same match function in excel over here
+equals to match
+lookup value
+lookup array
+and
+exact match
+so there you go that's how you make use
+of data validation in excel and using
+the list you can comprehend all the list
+elements in this particular column into
+the list of data validation and you can
+choose the team whichever you want to
+find the index for so this is how you
+can make use of match function in excel
+or
+index match function in excel
+now with that we have come to an end of
+this tutorial on match function in excel
+if you have any queries regarding any of
+the topics covered in this session then
+please feel free to let us know in the
+comment section below and our team of
+experts will be happy to resolve all
+your queries until next time thank you
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

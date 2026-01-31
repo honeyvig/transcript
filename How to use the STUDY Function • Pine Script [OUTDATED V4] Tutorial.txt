@@ -1,0 +1,224 @@
+hey traders my name is Matthew from
+Pines crib month and in this video today
+I'm going to show you some content from
+my PI inscript mastery course where I'm
+going to break down the study annotation
+function and explain all the various
+parameters that we have to work with
+but before we begin I should mention
+that if you enjoy this content
+there's plenty more available over at
+pine script mastery com including a free
+basics course for beginners so go and
+check that out if it's something that
+interests you but for now let's get into
+the content
+so hey coders welcome to the very first
+pan script coding lesson in this course
+this lesson is going to cover the study
+annotation function which is this guy
+down here so I'm going to explain what
+this does and how to use it what all the
+input parameters do so this study
+function is what pine strip refers to as
+a annotation function so similar to this
+as an annotation comment which tells
+it's a compiler directive it tells the
+pine Script compiler what version of
+pine strips are using in this case
+version 4 the latest version as of
+making this course the study function
+does a similar thing it tells pine
+script all of the code that follows this
+study annotation function is to be
+treated as a study script for in other
+words an indicator script as opposed to
+a strategy script so if we were to make
+a strategy script we would have access
+to different functions such as all these
+strategy calls but we're not doing that
+today we're going to cover strategy much
+later in the course
+so today we're just working with the
+study function so first of all what
+inputs does the study annotation
+function take it takes two titles it
+takes an overlay our boolean input it
+takes a text format input it takes a
+precision input a scale input and a max
+bars back input so those are the
+parameters we have to work with and I'll
+explain what each of them do one by one
+so the first input parameter is a title
+and this is the only input parameter
+that is required so if you don't have
+this title and you try to save your
+script
+it won't work we'll get an error so this
+first title input is the name of the
+script and you can call it whatever you
+want so in this case I'm going to call
+it pine script mastery course study
+example and hit save and you'll see up
+here our script name has now changed to
+PS MC study example now you don't need
+to have the
+title equals here we could just do that
+and that would also work but just for
+clarity's sake I'm gonna leave that in
+because we also have access to the short
+title so I'll show what that does now
+short title is set to let's call this
+study and now if I hit save that'll
+change the name of our script to just
+study and so the reason there's two
+titles is that the main title is for
+explaining in detail what your script
+name is the short title is for an
+abbreviation on your chart so for
+example I have indicated called the
+ultimate pullback indicator but that's a
+long name to have it clutters up your
+chart a fair bit so what I have used the
+short title for is to abbreviate it to
+UPI and so when you use my ultimate
+pullback indicator that's all you get on
+your child is UPI
+so that's the purpose of the short
+titles to abbreviate any long skip names
+you come up with so that's those two
+input parameters the next input
+parameter is overlay so by default
+overlay is set to false and what this
+means is that our script will draw into
+its own window pane its own box as you
+can see here it's drawing in its own
+oscillator type box so this is useful
+for scripts like the RSI stochastics
+even volume that sort of thing but if
+you want to draw onto your actual chart
+you have to set this to true so if I set
+this to true and I hit save first of all
+I need to remove the script this
+parameter to update and if we click add
+to chart the script is now drawing the
+closing price to the chart instead of
+into its own oscillator box so it's save
+again and I remove the script add it
+back now it's in its own box so that's
+what the overlay our parameter does the
+next import is the format input so this
+is for setting how the values number
+values are formatted when they're drawn
+to your chart so we only have to
+formatting options if you type format
+control space technically three inherit
+price and volume by default it's set to
+inherit which will
+inherit your chart access formatting but
+you can override this with whichever
+formatting type you want so if we set
+this to format volume and hit save you
+can see that it is now drawing a 1 down
+here I changed this to say 20,000 hit
+save you'll see that it now puts a K on
+the end and if we would have changed
+this to say 20,000 420 and we hit save
+now it says 20.4 2k that's useful for
+creating indicators like your volume
+indicator or anything that works with
+volume and that sort of thing because if
+you set this to price and hit save then
+we'll get the exact number there so for
+most scripts you're going to want this
+exact number but for other scripts
+especially ones working with volume this
+formatting volume format can be helpful
+so I'll leave this is inherit for now so
+if I set this back to plot the closing
+price and we move on I will show you
+what the next input does which is
+precision so the next input parameter is
+precision and this specifies how much
+precision to go into with your decimal
+values so if you were to set this to 2
+it's going to cut all these decimal
+digits in the indicator value and it's
+going to round the number up to the
+nearest two digits so if I hit save
+you'll see that this number will just
+become zero point six nine and then as
+it gets closer to 70 it rounds up to 70
+there so we only have two decimal digits
+and that's what precision does we go all
+the way to 1 and then we'll just get 0.7
+because it's rounding up zero point 6 9
+to 7 so for most instruments on your
+chart most markets precision of 5 is
+about as much as you will ever need but
+you can go higher if you want to we
+could go to 6 I'm not sure what the
+maximum precision is but it's a lot
+there we have a precision of 10 that
+might be helpful for analyzing
+cryptocurrency markets maybe like
+satoshis on some cryptocurrency markets
+but by default this is set to whatever
+your price
+is so I'll leave that as five now and
+we'll move on to the next input
+parameter which is scale now this
+parameter tells pine script which scale
+to attach your indicator values to so we
+have a number of options here by default
+that's set to your main price scale but
+if I type in scale and then control
+space that'll bring up the list of
+scales we have to choose from so if I
+set the scale to scale dot left and I
+save the chart save this script and I
+remove the script from my chart add it
+back on now you can see that the
+indicator values are plotting to the
+left scale so that's what this input
+parameter does it allows you to move
+which scale that your indicator value is
+attached to so the final input parameter
+we can work with is max bars back so if
+you type in max underscore bars on the
+score back this determines how far back
+your script can reference historical
+bars so I set this to 5 now our script
+can only reference the past 5 historical
+bars so that will be the maximum amount
+of historical values we can go back so
+it's very unlikely you will ever have to
+use this input parameter I'm not even
+sure why it's included but I'm sure
+there's a reason for it
+maybe for saving the amount of memory
+that a script uses when calculating its
+values if your script is failing to
+execute because it's running into plan
+scripts computer resource limitations
+may be evil to use this feature but that
+is all of these study annotation input
+parameters we have to work with for your
+average indicator you will only really
+be working with these three values your
+main title your short title and overlay
+that's the most common three inputs I
+use in my own scripts anyway so that's
+it for this lesson I hope you found that
+helpful if you did and you want to learn
+more about Pyne scripts head over to pan
+skip mastery com here you'll find my
+advanced pan script courses and my
+basics course which is free so if you
+want to learn more about behind script
+head over here and you'll find out a
+little bit more about me and a little
+bit more about Pine script I hope you
+found this lesson interesting and
+helpful I'll see you the next one
+[Music]

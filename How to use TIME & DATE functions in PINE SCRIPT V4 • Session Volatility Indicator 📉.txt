@@ -1,0 +1,631 @@
+hey traders today i thought i'd do
+something a little bit different and i'm
+going to show you
+a script that i recently wrote i'm going
+to break down the source code
+show you guys how to use the time and
+date functions
+in your scripts
+i was going to wrap up my order view
+series this week but i just haven't had
+the time to record that lesson
+yet so that will be next week instead
+i've been extremely busy this week with
+my own trading
+in the forex and crypto markets and
+running the pine script mastery birthday
+discount
+if you're interested in any of my
+courses now is a great time to pick them
+up because i have a 25
+off discount going to the end of the
+week but i don't want to hop on about
+that any longer let's get into today's
+lesson where i'm going to break down
+this new script i've just created this
+week
+called my session volatility indicator
+or calculator so this is a lesson taken
+from my indicators and
+strategies course where i break down the
+source code to every script i've ever
+written and because this
+is a short script but an interesting
+script covering a couple of features i
+haven't covered on my youtube channel
+before i thought it's a great
+opportunity to
+show you these features this is an open
+source script i don't release all of my
+scripts open source because a lot of
+them are quite valuable and take a long
+time to make but this one didn't take
+very long at all so i just released it
+as an open source
+script so i'll leave a link in the video
+description to the source code for this
+script over
+at tradingview anyway let's get into
+today's lesson
+this script is a session volatility
+calculator so what it's doing is it is
+scanning through all the price action on
+my chart between two specific dates
+and a certain time of day it's then
+measuring
+the highest price during that certain
+time of day and the lowest price
+to get the range of that session and
+then it's adding up all of those
+sessions
+to give us an average and this is the
+average range of the trading session
+that we have specified in the settings
+menu so let's jump over into the pine
+editor and i'll break down the source
+code to this script
+so here we are in the pine editor um the
+first thing i do
+as always is get my user input quite
+simple here we're just getting four
+inputs which will be easier to
+demonstrate if i open up the
+uh settings menu so we have our start
+date our end date so this is the range
+that we want to the date range that we
+want to calculate the average
+session size during and the time session
+to analyze is where we specify
+the time of day so this
+last setting here this color background
+changes the background color of our
+chart
+if the price action printing onto our
+chart falls within
+this time session and within these dates
+so you can see i've set the dates here
+to the first of june which was a couple
+of days ago as of recording this video
+the end date is 2099 so like 70 years
+from now
+by default this is set to the year 1000
+and this is set to 2099 and that just
+makes sure that all the price action on
+our chart
+is taken into consideration at least
+until the year 2099 and then
+if i'm still alive then i can update
+this to the year
+3099 but by then i'll probably be a
+cyborg and the markets will be run by
+artificial intelligence and none of this
+will
+be useful anyway so let me increase the
+resolution of my screen
+and we'll go through the source code
+here line by line
+most of it should look familiar to you
+if you've gone through any of my other
+indicator lessons some of this stuff is
+just directly copy and pasted
+from other scripts that i've written all
+right so that was our user inputs
+the first thing i do after getting my
+inputs is
+define a custom function that converts
+4x pips into whole numbers so this is
+only for the forex markets
+if you load this script onto any other
+market this
+function basically doesn't do anything
+but if you load it
+onto a forex market and the atr the
+average
+true range is less than one or less than
+a whole number
+then this little bit of code here will
+convert your number in pips
+into whole numbers so you can see up
+here that the
+box here says 22.875
+if i were to not use this function this
+would say
+0.00022
+and so to make it more useful i convert
+that into a whole number
+but if i load something like a crypto
+chart on my screen let's load up bitcoin
+um this just changes to price change and
+it's cut off on my screen here because i
+have my resolution turn right up but if
+you had this on a normal resolution this
+would
+say price change instead of pips so you
+can see here that
+during the time i've highlighted on my
+chart at least
+on these two days the average move for
+bitcoin was
+and seventy 1176 dollars i probably
+should have mentioned this at the start
+of the video but the purpose of this
+script
+the reason i developed the script was to
+help me calculate
+engage session volatility which can help
+with things like target placement
+in day trading strategies and just
+getting a general idea of how much
+markets move
+during certain times of day so for
+example i could set this
+setting this time session to
+9 a.m my time here in australia to let's
+say
+10 pm my time which might be
+the active trading time that i have to
+trade the markets i could see how much
+movement happens during that time
+compared to when i'm asleep or i can
+check
+what the average move is on aussie yen
+during the asian market
+so between 9am and 4pm
+my time and i can see if it's worth
+developing day trading strategies on
+those pairs
+based on how much they tend to move
+because if a market doesn't move much
+during a certain time of day then it's
+completely pointless trying to trade
+a 15-minute chart or five-minute chart
+strategy anyway this is a coding lesson
+not a trading lesson so let's move on to
+the next
+part of my code here which is this
+function
+in session which just returns whether or
+not
+the current bar falls within the
+specified time period
+and the specified time of day so this
+function
+appears in a lot of my scripts are
+basically what this n a
+check does is it checks whatever value i
+pass into this function
+to see if it's n a n or not a number if
+it's not a valid number
+then it returns true if it is a valid
+number then it returns false
+and then this time function checks to
+see if the current bar falls within the
+time session we give it
+and if it doesn't then this time
+function returns n a
+and so our n a function will return true
+and this check here will
+fail i could have also written here not
+n a
+and gotten rid of that if i wanted to
+but i'll leave it as it is
+and basically this check here will fail
+this whole function
+this function returns a boolean value by
+the way it returns true or false
+and so yeah if the current bar does not
+fall within
+the session was specified then in
+session returns false
+i added on this colon one two three four
+five six
+seven on the end of our time session
+here because
+for some reason if you don't do this
+this is how many days of the week
+to include in this check if you don't do
+this then for some reason on weekends
+the script doesn't include weekend days
+in the uh time function check i'm not
+sure why maybe they've changed that i
+haven't checked if they've fixed this
+but maybe it's intended to be that way
+but basically this is for crypto markets
+because crypto markets
+obviously trade over the weekends and so
+i had to add on uh
+which days of the week to check by
+adding on this string here and just a
+side note
+worth mentioning is if you wanted to
+check just how
+a market performed on a monday you could
+get rid of these and then it's only
+going to check
+on the monday or on a weekend you could
+just have six and seven
+i believe that works i haven't actually
+tested that but if i recall correctly
+from
+when i was studying the documentation
+that's how this parameter works
+so that's something you might want to
+play around with if you're interested in
+this sort of thing and then of course
+next we check if the current bar's time
+falls within our start date and our
+end date then we change the background
+color
+if the user has turned color bg on in
+the settings menu
+and the current bar falls within our
+given time session
+then the color of the chart changes to
+blue with 90
+transparency so rgb is red green blue
+255 is maximum amount of blue and 90
+here is our transparency setting and
+otherwise
+if these two booleans do not pass they
+both return false or one of them returns
+false
+then we just change the background color
+to n a or nothing
+let me leave it as it is next up we
+count how many bars are loaded onto the
+current
+chart and i'm not sure why we do this
+because i don't use this information
+anywhere else in the script so i'm just
+going to remove that
+and we'll move on that must have been
+from when i was testing something
+while developing the script so let's
+move on to the next block of code which
+checks if a new session has begun so we
+create a var variable
+this is used later on in the script is
+like a flag
+so that the script knows that we are
+currently within the given session
+and we want to save or store relevant
+data
+from that session so if in session is
+true
+and we were not in session in the
+previous bar
+then that means we've crossed into our
+session and we set within session to
+true
+so again that might be confusing but
+what what is happening here
+is this bar here was not within our
+session
+but this bar was the script has detected
+that the previous bar was not in session
+but this bar was
+and so we know that this is the
+beginning of our time session
+and then we can do the same for the
+ending of our time session
+where we check if a session is ended so
+for this check we check
+are we no longer within our time session
+and
+were we in our time session on the
+previous bar that means we have
+exited our time session
+and we want to perform the calculation
+for this relevant
+uh time of day so the next thing we do
+is declare a bunch of required variables
+for
+our analysis the first one uh these are
+all var variables because we want these
+saved across all the bars on our chart
+the first variable is our recent
+movement this is
+the recent movement of the current
+session so if i hover my mouse
+over here you can see these numbers up
+here
+the purple number is the current
+sessions range
+and the orange number is this number
+divided by
+the average so it's basically a
+percentage of
+the average if i hover over here you can
+see that this purple number
+says 17.8 that's because we had a
+17.7 and it's rounding up to 17.8 so we
+had a 17.7 pip
+range from this high down to this low
+this was 17 pips
+that is stored here in the recent
+movement variable then we have our total
+movement variable
+this adds up all of the movement from
+all of these sessions on our chart
+and saves it so that later on we can
+divide it by how many sessions we
+counted in order to get the average
+so next up we have our sessions counted
+this adds up how many sessions we have
+analyzed
+we need this number in order to
+determine the average then we have
+max int i just added this variable uh
+for our lowest low
+so every time we reset for the next
+session we set our lowest low to this
+large number and the reason for doing
+this is that
+as soon as we start scanning a new
+session
+the lowest low is always going to be
+less than this number
+unless the price of the asset we're
+analyzing
+is above this number and i don't know of
+any markets that have a price
+larger than this number maybe there are
+some out there but for the most part
+this should work
+on all the markets on our chart same for
+highest high that's just set to a
+negative number because
+every time we start analyzing a new
+session the first bar's high
+is of course going to be higher than
+negative one and this ensures
+that in this example for example uh the
+first bar
+of the range was the highest bar in the
+session
+so when we begin saving our highest high
+and lowest low of the current session in
+this
+block of code here our high is of course
+going to be higher than negative one
+which is the default setting for this
+variable
+and so no matter what the first bar of
+the session will be assigned highest
+high
+and if any other bars in the session are
+higher than this bar then this will be
+overwritten
+with the high of that bar and lowest low
+is initialized as our max
+integer value all right so this is where
+most of the
+sort of the bulk of the script occurs
+the analysis that the script does
+so the first thing we do is we check if
+the session has ended so
+again is the current bar out of our
+session and was the previous bar within
+the session
+then we've exited our session or the
+session has ended
+so we set within session to false so
+that this code no longer executes
+and we analyze the movement of the
+recent session so recent movement is
+assigned to the highest high
+of that session minus the lowest low the
+total movement
+is incremented by the recent movement so
+this just adds
+up all of these session sizes across our
+entire chart
+and then we divide that number by how
+many sessions we analyze in order to get
+the
+average then we increment sessions
+counted by one
+so every time we analyze a new session
+our sessions counter
+increases and then we reset our stored
+high and low for the next session so
+that when the next session begins
+these numbers get overwritten as soon as
+price is being analyzed so once this
+session ends
+they are both overridden with
+their default values so the highest high
+goes to negative one the lowest low goes
+to a large number
+the next block of code here simply gets
+the highest high and lowest low of the
+current session so if we are within
+the time period we want to analyze and
+the current bar's high is greater than
+our saved highest high
+then we want to overwrite that highest
+high with the current bar's high
+same with the low then once we've done
+all that we can calculate the average
+pip movement over all analyzed sessions
+so to do that we just divide the total
+movement
+by how many sessions we counted that
+gives us the average
+and then we can plot all that data to
+the chart so we plot our
+volatility info if we are within a
+session
+then we plot our highest high and our
+lowest low and if we are not within the
+session
+then we plot our recent movement and our
+recent movement divided by the average
+movement so that's the purple and orange
+number up here
+so you can see this is the very first
+session that we have counted on our
+chart or analyzed on our chart
+and so 17.8 divided by 17.8
+is one so this was 100 of the average
+and then our second session was 122
+of the average but we're only analyzing
+two sessions here just for demonstration
+purposes
+if i were to set this to let's say 2001
+and click ok now the script is analyzing
+every session on my
+chart and you can see that the average
+pit movement is 32.9
+and so our orange percentage number
+changes here so this session
+was 80 of the average this session was
+50
+of the average so this was a quiet
+session compared to the average
+and then finally we make use of a brand
+new feature
+two-part script the team added very
+recently and that is
+tables so here we are creating an output
+table to display
+the average pip change and i'll leave a
+link below this video
+to the blog post that explains this
+latest update
+basically what we're doing is creating a
+new table
+we want the position to be in the top
+right of our chart then we specify
+our columns and rows i copy and pasted
+this code
+from the blog post and i haven't changed
+these but i'm pretty sure we could set
+these to one and one since i've only got
+one
+column and one row there but i'll leave
+it as it is for now then our border
+width
+is set to three then we have a custom
+function here that fills
+the cell of our table we specify the
+table we want to fill
+the column the row the value
+and then some text to add on to the
+value
+so all of this information is inputted
+into the table.cell function
+which fills this cell of the given table
+with a given column number in the given
+row
+with our cell text and our cell text is
+just converting
+our value to string and then making sure
+that we cap the decimal places at one
+two three four five decimals then we add
+on a new line
+and our description text so that's how
+we get
+the pip change text below the number or
+the value then we fill in all the other
+information here the background color
+which is just color.green
+and transparency which is 80 and the
+text color
+is the same as the background color and
+the width
+of this cell is six now i think if i
+remove this
+then the cell should
+change based on the text size
+dynamically
+that's much better and we only fill our
+cell
+on the very last bar that is loaded onto
+our chart
+this is for optimization purposes if we
+don't do this
+nothing changes except that our cell is
+filled
+on every historical bar on our chart and
+this
+number is basically overwritten every
+time a new bar
+is loaded onto the chart but we don't
+want that we only want this information
+to print to the chart
+on the very last bar of our chart and
+this is where we use our fill
+cell function to put in our average
+movement
+as a whole number and then we check if
+the symbol info
+the market type of the current symbol is
+4x if it is 4x then the text
+we add on to our value is pip change
+otherwise it's just
+price change and that's it it's actually
+a pretty simple script
+the concept at least is quite simple but
+hopefully you found that interesting
+and maybe you can think of other use
+cases for this approach
+for example i would like to play around
+with a relative volume
+indicator that uses this approach i
+already have a few
+relative volume scripts that i've
+written but i think comparing the
+relative volume
+to the average based on time here the
+same way we've done here with price
+i think that would be an interesting
+concept to explore but anyway i'll leave
+it there
+thanks for watching and good luck with
+your coding take care
+all right thanks for watching everyone i
+hope you found this lesson interesting
+if you did make sure to hit the
+subscribe button if you haven't already
+because i will be back very
+soon next week in fact with a new pine
+script video
+next week's lesson is going to cover how
+to set up a virtual private server
+so that you can run auto view 24 7 on a
+remote server
+so you don't need to leave your home
+computer running in case your girlfriend
+or your wife
+doesn't like the sound of that or in
+case your power bill is a little too
+high and that will be the final video in
+my auto view series and then we'll move
+on to other topics
+including a expert advisor that was
+brought to my attention recently
+it's a script that runs in metatrader
+that can
+read or receive your trading view alerts
+and
+execute trading commands based on those
+alerts through metatrader which is
+pretty powerful stuff
+and i'm really excited to explore that
+tool oh and by the way if you're
+watching this video after this
+promotions ended
+there is also the coupon code youtube
+which will get you 10 off all of my
+courses
+it's not as good as 25 but hey i can't
+give discounts out all the time
+i already think i've priced my courses
+at a pretty fair value
+so that'll do it for today thanks for
+watching everyone i appreciate your
+support
+for the channel have a great weekend and
+best of luck with your trading
+as always take care

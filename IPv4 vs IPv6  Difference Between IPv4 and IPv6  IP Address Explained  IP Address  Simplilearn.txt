@@ -1,0 +1,236 @@
+with the increase in the need of ip
+addresses we need proper information or
+identification for each ip address that
+is ipv4 version and ipv6 version which
+is the best ip address for a requirement
+to do so this video will help us to
+identify it
+hi guys and welcome to yet another
+trusting video by simply learn
+but before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to never miss an
+update from us
+now let's take a look at the agenda for
+today's video
+for today's video we will understand
+what is ipv4
+continuing with what is ipv6 addresses
+and in the end we will look at
+differences between ipv4 and ipv6
+let's take a look at the first heading
+that is ipv4 addresses
+the first version of an ip address to be
+developed was based on 32-bit binary
+format that counts roughly around 2 to
+the power 32 bits of total ip addresses
+in ipv4 format
+which was sufficient at the initial
+phase of network requirement
+but is somewhat lacking according to the
+current advancement in the network
+technology
+the addresses in this ip ranges from 0
+to 225 in terms of zeros and ones
+with four octets where each of them is
+separated by a period
+this is an example for an ipv4 ip
+address
+where the first three parts represent
+the network id
+and the last part represents the host id
+using the ipv4 address as our reference
+we can identify ipv4 addresses from ipv6
+addresses
+now let's move on to the next topic that
+is ip classes
+ip classes are designed to allow easy
+and efficient assignment of ip addresses
+to a network
+depending on class size we have five
+different ip classes in a network that
+are named as a b c and d
+for the first part we have class a
+that accommodates network with a large
+number of network host
+where the first bit in the octet is
+always zero with number value ranging
+from 0 to 127
+then we have class p
+which can fulfill the requirement for a
+modded number of network host
+the lead bit is 1 and 0
+and network id ranges from 128 to 191.
+then we have class c which can allocate
+an ip address for low number of network
+host where the first three bits of the
+network id is 1 1 and 0
+ranging from 192 to 223
+so the above three classes that is class
+a b and c
+we can easily identify and assign
+addresses to a network host
+moving on we have class d
+where it is used for multicasting
+that means it is used to send multiple
+signals at the same time from a single
+host
+for example using video streaming
+where the lead bit is
+1 1 1 and 0 with network id ranges from
+224 to 239
+and then we have class e
+where the ip bits for this is reserved
+for research purpose only
+where the ip addresses ranges from 240
+to 255.
+moving on let's take a look at some of
+the features for ipv4 version addresses
+where the first is
+the memory required for storing ipv4
+version addresses in a system is very
+low
+then we have ipp4 version addresses
+apply connectionless protocol for
+sharing data
+and providing the best effort in
+delivery
+moving on we have stacking option for
+ipv4 addresses
+that means
+in ipv4 version it allows to create a
+multiple network over a single host
+which allows different hosts to connect
+to it
+moving on we have
+ipv4 version addresses being the
+earliest ip designed are applicable to
+most of the network devices and system
+for connecting to the internet so it is
+supported by
+many devices
+then we have ipv6 addresses let's take a
+look
+with the increase in the need for an ip
+address the ipv4 version addresses are
+somewhat unable to complete the
+requirements of the network host
+so the need for ipv4 version auros
+which is based on 128 bit address size
+which is sufficient for a very long time
+that is approximately 320 under civilian
+ip addresses in version 6.
+this type of ipp version is designed of
+4 hexadecimal digit and 8 sets with each
+block containing 16 bits separated by a
+colon
+moving on let's take a look at some of
+the features for ipv6 version addresses
+where the first is
+ipv version 6 addresses provides an
+integrated security protocol for the
+network that is internet protocol
+security
+ipsec
+then we have it allows its application
+to extend in various services according
+to the need of the network
+it also allows address configuration
+through stateful that uses dhcp server
+for network settings and stateless that
+applies auto configuration settings
+ipv6 addresses also allows some methods
+to convert ipp 4 addresses to ipv6
+addresses
+which is according to the requirement of
+the host or the network
+moving on let's take a look at the
+differences between ipv4 version
+addresses and ipv6 version addresses
+this heading would allow us to choose a
+best ip address that we can
+decide for a network
+let's take a look at the first
+difference that is address and
+performance
+in accordance to the address size ipv4
+version is composed of 32-bit address
+length and is the fourth version of the
+internet protocol
+for ipv6 we have
+the address size is 128 bit long and is
+the latest version of the internet
+protocol
+the second difference is on the basis of
+address field type
+ipv6 addresses are based on numeric data
+with four fields each separated by a
+period
+whereas for ipv6 addresses are based on
+alphanumeric type data with eight fields
+each separated by a colon
+the next difference is based on address
+configuration
+in ipv4 version addresses a manual
+setting for the network is required
+along with the dhcp configuration
+settings
+whereas in case of ipv6 version
+addresses the network setting is based
+in accordance to the system's
+requirement and it also supports auto
+configuration setting for the system
+moving on we have
+the number of addresses in each ip
+in case of ipv4 the total number of
+addresses are nearly 4 billion addresses
+whereas in case of ipv6 version we have
+320 undecillion addresses
+now let's take up a quiz to understand
+what we did so far
+and the question is
+identify the correct form of ipv4
+version address in the given options
+and the options are
+you can give your answers in the comment
+section below
+let's move on to the next difference
+that is address security and functioning
+ipb4 version addresses do not provide
+any security function for the network
+whereas in case of ipv6 addresses
+integrated internet security protocol
+that is ipsec is responsible for the
+security of the network
+the next difference is
+encryption and authentication settings
+ipv4 version does not provide any
+encryption or authentication services
+for the network
+ipv6 addresses do provide
+mandatory encryption and authentication
+services for its addresses
+moving on we have address routing and
+performance
+ipv4 version follows routing protocol
+that has rip for network configuration
+and is preferred over ipv6 version
+and in case of ipv6
+it does not follow any routing protocols
+and it uses static roots for network
+functioning
+now that we are completed with the
+differences between ipv6 and ipv4 we can
+easily identify the ip address we want
+to choose for our network
+with this we have reached the end of the
+video
+if you have any questions regarding the
+topic you can ask them in the comment
+section
+thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

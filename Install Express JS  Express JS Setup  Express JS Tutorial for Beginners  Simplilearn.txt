@@ -1,0 +1,196 @@
+hey everyone welcome to this video by
+simply learn this is anual and in this
+video we will see how to install express
+js on windows machine but before we
+begin if you haven't subscribed to our
+channel already make sure to hit the
+subscribe button and press the bell icon
+so you will never miss any update from
+simply learn
+so without further ado let's begin
+first we need to download node.js
+because express is a framework of
+node.js
+so without installing node
+we cannot run express in my system i
+have already installed node.js
+you can search for node.js
+node.js
+now here
+you'll find downloads
+you can download node from here
+and install it
+but if you find any difficulties
+downloading node.js you can click on the
+link in the right corner to see how to
+download node.js
+now let's see the version for node to
+verify here i am using visual studio
+code you can go and search it and simply
+download vs code
+after opening your visual studio code
+it will look like this
+here
+you will find a terminal click on it
+the terminal window will open
+here we will write node
+hyphen b
+this will show us the latest version of
+node.js
+now we need to update the npm which is
+node packet manager this bundle consists
+of all the repositories and packages
+required for development purposes to do
+that
+npm install npm globally
+nvm
+install
+npm
+hyphen globally
+this will download all the npm packages
+globally now let's create express
+for that first we need to create a
+separate folder where we will keep all
+the modules and files of express.js
+let's clean this
+tls
+you can open the terminal by clicking on
+the shortcut also by pressing control
+and backtick
+that will open the terminal for you
+let's make a folder
+mkdir
+this is a command that is used to create
+a folder on the terminal
+then we will write our file name i will
+write express
+by
+simply learn
+enter
+here you can see the file name expressed
+by simply none has been created
+you can also click here
+and enter your file name
+m.js
+press enter
+as you can see a new file has been
+created
+now we need to install a package manager
+that is npm
+we will write a npm command
+open your terminal again
+write a command
+npm
+init
+enter
+enter
+version enter description and
+description you can write express
+tutorial
+by
+simply learn enter
+enter
+enter
+hit repository if you have your git
+repository you can add yours enter
+enter
+author
+we learn
+license enter
+press yes
+after this
+you can see npm created a json file
+now we will finally install express.js
+we will write
+npm
+install
+express
+enter
+now as you can see our express is
+installed in our system
+let's open the app.js that we have
+created earlier
+now
+we will create a express application
+with the help of express functions that
+we can do by requiring the express
+modules let's create our first program
+first
+constant
+express
+require
+express
+in this line we are requiring the
+express module
+const
+l name equals to
+function
+express
+dot get
+to get the file
+request response
+to get the request and the response
+of the user
+function
+we will need to pass callback function
+here
+let's write
+response send
+this message
+will be shown
+in the server
+welcome
+to
+welcome to simply learn
+now here
+we will write a port number where the
+message will be shown to us
+at dot lesson
+four thousand
+you can write anything
+here also
+we are passing the callback function
+console.log
+in console.log we will see the message
+in the console
+listening to port
+number
+4000
+close this line
+save this
+let's run it open your terminal new
+terminal
+now to run this file
+we need to go to the express
+folder
+cd
+express
+by
+simply learn
+we are now in a simply learn folder
+now
+the easiest way is to write the file
+name
+write node
+space
+the file name app.js
+enter
+now you can see it is printing our
+message listening to port 4000
+now we will see a message on the server
+open your chrome
+type
+localhost 4000
+press enter
+and here we go a message is successfully
+displayed welcome to simply learn
+and with this
+we have reached the end of this video
+make sure to like and share it thank you
+for watching and stay tuned for more
+from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

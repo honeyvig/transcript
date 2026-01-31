@@ -1,0 +1,479 @@
+hello guys this is vikish and let's get
+started with today's topic which is
+about walking through a particular
+project using all the concepts which we
+have learned so far so in this session
+we are going to focus on a particular
+project and the project we are going to
+focus is is about an ATM application so
+you might have interacted with different
+ATM Stores in your cities where you go
+in you insert your card you enter your
+PIN and then you can view the balance
+you can withdraw some amount you can
+also deposit some amount from the ATM so
+we will try to look at it from that
+perspective and and we will see what
+kind of different uh Java and oops
+Concepts we can use to build such ATM
+application this is not a super
+versatile application but but this is
+just to give you the idea of how to use
+those oops Concepts to build a simple or
+a complex Java application so let's
+start from the options menu class
+because that will give us is the
+understanding of what kind of
+functionality I'm using and here you
+will use that I am using different
+concepts which I have taught you so far
+in this particular Series so for example
+we are using the io exception we are
+using the hashmap class we are also
+using a scanner class which is used to
+take input from the command line so this
+option menu class is extending the
+account class and I will come to the
+account class in a while but let's see
+what this option menu class is doing
+this particular class has uh it is using
+a decimal format money format class
+which is to denote what kind of format
+of money you have then we have a hash
+map which is storing the couple of
+records of account number to pin mapping
+so we create a map and inside the get
+login method we add couple of entries to
+the map here the first entry the first
+integer is pointing to the customer
+number and the second integer is
+pointing to the pin of the account of
+this particular customer number so if we
+call the get login method this method
+will insert the data after that it will
+ask the customer to enter the customer
+number which has to be one of these two
+if you provide any other value then
+there should be a logic in the
+application to reject the input so
+whatever a customer number the customer
+inputs we pass that inside this
+particular method called set customer
+number again I will come back to that
+and once you have provided a valid
+customer number then this method is
+going to ask you to enter a PIN number
+and remember I told you this is the
+customer number to the pin number
+mapping so whatever customer number you
+select from here you will be providing
+the corresponding pin number and again
+if you provide an invalid pin number you
+will get an error so that will all
+happen inside this try block and if you
+enter any invalid characters in the pin
+number or the ATM customer number then
+you will get an exception which I am
+writing inside the catch block this is
+all what we have seen so far after the
+successful enter of the customer number
+and the PIN number I fetch those values
+from these two methods again I will talk
+about what these methods are doing and
+again I'm doing some basic validation
+checks but things get interesting in
+this method so what we covered so far
+was the get login method let me close
+this method here so we covered the get
+login method the second method which is
+defined in this particular class is the
+account type so here the we will ask the
+once the customer has provided the
+customer number and the pin number we
+will ask the customer to provide the
+account type this application supports
+two different account types which are
+checking account or a savings account so
+whatever so the customer has to choose
+one of them again we will be taking the
+input from the command line using the
+scanner class and then I'm using a
+switch case if the customer entered one
+then I will execute some code for the
+checking account which is defined here
+in the case one and if the customer
+entered two then the case 2 will be
+executed and if the if it enters three
+then I will exit the application by just
+printing assist out so here I'm using
+the switch case construct to provide
+different options to the customer
+there's also a default case specified
+here which says invalid choice so this
+is what is happening in the get account
+type method the next method is if the
+customer has used the option one then we
+call the get checking method so let's go
+to the get checking method which is the
+next method which is defined in this
+particular class so if the customer has
+selected a checking account then we
+provide the following functionality to
+the customer which is the customer can
+view the balance customer can withdraw
+the funds customer can deposit the funds
+to the checking account or they can just
+exit the application and again I'm using
+a switch case here based on the customer
+types one two three or four the
+corresponding case block will be
+executed for example if the customer
+wants to view the balance then this
+block will get executed and I call the
+get account type method if the customer
+selects the 2 as the withdrawal fund
+then get checkings with withdraw input
+method gets called and then get account
+type gets called similarly if the
+customer enters 3 then we deposit the
+fund and for that also I have defined a
+method I will go to the definition of
+these methods as we go along but right
+now we are just building the framework
+so the get checking deposit input method
+will be called to whenever the customer
+selects the option three and for option
+4 we just exit the application so this
+is what is happening in the get checking
+method now if from the account selection
+if the customer selected second option
+which was savings account then we were
+calling get saving method so this is
+where the get saving method is defined
+and again it is following the exact same
+format as we saw in the get checking
+method where we present the following
+options like viewing balance withdrawing
+the funds and depositing the funds in
+the savings account and I have some
+methods defined here for example get
+saving withdraw input get saving deposit
+input so we Define the switch case here
+based on the customer's choices here and
+that is what is happening in the get
+saving method so let me close this
+method as well and that's all what is
+defined inside the option menu class so
+we asked the customer to enter the
+customer number the pin number from this
+get login method then based on that we
+provide the customer the options to
+choose the account type whether they can
+choose the savings account or the
+checking account and based on that
+whatever account type they use we call
+the get checking or get saving method
+and inside this method we provide the
+customer the other options to either
+withdraw the money deposit the money or
+view the balance that is what is
+happening inside this option menu class
+now let's go to the account class and
+all the methods which we saw here will
+be provided a definition in the account
+class you also see this option menu is
+extending the accounts class so an
+inheritance concept is being used here
+let's go to the account class now so
+this is the account class where I have
+defined some private member variables
+like customer number so now you will be
+familiar with the customer number pin
+number which I just described and also
+with the checking balance and the
+savings balance you can also divide this
+account class into two child classes
+where you have a savings account class
+and a checking account class but for
+Simplicity I've kept it to one class I
+am initializing a scanner input which
+will be used at multiple places and then
+I have the Setters and Getters for these
+four member variables so you see set
+customer number get customer number if
+you remember this set customer number
+was called in the option menu class if I
+go back to the get login once we ask the
+customer to enter the customer number we
+call the set customer number which gets
+called here similarly we call the set
+PIN number which gets called here
+similarly once we have said that we then
+we were fetching the values using the
+get customer number and the get pin
+number and that has that is also defined
+here in terms of the Getters get pin
+number and get customer number similarly
+we also have the Getters for the
+checking balance and the saving balance
+member variables we do not have the
+Setters for them because they are not
+technically Setters but we have to
+calculate the balance it's not a simple
+Setter where you can just return the
+value so now let's look at some of the
+business business functions of the
+account class how do you deposit how do
+you view the balance how do you withdraw
+the balance Etc so you see these two
+methods which are specifically when the
+customer is trying to withdraw the money
+from their account and these methods are
+basically called internally by other
+methods so we will come to that let's
+see that let's just understand that we
+have two methods for calculating the
+withdrawal amount or executing the
+withdraw transaction for the checking
+account account and the savings account
+similarly I have two more methods here
+which are calculating the depositing for
+the checking account and calculating the
+depositing for the savings account and
+then we get the the bigger methods which
+are using these calculation methods so I
+Define four calculation methods so far
+calc checking withdraw calc saving
+withdraw calc checking deposit and calc
+saving deposit basically we're drawing
+in deposit for both of the classes and
+then we have these business functions
+called get checking withdraw input and
+get saving withdraw input get checking
+deposit input and get saving deposited
+so these getter methods are something
+which were being called from the option
+menu class if you remember if you go
+back to the option menu class and if you
+chose the checking account you get these
+options and let's say you chose option
+two which was withdraw funds or option 3
+which was deposit funds then the
+corresponding methods which were being
+called were get checking withdraw input
+and get checking deposit input and this
+is the exact same method get checking
+withdraw input and get checking deposit
+input so if you see what is happening
+inside this particular method is couple
+of sellouts then we take the scanner
+input amount and which we convert that
+amount to the double after that we check
+if the amount which the customer wants
+to withdraw is smaller than the checking
+balance or not and I'm running this
+condition to check that if the amount is
+smaller than the checking balance then
+we call the Cal checking which draw
+method which was defined right here
+remember I told you that these four calc
+methods will be used and this is how
+they are used so here I'm actually
+subtracting the value so whatever amount
+the customer wants to withdraw subtract
+that from the main balance and then
+return the new main balance that's what
+you do right if you have thousand rupees
+and if you want to withdraw 500 you
+subtract 500 from thousand and then you
+send back the remaining balance so that
+is what is happening when we call this
+method and then we print the new
+checking account balance that is what is
+happening in the get checking withdraw
+input method similarly if you chose
+option 3 which was depositing funds to
+the checking account then get checking
+deposit input gets called and it is
+defined right here get checking deposit
+input and here instead of subtraction we
+are doing the addition so here I'm again
+doing a condition check that the current
+balance plus the new amount which has
+been supplied by the customer from the
+command line the total sum of it should
+be greater than zero what if the
+customer entered an amount minus five
+thousand I should not allow that so
+that's the reason I'm putting this
+condition in place and if the current
+balance plus the new amount which is
+supposed to be deposited to the account
+the sum of it is greater than zero then
+call the calc checking deposit method
+and this is where the calc checking
+deposit method is present and we are
+just doing present balance plus the new
+amount and returning the New Balance
+that's all which is being done here and
+you will see exactly similar logic
+running for the savings account as well
+if you look at the get saving withdraw
+input which is used to withdraw money
+from the savings account so I take the
+input from the command line and I run a
+condition check that the amount which
+the customer wants to withdraw should be
+less than the current saving accounts
+balance if yes then call calc serving
+saving withdraw method which is defined
+here where I subtract the amount from
+the current balance and I return the new
+balance and similarly you will see the
+exact same functionality in the get
+saving deposit where we add the money
+instead of subtracting the money and
+this is all what is defined in the
+account class so we talked about the
+option menu class we talked about the
+account class and now we have the ATM
+class which is the entry point which
+basically initializes the option menu
+class and calls the get login method
+remember get login was the first method
+which asked you to provide the customer
+number and then get login called the
+method to choose the account type and
+the account type methods then called the
+method to choose the option to withdraw
+deposit or exit so now we have built a
+fair understanding of what is happening
+in this application so let's run this
+application so I just ran this
+application and let me bring the console
+here it's first asking for a customer
+number so I will go to the option menu
+class and I will pick up one of the
+customer number which I have hard coded
+here so I will provide that customer
+number and hit enter then it asks me for
+the PIN number so remember you have to
+provide the correct pin number
+corresponding to the customer number so
+I'm taking this pin number just copying
+it and pasting it here then this whole
+code got executed and then it called the
+get account type and the get account
+type method provided you with these
+options which you see here on the screen
+so based on what you select the case
+block will get executed and let's say I
+want to go for a checking account so I
+press 1 and I hit enter once you select
+the checking account the case one gets
+selected and it calls the get checking
+method and the get checking method again
+provides you with another menu to
+withdraw view view withdraw or deposit
+or exit so let's say I want to deposit
+funds so I press 3 and hit enter it says
+the current balance is 0 and enter the
+amount you want to deposit let's say I
+want to deposit 500 and I hit enter you
+get the message saying the new checking
+account balance is 500 and you have
+successfully deposited the money and
+that is what I did for the checking
+account now let's try to withdraw
+something from the taking account so you
+again get back the same option because
+inside the get checking method we call
+the once we have successful fully done
+the business operation we again call the
+account type method to display the menu
+again to the user so let's say again
+select the checking account class and
+this time I want to withdraw the funds
+remember I've added 500 there so let's
+say I want to withdraw so I choose the
+option 2 as the choice current balance
+is 500 and it's asking me the amount you
+want to withdraw from the checking
+account so I enter let's say 100 and I
+hit enter when I do that the new
+checking account balance becomes 400 so
+the 100 got subtracted from the 500 and
+the new balance is shown to your screen
+you can do exactly the same thing for
+for the savings account as well and
+let's also run a negative condition so I
+again select the checking account and I
+want to withdraw the funds so I choose
+the option two current balance is 400
+and I I would like to withdraw thousand
+what happens if you do that we get a
+message saying balance cannot be
+negative and this is coming from the
+calc checking method which which is
+defined here so what is happening that I
+wanted to with draw the funds from the
+checking account and here get checking
+withdraw input dot called here this
+condition was checked so the checking
+balance was 400 and the amount I wanted
+to withdraw was 1000 so 400 minus 1000
+is not greater than equal to zero so it
+jumped into the else block and it said
+balance cannot be negative so this is
+how you can also build some error
+conditions in your code which are
+mandatory and which should be built
+otherwise your application will have lot
+of bugs we can also exit the application
+so if you just type 3 and hit enter you
+will exit from the application and it
+will come in it will again call the
+login method where it will again ask you
+to enter the customer number so this is
+how you can run this application and
+this is this was a simple use case for
+you to show how you can use the
+different object-oriented Concepts like
+classes objects methods Setters Getters
+switch case
+Etc to build the application with the
+correct business logic and this is all I
+want to cover in this particular session
+and in the next session we are going
+going to have a look at another
+interesting core Java project just to
+build our understanding more better
+about the core Java concept and if you
+like this video a thumbs up would be
+massively appreciated and please don't
+forget to subscribe for more programming
+related videos thank you and we'll meet
+again in the next session
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in Cutting Edge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know more
+[Music]
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,1360 @@
+foreign
+is one of the emerging programming
+languages and according to the most
+recent figures python is the most used
+coding language for about 80 percent of
+developers and the syntax of this high
+level programming language is simple to
+understand
+and pythons lives Library System makes
+it a best choice for data science
+machine learning and artificial
+intelligence projects
+so hello learners welcome to Simply
+learns YouTube channel and today we will
+be doing photo manipulation using python
+but before we begin if you love watching
+Tech videos subscribe to our Channel
+like the tutorial and hit the Bell icon
+to now miss an update
+and let us have a simple question to
+brush upon our knowledge that would be a
+quiz question
+and your question is which one of the
+following has the highest precedence in
+the expression
+and your options are
+first option is division second is
+subtraction third is par and the fourth
+is parentheses
+please answer in the comment section
+below and we'll update the correct
+answer in the print comment you can
+pause the video give it a thought and
+answer in the comment section and I have
+an insightful for you guys
+so if you're focused on building strong
+Foundation skills for career growth in
+that case you can check out a free
+course to Learn Python Basics with a
+completion certification from scale up
+by simply learn and you can check this
+python Basics free scale of course with
+the link in the description below and
+with here we'll start a tutorial and
+first I will show you
+the pillow Library
+with which we would be doing the photo
+manipulation
+and in this video we will learn how to
+modify and manipulate images using the
+python pillow Library
+so pillow Library it's a fork of the
+Python Imaging library that is pil and
+it allows us to do many different things
+to our images such as changing the file
+extension resizing the image cropping
+the image changing colors of the image
+blurring it and many more tasks
+pillow is extremely useful when you have
+multiple images you wish to process at
+once for example you can use pillow to
+automatically create different size
+thumbnail of image you upload to your
+web server
+to see you could just
+go to the pillow
+website
+this is the official website you could
+see the command to install the pillow
+module that is PIP install below you
+could simply copy it and paste in your
+command prompt and run it the pillow
+module would be installed for you
+and if we go to its documentation
+you can see all the properties here and
+the classes
+that are image file module image filter
+module image font module animation
+module so these are all the module all
+the classes that are in the pillow
+Library
+so we would be using some of them
+and to start with
+first we'll create a folder
+and name it as
+photo manipulation
+using python
+and here we will open the command prompt
+and write the command code space period
+this will open my ideally that is I am
+using the visual studio code you could
+use any ideally that you have Hands-On
+any Jupiter notebook
+spider you could use any and here we
+will create the file and name it as
+pick
+Dot py
+and to manipulate image we need an image
+so for that
+we can visit
+a website that is freepik.com
+and here
+I will
+do the manipulation on a mountain image
+so you could just search
+any keyword here
+I will use this image
+it will need your login you can just
+login into that
+and click on the download option okay it
+interact with me again
+and click on download and download the
+free option
+okay
+now
+we'll go to the downloads and copy that
+and paste it in a same folder
+so that we don't need to write the path
+to the image and name it as picture
+and the extension of this image is jpg
+so now the first thing to start with our
+project is
+install the packages and import them
+to install the package
+we will write the command tip install
+pillow and press enter
+you could see that it states that the
+requirement is already satisfied
+that is I have already installed the
+pillow Library so I don't need to
+install it again
+you could just write the command to
+install that and if you get any error or
+any mistakes
+you could just comment down the video
+and we will get to help you
+so starting with first we'll import the
+library
+so first we'll write from eil
+will import
+image
+that is the image module
+we will be using image enhancer
+and the image color
+let's
+get Capital CIA image column
+so the first thing we will be doing is
+opening the image that is
+getting the image and after that we will
+do
+many manipulations with that
+so first we'll create a variable and
+name it as image and
+here we will use the image module
+and its open function
+to open the image and in the inverted
+comma so you pass the name of the image
+else you have to pass the path where the
+image is stored as it has been stored in
+the same folder we will
+processing with our project so here we
+just need to pass the name of the image
+we'll save this
+and run it
+so it has open the image and to get the
+image displayed we will just write image
+Dot
+show that is the show function
+we will save it and run it again
+it takes time to open the image in your
+default
+image application so you could see the
+image here
+we'll close it
+now you have seen how to show an image
+and we have opened the image
+so we'll command this
+add
+move to another
+property that is resizing of the image
+so first we will comment down the
+heading that is
+resizing
+of the image
+and here first we will create a variable
+and name it as new size
+and in this
+we will
+write the size we want for a new image
+that would be 300 comma 300.
+that is the width and the height of the
+pixels
+and now we will create another variable
+that is image underscore resized
+and inside it we'll use the variable
+image in which we have stored at image
+that is picture.jpg
+and use the resize function here
+and will pass the new size
+that is the size we want for a new image
+and here
+first we will save this image so it
+would be displayed here in the folder
+only
+for that we will use the variable
+in which we have stored the image
+that is image underscore resized
+and save it
+and inside we will pass
+the resized dot jpg
+that is the name with which we want to
+save the image the new image which we
+have resized
+and we will also write a command that is
+print
+image underscore resized
+dot size
+so the size would be displayed and we
+would be confirming
+that we have code the resized image so
+we will save this and run it
+so you could see in the output that it's
+showing 300 comma 300 that is the size
+of the new image and inside the folder
+you could see that we have the
+resize.jpg
+if we click on that so it's has been
+resized and its size is now 300 crores
+300.
+now we have learned how to resize an
+image now moving on
+we will extract the information of a
+particular image
+so first we will comment this down
+and write a heading
+that would be
+image information
+and the first thing we would be
+extracting would be the size of the
+image for that you would simply write
+print
+and the size of the original image that
+is the picture.jpg and it's stored in
+the variable image
+for that we would write image
+Dot
+size
+and the next thing we want is the file
+name
+put that to write print
+image Dot
+file name
+and the next thing we want is
+the format of the image
+and the next thing is the format
+description
+image node
+format underscore description
+so we'll save it
+and run it
+so we could see that the size is
+5914 comma 3943 that is the width and
+the height of the image and the second
+is the file name that is pitcher.jpg and
+the third is a format that is JPEG and
+the fourth is the format description
+that is JPEG and it has ISO 10918
+now we have seen how to extract the
+information for a particular image
+now
+if you want to see how many images with
+a particular extension are stored in a
+folder you could run a loop for that and
+extract all the name of the files
+so I will show you how to do that first
+I will comment this down
+and first of all write the heading for
+that
+that would be
+get all the images
+with same extension
+from a folder
+okay
+and for that we would be requiring the
+OS module
+I will import it import
+OS
+and you need to install that module
+so for that you could visit the official
+website of the OS module that is py pi
+Dot oig and the OS iPhone SOS
+so you could see this command that is
+PIP install OS iPhone SOS you could just
+simply copy this command
+and paste it in your terminal
+and press enter you will get this module
+installed in your system
+now moving back
+okay
+here we will run the loop
+that is 4
+a variable f
+n
+o s dot
+list directory
+and inside will pass period inverted
+commas
+semicolon and write a conditional
+statement if
+F ends with
+foreign
+jpg
+then
+we will
+print all the files
+now we'll save this and run it
+you put C
+that it has stated two files that is
+picture.jpg and the resized.jpg
+that are both the files that is present
+in a folder
+so now you have understood how to
+extract the files with the same
+extension from the folder
+moving on
+we'll see how to create a blank image
+and to create that
+first we will write the heading
+create
+a blank image
+okay
+so first we'll be creating a variable
+and name it as image underscore blank
+[Music]
+here we will use the image class
+and the new function and inside
+we would write
+rgba
+and pass the size
+for the image that is 1000 comma
+600.
+and after that we would get this image
+shown
+that would be image underscore blank
+and
+that is the variable in which we are
+storing the new image and use the show
+function to get it displayed we'll save
+this and run it
+you could see uh my picture application
+has opened and this is the
+image that is the blank image
+and to get its information you could
+check it we will get the size of the
+image
+so first we will comment this down
+else it would take time to open that
+application again
+so we'll get
+printed that is image underscore blank
+dot size
+and save this and run it
+so you could see in the terminal that is
+the output 1000 comma 600 that is the
+size so you could verify that your blank
+image has been created
+now we'll see how to rotate an image so
+first we will comment this down
+and move ahead and write a heading that
+would be
+rotate an image
+okay
+so for that we will create a variable
+and name it as image underscore rotate
+and inside we will use the variable in
+which our original image is stored that
+is image and use the rotate function
+and inside will pass the degrees to how
+many degrees we have to rotate this
+image I have passed 60
+and after that I will get the image
+displayed that would be image underscore
+rotate that is the variable name in
+which we are storing the rotated image
+and use the show function to get it
+displayed
+and save this and run it
+so it will open the application and that
+is the default application in
+which I open the images
+so it has opened that
+you could see that the images has been
+rotated by 60 degrees
+and you could see the corners they are
+not displayed properly they are cutted
+in the frame
+so to get these
+this plate in the frame and don't get
+the corners
+sloped out or cut out we would use a
+property that is expand
+and state it as true
+so we will save this
+and run it again
+so it takes time to open the application
+and show the image
+so we'll just wait for that
+the application has opened
+and you could see that the image has
+been rotated by 60 degrees and it has
+been filled in the frame it's not out of
+the frame
+so there are other properties also
+for rotate
+as you can fill the color in the frame
+that is in the background of the image
+so
+I will tell you how to do that
+we'll use
+fill color
+variable and inside
+we would use
+image color class
+on the module
+and use the
+get color function
+and inside will pass the color we want
+and the colors that are present
+in any image that is RGB
+red green blue
+and now
+I want this image to be shown that
+command is here only I have saved it and
+run it for you guys
+so it will take time to get the
+application open in which we will see
+the color
+you could see that the background is
+filled with the red color
+you could also change the color that is
+we will display green color
+in the background we'll save this and
+run it
+it takes time to open the application so
+it just opened and you can see that the
+background is filled with the green
+color
+now we have seen how to rotate an image
+now we'll see how to crop an image
+so we will comment this down
+and
+down and first we will write the heading
+that is
+crop and image
+and here we will create a variable image
+underscore group
+and inside we'll use the variable in
+which we have stored our original image
+that is image and use the crop function
+and inside will pass four parameters
+that is leftex top wire right X and
+bottom y I will
+write those parameters
+that is left
+X
+top y
+and write X
+and the bottom line
+okay so we'll pass some for
+this image
+first I will pass 0 comma 0
+comma
+zero
+no not zero
+could be around 1500
+and
+1500.
+so I will
+save this and first get it displayed
+so for that I will write
+image underscore group and use the show
+function
+to show that
+save this and run it for you guys
+and you can see that it has used zero
+zero and that is 1500 and
+downward hits
+1150
+okay
+I will close that and will show you the
+original image
+and save this
+and run it again for you guys
+so now I will show you
+this is the original image and this is
+the left X
+top 5 right X and the bottom Y
+coordinates
+and what we have got is
+that is 0 0
+1500 that is the right X and one one
+five zero that is the bottom y
+okay
+so now you have seen how to crop an
+image
+now we will just comment it
+and now we will see how to flip an image
+so for that first we will write
+the heading that is
+clip an image
+and for that first we will create a
+variable that would be image
+underscore first we will flip it in
+horizontal manner
+horizontal
+and
+inside we will use the variable in which
+we have stored the original image that
+is image and here we will use the
+transpose function
+transpose
+and inside we'll use the image class
+and
+then the trans
+pause function
+and now
+we will write the property to flip it
+from left to right so for that would
+write
+in capital letters flip underscore
+left underscore
+right okay
+and now
+I'm going to get this image displayed
+for that will write
+image
+underscore horizontal that is the name
+of the variable in which we have stored
+the flipped image and use the show
+function to get it displayed we'll save
+this
+and run it
+you could see that the image has been
+flipped I will show you
+with respect to the original image that
+is you could see these Rocky Mountain
+and it is flipped
+from left to right and it's here now
+now
+we will see how to flip an image in
+vertical Direction
+so for that
+we will create a variable and name it as
+image underscore vertical
+and inside we will use the variable
+image in which we have stored the
+original image and use the transpose
+function
+and inside
+we'll use the image class
+and then
+the transpose function and here we will
+write the command to flip it from top to
+bottom clip underscore
+top underscore
+button
+and we will get this image displayed now
+so
+we'll write
+its variable name that is image
+underscore vertical
+and save this
+and run it for you guys
+so as you can see that this application
+to open this image it takes time
+now just wait for that
+or it has open this application
+and you can see that the image has been
+flipped
+I will
+open the original image
+so this is the original image and this
+is the flipped image
+so we have flipped the image from top to
+bottom
+and there's another property that is
+transpose only
+what it does it first flip the image
+from left to right and then top to
+bottom
+we can see that also so for that first
+we'll create a variable that would be
+image underscore transpose
+and
+here we would
+use the image variable in which we have
+stored our original image and the
+transpose function and inside
+we will use the image class
+then the
+plants pose function and here
+the method would be transpose and that
+would be in the capital letters
+and we will get it displayed
+suppose
+not show so we'll save this and run it
+for you guys
+it is taking time
+to open that application to show the
+image
+so we'll wait for that
+so you could see that
+we will open the original image
+so first it has flipped it from left to
+right and then top to water
+you could see that the rookie mountains
+are here so first it has flipped it from
+this side and then top to bottom
+now
+uh there are other options also that is
+rotate 90 degrees
+transverse transverse would be first it
+would
+flip it from right to left and then
+bottom to top so I will show you one
+more option that would be transverse
+and then we could move to another
+properties
+of below so we'll create a variable and
+name it as
+image underscore transverse
+and I will use the image variable in
+which we have stored the original image
+that would be image
+Dot
+transpose function and inside
+we'll call the image class
+and use the transpose function
+and then
+we'll write
+that transpose option
+not transpose that would be the
+transverse
+transverse okay
+now to get it displayed we will just
+get its variable with the show function
+that would be image underscore trans
+verse dot show and save this
+okay we have an area
+trans
+okay now it's correct
+so we'll save this and run it
+it takes time to get that application
+started and display the image
+so the application has started and you
+could see that first it has rotated the
+image
+left to right
+that is first we have done that left to
+right and then
+from
+bottom to top
+now first it has rotating the image
+right to left and then bottom to top
+okay now moving on
+you will see another option and that
+would be very fast I will copy this
+and paste this
+and we will rotate it by 90 degrees
+okay options to rotate it by 90 degree
+80 degree 180 degree or 270 degrees
+so for that we will just replace this
+with rotate
+underscore 90.
+okay and we'll get it displayed
+and save this and run it
+so it's taking time to open the
+application
+we'll wait for that
+now the application has opened and you
+could see that the image has been
+rotated by 90 degrees
+so you could use other options that
+would be rotate 180 degree rotate 270
+degree
+but moving on
+now we will move and now we'll see how
+to
+like increase the size of the image
+so for that we'll write the command
+increase the size that would not be the
+coin that would be the heading increase
+the size of the image
+foreign
+so first we'll create a variable and
+name it as scale factor
+and inside we will pass to
+that means we'll just double the size of
+the image
+and now we'll create another value
+variable and name it as new
+and inside this variable
+we'll use the image variable in which
+our original image is stored and use the
+size function
+and take the value that is stored in the
+zeroth index
+and multiply it with this scale factor
+okay and now
+this is the height and now we will
+multiplying the width and that is stored
+in the first index
+of the size image dot size
+and first index that is the
+width and then the height height would
+be stored in the first 10 times
+now we'll multiply this with scale
+factor
+okay
+now we will create another variable and
+name it as
+New Image new underscore
+image
+and
+here
+we will just use the resize function to
+the original image that is stored in the
+image variable and
+inside will pass the variable in which
+we have
+get the new parameters of the size
+that is new
+now we will display the image
+it is
+the new underscore image
+and use the show function to display it
+so I'll save this and run it
+so it will take time to open the
+application and get an image shown
+so you could see this is the new image
+and to confirm that it has double it
+size we'll just write the command print
+and the name of the image that is new
+image
+and use the show function
+not so function the size function
+to get the size that should be doubled
+and will comment this
+command so that
+it doesn't take much time
+we should only get the size as the
+output only and that would be in the
+terminal
+so you could see the size that is one
+one eight two eight and seven double
+eight six and
+the original size was
+you will get the original size also
+printed here so for that we will write
+the command print
+and inside will pass the variable name
+in which we have stored our original
+image that is picture.jpg
+and use the size
+function we'll save this and run it
+so you could see that
+okay
+this is the original size of the image
+and this is the size of the image that
+we have multiplied by Factor two that we
+have doubled the size of the image
+so now you have understood how to
+increase the size of the image
+now moving on
+we will use another class of the pillow
+library that would be the image enhance
+or the image enhance module
+in which we would be
+enhancing brightness
+doing grayscale to the image
+so first we have to import that
+I have imported that
+okay
+so first thing we would be doing is
+converting the image to grayscale in
+other words we can say black and white
+that is storing a grayscale image
+instead of a multi-colored image and it
+is more efficient and it's easier for a
+machine to understand it
+so for that
+we will create a variable that would be
+IMG
+and
+in that right image
+dot convert
+and inside we will pass
+l
+and we'll save this image
+so we have used the save
+there and we'll pass the name of the
+image for
+which you want to get it stored
+we will name it as grayscale
+dot jpg
+so we'll save this and run it
+you see that grayskill.jpg
+has been stored here so you could see
+that
+the command has converted the
+image into black and white that it has
+applied the grayscale defect
+and this is our original image
+now moving on now we will add some light
+to our image except click
+if there are shadowed image we could add
+some light that is adding brightness
+with the help of the machine
+so for that we'll write a command
+and first
+we will just comment this down
+and first we will create an enhancer
+here
+for that we'll write a command color
+underscore enhancer
+and here we will use image
+that is the image enhance module
+and here we will use
+first the brightness
+and inside we will pass the name of the
+variable in which we have
+stored the original image
+so let's find some error
+okay now I will give it downwards
+so here we'll create another variable
+and that would be enhanced image
+and here we would
+name it as brightness enhancer
+okay
+and we'll use this variable here that
+would be brightness
+enhancer
+and here
+we'll use the enhance function
+and inside we will pass to which extent
+we want to enhance the brightness
+so we'll just write
+1.8 you could write any float values or
+integer values
+we have imported image enhance
+okay
+I'm losing it
+okay so we'll save this
+and run it
+so we could see that we have written a
+wrong spanning of the module that is
+image enhance
+and we have imported that in the
+starting only
+so now
+we'll use the show function to get the
+image displayed with the brightness
+enhancer
+we have to set the value
+of the enhance here
+that is I will set it as 1.8
+or in starting I would set it as 6.
+and now I will use
+an enhanced underscore image
+and use the show function to get the
+image displayed
+and save this and run it
+so it takes time to open the application
+to display the image
+so we'll wait for that
+we get any error
+image and hands
+okay I think this is the previous one so
+we'll just run it again
+okay it hasn't
+open that and this is the image and
+just don't close all the previous images
+and it has opened another image that is
+with the brightness and at an intensity
+of 6.
+so we're going to decrease the intensity
+and
+pass 1.8 as intensity and run it again
+now
+we're just waiting for the application
+to open the image and after that we can
+see the intensity of the brightness
+that we have set at 1.8 so you can see
+that the image hand has been enhanced
+with the brightness
+and that too with the intensity 1.8
+now
+we will
+see the color enhancement in our
+original image
+over that
+we will create a variable
+that would be color underscore enhancer
+and inside should use the module that is
+image enhance
+and use the color function
+and inside will pass the variable in
+which we have stored the original image
+that is it would enhance the Vibrance of
+the image
+and here we will pass the intensity
+and first we will change the variable in
+which we want the enhancement
+that is color underscore enhancer
+and
+we will enhance with an intensity of
+5 so we'll save this
+and run it
+so our application takes time to open up
+as I have to clear some
+but I am Instagram management for my
+system has not been set up properly you
+could see that
+the color has been announced or there's
+a Vibrance here
+so we have seen two options that is the
+brightness and the color now we'll see
+about contrast
+so for that we will create a variable
+that would be
+contrast underscore enhancer
+and here we'll use the image
+enhance
+Library
+and use the contrast function
+contrast and inside will pass the image
+variable in which we have stored our
+original image
+and inside this enhanced imaged variable
+we will change the variable name
+with contrast enhancer
+and we'll set the enhancement by 5 only
+and to display
+that image
+okay that would be the same variable
+only
+we'll save this and run it
+and after this contrast enhancement we
+will do sharpness enhancement
+so you could see that the contrast has
+been enhanced with an intensity of 5.
+now moving on we will shift to
+sharpness and answer
+and for that we will create a variable
+and name it as sharpness underscore
+enhancer
+and use the image enhance module
+and its function that is sharpness
+and inside we will pass the variable
+that would be image in which we have
+stored our original image
+and in a in this variable that is
+enhanced image we will replace this
+contrast enhance our variable with
+sharpness and answer
+and we'll enhance this
+with an intensity of
+6.
+so we'll save this and run it
+and we have the show function we need
+that
+is it will display the image with the
+sharpness
+so we're just waiting for our
+application to open that image
+so you could see in this image that the
+sharpness has been increased if you want
+to see the original image I will show
+you that
+so this is the original image
+and this is the image with the sharpness
+increased or enhanced with an intensity
+of 5.
+now we have seen how to enhance the
+image
+now we'll see
+how to use filters
+in our image so we'll just comment it
+and we'll see some basic filters that
+would be the blurb filter Contour filter
+and some Edge filter
+so for that
+move downwards and we'll be using the
+image filter module and we have to
+import that
+and for that we will write the command
+image
+Delta
+and now we will start with
+some of the basic filters
+using
+filters
+in here we'll create a variable that
+would be image underscore blur
+and inside this
+we will use the variable image in which
+we have stored the original image and
+then the filter function
+and inside will pass
+or use the image filter Library the
+module
+and its blur function
+okay
+and now we will get this image displayed
+and for that we'll just
+write down the variable name that is
+image underscore blur and use the show
+option to get our image displayed
+save this and run it
+you would be knowing that this
+application would take time to open that
+image
+so we'll wait for that
+so
+we could see that it has blurred the
+image
+now if you want I can just in case it's
+intensity
+now we have seen how to blur the image
+or how to use the filter
+now we'll see some other filters that is
+Contour
+for that we'll create a variable image
+underscore
+Contour
+and here we will use the variable image
+in which we have stored our
+original image
+and after that we will use the filter
+and inside we'll use the image
+filter module
+and the function
+that is Contour
+image filter
+foreign
+capital and now we'll
+get this displayed
+and use the show function for that I'll
+save this and run it
+so our default application that would be
+displaying this image
+and moving on we would be seeing some
+other filters that would be the detail
+filter
+and
+The Edge enhancement filter
+so we have just used the control filter
+you could see the effects of that
+now moving on we will use the detail
+filter so that will create a variable
+that would be image underscore detail
+and inside we would use the image
+variable and the filter function
+and inside this function we'll use image
+Builder module
+and then the
+detail
+filter
+and after that we will get it displayed
+just replace the name of the variable
+save this and run it for you guys
+so an application takes time to open
+this image
+now an application has started
+so here
+we have used the
+detail function detail filter
+you could see the details
+now moving on
+we will use other filters that is
+Edge enhancement or hnns
+so for that
+we will create a variable that would be
+image underscore
+h
+and here we'll use image Dot
+filter and inside reduce
+image
+filter
+module
+and use the
+Edge enhance filter
+so
+it would mean the capital letters only
+and here we will change the name of the
+variable with the show function
+save it and run it
+now we are waiting for my application to
+show that image and the effects of the
+filter that is it would enhance the
+edges of a image
+and we have one more filter that is H
+enhanced mode that is output enhance the
+edges of the picture at a very much
+extent
+so this is the filter for antennas and
+now we'll see another filter
+that would be
+we will
+change its name of the variable
+and name it as
+underscore more
+and inside we would use image variable
+and the filter function inside will
+reduce image filter
+module
+and filter would be
+underscore more
+we will save this
+and
+okay
+it will carry out
+so we'll just
+changed the name here
+and save this and run this
+and after this we'll see some other
+filters that would be ambos sharp smooth
+and there's one more filter that would
+be smooth more
+so this is the
+Edge
+that would be Edge enhance more
+so
+moving on we'll see some other filters
+that is we'll start with
+uh we have another filter for edges
+okay this is the output for the edge
+enhance mode
+and close this and we have another
+filter so some filters are not applied
+to this particular image as if your
+image has
+some
+particular edges it would enhance them
+more with this filter
+so here we would be using another filter
+that would be fine edges
+so for that we'll create a variable
+image underscore point
+and
+write image.filter
+and inside would pass
+image filter module
+and inside would pass the filter name
+that is find underscore
+edges
+and here we'll change the name of the
+variable
+that is fine
+and save this
+and run it
+till then we could get a variable for
+another filter that would be embossed
+foreign
+pass image
+filter
+and the emboss
+let's save this
+it won't
+so first one complete this emboss
+[Music]
+filter
+so we'll save this and
+run it so it would show the output for
+the image underscore find variable that
+is where we have used the filter that is
+the find underscore edges
+so it will show the
+edges
+in a picture
+waiting for our application
+to open the image
+so in this you could see the edges and
+to get into the technology of the edges
+you could search it on the web
+so like if you want to be
+of
+person who uses Photoshop so you would
+be knowing that like
+what are these terms
+so now we have used the emboss filter
+we will just replace it in the show
+function
+that is image underscore numbers we'll
+save this and run it for you guys so we
+will get the output for the emboss
+filter
+you just wait for the output
+as our application is taking so much
+time to get output
+so this is the ambos build up
+moving on we have some other filters
+that is
+sharp so we'll just copy the command
+paste it
+and
+rename the variable as
+image underscore sharp and inside the
+filter
+we'll just
+pass
+the filter name that is sharpen
+and here in the show function we'll also
+rename
+that is shot
+and save this
+and run it
+so this is our output for the
+sharp filter
+now we will see another filter
+that is smooth
+so for that we'll just
+replace the variable
+I've just renamed it
+and we will use
+the smooth filter we will save this
+and we'll just
+change the name here that is smooth
+save it and run it
+so you could see the output
+that is for the smooth filter
+now we will see
+some rank filters
+so first we will command these filters
+and
+for these rank filters
+you will create variable that would be
+image underscore Main
+and that would use the image variable
+and the filter
+function and inside
+that will use image
+filter
+and the main filter function
+inside we will pass the size
+okay sorry
+I'm using the period here
+size that would be equal to 5.
+and
+we will get it displayed
+and save this and run it
+so this is the
+uh so this is the output for the
+minimum rank filter
+and with this size equal to 5.
+and similarly we have other filters that
+is the median and the max
+for that we'll just copy the command
+paste it
+and rename the variable as immediate
+underscore median
+and inside windows filter
+and here we will use
+the median filter
+and in the show function we'll just
+replace it it would be image underscore
+median dot show we will save this and
+run it
+foreign
+that this is the output
+for the median
+filter so we'll close this
+now we will see how to combine some
+filters recommend two filters
+for that first of all write the heading
+that would be
+combine filters
+and here we will create a variable image
+underscore
+emboss
+and here we will combine blur Plus embos
+two filters and for that we'll write
+image.filter
+and inside your pass
+image
+filter
+Dot
+create another variable
+image
+underscore
+members Dot
+filter
+that is we would be
+image underscore emboss underscore blur
+we are using two filters that is emboss
+and blur so we'll create a variable for
+blur here
+that would be equal to
+image
+underscore emboss that is that
+as the most filter now we'll use
+filter here
+and inside this we'll use the image
+filter
+Dot
+chain blur
+and we will give its radius
+that is equal to 3.
+and we'll save this image
+image
+underscore
+glucose blur
+dot save
+and we'll name it as
+99
+.
+PNG
+let me change the extension also
+PNG
+it is emboss blur
+this remorse underscore
+blur
+and save this and run it
+you can see that 99. PNG is
+saved in a folder
+we will open this
+and this image has two filters
+inside it that is ambos and blur
+so you could see this image
+now with that we have come to the end of
+this session
+and I have an insightful for you guys
+that is the python certification course
+that is if you are aiming to get
+certified in Python Programming and want
+to build a python software development
+career in that case you can check this
+python certification course by simply
+learn that will open the doors for the
+best career opportunities and to find
+the details of this python certification
+course you can check its Link in the
+description box below
+and this could be the ideal solution to
+help you build your career in the right
+direction and I will also give you this
+Visual Studio code file that is the dot
+py file in the description box you can
+download it from there and use that for
+your purposes
+and I hope this session was interesting
+and informative if you liked it please
+let us know in the comment section below
+and also do subscribe to our Channel and
+stay tuned for more from Simply learn
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

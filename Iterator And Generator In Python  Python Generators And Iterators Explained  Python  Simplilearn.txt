@@ -1,0 +1,712 @@
+hello everyone welcome to this video
+tutorial on generators and iterators in
+python by simply learn and do subscribe
+to our channel and click on the bell
+icon for more updates
+now what is a generator in python
+python generators lets you create your
+own iterative functions that return the
+traversal object with the sequence of
+values
+so basically even with iterators you can
+only work on list tuples or sets
+but with generators you can convert your
+functions into iterator functions itself
+and we will see that when we will be
+working on a jupiter notebook
+now
+another important feature in a generator
+function is that a yield statement is
+used rather than a return statement
+so basically
+the return statement terminates a
+function entirely if you use it within
+the function and you know basically
+return from the statement while the
+yield statement pauses the function
+there it is and holding all its states
+all its variables the values in the
+variables and then continue
+thereafter on the successive calls
+so basically in a generator function you
+use yield functions and i will talk
+about the utility of this yield
+statement within the generator function
+how it helps in generating pipeline
+but just to hold a thought over here and
+understand the concept the yield
+statement basically holds
+the processing of the function at that
+point and if you make an invocation of
+that generator function again it starts
+from there itself where you left it
+as compared to return statement return
+is a general exit if you make an
+invocation of the return statement from
+a function it will restart again from
+the beginning
+if you invoke it the next time and
+that's the basic
+difference
+so what are the advantages of using
+generators it's very easy to implement
+the code syntactically it's very simple
+within the few line of codes you are
+able to achieve
+the
+you know functions and able to implement
+the logic
+you can generate infinite sequence you
+don't need to provide the range values
+the starting and ending you can generate
+an infinite value and i'll show you that
+with an example
+and
+generators are very memory efficient
+they are the most memory efficient ways
+of processing huge data sets
+they process the data incrementally and
+do not allocate memory to all the
+results at the same time they do that
+incrementally
+they really come in handy when
+implementing data science pipelines for
+huge data sets in a resource constraint
+environment where you have
+you know constraint on the ram and the
+other resources of the hardware
+now another biggest advantage is
+pipelining with generators
+generator pipelines are a great way to
+break apart complex processing into
+smaller pieces when processing list of
+items so basically you can break your
+complex code into smaller pieces and
+then
+invoke them as a generator
+recursively and we will see that how
+but basically you are making the complex
+code look simple and making it invoke in
+a pipeline fashion
+now the another most important function
+in order to deal
+and operate with the generator is the
+next function
+the next function is used to retrieve
+elements from a generator object and
+then print it
+so that's how you basically
+interact with your generate function you
+cannot do that until unless you don't
+use next function
+so now let's quickly
+jump to our examples
+which we are going to support for each
+of these concepts now let's start by
+basically
+creating our
+first
+generator function
+i'm gonna
+create a variable n initialize it with
+1
+i'm gonna do a print
+this is just for my
+logging
+and showing on the console that where we
+have reached
+and then
+i'm gonna say yield n
+okay so now here we are not exiting the
+a function we are just
+saying
+that just uh you know this is the point
+if you invoke the function again the
+function will start from this point on
+now here
+you will
+increment
+and again if this is the second
+checkpoint in the code
+and similarly
+this is the we're gonna have a last
+checkpoint in the code
+now in order to
+create my generator now this is the
+my generator initialization my j
+now if i
+use the next function and invoke my
+generator
+now
+my
+generator has
+been executed till this point right
+n equal to 1
+now if i
+make a second invocation
+now it has moved ahead and printed the
+second so it is behaving like a loop it
+is now behaving like a loop it is
+behaving like an iterator uh but i have
+not created any list i have not created
+any tuple but i am basically traversing
+through the variables through the
+sequence
+of the variables within my generator
+and if i again
+print it
+this is my last this is printed at the
+last so all the checkpoints within my
+generator have been executed
+now
+the same example which i have over here
+let me
+call it in a loop
+okay so what i'm gonna do is i'm gonna
+remove these invocations and just
+replace it
+with a loop call right
+so this generator functions remain as is
+now instead of writing my next
+function
+three times
+i am going to just invoke my generator
+in the for loop and this will get
+invoked the number of times i have yield
+in my generator
+and my output should be
+the you know these logs which i have
+created
+and of course the variables
+yeah so see now what has happened is
+now the output is
+all these three print commands have been
+executed plus the variable values of n
+has been imprinted at each at point 1
+2 and 3
+so when i initialize my item variable
+during the for loop this item consists
+of the variable values which are there
+in my generator
+now
+i'm going to show you
+example of if i use a return statement
+in my generator
+so i am going to create another
+generator
+and provide a value
+now in during this in middle of this
+generator i'm just invoking the return
+and then i am
+printing my second checkpoint
+and then the
+last checkpoint
+now
+i'm going to initialize my generator
+now if i invoke
+my
+first element of the generator i'll get
+it there's no problem because i printed
+the first item i called the value of my
+yield and then i returned
+but now if i invoke my second element in
+the generator
+but before invoking second i have
+already given the return statement
+my
+generator will exit
+and i'll get the stop iteration error
+now this is a python generated
+exception which is denoting that you
+have you cannot move beyond the first
+item because you have returned from the
+generator over here so that's the
+difference if you just remove this
+comment this out
+and then run it
+you will get your second item so it's
+not x the code exits if you write a
+return over here
+so i hope you are able to understand the
+difference
+now let's take another example now here
+we are going to create a list
+and how
+a implicit list like the way legacy way
+we have been creating in python
+differentiates like the way we are
+creating a generator
+so what i am doing is i am creating a
+list with random numbers
+and then another list in which i am just
+square rooting the numbers in that list
+and similarly i'm also creating a
+generator
+which
+i'm expecting the same output in the new
+list as the generator but i'm going to
+show you different ways
+of traversing the generator as compared
+to a list
+now if you see this list underscore if i
+just make a print call to this list
+it's going to straightforwardly
+square root
+the numbers and give me the output 4 9
+64 100
+but if i print the generator
+i will not get the expected output what
+i'm expecting i will just get the
+generator object which is not what i
+desire so basically you can't just print
+the generator like the list
+you have to
+either use the next or you have to
+use the for loop
+which i had shown earlier and print each
+and every item within the generator
+now this is the output which i was
+expecting i was expecting the
+line by line
+output of each and every element in my
+generator 4 9 64 100
+okay
+now this for loop is taking care that it
+is not exceeding
+the number of items the length of the
+items in the generator so this is
+automatically taken care by this syntax
+but if you don't take care of it then
+you will get an exception let me show
+you another example
+if i create a list
+and now i'm creating a generator
+which is square
+of square of all my elements
+so now one by one
+instead of the loop i'm one by one
+printing the output
+second output
+third element output
+fourth element output
+okay i have four now if i try to again
+print
+i'm exceeding the
+length of
+the
+list i'm gonna get an exception stop
+iteration exception because i'm
+exceeding the length right either i use
+the four or if i'm using individual
+print and next function then i have to
+take care that okay how many elements
+are there in the list and i cannot
+exceed beyond that
+else the python will
+raise an exception
+okay
+now i'll show another example of
+highlighting the difference between next
+and
+the for loop printing i'm gonna create a
+uh generator for 2 to the power n
+so i'm initializing n with 0
+and then just
+raising it
+2 to the power n
+now here i'm initializing my generator
+and printing it
+and i am getting the expected output as
+2 raised to the power 0 1 okay
+now another way of doing this job is
+i
+loop over this
+and i get the same output so if you see
+it's only
+i do not have only one element
+so either you use for loop or you print
+using next the output is going to be
+same
+now another important concept which i
+talked about
+if you want to print in finite
+infinite numbers
+so
+or you want to do some infinite
+calculations
+i'm going to use print in
+all
+even numbers
+so i'm going to
+write an
+generator
+which is going to print
+infinite number of even numbers
+so i have created a generator
+and now i'm going to invoke this
+and mind you i have to kill this job
+because it's gonna keep running
+it's gonna keep running keep running
+because it's constantly generating the
+numbers even numbers so i would have to
+stop this
+but if you see
+otherwise this is not possible in any
+for loop the basic for loop you have to
+give a range start and end of the length
+but
+using a generator you can do
+infinite
+looping
+right because here i have to kill this
+job i have to do a keyboard interrupt
+now i'm going to show you an example of
+how you can use generators for creating
+a pipeline
+so i'm going to take example of
+fibonacci series
+create an example of fibonacci two
+variables initialized with zero and one
+and now
+i'm gonna
+write the logic of fibonacci adding the
+two numbers
+to itself
+subsequently
+and i'm gonna add yield
+now this is my generator this is my one
+generator
+and i'm gonna create second generator of
+square
+so i'm gonna
+show you in excel
+what logic i'm gonna apply and what will
+be my expected output
+so i am now squaring the numbers which
+i'll get out as an output of
+fibonacci
+okay now
+i'm gonna
+i'm creating a pipeline
+like this
+first i'm gonna
+generate fibonacci series for the first
+10 numbers
+then
+i'm gonna find the square of each of the
+fibonacci numbers and add it
+so if you see this
+representation in excel
+i'm going to generate
+these are the two variables which i've
+already initialized x and y and from
+here on these
+10
+are my first 10 fibonacci numbers
+i'm going to find
+calculate the square of these numbers 1
+4 9 25
+and till 55 the square of three zero two
+five and then add these numbers and i
+should get the output of four eight nine
+five so if you see one
+function generator second generator and
+the third calculation now this hole
+has been done in one single line of code
+you have generated created two
+generators
+and just invoked them in a single line
+pipeline
+so entire looping
+and you know
+you don't have to write the looping
+operators the for loop and you do not
+worry about writing all that complex
+logic it is all encapsulated within this
+now let me run and i'm going to expect
+this output 48.95
+and here is my output right so in the
+hindsight what python has done is it has
+generated these fibonacci numbers found
+the square of these numbers and then
+added it in single line
+and now this is the convenience
+simplicity which i was talking about
+earlier
+now let's take another example of
+fibonacci
+i'm going to create a generator again
+initializing a and b with 0 1
+and this time i'm taking an example of
+printing the fibonacci in two different
+ways
+okay
+i'm gonna print
+the first
+five fibonacci series number
+the first way i'm gonna do is i'm gonna
+print
+the next function five times because i'm
+generating five
+so let me run this
+these are the first five fibonacci
+number zero one one two and three
+and i'm also gonna use a
+loop
+in order to print
+so now in the loop i am invoking the
+five fibonacci numbers
+and run it
+so either you can
+make individual five individual calls or
+you can use the for loop but the output
+is the
+same
+and you're using a generator
+now what is a python iterator
+pythoniter is an object that can
+traverse through iterable objects in
+python like lists tuples dictionaries
+sets and returns data one element at a
+time so basically you can traverse
+through these layers one at a time and
+then you can use it as per your custom
+requirement but iterator as an object is
+available to you is a tool available to
+you in order to traverse through each
+and every element
+now
+they are implemented within for loops
+comprehensions generators in python
+implicitly they are not visible up front
+but they are hidden in plain sight so
+basically when you're using loops when
+you're using generators comprehensions
+implicitly
+python is actually converting them in
+the back end in an iterator object and
+giving you the results
+now what are iterables on which you can
+iterate
+lists tuples dictionaries sets as i
+mentioned are all iterables or iterable
+objects other than these you can't
+perform any iteration if you have not
+created an object of list tuple or
+dictionary or set then of course your
+right variable will not be of any use
+and
+these objects internally possess an item
+method iter method which is used to get
+an iterator a handle to a nitrater and
+then you can start
+looping it or you can start accessing
+the elements of the iterator
+now how iterator works
+python iterator implements internally
+these two methods which we are seeing on
+the screen underscore underscore item
+underscore underscore brackets and
+underscore underscore
+next underscore underscore bracket
+now these two methods are implicitly
+implemented by python for any internal
+implicit iterator object
+but if you have to write your own custom
+iterator then you need to override these
+methods and i'll show you in my examples
+in jupyter notebook
+the iterator object is initialized using
+the either method so basically whenever
+you have to create a nitrate object you
+need to initialize it with iter and then
+use next method in order to traverse
+through it
+now stop iteration exception so as i
+mentioned when we reach the end of an
+iterable right like suppose you have a
+list or a set which has a length of four
+when you have ended the fourth element
+and you're trying to access something
+beyond fourth element which is fifth
+then of course you can implicitly raise
+a stop iteration exception or python
+will throw it so we will see that with
+an example but you will get a stop
+iteration exception
+now so to prevent in order to
+handle it
+or manage it in your code we use top
+citation statement to raise an error you
+can raise your custom error so you can
+catch this exception
+and then raise your custom error in the
+underscore underscore next method
+so now let's uh support everything with
+our examples
+let's start with a very basic
+uh example of an iterator
+now let me create a list
+with just four
+numbers
+and
+as i said i'm going to initialize my
+iterator with item method so now i have
+created a list and now i am initializing
+it with item okay
+now
+using next i'm gonna print my first
+element four okay
+so it means the iter internally has
+given me handle to the first element
+and now as many times i move print next
+i am moving to the next element
+so now i'm also going to show you a
+different syntax this is a syntax but
+the output will be same it's a different
+syntax to invoke underscore next so it's
+output is going to be same but the
+syntax is only the difference over here
+so you're going to get access to the
+next element
+and then
+my fourth element just 33. now i have
+traversed through all my four elements
+now what will happen if i again do next
+i have ended i am at the end of my list
+so i will get an exception of stopwise
+iteration right and this is thrown by
+python
+now let's take another interesting
+example if i want to perform iteration
+on strings
+so i have created a variable and i have
+initialized it with geeks
+and now i have created an iterator on
+top of this uh
+string variable and i'm going to
+traverse it
+till the time i end reach the end of my
+string
+so let me
+hydrated and i'm gonna iterate till the
+time i get the stop titration exception
+so also i'm actually explaining here how
+to cleanly handle the
+exception accept
+and then break if i get the exception
+i'll break out of this program
+and here you get the result
+all the letters of my string geeks has
+been printed individually
+and i think it's a very important
+example interesting example that how a
+string has been converted now point to
+be noted over here is that python has
+internally invoked underscore underscore
+iter and underscore underscore next
+methods which it has implicitly
+implemented for string iterators so you
+don't need to do anything
+now let's take another example to how to
+traverse through a list
+using for
+loop
+so i'm going to leave for object in list
+and just print the list this is
+without an iterator i'm just printing my
+list so i'm just trying to show the
+difference that if you use an iterator
+or you do not but how you can access the
+elements in the list
+now let's take an example of how i can
+write my own custom iterator
+okay so i'm
+creating a class where i'm overriding
+the init method uh basically
+initializing in is a initialization of
+my class where i'm gonna initialize a
+variable max with zero
+and then
+i am overriding this is the most
+important point over here i am
+overriding iter
+method
+and then
+i am writing another overriding the
+underscore underscore next method
+where i am adding
+6 to my number and then
+incrementing my loop
+so that
+i
+can move further
+so in this underscore next method i am
+just
+moving beyond adding six and till the
+time i reach the max variable so when
+i'll invoke my class
+i am passing nine so it means that i
+should not go beyond
+uh
+10 basically i should start my iteration
+from 6 and will not go beyond 10 9 plus
+1 so i should get numbers which are
+between 6 to 10 as per my expectation
+now before we diagnose the output most
+important point is that how you have
+converted your class to an iterator over
+here
+you in order to invoke make an a class
+in nitrator it is mandatory you override
+it ar and next methods which you have
+done over here
+so now let's print
+okay
+so six so my
+uh number started with zero initialize
+with zero and i added
+six to eight so my first result is six
+and now if i keep printing i will get
+one value incremented
+seven
+eight
+nine
+and
+ten right so this is the expected output
+right
+now
+another example on the same lines i'm
+gonna print the first 20 numbers using
+my iterator
+so i am
+going to overwrite the iter method and
+underscore underscore next method my
+numbers now in this
+underscore underscore next method i'm
+just incrementing my number y one
+not by six and i'm gonna stop at the
+limit twenty
+so like i showed in my previous example
+i'm gonna initialize first my class
+and then
+initialize my iterator and just then
+gonna run a for loop
+and here is the response output i have
+printed the first 20 numbers because i
+have created this limit
+so i am initializing with 1 and going
+till the max 20 number
+but the point is it's not the output
+which is more important over here the
+most important concept over here is that
+you have created your own iterator and
+leveraged it
+i hope you had a great learning session
+and i look forward to meeting you in my
+next session thank you
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

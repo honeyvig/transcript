@@ -1,0 +1,541 @@
+what's up traders welcome back to
+another pantry lesson today's lesson is
+going to be covering how to
+create
+visual tables
+to draw onto your training view charts
+but before we begin today's lesson i
+just want to make you aware of a
+interview i did recently with ivan the
+head of market research over at global
+prime this is global prime's youtube
+channel right here global prime is an
+australian based a book broker now don't
+worry this isn't a paid promotion or
+anything like that i'm just making you
+aware of of what the deal is here
+global prime
+being an a book broker means that they
+do not profit off your losing trades
+most brokers in the retail trading
+industry
+operate what's called a b book and a b
+book is where the majority of their
+losing traders get placed and on this
+bbook whenever you place a trade given
+that the majority of your trades lose
+in the case of a losing retail trader
+you get placed on the b book and what
+that means is the broker takes the other
+side of your trade and profits off your
+losses now we could go into a discussion
+about the ethics of this and whether
+it's moral or immoral or how it impacts
+your trading as a profitable trader if
+you're already unprofitable then it
+really doesn't affect you that much to
+be honest but if you're a profitable
+trader or you're in the process of
+becoming profitable it can be a huge
+problem being switched from a b book to
+an a book and even if there is no
+problem with being on the b book
+just the fact that the incentives are
+misaligned between the broker and the
+client is a big problem if your broker
+makes money off you regardless of
+whether you're successful then what
+incentive do they have to help you
+succeed a broker like global prime
+depends on the longevity of their
+clients the traders that trade with them
+they make their money from commissions
+spread markups and interest markups it's
+a little bit complicated but it doesn't
+really matter the core idea here is that
+a broker like global prime prefers
+profitable traders to be with them
+because the more active you are the
+larger you trade the more often you
+trade the more money they make that's
+also true of b-book brokers except that
+in their case they don't care if you're
+with them next week next month because
+there'll be a new trader to fill your
+spot so a b-book broker prefers quantity
+over quality whereas an a book broker
+prefers quality over quantity out of
+their clients and so they are
+incentivized and motivated to help their
+clients become better traders which is
+why they reached out to me to help
+educate their clients about tradingview
+and pinescript i'm a huge fan of global
+prime and what they do their ethos their
+their technique their way of doing
+business so when ivan reached out to
+interview me i didn't hesitate to say
+yes and so the interview went up this
+morning
+and you can check it out here if you're
+interested you can i'll leave a link in
+the video description but the reason i
+was interviewed by
+global prime is because they recently
+became fully integrated with the trading
+view platform if you're a fan of my
+channel then you know how much of a fan
+i am of view and so it's great to see
+a reputable low-cost broker come on to
+trading view and allow traders to trade
+through their platform directly on
+trading view utilizing the power of pine
+script and the power of the training
+view platform now as i mentioned the a
+book b book thing i'll go into all of
+that in a future lesson i'm still
+learning a lot of it myself to be honest
+this is something that i haven't done
+as much research as i should have done
+being a trader i should know more about
+this information than i do
+but i'm in the process of educating
+myself on the way brokers work how they
+make money what their incentives are
+when it comes to client relationships
+and if you're interested in learning
+more about that head over to their
+youtube channel here and check out their
+playlist
+on how forex brokers make money this
+playlist right here is phenomenal for
+any traders who are curious
+about how the retail trading industry
+works behind the scenes anyway that's it
+i don't want to hold you back any longer
+let's get into today's lesson now this
+is a feature or functionality that was
+added to panscript relatively recently
+and it's something i've been
+implementing into my
+the scripts that i use regularly
+particularly scripts that i use to trade
+such as the script you see here which is
+my ultimate pullback indicator you can
+see up here that i have a bunch of trade
+statistics drawing i've got how many
+trades the script has taken the average
+risk reward
+wins losses long wins short
+win percentage
+break even rate
+break even quantity break even rate
+percentage wise our max adverse
+excursion and max favorable excursion
+the average this is the how far price
+goes on average towards our stop loss
+before going on to hit our take profit
+or how far it goes towards our take
+profit before coming up and stopping us
+out then we have a win rate and a danger
+zone this danger zone is basically our
+break-even zone for this script because
+we're using a one-to-one risk reward at
+the moment our danger zone is 50 so if
+we win 50 or less of the time we're
+going to be losing money and then down
+here we have a bit of a
+custom built back testing system that i
+can put in my starting capital and it
+will calculate my ending capital
+my return
+both in dollar amount and pips and in
+percentage amount
+and my max drawdown percentage
+now in today's lesson i'm not going to
+be covering how to build this out
+because quite frankly it would take
+uh it would take quite a while to build
+something like this we're talking over
+an hour
+of coding potentially and i cover a lot
+of this more advanced um
+these more advanced concepts and
+techniques in the indicators and
+strategies course if you uh want to fast
+track your learning of this stuff and
+add this kind of functionality to your
+own scripts
+but in today's lesson i'm just going to
+be showing you how to draw a table onto
+your chart and then you can populate
+that table or the the cells of that
+table with whatever data you want so to
+start with i'm going to hide the script
+and create a new blank script all i've
+done is set overlay to true
+let's add this script to our chart and
+get started so drawing tables onto your
+chart is
+it's not not too difficult but there is
+there are a few things we need to do in
+order to get it to work there's a few
+steps involved and i'll walk you through
+them now
+uh below the video there'll be a link to
+the trading view blog post that
+announced the release of this feature
+and in that post they include a number
+of examples on how to use tables
+i can't cover every
+minor detail of tables because there is
+quite a lot we can do with them
+today i'm just showing you a practical
+way to draw a basic table onto your
+chart so that you can visually display
+information
+if you want to get really fancy with
+your tables
+that's something that you can learn to
+do by checking out the examples over on
+that blog post
+or just reading through the
+documentation on the trading view
+reference manual
+the pine script reference manual
+so let's get started first thing we need
+to do in order to display information to
+a table is create our table so to do
+that we use the var operator these are
+persistent variables hopefully you've
+learned about these by now if you're
+watching this lesson
+this just means that our table will not
+be
+recreated on every new bar we create the
+table once and then we can update it
+whenever we want to
+so this is going to be a table variable
+so var space table space and then this
+is the name of the variable or the table
+id so for this i'm just going to say
+my
+table and my table is going to be set to
+table dot new
+and then this inbuilt function will
+create a new table for us it takes a
+bunch of parameters
+the first one is the position so you can
+put your table in the i think the top
+right bottom right
+bottom left
+maybe top left i'm not sure that's where
+the indicators
+tend to go so i'm not sure if you can
+put in top left but you can put it in
+the middle
+top middle bottom middle and
+sort of the center of your chart if you
+type in here
+position dot control space
+here is a list of all the locations we
+can place our table and we can place it
+in the top left which is interesting
+anyway
+the probably the best place for it would
+be the top right or bottom right
+for the most part for most scripts so
+for today's lesson we're going to stick
+with top right
+you could also
+create this as a user setting and the
+user could select where to place the
+table but we'll keep it simple today and
+we'll just hard code our table to be
+placed in the top right of our screen
+the next thing we need to specify is how
+many columns and rows we want in our
+table
+so for today's lesson i'm going to go
+with
+let's go with
+five columns and two rows so that'll
+look something like this one two three
+four five columns and then two rows so
+our table will look something like this
+kind of like what my ultimate pullback
+indicator look like at the start and
+then we can fill the cells with whatever
+we want
+we'll get to that in a moment
+so we've got five columns five rows
+there are a bunch of other parameters
+here we could select
+uh or work with i'm not going to touch
+any of them because we don't need to
+today all i'm going to do is set the
+border width
+border underscore width to
+one pixel so in between our cells will
+be a one pixel gap or one whatever this
+is one unit gap so that's it if i save
+the script that should compile fine
+there we go
+so the next thing we need to do is
+update our table data
+now the best practice for this is to do
+this on the very last bar of your chart
+so for this i check if bar state dot is
+last so this is the very last bar on our
+chart
+then we update our
+table
+and to do that we use the
+table dot cell function and this will
+update the cell of the given table at
+the given column and the given row so
+for this we would pass my table
+and for the very first
+cell we want to pass in the zero column
+and the zero row and then we need to
+pass in some text
+so i'm just going to create a new
+variable here called text 1 and that's
+just going to be set to some text
+to begin with then we can specify the
+width and height if we want to if you
+don't specify the width and height and
+that will be calculated automatically so
+i recommend leaving them blank
+for the most part unless you're doing
+some advanced formatting of your table
+and then next up we have our background
+color
+and our
+text color
+so you could set this to whatever you
+want to i'm going to set mine to
+color.black
+and my text color to color.white
+and then we need to
+set our text
+parameters so for this i'm going to set
+text equals txt 1 comma and now this
+should
+if i save the script
+create a table in the top right with
+some text and this text could be
+anything so we could say
+closing price
+backslash new line
+and then we could add to string the
+current bars close save the script and
+there we go so this is a really handy
+way to display information onto the
+chart that you need either for your
+trading or for debugging your scripts
+can also be useful for that so let's
+create a few more here let's
+do text 2 equals and then we'll say
+opening price
+to string open
+text three could be
+uh pip gain
+slash loss
+backslash new line
+uh two string and then we could say uh
+open
+minus or let's go close minus open
+and then let's copy this table.cell
+function a couple of times and now we
+need to change our row and column
+values in order to set which cell to
+update so for our second
+value here let's change all our text to
+text to text three let's set the row to
+one and then on the third one i will set
+our column to one
+and now if i save the script you can see
+that we have some more information here
+so notice that
+we have a blank cell here the reason for
+that is that this is our zero column so
+as we add
+columns to this table
+they shift to the left so so if we've
+got five columns here and we add in all
+five text values to these cells
+this column will be five cells to the
+left
+so that's important to note when
+building out your tables
+let's add a bunch of
+other information here in text four
+let's set to ema 50
+ema
+value
+is plus two string we just say ema close
+50
+text five let's set that to
+rsi value
+backslash n to string rsi
+uh clue
+close 14
+and let's copy this table.cell function
+a couple more times
+um and so we need to flip our row
+numbers and column numbers um
+increment them by one basically for each
+cell so we've got zero zero zero one one
+zero one one
+two zero
+two one
+and let's change all of our text values
+to
+the appropriate one let's create a
+text six let's create another text six
+this can be
+the percent
+change uh plus two string
+and then we can say here change
+close
+divided by
+previous close
+times 100 and then i need to
+wrap that in parentheses
+close that off
+and that should work let's save the
+script
+and we get a few errors here uh because
+we're using this under an if statement
+if bar state dot is last
+um these inbuilt functions are not
+generating their value until the very
+last bar we need to extract these from
+the scope so let's
+put these up here ema equals ema close
+uh rsi
+equals rsi close
+and then change
+we just say market change
+market change
+and paste all that in there now this
+should compile without any warnings or
+errors and we should be getting our
+values up here perfect
+now the decimal value is a bit long but
+actually while we're here this isn't
+really in the scope of the lesson but i
+will show you how to truncate or or cut
+the decimal values back to however many
+decimal values you want as this is going
+to be a common problem you run into
+when displaying indicator values in text
+the way we are here so i'm just going to
+quickly add on a script that i was
+working on recently that i know has this
+inbuilt custom function that i wrote
+if i scroll down here to this truncate
+function
+and copy that out
+get rid of the script open up our table
+script and i'll paste this at the very
+top of our script
+this is a custom function that truncates
+or cuts the excess decimal places
+of the number we pass it so we use this
+function like this i would say
+truncate
+ema to two decimal places
+and if i paste that in to all of these
+now when i save the script all of these
+numbers will be cut down to two
+decimal places
+there we go we don't want to cut our
+price or our pip gain or loss down
+uh just these indicator values and we
+should probably add a
+percentage sign on the end of this
+percent change
+and i think that'll do i mean you could
+add we did create a table with five
+columns so we could add two more
+uh columns here if we wanted to but i'll
+leave it there you get the idea i'm sure
+just make sure that you have enough
+columns in the table you created
+if we were to set this down to 2 and
+save the script we'll get an error
+up here you can see that we have an
+error because column two is out of the
+table bounds
+so
+as far as i know there's nothing wrong
+with having too many
+columns in your table
+but having too few is a problem so just
+make sure that you have enough columns
+and rows in your table
+to be able to fill all the cells that
+you do
+in your script so let me save that
+and we're pretty much done um just
+really quickly
+one last thing i'll show you to do just
+because you might find it interesting
+is how to change the background color
+and text based on
+for example let's change the percent
+change background color to be green or
+red based on whether this is a negative
+value
+so percent change is here uh market
+change text six so down here we'll
+change the background color to a
+conditional statement we'll say
+is market
+change
+greater than zero
+if so set the background color to green
+otherwise set it to red
+and we can leave the text color as white
+that should be fine let's save the
+script
+and there we go
+now the value is red if we go to a
+market that had a positive change
+were there any on a friday
+surely one market here we go
+there we go green percent change so
+that'll do obviously you can change the
+location let's change it to top left
+just to see what that looks like
+it'll probably look pretty bad because
+it'll be
+covered by the ticker and everything i
+don't think you'd ever want to set it
+there but you could do
+bottom right
+or bottom left and for example if you
+want to keep it out of the way of price
+action maybe you want to set it to
+bottom underscore left
+save that
+and now it's down here which is not a
+bad spot for it
+it keeps it out of the way of current
+price action so that'll do it for today
+obviously you can change the text color
+as well if you want to and there are a
+bunch of other parameters you can play
+around with here if you want to
+and as always just hold down control and
+click on these if you want to read up
+on uh what each parameter is capable of
+doing anyway that'll do it for today
+thank you for watching i hope you found
+this lesson valuable and interesting in
+your own coding take care best of luck
+with your training and i will see you in
+the next lesson
+goodbye

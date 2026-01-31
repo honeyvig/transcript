@@ -1,0 +1,215 @@
+hey everyone and welcome to the amazing
+video on realtime operating system a
+realtime operating system or rtos is a
+type of operating system that is
+designed to control and manage realtime
+systems these systems require timely and
+predictable responses to inputs and
+events making them ideal for
+applications such as automation Robotics
+and embeded systems an rtos allows for
+the simultaneous execution of multiple
+tasks while providing precise control
+over the timing and scheduling of those
+tasks one of the most important features
+of an rtos is its ability to handle
+interrupts efficiently interrupts are
+events that occur outside of the normal
+execution of the system and they require
+immediate action conclusively and rtos
+is a specialized operating system
+designed for realtime systems that
+require Timely and predictable responses
+to inputs and events it offers precise
+control over the timing and scheduling
+of the task handle interrupts
+efficiently and allows for the
+simultaneous execution of multiple tasks
+making it ideal for a variety of
+applications from automation to robotics
+so if you also ever wondered what makes
+a system real time and how does it
+differ from regular operating systems
+well you're in luck because we are about
+to find out but before that do subscribe
+to our YouTube channel and hit the Bell
+icon to see more such interesting
+content in future and if you want to
+learn more about these types of Concepts
+and Cloud Computing Services then our
+CTIC post-graduate program in cloud
+computing will be the right choice for
+you this postgraduate program in cloud
+computing will help you become an expert
+in Azure and AWS this indepth course
+lets you master key architectural
+principles and develop the skills needed
+to become a cloud expert it will help
+you become an expert in designing
+planning and scaling Cloud
+implementations our cloud computing
+course helps you master the core skill
+sets required to design and deploy
+dynamically scalable and reliable
+applications on Microsoft Azure and AWS
+so do check out the course link
+mentioned in the description so let's
+get started but before we Del into
+realtime operating system let's first
+understand what an operating system is
+an operating system or Os is a software
+that manages computer hardware and
+software resources providing services to
+computer programs and allowing them to
+run efficiently examples of popular
+operating systems include Windows Mac OS
+and Linux now what sets realtime
+operating systems apart from regular
+operating systems well the key
+distinction lies in the ability to
+respond to events in a deterministic and
+timely manner in a realtime system
+meeting deadlines is of atut most
+importance it must be able to complete
+task within specific time constraints
+known as deadlines realtime operating
+systems find applications in various
+critical domains such as Aerospace
+automative medical devices and
+Industrial Automation these systems are
+designed to handle time critical task
+and provide a predictable response
+imagine an airbag deployment system in a
+car it needs to react instantly in the
+event of collision that's where real
+time op operating system shine now let's
+discuss two types of realtime operating
+system hard real time and soft real time
+in a hard real time missing a deadline
+can lead to catastrophic consequences
+these systems are designed to guarantee
+that critical tasks are completed within
+their deadlines on the other hand soft
+realtime systems have more relaxed
+timing constraints where missing a
+deadline may not have severe
+consequences but realtime operating
+systems achieve their humanistic
+Behavior through various mechanisms one
+key component is Task scheduling tasks
+are the building blocks of realtime
+systems they represent the individual
+units of work that need to be executed
+the OS scheduler recites the order and
+timing of task execution to meet the
+deadlines another critical aspect is
+interrupt handling interrupts are events
+that occur externally or internally and
+require immediate attention from the
+operating system the realtime OS should
+respond to these interrupts promptly and
+prioritize them based on their urgency
+now realtime operating systems also
+employ techniques like priority
+inversion avoidance where tasks with
+higher priorities are not blocked by
+lower priority tasks this ensures that
+critical tasks are not delayed or
+blocked by less important tasks now
+let's talk about realtime operating
+system kernels the kernel is the core
+component of an operating system that
+provides essential services to
+Applications
+and manages Hardware resources realtime
+kernels are designed to handle time
+critical task efficiently they provide
+features such as fast context switching
+minimal interrup latency and
+deterministic task scheduling one
+popular realtime operating system is
+free Ros it's an open- Source realtime
+colel widely used in embeded systems
+free RTO offers a small footprint
+portability and a rich set of features
+it's a great choice for resource
+constrained devices where efficient task
+management is crucial now let's explore
+some Royal world examples of realtime
+operating system you'll find them in
+avionic system controlling critical
+aircraft functions they used in medical
+devices such as pacemakers where precise
+timing is vital realtime operating
+systems are also employed in Traffic
+Control Systems ensuring smooth traffic
+flow and managing signal timings well
+before we wrap up let's highlight some
+challenges faced in realtime operating
+systems deterministic behavior requires
+careful consideration of hardware and
+software interaction designing and
+debugging realtime systems can be
+complex due to the stringent timing
+requirements additionally ensuring
+system security and reliability is
+crucial as any failure can have severe
+consequences well in conclusion realtime
+operating systems play a vital role in
+time critical applications ensuring task
+are completed within strict deadlines
+they provide deterministic Behavior
+priortize critical tasks and respond
+promptly to events from automative to
+medical and Industrial domains realtime
+operating systems are powering the
+technology that keeps our world running
+smoothly well here's a success story of
+one of our Learners to boost your
+confidence do watch this video hey I am
+Salah quatra and I am currently living
+in Algeria I wanted to experience what
+is like to leave I also realized that to
+get a new job I needed to have a
+professional certification in cloud
+computing so last year I started the
+post-graduate program in cloud computing
+in association with ctech from s that
+with this course I had the choice to
+study while I contined and that is how I
+got this new job offer with 60% salary
+high in Finland I will be leading the
+cloud computing unit of my new company
+we cannot wait to start our new life in
+Finland we are all that's all for
+today's video we hope you found this
+exploration of realtime operating
+systems informative and engaging if you
+have any questions or suggestions for
+future topics please let us know in the
+comment section and don't forget to like
+And subscribe to our YouTube channel and
+hit the Bell icon for more such
+interesting videos thank you and keep
+learning staying ahead in your career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with Le in universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

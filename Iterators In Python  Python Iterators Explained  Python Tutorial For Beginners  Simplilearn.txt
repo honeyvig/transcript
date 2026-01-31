@@ -1,0 +1,277 @@
+hello and welcome to this session on i
+traders in python
+today we are gonna talk about how to use
+and build iterators in python
+iterators is a very important concept
+across all programming languages because
+it's a necessity
+and you will feel the need wherever you
+will have to loop across different
+elements lists arrays and etc so today
+we are going to talk about how
+iterators are used in python and what
+are the nitty gritties
+now what's in it for us today
+we are going to talk about what is a
+python nitrater what are iterables right
+what are the iterable objects
+how an iterator works
+and then we will also discuss about how
+to throw a stop iteration exception
+basically when you reach the end of a
+list
+then you can throw a stop iteration
+exception and we will see that with an
+example
+now what is a python iterator
+python nitrator is an object that can
+traverse through iterable objects in
+python like lists tuples dictionaries
+sets
+and returns data one element at a time
+so basically you can traverse through
+these layers one at a time and then you
+can use it as per your custom
+requirement but iterator as an object is
+available to you is a tool available to
+you in order to traverse through each
+and every element
+now
+they have implemented within for loops
+comprehensions generators in python
+implicitly they are not visible up front
+but they are hidden in plain sight so
+basically when you're using loops when
+you're using generators comprehensions
+implicitly
+python is actually converting them in
+the backend in an iterator object and
+giving you the results
+now what are iterables on which you can
+iterate
+lists tuples dictionaries sets as i
+mentioned are all iterables or iterable
+objects other than these you can't
+perform any iteration if you have not
+created an object of list tuple or
+dictionary or set then of course your
+write variable will not be of any use
+and
+these objects internally possess an item
+method iter method which is used to get
+an iterator a handle to a nitrater and
+then you can start
+looping it or you can start accessing
+the elements of the iterator
+now how iterator works
+python iterator implements internally
+these two methods which we are seeing on
+the screen underscore underscore item
+underscore underscore brackets and
+underscore underscore next underscore
+underscore bracket
+now these two methods are implicitly
+implemented by python for any internal
+implicit iterator
+object
+but if you have to write your own custom
+iterator then you need to override these
+methods and i'll show you in my examples
+in jupyter notebook
+the iterator object is initialized using
+the either method so basically whenever
+you have to create an iterator object
+you need to initialize it with iter and
+then use next method in order to
+traverse through it
+now stop iteration exception so as i
+mentioned when we reach the end of an
+iterable right like suppose you have a
+list or a set which has a length of four
+when you have ended the fourth element
+and you're trying to access something
+beyond fourth element which is fifth
+then of course you can implicitly raise
+a stop iteration exception or python
+will throw it so we will see that with
+an example but you will get a stop
+iteration exception
+now so to prevent in order to
+handle it
+or
+manage it in your course we use top
+iteration statement to raise an error
+you can raise your customer error so you
+can catch this exception
+and then raise your custom error in the
+underscore underscore next method
+so now let's uh support everything with
+our examples
+let's start with a very basic
+example of an iterator
+now let me create a list
+with just four
+numbers
+and
+as i said i'm going to initialize my
+iterator with item method so now i have
+created a list and now i am initializing
+it with item okay
+now using next i'm gonna print my first
+element four okay so it means the iter
+internally has given me handle to the
+first element
+and now as many times i move print next
+i am moving to the next element
+so now i'm also going to show you a
+different syntax this is a syntax but
+the output will be same it's a different
+syntax to invoke underscore next so it's
+output is going to be same but the
+syntax is only the difference over here
+so you're going to get access to the
+next element and then
+my fourth element just 33 now i have
+traversed through all my four elements
+now what will happen if i again do next
+i have ended i am at the end of my list
+so i will get an exception of stop ice
+iteration right and this is thrown by
+python
+now let's take another interesting
+example if i want to perform iteration
+on strings
+so i have created a variable and i have
+initialized it with geeks
+and now i have created an iterator on
+top of this
+string variable and i'm going to
+traverse it
+till the time i end reach the end of my
+string
+so let me
+hydrate it and i'm going to iterate till
+the time i get the stop iteration
+exception
+so also i'm actually explaining here how
+to cleanly handle the exception
+accept
+and then break if i get the exception
+i'll break out of this program
+and here you get the result
+all the letters of my string geeks has
+been printed individually
+and i think it's a very important
+example interesting example that how a
+string has been converted now point to
+be noted over here is
+that python has internally invoked
+underscore underscore iter and
+underscore underscore next methods which
+it has implicitly implemented for string
+iterators so you don't need to do
+anything
+now let's take another example to how to
+traverse through a list
+using for
+loop
+so i'm going to leave for object in list
+and just print the list this is
+without an iterator i'm just printing my
+list so i'm just trying to show the
+difference that if you use a nitrater or
+you do not but how you can access the
+elements in the list
+now let's take an example of how i can
+write my own custom iterator
+okay so i'm
+creating a class where i'm overriding
+the init method
+basically initializing in his
+initialization of my class where i'm
+gonna initialize a variable max with 0
+and then
+i am overriding this is the most
+important point over here i am
+overriding iter
+method
+and then
+i am writing another overriding the
+underscore underscore next method
+where i am adding
+6 to my number and then incrementing my
+loop
+so that
+i
+can move further
+so in this underscore next method i am
+just
+moving beyond adding 6 and till the time
+i reach the max variable
+so when i'll invoke my class
+i am passing 9 so it means that i should
+not
+go beyond
+10 basically i should start my iteration
+from 6 and will not go beyond 10 9 plus
+1
+so i should get numbers which are
+between 6 to 10 as per my expectation
+now before we diagnose the output most
+important point is that how you have
+converted your class to an iterator over
+here
+you in order to invoke make an uh class
+in nitrater it is mandatory you override
+it ar and next methods which you have
+done over here
+so now let's print
+okay
+so six so my
+number started with zero initialize with
+0 and i added
+6 to it so my first result is 6
+and now if i keep printing i will get 1
+value incremented
+7
+eight
+nine
+and
+10 right so this is the expected output
+right
+now
+another example on the same lines i'm
+gonna print the first 20 numbers using
+my iterator
+so i am
+gonna overwrite the iter method and
+underscore underscore next method my
+numbers now in this
+underscore underscore next method i am
+just incrementing my number y one
+not by six and i'm gonna stop at the
+limit twenty
+so like i showed in my previous example
+i'm gonna initialize first my class
+and then
+initialize my iterator and just then
+gonna run a for loop on it
+and here is the response output i have
+printed the first 20 numbers because i
+have created this limit
+so i am initializing with 1
+and going till the max 20 number
+but the point is it's not the output
+which is more important over here the
+most important concept over here is that
+you have created your own iterator and
+leveraged it
+i hope you had a great learning session
+and i look forward to meeting you in my
+next session thank you
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

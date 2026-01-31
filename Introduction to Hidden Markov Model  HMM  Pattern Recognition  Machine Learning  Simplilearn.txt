@@ -1,0 +1,663 @@
+imagine you have a secret code that you
+can't crack every time you receive a
+message it seems like a jumble of random
+letters leaving you puzzled and
+wondering what it means but what if
+there was a way to unveil the hidden
+message enter the hidden Marco model hmm
+a powerful tool that can unlock the
+Mysteries hidden within data at its core
+the hidden Marco motor is like a
+detective searching for patterns in a
+sea of information whether it's
+predicting the weather understanding
+spoken language or analyzing DNA
+sequences hmms are the sleuths of the
+mathematical world what makes hmm so
+intriguing is their ability to reveal
+hidden States you can think of these
+states as the missing puzzle pieces that
+shape The observed data just as a
+magician pulls a rabbit out of her head
+hmms can pull out the hidden States
+behind the information you see but how
+they do it well hmms rely on the power
+of probability they estimate the
+likelihood of transitioning from one
+hidden state to another based on the
+observed data it's like solving puzzle
+by analyzing the probabilities of
+different pieces fitting together one
+fascinating aspect of hmms is their
+Markov property this property states
+that the probability of moving to a new
+state only depends on the current state
+not the past it's like living in the
+moment and making predictions about the
+future without dwelling on the past so
+whether you are deciphering coded
+messages predicting stock market trends
+or understanding the complexities of
+speech the hidden Marco model is a
+trusted partner in unraveling Hidden
+Truths it's the secret weapon that
+brings Clarity to the enigmatic world of
+data one hidden State at a time get
+ready to embark on a journey of
+Discovery as you delve into the
+captivating realm of hidden Marco model
+according to recent studies AI machine
+learning related job postings have
+increased by 344 in the past five years
+companies across the globe are actively
+seeking professionals who can harness
+the power of data and build intelligent
+systems the average salary is 150 000 in
+the U.S and 15 lakhs per annum in India
+become an expert Ai and ml professional
+with the pgp in Ai and ml delivered in
+partnership with IBM this artificial
+intelligence course caused the latest
+tools and Technologies from the AI
+ecosystem and features master classes by
+Caltech faculty and IBM experts
+hackathons and ask me anything sessions
+this program showcases Caltech ctms
+excellence and IBM's industry progress
+the artificial intelligence course
+curves key Concepts like statistics data
+science with python machine learning
+deep learning NLP and reinforcement
+learning through an Interactive Learning
+model with live sessions
+enroll now and unlock exciting Ai and ml
+opportunities the link is mentioned in
+the description box below
+with that having said hey everyone
+welcome to Simply runs YouTube channel
+but before we dive into that don't
+forget to like subscribe and share so
+without any further Ado or to our
+training experts a hidden marker model
+hmm is a statical model utilized to
+depict the probabilistic connection
+between a sequence of observed data and
+a sequence of concealed State it's
+commonly employed when the underlying
+system or process generating the
+observations remain unknown or concealed
+which amounts for its name the hidden
+marker model the primary purpose of an
+hmm is to forecast future observation or
+classify sequences based on hidden
+processes that generate the data and hmm
+consists of two distinct type of
+variable first one is hidden States and
+the second one is observations
+hidden States represent the underlying
+variable responsible for generating The
+observed data but they cannot be
+directly observed but the observation
+other side denote the variables that are
+measured and observed
+so the association between the hidden
+State and the observation is established
+using a probability distribution
+so the hidden markup model hmm defines
+the relationship employing two states of
+probabilities the first one is the
+transition probabilities and the second
+one is the emission probabilities the
+transition probabilities outline the
+likelihood of transitioning from one
+state to another hidden State and the
+emission probability is describe the
+probability of observing an output given
+in a hidden state so let's move forward
+to the application of hidden markup
+model so the first one is speech
+recognition
+hmm are widely recognized for their
+application in speech recognition in
+this field hmms are employed to model
+the various sounds and phones that
+constitute speech that in States
+represent distant sound or phone while
+the observations are the acoustic signal
+produced by the speech and the second
+one is NLP natural language processing
+so this is the another significant
+application of hmm is in NLP in NLP hmms
+are utilized for tasks like part of
+speech tagging named identity
+recognition and text classification in
+these application the hidden states are
+commonly associated with the text
+and the goal is to estimate the hidden
+States requires which correspond to the
+structure or meaning of the text based
+on the observed word the third one is
+bioinformatics
+hmms find extensive application in
+bioinformatics
+where they are employed to model
+sequence of DNA RNA and proteins in this
+context the hidden State represent
+different types of residues while the
+observation corresponds or two sequence
+of residues the objective is to estimate
+the hidden State sequence which
+represent the underlying structure of
+the molecule based on the observed
+residue sequence and the fourth one is
+Finance
+finally hmms have also found application
+in finance
+especially in modeling stock prices
+interest rates and currency exchange
+rates in these application the hidden
+State correspond to different economic
+State such as Bull and Bear markets
+while the observation represent the
+stock prices interest rate or the
+exchange rates so after seeing
+application of hidden markup model now
+let's see some advantages and the
+disadvantages of the Hidden marker model
+so advantages of hidden markup models
+are flexibility hmms are flexible and
+can be applied to various domains and
+problems such as speech recognition NLP
+bioinformatics and final they provide a
+versatile framework for modeling
+sequential data and the second one is
+probabilistic modeling hmms are based on
+probabilistic principle allowing them to
+handle uncontinuity in the data they can
+effectively model and represent the
+probabilistic relationship between
+hidden State and the observation
+and the third one is capturing temporal
+dependency hmms excel at the capturing
+temporal deficiency in sequential data
+they consider the order and transition
+between hidden seed which is crucial in
+many real world scenarios
+and the fourth one is handling noisy and
+incomplete data hmms are robust to noise
+and incomplete data they can handle
+missing observation or deal with data
+containing errors or certainties making
+them suitable for real world example so
+now let's move forward and see the
+disadvantages of hidden markup model so
+the first one is
+Independence assumption
+hmms are assumed that the current hidden
+state only depends on the previous
+hidden State the market assumption might
+not always hold in complex real world
+scenarios where the current state could
+depend on multiple previous States or
+the entire history and the second one is
+limited modeling of long-term
+dependencies although hmms capture
+short-term dependency while they may
+struggle to model long-term dependency
+in sequential data Okay the third one is
+lack of transparencies
+hmms are considered Black Box models
+meaning that the relationship between
+the model parameter and the real world
+phenomena may not be easily
+interpretable understanding the inner
+working of the model can be challenging
+and the fourth one is model selection
+the selection of appropriate number of
+hidden States and setting models
+parameter can be complex tasks
+determining the optimal structure and
+the parameter for the hmm often requires
+domain knowledge and experimentation so
+overall while hmms have proven to be the
+powerful models of for sequential data
+they are not without their limitation
+advances in deep learning and other
+sequential model have introduced
+alternative approaches that can overcome
+some of the disadvantage associated with
+the hmms in the specific context
+so moving forward we will see
+hidden marker model algorithm steps
+okay so let's move forward
+and the implementation of the Hidden
+markup model algorithm can be outlined
+through the following steps so let's see
+step one
+specify the set of possible hidden
+States and the observation
+Step 2 establish the initial stage
+distribution which represents the
+probability distribution over the
+initial state
+and the third one is
+Define the probabilities of
+transitioning from one state to another
+forming the transition Matrix that
+depicts State transition
+step 4 specify the probabilities of
+generating each observation from each
+state creating the emission Matrix that
+describes our relation likelihood
+and the fifth state
+train the model by estimating the
+parameters of the state transition
+probabilities and the observation this
+is achieved using bomb Welk algorithm or
+the forward backward algorithm the
+parameters are iteratively operated
+until convex in the east
+step 6.
+decode the most probable sequence of
+hidden States based on the observed data
+they want to be algorithm is employed to
+compute these sequences enabling
+prediction of the future observation
+sequence clutch relation or pattern
+detection in the sequential data and the
+final is step 7.
+evaluate the performance of the hmm by
+utilizing Matrix like accuracy precision
+recall or FNS score so in summary the
+hmm algorithm involves defining the
+state space observation space and the
+perimeter of the state transition
+probabilities and the observation of
+likelihood the model is trained using
+the bomb Welk algorithm for the forward
+backward algorithm followed by decoding
+the most probable hidden State sequence
+using the water B algorithm finally the
+model's performance is evaluated using
+the appropriate Matrix
+so moving forward we will see the small
+demo of how you can use hmm model okay
+so hi welcome to the demo of hmm so here
+we will predicting the weather so
+problem statement is so we have the data
+of historical data and the on a weather
+condition so the task is to predict the
+weather for the next day based on the
+current days weather okay so let's
+import the some libraries before that I
+will change the name
+hidden Mark of modern okay
+so let's import some major libraries
+like numpy pandas matplotlip C bone and
+the hmm itself so first I will like
+import numpy
+as NP
+and the second I will like to import
+import pandas
+SPD
+then third one is import
+as SNS
+and the fourth one I like to import from
+hmm learn import
+HTML okay you have to import or install
+hmm Library you can use pip install hmm
+and again you have to use pip install
+hmmline okay
+then one more import
+ant matplotlib
+dot Pi plot
+as PLT
+okay let me run this yeah
+it's working right so the in the second
+step we will Define the model parameters
+Okay so
+let's define the model parameters it's
+like
+okay where I equals to
+first will be
+sunny
+okay and rain
+okay
+so and Para
+equals to length of parameters
+okay then I would like to print
+number of hidden
+update
+okay
+that is and
+okay so now here I will Define the
+observation space
+okay so here I will write observation
+equals to
+to dry
+comma red
+okay and and observation
+equals to say in the length of
+observation
+and here I would like to print
+number
+of
+hidden
+or that observations
+comma
+and
+observation
+okay let me run it
+so as you can see here the number of
+identities two see you can sunny and
+rain and the observation is two or dry
+or wet okay so the start probability is
+transition probability and the emission
+probabilities are defined as arrays okay
+the start probability replies represent
+the probabilities of starting in each of
+the Hidden State the transition of the
+probabilities represent the
+probabilities of the transitioning from
+one hidden state to the another and the
+emission probability is represent the
+probabilities of observing each of the
+outputs given in a written state so in
+initial stage
+the distribution will be defined as a
+state probability which is an area of
+probabilities that represent the first
+state being sunny or rainy the state
+transition are defined as the transition
+probability which is two by two array
+okay so it's like this so let's
+move to the you know defining the
+initial State distribution and all
+so here I will write Para
+probability
+pursue and P dot array
+0.6 comma 0.4
+I will write here print
+the
+error probability
+okay
+and
+then
+Para
+probability
+okay so here I will Define the state
+transition probabilities so I will add a
+transition
+probability
+because you NP dot array
+and here I will write
+0.7 comma 0.3 it's like 70 30 percent
+okay
+then
+point
+three and point seven
+okay
+so now I will print
+see the transition probability so I will
+write trans underscore probability
+equals to NP
+dot sorry
+about comma
+trans
+probability
+okay here we don't have to write
+underscore
+yeah so now I will Define the
+observation likelihood so for this
+emission
+emission probability
+equals to NP dot array
+it's like 0.9
+comma 0.1
+then
+then I will write zero point
+two
+and let's give 0.8
+okay
+so here let's print the emission
+probability
+Mission probability
+emission underscore program
+okay
+and let me run it okay NP array
+trans probability 0.7 0.3 okay
+uh okay so here let's add
+okay
+yeah so as you can see the para
+probability is 0.6 to 0.4 then the
+transition probability and the emission
+probability
+okay
+so let's create an instant of hmm model
+and set the model parameters okay so the
+hmm model is defined using the hmm
+categorical hmm class from the hmm
+Library we
+already imported the library hmm learn
+and incentive so here the set of n
+hidden States and the parameters of the
+models are set using the start prop okay
+so let me do
+for this for the better visual
+and here I will write
+model equals to hmm Dot
+categorical
+hmm
+and
+and underscore components
+equals to
+and parameters
+okay then m dot start
+probabilities
+okay this
+this Para
+okay if it better understood probability
+okay
+then
+m dot
+transmit underscore
+equals to
+trans underscore probability
+then m dot emission
+emission
+probability
+equals to emission
+underscore property we already defined
+here as you can see the trans the para
+probability the emission probability
+okay so let me run it
+okay
+and comp
+it's n components
+components
+so now let's define an observation
+sequence so a sequence of observation is
+defined as the one dimensional numpy
+array so the observed data is defined as
+observation sequence which is sequence
+of the integers representing the
+corresponding observation in the
+observation list
+okay so here I will Define observation
+sequence
+equals to NP
+dot add a
+0 comma one
+comma
+0 comma 1
+comma 0 comma zero
+okay then dot d shape
+and then minus 1
+comma 1. okay
+so here let me write observe okay
+okay no error so I can
+so it will give me the output as you can
+see it's coming in like one dimensional
+array okay so moving forward let's
+predict the most likely sequence of
+hidden States so for that we have to
+write here
+hidden
+date
+equals to
+model
+dot predict
+observation sequence
+okay so print
+hidden
+bit
+okay so it's not the model
+it is m
+so as you can see it's coming okay zero
+one zero one one zero okay so the most
+likely demonstrate is this
+it's coming like this
+so now what we have to do we have to
+decode this observation this zero one
+triple one double zero observation using
+the Y Derby algorithm Okay so
+for that we have to write here log
+probability
+[Music]
+hidden
+it's hidden state
+okay
+equals to m dot decode
+observation
+sequence
+comma
+so length
+lens
+it goes to length of
+observation algorithms
+equals you
+y to B okay
+so here let me print
+the log
+underscore probability
+and
+print
+the hidden States
+okay
+okay so land takes Noah keywords are
+good one okay so for that we have to
+write here
+observation
+underscore algorithms
+again
+okay
+so here I will write observations
+sequence
+right before
+Okay so
+observation sequence OBS sequence okay
+oh yes sequence so let me run it
+it's saying length
+okay
+quite a b
+and then it's
+print
+Ed no keywords arguments
+I'll go read them
+and the observations
+okay I forgot one thing
+it is sequence
+we can write actually like this
+okay then comma
+yes let me run it down okay it's coming
+so as you can see the log probability is
+minus six point this and the hidden
+state is this
+so this is a sample like how the algo to
+implement the basic hmm and use it to
+decode an observation sequence so let's
+plot the results
+okay let's see
+so SNS
+dot set
+nine
+grid
+okay PLT Dot Plot
+hidden States
+comma
+minus o
+X
+K level we don't want to write
+okay we can write the label also
+so here label equals to
+and then instead
+then PLT dot X label
+time
+and PLT dot y level
+like most likely
+hidden state
+and here
+PLT Dot
+title
+is sunny or
+rainy
+and then
+PLT dot Legend we can write
+and then PLT dot show
+okay
+so let me run this
+okay so here we can write the white grid
+so as you can see finally the results
+are plotted using the matte broadly
+Library where the accesses represent the
+time steps and the y-axis represented
+the plot shows that the model predicts
+that the weather is mostly sunny with a
+few rain days mix so as you can see it's
+mostly runny
+Sunny okay see zero one one sunny and
+then these are the hidden States and
+these are the zero again okay as you can
+see zero one triple one double zero
+okay
+so
+this is how you can implement
+hit a marker model in your projects
+so these are the some
+Library I use the numpy pandas and the c
+bond
+okay
+and here we uh you know
+so here we describe the parameters and
+the observation and here the probability
+we get and here we implement the hmm and
+here hidden States now finally okay so
+here we wrap up with this hmm model okay
+if you have any question please add it
+in the comment section below where
+expert will get back to you soon so and
+do subscribe to Simply learn channel for
+the more updates till then stay safe and
+keep learning staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

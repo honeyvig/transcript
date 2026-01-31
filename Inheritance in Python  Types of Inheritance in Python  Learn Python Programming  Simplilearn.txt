@@ -1,0 +1,616 @@
+hello and welcome to this session of
+inheritance in python
+today we are going to talk about
+how inheritance is implemented in python
+now what's in it for you everyone we are
+going to talk about the concept of
+inheritance the types of inheritance
+which are applicable so the different
+kind of inheritance which we're gonna
+talk about are single level inheritance
+multi-level hierarchical and multiple
+inheritance and we are going to support
+each concept with an example
+before
+we begin this session i just want to
+highlight that inheritance is not a new
+concept in any of the programming
+languages
+just like in python this concept is
+applicable across multiple programming
+languages like java c plus plus etc
+now what is inheritance inheritance
+provides the reusability of a code
+it allows you to inherit what you have
+written in a particular class or a piece
+of code and you don't need to rewrite it
+you can inherit it
+so that is the main purpose of
+inheritance it is creating a new class
+that utilizes the properties and
+behavior of an existing class
+so we will support this with an example
+so if you take a look at the syntax the
+sample syntax over here you have a base
+class and you have certain attributes
+functions
+uh associated with the base class and
+then you have a derived class in which
+you extend
+basically you inherit the base class and
+you inherit the properties of the base
+class
+now the new class formed is called the
+derived class or the child class you can
+call it anything derive child or sub
+class and the existing class whose
+properties are inherited is known as the
+base class parent or super class these
+are synonymous
+so any
+where you hear that okay you know you're
+working on a child class or derived
+class you can
+easily figure out that you're talking
+about a derived class and whenever there
+is a
+reference to a parent or a super class
+it means we are talking about the base
+class
+right
+now
+with this
+concept with this idea let's move ahead
+and
+look at the different types of
+inheritance which are possible
+in python
+now here we are trying to
+display pictographically
+diagrammatically the different kinds of
+inheritance and this will make
+understanding more clear
+now let's talk about first single level
+inheritance you have a class a and you
+have a class b so basically only till
+class b only single level child is
+inheriting the
+attributes the properties of classes so
+that is what we call as single level
+inheritance
+multi-level is
+you have
+multiple level of inheritance
+in for example class b here inherits
+class a properties and class c inhibits
+class b properties so ultimately you can
+see
+that the the properties gets trickled
+down till class c right so that is the
+example of a multi-level
+right
+next is hierarchical in which
+two classes are inheriting from a single
+class class b
+is also inheriting from class a
+and class c is also inheriting from
+class a so both class b and class c
+are kind of siblings to the parent class
+a right
+multiple inheritance it means that a
+child class in is inheriting properties
+from two parent classes so in this
+example the class c is inherited the
+properties of class a also and class b
+also
+so we will be looking at these examples
+when we will be running in python
+now let's
+take this example with a real world
+object right let's first try to
+give you a
+view of how we are going to how what we
+want to explain in the inheritance with
+real world objects right now here we are
+taking an example of a black and white
+tv and a color tv
+now single level inheritance in this
+type of inheritance there is only one
+single derived class from a single base
+class as i mentioned earlier so for
+example you can assume there is a class
+called black and white tv and what are
+the attributes of a simple black and
+white tb it has a regulator it has a
+sound adjustment
+now
+there is a child class called color tv
+which inherits the basic attributes of
+course a color tv also has a regulator
+or sound adjustment
+but
+additionally on top of it it also
+provides new features like color picture
+and cable connection
+so now
+what do you understand by this is that
+the child inherits the basic properties
+from the parent class
+but it also adds on the new additional
+features so the color tv does not need
+to rewrite or
+the
+functionality of a regulator and the
+sound adjustment it has inherited it
+multi-level
+very similar to single level but now we
+are adding more features
+so like in the previous example color tv
+inherited the features of black from
+black and white tv
+now we move a step ahead now there is
+another classification another
+advancement of wi-fi led tv so that has
+also inherited the features from color
+tv right so it's a multi-level
+inheritance
+so just to reiterate the black and white
+tv had channel regulator dish antenna
+the color tv added additional features
+of color picture quality and cable
+connection
+and the wi-fi enabled tv added the new
+smart features to the tv which is
+generated from the color tv
+multiple inheritance now in multiple
+inheritance the derived class is
+inherited from more than one base class
+right so now for example over here you
+have a class called android which is an
+android operating system based class and
+one is the wi-fi led class which has the
+wi-fi features like sound picture wi-fi
+enablement and if you combine all these
+features and bring it into another child
+class that class is the smart tv class
+which has the features of android and
+the features of wi-fi led tv and then
+you call it as a smart tv it has all the
+android applications it has the wi-fi
+features and etc so this is the example
+of multiple inheritance getting the best
+of
+all the parents
+hierarchical
+if more than one class is inherited from
+the base class right so now if we just
+tweak our prior example and you know
+just
+rephrase it what we are saying is now
+from the black and white tv you can also
+make a color tv
+you can also make a smart tv or you can
+also make a wi-fi led tv right so there
+is no restriction as such so basically
+the color tv is also inheriting the
+features of a black and white tv
+smart tv is also inheriting the features
+of a black and white tv and the wi-fi
+led tv also is narrating the features
+from black and white tv so it's a very
+typical example of a hierarchical in
+inheritance
+so now let's
+quickly look at the examples
+okay so let's start off
+with a
+very simple
+single
+level inheritance
+let's make a class
+and
+create a function
+called speak
+and print something
+okay
+now let's make another class
+so what we did was we created a class
+called homo sapiens and in the and now
+we are creating a clause called man
+which inherits
+uh the attributes
+of homo sapiens
+and we say
+create a function which is specific
+to man so homosapiens has a function
+which called speak and man has a
+function called talk
+and let's print it
+now
+let's create an object of
+man
+now
+what does this signify
+the man
+class is also inheriting whatever is
+there in homo sapiens so man can even
+talk and he can even speak right
+so what we are going to do is
+first we are going to execute the
+function
+speak
+so the
+the base class function got called speak
+and it is printing homo sapien speaking
+and also
+we can call the child function
+man talking okay so so if you see
+this is the basic difference which we
+want to highlight
+that
+just you have created the object only
+for the child class not the parent so
+now making by making the object of the
+child class
+you can invoke the parent class function
+as well as the child because the child
+has inherited the parent features
+now
+let's take an example of
+multi-level
+so we will
+continue from our previous example we
+will create a class homo sapiens
+define in
+functions peak
+and
+print
+now we will make another class
+man
+now we are saying
+man can
+walk
+so we are saying man walking
+now this is the third level this is the
+multi-level
+man child
+and
+we are saying that a man child can eat
+so ultimately the man child can speak
+can walk can eat all three operations
+can be performed
+so we are gonna make a object of
+manchild
+and now
+python will allow us
+invoke
+walk function
+speak function
+and
+eat function
+so this is a typical example of
+multi-level
+hierarchy
+now
+moving to our
+next type of inheritance which is the
+multiple inheritance
+where the child
+is deriving
+attributes properties from
+two parents
+so we will now create a class called
+calculation1
+in our example
+and let's make a function
+sum
+and
+it will return
+calculation x plus y
+second
+calculation two
+and
+let's create
+operation subtraction
+and it will return x minus y
+okay
+now
+we will create
+the derived class which is in editing
+both calculation one and calculation two
+and
+let's create
+its own
+function called
+multiplication
+okay so derived class now has a sum
+function subtraction function and
+multiplication okay
+so let's create an object for derived
+and
+now let's
+invoke the relevant functions
+so sum
+120
+subtraction
+it should say minus 40
+and
+multiplication
+thousand
+so if you see
+it's it's different from multi-level
+it's multiple it means that the child
+class
+has inherited from two parents it's
+relevant functions right
+and that's how we are able to call them
+in the derived class
+now let's take another type hierarchical
+inheritance
+okay
+so in hierarchical in inheritance
+let's go back to our example
+of first we have the black and white tv
+and
+we will create a function called
+antenna
+print channels are telecasted through
+antenna
+then we will create
+color tv
+and
+we will define its own function called
+cable connection
+plus it has an edited the function
+called antenna from black and white tv
+here it is okay
+now we are gonna create another
+class called as
+wi-fi led tv which is also in editing
+from black and white
+now in this we are defining bluetooth
+tethering function
+[Applause]
+okay
+and let's make another smart tv
+okay and then we are gonna
+you can watch
+android applications on otp platform
+right so this is the
+class of smart tv
+okay so what we have done eventually
+over here is we have created a black and
+white tv
+color tv also in edits from black and
+white tv wi-fi led also in edits from
+black and white tv smart tv also in
+edits from black and white tv
+okay
+now
+let's try to
+create the
+relevant objects
+we will first create an object of color
+tv
+then we will create
+wi-fi led tv
+and then we will create
+smart tv
+okay
+now we will have the relevant functions
+available to invoke
+so both all the child all the children
+objects now will have an antenna
+function a1
+a2
+and a3
+all three are having the antenna
+function so we can just try to print it
+okay
+and then
+we can invoke the relevant
+child functions
+a1
+cable connection
+bluetooth ring
+and
+android applications
+so if you see this is an example of
+hierarchy
+you have color wi-fi led in smart tv all
+inheriting the black and white tv
+features
+and its own
+its own feature
+[Music]
+okay
+now along with this concept let me just
+also introduce
+some relevant concepts which are
+applicable
+along with
+the inheritance concept which will be
+helpful
+i also want to show you
+the example of
+init function
+init function
+is a constructor in python language
+and it is called by default whenever you
+instantiate an object
+so let me give you an example over here
+so here you have a
+class person
+and you have
+we are just defining the init function
+the constructor
+okay and
+we are just
+defining certain attributes
+instantiating certain attributes in the
+person
+first name and the last name
+another function which i am calling is
+the
+print name
+and i'll print the name it's a
+straightforward function
+okay so
+what i'm doing is i am creating a child
+class now
+called as student
+which has inherited
+uh the features attributes of the person
+based class
+and
+i'm also making a constructor for
+student
+and from student
+i am invoking the
+constructor of the person class right
+so now if you see i'm going to make an
+object of student
+and initialize it with
+the self the first name and the last
+name
+and in eventually
+the
+parent class init function is being
+called first name and the last name and
+this function diff print name it will
+print james anderson right as i have
+already initiated the
+parameters
+okay so if you see now what have i done
+i have
+the attribute values in the parent class
+are getting printed
+by invoking the constructor of the child
+class
+so what happened when you invoke student
+by default this init function got
+invoked the parameters of james and
+anderson got passed
+then from person you invoke the
+constructor in it and here now the first
+name and last name got initialized
+and then it got printed
+so this is the basic feature of a init
+function
+now
+like the way i have called person dot
+init over here i i can also make a call
+to super there is a keyword called super
+keyword
+so let's just take an example of super
+keyword
+okay
+let me have my child class like the
+previous one parent class the person
+class
+and
+i'll have to just make a change in my
+student class
+in the init function instead of parent
+dot init i will call
+super dot in it
+this is the keyword
+super function
+which will always
+invoke the parent class
+gives you the handle to the parent class
+and then you can invoke the relevant
+method
+and
+the invocation methodology will be the
+same
+and you can
+check the output it's going to be the
+same but it's that the syntax is
+different there is another keyword which
+is available for you to invoke the
+parent so you don't need to know the
+class
+of the parent you can just make a call
+to the super
+now let's also take a look at another
+utility utility function called is
+subclass right
+so
+what we are going to do is
+we are going to create a function
+[Music]
+calculation one
+calculation two okay so we have created
+two classes calculation one calculation
+two independent classes
+no one inheriting each other
+now we are going to create a derived
+class
+now this is the example what we had done
+earlier very similar to multiple
+inheritance so we are just actually
+creating a
+multiple inheritance example
+okay so you have a derived class which
+has multiple inheritance from
+calculation one and calculation two
+summation multiplication and divide
+relevant functions are there
+now we will check
+which class is a sub class of which one
+right
+so let's create an object of derived
+now what we want to print is that
+whether derived
+is a sub class of calculation 2
+and it should return true
+and let's see
+another is calculation one a subclass of
+calculation two it should return false
+right because these two are independent
+classes so is subclass is another
+function which is available in python
+which helps you
+decide you know you can check whether
+which is a derived class and which is
+not a direct class
+next
+let's take an example of another
+function called is instance okay
+we will take the same
+set of functions
+create an object of derived
+and check
+whether
+the object d is of which
+is it is it of a instance of class
+derived or not it's true so instead of
+derived if i make it as calculation 2
+for example now if i say c
+equal to
+calculation 1
+and say c
+is instance of derived
+it should say
+false but if i say
+calculation 1
+it should say true
+and if i say
+calculation 2
+should say false because
+calculation class is an independent
+class d is a derived class from
+calculation 1 and calculation 2. so
+basically d is in is instance of both
+calculation one calculation two so it
+will always return true
+i hope you had a great learning session
+with these concepts and i look forward
+to connecting with you guys in my next
+session thank you very much
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

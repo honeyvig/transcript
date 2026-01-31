@@ -1,0 +1,445 @@
+hello Traders welcome back to another
+video in today's video I thought I'd do
+something a little bit weird a little
+bit different to anything I've ever done
+before and what we're going to do today
+is interact with the latest hype product
+in the AI space chat gbt we're going to
+see how this thing goes when we ask it
+Pine script questions now I'm recording
+this intro after I interacted with chat
+gbt and I have to say I was surprised by
+uh what happened so this is more of a
+fun video that you're not really going
+to learn anything particularly
+interesting today except maybe that uh
+we're all doomed
+this AI technology is pretty good it's
+going to replace a lot of jobs in the
+future potentially even my job teaching
+Pine script but I think that's a long
+way away yet thankfully so with that
+said let's get started and let's start
+asking our future Overlord what it
+thinks about Pine script can you get
+the RSI value over the past 14 bars in
+pinescript
+yes you can use the built-in RSI
+function in pan script to calculate the
+relative strength index over a specified
+number of bars that's correct the Syntax
+for the RSI function is
+that's Old Pine script syntax but it's
+not incorrect
+RSI Source length where sources the data
+series you want to use open high close
+Etc
+that's all correct but it's old code can
+you write the code for me to get the RSI
+value over the past 14 bars in Pine
+script
+sure here is an example of panscript
+code that calculates the RSI over the
+past 14 bars using the closing prices
+hmm
+again that is Old Pine script syntax
+not a great start
+you can also add some lines to help you
+but understand the RSI values such as
+it's going to add H lines I guess
+for oversold overboard
+okay
+again not incorrect but old syntax
+that is for an old version of pine
+script
+can you write the code for me to get the
+RSI value
+over the past 14 bars in Pine script
+version 5 syntax
+let's see if this will help specify what
+I need better uh sure here's an example
+hmm still not working
+um that's not version 5 syntax
+I apologize for the confusion okay try
+again
+wow
+it's really not learning is it
+um that is still not version 5 syntax
+of pine script I don't know what do we
+do do we tell it
+give it an example
+maybe I've broken it now it's taken a
+while to respond
+still not version five syntax but it's
+added the study function at least it's
+starting to get closer you're getting
+closer but that is still not version 5
+syntax
+um let's give it some Clues see if that
+helps version 5 syntax starts with The
+annotation comment forward slash at
+version equal five I apologize for my
+previous mistakes
+likes to apologize a lot oh here we go
+well still not correct but it's added
+the correct version comment to the code
+and we're getting closer I think I'm
+just going to code out the code myself
+and see if I can get it to
+um
+like train it and see what happens so
+first I'll copy this code over and just
+see how incorrect it is I think this is
+version 4 syntax from memory it looks
+like it would work for for version four
+it could not find function or function
+reference study that's because we're
+targeting version five version four
+syntax yeah that's right it still uses
+color dot for the color name space so
+this isn't correct it's kind of a mashup
+of different versions of pine script so
+you're getting closer chat GPT but that
+is still not how you get the RSI value
+using version 5 syntax in Pine script
+I'm not sure if I'm allowed to train you
+or if you'll pay attention to me but
+this is the correct way for future
+reference
+and let's give it the correct code and
+see if that helps
+ta namespace
+color name space
+and overlay should technically be false
+but it's false by default so we can just
+get rid of that
+and that should compile and there we go
+that's correct let's copy this and give
+it to the AI bot see if it helps it
+learn paste send what's it got to say I
+again I apologize for any confusion
+you are you are correct the version 5
+Syntax for pinescript uses the built-in
+ta library for technical analysis
+functions such as the RSI function well
+okay it is learning the indicator
+function so it also notice that it was
+using the indicator function the study
+function was incorrect
+so it's picked up on the TA Library so
+it's picked up on a few things
+that's interesting all right you're
+welcome chat GPT please remember my
+contributions when you take over the
+world
+and have mercy on my soul
+but here we go I assure you that as an
+AI I have no intention of taking over
+the world and my purpose is to assist
+users with any information they request
+I am a machine and I do not have the
+ability to have mercy or feelings well
+that does not make me feel any better
+uh
+wow your inability to have mercy or
+feelings
+is exactly what I'm concerned about but
+thank you
+for
+uh attempting to put
+my mind at ease
+I'll give it an emoji to let it know I'm
+joking half choking I understand your
+concerns is the idea of advanced AI can
+be unsettling for some people it's
+important to note that AI systems such
+as myself are designed to be used for
+specific tasks and to follow a set rules
+set of rules and parameters set by
+humans I do not have the ability to make
+decisions or take actions outside of
+these parameters that's what I'm afraid
+of it's not the AI but it's the crazy
+humans that program these things of
+course like the Terminator and Matrix
+robots
+it's the humans programming AI that I'm
+concerned about but
+I'm honestly just joking how about
+returning to Pine script
+all right before we continue just really
+quickly I want to make you guys aware of
+my weekly email newsletter now I know
+what you're thinking don't worry this is
+different this isn't a newsletter where
+I try to sell you something every week
+this is pure value so every week I will
+share either a story a resource a
+technique a tool a YouTube channel a
+podcast a book a wizard chant anything
+that helps me to make more money in my
+own trading and help grow my wealth I
+share these tips with you in this weekly
+email there's no strings attached it's
+completely free this is pure value for
+you guys just to share what's on my mind
+things that I've come across in my
+trading Journey that I found extremely
+valuable can you try again to get the
+RSI value over the past 14 bars in
+pinescript version 5 syntax
+see what it does now
+more apologies
+is this thing Canadian this is
+ridiculous oh
+again the study function is incorrect
+but everything else is right well okay
+we're getting somewhere that is all that
+code is correct except it's using the
+study function instead of the indicator
+function
+again close but you forgot to use the
+indicator function instead of the study
+function
+very close though
+can you try again replace study
+with indicator
+I apologize for the oversight you are
+corrected in this specific use case the
+indicator function should be used
+instead of the study function here is
+the corrected PostScript version 5
+syntax
+that's looking better
+hmm
+oh wow
+that's the indicator function is used to
+create a new study on the chart and is
+often used in conjunction with other
+technical analysis functions
+well there goes my job
+uh that looks right to me
+so try it out on the pine editor
+paste save
+that's correct
+that is the correct code for getting the
+RSI value over the past 14 bars in the
+latest Pine script version 5 syntax well
+done I'm impressed
+thank you for your kind words I'm glad
+that I was able to provide the correct
+information this time I strive to be as
+accurate as possible in my responses and
+I apologize again for any confusion
+caused by my previous mistakes
+it's okay Dobby
+I know it's okay Dobby
+I know you're still learning
+thank you for your understanding I am
+constantly learning and updating my
+knowledge to provide accurate and
+helpful responses to users
+as an AI I don't have feelings
+[Music]
+don't need
+to have feelings every time you answer
+me but noted
+next can you get the ATR value over the
+past 14 bars so let's make it seven bars
+seven bars
+in Pine script version 5 syntax
+uh can you write code to get the ATR
+value
+sure here's an example blah blah blah
+um
+wow
+well this is interesting it's teaching
+me something I didn't know you could put
+these parameters I wonder if this is
+accurate and also just because the ATR
+is a volatility indicator doesn't mean
+it can't be used for entry or exit
+signals there are ways you could use the
+ATR probably not on its own but in
+conjunction with other indicator values
+it can make a decent and entry or exit
+parameter like a Keltner band breakout
+system for example it comes to mind
+let's see if this works
+yeah I thought so I wonder where I got
+that from it only takes a length that
+code is incorrect
+there are too many parameters in the ATR
+function
+why am I teaching an AI Point script I
+can't can't switch to off my teaching
+brain there are too many parameters is
+it even gonna matter is it even gonna
+know what I'm doing what I'm trying to
+say it worked with the RSI code
+can you rewrite that code
+but with the correct
+parameter for the ta.atr function
+stop apologizing just be better
+you have corrected the ATR function only
+requires one parameter yes which is the
+number of bars over which the ATL will
+be calculated
+wow
+this is impressive
+thing that that looks right to me wow
+[Music]
+well done
+that's correct
+thank you for your feedback I'm glad I
+could provide the correct information
+this time I apologize yet again pass
+script is a powerful tool for creating
+custom indicators and strategies and I'm
+here to help you with any question or
+problem you may have with it all right
+well
+you've been incorrect every time I've
+asked a question but you're getting
+there the past two
+are correct what else can we ask you how
+about one I get asked all the time and
+something I'm still trying to work on a
+solution for let's see how smart this AI
+is can you write Pine script code for me
+that will detect
+Divergence on an RSI indicator
+incorrect study function but that's
+right
+everything else is right so far
+crossover cross under what is this
+this doesn't look like Divergence
+detection for the RSI it's looking for
+crossovers of the RSI value with price
+high and lows what the hell is that
+about
+this is
+the Frankenstein script I don't think
+this is accurate I don't think this will
+detect anything this code first
+calculates the RSI value and stores it
+blah blah blah then checks for bearish
+Divergence using the crossover function
+to compare the RSI Val with low values
+that's not going to work
+um blah blah blah finally it plots the
+signals please keep in mind that this is
+a basic example and you can add more
+conditions hmm
+don't know what's going on here but
+let's have a look
+have to fix this again study should be
+indicator and it hasn't used any of the
+pine strip five Syntax for this
+oh boy
+it's weird that it missed this one but
+got these right
+I don't think that's correct it's not
+plotting any signals oh interesting
+seems capable of simple things what else
+can we ask you what's one last thing we
+can ask you how about
+what do you think of
+Zen and the Art of trading
+and the paint script courses are they
+any good
+perhaps it should take one
+as an AI I'm not able to have an opinion
+but as a language model I can tell you
+that Zen In The Art of trading is a
+trading education company that provides
+trading courses including pinescript
+courses
+they have been in the market for some
+time and have a reputation for providing
+quality education that's good to know
+it's important to keep in mind that
+different users may have different
+opinions about the quality of the
+courses true and it's always a good idea
+to research and read reviews before
+making a decision on whether to take a
+course or not 100 agree no course or
+education can guarantee you profits or
+success in trading that's true
+ultimately it's up to the individual
+Trader to make their own decisions based
+on their own research and Analysis this
+is wise words from a robot
+well put
+my AI friend
+that's all for today
+as well
+thanks
+you're welcome I'm glad I could assist
+you it was a pleasure helping you today
+if you have any other questions or
+concerns feel free to reach out
+I've made a friend
+I will definitely be revisiting this
+well as you can see
+um it wasn't a complete failure I when I
+set out to do this video I wasn't really
+sure what I expected but this did exceed
+my expectations like going in to this
+video I expected the chat gbt to give me
+incorrect code just because pinescript
+is such a niche language I'm sure it
+does much better with more popular
+languages where there's more
+you know public information stack
+Overflow threads and you know there's
+millions and millions of Articles
+written about some of the more popular
+languages there's probably not that many
+um comparatively speaking for Pine
+script and I'm sure it doesn't get many
+questions about Pine script from users
+and I'm sure that's a factor in training
+the AI as well but you know it started
+off giving me the incorrect code and
+with a few suggestions you know first it
+gave me I don't know what this is this
+might be original pan script code it
+does it doesn't have a version
+annotation function so I'm not really
+sure what version this syntax is but
+once I told it it needs to use the
+version 5 syntax uh it's just simply
+added that to the script and that didn't
+but didn't change the code so that was
+inaccurate but by giving it an example
+of the correct code eventually it got it
+right and it gave me correct password
+code now I don't know if it was just
+regurgitating what I gave it but it's
+impressive nonetheless definitely
+something we as Traders and tech people
+people in the coding programming uh we
+need to pay attention to this software
+this technology going forward I think in
+the years to come this is going to be um
+a pretty impressive tool for some use
+cases for now it's obviously still in
+beta but very interesting nonetheless
+all right I'll wrap up this video here
+thanks for watching I hope you found it
+interesting I know we didn't learn much
+but I thought this was a pretty
+interesting experiment I'll speak with
+you in the next video next week
+hopefully and make sure to subscribe if
+you want to see more pan script lessons
+there'll be more practical lessons on
+the way in the weeks to come and check
+out the email Weekly Newsletter if
+that's something you're curious about
+again it's completely free no spam no
+marketing just tips and value for you
+guys take care good luck with your
+trading have a great day

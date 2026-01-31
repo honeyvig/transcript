@@ -1,0 +1,488 @@
+g'day Traders today we're answering
+another question from a student in the
+Mastery course and this student wants to
+sort an array of EMA values but also
+keep the corresponding ticker ID
+associated with that value while being
+able to interact with the arrays so for
+example in this case we're sorting the
+array in ascending order so the lowest
+EMA value is first the highest is last
+but we're also keeping track of which
+ticker each value corresponds to now the
+methods I'm using to achieve this are
+quite interesting and the script
+actually makes use of a brand new pan
+script feature that was released a
+couple of days ago called custom methods
+so in this video we're going to be
+covering how to create custom types data
+types and we're going to be covering how
+to create a custom method and this is
+the new feature I'm speaking of method
+syntax comes to panscript so if I scroll
+down here the blog post here says the
+dot notation used for extension methods
+in other languages is now available in
+Pine scripts I love the guys that write
+these blog posts they're clearly
+programmers they're not speaking to
+Traders they're speaking to programmers
+with all this jargon basically what this
+means is if we're using something like a
+box for example excuse my childish
+writing with a mouse the dot notation is
+this so dot new
+and then we can use a function or it's
+actually a method but a function and a
+method are pretty similar you don't
+really need to know the difference in
+pinescript to be able to use them
+properly if I scroll down here see this
+line here Source array dot push value in
+the past you would have to do something
+like this array dot push and then pass
+in the array ID and then the value but
+now with this new method feature added
+to Pine we can do exactly the same thing
+by just saying array ID dot push value
+now in this particular example it
+doesn't make our code that much more
+efficient but in a complex script you
+can see how this can really help tidy up
+our scripts and make the code a bit more
+intuitive to read especially so without
+further Ado let's jump into the pine
+editor and start writing out the script
+all right so here's our starting
+template all I'm doing here is creating
+a regular indicator script with overlay
+to true so we're drawing over press
+action and we're getting five ticker
+inputs or symbol inputs it doesn't
+really matter what these are they could
+be anything but for today we're sticking
+with Forex so we're just working with
+oanda we've got euro dollar dollar Yen
+New Zealand dollar pound dollar and gold
+and what we want to do is get the EMA
+value for each of these the 50 EMA on
+the daily chart daily time frame so
+we're going to be using the security
+function here then we're going to insert
+all of those EMA values into an array so
+we're going to be creating an array
+based on a custom type so before we do
+that we need to Define
+our custom type that stores both
+the EMA value and the ticker ID so to do
+that we use the type keyword doesn't
+matter what you call this I'm going to
+call it EMA underscore sorted wow if I
+can spell EMA underscore sorted and now
+we need to define the data types that
+are stored within this overall class
+type so I said we need to store the EMA
+value and the ticker value so that's a
+float value and a string value so we can
+just declare these values in here so
+float EMA value and string ticker
+that's it we have defined our custom
+type now we can create a type based on
+this by simply saying EMA sorted my
+custom type equals EMA sorted.new
+and then it takes the float value
+and a ticker string and so now what we
+need to do is create five of these for
+each ticker ID and get the EMA value
+using the security function for each but
+before we do that let's declare our
+custom array so for this array I'm going
+to make it persistent so it doesn't
+reset on every new bar on our chart
+that's because on each bar we're going
+to be setting each of these five values
+in the array so we don't really need to
+recreate the array on each new bar this
+will just make our script compile and
+run a bit faster so to Define any array
+the syntax is usually like this array
+and then open
+arrows and then the data type of the
+array needs to go in between these
+arrows so if we're going to create a
+array based on a custom data type we
+need to paste our data type name into
+this array syntax and then I need to
+give it a name so I'll just give this
+the name of just EMA array and then we
+need to set it to array dot new open
+left arrow and then we need to put the
+data type in again
+and also specify the size of the array
+now this is optional but for today we're
+going to set it to five so we have an
+array based on a custom data type with a
+total of five elements and that's going
+to be these five custom data types so
+now we have our array declared let's get
+our EMA values so since today's lesson
+is not about the security function I'm
+just going to copy this code over to
+save time it's not that complex anyway
+all we're doing is requesting data from
+a security that is not this symbol be
+passing our symbol IDs our ticker IDs
+the time frame we want to get this data
+from and then the expression the data
+that we want to request from the
+security in this case that's the 50 EMA
+based on closing price from the daily
+chart for each ticker or symbol now we
+have these five EMA values
+the next thing to do is completely
+optional but because it makes it easier
+to understand what's happening we're
+going to draw all five of these onto the
+chart this is obviously optional we
+can't really do much with this
+information since this is all EMA values
+for markets completely unrelated to this
+one but at least we can see our values
+up here now and what we want to do now
+is add all of these to an array and sort
+them in ascending order so lowest number
+to
+the highest number in order to do that
+we need to insert all of these values
+into our array so that's going to look
+like this now notice that for the first
+time as of a couple of days ago we can
+now use dot notation with arrays to
+interact with those arrays so as I
+mentioned earlier in the past in order
+to do this sort of thing in order to set
+the first element of this array to any
+value we would have to write array dot
+set
+and then pass in our array ID then pass
+in the index then pass in the value but
+now we can skip this part and just
+simply put dot and then the method that
+an array typically has access to and
+here we go now it's not that amazing but
+for any of you experienced programmers
+out there you know that this is pretty
+cool feature then I'm surprised it took
+this long for the trading view
+developers to add it to Pine it's much
+more intuitive this is much more similar
+to traditional programming languages now
+the syntax we can use here is much more
+intuitive for most programmers out there
+who work with the more popular languages
+like python Java JavaScript C and all of
+those sorts of languages so anyway we
+need to set all five values here so I
+can copy and paste this line a few times
+remember array values elements start
+from zero the first index is zero so
+zero one two three four gives us five
+elements we need to pass in the value of
+each EMA and each ticker string so we're
+setting each array element in our custom
+data type array to all of these values
+and we're creating a new EMA sorted type
+passing in the email value in The
+Tickler for each and now we have
+everything we need in order to
+manipulate this data in this case we're
+going to sort the data in ascending
+order and to do that we're going to use
+the new method
+feature now methods work pretty much
+identically to custom functions so a
+custom function will look like this
+let's say you have value 1 value 2.
+and you want to return whatever value
+one multiplied by value 2 is this is how
+you would Define a custom function that
+multiplies these two values and outputs
+them and then we could plot this by
+saying what's 1 times 2.
+save my code and we're getting two
+plotted up here using this custom
+function now to do a method a custom
+method it's pretty much the same syntax
+except we need to use the method
+keyword in front of this and so our
+custom method is going to be called sort
+custom array and now this is where
+things get pretty complicated
+particularly for this lesson if we make
+the very first parameter of this method
+an array then we can call this method by
+using the
+dot notation I showed you just before
+so we can use this syntax to sort out
+EMA array if we make the first parameter
+in this methods parentheses a custom
+array like this and now we need to use
+the same custom function syntax equals
+sign followed by a right arrow enter Tab
+and then anything within the scope is
+executed by this method when we call it
+now normally if you're just working with
+a standard float array
+um like this let me comment this out so
+this compiles properly
+if we had an array like this
+test array equals array float
+array.u
+float
+five values if we had a normal float
+array like this we could simply just use
+the test array.sort
+function and this would sort the values
+in ascending order however with our
+custom data type this function won't
+work so if I paste EMA array in here our
+script is now broken because biascript
+doesn't know how to sort an array filled
+with data types of this nature it
+doesn't know that we want to sort the
+array by EMA value so what that means is
+we need to write our own code for
+sorting the array elements and that's a
+little bit tricky it's not too crazy but
+it does require some pretty scary
+looking code if you're new to buying
+scripts for those of you who are
+experienced this won't be that bad but
+we just need to Nest two for Loops
+within each other and then these two for
+Loops will will cycle through the array
+and compare all the elements to each
+other and then set the array elements in
+order of their values in this case
+ascending order so to do this we need to
+create our first which is going to be 4i
+equals 0 2 Source array dot size minus
+two I'll explain why it's made is two in
+a moment but now we need to Nest a
+second for Loop here and so the second
+for Loop is going to Loop within this
+for Loop it needs to have a different
+index value obviously we can't call this
+I so we have two for Loops here the
+second for Loop is going to be set to
+the first for Loops index plus one and
+We're looping two
+our source array dot size
+-1 and so now what we can do is we can
+check if Source array dot get I so
+that's this first for Loop value or
+index array index so we get that value
+now remember when we get this value it's
+going to be this data type our custom
+data type so what we can do here is say
+EMA value
+if
+the first Loops EMA value is greater
+than the second loops
+BMA value then we need to swap their
+positions in the array so to do that we
+need to create a temporary data type
+here called temp
+equals Source array.get I and then we
+need to set Source array dot set I to
+this for Loops element so I can copy
+this here and change this to J
+and then we need to set the
+second
+for Loops array element to our temp data
+type so we're essentially swapping these
+two elements position within the array
+because they are not in the correct
+order so now if I save my code let's
+just make sure this compile is okay
+there we go no problems now what we can
+do is
+call this custom method
+on our custom data type array
+so we can sort email array we could also
+call this function like this
+email array
+that would do the same thing so now you
+can understand why methods are very
+similar to functions in fact if we got
+rid of this
+and at the end of our for Loop we just
+return the source array we could do
+something like this so this is how it
+would work in the past you'd have to use
+a custom function and you'd have to call
+it like this but now that we have the
+new method functionality we can simply
+do that and that makes coding a lot more
+efficient when working with complex
+scripts like this so
+here we are defining our custom array
+sorting
+method we're calling it here the final
+thing to do is draw this data to the
+Chart so I'll just copy this code over
+to save time here we're just checking if
+the script is running on the final bar
+on our chart we're creating a array text
+it's blank to begin with and then we
+Loop through all of our Ray elements and
+we append or add the array elements text
+to this value and then finally we create
+a label with the text so that we can see
+what the heck's going on with our custom
+function so now if I save my code we
+should be getting the script to be sort
+of the beginning of the video there we
+go
+sorting everything in ascending order
+using a custom method a custom data type
+and a array based on that custom data
+type so we covered quite a few Advanced
+Pine script Concepts in today's lesson I
+hope you guys found this interesting
+just to wrap up the lesson I want to
+cover a couple things first of all this
+probably looks a bit complicated we can
+get rid of this line of code here and
+just add on a new line at the end of
+this so now if I save my code the label
+will still be drawing but we have a
+blank string at the bottom of the label
+that's why I added this uh extra line
+here this just checks if this for Loop
+index is equal to the final Loop if it's
+on the final Loop then we don't add a
+new line character to the label text and
+that's obviously purely optional just
+makes the label look a little more
+symmetrical for all of you OCD Traders
+out there what else is there to cover uh
+with the for Loop here the reason why we
+have to subtract 2 from this original
+for Loop is is because if we don't do
+this we get an array index out of bounds
+error on the final Loop if I change this
+to -1 and save my code the script will
+no longer compile because in
+array.getfunction index 5 is out of
+bounds so that's why we need to subtract
+2 from our original Loop but we don't
+need to do that for the second Loop
+because the second Loop Loops up to the
+final element where this Loops up to the
+second final or second last element and
+then this for Loop runs on that second
+last element and we're adding one to the
+original array index and so this for
+Loop runs on the final array element
+even though this Loop doesn't Loop up to
+the final element hopefully that makes
+sense it's really hard to explain this
+sort of stuff but if you play around
+with this code and try sorting your own
+custom data types I'm sure you'll figure
+out what I mean with practice the final
+thing I want to do before we end this
+video is I want to show you guys how we
+could add
+a optional Boolean value to this method
+called ascending and ascending is always
+going to be set to True by default so
+this is how you declare a default
+parameter now if I save my code
+everything will compile without any
+problems if I get rid of this equals
+true however now we have a problem
+because this is no longer an optional
+parameter and our function call our
+method call here requires us to specify
+whether ascending is true or false
+like so but for this example that I'm
+about to show you we're going to leave
+this as true by default and then what
+we're going to do is check in this if
+statement this value and if this value
+is false we're going to sort the array
+by the opposite direction descending
+order so what we're going to say here is
+we're going to say if ascending and this
+condition is met the element of I is
+greater than the element of J if that's
+true we swap the elements or and then
+I'm going to put this on a new line just
+because it's easy to read otherwise it's
+going to be off my chart here to split a
+if statement across multiple lines you
+need to press space after you hit enter
+otherwise you get a syntax error and for
+the second check the second condition
+we're going to check is ascending not
+true and are our array elements in the
+opposite direction so is element I less
+than element J if so then this for Loop
+will sort the array in descending order
+so now if I put false within this
+parameter within this methods
+parentheses and hit save this list will
+now be sorted in the opposite direction
+so now we have the highest number at the
+top or the first element in our array is
+the highest number all the way down to
+the lowest number you could also achieve
+this by just calling EMA array dot
+reverse because we're sorting in
+ascending order so we could just reverse
+the order of our array we want to but I
+thought it was cool to show you guys how
+we can add this optional parameter into
+our method so remember if we don't
+specify a Boolean value here then it's
+going to use this default value which is
+true and we're going to sort the array
+in ascending order anyway my brain is
+fried after this video I hope yours
+isn't but it did take me a while this
+morning to figure this out so I've been
+coding for a couple hours I'm going to
+go take a break now as always the source
+code will be below if you want to play
+around with this I hope you found this
+video interesting if you did make sure
+to subscribe hit the like button all
+that YouTube stuff if you want to learn
+more about planescript check out my
+website pinescriptmastery.com there's a
+free course there for all of you
+beginners if this went way over your
+head then you might want to start there
+it's completely free and has several
+hours of content covering the basics of
+Pine and finally if you're not aware I
+do a Weekly Newsletter email that's also
+free where I share book podcasts
+websites blogs animal sacrifice
+techniques anything that helped make me
+a better Trader I'm kidding about the
+animal sacrifice I don't do that but
+there is plenty of free awesome content
+on my website the art of trading.com go
+and check that out if you want to learn
+more about Pine script or just my
+trading style and knowledge in general
+as always I hope you have a fantastic
+weekend best of luck with your trading I
+love you guys thanks for being here
+thanks for supporting the channel and
+I'll speak with you in the next video
+take care

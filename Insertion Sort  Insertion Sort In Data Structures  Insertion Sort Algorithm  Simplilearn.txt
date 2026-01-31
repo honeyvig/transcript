@@ -1,0 +1,175 @@
+hey everyone i am viva kandalwal and i
+welcome you all to simply learns youtube
+channel in this session we will discuss
+insertion sort algorithm
+we shall begin our session by
+introducing insertion sort
+then we will discuss insertion sort
+algorithm after that we will implement
+the insertion sort algorithm in the code
+editor
+finally we will sum up what we have
+learned from this session
+but before we begin make sure you have
+subscribed to our youtube channel and
+clicked on the bell icon below so you
+never miss an update from simply learn's
+youtube channel so without any further
+ado let's get started with an
+introduction to insertion sort
+insertion sort is basically a sorting
+algorithm in which each item in the
+final sorted array is sorted one at a
+time
+and it is significantly less efficient
+than more sophisticated algorithms like
+quick sort heap sort or merge sort on
+larger data sets
+now let's discuss the algorithm of
+insertion sort
+let's say we have an array
+we will start with traversing the array
+from index 1 to n minus 1.
+while traversing we will compare
+elements at the current index to its
+predecessor
+if the data at the current index is
+smaller than its predecessor then we
+will compare it with the element before
+that
+after that we will shift bigger elements
+to an index up to make space for swapped
+elements then we will shift the bigger
+elements to an index up to make space
+for the swapped element and then we will
+iterate the same steps again to sort the
+complete array
+we have now introduced the insertion
+sort and its algorithm
+now let's implement this algorithm in
+the code editor
+we will start with creating a function
+to sort an array using session sort so
+void
+insertion sort
+we will give it argument as int array
+arr
+comma int
+size
+we will declare variables and i
+comma key
+comma j
+now
+we will create a loop for loop
+from i is equals to
+1
+to i less than
+size
+i plus plus
+here we are traversing this array from
+index 1 to the size n minus 1.
+so key
+is equals to
+arr
+at i
+and j is equals to
+i minus 1
+now we will move the elements of ar 0 to
+i minus 1
+that are greater than the key to one
+position ahead of the current position
+so while
+j
+is greater than equals to
+zero
+and
+arr at j
+is greater than key
+and we will swap these
+so a ir
+at j plus 1
+is equals to a r r
+f j
+and j will be equals to j minus 1.
+and then we will assign arr j plus 1
+is equals to key
+now we will write a function to print
+this array
+of size
+void
+print
+array
+we will give its argument as end
+array
+and
+size size
+we will declare end i is equals to zero
+for loop
+i is equal to zero
+i less than size
+i plus plus
+c out
+arr
+arr
+bracket i
+and see out
+handle
+now we will write the main block
+so end
+arr
+is equals to
+12 comma
+11 comma 15
+comma 9 comma 6 comma 7
+and
+size is equals to we will find the size
+using size of
+so size is equals to
+size of
+arr
+divided by size of
+arr at index 0.
+now we will print this array without
+sorting
+so c out
+unsorted array
+we will print
+array
+error comma size
+now we will call insertion sort
+arr comma size
+see out
+we will print this
+array
+sorted
+now we will again call print
+array
+argument as arr comma
+size
+now let's print this
+as you can see our function is working
+flawlessly it has sorted this array
+let's get back to our slides
+at last let's sum up what we have
+learned from this session
+first up insertion sort is efficient for
+arrays with small data sets
+next up insertion sort require a
+constant amount of extra memory
+next insertion sort can only sort a
+single element at a time
+and finally insertion sort has the worst
+complexity of big o of n square
+and this was all for today's session
+hope you guys found it informative and
+helpful if you like this session then
+like share and subscribe if you have any
+questions then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+simplyrun
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

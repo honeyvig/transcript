@@ -1,0 +1,497 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn how
+to use Microsoft power query that's said
+if these are the type of videos you'd
+like to watch then hit that like And
+subscribe buttons and the bell icon to
+get
+notified craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your ambition
+whether you're making a switch or aiming
+higher simply learn has your
+back just for a quick info if you want
+to upscale yourself master data science
+and data analytics skills and land your
+dream job or grow in your career then
+you must explore simply learn scod of
+various data science and data analytics
+programs simply learn offers various
+certification and post-graduation
+programs in collaboration with some of
+the world leading universities like
+Caltech heru I con for and many more
+through our courses you will gain
+knowledge and work ready expertise in
+skills like Advanced Excel python
+machine learning data visualization
+generative Ai and or a dozen others
+that's not all you also get the
+opportunity to work on multiple projects
+and learn from industry experts working
+in Top Tire data and product companies
+and also academicians from top
+universities after completing these
+courses thousands of Learners have
+transitioned into a data science or data
+analytics role as a fresher or moved on
+to a higher paying job profile if you
+are passionate about making your career
+in this field then make sure to check
+out the link in the pin comment and
+description box below to find the data
+analytics program that fits your
+experience and areas of Interest now
+without further delay let's get started
+with the topic which is how to use
+Microsoft power query so imagine you
+have a lot of data it can be an Excel
+file it can be a PDF SQL database cloud
+or anything if it is Data it's your data
+right so you have a lot of data now you
+have the source of the data after that
+I'm absolutely sure that the data is not
+clean enough to perform some analysis so
+you go through another step where you
+have to clean your data from unwanted
+rows and columns which doesn't make
+sense or might have some invalid data
+right so you need to make sure that your
+data is completely accurate and has some
+standards for your analysis right so
+that's the next step which is clean and
+transform after the clean and transform
+step you have the next step which is
+load that particular data to your
+platform it could be Excel it could be
+some data visualization tool like TBL
+Loop bi Etc right after that you
+generate some meaningful information of
+that you create some pivot tables pivot
+charts and uh line graphs Etc right so
+which makes the some sense of that data
+you will understand what what exactly is
+happening with your business how many
+leads or how many traffic orders what
+right and which is the best performing
+product which is the worst performing
+product and you need to take some
+decisions on your business which can
+make some impact on your overall profit
+or Revenue right so imagine if you want
+to do this for an year if you get one
+year's data and you do it in a day or
+two it's fine and if it's on a monthly
+basis you get month on month data and
+you want to do it okay it could not be
+worse you can spend one or two days and
+it's fine but if what if it's weak on
+week you start to think right what if
+it's a daily task it's a mundane task
+right you have to do all these Steps
+step by step repetitively and it it
+doesn't make any you interested anymore
+in that particular type of job and uh
+the major point of this is you end up
+spending more time on cleaning data
+transforming loading it and the worst
+part you don't get proper time specific
+time which you want to actually dedicate
+to plan out something and bring up
+strategies to improve your business
+right so what if you could automate this
+right what if there is someone who could
+perform all these steps for you in the
+way you want and you can actually have
+some time to produce some pivot tables
+pivot charts and then understand what
+exactly is happening with your business
+and find out some critical points where
+you can improvise and bring up some good
+Revenue what if there was someone who
+can perform all these steps for you
+clean your data transform it the way you
+want load it to your platform and help
+you create your prer charts and piver
+tables and actually save you a lot of
+time where you can spend all that time
+understanding your critical points where
+you need attention you can fix them and
+plan some strategies out to bring out
+some good Revenue right that exact
+someone who can do all these steps for
+you and automate your data cleaning data
+transformation and loading tasks for you
+is exactly the Microsoft power query so
+you can use Microsoft power query either
+in Microsoft Excel or Microsoft power PI
+right now let's um kind of generate some
+data so uh this data will be generated
+using chat GPD and we will not generate
+data like which is not small like for a
+week on WE analysis or a day-by-day
+analysis we will create data for years
+so we will take five consecutive years
+starting from 2020 to 2024 and we will
+have some uh data generated using chat
+GPD and we will automate that data and
+try to get some analysis done right
+let's jump on to chat GPD so before we
+go to chat GPD I have a prompt written
+here so this particular prompt will
+guide or explain chat jpd what exactly
+you want right so you're giving some uh
+like the Excel data right over here we
+have AUD date order ID shift mode and
+customer name customer ID everything
+right so we have the sales quantity
+discount profit Etc so in the same
+format or a similar format if not the
+same format we are explaining chgb that
+we need these columns the order ID order
+date delivery date Etc and we want all
+these files in a downloadable Excel file
+links right so you can also specify this
+column should have certain certain
+things and this column can have certain
+certain things right so we will copy
+this prompt and head back to chat GPD
+and you can just paste the prompt and
+hit enter there you go now your request
+has been analyzed and shortly you should
+be receiving some download aable Excel
+files or some recommendations from chat
+GPD I've already performed this process
+and we have already downloaded some data
+so there you you go you have the data
+from 2020 to 2024 you can just click on
+this to download the file so I've
+already uh done this job and U I've
+downloaded the files so those files are
+exactly in my downloads here so if you
+go to downloads here we have arst data
+for 2021 2022 2023 3 and 2024 so this
+orders data has just one file which is
+orders 2020 so we will perform the data
+cleaning so first we will specify the
+source of the data then we will perform
+the data cleaning and transformation
+process then we load this particular
+Excel 2020 data into Excel and then we
+load this Excel data into the
+visualization tool we'll use Excel for
+this and then generate some pivot tables
+and pivot charts we will only do this
+for one file which is 2020 right now
+what's the surprising part is this
+particular file will also get data
+continuously for the next year 2021 for
+the next year 2022 for the next year
+2023 and the current year 2024 right
+when we just copy paste or cut copy
+paste these files into this particular
+folder the same transformation steps the
+same data cleaning steps and the same
+data loading steps and also including
+the analysis will be done for you in the
+Excel pivot table right the process has
+been just automated right so you can see
+that happening for that let's open a new
+Excel file so I have the Excel folder
+right over here so a new blank Excel
+workbook will be opened and if you go to
+data here you have get data as we said
+it can be a file it can be an ex file
+XML Json PDF it can be from cloud it can
+be from a SQL database any any other
+source if it's data you can work from it
+so we will give a file here right so
+just uh uh okay so so we will give a
+file here so select file and go to the
+last option which reads as from folder
+right so go to downloads and select that
+a data yeah go to downloads and select
+that a data remember this particular
+folder should have only one file
+according to us which is 2020 data the
+first years data right select the folder
+and open and this should include the
+data of only one file which is or Is
+2020 right so if you have multiple files
+you can either combine transform and
+load if you have just one file you can
+just go with the transformation option
+over here or you can load if you are
+comfortable able with what you have so I
+feel there are some minor changes which
+I would like to make to my data so I
+would go with the transform option now
+the power query window will shortly open
+now with the power query window opened
+you can select the orders 2022 Excel
+folder and it will be loaded now let's
+try to click on the content button over
+here which should load our data now you
+can go with the first file so here's the
+preview as we expected we have the order
+date delivery date Etc just press on
+okay so the data has been successfully
+loaded right now we have the First
+Column as Source name which we will not
+be needing anymore and you can just
+remove that order ID is fine a date is
+fine is it no right so you can just
+select both the columns and change the
+data type right so here you have the
+option of change the data type where you
+will change the data type from whole
+number to date so that you get a date
+right so you have that the First
+Transformation step changing data type
+has been recorded here so this is like
+uh V uh XL vbx or macro which will save
+all the steps and will apply uh to all
+the uh upcoming files right you have to
+change the type of delivery date as well
+so we will be finding uh the how many
+days it took to deliver or if if the
+delivery got delayed right so we can
+test that and here if you see uh yes we
+requested customer ID and customer name
+so we got customer ID along with the
+name so we don't want that we want that
+in two separate columns we can do that
+so you can just select the entire column
+go to the split column option over here
+select by D limiter so I think it all
+automatically recognize that for us but
+there is one loophole we have a space d
+limiter space option so just press okay
+and they should be helping us with the
+customer ID so let's rename the customer
+ID to just customer ID and this to a
+customer name space name right and
+that's done here we have product which
+is fine quantity is fine traffic is fine
+leads is fine orders and here comes the
+money part so we have Revenue cost to
+comp compy so we don't know the profit
+yet right so to calculate the profit
+what you need to do is substract revenue
+from cost of the company and
+automatically you will get your profit
+so in some instances you might get a
+negative value don't worry about that
+because uh that can be a discount offer
+or some 50% off 75% off that you
+regularly sell out your products which
+are selling in less num so that you can
+just you know uh move out the products
+from the store so that can be done and
+order status so we have order status as
+delivered in transit not delivered yet
+or order cancelled right so we might
+have to rule out some uh status here
+right so we are calculating profit here
+so we don't want the profit for
+cancelled orders or not deliver
+okay maybe okay okay not delivered
+orders uh this might be considered as
+the cost of company and revenue because
+uh it takes some delay to refund the
+amount to the customers so we can just
+add a filter to this particular column
+and uh we will unselect not delivered
+products and Order cancel products so
+not delivered happens when the vendor is
+not available to deliver the product to
+the delivery agencies so in that case uh
+the order gets automatically cancelled
+and uh the order will be the money will
+be refunded to the customer so we will
+rule out these now the data is clean now
+uh as we thought to calculate the profit
+select these two columns first Revenue
+then cost to company because we are
+subtracting cost to company from revenue
+right so we will go to add to column and
+standard and here we have some options
+so we will subtract that so we will get
+the profit here so now you can name it
+as profit done so we just move that
+column to the money part of this
+particular data set so profit cost to
+company and revenue are the money parts
+so we will change data type from just
+values to currency right so then that
+should be converted into the dollars
+format now the first one we don't need
+this Source name so you can just rule
+out this you can just uh remove this
+column and there you go now you have a
+clean data you have the order ID order
+date delivery date yeah we forgot uh the
+another part of this particular data set
+transformation where we wanted to find
+out the number of days it took to
+deliver the product okay I think we
+changed uh other ID so we don't want
+this so the first okay let's change this
+to the to the whole number as it was
+okay so order ready fine now we wanted
+to find out the number of days it took
+to deliver the product so we will select
+the delivery date first and then the
+order date second go to add column and
+uh we will select subtract in days and
+we should have that now let's change the
+uh subtract subtraction name to days to
+dat and and you can move this column
+right select the whole column and hold
+it drag it and you can move this colum
+along with the dates part of this data
+set we have the ordered date and
+delivered date right right over here and
+you will find how many days it took to
+deliver a certain product now um let's
+recheck once order ID order date
+delivery date dat to deliver customer ID
+customer name what product did he or she
+order
+and what quantity and uh the traffic
+which we received to the website the
+traffic which we received to the website
+the number of leads we got out of those
+traffic numbers the number of orders we
+got out of those uh uh leads and what's
+the revenue we got out of those orders
+and what was the cost of the company and
+what is the profit that we made out of
+that order right and we also have the
+order status remember we only considered
+remember we only considered two types
+right uh we considered in transit and
+delivered statuses only we ruled out
+cancelled orders and not delivered
+orders so that we have accurate results
+of our profit made and revenue made out
+of this right now I'm completely
+satisfied with my transformation and
+cleaning of my dat set now let's go to
+home and here we have the option of
+close close and load so we will go with
+that and this particular data set should
+be loaded to the data visualization
+where we have selected Excel right uh so
+we have the orders data for
+20 20 correct okay let's not add date
+here because after all we will have some
+more data for 2021 2 three and four
+right so let it be the way it is and if
+you just check the filter here we have
+only one year and and if you just check
+the filter here you will have only one
+year and if you just check the filter
+here you will have only one year 2020
+and if you go to the delivery date which
+let's say if you have an order placed on
+December 31st and it got delivered on
+January 5th or something so you'll have
+a little bit of a part of 2021 data
+which is completely all right not to be
+worried about so the main important
+thing is audit date so we want the audit
+dates of 20 20 so that is loaded here
+right now you can just select the whole
+data set over here and uh uh you can add
+or insert some pivot tables here right
+from the selected range and uh let's go
+with the default option which creates a
+new sheet everything in a new location
+right here you have it now let's say you
+wanted to make out some um insights from
+this uh data set let's delete the other
+sheet which we don't want on and let's
+name it as
+pivot now the products will be loaded to
+the columns and uh profit will be loaded
+to values so you have a data set over
+here sum of profit from beds chairs
+cupboards sofa tort so here you have the
+pivot table which has sum of profit bed
+chair cupboard sofa T and grand total
+some of profits made from these these
+these and these
+now select this entire data and go to
+the uht option here go to the pivot
+chart and uh here automatically here you
+can see that it is you know suggesting
+or recommending us to go for the bar
+chart which is a lot more better just
+select okay and you have your PIV chart
+here right and see the grand total here
+22
+4811
+4.15 now this is only for one years of
+data now what we will do is go back to
+the downloads folder select the
+remaining years which is 2021 2 3 and 4
+add that to the file location so let's
+quickly go to our folder here and go to
+downloads select the folders I'm going
+to cut them from here go to a data and
+paste them here right now our job is
+done if we go back to the data here go
+to home and
+data okay let's so now that we have
+added the data to our folder go to the a
+data and here select the data segment
+and just select refresh all so
+everything is refreshed now let's check
+the audit date filter and we will have
+all the 5 Years From 2020 to one 2 3 and
+four and let's press okay for that and
+if you go to the pivot table you can
+also see the changes here just press
+refresh all and there you go you have
+the updated data right over here now
+that's saved a lot of time for you and
+now that time can be utilized to plan a
+strategy and focus on the lower parts of
+your business and improvise them and
+bring a big change to the revenue and
+with that we have come to an end of this
+session on how to use Microsoft
+powerquery that said if you require any
+of the re resources like PPD DS that we
+have used in the session or the prom
+that we have used in the session or the
+entire workbook then please feel free to
+let us know in the comment section below
+and our team of experts we'll be very
+happy to resolve all your queries at the
+earliest until next time thank you for
+watching and stay tuned for more from
+Simply learn staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to to Career Success click the link
+in the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

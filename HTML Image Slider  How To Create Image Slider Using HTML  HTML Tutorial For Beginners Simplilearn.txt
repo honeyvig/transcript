@@ -1,0 +1,414 @@
+hello everyone
+welcome to this video on html image
+slider by simply learn
+in this video we'll learn how you can
+create a beautiful html slider by using
+just html and css a little bit of
+javascript
+so without further during our time let's
+get started
+our image slider looks something like
+this
+we have the background image and those
+images that i have taken
+for example purpose we have these radio
+buttons and we click on the radio
+buttons
+we can go through our images one by one
+also the images will change
+automatically after sometimes as you can
+see
+so let's see how we can create this
+image slider
+so here in the desktop i have created
+one file where i have the required
+images
+and html and css file
+so first in the experiment style let's
+add
+slider
+inside there i'll create another
+which will be named as dim class slice
+inside this big cat slides we'll add the
+radio buttons
+so input
+the input type will be radio
+and let's give this name
+radio button
+and we'll tag them with id radio one
+so as you can see
+we need four buttons here so we'll add
+four radio buttons here
+so just copy paste this four times
+here change the id to radio 2 radio 3
+and radio 4 so we can distinguish four
+radio buttons
+so after the creating the radio buttons
+we'll add our required images so we'll
+create android div and limit class
+slide first
+i'll create an image tag
+and specify the path of the image
+in a similar way we create a
+four div tags for four images
+so just
+we'll do it simply
+another with class name
+slide
+inside this image
+2.jpg
+so just save the file and let's recheck
+our code
+we have the radio buttons we have the
+images so let's just go back to our file
+and see how it looks
+so if we refresh
+we see we have the four radio buttons
+here and some distorted images
+so let's just fix this images in the css
+so inside of css file
+we'll add the body
+and we'll set the margin to zero pixels
+padding to zero
+we'll set the height to say under
+vertical height
+we'll set the display to flip
+we'll justify the content to center
+we'll set the align items to center
+and we'll set the background to black
+so just
+refresh this file
+so we still need to fix these images
+so just
+set the slider width to
+eight hundred to five
+okay this there's an error we'll say
+this bit not litters
+we set the height
+to 500 pixels
+we'll set the border radius
+to 10 pixels
+and overflow will keep as hidden
+for the slice part
+we'll set the width to 500
+height to 500 pixels
+and display to select
+so let's save the file and see how it
+looks on the page
+so yeah you can see the images now in a
+proper size you have to fix this radio
+button we have the background black
+so let's fix the sims
+so for the slide input
+okay before starting this let's add some
+more stable content here
+so after adding the image we have to
+create the automatic navigation button
+and the manual navigation button
+so after this
+add another div
+the class name
+navigation
+auto let's see
+and inside this navigation auto will add
+dev
+truss
+auto button one
+we need the four button so we'll copy it
+four times
+and this will be my button two
+this is the button three and this will
+be button
+outside this
+will create another
+navigation button so we'll name this
+navigation
+make sure it's spelled right navi
+navigation
+and inside this
+we'll add our radio button usually
+manually
+we'll name it class
+manual button
+we need the code button so we'll copy it
+four times
+change the label to radio 2
+radio 3 and radio 4
+so i think
+this will work enough so here we have
+the navigation
+okay we have a spell mistake here
+div
+class and navigation panel vista classic
+so let's recheck our code it's a good
+practice we check your code so that you
+don't encounter any error so okay we
+have a different slider here
+and inside our zip close adder we have
+the four radio button dd1 to c4
+we have added our images
+inside the div tags with the name slide
+okay
+we have created a navigation auto
+the four buttons and navigation manuals
+are the four buttons okay
+so let's save the file and go back and
+refresh it and see how it looks
+okay
+we have to add some css here
+so inside the slides
+input will get the display to done
+two seconds
+now we'll
+add this type of image
+we'll set the width to 800 pixels
+and we'll set the height to say 500
+pixels
+okay
+let's save the file and let's go back to
+see how it looks right now
+okay so you can see the images are
+properly aligned here
+we have to style our radio buttons for
+here so let's go back to our css
+navigation
+so just add here comment manual slide
+navigation
+so
+we'll add the first
+class navigation manual
+we'll set the position to absolute
+then set the width to 800 pixels
+will not have the height here will set
+the margin
+so the margin top will be
+minus 40 pixels
+and this will keep it as length
+and the justify content
+will be sent out
+so let's go and
+go back to the page to see how it looks
+right now
+okay the images are in the center you
+can see
+now we cannot see the radio buttons
+just as now we have to add some color to
+it so that the radio button will be
+visible
+so go back to the css
+we'll add the manual button
+we'll set the border
+to
+shape three pixels
+solid and red
+you can take any color you want
+i will set the padding to five pixels
+uh we'll set the border radius to say
+nine pixels
+we set the processor to point pointer so
+that when whatever buttons the cursor
+will look as a pointer
+and we'll set the transition to one
+seconds
+save
+go back and refresh
+so now you can see the buttons are here
+not properly spaced but yeah they're
+here
+so let's add the spacing and everything
+else
+so we will set the manual button
+we'll set the margin
+right to 40 pixels
+and it's time to add the over effect so
+for the manual
+button
+the google will be um save
+background
+the color
+blue
+so just save the file and go back and
+refresh
+yeah so you can see our manual buttons
+are in place
+when you hover over it you can see the
+blue effect and when you click
+nothing happens right now because we
+don't have any javascript in response to
+this later button
+we'll add them in the end
+first let's design these buttons so this
+was for the manual button
+now we'll add one code which will be
+used when you want to save the reader
+button by default
+so let's understand how those video
+buttons work in this file so the radio
+version is used where two or more
+options are identified which are
+mutually exclusive and the user has to
+do exactly one choice
+in other words click on advanced
+selected reader button will erase any of
+the button that is selected on the list
+previously
+deliverables include lower cognitive
+load as they permanently keep all the
+options visible such that users can
+easily analyze them
+radio buttons are also simple to use for
+users who have difficulty making
+effective mass movements
+so we'll add hash radio
+dot checked
+so the sign that we have added here is
+more signaling combinator
+it combines two sequence of simple
+selectors having the same parent and the
+second must come immediately after the
+first
+so
+we add dot first
+and for this we set the margin left
+to zero
+okay so this will be radio one
+the label that we are added in our
+manual buttons
+we'll need four such
+buttons so we'll copy this four times
+one two three and four
+this will be my for radio button two
+and we'll set the margin left here to
+minus 20 pixels
+for radio button 3 then set it to say
+minus 40 pixels
+i'm going to forget to add
+pixelation
+and for the last button
+we'll set it to minus 60 pixels
+so all this code is for the manual
+navigation button
+now let's design for automatic
+navigation button
+so
+we open dot navigation
+we'll set the position to absolute
+set the display to flat
+we'll set the width
+to 800 pixels
+and we'll justify the content to the
+now
+so i'll add this tag to navigation auto
+so
+navigation okay
+then set the border
+to same wall that we have used here
+let me shape it solid red
+make sure you keep this sequencer solid
+and same in both the navigation auto and
+navigation manual because if you change
+the color here you will see the two
+manual buttons there so
+for
+this example let's change this to green
+so when you save and go back
+and refresh
+yeah
+but you can see the two buttons there
+this is a green and this is red so if
+there are two colors the
+both the buttons in overlap will not too
+good so we'll just keep it here red
+we'll set the padding to five pixels
+we'll set the border radius to 9 pixels
+and we'll set the transition to 1
+seconds
+now same code as here which i've added
+for
+checking out the radio buttons
+so we'll just copy this whole code
+and paste it here
+i'll have to tweak some things here
+so the class was navigation dot auto so
+we'll add here
+navigation
+dot
+auto button one
+we will filter some background
+so we will delete this code
+um
+background let's say
+any color pink
+so
+copy this code control c
+delete this whole thing
+and just change the radio button there
+this will be radio button
+this will be three
+and this will be four
+now we have all the designing in place
+now we have already designing in place
+let's go back to the code and refresh
+so now you'll see everything
+the background is that that the images
+is properly aligned we have this button
+so let's click
+so when you click you see the images
+slides this is the fourth image
+third
+second
+and first
+so
+your beautiful image slider is ready
+all right now is left is to add the
+javascript code to this image directory
+function in automatic manner
+so now we'll go back to this html5
+and below this dev tag
+will open one script tab
+and inside the script tag
+we create one
+variable game counter
+we'll set it to 1.
+open recruitment function set interval
+foreign
+so
+c
+so what the specifically does is
+we have created one
+variable named counter and it would
+check against the id that we have
+created in radio
+then the radio button is
+checked and it encounters
+the counter will be plus plus that
+quantity increased by one
+so
+after the counter has reached the floor
+so it will get back to the starting
+point that is one
+so
+the whole point of the score is to make
+the images slide in in a loop
+so just save
+and go back
+now when you refresh
+you will see the images will move after
+sometimes
+specifically two seconds
+now when the images reach the last stage
+it goes back to the first
+you can also change it by clicking here
+manually
+so
+this is all for this tutorial
+i hope you like this
+video
+if you have please like and subscribe to
+our channel thank you and happy learning
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

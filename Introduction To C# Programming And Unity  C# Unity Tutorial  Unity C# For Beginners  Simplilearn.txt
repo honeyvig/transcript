@@ -1,0 +1,568 @@
+hey everyone i am rebekah kandalwal and
+i welcome you all to simply launch
+youtube channel today we will talk about
+udt software and its features
+but before we begin let me tell you guys
+we have our daily updates on multiple
+technologies so if you are a tech geek
+in a continuous hunt for the latest
+technological
+then consider getting subscribed to our
+youtube channel and don't forget to hit
+the bell icon to never miss an update
+from simply learn so now without any
+further ado let's get started and open
+up ud
+software here we are in the unity
+software so let's create a new project
+let's make it a 3d project
+and name it
+demo
+project
+and create project
+this will take few minutes to boot up
+the software
+so here is what a unity project would
+look like let's explore its ui and tools
+and then try to create a simple project
+there are many different layouts that
+can be used in this unity
+so basically this is our
+basic
+layout let's look at the ui more we have
+two tabs at the top that is scene tab
+and the game tab
+what we are looking at is our scene tab
+this will be where we will place
+different objects in unity
+these are known as game objects we will
+be placing them here so we can interact
+with them and write scripts for them
+next we have game tab
+this is where we will be testing and
+debugging our game
+we can also drag these windows around
+so basically we can create
+two scene
+windows we can also put it like this
+we can also put it like this so we can
+have scenes and games differently
+now
+we also have a 2d option in this theta
+which is this
+so basically we can use this to shift
+from 3d to 2d
+this will help us in switching between
+2d and 3d perspective
+now let's look at the hierarchy tab on
+the left
+this serves as the list view for all the
+gamm objects for our project
+as you can see we have
+default two objects
+the main camera
+which is this
+and the directional light
+basically the main camera is where the
+game
+view is looking at
+and the direction light is basically it
+provides a slide
+you can also notice that some
+information comes up in the inspector
+window when we are using this
+like transform this camera
+then we have this audio listener and all
+that
+we can also add more components through
+this
+add component button we can add audio
+effects event layout mesh missileness
+and all sorts of things
+but if you are beginner then i would
+advise you to kind of follow tutorials
+on how to use them according to your
+needs because you might even don't know
+what these components are doing in your
+project and it will make debugging
+harder if any error arises
+now let's look at the tab on the bottom
+first let's check this console tab
+this is where we will be getting if any
+errors arise during our project we can
+also print debug message here using
+debug.log
+now let's go to our next tab
+this is our project tab
+now this is where you will be placing
+all game files like script materials
+textures prefabs and animation
+and it will be stored in our computer
+you can see that we already have a
+folder present in this asset folder
+which is scenes folder
+where this sample scene is basically the
+scene which you are looking up there
+unity projects usually have many scenes
+like assassin's creed where we have
+different scenes for different levels
+but
+we can still make
+a fully functional game with just one
+scene
+now let's see if fish
+how we should be arranging our game
+files to make sure everything can be
+located easily
+when they are required this also helps
+us with working in a team on a single
+project
+so now we will create a few folders to
+classify files we are gonna right click
+here then go to create and select folder
+let's name it scripts
+let's make few more folders
+create
+material
+make sure to always capitalize the first
+letter
+texture
+prefabs
+animation
+and
+sounds
+now
+this is up to you what you want to name
+them because you are the one working on
+it
+you might want to create more folders
+according to your need but for now it's
+enough
+now that we have enough info on the ui
+let's add some objects
+and write a script on it
+to add an object we can either right
+click on hierarchy
+and
+go for these buttons
+or we can use game object and create
+these
+now let's add a 3d object like a plane
+to our scene
+so we will go to here and 3d object and
+clean
+note that we have some options on the
+left to interact with our objects
+we have this view tool
+which can be used to view the whole
+scene
+then we have move tool
+this can be used to move the scene to up
+left
+and distraction
+note that when we move this
+plane
+this inspect
+value is also changing
+we can change this position
+like here
+or
+we can
+right click here and reset it this will
+basically make it to zero zero zero zero
+position
+you can see in our game window
+where our clean is
+then we also have a rotate button which
+can help us in rotating these
+then we have
+scale option which can help us in
+increasing its size
+we also have
+the right size
+which can help
+in maintaining its shape and still
+increasing it
+and
+then we have
+this master control
+which is called transform tool
+which can be used to do all of those
+options above
+one thing we must keep track of is where
+our object is so if you see this inspect
+screen it shows the position of our
+objects
+we need to make sure that our object
+will come back to 0 0 location like how
+i did with the reset button this will
+help us in putting our objects to the
+right place later on
+now let's try to run it
+we can play this
+play button
+this will load up all the scripts and
+then we will go to our game view
+we can close it
+since it is not doing anything right now
+we have to make sure to set the
+resolution according to the platform for
+which you are making the game
+so
+you can use it this way
+free aspect or area
+let's choose it full hd
+which is basically a
+laptop's view
+we can also scale it
+but this will not
+change
+the resolution of the game
+what we will be seeing is this 1x
+version of it
+now let's stop this
+to show more ui elements and some script
+we will give this plane some material
+and color
+then we will create a button and write a
+script that will enable or disable our
+renderer
+so now let's start
+by creating a material
+since we already have a materials folder
+so we will just go inside this
+we can right click
+and create
+the material
+let's name this material as
+green
+material
+do make a habit of naming everything
+with
+capitalized first letter
+right now it is only white so we will
+change we change color from here
+green and go to this color
+and we can cross it
+so now this is green color
+to apply this color to this we will just
+drag it here
+now
+let's save this project make a habit of
+saving this project otherwise you might
+lose some data due to some kind of error
+or power shortage or any kind of problem
+which can arise
+let's run it
+as you can see the color for this plane
+has changed
+let's close it
+let's go to the plane
+and see what are the components
+for this plane
+for the components we have transform
+which basically locate its location then
+we have a plane
+mesh filter and then we have mesh render
+note that the screen material is now
+showing in the mesh renderer
+we need to remember it as mesh render
+because it will be used during the
+scripting
+so now we will right click here and go
+to ui to add some ui
+components we have in legacy we also
+have text button and drop down input
+field
+do remember when working with ui it's
+better to do it under a user interface
+canvas
+so we will first add canvas so we will
+go to ui
+and add a canvas
+if you double click on the canvas then
+you can see a white outline floating in
+the scene
+now it won't matter where it is because
+if you look here in this render mode it
+is showing a screen space overlay
+so
+whether regardless of where it is on our
+scene the user will see it over their
+screen it will be a transparent sheet so
+we will see when we
+go and compile this
+so now in order to interact with our
+campus we need a button
+so we will right click on the canvas and
+go over
+ui
+then legacy then we will add a button
+let's
+resize this
+button
+to see it better
+we can also
+change the name for this
+we will write it as enable
+we should make a habit
+of naming these buttons so enable
+button
+we should also rename it
+as
+green plant
+now
+let's try and run this
+as we can see we are getting a button
+here but when we click it it's not doing
+anything because we have not write any
+script for it
+let's close it
+and let's increase its size some more so
+that we can see it clearly
+okay
+okay now it's
+now it can be seen clearly
+now let's go back to our plane
+now to write a script for it we will go
+back
+to our asset folder and go to the
+scripts folder
+now naming is important we need to give
+it a descriptive name to understand the
+working of the script
+so i will name it
+as
+enable
+plane
+script
+always capitalize the first letter of
+every word
+just make it a habit it will help
+others to understand what each script is
+now
+this script in and of itself won't work
+unless we assign it to some object
+so now let's drag it to a hierarchy tab
+and put it on green plane object
+so we will drag it
+when it's highlighted
+we'll put it
+so now if you click on the green plan
+we have something called script tab here
+now we will double click on it to open
+the script
+this will open an ide installed in your
+computer
+since i had visual studio so it opened
+visual studio
+let's start with this void start method
+which is built into this mono behavior
+and you can see that we are
+automatically creating a public class
+enable plane script which is the name of
+our script
+and it is inherited from mono behavior
+so it will inherit these op
+functions as well
+for now we can delete these methods and
+make our own
+so we will be deleting these
+now we need our own variables to access
+some objects from the
+project
+so we will need a variable to access a
+plane object first so we will create a
+public
+game object
+plane
+then we will also declare a private mesh
+renderer so private
+mesh
+render
+and we will name it
+my
+renderer
+let's save it
+then
+we will attach it
+to our unity demo project
+and since we didn't got any error so
+that means it must be working perfectly
+so we'll stop debugging
+repeat
+now
+let's run it again
+now it will still not work because we
+haven't done anything yet
+we have only created some variables
+so let's suppose this now if you go to
+this green plane
+what you will see here in the script we
+have now a plane
+which will be asking us for a game
+object
+so now we will drag this plane
+here
+this will make it understand that this
+the plane which this script is asking
+for is green plane
+since we made this
+mesh render private so we are not seeing
+it here
+if we make it public then we can we will
+be getting another option as mesh
+renderer here for the map
+for that
+so now let's write a function to enable
+or disable the plane
+so let's go back to our visual studio
+and write private
+void we will not be returning anything
+and let's name it on click
+enable
+please
+we will have
+my renderer
+equals
+to plane
+dot
+get
+component
+and here we will have
+mesh renderer
+then
+we will write a statement
+enable
+my renderer
+dot
+enabled
+equals to not
+my renderer
+dot enabled
+so this will just flip the state which
+the
+function will be at
+now let's save it
+now to make it understand what i'm
+talking about about here
+let's go back to unity
+here
+let's select the screen plan
+if you see this check box when i click
+it
+the plane goes away when i click it back
+it is here so basically what we are
+writing a code is to simply this check
+and uncheck button
+so now let's try it since we have
+already done everything
+but still not working
+now it might be because we didn't write
+that start function which
+we had
+so let's add that one as well
+so private
+void
+start
+now let's use what we had talked to you
+about earlier about
+debug messages
+so let's write a debug message for debug
+dot
+log
+let's write
+welcome
+to
+simply
+learns
+c-sharp
+unity
+tutorial
+now let's save this part
+and go to our
+main function
+close it
+and then run it again
+but still not working
+now another possibility is that we
+haven't attached the script to the
+button yet
+which we didn't
+so let's do that
+now we will click on this button
+and here we will find something called
+on click
+here we will add this button so now we
+have a slot to add an object
+now this should be an object which has a
+script attached to it
+it should be that script which has the
+function
+which we want this button to do
+so since we have green plane has an
+script so we will
+drag it and put it here
+now we have an option to select
+different types of objects so we will go
+to our enable plan script let's find our
+onclick enable plan
+function
+but as you can see we don't have it here
+what might be the reason
+let's go and check the script
+now here if you look closely we have
+made this on click enable plan
+method as private
+need it public for it to show here
+so let's change it
+let's save it
+and go back
+now
+let's see if enable plane has and here
+you can see we have on click enable plan
+here
+now let's add it here let's save here as
+well
+now let's run it
+now
+let's click on enable button
+as you can see now enable button is
+working
+flawlessly now let's try and build it so
+we can go to file
+and go to build and build settings
+now here we have different kind of
+objects
+to choose for which function we want our
+software to work
+we can go for android and all that
+but let's add scene before
+we choose to do any of that because
+without a seat it doesn't matter which
+software you want to do it
+now let's do a build and run
+let's create a folder and write it as
+demo
+select demo and select folder
+now we have to wait a minute or so for
+it to compile since it's a small game so
+it should not take a lot of time
+here now as you can see made with unity
+and here we have our software so if you
+click enable disable it is working
+perfectly
+let's get back to our slides
+and this was all for today's session
+hope you guys found it informative and
+helpful if you liked this session then
+like share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

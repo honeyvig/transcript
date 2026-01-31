@@ -1,0 +1,476 @@
+hi everyone welcome to another video
+tutorial on the python series by simply
+learn
+in this video we are going to learn
+about python if statements
+in the previous video we have already
+learnt about the different python
+conditional statements
+here we will focus on if statement and
+look at a small project in the end
+so let's get started
+in programming languages conditions play
+a very crucial role
+they help us develop programs that can
+satisfy all the business conditions and
+perform well
+so conditional statements are useful
+when we have to decide that a certain
+condition or certain part of a code
+should run only if the condition is true
+so the if statement is an example of
+conditional statements
+the program will first
+evaluate the test condition
+and will only execute the code block if
+the test conditional expression is true
+so here you can see the syntax of
+if statement first we have the
+if keyword and inside
+parenthesis we are going to pass the
+condition
+and
+if this condition evaluates to true then
+we go inside the body of the if
+statement which is this part of the
+syntax
+now
+while developing a code for a business
+problem you might have to use multiple
+conditions
+so the alif statement is used when we
+have to check multiple conditions so
+here you can see
+if the first test expression evaluates
+to false then you have the alif
+condition and
+if the lift condition evaluates to true
+then we go inside the body of the
+elf statement which is this part of the
+statement or the syntax that i'm
+highlighting
+next
+so sometimes you want to evaluate a
+condition and take one path if it is
+true
+but specify an alternative path if it is
+not so this is done with an
+else clause
+so the else code block will run if the
+expression is false
+so here you can see if the
+condition for the alif statement
+returns false then we have the body of
+the
+else statement
+and finally
+after
+all the if alif and else statements have
+been executed we will execute if there
+are any other statements which are
+present outside the if condition now
+moving ahead
+we will use if else and elif statements
+to write a program that will solve a
+business problem
+so based on the location and total
+amount of the items we are going to find
+the sipping cost
+the locations are a few states in the
+united states
+in the if statement project we will ask
+the user to enter the amount of the
+package or the item
+and we'll also ask the user to input the
+state name
+so for the different states we'll define
+the conditions using the total amount of
+the items and print the shipping cost
+so let me take you to my jupyter
+notebook where we'll
+do this project
+okay so i am on my jupyter notebook let
+me just rename this
+notebook i'll say if statement
+and
+project
+all right
+so
+let me go ahead and
+give a comment i'll say
+package
+delivery
+cost
+based on
+the location
+and total amount
+all right
+first and foremost i'll go ahead and
+create a variable called total
+now this will be
+a user input so i'm using the input
+function
+and here i'll pass the message as enter
+the
+amount
+for
+the item
+all right
+next
+i'll assign
+another
+variable
+called state this is also going to be a
+user input so i'm using the input
+function
+and i'll say
+enter the
+state name
+in
+usa
+so these are the two
+inputs we are asking from the user that
+is to pass the
+amount for the item and the
+state in the usa
+all right now we'll start with our first
+if statement i'll write if
+state
+equal to equal to let's say my first
+state name is texas
+give a colon
+make sure the syntax you are writing is
+correct
+now i am going to use
+another if statement so this becomes a
+nested if statement now
+i'll write if
+total which is my
+item amount so i'm checking if total
+amount
+is
+less than or equal to
+150
+then
+i'm going to print
+shipping cost
+in
+texas
+is
+let's say
+30
+all right
+now i'll pass my next condition using
+elif statement
+since i'm using multiple conditions so
+hence i'm going to use
+the alif statement this time i'll write
+if total
+is greater than 150 and
+if my total amount is
+less than or equal to 250 dollars
+then i'll say
+print
+i made a spelling mistake this should be
+shipping
+i'll say print
+shipping
+cost
+in
+texas
+is
+let's say
+20
+so usually if your
+amount of the item is high then the
+sipping cost is low
+so here you can see if the total amount
+for the package or the item is less than
+150 dollars then your shipping cost is
+30 dollars
+but if it is between 150 and 250 your
+shipping cost is less which is 20
+then i'll say else
+print
+shipping
+cost
+in
+texas
+is
+five dollars
+so what basically this means is
+if your total is less than or equal to
+150
+then
+the shipping cost would be
+30
+if your total amount lies between 150 to
+250 dollars your shipping cost is 20
+and if the
+cost of the item or the package is more
+than
+250
+the cost is
+five dollars
+so this is for texas state
+now moving ahead
+i'll write alif
+this time
+we'll check the condition for state
+let's say florida
+i'll
+use a colon here and say if
+my total is less than equal to 150
+then we'll print
+shipping
+cost
+in florida
+is
+let's say 45 dollars
+i'll use the ellipse statement again
+i'll say lf
+total
+if it is
+more than 150 dollars and
+if it is
+less than or equal to 250 dollars
+i'll write print
+shipping
+cost
+in
+florida
+is
+let's say 35 dollars
+next
+i'll
+write my else statement i'll say
+print
+shipping
+cost
+in
+florida is
+let's say 10
+if the cost of the item is more than 250
+now one thing to note here is the
+shipping cost is different for the
+different states in the u.s
+all right
+now we'll move on to our
+next state let me
+give a space here
+i'll say lf
+state equal to equal to let's see we'll
+take
+virginia now
+i'll see if total
+is
+less than or equal to 150
+dollars
+will print
+shipping
+cost
+in
+virginia
+is
+let's say 23 dollars
+all right
+just scroll down
+next i'll write my ellip
+statement i'll say alif
+total
+is
+greater than 150 dollars and
+total
+is
+less than equal to two fifty dollars
+then
+will
+print
+just copy this message
+paste it here
+and we'll save shipping cost in virginia
+is
+15
+next
+we'll write our
+else statement
+else
+print
+replace the message again i'll say
+shipping cost in virginia
+is five dollars
+in case the cost for the
+items is more than two hundred and fifty
+dollars
+now moving to our final state
+i'll write another alif statement i'll
+say alif state equal to
+equal to let's say new jersey
+if
+total
+is less than equal to 150 dollars
+then
+we'll print
+just paste the message here i'll say
+shipping cost in
+new jersey
+is
+let's say 40 dollars
+now i'll say alif
+total
+if it is greater than 150 dollars and if
+total is less than equal to 250 dollars
+will print
+just put this within double quotes
+and
+i'll say shipping cost in
+new jersey
+is
+let's say
+10 dollars
+i'll say else
+print
+my shipping cost
+is
+free
+in case
+the
+total amount for the items is
+more than 250 dollars
+right
+finally
+we'll have our
+else statement where i'm going to print
+invalid
+state
+name
+in case the user enters any other state
+apart from new jersey virginia florida
+and texas
+all right
+so
+we have our small project ready let me
+just
+run through it
+so first we are declaring two variables
+total and state and we are taking this
+as user input so the user is going to
+input the
+amount for the item or the amount for
+the package and then the user will input
+the state
+so we have the four states defined here
+and we are checking the
+shipping cost
+for these four states
+based on
+the amount for the items
+all right
+now let me go ahead and run it
+so here you can see we have our first
+user input enter the amount for the item
+let's see
+i have my amount as
+125
+dollars
+and
+the next input is enter the state name
+in usa i'll say
+let's say florida
+if i run this
+it gives me the shipping cost in florida
+is 45 dollars
+let's go to the top and see what we have
+now our total was
+100 125
+which is
+less than 150 dollars and hence
+it has printed shipping cost in florida
+is 45
+let's
+run this again
+this time i'll say
+let's see my
+item costs
+255 dollars
+in the state let's say new jersey
+let's run it
+you see here it gives us the message
+shipping cost is free now the reason
+being if you see
+this part of the code
+for state new jersey if the
+total
+amount for the items is
+more than 250 dollars
+the shipping cost is free
+now let's try for another state
+this time we'll see for virginia
+let's say my
+amount is
+190
+and my state is
+virginia
+if i run it it gives me the shipping
+cost in virginia is 15
+let's check our code
+so here i have entered my
+item amount to be 190 so it lies between
+150 and 250 dollars and hence it has
+printed the message that shipping cost
+in virginia is 15
+now let me enter another
+state name that we have not
+defined in our code let's say i have
+my item amount as
+290 dollars
+and
+the state name
+i'll give us let's say colorado
+if i run it it gives us the message as
+invalid state which is present in the
+last part of our code so
+since we haven't defined any
+shipping cost for colorado it has given
+us the message that the state i am
+trying to search for is invalid
+you can check for
+another state or any other country name
+anything that is not
+part of our
+project
+let's see i'll enter my amount as
+hundred dollars
+and this time i'll enter my state name
+as
+let's say ohio
+and we'll run it it again gives us
+invalid state
+let's try out one last time i have my
+package amount as 350 dollars
+and let's see
+my state is
+alaska
+again it says invalid state name because
+we haven't defined any
+condition for
+alaska state
+so this was a very simple project that
+we did using
+arip statement we saw how to write
+nested if and we saw how to use the alif
+and the
+else statement
+all right
+so that brings us to the end of this
+video tutorial on f statements in python
+i hope it was useful and informative if
+you have any queries then please feel
+free to put them in the comments section
+of the video thank you for watching and
+keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,649 @@
+foreign
+today we will take you through our hands
+of lab demo of how to do image
+classification using CNN before we start
+I hope this screen is clearly visible
+and the audio is fine if yes please type
+in yes if there are any issues do let us
+know in the chat section so that we can
+resolve them
+let's wait for some more minutes to let
+other people join until then let me tell
+you guys that we have regular updates on
+multiple Technologies if you are a tech
+geek in a continuous hunt for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply learn
+great I think we can get started so in
+today's session we will discuss what
+image classification is and moving ahead
+we will discuss what CNN is and at the
+end we will do a hands of lab demo of
+image classification using CNN
+so before we move on to the programming
+part let's discuss what image
+classification is and proceed further
+for the same what is image
+classification
+the process of classifying an entire
+image is known as image classification
+images are anticipated to have just one
+class per image models for image
+classification taken an image as input
+and produce a prediction of the class to
+which the image belongs
+so we can utilize image classification
+models when we are not interested in
+individual instance of items with
+position information or their shape
+so let's see what is CNN
+machine learning includes convolutional
+neural networks also known as convents
+or cnns it is a subset of the several
+artificial neural network models that
+are employed for diverse purpose and
+data sets a CNN is a particular type of
+network design but deep learning
+algorithm that is utilized for tasks
+like image recognition and pixel data
+processing and so more
+okay
+although there are different kinds of
+neural network in deep learning
+cnns are preferred neural architect for
+identifying and recognizing object
+therefore they are really suited for
+computer vision activities and
+application where accurate object
+recognition is crucial
+such as facial and self-driving automile
+system so moving ahead
+so dear Learners if you want to upskill
+your AI and machine learning skills so
+give yourself a chance to Simply and
+professions certificate program in Ai
+and machine learning which comes with
+the completion certificate and in-depth
+knowledge of AI and machine learning
+check this course out details from the
+description box below so now let's move
+to our programming part of how to do
+image classification using CNN if
+getting your learning started is half
+the battle what if you could do that for
+free visit scale up by simply learn
+click on the link in the description to
+know more
+we will open a command prompt to write a
+command to open Jupiter notebook so here
+we will write Jupiter
+notebook
+press enter
+so this is the landing page of Jupiter
+notebook so here you can select new
+python file
+so this is how the kernels look like
+okay jupyter notebook colors look like
+so first we will import some major
+libraries of python which will help us
+in like analyzing the data okay so in
+this file we will classify small images
+of cifar 10 data set from tensorflow
+Keras data set there are total 10
+classes as shown below so we will use
+CNN for the classification purpose okay
+so here I will write import
+sensorflow
+as TF
+okay so from
+tensorflow
+dot Keras
+import
+data sets
+from our layers
+of models
+okay
+so we will import
+numpy as NP
+right
+and import
+matplotlib
+as
+PLT
+right okay so here I will let pipelot
+as PLT
+right so tensorflow this one
+this
+so tensorflow is a free and open source
+machine learning and artificial
+intelligence software Library
+it can be used for variety of
+applications
+but it focuses on mainly deep neural
+network training and the influence
+purpose okay got it
+and this numpy numpa is a python Library
+used for working with arrays it also has
+a function for working with the domain
+of lineal algebra and matrices it is an
+open source project and you can use it
+freely number stand for numerical python
+and this third one matplotlib
+for Python and its numerical extension
+numpy matplotlib is a cross-platform
+data visualization and graphical
+charting package as a result it presents
+a strong open source substitute for
+Matlab the apis application programming
+interfaces for matplotlib allow
+programmers to incorporate graphs into
+GUI applications
+got it
+so let's run this
+let's let me change image
+classification
+using
+Vienna
+okay
+so let's load the data set okay we will
+load the data set from the uh
+load data function
+so here I will write
+X
+underscore
+train
+comma y underscore tree
+okay
+and one for test X
+underscore test comma y underscore test
+okay then equals to data set
+result sets dot we are using Cipher 10.
+C for 10
+for 10
+dot load
+Dot
+underscore
+data okay
+so it will load our data so let's load
+the data
+so data is loaded let's see X
+score
+test dot shape
+okay
+yeah
+so as you can see
+so we have thousand
+rows and what what x
+underscore train
+dot shape
+let me run this
+so here you can see
+like we see like training data
+like training images are 50 000 and the
+test images are
+ten thousand okay
+so this is for testing this is for
+training and
+so moving ahead we will see for the Y
+train
+dot shape
+thousand and here we will see the array
+so y underscore train
+five
+okay let's send this first let me give
+some space yeah
+so here why underscore train is a 2d
+array like for our classification having
+1D arrays are good enough
+so what we will do we will convert this
+to now 1D array this is 2D array we will
+convert into 1D array okay for that
+we'll write here y underscore train
+was to Y underscore train
+dot reshape
+minus 1 comma
+okay then y underscore train
+and again semicolon 5.
+let's run this
+okay so now this is 1D array
+so
+y underscore test
+equals to Y underscore test
+Dot
+reshape
+in -1
+here I will write
+classes
+question there are some classes okay in
+the data set like airplane
+comma
+automobile
+comma
+but
+comma
+cat
+comma
+yeah
+dog
+dog
+Foods
+step
+the truck
+okay
+so these are the some classes
+like airplane automobile bird cat deer
+so it will be helping classifying the
+images
+so let's plot some images to see like
+what they are what they exactly are okay
+so we will what we will do we will
+create one function
+for that
+let me write here
+def plot underscore sample
+okay then X comma y
+comma index
+okay
+then I will write here plot dot figure
+PLT dot figure
+then figure size should be
+comma 2
+equals to
+pld dot show
+image show to IM show
+X
+index
+PLT
+dot X label
+classes
+y index okay
+so let's see some samples of the images
+so I will write a plot
+underscore sample
+uh let's go train
+comma y underscore train
+okay comma let's see the fifth image
+okay then enter
+it would be capital
+so as you can see this is a car so it is
+showing automobile okay
+so let's see once more
+like plot underscore sample
+X underscore train
+comma y underscore test
+comma we'll see the tenth one
+okay it is not quite visible
+so we'll go for the 11.
+okay okay I am
+white is showing wrong because I use a
+test I have to use here train instead of
+test
+then it will show I think correct yeah
+you can see horse the nodes
+then what about
+201 image
+see you can see
+so we will see once more
+500
+Fancy Frog okay it's not quite visible
+yeah so you can see here
+the proper ship okay
+so what we will do now we will normalize
+the images to a number from 0 to 1
+image has three channels like RGB colors
+so and each value in the channel can
+range from 0 to 255. hence to normalize
+in 0 to 1 range we need to divide it by
+255 okay
+so
+now what we will do we will normalize
+the data
+so here what we'll do at X underscore
+train
+a question
+X underscore train
+divided by
+255 and 0.
+okay
+and same for test
+question test
+divided by
+255.0
+okay to range between 0 to 1.
+we will build simple artificial neutral
+Network for image classification first
+okay
+so we will write here a n
+equals to models Dot sequential
+okay then I will write here
+layers
+Dot
+platen
+input underscore
+shape equals to
+32 comma 32 comma 3 okay
+then again layers dot tens
+three thousand
+comma activation
+pursue rialu
+got it
+and again 40
+000 so I what I will do I will copy it
+and paste it here okay
+1000
+so let me add one more one more layer
+dot tens
+then
+comma
+activation
+also softmax
+okay
+here I will okay let me give for the
+better visuals
+yeah
+so a n n
+dot compile
+optimizer
+okay
+equals to
+SGD
+and comma
+I will write here loss
+equals to
+sparse
+categorical
+cross entropy okay
+so here I will add comma then Matrix
+equals to
+accuracy
+a n dot fit
+underscore train
+comma y underscore train
+comma epochs
+okay
+so number I will give you box equals to
+five
+right
+so it will take time to run
+it's running
+here there is some issue
+it's
+underscore train
+the Box equation
+five
+what it is saying
+and user go the file program C
+engine okay
+you will copy it
+and paste it again
+run it again
+okay now it's working
+okay
+so it will take time and then I will get
+back to you okay
+then import
+numpy you guys already know what numpy
+is
+NP
+y underscore prediction
+a n dot predict
+X underscore test
+okay then y underscore
+prediction underscore
+classes
+equals to
+NP Dot
+argument Max
+element
+or
+element
+in
+y underscore prediction
+print
+classification
+both
+comma classification
+let's go report
+then y
+underscore test comma y underscore
+prediction
+underscore
+classes
+okay
+so let me run this
+capital
+yeah
+it will take less time
+now we will create a graph
+okay
+like X text is like we have thousand
+images so CLA graph will be like messed
+up
+still let's see
+so I'd like to import
+c bond as SNS
+okay
+C born
+yeah
+let me give some space
+here I will write
+PLT Dot
+figure
+because
+I should be
+14 comma seven
+okay then as soon as we will create a
+heat map for this
+and Y underscore prediction
+not question
+true
+then PLT dot y level
+this truth
+yeah
+alt dot X label
+action
+then PLT dot title should be
+vision
+okay then PLT dot show
+let me run this
+okay
+see why prediction has X text
+it's still running
+let's wait
+so now let's make CNN model okay
+to train our images so for that I will
+add CNN equals to
+models Dot
+sequential
+okay
+we'll write a good question yeah so let
+me run this
+so this is our CNN model from which we
+will train our images
+and CNN like compile
+then
+optimize
+optimizer
+equals to
+Adam
+okay
+comma
+right here then loss
+equals to
+ours
+categorical
+you then cross
+entropy
+okay
+and comma
+I will write here Matrix
+equals to
+curacy
+we run this
+okay
+those
+yeah
+same goes for you
+okay loss
+and I do rewrite this
+okay now let's check CNN model
+for the 10 epox
+okay
+let's see the accuracy is increasing or
+not
+CNN Dot
+let's go train
+comma y underscore train
+comma
+box
+also
+it is started
+it will take less time than the previous
+one
+okay
+see
+you want this whole code
+you can comment down the same
+okay
+so after completing this I will get back
+to you
+so it is almost done like 27 seconds
+with a 10 epox
+till then let me write CNN dot evaluate
+underscore test
+comma y underscore test
+okay
+so with CNN the N5 Epoch security was
+around like 70 percent and which is a
+significant improvement over a n okay
+and then we have like just 49
+okay and cnns are the best for image
+classification and gives the superb
+accuracy also computation is the much
+less compared to simple a n as Max
+pooling reduces the image Dimension
+while still uh preserving these features
+okay so let me run this
+foreign
+take some time
+till then I will write y underscore
+prediction
+equals to CNN
+Dot
+predict
+and X underscore test
+okay
+then I will write a y underscore
+prediction
+then column five
+let me run this
+so you can see the accuracy and all the
+array okay
+yeah
+so let's
+class is equals to
+NP Dot
+ARG Max
+Lament
+or
+element in y prediction
+then y underscore classes
+then
+these are the number of classes then y
+underscore test
+is column five
+these are the array
+so it's converted into array then
+now let's see the it is predicting Right
+image or wrong image okay by not with
+the training data here we predict from
+the training data while training extend
+okay now we will predict from the test
+data so here I will add plot
+underscore sample
+then
+X underscore test comma y underscore
+test
+and you can write
+the random one
+so here I will write 60
+let's see so you can easily see here
+this is odds and it is predicting right
+horse
+and let me
+okay
+plot
+let's go sample
+then X underscore
+test comma y underscore test
+comma 100
+okay
+press enter
+okay X is capital
+yeah so you can see this is Dr
+okay so our model is predicting the
+correct
+image
+okay then what we like
+let's see it is predicting the right
+class or not okay we made the classes
+like random classes
+okay where are these these so let's see
+it is predicting right or wrong
+okay for that I have to write classes
+but why underscore classes
+like which number 60. okay
+60.
+360 is not defined because like number
+of classes
+okay okay
+so there are one two three four five six
+seven
+okay zero to nine I can choose
+so here what I will do
+I will take small one
+I get five
+okay this is frog
+okay
+it's rock right
+so I will take instead of 60 here I will
+see frog
+okay y class is not defined
+by underscore classes
+find see okay there are three s
+yeah
+so as you can see frog this is frogs so
+our class is defining right so here I
+will write it again like
+60
+it was hot
+and let me write here 60
+you can see the right prediction okay
+so
+this is what how you can you do image
+classification using CNN
+I hope you guys must have understood
+this concept like how to do image
+classification using CNN you can ask in
+the comment section below if you have
+any queries uh regarding code or python
+machine learning or any
+course related query so our team will
+respond you as soon as possible don't
+forget to check the course link from the
+description box below and if you want
+this full code you can just comment for
+the same
+thank you so much for being here if you
+enjoyed this video please subscribe to
+our YouTube channel and give a like to
+this video till then thank you and keep
+learning
+thank you
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

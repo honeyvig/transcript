@@ -1,0 +1,935 @@
+hello everyone I am M and welcome to
+this video on hugging face a leading
+tool in NLP natural language processing
+so this video is for you if you want to
+use Advanced model to understand and
+generate language so we will start by
+introducing what is hugging face and how
+it's changing the world of NLP so
+hugging phase provides models and tools
+that help developers and researchers
+build language application easily like
+CH GPD so hugging phase is pionering
+companies in the field of machine
+learning especially in NLP it offers an
+extensive Library called Transformers
+which provides pre-trained models for a
+variety of NLP task making it easier for
+anyone to integrate the state-of-the-art
+machine learning models into their
+projects so in this video I will show
+you three cool demos using hugging face
+first one speed to text in this we will
+see how we can turn spoken words into
+written text quickly and accurately the
+second one sentiment analysis learn how
+to figure out if a piece of text is
+positive negative or neutral the third
+one Tex generation in which we will see
+how we can create human like Tex that
+makes sense to andfit the context we
+will also talk about important concept
+like pipelines and tokenization pipeline
+make it easy to use different models for
+VAR task while tokenization breaks text
+into smaller parts that models can
+understand so by end of this video you
+will know how to use hugging face for
+your own project craving a career
+upgrade subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back so before we move on here is a
+quick info for you if you want to learn
+AI nml from the industry experts then
+try a simply run postgraduate program in
+Ai and machine learning from part
+University in collaboration with IBM
+this code teaches in demand skills such
+as machine learning deep learning NLP
+comision reinforcement learning
+generative AI prompt engineering chat
+GPT and many more so don't forget to
+check out the course link from the
+description box below and the pin
+command so without any further Ado let's
+jump into the demo part so welcome to
+this demo part of this video so here as
+you know we will be doing three things
+first thing speech to text recognition
+the second thing text generation from a
+particular sentence or a word and the
+third thing we will do sentiment
+analysis okay so we will perform this
+one by one so let's start with something
+called spe to text recognition Okay
+using hugging
+face so first I will write rename
+this I'll write here hug in
+face speech to
+text okay yeah so first I will
+install Transformers
+Library it is already installed on my
+system but again just for you guys I'm
+doing this okay VIP install Transformer
+so now let's see what is Transformers so
+Transformers is a powerful python
+Library created by hugging face
+so that allows you to download
+manipulate and run thousands of
+pre-trained open- source AI model fine
+so as you can see requirement already
+satisfied it means like already
+installed so these transform models
+cover multiple task across you know
+modalities like NLP natural language
+processing computer Vision Audio and
+multimodel learning like many things
+fine so now I will do from from
+Transformers
+import
+pipeline okay so now let's run it so now
+what is
+pipeline okay so a Transformer pipeline
+describes the flow of data from origin
+system to destination system fine
+because you already know Transformer
+means you can you know uh run or
+manipulate thousand of preed open on AI
+model so pipeline describes the flow of
+data from origin system to destination
+system and defines how to transform you
+the data along the way okay so let's
+check
+the
+versions
+transform
+ver verion
+okay that long
+tab okay right is coming because I have
+to write
+this import
+Transformers yeah so we have currently
+4.4 2.4 version of the
+Transformer okay so I'm using Google
+collab okay so you can use either
+jupyter notebook visual code Studio or
+collab okay so now let's import
+libraries import
+librosa okay so what is librosa so
+librosa is a python package for audio
+and music analysis right because we are
+doing spe to text so we need this so it
+provides various functions to quickly
+extract key audio features and Metric
+from the audio files
+okay and this librosa can also be used
+to analyze and manipulate audio files in
+a variety of formats such as wav W MP3
+m4a and like that okay so next we will
+import
+torch I hope everyone know
+torch so torch is nothing P torch it is
+a machine learning library based on the
+torch Library used for applications such
+as computer vision and NLP and
+originally it was developed by The Meta
+Ai and now the part of Linux Foundation
+you know umbrella let's import one more
+thing
+import so now let's
+import
+IPython
+okay
+capital I python dot
+display as
+display so now you will be wondering
+what is this IPython
+display okay so it is an interactive
+command line uh for the terminal for
+Python and it you know it can provide a
+IPython terminal and the web based
+notebook platform for python
+Computing and this uh IPython have you
+know more Advanced features than the
+python standard interpreter and we
+quickly execute a single line of python
+code nothing okay for that I'm using
+this and the next is from
+Transformers
+import
+wav
+[Music]
+to
+vectorizer for CTC
+and
+W
+2 vectorizer to
+tokenizer okay so now what is
+this so W2 vectorizer for CTC is
+supported by the notebook on how to fine
+tune a speech recognition
+model okay and this tokenizer so
+tokenizer is nothing tokenization is a
+conversion of a text into meaningful
+lexical tokens belonging to categories
+defined you know by a Lexa program in
+case of NLP so those categories include
+nouns verbs adjective punctuation at
+okay now and the last Library let's
+import
+numai s NP I hope everyone know numai
+what is numai again numai is a python
+Library used for working with ad is it
+ALS it also has a function you know for
+working in domain like linear algebra
+fora transform and matrices and many
+others fine I hope everyone now know
+about these Library which we have
+imported okay so let's move forward WR
+tokenizer to
+to2 tokenizer Dot
+from
+pre-trained this is why I love this
+Google collab you decide just some words
+and it will show the
+suggestions you know
+Facebook so this is again one pre uh
+train model okay so we are just
+importing
+it
+base
+960 this is nothing the
+name okay then model equals
+to
+wv2 for
+CTC do
+from
+retrained then f
+Facebook W
+V2
+vectorizer
+2 then
+base6
+fine now let's run
+it so now you can see so we are loading
+this okay there they're
+downloading okay so you can ignore these
+warning so now let's load the audio file
+so here I will write
+audio
+sampling
+trate equals to
+librosa
+dot
+load okay so you know about liosa right
+then I have V
+dot M4 a so we I have already one speech
+or one audio you can say
+so I will play it don't worry before the
+final output I will you
+know show you
+16,000
+okay so now I will write okay
+okay I've already loaded I
+guess
+okay okay no issues I will load
+again okay file is
+loaded I willame it to
+V yeah fine so now it won't there and
+will come
+again we have v.
+MP4
+okay so
+now we have to
+do
+okay let me try
+it we have v. MP4 but I don't know why
+it is not
+[Music]
+coming okay let me copy the
+path now it will run I
+guess it's
+running yeah so now I will write here
+audio comma
+sampling
+dat okay now listen carefully then I
+will write
+display display dot
+audio
+then part
+comma comma autop
+play equals to True
+okay hello and welcome this is an AI
+voice
+message I guess you heard
+but again let me play it again hello and
+welcome this is an AI voice
+message okay so it is saying hello and
+welcome this is an AI voice message fine
+so now what I will do I will input some
+values
+input values equals
+to
+tokenizer then audio
+comma
+return
+tensors equals to
+DT find
+dot
+input
+values okay then here I will run
+input
+values okay input values
+okay yeah so now logits will come here
+so we have to now store the Logics which
+means non-normalized predictions okay so
+logits equals
+to
+model
+input
+values do
+logits okay
+then here I write
+Logics okay it's running done so now
+what we will do we will store predicted
+IDs then we will pass the Logics to
+values to soft Max to get the predictive
+value okay so here I will write
+predicted ID
+is equals to
+torch do ARG
+Max okay and
+logit comma Dimension = to
+minus1 okay then I will pause the you
+know prediction uh to the tokenizer
+decode to the
+transcription okay so here I will write
+transcriptions equals
+to tokenizer
+tokenizer dot
+decode
+predicted
+IDs
+Zero running fine so now let's see our
+output
+transcriptions so now you can see hello
+and welcome this is an a
+voice message so now let's play it again
+hello and welcome this is an AI voice
+message amazing right so this is how you
+can use hugging face for this piece to
+text recognition it's a very small code
+line of code as you can see okay so now
+let's move forward and do the sentiment
+analysis okay or text
+generation so let me open new Drive
+so
+yeah so now I will write
+here I will write sentiment
+slash
+text
+[Music]
+generation hugging
+pH
+okay so first of all let's import the
+files so First I write
+import import
+warnings then
+warnings dot filter
+warnings okay I will write here
+ignore then we'll
+import
+numpy you already know what is numai and
+import P so these are some basic python
+library and I hope everyone knows and
+import M plot Li for the
+plots M plot Li
+dot P plot as
+PLT then I will import cbon for the
+cfts the
+static okay SNS then SNS do
+set so now we'll import SK learn model
+train T
+split so SK learn is nothing psychic
+learn is a probably the most useful
+library for machine learning python so
+so this uh Library contains a lot of
+efficient tools for machine learning and
+you know statical modeling including
+classification you can do regression you
+can do clustering you can do from this
+skq
+from
+eSalon do
+model
+[Music]
+selection
+import
+import
+train test
+split from
+Escalon
+dot
+matrix
+import F1
+comma confusion
+Matrix comma R Au
+call all is
+scol so again we'll import teams from
+Transformers
+import pipeline
+everyone know what is this then
+import
+torch okay now let's run
+it you have too many active session 10
+minute existing to continue if you're
+interest more
+session okay wait yeah fine
+now which one is open
+bro 10 minut
+this terminate this terminate
+this okay fine so now let's do sentiment
+analysis so uh we will explore sentiment
+analysis using a pre-trained transform
+model OKAY the hugging phase Library
+provides you know convenient pipeline as
+you already know function that allows us
+to easily perform sentiment on the text
+so now let's first import the necessary
+dependencies
+and create a sentiments pipeline using
+this line so I will write here
+classifier equals
+to
+pipeline
+sentiment
+analysis then
+type
+classifier
+okay so it it will download the pre-
+trained sentiment analysis pipeline
+pipeline is not
+defined
+how okay okay is
+there I hope it will run
+now yeah so now we can uh pass a single
+sentence or a list of sentence the
+classifier and now and get the
+predictive sent sentiment labels and
+Associate confidence score fine so
+now just for the
+testing classifier so let's write
+this is a
+great
+movie okay now let me run it so now you
+can see here label positive so label
+positive typically refers to the outcome
+or a class of interest that the model is
+designed to predict so here we are just
+checking the sentiment analysis model
+okay so this is why I wrote
+this okay so let's check one
+more
+this was
+a
+cre
+course
+then
+I did
+not
+understood any of
+it now let's check
+this yeah perfect and the score you can
+see the accuracy score 99% 99% which is
+almost close to to 100% and which is
+amazing so now you have access to a GPU
+so you can also utilize it for the
+faster processing by specifying the
+device using the parameter okay so
+now what I will
+do first I
+will okay wait yeah fine so now I will
+import data set
+airine
+tweets equals to
+pd. read PD means Pand Library here we
+are
+using okay now first import I will
+import here
+itself so I have twitter. tweets.
+CSV
+okay
+tweets.
+CSV let
+upload yeah done so now let
+me
+airine
+tws do
+head y doad means you it will show me
+the top
+five rows okay 0 1 2 3 4 5 okay you can
+see tweet iDine sentiment neutral
+positive neutral negative then this is
+is this okay so
+now let's do something okay so what I
+will do DF equal DF means data frame air
+line to
+it then I will write Air
+Line
+sentiment we have a line sentiment this
+column okay
+comma text
+I need these two
+columns okay DF do
+head
+five so yeah a ctim neutral and this is
+what this text is all about okay because
+these two are the main things text and
+the sentiment so now let's make
+plot count plot
+then I will write DF comma X =
+to Air Line
+[Music]
+sentiment then
+pet equals
+to
+this then here I will write PLT do X
+label
+Airline
+sentiment okay
+then PLT do
+viable
+count PLT do
+show so it
+will draw one
+graph okay
+okay spelling is
+wrong yeah it will show neutral positive
+sentiment and the negative so as you can
+see the negative sentences or the
+sentiments are the
+more okay so now so we have now three
+classes which do not match the two class
+available in the hugging phas pipeline
+so therefore we will filter out all the
+rows which have been labeled as neutral
+Okay so
+DF = to
+DF and again
+DF Air Line
+sentiment
+fine was not equals
+to
+neutral okay then
+DF
+Target to
+DF Air Line
+sentiment
+dot uh
+map then I will write here
+positive positive 1 and the negative
+0
+fine negative will
+be
+zero okay then and
+print number of
+rows comma DF
+dot
+shape
+okay so now you can see number of rows
+are
+11,541 okay so now I will write
+predictions
+five it will
+okay predictions is not defined okay so
+now what I will
+do so here I will write
+text = to
+DF
+text and two to
+list do to
+list then here I will write
+predictions equals
+to
+classify
+text okay so here write
+probabilities equals
+to
+predictions
+then
+score if prediction
+s
+label
+dot starts
+with starts with b means
+positive
+okay
+else 1
+minus prediction
+score
+prediction score
+okay then I will write
+for prediction and
+prediction why it is not
+running this is taking time too much
+time I don't know
+why so as you can see finally we have
+the output our predictions values so
+this depends on you know system to
+system my system took almost 17 minutes
+for
+7 Seconds to complete okay so now let's
+run
+it okay predictions is not defined Pro
+now
+predictions yeah so now I will write
+here predictions equals to
+NP do array NP
+means do
+array then I will write one if
+prediction label is
+positive
+dot
+starts
+with p okay
+else
+zero
+for prediction and prediction
+values yep
+okay fine so now let's check the
+accuracy of our model
+print
+accuracy
+okay then I will do round
+up the values so here I will write NP do
+me then DF
+then the
+Target
+right
+yeah then I will write equal equals to
+predictions then I will write into
+100
+comma two then I will write
+percentage
+okay fine looks good yes
+so as you can see our accuracy is
+88.9% which is you know very good
+again so now let's do some confusion
+metrics
+confusion
+Matrix then
+DF
+Target comma predictions comma normalize
+equal
+to
+True okay
+then I will
+plot confusion
+Matrix
+okay DF
+then
+Target comma prediction
+Comm
+normalize equals
+to
+True okay okay my bad my bad my
+bad right here
+confusion
+Matrix
+comma
+labels okay so here uh I will you know
+plot a confusion matric using cbon okay
+so here I will use args which is
+confusion Matrix np. an array so which
+is you know labels list so I will write
+PLT do
+figure then figure
+size 8 comma
+6 that's SNS
+do set
+font
+scale = to
+1.4 okay then let's create the heat
+map Fusion
+Matrix comma and not will be
+true okay then I will write the Mt d =
+to
+g then confusion
+map =
+to
+Blues then X labels equals to
+labels then
+y
+t labels equals to
+labels
+okay yes so now I will write PLT
+dot title will
+be confusion
+Matrix then PLT dox label will
+be predicted values then PLT do y Lael
+will be
+actual values then PLT do
+show
+okay why the chart is not
+[Music]
+coming okay so I have to write
+plot confusion Matrix then write
+CM then
+negative
+comma
+positive okay now the chart will
+come
+okay yeah so now you can see here this
+is you know actual and this is a
+confusion Matrix and the negative and
+the positive ratio is there okay so now
+let's print
+the let's check the ROC Au score so I
+will write here
+print
+r v
+score then here I will write R A
+score then
+DF
+Target
+comma
+props
+okay so
+94 okay so first let me tell you what is
+this Roc AC score so this is the area
+under the ROC curve so what it does it
+sum up how well a model can produce
+relative scores to discriminate between
+positive and the negative instance
+across all the classification threshold
+so with this Roc score of 94 0.94 which
+is 94% we can conclude that the that a
+pre-trained sentiment analysis model has
+achieved the high level of accuracy and
+Effectiveness so in predicting the
+sentiment labels so this indicates that
+the model is capable of accuracy
+classifying text into positive or the
+negative sentiment categories okay so
+now we'll do Tex
+generation okay so text generation
+involves generating creative and
+coherent text based thing so I will
+write here
+text
+okay so text generation involves
+generating creative and coherent text
+based on a given prompt or starting
+point so what we will do first we will
+import the necessary dependencies and
+load the data set of the poem okay so
+here I'm write poems let me write poems
+equals to pd. read do
+CSV don't worry I will give you these
+files
+okay description box below I will
+add so here I'm WR
+robot
+Frost do
+CSC fine and then I will write
+poems do head 5
+or had just have to write it module
+pandas
+has okay not
+doore
+CSV
+yeah okay it will show the top five
+Stopping by Woods on a Snowy Evening
+fire and I the aim was
+Song collection content year of publish
+okay so now what we will do do we will
+write
+content equals to
+poems
+content dot
+drop na to to
+list okay so to gener text we extract
+individual lines from the poems and use
+the pipeline text generation function to
+create a text generation pipeline fine
+so here I will write
+lines equals
+to then I will write
+for poem
+and
+content okay for line and poem Dot
+split into the next
+line
+okay then lines do
+append then I will WR
+line dot Right
+strip to the right it will add
+okay
+fine so now lines equal
+to line for
+line in
+lines if
+length of
+line
+zero then show the
+lines
+five okay so now you have seen here
+whose wordss these are I think I know
+then the next line his house is in the
+village though next line he will not
+sing okay like this so now
+let's you know import that pipeline text
+generation module okay gen equals
+to
+[Music]
+pipeline so these are the pre-rain model
+you already
+know generation
+okay so now I will write here
+lines let's run
+it yeah done so in line zero you have we
+have whose vots these are I think I know
+okay so now we can now generate text by
+providing a prompt and specifying the
+parameters such as max length and num
+return sequence okay why because we have
+imported this Tex generation module okay
+for example see
+gen
+gen okay
+sorry
+lines
+zero dot max
+length max length equals to 20 so now it
+will generate the this to the maximum 20
+okay
+tell 20
+word maximum length okay
+check
+okay okay gen expression cannot contain
+perhaps equals
+to where okay
+wait now it will done so see the line
+was this much only whose words these are
+I think I know whose words these are
+think I know but here the generated text
+I wish to go to church because I feel
+like okay this is how you can do you
+know Tex generation now let's check for
+the more
+gen lines
+one okay then
+max length equals to 30
+comma
+num D return sequence says
+sequences equals to
+two Okay so our first line was this his
+house is in the village though okay 0 1
+2 3 4 5 okay so here you can see see his
+house in the village though however you
+might say that the place was the same
+with the place this this is this so
+these are the generated text okay and
+this is another you know returns
+sequence second so there are two one and
+the second okay so
+now let me you know
+import text
+TP okay
+then creating function
+rap X I don't need
+this then return
+text
+strap do
+fill X comma
+replace white
+space white space equals to
+false false comma fix
+sentence endings equals to
+True okay so now
+out equals to generated
+lines
+0 to maximum
+length equals to 30
+then
+print rep
+out to
+zero
+then
+generated
+text okay so now we are setting uh the
+add tokens to your tokens okay so whose
+who these are I think I know and this is
+the maximum 30 till 30 okay okay so now
+I will write
+here okay preview equals to okay so now
+what you can do you
+can you know generate a prompt to
+generate text on a specific topic like
+this prompt equals
+to
+Transformers have a wide variety
+of
+applications application in
+NLP okay so this is my prompt okay this
+I'm not importing from the data set okay
+so I will write out equals to
+gen prompt comma max
+length equals to
+100
+print
+zap
+out okay here I will write anyways here
+I will write
+generated
+text prompt
+okay so it is
+running let's
+wait yeah
+so okay some is there
+okay so here the issue is with 100 words
+I got we go till
+50 yeah so let me do it again
+100 yeah so now you can see we have we
+can generate tax using by giving a
+prompt so we have
+you know three topics in this first
+thing is piece to text using hugging
+phase second thing is sentiment analysis
+using hugging phase and the third is
+text generation using hugging pH okay
+and in this text generation we have we
+did with two methods one with the data
+set and second thing with the you know
+by giving prompt like in charity you can
+see so with this we have come to end of
+this video if you have any question or
+doubt please feel free to ask in the
+comment section and our team of experts
+will help you as soon as possible so
+thank you and keep learning with simply
+learn staying ahead in your career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

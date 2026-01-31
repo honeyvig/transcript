@@ -1,0 +1,204 @@
+hello everyone
+welcome to this tutorial on classes and
+id in html by simplylearn
+in this tutorial
+we are going to learn about the classes
+and id in the html and how to use them
+so without further ado let's get started
+so
+what is an html class
+an html class attribute is used to
+specify a single or multiple class names
+for an html element
+the class name can be used by css and
+javascript to do some tasks for html
+elements
+you can also use this class in the css
+with a specific class with a period
+character followed by the name of the
+class first selecting elements
+so let's jump on to the demo to
+understand the classes and id better so
+we are on our sublime text editor
+add the standard boilerplate of html
+we'll give the title as
+classes
+and id in html
+let's start with the basic example
+we'll see how to define an html class
+so inside the body tag
+we'll add one h1
+and we'll give this
+the class name of
+head one
+will add some text here this
+is
+the heading one
+now you can copy this part because we'll
+need it
+enough for the line
+so for the h2
+this will be the heading 2
+for h3
+this will be heading 3
+and let's add one more h4
+this is the heading 4.
+so as you can see we have used the same
+class name in all our h1 h2 h3 and h4
+so if you save the file and
+go to the page and refresh
+you'll see the headings are there on the
+page this is the heading one heading to
+heading three and heading four
+now let's learn how we can use this
+class name for our styling purpose
+so we'll open the style tag here
+and you will mention the
+class name by
+period followed by the class name so
+head 1
+open the parenthesis
+and let's set the color to
+light sand
+and we'll set the font family to
+set quit cursive
+keep the background color to black
+okay so you can see we have mentioned
+the class name dot head head one for
+styling purposes and we have given the
+color of font family and background
+color for it so just save the file and
+go back
+refresh
+now you can see we have designed this h1
+h2 h3 and h4 using our class tag
+now let's use another example with a
+different class name
+so
+here only will make the changes let's
+name this class as h2 this h3 and let it
+be h4
+now you can style them separately for
+the head to
+we can set the color
+to say light
+pink and we can set the font background
+color to
+red
+okay
+now
+similarly for the h3
+dot
+head 3
+set the color to
+[Music]
+i don't know what color this is let's
+say fujisa
+and set the background color
+to
+let's say blue
+okay save the file and go back to the
+page
+now you can see we have designed our h1
+h2 h3 and h4 using the different class
+name
+this is the example of using the
+multiple classes on the same code
+and one thing you should note that these
+class may must be separated by the space
+there are a few points you should know
+while working with the class
+so the first one will be the class
+attribute can be used on any html
+element
+like any html element can have a class
+name
+the second point will be the class name
+is the case sensitive
+head one
+and
+if we change here to say
+we'll keep this h as kept capital so
+this will be wrong the style won't be
+implemented on the page now if you
+refresh
+you can see the style is not implemented
+so the class names are case sensitive
+let's change this back
+refresh and now you can see our design
+is back
+so this was all about html classes
+now let's move on to the id attribute
+so the html id attribute is used to
+specify the unique id for an element of
+the html document
+it allocates the unique identifier which
+is used by the css and the javascript
+for performing certain tasks
+in cascading stylesheet that is css we
+mention an element with a specific id by
+using the hash symbol followed by the id
+let's work on an example to understand
+this better
+so we'll use the same previous example
+we'll mention the h1 and this time we'll
+use the id
+so id and we'll name it as head one
+this is the first heading
+for h2 also
+we'll mention the id name as head one
+only
+head one
+this is the
+second heading
+now to style the heading we'll go back
+here
+we'll open the style tag
+and we'll use the hash number to mention
+the id so hash
+head one open the parenthesis
+we'll set the color to
+light green
+we'll set the font family to cursive
+and we'll set the background color
+to black
+okay
+now save the file and go back and
+refresh
+so you can see this works in a similar
+manner to the class apart from it that
+we use the hash symbol to mention the id
+name
+so
+now let's change the example and use the
+different id names for different h1
+so this can be h1
+this can be h2
+let's add one more
+we'll name it as id
+head 3
+okay
+so
+we'll style the
+head to
+we'll set the color to red
+for head tree
+we'll set the color to
+yellow
+let's use green yellow okay
+save the file go back
+and refresh
+now you can see we have the different
+style for different ids
+so in this way you can use the different
+ids
+to design your html page
+so that's it for this tutorial i hope
+you liked this video
+if yes please subscribe and like to our
+channel thank you and happy learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

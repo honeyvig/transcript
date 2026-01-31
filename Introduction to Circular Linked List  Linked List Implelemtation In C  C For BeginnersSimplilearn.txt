@@ -1,0 +1,335 @@
+foreign
+welcome to yet another interesting and
+informative video by simply learn
+today's video will teach us all about
+circular simply linked list in C but
+before we begin if you haven't
+subscribed to our Channel already make
+sure to hit the Subscribe button and the
+bell icon to never miss an update so now
+without any further delay let's begin
+this session will help you understand
+what a circular single linked list is in
+C after that let's understand the memory
+representation of a circular singly
+linked list later let's look at the
+syntax and finally operations performed
+on a circular singly linked list
+so before we get started I have a simple
+question to you guys
+please try to answer in the comment
+section below and we will update you
+with the correct answer in the chat
+section
+and the question is the 10 nodes address
+is pointing towards the head node of the
+linked list what is the name of the
+linked list that means the last notes
+address is pointing towards the first
+node of the linked list and guess the
+name of the linked list
+and the options are singly linked list
+doubly linked list
+circular linked list or both singly and
+doubly linked list
+please try to answer in the comment
+section below
+all right
+now let's begin by understanding what a
+circular singly linked list is in C
+in a circular linked list we can perform
+a circular single linked list and
+circular doubly linked list so this
+session is on a circular singly linked
+list
+in the circular singly linked list there
+is no null in any of the notes instead
+the last note's next pointer holds the
+address of the first node so basically
+there is only one pointer variable in
+the circular linked list
+and a traversal of a circular linked
+list is until we reach the same node we
+started in a list
+moving ahead let's have a look at the
+circular singly linked list memory
+representation
+so first let's consider four elements to
+be inserted into the list and for that
+we have four nodes where each node
+consists of data part and address part
+stored at some address 2000 2016 2022
+and 3000.
+in the singly linked list the last node
+points to null but when we compare a
+circular linked list to which singly
+linked list we don't find a null which
+means in a circular linked list the last
+note's next pointer holds the address of
+the first node in other words we can say
+that the tail loads address is pointing
+towards the head node of the linked list
+and as I discussed before every node in
+a linked list is connected with the
+other through a pointer that points to
+the address of the next node
+and that is represented by the arrows in
+this diagram
+for example
+so later elements to be inserted be 10
+20 30 and 40. as you all can see the
+last node next is holding the edges of
+the first node that is 2000.
+and the next part of the first node is
+holding the edges of its next node that
+is 2016. similarly the second node is
+holding the address of its third node
+that is
+2022 and the third node is holding the
+address of its next node that is 3000.
+and the last node is holding the address
+of the first node and in this way they
+are linked together
+up next we have a syntax of a circular
+singly linked list
+the syntax of a circle single linked
+list is similar to that of a single
+linked list so we have a stuck keyword
+followed by a structure name called node
+then we have a variables declaration
+that is data and struct node asterisk
+next a pointer variable pointing to an
+element of a structure node so with this
+let's try to execute a simple circular
+single linked list program to understand
+in a better way
+so in this program we have a pointer
+variable called next
+and inside the main function we are
+creating nodes and they are first second
+third and fourth so for every node we
+need to allocate memory for it so using
+mL of function we are creating memory
+or we are allocating memory for it and
+once allocating memory we are inserting
+values into it and the elements are 10
+20 30 and 40.
+and once inserting value we need to link
+each and every node so for that first
+next is holding the address of second
+node second next is holding the address
+of third node and third next is holding
+the address of fourth node and the last
+node that is fourth note next is holding
+the address of its first node
+and last is equal to Fourth
+and display function will display all
+the elements in a circular singly linked
+list so it first check the condition if
+the last node is equal equal to null
+then the list is empty
+pointer is equal to last notes next do
+so it checks the condition
+it prints the values that is pointers
+data it prints the data of every node
+and then checks the condition while
+pointer not equal to last notes next so
+now let's try to execute
+and here we got the output
+the elements are 10 20 30 14 inserted
+into a circular skin cleaning list
+okay so now let us move on to the
+operations on a circular singly linked
+list
+first we have the insertion operation
+next the deletion operation and finally
+the traversal operation
+let's understand them in detail
+under insertion operation we have
+insertion at beginning so basically we
+insert the elements at the beginning of
+the element list next insertion at the
+end that means it inserts the element at
+the end of the element list and lastly
+insertion after a specified node that
+means it inserts the element of this
+unspecified node
+now let's run the program and understand
+these insertion operations practically
+so in this program we are going to
+perform insertion operation so first
+let's start with insert to empty list
+so we are going to insert a new node
+into an AMT list so if head is not equal
+to null then return head create a new
+node and allocate memory for it
+and once creating memory
+assign a data
+and now the new node is equal to head
+and head next that means creating a link
+to itself head next is equal to head and
+return head
+and next we are going to perform
+insertion at beginning so insert a new
+node at the beginning of a linked list
+so if head is equal equal to null then
+return to insert to empty list function
+create a new node and allocate memory
+for it and then assign a value for a new
+node so new data is equal to data
+Now new next is equal to head next
+so the new is the head node return head
+late next we are inserting an element at
+the end of a linked list so for that it
+checks the condition if last is equal
+equal to null return to insert to empty
+list function
+and create a new node allocate memory
+and assign a data
+and now link the address so new next is
+equal to last next
+now the new node is the last next
+and written last
+next we have insertion of the node so it
+checks the condition last is equal equal
+to null then return none
+else we have we are creating here the
+new and a pointer variable pointer is
+equal to last next so do if pointer data
+is equal equal to element that means if
+we find the element then allocate memory
+for the new node and assign a data
+and now new next is assigned to pointer
+next
+and now the pointer is assigned to the
+pointers next and if pointer is equal
+equal to last
+then assign new to last and return last
+pointer is equal to pointers next so
+while pointer not equal to last next the
+given node is not present in the list
+and written last
+we have display function where it
+displays all the linked list elements
+so for that it check the condition if
+head is equal equal to null then the
+list is empty
+s it will print all the elements of a
+node
+so now coming to the main function here
+we have inserting values there are 20 25
+10 15. so first insert to empty list so
+we are inserting the 20 to the empty
+list that is the first element is 20 and
+then coming to insert at end after 20 it
+will print 25
+and insert a beginning so before 20 and
+25 it will insert element 10. and insert
+often node that means after 10 it will
+print 15. so now let's execute and see
+the output
+as you all can see it is printed in a
+order 10 15 20 and 25.
+followed by that we have a deletion
+operation to delete from the beginning
+delete from the end and delete after a
+specific node
+so now let's run a program
+so in this program we are going to
+perform a deletion operation so we are
+basically deleting a node
+so for that we have a delete note
+function it first checks the condition
+if last is equal equal to none that
+means if the linked list contain no
+elements then it returns
+else it will check whether the list
+contain a single element so if last data
+is equal equal to Keynote and last next
+is equal equal to last then free the
+last and assign last is equal to null
+and return
+next creating a temp variable is equal
+to last and delete note
+so here it will delete a last node so
+for that if last data is equal to equal
+to Keynote
+and why temp next is not equal to last
+and assign temp next to temp
+so here
+the last next is assigned to Temp next
+and free the last
+and temp next is assigned to last
+then we are traveling to the node or we
+are finding the node to be deleted so
+for that we have y then next is not
+equal to last and temp next data is not
+equal to Keynote then assign temp next
+to Temp and
+if the temp next data is equal equal to
+Keynote that means if you find the node
+to be deleted then assign the temp next
+to delete node and delete note next to
+Temp next and free up the delete note
+space
+and then coming to the main function
+it prints after deletion the linked list
+elements so we are going to delete the
+element 15 from the list and it displays
+the element so now let's execute it
+so as you can see
+here the linked list elements were 10 15
+20 and 25 so after deletion that means
+we deleted the element 15. so after
+deletion the linked list elements are 10
+20 and 25.
+and finally we have traversal operation
+in this operation we visit each and
+every node at least once maybe to
+display all the data elements or to
+perform operations on it so let's
+understand it practically
+so in this program the display function
+works as a traversal so it travels the
+every node in a linked list so basically
+it first checks the condition if head is
+equal equal to none then the list is
+empty it prints the list is empty if it
+does not find any node in a linked list
+then it returns now assign the head next
+to pointer
+so that it prints the
+data of every node
+and checks the condition well pointer
+not equal to head next
+coming to the main function here we have
+it prints the elements of a linked list
+that means after the insertion and
+deletion operations it will print all
+the elements present in a linked list so
+now let's try to execute it
+so here linked list elements are 10 15
+20 and 25 so after deletion the linked
+list elements were 10 20 and 25 then it
+displayed the elements after deletion
+and insertion the elements are 10 20 and
+25 so the final linked list elements are
+10 20 and 25.
+so with this we have come to the end of
+this session on a circular singly linked
+list in C I hope this session was
+informative and interesting if you have
+any queries regarding any of the topics
+covered in this session or if you
+require the resources like PPT code
+document or anything then please feel
+free to let us know in the comment
+section below and our team of experts
+will be happier to resolve all your
+queries at the earliest until next time
+thank you stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

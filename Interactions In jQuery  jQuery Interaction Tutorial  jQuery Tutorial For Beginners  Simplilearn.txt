@@ -1,0 +1,723 @@
+hello everyone and welcome to simply
+learns youtube channel today we'll be
+taking you through interactions in
+jquery ui in this video we'll see what
+interactions are their syntax and then
+we'll see different types of
+interactions present in jquery
+so before we begin let me tell you guys
+that we have regular updates on multiple
+technology videos so if you are a tech
+geek in a continuous hunt for the latest
+technological trends then consider
+getting subscribed to our youtube
+channel and press that bell icon to
+never miss any updates from simplylearn
+so without any further delay let's get
+started
+so far we have covered widgets and their
+usage in the past few videos widgets
+make it easier for us to perform a
+function or access a service with less
+code required
+we came across different types of
+widgets and their usage it's quite easy
+to use widgets in jquery all we have to
+do is to call the widget with specific
+name and that's it jquery even allows us
+to make customizations in widgets right
+now talking about interactions they have
+almost the same syntax as widgets but
+the working and customizations makes the
+difference
+interactions basically let the user
+perform various actions on the dome
+element with the help of mouse without
+changing the appearance of the element
+the first interaction we'll be going
+through today is the draggable
+interaction in jquery
+this interaction enables draggable
+functionality to any dom element
+it is used to move the draggable object
+by clicking on it with the mouse and
+dragging it anywhere within the viewport
+this interaction allows us to move a
+particular element whether it be an
+image or a box or anything movable
+across the screen
+we can customize the way we can move the
+box with the help of certain
+customizations as well
+let's go through the official jquery ui
+website to see the working of this
+interaction and then we'll use it in our
+own program here we are on the official
+website of jquery ui and you can see
+over here we have all the interactions
+which are placed differently from
+widgets right we have all the
+interactions over here then we have
+widgets as well click on the draggable
+interaction draggable interaction is the
+first interaction available here click
+on it and it will take us to a new page
+you can see over here we have a box with
+some text present inside it which says
+drag me around click and hold over the
+box and try to drag it we are able to
+drag it here right so let's achieve this
+thing in our own program now and then
+we'll go through the customizations as
+well here we are in the vs code now
+we'll do the draggable thing with two
+different boxes so let's add them
+quickly what we'll do is we'll write
+here inside the body tag
+we'll use the div tag we'll write here
+div
+and inside this div tag we'll create
+another division for box one so we'll
+write here div id is equal to let's say
+okay we'll use class for this so we'll
+write here class is equals to let's say
+box and we'll close this div tag now
+we'll write something inside it so let's
+say we are writing here box one
+now we'll create another box for that we
+have to use another div tag we'll write
+here diff class is going to be the same
+we'll write here box
+then we'll write here inside this box
+2 let's say fine
+save this program and you can see here
+we have some text present on the screen
+which says box 1 and box 2. so let's
+style these boxes as well
+what we'll do is we'll write here inside
+the head tag
+we'll use the style tag for this so
+we'll write here style
+and inside this
+we are going to make some style changes
+in these boxes so we'll write here box
+because box is the class we'll write
+here dot box now inside this will write
+let's say we are using border border is
+going to be let's say 5 pixel
+solid
+and let's say black in color fine let's
+keep it simple for now we'll use the
+height over here we'll write your height
+as let's say 100 pixels
+then we'll define width as well width is
+again going to be 100 pixels
+and finally after this we'll write here
+margin margin is going to be let's say
+10 pixels
+and we'll align this text to the center
+so we'll write here text align at the
+center
+fine
+now we are done with it save the program
+and you can see we have two boxes now
+the next thing we want to do is we want
+to move these boxes with the help of a
+mouse button right for that we have to
+use the draggable interaction from
+jquery ui we discussed earlier that the
+syntax remains almost the same for
+interactions and widgets in jquery so
+let's add the interaction to our program
+now
+here we are in the javascript file and
+what we'll do is we'll write here
+dollar now we need to access these boxes
+for that we have the class as box so
+we'll write here dot box
+and then we'll write here dot
+draggable
+it is a method so we'll use parenthesis
+now that's it guys we are done now we'll
+be able to move those boxes in our
+browser
+save the program and try doing it so you
+can see we are now able to move these
+boxes across the browser
+we are able to move them freely try
+moving them to the bottom and you can
+see the scroll bar appearing over here
+right
+the same thing will happen if we try to
+move it horizontally if we try to move
+it horizontally you can see the scroll
+bar at the bottom of our browser
+so we are good to go with that
+now talking about the customizations we
+have in this interaction we can control
+the dragging path of the element we can
+either make it draggable along the
+x-axis which means horizontally or along
+the y-axis which means vertically so for
+that we have to write here inside this
+we have to use curly braces for
+customizations the same thing we did
+with widgets as well
+now we'll write over here axis
+axis we are going to define so let's say
+we are writing here x we are going to
+drag the box along the x-axis now save
+the program and you can see we are not
+able to move the box towards the bottom
+side right we are not able to move the
+box along the y-axis what we can do is
+we can move this box horizontally only
+because we have defined the axis as
+x and now we will be able to move the
+box horizontally only
+the next thing we can do is we can also
+change the cursor upon dragging the box
+to make it look a bit more interactive
+what we have to do is we have to write
+here after a comma we have to write here
+cursor
+and we have to define here
+grabbing fine this is the cursor name
+now save the program
+and you will notice on dragging the
+element the cursor changes right we can
+also change the opacity of this element
+on dragging you can see we have the
+opacity as one because the black color
+is completely visible for now we can
+change it just right here after a comma
+opacity
+and we'll define the opacity as
+let's say 0.5
+fine
+now save the program try to drag this
+box and you can see on dragging the
+opacity changes to 0.5 of this
+particular box the same thing will go
+for box 2 as well
+because we have defined the axis as x we
+are not able to move the box in other
+directions so let's comment this
+axis for now save it now and you can see
+now we are able to move these boxes
+freely fine the next thing we can do
+here is we can also limit the dragging
+area of this box we can either limit it
+to the division or to the document as
+well so for that we have to define a
+property over here we have to write here
+after a comma
+containment
+and then we have to write here either
+parent for division and for document we
+have to write a document only so let's
+do it with parent
+save the program
+and you can see the area is limited now
+we can drag it till here only we can't
+drag it out of this box because we have
+a division over here defined as well and
+these boxes are present inside that
+division if you go back to the html
+document you can see here we have this
+div tag as well we can move these boxes
+only inside this div tag we can't go out
+of this so this is how we can limit the
+dragging area of a particular element
+another property we can use is the grid
+property so let's write here first and
+then you can understand it much better i
+guess so we'll write here grid
+and we'll define the grid inside
+these brackets we'll write here 300
+comma 300
+now save the program and you guys will
+get it much better but before that let's
+comment this piece of code we are not
+going to limit the draggable area of
+these boxes save it now and now on
+dragging the box you can see that it
+automatically stops after 300 pixels and
+the in between movement of the box is
+not visible let me zoom out the browser
+for you and you can see it more clearly
+now you can see the box stopping after
+300 pixels and the in between movement
+of this box is not visible so this is
+how we can use the grid property to make
+it look more interactive to the user
+now the last two properties we are going
+to discuss today are the snap and the
+snap tolerance properties if the snap
+property is set to true then the two
+boxes will stick together if closer to
+each other the snap tolerance property
+defines the distance between the
+elements to stick together so let's use
+them here first
+we'll
+comment this grid as well we'll write
+here
+after
+this snap so snap is a boolean property
+we'll write here true for that and we'll
+write here snap
+tolerance fine
+and we'll set snap tolerance to let's
+say 100 pixels this is in pixels keep
+this thing in mind
+now if the distance between the two
+boxes at any time becomes 100 or less
+than 100 then both the boxes will stick
+together save the program and you can
+see over here that moving the first box
+near to the second one they are sticking
+together right the snap tolerance is
+hundred it means that if we try to bring
+the box near to box two and the distance
+between them is either 100 or less than
+that then the boxes will stick together
+so this is how we can use the draggable
+interaction to make our web page more
+interactive i hope you guys got it the
+basic definition states that
+interactions let the user perform
+various actions on the dom element with
+the help of the mouse without changing
+the actual appearance of the dom element
+the sortable interaction we'll be going
+through today is used to sort elements
+just by dragging them
+so let's go through the jquery ui
+website quickly and then we'll use it in
+our own program
+here we are on the official website of
+jquery ui we'll go to the sortable
+interaction directly here it is click on
+it and here you can see we have a list
+of items
+we can sort them according to our needs
+if we pick any one of them from its
+position and if we try to drag it to
+another place you can see we can do so
+because of the sortable interaction in
+jquery ui
+the sortable interaction enables a group
+of dom elements to be sortable click on
+it and drag the element to a new spot
+within the list and all the other items
+will adjust according to this particular
+item
+it shows all the properties of the
+draggable interaction by default we'll
+see them after going through the syntax
+of this interaction so let's move on to
+the vs code and we'll try to implement
+this thing in our own program now here
+we are on the vs code the first thing
+we'll be doing is to add those elements
+to our web page for that what we'll do
+is we'll take a div tag and we'll define
+the list inside that particular div tag
+we'll write here div
+close it now what we have to do is we
+have to declare an unordered list for
+that we'll use the ul tag we'll write a
+ul
+class is going to be let's say sort
+we'll close this stack and now inside
+this will define the list fine
+we'll use the li tag for that we'll
+write here li id is equals to let's say
+sortable we are giving all these
+elements ids because we want to style
+them as well so for styling purpose
+we'll be using the id attribute
+we'll close it and here we'll write the
+name of item let's say item one
+will copy this piece of code from here
+we'll paste it certain times
+and then we'll change the name of items
+fine we'll write here item 2
+then we have item 3
+4
+5 6 and
+7. fine
+we have a list of items on our web page
+so you can see we have seven different
+items over here now let's style them as
+well for that what we'll do is we'll
+move to the head tag of our html file
+and we'll use the style tag over here
+we'll write here inside this style tag
+hash
+sortable this is the id now we'll style
+these elements
+we'll write here
+border
+border is going to be two pixels solid
+in nature and
+black in color
+then we'll write a height so let's say
+the height is
+20 pixels for each box then we'll write
+your width
+width is going to be let's say 100
+pixels they are going to be rectangular
+in shape not squares so height and width
+is going to be different let's define
+the margin as well let's say margin is
+10 pixels
+then we have text align as well fine so
+let's say we are writing a text align at
+the center
+save it now
+and here you can see we have all the
+boxes over here but it's still not
+working
+let's see what the problem is
+so you can see over here we have a
+mistake we have written here as loid so
+we'll correct it we have solid over here
+now save it and you can see we have all
+the items over here we have seven items
+all are placed inside boxes
+now we did some basic styling here
+everyone can understand it because it's
+so basic the next thing we have to do is
+to use the sortable interaction here for
+that we'll move to a javascript file
+so here is a javascript file now we have
+to use this interaction in all the items
+so we have to use it with the parent
+element to make each box movable within
+the area covered by the ul tech
+so we'll be using the class attribute
+here
+we'll write here
+dollar now we are going to take a
+selector so for that we'll write here
+dot sort because this is the class name
+and then we'll write here dot sortable
+fine this is the interaction name it is
+basically a method that's why we are
+using parentheses over here
+that's it guys the sortable interaction
+can do the rest of task by itself
+this interaction over here is already
+defined inside the jquery file all we
+need to do is to pass it as a method and
+jquery will take care of the rest
+we are done with it let's save the
+program
+save it and here you can see it on the
+browser that we are able to move a
+particular box now click on item 1 and
+you can see we are able to drag it and
+if we put it down here you can see all
+the other items adjusting themselves
+without any problem so we have already
+discussed that the sortable interaction
+has all the customizations of the
+draggable interaction by default let's
+use them what we'll do is
+we'll write here inside
+curly braces we'll write here let's say
+opacity this property we have used in
+the previous interaction as well so
+let's define the opacity as 0.5 then we
+have cursor
+we can write here cursor as let's say
+grabbing a hand like thing will come
+when we try to grab the boxes now
+now the next thing we are going to do is
+we are going to write here containment
+it can either be document or the parent
+so for now we will be using parent over
+here
+then we have let's say delay and
+we'll define the delay in milliseconds
+so let's say the delay here is 300
+milliseconds and the last thing we are
+going to do is we are going to write
+here distance
+fine we are going to write here 50 now
+so here we have all the customizations
+allowed by this interaction in jquery ui
+almost all of them are from the previous
+interaction that is the draggable
+interaction the distance here is in
+pixels and it means that this
+interaction will work only if we drag
+the element for 50 pixels
+save the program now try to move a box
+you can see we are not able to move a
+box until the distance reaches 50 pixels
+fine so this is how this distance
+property actually works now the delay
+property defines the time interval taken
+by the interaction so here the time
+interval is 300 milliseconds when we try
+to move a box it will take 300
+milliseconds and then only the box will
+move so these are some of the few
+properties that i think are the most
+important to understand you can find
+more from the api documentation present
+on the official jquery ui website
+here's a task for you guys what you have
+to do is to add an image in this program
+and then see if this works the same or
+not
+now that we have a good idea of what
+interactions are and how we can use them
+to make a more interactive web page we
+can simply go through this new
+interaction in jquery ui without a
+problem if you haven't watched the last
+two parts wherein we discussed the
+draggable and sortable interactions i'll
+suggest you to go through them and it
+will be easy for you guys to get this
+topic
+the resizable interaction in jquery
+enables any dom element to be resizable
+with the help of the cursor we can grab
+the right or bottom border of any dom
+element and drag it to the desired width
+and height
+so let's go through this interaction
+quickly from the official website and
+then we'll see what we can do with this
+particular interaction to make our web
+page more interactive so here we are on
+the official website of jquery here's
+the resizable interaction click on it
+and it will take us to a new page you
+can see we have a box over here which
+says resizable what we can do here is we
+can grab the box either from the bottom
+or from the right side and you can see
+we are able to change the height and
+width of this particular box
+we have the option for certain
+customizations that will be going
+through after some time
+so i hope you guys must have got an idea
+by now about this resizable interaction
+let's use it in our program here we are
+in the vs code the first thing we'll be
+doing is we'll be adding an html element
+over here let's use an image for now to
+get an idea of the syntax so we'll add
+an image to a web page for that we'll
+write here inside the body tag we'll use
+the div tag first so we'll write here
+diff now inside this will write img
+source is going to be images this is a
+folder in my computer
+so
+right here we'll write j1.png then we
+have id so let's say the id for this
+image is img1 and then we have to set
+the alternate as well so let's say we
+are writing here javascript
+close this img tag save the program and
+you can see we have the image over here
+which is quite large in size so let's
+style this image as well we'll change
+the height and width of this particular
+image for that we'll write here inside
+the head tag we'll use the style tag
+so inside this we have the ids img one
+for this particular image so we'll use
+it here
+then we'll define the height of this
+image so let's say the height of this
+image is going to be
+250 pixels fine
+we'll also change the width of this
+image so for that we'll write here
+width let's say the width is going to be
+250 pixels again now we'll write here
+border so let's say the border is going
+to be 1 pixel
+solid
+and black in color fine
+that's it we are done with this image
+save the program and you can see we have
+an image over here which is of 250
+pixels in size
+the next task we have to do is to make
+this image resizable
+for that we have to use the resizable
+interaction only so we'll move to a
+javascript file this is a javascript
+file now inside here what we'll do is
+we'll try to access this particular
+image using the id attribute for that
+we'll write here dollar
+then inside double inverted commas we'll
+write the id so we have to write here
+img1 then we have to write the
+interaction name only so we'll write
+here resizable and then we'll use
+parentheses because this is a method and
+i hope you guys are aware of all these
+things by now
+save the program and get ready to see
+what this resizable interaction can do
+with our dom element save it
+here if you can see we have something
+present in the bottom of this image we
+have an icon over here
+this is an indication for the user that
+this particular image or element is
+resizable we can't resize the element
+from the left side or from the top
+because the interaction is already
+programmed in that way
+we can grab the element from the right
+side if we try to grab it from here and
+if we try to resize it you can see we
+are able to resize this image
+similar thing goes with the bottom part
+as well we can resize this image from
+here as well
+now talking about the options we have in
+this interaction we can use animations
+with this image to make it look more
+engaging to the user so for that we have
+to write here inside this resizable
+interaction we have to use curly braces
+for properties and then we'll write
+animate we'll set this property to
+true fine
+save the program and now you can see
+that the animation is taking place on
+resizing this image if we try to resize
+this image you can see the animation
+over here
+it is working totally fine other
+properties include the containment
+option we can limit the area of
+expansion of this image we can restrict
+it to the parent element or to the
+document as well we have discussed this
+property in the previous two
+interactions as well so this property
+remains the same
+we'll write here containment
+and we'll write here let's say
+parent fine
+now save the program before that we'll
+comment this animate property save it
+now
+and here you can see we are able to
+resize this image but up to a particular
+extent we are not able to resize it
+outside of the div tag we can resize it
+from here as well
+and you can see the div tag has its own
+area we can't resize this image more
+than this
+and we can also limit the maximum and
+minimum height of this image for that we
+have to write here
+max height so let's say the max height
+is going to be 400 pixels then we'll
+write here max width
+the max width is going to be 400 pixels
+again
+we have to write here min height and min
+width as well so let's say the main
+height is going to be
+150 pixels
+and the min width is going to be the
+same so we'll write here min width
+and then we'll write here
+150 fine
+save the program and you can see we can
+now resize the image up to a specific
+height and width only if we try to
+increase the width you can see we are
+able to increase the width up to 500
+pixels only and we are not able to
+increase the height because of this
+containment property we'll comment this
+as well save the program and now we'll
+be able to resize this image you can see
+on resizing it from the bottom we are
+able to resize it up to 400 pixels only
+same goes with the width as well now if
+we try to reduce the size of this image
+you can see the minimum size is 150
+pixels so this is where the image stops
+same thing goes from the bottom end as
+well now this is the minimum size of
+this particular image according to these
+properties the minimum height and the
+minimum width is 150 pixels
+we can also use the ghost property
+instead of showing the actual image
+during the resizing we can set the ghost
+option to true to show a
+semi-transparent part of the element
+so let's do it here what we'll do is
+we'll write here after this min width
+we'll write ghost and we'll set this
+property to true save the program and
+now on resizing the image you can see if
+we increase the size of this image we
+have a semi transparent image which
+helps us in resizing this image up to an
+extent same thing goes with the
+reduction of size as well the last
+property we have is the aspect ratio of
+the image we can either give a preserved
+aspect ratio or we can also give the
+boolean value
+both the values for this option will
+work totally fine for example
+if we write here after this ghost
+property
+aspect
+ratio and if we set this property to
+true
+so before saving this we'll commend this
+ghost property out save the program and
+now if we try to resize the image you
+can see the size of the whole image
+resizing in a proper manner what else we
+can do here is instead of setting this
+property to true we can also write here
+aspect ratio as
+16 by
+9. now this is the preserved aspect
+ratio save the program and you can see
+the image resizing in a different manner
+now you can see the aspect ratio of the
+whole image is changed
+so these are the properties we have in
+this interaction that can help us make a
+more interactive or engaging website i
+hope you guys got this
+and with that we come to the end of this
+interactions in jquery tutorial if you
+enjoyed watching the video do give it a
+thumbs up comment your doubts below and
+our experts will answer them for you
+thank you so much for being here watch
+out for more videos from us until then
+keep learning and stay tuned to simply
+learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

@@ -1,0 +1,394 @@
+hey traders welcome back to another
+video in this video i want to explain
+some of the important changes that the
+trading view developers have made to the
+inbuilt strategy tester that back tests
+our scripts on historical data so
+recently the trading view developers
+have updated how the strategy tester
+works on trading view and these changes
+have eliminated some of the significant
+limitations i've mentioned in previous
+videos so this is a really exciting
+development for trading view i'm
+currently working on recording some new
+content covering strategy automation and
+how i go about that process but before
+we dive deeper into that world of
+panscript it's important that we
+understand
+how the new backtester system works
+because it's going to help us better
+navigate the strategy development
+process in pine so let's break down some
+of these really important changes in
+today's video and in the next video
+we'll start utilizing some of these
+really cool new features of the strategy
+tester the first change that they have
+implemented if i open up the settings
+for this strategy script that you see on
+my chart right here i'll go over the
+source code for this strategy in a
+future lesson but for now i just want to
+make you aware of these new features of
+the strategy tester so here's the
+settings menu for this strategy script
+that i have added to my chart if i go to
+the properties tab and i scroll down to
+the bottom here you can see this new
+option
+back testing precision
+and we have this new setting here called
+use bar magnifier this will be off by
+default on any script that you create
+but from now on we need this on at all
+times
+and i'll explain why in a moment the way
+we turn this on at all times in our
+scripts
+is if i open up the editor here and add
+a comma on the end of my
+strategy annotation function this is
+where we set the
+default settings for our strategy
+so here i've set my titles my overlay
+setting to true my calculate on order
+fills is set to true my initial capital
+is set to ten thousand
+us dollars
+and if i hover over this
+um the very last parameter we have to
+work with there is use underscore bar
+underscore magnifier
+we need to set this to true on every
+single script we create
+the only time you wouldn't use this is
+if you can't afford to upgrade your
+trading view plan to the pro plan i
+believe this is locked behind the pro
+plan on training view but ideally we
+need this on at all times so let me
+quickly explain what this setting does
+and why it's so important so in the past
+the training view strategy tester the
+way it would
+run its back test is it would simulate
+how price action unfolded on historical
+data i don't know if i've covered this
+on youtube but in my password mastery
+course i explained how this works so the
+broker emulator would simulate price
+action based on these um
+sort of
+parameters here
+so if the bar's high is closer to the
+bars open than the bar's low then the
+broker emulator assumes the intra-bar
+price was moving this way from the open
+to the high to the low to the close so
+let's jump over the chart and i'll show
+you what that looks like so if i zoom in
+on this
+candle here with this giant wick to the
+top the way the broker emulator would
+used to work is if the bar's high is
+closer to the bars open then the bar's
+low
+then the emulator would assume that
+price opened here rallied to the high
+fell to the low and then closed here
+it's a very rudimentary system
+it doesn't take into account the nuances
+of price action and the fact that price
+might have opened here
+and then fell a little bit and then
+rallied and then fell a little bit and
+then rallied and then went sideways for
+a little while
+had a spike up to the top and then fell
+and then rallied a little bit and then
+fell again and then ended up closing
+here the strategy tester system used to
+not do a very good job of simulating
+this it would simply simulate this price
+action in a four-step motion the bar's
+open
+is closer to the high than the closes
+and so would say it would assume that
+price went up
+down closed
+now with this new setting this new
+back testing precision setting we can
+actually tell the trading view strategy
+tester
+to simulate this
+bar how price action unfolded on this
+bar
+based on a lower time frame so if i use
+the bar replay tool and i click on this
+bar
+and i drop down to
+first of all let me draw these levels
+out so we've got the high and the low of
+this bar
+if i drop down to a five minute chart
+and zoom out a bit
+now you can see that our hourly bar
+opened here and we do have this large
+wick to the top so price opened here
+rallied to the top and then fell to here
+rallied to here fell to here rallied to
+here
+fell to here and then closed here
+this gives us the full story of that one
+hour bar
+and now with this new setting uh the bar
+might whoa what did i do to my drawing
+tool there with this new setting the
+used bar magnifier tool the strategy
+tester uses a lower time frame to
+simulate how price action unfolded on
+this one hour bar
+that gives us greater precision
+in simulating our strategy performance
+over historical data and it's extremely
+extremely important that we get accurate
+simulations of our strategy on
+historical data and so there is no
+reason why you shouldn't have this
+turned on at all times
+so from now on make sure this is turned
+on in all of your strategy scripts again
+the way you do that is just add this
+parameter to your strategy annotation
+function this will ensure that this
+setting is turned on at all times so
+that's one important change that
+tradingview have made to the strategy
+tester
+i'll go over this in more detail in
+future lessons if you want to see which
+lower time frames correspond to the
+higher time frame
+i'll leave a link to the blog post below
+where tradingview announced this new
+feature here's the blog post here
+so they've structured this table in a
+weird way but
+this means that if your time frame is
+less than 240 so four hours all the way
+down to
+60 so the 60 minute chart
+then the intra bar time frame that is
+used to simulate your historical price
+action the way that the bar unfolded
+is the five minute chart and so now when
+my script code is running through the
+strategy tester on historical data
+using this bar as an example
+the strategy tester uses the five minute
+time frame
+to simulate how this hourly bar unfolded
+my internet's playing up here for some
+reason it won't load the chart but you
+get the idea i've already gone over this
+um how this works and so the five minute
+time frame will show a different story
+on how this hourly bar really unfolded
+the reason why this is important
+is because so let me find an example
+here the problem i'm going to have is
+that i need to find a recent example
+because you can only load historical
+data so far back on trading view
+so i might need to go through a few
+different pairs here to find a recent
+example all right here we have a trade
+that might just work if i zoom in here
+this is perfect
+so notice that the strategy tester is
+saying that this trade was closed for a
+profit our take profit was hit
+we entered short on the open of this bar
+after our setup candle was detected our
+stop loss was here i'll take profit
+there
+the strategy tester reckons that this
+trade won in the past
+without this turned on it's possible
+that this
+strategy tester would record this
+winning trade
+inaccurately when it was actually a
+losing trade price opened here and maybe
+it rallied up and hit our stop loss then
+rallied down to hit our take profit
+after we'd already taken a loss
+and then rallied up and closed up here
+we don't know how price unfolded on this
+bar but by turning this setting on if i
+use the bar replay tool here and we draw
+on our stops and targets when my
+terrible australian internet
+finally loads the script there we go
+if i put my stop loss and my take profit
+on the chart
+and then we drop down to a five minute
+time frame that's what the hourly time
+frame uses as its lower time frame
+reference point when
+simulating intra bar price action on
+historical data if i click on the five
+minute time frame here we go you can
+clearly see
+that
+price came close to our stop loss
+depending on the spread this might have
+been a losing trade but that's a
+different
+can of worms altogether
+but in this particular case our stop
+loss was not hit
+price fell to hit or take profit and
+then rallied past our stop loss
+that's what the strategy tester is doing
+when we have this setting turned on as
+i've mentioned several times now but i
+need to make this very clear that you
+guys understand this because it's really
+important and so this trade was
+accurately simulated by the strategy
+tester as a winning trade based on that
+lower time frame
+uh price action so that's one new really
+important adjustment that the trading
+view developers have made to the
+strategy tester
+and from now on we keep this on at all
+times the second important adjustment
+they've made is this brand new deep back
+testing beta system and basically what
+this does is if you have this turned off
+our strategy is being simulated across
+all of the bars that are loaded onto our
+chart so if i go all the way back to the
+last bar on my chart or the very first
+bar on my chart that's right here
+if i zoom in
+put a vertical line there
+you can see that this is
+that this bar is the second of january
+2019 at 8am and so my strategy tests the
+results here uh showing me how my
+strategy performed during this window of
+time this sample from
+2nd of january 2019 until today this is
+my trading results my strategy results
+but if i turn the deep back testing on
+now i can choose a date range
+to
+simulate between
+so now i can trade all the way back to
+2005
+up until today
+and if i click generate report
+i make sure that i've got this turned on
+click generate report
+now this will take a little while
+especially if you've got
+this setting turned on it will take
+quite a bit longer because the strategy
+tester needs to simulate that intra-bar
+price action on every single hourly bar
+all the way back to first of january
+2005 but what this tester system will
+now spit out when this
+back test is completed the data here
+will include every trade from 2005 until
+now and there you go you can see we have
+352 trades
+that's because i'm on a broker that
+doesn't have a lot of historical data if
+i go to a different one let's go to
+oanda
+and do exactly the same thing
+awanda has price data that goes back
+until
+pre-2005 but i'll leave it at 2005 for
+now click generate report you can see up
+here that we only have 134 trades
+in our sample size based on the bars
+that are loaded on my chart but now that
+i've generated a report from 2005 until
+now we have 837 trades and it gives us
+very different
+drawdown and return metrics so from 2005
+until today this system took 837 trades
+had a 54 win rate a 100 return roughly
+and a 14 max drawdown not ideal for such
+a long time frame 17 years to double
+your money is a long time but that's not
+the point of today's lesson this is just
+an example and obviously
+the idea is to find a strategy that
+works on multiple pairs multiple markets
+perhaps even multiple time frames and so
+these returns tend to compound over time
+and you'll end up with a much higher
+than 100 return across several pairs
+several strategies
+but the point here is
+this deep back testing system has just
+run our script on historical data from
+2005 until now instead of just from
+what was the 2nd of january 2019 so
+that's a really important feature here
+as well
+now this deep back testing system won't
+show visually the trades on your chart
+because you can only see what data
+you've loaded
+but if we open up the list of trades and
+scroll all the way down you can see that
+some of our trades here begin in 2005.
+so that's it for today's video sorry it
+was a bit of a ramble but these new
+changes to the strategy tester are super
+important and we will cover this in more
+detail in more practical use cases and
+examples in future lessons but for now
+just be aware
+that
+if you hear me speaking about any
+limitations with the trading view
+strategy tester a lot of that has been
+alleviated by these two
+new features
+the back testing precision make sure to
+have this always turned on
+and the deep back tester
+is something that we will explore in
+more detail in future lessons
+that will give us significantly more or
+significantly larger sample sizes to
+work with which is extremely important
+when developing robust trading
+strategies but for now i'll wrap this
+lesson up here thanks for watching i
+hope you enjoyed the lesson i hope you
+enjoy the content to come i'll be going
+to cover some really exciting and
+interesting stuff um make sure to hit
+the subscribe button if you haven't
+already and all of that youtuber stuff i
+have to say and uh yeah good luck with
+your trading be careful out there it's a
+bloodbath at the moment that will lead
+to some great opportunities in the
+months to come but for now make sure
+you're managing your risk properly
+be careful
+and yeah i'll speak with you very soon
+take care
+you

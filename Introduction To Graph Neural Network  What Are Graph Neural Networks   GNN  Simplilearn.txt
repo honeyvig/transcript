@@ -1,0 +1,271 @@
+hello everyone I am mayank and welcome
+to this video on graph neural networks
+by simply learn in this video we will
+cover topics like what our graph is
+moving forward and we'll see why it is
+hard to analyze a graph after that we
+will cover what graph neural networks
+are after that we will look into types
+of gnns gnns means graph neural networks
+after covering all these topics we will
+cover some advantages and disadvantages
+of gnns and at the end we will see some
+applications of the DNS so let me tell
+you guys that we have regular updates on
+multiple Technologies if you are a tech
+geek on a continuous hand for the latest
+technological Trends then consider
+getting subscribed to our YouTube
+channel and press that Bell icon to
+never miss any update from Simply learn
+so let's get started also accelerate
+your career in Ai and ml with
+copernences processor program in Ai and
+machine learning gain expertise in
+machine learning deep learning NLP
+computer vision and the info enforcement
+learning you will receive a procedure
+certificate exclusive alumni membership
+and ask me anything sessions by IBM with
+three Capstone and 25 plus industry
+projects using real data sets from
+Twitter Uber and more you will gain
+practical experience masterclasses by
+Caltech faculty and IBM experts ensure
+you the top-notch education simply
+against job assist help you get noticed
+by Leading companies this program covers
+statistics python supervised and
+unsupervised learning NLP and neural
+network computer vision genes Keras
+tensorflow and many more skills so
+enroll now and unlock exciting Ai and ml
+opportunities coastlink is mentioned in
+the description box below so let's see
+what is a graph so at the core of graph
+neural network gnns is a fundamental
+Concept in the computer science a graph
+is a data structure comprising two
+Essential Elements first is node or
+vertices and the edges so in case where
+there are directional relationship
+between nodes that edges are considered
+as a director okay it is known as the
+directed graph on the other hand if
+there are no directional dependencies
+the ssrt does are undirected graph okay
+so a graph G is defined as g equals to
+ve where V represents set of nodes and
+the E represents the edges connecting to
+these nodes so moving forward let's see
+why it is hard to analyze a graph so
+graph data present many challenges for
+the conventional machine learning
+algorithm due to it its inherent
+complexity so unlike simple data types
+of these algorithms specialized in such
+as images with fixed structure and the
+sizes resembling grid graphs or
+sequences like text and speech
+representing line graphs graphs can be
+far more intricate so graphs do not
+conform to a fixed form and vary in size
+and unorder nodes where each node can
+have various neighbors this is dynamic
+and irregular nature poses a significant
+obstacle to traditional machine learning
+tools so for the more exciting machine
+learning algorithms are built on this
+core assumption that instance are
+dependent of the each other so let's
+move forward and see what are graph
+neural network so gnn's craft neural
+networks are a category of deep learning
+techniques specifically crafted for
+analyzing data represent in graph
+structures they serve as neural network
+tailored to process graphs directly
+offering a convenient approach and
+Performing prediction at the node Edge
+and the graph levels with gns it becomes
+feasible to conduct challenging tasks
+for conventional neural network CNN
+allowing for more effective and
+versatile analysis for graph structured
+data so moving forward let's see types
+of DNS graph neural network gnns are
+neural network design explicitly to
+process graph structure data offering a
+versatile approach for Edge node and
+graph level prediction so they can be
+categorized into three main types first
+one is decurrent graph neural network
+this type of gnns incorporate recurrent
+cells into its architecture enabling the
+model to capture temporal dependency and
+sequential patterns in the graph data
+the second one is special conversational
+Network so special CNN are inspired by
+traditional CNN and operate on a node
+local neighborhood they aggregate
+information from neighboring nodes to
+update a nodes representation and the
+third one is spectral convolutional
+neural network so spectral conventional
+dnns operate in the spectral domain by
+using egn values and the egn vectors of
+the graph agency Matrix this allows them
+to handle graph signals efficiency and
+capture Global structure so at the core
+of GNN slides the fundamental
+institution that nodes in a graph are
+defined by their connection and
+Neighbors when visualizing this concept
+it becomes apparent that removing all of
+the neighbor's word lead to the node
+losing all its information so after
+covering types of gnns let's see
+advantages and the disadvantages of
+genus first we will see some advantages
+so first one is handling complex data so
+gnn's excel at processing complex and
+irregular graph structure data which
+cannot be easily represented using
+traditional data structure like grids or
+sequences the second one is capturing
+local and Global Information gnns can
+capture both local and Global
+Information of nodes in a graph the
+message passing mechanism enables nodes
+to learn from their immediate neighbor
+while considering higher level
+structural pattern in the graph and the
+third one is parameter sharing gnn's
+share parameter across node in the same
+layer reducing the model memory
+footprint and making them more scalable
+than fully connected architecture and
+the fourth one is end-to-end learning
+gnns can be trained to end-to-end
+learning hierarchical representation and
+feature embedding directly from the
+graph today and data without relying on
+the handcart feature and the last one is
+transferability so gnns demonstrate
+transfer learning capabilities models
+pretend data on a graph can often be
+fine-tuned or adapted to focus while on
+related graph even with different size
+of a structure and some disadvantages of
+genes are first one is scalability so
+training gnns on large labor can be
+computationally expensive and memory
+intensive due to the need of propagate
+message between nodes and the second one
+is limited generalization dnns May
+struggle to generalize well on graphs
+that significantly differ from the
+training graph in the terms of structure
+or destruction this limitation can be
+problematic when dealing with dynamic or
+evolving graphs and the third one is
+interpretability so gns Black Box nature
+can make them challenging to interrupt
+and understand especially when making
+critical decision in domains like
+healthcare or finance and the fourth one
+is over smoothing DNS may suffer from
+over smoothing where nodes
+representations become oversimilarly
+after multiple layers of message
+possible this can lead to a loss of
+valuable information and reduce model
+performance and the last one is handling
+different graph sizes genus typically
+expect graph with a fixed size during
+training making it challenging to apply
+them to graphs with varying node or Edge
+counts graph pooling techniques are
+often employed to address this issue but
+it can still be a concern so in in
+conclusion graph neural networks offer
+powerful capabilities for handing
+complex graph structured data and have
+shown success in various applications
+however there is scalability
+generalization and adaptability to
+different graph sizes remain active
+areas of research and Improvement
+understanding the advantages and the
+disadvantages of GNN is crucial in
+selecting the appropriate model for a
+specific task and mitigating potential
+challenges moving forward let's see
+application of gnns the first one is
+social network analysis genus can be
+used to model and analyze social
+networking making prediction on user
+interaction influence propagation and
+Community detection they help in
+identify influential users
+recommendation connection and
+understanding the network Dynamics and
+the second one is recommender system
+gnns effectively build recommendation
+engine that provide personal suggestion
+based on user items interact Graphics
+they can learn user preferences and item
+characteristics to make accurate and
+relevant recommendation and the third
+one is traffic prediction gnns can be
+used to analyze Transportation networks
+such as Road Network and public
+transportation system for predicting
+traffic flow and congestion patterns and
+optimizing routes and the fourth one is
+computer Visions gnns are used in
+computer vision's tasks involving
+structured data such as image parsing
+sync graph generation and object
+relationship understanding and the fifth
+one is financial fraud detection genance
+can be employed to analyze financial
+transaction graphs to identify fraud and
+activities detect anomalies enhance
+security measures so these applications
+demonstrate the versatility and the
+utility of genus in addressing complex
+real world problem that involve graph
+restructure data as research in the
+field of progressive DNS are expected to
+find even more application across
+various domain so that's all we had for
+you in this video we can call it our
+Apna if you still have any question or
+doubt let us know in the comment section
+below and our team of experts will help
+you add the list thank you so much for
+being here today we'll see you next time
+until then stay safe and keep learning
+with simply learn staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
