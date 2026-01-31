@@ -1,0 +1,845 @@
+hello everyone welcome to simply learns
+youtube channel today we will be
+discussing about dq in data structure in
+today's video we have an interesting
+quiz for you guys so stay tuned and do
+leave your answers for the quiz that's
+going to pop up on your screens in next
+few minutes but before we begin let me
+tell you guys that we have daily updates
+on multiple technologies so if you are a
+tech geek in a continuous hunt for
+latest technological advancements then
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simplylearn
+now without any further ado let's get
+started with the plan for today's
+discussion
+we'll start this discussion by
+understanding what is double ended queue
+in data structure followed by that we'll
+understand the properties of dq in
+detail advancing ahead will deal with
+the different types of dq after that
+we'll understand the representation of
+dq using circular queue and further
+we'll discuss different operations that
+can be performed on dq
+once finish with that we'll implement a
+dq using circular queue and finally
+we'll cover applications of dq to
+understand its importance
+i hope i made myself clear with the
+agenda now let's get started with our
+first topic what is dq
+dq is an abbreviation for double ended
+queue and as the term double ended queue
+suggests it is a type of queue with some
+advanced features at both of its ends
+but previously we have learned that the
+basic queue data structure must perform
+insertion from one of its end and
+deletion from another or opposite end
+so what new limitation of feature does
+this particular type of queue brings
+well the dq extends the concept of a
+linear queue by implementing insertion
+and deletion at both of its nodes
+by that what i mean is the dq data
+structure is acquainted with the
+possibility to insert and delete new
+elements at any node that is why dq is
+concerned as more generalized version of
+queue data structure
+now moving ahead we shall understand the
+key properties of dq
+the first property of dq states that the
+dq can use the lipo principle for
+inserting or removing elements the last
+in first out principle is used while
+implementing stack data structure and
+according to this principle the queue
+elements must be inserted from one end
+and should also be removed from the same
+end
+for instance we are storing some
+elements inside this queue structure
+which is performing both insertion and
+deletion from one end
+however when deletion begins the element
+inserted at last will be removed first
+whereas the element stored at first will
+get removed at the end this property
+clears that the dq can inherit all the
+properties of stack data structure
+the next property of dq states that the
+dq can use the fifo principle for
+performing both insertion and deletion
+operations
+that means the element which enters
+inside the queue at beginning will also
+leave the queue at first
+further the element which entered at
+last can leave the queue at last
+both of these properties displays the
+uniqueness of this particular type of
+queue data structure
+now in upcoming slides we will
+understand different types of the dq
+the first type of dq we have is termed
+as input restricted queue
+this terminology itself suggests that
+this particular type of dq will have
+some restrictions while performing nq or
+insertion operation
+in this type of dq the insertion can
+only be performed from one end where
+deletion can be performed at both of its
+ends the representation of dq shown
+below explains how the operations in
+this type of dq will get accomplished
+the next type of dq is output restricted
+dq this term makes clear that this type
+of queue will have some restrictions
+while performing deletion operations
+in this specific type of queue the
+removal of elements can only be
+performed from one end where the
+insertion can be performed at both of
+its aids this particular structure of a
+queue explains how the different
+operations will take place in this type
+of dq
+now here is the interesting question
+that we want you all to answer
+based on the properties of dq that we
+have discussed till now which of the
+following data structure will be more
+ideal for implementing dq in data
+structure
+what i mean by idl is the time and space
+complexity for implementation strategy
+that you decide should be minimum
+the options that we have are
+circular array
+singly linked list and doubly linked
+list
+it will be interesting to see how many
+of you guys will get this right
+so guys do leave your answers to this
+question in comment section below in a
+week's time we'll be announcing the
+right answer and you all can check it
+out
+on that note let's dive further and
+understand the representation of dq
+using circular queue and yes
+circular queue is one of the answers for
+previous questions we'll understand why
+it is best in upcoming slides but please
+check the complexity analysis of other
+two strategies to decide your answer for
+the previous question as multiple
+answers can be accurate for that
+question
+now let's understand what a circular
+queue is
+well a circular queue is nothing but the
+extended notion of linear q as it
+follows the first in first out principle
+with the exception that the last
+position of this particular queue is
+connected to its first position making a
+circular link
+the circular link is responsible for
+naming of this queue as circular queue
+or ring buffer let's understand how a
+circular queue operates with the help of
+simulation this is the illustration of a
+circular queue having size 5 as the
+position of rear pointer keeps
+increasing a new element will be
+inserted in this queue until the rear
+pointer reaches the end of q
+but what if we perform dq operation now
+if we perform the deletion then the
+empty space will get created at front of
+queue however this space can further be
+utilized in this particular type of
+queue by making circular incrementation
+of rear pointer or circular link
+so if we increment the rear pointer from
+its index 5 to index 0 we can utilize
+empty space by making new insertions
+using this feature of circular queue we
+can implement both insertion and
+deletion at both the ends of q
+let's understand how we can do that in
+upcoming slides
+the first type of insertion is a pretty
+ordinary one and this insertion will
+increment the position of rear pointer
+to insert a new element the arrow shown
+in blue is rear pointer and the arrow
+shown in orange is the front pointer so
+as you can see once we increment the
+rear pointer new elements get inserted
+this is how the insertion using rear
+node happens
+now what if we want to perform insertion
+using front end in order to perform the
+insertion using front node we'll have to
+make front pointer reach to the end of
+queue the only possible way to achieve
+that is to set front pointer equal to
+max size -1 manually
+this command will allow a front pointer
+to reach the end of queue for performing
+insertion and for further insertions
+we'll just have to decrement the front
+pointer location for inserting new
+elements this is all about insertion
+now that we have implemented insertion
+from both ends let's move on to the
+deletion operation
+primarily we'll look into the deletion
+using front node in order to delete
+elements using front node will have to
+increment the front pointer until it
+reaches the end of q and once it reaches
+the max size we'll use circular
+incrementation to bring the front
+pointer to the beginning of queue while
+performing these incrementation
+meanwhile the elements will be removed
+from the queue
+next up is deletion using rear end for
+performing deletion using a rear pointer
+we'll have to decrement its location
+once we decrement the rear pointer
+location the element will get removed
+from the queue
+now moving ahead we'll look into the
+different operations that can be
+performed on a double ended queue
+basically there are four primary
+operations in the dq which we have
+already understood in the representation
+of dq using circular queue
+these operations are insertion and
+deletion at the front and insertion and
+deletion at the rear
+additionally the circular queue
+implementation of dq cost us big of 1
+which is the most optimal complexity
+that we can hope for
+having said that let's dive into the
+implementation of these operations using
+a circular queue
+we'll implement a double ended queue
+using circular queue in order to do that
+we'll use c programming language and one
+dimensional arrays so without wasting
+any time further let's move to the code
+editor
+now in order to get started with
+implementation of dq we'll have to
+create array and pointer variables so
+let's do that
+and
+we'll name this array as dq
+and we'll provide 100 as initial size
+next we'll create pointers
+and
+rear
+is equal to minus 1.
+now we'll also define the maximum size
+for our queue using define call
+size
+as 5.
+after done with this initialization
+process we'll start working on insertion
+from front node we'll declare a function
+named as voidfront insert so let's do
+that
+void front
+underscore
+insert
+and instead this function will pass an
+argument into z to insert an element
+now while performing insertion we should
+always check if the queue is full or not
+because if it is full then the insertion
+won't be possible so for that we'll
+write condition
+if
+front
+is equal to equal to zero
+and and
+rear
+it's equal to equal to size
+-1
+inside
+and braces
+or
+front
+is equal to equal to ria
+plus one
+printf
+tq
+is
+full
+insertion
+it's not possible
+okay
+otherwise if both the front and rear
+node are pointing to null memory index
+or minus 1 will manually set our front
+pointer to index 0 to make the first
+insertion into the queue
+and we will insert the element at new
+location or index 0 where the front
+pointer is pointing so for that
+what we'll do is we'll write another
+condition with lc block
+lsaf
+front is equal to equal to
+minus 1
+and and
+real
+is equal to equal to minus 1
+then
+make front
+is equal to rear is equal to
+0
+and
+dq
+front
+is equal to
+z
+now if we want to insert the element at
+the last node of q then we need to set
+front pointer to the max size minus 1
+location to do that we'll write this
+condition
+else
+if
+is equal to equal to 0
+then
+front
+is equal to
+size
+minus 1
+and dq
+front
+is equal to z
+if all these above mentioned conditions
+fail then the front pointer is already
+at the last part of queue
+and it just need to decrement its
+location for inserting element in empty
+spaces as discussed previously so to do
+that we'll write one more condition
+using else block
+so let's do that
+else
+front
+is equal to front
+minus 1
+and dq
+front
+is equal to z
+now we have successfully implemented a
+front insert function so let's move
+forward and work on another function
+that is called as void
+rear
+underscore insert
+and will pass
+g as an argument to insert an element
+now as done previously we will first
+check if our queue is full or not so
+let's do that using if condition
+if
+front
+is equal to equal to zero
+and and
+rear
+is equal to equal to size minus one
+braces
+or
+front is equal to equal
+equal to equal to
+rear
+plus one
+then
+printf
+dq
+is
+full
+next if there is no element in an array
+we will manually set the rear pointer to
+index 0 for new insertion so for that
+we'll write condition else f
+front
+is equal to equal to minus 1.
+and and
+rear
+it's equal to equal to -1
+then
+set rear
+is equal to zero
+and
+insert
+dq
+rear
+is equal to z
+otherwise if rear pointer is already at
+the end of q then we will bring it to
+the beginning of q so for that we'll
+write condition else f
+rear
+is equal to equal to size
+minus 1
+then
+bring
+rear
+to index 0.
+and dq
+area
+is
+equal to z
+if all these mention conditions fail
+then what we'll do is we'll write else
+condition and we'll simply increment our
+rear pointer to make an insertion so for
+that what we'll do is we'll create else
+block and we're inside it
+we will
+do rear plus plus
+and we will set dq
+rear
+is equal to
+c
+with this we have successfully
+implemented void rear insert function so
+now let's move into deletion functions
+first we'll create voidfront dq function
+void
+front
+underscore dq
+and there is no need for any argument
+for this function
+to begin with this function first we'll
+have to check if dq is empty because we
+cannot delete elements if there is no
+element to delete so for that we'll
+write f condition if
+front
+it's equal to equal to minus 1
+and and
+rear
+is equal to equal to minus 1
+then
+printf
+there is no element
+to
+delete
+inside
+this
+dq
+in the next condition we'll check if
+there is only one element inside the dq
+if there is only one element then we'll
+set both front and rear to minus 1
+manually for that what we'll do is we'll
+create else if condition
+else if front
+is equal to equal to rear
+then
+printf
+let's slash in to take this to the next
+line
+the deleted
+element
+from
+the front
+is
+modulus d
+comma dq
+front
+and we will set front
+is equal to minus 1
+similarly
+real
+is equal to minus 1
+now if both these above mentioned
+conditions fail then we will delete the
+element from our front node
+the first removal will be in a case when
+the front pointer is at the end of queue
+so for that we'll write condition else f
+front
+it's at end of q that is size
+minus 1
+and what we'll do is
+we will printf
+slash and
+the deleted
+element
+from
+the front
+it's
+modulus
+d
+comma
+dq
+front
+comma
+and another condition will be when the
+front pointer is at the beginning
+section of a cube for that
+we'll write else condition
+printf
+slash n
+the deleted
+element
+from
+the front is
+modulus d
+comma d2
+front
+with this we have successfully
+implemented our front dq function now
+let's move towards next function that is
+deletion from the rear end for that
+we'll create new function name
+void
+dq
+underscore rear
+and this function also does not need any
+argument so next
+what we'll do is we'll create
+condition to check if the queue is empty
+or not
+so
+if front
+it's equal to equal to minus 1
+and and
+rear
+is equal to equal to minus 1
+then
+printf
+print as
+slash and
+there is no element
+to
+delete
+inside the queue
+now let's move to the next condition
+in next condition we'll write else if
+front
+is equal to equal to rhea
+then
+printf
+some statement
+and
+set run
+is equal to minus 1
+along with rear is equal to
+-1
+and that statement will be
+the
+deleted
+element
+from
+the dq
+using
+rear
+node
+adds
+modulus d
+comma
+dq
+rear
+now
+if both these above mentioned conditions
+fail
+then we'll have to delete element from
+our real node the first removal will be
+in a case when rear is at the beginning
+portion of a queue for that let's write
+a condition
+else if
+rear
+is equal to equal to 0 that is at the
+beginning part of queue then
+printf
+some statement
+and
+rear
+is equal to size minus 1 that is setting
+it to the max size of cube
+and the statement that we will return is
+backslash n
+the deleted
+element
+from
+the rear
+node
+as
+modulus d
+comma
+dq
+rear
+in other cases we'll just have to
+decrement the size of rear pointer and
+delete the element so for that we'll
+write else condition
+printf
+some statement
+and
+set rear
+it's equal to rear
+minus
+1 that is decrementing the size of rear
+pointer and the statement that we'll
+write as backslash n
+the
+deleted
+element
+from
+the rear
+node
+is modulus d
+and comma
+dq
+rhea
+well here is one spelling mistake so
+let's remove it
+okay
+so with this we have successfully
+implemented our void dq rear function
+now we will implement one more function
+to display the state of our
+dq
+the name of that function will be void
+display
+and this function also does not need any
+argument
+so we'll begin with implementation of
+this function for this we'll create an
+iterator element and we'll set it to the
+front
+pointer
+and we'll print f
+backslash n
+elements
+inside
+the
+dub
+double
+ended
+q
+are
+next line
+will enter into while loop to print
+those element
+i
+not equal to
+rear
+printf
+modulus
+d
+comma
+dq
+i
+and
+will increase the value of i
+by
+i
+plus
+1
+modulus
+size
+and
+outside this while loop we will print f
+modulus d
+dq
+rhea
+okay
+with this we have implemented all the
+required functionalities for our dq so
+let's work on driver method that is main
+function
+in order to check the output of our
+program so
+let's work on this main function
+first we will insert
+few elements into our queue so i will
+insert first element using front insert
+next
+let's insert one more element from front
+node
+using function front insert
+and this element will be 23
+next we will insert elements using rear
+node
+underscore insert
+and we'll pass 17 now
+next we'll insert
+12.
+and
+we'll insert one more element using this
+rear node only
+insert
+47.
+now we will display
+the state of our q after performing all
+these operations
+and next we will
+dequeue
+few elements
+so for that we'll
+use front dq function
+and next
+we will dequeue
+from rear node
+so
+dq here
+and after performing deletion operations
+will also display the state of our queue
+so let's call display once again
+and let's add one more command
+return
+zero
+okay
+so with this we have successfully
+implemented our program for dq
+implementation so let's run it and check
+if it is working fine or not
+okay so we are getting output here
+but
+display function is printing output in
+weird manner so let's
+work it out
+so all we have to do is we'll have to
+add space before modulus t here
+and here as well
+so
+once done with this let's
+recompile our code
+okay
+so now our output is clear so let's
+check if it is
+perfect or not
+so
+the first insertion that we made was -5
+second was 23 from the front end so 5
+should be getting inserted before 23
+so minus 5 is getting inserted before 23
+but as we are inserting it using front
+pointer so 23 is remaining at the front
+now
+after these two insertions we are
+performing insertions using rear pointer
+the first rear insertion was 17 then 12
+then 47 and these elements are getting
+inserted
+so let me show you how they are getting
+inserted in exact same order
+so look here so elements inside the
+double ended q are 23 minus 5 17 12 and
+47 that means the insertion is in right
+order after that we deleted the element
+from front node so the front node is at
+23 so 23 is getting deleted after that
+we deleted the element using rear node
+so
+47 is getting deleted from the
+rear node
+we are still getting 23 here that means
+the tq function is incomplete so we'll
+have to change it so let's go to the dq
+function
+and i guess it was from
+front end so we'll need to change code
+for our front dq
+so
+okay
+so in this case we haven't brought our
+trend pointer to index 0 so let's do
+that here and once we do this let's
+recompile our code again
+okay so now you can see that the 23 is
+getting deleted with this we have
+successfully implemented our dq function
+now let's move back to the powerpoint
+and understand few applications of dq
+the first application that we are going
+to discuss in detail is palindrome
+checker you all must have heard about
+the term palindrome
+the palindrome is a specific word or
+number which reads the same backward as
+forward for example the word radar it
+reads the same from both ends so using
+the dq we can implement the palindrome
+checker program with complexity big of
+1.
+the string which you need to check will
+be inserted into a dq and after that it
+will read from both sides
+if the reading is the same then that
+string will be considered as palindrome
+the next application of dq is its use in
+multiprocessor scheduling
+but what precisely is multiprocessor
+scheduling and why do we need it
+well the system implemented in the old
+days use single processor scheduling to
+manage the computing processes
+when multiple processes need to be
+executed by a single core or cpu then
+the process take more time to implement
+and thus the system lacks computing
+power
+but the multiprocessor scheduling
+implemented in modern computers resolves
+that problem using a double ended queue
+suppose we have three processors in our
+system and each processor has some
+processors to execute each processor
+maintains a dq that contains threads
+that are ready to execute the processor
+executes a process and if a process
+creates a child process then that
+process will be inserted at the front of
+the dq or parent process
+suppose the processor p2 has completed
+the execution of all its threads then it
+steals the thread from the rear end of
+processor p1 and adds it to the front
+end of the processor p2 the processor p2
+will take the thread from front end
+therefore the deletion takes from both
+the edge
+this is also known as a still algorithm
+in process scheduling so with this we
+came to the end of this video i hope
+this video was informative and exciting
+if you have any queries regarding the
+topic covered in this video then let us
+know in comment section below our team
+of experts will be happy to resolve all
+your queries thank you so much for
+watching this video and please keep
+tuned to simply learn for such technical
+videos
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

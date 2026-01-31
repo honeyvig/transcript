@@ -1,0 +1,1314 @@
+from Uber finding drivers to your
+nearest location to autocom completing
+your sentence in that important mail you
+are sending for a job application data
+structures are everywhere hello everyone
+and welcome to this detailed video on
+data structures in Java you are watching
+your favorite simply learn YouTube
+channel make sure to subscribe to us and
+like this video in The Amazing World of
+internet data structure rule the way we
+get through our day-to-day tasks data
+structures are useful almost everywhere
+right from your food ordering app to
+rendering graphics on your PC while
+you're playing that important fortnite
+tournament in this video we will cover
+all the important data structures that
+are there to know from arrays to trees
+to graphs in detailed manner discussing
+the inner workings of these data
+structures to their space and time
+complexity to implementing them in real
+time using Java these data structures
+are one of the most important sections
+in a software Engineers interview in top
+product companies including Google meta
+Adobe and over a dozen of others so make
+sure to watch this video till the end
+comment how you like this video And
+subscribe to our channel to never miss
+any Tech videos from us so let's get
+started just a quick info for you if you
+want to upskill yourself master coding
+and software development skills and land
+your dream job or grow in your career
+then you must explore simply learn's
+cohort of various software development
+programs simply learn offers various
+certification and post-graduate programs
+in collaboration with some of the
+world's leading universities like ctech
+it gpur it Madras and many
+through our courses you will gain Work
+Ready experience in skills like full
+stack M development restful API design
+backend development Cloud deployment and
+devops and over a dozen of others that's
+not all you'll also get the opportunity
+to work on multiple projects and learn
+from industry experts working in Top
+Tire product companies and academian
+from top universities after completing
+these courses thousands of loaners have
+transitioned into software developer
+role as a fresher or moved on to a
+higher paying job and profile so if you
+are passionate about making your career
+in the field then make sure to check out
+the link in the pin comments and
+description box to find software
+development program that fits your
+experience and areas of Interest so as I
+described earlier that array is
+basically a container which can store
+values or a sequence of values or
+sequence of numbers or sequence of
+characters into itself we can think of
+it as a box which can store all the
+values in a continuous fashion as you
+can see here this is a just a pictorial
+representation and this is coming from
+the official Java docs and you can see
+that we if we create an array of size 10
+then we have these 10 blocks created
+here you can see 1 to 10th so the whole
+length of boxes the number of boxes here
+are 10 but the way arrays are designed
+is that the index index is basically
+used to access the element in this
+particular box the index of the box
+boxes start from 0o so it goes from 0 to
+9 so remember the array length is 10 it
+array the array can contain 10 elements
+but the index of the array starts with
+zero and will always end at length minus
+1 which is 10 - 1 in this case which
+comes as 9 so it will always be length
+minus 1 it will always the index will
+always start from Zer and go till length
+minus one length can be anything in this
+case the length is 10 so the index ends
+at 9 if the length was 20 the last index
+will be 19 but in total you have these
+10 memory locations we also call them as
+continuous memory locations because they
+are continuously placed and array
+basically blocks 10 memory locations and
+creates a container over it so this is
+how an array basically looks like inside
+the memory and uh whenever you want to
+access the elements of the array you
+will say array of zero or array of one
+or array of two you basically need need
+to specify the index to access the
+element at index for example if you want
+to access the element which is sitting
+in this box you need to say array of
+index 8 and we'll see how we can do that
+but this is the basic uh understand
+understanding and idea of the concept of
+arrays so let's try to understand this
+with the help of an example I will
+switch back to Eclipse IDE and I've
+created a very simple program here to
+demonstrate the functionality of arrays
+here so we already covered in the
+previous lecture of what is package and
+what is public and what is class how do
+we give the class name and what is the
+meaning of this particular method so I'm
+not going to cover that again we'll
+start directly from here so here the
+first thing which I'm doing is I'm
+declaring an array of integer this is a
+variable name the identifier basically
+it can be anything and this is the data
+type it's an integer array and as we as
+we covered this as well that whenever
+you put square bracket in front of a
+data type it becomes an array data type
+so this is an integer array
+representation now we just declared an
+array but we still haven't allocated a
+size to it so you can do that with this
+particular uh syntax so you can put the
+variable name of the array and say new
+int and put the right size here this
+size can be anything and once you do
+this now array will actually allocate
+those memory boxes which we covered here
+the moment you do new int 10 this box
+these boxes continuous boxes will be
+placed in the memory and the memory is
+allocated to this array we call this
+memory allocation this is how you
+allocate memory to the array so we
+allocated memory to this array for
+storing 10 integers the next thing is
+now we can start storing elements in
+those boxes so like I said that the
+array index always starts with zero so
+if you have to store the first element
+you actually have to store it at index
+zero location so you give the array name
+you provide these square brackets and
+you put the index value within the
+square brackets that is how you
+basically point to a particular element
+inside the array so we say an array of
+zero and we put the value 100 then we
+initialize the second element which will
+be index one then will be the third
+element which will be index 2 fourth
+element index 3 Fifth Element index 4
+Sixth Element index 5 and so on until we
+store till the last element so this is
+the 10th element which is accessible as
+index 9 and the value is uh 1,000
+basically so from 100 to th000 we stored
+10 values in this array and we stored
+them by accessing the index and this is
+actually the only way you can store
+values in the array by pointing to the
+indexes so we go from 0 to 9 and we
+stored all the values zero being the
+first element and array of nine being
+the last and the 10th element remember
+the length minus one concept okay so now
+we will try to print all the elements
+one by one that's pretty much what we
+are doing now so as we covered in the
+previous lecture that we use
+system.out.println to print anything and
+we understood the whole meaning of this
+so I'm not going to repeat that now uh
+we want to print the first element the
+first element is sitting at index 0o and
+we can access that element with this
+syntax by providing the variable name
+and the actual index value so I'm just
+writing a random string here which says
+elemented index0 and then I'm putting
+this plus here and putting the variable
+name this plus is basically used to
+concatenate the output of a static
+string with a random variable or
+basically you can print anything uh with
+using plus plus is used for
+concatenation so I'm just trying to
+print this whole value but here this is
+a string value which is a static string
+and then I have a value coming from the
+array so whenever you have to print some
+value from a particular data type or
+variable or collection then you can use
+this plus syntax to concatenate a string
+static string with your actual value so
+that's what I've done here by saying
+plus an array Zer and similarly for
+index one I'm printing the the first
+index then for two three so far and so
+on so forth till the index 9 so
+basically I'm just printing the all the
+values of the array starting from index
+0 to index 99 so that's all which which
+is written in this program now let's try
+to run this program so I will write
+click go to run as and go to Java
+application and hit on this and now if I
+just expand this console you can see all
+the system.out.print statements have
+been executed and they printed this so
+this is the static string part in fact
+including the colon this is the static
+string part element and index zero
+printing exactly as is and then
+dynamically the zeroth index element of
+an array is printed here similarly we
+have printed the index one location
+element index 2 location element index 3
+location element and so on so forth till
+the index 9 location element so in total
+these are the 10 elements but the index
+always works from 0 to length minus 1 in
+this case it will be going from 0 to 9
+so this is basically all which I wanted
+to cover in this lecture the whole idea
+was to give you more understanding of
+arrays and remember this is just an
+integer array you can similarly create a
+character array you can also create a
+string array for uh for you as well so
+it it it's completely uh it's completely
+uh related to the data type you're using
+if you create a car array then you can
+only store characters into it if you
+create a string array then you can only
+store strings into it and now you can
+probably relate back to this particular
+thing which I explained in the previous
+lecture that we create this string array
+for the reason that when you run this
+particular program and if you want to
+provide any command line values command
+line arguments to the program those
+arguments will automatically be stored
+in this args and then you can access
+this as args of Z args of 1 Etc in your
+program that's the whole concept let's
+get started with understanding arrays in
+detail we have been talking about arrays
+throughout this course of java in the
+previous session as well and we have
+covered some basic understanding of how
+to create arrays how to declare them how
+to fill values in the array and how do
+we print the array with positions as
+well as the array as whole but whatever
+examples which we took previously were
+onedimensional arrays because arrays can
+have more than one Dimensions as well
+you can create a one-dimensional array
+you can create a two-dimensional array
+you can create even a three-dimensional
+array and you can go up to as many
+dimensions as you can handle in your
+Java program so it depends upon the kind
+of complexity you want to have in your
+program and the kind of values the kind
+of structure you are going to store in
+your arrays and based on that need you
+can choose whether you want to use a 1D
+array or onedimensional array or a 2d
+array or a 3D array and so on in these
+sessions we are going to talk about 1D
+arrays 2D arrays and 3D arrays and after
+that we'll leave up to you you to try
+out more dimensionals if you want to we
+have already covered the basic array
+structures which were onedimensional
+arrays so I will just give you a quick
+walk through of how we actually handled
+one-dimensional arrays so this is a
+sample program to demonstrate
+onedimensional arrays if you remember
+this is how we use to create arrays we
+write the data type of the array and
+then we write the square boxes which
+denote that this is an integer array
+data type we assign a variable to this
+and then we initialize the array with
+the size 4 so new is the keyword which
+is used to initialize anything in Java
+and we are going to use this heavily
+when we talk about classes and objects
+and even collections literally any
+object which you want to create in Java
+requires a new keyword so here I'm
+writing new and then int 4 which means
+create an array of size 4 and then I'm
+filling the value of the four positions
+which I have created as part of this
+array and if you remember when we create
+these kind of arrays we store them in a
+zero index based position the first
+value gets stored at zeroth index
+position and then so on so forth so it
+will always start from zero and never
+start from one remember that and after
+that we just print all the values of
+individual positions of the elements in
+the array and if I just run this program
+all of the elements of this particular
+array should be printed one by one so if
+I just show the full console of the
+output we can see that element at index
+0 was 10 element at index 1 was 20
+element at index 2 was 30 and element at
+index 3 was 40 so this was just a quick
+refresher of how onedimensional arrays
+can be written and whenever you declare
+a very simplistic array it will
+generally be a onedimensional array now
+let's look at the two-dimensional arrays
+and how do we write them when do we need
+them for that I have created another
+example which is says twood dimensional
+array I just created a class and it has
+a public static void main method and
+I've created a twood dimensional array
+this time so let's understand this two-
+dimensional array in a bit detail and
+when do we need that generally you would
+need to use two dimensional arrays
+whenever you are trying to do any Matrix
+calculations if you if you understand
+what do we mean by matrix it's basically
+a 2X two structure which stores the
+values in the form of rows and columns
+so imagine a table of two rows and two
+columns then it will be a 2X two Matrix
+so if you want to store that particular
+table in a Java program you would need
+to store that as a matrix as a two-
+dimensional Matrix rows being the one
+dimensional and column beings the other
+dimension and that's what we are doing
+here and if you want to store that 2D
+Matrix in a Java program the approach
+and the procedure for it is pretty
+similar to how you create a
+one-dimensional array with slight
+changes the first change is instead of a
+single square bracket you're going to
+write two square brackets because it is
+a two-dimensional array so remember the
+number of square brackets you are going
+to put while initializing and declaring
+the array is the number of Dimensions
+which your array is going to have since
+this is a two-dimensional array example
+that's why you see two brackets here if
+this was a three-dimensional array
+example you will see three array three
+square brackets here and so on so forth
+so that's the first part of it second
+part to understand is to how to store
+the data remember I told you always
+imagine the structure of rows and
+columns whenever you are trying to store
+a two-dimensional array in Java so what
+are rows and what are values and how do
+you represent them while you declare and
+initialize a twood dimensional array so
+you start with the curly braces as a
+normal 1D array but inside the curly
+braces you create nested curly braces
+blocks we can see three blocks here they
+start with their own curly brace and end
+with their own then this curly brace
+starts here and ends here and then this
+curly brace starts here and ends here
+idea is that you provide this outer
+curly braces to define the overall
+structure and then inside each of the
+curly braces is going to represent a row
+in your two-dimensional array so each of
+these values this blocks is going to
+represent a row so I can say that this
+is the the first row this is the second
+row and this is the third row and if I
+try to visualize it in terms of columns
+then this is the first row First Column
+first row second column First Row Third
+column similarly second row First Column
+second row second column second row
+third column and third row First Column
+third row second column and third row
+third column so individual values are
+going to be represent ented as columns
+and the whole curly Braes is going to be
+represented as arrays that's the basic
+mental idea or mental image you should
+have while declaring a two dimensional
+arrays remember to declare the rows
+inside the nested curly braces and
+whatever elements you have will
+automatically be indexed as columns
+another thing to remember that since
+this is an array data structure
+everything starts from zero and nothing
+starts from one so this will be row zero
+this will will be Row one and this will
+be row two I'm talking about the
+position we can still call it as first
+row second row and third row but the
+position of this particular row element
+is zero the position of this particular
+row element is one and this particular
+row element is two similarly for column
+as well this is column 0 column 1 and
+column 2 similarly column 0 column 1 and
+column two and so on so forth once you
+understand this data structure well and
+you have defined it correctly
+then everything should fall in place if
+you want to do a matrix addition or if
+you want to do a matrix multiplication
+or a DOT product all of the kind of
+calculations can be performed using the
+2D array concept here in this program
+what I'm doing is I am printing the
+values of this particular 2D array into
+a matrix style and you see some strange
+code here which is for ETC don't worry
+about this I'm going to cover in detail
+what this four me means and how do you
+write this for now what we can
+understand that we just want to print
+this you might not need to print this in
+your Java programs when you write a
+production grid application but you
+might want to do manipulations on these
+uh arrays as metrics maybe you want to
+create a transpose of a matrix or you
+want to do a DOT product or addition or
+subtraction or whatever be your use case
+in this case just for demonstration
+purpose I'm printing the values as rows
+and columns nothing else so this all of
+this code from line 8 to line 14 or in
+fact line 133 is just showing how to
+print the values you can see some
+system.out and you can see some
+construct here and like I said don't
+worry about this I will cover this in
+detail let's run this program and see if
+my Java array is stored correctly and
+how can I represent this so you can see
+I have represented it in a style of a 2d
+Matrix where this is the first row this
+is the second row and this is the third
+row similarly this is the First Column
+containing the value 2 37 so column 0
+will have value two and column 1 will
+have this value three and column two
+will have this value 7 for row zero let
+me also do something here which can help
+you understand this concept better let
+me do a system.out.println and let's
+print an individual value because like I
+said the for Loop can be confusing here
+to understand so let's say I want to
+print ARR of zeroth row First Column and
+see what kind of values do we get let me
+comment this code comment is control
+back slash and this code will be
+commented and this code will not be
+executed and now only line 15 will be
+executed instead of the four BL so if I
+run this I get the value seven so row
+zero and First Column row zero First
+Column is seven let's try with 1 one I
+want to print the row at Z one position
+remember not the first row but the one
+position row which is basically
+technically the second row so second row
+second column and see what kind of
+values value do I get in this case I get
+six so second row second column
+similarly if you change this value to
+two then third row second column which
+should point to four yes we get four
+similarly you can write a value here as
+zero and you can write a value here as
+let's say two this will print the zeroth
+row and the second column so similarly
+whatever kind of value you want to write
+you you want to access you can access it
+in this fashion and remember the column
+and row indexes will always start from
+zero so this is a simple demonstration
+of how you can use two dimensional
+arrays and in this session we also did a
+refresher of onedimensional array let's
+get started with how to create and use a
+three-dimensional array or how to go
+about using multi-dimensional arrays in
+Java so as you can see from this image
+we talked about 1D array which is is
+having just one axis then we talked
+about 2D arrays in the last session
+where we had rows and columns basically
+an x-axis and a y axis and then we can
+also have a 3D array which will have
+three axises which will have an xaxis A
+Y AIS and also a z AIS think of a simple
+box which every box in this world will
+always have at least three dimensions
+and from from here you can go even build
+more complex arrays which can have four
+dimensions or five Dimensions or as many
+dimensions as you want it to have and
+today we are going to look at an example
+of how can we build a 3D array and how
+do we access those elements but this
+picture is just to show you the mental
+model of when you will be creating a 3D
+array so for example generally an image
+data is stored in in three dimensions so
+you can you might want to store the
+image data into a 3D array and there can
+be many other use cases in the
+mathematical and research computational
+use cases where you might want to use a
+3D array so but remember there's an X
+axis there's a y axis and then there's a
+third axis which is called The Zed axis
+so let us look at a Java program to
+understand how we can build a
+three-dimensional array and for that I
+have created this class which is called
+multi-dimensional array it has a entry
+point method which is the public static
+vo main method and then I have created
+an integer array and this time instead
+of one or two square brackets I have
+three square brackets and if you
+remember I mentioned this in the
+previous session as well the number of
+square brackets which you're going to
+put while initializing the array is the
+number of dimensions of the array and
+since in this particular program I'm
+going to demonstrate a three-dimensional
+array that's why you see three square
+boxes let me just minim minimize this
+yeah so we have three square boxes here
+and we have created the variable name as
+ARR or short form as AR then we start
+with the outermost curly braces as is
+then we put another curly braces which
+starts from here and it ends here then
+another set of curly brace which starts
+from here and end here so this is the
+this is the First Dimension this is the
+second dimensions and these are the
+third dimensions that's how you're going
+to Define the different dimensions
+remember this is the First Dimension
+when the first curly brace starts then
+you have this second dimension which
+covers this hole and this hole and then
+you have third dimension which are these
+so that's how you're going to visualize
+and and put the three dimensions in use
+while declaring a three-dimensional
+array and the values work in the same
+fashion it's it's a zero index based
+position so since we do not have an
+official name for the third dimension so
+I'm just going to use x axis y axis and
+Z axis to refer to the three axises so
+this would be X of 0 this would be y of
+0 and this would be Z of 0 similarly X
+of 1 y of 1 and Z of 1 and so on so
+forth so now if I try to access the
+value which is at zeroth X position
+first y position and second Z position
+what's the value do we get here let's
+run this program and understand and
+interpret the output okay uh so when we
+ran this program we got the output as 11
+so let's understand this output so when
+we say the zeroth position on X the
+first position on Y and the second
+position on Zed so this is the zeroth
+position on X and this is the first
+position on Y and then this element is
+012 is the second position on the Z axis
+so to to describe it in a nutshell this
+defines the x-axis so we have two
+elements on the xaxis here this one and
+this one then we have two elements on
+the y- axis on each xaxis so this is one
+this is two on the first x-axis and this
+is one and this is two on the second y
+second x-axis so 2X and 2 Y and then on
+the Z axis I have three elements each so
+hope this helps you understand and
+visualize this so x-axis and this one is
+other x-axis and then Y axis y axis and
+then elements inside this are Z axis so
+I'm saying zero with x-axis in this
+block first on the y axis which is this
+block and then second element or the Z
+or second position element on this
+particular a in this particular block
+which is 11 and that's why we get 11 if
+I print 0 let's say I I change this
+particular value as one so now the
+output should be coming from this side
+so second X position because it's one
+second y position so this will go here
+and then the two position which is the
+third element of the Z AIS which is 13
+so let's see if we get 13 yes we get 13
+here so this is just to show you how you
+can interpret this particular array and
+always be mindful of how you are
+structuring this array if your structure
+is gone wrong then your program will
+become useless and it will give you a
+lot of unpredictable outputs which might
+not make sense and which may introduce
+errors in your program so be very
+careful how you define the structure of
+the elements here that's the key and
+after that you just need to understand
+the x axis the y axis and the Zed axis
+always remember all the accesses start
+from zero so when I say two I'm
+basically referring to the third element
+and not the second element so this is
+all I wanted to cover in this particular
+session where we describe how we can use
+a three-dimensional array and from here
+you can go to any lens like I said you
+can add more square brackets here and go
+to four dimensional or five dimension or
+six Dimension but remember the more
+Dimensions you add the more complexity
+of the program will be having the
+program will become more and more
+difficult to debug and understand so
+always try to take a wise call as to how
+many dimensions you want to use in your
+array let's see what strings are and how
+we can use strings in Java Java strings
+are objects that contains groups of
+characters like arrays strings are
+immutable as well immutable means once
+string is created they cannot be changed
+or manipulated if we use a string hello
+they are stored in a memory location
+like this 01 2 3 4 are the addresses of
+the locations where each character of
+the string is stored now let's move on
+to creating strings there are two
+methods of creating string string
+literal method and using new operator
+this is the synx of string on the screen
+first string type then variable name is
+equal to sequence of characters in
+double quotes this is called as string
+lit method for new operator method we
+use new operator and value of string is
+given in the brackets now let's see a
+simple program to understand the use of
+strings with Java code let's create a
+new project project file new project
+next take the box next I'm going to name
+it as strings and for the base package
+I'm going to name it as string as well
+because all the programs I'm going to do
+in this package for
+Strings we have our main program right
+here the main class now before importing
+the strings we need to import some pre
+processive directives so for this for
+this I'm going to import Java do
+IO input output. star star means
+everything inside the directive and I'm
+going to import java. Lang do star this
+means I can do all the operations that
+is needed for Strings so there are two
+ways to declare string this is the first
+one string s is equal to Simply learn
+now we have a string s and it contains
+the value simply learn now I'm going to
+print this
+system.out.println Plus plus s or I'm
+going to name it as string I'll print
+string first is equal to and then I'm
+going to print this so double codes
+string is equal to and plus s so let's
+run this
+program and there we go we have string
+is equal to Simply learn so it took the
+value of s and printed that so let's see
+the next type of string how we can
+declare the
+string Str Str is equal to new string
+simply learn so this is the second
+method how we can declare string or
+assign the values to string so to print
+it I'm going to use string 2 is equal to
+and then Plus St Str so let's execute
+this as
+well and as you can see we have string 2
+is equal to Simply learn as well so this
+mean both the methods are to declare
+strings or to assign values to the
+strings so you can use any of them I
+prefer using first so it's easy that's
+why you don't need to write new and
+string so let's move on to the new topic
+classes and strings we all know that
+strings are immutable now what if we
+want to change something inside the
+string then we use these methods to
+manipulate strings in Java first one is
+string Builder the string builder in
+Java represents a mutable sequence of
+characters it is an alternative to
+string class as it creates a mutable
+sequence quence of characters next is
+string buffer string represents fixed
+length immutable characters of sequences
+while string buffer represents growable
+and writable character sequences it will
+automatically grow to make room for
+additions like appending inserting and
+deleting next we have string tokenizer a
+string tokenizer object internally
+maintains a current position within the
+string to be tokenized some operations
+Advance this current position past the
+character's process string tokenizer
+class in Java is used to break a string
+into tokens a token is returned by
+taking a substring of the string that
+was used to create the string tokenizer
+object now let's see different methods
+for functions that can be done on
+strings in Java we have lot of methods
+or functions in strings these are few of
+the methods that are used by programmers
+frequently and we will be using in this
+series of our Java tutorial next let's
+have a look at a program where we are
+going to reverse a string and compare to
+string this is going to be an
+interesting program and you will be able
+to understand string a lot better so
+let's get started so first we'll see how
+to compare two strings and then we'll
+see how to reverse a string so let's
+create a new project file new project
+let's click on next take the box next
+I'm going to name it as compare and
+reverse because I'm going to do both the
+programs in the same program and we have
+our main function here to use some
+classes or to use some methods we need
+to import some of the strings from java
+so I'm going to import strings do
+compare compare dot string
+compare so let's write our code here so
+I'm going to use four strings first
+string S1 is equal to then I'm going to
+use new string and I'm inside it I'm
+going to name the string as simply
+learn S capital and for the next string
+string S2 is equal to new
+string uh let's give it as practice for
+the third string S3 new string let's
+give it a study and for the four fourth
+string we are going to match the third
+string to show all the outputs that's
+possible study now we are going to
+display some output using the function
+equals so what equals does is it it
+compare two strings so first I'm going
+to use it make it as user friendly by
+writing comparing string one and then
+comparing string two and then semi colon
+so that everything will be separated you
+can easily find out what the result will
+be and then this is the main part S1 do
+equals and in the bracket S2 because we
+are comparing S1 1 and S2 so S1 do equal
+S2 so this function automatically checks
+whether S1 is equal to
+S2 now same thing we are going to do
+with string S3 and string S4 again this
+user friendly S3 and
+S4
+semicolon S3 dot equals S4 we we know
+that S1 is not equal to S2 but S3 is
+definitely equal to S4 so let's try with
+one more sentence so that we can compare
+one more string so I'm going to compare
+S1 and S4 so I'll copy paste it and
+instead of S3 I'll write S1 and same
+I'll do with S1 do equals S4 so let's
+run this program oh before running we
+have a error here so I'm going to delete
+that import because we have not used it
+so now let's run the program and yes we
+have a result comparing simply learn and
+practice is false that's definitely
+false study and study both strings are
+matching so it's true and simply learn
+and study they don't match that's why
+it's false so let's get started with our
+second program that's reversing a string
+so I'm going to delete everything from
+here and I'm going to write same code
+here only so first I need to assign a
+variable of
+string string input equals I'll name it
+as simply learn and this is the main
+part guys we use string Builder because
+the string is immutable and as we
+discussed earlier string Builder allows
+us to do manipulation so I'll use one
+more variable input one and new string
+Builder so in input one we can do any
+manipulation that we require so first
+I'm going to do input one dot dot append
+so that I can do operations that I want
+on it either reversing or deleting or
+concat so I'll take aend of input and
+lastly input one is equal to input one
+do reverse this function reverse the
+string that is there in input
+one now to print the value of the
+reverse
+string the reverse string is and then
+input one so here's the catch guys we
+have to use string Builder so that we
+can do manipulations inside the string
+if we don't use string builder then we
+will get an error that unable to
+manipulate the string or unable to
+reverse the string so string Builder is
+the main thing here so that we can do
+all the operations that we want either
+reversing or concat or deleting anything
+from the string or deleting an element
+or adding anything to the string so all
+that happens because of string Builder
+so now let's run this
+program and there we go we have a result
+the reverse string is the reverse of
+Simply learn now let's try it with
+something that is palindrome so we have
+our language malum if we reverse this
+we'll get malum so this is kind of
+palindrome string and see the result the
+reverse string is also malum so this is
+how you reverse a string so this brings
+us to the end of this video we learned
+about strings the functions for Strings
+and the methods we use in strings and
+lastly we learn how to compare two
+strings and how to reverse two strings
+welcome to this tutorial on objects and
+classes in Java this is a part of our
+Java tutorial Series where we will be
+covering everything you need to know to
+master Java let us look at what we will
+cover today first we will talk about
+objects and we will Implement two
+programs on intellig to learn about
+objects then we will move on to classes
+in Java where we will see an advanced
+program to learn classes more in depth
+so what are objects an object is an
+instance of a class let's have a look at
+an example in this example animal is a
+class and dog is its object the object
+dog has States and behaviors we can have
+dogs with different breeds sizes and
+colors these are considered as the
+states of object dog on Behavior side
+dog has Behavior like barking eating and
+wagging tail so an object has its own
+States and behaviors now let's look at
+an example using Java code there are
+many platforms to run Java program so
+for this video I'll be using intellig so
+let's create a new project let's let
+name it as project one and finish there
+we go we have a new project with we have
+a class with Main and we have a main
+function so the code that we write
+should always be written in the main
+function so let's create a new class to
+understand how the object is used let's
+name it as student we need variables so
+that we can access the variables of this
+class so I'm going to use student ID
+with the integer type student
+name and students
+age there we go now we have these three
+variables that we can use so let's go to
+our main program and start our coding so
+we have a class named student now let's
+see how to create a object of a
+class this is the syntax to create
+object now the object here is s I
+created a object s of class student now
+let's assign values to the variable for
+this we use the object s and use the dot
+operator and we have options from which
+we can choose from that we declared in
+the class student so for this I'll use
+ID and give a value similarly I'll give
+age and give a value and finally let's
+give a
+name now we'll print its
+value
+now we are going to run this program
+let's see what output we'll
+get and there it is we have name that's
+simply learn we have age and we have ID
+now let us see an example how we can use
+multiple objects for a single class so
+let's get started let's create a new
+project and I'm going to name it as
+Vehicles because I'm going to use cars
+and bikes in this program so I'm going
+to use Vehicles as a combined form and
+yes here we have a class Main and a
+function main now I need two classes for
+this program so I'm going to create two
+classes first I'm going to name it as
+bikes and the second class I'm going to
+name it as cars so let's create
+variables for these classes so in cars
+first I need string name and I need the
+cost of the car so cost can be integer
+as well because I'm going to use dollar
+sign in that so I'm going to use string
+because of that so same thing I'm going
+to do with
+bikes now that our classes are created
+let's create objects for this class so
+the process is same but we are going to
+use different names for the object first
+the car class and I'm going to name as
+car one and yes we have created the
+first object Now to create the second
+object similarly I'm going to create
+five objects of the Class Cars and I'm
+going to change the name for them so I
+created five objects of the same class
+so I'm going to create five objects of
+the bike's class as well so bike one
+will be a bit longer so I'm going to use
+B1 till
+B5 and I'm going to name them to from B1
+to B5 so now I'm going to assign values
+to the variables that I created in
+classes bike and cars so first I'm going
+to go with cars and let's name it as
+Lamborghini similarly Car 2
+Ferrari so I'm going to use names of the
+cars that are very famous and costly so
+that anyone over the world can
+understand this so let's name car
+3 I'm going to name it as
+Bugatti similarly car
+4 Pagani and car
+five
+now I'm going to give names for
+bikes I hope everyone will understand
+the names that I
+give
+B4 and B5 last one
+Yamaha
+now let's assign the cost for bikes and
+cars as well so the procedure is same so
+let's do it
+130,000 same B2 so B1 goes for Harley
+Davidson B2 for ducatti B3 for Suzuki B4
+for Eos and B5 for Yamaha I'm going to
+assign values for these values
+accordingly for ducatti 232,000
+for Suzuki
+200,000
+300,000 and the last one Yamaha
+500,000 now similarly I'm going to
+assign values for car 1. cost till card
+5.
+cost
+$23,000 for
+Lambo I think I can copy paste these as
+well so let's copy paste it will a lot
+faster and easier to
+do Car 2 car three car 4 and car 5 we
+don't need this uh as per car2 let's
+take it as
+252,000
+and let's make it at 3
+million
+uh as for this let's keep it as 1
+million 400,000 and lastly uh let's say
+this 293 now that we have assigned all
+the values for all this now let's print
+it and get the value I'm going to create
+a very simple program but a very
+userfriendly program so it it's going to
+be interesting for you guys so we are
+going to ask the users what would they
+like either bikes or cars so we need to
+give them the options and Next program
+will be based on the options that the
+user select not the options we give as a
+command so let's do
+it let's give the options
+one
+bikes and two cars I need to take the
+value that user gives for this I'm going
+to write this
+command
+so I have not used scanner yet so let's
+import
+scanner and let's create a object for
+scanner
+and yes let's get back so the data type
+of choice variable is integer that's why
+I'm using next int if the data type was
+string then I would have used next line
+so now that we have Choice from the user
+let's use this
+value if the user chooses the first
+value that means bikes so the next thing
+we display we have models and we're
+going to give five models for bikes to
+the
+user here I'm giving options to the
+users so that they can choose easily
+from number 1 to
+5 now we can show these options to the
+users so that they can choose from one
+of these value so let's use one more if
+statement so that we can find out
+whether they have this value or not
+before that I'm going to ask which one
+would you like to
+choose to enter the choice I'm going to
+use one more variable let's say n so I'm
+going to store
+n if n is equal to equal to 1 that means
+Hal devidson then I'm going to show the
+cost of har
+Davidson
+this is the syntax to print the value
+for the cost or any of the variable that
+we use in
+class what if the user says second or
+third or fourth or fifth so for that we
+are going to use else if
+statements if n is two that means
+ducatti so we have to show the rate of
+ducatti or the cost of ducatti to the
+user
+now similarly I'm going to do for n is =
+3 n isal 4 and N is =
+5 now I'm going to do for n is equal
+4 and lastly n is equal to 5 that is our
+last bike
+Yamaha
+what if the users put a number that is
+not between 1 to 5 so for that I'm going
+to use l statement and put a message
+that please enter the value from 1 and
+five so now we have code for the bikes
+and the same thing what if the user
+selects that he wants to find the car so
+for that we have this the choice is
+equal to is equal to 1 so the same thing
+we are going to do for choice is equal
+to is equal to
+2 and the same thing we're going to tell
+to user that we have five
+models the same names that I gave to
+variables I'm going to give this to
+here second one
+Ferrari third
+bukari fourth
+EOS and the last one
+POS now we are going to ask the users
+their choice that which number do they
+want to
+choose now we need one more value so
+that we can have it as a variable which
+can store the choice of the user so for
+this I'm going to use
+C now if C is equal to equal to 1 that
+means if the user wants to see the cost
+of Lamborghini that he puts the choice
+as one so we're going to display this
+message the cost of
+Lamborghini and we are going to use else
+if Loop to enter the next values for C
+from 1 to 5 if C is equal to is equal to
+two that means the user wants to know
+the rate of Ferrari then we are going to
+show the cost of the
+Ferrari same thing if the user enters
+three as the choice
+if user enters four as the choice then
+we go for
+Eos and the last one if user enters the
+choice as five then we have to display
+the cost of
+posh
+now what if the user enters none of the
+values from 1 to 5 then we have to
+display a message showing that please
+enter the
+value between 1 to 5 now remember the
+first choice that we wanted from user to
+enter either bikes or cars so what if
+the user do not enter either one or two
+so for that we need one more else
+function to tell the user that either
+enter one one or
+two and with this we have completed our
+code so now let's run this program for
+this we need to go to run and then run
+main there's a shortcut for it that is
+shift plus F10 so let's run the program
+and yes we have successfully executed
+the program Let's test this program now
+so enter your choice I'm going to enter
+one and yeah we have five models Hal
+Davidson ducatti Suzuki Pagani and
+yamama
+so enter your choice I'm going to enter
+one and yeah we have a result the cost
+of har Davidson is
+$130,000 so with this we have completed
+our code and please feel free to type
+this code in your own computer and try
+out all the permutation and combinations
+that you can with this program so with
+this let's move on to classes and
+understand the classes and their concept
+then we'll have a new program on classes
+now let's see what is a Class A Class is
+a blueprint from which objects are
+created a class describes state or
+behavior of an object in this example
+dog is a class the variables in this
+class are breed and color the functions
+or methods of the class dog are barking
+hungry and sleeping we use objects of a
+class to use variables and functions of
+the class with this let's understand
+classes with a simple Java code let's
+create a new
+project next tick the box and let's name
+it it as
+automobiles let the base package be
+student and yes we have a class main now
+let's create some classes to do code
+on I'll create a new Java class as
+cars and then I'll create one more class
+with the name
+bikes and then one more class
+automobiles so I'm going to connect C
+and bikes with automobiles so that we
+can use that program in Main and see
+what can we do with the classes that we
+create in automobiles I need some
+variables I'll take private double and
+let's say Fuel and then same thing
+private double and then ear and let's
+take one more private string and brand
+now let's have Getters and Setters for
+this so these are used to get the value
+and set the value for the variables
+inside the class there we go we have the
+Getters and Setters for it now let's go
+to class cars so public Class Cars
+extends
+automobiles so in it I'm going to create
+one more class or a
+Constructor and I'm going to print a
+message say a new car has been created
+car has been created now the same thing
+I'm going to do with bikes let's go to
+bikes and I'm going to use the same
+thing extends automobiles this is
+because I can inherit all the variables
+from the automobile's class so I created
+a Constructor and I'm going to print a
+message a new bike has been
+created so I have created Class Cars
+bikes and Automobiles so let's go to
+main program so this is where we should
+write our code so I'm going to start
+with the code now it's a very simple
+code I'm going to first I'm going to
+create the variables or the objects of
+the class with
+private bikes bike so one is car and one
+is bike both are objects for the classes
+so I'm going to use this
+objects bikes bike is equal to new
+bike
+this is so that my object can function
+really well and now I'm going to run it
+it will take some time to
+run and yes there we go our program has
+executed and the things that I typed a
+new car has been created a new bike has
+been created are done now let's try
+something else using the classes so I'm
+going to bikes so I'm going to create a
+new method or a new function public void
+kick for bike so I'm going to print
+message the bike has been started with
+kick bike has been started with kick now
+the same thing I'm going to do with car
+now how does a car start with a key so
+I'm going to make a function public key
+and inside it I'm going to print the
+same message car has been started with
+key oh I should write void there to give
+the return value as wide so let's print
+the message car has is been started with
+key rotation let's write that as well so
+in the main program I'm going to use
+objects to use those functions and let's
+see what changes they'll do to our
+program bike. KCK and car. KCK let's run
+this and there we go first we used to
+have this two messages but now these two
+messages are also there as well because
+we invoked those functions and methods
+that are there in class cars and bikes
+so if I write bike do key or car. kick
+this won't work this is because key is
+not a method of bike or kick is not a
+method of car so that's why I gave
+private static for the functions so if I
+execute it these are the error messages
+that I'll get cannot find the symbol
+method kick or method key thank you for
+joining us on this comprehensive
+exploration of data structures in Java
+on the simply learn YouTube channel we
+trust this tutorial has enriched your
+understanding of crucial data structures
+from arrays to trees and graphs if you
+find this content valuable don't forget
+to subscribe and hit the like button
+data structures play a pivotal role in
+the tech landscape impacting everything
+from apps to gaming experience your
+feedback is important so share your
+thoughts in the comment section below
+stay tuned for more Tech insights and
+remember to subscribe for the latest
+updates staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simplylearn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here
+here

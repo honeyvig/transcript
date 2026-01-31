@@ -1,0 +1,350 @@
+devops is a collaborative approach just
+taken up by most companies these days it
+focuses on scaling up and making the
+entire process of scaling up much
+smoother so no doubt companies are
+actively looking out for devops
+engineers welcome to another tutorial
+with simply learn I'm Lance and today
+we'll be looking at how you can become a
+devops engineer so let's begin
+so by definition devops is a
+collaboration between the development
+and the operations team which enables
+continuous delivery of application and
+services to the end users so let's
+expand on this definition first the
+development team is the one that
+actually produces the products the
+operations team is related with the
+management or the maintenance of these
+products now there's a link that devops
+forms between these two teams which
+makes this entire process much smoother
+and this approach this collaborative
+approach is what's called devops so
+devops focuses on continuous delivery of
+application which means that when the
+development team is ready with the
+product it immediately goes into the
+maintenance or the management phase and
+it's then pushed onto the end users with
+minimum delay now just in case you doubt
+the stand of devops today or its growth
+in the near future you must know that
+according to the information week devops
+will be in high demand for upcoming
+years and has no chance of slowing down
+also according to LinkedIn over the past
+few years devops has increased in demand
+by 50 percent now that's quite a lot of
+growth so clearly devops is a field that
+will be great to dive into and grow in
+so before we begin how you can actually
+become a devops engineer let's look at
+what we'll be going through in this
+video first we look at who is a devops
+engineer followed by the devops career
+roadmap we'll then look into a devops
+certification and then finally the
+salary trends for a devops engineer so
+who is a devops engineer now a devops
+engineer is an I.T professional who
+understands the software development
+lifecycle and when I say software
+development lifecycle I did not just
+mean the devops approach but right from
+a waterfall model which is a traditional
+software development life cycle and then
+as you know we moved on to the agile and
+then we finally reached the devops
+lifecycle so a devops engineer needs to
+understand the whole purpose of the this
+life cycle why are we heading to move
+from one model to the other what are the
+shortcomings that the previous models
+had and what all does devops make up for
+also other than understanding this
+entire process they also need to know
+how to use the various automation tools
+for developing The Continuous
+integration and continuous deployment
+pipelines so of course your next
+question must be what is the continuous
+integration and continuous deployment
+pipeline well as you can see on your
+right we have an image of this pipeline
+so there are various stages so first you
+have your planning stage where you plan
+things out and write an algorithm for
+your product then it's the building
+stage where the algorithm actually
+transforms into a code and is a product
+which could be used then you have the
+testing stage in the testing stage your
+product is tested all the bugs are
+caught and all of this is corrected and
+once all of that's done it's then sent
+to the deployment stage which means now
+your product is ready to be deployed
+once it's deployed of course a product
+needs continuous monitoring this is now
+something new which has been introduced
+into the devops lifecycle that although
+your product is out in D now the
+monitoring stage is something that the
+devops approach focuses on much more
+than our previous models and for very
+good reason which is that once your
+product is deployed into the real world
+to ensure customer satisfaction it's
+important that you continuously monitor
+the product this way you're able to
+catch the bugs fix them and push it back
+to the clients and ensure that they are
+happy with your product and would go for
+it again now in simple words a devops
+engineer is expected to collaborate with
+the developers and the operations team
+to deliver high quality products within
+a minimum amount of time now devops
+engineer as such is not a profile that
+you might come across very often but of
+course there are a number of career
+paths that you can undertake under the
+devops engineer but of course there are
+a number of career paths under a devops
+engineer now some of these are the
+devops architect automation engineer
+software tester integration specialist
+security engineer and release manager
+now let's look at the devops career
+roadmap so basically if you are looking
+forward to bagging that devops engineer
+job where should you start and how
+should you go about it well first things
+first there are a few programming
+languages which go hand in hand with the
+devops tools you need to pick up these
+and also know the Linux fundamentals
+devops uses these programming languages
+for developing and automating software
+now the three most common languages used
+with the devops tools are Ruby Python
+and JavaScript it is always advised that
+you know at least one of these and of
+course we must consider the fact that
+these three languages are used with
+completely different tools so knowing
+just one of these languages does not
+mean that you can now work with any tool
+under the devops approach but it does
+give you a good hang of at least one of
+them which is more than most can say
+it's also important to know the
+fundamentals of the Linux command line
+interface of course this is not very
+unique to devops whichever career path
+you are choosing Linux fundamentals is
+one of the most important things now
+let's discuss some of the mandatory
+Linux skills that of devops Engineers
+should be aware of first is of course
+the Linux shell now you must either know
+bash or the kernel shell then it's the
+Linux commands now there are a huge
+number of Linux commands but the basic
+ones you must know no matter what are
+the find graph up Arc and the set
+command and finally we have the
+networking commands in slookup which is
+for querying the DNS and netstat from
+monitoring your connections our next
+Milestone would be learning the source
+code management now source code
+management is especially important when
+you're dealing with huge projects so
+that all your code irrespective of the
+number of files you have or the number
+of versions of a particular code you
+have everything is organized and can be
+easily accessible so it's important that
+you're comfortable with at least one of
+the source code management tools here
+the most common ones we see are get CVS
+and Mercurial I would personally
+recommend you to choose git and why git
+because git is used to track changes in
+the source code it can manage large
+projects efficiently and it allows
+multiple developers to work together
+with grade ease now our next stage is to
+learn to build applications so a devops
+engineer must know how to build an
+application and commit to the source
+code management tools such as git now a
+popular tool used to build applications
+which makes things much simpler is Maven
+why Maven well it supports parallel
+builds instant access to new features
+without any additional configuration and
+has an easy build process
+now Maven is actually an automation tool
+which helps to build and manage software
+projects within a short period of time
+so here you have the bomb file which is
+required to build an application under
+which you have a set of jars you have
+the commands which are to be executed
+the builds plugins and the builds
+profile but in order to automate the
+entire process you require a continuous
+integration or a continuous development
+tool and this brings us to our fourth
+stage which is learning to automate the
+process using CI and CD tools one of the
+most extensively used tools in this
+field is Jenkins Jenkins is an open
+source continuous integration tool it
+helps to automate continuous development
+testing and deployment of newly created
+codes well why Jenkins well because it
+has multiple plugins it is easily
+distributed across multiple machines and
+has an easy installation and
+configuration process our next stage is
+to learn to test the applications once
+you have completed the build process
+learn how to automate the testing
+process of web applications
+one of the best testing tools for QA
+teams is selenium and why selenium above
+all the other tools that provide the
+same functionality well because it
+provides fast execution allows scripting
+in several languages and also supports
+parallel test execution the next thing
+is to learn to deploy applications in
+production servers so you should learn
+how to deploy and run the applications
+in the production servers and in order
+to deploy an application you should have
+the knowledge of containers such as
+Docker and configuration management
+tools like ansible
+so Docker helps with the
+containerization while configuration
+management tools such as ansible helps
+provide you the capability of pushing
+configurations onto multiple servers and
+maintaining them in the required state
+so why choose Docker while high
+scalability and efficiency reusable data
+volumes isolated applications and why
+ansible because unlike other tools in
+this field it has a push-based
+configuration it is agentless and uses
+SSH for secure connections the next
+stage is to learn to monitor the
+applications so monitoring your
+applications is another important aspect
+of a devops engineer in this stage we
+identify the issue and implement the
+changes as quickly as possible the most
+popular tool which provides for
+monitoring applications is nagios it has
+a comprehensive monitoring system high
+availability and immediate remediation
+and finally a devops engineer must know
+the working of cloud providers for a
+devops engineer it's important to know
+about the cloud service providers and
+their base 6. cloud computing is an
+important skill to learn irrespective of
+which field you're in today as a lot of
+companies have the infrastructure on the
+cloud Amazon web services is the most
+popular cloud provider whereas Microsoft
+Azure and Google Cloud platform are
+slowly catching up to Amazon Amazon web
+services provides high scalability and
+flexibility is cost effective and
+provides better security
+let's now look at some of the devops
+certifications you can opt for the first
+one is the AWS certified devops Engineer
+program which is offered by Amazon web
+services and then of course we have the
+devops certification training offered by
+our very own simply learn simply learn
+also provides programs which are more
+specific to tools such as Chef puppet
+ansible and selenium certification and
+we also provide a devops architect
+Masters program
+so now these are some of the most
+popular certifications available in the
+market
+if you're taking up a career you must
+know what kind of salary to expect an
+average salary of a devops engineer in
+the United States is 115
+666 dollars per year so this is the
+average salary as you can see here guys
+there's a graph which shows how there's
+been a growth and this graph here will
+give you a good idea of the salary Trend
+an average salary of a devops engineer
+in India on the other hand is six lakh
+12 000 per year so again here we have a
+graph on the right which demonstrates
+the pattern and growth in the salary now
+here's some additional material to
+prepare yourself and help you in the
+journey to becoming a devops engineer so
+this is simply learn's YouTube playlist
+on devops as you can see here are a
+number of videos you can start off with
+this fun short video on what is devops
+it introduces devops to you in the most
+basic and fun way possible and then you
+have devops tutorial for beginners what
+is devops another tutorial introduction
+to devops and then you can follow this
+up with the tutorials on the various
+tools under devops for example there's
+git there's Jenkins Docker Docker swarm
+ansible Chef puppet a comparison between
+the various configuration management
+tools and there are also devops
+interview questions part one and part
+two which will help you prepare for your
+interviews now why devops is better than
+agile or if it's the other way around
+watch this video to find out how to
+create your resume for the post of a
+devops engineer and so on so there are a
+lot of videos here guys you can
+definitely go through them and it
+provides you with a lot of information
+not only that before you actually take
+up the simply learn course to get a
+better understanding of the kind of
+content and the quality of content that
+they offer you can come back here and
+check out their free courses or their
+free tutorial videos and with that we
+come to an end of this video I hope you
+all enjoyed it and I hope it was really
+helpful for all those who are aspiring
+to become a devops engineer
+please hit the like button if so also
+share our video And subscribe to our
+Channel if you haven't yet because we
+have a lot more coming up for you so
+thank you all and see you all next time
+hi there if you like this video
+subscribe to the simply learning YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

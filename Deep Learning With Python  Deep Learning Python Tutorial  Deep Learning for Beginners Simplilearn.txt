@@ -1,0 +1,1288 @@
+foreign
+today we will take you through a hands
+of lab demo of how we can use deep
+learning models for image classification
+using CNN for amazing video like this
+subscribe to our YouTube channel and
+press the Bell icon to stay updated in
+today's session we will discuss what
+deep learning is and moving ahead we
+will cover what is neural network and in
+the end we will do a hands of lab demo
+of flower image classification using CNN
+so what is deep learning deep learning
+is a subset of machine learning that
+deals with algorithm inspired by the
+structure and function of the brain and
+which is a part of artificial
+intelligence AI deep learning is widely
+used to make weather predictions about
+rain earthquakes and tsunamis it helps
+in taking the necessary precautions with
+deep learning machine can comprehend the
+speech and provide the required output
+it enables the machines to recognize
+people and object in the images fed to
+it
+deep learning models also help
+Advertiser leverage data to perform
+real-time bidding and Target display
+advertising so what is neural network to
+understand how an artificial neuron
+works we should first understand how a
+biological neuron works
+so this is one of a biological neuron
+so dendrites these receive information
+or signals from other neurons that get
+connected to it
+the second one is cell body information
+processing happens in a cell body these
+take and all the information coming from
+the different dendrites and process that
+information
+the last one is X1
+it sends the output signals to other
+neuron for the flow of information here
+each of the flank is connected to the
+dendrite or the hairs on the next one
+now let's see a neural network to
+so this image show an a n
+okay
+so the network start with an input layer
+that receives input in data form the
+lines connected to the hidden layers are
+called weights and they add upon the
+hidden layers each dot in the hidden
+layer processes the inputs and it puts
+one output into the next hidden layer
+and lastly into the output layer
+so here input to a neuron is known as
+input layer and the actual neuron is
+called hidden layer and the output of
+the next neuron is called output layer a
+neural network is a system of Hardware
+or software patterned after the
+operation of neurons in the human brain
+neural network also called artificial
+neural network are a means of achieving
+deep learning and the demand for machine
+learning and AI is growing faster than
+that of other profession in fact
+according to statistic there will be
+more than 2.3 million job opening in the
+field of artificial intelligence and
+machine learning by 2023 so
+repeat but you can beat the curve with
+our professional certificate program in
+Ai and ml Co is sponsored by Purdue
+University and IBM this course covers
+tools and techniques like numpy pandas
+Python and sci-fi along with industry
+project like social media by Twitter
+delivery service provider by zomato and
+transportation service provider by Uber
+choosing this course can get you hired
+in renowned companies like Netflix
+Amazon Facebook and Adobe with an
+average salary hike of 70 so what are
+you waiting for join the professional
+certificate program in Ai and machine
+learning and Excel your career into
+machine learning the link is in
+description box below now let's move to
+the programming part so this is a python
+kernel file
+okay
+so here I will change the name deep
+red
+python
+and we will do flower recognition using
+CNN okay
+so
+first what I will do I will import
+OS
+and here I will write print
+OS dot list directory
+then
+see
+slash users
+slash
+zero nine three seven five
+plus desktop this is the path of that
+folder where I have put the images
+class
+okay
+so let's run it yeah so we have five
+categories in flowers like Desi 10
+Julian Rose sunflower and tulip okay I
+will provide you the zip file or these
+data set
+so now import some major libraries
+so here I will write import
+warnings
+then burning
+dot filter warnings
+[Music]
+always
+okay these are just the warnings
+when warnings come it will ignore or it
+will always
+warnings
+then here I will write ignore
+okay then let's import some libraries
+for data visualization and manipulation
+so here I will write import
+numpy
+numpy as NP
+then import
+pandas as
+PD
+to my bed
+import Point as SPD
+then
+import
+matplotlib
+dot Pi plot
+as PLT
+then from matplotlib
+import
+Style
+don't worry we will discuss
+each of the library
+then import
+c bond
+as SNS
+so what is numpy
+this one numpy
+so numpa is a python Library used for
+working with that is it also has a
+function for working in the domain of
+lineal algebra and matrices it is an
+open source means free project and you
+can use it freely numpy stand for
+numerical Python and the second one is
+pandas panda is a software Larry written
+for the Python programming language for
+data manipulation and Analysis in
+particular it offers data structure and
+operation for manipulating numerical
+tables and Time series
+then the third one is matplotlib
+so for Python and its numerical
+extension numpy matte broadleaf is a
+cross-platform data visualization and
+graphical charting package as a result
+it represents a strong open source
+substitute for Matlab the api's
+application programming interfaces for
+Matlock allows programmers to
+incorporate graphs to GUI applications
+okay
+so mad plotlet import style or splt why
+we are writing splt as PDS NP because we
+don't have to write again and again this
+the long sentence in my plotlip.lot okay
+we can import using short name PLT
+then fourth one is import c bond
+so C bone is a python data visualization
+Library based on matrotip it provides a
+high level interface for drawing
+attractive and informative statical
+graph for a brief introduction to the
+ideas behind the library you can read
+the introductory notes or the papers
+from the website
+okay
+so now let's configure let's set smart
+broadly to inline and display graph
+below the corresponding cell vertical
+responding cells so for that I will
+write here person
+matplotlib
+inline
+okay
+then here I will write the style
+dot use
+this is one of the style so here I will
+add 5 38.
+okay then SNS dot set
+equals to White grid
+comma color
+codes
+Picasso
+approach
+okay let's import some major libraries
+for model selection so for that I will
+write here from sqlarn
+dot model
+selection
+code
+train
+test
+split
+okay
+then I will add from
+sklearn Dot model
+selection
+import
+then here from
+sqln
+Dot
+model
+sorry here let matrices
+Matrix
+then import
+crazy
+code
+comma Precision score
+comma recall score
+comma confusion Matrix
+comma
+Roc curve
+comma
+Roc
+okay
+then here I can import Roc
+AUC
+score
+so now we will import
+some
+more like from
+skeleton dot model
+selection
+import
+grid
+Siri
+then from SQL line
+Dot pre-processing
+code
+label encoder
+so what is strain test split
+okay this sqln model selection 10 test
+split
+so trend has split to getting training
+and test sets
+this control the size of subset with the
+parameter train size and test size
+so determine the randomness of your
+splits with the random State parameter
+obtained specified splits with the
+stratified matter
+okay then k fold
+k-fold is again a validation technique
+in which we split the data into K
+subsets and the holdout method is
+repeated K times
+where each of the K subsets are used as
+a test and other K1 subset are used for
+the training purpose
+this accuracy scope decision score
+recall score confusion Matrix Roc curve
+and Roc accuracy curve so these all are
+for the the accuracy to check the
+accuracy what will the Precision score
+and the ROC curve graph for making
+graphs and all
+okay these are for metrics
+then grid search CV
+so gritsar CV is a technique for finding
+the optimal parameter values from a
+given set of parameters in a grid
+it essentially a cross validation
+technique so the model as well as the
+parameter must be entered
+so this is after extracting the best
+parameter values the prediction are made
+okay
+so this label encoder so label encoding
+is a popular encoding technique for like
+handling categorical values
+okay or variables you can say so in this
+technique or method you can say each
+label is assigned a unique integer based
+on alphabetical order
+okay
+so
+now for pre-processing I will import
+something
+so here I will add from
+KS Dot
+utils
+not pre-processing
+dot image
+image
+data
+generator
+okay yeah
+so this is for the pre-processing of the
+image so image data generator what does
+it allows your model to receive new
+variation of the images at each epoch
+Okay so
+but do you remember that it only returns
+a transform images and does not add it
+to the set of images that you have like
+for in our data set
+okay
+just it is used for the transform in
+image
+now let's import some deep learning
+libraries so here I've learned from
+Keras
+Keras import
+backend
+as k
+okay then another one is strong okay
+this dot model
+s
+Port sequential
+then from
+applicators
+dot layers
+okay from
+Keras Dot
+optimizers
+important
+Adam
+SGD
+these are all are the optimizers
+Ada grad
+comma 88
+e
+Ada
+okay then last one is RMS from
+then from
+Keras
+Dot
+utilize
+both
+to categorical
+okay
+so cares
+Keras is a model level liability
+providing high level building blocks for
+developing deep learning models it does
+not handle itself
+low level operations such as like tensor
+products or convolutions and so on
+and this sequential
+okay
+to sequential the core idea of
+sequential API is simply arranging the
+chaos layers in a sequential order and
+so
+it is also called sequential API like
+most of the a n also has layers in
+sequential order and the data flows from
+one layer to another layer in the given
+order until the data finally reaches the
+output layer
+and this dense
+so Kira's dance layer is a layer that
+contains all the neurons that are deeply
+connected within in themselves
+this means that every neuron in the
+dense layer takes the input from all the
+other neurons of the previous layer so
+we can add as many as dense layer as
+required
+so dance is the one of the most commonly
+used layers in deep learning
+and these optimizers Adam SGD Ada grad
+Ada Delta
+so optimizers are classes or methods
+used to change the attributes of your
+machine or deep learning model such as
+weight and learning rate in order to
+reduce the losses
+so Optimizer helps to get result faster
+then this K result
+will return the binary value Matrix
+which contains the values either 0 or 1.
+it contains an equal number of rows from
+the length of the input vector and
+column number which was equal to the
+class number which we defined in our
+code
+okay
+so
+now let's import for CNN
+so here I will write from Keras
+Dot
+okay this dot layers
+import
+drop out
+flatten
+and then from
+Keras
+dot layers
+board
+2D
+than Max pooling
+next pulling 2D
+batch normalization
+okay
+so these are some more layers for the
+CNN for particular CNN
+then import
+tensorflow
+as TF
+then import
+random as
+r
+then random is used for finding the
+random value
+then let's specifically for manipulating
+zipped images and getting numpy arrays
+of pixel value of images let's import
+that
+so here I will write import CV2
+then from
+tqdm
+port
+ticket
+okay
+then I will write import
+OS
+look at the spaces
+then from
+random
+import
+Shuffle
+then from
+zip file
+okay import
+ant zip file
+then from
+pil
+OT board
+image
+so tensorflow is an end-to-end open
+source platform for machine learning and
+deep learning tensorflow is a race
+system for managing all aspect of
+machine learning system however this
+class focus on using a particular
+tensorflow API to develop and train
+machine learning models okay try notice
+so tqdm means like progress and it is
+used to create a smart progress bar for
+the loops
+okay now let's run this
+and see any error
+okay there is one error
+great search CV
+where is that grid searching
+okay as you'll be Capital here
+okay a processing maybe processing
+spelling is wrong I guess
+pre-processing
+see
+pre-processing
+okay this is the spelling mistake
+the minor spelling mistakes
+okay here here is dot optimizers import
+Adam so what can help import name Ada
+Delta why because a should be Capital
+here
+a will be Capital here
+okay
+now module name KS Dot
+utils
+okay
+utils
+one more
+the last one I guess so
+cannot import names zip file
+zip file import
+zip file
+okay
+these are some
+any mistakes you can say
+while importing
+so now what we will do next we will
+prepare the data and make the functions
+to get the training and modulation set
+from the images okay
+so here I will write x equals to
+blank array
+is that
+okay
+then
+image
+size equals to 32.
+then we will import all the because we
+have one particular folder named flowers
+and on that we have four folder or five
+folder like with one Daisy one once
+learn sunflower one two lip one
+dandelion one rows okay so we have to
+you know import each of folder one by
+one so here I've let fly
+Daisy
+from directory
+okay
+and the directory is
+I can copy from here
+okay
+and paste it here
+then
+everyday
+okay so don't worry I will provide you
+the zip file
+Drive Link
+okay you can check from the description
+box below
+and here I will fly
+simpler
+directory equals to
+then here
+okay and here I will add flat
+tulip
+directory
+question
+my folder names
+so
+yeah
+then the directory
+equals to
+arrival at 10 billion
+floor
+rows
+directory
+okay
+then close
+okay
+so now let's open create function
+label
+to image
+plotted
+okay
+then I will write here return
+then
+what I will do here
+I will import some OAS FN match and make
+train data
+okay so I will add here import
+ant match
+then I will write import OS
+then death making function
+make
+chain
+data
+then plot
+time comma
+directory
+foreign
+for the loop I said
+OS dot list directly
+please directly from Dio
+okay
+then here I will write if and match
+dot fm match
+image
+star dot jpg click anything.jpg
+then label
+equals to sine
+level two
+level two
+image of flower type
+okay
+then path
+question OS dot path
+dot join
+directory
+images
+that image equals to CV2
+down I am read
+the path
+comma CV2
+I am read
+color
+okay
+then I will write an image equals to CV2
+dot resize
+CB2 is opencb file
+liability image comma
+I am this size
+comma I am precise
+okay
+then here I will write x dot app and
+these x and z
+x dot app and
+MP dot array
+image
+then
+okay X is capital there
+Z dot append
+Str label
+string level
+okay so now let's run it yeah it's cool
+so here we will check the all the you
+know length
+of the training data set for particular
+Day Z that sunflower Road
+so here let's make
+train
+data
+Daisy
+comma
+flaw
+Daisy
+okay
+then I will print the length of like how
+many photos are there
+so as you can see
+there are total 764
+so now like this we'll check for all
+so here let me copy this and paste this
+here
+I will write
+those
+rows then join it
+so Rose has one five eight four
+so it's flower rose
+so now we'll check
+for sunflower
+like this one here
+sunflower
+yeah I will write
+sunflower
+okay three zero six five
+then here I will write for
+to live
+tulip
+so there are four four zero four nine
+last one
+10 trillion
+10 billion and here I have to write
+okay
+so first let me tell you about the data
+set
+so this data set contains like four to
+four two images of flowers
+okay 4242. so that data collection is
+based on the data flicker or Google
+Images we took or why index images
+and you can you can use this data set to
+recognize plants from the photo
+and the picture divided into five five
+classes like chameleon tulips row Supply
+and dead alien and for each class there
+are about 800 photos
+okay not like all 800 but 800 photos
+like photos are not that much high
+resolution about 320 into 4 to 40 pixels
+are there so photos are not reduced to a
+single size they have different
+different proportion
+okay
+so what I will do that I will give
+space
+now let's visualize some random images
+okay
+so here I will write figure comma 3x
+equals to PLT Dot
+subplots
+then 5 comma two
+then figure dot set
+size
+inches
+15 comma 15.
+Then Fall
+I
+range
+five
+then
+four
+J and
+range
+to like five or two
+okay 10 images will come
+then what I will write
+then L equals to RN Dot
+random input
+0
+comma lens set
+okay then ax
+I comma J
+dot I am sure
+x l
+a x
+I comma 2
+dot set
+of Titan
+Plus
+plus Z
+okay
+then PLT
+Dot
+type layout this is one of the layout
+of showing photos
+okay let's do it
+so these are some random image of
+sunflower that rows
+so I already said you these pictures are
+not that high quality okay
+that flower rose is there than to live
+so moving forward let's label encoding
+with that y arrays like Daisy rows let
+days equals zero rho is equal to one
+then one Auto encoding
+so for that we'll write here
+l equals to
+label
+encoder
+and then
+y equals to
+Ali
+Dot fit transform
+Z
+okay
+then y equals to
+categorical
+y comma five
+equals to NP Dot
+array
+X
+then X equals to
+X by 255
+okay
+okay there is no car by comma five
+extra
+yeah so now what we will do we will
+split into training and testing
+validation sets okay for that I will
+attack strain
+comma
+X test
+y train
+a while test
+equals to train
+test
+plate we already described what is 10
+test plate let's go to y
+comma test
+size
+equals to 0.25
+comma
+random
+date
+equals to 42
+okay
+so now let's set the random seeds so for
+that I will write NP dot random
+Dot
+seat
+42
+then RN
+dot C
+is again 42
+10
+TF
+Dot
+random dot set
+42.
+okay what we will do now we will do
+modeling we will build a convet net
+model convert net means CNN model
+so for that I will write here
+like model equals to
+sequential
+okay
+then model dot at
+2D
+then
+filters
+equals to 128.
+then kernel size
+the question
+2 comma 2
+trading will be
+same
+[Music]
+comma activation
+layer
+then input
+shape
+question
+input shape equals to
+32 comma 32 comma three
+then here I will write model dot add
+Max
+pooling
+2D then
+the whole size
+because so 2 comma 2
+then I will write model dot at
+flatten
+then model dot add
+tense
+okay T will be Capital here
+then 512 these all are for the layers
+the model dot add
+activation
+that reload
+then model dot at
+dance
+five
+comma
+activation
+equals to
+softmax
+okay then let me run it
+go into 2D D will be capital
+okay
+it is
+kernel size
+yeah it's running
+so now what I will do
+I will do using a Allen and a layer we
+will set the best side we will set the
+box and we will do the callbacks or not
+okay so for that I will write
+badge
+batch size
+equals to 45
+then a box
+will be 10
+then from Keras
+dot callbacks
+four
+reduce
+LR
+on RedTube
+Eau
+okay
+then I will add
+a lot equals to
+videos
+alaron
+plateau
+then we'll monitor
+close to validation score
+patience
+equals to three
+comma bubbles
+Factor
+equals zero point
+okay
+so moving forward what we will do we
+will do the data documentation to
+prevent overfitting so now let's do the
+data augmentation for that I will not
+here Theta
+it's in close to
+image
+generator
+then here I will write feature
+feature wise
+future wise
+Center
+equals to
+false
+so what this line will do this line will
+do like set input mean to 0 over the
+data set
+okay
+then I will write sample wise
+Center
+equals to
+false
+now this set e sample mean to zero
+right here
+Center
+equals to false
+so what it will do
+no no it's the feature wise I will write
+standard normalization
+standard normalization because so
+false
+so it divides input by standardization
+of the data set
+okay
+then
+sample wise
+standard
+normalization
+question
+false
+then it divide each input by its
+standardization
+this time
+then
+I will write here let's see a white me
+because you false
+applies that sea whitening
+then
+rotation
+range
+and rotation range equals to 10.
+it will what it will do it will randomly
+rotate image in the range like degree 0
+to 180.
+okay
+then
+Zoom
+range
+equals to 0.1
+this is for randomly zooming image
+then
+then
+shift
+range equals to 0 0.2
+then but it will do it will randomly
+shift images horizontally like fraction
+of total width
+[Music]
+range question
+0.2
+it is for randomly shift image
+vertically like fraction of total height
+and this horizontal
+flip equals
+true
+for randomly
+flipping images this is for vertical
+voice
+okay
+then data chain dot fit
+next train
+summer is there
+it is like width shift range
+0.2
+okay
+so let's debug this error
+so let's run this again
+yeah it's gone
+so now what we will do we will compile
+the Keras model and see the summary
+for that I will write here model Dot
+compile
+compile at this Optimizer we already
+know what are the optimizer because to
+add them
+R equals to
+0.001
+okay then
+last question
+categorical
+cross
+B
+comma
+Matrix
+because of
+curacy
+okay let's run this
+first let me give some spaces
+yeah
+so here
+let's see the model summary
+so as you can see here the layer types
+like con 2D or Max pooling 2D
+so output shape is 30 to 30 to 128 and
+the parameters are given is 164. flatten
+is again the layer dances again the
+layer
+okay so total parameter use 16
+this much and the trainable parameters
+are this
+okay
+so moving forward let's
+fit
+let's do the fitting on the training set
+and making prediction on the very
+validation set
+okay
+so let's write history
+[Music]
+generator
+dot flow
+extreme
+comma or a train
+comma
+batch size
+equals to
+badge size
+okay
+comma
+a box
+request to box
+validation
+data equals to
+X test comma y test
+equals to one
+commas steps
+well
+bulk
+equals to X
+train dot shape
+zero
+Edge size
+okay so let's run this so it will take
+time like it will run till
+10 approx of 85
+okay from this we can get the accuracy
+for the validation
+so I hope you understand till here if
+you have any question regarding machine
+learning deep learning python you can
+comment or you can check our course from
+the description box below
+it will take a little bit of time
+so after this we will save this model
+and
+from
+then from tensorflow will import
+then we will do some model performance
+evaluative model performance
+after that we will recreate the exact
+same model like including its weight and
+optimizer
+then at the last we will visualize
+our correctly classified cloud images
+predicted one
+okay
+so five are done five more money
+okay like three more
+if you have any problem and like go in
+understanding the code you can comment
+down below
+or don't forget to check the course from
+the description box below
+okay
+AIML courses
+last one is remaining
+what we will do we will save this model
+into kaggle only
+okay
+so here I will write model dot C
+again
+[Music]
+Model 12 point
+H5
+okay this time accuracies came
+validation accuracy six four four two
+zero point six four four two accuracy
+is six six okay
+so now from
+tensorflow
+support
+Gators
+then model
+the models
+let's dot load
+[Applause]
+model
+okay then
+12.5
+here
+I will do the save I will save the model
+to the disk and load model from the disk
+so let me write the code for that and
+get back to you
+so saved model to disk and loaded model
+from disk
+so now let's evaluate the model
+performance okay for that I will use
+this
+better visual so here we'll plot
+plt.plot
+tree Dot
+stray
+loss
+okay then PLT Dot Plot
+history
+dot history
+validation loss
+then PL guitar
+you can say model loss
+and PLT Dot y level
+the loss
+mpnt dot X label
+box
+imagine
+train
+come on
+death
+yeah they don't show
+so as you can see the graph
+of that this is a training and this is
+testing loss
+how much we lost
+okay
+so now let's see for the accuracy one
+the LT Dot
+Dot
+history
+thought
+three
+accuracy
+okay
+then PLT Dot Plot
+history
+Dot
+three
+validation accuracy
+done
+right done
+model accuracy
+MP at the DOT
+why level
+high level should be like accuracy
+PLT dot X label
+will be box
+then PLT dot Legend
+training
+from test
+the PLT
+Dot
+sure
+so
+you can see the accuracy
+this is the accuracy of the training
+and this is for the testing
+quite okay okay
+so now let's recreate the exact same
+model including its weights and
+optimizers like then we will see the
+summary then again we will do the epox
+OKAY model fitting
+for the better accuracy
+okay
+so for recreating the model I will write
+here
+model
+TF dot get us
+models Dot
+load model
+dot H5
+then
+new
+model
+okay
+now what I will do
+I will
+run a new model dot fit
+train comma for a train
+Oklahoma
+box
+size
+question
+bed size
+validation
+data
+equals to
+fix
+test comma white test
+okay
+model dot with best size
+new model that fifth extreme white train
+box
+thank you
+this time I think we'll get good
+accuracy
+okay after that we can predict
+so again this will run till 10 what does
+it five six seven eight nine ten
+okay
+if you have any doubted here you can
+please comment down below
+okay if you have any queries related to
+python machine learning
+oh don't forget to check the course link
+it will go till 10.
+or if you want this full code
+just comment down below for the same I
+will provide you the traveling
+five more left
+as you can see here accuracy
+is increasing
+okay with the new model
+okay two more left
+the accuracies
+copy like 99 percent
+okay
+after this we will save the model and
+visualize the prediction of the
+validation set
+foreign
+okay
+so now let's save the model
+[Applause]
+okay so now we will visualize the
+prediction on the validation set that I
+will write the code and get back to you
+okay so here now uh we have what we are
+doing we are storing some properly as
+well as the misclassified indexes
+okay
+so here it's like
+proper classes this is misclatified
+classes okay and here we are loading the
+model predicting
+so let me run it
+till 40 okay
+so let's see the correctly classified
+flower images okay for that I will write
+warnings
+Dot filter on
+always
+then earnings
+Dot filter
+count equals to zero
+figure comma ax
+equals to PLT dots subplots
+so comma two
+then figure
+set size
+for
+I
+in
+range
+to go
+for
+J in
+range
+to
+so let me write the code
+okay unintendent doesn't match okay
+warning spelling is strong
+okay
+figure
+if you could Dot
+okay let me debug the error and get back
+to you
+so as you can see it's run properly okay
+see predictor flower daisy and actual
+flowers is also Daisy pretty flower
+sunflower
+okay the photos are not you know
+high quality
+so that's why here you can see the rose
+is seeing the rose actually
+okay this Rose rows and dandelion one
+then the daisy sunflower
+so now what we will do we will do c like
+some of the flowers are which are
+misclassified okay
+the same code will be there okay I will
+right here
+let's run this
+so these are some the actual flower
+tulip but with rose so these are some
+misclassified images
+so I hope you understand till here okay
+this is the how you can do fly
+recognition using deep learning with
+python if you have any queries related
+to python machine learning you can
+comment down below
+okay so thank you for watching this
+video
+till then stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

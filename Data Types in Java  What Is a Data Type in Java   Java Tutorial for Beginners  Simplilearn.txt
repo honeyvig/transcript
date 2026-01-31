@@ -1,0 +1,546 @@
+welcome to this quick and amazing guide
+on data types in Java Java is a
+programming language that is widely used
+for building Enterprise grade software
+and web applications one of its key
+features is the way it handles and
+manipulates data and in this video we'll
+take a look at the different data types
+available in Java whether you are a
+beginner or an experienced Java
+programmer this video will give you a
+quick and easy introduction to the
+different data types available in this
+programming language before we start
+with the topic if you enjoy watching
+these videos and find them interesting
+please subscribe to our Channel because
+we bring the best videos for you daily
+also hit the Bell icon to get notified
+whenever we drop a new video if you're
+eager to enhance your coding skills
+across various domains of software
+engineering you might want to consider a
+ctech coding boot camp with a
+state-of-the-art ctech coding boot camp
+you can learn to code and become a full
+stack developer within 6 months get
+fully immersed in this accelerated
+coding boot camp and become a valued
+software engineer ready to take on any
+challenges on the job this boot camp
+covers the basics of several different
+Frameworks including spring boot web
+services suets and gsps MVC JavaScript
+mongodb and much more these skills will
+Empower you to Kickstart your career as
+a versatile fulltech developer so take
+advantage of this opportunity the course
+link is provided in the description box
+below so without any further delay let's
+send over this session to our training
+experts let's get started with today's
+topic which is about primitive data
+types in Java we are going to learn
+about the primitive data types in Java
+and we'll also see a short demonstration
+of it so let's get started let's first
+just learn about those uh data types
+I've just opened the official Oracle
+documentation and don't worry if you see
+how this link appears here you can just
+open a browser window and just type Java
+primitive data types and if you hit
+enter the first link which you will be
+given is this particular link and this
+is the same link which I have opened so
+let's learn about the data types now so
+Java has uh these primitive data types
+which you can see here some of them
+store numbers some of them store Boolean
+values and some of them store characters
+so the data types which store numbers
+are bite short int long float and double
+these six data types basically are used
+to store any kind of numeric value let's
+understand these a bit more bite is the
+shortest possible data type value which
+you can use in Java to store numbers you
+can only store numbers with within the
+range of minus 128 to plus 127 so you
+can see the range is very small and Java
+has created this variable for use cases
+where you want to store numbers which
+have very small value in this range why
+do we provide these kind of options just
+to save memory because the smaller data
+type will require less memory to be used
+in the Java program similarly the next
+bigger data type is short which is a bit
+bigger than bite and the range of this
+particular data type variables will
+range from - 32678 to +
+32767 so that is the range for this
+particular variable and you can see that
+it has a it has a very big range as
+compared to the BTE data type so if you
+want to store VAR values which lie in
+this range you can use short the next
+one is int data type you can use this
+one to store even larger values which
+range from- 2 to^ 31 to + 2 to^ 31 - one
+the next one is long which is even
+bigger than int and it can be used to
+store the values within the range of - 2
+to^ 63 to + 2 to^ 63 - 1 so as you can
+see as we go from top to bottom from
+bite to Long the size of the value which
+can be stored using this data type
+increases and that's how you will
+basically take a decision of whether you
+want to use bite or you want to use
+short or int or long based on what size
+of the value that variable is going to
+contain then the next ones are float and
+double these two have been created for
+the use cases whether where you want to
+store the values numeric values which
+have decimals which are Precision values
+I should also mention that bite short
+int and long are only used for storing
+absolute numbers which do not have any
+decimal representation even if you try
+to store a decimal value in these
+variables they will automatically be
+trimmed the decimal values will
+automatically be removed
+and you will only be shown the absolute
+values and in case of float and double
+they can maintain those precision and
+decimal values so we use float for the
+use cases where you want to store
+decimal representations of the values
+and you can see that the float value can
+store a smaller Precision value but
+double can store even a bigger Precision
+value so if you have really big
+Precision values to be maintained very
+big decimal values to be maintain you
+should use double and the float is used
+for storing a bit smaller size of the
+Precision values I mean its range of
+values basically beyond the scope of
+this discussion if you want to read more
+about this you can go to this particular
+links which will explain this in detail
+but the basic idea is that float is good
+for storing two Precision values and if
+you want to go beyond that you want to
+use double in some cases some people
+also use float to store even Beyond two
+values as well so so it completely
+depends the main the decision factor is
+how long the value you are going to
+store in the decimal and that will take
+the decide whether you want to use float
+or double the next one is Boolean which
+is used for storing the Boolean values
+Boolean values can be either true or
+false so there are only two possible
+values and then we have car which is
+used for storing characters it is uh
+using 16bit to store the value and this
+is a very popular Java question for
+beginner level programmers that why does
+it store uh need 16bit to store the
+character it's because it stores a unic
+code representation Unicode
+representation is a representation which
+can be accepted across platforms across
+the world in different character en
+codings so let's move on to Eclipse now
+where I have prepared a very short and
+simple demo I'm just creating a variable
+for each data type and I'm printing them
+you also see some things here like the
+these keywords and don't don't worry
+about these keywords I will cover these
+keywords in detail in the upcoming
+lectures you also see this and you can
+just for now you can remember that
+system.out.println is used for printing
+anything in Java anything you want to
+print on the console you would be using
+system.out.println what is system what
+is out and what is print Ln again we
+will cover these in the uh upcoming
+lectures for now I'm just creating a
+bunch of data types here variables here
+basically I'm creating a cap type
+variable a bite type variable a short
+type variable an in type variable a
+float type variable a double and a
+Boolean the way you create variables is
+basically you put the data type name you
+put the variable name which can be
+anything you put an equal sign and you
+put the value actual value which this
+variable is going to store and I've done
+the similar thing for all of these uh uh
+variables Java wants semicolons to be
+there when you write your statements so
+please remember that your statements
+always end with semicolons so I've
+declared all of these variables here a
+bite a short and int float double and
+Boolean and then I'm printing all of
+them basically here I'm printing the car
+variable here I'm printing the bite
+variable here I'm printing the short and
+so on so forth so how do we actually run
+this application or this program you
+just double click on this or right click
+on this you go to this run as option you
+see this run as Java application option
+so you can hit this option it it will
+run the application and it will present
+all the output here in the console tab
+let me just bring this up so you can see
+all the variables have been printed here
+and this is coming from these print
+statements like I said this is used
+system.out.print Ln is used to basically
+print anything and I've used that to
+print all the variables here first I'm
+printing the car variable whose value is
+a then I'm using the bite variable which
+is denoted by B and whose value is two
+so you can see the value is two here
+then I'm printing the third variable
+which is C which is a short type
+variable which has a value 22 you can
+see short and this is coming here the
+next print statement is int so you can
+see int here with the value 45 and this
+value is coming from here then we have
+float we can see the float value being
+printed here and you can see the float
+value declared here you also see an F
+here and this is the standard naming
+convention with Java proposes that
+whenever you declare float and double
+you end them with f or D based on
+whether it is float or it is double then
+you see the double value which is having
+which is having a bigger Precision than
+float so I've printed the double value
+using this particular print statement
+which is printed here and then we have
+the Boolean value which is stored as G
+and the value of G is true and the same
+value is printed here so whatever I
+write here basically is printed here
+this is just a placeholder and this is
+the actual value so you can see that we
+are able to use all the variables here
+all the Primitive variables basically
+which range from bite character bite
+short int float double and Boolean when
+we talk about which all are the
+non-primitive data types we broadly talk
+about arrays we talk about classes we
+talk about strings as well and we will
+cover some of them in today's lecture
+and we have the a detailed lecture
+upcoming about the classes as well in
+fact in the in the after few lectures we
+we'll cover how we'll create classes as
+well but for today's lecture we are
+going to focus on string data type and
+array data type and like I said for
+classes we have a dedicated uh lecture
+upcoming so don't worry about that and
+again for this particular case as well I
+have already prepared a demo for this
+and we'll basically do some look at some
+Hands-On examples to see how do we
+create these variables what these what
+does these variables mean and the first
+non-primitive data type we are going to
+talk about is string and before I go on
+further I should also mention that it's
+very debatable in the Java Community to
+call string as a non-primitive data type
+and actually technically speaking string
+is a special data type it neither fully
+lies in the Primitive category nor it
+fully lies in the non-primitive
+categories I'm covering this as as a
+non-primitive data type because it's a
+bit inclined towards the non-primitive
+category why do we do this is because
+Java does provide native support for
+string handling in the jdk and that's
+the reason some of the developers feel
+that string is a primitive data type
+which is primitively supported by Java
+but at the same time string is so
+customizable and it's so special in
+nature it's the way it stores the value
+the way it provides the operations and
+handlings it's so different than
+primitive data types that it cannot
+fully be put in the same bucket as the
+primitive data types so that's why he
+said it's it's a special data type a bit
+inclined towards the non-primitive
+category so what is string basically we
+covered about the car data type in the
+previous lecture and in car data type
+you can only store A Single Character
+right but if you want to store a
+complete name of somebody then it's a
+list of character it's basically lot of
+characters together then in that case
+you would need a data type to store that
+continuous sequence of characters and
+that's what string does string can store
+a continuous sequence of characters
+technically string is basically a
+character array you can call string as a
+character array and don't worry if you
+don't understand about the word array I
+will explain that in the same lecture so
+basically it stores The Continuous
+sequence of characters that's how that's
+how we Define string and you see this
+string this is a basically the keyword
+the data type basically in Java so
+whenever you want to create a string you
+need to write string with S capital you
+need to give a name to the string this
+can be anything and then you can provide
+the value which is which this particular
+string is going to contain so you can
+see this is a continuous sequence of
+characters t e s are the four characters
+which the string is going to contain and
+after that again I'm printing this
+particular value and like I said don't
+worry about this we'll cover this when
+we when we'll write our first program in
+Java so this is just to print the string
+value I'm just putting a string
+placeholder here and then I'm actually
+printing the printing the values of the
+string variable now string can be
+created in multiple ways in Java this is
+one way of creating it there's another
+way of creating a string variable which
+is this one which says again the string
+data type some variable name a keyword
+called new again don't worry about what
+is this new keyword we'll cover this
+when we'll talk about our running our
+first program in Java and writing the
+first program from scratch then we again
+say string and then we provide the value
+so if I compare this line number four to
+line number seven you can see the
+difference is that I'm still storing the
+same value test but the difference is
+that here there is no new string keyword
+but here we have this new string keyword
+so what is the difference the difference
+is this that in this case in this
+particular case string is going to re
+use the same object multiple times but
+in this case every time you call this it
+is going to create a new object again
+what is object it's just you can think
+of it as for now you can think of it as
+a memory block we'll Again cover objects
+in details but these are two different
+ways in which you can create string this
+is generally the most popular way of
+doing it because this is memory
+efficient because you can reuse the same
+variable again and again so I'm creating
+the string variable here and creating
+another string variable St Str one here
+and printing both of them then I've
+created this strange looking thing here
+which is basically an array array like I
+said is also an a non-primitive data
+type in Java and array can store a
+continuous sequence of anything that
+anything can be a number that anything
+can be characters that anything can be a
+a floating number as well so basic idea
+is that if you want to store a
+collection or or sequence of multiple
+multiple values how do you do that you
+do that with the help of arrays array is
+a data structure a non-primitive data
+structure in Java which can store lot of
+values of similar type we also call it
+as homogeneous data structure because it
+can only store same data type values or
+homogeneous data type values so the the
+biggest way to identify array is this
+square bracket whenever you see this
+square bracket in Java it means it's an
+it's an array variable so here I am
+creating an integer array variable with
+the name ARR this is the name of this
+particular array it is only going to
+store integer values because I've
+specified int and the moment I provide
+the square brackets it mean it means
+that it is an array so you can declare
+an array like this and then you need to
+assign a size to the array size is
+basically denoting how many values this
+data structure is going to store so I'm
+saying new again it's a keyword and I'm
+saying that okay create a a memory block
+for storing two integers so this
+particular array ARR can store at Max
+two values two values at continuous
+locations the next thing about array is
+that it stores the value in a zero index
+based location so like I said it can
+store two values so the first location
+will always be array of zero and this is
+how you specify the location or index of
+the element which is going to be stored
+so at the zeroth location of this array
+I'm storing zero the first location of
+the array I'm storing one and this is
+just to show an error scenario but I
+will just comment this for now you can
+just put double slashes and comment any
+line so I'm just storing filling up this
+array for two values and the two values
+location would be zero index and first
+index these are just continuous memory
+locations and we denote those memory
+locations as 0 and one array indexes
+always start with zero and I'm just
+putting some values here you can put any
+values and then I'm printing the whole
+array and I'm also printing the first
+value of the array and we'll see how
+this pans out and we'll also see how we
+can change this so now we are going to
+run this application so I'll just go to
+run as and click on run as Java
+application and once I hit that I get
+this output here so let's understand
+this output the first one is I'm just
+printing the string which has the value
+test test and you can see it has printed
+here it is coming from this line then
+the next line which is printed is line
+number eight where I'm saying another
+string Str str1 and Str str1 also had
+the same value so you can see another
+string has the same value and then I
+have printed the array here the complete
+array and you see this strange value
+here it also tells us that if you want
+to print the array then you cannot just
+put the variable name and print it the
+reason is because this is a non
+primitive data type and once you do this
+it is basically printing the memory
+footprint of this array the whole memory
+location where this array is stored
+that's why you see this strange looking
+number which is the memory hash code and
+if you want to print any particular
+value or any particular element inside
+this array then you can do that by
+providing the index location of that
+element so here I've said that print the
+zeroth location element of the array the
+zeroth location array element of the
+array was zero so you can see the value
+zero here let me put some other value
+just to just for fun and show you how
+this works so I've just changed the
+values and now let's see what do we get
+for array zero you can see now I get
+value three because now that at the
+zeroth location the three value is being
+stored and that is what what is being
+printed here we can also print the first
+value I'll just go run as Java
+application you can see now the array of
+first index is being stored which is
+basically technically the second element
+of the array but because array always
+works on a zero index based value format
+that's why when we say array one the
+second element is printed when I say
+array zero the first element is printed
+so always remember that array is a zero
+index based collection or data structure
+basically what happens if I do this now
+there is no third element in this array
+because the array has the size only of
+two elements and when I say ARR of two
+which means I'm trying to print the
+third element in this array which does
+not exist so let's see what happens in
+that case I get an exception exception
+is basically an error I get an error
+saying that index two is out of bounds
+for length two it means that the array
+length was actually two and index 2 does
+not exist remember it's saying index two
+not the element two index two doesn't
+exist because only index zero and index
+one exist this makes two elements and
+that ual size is also two it does not
+have capacity to store third element it
+does not have third element location
+anywhere that's why it complains that
+you are trying to print a non-existing
+value and with that we have come to the
+end of this tutorial on data types in
+Java I hope you guys must have got a
+good idea about what data types are and
+how to use them if you feel that we have
+missed out on some important topic that
+we were supposed to cover in this video
+or if you have any doubt related to any
+of the topics we have covered in this
+video then please feel free to to drop
+them down in the comment section below
+and a team of experts will definitely
+answer them for you so thank you so much
+for being here guys we'll see you next
+time until then keep learning and stay
+tuned to Simply loar staying ahead in
+your career requires continuous learning
+and upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn ner up and get certified
+click here

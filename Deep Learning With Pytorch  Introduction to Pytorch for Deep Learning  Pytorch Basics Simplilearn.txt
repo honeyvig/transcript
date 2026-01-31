@@ -1,0 +1,652 @@
+foreign
+artificial neural networks to learn from
+large complex data sets and make
+Productions or decisions
+deep learning algorithms are designed to
+extract features and patterns from the
+input data allowing tasks such as
+production neural language processing
+and image and speech recognization to be
+performed
+deep learning has drastically
+transformed how we process analyze and
+make data-driven decisions making it
+necessary skills for anyone interested
+in artificial intelligence data science
+or machine learning phytos expands the
+capabilities of the machine learning
+framework it will further provide high
+speed in deep neural network
+implementation hey everyone you're
+watching simply learn and in today's
+video we're going to be learning all
+about deep learning with python if you
+love watching videos like this do hit
+the Subscribe button to never miss any
+updates from Simply learn if you want to
+become an expert in the field of EI and
+machine learning consider professional
+certificate program in Ai and machine
+learning by simplylearn and Masters
+those necessary skills check out the
+link in the description for more details
+first let us understand how we spy touch
+used in deep learning next let's look at
+the advantages and disadvantages of deep
+learning using pythost and finally let's
+build one layer hidden fed forward
+neural network
+deep learning with pie torch is popular
+in artificial intelligence and machine
+learning it is a user-friendly platform
+for developing and training deep
+learning models deep neural network can
+be implemented and trained using pi
+torch to perform complex Stars such as
+speech and image recognition natural
+language processing and other machine
+learning tasks so now let us understand
+how is python used in deep learning so
+it is used in building and training
+neural networks data processing and
+manipulations transfer learning and
+visualization so let us know each in
+detail building and training neural
+networks is Made Simple by pytorch wide
+range of pre-built layers activation
+function launch functions and
+optimization algorithm its dynamic
+computational graphs makes gradient
+competition flexible and efficient
+making it simple to implement
+complicated models next we have data
+processing and manipulation
+so to transform unstructured data into
+useful information pytouch provides
+various tools for data processing and
+manipulation large data set can be
+processed and loaded quickly with the
+help of these tools keeping the data
+more useful for use in deep learning
+models it improves the Precision and
+caliber of the model then
+transfer learning phytos offers a
+variety of features and tools to Aid in
+transfer learning and it also makes it
+simple to put those features into
+practice it entails starting a new task
+with a pre-trained model that can be
+used for transfer learning in just a few
+lines of code next visualization some
+built-in visualization Tools in pie
+touch allow for the visualizations of
+training results graphs of accuracy as
+well as loss and visualizations of the
+model's production when integrated with
+other libraries Fighters can be useful
+for developing visualizations for deep
+learning applications
+so now we know how python is used in
+deep learning so advancing let's look at
+the advantages and disadvantages of deep
+learning using pytorch pytouch is used
+widely in the research and development
+of deep learning models and here are
+some advantages of deep learning using
+pytots
+due to its straightforward interface
+python is simple to use which make it
+simple for developers to use and learn
+it's to use a friendly framework and
+clear syntax make it easy to use next
+fighter chooses robust python tools and
+libraries like numpy to create models
+and handle data processing
+it allows developers to design unique
+models layers and loss functions
+supports neural network architectures
+and transform as well
+with the help of Python's Dynamic
+computational graph models can be built
+and modified easily making debugging
+simpler
+and in order to handle large data sets
+and build models across GPU or CPU
+devices python chooses distributed
+computing
+pythons offers strong visualization
+tools to visualize deep learning models
+performance during training therefore
+pytos offers a strong framework for
+creating deep learning models and a
+variety of tools for training models if
+getting your learning started is half
+the battle what if you could do that for
+free visit scale up by simply learn
+click on the link in the description to
+know more
+next we have disadvantages of deep
+learning using Phi Dodge
+first the hardware needed for deep
+learning models such as GPU device can
+be costly
+and debugging the Deep learning models
+can be difficult when the data set is
+large and complex
+deep learning models need a lot of data
+to perform accurately which may not be
+possible in some applications
+and then deploying model interpretations
+can be challenging making comprehensive
+how the model makes production difficult
+now let's build one layer of hidden fit
+forward neural network
+a forward neural network is a neural
+network architecture with a single
+hidden layer of neurons between the
+input and output layers the input layer
+receives input data in this architecture
+and the output layer produces output and
+the hidden layer transforms the input
+data non-linearly and provides a higher
+level representations of the input to
+the output layer typically the number of
+neurons in the hidden layer is
+determined by Trail or error or through
+some sort of optimization process
+so now let's start
+so the first step is to import all
+necessary libraries to ensure that all
+the tools are available so first let's
+import
+torch
+next import
+torch dot Ln as nn
+then import
+torch vision
+next import
+torch vision
+Dot
+transform
+transforms as transforms
+next
+import
+smash plot
+live
+Dot
+type plot
+as PLT
+Next Step device configuration so use
+the GPU for the computation if available
+otherwise use the CPU so for that let's
+type device
+is equal to torch
+dot device
+inside this will put two down
+if available
+if Dodge dot go down
+dot is available
+else will go with the
+CPU
+so next using parameters let's train a
+neural network so for that we'll give
+input
+size
+is equal to
+784
+so image size is 28 by 28 that is one
+dimensional tensor
+so total will be 28 by 28 will be 784 so
+input size will be 784 then hidden size
+will be 100
+so we can Define different size and then
+we can give number of classes is equal
+to 10
+so number of classes are always 10 so we
+have 0 to 9 so we give 10.
+and then we have number of
+keyports
+will give to
+and then badge size
+is equal to 100
+and learning rate
+zero point
+zero zero one
+okay next import famous MNS data set so
+for that we'll give train
+data set is equal to
+rch vision
+dot data sets
+Dot mnist
+if
+the root
+so it is in
+folder data
+train is equal to true
+comma
+give transform
+is equal to
+transform
+transforms to
+tensor
+comma download
+foreign
+and then transforms is equal to
+transforms dot to tensor and here we
+will not download it
+okay
+so next let's print the data set for
+train and test
+for that give print
+data set
+and here we got and also let's give
+print
+test data set
+so mnist is a popular data set for
+machine learning and computer vision
+applications it is a collection of 70
+000 normalized and centralized
+handwritten digits 0 to 9 within a fixed
+size image so each image is 28 pixels
+wide by 28 pixels high for a total of
+784 pixels so here you can see we have
+uh in train dataset we have 60 000 and
+test data set we have 10 000.
+and the data set is commonly used for
+digit recognization task in which the
+goal is to correctly classify each digit
+image into its numerical value the MNS
+data set is frequently used to compare
+the performance of various machine
+learning algorithms particularly for
+classification tasks so now next step
+let's create a data loader object called
+train loader which is used to load the
+data in batches so for that let's give
+Trail loader
+is equal to
+torch Dot
+utils dot data Dot
+data loader
+and or data set is equal to
+train data
+train data set
+command
+batch size
+is equal to
+cash size
+come on
+Shuffle is equal to true
+and same goes with the test loader so
+let's keep
+test loader dot utils dot data dot data
+loader and here data set is equal to
+test data set
+and batch size is equal to batch size
+and then
+Shuffle is equal to false
+okay
+so next create an iterated object so
+these
+example
+examples is equal to either
+train loader
+so examples from a train loader object
+it is
+different samples
+comma labels
+is equal to its samples
+dot next
+so call the next method and then
+print
+samples Dot
+shape
+comma
+labels
+dot shape
+so here we'll print the size of the
+sample
+samples is not defined
+in
+okay so here we got the output
+so in output we call the size of the
+samples where batch size is 100 and
+color channel is 1 and image size is 28
+by 28 so label tensor of size is 100.
+next import
+my
+plot lip
+dot p y p l o t as PLT
+so for I in range
+of 6.
+so here we are create uh so creating a
+figure with eight subplots organizing
+two rows or eight columns so two rows
+and eight columns it is so each subplot
+shows an image from the samples so for
+uh showing rows and columns will give
+no
+subplot
+1
+comma 6
+comma I Plus 1.
+so here it indicates one row and six
+columns and index is I Plus 1.
+or sometimes it will multiply the
+numbers and display that many images so
+it's like one one into six like six
+images it will display
+so if you give 2 into 6 it will display
+12 images
+next
+Dot
+IM sure using that info method
+samples
+of I
+of 0
+and C color mapping it is
+is equal to 3.
+so when displaying the image in Gray
+scales the color mapping parameters
+specifies the color map to use
+so
+let's give
+flat Dot
+prevent the code from beginning
+so here we got
+so if you want to change the color
+so suppose if I give
+so this is also a color Channel
+so you have got in a different color
+or you can also give one of these
+and here we've got
+in different color
+so here we gave six
+so we got six images so suppose you want
+to give eight
+so let's give eight
+and here we got eight images so these
+are the images from samples
+next let's define the class from NN
+model
+so for that give class
+neural network neural net
+and then dot module
+steps
+method in it
+two inch lies
+self comma
+input size comma hidden size
+number of classes
+then Super
+your left
+commercial
+calling init method
+then self Dot
+layer 1 is equal to NN dot module and in
+dot linear
+input size
+and we are giving hidden size
+dot value
+is there any function
+is equal equal to
+and then dot value
+and self dot layer 2
+is equal to NN Dot
+linear
+hidden size
+comma number of classes
+in so here the neural net class inherits
+from the NN module class so here we have
+given in module and which is the base
+class for all neural network modules in
+pytots and then we are using the init so
+the init method initialize the neural
+network by creating and initializing its
+layers so which we have here L1 and L2
+layer and also we have one a relu
+activation function function which is
+this rplu and then the first layer
+that is here
+so the first linear layer takes an input
+tensor and produces an output tensor of
+size input size and while the second
+layer takes the output of the value
+function which is of the size hidden
+size and produces the tensor of size num
+classes
+so next
+step forward
+self comma X
+out is equal to
+self
+dot linear layer 1 of x
+then out is equal to
+self Dot
+value
+of out
+is equal to
+cell Dot
+L2 of out
+and then return on
+so here the method takes a tensor X as
+an input and applies two layers that is
+selfie layer 1 and the self layer 2.
+so and rectify silly a linear unit that
+is a activation function to it and the
+output of the first layer is passed
+through the value attribution function
+so this is passed here
+and then the final output is the output
+of the second layer output
+and then we print the output
+so after this create a neural network
+model using the neural net class so for
+that we'll if model is equal to
+neural net
+of input size
+comma return size
+and number of classes
+yeah
+so the input size is a hidden size and
+the number of Clauses and the output
+size are the number of neurons in the
+neural network hidden layer so here
+input size is the size of the input data
+vector and hidden size is the
+intermediate layer between the input and
+output layers and the output class is a
+number of classes in the classification
+problem
+so next we'll give
+Criterion
+foreign
+Dot
+cross
+entropy
+loss
+of Optimizer is equal to
+rch Dot optim
+um
+model Dot
+parameters
+common dining right that is l i is equal
+to
+pluraling away
+so here this piece of code sets up the
+training process for the neural network
+model in pie torch using the Adam
+Optimizer and we are using the cross
+entropy laws as the objective function
+and next training the loop so we will
+check the number of total steps so for
+that n
+foreign
+step
+is equal to
+length of
+train loader
+so it is a length of the training order
+for
+import
+in range
+number of approaches
+and fourth
+High comma
+images comma labels
+enumerate
+train Builder
+next game
+so it enumerates over the train loader
+next reshape the tensor for that give
+images is equal to
+images dot e shape
+dimensional First Dimension minus one
+comma 28 by 28
+2
+giving it to device
+labels
+is equal to labels Dot to device
+next initializing a gradient at 0 so
+there is no mixing of gradient among the
+patches so we'll give
+optimizer
+Dot
+zero Gray
+and loss
+so propagating the error backboard gives
+laws backward
+foreign
+Optimizer dot step
+let's give it in one
+single block
+okay let's check that
+will give if
+5 plus 1
+percent
+100 is equal to
+equal equal to 0
+then print
+the reports
+the ports plus one
+divided by
+third of the purchase
+sixth step
+I plus 1
+divided by
+n number of total steps
+for my loss
+is equal to
+loss dot item
+so here for every 100 step during
+training the current e-ports current
+step and loss value are printed
+so next
+let's keep
+with thoughts
+DOT number of three
+and then n cut it
+is equal to 0
+number of samples
+is equal to zero
+and for
+images comma labels
+in
+test loader
+images is equal to
+images Dot
+T shape
+minus 1 comma 28 by 28
+so let's send it to
+device
+next labels
+is equal to
+labels dot to device
+output is equal to
+more images
+model
+and then give
+Productions
+is equal to torch
+dot Max
+of
+outputs comma 1
+and N number of samples
+Plus or equal to labels
+dot shape of 0
+10 correct
+Plus or equal to
+red
+predictions
+is equal equal to
+labels
+dot sum
+dot item
+then give
+ACC is equal to 100
+of
+any number of having
+divided by n number of samples
+ring
+accuracy
+thank you
+so here the outputs variable contain the
+predicted output of the neural network
+for the given data set and the torch.max
+outputs comma 1 this function retains
+the maximum value in its index so the
+prediction variable is set the predicted
+class index for each sample in the data
+set and the end samples variable keeps
+the track of the total number of samples
+in the data set and the incorrect
+variable calculates the number of
+samples for which the predicted class
+matches the true label and the accuracy
+is calculated as a percentage of the
+correct Productions
+foreign
+so here it says the name loss is not
+defined
+foreign
+so the error is name loss is not defined
+so here let's add a piece of code
+so outputs
+is equal to model of images
+and
+loss is equal to
+Criterion
+of
+outputs common levels
+so now let's run it
+so there is no proper spacing here
+somewhere
+so let's run it
+and here we got the Emojis steps and the
+laws so I use pie torch to implement
+deep learning neural network using the
+mnips data set for digit classification
+and the accuracy of the model that is
+code is 97.53
+so if you want to you know increase the
+accuracy you can change or modify the
+layer architecture or the parameters
+choose from over 300 in-demand skills
+and get access to 1 000 Plus hours of
+video content for free visit skillup by
+simply learn click on the link in the
+description to know more and with that
+we come to the end of this video you on
+deep learning with pytots so if you like
+this video share it with your friends
+and before I sign off make sure you
+subscribe to our Channel and hit the
+Bell icon to get all the updates we'll
+be back with more such interesting
+videos until then keep learning and stay
+tuned to Simply learn
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

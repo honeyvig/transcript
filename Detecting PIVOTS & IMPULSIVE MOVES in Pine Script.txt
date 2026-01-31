@@ -1,0 +1,818 @@
+hey guys welcome back to another lesson
+in this lesson i'm going to be covering
+a popular request which is
+how to detect pivot points in the
+markets using pine so what you see on my
+chart right now is a customized pivot
+point script that i've adapted from the
+inbuilt trading view pivot script and
+i've added a couple of features here
+i've added the background color option
+and delete last line option and if you
+turn this on it will only leave the last
+detected pivot on your chart as you can
+see there so i'll leave the default
+settings on for now now as i've
+mentioned several times when it comes to
+identifying subjective based patterns in
+the markets detecting impulsive moves
+and pivots in the markets price legs
+is extremely difficult at least to do
+accurately like what i mean by that is
+for me personally i would read this
+market pretty much how the script is
+reading it but there are times when it
+detects pivots that i don't really agree
+with so for example right now
+we have this impulsive move up here
+which looks okay to me and then we have
+this pullback here to this low but the
+script is not detecting this one two
+three move which i would using my human
+eye
+i would identify this move as a move
+that just broke structure and i would
+class this market gold
+as in a temporary
+reversal situation not necessarily a
+downtrend yet until we get another
+uh lower high and lower low
+but we do have a potential reversal here
+because we have this impulsive move up
+here a pullback we made a swing low we
+then made a lower high and now a lower
+low that is an indication that this
+market could be entering into a bearish
+phase for a while technically until we
+take out this low i would class this
+still as an uptrend but in the short
+term especially on these lower time
+frames uh we're in a downtrend right now
+and this pivot point tool is not showing
+that it's detecting this move as the
+impulsive move but this move here was
+not significant enough to be classed as
+a second pivot and so
+i'm just trying to explain here
+the limitations of using code to
+identify market patterns
+if i open up the settings menu we can
+tweak these settings a little bit to
+adapt the script to detect the pivots
+slightly differently so for example if i
+lower this deviation setting down to two
+the pivots have now changed if i lower
+it even more to one
+that doesn't seem to have changed
+anything let's go even lower
+still no difference and so this is as
+about as accurate as this tool is going
+to get in terms of identifying pivots in
+the market so i'll leave the default
+settings as they are for now and i'll
+just quickly explain what these settings
+do before we jump into the code the
+deviation setting
+is
+used to identify when the market has a
+significant pullback from a swing high
+or a significant rally from a swing low
+so the higher we set this setting the
+more significant the move must be in
+order to be considered an impulsive move
+and the lower this number is the less
+significant
+the move must be and so as you can see
+here
+if i get rid of this freaking tool and i
+drop this down to one uh notice
+in this price action here that the
+pivots
+if i can get rid of that
+watch this where my mouse is here when
+i'm um when i click out of this box now
+the script is more sensitive because it
+requires less of a deviation from a
+swing higher or swing low in order to
+count that as a pivot and the next
+setting here depth is how many bars to
+look over in order to determine whether
+we have a swing high or a swing low so
+by default i've set this to 12 which
+means that the script is looking six
+bars to the right and six bars to the
+left and if this bar in the middle
+is higher than all of the bars to the
+left and right then it's counted as a
+swing high and same for a swing low if
+this is the lowest bar
+over the past six bars to the left and
+the six bars to the right
+and we also get a deviation a
+significant price move from that low
+then that is counted as a pivot point so
+keep in mind that this script requires
+several bars to print to the right of
+the swing low or the swing high before
+it will consider whether or not the
+swing level swing high is significant so
+in other words it's slightly lagging now
+you can drop this number down if you
+want to and now it will be a little bit
+more responsive but it will also pick up
+more noise in the market so that is
+always a trade-off you will have to make
+when creating scripts like this no
+matter what settings you put into your
+script the way the script identifies
+these patterns is going to entail a
+trade-off between accuracy under certain
+circumstances that's why personally i'm
+not a big fan of analyzing price action
+in this manner i prefer to identify
+things like swings impulsive moves in
+the market manually with my eye but if
+you do require your script to identify
+impulsive moves like this then the
+script that we're about to break down is
+about as good as you're going to get in
+terms of your code accurately
+identifying these swings
+so anyway with all of that said let's
+get into the source code and start
+breaking down how the script works
+so the first thing i do is get a bunch
+of user inputs which we just went over i
+didn't mention that the bg color
+changes the background color based on
+what the last pivot was so you can see
+that we had a
+impulsive move down here
+and then the chart began plotting red in
+the background and then once we got a
+pivot high or a impulsive move up
+then the chart turned to green and
+remember that the depth is how many bars
+to look
+uh left and right so with the 12 bar
+depth we're looking six bars to the left
+and six bars to the right and so if i
+click on this swing high here and
+measure out six bars you can see that on
+the seventh bar here is when we start
+plotting red because that is when this
+swing high to the swing low pivot was
+detected now this background color
+setting is a little bit
+off with what you see on your chart and
+the reason for that is this if i use the
+bar replay tool
+and we step forward here we can see the
+script working in real time you can see
+that it just detected this swing higher
+to swing low this impulsive bearish move
+and if we move forward a little bit now
+it's detected this swing low to swing
+high impulsive move it's counted this
+deviation from the swing low as an
+impulsive move technically it's not
+really an impulsive move it's just a bit
+of volatility in
+price action here i personally wouldn't
+count this as a
+impulsive bullish move but the script
+does because the script is dumb and it
+doesn't know how to differentiate
+between a large candle in consolidation
+and a actual impulsive move but anyway
+if i move forward here
+you'll see that the script will update
+this swing loader swing high impulsive
+move when a new swing high is detected
+in the same direction so just there if i
+go back one bar you can see that the
+script is detecting this as a pivot and
+then if i move forward one more bar
+we've had six bars print since this new
+swing high and the pivot gets updated oh
+one more bar now the pivot gets updated
+from here to here
+to from here to here
+and so what the script is doing is
+updating the impulsive move as it
+unfolds so long as price action is still
+developing in that same direction so so
+long as price is rallying here and we
+get these swing highs with a
+large pullback our pivot will continue
+to update higher and higher unless we
+get a swing low
+with a significant
+move if that happens then the pivot will
+stop drawing
+in the bullish direction and then
+reverse to the downside but anyway we'll
+get to how that happens in the code in a
+moment so if i progress through
+historical price action slowly here
+you'll see that our pivot will continue
+to update
+so the next time we get a significant
+bearish pullback
+our pivot point will update to the new
+swing high
+keep going keep going there we go so now
+the script is detecting this as a
+impulsive bullish pivot and you get the
+idea if i get out of the bar replay tool
+that was our last swing high and we now
+have a new pivot to a swing low
+so now let's jump into the source code
+and break down how the script works
+so first of all we get a bunch of user
+inputs which i've already gone over
+then we have a
+deviation threshold here which
+calculates the deviation threshold for
+identifying major swings it takes the
+average true range into account so it
+does adapt based on volatility in the
+market and this little formula here
+gives us our deviation threshold so this
+will give us a number in pips that price
+must move in order for a new pivot point
+to be considered valid or significant
+next up we prepare our pivot variables
+so we have our line object this is the
+line you see on the chart we have the
+index of the last pivot which is the
+most recent pivot and then we have the
+index the bar index of the previous
+pivot and these indexes are used to draw
+our line between and then finally we
+have our last price so i stands for
+index p stands for price and we're
+tracking the last two bar indexes of our
+pivot and we are tracking the price
+value of our last pivot and then we have
+is high last and if this is false then
+it means that the last pivot was a pivot
+low so if the last pivot was a high this
+would be true if the last pivot was not
+a high then it would be false and we
+have a pivot low all of these variables
+are persistent so they attract across
+price action as it unfolds the next
+thing we do is define a custom function
+for detecting pivot points and returning
+the price and bar index of that pivot
+point so this is a little bit difficult
+to explain in plain english but i'll do
+my best
+this function takes three inputs
+price source
+a look back length or a depth that's our
+depth setting and an is high boolean
+parameter and if is high is true then we
+validate a pivot high if it's not true
+then we're trying to validate a pivot
+low and what we do here is first we
+create a
+variable called l2 which is short for
+length two and this is our length look
+back length multiplied by two now when
+we call this function we actually divide
+our depth value by two this is how the
+training view developers wrote this
+script this is the approach they went
+with
+so when we pass in a depth of 12 what
+actually gets passed into this pivots
+function is the value 6 as our length
+then that gets multiplied by 2 to get
+our actual depth value which is 12 and
+then c
+is our price value of the
+midpoint
+so when we pass in our value length this
+parameter here when this gets passed
+into our price source historical
+operator because we are dividing depth
+by two that means we're looking back six
+bars and we get that sixth bar and then
+we loop from zero to l2 which is uh 12
+bars
+because remember l2 is our length
+multiplied by two so we get our actual
+depth value here and then these if
+statements here check if
+uh is high is true then we check is the
+price source of each bar that we're
+looping over
+if that price source is higher than our
+mid point our c value then ok is set to
+false and the function will return n a
+it will return a n a integer and an n a
+float because the pivot is invalid
+um basically if
+this okay check fails that means that
+there was a bar to the left or to the
+right of this swing high that was higher
+than that current bar so in this
+particular case this bar would
+pass this check because if we look one
+two
+three four five six bars to the right
+and six bars to the left it is the
+highest bar over that period there is no
+bar that was higher than that bar and so
+this check never gets executed and okay
+remains true and then if okay is true or
+in other words if the pivot is a valid
+pivot either a pivot high or a pivot low
+then we return the bar index and the
+price value as a tuple so this function
+returns two values the bar index of our
+pivot and the price value of our pivot
+and we use that information later on to
+draw our lines but we'll get to that in
+a moment so after we've defined this
+custom function we then immediately use
+it in these two
+tuple values here so we have i h and ph
+that's the index high and the price high
+of our pivot and index
+low and price low of our low pivot
+so we pass in the high price
+our depth divided by 2
+and true the value true means that we
+want to check if it's a high and then
+for our lows we pass in the low value
+and false as is high and that validates
+our pivot lows
+next up we then have another custom
+function here which calculates the price
+deviation which is used for validating
+large moves if we don't do this then the
+script will identify every single swing
+high and swing low as a pivot and will
+get a lot more noise being picked up in
+the in the lines that are drawn onto the
+chart so this calc div or calculate
+deviation takes two parameters the base
+price so this is the price of our last
+pivot point and this price value is the
+current pivot price so we pass in the
+previous pivot price and the most
+recently detected pivot price and if we
+have a significant deviation then that
+new pivot is validated as being
+important and or significant and the
+line is updated so next we have another
+custom function for detecting pivots
+that meet our deviation criteria so this
+function
+combines
+all of the information we've got so far
+to update our line if the
+correct conditions are found in price
+action so the first thing we do is we
+check if the last pivot was a high so it
+was a high pivot and the line is not n a
+the line object is not an a then that
+means we are checking the bullish
+direction of a new pivot so all of this
+code within this if statement gets
+executed if the new pivot is in the same
+direction as the last pivot as i showed
+you when we had the bar replay tool
+playing first it detected this as a
+pivot and then a new pivot was detected
+here and the line looked like that and
+then a third
+pivot was detected there and now the
+line looks like that
+that's what this if statement here
+right here that's what this code is
+responsible for doing so if we have a
+pivot a new pivot in the same direction
+as the last and the price of our new
+pivot the pivot price is greater than
+the last pivot high which is true in
+these three cases then we update our
+line so we use the line dot set xy2
+and this function here updates our line
+the line.set function takes three
+parameters the line object we want to
+update the bar index the new bar index
+of the most recent point and the price
+value of the most recent point so in
+this
+pivot here it doesn't update the x y one
+it updates the x y two or the right most
+bar index and price value of our line
+and then this pivot found function
+returns our line object and this boolean
+value
+that tracks if the last pivot was a
+pivot high this gets returned as a tuple
+otherwise if the new pivot is
+lower than the
+most recent swing high pivot then we
+return n a we return an n a line a null
+line and a null boolean value and
+nothing gets updated so that's this if
+statement which is responsible for
+updating the line we also check the same
+thing for a low pivot so if the last
+pivot was not a swinging high then it's
+a swing low and we check if the current
+price is lower than the last price than
+the last pivot price if that is the case
+then we update our line to the downside
+otherwise if the latest detected pivot
+is lower than our swing high and we're
+updating in the bullish direction then
+nothing gets updated and same for a new
+pivot low if price action would unfold
+like this and then we get a pullback and
+then another pivot low but this pivot
+low is higher than the previous one then
+we don't update the line to that one
+because then because then we would have
+price action down here
+and our pivot line drawing to that new
+pivot low which is higher than the
+previous swing low and that's not what
+we want and so that's what this block of
+code here is responsible for doing and
+then we have this else statement here
+that says
+if we have a new pivot in the opposite
+direction
+so if this check fails
+or
+our line has not been updated yet and is
+null or n a then we check if the
+deviation
+value or parameter
+the price deviation is greater than our
+deviation threshold
+if that is the case then the price move
+is significant and we create a new line
+between the pivot points so id equals a
+new line and this new line takes a bunch
+of parameters the first one is the last
+index of the last pivot and the last
+price value of the last pivot and the
+index bar index of the current pivot and
+the price of the current pivot and that
+creates a new line or a new pivot
+and the old line is basically finished
+drawing the old pivot is done and we now
+have a new pivot that we're going to
+continue updating to the downside so if
+we get another pullback here that's
+significant greater than our deviation
+threshold then this line you see here
+will be updated to that new swing low
+pivot and then if we get a
+rally here and then a pullback from that
+rally that's significant then we'll get
+a new line drawing from that swing low
+up to the new swing high that's what
+this if statement here is responsible
+for doing and it also returns a tuple
+returns the new line id
+and whether or not it was a high pivot a
+swing high pivot and otherwise
+if we have detected a pivot point so
+we've detected a bar that is the highest
+bar over our depth look back period or
+the lowest low over our depth look back
+period
+however the deviation the price
+deviation is not greater than our
+deviation threshold so we only have a
+small move from that swing high or swing
+low
+then we return nothing we return line as
+n a and boolean n a so that's our
+function for updating our pivots
+whenever a new pivot is found or an
+existing pivot needs to be updated all
+of that is handled by this function here
+and then this code here is where we
+combine everything we've gone over so
+far
+into actually analyzing price action so
+remember we have these tuple values up
+here index high price high index low
+price low
+these are our pivots that get detected
+if we have a valid pivot point these
+variables will have a value assigned to
+them if we do not have a valid pivot
+they'll be n a they'll be set to n a
+and so what we do here is we check if
+our bar index for our pivot high is not
+n a then that means that we have just
+detected a valid pivot a valid swing
+high pivot and then this if statement is
+executed and the first thing we do is we
+calculate our price deviation from the
+previous swing high
+to the new pivot high price value and
+then we passed this deviation threshold
+into our pivot found function which we
+just went over here and this function
+here checks if we have a pivot and a
+deviation from that pivot that is
+significant if that is the case then we
+get another tuple value here which is
+our line id and whether or not the last
+pivot was a swing high if this pivot
+found function either updates our new
+line because we had a valid
+pivot in the same direction as the
+current
+line direction so remember that's the
+line updating from each swing high in
+the same direction as this impulsive
+move
+if that is the case then these tuple
+values will be set to
+these values here otherwise if we have a
+new pivot in the opposite direction to
+the one we're updating and the price
+deviation is above our threshold then
+these are the values that will be
+returned in our tuples and if we don't
+have a valid pivot that is either
+updating our line in the same direction
+as the previous pivot direction or we
+don't have a new pivot that exceeds our
+deviation threshold so this pullback you
+see here was shallower like let's say it
+was just sitting here we wouldn't have a
+pivot being drawn and we'd be getting n
+a returned instead
+and so once we get all these values from
+our custom functions we can then check
+if our line id is not n a or in other
+words if the line has been updated then
+update the price and index values and
+delete the previous line so if this new
+line id is not equal to our last line id
+that means we have a new line drawing in
+this case here and if we have delete
+last line turned on in the settings menu
+then we use the line.delete function to
+delete the previous line
+so now if i come to the settings menu
+and i turn delete last line on we'll be
+just left with this most recent line
+and every other line that precedes it is
+being deleted
+when the line is updated
+to a new line i'll turn that off for now
+and here is where we update our
+persistent variables that track these
+pivots so line last is reassigned to
+our new line id
+is high last is reassigned to whether or
+not the current pivot is a swing high
+our index for the previous
+pivot is set to index of the last bar
+so in other words if i zoom out a little
+bit
+this is the first coordinate of our line
+this is the second coordinate of our
+line but when we have a line updated as
+in the case here
+this becomes
+our coordinate number one and this
+becomes coordinate number two
+so it was one two when a new line is is
+detected this gets overwritten with
+um the
+last index and price value and this
+becomes our new second coordinate for
+our line that's what all of these
+variables here track and then we have an
+else statement here that checks for
+pivot lows so that handles pivot highs
+this else statement handles pivot lows
+and it does exactly the same thing as
+our
+pivot highs
+calculates the deviation and everything
+but it's doing it in the opposite
+direction so we're passing in our pl our
+pivot low price value instead of our
+pivot high value and all of these
+variables here are tracking the low
+value the price low and the bar index of
+our new pivot low and that's it that's
+the core logic of this script
+for tracking
+price pivots significant swing high and
+lows in the markets
+all right so i had to take a break
+between recording the first part of this
+lesson now it's a few days later i'm
+going to wrap up
+what we've covered so you can see the
+gold has in fact continued lower
+after the breaking structure here
+but now to wrap up this lesson let's
+have a quick look at what we can
+actually do with the information we've
+just gathered so if i scroll down to the
+bottom of the script here i have a
+little bit of drawing code that
+interacts with the lines we have here so
+first i'm getting the start bar index of
+our line of our most recent line i'm
+getting the start price of our most
+recent line i'm getting the ending index
+bar index of our most recent line and
+the ending price then down here is where
+i change the background color of my
+chart and the color changes based on
+whether the ending price of our line is
+above or below the starting price so in
+this case
+when this pivot low was detected here
+and we started drawing a line from this
+high down to this low the background
+color of my chart turned red or bearish
+because the last pivot was a bearish
+pivot the last impulsive move was a
+bearish impulsive move now this isn't a
+perfect
+bullish bearish filter on its own you
+can see here that the chart was read all
+the way up until this pivot up here was
+detected ideally you'd probably combine
+this condition of the previous pivot
+price being above or below the most
+recent pivot price with other market
+filters if i throw on the bar replay
+tool on this pivot low here we cycle
+forward a bit
+you can see that as soon as the
+script detects a bearish pivot the
+background color of my chart turns red
+and if we cycle forward
+we don't get a new bullish pivot until
+all the way up here so keep that in mind
+it's not a perfect system this is just
+to show you how we can interact with the
+pivot values that we've just calculated
+i've also added a offset here a negative
+offset based on our depth so if i get
+rid of this offset if i set this to zero
+because remember our pivots are detected
+on a lagging basis we need at least six
+bars after our swing high or swing low
+is detected so i've used a negative
+offset
+uh for the background color so that that
+lines up with where the pivots are
+detected i'm also plotting the distance
+in pips from the swing height of the
+swing low that's this purple number up
+here if you look up there and i measure
+from the swing high
+down to the swing low we have about a
+114 pip distance
+which coincides with that purple number
+up there then finally if i uncomment
+these four lines here and save my code
+we'll now be getting a red line let me
+turn the background color off we get a
+red line and a green line drawing
+highlighting the swing high and swing
+low of our most recent
+impulsive move so this could be an
+interesting filter to combine in your
+scripts for example perhaps you have a
+pullback strategy or even a breakout
+strategy and you only want to trade
+bearish or bullish breakouts so long as
+price is trading below
+this pivot swing high and the most
+recent pivot swing low
+was a bearish one
+that's just an example there
+one other thing we can do if i comment
+out our lines so that we don't clutter
+our chart too much and i uncomment these
+plots if i say the code this is doing
+exactly the same thing except it's
+plotting
+the
+red line is the last pivot price and the
+green line is the starting pivot price
+so this green line here is showing where
+our pivot began and the red line is
+showing the last pivot price and so
+using these plots you can see these
+scripts updating
+the pivots as it goes so initially we
+had this swing high detected on this bar
+here
+and then this swing low was detected on
+this bar here because remember we have a
+six bar delay and then so on you get the
+idea and so i'll wrap this lesson up
+here i'll leave the source code below
+with some of these lines uncommented and
+yeah this is a somewhat convoluted but
+one of the most
+accurate pivot detection scripts i've
+seen so far in my research in pine
+script it's not perfect because there is
+still some subjectivity in the settings
+you put in here but it is what it is
+that is the price we pay when working
+with code and subjective price patterns
+there is always going to be a compromise
+between accuracy and simplicity i mean
+perhaps if you had a 1000 line code
+script that analyzed every minor detail
+of price action you might be able to get
+this to be a little bit more accurate
+but there's no guarantee that the script
+would detect impulsive moves any better
+than the script does that's why
+personally i like to keep my rules as
+simple as possible in my strategies when
+it comes to automating them rules based
+discretionary strategies are a
+completely different story but if i was
+automating a script that used this sort
+of feature or this sort of functionality
+i would be very conservative in my
+expectations of it being accurate anyway
+this lesson is long enough i'll wrap
+this up here and in the next lesson
+i will show you how i created my dynamic
+structure indicator which attempts to
+detect support and resistance in the
+markets slightly different to pivots but
+similar kind of concept where we're
+trying to detect subjective market
+patterns
+and structure in price hey guys i hope
+you found this lesson interesting if you
+did make sure to hit the subscribe
+button and uh just check back later
+because i will have some more lessons
+coming out very soon otherwise in the
+meantime if you want to learn more about
+panscript check out my website the link
+is above panscriptmastery.com i have a
+free basics course there that goes into
+a lot of detail about the fundamental
+basics of pinescript if you're new to
+pine then there's a mastery course which
+is extremely popular at the moment and
+this course will teach you pretty much
+everything you need to know to go out
+and fish using pine scripts i do give
+you some fish in the course in in the
+shape of
+giving away some of my scripts my
+personal projects and the code that i've
+written to achieve certain things but
+really the course is intended and
+designed to teach you how to convert
+your own training ideas and techniques
+into code so that you can create tools
+to assist in your own trading however it
+is that you trade we all trade
+differently but i've tried to make the
+pine script mastery course a versatile
+course that covers all the bases and
+then finally there is my indicators and
+strategy scripts for those of you who
+just want to steal all of my work that
+i've done over the years i have every
+single script that i've ever written
+that's worth mentioning the source code
+is up here with lessons detailed lessons
+explaining every block of code every
+line of code why i did things the way i
+did and a little bit of bonus content
+here now obviously i'm always expanding
+these courses so what you see here is
+what i've
+done so far but there will be more
+lessons to come especially regarding
+automation and student questions anyway
+with all that said i'll leave this video
+here and i'll speak with you in the next
+one take care and as always best of luck
+with your own trading and your coding

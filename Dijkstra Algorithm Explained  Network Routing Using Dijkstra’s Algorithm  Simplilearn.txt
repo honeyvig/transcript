@@ -1,0 +1,272 @@
+foreign
+we will learn details regarding the
+network algorithm used in multiple
+applications to connect a Channel's node
+hi guys and welcome to yet an
+interesting video by simply learn
+but before we begin if you love watching
+Tech videos subscribe to our Channel and
+hit the Bell icon to miss an update from
+us now without further Ado let's take a
+look at the agenda for today's session
+to begin with we will look into what is
+the algorithm
+moving on with key points regarding the
+algorithm
+continuing with the principle used in
+the Dixon's algorithm
+as for the last topic we will look into
+a solved example using the discharge
+algorithm
+let's move on to the first topic that is
+Introduction to the algorithm
+the distress algorithm was invented by
+edscar w dextra
+disregarded them were designed to find
+the shortest path between the nodes of a
+communication Channel
+the distance algorithm is also used to
+form a shortest part table for the given
+graph
+and it works on the principle of greedy
+algorithm
+now let's move on to some key points
+regarding the algorithm
+the first key point to be noted to solve
+a distress algorithm as the algorithm is
+closely linked to position of the nodes
+in a graph
+the next point is the attribute value
+between the nodes of a channel
+is used to deduce the shortest path
+as for the last point we have the
+initial value of all the nodes from the
+current node is assumed to be infinite
+to much practically understand the
+functioning of the dextras algorithm
+let's take a look at the principle for
+the same
+foreign
+works as
+if the distance of U that represents the
+current node plus the length that is the
+attribute value between node U that is a
+current node and node V that is the
+target node is less than the attribute
+value to distance of the target node
+and also the distance of the target node
+is equal to the distance of current node
+plus the length between Target node and
+the current node
+where distance U represents the source
+node or the current node
+and distance V represents the target
+node or the destination node
+to much better understand let's apply
+this
+for the given question let's find the
+shortest path
+in this given example we have three
+different nodes node a b and c
+using the previously discussed algorithm
+principle we will deduce the shortest
+path
+for node 8 to the other nodes in the
+graph that is the shortest path from
+node a to node B and the shortest path
+from node a to node C
+for this let's take the node B first
+according to the solution it should be
+for node B on applying the algorithm
+along with the values we have if 0 that
+is the position of a is 0 plus the
+target node attribute value that is 10.
+is less than equal to infinite that is
+initially as mentioned infinite value is
+to be assumed
+and this statement stands true so the
+distance between node a to node B
+becomes 10.
+for the third step we will look into
+distance between node a to node C that
+would be 0 plus 40. that is the direct
+connection between node a to node C
+according to the example Which is less
+than infinity again true so the distance
+between note a to node C is 40.
+Moving on but we have to find the
+shortest path
+so for this fourth step comes into
+picture
+that is for node C from node B on
+applying the algorithm we have
+10 that is the initial value of node B
+and plus 15 that is the attribute value
+between B and node C
+which is 25 and is less than infinity
+so the shortest path between node a to
+node C becomes 25 instead of 40 which
+was given through step 3.
+using the same scenario and same steps
+we will solve a much difficult question
+and understand how the algorithm is used
+then without further Ado let's move on
+to the solved example using the textras
+algorithm
+okay
+according to the given question
+we have to use the distress algorithm
+for the given graph and find the
+shortest path from node a to node C
+the point to be noted is we need to find
+distance that is shortest between node a
+to node C only
+now let's take a look at the graph
+and this is the given graph
+with node a at the current node
+and node C is to be the targeted node
+but before we begin with the solution
+for the given graph let's take a look at
+some of the important points to remember
+the first point the distance of node a
+from all the other nodes is infinite in
+the starting step as discussed earlier
+in the example graph
+the next point is the node with the
+shortest value will become the next
+current node
+then we have
+this graph is done to maintain a proper
+shortest path value table which will be
+very helpful during the solution of the
+graph
+now let's move on to the solution
+to begin with we will make
+shortest path table value
+that is given through this
+with three columns in it node column
+value column and previous node
+now let's start with the actual solution
+to begin with the first step is to Mark
+the current node that is node a
+then the nodes that are directly
+connected to the current node that is
+node B and node d
+Now using the value distance that is 3
+for node a to node B and 8 for node a to
+node D we will update our
+table
+where the point to be noted is that we
+have updated the previous node as a for
+both the nodes B and D
+moving on now let's choose the next
+current node that is
+node B
+for the next case because the shortest
+path in the given table is 3 which is
+less than 8.
+now
+the directly connected nodes to node br
+node D and no d
+similar to the case we did earlier we
+will Mark the shortest distance from
+node B to node D and OD let's reduce the
+distance
+the distance between node B to node D is
+3 plus 5 that is equal to 8.
+and then we have
+distance from node B to node D that is 3
+plus 6.
+so the value is 9.
+now we will update our
+shortest path table and the new table
+comes up to be
+from node d
+to node B we have 8 and node B to node e
+we have 9. with the previous node as B
+moving on let's decide the next current
+node that is
+D because the shortest distance is 8 in
+comparison to 9 for node e
+so the new current node is node D and
+the directly connected nodes to node D
+is node e and node f
+the point to be noted is the current
+node is chosen only from the unvisited
+nodes
+now for this we have
+distance between node D to node e is 8
+that is the previous value we did used
+plus 3 that is the distance between node
+D to node d and the total value comes up
+to be 11.
+then we have to node F from node T that
+is 8 plus 2 that is the distance between
+node D and node f
+so the value becomes 10.
+on updating the shortest path graph
+table we have
+the new distances that is node f as 10
+value with the previous node as D and
+there is no change with the node d
+because in comparison to 8 11 is much
+bigger
+moving on let's choose the next current
+node that is node e because in
+comparison to value 10 from node F 9 is
+smaller
+now the node e is a current node and the
+directly connected nodes are node F and
+node C
+now let's find the value between node C
+and nodi
+that will be 9 plus 9 that is the
+distance between node e and node C so
+the value totals come up to be 18.
+and for node F and node e we have 9 plus
+1 that is the distance between node e
+and node F that comes up to be 10.
+now let's compare with the graph table
+where node f is originally at Value 10
+and again the value is 10 so there's no
+change and see we have infinite and the
+value 18 is much smaller so the new
+graph would be something like this with
+node c as 18 value and previous node as
+e
+now let's decide the next current node
+that is
+node F because the distance value is
+lowest in the given graph that is 10 and
+for node C is 18.
+and the directly connected node is node
+C
+then the distance comes up to be 10 plus
+3 that is 13.
+using this 13th value we can decide the
+current value of C is 18 and the new
+value is 13. in comparison 13 is
+obviously less
+so the new graphs comes out to be
+for node C value 13 and the previous
+node becomes f
+with the completion of all the nodes in
+the given graph we can deduce the
+shortest path from node a to node C that
+comes up to be
+from node a to node D node D to node F
+and node F to node C
+and the total value comes up to be 13.
+with this we have covered all the parts
+regarding the functioning and the
+working steps involved in the dikshas
+algorithm
+if you have any questions regarding the
+topic you can ask them in the comment
+section
+thank you for watching
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

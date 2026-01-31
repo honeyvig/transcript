@@ -1,0 +1,505 @@
+with work from home being the norm in
+today's era people spend considerable
+amount of time on the internet often
+without specific measures to ensure a
+secure session
+apart from individuals organizations
+worldwide that host data and conduct
+business over the internet are always at
+the risk of a ddos attack
+these ddos attacks are getting more
+extreme with hackers getting easy access
+to botnet farms and compromised devices
+as can be seen in the graph three of the
+six strongest ddos attacks were launched
+in 2021 with the most extreme attack
+occurring just last year in 2020
+lately cyber criminals have been
+actively seeking out new services and
+protocols for amplifying these ddos
+attacks
+active involvement with hacked machines
+and botnets allow further penetration
+into the consumer space allowing much
+more elaborate attack campaigns
+apart from general users multinational
+corporations have also had their fair
+share of problems
+github a platform for software
+developers was the target of a ddos
+attack in 2018.
+widely suspected to be conducted by
+chinese authorities this attack went on
+for about 20 minutes after which the
+systems were brought into a stable
+condition
+it was the strongest ddos attack to date
+at the time and made a lot of companies
+reconsider the security practices to
+compare such attacks
+even after years of experimentation ddos
+attacks are still at large and can
+affect anyone in the consumer and
+corporate space
+hey everyone this is bev from simply
+learn and welcome to this video on what
+is a ddos attack
+let's take a look at the topics we will
+be covering today
+we start by learning what is a ddos
+attack and how it works on a face by
+phase level
+we learn about the distinct categories
+in ddos attacks and the potential aim of
+hackers when they launch a ddos attack
+campaign
+we also look at some preventive measures
+that can be taken to protect oneself
+from these ddos attacks
+finally we have a demonstration of how
+such attacks can hamper the working of a
+server system using vmware and parrot
+security operating system
+but before moving forward make sure you
+are subscribed to the simply learn
+youtube channel don't forget to hit the
+bell icon to receive updates about more
+informative videos from our channel so
+let's learn more about what is a ddos
+attack
+a distributed denial of service attack
+or ddos is when an attacker or attackers
+attempt to make it impossible for a
+service to be delivered
+this can be achieved by thwarting access
+to virtually anything servers devices
+services networks applications and even
+specific transactions within
+applications
+in a dos attack it's one system that is
+sending the malicious data or requests a
+ddos attack comes from multiple systems
+generally these attacks work by drowning
+a system with requests for data
+this could be sending a web server so
+many requests to serve a page that it
+crashes under the demand or it could be
+a database being hit with a higher
+volume of queries
+the result is available internet
+bandwidth cpu and ram capacity become
+overwhelmed
+the impact could range from a minor
+annoyance from disrupted services to
+experiencing entire websites
+applications or even entire businesses
+taking offline
+more often than not these attacks are
+launched using machines in a botnet
+a botnet is a network of devices that
+can be triggered to send requests from a
+remote source often known as the command
+and control center
+the bots in the network attack a
+particular target thereby hiding the
+original perpetrator of the ddos
+campaign
+but how do these devices come under the
+botnet and what are the requests being
+made to the web servers
+let's learn more about these and how dos
+attack work
+a ddos attack is a two-phase process
+in the first phase a hacker creates a
+botnet of devices
+simply put a vast network of computers
+are hacked via malware ransomware or
+just simple social engineering
+these devices become a part of the
+botnet which can be triggered anytime to
+start bombarding a system or a server on
+the instruction of the hacker that
+created the botnet
+the devices in this networks are called
+bots or zombies
+in the second phase a particular target
+is selected for the attack
+when the hacker finds the right time to
+attack all the zombies in the botnet
+network send these requests to the
+target thereby taking up all the servers
+available bandwidth
+these can be simple ping requests or
+complex attacks like syn flooding and
+udp flooding
+the aim is to overwhelm them with more
+traffic than the server or the network
+can accommodate the goal is to render
+the website or service inoperable
+there is a lot of wiggle room when it
+comes to the type of ddos attack a
+hacker can go with
+depending on the target's vulnerability
+we can choose one of the three broad
+categories of ddos attacks
+volume based attacks use massive amounts
+of bogus traffic to overwhelm a resource
+it can be a website or a server
+they include icmp udap and spoofed
+packet flood attacks
+the size of volume based attack is
+measured in bits per second
+these attacks focus on clogging all the
+available bandwidth for the server
+thereby cutting the supply shot
+several requests are sent to the server
+all of which warrant a reply thereby not
+allowing the target to cater to the
+general legitimate users
+next we have the protocol level attacks
+these attacks are meant to consume
+essential resources of the target server
+they exhaust the load balancers and
+firewalls which are meant to protect the
+system against the ddos attacks
+these protocol attacks include syn
+floods and smurf ddos among others and
+the size is measured in packets per
+second
+for example in ssl handshake server
+replies to the hello message sent by the
+hacker which will be the client in this
+case but since the ip is proved and
+leads nowhere the server gets stuck in
+an endless loop of sending the
+acknowledgement without any end in sight
+finally we have the application level
+attacks
+application layer attacks are conducted
+by flooding applications with
+maliciously crafted requests
+the size of application layer attacks is
+measured in request per second
+these are relatively sophisticated
+attacks that target the application and
+operating system level vulnerabilities
+they prevent the specific applications
+from delivering necessary information to
+users and hawk the network bandwidth up
+to the point of a system crash
+examples of such an attack are http
+flooding and bgp hijacking
+a single device can request data from a
+server using http post or get without
+any issues
+however when the requisite botnet is
+instructed to bombard the server with
+thousands of requests the database
+bandwidth gets jammed and it eventually
+becomes unresponsive and unusable
+but what about the reasons for such an
+attack there are multiple lines of
+thought as to why a hacker decides to
+launch a ddos attack on unsuspecting
+targets
+let's take a look at a few of them
+the first option is to gain a
+competitive advantage
+many ddos attacks are conducted by
+hacking communities against rival groups
+some organizations hire such communities
+to stagger their rivals resources at a
+network level to gain an advantage in
+the playing field
+since being a victim of a ddos attack
+indicates a lack of security the
+reputation of such a company takes a
+significant hit allowing the rivals to
+cover up some ground
+secondly some hackers launch these ddos
+attacks to hold multinational
+corporations at ransom
+the resources are jammed and the only
+way to clear the way is if the target
+company agrees to pay a designated
+amount of money to the hackers
+even a few minutes of inactivity is
+detrimental to a company's reputation in
+the global market and it can cause a
+spiral effect both in terms of market
+value and product security index
+most of the time a compromise is reached
+and the resources are freed after a
+while
+tdos attacks have also found use in the
+political segment
+certain activists tend to use ddos
+attacks to voice their opinion
+spreading the word online is much faster
+than any local rally or forum
+primarily political these attacks also
+focus on online communities ethical
+dilemmas or even protests against
+corporations
+let's take a look at a few ways that
+companies and individuals can protect
+themselves against edos attacks
+the company can employ load balancers
+and firewalls to help protect the data
+from such attacks
+load balancers reroute the traffic from
+one server to another in a ddos attack
+this reduces the single point of failure
+and adds resiliency to the server data
+a firewall blocks unwanted traffic into
+a system and manages the number of
+requests made at a definite rate it
+checks for multiple attacks from a
+single ip and occasional slowdowns to
+detect a ddos attack in action
+early detection of a ddos attack goes a
+long way in recovering the data lost in
+such an event
+once you've detected the attack you will
+have to find a way to respond for
+example you will have to work on
+dropping the malicious jdos traffic
+before it reaches your server so that it
+doesn't throttle and exhaust your
+bandwidth
+here's where you will filter the traffic
+so that only legitimate traffic reaches
+the server by intelligent routing you
+can break the remaining traffic into
+manageable chunks that can be handled by
+your cluster resources
+the most important stage in ddos
+mitigation is where you will look for
+patterns of redos attacks and use those
+to analyze and strengthen your
+mitigation techniques for example
+blocking an ip that's repeatedly found
+to be offending is a first step
+cloud providers like amazon web services
+and microsoft azure who offer high
+levels of cyber security including
+firewalls and threat monitoring software
+can help protect your assets and network
+from ddos criminals
+the cloud also has greater bandwidth
+than most private networks so it is
+likely to fail if under the pressure of
+increased tdos attacks
+additionally reputable cloud providers
+offer network redundancy duplicating
+copies of your data systems and
+equipment so that if your service
+becomes corrupted or unavailable due to
+a ddos attack you can switch to a secure
+access on backed up versions without
+missing a beat
+one can also increase the amount of
+bandwidth available to a host server
+being targeted
+since ddos attacks fundamentally operate
+on the principle of overwhelming systems
+with heavy traffic
+simply provisioning extra bandwidth to
+handle unexpected traffic spikes can
+provide a measure of protection
+this solution can prove expensive as a
+lot of that bandwidth is going to go
+unused most of the time
+a content delivery network or a cdn
+distributes your content and boosts
+performance by minimizing the distance
+between your resources and end users it
+stores the cached version of your
+content in multiple locations and this
+eventually mitigates ddos attacks by
+avoiding a single point of failure when
+the attacker is trying to focus on a
+single target
+popular cdns include akamai cdn
+cloudflare aws cloudfront etc
+let's start with our demo regarding the
+effects of ddos attacks on a system
+for a demo we have a single device that
+will attack a target making it a dos
+attack of sorts
+once a botnet is ready multiple devices
+can do the same and eventually emulate a
+ddos attack
+to do so we will use the virtualization
+software called vmware with an instance
+of parrot security operating system
+running for a target machine we will be
+running another vmware instance of a
+standard linux distribution known as
+linux light
+in a target device we can use wireshark
+to determine when the attack begins and
+see the effects of the attack
+accordingly
+this is linux like which is a target
+machine and this is parrot security
+which is used by the hacker when trying
+to launch a ddos attack this is just one
+of the distros that can be used
+to launch the attack we must first find
+the ip address of our target
+so to find the ip address we open the
+terminal
+we use the command ifconfig
+and here we can find the ip address
+now remember we're launching this attack
+in vmware now the both the instances of
+parrot security and linux light are
+being run on my local network so the
+address that you can see here is
+192.168.72.129
+which is a private address
+this ip cannot be accessed from outside
+the network basically anyone who is not
+connected to my wifi
+when launching attacks with public
+servers or public addresses
+it will have a public ip address that
+does not belong to the 192168 subnet
+once we have the ip address
+we can use a tool called
+hping3
+hping3 is an open source packet
+generator and analyzer for the tcp ip
+protocol
+to check what are the effects of an
+attack we will be using wireshark
+wireshark is a network traffic analyzer
+we can see whatever traffic that is
+passing through the linux light distro
+is being displayed over here with the ip
+address the source ip and the
+destination ip as to where the request
+is being transferred to
+once we have the dos attack launched you
+can see the results coming over here
+from the source ip which will be parrot
+security now to launch the hping3
+command we need to give sudo access to
+the console which is the root access
+now we have the root access for the
+console
+the hping3 command will have a few
+arguments to go with it which are as you
+can see on the screen
+minus s
+and a flood
+a hyphen v
+hyphen p80 and
+the ip address of the target which is
+168 72.129
+in this command we have a few arguments
+such as the minus s which specifies syn
+packets
+like in an ssl handshake we have the syn
+request that the client sends to the
+server to initiate a connection
+the hyphen flood aims to ignore the
+replies that the server will send back
+to the client in response to the syn
+packets here the parent security os is
+the client and linux slide being the
+server
+minus v stands for verbosity as in where
+we will see some output when the
+requests are being sent
+the hyphen p80 stands for port 80 which
+we can replace the port number if we
+want to attack a different port
+and finally we have the ip address of
+our target
+as of right now if we check wireshark it
+is relatively clear and there is no
+indication of a ddos attack incoming
+now once we launch the attack over here
+we can see the requests coming in from
+this ip which is 192 168 72.128
+till now even the network is responsive
+and so is linux lite
+the requests keep on coming and we can
+see the http
+flooding has started in flood mode
+after a few seconds of this attack
+continuing the server will start
+shutting down
+now remember linux light is a distro
+that can focus on one that serves as a
+back end
+now remember linux light is a distro and
+such linux distros are served as backend
+to many servers across the world for
+example a few seconds have passed from
+the attack
+now the system has become completely
+irresponsive
+this has happened due to the huge number
+of requests that came from pirate
+security
+you can see whatever i press nothing is
+responded even the wireshark has stopped
+capturing new request because the cpu
+usage right now is completely 100
+and at this point of time anyone who is
+trying to request some information from
+this linux distro or where this linux
+distro is being used as a backend for a
+server or a database cannot access
+anything else the system has completely
+stopped responding and any request any
+legitimate request from legitimate users
+will be dropped
+once you stop the attack over here it
+takes a bit of time to settle down
+now remember it's still out of control
+but eventually the traffic dies down and
+the system regains its strength
+it is relatively easy to gauge right now
+the effect of a dos attack now remember
+this linux light is just a vm instance
+actual website servers and
+web databases they have much more
+bandwidth and are very secure and it's
+tough to break into
+that is why we cannot use a single
+machine to break into them
+that is where a ddos attack comes into
+play what we did right now is a dos
+attack as in a single system is being
+used to penetrate a
+target server using a single request now
+when a ddos attack multiple systems such
+as multiple parallel security instances
+or multiple zombies or bots in a botnet
+network can attack a target server to
+completely shut down the machine and
+drop any legitimate request thereby
+rendering the service and the target
+completely unusable and
+inoperable
+as a final note we would like to remind
+that this is for educational purposes
+only and we do not endorse any attacks
+on any one domains only test this on
+servers and networks that you have
+permission to test on
+hope you learned something interesting
+today if you have any questions
+regarding the lesson feel free to ask us
+in the comments section and we will get
+back to you as soon as possible
+thank you for watching
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

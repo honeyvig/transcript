@@ -1,0 +1,357 @@
+hey Tech enthusiasts welcome to yet
+another informative video from Simply
+learn imagine you're managing an online
+store you need to handle day-to-day
+transactions and live sales Trends over
+the past year and store massive amounts
+of raw customer feedback from social
+media how do you manage all this data
+efficiently this is where databases data
+warehouses and data Lakes come into play
+I'm pretty sure most of you are well
+aware of what a database is a database
+is a system that stores and organizes
+data in a structured way using rows and
+columns making it easy to access manage
+and update information now if data can
+be stored and managed in datab bases
+then what is a data warehouse and a data
+Lake and why do we need them so in this
+video I will give you a clear
+understanding of what a database data
+warehouse and data leak is with examples
+how are they different from each other
+and what factors to consider before
+choosing among the three so let's jump
+in craving a career upgrade subscribe
+like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back but before we begin if you're
+interested in getting certified in Cloud
+check out Simply learns Cloud architect
+certification program build exper at AWS
+Microsoft Azure and gcp with our Cloud
+architect certification course plus we
+have included an exam voucher for any
+one aszure course so you can get
+certified hasslefree gain access to
+official AWS authored self-learning
+content and master the ins and outs of
+cloud architectural principles learn how
+to design and deploy scalable services
+on various Cloud platforms allinone
+comprehensive goals let's build your
+Cloud expertise together so let's get
+started so what is a data base a
+database is essentially a structured
+collection of data or information that
+is stored electronically it serves as a
+centralized repository where data is
+organized in a systematic way often
+using tables rows and columns so the
+primary function of a database is to
+support online transaction processing or
+oltp which means it handles the realtime
+transactions and operations of
+businesses or applications so behind the
+scenes a database management system or
+dbms manages the database
+ensuring data is stored securely and
+efficiently so the dbms also allows
+users and applications to interact with
+the data through queries updates and
+modifications so in common usage the
+term database can refer both to the
+actual data repository and the software
+system or dbms that manages it providing
+a seamless interface between users and
+their stored information now there are
+two types of databases relational
+databases store data in structured
+tables with fixed rows and columns this
+structured approach makes them ideal for
+applications requiring strong data
+consistency and complex quidding
+capabilities on the other hand
+non-relational databases often refer to
+as nosql databases offer more
+flexibility by accommodating various
+data models so these include Json for
+semi-structure data Bon key value pairs
+for simple data retrieval tables with
+Dynamic columns for evolving schemas and
+graph databases using nodes and edges
+for connected data Rel relationships so
+some of the examples of databases are
+Oracle MySQL and postra SQL and also
+mongodb now what is a data warehouse so
+a data warehouse functions as a
+specialized database designed to store
+structured information gathered from
+multiple sources so encompassing both
+current and historical data so unlike
+traditional databases primarily focused
+on transaction processing data
+warehouses are tailored for analytical
+purposes so they consolidate data from
+different systems to facilitate
+comprehensive analysis uncover insights
+and generate business intelligence
+through reports and dashboards so in
+essence while a data warehouse is indeed
+a type of data base it distinguishes
+itself by its optimized architecture for
+handling complex queries and
+facilitating data analytics essential
+for strategic decision making in
+organizations so a data warehouse serves
+as a centralized repository designed to
+store large volumes of both current and
+historical data gathered from diverse
+sources this data ranges from raw
+initially ingested information to highly
+refined cleansed filtered and aggregated
+data sets the process of moving data
+into a data warehouse is managed through
+extract transform load or ETL process
+which extract data from its original
+sources transform it to fit the
+warehouse schema and load it into the
+warehouse on a regular basis such as
+early or daily schedules so this
+periodic loading means that the data
+warehouse may not always reflect the
+most current state of the original
+systems so once the data is successfully
+loaded into the warehouse business
+analysts and data scientists can utilize
+business intelligence tools to connect
+to the data warehouse so these tools
+enable them to explore the data uncover
+valuable insights and generate reports
+that Aid business stakeholders in making
+informed decisions based on
+comprehensive data
+analysis so examples of data warehouse
+is Amazon red shift Google big query and
+IBM db2 warehouse now one is a data
+Leake so a data Leake serves as a
+centralized storage repository for data
+collected from various sources
+preserving it in its original or raw
+format so unlike data warehouses that
+also handle extensive volumes of both
+current and historical data data LS
+distinguish themselves by the
+versatility in storing diverse data
+formats such as Json Bon CSV Etc so the
+core objective of a data L typically
+revolves around analyzing this data to
+extract valuable insight ites so however
+some organizations use data leaks mainly
+because they offer Affordable storage
+options storing data and anticipation of
+future analysis so data legs are
+versatile storage systems that can
+handle large amounts of structured
+semi-structured and unstructured data so
+unlike traditional databases or data
+warehouses data laks don't need data to
+be organized before storing it allowing
+quick accumulation of diverse data types
+like spreadsheets Json files PDFs and
+multimedia so different users Access
+Data differently structured data is
+often used directly by business analysts
+for insights while unstructured data
+requires expertise from developers data
+scientists or data Engineers this set of
+flexibility lets analysts and scientists
+discover unexpected patterns and
+insights using the data's variety and
+volume to solve problems that weren't
+anticipated initially so data and data
+legs can be processed with online
+analytical processing or oap systems and
+visualize using business intelligence
+tools improving data exploration and
+decision- making capabilities some of
+the examples of data Lake are AWS S3
+Azure data Lake storage Gen 2 Google
+cloud storage Etc so now let's recap the
+differences among the three of them so
+if your application needs to store data
+which is essential for most interactive
+apps having a database is crucial so
+databases are fundamental for
+applications in various Industries and
+scenarios they provide an organized way
+to store retrieve and manage data
+effectively for instance an online store
+uses a database to handle product stocks
+and customer orders similarly a
+Healthcare System relies on databases to
+manage patient information and medical
+histories even social media apps use
+databases to store user profiles and
+posts so without databases it would be
+difficult to manage and access data
+reliably impacting the functionality and
+usability of interactive applications
+now data warehouses are essential when
+organizations need to store large
+amounts of historical data and analyze
+it deeply to gain business insights
+their organized structure makes data
+analysis straightforward accessible to
+business analysts and beneficial for
+data scientists so unlike transactional
+databases used daily for operations data
+warehouses specialize in handling
+complex queries and generating detailed
+reports so this capability supports
+strategic decision making based on past
+Trends and patterns it's important to
+know that while data warehouse is
+excellent analytics they are in suitable
+for real-time transaction processing or
+handling multiple uses at once so
+organizations typically maintain
+separate databases for day-to-day
+operations and use the data warehouse
+specifically for strategic analytics and
+business intelligence now data Lakes are
+a budget friendly way to store large
+amounts of data in its original form so
+unlike regular databases or data
+warehouses that need data to be
+organized beforehand data leaks allow
+storing various data types like
+structured semi-structured and
+unstructured without immediate
+restructuring so this keeps data Raw
+letting business fully explore and
+analyze both current and past
+information uncovering insights that may
+not be obvious initially so data LS are
+great for advanced analytics such as
+machine learning and predicting Trends
+offering flexibility for experimenting
+with data however they aren't suitable
+for handling day-to-day transactions or
+meeting the fast data access needs of
+operational tasks which traditional
+databases and data warehouses specialize
+in so I hope now you all know how the
+three of them differ now having known
+that there are some factors to be
+considered before deciding on which
+platform to use so let's look into those
+considerations like the variety and
+volume of data sources the way data
+arrives and how predictable its structur
+is are crucial so data leaks are
+versatile handling unstructured data in
+various formats on the other hand data
+warehouses specialize in structured data
+from multiple sources now databases
+perform well with structured data from
+one source but may struggle with
+scalability now the choice between these
+platforms depends on these factors
+shaping the rules in data management and
+analytics now in a solid data management
+strategy choosing when and how to use
+data models is crucial in a solid data
+management strategy choosing when and
+how to use data models is crucial data
+laks offer flexibility by storing raw
+data alongside metadata allowing schemas
+to be applied later during data
+extraction for analysis on the other
+hand databases and data warehouses use
+ETL extract transform load
+processes here raw data is transformed
+into a predefined structure of an
+ingestion called schema on right this
+difference shows how data Lakes enable
+agility in exploring data and adjusting
+schemas as needed contrasting with
+databases and data warehouses that
+prioritize upfront data organization and
+consistency through fixed schemas now
+big data is highly valuable for
+businesses evident in their investments
+in data management as data grows in
+volume and speed storage expenses
+increase data leaks are cost effective
+because they store data as is reducing
+storage needs compared to data
+warehouses that require extensive
+processing before analysis databases can
+scale storage capacity to match demand
+now the choice between a data warehouse
+data lake or relational database depends
+on users's role whether they are a
+business analyst data scientist or a
+part of operations and the specific
+organizational needs so operations teams
+focused on business insights often
+prefer data warehouses for structured
+data analytics despite higher setup and
+storage costs data scientists prer data
+legs for their flexibility with
+structured and unstructured data which
+supports Advanced Ai and machine
+learning business analysts skilled in
+SQL may find relational databases
+adequate for generating specific Trend
+reports on business segments so each
+option serves different needs based on
+data complexity analytics requirements
+and cost considerations now
+organizations have different preferences
+between open source and proprietory
+software along with the communities
+backing them so data Leakes are popular
+because many use platforms like Hadoop
+and there's a growing amount of
+unstructured data from various company
+systems and real-time data streams
+another important point is how easy and
+affordable it is to update systems and
+when data sources and structures change
+unlike relational databases and data
+warehouses which can be expensive to
+update data legs make it simple to
+adjust making them flexible for changing
+data needs so there you have it hope you
+got a clear understanding of what a
+database data warehouse and a data lake
+is if you like this video do appreciate
+with a thumbs up and stay tuned for more
+such videos staying ahead in your career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simplylearn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here here

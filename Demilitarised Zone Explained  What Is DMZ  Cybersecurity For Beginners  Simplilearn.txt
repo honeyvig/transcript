@@ -1,0 +1,315 @@
+welcome to today's video where we
+explore a critical aspect of cyber
+security that acts as a shield against
+cyber threats imagine your
+organization's Network as a fortress
+with valuable data and services housed
+within but how do we protect this
+Fortress from external attacks in the
+dynamic world of cyber security one term
+stands out demilitarized zone or DMZ
+it's not just a buzzword it's a
+strategic te defense mechanism today we
+delve into how a DMG Works using a real
+world example and a compelling case
+study in the vast landscape of internet
+security breaches are unfortunately not
+uncommon let's consider example where a
+prominent company faced a significant
+security compromise a XYZ Corporation a
+leader in the industry fell victim to a
+targeted attack on their web
+infrastructure as cyber attackers
+exploited vulnerabilities in XYZ
+corporations web servers the potential
+impact on users data and the company's
+reputation was massive now let's see how
+having a DMZ in place could have changed
+the game but before we dive deeper let's
+look at some staggering statistics
+according to cyber security report 2023
+67% of organizations fac data breaches
+in the past year costing an average of
+$3.8 million per incident so let's delve
+into DMZ the silent protector of
+networks and before commencing just a
+quick info for you if you an aspiring
+cyber security professional looking for
+online training and certification from
+prestigious universities and in
+collaboration with leading experts to
+enhance your credibility then search no
+more simply learns postgraduate program
+in cyber security from MIT University in
+collaboration with EC Council should be
+a right choice this course is designed
+to accommodate a diverse range of
+Learners this course requires just a
+bachelor's degree with a 50% of average
+and no prior programming experience
+needed and one plusus year of work
+experience is preferred for more details
+you can use the link mentioned in the
+the description box and pin comment and
+if these are the types of videos you
+would like to watch then hit the
+Subscribe button like and press on the
+Bell icon to never miss on future
+content so stay tuned with us until the
+end of this video and don't forget to
+register your opinion in the comment
+section below so let's get started so
+the first thing we will see is what is
+DMZ so the DMZ is a buffer zone that
+exist between an organizations internal
+Network and the external untrusted
+network typically the internet the
+primary purpose of a DMZ is to provide
+public access to certain services like
+web email and DNS service while keeping
+the minimum or internal Network secure
+the separation is achieved through
+Network segmentation using Fireballs to
+control and monitor traffic flow I will
+show you the diagram for that but before
+that we'll see why we need DMZ so let's
+consider a scenario where we will be
+operating without a DMZ so imagine a
+company we will name it as XYZ
+Enterprise which provides online
+services and host its web servers
+directly within the internal Network
+without utilizing a DMZ so let's see so
+this will be the scenario for that so an
+attacker discovers a vulnerability in
+XYZ Enterprises web server software so
+it will get direct access to internal
+Network exploiting this vulnerability
+the attacker gains unauthorized access
+to the web server so with direct access
+to the internal Network the attacker
+navigates to the internal systems
+potentially compromising sensitive data
+and critical infrastructure so the
+consequences without DMZ you can see
+that is the unrestricted access so the
+attacker having breed the web server
+gains direct access to the internal
+Network without any barrier the second
+is data compromise sensitive customer
+data proprietary information and
+critical systems are at risk of being
+compromised and you can see like you
+would have the third consequences that
+could be the widespread impact the
+attacker can move laterally potentially
+affecting multiple systems and causing
+widespread damage so now you could see
+why we need a DMZ so the first reason we
+could give is isolation of external
+exess so with DMZ a DMZ acts as an
+isolated Zone allowing Public Services
+like web servers to be hosted separately
+from the internal Network in case of a
+breach the impact is confined to the DMZ
+only and without DMZ operating without a
+DMZ exposes the entire internal Network
+to potential threats allowing attackers
+unrestricted access and then we have
+controlled access points so with DMZ
+dual Fireballs control and monitor
+traffic ensuring that only authorized
+and necessary traffic passes between the
+external and internal networks without
+DMZ without control access points there
+is a higher risk of unauthorized access
+to critical internal resources and there
+will be reduced attack surface also
+so this is why we need DMZ now let's
+move and see the diagram for the DMZ and
+you could see that there are two
+firewalls this is the Enterprise land
+and then we have one firewall and then
+we have the DMZ Network and then the
+next firewall and then it's connected to
+the internet so let's see the
+Architectural Components for a DMZ so
+this is the external fire fold the first
+line of defense that is in the right
+side that is positioned between the
+external network internet and the DMZ so
+it filters incoming and outgoing traffic
+based on security policies allowing only
+specific authorized traffic to enter the
+or exit of the DMZ and then comes the
+DMZ Network so this host the service
+that are accessible from the external
+network this includes servers like web
+servers email servers and DNS servers
+these services are isolated from the
+internal Network but accessible from the
+internet and then we have internal
+firewall so this serves as the second
+line of defense located between the DMZ
+and the internal Network or the
+Enterprise land it provides a further
+layer of filtering ensuring that only
+traffic meeting the strictest security
+criteria can access the internal Network
+so this was about the Architectural
+Components now we will understand the
+operational flow for this so in the
+operational flow first we'll see the
+incoming traffic so incom traffic from
+the Internet is first intercepted by the
+external firewall So based on predefined
+rules the firewall determines which
+traffic can process to the DMZ so this
+typically includes request for web pages
+email communication and DNS queries
+server handling in the DMZ now we'll see
+the server handling in the DMZ so once
+in the DMZ the traffic is directed to
+the appropriate server for example web
+request go to the web server email
+traffic to the email server so Etc these
+servers are configured to handle
+requests from the internet process them
+and if necessary initiate outgoing
+responses and then we have restricted
+internal access so if a service within
+the DMZ needs to communicate with the
+internal Network for example a web
+application requiring access to a
+database the internal firewall evaluates
+this request only traffic confirming to
+the most string security policies is
+allowed through this minimizes the risk
+of external threats reaching the
+internal Network and then we have
+outgoing traffic responses from the DMG
+servers are sent back through the
+external firewall to the requesting
+users on the internet the internal
+firewall ensures that any communication
+from the DMZ to the internal network is
+legitimate and safe so these were the
+operational flow now we'll see the
+security mechanisms so the first
+mechanism is firewall policies Define
+which types of traffic are allowed or
+blocked at both the external and
+internal firewalls and then we have
+intrusion detection and prevention
+systems idps that is deployed within the
+DMZ to monitor for and act against
+malicious activity and then we have
+service isolation so services in the DMZ
+are limited to what is absolutely
+necessary for Public Access reducing the
+potential attack service and then we
+have regular monitoring and update so
+continuous monitoring and traffic and
+updates to services and security devices
+help maintain the security posture of
+the DMZ so these were the security
+mechanisms now we'll see the purpose of
+a DMZ so the first purpose is Network
+segmentation and isolation so the
+primary purpose of a DMZ is to create a
+physical or logical sub Network that
+separates an organization's internal
+network from external network such as
+the internet this separation ensures
+that any external access is limited to
+the DMZ thereby isolating the internal
+network from direct exposure to the
+outside world and then the next purpose
+is controlled access to Services by
+placing services that need to be
+accessible from the internet such as web
+servers email servers and DNS servers
+into the DMZ organizations can control
+and monitor access to these services
+without exposing their core internal
+Network so these are the purpose and now
+we'll see the benefits of a DMZ so the
+first benefit is enhance security so the
+DMZ provides an additional layer of
+security it acts as a buffer zone where
+incoming traffic from the internet can
+be analyzed authenticated and logged
+before reaching the internal Network in
+case of an attack the DMZ can limit the
+threat to the exposed Services
+protecting the rest of the network and
+then we have isolation of Internet
+facing services so services within the
+DMZ are separated from the internal
+Landor which means that if a service is
+compromised the attacker still does not
+have direct access to the internal
+Network and sensitive data this
+isolation helps in containing potential
+damage and then we have improved traffic
+management with the DMZ in place
+organization can better manage and
+control traffic flow to and from the
+internet this include applying detailed
+rules of traffic routing prioritization
+and blocking thereby improving the
+overall efficiency of network traffic
+handling and then we have Regulatory
+Compliance so many regulatory standards
+require that sensitive data be protected
+from unauthorized access a DMZ helps in
+achieving compliance by providing a
+secure way to offer necessary Public
+Services while safeguarding internal
+data and then we have the next benefit
+that is faciliated service management so
+hosting services in a DMZ simplifies
+management and monitoring of these
+Services as they are logically grouped
+in a separate Network this Arrangement
+makes it easier to apply patches perform
+updates and monitor for anomalies
+specifically for internet facing
+services and now we'll see the last
+benefit that is scalability and
+flexibility so DMZ allows organizations
+to add new services or scale existing
+ones without impacting the security or
+performance of the internal Network it
+provides a flexible framework that can
+be adjusted as the organizations needs
+changes and there you have it folks we
+hope you enjoyed this insightful
+tutorial if you like the session then
+like share and subscribe if you have any
+questions then you can drop them in the
+comment section below thanks for
+watching and stay tuned for more from
+Simply learn staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital Market marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

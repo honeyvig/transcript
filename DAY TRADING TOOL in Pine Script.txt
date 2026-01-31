@@ -1,0 +1,444 @@
+hey what's up Traders welcome back to
+the channel in today's video I'm going
+to be doing something a little different
+to the past few videos I've been doing
+and that's because it's just a simple
+tool that I've built here to assist with
+day trading so what you see on my chart
+right now this white vertical line is
+the beginning of a new day's trading
+session so this is the very first bar of
+today's trading and the middle white
+line is today's opening price the red
+line is yesterday's high and the blue
+line is yesterday's low and this Aqua
+line is you can see there's two Aqua
+lines here these two lines are the five
+period daily ATR multiplied by half so
+this is a half ATR half daily ATR
+distance from today's opening price one
+of the most important abilities of a day
+trader is their ability to predict how
+much a market can move in a given day
+because you tend to open and exit
+multiple trades in some cases but
+usually even if you open only one trade
+the whole point of data trading is to
+have that trade closed by the end of the
+day so how do you know where to close
+your trade well there's obviously
+infinite exit reasons you could have but
+one important factor to consider is how
+far has the market moved today in
+relation to its most recent volatility
+so here if price action comes up to this
+line here then I know that we have
+exceeded a half five day ATR distance
+so the ATR is adding up the past five
+days and we know that if on this five
+minute chart price session gets up here
+let me change this to a 180r
+now this is quite rare that a market
+would move a full ATI in a day hey guys
+uh while editing this I realize I should
+probably substantiate that claim so I
+just quickly made a little script here
+that counts in the red number here how
+many bars on the daily chart printed
+above the five day ATR you can see
+there's a 41 chance of that happening so
+it's not necessarily rare but it is
+uncommon that a day will print a higher
+range than its five-day ATR and we know
+that to be true because we know that
+markets tend to consolidate more than
+they tend to Trend but anyway just
+wanted to make sure that I'm not saying
+things that aren't true so let's get
+back to the video so it's going to be
+rare that the market will move this
+entire distance in a day that's why I
+prefer to set it to something like 0.5
+or 0.6 that's much more conservative but
+now we can reference today's opening
+price throughout today's trading session
+you can see that once we opened and we
+trickled up here we retested it and took
+off from there
+so there's a good chance this could act
+as support if price comes back down here
+same with yesterday's low so we have a
+Zone here to reference for potential
+buying opportunities we haven't uh sort
+of a recent impulse leg here we are on a
+downtrend so you might not want to be
+looking for long trades but again day
+trading we're not too concerned with the
+long-term higher time frame Trend we're
+just concerned with the very most recent
+price action especially on these lower
+lower time frames for swing trading time
+frames yes the longer term trend is
+important or directional bias is
+important but when you're day trading
+five minute chart there's so much noise
+in a given day that it really doesn't
+matter that much what your directional
+bias is you're just trying to capture
+little swings in the market and just to
+quickly demonstrate this concept this is
+Matt from the future recording this a
+new day is begun trading and I recorded
+this video that I'm editing yesterday if
+I throw on the bar replay tool to a bar
+just before today's trading began these
+are yesterday's levels I was recording
+around this time you can see that the
+market did in fact test this Aqua line
+this five day fifty percent five day ATR
+and it also retested yesterday's high
+and now we're consolidating up here so
+if I was day trading yesterday which I
+wasn't because I was recording videos
+for the Mastery course I can see a setup
+here that would have caught my eye it
+would have been interesting maybe a
+tradable opportunity you can see we had
+a triple top here intraday and then we
+finally broke through that if I were to
+go long on this breakout I'd probably
+have a pretty tight stop being a day
+trading setup you can see that this line
+would have been a great spot to
+potentially take profit when we started
+to struggle now in this case this is a
+60 ATR this is just an arbitrary number
+this is just to be conservative because
+we know that 40 of the time the market
+will not move a full ATR during the day
+so having a lower ATR multiplier makes
+sense to be more conservative let's even
+if we say it's 70 when the price action
+tested this range this area up here and
+started to struggle this would be a
+great spot to take off some risk take
+some profit move your stop to break even
+maybe under these those and then see if
+the market can continue higher it in
+fact did and then we've got this nice
+big double top here had I been involved
+in a trade here this sort of Candlestick
+pattern a swing High bearish engulfing
+candle is a pattern I like to trade
+because it's a simple rules-based
+pattern if we throw on an RSI here I can
+guarantee this Market would have been
+overbought at this point yeah there we
+go we have a swing High bearish
+engulfing candle at yesterday's high
+with the RSI overbought That's a classic
+exit reason that I use very frequently
+especially with this double top and RSI
+Divergence great place to take off a day
+trade now a swing trade you might want
+to hold that position because it looks
+like we might break out today to new
+Highs but we're talking about day
+trading here intraday trading not
+holding trades for multiple days so so
+anyway that's what this tool does let's
+break down the source code so we're just
+dealing with a regular indicator here
+overlay is set to true so we're drawing
+over press action we're getting some
+user input we're getting our higher time
+frame reference reference time frame our
+ATR length and our ATM multiplier for
+drawing these Blue Aqua lines next thing
+we're doing is creating a non-repainting
+security function this isn't necessary
+we could just use this line of code on
+these three lines here I just happen to
+base this script off a higher time frame
+indicator it was my high time frame high
+low that's a public open source script I
+believe you want to check that out it's
+very similar to The Script except that
+it draws the daily high and low on all
+price action this particular script only
+draws the most recent days high and load
+that's just to reduce clutter if we're
+drawing these lines over all of the bars
+in our chart we get pretty overwhelmed
+with too many lines and so the way I've
+written this script is it only draws the
+most recent days levels now with this
+non-repainting security function I
+actually read through the documentation
+recently and found this version
+of the non-repainting code it's pretty
+similar to mine but let's stick with
+best practices and we'll use the code
+from the training view documentation
+here paste those custom function
+parameters into the security function
+parameters here so I'll leave a link to
+this documentation under the video if
+you want to read about this I don't want
+to go into this in today's video because
+it's quite a complicated subject that
+I've covered in the past so go and check
+the videos on my YouTube channel if you
+want to understand this subject more
+intimately but for today's lesson this
+will do all you need to know is that
+this code here will get the daily charts
+high and low without repainting so let's
+save the code and make sure that that is
+in fact what's happening here yep
+perfect
+so the non-repainting security function
+means that it's not going to get today's
+high and low it's going to get
+yesterday's high and low over real-time
+price action repainting is a misleading
+term for some of the behaviors that our
+scripts can do when referencing higher
+time frames but for today's lesson all
+we want to do is draw yesterday's high
+and low over today's price action this
+function achieves that so the next thing
+we need to do is get our higher time
+frame price data data if you're
+Australian
+we have three variables here higher time
+frame High higher time frame low higher
+time frame ATR so to get the higher time
+frame ATR we pass in a price Source just
+like we would to get the high and low
+but this price Source or this expression
+is the inbuilt ATR function with our ATR
+length input so 5 period ATR by default
+from this resolution from this time
+frame the daily chart from the current
+symbol that we have loaded on our chart
+and then we multiply that ATR value that
+daily ATR value by our ATM our
+multiplier input now that's all the
+information we need to plot this
+information onto our chart so let's move
+on now this is completely optional I
+couldn't as far as I know with
+pinescript there's no way to just draw a
+vertical line like this if you hold alt
+and press V on a Windows computer
+that will just drop a vertical line on
+your chart and no matter how far you
+scroll out
+that vertical Lane will draw all the way
+to the top and bottom of your chart
+however when it comes to drawing lines
+on our charts which is how I achieve
+this vertical line here we can't tell
+Pine script to extend that line
+indefinitely up and down
+for whatever reason you can only extend
+left and right so I came up with a
+cheeky solution here because I don't
+know what price scale is going to be on
+our chart what I've done here is just
+write a little block of code that stores
+the highest price that this this chart
+ever reached and then we draw our
+vertical line from that highest price
+down to zero
+so it extends indefinitely to the
+downside well to zero but to the upside
+it only extends to the highest price
+that our chart ever achieved now I could
+probably get rid of this to be honest
+and instead of
+using the highest high I could just put
+in something like nine nine nine nine
+nine nine nine nine
+save our code and see that compiles that
+might be too many nines there we go
+perfect so I might just leave that as it
+is for now because I doubt anyone's
+going to be trading a market that has a
+value higher than this but if you do
+um just keep this block of code in your
+script and it will work just fine but
+for now to keep things simple let me get
+rid of of that block I can also get rid
+of this debug plot code
+save my script and perfect now that we
+have our higher time frame information I
+now need to change this comment to new
+day and line variables what we need to
+do now is store the line object for all
+of the lines you see on my chart here
+now I can actually get rid of this new
+day of Boolean that doesn't actually get
+used in the script anywhere I'm just
+noticing so there's a bit of tidying up
+there
+so the first thing we need to do
+is store all of our line variables
+and changes to open price and line
+variables so open price is going to
+store the opening price of the first bar
+in today's trading session
+then we have one two three four five six
+lines here so that's one two three four
+five six includes this
+um Center Line This vertical line that's
+new day line and then we have open price
+line which is this middle white line we
+have upper line which is this line here
+we have lower line which is this lower
+ATR line here then we have yesterday's
+high
+and yes it is low
+to make this a little more intuitive
+I'll add ATR in here
+upper ATR ATR ATR ATR
+save that and I'll also add line on the
+end
+of these two so before we draw these
+lines on our intraday price action we
+need to get the ATR ranges so this is
+our ATR high and our ATR low
+so to get that we simply get our open
+price this white line and we add our
+higher time frame ATR to that line and
+subtract it for our ATR low line and
+that gives us our day's potential
+volatility range at the moment I've set
+this to 60 percent
+so these lines are representing 60 of
+one five day ATR so we've had some
+pretty strong trending price action in
+the past five days so our ATR is quite
+wide there's no guarantee that price
+action will move this far today but it's
+a reasonable estimate that at the end of
+the day
+there is the potential that price action
+could fall this far or rise as far and
+obviously could even exceed that
+significantly but at least we have some
+price targets some price targets to
+reference like for example if we get
+down to these lows here that would be a
+60
+ETR move that could be a great place to
+take profit on any short positions that
+we may be lucky enough to capture
+Falling Towards this Lane for example if
+price action does break this low retest
+it we get short we might want to try and
+hold this trade if we can maybe with a
+trailing stop until we get down to this
+line here and then we could potentially
+take off all of our position or part of
+our position and manage that trade much
+more conservatively when we get down to
+the 60 ATR move
+especially in conjunction with previous
+important structure levels but anyway
+this is not a trading lesson this is
+just a trading tool and an example
+script so let's wrap up today's lesson
+with all of the magic that draws this
+stuff so first we need to detect a new
+day that's done using the change
+function in the TA Library so ta.change
+will detect a change in the time of the
+daily chart and what I should probably
+do here is change this to our res input
+that way if the user wants to plot
+weekly time frames weekly levels or even
+four hour levels let's have a look at
+what it looks like with a four hour
+level let's change this to four hours
+there we go
+so now we're plotting the most recent
+four hour bars levels and the four hour
+five period ATR levels so you can see
+this is quite an interesting little tool
+it's a simple tool but with a bit of
+creativity it could make for a pretty
+useful intraday trading tool so once we
+detect the change in that higher time
+frame bar
+we then save that Bar's opening price so
+in the case of these current settings a
+new day began on this bar so we saved
+that opening price remember the opening
+price is used to calculate our ATR
+levels up here and I'm just realizing we
+don't actually need these ATR high and
+low variables here because they're
+actually overridden here anyway so get
+rid of them let's keep the script as
+lean as possible and yeah so we're
+saving the open price we're deleting all
+of the previous lines so on this day
+wherever this day started this one
+started at 7am so this day would have
+started at 7am there all of the lines
+that were drawing on this previous day
+get deleted when a new day is detected
+so we delete all of the lines on the
+previous bar that's what this little
+historical operator reference is doing
+it's deleting all of the lines on the
+previous bar and then recreating them to
+create a new line we just use the
+line.new function we pass in the bar
+index that we want to draw the line from
+so in this case that's going to be the
+bar index of the first bar of the
+trading session which is this bar here
+where this white vertical line is and
+then we need to pass in a price so let's
+cover our price lines first for our open
+Price Line we just pass in the opening
+price and then we need to tell it so now
+we're telling it to draw a line starting
+here
+and then we tell it to draw it from
+this bar index to one bar index ahead so
+we're drawing the line from one bar
+across to the next bar
+and then I've passed in the extend dot
+right parameter to all of these lines
+and so the line is being extended from
+here all the way to the right
+indefinitely same for all of our lanes
+so we have our upper ATL line which is
+doing exactly the same thing but we're
+adding a higher time frame ATR to that
+and subtracting it for our lower ATL
+line we are drawing yesterday's high and
+yesterday's low extending all of these
+to the right and that's how we get these
+lines on our chart and then this new day
+line is doing exactly the same thing but
+we're not extending it because we are
+drawing it from 9999999 all the way down
+to zero and that gives us this
+solid white vertical line and that's it
+for the script pretty simple I thought
+it was a pretty interesting tool that
+some of you might find helpful in your
+own trading you can obviously build a
+whole strategy around this if you wanted
+to by building on this script but for
+now that will do it for today's lesson I
+hope you found it interesting if you
+want to learn more about panscript check
+out panshipmastery.com and I'll speak
+with you in the next lesson take care
+and best of luck with your Trading

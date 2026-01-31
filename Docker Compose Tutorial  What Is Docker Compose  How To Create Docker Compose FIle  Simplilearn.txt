@@ -1,0 +1,431 @@
+hello everyone and welcome to this
+Hands-On tutorial on Docker compost in
+this video we will be working with two
+primary components a front end built
+with HTML CSS and JavaScript and a back
+end powered by nodejs doger compos in
+the scenario will allow us to seamlessly
+manage these components and run them in
+isolated containers while simplifying
+the orchestration between the services
+in this video we will explore how to set
+up a basic front end and backend
+architecture use Docker compos to run
+both services and separate containers
+Define custom networks so that front-end
+can communicate with the back it now
+before we move on just a quick info guys
+simply learn has got devops Engineers
+master program you can become devops
+expert with Hands-On projects in
+collaboration with IBM in this course
+you're going to learn about Docker
+kubernetes anible terraform Prometheus
+genkins Microsoft Azure DeVos
+methodologies and many more so guys
+hurry up now and join the course the
+course link is mentioned in the
+description box so guys let's get
+started so guys let's start with Docker
+compose so go on the Google and type
+Docker
+compose so you can see the first link
+all over here this is the guide to the
+official documentation just click on
+this and here we will be navigated to
+the docker compose official
+documentation now what is Docker compose
+guys basically Docker compose is a tool
+for defining and running multicontainer
+applications so multicontainer in this
+sense can be your front end or a backend
+service okay with Docker compose you can
+use a yml file typically which is nam as
+Docker compost. yml to Define multiple
+Services their dependencies networks and
+volumes in a single configuration file
+this allows you to spin up multiple
+interconnected Docker containers with
+one simple command making it ideal for
+Environ ments where you have complex
+setups such as microservices or
+multi-tier applications like web server
+database cache so if I talk about
+multiple container in this scenario it
+can be such as we have these two files
+which is a backend file and the front
+end file okay so this is a sample setup
+which I have created for you we are
+going to learn about it now as you can
+see all over here so in our backend file
+we'll be having a node project okay so
+here are our node modules we will have a
+Docker file and a main file called
+server.js then we will have certain
+dependencies installed all over here
+okay similarly for front end we are
+having a simple index.html file script
+JS then CSS okay then the corresponding
+Docker file so as I have told you
+earlier that Docker compose helps us to
+spin multiple interconnected Docker
+containers so here you have one
+container and here you have one
+container now the compose is going to
+run these two containers so in this
+scenario what I was telling but our
+question arises all over here okay so
+why do we use
+basically Docker
+compose so one of the most important
+reasons what I found out is that first
+you have an easier multicontainer
+management with compose you don't need
+to manually start and link multiple
+Docker containers compose
+handles it for you then you have the
+declarative configuration the entire
+stack or Services networks volumes which
+are very very mean concepts of Docker
+compost is declared in single Docker
+compost. yml file then you get the
+environment consistency you can ensure
+that development testing and production
+environments are consistent by using the
+same configuration and finally you get
+simplified commands which means that you
+can start stop and manage complex
+application with just few commands now
+there are certain key Concepts so if I
+talk about certain key Concepts all over
+here so our first concept is
+Services okay so basically services are
+different containers that make up your
+application for example in the scenario
+we have a backend service and a
+front-end service it can also be a web
+service database service and cach
+service now second most important
+concept that we have all over here is
+Network so if I talk about networks guys
+so networks in Docker compose allows you
+to Define how services are networked
+together by default Docker compose will
+set up a bridge Network so that your
+services can communicate with each other
+using their service names instead of IP
+addresses and the third thing that we
+have all over here is
+volumes so if I talk about volume you
+can Define persistent storage volumes in
+your Docker compost. FML file this is
+useful for databases or other services
+that need to purs data across container
+when your Docker container starts so
+these are the certain important Concepts
+Services networks and volume which we'll
+be seeing in our doger compost file now
+let us set up our workflow before that I
+want you to have installed Docker
+compose on your system so if you have
+not installed Docker compose go all over
+here install Okay suppose you have a
+Linux system just click on it if you
+have a Mac then you can click on it I'm
+using Windows I'll click on this so now
+you can install Docker desktop so I'm
+using x86 64 processor so I'll click all
+over here and for the same thing it
+requires WSL okay so you can download
+this also if you don't have in your
+system so guys you can install Docker
+desktop on Windows very easily the first
+process you can do all over here while
+installing you can just click all over
+here and it is going to install your
+Docker desktop so I will not do it since
+I already have it or otherwise you can
+do it from the command line so you can
+see all over here that on your terminal
+you can write Docker desktop installer
+exe install then start process and then
+you can copy this code very easy process
+guys once you have installed your Docker
+desktop then you can start creating
+Docker file and Docker compose file but
+always make sure when you are running a
+script your Docker engine should be
+running now let us discuss about
+basic Docker
+workflow okay so you need to Define
+first of all your environment with
+Docker compose yml file so the first
+thing
+is Define your apps
+environment the docker
+compose yml file okay so this file will
+describe the services that need to be
+started again example your front end
+service backend service and a database a
+Docker images to use or any specific
+configuration for the services like
+ports environment variables or volume so
+these things you have to Define in your
+Docker compose file what will be your
+environment of your app
+now the Second Step would be run Docker
+compose up to start the services so
+basically this command reads the docker
+compose yml file and Spins up all the
+services as containers sets up the
+network and ensures that they can
+communicate with each other and third
+would be
+run Docker compose down to stop and
+clean up your process so this is a very
+basic workflow for the docker compose I
+hope so you would have got some brief
+idea regarding this now so let us
+understand the architecture of our
+project so it's a very basic project
+guys in this we have a backend folder in
+which I have a server.js okay so if I
+open this file so I'm using Express all
+over here to create something suppose
+what I'm going to do all over here we
+will be creating a dashboard or not
+simple dashboard simple label where
+we'll be writing our name okay so here
+you can see all over here the port we
+are using is 4,000 rest don't focus on
+these codes what I have written you can
+just ignore this because in this video
+we'll be focusing mainly on Docker files
+now you can see also one thing that we
+have the package. gist so type CD
+backend and after that just type npmi so
+it is going to install all these
+dependencies I will share this code all
+over here with you the GitHub link you
+can copy the repo now we have done this
+so after this we will be writing our
+Docker compos file so all over here you
+can see the first thing that I'm typing
+all over here is use node okay version
+22.30 because if I go to the terminal
+okay first I will cross check what kind
+of node version I'm using so just type
+all over here
+node and you can see all over here it
+shows
+22.30 so this is our node version so
+what is the significance of this line
+basically this line sets up the base
+image for the docker container so node
+22.30 refers to the official nodejs
+image of version
+22.30 from the docker Hub where it
+downloads all these uh node packages and
+also node package manager or npm will be
+included in this now the second thing
+workd sler so basically this line is
+setting up the working directory inside
+our container so/ app is our working
+directory Docker container is a place
+where your application files will be
+copied so here in this container all
+your application files will be copied in
+this directory called SL app and then
+there is a copy so copy package.json and
+run npm install so you can see all over
+here we have a package.json file so all
+of the dependencies which are present
+all over here okay will be downloaded by
+Docker now copy the backend code so I
+have added two dots copy dot dot what is
+the significance of these two things
+this command copies all the files from
+the host machine to the current
+directory which is SL app okay now the
+first dot refers to the current
+directory okay which is on your host
+machine and the second directory refers
+to the destination directory inside the
+container which is/ app and finally we
+are exporting our Port which is expose
+3000 okay now we are running it on CMD
+node server.js okay so this is our
+official Port that we are using I hope
+so you have got a bit idea regarding the
+backend file now let us go to the front
+end file so we have three files all over
+here so this is our
+index.html okay this is our script.js
+where I've written certain script front
+end script basically and here is our CSS
+file so don't worry about all these
+files you can copy from the link which
+I'll be sharing in the description box
+now the important file that we have to
+focus on is this so if I go all over
+here so the same thing from node 22.30
+so I'm installing node version of this
+okay from dockerhub then I'm creating a
+working directory all over here so this
+will be our working directory where all
+the code will be copied now similarly
+the two dots are here so I have
+explained you earlier this is for the
+host machine the address from all the
+codes will be copied to the destination
+which is /ab directory now here what I'm
+doing guys I am running run npm install
+G HTTP server so what is HTTP server so
+basically this will install the HTTP
+server package globally so here that's
+why G flag is given okay inside the
+Docker container so HTTP server is a
+simple lightweight HTTP server for
+serving static files and here G is
+installing it globally so that it can be
+accessible from anywhere within the
+container this is necessary because we
+are using the HTTP server to serve the
+HTML CSS and JavaScript file then I'm
+exposing this to P
+3001 and finally I'm serving our CMD
+HTTP server then there is a comma okay
+then P then 3001 so this basically
+specifies the default command to run
+when the container start so this will
+run the HTTP server okay on the port
+3001 and the P option will allow you to
+specify which Port the server will use
+so this was all about the docker file
+for the backend now we have successfully
+created a Docker file for our back end
+and for our front end now let us proceed
+to the docker compost. yml file you can
+see all over here we have we have the
+version which is three okay version
+three is specifying the version of
+Docker compos file format being used in
+this case the version is three which is
+widely supported and includes the
+feature like networking and volume a
+doer composed version offers different
+features and syntax version 3 is
+compatible with Docker swam mode and
+also provides a better support for
+services and scaling next you see the
+services block which defines the
+individual container or services that
+Docker compos will create and run in
+this there are two Services the front
+end and the back end and these services
+are containers that will run in isolated
+environments but can communicate through
+Docker Network so you can see the build
+is front end ports we are using 3001 it
+is depending on the back end and network
+is app Network okay so they will be
+communicating on app Network similarly
+for backend service the build is backend
+Port is 4,000 okay network is app
+Network okay driver is Bridge pretty
+much fine now finally we have the
+network ction so in the networks it
+defines a custom Docker Network that
+will allow services to communicate with
+each other Docker automatically creates
+default Network for services if none is
+specified but here we have the custom
+Network which is app Network now what is
+driver bridge this is a network type
+which is a kind of a bridge Network this
+is a default Network driver for Docker
+and provides communication between
+containers within the same network now
+how these services will be interacting
+so the fronted service which will serve
+the static file the HTML CSS and
+JavaScript on the port
+3001 okay now on the backend service it
+is most likely to run on Port 4,000 okay
+so that is one thing that we have built
+all over here and this scenario suppose
+we are building a typical application so
+the front end will be hosted on 3001 and
+the back end will be hosted on 4,000 now
+let us build our Docker compose file now
+in order to run this application what
+you have to do guys go to your root
+folder which is demo okay and type
+Docker compose buil now after this what
+you have to do guys just right click all
+over here and you can see it will start
+building our application so it has
+started building our backend file okay
+so you can see it has started running
+now it is going to create a container
+demo back end one and demo a front end
+one so you can see our container is
+created now it is starting the HTTP
+server okay now the version we are using
+okay the version we are using is
+14.11 the course is disabled all over
+here this is security protocol there are
+lot of other options that is available
+so you can see the backend server is
+running on Port 4,000 and still is on
+the process of creating now if you
+navigate to given Port which is
+127.0.0.1
+very basic application so just type
+click your name something like
+say sham and right click all over here
+so it's a basic application and all the
+data will be stored on the server okay
+so the main agenda of this project was
+how we created two Services which was
+front end service and the backend
+service and finally we merged the both
+services with the help of Docker compost
+file so two separate Docker containers
+and with the help of Docker comp file we
+are able to run this so this was a very
+basic introduction to Docker compose I
+hope so you would have got a brief idea
+regarding what Docker compos does and
+why it is so much popular tool in
+today's software development methodology
+now every job in today's scenario
+requires you to understand the docker
+kubernetes and all these important
+devops tool so guys you can watch all
+these tutorial on simply learns YouTube
+channel so guys that was all for today's
+video I hope so you would have enjoyed
+our today's video on doer compose
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

@@ -1,0 +1,303 @@
+hello everyone I am M and Welcome to our
+video on the decision tree ID3 algorithm
+if you are new to machine learning or
+just curious about how decision tree
+work you are at the right place the ID3
+algorithm which stand for itative
+dichotomize 3 is a method used to create
+decision trees which are tools that help
+us make decision based on data so in
+this video we will explain how ID3
+algorithm Works in simple terms we will
+start by talking about what decision
+trees are and why they are useful then
+we will dive into how the ID3 algorithm
+builds these Tree by picking the best
+question to ask at each step so this is
+done using concept like entropy and
+information G which we will break down
+so they are easy to understand we will
+also show you a real life example of how
+the ID3 algorithms work with a data set
+so this will help you see how it all
+comes together in practice so by end of
+this video you will have clear
+understanding of how the ID3 algorithm
+works and how you can use it to make
+smarter decision with your data so
+whether you are just starting out or
+looking to learn more about machine
+learning so this video will give you the
+basics you need to get started with
+decision R so let's jump in and explore
+world of decision trees with the ID3
+algorithm craving a career upgrade
+subscribe like and comment below
+dive into the link in the description to
+FastTrack your Ambitions whether you're
+making a switch or aiming higher simply
+learn has your
+back but before we start if you want to
+learn a ml from the industry expert try
+simply lar postgraduate program in Ai
+and machine learning from P University
+in collaboration with IB this core
+teaches in demand skills such as machine
+learning deep learning NLP come division
+reinforcement learning generative AI
+prompt engine chity and many more so
+don't forget to check out the course
+link from the description box below and
+the pin comment so without any further
+Ado let's get started so what is a
+decision tree a decision tree is
+employed in supervised learning is a
+tree like structure designed to forus to
+outcome of a variable Target in
+supervised learning which relies on
+label data on containing known output
+variables so these prediction are made
+through regression and classification
+algorithm so these algorithm guide
+training a model the predetermined
+output variable and by grasping
+uncomplicated decision rules based on
+diverse data features the model learns
+so python decision trees Pro versatile
+handling both classification and
+regression challenges often they finding
+application in assessing probability so
+now question comes how does Aion tree
+algorithms work so Suppose there are
+different animals and you want to
+identify each animal and classify them
+based on their features so we can easily
+accomplish this by using a decision tree
+so this is a sample data with High
+entropy so we have to determine which
+feature split the data so that
+information gain is the highest so we
+can do by the splitting the data using
+each feature and checking the
+Information Gain that we obtain from
+them so the feature that turns the
+highest gain will be most used for the
+first C so for our demo we will take
+following feature into consideration
+like color height color and diameter
+then we will use Information Gain method
+to determine which variable yields the
+maximum gain so which can also be used
+for the root node suppose color is
+equals to Yellow then it result in the
+maximum Information Gain so that what we
+will use for the first split at the root
+Noe so here as you can see that color is
+yellow for our first split of the
+decision Tre okay then true and false
+right so the entropy after splitting
+should decrease considerably however we
+still need to split the child notes at
+the both of the branches to and entropy
+value to the zero so we will split the
+both notes using height and variable
+less than 10 and height is greater than
+10 as our condition so results are there
+so this Des tree can now predict all the
+animal classes in the data so now let's
+move forward to the ID3 with the example
+so what is ID3 so ID3 short for
+iterative dichotomize 3 is a decision 3
+algorithm invented by Roso Quin it works
+by repeatedly dividing features into
+groups to build a decision so here we
+will be using sample data set of
+covid-19 infection so as you can see the
+columns are straightforward y stand for
+yes and no n stand for no in the
+infected column y means infected and the
+N means not infected columns like
+breathing issues curve and fever are
+called features why infected is the
+target column use for the Deion outcome
+now what are the steps for the ID3
+algorithm the first one is calculate the
+information game of each feature the
+second one is considering that all rows
+don't belong to the same class stt the
+data set s into subset using the feature
+for which Information Gain Is me the
+third one is make a decision Tre node
+using the feature with the maximum
+information given the step four is if
+all rows belong to the same class make
+the current note as a leap note which
+the class adds its label and the fifth
+step is repeat for the remaining
+features until we run out of all the
+features or the decision tree has all
+the lead so to calculate the best
+features of ID3 algorithm we have two
+main character or you can say factor to
+consider the first one is entropy so
+entropy measure disorder in a data set
+it identifies or quantifies the disorder
+within the target Fe so here is the
+entropy formula so in this case of the
+binary classification where the target
+column has only two types of classes so
+here entropy is zero if all the values
+in the Target columns are homogeneous
+means similar and will be one if the
+target column has equal number of values
+for both the classes so here we denote
+as entropy is calculated for our data
+set where n is the total number of class
+in the Target column in our case nals to
+2 that is yes or no so P here Pi is the
+probability of class I or the ratio of
+number of rows with class I in the
+Target column it is to the total number
+of rows in the data set and the second
+thing is Information Gain Information
+Gain measures how much a feature reduces
+entropy indicating its Effectiveness in
+classifying the target classes so the
+feature with the highest Information
+Gain is chosen as the best so here is
+the formula so here SV is the set of
+rows in s for which the feature column A
+has been value V okay then SV is the
+number of rows in SV and likewise this s
+is the number of rows in s okay now
+moving forward so as stated in the
+previous Slide the first step is to find
+the best feature that is one that has
+the maximum Information Gain so we here
+now we will calculate the information
+gain for each of the feature now but for
+that first we need to calculate the
+entropy of s so how we will calculate
+like this so from the total of 14 rows
+in our data set s there are eight rows
+with the target value of yes this eight
+rows of Target value of s means yes and
+six rows with the target value of no and
+the six rows minus six rows the target
+value of low no here 14 is the total
+number of rows in our data set and the
+entropy of s is calculated like this
+okay so entropy is coming our 0.99 here
+you can see we have 14 rows okay so now
+we have to calculate the information
+game for the each feature that is first
+we will calculate for the fever so in
+this fever feature there are eight rows
+having value yes see eight rows having
+value yes and six rows having value no
+so as you can see in these pictures the
+eight rows with the yes for fever there
+are six rows having the target value yes
+and the two rows having Target value no
+the two rows Target value no for the
+same in this picture you can see in the
+six rows with no there are two rows
+having Target value yes this target
+value yes and yes and the four rows
+having Target value no infected means no
+no no okay because why we are checking
+this because we are finding the infected
+the people who are infected from
+covid-19 or all so now let's calculate
+the information game for the fever so
+how we will calculate like this here s
+is 14 total number of rows then V for V
+equals to yes then SV equals to 8 how
+many rows are yes 8 so this is how we
+will calculate the entropy first 0.81
+for the no 0.91 now after that we will
+apply the formula of so Information Gain
+formula is this so here you can see our
+Information Gain Is 0.13 So now next we
+will calculate Information Gain for the
+features cuff and the breathing issues
+so you can use even the free online
+resources as well for the calculating
+information so we calculated with the
+same method so here you can see for
+Information Gain for the curve is 0.04
+and for the breathing issues is
+0.40 so since the feature brething
+issues have the highest Information Gain
+then it is used to create the root node
+so after this initial step our tree
+looks like this fine so now let's
+calculate same way Information Gain for
+the features fever and curve using the
+subset we sby set breathing issues is
+yes like this so for fever it's 020 and
+for the curve is 09 so Information Gain
+of fever is greater than the cuff so
+that we have selected fever as the left
+branch of the breathing issues so now
+our tree now look like this okay left is
+fever because here fever Information
+Gain value is more than C so next we
+will identify the feature with the
+highest Information Gain for the right
+branch of the breathing issues however
+with only one unused feature remaining
+it is automatically becomes the right
+branch of the rot node so now our tree
+look like this left fever right curve
+the bigger value you have to put at the
+right sorry left and the smallest value
+you have to put at the right so with no
+unused feature left we proceed to create
+the leaf note for leaf note of fever
+where both bre breathing issues and the
+fever are yes so all the target values
+are yes so we labeled as it as infected
+similarly the right node where breathing
+issues is yes and fever is no follows
+the same process so here not all but
+most of the values are no hence no or
+not infected becomes our right Leaf so
+now our tree looks like this see yes yes
+yes infected yes and no not infected so
+we repeat the same process for the node
+curve however here both left and the
+right leaves turn out to the same that
+is no or not okay breathing issues if
+cuff is there is no brething issues and
+cuff is there means not infected no
+means not so this is how you calculate
+decision tree using additive
+dichotomizers 3 algorithm so with this
+we have come to end of this video if you
+have any question or doubt please feel
+free to ask in the comment section below
+our team of experts will help you as
+soon as possible thank you and keep
+learning with staying ahead in your
+career requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we we've got you covered
+explore our impressive catalog of
+certification programs in Cutting Edge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

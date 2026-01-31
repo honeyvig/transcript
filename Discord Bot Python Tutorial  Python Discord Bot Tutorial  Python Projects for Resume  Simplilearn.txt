@@ -1,0 +1,678 @@
+foreign
+YouTube channel and in this tutorial we
+will learn to create a Discord mode and
+add it to our Discord Channel and here
+we will learn how to get the following
+responses from the board the responses
+would be text image video document or
+audio
+and before starting let us have a simple
+question to brush upon our knowledge and
+it's related to this code and your
+question is what is the minimum age to
+use Discord and your options are
+the first option is 18
+the second option is 13 and the third
+option is 15 and the fourth option you
+get is none of these so please answer in
+the comment section below pause the
+video give it a thought and answer in
+the comment section and I have an
+insightful for you guys if you are
+focused on building strong foundational
+skills for career growth in that case
+you can check out a free course to Learn
+Python Basics with a completion
+certificate from scale up by simply
+learn you can check this course with the
+link in the description box below
+and now first we'll see the demo of a
+Discord board and then we'll start to
+create a project and for that we will
+move to our Visual Studio code so this
+is our video Studio code and this is the
+code for uh the simple Discord port
+we will also create the music Discord
+bot but first we'll create the simple
+Discord board to just get the responses
+from the board as text image files or
+video
+so we'll save this
+and run this
+so it shows that we have logged in as
+simply learn both
+so we will move to Discord and I have
+created the simply learn server and in
+that I have the simply learn board
+we will go step by step and I will show
+you how to create a server
+and you can see the simply on board it's
+active it's showing the green sign or
+the Green Dot
+and here
+we'll see what were the commands
+if we just write High
+so we are in the general Channel and if
+we write High
+we get the response from the simple land
+board as hello
+and
+if we write image we'll get the image
+that is rewind.png and this image is
+stored in the same folder as of the
+project and if we write video we will
+get the python dot MP4 this file is also
+stored in the same folder and the audio
+will get this one and this file is also
+stored in the same folder and if we
+write file we'll get the same file that
+is python.pdf and that is stored
+in the same folder
+so I'll show you some commands
+uh
+I will write image
+and the board responds me with the
+rewind.png that is stored in the folder
+I will show you guys
+so
+this is the divine.png what I got when I
+wrote image
+so moving on now we'll start with a
+board and I will show you the demo of
+music port before creating that
+now
+the first thing we will do is create a
+new folder for our project and we'll
+create a folder
+and name it as
+this code board
+using
+python
+and in this folder we'll open the
+command prompt
+and we'll open our
+ideally that is Visual Studio code you
+can use any ideally that you have hands
+on we will be using the visual studio
+code
+and here
+we will create a file and name it as
+main.py
+and before starting the first thing we
+should do is
+install and import the libraries and
+before starting let us have a simple
+discussion about what is a Discord so
+this code is a voice and text
+communication platform for gamers
+players streamers and developers use
+this code to discuss games answer
+questions chat while they play and much
+more it even has a game store complete
+with critical reviews and a subscription
+service it is nearly a One-Stop shop for
+game communities I'll show you I have
+downloaded the desktop version of
+Discord
+so this is a Discord and while there are
+many things you can build using Discord
+apis this tutorial will focus on a
+particular learning outcome how to make
+a Discord bot in Python and if I tell
+you what is a board so automated
+programs that look and act like users
+and automatically respond to events and
+commands on Discord are called boat
+users
+so this was the brief about the Discord
+and what is the board now we'll start
+with how to create a Discord mode
+so first you should have an account on
+Discord
+for that you could simply go to the
+Discord website and register for that
+and you can if you're on desktop you can
+download the desktop app or you can
+access the Discord within the browser
+now you should have an account on this
+code
+and you should create a server in that
+to create a server you can see this plus
+sign just click on that that is add a
+server and now you can see
+for whom you want to create the server
+I want to create a server for my friends
+and that would be for me and my friends
+and
+he's asking for the server's name
+so we will write
+project server
+and we'll click on the create button
+so we have created a server and it has
+channels that is General Games music and
+voice channels that is launch and stream
+room
+now we have created a server now we will
+move to this code
+development website for that
+we will write this code developer portal
+and this is the website that is HTTP
+colon slash disco.com developers talks
+intro
+so
+in this website
+we will create a new application so
+first we have to go to the applications
+and I've created three applications and
+here we will create a new application
+and name it as
+project
+we will take all the permissions and
+click on the create
+and now you could see the general
+information about the Discord board
+so if you want to upload any icon you
+can do that for your board and we have
+named it as project
+and we can tag it as boat
+and
+chatbot
+and moving on
+now
+we'll go to the board
+okay so first
+we will save the changes
+and now we'll go to the board and click
+on ADD board and now we have to confirm
+by clicking yes do it
+now after the boat is added
+now we'll copy the board token and
+before that
+we'll just give the board permissions
+and before giving the bot permissions
+we'll go to the authorization tool
+and here
+will select in-app authorization
+and we'll select the scope as bot and
+give the permissions add an
+administrator permissions
+and here we will save the change
+and in the URL generator
+we will
+select the scope as board and the board
+permissions will set it as administrator
+and we'll copy this URL
+and paste it here
+just to store that and we will open that
+in the browser
+we have to open this
+in the browser
+and here we'll see
+the server we have created the project
+server we'll select that and we'll click
+on continue and it has the administrator
+will authorize it and it's asking if we
+are a human or not
+so we'll just
+so let's capture
+and you can see that our both is
+authorized
+so we'll see in the Discord
+that project just showed up that is the
+project board so it has showed up but
+it's offline
+so now we have to make it online we'll
+do it by writing a code
+and before that
+we have to generate the token
+overboard
+so in the authorization 2 we have
+done the things and here we have
+generated
+the link and authorized our board now
+here
+will give the permissions
+that is requires authorization to code
+Grant
+and sentient so member intent okay we
+will give all the permissions as we
+would be creating the music board also
+so
+for that we would be requiring the
+administrator permissions
+and that is all these permissions send
+messages create private threads
+attach files so that
+so here we'll save the changes
+and to get the token of a Discord both
+we'll click on the reset token
+and click on the yes to it so we'll copy
+this token
+and paste it here so it's a token and
+this was the URL to authorize a Discord
+mode
+so we would be using this token in a
+code to activate our board and to get it
+online
+and
+if you get your token
+mishandle or you have given to someone
+you can just reset it so after this
+project I will reset this token so you
+guys can't use my token
+so
+moving on
+now
+we will install some libraries that
+would be Discord Library
+and to install that
+I will show you the simple commands
+that is present in the browser you just
+have to write
+install
+Discord
+python
+Library okay
+and this is the official website
+you just have to copy the command
+move to a command prompt or The Terminal
+of your ID and just paste this command
+and
+press enter
+you can see that the requirement is
+already satisfied as I have already
+installed the Discord Library so
+here I don't have to install it again
+and you can do it just by writing the
+command in the command prompt over in
+the terminal and here we are using pip
+to install the command
+now moving on
+after installing the libraries
+and
+authorizing our
+Discord board now we'll write code to
+get a board online and get some
+responses from him
+so
+first we'll import the Discord library
+and put that we'll write the command
+import
+Discord
+so here we are important the Discord and
+now
+first
+we'll get our Port online and for that
+first we'll set the intents
+that is
+Discord
+Dot
+intense
+not all
+and after that
+we will
+create a variable client and in that
+we will call Discord dot client
+and inside we'll write command prefix so
+if you want to give any command so if it
+has the prefix that will enter so board
+would understand that
+that would be exclamation mark and we'll
+set the intents
+that is intense
+equal to
+in bits we have created a variable
+inside the intents
+now
+we will create a
+event that would be client dot event you
+could visit the Discord
+official website and see the
+documentation of how to install it that
+is if you want to use the PIP command
+you can use that in Linux
+and
+you could see the voice code by NaCl we
+will install it for our Music board and
+you can see this is the quick example to
+see how we can use the Discord Library
+so we have set the intents
+and
+now
+we're gonna make a board active
+so you could just visit the
+documentation read it once and you would
+understand how this library is
+functioning and what classes and
+functions it possess
+so we'll move back to our ideally
+and here we will create the event
+for that we'll write at the rate
+client
+that the variable we have created dot
+event
+and
+inside it
+will use async
+and create a function
+that is on underscore ready
+foreign
+we will print
+that we have logged in as
+if
+a board has logged in
+it should get printed
+we have logged in as
+the name of the
+user or
+a port
+okay
+and write dot format
+and inside will pass client
+now
+we'll create another event that is at
+the rate
+client
+note event
+and inside
+we will
+create another function
+that is own underscore message so if we
+give any message to a port
+he will reply to us
+so message
+and if
+message dot author so he is writing the
+message is equal to
+client dot user
+then we'll just return
+and if
+message dot content
+Dot
+starts with that is if the message
+starts with hi or we can write hello
+so a board should respond with something
+so if our message starts with high
+so we will await
+and
+message Dot
+Channel
+dot send
+will send hello
+and now to
+make a board active the last thing we
+have to do is
+we have two run a token random board
+with the help of token
+so you know we have copied the token and
+that we have copied here
+so I'll copy this
+and paste it in client dot run
+so we'll save this
+and run it
+so you could see that
+it has shared logging and using static
+token
+and it has shared the session ID that
+the board has been logged in and what we
+have printed is that we have logged in
+as project hashtag 7634
+so here we will move to a
+Discord
+and here you can see that a board has
+been online after we have run the code
+that is we can see the green symbol for
+that and we have written the commands if
+we
+write hi to a boat or the message which
+starts with high
+it would respond to us so you could
+directly chat with the board here that
+is just click on its
+symbol and you can message at the red
+project at the red project that is your
+board so we'll just write hi here
+and you could see that a board responds
+with hello
+and if we go back to our project server
+so this is a project server and if we
+write hi in any channel that is we are
+writing in general Channel
+and press enter so here also our Port
+will respond that is hello
+so now we'll add other functionalities
+so that a port could respond to us in
+different ways so now we will ask our
+board to send an image so the image
+could be sent through the port in the
+form of file we need to give the name to
+it and the file should be in the same
+directory where our code is it could be
+done by running the code that I will
+just
+show you
+so here
+now we'll start with if
+message
+dot content
+load
+starts with
+image that is if we have image
+oh sorry
+that would be heavily that is own
+message we are writing in the function
+that is own message and if the
+message.content starts with image If the
+message has image in it
+so what we will do is
+we will write a command that is await
+message Dot channel in which channel we
+have quote the command as image from the
+author we will write the or send the
+file that is the port will send the file
+in the same channel that is
+message.channel dot send
+and here
+we will write the file name
+and for that
+first we'll see which files
+so I have some files that I have
+used
+formerly
+so
+that I've stored in yeah new folder so
+yeah
+so these are the files that will ask
+about to return us back
+that is the image rewind.png python PDF
+and the python mp4 file and the MP3 file
+beautiful mistakes
+so we will
+copy all these
+and paste in our
+directly
+in the same directory that we are coding
+that we are writing a code
+now we'll move back to our Visual Studio
+code
+and here we'll write
+the file name that is
+file equal to Discord
+Dot file
+your Discord dot file and now the name
+of the
+file
+that was rewind.png
+so we'll save this
+and first run it to check if this
+command is working or not
+so first we'll kill our terminal
+save it and run it
+and we can see that it has given the
+session ID and we have logged in as
+project bot we will move
+to our Discord
+and here we will write image in the
+channel
+you can see data board responded with
+the rewind.png image
+so
+a command is working fine
+now
+after running this code that is the Type
+image in the channel now the board will
+respond with the image that we have
+given in the file and we have seen that
+now we'll get the video audio and a PDF
+file through the board now to get these
+first we must share the file name in the
+file section for the file that we need
+to share through the board in order to
+acquire the video audio or the file
+now we need to keep that file in the
+same directory where our code is there
+as we have seen that we have kept that
+in the same folder now
+we will write the commands for video
+audio and the PDF file
+now first we will write the command for
+video
+and that is if
+message dot content
+Dot start with
+that is video
+wait
+message Dot
+Channel
+dot send
+here we'll write the file name that is
+file equal to
+this code
+Dot file
+and inside
+will pass python dot MP4
+and that would be in the inverted commas
+sorry for cuffing oh
+I have a net account
+now we have set for the video now we'll
+set for the audio file and for that
+we'll write the command that is the same
+command and we won't waste any time
+we'll just copy it
+hmm
+we should code as fast as we can
+and if the message contains the audio
+so what will pass we'll just see what we
+have
+the name of the audio file that is
+beautiful underscore mistakes
+and that is MP3
+beautiful
+underscore
+I think just check it
+and that is yeah I missed capital
+so now we have written for the audio
+file now we'll write
+for the simple file
+that is our PDF
+so if I command that is the command we
+will give to our board if it contains
+the name file then it will give us
+python dot PDF
+okay
+and we'll check the name
+okay the p is capital four
+python
+and after that we have client dot run
+that set
+so we'll save this and first we'll kill
+our terminal
+and click on the Run button
+so you can see that we have logged in as
+project
+and now we'll move back to our board so
+our board is active and we'll start with
+the high command
+so it says hello and if we write High
+board
+then also it says hello that is if our
+message contains high then the board
+will be respond with hello and if we ask
+him the image
+he'll respondus with the image and if we
+ask him with the video
+it takes time like there's the video is
+a bit larger in size
+okay
+so it doesn't have any attribute video
+that is python node and before we quote
+an error here
+MP4
+just check
+yeah
+this is the same file
+where I should not have been occurred
+okay
+we have asked for the video
+okay there it is
+we have written start with it starts
+with
+that's why I responded for image but not
+for video
+audio and the file
+now we'll save this and first will kill
+the terminal and run the code again
+we can see the session ID and it has
+logged in
+now we'll move back to our project and
+now we'll ask the board for video
+now we'll see what it responds
+yeah you can see that it has responded
+with the video you can also play it here
+and if we ask for
+image
+and gives us the Divine image
+and if we ask for the audio
+it has shared the audio that is
+beautiful underscore mistakes and we ask
+for the file
+please
+so I think we got
+any error
+that is going to start with file
+and we have python PDF and the error is
+payroll too large okay the request
+entity is too large
+so we have not subscribed with the Nitro
+version so we can just send the 8mb
+files we will just
+check what is the size
+okay it's of 9 MB so it won't show
+so you can place any file that is less
+than 8 MB your board would respond for
+that
+and
+with that we are done with the bot and
+we are ready we are with the boat
+and with that we have come to the end of
+this session and I have an insightful
+for you guys
+that is if you are aiming to get
+certified in Python Programming and want
+to build a python software development
+career in that case you can check the
+python certification course by simply
+learn which will open the dose for the
+best career opportunities and to find
+the details of this python certification
+course you can check the link in the
+description box below and I hope the
+session was interesting and informative
+if you liked it please let us know in
+the comment section below and also do
+subscribe for more from Simply love
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

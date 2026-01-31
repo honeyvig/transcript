@@ -1,0 +1,339 @@
+imagine you just bought a new smartphone
+and you're very much excited to
+connected to your home Wi-Fi but guys as
+soon as you enter the Wi-Fi password
+your phone starts to connect with the
+network but have you ever wondered how
+your phone actually gets an IP address
+to join that Network yes guys the answer
+is DHCP protocol DHCP stands for dynamic
+host configuration protocol so guys you
+can think of DHCP as a network host who
+welcomes every new device as soon as
+your phone tries to connect DCP quickly
+assigns it to an IP address like giving
+it a unique seat at the table so guys in
+today's video we are going to study
+about the DHCP protocol which is one of
+the most important Concepts in the
+networking craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FasTrack your Ambitions
+whether you're making a switch or aiming
+higher
+simply learn has your
+back but before we move on just a quick
+info guys simply learn has got a
+post-graduate program in cyber security
+this course in cyber security is
+designed to equip you with the skills
+required to become and cyber security
+expert the aim of this program is to
+help you stay AB breast of all the
+latest Trend in cyber security so guys
+hurry up now and join the course the
+course link is mentioned in the
+description box so guys let's get
+started so guys let us start with what
+is ghcp DHCP stands for dynamic host
+configuration protocol it is a system
+that helps devices like computers
+laptops and smartphones to connect to a
+network automatically by giving them
+necessary settings such as IP addresses
+you can think of DCP as a helper that
+makes sure each device on a network gets
+its own address so it can communicate
+with other devices without any mixups so
+guys for example we have in a company
+with many employees using desktops and
+laptops
+DHCP automatically assigns each device a
+unique IP address like
+192.168.1.2 where they connect to the
+network it also provides other important
+details like subnet mask which helps the
+device understand which part of the IP
+address this network and what part is a
+device then there is a routers address
+which is a gateway to other networks
+usually something like
+192.168.1.1 and the DNS address which
+helps a device to find websites like
+using 8.8.8.8
+that connects to the network and
+requests an IP address from the DHCP
+server then you get DCP relay it
+basically acts as a middleman passing
+messages between clients and the server
+especially useful when they are on the
+different networks then you have the IP
+address pool where a collection of IP
+addresses that the DHCP server can
+allocate to their devices on the network
+then you have subnets which are smaller
+segments of a larger networks helps to
+organize and manage Network traffic
+efficiently then the sixth one is lease
+the period during which a device can use
+assigned IP address Once the lease
+expires the device must request a new
+one then you have the DNS server the
+DHCP server can also provide the
+addresses of DNS servers which translate
+domain names into IP addresses helping
+devices find websites on the internet
+then you have the default gateway so
+guys the default gateway is a device
+that routes traffic from a local network
+to the other networks such as Internet
+and it is also provided by the DHCP
+server then you get options so guys
+additional configuration details like
+the subnet mask or the time server
+information is provided by the DHCP
+servers to the client it comes in
+options then you get renewal so guys
+clients can ask the DHCP server to renew
+the lease before it expires ensuring
+that they keep their current IP address
+so that means renewal then comes
+failover we are a backup system where
+two DHCP servers work together so if one
+fails the other can continue providing
+IP addresses to the clients
+next is dynamic updates DHCP server can
+update DNS records with IP addresses of
+the client making it easier to manage
+and find network resources next is audit
+logging so finally guys DHCP servers
+keeps a log of transactions and
+administrators to see which devices are
+using which IP addresses when the leads
+are issued or renewed now let us try to
+understand the DHCP packet format so
+guys the DHCP packet format consist of
+several fields in serving a specific
+purpose in the process of assigning IP
+addresses and other network informations
+to the client the first one is the
+hardware length this is a 8bit field
+that tells how the physical addresses
+like the Mac addresses is in bytes for
+example eets whose value is six bytes
+then is hop count another 8bit field
+that limits how the packet can travel
+across a network it defines a maximum
+number of hops or transfer from one
+network device to the another the packet
+is allowed then is a transaction ID it
+is a 4 byte field that holds a unique
+number created by the client this ID
+helps the client and server to match
+request with the correct and reply
+ensuring that the responses are linked
+to the correct requests then there is
+number of seconds this is a 16bit field
+indicating how many seconds have passed
+since the client started trying to
+connect to the network it helps track
+the time taken during the boot process
+then next is Flags it is also a 16bit
+field where only the leftmost bit is
+used if this bit is set the server is
+required to send its reply as a
+broadcast message sent to all devices on
+the network rather than directly to the
+client which is a unicast process and
+also the remaining bits should be set to
+zero and next is client IP address it is
+a 4 byte field that contains the
+client's IP addresses if it is already
+having one if the client doesn't have an
+IP address yet this field will be filled
+with zeros then is your IP address this
+is a four byte field that will be filled
+by the server with the IP address
+assigned to the client this field is
+used to response to the client request
+next is server IP address it is a 4 byte
+field that holds the IP addresses of the
+DHCP server this field is filled by the
+server when responding to a client's
+request next is Gateway IP address this
+is also a 4 byte field containing the IP
+addresses of the router or Gateway the
+server fills the field in its reply to
+indicate the router through which the
+client can access the other networks the
+next is client Hardware address this
+field contains the physical Mac address
+of the client's device although server
+can obtain this address from the packet
+itself it is more efficient if the
+client provides it directly next is
+server's name it is a 64 byte field that
+can optionally be filled by the server
+with its domain name like server.
+company. name repeat like server.
+company.com if the server doesn't want
+to use this field it is also filled with
+zeros then there is boot f file name it
+is a 128 byte field that the server can
+optionally fill with the path to boot a
+file this file can help the client
+during the boot process if not used the
+server fills the field with zeros 13 is
+options it is a 64 byte field which is
+used to carry additional configuration
+informations or specific vendor details
+this field is primarily used to reply
+messages from the server the server may
+include a special identifier called a
+magic cookie with the value $99 130.
+83.99 that signals the presence of
+additional options for the client to
+process so guys this is what a DHCP
+packet format looks like so guys now let
+us try to understand how exactly DHCP
+works so the overall process is called
+the Dora process so there's a diagram
+all over here so guys as you can see in
+this diagram so it is showing how a
+mobile host client a DHCP relay and a
+DHCP server interact during the IP
+address assignment process process the
+first process is the DHCP discover so
+you can see guys the mobile host clients
+starts by broadcasting a DHCP discover
+message to find available DCP servers
+this message is broadcasted to all the
+devices on the network to discover if
+there is any DHCP server available that
+can assign an IP address the DHCP server
+follows the path where message travels
+from the mobile host to the DHCP relay
+and the relay forwards it to the DHCP
+server the broadcast nature of the
+message ensures that it reaches all the
+potential servers the next process is
+DHCP offer upon receiving the DHCP disc
+discover message the DHCP server
+responds with an DHCP offer message the
+purpose of this message is that it
+contains an IP address and configuration
+details that the server is offering to
+the client this offer includes IP
+address subnet mask Gateway and Lease
+time this dscp offer message is a
+unicast back to the DHCP relay which
+then forwards it to the mobile host the
+use of unicast here ensures that the
+offer is directly communicated to the
+client that it is requested the next is
+DHCP request the mobile host upon
+receiving the DHCP offer responds with a
+DHCP request message this message
+indicates that the mobile host has
+accepted the offered IP address and
+request the server to formally assign it
+the client is essentially saying I would
+like to use the IP address that you have
+offered the DHCP request message is
+broadcasted by the mobile host and the
+DHCP relay that forwards it to the DHCP
+server broadcasting ensures that the
+message also reaches to the potential
+DHCP servers but it is specifically
+intended for one that made the offer now
+the next comes DHCP acknowledgement the
+DHCP servers after receiving the DHCP
+request sends back a DHCP
+acknowledgement message the DHCP
+acknowledgement confirms that the IP
+address has been successfully assigned
+to the mobile host and the client can
+now use this IP address for network
+communication the server also records
+the lease time and other configuration
+details this DHCP acknowledgement
+message is unicast from the server to
+the DHCP relay and then mobile Host this
+unicast ensures the acknowledgement
+directly reaches the requesting clients
+the next is duplicate address detection
+by address resolution protocol after
+mobile host is configured with the IP
+address it performs a process that is
+known as duplicate address detection
+using ARP this step ensures that no
+other devices on the network is using
+the same IP address the mobile host
+sends an ARP request to check if any
+device responds with the same IP address
+if no device responds the mobile host
+confirms that IP address is unique now
+the next is DHCP request or lease
+renewal as a lease time near expiration
+the mobile host sends another DHCP
+request message to renew the lease
+purpose of this message is that the
+request ask a DHCP server to extend the
+lease time for the IP address allowing
+the mobile host to continue using it
+without interruption the lease renewal
+request is unicast from mobile host to
+the DHCP relay and then to the DHCP
+server then you get a DHCP
+acknowledgement or the lease renewal
+here the DHCP server responds with
+another DHCP acknowledgement message to
+renew the lease the acknowledgement
+message confirms that the lease has been
+extended allowing the mobile host to
+continue using the assigned IP address
+for the extended period this
+acknowledgement is again unicast back to
+the DHCP relay and then to the mobile
+host so guys you can see I've taken an
+example suppose here in the mobile host
+uh is writing an email to his friend
+Jimmy and here all the DCP discover
+request process is happening so you can
+also see that when this device is
+connecting to the network so what kind
+of you know IP address is being assigned
+and what kind of messages are happening
+is it a broadcast or unicast mostly in
+the interviews guys the technical
+question that they ask is suppose which
+message request is a unicast or
+broadcast in the process so guys go over
+through this and that was all for
+today's video guys I hope so you would
+have enjoyed this video on DHCP protocol
+and also guys don't forget to subscribe
+our YouTube channel for further updates
+till then keep learning staying ahead in
+your career requires continuous learning
+and upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

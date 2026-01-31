@@ -1,0 +1,1592 @@
+in this video we will get complete
+explanation of devops tools like git
+Maven Jenkins anible Docker and more but
+before we begin consider subscribing to
+Simply learn and hit the Bell icon to
+never miss any updates from us so the
+way in which git is able to accomplish
+this is that it is essentially a
+distributed Version Control um solution
+um and what that means is that when you
+have multiple developers yes you do have
+a git remote Hub that you connect and uh
+are able to upload and download uh
+different branches of the code that
+you're working on but essentially as a
+developer when you um actually have the
+code you actually have all of the code
+and uh you're able to uh manage it
+directly from your local PC or your
+local development machine um without
+having to uh worry too much about the
+the network or the server actually going
+down so some of the key things in which
+um git is really good at it is you know
+a software management tool is designed
+from the ground up to manage code
+development it does track the changes on
+that code easily and effectively makes
+it easy for you as a developer to track
+your code the ability for multiple
+developers to work together is much
+easier in comparison to um other
+Solutions and and this is really the the
+the key success point with Git is is
+that it allows for nonlinear code
+development so you can actually have
+people working on different areas of the
+code that may be released at different
+times because of what they're working on
+so if we actually break down the
+architecture of G it really falls into
+four key areas of a working directory a
+local staging area a local repository
+and a remote repository so the process
+you would go through is you would add
+files to the um staging area from your
+working directory and this would be used
+like the get add command and then from
+your staging area when you're ready to
+actually then commit those files to a
+local repository you would use the git
+commit command and then from there you
+would actually then push your local
+repository out to the remote repository
+uh for a final commit uh to the remote
+repository um and this allows then the
+rest of the team to pull down your
+latest final changes so you can be
+working on your code locally and you can
+be using your local local staging area
+repository and and when you're ready to
+commit your um work you can commit it
+and then as soon as it's committed the
+rest of the team can then pull down the
+latest changes that you have worked on
+and this allows for a complete and
+holistic checkout and checkin process
+and then sometimes you want to be able
+to go through and then take the checked
+out code that you um that you're pulling
+out and merge it with your local code
+and the merge process always ensures
+that you are working on the latest and
+best version of the code and everybody
+on the team is being consistent with the
+uh communication of the actual code
+that's being delivered okay so what
+we're going to do is we're going to
+validate that we have get running on our
+computer we're going to then create a
+direct directory add a file to that
+directory make some changes to that file
+and then use the commit commands to be
+able to check in the files and validate
+changes that have been made so first
+thing we do is we're going to see if we
+have git installed and to do that you
+just use the command version and what
+you'll sorry git Das Das version and
+they'll actually then give you the
+version number and now we're going to
+create a new folder so MK D green and
+that'll create a new folder and we'll
+move our cursor into the green folder by
+changing the directory and we can go
+back into windows and we can validate
+that that directory is actually there so
+here we go let's have a look we should
+see if there's the green folder and if I
+double click into that you'll see
+there's nothing in the folder right now
+so what we have to do is we actually
+have to add the folder as part of a git
+project and so we're going to use our G
+initiate in it and they'll actually
+initialize the folder and make it a git
+repository and so let's go ahead and
+create a file that'll actually go inside
+of um that uh new initialized folder and
+you'll see that there's a dogit folder
+that's been added so the new text file
+we're going to create is going to be
+called class and it'll actually be
+class. txt the extension is hidden by
+default in the uh text file we just
+going to type in the text uh welcome to
+Simply learn and save that now let's go
+ahead and check the status um of that
+file in git so let's do git status and
+you'll see that it says yes there's a
+file there but it hasn't been committed
+to the repository that's why it's in Red
+so what we have to do now is commit the
+file to the repository and it won't be
+able to track any changes that we do to
+that file so let's go ahead and commit
+the file so we do commit add class. txt
+and they'll add that to the Repository
+and there we are it's added and the
+final step is we want to do is commit it
+let let's do get so let's do get commit
+dasm put in this will be our first
+commit and this is the description and
+so it actually shows us committing the
+file it's the only item in the folder so
+now we can go over to the file that we
+just created and we can make some
+changes to it so let's open up the file
+so it says welcome to Simply learn uh
+let's put in some text afterwards that
+says this this is my demo and we'll save
+that close that and now if we go back to
+G we can do a compare and contrast
+between the original file that we
+committed and the new um updates that
+we've just done and we can check the
+difference by using git diff and what
+you'll see is the uh red text was the
+original text and the green text is now
+the new text that's been added and so
+that shows you how you can actually go
+and create a um a new git reposit
+repository go through adding files
+committing the files into the repository
+and being able to see the different
+version controls let's move on to mavin
+so why use mavin so so why use mavin
+well just look at some of the things
+that you would have done in the past if
+you actually building out the tasks so
+let's break down what you would have
+done before using mavin if you were to
+create a game or football using Java
+you'd actually have to go out and for
+your actual um game you'd have to
+collect all all the different components
+needed within the Java environment uh to
+make sure that everything would work
+correctly and if you make the slightest
+mistake uh you wouldn't get the right
+output that you needed the actual
+process of building and deploying a
+project really would take quite a lot of
+time after mavin mavin allows you to be
+able to take templates that are stored
+locally and be able to use those to be
+able to improve the efficiency of being
+able to build out your environment by
+removing dependencies within the
+application make makes it a lot easier
+if you be able to focus on just writing
+the code for your game or your solution
+rather than having to manage the
+environment within which that solution
+would be deployed now the focus within
+mavin is that it is an automation tool
+and it's used for projects that have a
+short period of time so as you're
+starting on your environment for
+building out um Solutions mavin is great
+to get started with and then if you need
+to have longer term projects then you
+can look at other alternative tools on
+the market so four key areas that you
+want to focus on why mavin can help you
+is that it does allow for efficient um
+parallel builds to be run concurrently
+it's really easy to use you can get up
+and started with mad very quickly uh you
+do have fast access to new features and
+new configurations quickly within your
+environment and the build process that
+will allow you to be able to visualize
+your code happens very quickly the
+actual architecture of mavin is that the
+execution and commands are managed
+through what's known as a pom file the
+pom file itself is a project object
+model and it's an XML file that actually
+has the details for the project and the
+configuration for the build environment
+pump file itself will then fetch
+dependencies from the local repository
+and will apply any plugins that you may
+have also included within your mavin
+environment the goal is that your
+software is built much more controlled
+manner so what we're going to do now is
+we're going to show you how to go
+through and run your very first project
+using Maven the first steps you going to
+have to do is make sure that you have
+the latest jdk installed on your
+computer so we're going to go ahead and
+open up our web browser and get this
+installed on your computer so we're
+going to type in jdk download into our
+Chrome web browser and go to the Oracle
+website which allows us to download the
+jdk and because we're running this on
+Windows we're going to download the
+windows
+version of the jdk and once you have
+that installed so the next step is to
+actually then go ahead and download the
+maven files so it's going to take us to
+the Maven apache.org website where you
+can actually go ahead and download the
+version of Maven that you need for your
+operating system we're going to go ahead
+and download the zip file instead of
+just an executable file now this will
+give you more control over how you
+install it onto your Windows PC after
+the file has been downloaded we want to
+go ahead and extract the entire um file
+so you have uh the unzipped folder
+running on your
+computer so one of the things that we're
+going to have to do is go through and
+set a number of system variables for the
+jdk and for the path to your MAV files
+and to do that you want to go into your
+control panel and select the system
+security and then system settings and
+then go into advanced system settings
+this will give you access to the uh edit
+system variable setting that you're
+looking
+for so we're going to go down to the
+path variable and you'll see already
+that we have pasted in the link to the
+jdk uh right there underneath the
+variable value if you've installed the
+jdk it's likely that it's already
+installed this path for you
+correctly the good news it's actually
+fairly easy to um install the path to
+mavin and to the jdk cuz all you have to
+do is copy the path for where the folder
+is located on your system and just paste
+it into a variable value under the edit
+systems variable fold um file
+system and that should now get us all
+the files and we can see that we have
+our extracted folder already on our
+desktop there and the system path is now
+um set to where the maven folder is
+located so we also have to go into
+system protection
+and set the system path to your MAV
+folder now we have to go ahead and do a
+user variable that also part links to
+the path of the m
+files so what we're doing right now is
+we're just validating that all the files
+have been extracted correctly they have
+which is good we can now go ahead and
+link to these M
+folder all right so now what we're going
+to do is we're going to move over to
+command prompt and this is where we're
+going to do most of our work from here
+on out first command we're going to do
+is uh
+MV so we're going to go ahead and create
+a new user variable and uh we're going
+to type in we're going to close one M2
+Dash and then we'll put in the path uh
+to the Apache M folder you should be
+able to use m2- home for your project
+but if it's not you can always use the
+variable name mavin Dome and that will
+do exactly the same as uh M2 we're going
+to do both here uh just so we have a
+backup
+so we're going to open up command prompt
+and we're going to see if Maven is
+installed we do that by writing mvn D-
+version and here we are yes so now we're
+going to go ahead and create our first
+Maven project and the first part of
+creating the maven project is actually
+the directory in which we will store the
+files that will be used to create for
+our
+project so we're just going to going go
+ahead into the folder and we're going to
+create a new directory and we're going
+to call this one and we're going to call
+it simply
+learn and we can just copy the path for
+that so I'm going to write this the
+correct path for us so we're going to
+change directory CD and copy the file
+location over all right we are now moved
+ourselves over to the simply learn
+folder and we'll be able to install the
+pomp file which is what all the
+instructions from mavin are sored in uh
+into this area so to do to do that we're
+actually going to use a template that's
+already been created by mavin and this
+is going to be the mvn archetype
+template and so you just to MVM
+archetype colon generate and this will
+go ahead and create all the files for
+us so there's can be quite a few files
+and they're all being downloaded from
+the mavin website uh so it can take some
+time um but as you see we've gone ahead
+and all the files have downloaded and we
+have everything up and running correctly
+inside of our envir on command line and
+command prompt so we'll have some values
+that we do have to set the first one is
+group ID and we're going to call this
+one com. MAV and then the next one is
+going to be artifact ID and this is
+going to be MAV mv- project hit return
+and then version is going to be
+1.0-snapshot we'll just put in the same
+value for this version be 1.0-snapshot
+and the package we're going to call this
+one com. M.D
+demo and then we'll select yes or why to
+create the environment and it will build
+the environment for
+us and what we have now is we have this
+screen which shows everything is up and
+running for us and we have a successful
+build and so let's go into the mov
+folder and just see that we have our
+simply L folder let's open up and see
+what's in there so we double click into
+that directory
+yep and there we are starting to see
+some of our files so it's um the same
+project names there as mv- project and
+then we have our pom file that's in
+there which is fantastic under the
+source folder we'll actually see the uh
+the demo and we have our app under the
+demo
+app we have our test file as
+well so in the main folder we have a
+file that's called the pom file and that
+really is the most important file that
+you need for your project you'll now go
+in you be able to set all your settings
+inside of that P file but that's it
+that's what we have done here as we've
+gone through and we've gone through all
+the setup that allows you to uh make
+sure you have the right files running on
+your computer the right files to
+download from the Maven website how to
+install all the files the settings you
+need to make on your Windows computer
+and then all the settings that need to
+be done in the command line to be able
+to run the application a and then from
+here you can actually start running
+Maven now let's look at selenium as we
+get start looking at testing so before
+selenium if you wanted to run testing
+and particularly if you want to do
+sequential testing it would take up a
+lot of time you'd have to run one test
+then the second test and then all the
+other tests and the actual time elapse
+would be quite significant with selenium
+you're actually able to do parallel
+testing so instead of looking at the
+amount of of time it would take to
+actually run a test and run the test
+sequentially the length of time to
+actually run your test is based on the
+length of the longest running test of
+which in this example uh the longest
+running test is 2 minutes now one of the
+things that you'll notice with selenium
+is that its focus is on web applications
+um and it is an open- Source tool and
+it's really good at regression and
+functional testing of web applications
+if you're doing a mobile application or
+if you're doing an iot application there
+are other uh tools you can use on the
+market as well but if you are new to
+devops and you're setting up your first
+Dev Ops environment selenium is a great
+place to start and web applications are
+mature and allow you to be able to test
+out and validate the concept of
+continuous testing in your environment
+so four key takeaways uh for selenium U
+it really is fast I mean for fast
+execution it's highly accurate um so you
+can always validate that what you're
+doing doing uh will work correctly and
+feedback can be sent straight back to
+the developer if their uh code doesn't
+pass the test um allows you to script in
+multiple languages um again this is a
+great way for you to test um the focus
+is on web applications but you can um
+test in multiple um languages used for
+web applications and most importantly
+allows for parallel test execution which
+speeds up the whole test process
+significantly you actually to break down
+the architecture of selenium and what
+you'll find is the actual libraries that
+you can use for selenium uh run in C
+Java python JavaScript PHP uh these are
+the common languages used to build out
+web applications the actual web driver
+itself is an API driver um which is
+fantastic because it makes it easier for
+you to integrate selenium with
+applications through API and you can run
+the solution through different web
+browsers the most popular being Firefox
+Chrome and Edge so to focus the selenium
+web driver codes are being used to build
+out the client libraries that make it um
+to allow you to be able to build
+Solutions across multiple web um
+application environments the web driver
+application interface is used to
+integrate with the application to make
+it easy for testing the web driver
+service provides an immutable stateless
+environment that makes it very easy for
+you to be able to use protocols such as
+Json to wire up your test environment
+the driver manages communication between
+the browsers and the wire protocol
+that's used for Json within the web
+browser itself and then the actual
+commands are then run through the web
+browser for you to be able to get your
+results okay so before we actually get
+into the setup of selenium the first
+things we want to do is we want to make
+sure that we have the right version of
+java installed and so I'm just using the
+command window here and I'm going to
+type in Java and actually what I can see
+now is I do have Java installed which is
+fantastic otherwise you'd have to go and
+down download Java from oracle's website
+the next step is to validate that I have
+Eclipse installed and I'm just typing
+eclipse and there we are I have the
+eclipse app installed uh you can
+actually download um eclipse from the
+eclipse website the third step I want to
+check is to validate that I have a
+browser driver installed so I'm using uh
+Google's Chrome um for my main browser
+but you can actually go out and download
+the chromium driver um and that's the
+actual core engine that powers Chrome uh
+interesting enough being used in the new
+Microsoft Edge web browser so you can
+actually go and download the latest uh
+chromium driver and install that and
+then the final stage is to go to the
+selenium website and download the JV
+files themselves so just uh do a Google
+search on selenium download and here we
+have the selenium h.org website and it
+takes straight to the download page and
+we want to download the latest version
+and we we' gone ahead and done that
+already so we have everything running
+and now the next step is for us to
+install all of this great content okay
+so before we actually get into the setup
+of selenium the first things we want to
+do is we want to make sure that we have
+the right version of java installed and
+so I'm just using command window here
+and I'm going to type in Java and
+actually what I can see now is I do have
+Java installed which is fantastic
+otherwise you'd have to go and download
+Java from oracle's website the next step
+is to validate that I have it Eclipse
+installed and I'm just typing eclipse
+and there we are I have the eclipse app
+installed uh you can actually download
+um Eclipse um from the eclips website
+the third step I want to check is to
+validate that I have a browser driver
+installed so I'm using Google's Chrome
+for my main browser but you can actually
+go out and download the chromium driver
+um and that's the actual core engine
+that powers Chrome uh interesting enough
+being used in the new Microsoft Edge web
+browser so you can actually go and
+download the latest chromium driver and
+install that and then the final stage is
+to go to the selenium website and
+download the jar files themselves so
+just uh do a Google search on selenium
+download and here we have the selenium
+hq. org website and it take us straight
+to the download page and we want to
+download the latest version and we've
+gone ahead and done that already so we
+have everything running and now the next
+step is for us to install all of this
+great content so we're just going to go
+ahead and open up the eclipse
+environment and it always takes a moment
+to launch eclips and we're going to go
+ahead and create a new project and we're
+going to call our project
+XYZ I think that should be fine and this
+is just a test after all and we're going
+to go ahead and create a new class file
+by right clicking and select new
+class and we're going to go in here and
+we going to give the class file a name
+of Simply learn and I don't see the
+Finish button being selected so maybe we
+need to select some other options here
+oh you know I think it could be the
+package name yeah let me go ahead and
+change the package name and I'm going to
+change that to qwe qw yep and the Finish
+button has now been highlighted I can
+select that I can go select that and
+select finish and uh we now have a test
+page as up and running and but what we
+have to do is to validate that selenium
+is actually part of the project so to do
+that we're going to go to the source to
+the actual Source XYZ file and right
+click on it and we want to validate that
+all the files are there correctly and so
+we're going to see that we have the
+libraries are there yep there's selenium
+if it's not there you can select add
+external files and find the selenium jav
+file select open and they would load
+that in there and then you hit a apply
+and close and that would apply it to
+your project and now we can actually
+start writing the Cod
+part so we're going to put this uh code
+in the public static void section and
+the first uh command is going to be a
+system. set property and we want to make
+sure that we're configuring the web
+driver for chromium correctly so we're
+going to do web driver um do Chrome
+driver and then the argument is that
+going to be the full path full network
+path to the chromium driver that you
+have on your PC so let's see we have
+chroming here we want to copy that path
+and so that paste that in and then after
+we've pasted in the path we have to make
+sure that we also put a link to the
+actual file that we want to execute
+which is in this case is Chrome driver.
+exe and then we want to make sure that
+the work driver is pointing to the new
+Chrome
+driver and you'll notice that there's a
+couple of red colors on here which means
+that we don't have all of the public
+classes imported correctly so you can
+right click on that and SE import the
+web driver and just select that real
+quick and that adds the import correctly
+at the top of the page and same for
+Chrome
+driver and that's just a very quick way
+um when you're working in Eclipse to
+import additional uh
+files so before we actually start our
+test we want to make sure that we've
+actually cleared out any potential
+browser cookies that would be within the
+creian driver so for that we're actually
+going to go ahead and we're going to
+write a script that allows us to remove
+the
+cookies so we want to do driver do
+manage and then delete all
+cookies and the next line we're going to
+do do is to actually have the web page
+that we're going to connect to open up
+in full screen mode and for that to
+happen we're going to go and actually
+use the window property uh which is what
+I was writing before by mistake and so
+this will allows to go full screen and
+now we need to pull in a web page so
+we're going to get the get command and
+what we're going to do is we actually
+just going to pull in a web page from
+Amazon uh which I just happened to have
+here so I'm just going to go to to
+Amazon web page and so I'm just going to
+copy the URL and you know just need to
+copy htps
+www.
+amazon.in or.com wherever you're located
+and so you can see that I've pulled in
+the Amazon web page and then line 18
+actually allows me to go and connect so
+here we are we have uh the Amazon web
+page that I'm pulling in and then what I
+also want to do is I want to look for a
+specific ID in one of the elements and
+so I have the driver which is called f
+an element and that allows me to look
+for any element that be on the actual
+page so here we have the HTML in the
+console screen and I can actually then
+paste out an ID from the element that I
+want to
+use so the find element is just the ID
+for each element and most of them have
+them because they needed for the
+JavaScript and
+CSS so let's see there's quite a few IDs
+so and we can select any of those so
+what we have here is we have two tab
+search text box and then what that
+actually does is that finds the ID for
+the text box used for searching and then
+we're going to use the send key command
+which allows us to actually prefill in
+the search box and we're going to use
+the test of Puma shoes this is a fixed
+string but you could actually put a
+variable in here if you want to pull
+strings from a database or an XML file
+and then the next uh line on line 19
+shows how long we're actually going to
+run the actual script for the uh search
+which is only 10 seconds and then once
+the uh 10 seconds has elapsed we'll
+actually quit the script which actually
+closes the web browser and takes us back
+into our screen here and let's test that
+make sure it's working and everything's
+looking good the browser opens which is
+what we expect it goes to Amazon
+fantastic um it now actually goes to the
+search screen and should fill in the
+Puma shoes there we go Puma shoes and
+waits 10 seconds and it closes and
+that's exactly what we were expecting
+now you can actually change the unit of
+time that you would have for the actual
+test so if you wanted to see what was
+happening so longer than 10 seconds you
+can actually change the actual time or
+the actual metric and so in in this
+instance we got it as seconds and unit
+of time but you could do minutes or
+hours or micros seconds and you can
+change the keyword as well so it could
+be a jiga or anything you wanted to
+check but if you're actually building
+your own application you want to be able
+to test your own data against your own
+application that's where you put in that
+specific
+data so let's look at the center the
+heart of um your Dev Ops environment and
+that Center is with Jenkins so before
+Jenkins people would uh developers would
+work on their code and the code would
+then be checked into a source repository
+you would then check for any issues and
+then you would then send that code over
+to the operations team and there would
+be a delay for actually delivering
+software so the actual um challenges
+developers had is that if they wanted to
+run any tests they had to wait until
+their software was built and there was a
+lot of problems in providing feedback
+and particular if you had large teams
+working on software or who actually had
+the error the actual delivery of
+software was often uh delayed uh because
+of these key problems so after Jenkins
+what we actually have is the ability to
+be able to streamline this whole process
+the build test and deploy happens
+continuously and are able to then notify
+developers and the natural specific
+developer of any errors that are
+detected being able to speed up the
+delivery process much more efficiently
+the focus of Jenkins is that it
+automates a continuous development
+testing and deployment environment and
+it's open source Jenkins is easy to
+install and configure it's been around
+for many years now and is very mature
+there are many plugins that you can use
+within Jenkins to be able to have the
+Jenkins product work with with your
+environment if there isn't a plug-in you
+can actually extend by you can actually
+write your own plugins if a plug-in
+doesn't exist so you can actually
+continue and extend and invest in the
+Jenkins ecosystem and it can be easily
+distributed across multiple machines so
+let's break out the architecture of
+Jenkins so Jenkins starts as a remote
+source code repository and it then pulls
+out the code every time there is a
+commit from into the server Master the
+server master will then have a slave
+that will run on either Windows Linux or
+Mac OS to be able to distribute this
+load across those environments and after
+it's actually gone through and run its
+test it'll then send out a report the
+goal of the report is to communicate
+back to the team what has passed and
+what has failed the actual check-in
+process okay so we're going to go ahead
+and show you how to install Jenkins on
+your local PC uh so the first thing you
+want to do is check that you have Java
+installed so we're just going go into
+our system and see whether or not we
+have the Java jdk installed you can do
+that by going into system properties
+seting advanc and environment settings
+and there we are we have Java jdk
+installed and you want to just double
+check on the system variables to make
+sure you have the Java uncore home
+installed correctly as well and we have
+that installed and under path also make
+sure you have a link to the uh Java jdk
+as well so we have everything installed
+and what we're going to do is we're
+going to open up command window and just
+do a double check right there so open up
+command window and we're just going to
+check that we have Java installed so we
+do Java Dash version and we have a
+version number that comes back if we
+didn't have Java installed we wouldn't
+get a Java version number come back we'
+actually have an error all right so
+everything looks good so the next thing
+you want to do is to go to the Jenkins
+website and download the files so we're
+going to go to
+jenkins. and that's the official Jenkins
+website and if you want to download you
+just go to
+jenkins. download or you can just type
+into your search bar download Jenkins
+and that will give you a link straight
+to the download page and one of the
+things that you'll see is that there's
+lots of different versions uh for
+Jenkins because Jenkins runs on pretty
+much uh most operating systems including
+Windows uh Linux and Mac OS um but we
+want to select the windows version so
+we've already gone ahead and downloaded
+a zip file which contains all of the
+files that we need for Jenkins and so
+there's the zip file and we've expanded
+it and what we want to do now is H
+double click the installer file and
+we'll go ahead and install that so we've
+already installed this so um one of the
+things that we'll get is a message
+asking if you want to repair you would
+actually get a install message because
+it' be a fresh install for you and but
+once you've done that it has all the
+files and all the settings correctly
+installed onto your Windows computer and
+we do all of our commands for Jenkins
+through um a web page that's run locally
+on your PC and so you're going to type
+in Local Host colon 8080 and when you do
+that they'll actually take you to
+Jenkins running locally on your PC and
+here we have our Jenkins dashboard and
+we've already gone in and created some
+sample jobs and you can see those listed
+on the uh sorry on the right hand side
+of the screen so let's go through some
+of the things you would want to set up
+here so first of all let's go into the
+manage Jenkins screen and that will
+actually so go to the manage Jenkins tab
+on the left hand side uh to do some
+standard configuration settings so we'll
+go to the configuration systems and if
+you want to if you're like remotely
+connecting to a remote Jenkins
+environment you can actually install a
+jdk remotely for on that machine if you
+want to and we already have the jdk
+environment already set up so yeah
+that's good here so we don't need to do
+that but you'll also see is you go
+through the uh the list of applications
+that you have have Gradle an mavin
+Docker uh git and other tools that you
+would use in a devops environment there
+are many other tools you can install
+through plugins as well let's have a
+look at one more setting here with the
+security the default security is Jenkins
+own user database uh that probably is
+not allowed within your company due to
+security um restrictions um so you can
+choose Lam which allows you to connect
+with your active directory configuration
+again because there are so many plug
+plugins uh for Jenkins uh there are
+plugins for saml authentication as well
+as a so let's go ahead and start a new
+build new build job and so we select a
+new item and we're going to select demo
+one from that to create a new item and
+we're going to use just a freestyle
+project because I just want to demo how
+you can actually create a build take
+okay description um gosh what can we
+write here um we can put in slimy demo
+and we're not going to use source code
+for this one we're going to do that in
+the next demo but what we want to go
+down to is the job time and we're going
+to so build and we can just do um add
+for execute Windows batch command and so
+let's just put in a very simple command
+and so we're going to type in Echo open
+quotes hello world and then we'll put in
+the Tim stamp so we'll put in date first
+and then time as part of our output
+those quotes and we're going to save
+that that so set save and that's our
+simple project so what we want to do now
+is we want to actually go and select the
+build Now command to actually run this
+project hit build now and it'll take a
+couple of minutes for it to run and here
+we are this is our project and we can
+actually now see the different builds
+that have happened and if you look on
+the build history you'll see the latest
+history shows when the build was
+executed and if you click on that uh you
+can actually start getting information
+such as the console output will actually
+provide information that we were asking
+for so for instance uh we have first of
+all we can see that the build was
+successful and we see the output
+includes uh the hello all and date and
+time so we're going to go ahead and
+create one more project where we can
+actually connect to a GitHub and use the
+git command tool to be able to build a
+real project so we're going to go ahead
+and create a new item and we're going to
+call this one Jenkins it's Frey our
+project and our description is demo
+using git um so we're actually going to
+connect to GitHub and so to do that
+we're going to go into source code
+management Tab and we're going to select
+get and so we select that we can
+actually now connect to uh GitHub um so
+to do that you go to your GitHub account
+and you want to go in and select the
+Clone or download and you get the URL
+link from there so copy that uh go back
+to Jenkins and add that in the
+repository URL so you paste that in and
+then for credentials we want to add in
+our Jenkins credentials and so just make
+sure you have those selected correctly
+and we've select add and then we just
+pull those from the drop down and let's
+not change any of the other settings and
+then for the build we're actually going
+to be building a Java application so
+it's a slightly different set of build
+commands so we want to type in Java C
+for comp file and then space and the
+file name is simply. Java then you want
+to put Java and space simply on a new
+line save that it's again this is a
+really simple application but it gives
+you the understanding of what you need
+to do here and so we saved it and let's
+now go ahead and see if everything's
+working we'll do the build now and see
+what's happen and here is our first
+build we select that uh we can go to the
+conser output for details and what we
+can actually see if we scroll down is
+that the finished at the finished output
+at the very end says success which means
+everything was built correctly and so
+that's how you're able to connect
+Jenkins with a git repository and the
+thing that's great with working with
+Jenkins is that it connects to so many
+different systems and really does become
+the central point of your Dev Ops tool
+set so let's start looking at the
+operation side of the dev Ops
+environment and let's focus in on Docker
+so before Docker the problem you had as
+a developer if you working on a virtual
+machine the actual virtual machine uh
+was a your VM uh was a very complex
+piece of software so first of all VMS
+have not been around for very long and
+we're talking about less than 10 years
+and the typical way of having a VM is
+that it's very heavy of usage on your um
+computer you essentially are running
+everything of the VM plus the the tools
+to run the VM on your computer with
+Docker what you're able to control is
+the actual development environment
+you're working in you don't have to be
+encumbered by all of the additional
+extraneous processing that a VM
+environment has you really stripped down
+to just the bare minimum that you need
+to have to run the environment using a
+containerized solution known as Docker
+so Docker is essentially an OS level
+virtualization software it is a maturity
+of the solutions that were started with
+virtual environment and there are other
+Solutions out there doc has become the
+de facto container solution that you can
+use for building out and guaranteeing
+that what you the developer is building
+is going to be the same as what the
+operations team will use so Docker
+itself is highly scalable and efficient
+uh you can have many Docker environments
+running on a single piece of Hardware
+the boot up time is incredibly short you
+can reuse the data volumes very very
+easily it's not complicated ated and the
+actual applications are completely
+isolated this is like a perfect sandbox
+environment so let's dig through the
+architecture of Docker so there are
+really two parts to Docker there's the
+docker engine and there's the docker
+client uh the docker engine is comprised
+of the docker CLI which connects with
+the server demon the docker client will
+then issue the commands to the dock
+demon and then the dock demon will then
+interact with their system to be able to
+provide the tasks and tools needed for
+you to be able to build out your
+solution the actual images that Docker
+uses are instructions for creating
+docket containers and the actual Docker
+container itself is a lightweight
+package that contains all the
+dependencies needed to run an
+application now once you have created a
+container that is of value to your team
+you want to be able to store that
+container so that other team members can
+use it and this is where you would use a
+Docker registry to be able to host and
+distribute multiple Docker images so in
+this video we're going to go ahead and
+see how we can get Docker installed and
+running so we're going to go ahead and
+open up our terminal window and we want
+to validate whether or not Docker is
+installed uh if you have't installed
+Docker you can actually go ahead and use
+the following command and that is to
+enter in pseudo a install Docker and
+that will go ahead and run the command
+to install Docker um I already have
+Docker installed on my system so I'm not
+going do that right now so I'm just
+going to delete that out but um what I
+am going to do is check to see what
+Docker images I have installed on my
+system and to do that I'm going to type
+in pseudo Docker images and when I run
+this this will actually show how many
+images I have and as right now I don't
+have any images at all so why we go
+ahead and install an image there are two
+ways you can create an image for your
+dog environment one is to get one from
+dog Hub and the other is to create your
+own image and let's go ahead and get one
+from Docker Hub and so the command line
+that we'd want to write is pseudo darker
+pull reddis colon and after the colon
+we're going to actually write the name
+of the actual file that we're going to
+be connecting to from Docker so I'm
+going to go ahead and go to Docker Hub
+and I've already logged in with my user
+ID and account so I'm going to go to
+dockerhub and hub. doer. com is the
+website address and I'm already logged
+in with my simply learn account and what
+you can actually see is different
+repositories that I have already created
+below I'm going to collect the explore
+button and I can see the the reddish
+image and these are all the different
+commands that I can actually use all the
+different variations that I can create
+so I can I I can do 5.0 I can do a 32bit
+version I can do um a 4.0 o version or a
+3.8 version or if I select latest that
+will allow me to just pull the latest
+version even if it's updated so I'm
+going to go back to my command line do
+latest and what's going to happen now is
+that we're actually going to pull the
+files live over the internet and create
+the docket image so this is going to
+take just a few minutes of course if
+your internet speed is faster then this
+will happen a lot
+faster and here we are we have
+everything downloaded which is great and
+so let's just go and check and see if
+the image has been added to Docker so we
+do pseudo Docker images and now you can
+actually see that we have the lest R
+Redd um image and it's given the default
+image ID and there's the size of the
+docker image and the tag is latest so
+it's the latest version of
+redis and I'm just checking to see if
+there's any other images running and no
+there isn't so let's go ahead and now
+create a container and so the command
+for that is pseudo Docker run- d - P
+0.0.0 I think it's 80 colon 80 space
+Redd colon latest and let's run that got
+an error message okay now you know that
+it's a real demo this is really live so
+I'm just going to clear the screen and
+um let's write that in again and so
+pseudo Docker run- d-p and it's
+0.0.0.0 colon 8080 rus. col latest and
+there we are everything's up and running
+awesome so let's just go ahead and check
+that we actually have the image running
+in Docker so pseudo Docker PS and there
+you can see that we actually have the
+latest reddest version and it was
+created 16 seconds ago we have a new
+container ID for it and there's our Port
+that we've
+created and let's see if we can view all
+the running containers and Pudo Docker
+ps- a there we are and we created that
+container 42 seconds ago one of the
+things you'll notice is is um the name
+for the docker is created automatically
+by Docker and here we have stupified
+angle bars is the name let's change that
+name to something that's more meaningful
+for the work that we're doing so that's
+actually fairly easy too and it's going
+to be our final task here so we're going
+to type pseudo darker and the command is
+rename and we want to copy over the old
+name and then we put in the old name and
+then you do a space and then you put in
+what you want the new name to be in
+which case we're going to make it simply
+learn we run that command that's good
+now let's validate that everything has
+been changed so we're going to do pseudo
+Docker
+ps- just PS and there we are everything
+has been renamed and that gets you
+started working with darker now let's
+move on to anable so before anable the
+ability to be able to deploy software
+across a network was pretty hard and you
+know you couldn't guarantee that your
+web servers were all consistent and that
+the database environments were
+consistent this was okay if you had a
+small environment but once you actually
+started getting into more complex
+environments it became very difficult to
+manage anable is code that allows you to
+be able to consistently and reliably
+create and stand up the environments
+that you need to be able to store your
+code for production so whether or not
+you require one server environment or
+you need a thousand server environments
+using tools like anible will allow you
+to be able to consistently deploy out
+environments that all look the same so
+essentially anable is a configuration
+management tool and it allows you to be
+able to deploy automatically to a large
+variety of environments the actual tool
+itself is a push based configuration
+Tool uh it is an agentless tool so there
+is no communication coming back about
+the health of the environment we
+actually have tools that we'll cover
+later on in the video that cover that
+anal does have a consistency of its
+product performance so you know that if
+you're using anible that it's going to
+work it's just a very consistent product
+and it uses SSH for very secure
+connections so it doesn't matter whether
+or not you have one or a thousand pieces
+of Hardware you're looking to configure
+you can actually be rest assured that
+there will be no security infringement
+because of the use of SSH and we look
+into the architecture of anible it's a
+very simple architecture there is the
+anible management node that has play
+books which contain the instructions
+that you would have for your environment
+and that Playbook is then pushed out to
+all the different nodes that contain the
+hardware that you wish to configure the
+actual module collection is the
+configuration code itself um the
+playbooks are the the instructions of
+that configuration and then the
+inventory is the document of the
+different groups and Hardware within
+those groups that you would be pushing
+out to so we're going to go ahead and
+install anible onto system here and
+we're actually running our environment
+in a Linux environment right now U so we
+have a must environment and and a
+standard node but we're actually going
+to go into our terminal window and we're
+going to do everything on the master
+node so the first steps we want to do is
+actually go ahead and install anible and
+we're going to do that by installing
+pseudo yam install anable
+Dy and this goes ahead and downloads all
+the files that we need and starts to run
+the
+installation and let's go ahead and see
+if it's installed correctly so we type
+in
+vi- ETC SL anible SL hosts and there we
+see we actually have a default anible
+hosts already up and running which is
+fantastic and we want to grab this IP
+address which is anable servers and then
+the IP address with the password and
+root access and the IP will be specific
+to your local client so this is my
+client system so if I type in my config
+I'll actually see that the IP address
+matches up and then you want to make
+sure that the IP address is correct for
+your environment and so this is
+essentially a node in the nort
+environment and this is the IP address
+and the password for that node so we can
+access effect um correctly so we're
+going to hit colon at the bottom of the
+screen and take ourselves actually into
+anible and what we're going to do now is
+create a Playbook to be able to run a
+script so we're going to call it V
+sample. yml and here we have a sample
+Playbook we have the name we have the
+host we have the user and we have the
+task and in the task you actually see
+that we're looking to create a virtual
+web page with the content of welcome so
+that we can actually see that the web
+page is loading and all of this is
+written with a very basic XML format
+called yml which stands for yet another
+markup language uh but it's very
+flexible and it's very easy to learn so
+let's see if we can go go ahead and
+actually run this Playbook so you can
+actually see it in
+action and so we're going to type in
+ansible-playbook uh sample. yml this
+will run the sample yml script D- syntax
+D
+check and we Ty ansible-playbook
+sample. yml so I had some issues there
+so I'm going to try that again and let's
+uh go in and write the uh command again
+so an- Playbook
+sample. yl- syntax do- check and then
+run the actual Playbook itself and let's
+see if it works yes everything's working
+and it'll take a moment for everything
+to initialize and now what we want to be
+able to do is go back to our web browser
+and see whether or not we were able to
+create that default web page with the
+word welcome in it uh cuz that was the
+command that we created in our Playbook
+and there we are there's the word
+welcome exactly as we planned and we can
+go back and and we can review The
+Playbook that we created just to
+validate that so let's go back into
+screen here and let's uh go in and look
+at the uh yaml page and there we are we
+see that the word welcome is there
+exactly as we expected now step into our
+final area which is network monitoring
+using a tool called nagios so before you
+had nagios sometimes you didn't know
+whether or not your network was working
+in fact the worst case scenario was when
+your customers called up and said hey
+your website's not working you know the
+challenges you had is that you didn't
+know um how the usage of the server was
+being managed you didn't know whether
+you were up to 80% usage um utilization
+on that server or if you were at 50% it
+was difficult to get that information
+easily with nagios you're able to set up
+email notifications and other
+notifications that allow you to stay
+ahead of issues that you would have with
+in your environment so with this example
+if you're looking for memory utilization
+you can receive a notification telling
+you that your memory is almost full on a
+particular server and that you should be
+setting up a new server in this instance
+use anible to set up another server so
+again it's an as with the other tools
+that we've been covering nagos is an
+open- Source tool and it's specifically
+for monitoring systems servers and
+networks within your infrastructure very
+easy to use it has comprehensive
+monitoring tools that you can set and
+control it is highly available and it is
+designed specifically at problem
+remediation you want to set it up so it
+is the eyes and ears of your network
+without you having to constantly monitor
+your network so the way that nus works
+is that it's just constantly checking
+out your environment so the negative
+server is constantly checking the status
+of your systems and then is able to
+create visualization tools of that data
+so you can actually then make quick
+responses or you can even send out
+alerts such as an email alert or a push
+notification Alert in this video we're
+going to take you through the steps that
+you need to follow if you want to set up
+nagios and the dashboard nagios provides
+to be help to help monitor your network
+so the first thing you want to do is go
+to nagios
+docomo the application or you can
+actually do what we're going to do here
+is actually just log into the actual
+application running on the nagio website
+so for that you want to go to nagos na.
+demos nagos
+docomo provides and we've gone ahead and
+we've actually pre-filled in our ID with
+nagos admin and nagos admin for the user
+name and password of course you wouldn't
+do that in normal real life um so that
+brings us into the nagio dashboard and
+what you're going to notice is that
+there are three distinct areas that you
+should want to focus on um you have the
+fixed sources which which is all your
+actual physical Hardware that you're
+monitoring you have alert summary and
+abnormal behavior so let's go check out
+the fix sources and so we have two
+default fix sources here and one in
+Chicago one in Tulsa um and you can go
+ahead and set up additional sources um
+but what you'll see is that this
+provides a quick dashboard of the
+activity in the last 30 minutes the
+amount of usage on the the disc uh you
+can go ahead and under the behavior Tab
+and you can modify how you monitor
+monitoring and updating the actual
+Source itself and then the data from
+these reports will be from these sources
+will actually be then using reports
+queries and alerts that you'll use so we
+going to go back to the board and here
+you are the two um fixed sources so
+this's look at alert summary we going
+expand that out and the alert summary
+provides just a overview of the alerts
+that are being managed the alerts that
+you see here are the default alerts that
+have been created as part of the test
+environment um it's very easy to create
+alerts and in this instance you can see
+that the Chicago source is being used to
+manage the alert what you can do is when
+you're actually setting up your own
+sources you'll see that the alert will
+then point specifically to the source
+that it's um pulling the data from so in
+the PowerPoint in the presentation that
+we just went through you actually see
+how nagios actually is the center of
+collecting all the information but it's
+actually pulling information from the
+different networks and environments you
+have and then it stor that data locally
+to be able to create the visualizations
+and the alerts and we have here just a
+quick overview of an alert here inside
+of the summary which actually shows
+green which shows that the alert is
+actually good now there are three
+different types of colors there's green
+yellow and red but as you can see we
+have no critical alerts right now and
+you'll see the same thing happening at
+abnormal behavior as well where it
+actually goes ahead and shows you the
+different colors that are available the
+thing that's great is about as soon as a
+war status is created then allows you to
+trigger an email notification that gets
+sent out to you and has information in
+the email which you can then action so
+the alerts are very important and the
+alerts again are pulling the information
+from the fixed sources so the abnormal
+behavior is just going to zero in and
+show any specific abnormal behavior that
+would be happening with your fixed
+sources and so in this instance it's
+around bandwidth and everything is green
+so everything's looking good so we're
+going to the source Tab and we're going
+to look at the bandwidth graph and this
+is a more detailed visualization of the
+bandwidth that's happening through the
+Chicago fixed Source again you can
+create your own fixed sources and you'll
+be able to see the actual usage um such
+as the bandwidth gr for that fixed
+Source um on this screen and at the
+bottom of the screen we have just kind
+of the the most popular information that
+um most Network Engineers are looking to
+assess on how a network is being used so
+we go ahead and we can select reports
+and we can actually come in and we can
+either create our own custom report or
+you can use one of the many saved
+reports are already there uh if you're
+new to nagios use a save reports because
+you'll be able to get in and get the
+great visualization tools that negos
+provides very quickly and be able to
+then action the information visually
+from what you're looking at these
+reports are absolutely fantastic and
+they're also really good to send to
+other team members that would um have an
+interest in understanding the network
+usage um and the different areas that
+you're managing uh now if you want to
+get really specific on the type of data
+that you want in the report you can
+actually go in and create a query and
+the query um can be customized to really
+however you want it to to work the
+points of view are very specific
+insights into different data points that
+interact and they're very easy to create
+um a lot of them have been created as
+you can see on the screen already um and
+as you can see on the left hand side
+there's an edit button that allows you
+to edit and modify those points of view
+very quickly now we're going to go ahead
+and create one right now and we're just
+going to put one in put the limiter for
+an IP address we're going to change the
+data lifetime we can either do hours
+days a weeks we do 24 hours that's fine
+so we'll just go ahead and we'll see
+what we have on the screen and is as you
+can see there are just a lot already
+created select one we'll edit the FTP
+and we'll see what the data lay time for
+that is and it all looks good so a query
+will show all of the safe queries you
+created but you can actually go in and
+modify query very easy um you can go in
+and create a query and really
+essentially ask it to pull any kind of
+information that you would be looking at
+analyzing that has been captured by
+nagios and there's a dictionary you can
+use that nagos has on their website that
+allows you to get better access and
+understanding the querying constructs
+you can put together the alerts in my
+opinion are the most important part
+because these are the actual actions
+that interact with the data sources and
+will trigger alerts that get sent to you
+uh so if we go back to the presentation
+again you can see that we're analyzing a
+lot of data but it's the data that gets
+sent to you as an alert that allows you
+to immediately understand why you need
+to be able to go in and check out your
+network and this is why you're really
+using NEOS because you need to have
+those alerts and so what we're going to
+do here is we're going through the steps
+you use to create an alert and we're
+just going to do an an alert here that
+uh is going to be on um analyzing btes
+of traffic and the final step is to
+actually go ahead and save the alert and
+really put in what the alert
+notification model um method is going to
+be um the default is to use an email
+which is great but you can use a nagios
+alert or you know s SMP a simple Network
+um protocol alert um or just use a an a
+command email is definitely the easiest
+one to use and so getting started I
+would recommend you use email so we're
+going to go ahead and we're going to
+create one can do one on workflow and
+we're going to set up the way which
+we're going to manage this so the
+threshold is going to be 34 bytes with a
+critical threshold of 50 bytes which is
+very small I expect an alert to be
+triggered because of this and we're just
+going to use the default emails to send
+out and you'll see by default that um
+the new alert is now impending and and
+the reason why we have impending is that
+it's just there to re be reviewed by the
+system to make sure it meets all the
+standards I don't think that' be a
+problem and I'm just looking at some of
+the other different commands we have
+here so if we go back and we can get
+alerts from other negative networks we
+connect to different networks um right
+from this configuration screen and same
+thing with the S SMP receiver uh we can
+use a simple Network management protocol
+uh to connect to other receivers and the
+command tab allows us to create scripts
+that can be triggered from uh alerts
+that get created so you may want to have
+something that triggers a a rebuild of a
+network environment which would allow
+you to authenticate through um other
+systems now of course there are other
+things that you can set up in the nagos
+dashboard so you know things like
+information on your profile you know
+default here such as language and your
+username you have the same thing for
+system administrator where you can
+actually go in and set defaults for the
+assist admin there's ldap ad integration
+for simple um for S authentication go
+back to the main dashboard we scroll
+down you'll actually see that we have an
+alert has been approved that's the alert
+that we created before and it's now
+saying critical and because more than 50
+bytes of information have been sent over
+our test Network in the uh fixed source
+of Chicago surprise surprise 50 bytes is
+very easy uh to do so it's good to see
+that uh the uh system is working
+correctly and this is how our nagios
+environment works and uh from here the
+next step is for you to be able to set
+up and configure nagios to run with your
+infrastructure thanks Matthew now we
+have aneli AA Matthew anaga and Anand to
+take us through the major concepts of
+git selenium Jenkins Docker chef and
+puppet staying ahead in your career
+requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore exp our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more
+hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

@@ -1,0 +1,405 @@
+a discussion on decision trees is best
+understood with an analogy of our daily
+lives think about how we are often put
+in situations where we make choices
+based on certain condition where one
+choice leads to a specific result or
+consequence hello everyone my name is
+mang and welcome to this fantastic video
+on the decision tree algorithm in this
+video we will delve into decision tre's
+topics like what is decision tree the
+advantages of decision tree moving
+forward we will see applications of
+decision tree and some important terms
+used in decision tree at the end of this
+video we will Implement Hands-On using
+the decision tree algorithm just a quick
+info for you decision tree is after all
+an algorithm that is based on AI and
+machine learning a professional who
+wants to switch careers with AI and ml
+by learning from their expert then try
+giving simply learn postgraduate program
+in Ai and machine learning from P
+University and collaboration with IBM in
+this AIML course learn in demand skills
+such as machine learning deep learning
+and NLP computer vision reinforcement
+learning generative AI prompt
+engineering chat gbt and many more the
+link in the description box should
+navigate to the homepage where you can
+find a complete overview of the program
+being offered so take action upskill and
+get ahead so without any further Ado
+let's get started so what is a decision
+tree a decision tree employed in
+supervised learning is a tree like
+structure designed to forast the outcome
+of Target variable in supervised
+learning which relies on label data
+containing known output variables
+predictions are made through regression
+and classification algorithms these
+algorithms serve as guide in training a
+model with a predetermined output
+variable by grasping uncomplicated
+decision rules based on diverse data
+features the model learns Python's
+decision tree prove versatile handling
+both classification and regression
+challenges often finding application in
+assessing probabilities so moving
+forward let's see advantages of decision
+tree decision tree are simple to
+understand interpret and visualize the
+second one is they can effectively
+handle both numerical and categorical
+data the third one is they can determine
+the worst best and expected values for
+several scenarios the last one is they
+perform well even if the actual model
+violates any assumptions so moving
+forward we will discuss some decision
+Tree application so the first one is a
+decision tree is used to determine
+whether an applicant is likely to
+default on a loan the second one is it
+can be used to determine the odds of a
+individual developing a specific disease
+the third one is it can help e-commerce
+companies in predicting whether a
+consumer is likely to purchase a
+specific product or not the fourth one
+is decent tree can also be used to find
+customer churn rates so moving forward
+we will see some important terms used in
+decision trees so the first one is
+entropy entropy is the major of
+uncertainty or Randomness in a data set
+entropy handles how a decision tree
+splits the data the second one is
+Information Gain The Information Gain
+measure the decrease in entropy after
+the data set is split the third one is
+Guinea index the guinea index is used to
+determine the correct variable for
+splitting nodes it meas how often a
+randomly choosen variable would be
+incorrectly identified the fourth one is
+root node the root node is always the
+top node of a decent tree it represent
+the entire population or data sample and
+it can be further divided into different
+data sets the fifth one is decision node
+decision nodes are the subnodes that can
+be split into different subnodes they
+contain at least two branches the sixth
+one is leaf node a leaf node in a
+decision tree carries the final result
+so these nodes which are also known as
+terminal nodes cannot be split any
+further so let's move forward to the
+demo part so first we will rename this
+Jupiter notebook uh like thisis
+and this ision
+three right
+okay okay so first we will import some
+major libraries like numai pandas M plot
+lip SK learn seon so first we will
+import import
+pandas as
+PD
+right
+okay SP SPD
+then I will import
+numi
+numi as NP then I will
+import M plot
+Lim do
+pyplot as
+PLT then we will import eSalon and then
+we will import Matrix on them so from
+skan import
+metrix right then we will import
+cbor cbon as
+SNS
+from
+skon
+dot data
+sets okay I will
+import
+load Iris so I will import the is data
+set that's fler
+one then moving forward we will import
+some model selection skillon do
+model
+selection import
+train
+test
+split
+Ty then from SK Lear
+import tree decision tree we will make
+decision tree like tree shape structure
+okay so let me run
+is yes everything is
+fine okay it's still loading yeah so
+everything is fine so moving forward we
+will import data set or you can say the
+load data set we will load data Iris
+equals to
+load
+Iris
+right yes it's working fine then data
+equals to PT
+dot data
+frame and data equals to iris.
+data okay then comma
+columns equals to Iris dot
+feature
+names okay then I will run
+it if I will check data.
+head what it will show see you can see
+the data set sample length sample WID
+petal length petal width
+okay yes first give me
+yes so let's make species as a Target
+variable okay so first I will write here
+data
+species equals to Addis dot
+Target then I will write here Target
+equals
+to NP
+dot
+unique and Idis Target isis. Target
+okay then I will write Target n
+variable equals to np.
+Unique then
+Iris dot Target
+names
+okay then
+Target dictionary equals
+to
+dictionary in zip file then comma
+Target comma Target
+n underscore n right then moving forward
+I will write data
+species equals to
+data
+species
+dot
+replace Target
+dictionary right let me run it okay it's
+working fine so we set Target as a
+species okay then now what we will do we
+will make X and Y column okay for the
+train and test split so I will write
+here x equals to data dot
+drop
+columns right equals to
+species then y equals to
+data again
+species write the
+names underscore
+features equals to X do
+columns we are assigning names features
+to X column and here I will write Target
+labels
+Target labels equals to Y do
+unique
+okay
+okay so here we will split the data set
+into train and the test okay so xcore
+train comma xcore test comma y _
+train comma Yore
+test equals to
+train
+test
+split X comma y
+comma test size = to
+0.3 comma
+random random
+State equals to
+93 so what does this test size 0.3 means
+so test size 0.3 means we are splitting
+test and test data and the train data
+into into 70% and the 30% right 70%
+means training data the 30% is remaining
+is the testing data okay so I will run
+it
+right so here I will write from
+skar
+dot tree
+import
+decision decision
+tree
+classifier
+okay then here I will write DTC because
+I can't write decision classifier again
+again and
+again decision
+tree
+classifier
+max depth = to
+3
+comma random state to
+93 okay DTC do
+fit okay
+93
+no it's comma random state is
+93 to
+93
+right then DTC do
+fit X
+train comma y
+train okay then PLT do
+figure
+then figure
+size equals to 30 comma
+10 comma face color will
+be face color equals to
+B then I will write tree equals to tree.
+plot underscore tree then and DTC
+decision classifier comma features
+name feature
+names yeah features name comma class
+names equals to
+Target
+labels
+comma
+rounded plus
+true
+true
+then I will
+write comma filled with True
+Values comma font
+size will be
+14
+okay yes so
+now I will write
+here B
+do
+show okay then y
+prediction equals to DTC
+dot
+predict X
+test okay decision tree classifier is
+not
+defined maybe some spelling mistake is
+there
+okay let me check
+now okay feature names is not
+defined okay where is feature names okay
+features
+name I feat
+name okay okay this is names underscore
+features right so what I will do I will
+write First full
+code then I will show you the
+both graphs so I will write here
+confusion
+underscore
+Matrix equals to
+Matrix
+Matrix
+dot
+confusion
+Matrix right then
+y test comma y
+prediction okay then
+Matrix equals to PD dot data phrase
+G
+then
+confusion Matrix okay we will create one
+confusion Matrix
+graph heat map so I will
+write SNS
+do heat
+map
+Matrix comma a
+not to
+true comma fmt = to
+G
+comma AIS equals to
+AIS comma cmap sitemap equals to
+magma then
+AIS do
+set
+title is confusion
+Matrix okay then we will set the x label
+XT label y label y TX label okay then I
+will write here
+XIs do
+set X
+label
+predicted
+value comma font size
+is = to
+10 then
+XIs
+dot
+set xti
+label
+labels
+okay
+plus
+Target
+labels then X this do
+set
+y tick labels then list will become then
+Target labels will
+show then I need one rotation of
+zero equals to
+Z then I will write
+PLT dot
+show okay so let me run it
+so as you can see the decision
+tree is here but there is confusion with
+confusion Matrix
+okay first I
+will restart and clear all outputs I
+will
+do and let me run it
+again okay so there is some
+confusion okay so issue
+is confusion matric is not
+defined
+okay it's Matrix now it will come yes so
+as you can see confusion Matrix is here
+and the decision tree this is how you
+can make the decision tree we already
+discussed this uh word Guinea right the
+samples values so these patter length
+patle width are from the data set got it
+and this is confusion Matrix of
+particular data set you can see we have
+three categories Sosa versal and
+virginica okay so we have come to end of
+this video if you have any doubt please
+ask in the comment section below our
+team of expert will help you as soon as
+possible thank you and keep learning but
+simply learn staying ahead in your
+career requires continuous learning and
+and upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

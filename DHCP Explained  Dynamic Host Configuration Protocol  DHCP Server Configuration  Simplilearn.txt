@@ -1,0 +1,159 @@
+internet connection is the most basic
+configuration setting needed for a
+device to access the web or different
+activities
+but how exactly do we connect our system
+to the internet
+this is done by accessing the dhcp
+network protocol hi guys and welcome to
+yet another interesting video by simply
+learn but before we begin if you love
+watching tech videos subscribe to our
+channel and hit the bell icon never to
+miss an update from us
+let's take a look at today's agenda
+firstly we will understand what exactly
+the dhcp protocol is
+then the allocation methods in dhcp
+protocol
+next we will understand some helpful
+dhcp settings
+and lastly step wise we will understand
+the operation model for dhcp
+let's understand the dhcp protocol
+the dynamic host protocol or dhcp
+is a protocol that is designed to assign
+the ip address to a device for it to
+access the internet
+this network model is based on the
+client server architecture and removes
+the process of manually assigning an ip
+address to the system
+now let's take a look at the allocation
+methods for the dhcp protocol
+the allocation method of dhcp is divided
+into two types the first type is the
+manual allocation
+which as the name suggests is the
+signing of ip address to the system
+manually by the user
+the second method is dynamic allocation
+which uses a client server architecture
+to assign an ip address to the system
+now let's see some points regarding the
+allocation method
+the first type is the manual location
+as mentioned in this allocation type the
+user manually assigns cip address to the
+system for accessing the internet and
+can be observed in this instance
+this is done by accessing the network
+configuration setting
+of the device and also requires other
+related
+such as
+subnet mask
+preferred dns server and default gateway
+let's now take a look at the dynamic
+allocation
+in this allocation method the client
+device receives all the relevant network
+configurations from the dhcp server and
+the system gets configured to access the
+internet
+the provided ip address is given for a
+certain period which is also termed as
+the lease
+now that we somewhat understand what
+exactly the dynamic allocation in dhcp
+server is let's take a look at a small
+example
+open the start menu
+and type command prompt
+when the windows open up
+type
+ip
+config
+slash
+all command
+as we see by this command we can take a
+look at the network settings for our
+system
+over here we can see the dhcp is enabled
+that means the configuration that has
+been used on the system refers to the
+dhcp server
+and on the bottom side we can take a
+look at the different network settings
+that are given along with the ip address
+by the
+dhcp server that is subnet mask
+default gateway
+and the dns server
+now let's continue with the video
+now let's take a look at some of the
+notable dhcp settings
+the first one is known as scope
+as the name suggests a scope refers to a
+range of addresses that are available to
+a dhcp server for allocation of the
+client device
+next we have is lease
+this setting of the dhcp server is
+designed to prevent the holding of ip
+addresses by a single device
+this is done by assigning an expiration
+date to the leased ip address so that
+the dhcp server has some minimum
+addresses left for the client device
+and lastly we have address reservation
+in this dhcp setting the client device
+requests the server to assign the same
+ip address to the device
+each time the address allocation takes
+place
+this is done by identifying the mac
+address of the client device
+now let's take a look at the operation
+model for dhcp protocol
+the dhcp operations are performed on the
+user datagram protocol in short udp
+which is applied on two ports under udp
+which are both 67 and 68.
+the first phase is where the client
+broadcast a dhcp server message over the
+network to connect with the dhcp server
+this message basically means that it
+wants to connect to the internet through
+the dhcp server
+the second phase is when the dhcp server
+receives the dhcp message
+according to the message the dhcp server
+reserves an ip address for the client
+and network configuration information
+including subnet mask default gateway
+and preferred dns server
+in the third phase the client responds
+to the dhcp server's offer through a
+dhcp request message
+requesting the offered ip address and
+relevant network configuration for the
+system
+then in the last phase
+the server acknowledges the request
+broadcast from the client and sends the
+dhcp packet to the dlcp client which is
+comprised of network configuration for
+the client device
+with this we have reached the end of the
+video
+if you have any questions regarding the
+topic you can ask them in the comments
+section
+thank you
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

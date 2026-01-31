@@ -1,0 +1,263 @@
+hey Traders and welcome back today I've
+got a quick video Lesson for you guys
+I'm going to answer a question from a
+student of the Mastery course and here
+is the question I'm not sure if they
+would want me showing their name
+definitely not their email so I've
+blocked that out but anyway the question
+is what I wanted to check was how can we
+find a high and low in regular trading
+hours when the cash Market is open let's
+save for Dax which is a German index
+they want to get the high and low
+between 8 AM and 4 30 PM GMT instead of
+the whole 24 hours so this was in
+response to my previous lesson I put on
+the channel which was a day trading tool
+made in pinescript and that was this
+script here now the script is drawing
+yesterday's high that's the red line
+yesterday's low that's the blue line and
+this trading sessions opening price
+that's the white line and then about a
+60 ATR above and below that opening
+price this is just to assist day traders
+in gauging the volatility and potential
+distance that a market might be able to
+move during a trading session so go and
+check that video out if you're
+interested in this tool but anyway in
+today's lesson I'm showing you something
+slightly different and this script is
+drawing the high and the low and the
+closing price of yesterday's trading
+session within a given time frame or
+time session so a slightly different
+application of the techniques taught in
+the last video so I thought this was an
+interesting application of time-based
+filters and functions in Pine so I
+figured I'd make a video about this to
+put up in the course and on YouTube so
+that we can all learn from this question
+so let's get rid of this script again
+there'll be a link in the video
+description to that lesson if you're
+curious let's open the source code of
+the script and I'll break it down so in
+order to track the high low and closing
+price of a previous day's price action
+within a Time session we can't actually
+use the security function for this it's
+not appropriate for this application the
+security function is used for
+referencing higher time frame
+information and so in my day trading
+tool I actually use the security
+function to request yesterday's high and
+low in this particular script that's not
+appropriate because we don't want to get
+the high and low over the past 24 our
+period we want to get the high and low
+based on a Time session so how do we go
+about this if we're not using the
+security function well let me explain so
+the first thing I'm doing here is
+getting our user inputs we're just
+getting the session to Monitor and the
+time zone we want to apply to this time
+session this color session is just a
+debug option and it will just paint the
+background color of my chart to
+highlight the zone that we're tracking
+so you can see here using this trading
+day as an example the low is saved and
+the high is saved
+and the closing price is saved and then
+drawn over the next day's session but
+I've left this off by default it's just
+purely for debug purposes so the first
+thing we need to do is determine if a
+price bar Falls inside the specified
+session to do that we use this little
+function here I use this in all my
+scripts that require detecting time
+sessions so I'm not going to explain the
+code here I've done that many times in
+other lessons and in the Mastery course
+but basically you can copy and paste
+this line of code into any script and it
+will detect if a bar Falls within the
+given session it takes a parameter here
+SES is the time session that you pass in
+in this case it's going to be this
+string here 8 AM 0-800 to 3 P.M 1500
+this is the time session we want to
+detect so in other words this string
+will look like this when we pass in this
+time session into this parameter
+this is the string that we will be
+passing into the time function now this
+one two three four five six is the days
+of the week so if you wanted to only
+detect Mondays or Tuesdays or someone
+you can put in the corresponding number
+there so now that we have a function
+that can help us detect when a bar Falls
+within the time session we're looking
+for the next thing we need to do is save
+yesterday's high low and close to do
+that I'm just using persistent variables
+so the VAR keyword will make sure these
+do not get reset on every new bar and we
+can update them only when we need to so
+these variables track price action as
+it's traveling around through the
+session and then when the session ends
+we save the highest high over that
+session the lowest low over that session
+and the closing price of that session
+into these variables and these variables
+are the ones that get drawn onto our
+chart on the next day's trading session
+so hopefully that makes sense so moving
+on the next thing we do here is create a
+persistent Boolean variable and this is
+used to reset today's high low close
+tracking variables these variables here
+so on the first bar of a new session
+today's high low and close all get reset
+so that we can update them for the next
+day's trading session and we just keep
+leapfrogging throughout price action so
+to update these variables we check is
+the current bar inside the session we
+want to detect
+so time session is this user input here
+if the current bar Falls within this
+session then this code gets executed the
+first thing we do is check if this is
+the first bar of a new session then we
+reset today's high to the current bars
+high and today's load to the current
+bars low and we turn off this Boolean so
+we set it to false that way we don't
+keep updating today's high
+on every bar we only want to reset these
+variables on the first bar of a new
+session that's what this Boolean helps
+us to do so once this code gets executed
+this Boolean is set to false and this
+code no longer is relevant
+and then this code becomes relevant and
+this code is checking if the current
+bars high is greater than the bar high
+that we've saved into today's high
+variable then we re-assign today high to
+this bar is high
+so whenever a bar exceeds our saved
+session High
+we save that new high and we keep
+updating that until the end of the
+session and then that gives us our red
+line our blue line is the same but
+opposite direction we're checking if the
+current bar is low is less than the low
+we've saved for today if so we update
+that variable and that's it we're
+tracking the session high and low and
+then all that's left to do is save those
+variables at the end of the session so
+that we can draw them on the next
+session now to do that we have this else
+block of code so if we are inside the
+session we want to detect this code gets
+executed so if we're not in the session
+this code gets executed now I just
+realized I can move these into this if
+statement here and get rid of this
+Market high low close so if we are not
+in the trading session we want to
+highlight or analyze and this is not the
+first bar of a new session then we save
+today's high into yesterday's high we
+save today's low into yesterday's low
+and we save this final bars closing
+price into yesterday's close then we set
+this flag Boolean first bar of new
+session to true
+and now every bar that prints outside of
+this session that we're detecting
+this code will no longer get executed
+we've already saved yesterday's
+high low close and then when the first
+bar prints inside the time session we're
+looking to detect on the next day
+remember we've set first bar of new
+session to true and so the very first
+bar that starts a new session this will
+be true this code gets executed first
+bar of new session is set to false and
+we just keep repeating so every new day
+we cycle through we save and update
+today's high and low and then at the end
+of the session we save all that
+information and then all that's left to
+do is plot it onto the chart and so my
+code here is a little bit complicated
+looking we could technically get rid of
+all of this ternary operator stuff if we
+wanted to
+the problem with this as I've written in
+the comment here if I save my code and
+get rid of those ternary operators those
+conditional operators you can see we
+have these weird connecting lines now
+connecting all of the sessions and it
+just looks strange I don't like the look
+of it at all and so to fix this I added
+in this little bit of code here and all
+this code does is it checks if
+yesterday's high is not equal to
+yesterday's high on the previous bar
+that means that we just updated the
+value and if we just updated the value
+then we want to plot n a or nothing
+otherwise if we did not just update the
+value and this line is the same value as
+it was on the previous bar then we just
+want to plot that value and what this
+will do if I save my code now is when a
+new session begins we get a one bar gap
+between our lines and it looks a lot
+tidier as you can see it's just easier
+to read and our charts are less
+cluttered and then finally we have our
+debug code here which just checks if
+debug is turned on if it's turned on and
+the bar that this script is currently
+running on Falls within our time session
+in the settings menu then we change our
+background color to green with 90
+transparency otherwise we do not change
+the background color and then
+um of course we also pass in the time
+zone that we want from the settings menu
+in this case that's TMT or UTC to pass
+in a specified time zone we just add
+that on to the end of our time function
+here as a extra parameter if you omit
+this then the time function will just
+reference The Exchange time zone I
+believe but anyway that's it for today's
+lesson I hope you found this interesting
+as always the source code will be below
+if you want to learn more about
+paintscript and take your trading to the
+next level go check out my courses at
+Pine streetmastery.com and with all that
+out of the way I hope you have a
+fantastic week good luck with your
+trading and your coding and I'll speak
+with you in the next lesson take care

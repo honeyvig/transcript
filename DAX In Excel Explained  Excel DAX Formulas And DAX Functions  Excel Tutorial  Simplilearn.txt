@@ -1,0 +1,150 @@
+hey everyone welcome to simply learn's
+youtube channel in today's session we
+will be learning about attacks in excel
+but before we begin let me tell you guys
+that we have daily updates on multiple
+technologies so if you are a tech geek
+in a continuous hunt for latest
+technological trends then consider
+getting subscribed to our youtube
+channel and don't forget to hit that
+bell icon to never miss an update from
+simply learn
+now dax in excel is a sophisticated
+formulas type language that comes in
+handy while working with relational data
+and extracting information via dynamic
+aggregation functions dax in excel
+stands for data analysis expressions
+dax functions are completely familiar to
+the general and default functions that
+are available in excel
+now tax allows users to perform slightly
+escalated and advanced and custom
+calculations upon various data types
+like character data date time time
+intelligence functions and many more and
+in tax there are a variety of functions
+such as backstable valued functions bax
+filter functions dags aggregation
+functions time intelligence functions
+date and time information time logical
+parent and many more
+now in today's session we will look into
+one such type of tax function in excel
+that is dax date and time function in
+excel
+now without further ado let's get into
+practical mode
+and we have started a microsoft excel
+inside excel we have opened a new blank
+worksheet now navigate to data option in
+the toolbar and in that go to
+the powerpivot window
+now we have entered the powerpivot
+window and inside that you can see the
+option of get external data click on
+that and you can see a variety of
+options that is you can get the external
+data from a database you can get from
+web servers that is from
+data service and you have also other
+forms of data sources and existing
+connections for now we will take other
+forms of data that is a microsoft excel
+data which is in our local system
+select next now provide the location of
+your folder just browse
+and we will select dax employee data
+open
+and there you go we have our data
+connected to our power period window
+click on next
+and there you go you have the selected
+table and views click finish and you can
+see the data getting imported into your
+powerpivot window
+there you go by default if you want to
+add any tax related functions into your
+powerpoint window you'll have an
+external added column over here which
+looks something like this if there is
+not an external column you can also add
+the column it's not a big trouble now we
+have some data here that is the employee
+id employee name designation of the
+employee department of the employee
+salary
+and joining date etc
+let's expand this view and see what's in
+what's more in it
+so this column is the date of birth and
+this column is the employee joining date
+right now we have so much of data now
+let us imagine that we want to calculate
+the retirement age of all the employees
+so now let's rename the column to
+retirement
+date
+so we have our new column that is
+retirement date now we will make use of
+dax date time functions to calculate the
+age and find out the exact retirement
+date of that particular employee so let
+us imagine that every employee will
+retire after the age of 65 so we have
+our date of birth of every employee and
+the joining date of every employee now
+we'll come up with a tax detent time
+function and calculate the age and then
+we will find the retirement date of that
+employee
+now every tax function starts with the
+same method or the same way as the
+simple excel default method starts that
+is by starting with an equals two and
+then
+we will find e data
+e date
+and
+and now our first parameter that is the
+start date that is the employee uh
+the date where the employer joined the
+organization so our sheet name is sheet1
+now our joining date is in the f7 column
+select f7
+press tab to select it and comma
+now how many months so each and every
+year will have 12 months so 12 months
+into the age that is 65 star 65 and now
+you can close the uh function and press
+enter and then you will find the
+retirement date of that particular
+employee
+so there you go so we have the employee
+date that is employee retirement date
+for all the employees so the first one
+that is jack has the retirement date of
+19 february 2085
+and similarly jennifer has her
+retirement date at 15th of august 2084.
+so that's how we use the dax functions
+in excel so this is one of the several
+dax functions in excel that is dax date
+and time functions in excel now with
+that we have come to an end of this
+tutorial on tax functions in excel if
+you have any queries regarding any of
+the topics covered in this session or if
+you need the resources that we used in
+this session then please feel free to
+let us know in the comment section below
+and our team of experts will be more
+than happy to resolve all your queries
+at the earliest until next time thank
+you stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

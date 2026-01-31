@@ -1,0 +1,320 @@
+welcome to this exciting tutorial on
+dictionaries in Python if you are new to
+Python Programming this video is for you
+dictionaries are an essential part of
+the language that you will use over and
+over again in your coding adventures and
+for the more experienced python
+programmers out there this video will
+refresh your knowledge and give you some
+neat new tricks to use in your code so
+what exactly is a dictionary it's a data
+structure in Python that allows you to
+map one set of values to another set of
+values in other words you can use a
+dictionary to associate a key a unique
+identifier with the value the data
+associated with that key this makes
+dictionaries extremely powerful and
+versatile and they are used in a wide
+variety of applications from web
+development to data analysis but that's
+not all dictionaries are also super fun
+to use did you know that dictionaries
+allows for seamless use of alternate
+data types like strings and booleans
+that means you can store and retrieve
+data quickly and efficiently without the
+need for time consuming type conversions
+before we dive deeper into dictionaries
+in Python if you enjoy watching these
+videos and find them interesting please
+subscribe to our Channel because we
+bring the best videos for you daily also
+hit the Bell icon to get notified
+whenever we drop a new video if you are
+one of the aspiring data scientists
+looking for online training and
+graduating from the best universities or
+a professional who elicits to switch
+careers with data science by learning
+from the experts then try giving a short
+to Simply learn skeltec postgraduate
+program in data science in collaboration
+with IBM the course link is mentioned in
+the description box below that will link
+it to the course page where you can find
+a complete overview of the program being
+offered so whether you are just starting
+out with python or you are an
+experienced programmer this tutorial has
+something for everyone dictionaries are
+an essential part of the language and
+learning how to use them will make your
+programming life a whole lot easier
+let's get started dictionaries are
+another type of composite data type in
+Python there are also a collection of
+objects but much like tuples and lists
+and like lists they are also mutable
+Dynamic and can be nested however a key
+difference and property of dictionaries
+is that they are unordered items and
+dictionaries are paired using keys
+unlike enlisted tuples where the objects
+are assigned numerical indexes to define
+a dictionary we use curly braces each
+key value pair in this dictionary in a
+dictionary is separated using commas and
+the key and values themselves in a pair
+are separated using a colon let's look
+at an example this is a dictionary where
+I have three key value pairs as you can
+see they have been separated by colons
+and each repair themselves are separated
+by commas and these are enclosed in
+curly braces to define the whole
+dictionary in this example these are the
+keys banana apple and grape and their
+respective values are yellow red and
+green so this is very important
+important that in this particular data
+type we have what we call a key and that
+key is assigned a value and we can have
+multiple such pairings and we have three
+such pairs in this particular example
+another example or the or another type
+of way to define a dictionary is using
+the dict function this is how we use it
+as you can see I have inputted two value
+or two object tuples this is a tuple
+this is atiopal and this is 80 opal and
+when I use it in a dict function when I
+place it within a list what python will
+do is it will consider the first element
+of each Tuple as a key and the second
+element of each Tuple as its respective
+value now if I check what's in D as you
+can see the key banana has a value
+yellow the key apple has a value red the
+key grape has a value green so this is
+another way of defining dictionaries an
+important note over here is that
+the the objects that we use for Keys
+have to be of an immutable data type so
+we cannot use for example lists uh as an
+example of keys but we can use say
+integers or strings for our dictionary
+Keys also Keys have to be unique when it
+comes to a dictionary you cannot have
+two different keys with uh or should I
+say the same key having two different
+values you can have only one key and
+that one key will have a unique value
+assigned to it duplicate keys are not
+allowed however when we speak about
+values we have no such restrictions you
+can have immutable or an immutable data
+type as a value in a dictionary and you
+can have duplicates as well so if I
+created a dictionary with a key say
+banana and if I give if I associate it
+with it
+a value green I cannot create another
+key banana and Associate a value yellow
+let's see what happens when I actually
+do this if you actually see what has
+happened here is python has considered
+the second case so it's it first looks
+at the first pair it goes okay so my
+dictionary has a key banana with a value
+green but right after it it sees another
+key banana with a value yellow so it
+overwrites my first key banana with the
+second key and it overwrites the first
+value green with the second value and we
+essentially get one key banana with the
+second value yellow so obviously this is
+python does this to avoid duplicacies
+however if I created a dictionary with a
+key banana again if I created I'll give
+it a value yellow or say green if I
+created another
+key and if I give this also a value
+green this is perfectly fine and this
+will not nothing special will happen in
+this case because values do not have to
+follow such rules let's speak or let's
+see certain dictionary operation
+operations and functions now so let's uh
+bring back our original dictionary which
+we had created earlier with the three
+pairs all right so what if I wanted to
+we can use keys to essentially do these
+operations and functions let's see what
+happens when we so much like how we use
+sequence how we use indexes in example
+of sequences we use Keys when it comes
+to dictionary so let's see what happens
+when we use a key over here so we as we
+know banana is a key in this dictionary
+let's see what happens when we do where
+we give this command it actually gives
+the value associated with that key which
+is yellow what if we wanted to change a
+particular value Associated to a
+particular key I would give I would do
+this I would give the key and assign it
+uh the value that I want to change it
+with all right now if I check my
+dictionary you can see the key banana no
+more has yellow value but the value gold
+what if I wanted to add a new pair you
+know a new key with a new value
+completely I would do it pretty much the
+same same way as I did in the previous
+step I would
+um essentially write my new key whatever
+I wanted say if I wanted a new key
+called watermelon I would assign it a
+value red and now if I check my
+dictionary at the end of the dictionary
+you will see that my new key pair key
+value pair has been added watermelon red
+as you can see over here now what if I
+wanted to remove if I wanted to remove a
+key value pair from my dictionary I can
+use the delete function which is called
+by using this the Del function now how
+do I do it see if I want to remove the
+key value Apple in Red so all I have to
+do is do del d and within square
+brackets I have to only mention the key
+I don't even need to mention the value
+just the key so you can probably draw
+parallels in how we use indexes when it
+comes to lists and tuples and even
+strings and how we use Keys when it
+comes to dictionaries they are quite
+similar so if I did this and if I oops I
+think red is actually not a key as you
+can see red is a value my key is Apple
+actually it's not red it's apple as you
+can see now if I see my dictionary the
+key apple and its value red has been
+removed so these are some of the
+operation questions that we can do for
+dictionaries using keys what if we
+wanted to use certain inbuilt functions
+that are associated with dictionaries
+well some of the examples are as follows
+there is a get function when we use the
+get function all we have to do is enter
+a key inside the parenthesis and it will
+get the value associated with that key
+so if I gave the key grip let's see what
+value is associated with it as you can
+see it's green there is also a function
+called items that Returns the key and
+value pairs in our dictionary as a list
+of two object tuples where the first
+object is the key and the second object
+is the Tuple so let's see what it does
+as you can see it gave me a list and in
+this list the objects inside the list
+are two object tuples where the first
+object is always the key and the second
+is the value and and it's the same for
+each of the tuples so this is what items
+function does let's see what uh the next
+so the next function is Keys let's see
+what the keys function does as you can
+see it returns a list of all the unique
+Keys within our list I mean within our
+dictionary similarly we can there is a
+function for values as well and as you
+can see it returns all of the different
+values that are present in our
+dictionary in the form of a list also
+it's important to note that if we have a
+particular value that has occurred
+multiple times in a dictionary it will
+appear as many times it has occurred in
+the dictionary or appeared in the
+dictionary in our list over here when we
+use the value function so if say a
+particular value say I had another key
+where its value was green again so I
+would have the value green appear in
+this list once more essentially our next
+function is pop item what this does is
+much like the pop function in list it
+gives us the last entered key value pair
+that is present in our dictionary so the
+last centered pair was watermelon key
+watermelon with the value red and that's
+what has popped out when we give this
+function another important function
+associated with dictionaries is the
+update function and the update function
+is a very neat function that is used to
+merge two dictionaries together so say
+if I had a dictionary let's say I'm
+creating a dictionary using the dict
+function where I have say some key
+called key V so as I had mentioned I
+will use two object tuples in this case
+and say give this also a value green all
+right and another pair would be say
+mango and
+let's give it a value yellow
+all right so this is another dictionary
+that we have created as you can see over
+here we have created a dictionary with
+the key called kiwi with value green and
+another key mango with a value yellow
+and I already have a dictionary D with
+uh these values all right now if I want
+to merge these two dictionaries I can
+use the update function what I do is say
+if I want to merge D with X or x with d
+only the ordering will change and that
+doesn't really matter when it comes to
+dictionaries so if I want to merge D
+with X I use D update and then inside it
+I put my target dictionary now when I
+check what's in D I have the the
+dictionary X and its key value pairs uh
+merged inside my original Dictionary d
+as you can see I have my original ones
+here and I have the merged ones over
+here so this was the update function
+with that we have reached the end of
+this dictionary is in Python tutorial if
+you have any questions please feel free
+to comment and we'll have it answered
+for you as soon as possible until next
+time thank you for watching stay safe
+keep learning and get ahead staying
+ahead in your career requires continuous
+learning and upskilling whether you're a
+student aiming to learn today's top
+skills or a working professional looking
+to advance your career we've got you
+covered explore our impressive catalog
+of certification programs in Cutting
+Edge domains including data science
+cloud computing cyber security AI
+machine learning or digital marketing
+designed in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know more
+hi there if you like this video
+subscribe to the simply learned YouTube
+channel and click here to watch similar
+videos turn it up and get certified
+click here
+foreign

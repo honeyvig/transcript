@@ -1,0 +1,382 @@
+hey everyone welcome to Simply learns
+YouTube channel today we will learn
+about data transformation in P that's
+said if these are the type of videos
+you'd like to watch then hit that like
+And subscribe buttons and the bell icon
+to get
+notified craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to fast track your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back just for a quick info if you want
+to upskill yourself master data
+analytics land your dream job or grow in
+your career then you must explore simply
+learns goad of various data analytics
+programs simply learn offers
+postgraduate programs from P University
+in collaboration with IBM through this
+program you will gain knowledge and work
+ready expertise in skills like
+prescription Predictive Analytics
+regression classification and over a
+dozen others that's not all you also get
+the opportunity to work on multiple
+projects and learn from industry experts
+in top T product companies and academics
+from top universities after completing
+these courses thousands of Learners have
+transitioned into a data analytics role
+as a pressure or moved onto a higher
+paying job and profile if you are
+passionate about making your career in
+this field then make sure to check out
+the link in the print comment and
+description box below to find a data
+analytics program that puts your
+experience and areas of Interest now
+without further delay let's get started
+so what exactly you mean by data
+transformation in
+PBI so data transformation can be a
+little similar to data cleaning so
+before any kind of data analytics you
+might be receiving raw data from a
+website Source a cql database or an
+Excel file or multiple sources right
+once after you receive the data whether
+it is batch mode data or streaming data
+you are supposed to clean it right you
+might have to clean up the discrepancies
+like the blank rows or the blank cells
+or any irregularities in data such as
+wrong data type right such discrepancies
+from the data should be eliminated in
+the first stage of data analytics so
+that's exactly where data cleaning and
+data transformation comes into the
+picture so you have various tools for
+data cleaning and data transformation
+like Excel SQL
+but if you are a powerbi user then good
+news for you power query and powerbi can
+assist you in terms of data
+Transformations so in this tutorial we
+will be discussing the fundamental the
+most important day-to-day data
+Transformations which a data analyst
+takes care of in the process of data
+analysis is what we going to discuss
+today so let's quickly switch to powerbi
+but before that let's have a overview of
+what kind of data we are exactly dealing
+with today so we are dealing with
+Superstore data and that's in Excel
+format so this is our Superstore data
+set and we have four tabs here the first
+one is orders tab where we have customer
+ID order ID date ship date ship mode and
+customer name and in the second tab we
+have store data set which has the
+details about the customer from where he
+or she is the state City postal code and
+which category or subcategory did they
+purchase and Order sales discount profit
+everything right right and here we have
+some information about any of the orders
+which were returned and some people over
+here so these are the four tabs that we
+are dealing with today now that we have
+an overview on the data that we're
+dealing with let's quickly now switch to
+pobi so now we are on the P window can
+just discard
+changes there you go let's quickly
+import the data from our downloads this
+this is the data that I want to deal
+with today now it might take a little
+while to connect to that particular data
+set and load the data onto power PN just
+a couple of minutes since the data set
+is a little too heavy it's about
+10,000 so let's wait shouldn't take
+long
+there you go the data go successfully
+loaded so you have the option of loading
+what kind of data you want you have four
+tabs as we just discussed you can load
+the orders Tab and you can load the
+stores Tab and in case if you want the
+returns tab you can also load that and
+if you want all of those just load all
+of those right now I just want the to
+apps orders and stores now here I can
+just directly load to get started
+working on this but in case I don't want
+any kind of discrepancies in case if I
+have a doubt that this data might not be
+cleaned I shall go with data
+transformation so ideally you should go
+with data transformation check your data
+first before any kind of analytical
+processes so let's go with that
+transform
+data and shortly we should be having the
+power query window open on our desktop
+screens
+so there you go you can see the complete
+data set has been successfully uploaded
+both these stores and alter data sets
+now uh let's quickly check the data from
+our data set so here you can see we have
+orders date right but I can see 4
+2682 and
+4253 this is not in the form of dat
+correct so this is the simple uh uh step
+that we discussed changing the wrong
+data typ so you can just click on the
+lower arrow button over here and
+uh you can right click and here you have
+an option to change the type correct so
+it is considering it as a whole number
+which is wrong so you can change it
+to
+date replace
+current so now we trying to change the
+order date from a data typee whole
+number to date data type so there is
+some error if you click on error or if
+you just navigate onto it powerp should
+be able to show you what error was it
+and just in case if it's not working
+okay we are unable to pass the value
+provided so you can just remove that and
+try it in a different way change type
+to date and time
+zone
+date I think this should
+be
+helpful
+or if it's not working here let's
+quickly check what could be the
+error
+time and now let's try to refresh the
+data it is taking a little while
+uh we also have another information that
+to deal with we have the first row as
+row headers so we should be declaring
+PBI that we also have a row header over
+here just taking a little while to
+refresh meanwhile let's quickly check
+into the stores data and here we have
+customer name so let's try to apply
+second type of data transformation which
+will be like let's say split column we
+have uh the complete name of U the
+customer let's try to split it into
+first name and second name so by D
+limiter and we can give multiple options
+over here left mostly limiter let's say
+a person has three uh parts of his name
+first name middle name and second name
+or the last name so but we just wanted
+to split into first and second name so
+we would go with the first left most
+limiter and split the D set press okay
+and it should help us toplit the
+data first name and second name and we
+can also name the column separately as
+first name and second name instead of
+customer name it's taking a little while
+than the ideal time but it's completely
+all
+right since considering the 10,000 rows
+of stores data and 10,000 rows of ERS
+data it is all right not a problem now
+let's try to take a look at the aut
+status it it has successfully changed it
+no it is still showing as an error I
+don't know what's wrong
+here it's maybe
+incomplete let's quickly refresh
+all instead preview and check if can it
+can help
+us so there you go after refreshing the
+first aut date is change to dat data
+type so what we missed is when you
+change the type you're supposed to add a
+step so what exactly I mean by that now
+we are trying to change the second one
+as well so just wait for a while and it
+will give us uh choice if we want to add
+new step or not that's when we select
+the option yes please add a new Step so
+what do I mean by steps so applied steps
+you can see something over here right so
+every alteration every change or every
+modification that you're doing every
+transformation you're including onto
+your data will be recorded as a macro so
+that can be implemented if you are
+loading a similar data set for the next
+patch let's say this is 2022 data and if
+you're trying to analyze the 2023 data
+and every column is similar and you can
+just follow these appli steps and the
+same implementation will be automated
+you don't have to spend time in doing
+the same process once again there you go
+so this time it has recorded the step
+and it automatically take has taken a
+new step over here change type step one
+change type step two if you don't want
+the step to be added you can just select
+the red x mark over here it will remove
+it and similarly when you when you go
+back to the stor data set here you have
+the first name and second name split
+successfully and uh now uh let's say you
+want to have unique
+customer data right in that scenario you
+can just even remove duplicates from
+this particular column just remove
+duplicates and you'll just have unique
+data it's possible that one customer
+might have come here to buy the same you
+know buy the same product from different
+dates or One customer might have uh done
+a repeated purchase so it's possible but
+again if in case if you just wanted to
+know if there is a way to eliminate
+duplicate entries then you can do that
+so for now let's not delete the customer
+IDs here because one customer might have
+visited the same store for multiple
+times and might have purchased a
+different uh product or might have made
+the same order with multiple products
+right so there is a possibility for that
+let's not disturb the data set so I just
+wanted you to know if there is a way to
+element the duplicat from the data set
+yes it is now let's also check another
+possibility of data transformation so
+let's say you wanted to add a new column
+and identify or include some
+mathematical operations for now let's
+say I have sales quantity discount and
+profit but I don't know what's the rate
+right so here the sale is
+4261 and quantity is two but I don't
+know what's the rate of one for so I can
+include that you can just select the
+last call or where you want a new column
+just go to the add new column here and
+here you can just uh choose the custom
+column should be somewhere over here
+yeah this is the custom column and now
+if you click on the custom column you
+can rename the custom CL column to rate
+of
+product and here you can choose the
+mathematical operations to be applied on
+the columns so sales column insert
+or double click divided by
+quantity okay now it should give you the
+rate of each product individual
+product it is taking some sizable time
+it shouldn't take so long so there you
+go you have the rate of product and now
+let's say you want to combine multiple
+data sets for example here I have stores
+data set but my stores data set doesn't
+have any data related to orders and
+orders does not have any data related to
+customers now I want to combine these
+two is there a way yes you can do that
+now let's get back to stores and here go
+to home option and here you have
+something called merge queries so now
+the stor data set has been select in the
+first data set here just select the drop
+down and select the second data type
+orders so here you can see stores with
+the current one which is in the first
+place now select based on which primary
+key you want to combine both so I want
+to go with customer ID because both of
+my data sets do have customer IDs so
+I'll go with customer ID and both dates
+will be combined at the end at the last
+column powerbi will show me a new table
+not a new new column it will give me a
+table combined with all the columns in
+one column you just have to expand the
+column and select which columns from the
+second data set you want to include in
+your overall data so let's do that
+practically so here you can see I just
+have tables if I select the expand
+column option over here you can see I
+have a lot of columns here so just
+deselect everything I do have row ID I
+do have a customer ID what I need is
+order ID order date ship date shipment
+mode and customer name I do have it so
+that's all I need so just press on okay
+and I should have them included in my
+new data set Al
+together it might take a little
+while so there you go we have the new
+orders ID order datee ship date and ship
+mode added to our data set now just
+click on close and apply
+and your data set is already ready for
+data analysis Supply changes it is
+taking a little time so at the end you
+just have to click on the apply changes
+and your data will be ready for analysis
+so that's exactly how you can perform
+data transformation in powerbi desktop
+version so there you go the Rel set got
+successfully loaded all over here and
+you can just drag and drop them onto the
+visualization spot and you can work on
+your data so with that we have come to
+an end of this session on data
+transformation using PBI should you have
+any queries regarding any of the topics
+covered in this session or should you
+require any of the resources like set
+PPD used in the session or if you have
+any doubts please do let us know in the
+comment section below and our team of
+experts we'll be happy to resolve them
+as early as possible until next time
+thank you for watching and stay tuned
+for more from s staying ahead in your
+career requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts ch use any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simplylearn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click
+here

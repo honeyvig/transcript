@@ -1,0 +1,491 @@
+hey everyone welcome to our simply
+learns youtube channel today we will
+talk about one of the interesting topics
+that are dictionary hashtable and sets
+but before we begin let me tell you guys
+we have our daily updates on multiple
+technologies
+so if you are a tech geek in a
+continuous hud for a latest
+technological advancement then consider
+getting subscribed to our youtube
+channel and don't forget to hit the bell
+icon to never miss an update from simply
+learns youtube channel
+now without any further ado let's get
+started with the agenda for today's
+session
+we will begin a session with what a
+dictionary is
+then
+we will discuss the methods in the
+dictionary
+after that we will discuss what a hash
+table is now we will dive into the
+properties of c sharp hash table
+then we will discuss the methods in c
+sharp hash table
+after that we will have a look at hash
+sets
+finally we will wind up this session
+with the implementations of set
+now let's get started with what
+dictionaries are
+in c sharp the dictionary class
+represents a generic collection of key
+value pairs
+dictionary is a class defined in the
+system.collection package
+a generic namespace is a sort of a class
+that can include any kind of data in the
+form of keys and values
+each key in collection must be one of a
+kind
+here's the syntax for declaring a
+dictionary
+next up let's discuss methods in the
+dictionary
+there are basically four methods we can
+apply
+in a dictionary
+we can add an element
+remove an element
+find an element
+or replace an element
+now let's implement this in the code
+editor
+choose from over 300 in demand skills
+and get access to 1 000 plus hours of
+video content for free visit scale up by
+simply learn click on the link in the
+description to know more
+let's start
+we will start with
+namespace
+dictionary
+class
+program
+static
+void
+main
+with argument as
+string
+args
+here we will create a dictionary with
+the string key and in 16 value pair
+so
+dictionary
+string
+comma
+and
+16.
+depth
+is equals to
+new
+dictionary
+string
+and
+16
+now we will add elements to this
+so
+text
+dot
+add
+then let's add a word
+cart
+and give it a value as 32
+then
+we can have
+another element
+in this dictionary
+select add
+and name it
+talk
+with number as
+25
+next check
+dot add
+3
+comma
+29
+that
+dot add
+row
+comma
+21
+select
+dot
+add
+allow
+comma
+34
+now let's write a statement to count the
+words in the dictionary
+so console
+start
+write line
+count
+in curly braces
+0
+comma
+debt
+dot
+count
+now
+let's try to set a new item value
+so
+let's see ticked
+i want to change the value
+for element tree
+and let's change it to let's say 9.
+now if
+not dict dot
+contain
+contains key
+as
+dog
+then
+we will change the value
+for this
+talk
+as
+20.
+now let's say if
+we want to get
+an element using values
+so we will not direct
+contain
+value
+as
+9.
+and we will
+have it as
+console
+dot
+write line
+as
+item
+found
+now let's try to read all the items
+so
+console
+dot write line
+words
+hall
+item
+now for each
+key value pair
+string
+comma
+and
+16
+word
+and
+that
+so we will write
+console
+dot right
+line key
+0
+comma
+value
+as one
+comma
+word
+dot
+key
+comma
+word
+dot value
+now
+let's try to remove
+subject
+dot remove
+and let's remove
+tree
+let's copy double
+lines
+after
+deleting
+tree
+here we are printed again
+now
+let's remove all the element so
+text
+dot
+clear
+let's save that
+and run it
+as you can see
+here
+we are getting the count as 5
+since we first
+tried to find the count of the elements
+then
+we have printed
+all the elements
+then we remove the tree
+so now
+then we print it again so it is removed
+again
+let's get back to our slides
+now let's discuss the hash table
+a hash table in c sharp stores
+keys values pair
+where keys can find the storage
+since it is immutable a hash table
+cannot have duplicate
+entries the collections dictionary entry
+objects have two properties a key and a
+value
+the values of table can only be accessed
+by defining a key object
+here's the syntax for defining a hash
+table
+now
+let's have a look at the properties of
+hash table
+first up
+comparer it returns or sets the i
+comparer to be used
+next count
+this returns the number of key value
+pairs in the hash table
+then
+is ready only will return
+a value indicating whether the hash
+table is read only or not
+after that item
+it returns or sets the value associated
+with the supplied key
+then keys this will return the i
+collection containing
+the keys of the hash table
+at last values
+this returns an i collection containing
+the value for the hash
+table now let's discuss the method in
+hash tables
+a hash table contains the following
+methods
+add
+which inserts a hash table elements with
+the specified key and value
+then clear this will remove all elements
+from the hash table
+contains key will indicate whether or
+not the specified key is present in the
+hash table
+then contains value this will indicate
+whether or not the supplied value is
+present in the hash table
+now let's try these methods in the hash
+table in the correlator
+let's start with namespace
+as
+hash
+table
+class
+as program
+static
+void
+main
+with argument as string
+krgs
+now let's define the hash table so hash
+table
+h
+table
+equals to
+new
+hash
+table
+now let's add element in the hash table
+so as table dot
+add
+one
+comma
+let's add element as c
+then
+hash table
+dot
+add
+at number three
+let's add a
+then
+hash table
+dot add
+let's set
+s
+at number four
+then
+h table dot add
+at number 2
+let's add
+our
+hash table dot
+add
+then at number five
+we will add
+h
+basically what i wanted to do was
+from key 1 to 5 we will be spelling
+trash
+so
+now for each
+for each
+object
+i
+in
+h table
+dot case
+console
+dot
+write line
+i
+and for
+each
+object
+j
+in
+h table
+dot
+values
+console
+dot
+right line
+j
+basically these two statements will be
+printing out the first the keys and then
+the objects
+now
+let's print them together so for
+each
+dictionary
+entry
+dic
+in
+h table
+we will write console
+dot
+right line
+is is equals to
+zero
+and
+values
+is equals to
+1
+in curly braces
+comma
+so this will be tick
+dot
+key
+comma
+dic dot
+value
+and then
+we will pass on
+console
+dot
+sheet key
+let's save this
+and run it
+as you can see we have first printed out
+the keys
+from five to one in the
+opposite angle and then crash as hsarc
+then we have printed these
+together
+now
+let's get back to our slides
+now let's have a look at sets
+in c sharp sets are referred to as hash
+sets
+in c sharp hash that
+ensures that there are no duplicate
+strings or elements in an array
+here's the syntax to declare the sets
+now let's implement this in the code
+editor
+so we will start with class
+program
+static
+void
+main
+here we will be declaring a string
+arr
+1
+equals to
+paper
+comma
+pencil
+comma
+eraser
+comma
+pen
+comma
+paper
+now let's
+print this so console
+dot
+write
+string
+dot
+join
+comma
+comma
+arr1
+now let's declare a hashtag so var
+h
+is equals to new
+hash
+set
+string
+area 1
+now since we have converted this error
+into a hash set it will eliminate the
+duplicate words
+so now string
+arr
+2
+will equals to
+h
+dot
+two array
+now we have stored
+that ar1 array into ar2
+so now we will print this
+so console
+dot
+write line
+then string
+dot
+join
+comma
+comma
+arr
+2
+let's save it
+and run this
+as you can see
+first time it is printing the
+string array as it is like paper pencil
+eraser pen paper but when we have
+converted it into hash set it has
+eliminated the duplicate value paper
+which was coming at the first and the
+last position
+and this was all for today's session
+hope you guys found it informative and
+helpful
+if you liked this session then like
+share and subscribe
+if you have any question then you can
+drop them in the comment section below
+thanks for watching and stay tuned for
+more from simply learn
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

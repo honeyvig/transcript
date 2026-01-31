@@ -1,0 +1,426 @@
+hi everyone I am M and welcome to this
+fantastic video on decision trees in
+machine learning by simply Lear if you
+enjoy watching these type of videos and
+find them interesting subscribe to our
+YouTube channel as we bring the best
+videos daily also hit the Bell icon to
+never miss any update from Simply learn
+in this video we will discuss what is a
+decision tree after that we will see the
+advantages of using decision Tre then
+decision tree applications and and how a
+decision tree works at the end we will
+see Hands-On lab demo of how you can
+build a decision tree classifier before
+moving on to what the decision tree is
+if you want to become an AI expert and
+gain handsome salary packages look at
+the wide range of AIML courses by simply
+learn in collaboration with top
+universities across the globe by
+enrolling in any of these certification
+program you will gain expertise in
+skills like generative AI prompt
+engineering Char gity explainable AI
+machine learning algorithm supervis and
+unsupervised learning model training and
+optimization and there is much more on
+the list with hands-on experience in
+tools like chat GB d python CV open CV
+and tensorflow you will catch the eye of
+top recruiters so what are you waiting
+for hurry up and enroll now a year of
+experience is prefer to enroll in these
+courses find the course Link in the
+description box below with that in mind
+let's get started so what is a decision
+tree a decision tree is a tree based
+supervised learning method used to
+predict the output of a Target variable
+decis ision tree python can be used to
+solve classification and regression
+problem they are frequently used to
+determine odds this is an example of a
+simple decision tree used to classify
+different animal based on their feature
+moving forward let's see advantages of
+using decision tree so first one is
+decision trees are simple to understand
+interpret and visualize the second one
+is they can effectively handle both
+numerical and categorical data the third
+one is they can determine the worst best
+and expected values for several scenario
+the fourth one is decis trees require
+little data preparation and data
+normalization moving forward let's see
+some decision Tree application the first
+one is a decision tree determines
+whether an applicant will likely default
+on a loan the second one is it can be
+used to determine the odds of an
+individual developing a specific disease
+the third one is it can help e-commerce
+companies predict whether a consumer is
+likely to purchase a specific product or
+not the fourth one is decision Tre can
+also be used to find customer churn rate
+so now let's see how does a decision
+tree work Suppose there are different
+animals and you want to identify each
+animals and classify them based on their
+feature we can easily accomplish this by
+using a decision tree the following is a
+clutter sample set with a high entropy
+right we have to determine which feature
+split the data so that the Information
+Gain is the highest we can do that by
+splitting the data using each feature
+and checking the Information Gain that
+we obtain from them the feature that
+Returns the highest gain will be used
+for the first split so we will take some
+following feature into consideration
+color height and the diameter we will
+use the Information Gain method to
+identify which variables eals the
+maximum gain which can also be used as a
+root node suppose we take color equals
+to Yellow result in the maximum
+Information Gain so that is what we will
+use for our first split at root node the
+entropy after splitting should decrease
+considerably however we still need to
+split the child node at the both
+branches to attain the entropy value
+equals to zero so we will split the both
+nodes using the height variable and the
+height is greater than 10 or height is
+less than 10 as our condition so as you
+can see the decision tree can now
+predict all the animals classes in the
+data set moving forward let's implement
+the hands on so this is our jupyter
+notebook screen first we will change to
+decision this ision
+Tre so first we will import some some
+the required libraries here so I will
+import pandas as
+PD then I will
+import M plot
+lip.
+pyplot as
+PLT then I will import from my skan
+import
+Matrix because you create Matrix and
+then I will
+import
+cbor as
+SNS then from
+sk. data
+sets
+import import
+load Isis
+right okay oh one more
+import P sorry n by as
+NB then I will import some from
+skn
+modore
+selection import
+Trainor testore
+split then I will import from
+skar
+import three right let me run it
+okay so now pandas is a python library
+that provid fast powerful flexible and
+easy to use data analysis and
+manipulation tools whether numai is a
+python library for Python programming
+language adding support to large
+multi-dimensional arrays and matrices
+along with a large collection of high
+level mathematical function to operate
+on these are okay
+so fine yes and the M plot mat plot is a
+plotting library for Python programming
+language and its numerical mathematics
+extension num it provides an
+objectoriented API for embedding plots
+into application using general purpose
+GUI toolkits like Tinker wxpython qt or
+gt and a cbone cbone is a library for
+making statical Graphics in Python it
+builds on top of M plot Li and
+integrates closely with pandas and data
+structures cbon also helps you to
+explore and understand your data right
+so now what I will do I will
+import sorry not import I will write
+here Iris equals to
+load
+is
+right okay if I will write here Iris it
+will okay as you can see the array you
+can see here okay Iris AR
+right so here uh I will convert the data
+into P data frame so for that I will
+write data equals to PD do data
+Frame data frame or DF you can write
+data equals
+Tois
+data
+columns to Iris do
+feature
+names right so now moving forward what
+we will do we will create a separate
+column for the Target variable of the is
+data right so Target variable will be
+our species so for that I will write
+here
+data
+species equals to RIS
+do Target
+right and moving forward what I will do
+I will replace the categories of the
+target variable with the actual name of
+the spaces so for that I will write
+Target
+equals to NP do
+unique Isis
+dot
+Target and
+Target
+nals to NP
+do
+unique
+then
+iris. Target names right then I will
+write here Target
+underscore directory
+to direct
+zip then Target comma Target
+n right then
+data
+species equals to S will be
+capital
+data
+species
+replace Target
+Dory right let me run it it's working
+fine so now what I will do I did uh I
+replace the categories of Target
+variable with the actual names of the
+spes right so now what we will do we
+will separate the IND dependent and the
+dependent variables of the data set okay
+so for
+that I have to write here xal to data do
+drop
+columns plus to
+species right then yal to
+data
+species then names underscore features
+= to X
+do
+columns then Target
+labels to Y do
+unique
+fine so now what we will do we will
+split the data set into training and the
+testing data set right and we'll set
+some random State okay so for
+that before let me add
+this okay so here I will add xcore
+train comma
+xcore test comma Yore
+train Yore
+test to
+train test
+split X comma
+y
+comma test size = to
+0.3
+comma random
+state to
+93 so what is this 0.3 what it will do
+it will split the training and the
+testing size into 30 and the 70% see 0.3
+17 to 30% right so training will be 70%
+and the testing will be on the 30% of
+the data set this data set fine as you
+can see the uh the class name
+this okay so moving forward what we what
+we will do we will import the decision
+classifier class from the Escalon right
+so here from Escalon do tree
+import decision
+tree
+classifier okay so now what we will do
+we will uh create an instance of a
+classifier class so you can use your
+DTC
+to decision three classifier
+maxcore depth = to 3 comma
+random State =
+93
+right so now let's fit the train
+training dat set to the model so
+DTC DTC means decision classifier right
+D
+fit xcore
+train comma Yore
+train okay X train
+is not
+defined there is
+Extreme
+okay maybe some spelling mistake I don't
+think so
+so it was a typ of mistake to here decis
+three classifi G right so now let's plot
+the decision Tre okay so pl.
+figure figure
+size = to 30 comma
+10 and the face
+color will be yellow let's take a look
+later we change okay then Tre equals to
+Tre Dot Plot _ Tre then DC
+comma
+feature
+names equals
+to names underscore
+features Comm
+class names
+then equals to Target
+labels comma round
+itals to
+True
+right so let me give the font size two
+comma font
+size of
+16 fine I get 16 is fine so now uh let
+me write
+PLT Dosh
+show okay then
+Yore
+prediction to
+DTC
+doed xcore test
+right okay T three okay here class name
+it
+is more error okay method object is non
+uh not
+subscriptable
+okay so here see
+Capital again some method object
+is so it was the kernel error so let's
+here find the confusion Matrix so here I
+will write
+confusion
+Matrix equals
+to Matrix dot
+confusion
+confusion
+underscore Matrix then Yore test Yore
+prediction right so here I will write
+Matrix to PD do data
+Frame data frame then
+confusion let go
+Matrix right so here I will write
+XIs = to PLT dot
+AIS right then SNS do
+set font
+scale = to
+1.3 then PLT do
+figure then figure
+size equal
+to 10
+comma
+7 right so now let's plot the heat maps
+for that I will write heat map SNS do
+heat
+map so Matrix comma an
+not equals
+toal to
+true then
+fmt + 2
+G Comm ax
+= to AIS comma cmap =
+to
+magma right so for that
+XIs do set
+_
+title then I will write here confusion
+Matrix right then XIs dot
+set
+X
+label here I will write prediction
+predicted
+value then font
+size equ to
+10 then XIs do
+set xtick value pick
+labels
+here I will write plus
+Target Target
+labels right then access.
+set y
+labels y
+label then I will write here
+true
+labels font
+size
+will be
+12
+XIs dot set y t
+levels
+y t
+labels then it will be list of targeted
+values Target labels comma
+rotations will be zero right and at the
+end I will write PLT do show Okay so
+let's
+run so as you can see here it created
+the decision tree right so these so
+these are the ches and the leaf notes
+these all are the notes right of the
+different
+different versy color you can see SATA
+Seda Vin right with the different
+different you know samples okay with the
+accuracy so this is the confusion Matrix
+of this particular graph here uh you can
+see here the true labels and the
+predicted values of the particular graph
+right this is the confusion metric so
+and with that so we have come to end of
+this video on decision 3 with machine
+learning I hope you found it valuable
+and entertaining please ask any question
+about the topics covered in this video
+in the comment section below our experts
+will assist you in addressing your
+problems thank you for watching stay
+safe and keep learning with simply learn
+staying ahead in your career requires
+continuous learning and upskilling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing design in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

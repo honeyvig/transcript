@@ -1,0 +1,347 @@
+dist inspector routing
+this is a protocol in data network that
+helps to determine the best route for
+data packets to travel in network
+channel
+hi guys and welcome to yet another
+interesting video i simply learn
+but before we begin if you love watching
+tech videos subscribe to our channel and
+hit the bell icon to never miss an
+update from us
+[Music]
+now without further ado let's take a
+look at the agenda for today's video
+in today's session we will look into the
+introduction for distance vector routing
+continuing with some key points for
+routing protocol
+moving on to distance vector routing
+algorithm
+in the end we will look into some
+examples to better understand the
+routing protocol
+now let's move on to the first heading
+for this session that is
+introduction to distance vector routing
+distance vector routing refers to the
+distance or the vector that is between
+the neighboring nodes
+in a network channel
+and the routing part refers to the
+established route through which data
+packets are transmitted in the network
+channel
+the other aspect of this routing
+protocol in a network channel is to
+determine the shortest path for a data
+packet in the network to reach its
+destination
+next we will look into some key points
+regarding the routing protocol
+for routing protocol three primary key
+points are to be remembered
+first one being
+each router in this protocol is designed
+to share the vector data of each node
+throughout the network
+this step is done to maintain proper
+circulation of data in the network
+channel
+the next key point is the routing
+pattern in the network protocol
+that is the data shared by the routers
+is transmitted only to those nodes that
+are directly linked to a particular
+router
+the last key point is
+that the routing protocol is designed in
+a manner that it shares the updated
+vector data periodically
+at the network channel
+now let's move on to the next heading
+that is
+the algorithm used in the protocol
+the algorithm used in this protocol
+is termed as
+bellman fold algorithm
+this algorithm defines the shortest path
+that the data packet can take to reach
+its destination node from an initial
+node
+where
+d of x y refers to the least distance
+from a node x to node y
+moving on we have
+c of x comma v
+where x is caused from each of its
+neighboring v node is taken into
+consideration
+then we have
+d of
+v y
+this is the distance of each neighbor
+from its initial node
+and lastly
+min of v
+this is an abbreviation used to
+determine the most shortest vector after
+the solution is obtained using the
+algorithm
+in the next heading that is network
+example we will understand all the
+points used in the algorithm
+now let's design a network model with
+five different nodes
+that are a b c and d
+with each node connected to each other
+using different network channel
+the numerical values in the network
+channel refers to the vector count that
+is the distance from node a to node b or
+to some other node in the network
+channel
+in a network model
+each node shares its vector data with
+its neighboring node at a regular
+interval
+as there are various updates in the
+network model
+this data is shared in a form of routing
+table where three different columns are
+used first being destination column
+second
+vector column that is the distance node
+and lastly the hop
+let's take a look at the neighboring
+nodes for this model
+for node a we have
+b and e as it is directly interlinked to
+the node a
+for node b we have
+node a and node c
+for node c we have b and d
+for d we have
+c and e
+and lastly for e we have node a and node
+d
+these nodes represents only the
+neighboring nodes
+now let's solve an actual example on
+routing protocol to clear all our doubts
+and understand the key points
+the example we will be taking
+to solve is
+this network model
+the initial step to start solving the
+network model using the distance vector
+routing protocol is to make routing
+table for each of the nodes
+let's make the routing table for node a
+this is the routing table for node a
+where we have
+destination as a
+that means destination is a from node a
+that means the distance vector should be
+zero
+then we have
+destination as b
+let's take a look
+in this given example there is no given
+connection between a and b
+that means
+this distance vector would be infinity
+then we have destination as c
+similarly as node b there is no direct
+connection between a and node c that
+means this is also infinity
+and same is the case with node d
+and in the end we have
+node e that is the only directly linked
+node
+to node a that means the distance given
+is 5 so the network
+vector is 5.
+let's make an another dropping table for
+node e
+this is the routing table for node
+let's take a look
+in this routing table the first is
+destination to node a
+according to the network model given
+distance is 5 so the vector value is 5
+with the hop to a
+then we have
+destination as node b
+according to the model the distance
+vector should be 4
+then we have destination as node c
+as given there is no direct connection
+between node e and node c
+that determines the value would be
+infinity
+then we have
+node d which represents
+direct connection with node e
+and the value is seven
+and lastly
+e destination from initial point e would
+be zero vector
+now let's make another routing table
+similarly for node c
+now using the same steps you can make
+the routing table for the remaining
+nodes that is node b and node d
+now let's move on to the next step in
+solving the routing issue
+this step is known as update step
+in this step we use the vector column
+from each of the node to update the
+vector column or the routing table for a
+particular node
+in this part we'll use
+node is vector column to update the
+routing table for node a
+and the steps are using the algorithm
+that is the bellman fold algorithm we
+used earlier
+as we already know
+moving from a to destination node a is
+always zero so we won't be doing this
+step let's move on to the next one that
+is moving from node a to node b
+that would be
+would be a comma e as we are using
+vector column of node e
+plus
+and the distance used to reach e from b
+a comma e represents
+5
+and
+e to b represents 4 according to the
+network model so the value is
+9. similarly let's solve
+for a to c
+to a to c we have
+a comma e plus destination required to
+move from e to c
+according to the network model we have
+node a is only directly linked with node
+e
+so the value would be 5
+but there is no connection between node
+e and node c so the value would be
+infinity
+moving on we have
+a to d
+in this case we have
+a comma e
+the value would be
+5
+plus e to d that is a direct connection
+and the value would be 7 so the total
+distance is 12
+and the last one is
+a to e
+for this we have a comma e that is
+directly the neighboring node
+the value would be 5
+so the new routing table
+for node a is
+0 9 infinity 12 and 5.
+similarly let's take another node for
+this
+for the next node we will take node c
+and we will update the routing table of
+node c
+using its neighboring nodes that are
+node b
+and node d according to the network
+model
+now
+how to do this step
+firstly it's
+c to destination a
+in case of node b we have
+c to a that would be
+c comma b that is a direct connection
+plus distance required from b to a
+according to network model we have c
+comma b as 6
+plus b to a does not have any connection
+that is infinity so the value would be
+null
+then we have node d
+in this case we have c comma d that is a
+direct connection 3 plus d to a that is
+again infinity
+as it is not linked directly to node a
+moving on we have
+destination as b
+for node b we have direct connection so
+c comma b value is 6
+whereas for node d we have
+c comma d that is distance 3 plus d to b
+that is infinity as it is not directly
+linked with the node b
+so again the value is null
+then we have
+destination as c
+so connection between c to c is zero
+moving on we have destination at node d
+that would be c to d
+as
+c to d
+as there is no direct connection between
+node b and node d
+so the value is infinity
+whereas for c to d is a direct
+connection for node d so the value would
+be 3
+now for the last node that is node e
+in case of node b we have
+c comma b
+plus
+b to e
+where the value for c to b node is 6 and
+b to a is 4 so the sum is 10
+and now in case of node d we have
+3
+plus 7 that would be distance from c to
+d and then d to e
+and the value would be again 10. so we
+can use any of the side to reach the
+destination node e
+by completing all the steps we have the
+new table for node c
+similarly we can find the routing table
+for all the nodes present
+now to look into some key points we
+learned
+for the initial step use only the node
+distance of immediate neighbors
+nodes without distance that is directly
+linked to each other is always infinity
+for the update step use the vector table
+of the only
+neighboring node we have for the initial
+node
+and lastly to continue the update step
+roughly n minus 1 iterations are used
+where the value of n is equal to the
+number of nodes
+for example
+the model we took has
+five nodes that means we have to do a
+loop of four iterations
+with this we have reached the end of the
+session
+if you have any questions regarding the
+topic you can ask them in the comment
+section below thank you for watching
+[Music]
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos turn it up and get certified
+click here

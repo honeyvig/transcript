@@ -1,0 +1,282 @@
+[Music]
+thank you
+[Music]
+imagine you're the owner of a small
+software development firm and you want
+to scale your business up
+however a small team size the
+unpredictability of demand and limited
+resources are roadblocks for this
+expansion that's when you hear about
+cloud computing but before investing
+money into it you decide to draw up the
+differences between on-premise and
+cloud-based Computing to make a better
+decision when it comes to scalability
+you pay more for an on-premise setup and
+get lesser options too
+once you've scaled up it is difficult to
+scale down
+and often leads to heavy losses in terms
+of infrastructure and maintenance costs
+cloud computing on the other hand allows
+you to pay only for how much you use
+with much easier and faster Provisions
+for scaling up or down
+next let's talk about server storage
+on-premise systems need a lot of space
+for their servers notwithstanding the
+power and maintenance hassles that come
+with them on the other hand cloud
+computing Solutions are offered by cloud
+service providers who manage and
+maintain the servers saving you both
+money and space then we have data
+security on-premise systems offer less
+data security thanks to a complicated
+combination of physical and traditional
+I.T security measures whereas cloud
+computing systems offer much better
+security and lets you avoid having to
+constantly Monitor and manage security
+protocols in the event that a data loss
+does occur the chance for data recovery
+with on-premise setups are very small in
+contrast cloud computing systems have
+robust disaster recovery measures in
+place to ensure faster and easier data
+recovery
+finally we have maintenance on-premises
+systems also require additional teams
+for hardware and software maintenance
+loading up the costs by a considerable
+degree
+cloud computing systems on the other
+hand are maintained by the cloud service
+providers reducing your costs and
+resource allocation substantially
+so now thinking that cloud computing is
+a better option you decide to take a
+closer look at what exactly cloud
+computing is
+cloud computing refers to the delivery
+of on-demand Computing Services over the
+internet on a pay-as-you-go basis in
+simpler words rather than managing files
+and services on a local storage device
+you'll be doing the same over the
+internet in a cost-efficient manner
+cloud computing has two types of models
+deployment model and service model
+there are three types of deployment
+models public private and hybrid Cloud
+imagine you're traveling to work you've
+got three options to choose from one you
+have buses which represent public clouds
+in this case the cloud infrastructure is
+available to the public over the
+internet
+these are owned by cloud service
+providers
+two then you have the option of using
+your own car this represents the private
+cloud with the private Cloud the cloud
+infrastructure is exclusively operated
+by a single organization this can be
+managed by the organization or a third
+party and finally you have the option to
+Hell a cap this represents the hybrid
+cloud
+hybrid cloud is a combination of the
+functionalities of both public and
+private clouds
+next let's have a look at the service
+models there are three major service
+models available es pass and SAS
+compared to on-premise models where
+you'll need to manage and maintain every
+component including applications data
+virtualization and middleware cloud
+computing service models are hassle free
+is refers to infrastructure as a service
+it is a cloud service model where users
+get access to basic Computing
+infrastructure they are commonly used by
+it administrators if your organization
+requires resources like storage or
+virtual machines is the model for you
+you only have to manage the data runtime
+middleware applications and the OS while
+the rest is handled by the cloud
+providers next we have pass
+pass or platform as a service provides
+Cloud platforms and runtime environments
+for developing testing and managing
+applications this service model enables
+users to deploy applications without the
+need to acquire manage and maintain the
+related architecture
+if your organization is in need of a
+platform for creating software
+applications pass is the model for you
+pass only requires you to handle the
+applications and the data the rest of
+the components like runtime middleware
+operating systems servers storage and
+others are handled by the cloud service
+providers and finally we have SAS SAS or
+software as a service involves cloud
+services for hosting and managing your
+software applications
+software and Hardware requirements are
+satisfied by the vendors so you don't
+have to manage any of those aspects of
+the solution if you'd rather not worry
+about the hassles of owning any it
+equipment the SAS model would be the one
+to go with
+SAS the cloud service provider handles
+all components of the solution required
+by the organization
+time for a quiz now in which of the
+following deployment models are you as
+the business responsible for the
+application data and operating system
+one is
+2. pass 3. SAS 4. is and pass let us
+know your answer in the comments section
+below
+coming back to cloud computing some of
+the most popular Cloud Computing
+Services in the market are AWS or Amazon
+web services Microsoft Azure and Google
+Cloud platform want to learn more about
+them and how they differ from each other
+click on the top right corner for an
+analysis of how these service platforms
+are different from each other we hope
+you found this informative and helpful
+[Music]
+right from the start software
+development comprise two different
+departments the development team that
+develops the plan designs and builds the
+system from scratch and the operation
+team for testing and implementation of
+whatever is developed the operations
+team gave the development team feedback
+on any bugs that needed fixing and any
+rework required invariably the
+development team would be idle awaiting
+feedback from the operations team this
+undoubtedly extended timelines and
+delayed the entire software development
+cycle there would be instances where the
+development team moves on to the next
+project while the operations team
+continues to provide feedback for the
+previous code this meant weeks or even
+months for the project to be closed and
+final code to be developed now what if
+the two departments came together and
+worked in collaboration with each other
+what if the wall of confusion was broken
+and this is called the devops approach
+the devops symbol resembles an infinity
+sign suggesting that it is a continuous
+process of improving efficiency and
+constant activity the devops approach
+makes companies adapt faster to updates
+and development changes the teams can
+now deliver quickly and the deployments
+are more consistent and smooth though
+there may be communication challenges
+devops manages a streamlined flow
+between the teams and makes the software
+development process successful the
+devops culture is implemented in several
+phases with the help of several tools
+let's have a look at these faces
+the first phase is the planning phase
+where the development team puts down a
+plan keeping in mind the application
+objectives that are to be delivered to
+the customer
+once the plan is made the coding Begins
+the development team works on the same
+code and different versions of the code
+are stored into a repository with the
+help of tools like git and merged when
+required this process is called Version
+Control the code is then made executable
+with tools like Maven and Gradle in the
+build stage
+after the code is successfully built it
+is then tested for any bugs or errors
+the most popular tool for automation
+testing is selenium
+once the code is passed several manual
+and automated tests we can say that it
+is ready for deployment and is sent to
+the operations team
+the operations team now deploys the code
+to the working environment the most
+prominent tools used to automate these
+phases are ansible dockered and
+kubernetes
+after the deployment the product is
+continuously monitored and nagios is one
+of the top tools used to automate this
+phase the feedback received after this
+phase is sent back to the planning phase
+and this is what forms the core of the
+devops lifecycle that is the integration
+phase Jenkins is the tool that sends the
+code for building and testing if the
+code passes the test it is sent for
+deployment and this is referred to as
+continuous integration there are many
+Tech Giants and organizations that have
+opted for the devops approach for
+example Amazon Netflix Walmart Facebook
+and Adobe Netflix introduced its online
+streaming service in 2007. in 2014 it
+was estimated that a downtime for about
+an hour would cost Netflix two hundred
+thousand dollars however now Netflix can
+cope with such issues they opted for
+devops in the most fantastic way Netflix
+developed a tool called the Simeon Army
+that continuously created bugs in the
+environment without affecting the users
+this chaos motivated the developers to
+build a system that does not fall apart
+when any such thing happens
+so on this note here is a quiz for you
+match the devops tool with the face it
+is used in a
+B
+C
+d none of the above
+today more and more companies lean
+towards automation with the aim of
+reducing its delivery time and the gap
+between its development and operations
+teams to attain all of these there's
+just one Gateway devops
+and if you are also looking forward to
+doing the same and Excel in devops check
+out Simply learn's postgraduate program
+in devops design in collaboration with
+Caltech ctme the program can help you
+master several in-demand devops skills
+and tools like continuous integration
+and delivery devops unCloud kubernetes
+Docker and much more we hope you enjoyed
+this video if you did a thumbs up would
+be really appreciated here's your
+reminder to subscribe to our Channel and
+to click on the Bell icon for more on
+the latest Technologies in trance thank
+you for watching and stay tuned for more
+from Simply learn

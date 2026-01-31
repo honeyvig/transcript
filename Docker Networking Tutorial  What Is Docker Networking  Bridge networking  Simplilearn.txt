@@ -1,0 +1,657 @@
+in today's era of microservices and
+distributed systems conization has
+revolutionized how applications are
+built and deployed one such tool is
+Docker Docker is a leading conization
+platform which not only helps in
+packaging applications but also provides
+a robust networking features that allows
+containers to communicate with each
+other in today's job scenario every
+company is asking you to learn Docker so
+for the same we have covered Docker
+networking tutorial in today's video
+before you move on just a quick info
+guys if you want to become a Devo expert
+then you can join simply learns course
+which is in collaboration with IBM in
+this devop engineer certification course
+which is developed in collaboration with
+IBM will help you refine your skills in
+this course you're going to learn about
+Docker cuberes anible terraform
+Prometheus Jenkins Microsoft and asure
+DeVos methodologies so guys hurry up now
+and join the course the course link is
+mentioned in the description box so
+let's get started so guys I have opened
+official documentation of Docker and we
+are going to learn about networking so
+you would be wondering why Docker
+networking so guys basically Docker
+networking allows containers to
+communicate securely and efficiently
+both with each other and also with the
+outside world networking is a very
+critical part of containerized
+applications because in most of the real
+world cases applications are not
+isolated they need to talk to databases
+apis microservices and also external
+clients in traditional environments if I
+talk about networking setup and
+management can be cumus some or a little
+bit complex in which you would be
+required a complex configuration of
+fireballs subnets gats which is Network
+address translation protocol but Docker
+abstracts much of this complex
+providing out of the box networking
+Solutions which I will show you in
+today's Hands-On tutorial now let us
+consider one example so to suppose in
+this typical scenario you can see the
+front end is communicating with a
+backend API and the back end you can
+presume that it is also communicating
+with some database okay so this is our
+database when these services are
+containerized so suppose you can see all
+over here the front end part is
+containerized all way here and backend
+part is put into the Container all way
+here now they are communicating
+internally so with the help of Docker
+networking you can connect these
+containers in an isolated environment
+where front-end container sends request
+to the backend container which then
+queries the database okay so with the
+help of Docker networking this
+communication is possible and we are
+removing any complex manual network
+configuration that is needed so let us
+see so suppose we have the front end
+container we have the backend container
+here is our Docker and suppose we are
+using ec2 instance as a host now let us
+try to understand first what is the
+difference between Docker and VM
+networking now guys if I talk about
+Docker versus virtual machine so in a
+virtual machine based environment each
+virtual machine typically runs an entire
+operating system and it has its own
+dedicated virtual network interface okay
+these inter faces must be connected to a
+physical or a virtual switch and which
+the underlying technology is a
+hypervisor so configuring virtual
+networking involves setting up IP
+addresses subnets routing rules and
+firewalls for example if you want to
+connect two virtual machines one running
+a backend service and another running a
+database to communicate with each other
+you need to assign static IP addresses
+configure Network routes and ensure that
+the firewall rules allow traffic between
+them such of a manual task we have to do
+and additionally if external clients
+also need to connect to the backend more
+routing and firewall configurations are
+required which makes this process so
+complex but if you talk about Docker
+networking then Docker saves
+us Docker networking is more lightweight
+flexible and efficient when you run a
+container Docker provides a virtual
+network interface or you can say a
+virtual ethernet okay now this vit or
+virtual ethernet and containers can be
+connected to Dockers virtual Network
+Bridges or custom networks which we are
+going to learn little bit later in
+Docker you don't have to worry about
+manually configuring subnets routing or
+natat Docker automatically handles most
+of the networking setup for you with
+Dockers built-in Network such as default
+Bridge Network or userdefined Network
+containers can communicate with each
+other very seamlessly now you'll be
+wondering how do containers communicate
+with each other in terms of networking
+so let us see this example so you can
+see all over here suppose we have an
+application container all over here and
+the IP address for this is something
+like 1721
+18.01 now when you initialize the
+container the docker also gives it the
+IP address which is the virtual ethernet
+Network or virtual Network and which we
+generally called it as Docker zero okay
+now similarly the host where you can say
+it is an ec2 instance okay with
+19260 point1 okay now just forget it for
+a moment okay we will not consider this
+so when app is directly trying to
+communicate with the host okay so
+nothing is involved let me remove
+this now so in this application you can
+see all over here the IP address for
+this is 1721
+18.12 and the host with EO you know so
+doer has given this a network of
+19260 point2 now when this is trying to
+communicate with each other I ask you a
+one question you can pause this video
+will they be able to communicate with
+each other so guys the answer for the
+same is no not at all there's going to
+be a network error because they are
+belonging to different subnets
+now if I talk about how this problem
+resolves by Docker so Docker does what
+guys dogger provides a virtual ethernet
+which is called doer zero all over here
+and which makes a network configuration
+the default one is Bridge Network okay
+now both of them can easily communicate
+with each other so say one good example
+I want to take it with this so say you
+have a login container you have the
+payment container okay now
+say both of them have a default network
+configuration in which say Bridge
+network configuration don't worry about
+it we will learn the different type of
+network configuration so we're presuming
+that this network configuration is a
+bridge Network okay now say login
+container is a kind of a user based
+container where you have to login
+through your email ID and uh password
+and similarly you have a more crucial or
+you can say more uh important part of
+this application is a payment container
+which uh is very very important okay now
+what you do in order to communicate so I
+told you earlier so Docker does what
+Docker creates a virtual ethernet
+connection okay and this is Docker zero
+okay now say we are using the same path
+okay the same payment C with the this
+container payment container is trying to
+communicate with the host through this
+okay through this docko network now now
+both of them are trying to communicate
+with each other now in the payment
+container say in this application where
+user types it credit card number and a
+lot of other payment details so hackers
+can easily exploit it because they are
+not at all secure first of all and they
+are trying to communicate through the
+same path so a hacker can come up and
+steal some important secrets and data
+that can be a vulnerable for your
+application now in order to secure this
+application guys we have another
+scenario what we do basically we need to
+isolate this from this container now the
+solution for this is creating your own
+custom Bridge Network okay so that the
+IP address for this and IP address for
+this do not belong to the same category
+okay so this needs to be isolated from
+each other so let me show you one more
+example so this is a proposed solution
+in order to do the same so what we do
+basically so in order for connecting at
+this network what do we do basically we
+are creating our own custom Network
+that's one of the important features of
+Docker which we'll be doing in our
+today's tutorial also so now the path is
+not same so hackers cannot come and
+steal your important credentials or data
+now this is one of the very basic you
+know you can say configuration all over
+here now this is our next configuration
+so this architecture we'll be doing in
+our today's tutorial so imagine we have
+these two containers login and product
+okay and uh they are pretty much
+communicating with each other over the
+same network which is docko okay so
+Docker has provided the virtual Network
+for it and we generally Call It by
+Docker Zer and it is communicating with
+the host okay with the EO of 1.1
+17216 1.2 now the payment process is
+very very like I would say very critical
+part of the application where you need
+to prevent its uh you know you need to
+keep it isolated you don't want any of
+the containers to communicate with this
+now what you do basically all over here
+that you create your custom virtual
+Bridge Network which communicates with
+the host directly so this payment
+container is completely isolated from
+this container so in this way you are
+making this container isolated and also
+you're making your application secure
+and this is what is the beauty of Docker
+now what we are going to do all over
+here the next part which I want to tell
+you about the type of network since I
+have discussed you regarding the bridge
+networking so let me tell you what
+exactly a bridge networking is so say
+there are three types of networking okay
+the first one that we have all over here
+is Bridge
+networking so Docker creates a virtual
+network interface on the host with a
+typical name of Docker zero as I told
+you earlier this virtual Bridge connects
+all the container on the default or user
+defined Bridge Network which allows them
+to communicate with each other with the
+host and typically all the containers
+receive the internal IP addresses from
+certain private subnet range basically
+which can be 172.xxx okay so Bridge
+networking is a special type of
+networking it's a very default
+networking which you if even if you
+don't Define it Docker is going to
+Define it for you and here your network
+interface or virtual network interface
+you're going to get Docker zero all over
+here that's a basic thing and Bridge
+connects all the container okay so
+important part all over here is with the
+help of
+bridge
+so it connects all
+the
+container now how Bridge networks work
+so let us take this example what we have
+all over here so
+so you can see this is a app container
+okay say the IP address for this is 1721
+18.01 which is assigned by the docker
+okay now this cannot communicate with
+each other as I've already told you so
+this application container in order to
+say our host is an ec2 instance now in
+order to communicate this app with this
+host you need a bridge Network so that's
+why here Docker zero is our Bridge
+Network which is trying to communicate
+because they are belonging to different
+subnets okay they cannot communicate so
+for the same purpose Docker gives us the
+bridge Network so now with the help of
+natat or network address translation
+protocol these containers can
+communicate with each other so this is
+how our Bridge network is working but
+the thing with the bridge network is all
+the containers can communicate with each
+other so in the scenario if I tell you
+what kind of network they all have so
+they are all sharing the bridge network
+configuration so that this login
+container and the product container in a
+given microservice are easily able to
+communicate with each other the docker
+zero is our Bridge Network and here you
+are interacting with the host now if I
+talk about some of the security concerns
+with respect to the bridge Network so
+login and product they all have shared
+network okay so all the containers
+connected to the same Bridge Network can
+communicate with each other but if one
+of the container is compromised it could
+potentially Target the other containers
+also on the same network so unless
+unless additional Network policies are
+firewall rules you have given this can
+be a little bit problematic the second
+scenario that I can see is access to the
+host Port so if port forwarding is used
+to expose the container services then
+attackers can potentially Target the
+host machine through the misconfigured
+or open ports so these are some of the
+security concerns with respect to this
+now let us discuss about the host
+networking in the host networking the
+container bypass stalker virtual network
+interface and shares host machines
+Network stack it means that the
+container does not get its own internal
+IP address instead it uses the host IP
+address and the network interfaces
+directly this setup is basically useful
+for applications that require High
+Network performance low latency and also
+a direct access to a network resources
+but this is also very very you can say
+security concerning
+so here all of them will be
+communicating through the same network
+and the problem which I told you earlier
+the attackers can easily come in and
+steal your important data so instead of
+assigning the internal IP address from a
+private subnet container directly
+reaches via host IP address for example
+in the scenario say our host has an IP
+address of
+19216 okay and a container is Running
+With The Host networking will be
+somewhat around
+19861 1.00 so here your IP address is
+going to change so if I talk about the
+IP address for this it will be using the
+host IP address and they all will be
+communicating with the
+same network okay and
+uh which can be a little bit problematic
+the security concerns will be more and
+the container can use the same network
+interfaces ports and network router as
+the host is using okay so you are not
+assigning any private IP address to this
+container if you're using the host
+networking so in this configuration we
+can see we have there is no network
+isolation is there okay Port conflicts
+can also happen like container running
+with the host networking share the same
+network name space as the host and this
+means basically that if a container
+tries to use the port that is already in
+use by a service say it is using a port
+80 or for a web server then there will
+be conflict so you need to follow
+careful planning okay to avoid these
+kind of conflicts then no knat is
+happening all over here so host
+networking is not using network address
+translation protocol containers are
+exposed directly to the host network
+interfaces and it reduces the security
+in this scenario so for this reason host
+networking is typically not recommended
+to use in production environments unless
+are absolutely necessary for
+performance-based reasons so I hope so
+you would have got some idea regarding
+host networking configuration now let us
+move ahead and try do the Hands-On based
+on this architecture so I'll be using a
+local repo and uh in that I will be
+creating the container for login product
+and I will be assigning them the bridge
+Network and then I'll be creating my own
+custom Bridge Network okay so that this
+security concern does not happen because
+if it is using the same
+as I've told you earlier same network we
+have Docker zero then the attackers can
+exploit this and steal away your
+important credentials which we don't
+want to happen in our application so we
+are creating a custom Bridge Network and
+this will be all happening in our
+terminal so let us start our Docker
+engine and directly Deep dive into it so
+in our Hands-On video what we'll be
+going so we'll be using the same
+architecture that we have discussed
+which is this one so we are going to
+create a login container a product
+container and connect them with the
+bridge Network then we are going to
+create a payment container and with a
+virtual Bridge Network and we'll be
+using the Ping command to check from
+where the communication is happening
+which is reachable and which is not so
+it's a pretty basic tutorial uh please
+follow me along and if you have any
+doubt you can pause the video and go
+back so container one is our login
+container this is our our product
+container and this is our payment so
+I'll be using these variables all over
+here so let us create our first
+container that is container one and uh
+what you can do all over here guys that
+uh before you know creating the
+container make sure that your Docker
+engine is up and running so all over
+here so since I have already created
+container one and container two so let
+me show you it's going to show me error
+but this is a command
+so here Docker run
+/t then hyphen hyen name then here is my
+name of the container and I'm using
+engine X latest okay Alpine version this
+is a systems image it is going to create
+this container one now if I try to enter
+it since I've already have this
+container now you can see I have got
+this container ID all over here
+similarly you are going to get a
+container ID but you will not get this
+error okay so what I can do I can remove
+this okay with a Docker RM command but I
+want to use the same variables so for
+the same purpose it's fine now
+similarly now let us create our Docker
+container
+to so we are going to get the ID for
+this
+also so this we have already created
+pretty much fine now we have easily
+created this
+next thing is you need to install Ping
+On Your given containers so what you can
+do so if you haven't installed ping on
+your system you can go all over here apt
+get update Y and apt get install y IP
+utils slping which is going to install
+your ping command so I have already
+installed ping on my system now let's
+proceed with our next thing in our next
+process what we are going to do we are
+going to go inside our login container
+so all over here we can type
+Docker
+exec then it and the name of the
+container is container one okay same
+name which we have given which is a
+login container
+so container one then SL bin SL bash
+okay now we are inside our container one
+and here if I type ping
+V so you can see all over here that ping
+is not installed on this container so
+directly go all over
+here copy
+this command and first update
+it so you can see all over here that it
+has started updating the packages now
+our next command would be try to install
+ping all way
+here now let install the Ping command
+and you can see ping we have
+successfully installed all over
+here
+okay so we have successfully installed
+ping on our
+container now let us look at what number
+of containers we have installed
+so you can see all over here we have
+container two and container one already
+created all over here now let us move
+ahead and uh try to do more
+configurations now let us try to inspect
+the network for the same so I'll be
+using Docker inspect
+command so
+let's copy
+this so you can see all over here we
+have the IP address of
+1721
+7.0.5 just copy this
+okay and we are going to Ping this from
+this
+terminal okay so from the container one
+we'll try to Ping it up so
+ping then
+uh let's try again
+pink so I'm trying to Ping
+17217
+0.5 just click
+enter and you can see all over
+here
+okay so you can see all over here when
+I'm trying to Ping from this container
+one to product so by default they have
+the bridge network configuration and you
+can see we are getting the data from the
+container tool so easily the
+communication is happening this is a TCL
+handshake with icmp protocol and you can
+see the packets are being
+transferred now what we are going to do
+next we are going to create the next
+container so let's us go to the next
+terminal and here let us create our next
+so but here we want to give a custom
+network configuration so for the same
+what I will do all over here the same
+command Docker run D name so I will just
+overwrite this the name of container
+3 okay and here what I'm trying to do is
+give a network called secure network
+configuration which is a type called of
+bridge Network only and let us create
+this okay
+now you can see we have got the idea of
+this so if I try to inspect this okay
+say Docker inspect container
+3 so we given an IP address all the way
+here and this is 1721
+18.03 now if I try to communicate from
+this
+terminal
+or stop this okay if
+I if I try to communicate with the
+container 3 we will see the request will
+be time out so you can see we are not
+getting any response all over here
+because here we have created a different
+or a custom Bridge Network which has
+isolated the container for our payment
+system now we'll see all over here that
+the request has been time out so can see
+all over here that we are not getting
+any information of communication from
+container one to container 3 it's
+completely isolated similarly what I'll
+do let us go to The Container
+to
+so instead of one I'll type two all way
+here and uh we are into container two
+now if
+I try to communicate all over here since
+ping is not installed so let us install
+the Ping first
+okay now after that what you can do all
+over here
+so you can just copy the same
+command and you can see ping is
+installed now let us try
+to let's clear the screen
+first okay now when I'm trying to do the
+pink so I have again copied this IP
+address I'll be moving to my next
+terminal and
+uh so container 2 is trying to
+communicate with the container 3 so as I
+have told you earlier that container 2
+and container one are in the same
+connected Network which is the bridge
+Network so that the communication is
+happening very easily but container
+three and container one and two are
+isolated so you can see from here also
+I'm not able to receive any any
+information or any details all over here
+of the communication between them so
+similarly for the same terminal one we
+can see still we are not getting any
+packets of data all over here so in this
+way we have completely secured one
+container from the another with the help
+of custom Network that we have created a
+bridge custom Network okay with a
+parameter called okay SEC uh Network in
+which I have given the name as secure
+network so I'll show you the command
+again so you can see all over here that
+we have created a custom container 3
+okay so the command for giving the
+network custom network was like hyphen
+hyen Network then here equal to sign
+then here I'm giving my custom Network
+it is a very easy tutorial but it's very
+very important for your understanding
+the concept of Docker networks so with
+the simple example I hope so you would
+have got a brief idea regarding what is
+Docker Networks why do we need it what
+are custom networks what are the
+security things that we need to take
+care of when we are creating um Docker
+networks with the help of bridge Network
+and how we can create the custom Bridge
+Network and also we studied regarding
+the host Network what it is and I hope
+so you have enjoyed our today's video on
+Docker networks till then keep learning
+and keep growing staying ahead in your
+career requires continuous learning and
+upscaling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs and cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+[Music]
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

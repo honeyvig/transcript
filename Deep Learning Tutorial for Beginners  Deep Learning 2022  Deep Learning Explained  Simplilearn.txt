@@ -1,0 +1,2364 @@
+ever wondered how google translates an
+entire web page to a different language
+in a matter of seconds or your phone
+gallery group's images based on their
+location all of this is a product of
+deep learning but what exactly is deep
+learning deep learning is a subset of
+machine learning which in turn is a
+subset of artificial intelligence
+artificial intelligence is a technique
+that enables a machine to mimic human
+behavior machine learning is a technique
+to achieve ai through algorithms trained
+with data and finally deep learning is a
+type of machine learning inspired by the
+structure of the human brain in terms of
+deep learning this structure is called
+an artificial neural network let's
+understand deep learning better and how
+it's different from machine learning say
+we create a machine that could
+differentiate between tomatoes and
+cherries if done using machine learning
+we'd have to tell the machine the
+features based on which the two can be
+differentiated these features could be
+the size and the type of stim on them
+with deep learning on the other hand the
+features are picked out by the neural
+network without human intervention of
+course that kind of independence comes
+at the cost of having a much higher
+volume of data to train our machine
+now let's dive into the working of
+neural networks
+here we have three students each of them
+write down the digit nine on a piece of
+paper
+notably they don't all write it
+identically the human brain can easily
+recognize the digits
+but what if a computer had to recognize
+them
+that's where deep learning comes in
+here's a neural network trained to
+identify handwritten digits
+each number is present as an image of 28
+times 28 pixels
+now that amounts to a total of 784
+pixels
+neurons the core entity of a neural
+network is where the information
+processing takes place
+each of the 784 pixels is fed to a
+neuron in the first layer of our neural
+network
+this forms the input layer
+on the other end we have the output
+layer with each neuron representing a
+digit with the hidden layers existing
+between them
+the information is transferred from one
+layer to another over connecting
+channels
+each of these has a value attached to it
+and hence is called a weighted channel
+all neurons have a unique number
+associated with it called bias
+this bias is added to the weighted sum
+of inputs reaching the neuron
+which is then applied to a function
+known as the activation function
+the result of the activation function
+determines if the neuron gets activated
+every activated neuron passes on
+information to the following layers
+this continues up till the second last
+layer the one neuron activated in the
+output layer corresponds to the input
+digit the weights and bias are
+continuously adjusted to produce a
+well-trained network so where is deep
+learning applied in customer support
+when most people converse with customer
+support agents the conversation seems so
+real they don't even realize that it's
+actually a bot on the other side in
+medical care neural networks detect
+cancer cells and analyze mri images to
+give detailed results self-driving cars
+what seem like science fiction is now a
+reality apple tesla and nissan are only
+a few of the companies working on
+self-driving cars so deep learning has a
+vast scope but it too faces some
+limitations the first as we discussed
+earlier is data while deep learning is
+the most efficient way to deal with
+unstructured data a neural network
+requires a massive volume of data to
+train let's assume we always have access
+to the necessary amount of data
+processing this is not within the
+capability of every machine and that
+brings us to our second limitation
+computational power training in neural
+network requires graphical processing
+units which have thousands of cores as
+compared to cpus and gpus are of course
+more expensive and finally we come down
+to training time deep neural networks
+take hours or even months to train the
+time increases with the amount of data
+and number of layers in the network so
+here's a short quiz for you arrange the
+following statements in order to
+describe the working of a neural network
+a the bias is added b the weighted sum
+of the inputs is calculated c specific
+neuron is activated d the result is fed
+to an activation function leave your
+answers in the comments section below
+three of you stand a chance to win
+amazon vouchers so hurry some of the
+popular deep learning frameworks include
+tensorflow pytorch keras deep learning
+4j cafe and microsoft cognitive toolkit
+considering the future predictions for
+deep learning and ai we seem to have
+only scratched the surface in fact horus
+technology is working on a device for
+the blind that uses deep learning with
+computer vision to describe the world to
+the users replicating the human mind at
+the entirety may be not just an episode
+of science fiction for too long the
+future is indeed full of surprises and
+that is deep learning for you in short
+deep learning is a type of machine
+learning that works on the basis of
+functionalities of human brain it trains
+machines to work on vast volumes of
+structured and unstructured data
+deep learning uses the concept of neural
+networks that is derived from the
+structure of a human brain
+and if you've ever seen images of human
+brain network you have dendrites inputs
+you have cell which is a nucleus as your
+nodes you have synapses which create
+weights
+and an axon which create an output
+now this is a very simplified version of
+the human brain
+and there are
+certain sets of cells that are strung
+together very similar to how today's
+neural networks
+perform but they still have a long ways
+to go and the human brain is still
+significantly more complex
+with
+hundreds of different kinds of cells and
+different interactions we don't see yet
+so what is deep learning artificial
+intelligence uh so you have your ai is a
+method of building smart machines that
+are capable to think like human and
+mimic their actions
+be careful with that definition we're a
+long way from a human cyborg coming in
+and taking over when we talk about this
+we're usually talking about automating a
+single kind of instances or things going
+on how do we automate a new process how
+do we automate a small robot to do
+something how do we get a drone to fly
+out when it loses contact to turn around
+and come back in the direction it came
+from
+those are very simple processes and
+significantly lower than the scale of
+like what human thinking does
+now a subcategory of artificial
+intelligence is machine learning
+machine learning is an application of ai
+that allows machines to automatically
+learn and improve with experience
+there's a lot of tools out there to use
+with machine learning
+and you'll see really regression models
+and things like that they're much more
+common when dealing with straight
+numbers a linear regression model and
+there's other models that just
+do basic math functions quite well
+but then we get into one of the
+subcategories deep learning deep
+learning is a subfield of machine
+learning that is used to extract
+patterns from data using neural networks
+and again we're talking about
+complicated patterns
+we talk about image processing and
+things like that they're not as
+straightforward as the numbers in stock
+exchange so you start looking at another
+way to solve these problems and figure
+out is that a raccoon in the picture or
+something
+much more complicated if getting your
+learning started is half the battle what
+if you could do that for free visit
+skill up by simply learn click on the
+link in the description to know more
+deep learning performance
+so when you have we talk about
+performance of deep learning and the
+amount of data
+the performance goes up the more data
+you have the higher the performance
+when we talk about a lot of machine
+learning platforms they kind of peak out
+at a lower level so
+again you can think of this as having
+thousands of pictures of raccoons like i
+said before
+versus the numbers in a stock exchange
+which are very uh rigid and very clear
+there you have a close and an open in
+the stock exchange kind of thing where
+you have an image of a raccoon the color
+shading all kinds of things go into
+trying to figure out is it a raccoon
+so we look at what is a neural network
+we really look into
+kind of a nice image of it
+today's neural networks usually have a
+layer of inputs and you'll see here we
+have input 1 2 and 3 with x1 x2 x3
+so you have your input layer you have
+your hidden layers this might have
+multiple layers depending on what you're
+working on
+then you have your output layer which in
+this case we have two outputs y1 and y2
+and you can also see the connectivity
+here so everything in the first row
+connects with everything in the second
+row in the hidden layer and if you had
+another hidden layer everything in the
+first hidden layer would connect to the
+second hidden layer and then everything
+in the second hidden layer would connect
+to each of the outputs
+and then calc make calculations based on
+that and this is interesting because
+there's so many different aspects of
+neural networks nowadays that are
+changing this basic configuration
+they find that if you skip a hidden
+layer or two
+with your input going through
+that that actually changes the results
+and
+works better in some cases there's also
+convolutional neural networks which look
+at windows and adding up the numbers in
+them there's a lot of complexity when we
+start getting into the different aspects
+of what you can do and how you build
+neural networks and again it's very very
+much in an infant stage so this basic
+diagram does a great job of capturing
+what it looks like now
+the input layer is responsible to accept
+the inputs in various formats
+the hidden layers again there's that s
+could be multiple layers it's
+responsible for extracting features and
+hidden patterns from the data
+and you know a hidden patterns and
+features is important we want to look at
+features you usually talk about features
+as your input you have input one is one
+feature input two is another feature if
+you're looking at the iris data it might
+be the width and length of the pedal
+each one of those would be a feature
+you have these nodes which generate a
+number that doesn't really have a
+specific representation
+but it becomes a way of looking at it of
+the adding the features together and
+creating an importance value there
+and the output layer produces the
+desired output after completing the
+entire processing of the data
+what is a perceptron
+a perceptron is a binary classification
+algorithm proposed by frank rosenblatt
+and you'll see here we have our
+constants come in and our inputs we have
+a constant 1 for the bias the bias is
+important you can go back to euclidean
+geometry where you have a line
+y equals mx plus b
+b being the y-intercept that's what that
+constant is is there needs to be some
+kind of adjustment that basically is the
+y-intercept
+and you have your inputs you have your
+weights you have your weighted sum your
+activation function and an output of
+zero or one
+and so here we have we'll go ahead and
+walk through these we have x1 x2 x3 are
+the inputs
+w naught w1 w2 w3 are the weights
+weights are values that determine the
+strength of the connection between two
+neurons
+and if we go back
+to the slide let me just flash back here
+to this slide
+you can see how each one of these nodes
+has multiple inputs so when you hit look
+at the hidden layer of the outputs they
+have multiple inputs so each one of
+these nodes
+has these inputs they might be the
+original features coming in they might
+be the layer of nodes before so we have
+your x1 x2 and x3 are the input into
+your node your weights are the weighted
+values that determine the strength of
+the connection between two neurons
+the input neurons are multiplied with
+the weight and a bias is added there's
+that one which is weighted the
+y-intercept in euclidean geometry
+to give the resulted weight sum
+the activation function applies a step
+to check if the output of the weighting
+function is greater than zero or not
+there's a lot of ways to do an
+activation function but this is the most
+common or the most not common but the
+most easy to see way of doing an
+activation on here
+so we look at here we go another go
+walking back through this diagram and
+taking a closer look at it
+we have the predicted output is compared
+with the actual output
+so once you go through the step and it
+adds everything together in there and
+these are your weights are multiplied
+they're just multiple so you have
+feature of x1 times weight of 1
+plus feature of x2 times weighted 2 so
+on plus the weight times the bias and we
+go ahead and compute all those all the
+way through the node comes out and we
+have
+the actual output and then we go ahead
+and have a predicted output what do we
+think it's going to be
+and this is on each note so keep in mind
+we're zero in and on the node this isn't
+the whole process
+because this actually goes through all
+the nodes but there's a there's another
+step in here when we get to that part
+the error in the network is estimated
+using the cost function and back
+propagation technique is used to improve
+the performance
+so when we look at the
+in the back propagation algorithm the
+cost function is minimalized by changing
+weights and biases in the network and
+you can see here we have our input layer
+we have our hidden layers
+and we have our output layer and so you
+can think of this as we have our actual
+output we predict what it's going to be
+in this case we have two outputs we
+might predict that it's either nothing
+there
+or a raccoon
+so one of them comes up and says i don't
+see any kind of animal and the other one
+says this is a raccoon
+so it's either yes or no and if it gets
+it wrong it says that's wrong it sends
+that error back
+and that error goes through the first
+set of weights
+which then goes to the hidden layers and
+their set of weights which goes back to
+b1 the other layer
+and their set of weights and it adjusts
+those weights as it goes backwards and
+it says hey this is the error on the
+output
+we kind of adjusted a little bit
+the part that we don't adjust in the
+first set of weights we say there's
+still an error so we send it to the
+second set of weights and so forth
+what happens is as we adjust these
+weights each one of these nodes
+starts creating kind of a category
+or something to look for in whatever
+image or
+data we have going in
+and so for making a better predictions a
+number of epochs are executed where the
+error is determined by the cost function
+now epic is a important thing to keep
+track of epics is if you have a large or
+any data set
+and let's say you split out your test
+date and your training data set you're
+running your data through how many times
+do you have to run all of that data
+through
+before you start getting something that
+is usable till the error goes down you
+can't adjust the error anymore it's the
+lowest error you can get
+so each time you go through a full set
+of data
+before you repeat and go through the
+same data that's called an epic the
+error is backward propagated until a
+sufficiently small error is achieved
+and again that's what we're talking
+about we're trying to minimize the error
+so we get to a point where that error
+really isn't changing anymore
+you just have the same error coming out
+and there's other ways to weight that
+error too
+the cost function or loss function
+measures the accuracy of the network the
+cost functions tries to penalize the
+network when it makes errors
+you can see here we have a formula for
+the cost function uh c equals one-half
+of the y predicted minus the y the
+actual y
+uh squared and of course the squared
+value removes the sign because we don't
+know whether it's plus or minus when you
+look at an error and then the c this is
+your cost function how much is it going
+to cost how much of an error do we
+really have that we're sending back and
+so we have with the cost function we can
+look at this we can look at it as a loss
+and the epic again that's every time we
+go through the data that's an epic how
+many epic runs are we going to go and so
+we have a nice graph here that shows
+like a very high learning rate low
+learning rate
+different data is going to
+change depending on what you're working
+on they put the yellow as a good
+learning rate
+because it has
+a nice slope to it you think yeah the
+more epics i go in the lower the loss so
+that means you're going in a good
+direction there
+and as he curves down he gets to the the
+best answer has the lowest loss on there
+so uh looking at types of neural
+networks we have the gan
+we have the dbn the rbfn the auto
+encoder the rnn the
+lstm this is a flash
+of some of the main ones that are out
+there there are now so many variations
+that there's variations on the
+variations
+and so just quickly jumping into these
+as you can see we have a number of them
+here listed these are just like a flash
+of some of the more common ones like the
+gan general adversarial network where
+you have two different models competing
+against each other until they find which
+one can beat the other one kind of think
+of a chess game where you keep flipping
+who's in charge
+and then we might look at the
+dbn
+which is a deep belief network
+and they're used to recognize clusters
+and generate image video sequences
+generally
+and we have the rbf
+network rbfn
+which is your radial basis function
+network which uses a different set of
+activation functions
+to
+figure out which is the right weights
+uh auto encoder the auto encoder is a
+little different
+than the other ones in that
+it looks for an error
+but the error is based in finding data
+that groups together
+so it's a way of sorting the data out
+without knowing the answer that's what
+an autoencoder does
+rnn
+rnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+now see it as a he
+neural network
+where the output
+part of the output goes back into the
+input
+so they call it this was recurrent
+there's also another rnn which deals
+with
+learning step by step as opposed to over
+a set of data and weighting it as you go
+and there's the
+ls tm or long short term memory
+recurrent neural network it's also an
+rnn
+which deals with how do you
+sort something like a sentence out
+where the last word depends on what the
+first word was and so it slowly weights
+things as it goes through to figure out
+what's being said
+again these are just a quick flash and
+even as i was describing them you should
+have been like well why don't you hook
+an auto encoder into again and then run
+that with the dbn
+well there are tools to go ahead and mix
+and match these things so
+you will actually see
+when you start doing layers you might
+have the layers of one type of neural
+network feed into the next neural
+network and that's actually pretty
+common
+when we talk about deep learning
+libraries there's a lot of different
+things out there but the big ones that
+they usually talk about
+and most of these are dealing with
+larger data is like tensorflow cross
+cross and tincture flow play nice with
+each other and cross kind of is is
+usually integrated with tensorflow
+caffe
+theno pytorch dl 4j
+these are all different deep learning
+libraries and there's many more out
+there there's a scikit has a deep
+learning library in it under python
+scala has one that they've been building
+on there
+so these aren't the only ones tensorflow
+is probably the most
+robust one at this time but that's not
+to say the other ones aren't catching up
+and there's not all kinds of other stuff
+out there now going through and talking
+about these things is all
+fun
+but until you get to roll up your
+sleeves and take a look at the code and
+see what's going on it's really hard to
+see what we're talking about so we're
+going to do a deep learning demo on text
+classification
+now to do this there's a lot of
+different editors you can use for
+python
+currently my favorite my favorites
+always one i'm currently using which
+changes from month to month or year to
+year depending what projects we're doing
+we want to look at uh anaconda navigator
+which does a nice job
+building your different packages and
+environments and go into jupiter
+notebook and so we'll go and go into
+jupyter notebook and create our
+our setup in there to run a neural
+network
+and so we open up our jupyter we'll go
+ahead and create a new python3
+and let me just bring this out to the
+top
+there we go
+uh so now we already have our jupiter
+three and i like to always give it a
+set up on here so this is the text
+classification we're doing today
+we'll go ahead and rename that
+and we were talking about if you
+remember from the beginning of the thing
+i said some of the the more the most one
+of the most robust packages out there
+right now is
+tensorflow along with keras which
+usually works nicely with tensorflow so
+we're going to go ahead and be working
+with the tensorflow and the cross
+we want to go ahead and do
+a number of imports in here
+this is just set up on this a lot of
+this really isn't necessary for what
+we're going to do there's different
+things we can do so we're going to go
+ahead and from future we're going to
+import absolute import division print
+function
+these really don't do a lot other than
+they help us kind of display things
+later on
+you don't really need them you can just
+do some basic print on this if you want
+to
+so i'm not going to dig too deeply into
+that setup
+but we do want to take a look at
+iteration tools
+because we're always iterating over
+things
+again you don't really need the
+iteration tools because a lot of
+tensorflow will do this for you
+but it's a lot of times when we're
+building these packages we don't think
+about it we just bring in all our tools
+that we might need
+the big ones though is our pandas db
+and let me switch to a draw thing it's
+always nice to kind of
+give us arrows here
+there we go
+uh so we're looking at you can see here
+here's our pandas panda sits on top of
+uh numpy our number array pandas is our
+data frame just makes it really easy to
+bring in the data view the data and kind
+of
+work with the file that's what these two
+are for and of course our matplot
+library up here is for displaying it and
+then we have the sklearn
+these are for doing metrics and
+pre-processing some of this you can
+actually pull off of tensorflow i tend
+to bounce back and forth between the sk
+learn setup
+and by the way the sklearn has its own
+neural network a real simplified one
+compared to what tensorflow does
+but we want to go ahead and do this in
+tensorflow where we're going to be using
+tensorflow cross and cross
+is nice because it sits on top of
+tensorflow
+but
+it's easier to use it's a little bit
+like you could think of tensorflow as
+being the back end which you can program
+in and cross being a higher level
+language which makes it easier to do
+things in
+and you can see here we went ahead and
+printed out tf version we're using
+tensorflow
+as the back end and you have the
+tensorflow version 2.1.0
+always important to double check your
+versions you never know what's
+not going to work with what version of
+python and so forth so it's important to
+check those
+this is python36
+i don't know if tensorflow is fully
+integrated with three seven or three
+eight yet
+i'm sure if it isn't it soon will be
+and so we're gonna go ahead and bring
+some data in this is
+consumercomplaints.csv and if you want a
+copy of this file just for your own to
+play with you can
+put a note send a note to simplylearn
+and they'll be happy to send you a copy
+of that
+and then df stands for data frame that's
+very common and we're using the pandas
+to go ahead and read this
+comma separated variable file in
+and we'll go ahead and print what they
+called the head if you've never worked
+with data frames usually when you see
+head it means the first five rows of
+that data frame so you can see what's
+going on in there
+and
+give it just a moment to read that in
+there it goes
+and you'll see in here that we have uh
+a date received a product mortgage
+credit reporting consumer loan credit
+card sub product other mortgage nan nan
+whatever that means whatever it is
+missing data right there's nothing in
+there vehicle loan and so forth and then
+of course different columns and this is
+a data frame data frame has rows and
+columns
+and a lot of times when you're
+processing data frames you can think of
+mapping
+map and reduce as a terminology we're
+mapping either mapping each of the rows
+like you might be running a process on
+each row or you're running a process on
+each column
+and then one of the most common things
+would be say to sum parts of the row
+together and have a total value of cost
+or maybe some
+the total
+you may come over here wherever i'm sure
+there's a value in here
+complaint id yeah they don't actually
+have a value
+but it'd be something you would process
+by column you might want to find out how
+many different companies are listed here
+so that might be something you'd run on
+the column
+so that gives you an idea we have our
+data frame
+df head on there
+and if you remember we're looking at
+text classification so that makes sense
+that we don't have any dollar values in
+there
+and we're going to look at just a couple
+of these columns
+certainly you can do this
+with a number of different objects on
+here but we're going to take just the
+columns consumer complaint narrative
+and the product column
+and in this case when we handle null
+values there's a lot of different ways
+to handle null values
+but in this case we're just going to go
+ahead and
+do just the not null we only want those
+that are not null in the consumer
+complaint narrative
+and let's go ahead and print that
+do the df head
+in
+jupiter
+the last line if you just have a
+variable it automatically prints it out
+so you could put print and put brackets
+around df head and do the same thing
+and you can see here we have our
+consumer complaint narrative
+i have outdated information on my credit
+report
+and then you have your credit reporting
+and so forth on each one of these an
+account on my credit card was mistaken
+the company refuses to provide me
+verification the complaint regards to
+square two something
+so we're gonna be looking at these
+complaint narratives and trying to
+understand them
+and can we write a code to
+optimize that
+and then one of the things we always do
+like up here you'll see where we already
+removed the null values
+i would go ahead and just double check
+sum up the null values are there any
+null values in our data frame
+and this is just a simple way of looking
+at every cell this includes consumer
+complaint the product and so forth
+and you can see here we have uh zero
+null values so that's good we're not
+we're not going to play with the null
+values today and then we can also go
+ahead and take a look at uh our end
+aspect we might be looking for which is
+our product we have credit reporting
+consumer loan credit reporting debt
+collection debt collection
+uh let's go ahead and just take a look
+at this
+and see how many counts we have
+and you can see here that there is under
+debt collection 47 000 entries under
+mortgage there's 36 000 entries under
+credit card uh we have over 18 000
+entries so this is a pretty big
+database
+and you can see it going down all the
+way down here with the different
+entries that go underneath of product so
+we have and one of the things we don't
+spend a lot of time on in some of these
+demos
+is what is really defining what we're
+looking for
+now if you're doing a data science
+project you usually start by exploring
+the data and then you define what you're
+really looking for and so we're kind of
+skipping through that really that
+particular process
+it does
+constitute a small amount of time
+but as far as the importance is one of
+the most important things you can do in
+data science is ask the right questions
+so even though you're spending 80
+percent of the time cleaning data
+building your models and everything that
+20 percent of asking the right questions
+has a higher impact and so you really
+should be making sure that you
+understand what the questions are
+that's domain knowledge so we're talking
+in this case banking
+and so in this case
+it might be that as consumer complaint
+comes in
+we can start looking at these consumer
+complaints and what product they're
+attached to and what that means
+we're not going to dig too much into the
+domain in asking the question what you
+know what exactly we're looking for we
+really want to look into the process
+as far as building a neural network
+and so
+the first thing we'll do is go ahead and
+split our data we need a train set and a
+test set
+the train size in this case we're going
+to do 80 of the data is going to be for
+training our neural network
+and then we'll go ahead and use the
+we'll switch that over for the test size
+to be the twenty percent let me go and
+run that
+and you can see here uh train size has
+uh 15 159 000 entries and then we'll
+test that on we've held out roughly 40
+000 of those entries for our test size
+and then for this example uh we're just
+gonna split it
+the first part of the data will be for
+uh training our data and the second part
+will be for testing our data uh so we're
+not really doing a random
+setup in here which is okay because this
+is an example
+a lot of times you might split this
+one of the things i do with neural
+networks is i will split it into three
+sections
+and i will test
+two as training and the third as the
+test this is obviously not big data you
+don't want to do this on something that
+might take days to process
+um and then i flip it and then so i'll
+run it three times and those three times
+will give me a nice narrative of how
+good my model is and then i'll actually
+run the the final product on all three
+sections to program it to train it
+so it gives me a good basis of what kind
+of error i have versus you know on test
+models while having a very robust model
+to publish
+in this case though we're just going to
+go ahead and split it based on
+the first part goes to the train and the
+second part goes to the test
+so
+one of the next things whenever we deal
+with text and this is such an important
+line
+i want to go ahead and just highlight
+the tokenize you'll see the word
+tokenize
+tokenizer setting it up
+we're taking the words and putting them
+into a format
+the computer can understand
+there is a lot of ways to tokenize words
+in some cases you call them 0 1 2 3 4.
+depending on what you're doing it might
+just be a 0 or 1.
+so when we talk about the encoder
+we're usually talking about as far as
+tokenize
+we actually are looking at in this
+particular case we'll be looking at each
+word as its own feature
+so when we looked up here remember right
+up here let's see here we go money
+transfer let me let me go back up just a
+note here turn that off so i can go back
+up if you remember up here we have
+this right here consumer complaint
+narrative so i would be a feature have
+would be a feature outdated would be a
+feature information would be a feature
+on feature my feature credit feature
+report
+and you think wow that's a lot of
+features uh yes in running through bills
+put out by the united states that are
+being voted on in this in the government
+um it comes out roughly 2.4 million
+different words are used in those bills
+that's a lot of features
+and so we're going to go ahead and look
+at uh max words tokenize and tokenizing
+words there's a lot that is happening
+here in the tokenized setup
+so we'll go ahead and just
+put together some of this code here
+so the tokenize is an actual object in
+here text tokenizer and it has number of
+words equals max words so we're going to
+limit it to a thousand words character
+level equals false fit on text train
+narrative only fit on the training data
+and so this is kind of interesting
+because it drops a lot of these words
+why would it drop a word well on on is
+probably used a bunch and really doesn't
+have any value so that's would be one of
+the words they'll probably drop
+and also there's other things that can
+do like it can also
+combine combinations a word it might be
+that
+this company this complaint these might
+be
+always together so at some point it
+might actually bundle some of these
+words as a single feature
+there's a lot of things that go into
+that
+we're not going to go into too much
+detail because you really have to go
+through the api on these to understand
+all the different uh encoding and setups
+you have
+this is just a really fast way to do
+this and it works
+i like easy and i like things that work
+i don't know about you but what i'm
+running through and doing a lot of
+different models
+i might start tweaking these once i have
+an answer
+but until then
+we want to go ahead and
+run the encoder and do something simple
+like this
+and so using sk learn utility to convert
+the label strings to number index and so
+here's our encoder label encoder encoder
+fit
+and this is sklearn of course
+everything's fit
+and then we do y train equals the
+encoder transform train product y test
+equals encoder transform test product
+now what's going on here now up here we
+did the x where we have
+let me view up here where we were
+looking at um
+here we go
+i have outdated information on my credit
+card report
+now we're looking at this
+credit reporting consumer loan credit
+reporting and if you remember this is
+our list of those debt collection
+here's our list of them they're not a
+huge number
+and so we're going to encode these
+differently
+this is just 0 1 2 3 4 and so on not
+necessarily in that order by order by
+the way
+so be a little careful on order so we're
+going to convert the labels to
+one hot representation as our next step
+and that's what this is doing so we have
+our number classes in p max y train plus
+one
+our weight y train equals utilities to
+categorical
+so here's where we're taking our y value
+in the training set and we do the same
+with the test set
+and we go ahead and run that so now
+we've created a y train and a y test
+where we've numbered our categorical
+we've created categorical data so it's
+easy to
+read the answer and translate it back
+and we've encoded
+up here our x
+and we used a tokenizer
+so a little different encoder puts in 0
+1 2 3 for the different listings an
+encoder or token
+you can get tongue tied on these a
+tokenizer
+takes and creates a huge in this case
+we've limited to 1 000 words each word
+is its own token and to really see what
+we're looking at let me go ahead and
+we're going to inspect the elements and
+see what we ended up with
+let me run this and so we have our y
+train shape
+there's our one thousand what is that
+one thousand maximum words so we've
+tokenized the top thousand words
+um
+as each as its own feature
+and the same thing with the x test so
+those are x train and x test we have our
+y train shape and our y train test shape
+and um i thought the encoder depending
+on how you set it
+either to 0 1 2 3 or in this case it
+actually puts it out as 18. so it did
+the same thing as a tokenizer
+as far as putting it as a 0 1 so you
+have 18 choices there and if we count
+these i'm guessing there's 18 there now
+this is the part which is we look at the
+encoders and the tokenizers
+these are the tools you need to process
+text
+the computer doesn't see
+the hello on
+you have to give it a zero or one in
+each one of those and so this is all
+about the text classification part
+this is how we classify text is we have
+to give it something that has a number
+representation so once we've sorted out
+our data and we've converted it into
+something the computer can read for
+doing text we want to go ahead and
+create our model
+and when we create our model one of the
+things to be aware of is this is what we
+call a black box model
+now they've come a long ways in
+understanding how these different
+processes are created and so they're
+starting to understand how you can put
+these together and go back and say why
+why does it pick this why does it pick
+that how does it balance that
+but it's black boxing that it's really
+hard to do it's really hard to go in
+there and figure out why it picks one
+over the other just by looking at the
+neural network itself
+there are other machine learning tools
+like decision tree which make it much
+easier to see those
+changes and how it branches down but
+they don't perform as well in many cases
+and so we're going to go ahead and build
+a model we'll go ahead and run this just
+because it builds the model doesn't
+actually
+start fitting it yet let's take a look
+at these different pieces
+so we have our model which is going to
+be sequential that's a cross so we
+imported that at the beginning from the
+cross setup
+this
+tells us
+what's going on
+that we're going to be running this from
+top to bottom
+and we're going to add a dense layer so
+each time you see add
+let me do
+we look at these ad each one of these
+we're adding a row
+so these are all rows
+and then of course our
+rows you're like what is a row
+uh so we talk about row these are your
+layers we have you can see right there
+input layer we're going to add an
+activation to this layer and we're going
+to use the relu activation then we're
+going to add a drop out rate and what
+this does is they found that when they
+process a neural network
+instead of processing every neuron each
+time you do the back propagation to
+train it
+you only process some of them so only
+some of them are being trained by doing
+that it's able to create the
+differentiation between different
+categories and it actually trains much
+better instead of trying to train them
+all at once
+so that's what this is right here with
+the dropout point five and then we added
+add dense number classes
+and the dense number classes is another
+layer up here we have our add an
+activation relu layer so we have our
+input our relu layer with a dropout of
+0.5 then we have a dense layer
+which uses a soft max
+activation there is a lot going on with
+keras and these models you can get lost
+in just the activation
+here's our two activation relu
+is one type of activation softmax is
+another
+they work differently you can see when
+we were talking about earlier we talked
+about the different kinds of neural
+networks
+in cross and tensorflow each of those
+layers can be a different neural network
+layer and can function differently and
+you can stack them on top of each other
+and feed them into each other
+and then the final thing of course is
+your compile
+we have what we're using for loss
+remember we want to minimize loss so
+category this is a type of way of
+minimizing that loss
+atom is an optimizer
+you'll find there's a number of
+optimizer atom is used for larger data
+sets as you get to smaller data sets
+you actually use a very different
+optimizer in here and we look at the
+accuracy that's just when do we stop
+compiling this data
+how far do we go until it starts
+building what they call a bias it starts
+it's over fitted we want to stop at the
+right moment
+and then finally we get to
+actually training our model this is that
+black box we're going to fit it to the
+data we don't know what's actually going
+on in there but we want to go ahead and
+run it
+and i'm going to go ahead and start it
+running so it takes a moment for it to
+run through and you'll see the epic feed
+down here as it goes through
+epic 105
+and so forth we'll freeze this just for
+a second
+there we go
+um so let's take a look at this we have
+batch size
+batch size oops i meant to do that in an
+arrow
+there we go
+batch size
+is how many rows of data we're going to
+feed at a time
+so you can feed larger rows there's
+there's different reasons to feed them
+at different sizes
+really a lot of times people just leave
+this as a default
+depending and let it choose for them
+i'm not sure why they picked 32 in this
+case there's probably when they were
+messing with this 32 probably was a good
+batch size for
+fitting it
+the back end math deals with
+differential equations
+and some calculus which we won't get
+into
+so being aware of that that this batch
+size affects how it does that that back
+end differential equation in the reverse
+propagation
+um
+tells us that this is actually a pretty
+important number if you get it too big
+it's going to not it's not going to fit
+as well and if you get it too small it
+takes way too long to process
+and a lot of times there's what they
+call a
+reinforced learning neural network where
+it's batch size of one what does that
+mean well that means every action you
+take has a feedback you program the
+neural network so you can guess what
+your next action is
+that's very common like in trying to
+beat video games with a
+automated
+setup in a neural network the epic says
+we're going to go through
+all the data in the training set
+five times
+so that's what this remember we talked
+about epics that's what the epic is
+and we can see when i let it go out here
+we're on uh epic 2-5
+so we'll go ahead and pause this i'm
+going to go ahead and pause it for a
+second let it finish running
+or while we're waiting we can actually
+take a look at some of this data here
+and see what it's actually generating
+for us
+and so we look at this
+uh accuracy
+loss
+uh so we want to minimize loss
+the metrics is accuracy and you can see
+that we're going to want the accuracy to
+go up and we want the loss to go down
+and the loss is going to be
+uh what we want to minimize and this is
+just some of the metrics
+um and it talks about like uh value loss
+value accuracy and how they're changing
+with each time we run it
+and so you get to a point where no
+longer gets better or worse and at that
+point you really want to stop running it
+you can overfit it and overfit it means
+it's going to miss some of the
+generalities that you need when solving
+some of these solutions
+and then i didn't talk too much about
+what's actually going on here what are
+we doing in the domain of this
+particular one which it looks like it is
+trying to figure out based on a consumer
+complaint narrative maybe they send in a
+complaint
+what product is it connected to so maybe
+they get the complaints before the
+product or something like that i'm not
+sure why you do this particular setup
+that would be again a domain knowledge
+in here so what we're doing is we're
+using the consumer complaint narrative
+to predict what product they're talking
+about someone comes sends in an email
+and says i have outdated information on
+my credit report they're probably
+talking about a credit card reporting if
+you get a random email that says i
+purchased a new car on blank the car
+something something probably alone
+that's what we're trying to do is if you
+get a random input from the consumer
+complaint narrative you can point to the
+product that they're referring to
+without having to call them up and ask
+them i guess
+that might be useful not sure
+now that we've gone through all five
+epics
+let's go ahead and evaluate the accuracy
+of our trained model and so we have um
+we're going to go ahead and do a score
+for the model.evaluate
+a nice crass
+setup
+where we can do the x test and the y
+test the batch size verbose
+and then we're going to it's going to
+generate a score
+and one of the things let's just go
+ahead and print
+so you can see why they broke out the
+score let me just go ahead and print the
+score in here let's go ahead and run
+that
+and so it's testing the score it's going
+to take a moment to go through all the
+data
+and it gives us a nice score and it says
+the test accuracy these can mean a lot
+of different things but we have a 0.5 to
+be honest without looking at the data
+i would have to look and see exactly
+which things it missed on and how it how
+it scored on there but it's it's getting
+about you know half of it it's able to
+pull in half of it and say hey
+if this is the complaint this is what
+it's connected to
+keep in mind when we're talking about
+text
+that's really good can you imagine some
+of the stuff i don't know if you've ever
+worked in tech support or i.t or at a
+counter in a in the mall or even in uh
+taking orders someplace as a waiter or
+waitress or fast food or whatever
+when you try to understand people it
+gets pretty crazy so even
+an accuracy score like this is probably
+pretty good for understanding some of
+this text
+and there might be
+steps you could do to improve that and
+so let's go ahead and go through here
+and look at actually using it
+and we'll punch this and it says
+how to generate prediction on individual
+examples we have our text labels in our
+encoder class
+and we'll just go through a prediction
+equals model predict np array of x test
+of i
+predict label text labels prediction
+print test narrative
+so forth and this is just let's go ahead
+and run it because reading through print
+statements
+can be very painful sometimes unless you
+actually see what's going on
+so when the president came out with the
+harp program dot dot dot the actual
+label was mortgage the predicted label
+was mortgage so when this person sent
+this this complaint in maybe you don't
+know what it's connected to yet you can
+guess it's probably a mortgage i filed a
+dispute with capital one bank on dot dot
+dot
+and it says oh credit card well it turns
+out it's actually debt collection that's
+what it predicted
+um
+so yeah missed a little bit uh if a lot
+of times when you dispute something
+it probably is a debt collection in this
+case it was specific to a credit card
+okay so we missed that one
+i am disputing account number xxs with
+midland whatever
+actual test label debt collection was
+debt collection i opened a barclay card
+on to help rebuild my credit credit card
+credit card mortgage mortgage
+so forth we can go through all of these
+and you can see it does a pretty good
+job it gets close or
+in fact most of these are pulled in
+correctly credit card reporting
+this is a lot of what we talk about with
+text
+setup sentiment's a really big one
+there's a whole sentimental libraries
+out there
+whether someone is positive or negative
+towards something if you're pulling off
+twitter feeds
+you might want to look that up you might
+want to look at connection towards
+postings in what was it there was
+running stock
+i actually do some some stock
+programming code
+so i end up coming back to that a lot
+finding sentiment feeds on different
+stock values and different stocks out
+there on
+out of national publications
+really helps trying to predict what the
+stock's going to do what are people
+going to do in buying and selling stock
+same thing with this we can now predict
+their
+complaints and try to figure out what it
+is they're complaining about
+now that wraps up our deep learning demo
+on text classification
+and gives you a nice introduction to
+deep learning as opposed to shallow
+learning a
+bad joke on my part
+but you can see how a deep learning
+model can go in and do a lot of things
+that you might not be able to do using
+basic linear regression or many of the
+other machine learning models
+and text classification is one of those
+where neural networks really shine
+because they can pick up things that you
+don't see you can't really measure in
+other ways
+at number 10 we have auto encoders
+auto encoders are a specific type of
+feed forward neural networks where the
+input is the same as the output
+auto encoders were first designed in the
+1980s by joffrey hinton to solve
+unsupervised learning problems
+it is a trained neural network that
+replicates the data from the input layer
+to the output layer
+an auto encoder consists of three main
+components
+the encoder the code and the decoder
+they are structured to take an input
+transform this input into a different
+representation
+it then aims to reconstruct the original
+image as precisely as possible
+here you can see there is a noisy image
+of a digit that is not so clearly
+visible
+this image is fed to the autoencoder
+neural network
+it first encodes the image and reduces
+the size of the input into a smaller
+representation
+after that it decodes the image to
+generate the reconstructed image
+next at number 9 we have restricted
+boltzmann machine
+a restricted boltzmann machine or rbm
+is a stochastic neural network that can
+learn from a probability distribution
+over a set of inputs
+it consists of two layers
+one layer is called the visible units
+layer and the next layer is of the
+hidden units
+each visible unit is connected to all
+the hidden units
+there is also a bias unit that is
+connected to all the visible units
+and the hidden units there are no output
+nodes
+rbm was also invented by geoffrey hinton
+the algorithm is useful for
+dimensionality reduction classification
+regression collaborative filtering
+feature engineering and topic modeling
+restricted boltzmann machine constitute
+the building blocks
+of deep belief networks or dbns
+rbm are also called energy based models
+moving on to the next algorithm or the
+neural network model so at number 8 we
+have deep belief networks
+deep belief networks are generative
+models that consist of multiple layers
+of stochastic latent variables
+the latent variables have binary values
+and are often called as hidden units
+beef belief networks are a stack of
+boltzmann machines with connections
+between the layers and each rbm layer
+communicates with both the previous and
+the subsequent layers dbns are graphical
+models that learn to extract a deep
+hierarchical representation of the
+training data
+it produces all possible values which
+can be generated for the case at hand
+deep belief networks can be used for
+image recognition video recognition and
+motion capture data
+motion capture data involves tracking
+the movement of objects or people using
+deep belief networks
+next at number seven we have
+self-organizing map
+self-organizing maps were invented by
+professor ayova kohanen
+soms are a data visualization technique
+to reduce the dimensions of data through
+self-organizing artificial neural
+networks
+the problem that data visualization
+attempts to solve is that humans cannot
+visualize high dimensional data easily
+so self-organizing maps are created to
+help us understand this high dimensional
+data it reduces dimensions by producing
+a map of usually one or two dimensions
+which plot the similarities of the data
+by grouping similar data items together
+hence self-organizing maps accomplish
+two things the reduced dimensions and
+also display similarities
+below you can see there is an input
+vector of different colors
+this data is fed to a som network
+self-organizing maps then convert the
+data into 2d rgb values
+and finally it segregates and
+categorizes the different colors
+so you can see the green color is on the
+top left corner while the purple colors
+are to the bottom right
+moving ahead at number six we have
+multi-layer perceptron
+the multi-layer perceptron or mlp is the
+hello world of deep learning a good
+place to start when you are learning
+about deep learning
+multi-layer perceptrons belong to the
+class of feed-forward neural network
+that consists of multiple layers of
+perceptron with activation functions
+mlps can classify data sets that are not
+linearly separable a multi-layer
+perceptron consists of an input layer
+and an output layer which are fully
+connected
+they have the same number of input and
+output layers but can have multiple
+hidden layers
+here you can see we have some images of
+cats and dogs
+we are feeding these images to a
+multi-layer perceptron along with
+suitable activation functions to
+classify the images of cats and dogs
+before moving ahead let me just recap on
+the neural networks and the algorithms
+that we have covered so far
+at number 10 we saw auto encoders at 9
+we had the restricted boltzmann machine
+then at 8 we saw deep belief networks at
+7 we looked at the self-organizing maps
+and how it can classify and categorize
+different colors and then we had
+multi-layer perceptrons
+now if you have enjoyed watching this
+video so far please consider subscribing
+to our simply learn channel and hit the
+bell icon to never miss an update
+moving ahead
+at number 5 we have radial basis
+function network
+radial basis function networks is a
+special type of feed forward neural
+network with radial basis functions used
+as activation functions
+it has an input layer a hidden layer and
+an output layer
+the neurons in the hidden layer contain
+the gaussian transfer functions whose
+outputs are inversely proportional to
+the distance from the center of the
+neuron
+the output of the network is a linear
+combination of radial basis functions of
+the inputs and neuron parameters
+and the radial basis function network
+performs classification by measuring the
+input similarity to examples from the
+training set
+they are majorly used for classification
+regression and time series prediction
+seen on your screens is an example of
+the radial basis function network so
+there is an input vector that is fed to
+the input layer
+then
+it has a layer of rbf neurons
+the function finds the weighted sum of
+the inputs
+and the output layer has only one node
+per category or class of data
+at number four we have generative
+adversarial network
+generative adversarial network organ
+are the generative models that create
+new data instances that resemble the
+training data
+it has two parts
+the generator learns to generate fake
+data
+that become negative training samples
+for the discriminator
+the discriminator learns to distinguish
+between the generator's fake data and
+the real sample data
+during the initial training the
+generator produces fake data and the
+discriminator quickly learns to tell
+that it's fake
+the results are sent back to the
+generator and discriminator to update
+the model
+the applications of gan have increased
+over a period of time
+it can be used to improve astronomical
+images and simulate gravitational
+lensing of dark matter research
+gans are used as a method of upscaling
+low resolution 2d textures in old video
+games by recreating them into 4k or
+higher resolutions via image training
+next at number 3 we have recurrent
+neural network
+recurrent neural networks often work
+with sequential data that have
+connections to form a directed cycle
+in such neural networks the output from
+the previous step is fed as input to the
+next step
+it can memorize the previous inputs due
+to its internal memory
+below
+you can see there is an unfolded
+recurrent neural network
+the output at time t minus 1 s5 does
+input at time t
+similarly the output at time t is fed as
+input at time t plus 1.
+recurrent neural networks have the
+possibility of processing input of any
+length
+the model size does not increase with
+the size of the input and the
+computation takes into account
+historical information
+rnns are commonly used for image
+captioning time series analysis natural
+language processing and machine
+translation
+here is an example of how google's auto
+completing feature works
+so there is a repository with a
+collection of washed volumes of most
+frequently occurring words
+this data is fed to a recurrent neural
+network to train a model
+now if you try to search for how to copy
+a cell in google it suggests you the
+next word should be sheets to auto
+complete your search
+that makes it how to copy a cell in
+google sheets
+up next at number 2 we have long
+short-term memory networks
+long short-term memory networks or lstms
+is a special type of recurrent neural
+network capable of learning and
+memorizing long-term dependencies
+remembering information for long periods
+of time is that default behavior
+lstms remember each and every
+information through time
+it is useful in time series prediction
+only because of the feature to remember
+previous inputs as well
+lstms have a chain like structure but
+the repeating module have a different
+structure
+instead of having a single neural
+network layer there are four interacting
+layers communicating in a very special
+way
+it works in a three-step process
+the first step is to forget the
+irrelevant parts of the previous state
+the second step is to selectively update
+the cell state values
+the final step is to output certain
+parts of the cell state
+some of the applications of long
+short-term memory networks include
+speech recognition music composition and
+sign language translation
+finally at number one we have the
+convolutional neural network
+convolutional neural network or cnn also
+commonly known as convnets
+consist of multiple different layers
+that are mainly used for image
+processing and object detection
+convolutional neural networks were first
+developed by yan lacoon
+the first convolutional neural network
+was called
+leanette that was created in 1988.
+it was used for recognizing characters
+like reading zip codes and digits
+convolutional neural network consists of
+a convolutional layer that has several
+filters to perform the convolutional
+operation then it has a rectified linear
+unit layer which is relu layer to
+perform the element-wise operation
+the output of this is a rectified
+feature map
+the rectified feature map is then fed to
+a pooling layer
+pooling is a down sampling operation to
+reduce the dimensionality of the feature
+map
+then we convert the resultant 2d
+dimensional arrays from the pooled
+feature map into a single long
+continuous linear vector by flattening
+it
+the flattened matrix from the pooling
+layer is fed as input to a fully
+connected layer to classify and identify
+the images
+here is an example of classifying your
+bird based on its features as you can
+see the network uses the convolutional
+layer then performs relu as well as max
+pooling operations to extract features
+through multiple hidden layers
+finally using a fully connected layer
+the convolutional neural network
+classifies the image which is a bird
+now let's move on to a question and
+answer session where we will address
+some of the questions that you have
+asked
+i can see there are several questions in
+the chat
+so there is one question that someone
+has asked what are the popular deep
+learning frameworks that can be used for
+implementing these algorithms
+so these algorithms or neural network
+models can be implemented using top
+libraries and frameworks such as
+tensorflow
+keras
+pytorch theano chainer etc
+each of these frame books has its own
+style of processing the data and
+building the model
+okay there is another question that i
+can see here
+what is the role of encoder code and
+decoder in an auto encoder neural
+network so the encoder compresses the
+input into a latent space representation
+the encoder layer encodes the input
+image as a compressed representation in
+a reduced dimension the code represents
+the compressed input which is fed to the
+decoder the decoder decodes the encoded
+image
+back to the original dimension by
+reconstructing the image
+so there's one more question i can see
+in the chat section here
+what are the activation functions and
+how they are helpful
+actually activation functions are
+mathematical functions that determine
+the output of a neural network
+the function is attached to each neuron
+in the network and determines whether it
+should be activated or not
+based on whether each neuron's input is
+relevant to the model's prediction
+some of the popular activation functions
+are sigmoid function threshold function
+then there's rectifier function and
+there's hyperbolic tangent function
+okay so someone has asked
+what is the significance of a cost
+function in a neural network
+so cost function is actually the measure
+to evaluate the performance of a model
+it is also referred to as the loss or
+error function
+it is often used to compute the error of
+the output layer during back propagation
+one of the examples of cost function is
+mean squared error
+okay let me see if there are any more
+questions
+okay so someone has asked
+what does the pooling layer do in a
+convolutional neural network
+so the pooling layer of cnn takes the
+rectified feature map as input
+it reduces the spatial dimensions by
+performing a down sampling operation to
+reduce the dimensionality
+then it creates a pooled feature map by
+sliding a filter matrix over the input
+matrix
+the pooling layer uses different filters
+to identify different parts of the image
+for example identifying the edges
+corners or other features of a bird
+with that i believe i have covered the
+important questions if you have any more
+queries do feel free to put in the chat
+section
+now let me show you how simply learn can
+help you get certified in deep learning
+and train you with some real time
+projects by implementing these
+algorithms
+so i'll search for simplylearn.com
+and under
+what you want to learn i'll search for
+deep learning
+let me open the first two courses
+so this is the deep learning course with
+keras and tensorflow certification
+training it is code developed with ibm
+and if i scroll down you can see
+the key features of this course it has
+34 hours of blended learning
+real life industry based projects then
+this dedicated mentoring session from
+our industry expert faculties
+this flexibility to choose classes then
+there's 24 7 support as well
+and on the right
+you can see the skills covered
+so we'll learn keras and tensorflow
+framework pytorch and its elements
+learn about image classification
+artificial neural networks auto encoders
+other deep learning networks
+convolutional neural networks
+recurrent neural networks
+and many more
+if i scroll further
+here you can see the entire course
+content
+so there's introduction to tensorflow
+as you learn about convolutional neural
+networks
+then there's deep learning with kerosene
+tensorflow live classes
+there are some practice projects you
+will also get a free course about math
+refresher
+and about deep learning fundamentals as
+well
+now these are the two projects
+if i go to my next course
+so this is the postgraduate program in
+ai and machine learning
+this is in collaboration with purdue
+university and in collaboration with ibm
+as well
+i scroll down here are the key features
+now this is how the purdue certificate
+would look like once you
+complete this course and you will also
+get
+an ibm certification
+now simply learn also gives you job
+assist
+in this program so you will get i am
+jobs pro membership for six months this
+resume assistance in career monitoring
+this interview preparation and career
+affairs
+here are the program details
+so we learn python for data science
+there's data science with python machine
+learning deep learning with tensorflow
+and carers
+then there is advanced deep learning and
+computer vision there's natural language
+processing and speech recognition
+if i expand it
+you also have the option to choose a few
+electives where you can learn about ibm
+watson for chatbots machine learning
+with r
+so
+these are some of the skills that will
+be covered you'll learn about statistics
+python supervised learning
+computer vision nlp gans speech
+recognition and symbol learning
+recommender systems
+and here are the tools that will be
+covered as part of this course and if i
+scroll down you can see the industry
+based projects
+let's talk about our first deep learning
+project
+we have image classification using the
+cipher 10 data set
+now this data set
+was created by the canadian institute
+for advanced research the cifar10
+dataset contains 6032 cross 32 color
+images and 10 different classes
+the 10 different classes are airplanes
+cars birds cats deer and others which
+you can see on the screen
+there are 6000 images of each class
+now there are 50 000 training images and
+10 000 test images
+you can build a convolutional neural
+network model using the keras library to
+classify each image into a category
+so it is more of an image recognition
+kind of a project that is recommended
+for beginners who are new to deep
+learning the next project in our list is
+brain tumor detection
+such projects are heavily used in the
+healthcare industries for detecting
+diseases before they occur
+brain tumors are the consequence of
+abnormal growths and uncontrolled cell
+division in the brain
+they can lead to death if they are not
+detected early and accurately brain
+tumors can be classified into two types
+benign and malignant
+deep learning can help radiologists in
+tumor diagnostics without invasive
+measures
+a deep learning algorithm that has
+achieved significant results in image
+segmentation and classification is the
+convolutional neural network
+it can be used to detect a tumor through
+brain using magnetic resonance imaging
+or mri
+image pixels are first fed as input to
+the cnn soft max fully connected layers
+are used to classify the images
+the accuracy of the convolutional neural
+network can be obtained with the radial
+basis function classifier
+next
+we have anna chatbot
+now this chat bot is the world's first
+open source conversation platform which
+comes with a graphical chart flow
+designer and chat simulator
+its supported channels are web chat
+android ios and facebook messenger
+the anarch chatbot is available to
+answer your questions 24 hours a day 65
+days a year
+anna is free for personal and commercial
+use
+with the anna studio server simulator
+and sdk which is software development
+kit your development time is cut from
+days to hours
+using anna
+you can create chat bots to suit your
+needs
+chatbots play an important role in
+customer support for an e-commerce
+website
+you can save real-time order and
+shipping updates personalized product
+recommendations and targeted offers
+within the conversation
+similarly automobile brands showrooms
+and service centers can use a chat bot
+for lead generation scheduling test
+drives and roadside assistance
+you can check the github repository
+that's on the screen to know more about
+working on this project
+the next project we have in deep
+learning is image captioning
+now image captioning is the process of
+generating textual description of an
+image
+it uses both methods from computer
+vision to understand the content of the
+image and a language model from the
+field of natural language processing to
+turn the understanding of the image into
+words in the right order
+microsoft has built its own caption bot
+where you can upload an image or the url
+of an image and it will display the
+textual description of the image
+on the screen you can see we have the
+picture of elon musk and the caption bot
+has generated a description that says i
+think it's elon musk wearing a shoot and
+a tie and he seems
+it ends with an emoticon
+another such application that suggests a
+perfect caption and best hashtags for a
+picture is caption ai
+automatic image caption generation
+software can be built using recurrent
+neural networks and long short-term
+memory networks or lstms
+now we have image colorization as our
+next project
+image colorization has seen significant
+advancements using deep learning
+image colorization is the process of
+taking an input of a grayscale image and
+then producing an output of a colored
+image or a colorized image
+colorization is a highly undetermined
+problem that requires mapping a real
+valued luminance image to a three
+dimensional colored value one that has
+not a unique solution
+chroma gan is an example of a picture
+colorization model
+a generative network is framed in an
+adversarial model that learns to
+colorize by incorporating perceptual and
+semantic understanding of color and
+class distributions the model is trained
+using a fully supervised strategy
+if you want to implement chromagan check
+the github link that's on the screen
+below
+next in our list of projects we have
+open nmt machine translation
+open nmt is an open source ecosystem for
+neural machine translation and neural
+sequence learning
+it started in december 2016 by the
+harvard nlp group and systran
+the project has since been used in
+several research and industry
+applications
+neural machine translation or nmt is a
+new methodology for machine translation
+that has led to significant improvements
+particularly in terms of human
+evaluation
+compared to rule-based and statistical
+machine translation systems
+open empty provides implementations in
+two popular deep learning frameworks pi
+torch and tensorflow
+please feel free to refer to the below
+github link to learn more about neural
+machine translation
+now we have music generation
+using deep learning it is possible for a
+machine to learn the notes structures
+and patterns of music and start
+producing music automatically
+music 21 is a python toolkit used for
+computer aided musicology it allows us
+to teach the fundamentals of music
+theory generate music examples and study
+music
+the toolkit provides a simple interface
+to acquire the music notation of midi
+files
+which stands for musical instrument
+digital interface
+using wavenet architecture and long
+short-term memory networks you can
+generate music without human
+intervention
+ample music mubart and jukedeck produce
+smart music powered by deep learning
+algorithms
+then we have alphago
+now alphago was created by google
+deepmind and is the first computer
+program to defeat a professional human
+go player
+alphago's algorithm uses a combination
+of machine learning and tree search
+techniques combined with extensive
+training both from human and computer
+play
+it uses monte carlo tree search guided
+by a value network and a policy network
+both implemented using deep neural
+network technology
+alphago was initially trained to mimic
+human play by attempting to match the
+moves of expert players from recorded
+historical games
+it was done using a database of around
+30 million moves
+once it had reached a certain degree of
+proficiency by being set to play large
+number of games against other instances
+of itself using reinforcement learning
+to improve its play
+next in our list of projects we have
+deep dream
+deep dream is a computer vision program
+which uses a convolutional neural
+network to find and enhance patterns in
+images by algorithmic paradolia
+it then creates a dream like
+hallucinogenic appearance
+in the over-processed images
+deep dream is an experiment that
+visualizes the patterns learned by a
+neural network
+similar to when a child watches clouds
+and interprets
+and tries to interpret random shapes
+deep dream over-interprets and enhances
+the patterns it sees in an image
+do check the given github link to
+install dependencies listed in the
+notebook and play with the code locally
+then we have deep voice
+deep voice was developed by baidu which
+is an ai system that can clone an
+individual's voice
+the trained model takes just three
+seconds to replicate the output of a
+person's voice
+deep voice 3 is a fully convolutional
+attention based neural text to speech
+system that converts text to
+spectrograms or other acoustic
+parameters to be used with an audio
+waveform synthesis method
+below you can find the github link for
+pytorch implementation of convolutional
+networks based text-to-speech synthesis
+models
+now we have ibm watson ibm watson helps
+run machine learning models anywhere
+across any cloud
+using ibm watson machine learning you
+can build analytical models and neural
+networks trained with your own data that
+you can deploy for use in applications
+with its open extensible model operation
+watson machine learning helps businesses
+simplify and harness ai at scale across
+any cloud
+it is used in healthcare teaching
+assistant chatbot as well as for weather
+forecasting
+and finally in our list of deep learning
+projects we have the yolo real-time
+object detection
+you only look once or yolo is a state of
+the art real-time object detection
+system
+it frames object detection in images as
+a regression problem to spatially
+separated bounding boxes and associated
+class probabilities
+using this approach a single neural
+network divides the image into regions
+and predicts bounding boxes and
+probabilities for each region
+the neural network predicts bounding
+boxes and class probabilities directly
+from full images in one evaluation
+the base yolo model processes images in
+real time at 45 frames per second
+you can use the coco data set and
+tensorflow library to train and test the
+model
+to learn more about yolo object
+detection check the github link that's
+shown on the screen below
+with that we have covered our top deep
+learning projects if you have any
+questions related to the projects we
+have covered then please put it in the
+chat section our team will help you
+solve your queries
+now let me tell you how simply learn can
+help you grow your career in deep
+learning and artificial intelligence and
+make you implement some of these
+projects that we have discussed in this
+video
+now this is the simply learns website
+and on the search bar
+let me look for
+deep learning
+now simply learn has a wide range of
+courses i'll show you the first two
+course
+the first course we have is deep
+learning course with keras in tensorflow
+now this is code developed with ibm
+if i scroll down you can see the key
+features of this course
+it has 32 hours of blended learning
+real life industry based projects
+24 7 support with dedicated project
+mentoring sessions
+flexibility to choose classes
+now on the right you can see the skills
+that will be covered as part of this
+course
+so you learn keras and tensorflow
+framework
+pi torch and its elements image
+classification artificial neural
+networks auto encoders deep neural
+networks
+you have recurrent neural networks as
+well
+now here you can see the benefits of
+taking this deep learning course
+if i scroll further
+here you can see the entire course
+content
+so lesson one
+it's a welcome session lesson two you'll
+learn about an introduction to
+tensorflow
+then you will cover
+convolutional neural networks
+you also have restricted boltzmann
+machine or rbm
+auto encoders
+then in section 2 you have deep learning
+with keras and tensorflow these are live
+classes
+now along with this course you also get
+free course math refresher and deep
+learning fundamentals
+we scroll down these are the two
+projects one is pubg players finishing
+placement prediction and the other is
+lending club loan data analysis
+now this is the certificate that you
+will receive after completing the course
+so please go ahead and enroll to this
+course if you want to start your career
+in deep learning
+now the next course we have is
+post graduate program in ai and machine
+learning this is in collaboration with
+ibm and in partnership with purdue
+university
+if i scroll down
+here you can see the key features of
+this course you have
+purdue alumni association membership
+industry recognized ibm certificate
+enrollment to simply learns job assist
+25 plus hands-on project on gpu-enabled
+labs 450 plus hours of blended learning
+you also get to work on caption project
+in three domains
+let me scroll further
+so this is the purdue certification that
+you will receive after finishing the
+course
+and you also have
+the opportunity to get this ibm
+certificate
+by enrolling to this course you can also
+get the advantage of simplyland job
+assist program so you will get im jobs
+pro membership for six months
+now below are the
+program details
+so
+this pg program covers python for data
+science
+data science with python machine
+learning deep learning with tensorflow
+and carers advanced deep learning and
+computer vision you will also learn
+natural language processing and speech
+recognition
+there's reinforcement learning
+and
+you can also select a few electives we
+have ibm watching for chatbots machine
+learning with r
+git and github training and others
+here are the skills that will be covered
+so you will learn about statistics
+python supervised learning nlp gans
+tensorflow computer vision
+and symbol learning
+and lots more
+now here you can see the tools that will
+be covered
+and these are the projects that you will
+get to work on once you enroll to this
+course so this is a twitter project
+using nlp
+help zomato predict rating from the
+review
+fair prediction for uber
+then you have another project on
+mercedes bench
+now you can see the course advisor for
+this course
+so please go ahead and enroll to this
+postgraduate program if you really want
+to
+build your career in ai and machine
+learning
+with that we have come to the end of
+this live session by simply learn i hope
+it was informative and useful
+if you think we missed out on any
+important projects in deep learning then
+please feel free to put it in the
+comments section of the video also don't
+forget to subscribe to our channel thank
+you for watching and keep learning

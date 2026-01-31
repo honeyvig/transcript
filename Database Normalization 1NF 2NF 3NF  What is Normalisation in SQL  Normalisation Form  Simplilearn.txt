@@ -1,0 +1,306 @@
+hello everyone welcome to yet another
+video on one of the most important
+Concepts in SQL normalization in this
+session we will dive into normalization
+a key technique for structuring your
+database efficiently this concept is
+frequently Asked in interviews as
+employers often test candidates on their
+understanding of database design and
+their ability to maintain data Integrity
+in real world application
+craving a career upgrade subscribe like
+and comment
+below dive in the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back also if you are interested in a
+professional certificate course in data
+analytics begin your Learning Journey
+with simply learn and I compost data
+analytics certificate course explore our
+learning man management system track
+your progress and meet completion
+requirements join the professional
+certificate course in data analytics
+recognized as a top PG data program by
+aim learn to understand data enhance
+your analytical skills through live
+sessions with industry experts Hands-On
+labs and master classes by I kpur
+faculty you can check the link mentioned
+in the description box below and in the
+pin comment so let's get started so
+let's start with what is normalization
+normalization in dbms is a method used
+to organize data within database to
+reduce repetition by breaking down large
+data sets into smaller more manageable
+tables and ensuring these tables are
+properly related normalization helps
+prevent issues like data rency data
+rency means the unnecessary repetition
+or duplication of data within a database
+for example when a same piece of data is
+stored in multiple places it can lead to
+inconsistencies and take up more stor
+space than needed for example Data rency
+before normalization you can see the
+table mentioned above where we have
+order ID customer ID customer name
+customer address product and quantity
+you might see some of the data which is
+being repeated again and again in the
+above table the customer address for
+John do is repeated three times let's
+suppose if John do moves to a new
+address every occurrence of his address
+in the table must be updated if any
+instance is missed due during the update
+it leads to inconsistencies and errors
+can occur in the database the solution
+is reducing the rency through
+normalization let's check it out how so
+you can see this is the normalized table
+we have created first is the normalized
+customer table and then we have the
+order table so what are the benefits of
+normalization the address for joho is
+stored only once in the customer table
+if John do address changes it needs to
+be updated in one place ensuring
+consistency through the datab base this
+reduces the risk of errors and maintains
+data Integrity the process involves
+multiple steps that transform data into
+a tab below format removing duplicates
+and establishing clear connections
+between different tables making the
+database more efficient and reducing
+problems like errors during data
+insertion updates or deletion let's now
+discuss the types of dbms normal forms
+normalization rules are categorized into
+different normal forms the first one is
+one and if for a table to be in first
+normal form it must satisfy the four
+rules single valued Atomic attributes
+each column should contain only one
+value per row this means that there
+should be no repeating groups or arays
+within a single column same domain
+values all values stored in a specific
+column should be of the same data type
+or domain for example if a column is
+meant to store dates all values in that
+column should be dates then we have
+unique column names each column in the
+table should have a unique name this
+ensures Clarity and avoids confusion
+when referring to a specific column then
+we have order of data which doesn't
+matter the order in which rows are
+stored in the table should not affect
+the data or its Integrity let's check
+the example of the first normal form
+consider the following unnormalized
+table customer ID customer name and the
+phone numbers as you can see the phone
+numbers are repeated twice the problems
+with the original table is the nonatomic
+values the phone numbers column contain
+multiple phone numbers separated by
+commas which violates the atomicity rule
+of 1 andf converting to First normal
+form to bring this table into one and F
+we must ensure that each column contains
+only Atomic value this involves
+splitting the rows where there are
+multiple phone numbers as you can see we
+have splitted the data each row now has
+a single phone number ensuring that the
+phone number column contains Atomic
+value same domain names all the values
+in the phone number column are
+consistent in format and type all are
+phone numbers then we can see that the
+unique column names The Columns customer
+ID customer name phone number which has
+unique name satisfying the requirement
+order of data the order in which the
+rules appear does not matter as the
+data's meaning and integrity are
+preserved by applying these rules the
+table now confirms the first normal form
+eliminating any rency related to the
+four numbers and ensuring data is stored
+in a more organized and efficient manner
+let's go through each of these database
+normal forms step by step with simple
+examples to help you grasp the concepts
+more easily let's talk about the second
+normal form for a table to be in second
+normal form it must satisfy the
+following condition number one it must
+be in one and F number two no partial
+dependency every non key attribute
+should be fully dependent on the entire
+primary key not just part of it this
+rule applies primarily to tables with
+composite primary Keys example of second
+normal form is consider the following
+table that is in one NF the order ID
+product ID product name quantity and the
+supplier name the problems with this
+table is that the partial dependency the
+product name and the supplier name
+depend only on product ID not the entire
+primary key which is order ID and
+product ID this violates 2nf converting
+to Second normal form to bring the table
+into 2nf we separate the data into two
+tables to remove partial dependencies
+order table and the product table no
+partial dependency in the order table
+quantity is fully dependent on both
+order ID and product ID in the product
+table product name and supplier name are
+dependent only on the product ID this
+ensur that each non-key attribute is
+fully dependent on the primary key
+bringing the tables into 2 and F let's
+now talk about the third normal form 3
+andf for a table to be in third normal
+form it must satisfy the following
+condition number one it must be in 2
+andf number two there should be no
+transitive dependency where non-care
+attributes depend on other non-
+attributes rather than the primary key
+let's check out the example of a third
+normal form consider the following table
+that is in 2 andf
+the problems with the 2nf table is that
+the transitive dependency the instructor
+name is dependent on the course name
+which is not directly on student ID or
+course ID and this violates 3nf so how
+do we convert this into 3nf to achieve
+three and F we split the table to remove
+the transitive dependency student course
+table and course table no transitive
+dependency now the student course table
+there are no non-key attributes
+depending on other non key attributes
+the course Table stores the course and
+instructor information separately this
+structure eliminates transitive
+dependency ensuring the tables conform
+to 3 andf Let's now talk about the boys
+called normal form which is bcnf bcnf is
+an extension of the third normal form
+3nf a table is in bcnf if it is in 3nf
+and for every functional dependency a
+implies to B A should be a Super Key
+let's check out the example of a boy
+called normal form bcnf so you can see
+this table here consisting of employee
+ID department and the manager the
+problem with this table is that the PCN
+a violation in this table Department
+determines manager but department is not
+a Super Key since employee ID is the
+primary key this violates bcnf so how do
+we convert this to bcnf to achieve bcnf
+we split the table to ensure that every
+determinant is a Super Key as you can
+see the employee table and the
+department table the Super Key
+requirement in the employee table
+employee ID is the primary key and in
+the department table department is now
+the primary key the decomposition
+ensures that every functional dependency
+is Satisfied by a Super Key meeting the
+requirements of bcnf let's now talk
+about the fourth normal form which is
+4nf a table is set to be in 4nf if it is
+in bcnf and has no multi value
+dependencies so let's consider an
+example of a fourth normal form consider
+table where an employee can have
+multiple skills and work on multiple
+projects as you can see the employee ID
+skill and the project the problem with
+this table is that it is multivalue
+dependency an employee skill is
+independent of the project but both are
+stored in the same table this leads to
+multivalue dependency violating 4nf so
+in order to achieve 4nf we separate the
+skills and the projects into different
+tables the employee skill table and the
+employee project T and now you can see
+that no multivalue dependency by
+separating the skills and the projects
+we eliminate multivalue dependencies
+ensuring the table conformed to for and
+let's now talk about the fifth normal
+form the employee skill table and the
+employee projects table so as you can
+see that no multivalue dependencies is
+there by separating the skills and the
+projects we eliminate multivalue
+dependencies ensuring the tables
+conformed to 4 andf now let's talk about
+the fifth normal form which is 5 andf a
+table is set to be in fifth normal form
+if it is in for enough and cannot be
+decomposed into any smaller tables
+losing information also known as joint
+dependency let's consider an example of
+a fifth normal form this is a table here
+that records the relationship between
+suppliers parts and the project the
+problem with this table is that the join
+dependency the table has a complex
+relationship between suppliers parts and
+projects that can be decomposed further
+so how do we convert this into fifth
+normal form in order to achieve 5 andf
+we break the table into smaller related
+tables the suppliers part table and the
+suppliers project table also Parts
+project table eliminating joint
+dependency by decomposing the table into
+three smaller tables we remove the
+complex relationship and eliminate the
+joint dependency ensuring the tables
+confirmed to 5 and if so guys this was
+all for this video on normalization if
+you really like this video do give us a
+thumb up and subscribe to simply learns
+YouTube channel for more videos thank
+you staying ahead in your career
+requires continuous learning and
+upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

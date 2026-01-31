@@ -1,0 +1,463 @@
+imagine you are trying to figure out
+what most people in your neighborhood
+love to eat for Desert you could ask
+everyone right but how do you make sense
+of all of these answers that's where
+statistics comes in it's like your
+personal data detective helping you
+gather organize and analyze all the
+information to spot patterns and Trends
+with Statistics you can easily discover
+if most people love ice cream or if
+brownies are the hidden favorite all
+about turning numbers and facts into
+useful insights helping you make smarter
+decisions and understand the bigger
+picture hello guys welcome back to
+Simply learns YouTube channel and today
+I will work you through the basic
+understanding of descriptive statistics
+inferential statistics frequency
+statistics and curosis statistics and
+more then I will take you through the
+differences among the various types by
+the end of the video you will know for
+all you want to know about statistics
+and its types without any further delay
+let's get into the video first things
+first let us understand what statistics
+actually is statistics is a branch of
+mathematics that help us collect
+organize and analyze data understand
+patterns Trends and make decisions it's
+like having a big group of information
+and breaking it down to learn something
+useful for example if we survey 100
+people about their favorite fruit status
+statistics help us figure out what most
+people like what fruit is least liked
+and how confident we are about these
+results here after we have a basic idea
+of Statistics let us get into the
+various types of Statistics the first
+one is descriptive statistics
+descriptive statistics is a branch of
+Statistics that focuses on summarizing
+and describing the main features of a
+data set this is further divided into
+measures of central tendency measures of
+spread and data distribution let's start
+with measures of central tendency and
+this is further divided into three types
+the first one is mean the average of all
+data points the second one is median the
+middle value when data is arranged in
+order the third one is mode the most
+frequently occurring value let's break
+down the measures of central tendency
+mean median and mode with an example
+imagine you have the following scores
+from a math test taken by seven students
+72 85 91 89 85 76 and 90 now you want to
+calculate the mean now to calculate the
+mean you have to add up all the scores
+and divide by the number of students
+therefore the mean is 84 it means the
+average scores of the students is 84 now
+moving on to find the median to find the
+median we need to take the same example
+and we have to arrange the scores in
+ascending order the median is the middle
+value so in this case the middle value
+is 85 since it is the fourth number in a
+list of seven so half of the students
+scored above 85 and half scored below 85
+now moving on the next is to calculate
+the mode the mode is a score that
+appears most often so we take the same
+example and we see that 85 occurs twice
+more than any other score so the most
+common score in the test is 85 just a
+quick info guys if if you're really
+interested unlock your data science
+carrier with simply learns data
+scientist master program ranked number
+one by carrier karma in collaboration
+with IBM this 11mon live online course
+teaches you top skills like python SQL
+machine learning and generative AI with
+25 plus Hands-On projects exclusive IBM
+hackathons master classes and job
+assistance you will be ready to shine in
+the data science field don't miss out
+enroll now and get ahead in your career
+now moving on on to the next that is the
+measures of spread unlike central
+tendency which tells you whether the
+data is centered spread tells you how
+scattered the data is it is three
+components range variance and standard
+deviation range it is the difference
+between the highest and the lowest
+values in the set and variance it
+measures how much each score deviates
+from the mean and standard deviation it
+is the square root of variance let's use
+an example to understand measures of
+spread range variance and standard
+deviation which help us understand how
+spread out or disperse the data is
+consider the test course of five
+students now we want to find the range
+therefore the range is the difference
+between the highest and the lowest
+values in the data set that is 85 - 65
+is equal to 20 the scores span range of
+20 points from 65 to 85 now moving on we
+want to find the variance for the same
+example
+the variance measures how much each
+score deviates from the mean on average
+squared first we calculate the mean so
+to calculate the mean we take the total
+of the scores divided by the total
+number of scores and that is equal to 75
+next we find the square differences from
+the mean for each score and here it is
+65 - 75 whole squ is equal to - 10 whole
+square and that is equal to 100 and in
+this way we per form the same for each
+score now the sum of the square
+differences divided by the number of
+data points is the variance and that is
+taking the total of the squared
+differences divided by five that is
+equal to 50 the variance is 50 meaning
+that on average the square differences
+from the mean are 50 now moving on to
+find the standard deviation the standard
+deviation is a square root of the
+variance it tells us how spread out the
+data is in the the same units as the
+original data the standard deviation is
+the root over of 50 that is
+approximately equal to
+7.07 now moving on the third major
+subdivision is data distribution let us
+use an example to explain data
+distribution which tells us how data
+points are sprayed or organized across a
+range of values imagine you have the
+following test scores for 20 students
+one way to understand data distribution
+is by creating a histogram the histogram
+groups the scores into ranges or beans
+and shows how many scores fall into each
+range for this data set we could create
+bins like 50 to 60 there are three
+students 61 to 70 there are seven
+students and 71 to 80 we have five
+students and in this way 81 to 90 we
+have three students and 91 to 100 we
+have two students now moving on to the
+normal distribution the second one under
+the data distribution in some cases data
+follows an normal distribution which
+forms a bell shaped curve and this means
+most data points are around the mean
+with fewer data points As you move away
+from the mean in either direction and
+normal distribution curve it means most
+data points are around the mean with
+fewer data points As you move away from
+the mean in either direction in a normal
+distribution the mean median and mode
+are the same data is symmetrically
+spread around the center now moving on
+in our example the scores are somewhat
+concentr red around 70 to 80 but the
+distribution is not perfectly normal
+because there are most students scoring
+higher that is the right skew therefore
+for skewed distribution sked
+distribution if if a data set is not
+symmetrical we have C distribution and
+that is further divided into two the
+right skew that is the positive skew and
+the left skew that is the negative skew
+in right skew more data points are on
+the lower side with fewer higher values
+and in the left skew more data points
+are on the higher side with fewer low
+values moving on in our test score
+example we have a slightly right skew
+distribution because there are more
+students with lower scores that is to 55
+to 70 compared to higher scores that is
+9200 and this is known as right skew
+distribution now moving on to the second
+type of Statistics that is inferential
+statistics it uses sample data to to
+make predictions and generalizations
+about a larger population allowing
+researchers to draw conclusions beyond
+the immediate data set inferential
+statistics comprises several techniques
+for drawing conclusions here are some
+common
+types hypothesis testing second one is
+confidence intervals and the third one
+is regression
+analysis now moving on to hypothesis
+testing hypothesis testing is a statical
+method used to determine whether there
+is enough evidence in a sample of data
+to support a specific Claim about a
+population let's work through the
+process of testing whether a new
+teaching method improves student test
+scores breaking it down step by step
+with some explanations to make it easier
+to follow step number one is hypothesis
+we always start by stating what we want
+to test in this case we want to see if
+the new teaching method helps students
+score better compared to the traditional
+one to do this we set up two hypothesis
+0 that is the null hypothesis and that
+is the average test score with the new
+method is equal to 75 this means that
+the new method has no impact and there
+is no improvement in the test scores H1
+that is the alternative hypothesis the
+average test score with the new method
+is greater than 75 this suggests that
+the new method does improve test scores
+in simple terms we are trying to figure
+out if the new method makes any
+difference compared to what we normally
+expect which is a score of 75 now moving
+on to the next step that is significance
+level next we need to decide how
+confident we want to be in our
+conclusion the significance level helps
+us measure this it tells us the
+probability of mistakenly rejecting the
+null hypothesis when it's actually true
+type one error a common choice for this
+significance level is 0.05 or 5% this
+means we are willing to accept a 5%
+chance of making a mistake by rejecting
+the null hypothesis when it is true so
+we said Alpha is equal to
+0.05 step three collect data now we need
+some actual data to test let's say we
+taught 30 students using the new method
+and their average test score came out to
+be 78 this is our sample data and we
+will compare it to the population mean
+which is 75 the traditional method score
+now moving on to the next St that is
+perform statistical test the T Test with
+the data in hand we need to perform a
+statistical test for this test we will
+use a t test which is which will help us
+compare the sample means 78 to the
+population mean 75 the T Test checks if
+the difference between the two means is
+significant or if it could just be due
+to random chance moving on to the next
+step that is P value the P value from
+the T Test is a number that tells us the
+probability of getting the sample data
+if the null hypothesis is true let's say
+the T Test gives us a P value of 0.03
+this means there is 3% chance of seeing
+this level of improvement if the new
+method doesn't actually improve scores
+now moving on to the last step that is
+decision now we compare the P value to
+our significant level Alpha if the P
+value is smaller than 0.04 five it means
+the results are statistically
+significant and we can reject the null
+hypothesis in our case the P value is
+0.03 Which is less than
+0.05 so we reject the null hypothesis
+now moving on to the second part that is
+confidence interval a confidence
+interval is a range that tells us how
+sure we are about an estimate from
+sample data it gives a range of values
+whether the true member likely false for
+example
+suppose you survey 100 men in a city to
+estimate the average height the average
+height from your sample is 175 cm and
+the standard deviation is 10 cm you want
+to calculate 95% confidence interval to
+estimate the true average height of all
+men in the city now let's move on to the
+steps sample mean the sample average is
+175 CM the standard error is calculated
+as 10 by root over of 100 that is equal
+to 1 now the confidence interval formula
+for a 95% confidence level use the
+critical value 1.96 the confidence
+interval is 175 +us 1.96 into 1 that is
+equal to 175 + - 1.96 the result the 95%
+confidence interval is 173.04 comma
+average height of all men in the city is
+173.04
+CM and
+role that is the independent variable
+and sales is what you want to predict by
+analyzing the past data regression helps
+finding a pattern or relationship for
+example you might discover that for
+every $100 you spend on Advertising your
+sales increase
+by100 this means you are positive
+relationship between advertising and
+sales now if you plan to spend $1 500 on
+Advertising You can predict an increase
+in the sales by applying that
+relationship regression analysis gives
+you a formula or model to make such
+predictions based on the pattern you
+identified in short regression helps you
+logically predict how changes in one
+factor affect another next I will be
+talking about is frequency statistics in
+statistics frequency refers to how often
+something occurs in a data set it simply
+counts how many times each value or
+event appears frequency is useful for
+for understanding the distribution or
+pattern of data let's say you surveyed
+10 people about their favorite food and
+the results were four people chose
+apples three people chose bananas two
+people chose oranges and one person
+chose grapes let here's how frequency
+Works apples have a frequency of four as
+four person chose it bananas have a
+frequency of three oranges have a
+frequency of two and grape has a
+frequency of one
+in this simple example frequency helps
+you see that apples were the most
+popular fruit Choice while grapes were
+the least popular last but not the least
+let's talk about curosis statistics
+curosis is a statistical term that
+describes the shape of the distribution
+of data especially how the data is
+concentrated in the tales it helps us
+understand if the data has more or fewer
+extreme values compared to a normal
+distribution it is further divided into
+high kosis and low kosis high High kosis
+has more extreme values and in low kosis
+the data has fewer extreme values in
+short high kosis means more extreme
+Heights while low kosis means more
+consistent evenly spread Heights by now
+you be curious to know about the
+differences among all the types of
+Statistics so here we go differentiating
+them on the basis of purpose descriptive
+statistics summarizes the main features
+of a data set for example mean median
+and standard deviation inferential
+statistics makes predictions or
+generalizations about the population
+based on Sample data frequency statistic
+counts when specific values or events
+occur in the data State curosis
+describes the shape of the distribution
+focusing on the tales and extreme values
+differentiating them on the basis of
+data Focus descriptive statistics deals
+with the entire data set at hand
+inferential statistics uses a sample to
+infer conclusions about a larger
+population statistics focuses on the
+frequency of individual values or
+categories cusis focuses on whether the
+data has many or few extreme values now
+differentiating them on the basis of
+common metrics in descriptive statistics
+is the mean median mode and standard
+deviation and range and in inferential
+statistics there hypothesis testing
+confidential intervals regression
+analysis in statistics there frequency
+counts frequency tables histograms bars
+and charts in gsis gsis value high kosis
+is equal to more extreme values and low
+kosis is equal to fewer extremes now
+differentiating on the basis of
+complexity complexity in descriptive
+statistic is simple and straightforward
+summarizes the observed data and in
+inferential statistics it is more
+complex and in statistics it is simple
+counting and displaying of occurrences
+kosis it is requires statistical
+analysis to determine the distribution
+tailedness now finally differentiating
+them on the basis of visualization
+descriptive statistics it is the box
+plots pyur and summary tables
+inferential statistics it is confidence
+intervals regression lines P values and
+more and in statistics it is Bard
+histograms frequency tables and GTO says
+it is histograms distribution plots to
+visualize outliers so here is a question
+for you guys I hope everyone will
+comment your answers in the chat section
+and let's see how many of really
+understood the topic so the question is
+which of the following is not a measure
+of central tendency and the options are
+mean median mod and standard deviation
+participate in the quiz and I hope to
+see your answers in the comment section
+we will reply to whoever provides the
+correct answer and the wrong answers
+will be corrected for sure I will
+provide you one minute to write your
+answers in the comment
+section so guys that's a wrap up I hope
+you have liked the video if you have any
+questions do comment and one of our
+experts will definitely get back to you
+do like and subscribe to the channel for
+more updates like this I will see you in
+the next video till then keep learning
+with simply learn thank you for watching
+staying ahead in your career requires
+continuous learning and upscaling
+whether you're a student aiming to learn
+today's top skills or a working
+professional looking to advance your
+career we've got you covered explore our
+impressive catalog of certification
+programs in cuttingedge domains
+including data science cloud computing
+cyber security AI machine learning or
+digital marketing designed in
+collaboration with leading universities
+and top corporations and delivered by
+industry experts choose any of our
+programs and set yourself on the path to
+Career Success click the link in the
+description to know
+[Music]
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to ner up and get certified click
+here

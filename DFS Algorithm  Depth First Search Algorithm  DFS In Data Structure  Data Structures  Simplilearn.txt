@@ -1,0 +1,121 @@
+hello everyone welcome to simply learn's
+youtube channel in this session we will
+learn about depth first search algorithm
+but before we begin i would like to tell
+you guys that we have daily updates on
+multiple technologies if you are a tech
+geek in a continuous hunt for latest
+technological trends then please
+consider getting subscribed to our
+youtube channel and don't forget to hit
+that bell icon to never miss an update
+from simply learn
+now without further ado let's get
+started with the agenda for today's
+discussion
+so in this session for today first we
+will understand about a brief
+introduction to depth first search
+followed by that we will look into an
+example for dfs algorithm so i hope i
+made myself clear with the agenda now
+let's get started with the introduction
+to depth first search
+so what is a depth first search so
+basically a depth first search is an
+algorithm for traversing or searching
+the tree or graph data structures the
+algorithm starts at the root note
+selecting some arbitrary node as the
+root note in case of graph and x plots
+as far as possible along each branch
+before backtracking
+so dfs starts with the initial node of
+the graph then goes deeper until it
+finds the goal nodes or the leaf nodes
+or the nodes that have no children that
+is the end part here you can see 4 and 7
+are the leaf nodes so the depth first
+search algorithm runs till the end of
+all the nodes that is 8 10 all these are
+the
+leaf nodes or the last gold nodes
+in dfs the backtracking starts once all
+the nodes are explored
+and the dfs algorithm uses stack data
+structure for its traversal now that was
+a brief introduction to the dfs
+algorithm now for a better understanding
+let's go through a practical example
+so here we have a graph data structure
+with elements a b
+c
+d
+e and f so we will be running the dfs
+algorithm and we will be traversing
+through all the nodes of this particular
+graph and the traversal will be recorded
+using a stack data structure and we have
+two different colors which will be used
+to indicate the element's color
+so the black color is for the nodes
+which are not visited yet and the blue
+color will indicate the nodes which are
+being traversed already
+now this is the stack data structure
+that we will be using for the traversal
+and we have another part which declares
+or which gives out the output of the
+traversal of the nodes of this
+particular graph
+now we will begin with the first one
+that is a now followed by that we will
+move ahead to b
+then after b we will go through d
+then after d we have e
+next we have c and last we have f
+so that's how we traverse through the
+graph using the dfs algorithm
+now for a little more understanding
+let's go through a practical example
+where we will be executing a program for
+implementing the dfs algorithm
+so this particular program on my screen
+is an example for dfs algorithm so here
+we have the structure node
+so followed by that we have also the
+methods which will create the edge
+and which will also print the graph
+elements and finally we have the main
+class now don't worry about the code
+this particular code segment or the
+complete code document will be added in
+the description box below and you can
+have access to it and try to run it on
+your local system and have a better
+learning experience now without further
+ado let's try to run this program and
+get the output and see how the dfs
+algorithm gets implemented and traverses
+through the graph
+there you go the program got
+successfully executed and we had the
+graph elements that is 0 1 and 2 and 3
+so it has visited all the elements that
+is 2 3 1 and 0 according to the stack
+data structure and we have found the
+output over here
+so with that we have come to an end of
+this tutorial on dfs algorithm if you
+have any queries regarding the topics
+covered in this particular session then
+please feel free to let us know in the
+comment section below and our team of
+experts will be happy to resolve all
+your queries until next time thank you
+stay safe and keep learning
+hi there if you like this video
+subscribe to the simply learn youtube
+channel and click here to watch similar
+videos to nerd up and get certified
+click here

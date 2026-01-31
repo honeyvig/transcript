@@ -1,0 +1,1138 @@
+hello everyone and welcome to today's
+video on Docker interview questions at
+simply learn in this period of preparing
+you for all the important job interview
+today we are going to discuss a
+collection of Docker interview questions
+and answers for experienced intermediate
+and primary levels so guys watch this
+video till the end if you want to crack
+Docker
+interviews craving a career upgrade
+subscribe like and comment
+below dive into the link in the
+description to FastTrack your Ambitions
+whether you're making a switch or aiming
+higher simply learn has your
+back now before we move on there is just
+quick info for you guys simply learn has
+got professional certificate program in
+cloud computing devops in partnership
+with enic and IIT ghati in this you're
+going to learn about Azure AWS DeVos
+Cloud infrastructure and many more
+you'll also gain hands-on experience
+through real world projects in our
+premium sandbox Cloud Labs so hurry up
+now and join the course link the course
+link is mentioned in the description box
+so guys let's start with Docker
+interview questions and answers so guys
+let's start with our first question that
+is what is
+Docker so guys Docker is a conization
+platform that allows developers to
+package applications and their
+dependencies into standardized units
+called as containers very basic question
+and I hope so you would be aware of this
+one now let's move on to our second
+question that is how does Docker differs
+from virtual machines kind of tricky but
+still you should have an idea of this
+and the answer to the same question is
+like what happens unlike virtual
+machines which require a hypervisor to
+run multiple operating systems into
+single physical machine the docker
+containers shares the host of its
+operating system kernel and only contain
+the application and its dependencies and
+that's how it differs from virtual
+machine I hope so you would have got an
+idea regarding the same now let us move
+to our third question the third question
+is explain the difference between Docker
+image and Docker container so guys very
+basic question and the answer to the
+same is a Docker image is a template for
+creating Docker containers it's a red
+only temp temp plate with instructions
+for creating Docker container Docker
+container is a runnable instance of
+Docker image so guys our next question
+is how do you create a Docker image so
+guys Docker images are typically created
+using a Docker file which contains a set
+of instructions for building the image
+the docker build command is then used to
+build the image from Docker file so in
+this way you create a docka image so
+we'll move to the next question which is
+related to the next one and and that is
+what is a Docker file so guys a Docker
+file is a text file that contains
+instructions for building a Docker image
+it includes commands such as from run
+copy Expose and CMD I hope so you would
+have got an idea regarding the same now
+let us move on to the next question that
+is explain the docker run command and
+what it is so guys if we talk about the
+docker run command it is basically used
+to create and start a Docker container
+based on the docker image it can also be
+used to specify runtime options such as
+environment variables network settings
+and volume mounts I hope so you would
+have got an idea regarding it now let us
+move to the next question that is what
+is Docker Hub so guys if we talk about
+Docker Hub Docker Hub is a cloud-based
+registry service that basically allows
+users to store and share Docker images
+it provides public and private
+repositories for storing images as well
+as an integration with other services
+such as GitHub and bid bucket very basic
+question now let us move on to the next
+question that is how do you publish a
+Docker image from Docker her so guys if
+we talk about it to publish a Docker
+image to a Docker Hub you first need to
+tag that image with your Docker Hub
+username and the repository name using
+the docker tag command it's very
+important and remember this and then you
+have to push the image to the docker hub
+using the docker push command so it was
+pretty simple now let us move on to the
+next question that is what are Docker
+volumes so guys if we talk about what
+are Docker volumes so Docker volumes are
+a way to persist data generated and used
+by Docker containers the basically allow
+data to be stored outside the containers
+writable layer making it possible to
+share the data between containers and
+purist data even if the container is
+stopped or deleted very simple these are
+some of the basic concepts that you will
+find on Docker documentation so whenever
+you are preparing for your interview
+I'll advise you to go thoroughly to the
+official documentation of the docker it
+really helps most of the questions like
+scenario based questions coding based
+questions are generally asked from there
+now let us move to the next question
+it's a pretty interesting one so it is
+basically asked from the architecture
+and the question is what is Docker demon
+so guys Docker demon often referred to
+as Docker is a background service that
+manages Docker objects such as images
+containers networks and volumes it runs
+on the host operating systems and
+handles request from Docker engine CLI
+or the other Docker client via do Docker
+API that is so in this command can you
+explain the significance of I flag T
+flag and Docker run it12 /bin/bash so
+this is our Command and the interviewer
+is asking you to explain the
+significance of I andt flag okay so
+basically the I flag stands for
+interactive so whenever you use this
+Flags it keeps the standard input open
+even if not attached essentially it
+allows you to interact with the
+containers process enables you to
+provide input to the commands running
+inside the container and with respect to
+the T flag if we talk about then T
+stands for pseudo TTY T flag stands for
+pseudo TTY it basically allocates a suro
+terminal for the container allowing you
+to see the command prompt and providing
+a more shell-like interface for
+interaction so without a t flag uh you
+basically wouldn't get a nicely form
+terminal prompt and your interaction
+with a container might also not feel as
+natural so this is a significance of I
+flag and T flag now let us move on to
+the next question what is the difference
+between ADD and copy in a Docker file
+very basic question so guys if we talk
+about add and copy they basically both
+are used to copy files into the docker
+image but add additional functionality
+okay so what does add do it can
+basically copy files from remote URLs
+decompress the files and automatically
+set the file
+permissions very easy now let us move on
+to the next question that
+is what is the difference between CMD
+and entry point in a Docker file so guys
+if we talk about CMD CMD specifies the
+default command to run when a container
+is started while entry point specifies
+the command to run when the container is
+started and also additional arguments to
+be passed to the commands so this was
+all about CMD and entry point so guys
+our next question is what is Docker
+compose so guys Docker compose is
+basically a tool for defining and
+running multi-container Docker
+applications it allows basically
+developers to use the yml file to define
+the services and also networks and
+volumes so that's a very basic
+definition of Docker compos so let us
+move to our next question that's is so
+when a container exist is it possible
+for you to lose a data like very basic
+question but the answer to the same is
+no it's not possible to lose any data as
+long as the container exist like if you
+delete then all the data will be lost so
+that's the overall scenario for this
+question it's a very kind of a tricky
+question so just remember it now let us
+move to the next question so next
+question is what is the difference
+between logging and D demon logging so
+very frequently Asked question guys so
+container logging and Demon logging
+refer to the different aspects of login
+within the docker ecosystem if I talk
+about the container logging container
+logging refers to the logging performed
+by applications running inside Docker
+containers whereas each container has
+its own isolated environment and it can
+generate its own logs just like any
+other applications whereas container
+login captures the output which is SD
+out standard output and STD D of the
+process running inside the container by
+default this output is captured by
+Docker and can be accessed using
+commands like Docker logs so this was
+related to container loging now if we
+talk about demon loging guys so guys
+demon login refers to the login
+performed by Docker demon itself the
+docker demon is responsible for managing
+containers images networks and volumes
+on the host system demon login captures
+the events related to docker's
+operations such as container creation
+container start stop image pull push
+Network creation and so on and so forth
+so that's what the basic difference
+between container logging and Demon
+logging now let us move to the next
+question does Docker Provide support for
+IPv6 very interesting question guys so
+if you are aware with the documentation
+you will definitely answer this question
+yes Docker does have some support for
+IPv6 but uh like as per as my knowledge
+uh it has become quite comprehensive and
+it's maturing as its support for ipv4 so
+that's what in the process right now let
+us move to the next question and this is
+related to scaling so the question is
+how do you scale Docker horizontally so
+guys horizontally scaling in Docker
+involves running multiple instances of a
+service across multiple Docker
+containers to distribute the workload
+and improve performance availability and
+fall tolerance and here you can
+basically uh scale it so first one is
+using Docker swarm and kubernetes so
+what happens uh using Docker Sor and
+cuetes it happens a process of container
+orchestration so these platforms provide
+a built-in support for horizontal
+scaling they allow you to Define desired
+replica counts for the services and also
+the orchestration platform manages the
+deployment and scaling of the containers
+automatically like what kubernetes does
+in this scenario
+so this is one way uh there can be
+multiple way so have an open eye
+regarding this question it can be asked
+in the interview so guys our next
+question is how does CMD and entry point
+differs in a Docker file so guys it's a
+very interesting question and kind of
+frequently asked so guys use entry point
+instructions when building an executable
+Docker image using commands that always
+need to be executed and you are going to
+use CMD instructions when you need an
+additional set of arguments that can act
+as a default instructions until there is
+explicit command line usage when Docker
+containers run so that's what the basic
+difference between entry point and CMD
+now let us move to the next question
+that is what is the purpose of volumes
+in Docker with a theoretical question so
+guys in Docker volumes provide a way to
+persist and share data between
+containers and the docker host they have
+several purposes like if I talk about
+first is a persistent data storage then
+sharing data between the containers
+performing optimization performance
+optimization integration with external
+storage systems and many more so this is
+a purpose of volumes in Docker now let
+us move to the next question that is
+what is the difference between Docker
+restart policies no on failure and
+always very interesting question so guys
+if I talk about no no means no automatic
+restart containers remain stopped after
+exit like if I talk about on failure
+here automatically restarts the
+container if it exist with a non-zero
+exist status like there will be a
+specified number of attempts and in the
+case of always it automatically restarts
+a container regardless of the exit
+status so that's what the difference
+between all of these policies are no on
+failure and always please take a note of
+this question this is kind of very
+important now let us move to the next
+question that is what is a difference
+between Docker container and kubernetes
+spt so guys Docker container is a
+lightweight Standalone and executable
+package that contains everything needed
+to run a piece of software including
+code runtime system tools and libraries
+it runs a single Docker host in a
+managed using Docker engine if I talk
+about kubernetes sports it is a higher
+level abstraction that can contain one
+or more darker containers along with
+shared storage network resources and
+configuration settings it represents the
+smallest Deployable unit in the
+kubernetes and it also provides an
+environment for running containers so
+that's what the difference between the
+docker container and kubernetes B is now
+let us move to the next question that is
+how do you secure Docker containers very
+interesting question and kind of a
+practical question so guys securing a
+docka containers involves several steps
+so it's a combination of best practices
+and security measur
+to protect the containerized
+applications and underlying
+infrastructure here are some of the key
+strategies first use the official images
+utilize official Docker images from
+trusted sources as they are regularly
+updated and maintained within the
+security patches the next one is
+container image scanning employ
+container image scanning tools to
+identify vulnerabilities and malware in
+Docker image before deployment third one
+you can reduce attack surface minimize
+the attack surface by removing
+unnecessary components limiting
+Privileges and using minimal base images
+next one is container isolation you're
+going to utilize container isolation
+mechanisms like name spaces c groups to
+restrict container access to the host
+system you can also use secure
+configuration like configure Docker
+demon and containers with the best
+security practices such as using least
+privilege disabling unnecessary features
+and also enabling Security Options like
+CMP and app AR SLS Linux so these were
+some of the ways in which you can secure
+Docker containers now let us move to the
+next one that is can you tell me some of
+the best practices for using Docker in
+the production environment so this is
+one of the Practical questions that has
+been asked most frequently so guys the
+answer for this question is like using
+Docker in a production environment
+requires careful planning and adherence
+to the best practices to ensure
+reliability scalability and security the
+first practice would be use official
+images utilize official Docker images
+from trusted sources as they are
+regularly updated and maintained with
+security batches next one is optimize
+container images minimize image size by
+removing unnecessary dependencies using
+multi-stage builds optimize layer
+caching to improve deployment speed and
+reduce resource consumption third one is
+Implement container orchestration use
+container orchestration platforms like
+like cuberes or Docker SW to manage
+containerized applications automate
+deployments and Achieve High
+availability and scalability fourth one
+you can automate builds and deployments
+Implement cicd pipelines to automate the
+build testing and deployment of Docker
+images ensuring consistency and
+reliability in production environment
+and finally you can monitor
+containerized applications so these were
+some of the best practices that you can
+follow while using docker in a
+production environment now let us move
+to the next question that is how do you
+automate deployments of Docker
+containers so guys automating the
+deployment of Docker container involves
+using cicd means continuous integration
+and continuous deployment pipelines to
+streamline the process of building
+testing and deploying containerized
+applications so first one is you can use
+Version Control Store the application
+code and Docker configuration in Version
+Control Systems like git uh have a cicd
+pipeline setup set up a cicd pipeline
+using platforms like genkins klab or
+GitHub actions configure the pipelines
+to trigger on code commits or pull
+request to the Version Control
+repository third one is build Docker
+images use Docker files to define the
+container images for your application
+configure the cicd pipelines to build
+Docker images automatically whenever
+changes are pushed to the repository use
+tools like Docker build kit or canico
+for building Docker images in cicd
+environment so in this way you can
+automate the deployment of Docker
+containers now let us move to the next
+question that is how do you perform
+rolling updates in doas so guys
+performing rolling updates in doas SW
+involves updating services in a swarm
+cluster without causing downtime or
+service disruption the first one is you
+have to update service definition modify
+the service definition to specify the
+updated Docker image version or any
+other configuration changes which you
+are going through you can update the
+service definition using the docker
+service update command or by modifying
+the docker compos file used to deploy
+the service second one is rolling update
+strategy specify the rolling update
+strategy to control how swamp performs
+and the update the rolling update
+strategy defines parameters such as
+number of parallel tasks and the delay
+between the updates common rolling
+update strategies include parallelism
+delay failure action for example guys
+you can specify a rolling update
+strategy within parallelism of Two And
+Delay of 10 seconds using the update
+parallelism and update delay Flags very
+easy so this was all about how you can
+perform rolling updates now let us move
+to the next question so guys our next
+question is what is Docker content trust
+so guys Docker content trust is a
+security feature of Docker that provides
+cryptographic verification of image
+integrity and authenticity it ensures
+that only verified and signed Docker
+images are pulled and run on Docker host
+so guys let's move to the next question
+that is how do you configure automatic
+container restarts in Docker so guys
+answer to the same is to configure
+automatic container it starts in Docker
+use the double start flag when running
+the container is specifying the desired
+restart policy your option can include
+no for automatic starts on failure to
+restart container and that exit with a
+non-zero status and you can also use
+always to restart the containers
+regardless of the exit status for
+example there's a command like Docker
+run/ restart equals to always and your
+container name which can be my container
+so in this command it sets a container
+to automatically and it restarts always
+so this was the answer to this question
+now let us move on to the next question
+that is how do you configure custom log
+driver in Docker very very good question
+so guys to configure a custom loging
+driver in Docker you can follow the
+steps first one is choose a login driver
+select the custom login driver
+compatible with Docker like uh you can
+use plunk and CIS log next one is update
+Docker demon configuration edit or
+create the docker demon configuration
+file then add a log driver key with the
+value set to the name of the custom
+logging driver you can optionally
+configure the Ed additional logging
+driver Options under the log Ops key so
+in this way you can do it now let us
+move on to the next question that is how
+do you manage secrets in dockerized
+application so guys to manage secrets in
+dockerized applications use Docker
+built-in secret management or external
+tools like Hashi cor VA so in this way
+you can basically manage secrets in
+dockerized applications these were some
+of the theoretical questions that I've
+asked you guys uh mostly were kind of
+basic and now we'll move to the second
+part of the question now in this series
+what we are going to see mostly we are
+going to figure out some of the scenario
+and some of the file based questions so
+guys as you can see I am using vs code
+as my text editor so let us see what we
+have all over here okay so guys as you
+can see in this question uh it says Uh
+there's a certain code written all over
+here this is basically a Docker file so
+it says use the official nodejs image as
+a base image from node 14 uh then you
+are setting up your directory all over
+here you are copying the Json and you
+are installing the uh npm package then
+you are copying the rest of the
+application you are exposing the port
+3,000 and in order to run the nodejs
+application this command is written now
+some of the basic question I'm going to
+start with this Docker file so your
+interviewer can ask you questions like
+explain the each line of the docker file
+and its purpose so you can see I have
+added the comments all over here and it
+defines the purpose so like from note 14
+uh this means that I'm using the
+official note 14 version this image and
+similarly all the other lines I have
+added the code okay now let us move to
+the second question uh what is the
+purpose of workdir user slsrc /a so
+basically as you can see all over here
+it is setting up the directory in this
+folder
+now let us move to the third question
+which it says why do we copy star Json
+file separately from the rest of the
+application code now this is a pretty
+interesting question and your
+interviewer can ask you something like
+this based on your Docker file so guys
+the answer for this question is we copy
+package star. Json files separately to
+take advantage of the dockal layers
+caching mechanism so this basically
+ensures that all the dependencies are
+only re installed when the dependencies
+change rather than on every code change
+so that's why we are copying package
+star. Json files so this is one of the
+interesting question and it can be asked
+so now it's a very basic question run
+npm install uh why do we expose for 3000
+in the docker file now let us see this
+question so guys exposing 3,000 informs
+Docker that a container listens on the
+port 3,000 which allows Docker basically
+to map that port to the host machine
+when we are running the container and
+finally uh it says what is the
+significance of command node app.js so
+as I've told you it basically is a
+command to run the nodejs application so
+these are some of the basic question
+that can be asked with respect to your
+Docker file so you can have a check on
+these one now let us move to the next
+question now you can get an assignment
+certain like this that write a Docker
+file for a simple python flask
+application and you have to ensure that
+Docker file installs python copies the
+application code into the Container
+installs dependencies using pip and
+exposes the port for flask application
+to run on say Port 3000 so basically you
+have just seen a template Docker file
+now we want to write a python flask
+application so guys let me show you the
+answer for the same so similarly you're
+going to start so from Python 3 .9 this
+uh is your latest python which you want
+use next process would be setting up
+your directory so work di/ app then you
+need to copy the current directory copy
+do/ apppp install the flask and other
+dependencies so you're going to install
+it using pip so run pip install SL no
+cache directory flask okay and then you
+are going to expose your Port like to
+5,000 to allow this communication to the
+flask app and finally you going to run
+this application it is very simple just
+a template I have used earlier and in
+this way your interviewer can give you
+some Hands-On task to code a Docker file
+now let us move to the next question I
+hope so you would have got a brief idea
+regarding this now similarly it says
+write a Docker file that builds a custom
+engine X image with SSL support now okay
+let me do this now it says ensure that
+docka file copies custom engine X
+configuration files and SSL certificates
+into the image and exposes ports 0 and
+443 so what is this guys if I talk about
+this basically it is asking for you to
+build a custom engine X image okay and
+it should have an SSL support now it
+should copy the custom engine X
+configuration files and also the SSL
+certificates into the image and it has
+given the specified ports to expose now
+how would you T this so the answer to
+the same is very basic start from from
+enginex the latest version now you have
+to copy the enginex configuration files
+so say copyin x.f SLC engin xinx KF okay
+then you would do copy default KF ETC
+engine X kfd and default con so
+basically you are writing this code to
+copy the custom engine X configuration
+files okay but these are the twostep
+process and next was to copy the SSL
+certificates so copy the SSL certificate
+in the same fashion so there will be a
+key and certificate now you have to
+expose the port ET and 443 so for the
+HTTP this would be an HTTP traffic and
+this would be for https traffic so this
+is how you are going to use it uh it's a
+bit little bit tricky and complicated
+but it's a template for you like if you
+are getting certain question regarding
+to use and engine X or you know to
+expose two ports uh you can use this
+template it works perfectly well now let
+us move to the next question that is
+implementing a multi-stage Docker build
+for Java application so guys it says you
+have to write a Docker file that
+compiles the Java application using
+Marvin in the first stage and then
+copies the compiled jar file into a
+lightweight runtime image in the second
+stage so this is a two-stage process and
+so let's start with the first one let's
+figure out what is there in stage one so
+it says that in stage one you have to
+write a Docker file okay where it copies
+the compiled jar file into the
+lightweight image this is in the second
+and in the first one it compiles a Java
+application using the M okay very basic
+so let me show you the template for this
+one so there's a command for stage one
+so you have to use mavin so I have
+selected from mavin 3o this is a current
+version and uh for open jdk 11 as
+Builder so I'm building a Java
+application using the Marvin I'm setting
+up the directory all over here then I'm
+copying the Marvin project descriptor
+file so that will be a palm. XML file
+involved here you're going to copy the
+source code finally and you're going to
+build the Java application so there is
+mvn command for the same run nvn package
+so this is your stage one process it's
+very important for you to see this uh
+it's also kind of a little bit tempting
+question now in the second stage you
+have to build the Java application with
+Marvin run MN package so here you have
+to create a lightweight runtime image so
+I have used from open jdk 11 J slim set
+up the working directory copy SL from
+Builder slapp Target my applications.
+jar so you have to copy the jar files
+then you have to expose the given Port
+so 880 is a port for the server and
+finally run it to CMD Java jar and my
+application. jar file so this is how we
+approach to a problem in a multi-stage
+process that are told to write in a
+Docker file so as you practice more and
+more questions like this guys I am
+definitely sure that it will boost your
+confidence to tackle questions like
+these now let us move to the next
+question which are scenario based
+questions so guys uh first scenario
+based question is like suppose there's a
+Docker container which is unable to
+communicate with another container on
+the same Docker Network
+but how would you diagnose and
+troubleshoot network connectivity issues
+between the containers it's a very
+practical questions and there's a high
+probability that your interviewer can
+ask this so guys to troubleshoot and
+resolve a Docker container start a
+failure related to Containers entry
+point script uh you should follow these
+steps first one is check the container
+logs okay so start checking by container
+logs to see if there are any error
+messages or any exceptions related to
+the entry point script
+you can use commands such as dockal logs
+commands to view the containers logs
+next one is inspect the container
+configuration use Docker inspect command
+to conspect the container's
+configuration and verify the entry point
+script specified in the docker file
+third one is you can verify the
+entrypoint script permissions uh here
+you have to ensure that the entry point
+script has the correct permissions to
+set the executable within the container
+uh fourth one is to test the entry point
+script locally you have to copy the
+entry point script from the container to
+your local machine and test it to see if
+it executes successfully outside the
+container environment so this basically
+can help to isolate any issues with the
+script itself so these are some of the
+process in which you can follow up uh to
+check if one of the container is not
+able to communicate with the other on
+the same network now let us move to the
+next question that is it says you are
+trying to build a Docker image for a
+pyth Pyon application using a Docker
+file okay however the build process
+fails with an error indicating that a
+required python package cannot be
+installed how would you modify the
+docker file to ensure the package is
+installed successfully wow what a great
+question let us try to tackle this
+question so guys any issues related to
+diagnosing and troubleshooting network
+connectivity invols like between Docker
+containers there can be a varing steps
+that one can go but I'll approach this
+problem something like this uh first of
+all I would check the docker network
+configuration okay I'll start by
+verifying both of the containers are
+they connected to the same Docker
+Network okay and for this I can use
+Docker Network inspect command uh next
+one is I can verify the containers IP
+addresses check for the IP addresses
+assigned to the containers within the
+docker Network for this purpose also you
+can use a Docker inspect command third
+one is you can test the connectivity
+using ping you can use a ping command to
+test the connectivity between the
+containers by pinging one container from
+other using its IP address next one is
+check the firewall rules ensure that
+there are no firewall rules blocking the
+traffic between two containers within
+the network then inspect the containers
+processes and ports check if the
+required services or processes are
+running inside the containers and
+listing on the correct ports and finally
+check for Docker logs for errors inspect
+the docker container logs for any errors
+or warning related to network
+connectivity
+for this purpose you can use dockal logs
+command so in this way you can
+troubleshoot your program so guys here
+is the next question and it's a pretty
+interesting one and it says something
+like this suppose you have a Docker
+compos file that defines multiple
+services for a microservice architecture
+okay and then each service runs a
+different application component such as
+front end backend and a database however
+you notice that the front-end service
+intermittently loses connectivity to the
+backend service how would you
+troubleshoot and fix this issue this is
+a very practical problem and when you
+are deploying your application on Docker
+you might face these issues so your
+interviewer can ask you this type of
+question also so how would you approach
+this question so the answer to the same
+is like uh so guys whenever you have a
+problem related to troubleshooting the
+intermittent connectivity issues between
+services in a Docker compos setup so it
+can be a little bit of complex issue but
+if you go through a systematic approach
+like which I'm going to tell you uh you
+might find an easy way to resolve this
+issue so first of all what I would like
+you to do is you have to check your
+Docker compost configuration where you
+have to ensure that your Docker compost
+configuration in the docker compost. yml
+file is correctly defined the network
+settings for the services you have to
+pay attention to the services names like
+the ports network mode and many more
+then you have to inspect the the logs
+check for the logs of both front end and
+backend services for any error messages
+or Warnings that might indicate the
+network related issues for this purpose
+used Docker compos logs to view logs for
+a specific Services third one is you
+have to check for the container H check
+you have to verify that the health of
+the containers running in the front end
+and the back end services use Docker pi
+to list all the running containers and
+check their status if any container is
+restarting frequently or has exited
+unexpectedly investigate the cause
+fourth one is network connectivity check
+if the front-end service can be resolved
+the host name of the backend service you
+can do this by executing a command
+within the front- end container or ping
+resolve the host name of the backend
+service for example you can type this
+command
+like
+Docker
+compose then exec then suppose your
+front end is a given directory so write
+front end and try to look up NS
+lookup back end so you can type this
+command all over here and it's going to
+check a given issue so guys you can type
+this command to troubleshoot this issue
+next thing is you can also try for
+service dependencies so you have to also
+ensure that the front end service waits
+for the backend service to be fully
+initialized before attempting to connect
+sometimes intermittent connectivity
+issues occur because of the front-end
+service starts before the backend
+service so you can add a delay or retri
+mechanism in the front-end service
+initialization script now finally you
+have to check also the docker networking
+where you have to review the docker's
+networking modes like Bridge host
+overlay Etc and you have to ensure that
+the choosen mode is appropriate for your
+setup please uh make it sure that this
+is a very important point and also you
+have to look for Docker built-in
+networking features like userdefined
+networks for better isolation and
+control over communication between the
+services so this is one thing now let us
+move to the next part that is the next
+question so it says you are attempting
+to optimize a Docker build process for
+large Java application but however you
+are encountering a challenge where the
+final image size is larger than expected
+so how would you prefer to refactor the
+docker file to reduce the size of the
+final Docker image without sacrificing
+the functionality very practical
+question guys so how would you approach
+this question take a time as you have
+read the documentation or did some
+projects so you can pause this video for
+a while and try to think of approach
+which can resolve this issue so I would
+approach this question something like
+this so in order to reduce the final
+Docker image size for the Java
+application using multi-stage builds
+first I would check the base image
+selection you have to choose a minimal
+base image for the final stage such as
+an Alpine Linux or distes Java to reduce
+the size of the image next one you have
+to minimize the dependencies in the
+final image excluding unnecessary
+packages and libraries utilize tools
+like Marvin or Gradle to exclude
+dependencies which are not required for
+the runtime third one is optimize copy
+operations you have to optimize copy
+operations by copying only necessary
+files and directories from the build
+stage to the final stage utilize Docker
+ignore to exclude all the irrelevant
+files and directories from the build
+context next one is layer optimization
+guys combine multiple run commands into
+single run instruction to reduce a
+number of layers in the final image you
+have to utilize Docker build cache
+efficiently by ordering commands from
+the least frequently changed to the most
+frequently changed and finally you have
+to look for static cont compression
+compress static content like HTML CSS
+JavaScript file using techniques like
+broadly or gzip before copying them into
+the final image so this is how I would
+try to do it and one more point I can
+add it that I can also review the
+container configuration optimization I
+would review and optimize jvm and
+application server configurations to
+reduce a memory footprint and also
+improve the performance I'll adjust jvm
+Heap size garbage collection settings
+and threadpool configurations based on
+application requirements so in this way
+if you approach this question I think so
+your interviewer will be very very
+impressed now let's move to the next
+question which is the question when you
+are deploying a dockerized application
+to a kubernetes clusters using Helm
+charts however when you attempt to
+deploy the application you would
+encounter an error indicating that the
+container is unable to mount a volume
+and how would you debug and resolve this
+issue Within the helm charts and
+kubernetes deployment configuration
+quite an interesting question now let us
+see the approach to solve this problem
+so guys whenever you want to debug and
+resolve the issue of a container which
+is unable to mount a volume in a cuberes
+clusters which is unable to mount a
+volume in a kubernetes cluster deployed
+using Helm charts you can follow these
+steps first of part inspect the helm
+chart configuration review the helm
+chart templates and value files to
+ensure that the volume configuration is
+correctly defined then you have to
+verify that the volume type name Mount
+path and other properties are accurately
+specified in the helm chart check for
+Cub's resources use cuex CTL get pods
+cux CTL describe pods or cuex CTL logs
+command to inspect the status and logs
+of the pods affected by the volume
+mounting issues so guys you can use
+these codes okay these are the certain
+commands so
+okay this is one or
+same and here you could just type
+describe pods or you can go for cubic
+CDL
+logs okay and you can make the K as
+small
+okay so this makes uh one of the answers
+for this question next thing is what you
+can do guys you can verify the volume
+configuration check for persistent
+volume and persistent volume claim PV
+and PVC use these resources and check
+that they are correctly configured and
+available in the kubernetes cluster
+ensure that the PV and the PVC have
+matching names storage class access mode
+and other properties required for volume
+provisioning and mounting next one is
+troubleshooting the volume provisioning
+if Dynamic volume provisioning is used
+you have to verify that the storage
+class is specified in the PVC available
+and capable for provisioning the volumes
+you have to check the status of the
+storage provider like the cloud storage
+service to ensure that it is operational
+and accessible from the cuberes cluster
+then fifth one is permission and access
+you have to ensure that the kubernetes
+service account used by the Pod has the
+necessary permissions to access and
+mount the wall if using Secrets or
+config Maps as volumes you can verify
+that they are correctly configured and
+access I by the PS so these were some of
+the points which you can mention and in
+this way you will completely answer this
+question now let us move to the next
+question that is suppose you have a
+complex microservice architecture okay
+which is deployed on a Docker swarm
+cluster now one of the microservice
+which handles critical Financial
+transactions experiences intermittent
+performance issues causing delays and
+potential Financial losses you need to
+diagnose and resolve the issue promptly
+to ensure the stability and reliability
+of the application so how would you
+approach this question guys so guys
+diagnosing and resolving intermittent
+performance issues in a critical
+microservice handling Financial
+transactions on Docker St cluster
+requires kind of bit systematic approach
+the first of all I would like you to
+look for monitoring and logging you have
+to utilize Docker swarms built-in
+monitoring capabilities or the third
+party monitoring tools to GA metrics on
+CPU usage memory utilization Network
+traffic and container Health analyze
+container logs for any error messages
+warnings or patterns indicating
+performance bottlenecks check resource
+utilization metrics to identify if there
+are any spikes or anomalies in CPU or
+memory usage that coincides with the
+performance issues ensure that the
+microservice has sufficient CPU memory
+and network bandwidth allocated to
+handle Peak loads third one is Network
+latency investigate Network latency
+between the microservice and other
+components in the docker swarm clusters
+including databases external services
+and other microservices check out for
+Network congestions packet loss or
+communication issues that could impact
+performance fourth one is you have to
+look for database performance examine
+the performance of database assessed by
+the microservice monitor query execution
+times database logs and indexes to
+identify potential database related
+bottle you can also go for optimizing
+the database queries indexes and
+configuration settings to improve query
+performance and reduce latency now next
+thing what you can do is you can go for
+scaling and load testing consider
+scaling the microservice horizontally by
+adding more replicas to distribute the
+workload across multiple containers we
+can perform load testing to simulate
+real world transaction volumes and
+identify performance limits and
+scalability issues next thing you can go
+for continuous monitoring and alerting
+Implement continuous monitoring and
+alerting systems to proactively detect
+performance issues and notify
+stakeholders in real time set up alerts
+based on predefined thresholds for CPU
+memory latency Matrix to trigger
+investigation and remedial actions now
+what you have to do next is do
+incremental changes and testing make
+incremental changes to the microservice
+configurations codebase or
+infrastructure settings based on
+diagnostic findings test changes in
+staging environment before applying them
+to the production to ensure they do not
+introduce regression or new issues so
+guys by following these steps leveraging
+monitoring diagnostic optimization
+techniques you can diagnose and resolve
+intermittent performance issues in a
+critical microservice ensuring stability
+and reliability of the financial
+transactions which you have applied
+running on the doer cluster so guys I
+hope so you would have got a brief idea
+now how your interviewer can ask you
+questions regarding dog so that was it
+for today's session I hope so you have
+enjoyed our today's video on Walker
+interview questions thank you for
+watching this video staying ahead in
+your career requires continuous learning
+and upskilling whether you're a student
+aiming to learn today's top skills or a
+working professional looking to advance
+your career we've got you covered
+explore our impressive catalog of
+certification programs in cuttingedge
+domains including data science cloud
+computing cyber security AI machine
+learning or digital marketing designed
+in collaboration with leading
+universities and top corporations and
+delivered by industry experts choose any
+of our programs and set yourself on the
+path to Career Success click the link in
+the description to know
+more hi there if you like this video
+subscribe to the simply learn YouTube
+channel and click here to watch similar
+videos to nerd up and get certified I
+click here
